@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option csharp_namespace = "Art.Framework.ApiNetwork.Grpc.Api.Dokan";
+
+import "proto/data.proto";
+
+package apb.api.dokan;
+
+service DokanService {
+	rpc RegisterDokanConfirmed (RegisterDokanConfirmedRequest) returns (RegisterDokanConfirmedResponse);
+}
+
+message RegisterDokanConfirmedRequest {
+	repeated int32 dokanId = 1;
+}
+
+message RegisterDokanConfirmedResponse {
+	map<string, apb.api.data.DiffData> diffUserData = 99;
+}
