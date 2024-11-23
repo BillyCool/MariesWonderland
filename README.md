@@ -1,6 +1,6 @@
 # Marie's Wonderland
 
-An attempt at a private server implementation for mobile game NieR Reincarnation.
+An attempt at a private server implementation for mobile game NieR Reincarnation. The project is currently on hold due to a bug with Frida and newer versions of Android/Google Play that prevent running Frida Server correctly on mobile devices, more details [here](https://github.com/frida/frida/issues/2958).
 
 ## Game information
 - Built in Unity 2019.4.29 with C# and IL2CPP
