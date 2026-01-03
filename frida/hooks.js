@@ -6,13 +6,11 @@ let lastEnterLogCount = 0, lastLeaveLogCount = 0;
 const deduplicateLogs = true;
 
 function awaitLibil2cpp(callback) {
-  libil2cpp = Module.findBaseAddress('libil2cpp.so');
-
-  if (libil2cpp) {
+  try {
+    libil2cpp = Process.getModuleByName('libil2cpp.so').base;
     console.log('libil2cpp.so loaded:', libil2cpp);
     callback();
-  }
-  else {
+  } catch (error) {
     setTimeout(() => awaitLibil2cpp(callback), 100);
   }
 };
