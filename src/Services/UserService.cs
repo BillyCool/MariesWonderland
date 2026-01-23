@@ -22,7 +22,7 @@ public class UserService : Art.Framework.ApiNetwork.Grpc.Api.User.UserService.Us
             ExpireDatetime = Timestamp.FromDateTime(DateTime.UtcNow.AddDays(30)),
             UserId = 1234567890123450000,
             SessionKey = "1234567890",
-            Signature = "V2UnbGxQbGF5QWdhaW5Tb21lZGF5TXJNb25zdGVyIQ==" // Possibly base64 encoded
+            Signature = "V2UnbGxQbGF5QWdhaW5Tb21lZGF5TXJNb25zdGVyIQ=="
         });
     }
 
@@ -66,7 +66,11 @@ public class UserService : Art.Framework.ApiNetwork.Grpc.Api.User.UserService.Us
 
     public override Task<RegisterUserResponse> RegisterUser(RegisterUserRequest request, ServerCallContext context)
     {
-        return Task.FromResult(new RegisterUserResponse());
+        return Task.FromResult(new RegisterUserResponse
+        {
+            UserId = 1234567890123450000,
+            Signature = "V2UnbGxQbGF5QWdhaW5Tb21lZGF5TXJNb25zdGVyIQ=="
+        });
     }
 
     public override Task<SetAppleAccountResponse> SetAppleAccount(SetAppleAccountRequest request, ServerCallContext context)
@@ -109,7 +113,7 @@ public class UserService : Art.Framework.ApiNetwork.Grpc.Api.User.UserService.Us
         return Task.FromResult(new TransferUserResponse
         {
             UserId = 1234567890123450000,
-            Signature = "V2UnbGxQbGF5QWdhaW5Tb21lZGF5TXJNb25zdGVyIQ==" // Possibly base64 encoded
+            Signature = "V2UnbGxQbGF5QWdhaW5Tb21lZGF5TXJNb25zdGVyIQ=="
         });
     }
 

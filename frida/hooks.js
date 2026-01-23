@@ -135,15 +135,77 @@ function writeString(addr, text) {
   addr.add(0x14).writeUtf16String(text);
 }
 
+function readString(addr) {
+  return addr.add(0x14).readUtf16String();
+}
+
+function logStackTrace() {
+  console.log(Thread.backtrace(this.context, Backtracer.ACCURATE)
+    .map(DebugSymbol.fromAddress).join('\n') + '\n');
+}
+
 //#endregion
 
 // #region Private Server
+
+function DarkOctoSetupper_CreateSetting(offset) {
+  const func_ptr = libil2cpp.add(offset);
+  Interceptor.attach(func_ptr, {
+    onLeave(result) {
+        const urlPtr = result.add(0x10).readPointer();
+        const appId = result.add(0x18).readInt();
+        const clientSecretPtr = result.add(0x20).readPointer();
+        const aesKeyPtr = result.add(0x28).readPointer();
+        const aPtr = result.add(0x30).readPointer();
+        const cachingType = result.add(0x38).readInt();
+        const version = result.add(0x3C).readInt();
+        const maxParallelDownload = result.add(0x48).readInt();
+        const maxParallelLoad = result.add(0x4C).readInt();
+        const maximumAvailableDiskSpace = result.add(0x50).readS64();
+        const expirationDelay = result.add(0x58).readInt();
+        const allowDeleted = result.add(0x5C).readU8();
+        const enableAssetDatabase = result.add(0x5D).readU8();
+
+        onLeaveLogWrapper(DarkOctoSetupper_CreateSetting.name, `Url=${readString(urlPtr)}`);
+        onLeaveLogWrapper(DarkOctoSetupper_CreateSetting.name, `AppId=${appId}`);
+        onLeaveLogWrapper(DarkOctoSetupper_CreateSetting.name, `ClientSecretKey=${readString(clientSecretPtr)}`);
+        onLeaveLogWrapper(DarkOctoSetupper_CreateSetting.name, `AesKey=${readString(aesKeyPtr)}`);
+        onLeaveLogWrapper(DarkOctoSetupper_CreateSetting.name, `A=${readString(aPtr)}`);
+        onLeaveLogWrapper(DarkOctoSetupper_CreateSetting.name, `CachingType=${cachingType}`);
+        onLeaveLogWrapper(DarkOctoSetupper_CreateSetting.name, `Version=${version}`);
+        onLeaveLogWrapper(DarkOctoSetupper_CreateSetting.name, `MaxParallelDownload=${maxParallelDownload}`);
+        onLeaveLogWrapper(DarkOctoSetupper_CreateSetting.name, `MaxParallelLoad=${maxParallelLoad}`);
+        onLeaveLogWrapper(DarkOctoSetupper_CreateSetting.name, `MaximumAvailableDiskSpace=${maximumAvailableDiskSpace}`);
+        onLeaveLogWrapper(DarkOctoSetupper_CreateSetting.name, `ExpirationDelay=${expirationDelay}`);
+        onLeaveLogWrapper(DarkOctoSetupper_CreateSetting.name, `AllowDeleted=${allowDeleted}`);
+        onLeaveLogWrapper(DarkOctoSetupper_CreateSetting.name, `EnableAssetDatabase=${enableAssetDatabase}`);
+    }
+  });
+}
 
 function DarkOctoSetupper_GetE(offset) {
   const func_ptr = libil2cpp.add(offset);
   Interceptor.attach(func_ptr, {
     onLeave(result) {
-      writeString(result, `https://${SERVER_ADDRESS}/`)
+      writeString(result, `https://${SERVER_ADDRESS}/`);
+      onLeaveLogWrapper(DarkOctoSetupper_GetE.name, readString(result));
+    }
+  });
+}
+
+function Config_Api_MakeWebViewUrl(offset) {
+  const func_ptr = libil2cpp.add(offset);
+  Interceptor.attach(func_ptr, {
+    onEnter(args) {
+      this.basePath = readString(args[0]);
+      this.path = readString(args[1]);
+      onEnterLogWrapper(Config_Api_MakeWebViewUrl.name, `basePath=${this.basePath}, path=${this.path}`);
+    },
+    onLeave(result) {
+        const getLanguagePathFunc = new NativeFunction(libil2cpp.add(0x2E5B5C4), 'pointer', []);
+        const languagePath = readString(getLanguagePathFunc());
+        writeString(result, `https://${SERVER_ADDRESS}${this.basePath}${languagePath}${this.path}`);
+        onLeaveLogWrapper(Config_Api_MakeWebViewUrl.name, readString(result));
     }
   });
 }
@@ -151,9 +213,13 @@ function DarkOctoSetupper_GetE(offset) {
 function Config_Api_MakeMasterDataUrl(offset) {
   const func_ptr = libil2cpp.add(offset);
   Interceptor.attach(func_ptr, {
+    onEnter(args) {
+      this.param = readString(args[0]);
+      onEnterLogWrapper(Config_Api_MakeMasterDataUrl.name, this.param);
+    },
     onLeave(result) {
       writeString(result, `https://${SERVER_ADDRESS}/`)
-      onLeaveLogWrapper(DarkOctoSetupper_GetE.name, result.add(0x14).readUtf16String());
+      onLeaveLogWrapper(Config_Api_MakeMasterDataUrl.name, readString(result));
     }
   });
 }
@@ -163,7 +229,6 @@ function ChannelProvider_Setup(offset) {
   Interceptor.attach(func_ptr, {
     onEnter(args) {
       writeString(args[0], `${SERVER_ADDRESS}:443`);
-      onEnterLogWrapper(ChannelProvider_Setup.name, args[0].add(0x14).readUtf16String());
     }
   });
 }
@@ -172,7 +237,7 @@ function OctoAPI_CreateUrl(offset) {
   const func_ptr = libil2cpp.add(offset);
   Interceptor.attach(func_ptr, {
     onLeave(result) {
-      onLeaveLogWrapper(OctoAPI_CreateUrl.name, result.add(0x14).readUtf16String());
+      onLeaveLogWrapper(OctoAPI_CreateUrl.name, readString(result));
     }
   });
 }
@@ -191,10 +256,14 @@ function HandleNet_Encrypt(offset) {
 
 function HandleNet_Decrypt(offset) {
   var func_ptr = libil2cpp.add(offset);
-  var func = new NativeFunction(libil2cpp.add(0x279410C), 'pointer', ['pointer']);
-  Interceptor.replace(func_ptr, new NativeCallback((_arg1) => {
-    return func(_arg1); // Can't return _arg1 for some reason
-  }, 'pointer', ['pointer']));
+  try {
+    Interceptor.replace(func_ptr, new NativeCallback(function (thisArg, receivedMessage) {
+      return receivedMessage;
+    }, 'pointer', ['pointer', 'pointer']));
+  }
+  catch (e) {
+    console.log('HandleNet_Decrypt replace error:', e);
+  }
 }
 
 function LocalizeText_GetWordOrDefault(offset) {
@@ -211,7 +280,7 @@ function LocalizeText_GetWordOrDefault(offset) {
   const func_ptr = libil2cpp.add(offset);
   Interceptor.attach(func_ptr, {
     onLeave(result) {
-      var text = result.add(0x14).readUtf16String();
+      var text = readString(result);
       //onLeaveLogWrapper(LocalizeText_GetWordOrDefault.name, text);
 
       if (text in matchDic) {
@@ -229,18 +298,30 @@ function LocalizeText_GetWordOrDefault(offset) {
   });
 }
 
+function DarkClient_InvokeAsync(offset) {
+  const func_ptr = libil2cpp.add(offset);
+  Interceptor.attach(func_ptr, {
+    onEnter(args) {
+      onEnterLogWrapper(DarkClient_InvokeAsync.name, `path=${readString(args[1])}`);
+    }
+  });
+}
+
 //#endregion
 
 const SERVER_ADDRESS = 'humbly-tops-calf.ngrok-free.app';
 
 awaitLibil2cpp(() => {
   callbackWrapper(LocalizeText_GetWordOrDefault, 0x2ACE4D8); // Text replacements
+  callbackWrapper(DarkOctoSetupper_CreateSetting, 0x3639410);
   callbackWrapper(DarkOctoSetupper_GetE, 0x3638FC0);
+  callbackWrapper(Config_Api_MakeWebViewUrl, 0x2E5B00C); // WebView URL
   callbackWrapper(Config_Api_MakeMasterDataUrl, 0x2E5B114); // Master db URL
   callbackWrapper(ChannelProvider_Setup, 0x35C3C9C); // GRPC server URL
   callbackWrapper(OctoAPI_CreateUrl, 0x4C2723C);
   callbackWrapper(HandleNet_Encrypt, 0x279410C); // Bypass GRPC encryption
   callbackWrapper(HandleNet_Decrypt, 0x279420C); // Bypass GRPC decryption
+  callbackWrapper(DarkClient_InvokeAsync, 0x38AC274); // GRPC requests logging
 });
 
 // frida -Uf com.square_enix.android_googleplay.nierspww -l "path\to\hooks.js"

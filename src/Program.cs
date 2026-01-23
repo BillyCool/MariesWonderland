@@ -31,6 +31,7 @@ public static class Program
 
         // Add HTTP middleware
         app.MapGet("/", () => "Marie's Wonderland is open for business :marie:");
+        app.MapGet("/web/static/{languagePath}/terms/termsofuse", (string languagePath) => $"<html><head><title>Terms of Service</title></head><body><h1>Terms of Service</h1><p>Language: {languagePath}</p><p>Version: ###123###</p></body></html>"); // Expects the version wrapped in delimiters like "###123###".
         app.MapGet("/{**catchAll}", (string catchAll) => $"You requested: {catchAll}");
         app.MapPost("/{**catchAll}", (string catchAll) => $"You requested: {catchAll}");
         app.MapPut("/{**catchAll}", (string catchAll) => $"You requested: {catchAll}");
