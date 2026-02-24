@@ -22,7 +22,7 @@ public class UserService : Art.Framework.ApiNetwork.Grpc.Api.User.UserService.Us
             ExpireDatetime = Timestamp.FromDateTime(DateTime.UtcNow.AddDays(30)),
             UserId = 1234567890123450000,
             SessionKey = "1234567890",
-            Signature = "V2UnbGxQbGF5QWdhaW5Tb21lZGF5TXJNb25zdGVyIQ=="
+            Signature = request.Signature
         });
     }
 

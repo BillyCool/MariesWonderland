@@ -139,11 +139,6 @@ function readString(addr) {
   return addr.add(0x14).readUtf16String();
 }
 
-function logStackTrace() {
-  console.log(Thread.backtrace(this.context, Backtracer.ACCURATE)
-    .map(DebugSymbol.fromAddress).join('\n') + '\n');
-}
-
 //#endregion
 
 // #region Private Server
@@ -199,7 +194,6 @@ function Config_Api_MakeWebViewUrl(offset) {
     onEnter(args) {
       this.basePath = readString(args[0]);
       this.path = readString(args[1]);
-      onEnterLogWrapper(Config_Api_MakeWebViewUrl.name, `basePath=${this.basePath}, path=${this.path}`);
     },
     onLeave(result) {
         const getLanguagePathFunc = new NativeFunction(libil2cpp.add(0x2E5B5C4), 'pointer', []);
@@ -214,11 +208,10 @@ function Config_Api_MakeMasterDataUrl(offset) {
   const func_ptr = libil2cpp.add(offset);
   Interceptor.attach(func_ptr, {
     onEnter(args) {
-      this.param = readString(args[0]);
-      onEnterLogWrapper(Config_Api_MakeMasterDataUrl.name, this.param);
+      this.masterVersion = readString(args[0]);
     },
     onLeave(result) {
-      writeString(result, `https://${SERVER_ADDRESS}/`)
+      writeString(result, `https://${SERVER_ADDRESS}/assets/release/${this.masterVersion}/database.bin.e`)
       onLeaveLogWrapper(Config_Api_MakeMasterDataUrl.name, readString(result));
     }
   });
@@ -266,6 +259,18 @@ function HandleNet_Decrypt(offset) {
   }
 }
 
+function OctoAPI_DecryptAes(offset) {
+  const func_ptr = libil2cpp.add(offset);
+  try {
+    Interceptor.replace(func_ptr, new NativeCallback(function (thisArg, bytes) {
+      return bytes;
+    }, 'pointer', ['pointer', 'pointer']));
+  }
+  catch (e) {
+    console.log('OctoAPI_DecryptAes replace error:', e);
+  }
+}
+
 function LocalizeText_GetWordOrDefault(offset) {
   let matchDic = {
     '© SQUARE ENIX Developed by Applibot, Inc.': '© Marie\'s Wonderland',
@@ -302,7 +307,75 @@ function DarkClient_InvokeAsync(offset) {
   const func_ptr = libil2cpp.add(offset);
   Interceptor.attach(func_ptr, {
     onEnter(args) {
-      onEnterLogWrapper(DarkClient_InvokeAsync.name, `path=${readString(args[1])}`);
+      this.path = readString(args[1]);
+      onEnterLogWrapper(DarkClient_InvokeAsync.name, `path=${this.path}`);
+    }
+  });
+}
+
+function DataManager_SetUrls(offset) {
+  const func_ptr = libil2cpp.add(offset);
+  Interceptor.attach(func_ptr, {
+    onEnter(args) {
+      try {
+        const db = args[0];
+        if (db.isNull()) {
+          onEnterLogWrapper(DataManager_SetUrls.name, 'db NULL');
+          return;
+        }
+
+        const revision = db.add(0x10).readInt();
+        const assetBundleListPtr = db.add(0x18).readPointer();
+        const tagnamePtr = db.add(0x20).readPointer();
+        const resourceListPtr = db.add(0x28).readPointer();
+        const urlFormatPtr = db.add(0x30).readPointer();
+
+        const safeListCount = (ptr) => {
+          try {
+            if (ptr.isNull()) return 0;
+            return ptr.add(0x10).readInt();
+          } catch (e) { return 'err'; }
+        };
+
+        const urlFormat = (urlFormatPtr.isNull()) ? null : readString(urlFormatPtr);
+        const assetBundleCount = safeListCount(assetBundleListPtr);
+        const tagnameCount = safeListCount(tagnamePtr);
+        const resourceCount = safeListCount(resourceListPtr);
+
+        onEnterLogWrapper(DataManager_SetUrls.name, `revision=${revision}, urlFormat=${urlFormat}`);
+        onEnterLogWrapper(DataManager_SetUrls.name, `assetBundleList=${assetBundleCount}, tagname=${tagnameCount}, resourceList=${resourceCount}`);
+      }
+      catch (e) {
+        console.log('DataManager_SetUrls onEnter error:', e);
+      }
+    }
+  });
+}
+
+function DataManager_ApplyToDatabase(offset) {
+  const func_ptr = libil2cpp.add(offset);
+  Interceptor.attach(func_ptr, {
+    onEnter(args) {
+      this.instance = args[0];
+    },
+    onLeave(result) {
+      try {
+        const inst = this.instance;
+        if (!inst || inst.isNull()) {
+          onLeaveLogWrapper(DataManager_ApplyToDatabase.name, 'Applied to database (instance NULL)');
+          return;
+        }
+        const revision = inst.add(0x3C).readInt();
+        const urlFormatPtr = inst.add(0x40).readPointer();
+        let urlFormat = null;
+        try {
+          if (!urlFormatPtr.isNull()) urlFormat = readString(urlFormatPtr);
+        } catch (e) { urlFormat = '<err reading>'; }
+        onLeaveLogWrapper(DataManager_ApplyToDatabase.name, `Applied to database, Revision=${revision}, urlFormat=${urlFormat}`);
+      }
+      catch (e) {
+        console.log('DataManager_ApplyToDatabase onLeave error:', e);
+      }
     }
   });
 }
@@ -313,7 +386,7 @@ const SERVER_ADDRESS = 'humbly-tops-calf.ngrok-free.app';
 
 awaitLibil2cpp(() => {
   callbackWrapper(LocalizeText_GetWordOrDefault, 0x2ACE4D8); // Text replacements
-  callbackWrapper(DarkOctoSetupper_CreateSetting, 0x3639410);
+  //callbackWrapper(DarkOctoSetupper_CreateSetting, 0x3639410);
   callbackWrapper(DarkOctoSetupper_GetE, 0x3638FC0);
   callbackWrapper(Config_Api_MakeWebViewUrl, 0x2E5B00C); // WebView URL
   callbackWrapper(Config_Api_MakeMasterDataUrl, 0x2E5B114); // Master db URL
@@ -322,6 +395,20 @@ awaitLibil2cpp(() => {
   callbackWrapper(HandleNet_Encrypt, 0x279410C); // Bypass GRPC encryption
   callbackWrapper(HandleNet_Decrypt, 0x279420C); // Bypass GRPC decryption
   callbackWrapper(DarkClient_InvokeAsync, 0x38AC274); // GRPC requests logging
+  callbackWrapper(OctoAPI_DecryptAes, 0x4C27410);
+  //callbackWrapper(DataManager_SetUrls, 0x3DA0170);
+  //callbackWrapper(DataManager_ApplyToDatabase, 0x3D9F5EC);
 });
+
+function StackTrace(offset) {
+  const func_ptr = libil2cpp.add(offset);
+  Interceptor.attach(func_ptr, {
+    onEnter(args) {
+      // Log stack trace
+      console.log(Thread.backtrace(this.context, Backtracer.ACCURATE)
+        .map(DebugSymbol.fromAddress).join('\n') + '\n');
+    }
+  });
+}
 
 // frida -Uf com.square_enix.android_googleplay.nierspww -l "path\to\hooks.js"
