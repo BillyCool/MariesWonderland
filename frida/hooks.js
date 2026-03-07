@@ -307,8 +307,11 @@ function DarkClient_InvokeAsync(offset) {
   const func_ptr = libil2cpp.add(offset);
   Interceptor.attach(func_ptr, {
     onEnter(args) {
-      this.path = readString(args[1]);
-      onEnterLogWrapper(DarkClient_InvokeAsync.name, `path=${this.path}`);
+      var path = readString(args[1]);
+      onEnterLogWrapper(DarkClient_InvokeAsync.name, `path=${path}`);
+    },
+    onLeave(result) {
+      onLeaveLogWrapper(DarkClient_InvokeAsync.name);
     }
   });
 }
@@ -380,6 +383,30 @@ function DataManager_ApplyToDatabase(offset) {
   });
 }
 
+var isInitMenuButton = false;
+function TitleScreen_InitializeMenuButton(offset) {
+  const func_ptr = libil2cpp.add(offset);
+  Interceptor.attach(func_ptr, {
+    onEnter(args) {
+      isInitMenuButton = true;
+    },
+    onLeave(result) {
+      isInitMenuButton = false;
+    }
+  });
+}
+
+function CanvasGroupExtensions_SetActive(offset) {
+  const func_ptr = libil2cpp.add(offset);
+  Interceptor.attach(func_ptr, {
+    onEnter(args) {
+      if (isInitMenuButton) {
+        args[1] = ptr(1);
+      }
+    }
+  });
+}
+
 //#endregion
 
 const SERVER_ADDRESS = 'humbly-tops-calf.ngrok-free.app';
@@ -396,6 +423,8 @@ awaitLibil2cpp(() => {
   callbackWrapper(HandleNet_Decrypt, 0x279420C); // Bypass GRPC decryption
   callbackWrapper(DarkClient_InvokeAsync, 0x38AC274); // GRPC requests logging
   callbackWrapper(OctoAPI_DecryptAes, 0x4C27410);
+  callbackWrapper(TitleScreen_InitializeMenuButton, 0x2F11900); // Make menu visible
+  callbackWrapper(CanvasGroupExtensions_SetActive, 0x2D257DC); // Make menu visible
   //callbackWrapper(DataManager_SetUrls, 0x3DA0170);
   //callbackWrapper(DataManager_ApplyToDatabase, 0x3D9F5EC);
 });

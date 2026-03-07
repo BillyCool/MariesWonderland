@@ -9,6 +9,9 @@ public class DataService : Art.Framework.ApiNetwork.Grpc.Api.Data.DataService.Da
     private const string LatestMasterDataVersion = "20240404193219";
     private const string UserDataBasePath = @"path\to\user\data";
 
+    private const string TablePrefix = "Entity";
+    private const string TableSuffix = "Table";
+
     public override Task<MasterDataGetLatestVersionResponse> GetLatestMasterDataVersion(Empty request, ServerCallContext context)
     {
         return Task.FromResult(new MasterDataGetLatestVersionResponse
@@ -21,7 +24,15 @@ public class DataService : Art.Framework.ApiNetwork.Grpc.Api.Data.DataService.Da
     {
         UserDataGetNameResponseV2 response = new();
         TableNameList tableNameList = new();
-        tableNameList.TableName.AddRange(Directory.EnumerateFiles(UserDataBasePath, "*.json").Select(x => Path.GetFileNameWithoutExtension(x)));
+        var names = Directory
+            .EnumerateFiles(UserDataBasePath, "*.json")
+            .Select(path =>
+            {
+                var name = Path.GetFileNameWithoutExtension(path); // e.g. "EntityIUserTable"
+                return name.Substring(TablePrefix.Length, name.Length - TablePrefix.Length - TableSuffix.Length); // result for "EntityIUserTable" -> "IUser"
+            });
+
+        tableNameList.TableName.AddRange(names);
         response.TableNameList.Add(tableNameList);
 
         return Task.FromResult(response);
@@ -33,7 +44,7 @@ public class DataService : Art.Framework.ApiNetwork.Grpc.Api.Data.DataService.Da
 
         foreach (var tableName in request.TableName)
         {
-            var filePath = Path.Combine(UserDataBasePath, tableName + ".json");
+            var filePath = Path.Combine(UserDataBasePath, TablePrefix + tableName + TableSuffix + ".json");
             var jsonContent = File.ReadAllText(filePath);
             response.UserDataJson.Add(tableName, jsonContent);
         }
