@@ -1,0 +1,52 @@
+[
+  {
+    "RarityType": 10,
+    "CostumeLimitBreakMaterialRarityGroupId": 1,
+    "EnhancementCostByMaterialNumericalFunctionId": 6,
+    "LimitBreakCostNumericalFunctionId": 7,
+    "MaxLevelNumericalFunctionId": 33,
+    "RequiredExpForLevelUpNumericalParameterMapId": 22,
+    "ActiveSkillMaxLevelNumericalFunctionId": 29,
+    "ActiveSkillEnhancementCostNumericalFunctionId": 30
+  },
+  {
+    "RarityType": 20,
+    "CostumeLimitBreakMaterialRarityGroupId": 1,
+    "EnhancementCostByMaterialNumericalFunctionId": 6,
+    "LimitBreakCostNumericalFunctionId": 7,
+    "MaxLevelNumericalFunctionId": 33,
+    "RequiredExpForLevelUpNumericalParameterMapId": 22,
+    "ActiveSkillMaxLevelNumericalFunctionId": 29,
+    "ActiveSkillEnhancementCostNumericalFunctionId": 30
+  },
+  {
+    "RarityType": 30,
+    "CostumeLimitBreakMaterialRarityGroupId": 2,
+    "EnhancementCostByMaterialNumericalFunctionId": 6,
+    "LimitBreakCostNumericalFunctionId": 7,
+    "MaxLevelNumericalFunctionId": 32,
+    "RequiredExpForLevelUpNumericalParameterMapId": 23,
+    "ActiveSkillMaxLevelNumericalFunctionId": 29,
+    "ActiveSkillEnhancementCostNumericalFunctionId": 30
+  },
+  {
+    "RarityType": 40,
+    "CostumeLimitBreakMaterialRarityGroupId": 3,
+    "EnhancementCostByMaterialNumericalFunctionId": 6,
+    "LimitBreakCostNumericalFunctionId": 7,
+    "MaxLevelNumericalFunctionId": 31,
+    "RequiredExpForLevelUpNumericalParameterMapId": 24,
+    "ActiveSkillMaxLevelNumericalFunctionId": 29,
+    "ActiveSkillEnhancementCostNumericalFunctionId": 30
+  },
+  {
+    "RarityType": 50,
+    "CostumeLimitBreakMaterialRarityGroupId": 3,
+    "EnhancementCostByMaterialNumericalFunctionId": 6,
+    "LimitBreakCostNumericalFunctionId": 7,
+    "MaxLevelNumericalFunctionId": 31,
+    "RequiredExpForLevelUpNumericalParameterMapId": 24,
+    "ActiveSkillMaxLevelNumericalFunctionId": 29,
+    "ActiveSkillEnhancementCostNumericalFunctionId": 30
+  }
+]

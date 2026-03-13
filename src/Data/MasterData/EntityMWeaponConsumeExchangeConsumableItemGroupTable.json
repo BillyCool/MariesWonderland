@@ -1,0 +1,5162 @@
+[
+  {
+    "WeaponId": 100001,
+    "ConsumableItemId": 2,
+    "Count": 5
+  },
+  {
+    "WeaponId": 100002,
+    "ConsumableItemId": 2,
+    "Count": 5
+  },
+  {
+    "WeaponId": 100011,
+    "ConsumableItemId": 2,
+    "Count": 5
+  },
+  {
+    "WeaponId": 100012,
+    "ConsumableItemId": 2,
+    "Count": 5
+  },
+  {
+    "WeaponId": 100021,
+    "ConsumableItemId": 2,
+    "Count": 5
+  },
+  {
+    "WeaponId": 100022,
+    "ConsumableItemId": 2,
+    "Count": 5
+  },
+  {
+    "WeaponId": 101001,
+    "ConsumableItemId": 2,
+    "Count": 5
+  },
+  {
+    "WeaponId": 101002,
+    "ConsumableItemId": 2,
+    "Count": 5
+  },
+  {
+    "WeaponId": 101011,
+    "ConsumableItemId": 2,
+    "Count": 5
+  },
+  {
+    "WeaponId": 101012,
+    "ConsumableItemId": 2,
+    "Count": 5
+  },
+  {
+    "WeaponId": 101021,
+    "ConsumableItemId": 2,
+    "Count": 5
+  },
+  {
+    "WeaponId": 101022,
+    "ConsumableItemId": 2,
+    "Count": 5
+  },
+  {
+    "WeaponId": 101031,
+    "ConsumableItemId": 2,
+    "Count": 5
+  },
+  {
+    "WeaponId": 101032,
+    "ConsumableItemId": 2,
+    "Count": 5
+  },
+  {
+    "WeaponId": 101041,
+    "ConsumableItemId": 2,
+    "Count": 5
+  },
+  {
+    "WeaponId": 101042,
+    "ConsumableItemId": 2,
+    "Count": 5
+  },
+  {
+    "WeaponId": 101051,
+    "ConsumableItemId": 2,
+    "Count": 5
+  },
+  {
+    "WeaponId": 101052,
+    "ConsumableItemId": 2,
+    "Count": 5
+  },
+  {
+    "WeaponId": 101061,
+    "ConsumableItemId": 2,
+    "Count": 5
+  },
+  {
+    "WeaponId": 101062,
+    "ConsumableItemId": 2,
+    "Count": 5
+  },
+  {
+    "WeaponId": 101071,
+    "ConsumableItemId": 2,
+    "Count": 5
+  },
+  {
+    "WeaponId": 101072,
+    "ConsumableItemId": 2,
+    "Count": 5
+  },
+  {
+    "WeaponId": 101081,
+    "ConsumableItemId": 2,
+    "Count": 5
+  },
+  {
+    "WeaponId": 101082,
+    "ConsumableItemId": 2,
+    "Count": 5
+  },
+  {
+    "WeaponId": 110001,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 110002,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 110011,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 110012,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 110021,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 110022,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 110031,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 110032,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 110041,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 110042,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 110051,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 110052,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 120001,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 120002,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 120011,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 120012,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 120021,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 120022,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 120031,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 120032,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 120041,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 120042,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 120051,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 120052,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 130001,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 130002,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 130011,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 130012,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 130021,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 130022,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 130031,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 130032,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 130041,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 130042,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 130051,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 130052,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 140001,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 140002,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 140011,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 140012,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 140021,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 140022,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 140031,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 140032,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 140041,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 140042,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 140051,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 140052,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 150001,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 150002,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 150011,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 150012,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 150021,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 150022,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 150031,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 150032,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 150041,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 150042,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 150051,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 150052,
+    "ConsumableItemId": 2,
+    "Count": 50
+  },
+  {
+    "WeaponId": 210001,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 210002,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 210021,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 210022,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 210031,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 210032,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 210041,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 210042,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 210061,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 210062,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 210071,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 210072,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 210091,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 210092,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 210101,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 210102,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 210131,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 210132,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 210141,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 210142,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 210151,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 210152,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 210161,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 210162,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 210171,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 210172,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 210181,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 210182,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 210191,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 210192,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 210201,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 210202,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 210211,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 210212,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 210221,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 210222,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 210241,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 210242,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 210251,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 210252,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 210261,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 210262,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 210271,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 210272,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 210281,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 210282,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 220001,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 220002,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 220011,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 220012,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 220021,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 220022,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 220031,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 220032,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 220041,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 220042,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 220051,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 220052,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 220061,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 220062,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 220071,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 220072,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 220081,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 220082,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 220091,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 220092,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 220101,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 220102,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 220111,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 220112,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 220121,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 220122,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 220141,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 220142,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 220151,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 220152,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 220161,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 220162,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 220171,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 220172,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 220181,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 220182,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 220191,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 220192,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 220201,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 220202,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 220211,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 220212,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 220221,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 220222,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 220231,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 220232,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 220241,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 220242,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 220251,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 220252,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 220261,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 220262,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 230001,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 230002,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 230011,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 230012,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 230021,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 230022,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 230031,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 230032,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 230051,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 230052,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 230061,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 230062,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 230071,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 230072,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 230091,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 230092,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 230101,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 230102,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 230111,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 230112,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 230121,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 230122,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 230131,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 230132,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 230151,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 230152,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 230161,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 230162,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 230171,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 230172,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 230181,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 230182,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 230191,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 230192,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 230201,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 230202,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 230211,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 230212,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 230221,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 230222,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 230231,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 230232,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 230241,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 230242,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 230251,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 230252,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 230261,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 230262,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 230271,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 230272,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 230281,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 230282,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 240001,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 240002,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 240011,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 240012,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 240021,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 240022,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 240031,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 240032,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 240041,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 240042,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 240051,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 240052,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 240081,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 240082,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 240091,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 240092,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 240101,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 240102,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 240121,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 240122,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 240131,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 240132,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 240141,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 240142,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 240151,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 240152,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 240171,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 240172,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 240191,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 240192,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 240201,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 240202,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 240211,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 240212,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 240221,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 240222,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 240231,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 240232,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 240241,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 240242,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 240251,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 240252,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 240261,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 240262,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 240271,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 240272,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 240281,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 240282,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 240291,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 240292,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 240301,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 240302,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 240311,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 240312,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 250001,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 250002,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 250011,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 250012,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 250021,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 250022,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 250031,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 250032,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 250041,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 250042,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 250051,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 250052,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 250061,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 250062,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 250071,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 250072,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 250081,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 250082,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 250091,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 250092,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 250101,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 250102,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 250111,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 250112,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 250121,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 250122,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 250141,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 250142,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 250151,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 250152,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 250171,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 250172,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 250181,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 250182,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 250191,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 250192,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 250201,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 250202,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 250211,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 250212,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 250221,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 250222,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 250231,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 250232,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 250241,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 250242,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 250251,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 250252,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 250261,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 250262,
+    "ConsumableItemId": 2,
+    "Count": 10
+  },
+  {
+    "WeaponId": 250271,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 250272,
+    "ConsumableItemId": 2,
+    "Count": 100
+  },
+  {
+    "WeaponId": 310001,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310002,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310011,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310012,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310021,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310022,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310051,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310052,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310061,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310062,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310071,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310072,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310081,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310082,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310111,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310112,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310131,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 310132,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 310141,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310142,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310171,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310172,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310181,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310182,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310191,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310192,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310211,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310212,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310221,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310222,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310231,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310232,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310241,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310242,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310251,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310252,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310261,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310262,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310271,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310272,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310281,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 310282,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 310291,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310292,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310321,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 310322,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 310331,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310332,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310341,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310342,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310351,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310352,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310361,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 310362,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 310371,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310372,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310381,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310382,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310391,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 310392,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 310401,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310402,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310411,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310412,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310421,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310422,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310431,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310432,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310441,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310442,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310451,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310452,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310461,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310462,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310471,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310472,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310481,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310482,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310491,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 310492,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 310501,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 310502,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 310511,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310512,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310521,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310522,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310531,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310532,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310541,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310542,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310551,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310552,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310561,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310562,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310571,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310572,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310581,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 310582,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 310591,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310592,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310601,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310602,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310611,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310612,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310621,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310622,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310631,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 310632,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 310641,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310642,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310651,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310652,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310661,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310662,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310671,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310672,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310681,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310682,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310691,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310692,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310701,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 310702,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 310711,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 310712,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320001,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320002,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320011,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320012,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320021,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 320022,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 320031,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320032,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320041,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 320042,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 320051,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320052,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320061,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320062,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320071,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 320072,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 320081,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320082,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320091,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320092,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320101,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320102,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320111,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320112,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320121,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320122,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320131,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320132,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320141,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320142,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320151,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320152,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320161,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 320162,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 320171,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320172,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320181,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320182,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320191,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320192,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320201,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320202,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320221,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 320222,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 320231,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320232,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320241,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320242,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320251,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320252,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320261,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320262,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320271,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320272,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320281,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320282,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320291,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320292,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320301,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320302,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320311,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320312,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320321,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320322,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320331,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320332,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320341,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320342,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320351,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320352,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320361,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 320362,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 320371,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 320372,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 320381,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320382,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320391,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320392,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320401,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320402,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320411,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320412,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320421,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320422,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320431,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320432,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320441,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320442,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320451,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320452,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320461,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320462,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320471,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320472,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320481,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320482,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320491,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 320492,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 320501,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320502,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320511,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320512,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320521,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320522,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320531,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320532,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320541,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320542,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320551,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320552,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320561,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320562,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320571,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320572,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320581,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320582,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320591,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 320592,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 320601,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 320602,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 320611,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320612,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320621,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320622,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320631,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 320632,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 320641,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320642,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320651,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320652,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320661,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 320662,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330001,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330002,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330011,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330012,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330021,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330022,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330031,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330032,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330041,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330042,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330051,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330052,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330061,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 330062,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 330071,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330072,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330081,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330082,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330101,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330102,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330111,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330112,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330121,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330122,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330151,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330152,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330161,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330162,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330171,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330172,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330181,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330182,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330191,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330192,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330211,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330212,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330221,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330222,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330231,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330232,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330241,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330242,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330251,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330252,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330261,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330262,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330271,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330272,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330281,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330282,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330291,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330292,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330301,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 330302,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 330311,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 330312,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 330321,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330322,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330331,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330332,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330341,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330342,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330351,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330352,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330361,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330362,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330371,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 330372,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 330381,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330382,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330391,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330392,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330401,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330402,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330411,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330412,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330421,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330422,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330431,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330432,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330441,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330442,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330451,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330452,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330461,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330462,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330471,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330472,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330481,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330482,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330491,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330492,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330501,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330502,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330511,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 330512,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 330521,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330522,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330531,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330532,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330541,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330542,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330551,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330552,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330561,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330562,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330571,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330572,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330581,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330582,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330591,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330592,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330601,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330602,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330611,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330612,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330621,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330622,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330631,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330632,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330641,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330642,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330651,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330652,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330661,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330662,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330671,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330672,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330681,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 330682,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 330691,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330692,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330701,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330702,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330711,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330712,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330721,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330722,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 330731,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 330732,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 340001,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340002,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340011,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340012,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340031,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 340032,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 340051,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340052,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340061,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340062,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340071,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340072,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340081,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340082,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340101,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 340102,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 340111,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340112,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340121,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340122,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340131,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340132,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340141,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340142,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340151,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340152,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340161,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340162,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340201,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340202,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340211,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340212,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340231,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340232,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340241,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340242,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340251,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340252,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340261,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340262,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340271,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 340272,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 340281,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340282,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340291,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340292,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340301,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340302,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340311,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340312,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340321,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340322,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340331,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340332,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340341,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340342,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340351,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340352,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340361,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340362,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340371,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 340372,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 340381,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340382,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340391,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340392,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340411,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340412,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340421,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340422,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340431,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340432,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340441,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340442,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340451,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340452,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340461,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340462,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340471,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340472,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340481,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340482,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340491,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340492,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340501,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340502,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340511,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340512,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340521,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 340522,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 340531,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340532,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340541,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340542,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340551,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340552,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340561,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 340562,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 340571,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340572,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340581,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340582,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340591,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340592,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340601,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 340602,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 340611,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340612,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340621,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 340622,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 340631,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340632,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340641,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 340642,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 340651,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340652,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340661,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340662,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340671,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340672,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340681,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340682,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340691,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340692,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340701,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340702,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340711,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340712,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340721,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340722,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340731,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340732,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340741,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340742,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340751,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 340752,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 340761,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340762,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340771,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 340772,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 340781,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340782,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340791,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 340792,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 340801,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340802,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340811,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340812,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340821,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340822,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340831,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340832,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340841,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340842,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340851,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340852,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340861,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340862,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340871,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 340872,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350001,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350002,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350011,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350012,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350021,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350022,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350031,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350032,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350041,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350042,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350051,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350052,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350061,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350062,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350081,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350082,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350101,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350102,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350121,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350122,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350131,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350132,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350141,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350142,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350151,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350152,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350161,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350162,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350181,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 350182,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 350191,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350192,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350201,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350202,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350211,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 350212,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 350221,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 350222,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 350231,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350232,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350241,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350242,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350251,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350252,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350261,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 350262,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 350271,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350272,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350281,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350282,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350291,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 350292,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 350301,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350302,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350311,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350312,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350321,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350322,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350331,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 350332,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 350341,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350342,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350351,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 350352,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 350361,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350362,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350371,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350372,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350381,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350382,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350391,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350392,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350401,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350402,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350411,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350412,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350421,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350422,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350431,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350432,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350441,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350442,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350451,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 350452,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 350461,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350462,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350471,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350472,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350481,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350482,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350491,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350492,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350501,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350502,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350511,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350512,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350521,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350522,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350531,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350532,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350541,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 350542,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 350551,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350552,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350561,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350562,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350571,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350572,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350581,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 350582,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 350591,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 350592,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 350601,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350602,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350611,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 350612,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 350621,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350622,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350631,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350632,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350641,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350642,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350651,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 350652,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 350661,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350662,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350671,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350672,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350681,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350682,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350691,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350692,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350701,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 350702,
+    "ConsumableItemId": 3,
+    "Count": 5
+  },
+  {
+    "WeaponId": 350711,
+    "ConsumableItemId": 3,
+    "Count": 50
+  },
+  {
+    "WeaponId": 350712,
+    "ConsumableItemId": 3,
+    "Count": 50
+  }
+]

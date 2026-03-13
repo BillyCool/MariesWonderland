@@ -1,0 +1,722 @@
+[
+  {
+    "PartsGroupId": 1,
+    "SortOrder": 100001,
+    "CatalogTermId": 1
+  },
+  {
+    "PartsGroupId": 2,
+    "SortOrder": 100002,
+    "CatalogTermId": 1
+  },
+  {
+    "PartsGroupId": 3,
+    "SortOrder": 100003,
+    "CatalogTermId": 1
+  },
+  {
+    "PartsGroupId": 4,
+    "SortOrder": 100004,
+    "CatalogTermId": 1
+  },
+  {
+    "PartsGroupId": 5,
+    "SortOrder": 100005,
+    "CatalogTermId": 1
+  },
+  {
+    "PartsGroupId": 6,
+    "SortOrder": 100006,
+    "CatalogTermId": 1
+  },
+  {
+    "PartsGroupId": 7,
+    "SortOrder": 100007,
+    "CatalogTermId": 1
+  },
+  {
+    "PartsGroupId": 8,
+    "SortOrder": 100008,
+    "CatalogTermId": 1
+  },
+  {
+    "PartsGroupId": 9,
+    "SortOrder": 100009,
+    "CatalogTermId": 1
+  },
+  {
+    "PartsGroupId": 10,
+    "SortOrder": 100010,
+    "CatalogTermId": 1
+  },
+  {
+    "PartsGroupId": 11,
+    "SortOrder": 100011,
+    "CatalogTermId": 1
+  },
+  {
+    "PartsGroupId": 12,
+    "SortOrder": 100012,
+    "CatalogTermId": 1
+  },
+  {
+    "PartsGroupId": 13,
+    "SortOrder": 100013,
+    "CatalogTermId": 1
+  },
+  {
+    "PartsGroupId": 14,
+    "SortOrder": 100014,
+    "CatalogTermId": 1
+  },
+  {
+    "PartsGroupId": 15,
+    "SortOrder": 100015,
+    "CatalogTermId": 1
+  },
+  {
+    "PartsGroupId": 16,
+    "SortOrder": 100016,
+    "CatalogTermId": 1
+  },
+  {
+    "PartsGroupId": 17,
+    "SortOrder": 100017,
+    "CatalogTermId": 1
+  },
+  {
+    "PartsGroupId": 18,
+    "SortOrder": 100018,
+    "CatalogTermId": 1
+  },
+  {
+    "PartsGroupId": 19,
+    "SortOrder": 100019,
+    "CatalogTermId": 1
+  },
+  {
+    "PartsGroupId": 20,
+    "SortOrder": 100020,
+    "CatalogTermId": 1
+  },
+  {
+    "PartsGroupId": 21,
+    "SortOrder": 100021,
+    "CatalogTermId": 1
+  },
+  {
+    "PartsGroupId": 22,
+    "SortOrder": 100022,
+    "CatalogTermId": 1
+  },
+  {
+    "PartsGroupId": 23,
+    "SortOrder": 100023,
+    "CatalogTermId": 1
+  },
+  {
+    "PartsGroupId": 24,
+    "SortOrder": 100024,
+    "CatalogTermId": 1
+  },
+  {
+    "PartsGroupId": 25,
+    "SortOrder": 100025,
+    "CatalogTermId": 2020
+  },
+  {
+    "PartsGroupId": 26,
+    "SortOrder": 100026,
+    "CatalogTermId": 2020
+  },
+  {
+    "PartsGroupId": 27,
+    "SortOrder": 100027,
+    "CatalogTermId": 2020
+  },
+  {
+    "PartsGroupId": 28,
+    "SortOrder": 100028,
+    "CatalogTermId": 3040
+  },
+  {
+    "PartsGroupId": 29,
+    "SortOrder": 100029,
+    "CatalogTermId": 3040
+  },
+  {
+    "PartsGroupId": 30,
+    "SortOrder": 100030,
+    "CatalogTermId": 3040
+  },
+  {
+    "PartsGroupId": 31,
+    "SortOrder": 100031,
+    "CatalogTermId": 4040
+  },
+  {
+    "PartsGroupId": 32,
+    "SortOrder": 100032,
+    "CatalogTermId": 4040
+  },
+  {
+    "PartsGroupId": 33,
+    "SortOrder": 100033,
+    "CatalogTermId": 4040
+  },
+  {
+    "PartsGroupId": 34,
+    "SortOrder": 100034,
+    "CatalogTermId": 6020
+  },
+  {
+    "PartsGroupId": 35,
+    "SortOrder": 100035,
+    "CatalogTermId": 6020
+  },
+  {
+    "PartsGroupId": 36,
+    "SortOrder": 100036,
+    "CatalogTermId": 6020
+  },
+  {
+    "PartsGroupId": 37,
+    "SortOrder": 100037,
+    "CatalogTermId": 9030
+  },
+  {
+    "PartsGroupId": 38,
+    "SortOrder": 100038,
+    "CatalogTermId": 9030
+  },
+  {
+    "PartsGroupId": 39,
+    "SortOrder": 100039,
+    "CatalogTermId": 9030
+  },
+  {
+    "PartsGroupId": 40,
+    "SortOrder": 100040,
+    "CatalogTermId": 12023
+  },
+  {
+    "PartsGroupId": 41,
+    "SortOrder": 100041,
+    "CatalogTermId": 12023
+  },
+  {
+    "PartsGroupId": 42,
+    "SortOrder": 100042,
+    "CatalogTermId": 12023
+  },
+  {
+    "PartsGroupId": 43,
+    "SortOrder": 100043,
+    "CatalogTermId": 15040
+  },
+  {
+    "PartsGroupId": 44,
+    "SortOrder": 100044,
+    "CatalogTermId": 15040
+  },
+  {
+    "PartsGroupId": 45,
+    "SortOrder": 100045,
+    "CatalogTermId": 15040
+  },
+  {
+    "PartsGroupId": 46,
+    "SortOrder": 100046,
+    "CatalogTermId": 18030
+  },
+  {
+    "PartsGroupId": 47,
+    "SortOrder": 100047,
+    "CatalogTermId": 18030
+  },
+  {
+    "PartsGroupId": 48,
+    "SortOrder": 100048,
+    "CatalogTermId": 18030
+  },
+  {
+    "PartsGroupId": 49,
+    "SortOrder": 100052,
+    "CatalogTermId": 24030
+  },
+  {
+    "PartsGroupId": 50,
+    "SortOrder": 100053,
+    "CatalogTermId": 24030
+  },
+  {
+    "PartsGroupId": 51,
+    "SortOrder": 100054,
+    "CatalogTermId": 24030
+  },
+  {
+    "PartsGroupId": 52,
+    "SortOrder": 100049,
+    "CatalogTermId": 21030
+  },
+  {
+    "PartsGroupId": 53,
+    "SortOrder": 100050,
+    "CatalogTermId": 21030
+  },
+  {
+    "PartsGroupId": 54,
+    "SortOrder": 100051,
+    "CatalogTermId": 21030
+  },
+  {
+    "PartsGroupId": 401,
+    "SortOrder": 100401,
+    "CatalogTermId": 2030
+  },
+  {
+    "PartsGroupId": 402,
+    "SortOrder": 100402,
+    "CatalogTermId": 2030
+  },
+  {
+    "PartsGroupId": 403,
+    "SortOrder": 100403,
+    "CatalogTermId": 2030
+  },
+  {
+    "PartsGroupId": 404,
+    "SortOrder": 100404,
+    "CatalogTermId": 3050
+  },
+  {
+    "PartsGroupId": 405,
+    "SortOrder": 100405,
+    "CatalogTermId": 3050
+  },
+  {
+    "PartsGroupId": 406,
+    "SortOrder": 100406,
+    "CatalogTermId": 3050
+  },
+  {
+    "PartsGroupId": 407,
+    "SortOrder": 100407,
+    "CatalogTermId": 4050
+  },
+  {
+    "PartsGroupId": 408,
+    "SortOrder": 100408,
+    "CatalogTermId": 4050
+  },
+  {
+    "PartsGroupId": 409,
+    "SortOrder": 100409,
+    "CatalogTermId": 4050
+  },
+  {
+    "PartsGroupId": 410,
+    "SortOrder": 100410,
+    "CatalogTermId": 5030
+  },
+  {
+    "PartsGroupId": 411,
+    "SortOrder": 100411,
+    "CatalogTermId": 5030
+  },
+  {
+    "PartsGroupId": 412,
+    "SortOrder": 100412,
+    "CatalogTermId": 5030
+  },
+  {
+    "PartsGroupId": 413,
+    "SortOrder": 100413,
+    "CatalogTermId": 6040
+  },
+  {
+    "PartsGroupId": 414,
+    "SortOrder": 100414,
+    "CatalogTermId": 6040
+  },
+  {
+    "PartsGroupId": 415,
+    "SortOrder": 100415,
+    "CatalogTermId": 6040
+  },
+  {
+    "PartsGroupId": 416,
+    "SortOrder": 100416,
+    "CatalogTermId": 7020
+  },
+  {
+    "PartsGroupId": 417,
+    "SortOrder": 100416,
+    "CatalogTermId": 7020
+  },
+  {
+    "PartsGroupId": 418,
+    "SortOrder": 100416,
+    "CatalogTermId": 7020
+  },
+  {
+    "PartsGroupId": 419,
+    "SortOrder": 100418,
+    "CatalogTermId": 9020
+  },
+  {
+    "PartsGroupId": 420,
+    "SortOrder": 100419,
+    "CatalogTermId": 9020
+  },
+  {
+    "PartsGroupId": 421,
+    "SortOrder": 100420,
+    "CatalogTermId": 9020
+  },
+  {
+    "PartsGroupId": 422,
+    "SortOrder": 100422,
+    "CatalogTermId": 10020
+  },
+  {
+    "PartsGroupId": 423,
+    "SortOrder": 100423,
+    "CatalogTermId": 10020
+  },
+  {
+    "PartsGroupId": 424,
+    "SortOrder": 100424,
+    "CatalogTermId": 10020
+  },
+  {
+    "PartsGroupId": 425,
+    "SortOrder": 100425,
+    "CatalogTermId": 11020
+  },
+  {
+    "PartsGroupId": 426,
+    "SortOrder": 100426,
+    "CatalogTermId": 11020
+  },
+  {
+    "PartsGroupId": 427,
+    "SortOrder": 100427,
+    "CatalogTermId": 11020
+  },
+  {
+    "PartsGroupId": 428,
+    "SortOrder": 100428,
+    "CatalogTermId": 12020
+  },
+  {
+    "PartsGroupId": 429,
+    "SortOrder": 100429,
+    "CatalogTermId": 12020
+  },
+  {
+    "PartsGroupId": 430,
+    "SortOrder": 100430,
+    "CatalogTermId": 12020
+  },
+  {
+    "PartsGroupId": 431,
+    "SortOrder": 100431,
+    "CatalogTermId": 13030
+  },
+  {
+    "PartsGroupId": 432,
+    "SortOrder": 100432,
+    "CatalogTermId": 13030
+  },
+  {
+    "PartsGroupId": 433,
+    "SortOrder": 100433,
+    "CatalogTermId": 13030
+  },
+  {
+    "PartsGroupId": 434,
+    "SortOrder": 100434,
+    "CatalogTermId": 14010
+  },
+  {
+    "PartsGroupId": 435,
+    "SortOrder": 100435,
+    "CatalogTermId": 14010
+  },
+  {
+    "PartsGroupId": 436,
+    "SortOrder": 100436,
+    "CatalogTermId": 14010
+  },
+  {
+    "PartsGroupId": 437,
+    "SortOrder": 100437,
+    "CatalogTermId": 15020
+  },
+  {
+    "PartsGroupId": 438,
+    "SortOrder": 100438,
+    "CatalogTermId": 15020
+  },
+  {
+    "PartsGroupId": 439,
+    "SortOrder": 100439,
+    "CatalogTermId": 15020
+  },
+  {
+    "PartsGroupId": 440,
+    "SortOrder": 100440,
+    "CatalogTermId": 16011
+  },
+  {
+    "PartsGroupId": 441,
+    "SortOrder": 100441,
+    "CatalogTermId": 16011
+  },
+  {
+    "PartsGroupId": 442,
+    "SortOrder": 100442,
+    "CatalogTermId": 16011
+  },
+  {
+    "PartsGroupId": 443,
+    "SortOrder": 100443,
+    "CatalogTermId": 17020
+  },
+  {
+    "PartsGroupId": 444,
+    "SortOrder": 100444,
+    "CatalogTermId": 17020
+  },
+  {
+    "PartsGroupId": 445,
+    "SortOrder": 100445,
+    "CatalogTermId": 17020
+  },
+  {
+    "PartsGroupId": 446,
+    "SortOrder": 100446,
+    "CatalogTermId": 18020
+  },
+  {
+    "PartsGroupId": 447,
+    "SortOrder": 100447,
+    "CatalogTermId": 18020
+  },
+  {
+    "PartsGroupId": 448,
+    "SortOrder": 100448,
+    "CatalogTermId": 18020
+  },
+  {
+    "PartsGroupId": 449,
+    "SortOrder": 100449,
+    "CatalogTermId": 20010
+  },
+  {
+    "PartsGroupId": 450,
+    "SortOrder": 100450,
+    "CatalogTermId": 20010
+  },
+  {
+    "PartsGroupId": 451,
+    "SortOrder": 100451,
+    "CatalogTermId": 20010
+  },
+  {
+    "PartsGroupId": 452,
+    "SortOrder": 100452,
+    "CatalogTermId": 21020
+  },
+  {
+    "PartsGroupId": 453,
+    "SortOrder": 100453,
+    "CatalogTermId": 21020
+  },
+  {
+    "PartsGroupId": 454,
+    "SortOrder": 100454,
+    "CatalogTermId": 21020
+  },
+  {
+    "PartsGroupId": 455,
+    "SortOrder": 100455,
+    "CatalogTermId": 23021
+  },
+  {
+    "PartsGroupId": 456,
+    "SortOrder": 100456,
+    "CatalogTermId": 23021
+  },
+  {
+    "PartsGroupId": 457,
+    "SortOrder": 100457,
+    "CatalogTermId": 23021
+  },
+  {
+    "PartsGroupId": 458,
+    "SortOrder": 100458,
+    "CatalogTermId": 24020
+  },
+  {
+    "PartsGroupId": 459,
+    "SortOrder": 100459,
+    "CatalogTermId": 24020
+  },
+  {
+    "PartsGroupId": 460,
+    "SortOrder": 100460,
+    "CatalogTermId": 24020
+  },
+  {
+    "PartsGroupId": 461,
+    "SortOrder": 100461,
+    "CatalogTermId": 26020
+  },
+  {
+    "PartsGroupId": 462,
+    "SortOrder": 100462,
+    "CatalogTermId": 26020
+  },
+  {
+    "PartsGroupId": 463,
+    "SortOrder": 100463,
+    "CatalogTermId": 26020
+  },
+  {
+    "PartsGroupId": 464,
+    "SortOrder": 100464,
+    "CatalogTermId": 28010
+  },
+  {
+    "PartsGroupId": 465,
+    "SortOrder": 100465,
+    "CatalogTermId": 28010
+  },
+  {
+    "PartsGroupId": 466,
+    "SortOrder": 100466,
+    "CatalogTermId": 28010
+  },
+  {
+    "PartsGroupId": 467,
+    "SortOrder": 100467,
+    "CatalogTermId": 29022
+  },
+  {
+    "PartsGroupId": 468,
+    "SortOrder": 100468,
+    "CatalogTermId": 29022
+  },
+  {
+    "PartsGroupId": 469,
+    "SortOrder": 100469,
+    "CatalogTermId": 29022
+  },
+  {
+    "PartsGroupId": 470,
+    "SortOrder": 100470,
+    "CatalogTermId": 30021
+  },
+  {
+    "PartsGroupId": 471,
+    "SortOrder": 100471,
+    "CatalogTermId": 30021
+  },
+  {
+    "PartsGroupId": 472,
+    "SortOrder": 100472,
+    "CatalogTermId": 30021
+  },
+  {
+    "PartsGroupId": 473,
+    "SortOrder": 100473,
+    "CatalogTermId": 31010
+  },
+  {
+    "PartsGroupId": 474,
+    "SortOrder": 100474,
+    "CatalogTermId": 31010
+  },
+  {
+    "PartsGroupId": 475,
+    "SortOrder": 100475,
+    "CatalogTermId": 31010
+  },
+  {
+    "PartsGroupId": 476,
+    "SortOrder": 100476,
+    "CatalogTermId": 32010
+  },
+  {
+    "PartsGroupId": 477,
+    "SortOrder": 100477,
+    "CatalogTermId": 32010
+  },
+  {
+    "PartsGroupId": 478,
+    "SortOrder": 100478,
+    "CatalogTermId": 32010
+  },
+  {
+    "PartsGroupId": 479,
+    "SortOrder": 100479,
+    "CatalogTermId": 34011
+  },
+  {
+    "PartsGroupId": 480,
+    "SortOrder": 100480,
+    "CatalogTermId": 34011
+  },
+  {
+    "PartsGroupId": 481,
+    "SortOrder": 100481,
+    "CatalogTermId": 34011
+  },
+  {
+    "PartsGroupId": 482,
+    "SortOrder": 100482,
+    "CatalogTermId": 35020
+  },
+  {
+    "PartsGroupId": 483,
+    "SortOrder": 100483,
+    "CatalogTermId": 35020
+  },
+  {
+    "PartsGroupId": 484,
+    "SortOrder": 100484,
+    "CatalogTermId": 35020
+  },
+  {
+    "PartsGroupId": 485,
+    "SortOrder": 100491,
+    "CatalogTermId": 37010
+  },
+  {
+    "PartsGroupId": 486,
+    "SortOrder": 100492,
+    "CatalogTermId": 37010
+  },
+  {
+    "PartsGroupId": 487,
+    "SortOrder": 100493,
+    "CatalogTermId": 37010
+  },
+  {
+    "PartsGroupId": 488,
+    "SortOrder": 100488,
+    "CatalogTermId": 36012
+  },
+  {
+    "PartsGroupId": 489,
+    "SortOrder": 100489,
+    "CatalogTermId": 36012
+  },
+  {
+    "PartsGroupId": 490,
+    "SortOrder": 100490,
+    "CatalogTermId": 36012
+  }
+]

@@ -1,0 +1,1682 @@
+[
+  {
+    "CostumeId": 10100,
+    "CostumeAwakenEffectGroupId": 10100,
+    "CostumeAwakenStepMaterialGroupId": 10000,
+    "CostumeAwakenPriceGroupId": 20
+  },
+  {
+    "CostumeId": 10101,
+    "CostumeAwakenEffectGroupId": 10101,
+    "CostumeAwakenStepMaterialGroupId": 10000,
+    "CostumeAwakenPriceGroupId": 20
+  },
+  {
+    "CostumeId": 10102,
+    "CostumeAwakenEffectGroupId": 10102,
+    "CostumeAwakenStepMaterialGroupId": 10000,
+    "CostumeAwakenPriceGroupId": 20
+  },
+  {
+    "CostumeId": 10103,
+    "CostumeAwakenEffectGroupId": 10103,
+    "CostumeAwakenStepMaterialGroupId": 10000,
+    "CostumeAwakenPriceGroupId": 20
+  },
+  {
+    "CostumeId": 10104,
+    "CostumeAwakenEffectGroupId": 10104,
+    "CostumeAwakenStepMaterialGroupId": 10000,
+    "CostumeAwakenPriceGroupId": 20
+  },
+  {
+    "CostumeId": 10105,
+    "CostumeAwakenEffectGroupId": 10105,
+    "CostumeAwakenStepMaterialGroupId": 10000,
+    "CostumeAwakenPriceGroupId": 20
+  },
+  {
+    "CostumeId": 10106,
+    "CostumeAwakenEffectGroupId": 10106,
+    "CostumeAwakenStepMaterialGroupId": 10000,
+    "CostumeAwakenPriceGroupId": 20
+  },
+  {
+    "CostumeId": 10107,
+    "CostumeAwakenEffectGroupId": 10107,
+    "CostumeAwakenStepMaterialGroupId": 10000,
+    "CostumeAwakenPriceGroupId": 20
+  },
+  {
+    "CostumeId": 10108,
+    "CostumeAwakenEffectGroupId": 10108,
+    "CostumeAwakenStepMaterialGroupId": 10000,
+    "CostumeAwakenPriceGroupId": 20
+  },
+  {
+    "CostumeId": 10109,
+    "CostumeAwakenEffectGroupId": 10109,
+    "CostumeAwakenStepMaterialGroupId": 10000,
+    "CostumeAwakenPriceGroupId": 20
+  },
+  {
+    "CostumeId": 10110,
+    "CostumeAwakenEffectGroupId": 10110,
+    "CostumeAwakenStepMaterialGroupId": 10000,
+    "CostumeAwakenPriceGroupId": 20
+  },
+  {
+    "CostumeId": 10111,
+    "CostumeAwakenEffectGroupId": 10111,
+    "CostumeAwakenStepMaterialGroupId": 10000,
+    "CostumeAwakenPriceGroupId": 20
+  },
+  {
+    "CostumeId": 10112,
+    "CostumeAwakenEffectGroupId": 10112,
+    "CostumeAwakenStepMaterialGroupId": 10000,
+    "CostumeAwakenPriceGroupId": 20
+  },
+  {
+    "CostumeId": 10113,
+    "CostumeAwakenEffectGroupId": 10113,
+    "CostumeAwakenStepMaterialGroupId": 10000,
+    "CostumeAwakenPriceGroupId": 20
+  },
+  {
+    "CostumeId": 10114,
+    "CostumeAwakenEffectGroupId": 10114,
+    "CostumeAwakenStepMaterialGroupId": 10000,
+    "CostumeAwakenPriceGroupId": 20
+  },
+  {
+    "CostumeId": 10115,
+    "CostumeAwakenEffectGroupId": 10115,
+    "CostumeAwakenStepMaterialGroupId": 10000,
+    "CostumeAwakenPriceGroupId": 20
+  },
+  {
+    "CostumeId": 10116,
+    "CostumeAwakenEffectGroupId": 10116,
+    "CostumeAwakenStepMaterialGroupId": 10000,
+    "CostumeAwakenPriceGroupId": 20
+  },
+  {
+    "CostumeId": 10117,
+    "CostumeAwakenEffectGroupId": 10117,
+    "CostumeAwakenStepMaterialGroupId": 10000,
+    "CostumeAwakenPriceGroupId": 20
+  },
+  {
+    "CostumeId": 10118,
+    "CostumeAwakenEffectGroupId": 10118,
+    "CostumeAwakenStepMaterialGroupId": 10000,
+    "CostumeAwakenPriceGroupId": 20
+  },
+  {
+    "CostumeId": 10119,
+    "CostumeAwakenEffectGroupId": 10119,
+    "CostumeAwakenStepMaterialGroupId": 10000,
+    "CostumeAwakenPriceGroupId": 20
+  },
+  {
+    "CostumeId": 10120,
+    "CostumeAwakenEffectGroupId": 10120,
+    "CostumeAwakenStepMaterialGroupId": 10000,
+    "CostumeAwakenPriceGroupId": 20
+  },
+  {
+    "CostumeId": 10121,
+    "CostumeAwakenEffectGroupId": 10121,
+    "CostumeAwakenStepMaterialGroupId": 10000,
+    "CostumeAwakenPriceGroupId": 20
+  },
+  {
+    "CostumeId": 21000,
+    "CostumeAwakenEffectGroupId": 21000,
+    "CostumeAwakenStepMaterialGroupId": 21000,
+    "CostumeAwakenPriceGroupId": 30
+  },
+  {
+    "CostumeId": 21001,
+    "CostumeAwakenEffectGroupId": 21001,
+    "CostumeAwakenStepMaterialGroupId": 21001,
+    "CostumeAwakenPriceGroupId": 30
+  },
+  {
+    "CostumeId": 21002,
+    "CostumeAwakenEffectGroupId": 21002,
+    "CostumeAwakenStepMaterialGroupId": 21002,
+    "CostumeAwakenPriceGroupId": 30
+  },
+  {
+    "CostumeId": 21003,
+    "CostumeAwakenEffectGroupId": 21003,
+    "CostumeAwakenStepMaterialGroupId": 21003,
+    "CostumeAwakenPriceGroupId": 30
+  },
+  {
+    "CostumeId": 21004,
+    "CostumeAwakenEffectGroupId": 21004,
+    "CostumeAwakenStepMaterialGroupId": 21004,
+    "CostumeAwakenPriceGroupId": 30
+  },
+  {
+    "CostumeId": 21005,
+    "CostumeAwakenEffectGroupId": 21005,
+    "CostumeAwakenStepMaterialGroupId": 21005,
+    "CostumeAwakenPriceGroupId": 30
+  },
+  {
+    "CostumeId": 22000,
+    "CostumeAwakenEffectGroupId": 22000,
+    "CostumeAwakenStepMaterialGroupId": 22000,
+    "CostumeAwakenPriceGroupId": 30
+  },
+  {
+    "CostumeId": 22001,
+    "CostumeAwakenEffectGroupId": 22001,
+    "CostumeAwakenStepMaterialGroupId": 22001,
+    "CostumeAwakenPriceGroupId": 30
+  },
+  {
+    "CostumeId": 22002,
+    "CostumeAwakenEffectGroupId": 22002,
+    "CostumeAwakenStepMaterialGroupId": 22002,
+    "CostumeAwakenPriceGroupId": 30
+  },
+  {
+    "CostumeId": 22003,
+    "CostumeAwakenEffectGroupId": 22003,
+    "CostumeAwakenStepMaterialGroupId": 22003,
+    "CostumeAwakenPriceGroupId": 30
+  },
+  {
+    "CostumeId": 22004,
+    "CostumeAwakenEffectGroupId": 22004,
+    "CostumeAwakenStepMaterialGroupId": 22004,
+    "CostumeAwakenPriceGroupId": 30
+  },
+  {
+    "CostumeId": 22005,
+    "CostumeAwakenEffectGroupId": 22005,
+    "CostumeAwakenStepMaterialGroupId": 22005,
+    "CostumeAwakenPriceGroupId": 30
+  },
+  {
+    "CostumeId": 22006,
+    "CostumeAwakenEffectGroupId": 22006,
+    "CostumeAwakenStepMaterialGroupId": 22006,
+    "CostumeAwakenPriceGroupId": 30
+  },
+  {
+    "CostumeId": 22007,
+    "CostumeAwakenEffectGroupId": 22007,
+    "CostumeAwakenStepMaterialGroupId": 22007,
+    "CostumeAwakenPriceGroupId": 30
+  },
+  {
+    "CostumeId": 22008,
+    "CostumeAwakenEffectGroupId": 22008,
+    "CostumeAwakenStepMaterialGroupId": 22008,
+    "CostumeAwakenPriceGroupId": 30
+  },
+  {
+    "CostumeId": 22009,
+    "CostumeAwakenEffectGroupId": 22009,
+    "CostumeAwakenStepMaterialGroupId": 22009,
+    "CostumeAwakenPriceGroupId": 30
+  },
+  {
+    "CostumeId": 22010,
+    "CostumeAwakenEffectGroupId": 22010,
+    "CostumeAwakenStepMaterialGroupId": 22010,
+    "CostumeAwakenPriceGroupId": 30
+  },
+  {
+    "CostumeId": 23000,
+    "CostumeAwakenEffectGroupId": 23000,
+    "CostumeAwakenStepMaterialGroupId": 23000,
+    "CostumeAwakenPriceGroupId": 30
+  },
+  {
+    "CostumeId": 23001,
+    "CostumeAwakenEffectGroupId": 23001,
+    "CostumeAwakenStepMaterialGroupId": 23001,
+    "CostumeAwakenPriceGroupId": 30
+  },
+  {
+    "CostumeId": 23004,
+    "CostumeAwakenEffectGroupId": 23004,
+    "CostumeAwakenStepMaterialGroupId": 23004,
+    "CostumeAwakenPriceGroupId": 30
+  },
+  {
+    "CostumeId": 23005,
+    "CostumeAwakenEffectGroupId": 23005,
+    "CostumeAwakenStepMaterialGroupId": 23005,
+    "CostumeAwakenPriceGroupId": 30
+  },
+  {
+    "CostumeId": 23006,
+    "CostumeAwakenEffectGroupId": 23006,
+    "CostumeAwakenStepMaterialGroupId": 23006,
+    "CostumeAwakenPriceGroupId": 30
+  },
+  {
+    "CostumeId": 23007,
+    "CostumeAwakenEffectGroupId": 23007,
+    "CostumeAwakenStepMaterialGroupId": 23007,
+    "CostumeAwakenPriceGroupId": 30
+  },
+  {
+    "CostumeId": 23008,
+    "CostumeAwakenEffectGroupId": 23008,
+    "CostumeAwakenStepMaterialGroupId": 23008,
+    "CostumeAwakenPriceGroupId": 30
+  },
+  {
+    "CostumeId": 24000,
+    "CostumeAwakenEffectGroupId": 24000,
+    "CostumeAwakenStepMaterialGroupId": 24000,
+    "CostumeAwakenPriceGroupId": 30
+  },
+  {
+    "CostumeId": 24001,
+    "CostumeAwakenEffectGroupId": 24001,
+    "CostumeAwakenStepMaterialGroupId": 24001,
+    "CostumeAwakenPriceGroupId": 30
+  },
+  {
+    "CostumeId": 24002,
+    "CostumeAwakenEffectGroupId": 24002,
+    "CostumeAwakenStepMaterialGroupId": 24002,
+    "CostumeAwakenPriceGroupId": 30
+  },
+  {
+    "CostumeId": 24003,
+    "CostumeAwakenEffectGroupId": 24003,
+    "CostumeAwakenStepMaterialGroupId": 24003,
+    "CostumeAwakenPriceGroupId": 30
+  },
+  {
+    "CostumeId": 24004,
+    "CostumeAwakenEffectGroupId": 24004,
+    "CostumeAwakenStepMaterialGroupId": 24004,
+    "CostumeAwakenPriceGroupId": 30
+  },
+  {
+    "CostumeId": 24005,
+    "CostumeAwakenEffectGroupId": 24005,
+    "CostumeAwakenStepMaterialGroupId": 24005,
+    "CostumeAwakenPriceGroupId": 30
+  },
+  {
+    "CostumeId": 24006,
+    "CostumeAwakenEffectGroupId": 24006,
+    "CostumeAwakenStepMaterialGroupId": 24006,
+    "CostumeAwakenPriceGroupId": 30
+  },
+  {
+    "CostumeId": 24007,
+    "CostumeAwakenEffectGroupId": 24007,
+    "CostumeAwakenStepMaterialGroupId": 24007,
+    "CostumeAwakenPriceGroupId": 30
+  },
+  {
+    "CostumeId": 24008,
+    "CostumeAwakenEffectGroupId": 24008,
+    "CostumeAwakenStepMaterialGroupId": 24008,
+    "CostumeAwakenPriceGroupId": 30
+  },
+  {
+    "CostumeId": 24009,
+    "CostumeAwakenEffectGroupId": 24009,
+    "CostumeAwakenStepMaterialGroupId": 24009,
+    "CostumeAwakenPriceGroupId": 30
+  },
+  {
+    "CostumeId": 25000,
+    "CostumeAwakenEffectGroupId": 25000,
+    "CostumeAwakenStepMaterialGroupId": 25000,
+    "CostumeAwakenPriceGroupId": 30
+  },
+  {
+    "CostumeId": 25001,
+    "CostumeAwakenEffectGroupId": 25001,
+    "CostumeAwakenStepMaterialGroupId": 25001,
+    "CostumeAwakenPriceGroupId": 30
+  },
+  {
+    "CostumeId": 25002,
+    "CostumeAwakenEffectGroupId": 25002,
+    "CostumeAwakenStepMaterialGroupId": 25002,
+    "CostumeAwakenPriceGroupId": 30
+  },
+  {
+    "CostumeId": 25003,
+    "CostumeAwakenEffectGroupId": 25003,
+    "CostumeAwakenStepMaterialGroupId": 25003,
+    "CostumeAwakenPriceGroupId": 30
+  },
+  {
+    "CostumeId": 25005,
+    "CostumeAwakenEffectGroupId": 25005,
+    "CostumeAwakenStepMaterialGroupId": 25005,
+    "CostumeAwakenPriceGroupId": 30
+  },
+  {
+    "CostumeId": 25006,
+    "CostumeAwakenEffectGroupId": 25006,
+    "CostumeAwakenStepMaterialGroupId": 25006,
+    "CostumeAwakenPriceGroupId": 30
+  },
+  {
+    "CostumeId": 25007,
+    "CostumeAwakenEffectGroupId": 25007,
+    "CostumeAwakenStepMaterialGroupId": 25007,
+    "CostumeAwakenPriceGroupId": 30
+  },
+  {
+    "CostumeId": 25008,
+    "CostumeAwakenEffectGroupId": 25008,
+    "CostumeAwakenStepMaterialGroupId": 25008,
+    "CostumeAwakenPriceGroupId": 30
+  },
+  {
+    "CostumeId": 25009,
+    "CostumeAwakenEffectGroupId": 25009,
+    "CostumeAwakenStepMaterialGroupId": 25009,
+    "CostumeAwakenPriceGroupId": 30
+  },
+  {
+    "CostumeId": 31000,
+    "CostumeAwakenEffectGroupId": 31000,
+    "CostumeAwakenStepMaterialGroupId": 31000,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 31001,
+    "CostumeAwakenEffectGroupId": 31001,
+    "CostumeAwakenStepMaterialGroupId": 31001,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 31002,
+    "CostumeAwakenEffectGroupId": 31002,
+    "CostumeAwakenStepMaterialGroupId": 31002,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 31004,
+    "CostumeAwakenEffectGroupId": 31004,
+    "CostumeAwakenStepMaterialGroupId": 31004,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 31005,
+    "CostumeAwakenEffectGroupId": 31005,
+    "CostumeAwakenStepMaterialGroupId": 31005,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 31008,
+    "CostumeAwakenEffectGroupId": 31008,
+    "CostumeAwakenStepMaterialGroupId": 31008,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 31009,
+    "CostumeAwakenEffectGroupId": 31009,
+    "CostumeAwakenStepMaterialGroupId": 31009,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 31010,
+    "CostumeAwakenEffectGroupId": 31010,
+    "CostumeAwakenStepMaterialGroupId": 31010,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 31011,
+    "CostumeAwakenEffectGroupId": 31011,
+    "CostumeAwakenStepMaterialGroupId": 31011,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 31013,
+    "CostumeAwakenEffectGroupId": 31013,
+    "CostumeAwakenStepMaterialGroupId": 31013,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 31014,
+    "CostumeAwakenEffectGroupId": 31014,
+    "CostumeAwakenStepMaterialGroupId": 31014,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 31015,
+    "CostumeAwakenEffectGroupId": 31015,
+    "CostumeAwakenStepMaterialGroupId": 31015,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 31016,
+    "CostumeAwakenEffectGroupId": 31016,
+    "CostumeAwakenStepMaterialGroupId": 31016,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 31017,
+    "CostumeAwakenEffectGroupId": 31017,
+    "CostumeAwakenStepMaterialGroupId": 31017,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 31018,
+    "CostumeAwakenEffectGroupId": 31018,
+    "CostumeAwakenStepMaterialGroupId": 31018,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 31019,
+    "CostumeAwakenEffectGroupId": 31019,
+    "CostumeAwakenStepMaterialGroupId": 31019,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 31020,
+    "CostumeAwakenEffectGroupId": 31020,
+    "CostumeAwakenStepMaterialGroupId": 31020,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 31021,
+    "CostumeAwakenEffectGroupId": 31021,
+    "CostumeAwakenStepMaterialGroupId": 31021,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 31022,
+    "CostumeAwakenEffectGroupId": 31022,
+    "CostumeAwakenStepMaterialGroupId": 31022,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 31023,
+    "CostumeAwakenEffectGroupId": 31023,
+    "CostumeAwakenStepMaterialGroupId": 31023,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 31024,
+    "CostumeAwakenEffectGroupId": 31024,
+    "CostumeAwakenStepMaterialGroupId": 31024,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 31025,
+    "CostumeAwakenEffectGroupId": 31025,
+    "CostumeAwakenStepMaterialGroupId": 31025,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 31026,
+    "CostumeAwakenEffectGroupId": 31026,
+    "CostumeAwakenStepMaterialGroupId": 31026,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 31027,
+    "CostumeAwakenEffectGroupId": 31027,
+    "CostumeAwakenStepMaterialGroupId": 31027,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 31028,
+    "CostumeAwakenEffectGroupId": 31028,
+    "CostumeAwakenStepMaterialGroupId": 31028,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 31029,
+    "CostumeAwakenEffectGroupId": 31029,
+    "CostumeAwakenStepMaterialGroupId": 31029,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 31030,
+    "CostumeAwakenEffectGroupId": 31030,
+    "CostumeAwakenStepMaterialGroupId": 31030,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 31031,
+    "CostumeAwakenEffectGroupId": 31031,
+    "CostumeAwakenStepMaterialGroupId": 31031,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 31032,
+    "CostumeAwakenEffectGroupId": 31032,
+    "CostumeAwakenStepMaterialGroupId": 31032,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 31033,
+    "CostumeAwakenEffectGroupId": 31033,
+    "CostumeAwakenStepMaterialGroupId": 31033,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 31034,
+    "CostumeAwakenEffectGroupId": 31034,
+    "CostumeAwakenStepMaterialGroupId": 31034,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 32000,
+    "CostumeAwakenEffectGroupId": 32000,
+    "CostumeAwakenStepMaterialGroupId": 32000,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 32001,
+    "CostumeAwakenEffectGroupId": 32001,
+    "CostumeAwakenStepMaterialGroupId": 32001,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 32002,
+    "CostumeAwakenEffectGroupId": 32002,
+    "CostumeAwakenStepMaterialGroupId": 32002,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 32003,
+    "CostumeAwakenEffectGroupId": 32003,
+    "CostumeAwakenStepMaterialGroupId": 32003,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 32004,
+    "CostumeAwakenEffectGroupId": 32004,
+    "CostumeAwakenStepMaterialGroupId": 32004,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 32005,
+    "CostumeAwakenEffectGroupId": 32005,
+    "CostumeAwakenStepMaterialGroupId": 32005,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 32006,
+    "CostumeAwakenEffectGroupId": 32006,
+    "CostumeAwakenStepMaterialGroupId": 32006,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 32007,
+    "CostumeAwakenEffectGroupId": 32007,
+    "CostumeAwakenStepMaterialGroupId": 32007,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 32008,
+    "CostumeAwakenEffectGroupId": 32008,
+    "CostumeAwakenStepMaterialGroupId": 32008,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 32009,
+    "CostumeAwakenEffectGroupId": 32009,
+    "CostumeAwakenStepMaterialGroupId": 32009,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 32011,
+    "CostumeAwakenEffectGroupId": 32011,
+    "CostumeAwakenStepMaterialGroupId": 32011,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 32012,
+    "CostumeAwakenEffectGroupId": 32012,
+    "CostumeAwakenStepMaterialGroupId": 32012,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 32013,
+    "CostumeAwakenEffectGroupId": 32013,
+    "CostumeAwakenStepMaterialGroupId": 32013,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 32014,
+    "CostumeAwakenEffectGroupId": 32014,
+    "CostumeAwakenStepMaterialGroupId": 32014,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 32015,
+    "CostumeAwakenEffectGroupId": 32015,
+    "CostumeAwakenStepMaterialGroupId": 32015,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 32016,
+    "CostumeAwakenEffectGroupId": 32016,
+    "CostumeAwakenStepMaterialGroupId": 32016,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 32017,
+    "CostumeAwakenEffectGroupId": 32017,
+    "CostumeAwakenStepMaterialGroupId": 32017,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 32018,
+    "CostumeAwakenEffectGroupId": 32018,
+    "CostumeAwakenStepMaterialGroupId": 32018,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 32019,
+    "CostumeAwakenEffectGroupId": 32019,
+    "CostumeAwakenStepMaterialGroupId": 32019,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 32020,
+    "CostumeAwakenEffectGroupId": 32020,
+    "CostumeAwakenStepMaterialGroupId": 32020,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 32021,
+    "CostumeAwakenEffectGroupId": 32021,
+    "CostumeAwakenStepMaterialGroupId": 32021,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 32022,
+    "CostumeAwakenEffectGroupId": 32022,
+    "CostumeAwakenStepMaterialGroupId": 32022,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 32023,
+    "CostumeAwakenEffectGroupId": 32023,
+    "CostumeAwakenStepMaterialGroupId": 32023,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 32024,
+    "CostumeAwakenEffectGroupId": 32024,
+    "CostumeAwakenStepMaterialGroupId": 32024,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 32025,
+    "CostumeAwakenEffectGroupId": 32025,
+    "CostumeAwakenStepMaterialGroupId": 32025,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 32026,
+    "CostumeAwakenEffectGroupId": 32026,
+    "CostumeAwakenStepMaterialGroupId": 32026,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 32027,
+    "CostumeAwakenEffectGroupId": 32027,
+    "CostumeAwakenStepMaterialGroupId": 32027,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 32028,
+    "CostumeAwakenEffectGroupId": 32028,
+    "CostumeAwakenStepMaterialGroupId": 32028,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 32029,
+    "CostumeAwakenEffectGroupId": 32029,
+    "CostumeAwakenStepMaterialGroupId": 32029,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 32030,
+    "CostumeAwakenEffectGroupId": 32030,
+    "CostumeAwakenStepMaterialGroupId": 32030,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 32031,
+    "CostumeAwakenEffectGroupId": 32031,
+    "CostumeAwakenStepMaterialGroupId": 32031,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 32032,
+    "CostumeAwakenEffectGroupId": 32032,
+    "CostumeAwakenStepMaterialGroupId": 32032,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 32033,
+    "CostumeAwakenEffectGroupId": 32033,
+    "CostumeAwakenStepMaterialGroupId": 32033,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 32034,
+    "CostumeAwakenEffectGroupId": 32034,
+    "CostumeAwakenStepMaterialGroupId": 32034,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 32035,
+    "CostumeAwakenEffectGroupId": 32035,
+    "CostumeAwakenStepMaterialGroupId": 32035,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 32036,
+    "CostumeAwakenEffectGroupId": 32036,
+    "CostumeAwakenStepMaterialGroupId": 32036,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 33000,
+    "CostumeAwakenEffectGroupId": 33000,
+    "CostumeAwakenStepMaterialGroupId": 33000,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 33001,
+    "CostumeAwakenEffectGroupId": 33001,
+    "CostumeAwakenStepMaterialGroupId": 33001,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 33002,
+    "CostumeAwakenEffectGroupId": 33002,
+    "CostumeAwakenStepMaterialGroupId": 33002,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 33003,
+    "CostumeAwakenEffectGroupId": 33003,
+    "CostumeAwakenStepMaterialGroupId": 33003,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 33005,
+    "CostumeAwakenEffectGroupId": 33005,
+    "CostumeAwakenStepMaterialGroupId": 33005,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 33006,
+    "CostumeAwakenEffectGroupId": 33006,
+    "CostumeAwakenStepMaterialGroupId": 33006,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 33007,
+    "CostumeAwakenEffectGroupId": 33007,
+    "CostumeAwakenStepMaterialGroupId": 33007,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 33009,
+    "CostumeAwakenEffectGroupId": 33009,
+    "CostumeAwakenStepMaterialGroupId": 33009,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 33010,
+    "CostumeAwakenEffectGroupId": 33010,
+    "CostumeAwakenStepMaterialGroupId": 33010,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 33011,
+    "CostumeAwakenEffectGroupId": 33011,
+    "CostumeAwakenStepMaterialGroupId": 33011,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 33012,
+    "CostumeAwakenEffectGroupId": 33012,
+    "CostumeAwakenStepMaterialGroupId": 33012,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 33013,
+    "CostumeAwakenEffectGroupId": 33013,
+    "CostumeAwakenStepMaterialGroupId": 33013,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 33014,
+    "CostumeAwakenEffectGroupId": 33014,
+    "CostumeAwakenStepMaterialGroupId": 33014,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 33015,
+    "CostumeAwakenEffectGroupId": 33015,
+    "CostumeAwakenStepMaterialGroupId": 33015,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 33016,
+    "CostumeAwakenEffectGroupId": 33016,
+    "CostumeAwakenStepMaterialGroupId": 33016,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 33017,
+    "CostumeAwakenEffectGroupId": 33017,
+    "CostumeAwakenStepMaterialGroupId": 33017,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 33018,
+    "CostumeAwakenEffectGroupId": 33018,
+    "CostumeAwakenStepMaterialGroupId": 33018,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 33019,
+    "CostumeAwakenEffectGroupId": 33019,
+    "CostumeAwakenStepMaterialGroupId": 33019,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 33020,
+    "CostumeAwakenEffectGroupId": 33020,
+    "CostumeAwakenStepMaterialGroupId": 33020,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 33021,
+    "CostumeAwakenEffectGroupId": 33021,
+    "CostumeAwakenStepMaterialGroupId": 33021,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 33022,
+    "CostumeAwakenEffectGroupId": 33022,
+    "CostumeAwakenStepMaterialGroupId": 33022,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 33023,
+    "CostumeAwakenEffectGroupId": 33023,
+    "CostumeAwakenStepMaterialGroupId": 33023,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 33024,
+    "CostumeAwakenEffectGroupId": 33024,
+    "CostumeAwakenStepMaterialGroupId": 33024,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 33025,
+    "CostumeAwakenEffectGroupId": 33025,
+    "CostumeAwakenStepMaterialGroupId": 33025,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 33026,
+    "CostumeAwakenEffectGroupId": 33026,
+    "CostumeAwakenStepMaterialGroupId": 33026,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 33027,
+    "CostumeAwakenEffectGroupId": 33027,
+    "CostumeAwakenStepMaterialGroupId": 33027,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 33028,
+    "CostumeAwakenEffectGroupId": 33028,
+    "CostumeAwakenStepMaterialGroupId": 33028,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 33029,
+    "CostumeAwakenEffectGroupId": 33029,
+    "CostumeAwakenStepMaterialGroupId": 33029,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 33030,
+    "CostumeAwakenEffectGroupId": 33030,
+    "CostumeAwakenStepMaterialGroupId": 33030,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 33031,
+    "CostumeAwakenEffectGroupId": 33031,
+    "CostumeAwakenStepMaterialGroupId": 33031,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 33032,
+    "CostumeAwakenEffectGroupId": 33032,
+    "CostumeAwakenStepMaterialGroupId": 33032,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 33033,
+    "CostumeAwakenEffectGroupId": 33033,
+    "CostumeAwakenStepMaterialGroupId": 33033,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 34000,
+    "CostumeAwakenEffectGroupId": 34000,
+    "CostumeAwakenStepMaterialGroupId": 34000,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 34001,
+    "CostumeAwakenEffectGroupId": 34001,
+    "CostumeAwakenStepMaterialGroupId": 34001,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 34002,
+    "CostumeAwakenEffectGroupId": 34002,
+    "CostumeAwakenStepMaterialGroupId": 34002,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 34003,
+    "CostumeAwakenEffectGroupId": 34003,
+    "CostumeAwakenStepMaterialGroupId": 34003,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 34004,
+    "CostumeAwakenEffectGroupId": 34004,
+    "CostumeAwakenStepMaterialGroupId": 34004,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 34005,
+    "CostumeAwakenEffectGroupId": 34005,
+    "CostumeAwakenStepMaterialGroupId": 34005,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 34009,
+    "CostumeAwakenEffectGroupId": 34009,
+    "CostumeAwakenStepMaterialGroupId": 34009,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 34010,
+    "CostumeAwakenEffectGroupId": 34010,
+    "CostumeAwakenStepMaterialGroupId": 34010,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 34011,
+    "CostumeAwakenEffectGroupId": 34011,
+    "CostumeAwakenStepMaterialGroupId": 34011,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 34012,
+    "CostumeAwakenEffectGroupId": 34012,
+    "CostumeAwakenStepMaterialGroupId": 34012,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 34013,
+    "CostumeAwakenEffectGroupId": 34013,
+    "CostumeAwakenStepMaterialGroupId": 34013,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 34014,
+    "CostumeAwakenEffectGroupId": 34014,
+    "CostumeAwakenStepMaterialGroupId": 34014,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 34015,
+    "CostumeAwakenEffectGroupId": 34015,
+    "CostumeAwakenStepMaterialGroupId": 34015,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 34016,
+    "CostumeAwakenEffectGroupId": 34016,
+    "CostumeAwakenStepMaterialGroupId": 34016,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 34017,
+    "CostumeAwakenEffectGroupId": 34017,
+    "CostumeAwakenStepMaterialGroupId": 34017,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 34018,
+    "CostumeAwakenEffectGroupId": 34018,
+    "CostumeAwakenStepMaterialGroupId": 34018,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 34019,
+    "CostumeAwakenEffectGroupId": 34019,
+    "CostumeAwakenStepMaterialGroupId": 34019,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 34020,
+    "CostumeAwakenEffectGroupId": 34020,
+    "CostumeAwakenStepMaterialGroupId": 34020,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 34021,
+    "CostumeAwakenEffectGroupId": 34021,
+    "CostumeAwakenStepMaterialGroupId": 34021,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 34022,
+    "CostumeAwakenEffectGroupId": 34022,
+    "CostumeAwakenStepMaterialGroupId": 34022,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 34023,
+    "CostumeAwakenEffectGroupId": 34023,
+    "CostumeAwakenStepMaterialGroupId": 34023,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 34024,
+    "CostumeAwakenEffectGroupId": 34024,
+    "CostumeAwakenStepMaterialGroupId": 34024,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 34025,
+    "CostumeAwakenEffectGroupId": 34025,
+    "CostumeAwakenStepMaterialGroupId": 34025,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 34026,
+    "CostumeAwakenEffectGroupId": 34026,
+    "CostumeAwakenStepMaterialGroupId": 34026,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 34027,
+    "CostumeAwakenEffectGroupId": 34027,
+    "CostumeAwakenStepMaterialGroupId": 34027,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 34028,
+    "CostumeAwakenEffectGroupId": 34028,
+    "CostumeAwakenStepMaterialGroupId": 34028,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 34029,
+    "CostumeAwakenEffectGroupId": 34029,
+    "CostumeAwakenStepMaterialGroupId": 34029,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 34030,
+    "CostumeAwakenEffectGroupId": 34030,
+    "CostumeAwakenStepMaterialGroupId": 34030,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 34031,
+    "CostumeAwakenEffectGroupId": 34031,
+    "CostumeAwakenStepMaterialGroupId": 34031,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 34032,
+    "CostumeAwakenEffectGroupId": 34032,
+    "CostumeAwakenStepMaterialGroupId": 34032,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 34033,
+    "CostumeAwakenEffectGroupId": 34033,
+    "CostumeAwakenStepMaterialGroupId": 34033,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 34034,
+    "CostumeAwakenEffectGroupId": 34034,
+    "CostumeAwakenStepMaterialGroupId": 34034,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 34035,
+    "CostumeAwakenEffectGroupId": 34035,
+    "CostumeAwakenStepMaterialGroupId": 34035,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 34036,
+    "CostumeAwakenEffectGroupId": 34036,
+    "CostumeAwakenStepMaterialGroupId": 34036,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 34037,
+    "CostumeAwakenEffectGroupId": 34037,
+    "CostumeAwakenStepMaterialGroupId": 34037,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 34038,
+    "CostumeAwakenEffectGroupId": 34038,
+    "CostumeAwakenStepMaterialGroupId": 34038,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 34039,
+    "CostumeAwakenEffectGroupId": 34039,
+    "CostumeAwakenStepMaterialGroupId": 34039,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 34040,
+    "CostumeAwakenEffectGroupId": 34040,
+    "CostumeAwakenStepMaterialGroupId": 34040,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 34041,
+    "CostumeAwakenEffectGroupId": 34041,
+    "CostumeAwakenStepMaterialGroupId": 34041,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 34042,
+    "CostumeAwakenEffectGroupId": 34042,
+    "CostumeAwakenStepMaterialGroupId": 34042,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 34043,
+    "CostumeAwakenEffectGroupId": 34043,
+    "CostumeAwakenStepMaterialGroupId": 34043,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 34044,
+    "CostumeAwakenEffectGroupId": 34044,
+    "CostumeAwakenStepMaterialGroupId": 34044,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 34045,
+    "CostumeAwakenEffectGroupId": 34045,
+    "CostumeAwakenStepMaterialGroupId": 34045,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 34046,
+    "CostumeAwakenEffectGroupId": 34046,
+    "CostumeAwakenStepMaterialGroupId": 34046,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 34047,
+    "CostumeAwakenEffectGroupId": 34047,
+    "CostumeAwakenStepMaterialGroupId": 34047,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 34048,
+    "CostumeAwakenEffectGroupId": 34048,
+    "CostumeAwakenStepMaterialGroupId": 34048,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 35000,
+    "CostumeAwakenEffectGroupId": 35000,
+    "CostumeAwakenStepMaterialGroupId": 35000,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 35001,
+    "CostumeAwakenEffectGroupId": 35001,
+    "CostumeAwakenStepMaterialGroupId": 35001,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 35002,
+    "CostumeAwakenEffectGroupId": 35002,
+    "CostumeAwakenStepMaterialGroupId": 35002,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 35003,
+    "CostumeAwakenEffectGroupId": 35003,
+    "CostumeAwakenStepMaterialGroupId": 35003,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 35005,
+    "CostumeAwakenEffectGroupId": 35005,
+    "CostumeAwakenStepMaterialGroupId": 35005,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 35006,
+    "CostumeAwakenEffectGroupId": 35006,
+    "CostumeAwakenStepMaterialGroupId": 35006,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 35008,
+    "CostumeAwakenEffectGroupId": 35008,
+    "CostumeAwakenStepMaterialGroupId": 35008,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 35009,
+    "CostumeAwakenEffectGroupId": 35009,
+    "CostumeAwakenStepMaterialGroupId": 35009,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 35010,
+    "CostumeAwakenEffectGroupId": 35010,
+    "CostumeAwakenStepMaterialGroupId": 35010,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 35011,
+    "CostumeAwakenEffectGroupId": 35011,
+    "CostumeAwakenStepMaterialGroupId": 35011,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 35012,
+    "CostumeAwakenEffectGroupId": 35012,
+    "CostumeAwakenStepMaterialGroupId": 35012,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 35013,
+    "CostumeAwakenEffectGroupId": 35013,
+    "CostumeAwakenStepMaterialGroupId": 35013,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 35014,
+    "CostumeAwakenEffectGroupId": 35014,
+    "CostumeAwakenStepMaterialGroupId": 35014,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 35015,
+    "CostumeAwakenEffectGroupId": 35015,
+    "CostumeAwakenStepMaterialGroupId": 35015,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 35016,
+    "CostumeAwakenEffectGroupId": 35016,
+    "CostumeAwakenStepMaterialGroupId": 35016,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 35017,
+    "CostumeAwakenEffectGroupId": 35017,
+    "CostumeAwakenStepMaterialGroupId": 35017,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 35018,
+    "CostumeAwakenEffectGroupId": 35018,
+    "CostumeAwakenStepMaterialGroupId": 35018,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 35019,
+    "CostumeAwakenEffectGroupId": 35019,
+    "CostumeAwakenStepMaterialGroupId": 35019,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 35020,
+    "CostumeAwakenEffectGroupId": 35020,
+    "CostumeAwakenStepMaterialGroupId": 35020,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 35021,
+    "CostumeAwakenEffectGroupId": 35021,
+    "CostumeAwakenStepMaterialGroupId": 35021,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 35022,
+    "CostumeAwakenEffectGroupId": 35022,
+    "CostumeAwakenStepMaterialGroupId": 35022,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 35023,
+    "CostumeAwakenEffectGroupId": 35023,
+    "CostumeAwakenStepMaterialGroupId": 35023,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 35024,
+    "CostumeAwakenEffectGroupId": 35024,
+    "CostumeAwakenStepMaterialGroupId": 35024,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 35025,
+    "CostumeAwakenEffectGroupId": 35025,
+    "CostumeAwakenStepMaterialGroupId": 35025,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 35026,
+    "CostumeAwakenEffectGroupId": 35026,
+    "CostumeAwakenStepMaterialGroupId": 35026,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 35027,
+    "CostumeAwakenEffectGroupId": 35027,
+    "CostumeAwakenStepMaterialGroupId": 35027,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 35028,
+    "CostumeAwakenEffectGroupId": 35028,
+    "CostumeAwakenStepMaterialGroupId": 35028,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 35029,
+    "CostumeAwakenEffectGroupId": 35029,
+    "CostumeAwakenStepMaterialGroupId": 35029,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 35030,
+    "CostumeAwakenEffectGroupId": 35030,
+    "CostumeAwakenStepMaterialGroupId": 35030,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 35031,
+    "CostumeAwakenEffectGroupId": 35031,
+    "CostumeAwakenStepMaterialGroupId": 35031,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 35032,
+    "CostumeAwakenEffectGroupId": 35032,
+    "CostumeAwakenStepMaterialGroupId": 35032,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 35033,
+    "CostumeAwakenEffectGroupId": 35033,
+    "CostumeAwakenStepMaterialGroupId": 35033,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 35034,
+    "CostumeAwakenEffectGroupId": 35034,
+    "CostumeAwakenStepMaterialGroupId": 35034,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 35035,
+    "CostumeAwakenEffectGroupId": 35035,
+    "CostumeAwakenStepMaterialGroupId": 35035,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 35036,
+    "CostumeAwakenEffectGroupId": 35036,
+    "CostumeAwakenStepMaterialGroupId": 35036,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 35037,
+    "CostumeAwakenEffectGroupId": 35037,
+    "CostumeAwakenStepMaterialGroupId": 35037,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 35038,
+    "CostumeAwakenEffectGroupId": 35038,
+    "CostumeAwakenStepMaterialGroupId": 35038,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 41000,
+    "CostumeAwakenEffectGroupId": 41000,
+    "CostumeAwakenStepMaterialGroupId": 40000,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 41001,
+    "CostumeAwakenEffectGroupId": 41001,
+    "CostumeAwakenStepMaterialGroupId": 40000,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 41002,
+    "CostumeAwakenEffectGroupId": 41002,
+    "CostumeAwakenStepMaterialGroupId": 40000,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 41003,
+    "CostumeAwakenEffectGroupId": 41003,
+    "CostumeAwakenStepMaterialGroupId": 40000,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 42000,
+    "CostumeAwakenEffectGroupId": 42000,
+    "CostumeAwakenStepMaterialGroupId": 40000,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 42001,
+    "CostumeAwakenEffectGroupId": 42001,
+    "CostumeAwakenStepMaterialGroupId": 40000,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 42002,
+    "CostumeAwakenEffectGroupId": 42002,
+    "CostumeAwakenStepMaterialGroupId": 40000,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 42003,
+    "CostumeAwakenEffectGroupId": 42003,
+    "CostumeAwakenStepMaterialGroupId": 40000,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 43000,
+    "CostumeAwakenEffectGroupId": 43000,
+    "CostumeAwakenStepMaterialGroupId": 40000,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 43001,
+    "CostumeAwakenEffectGroupId": 43001,
+    "CostumeAwakenStepMaterialGroupId": 40000,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 43002,
+    "CostumeAwakenEffectGroupId": 43002,
+    "CostumeAwakenStepMaterialGroupId": 40000,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 43003,
+    "CostumeAwakenEffectGroupId": 43003,
+    "CostumeAwakenStepMaterialGroupId": 40000,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 44000,
+    "CostumeAwakenEffectGroupId": 44000,
+    "CostumeAwakenStepMaterialGroupId": 40000,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 44001,
+    "CostumeAwakenEffectGroupId": 44001,
+    "CostumeAwakenStepMaterialGroupId": 40000,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 44002,
+    "CostumeAwakenEffectGroupId": 44002,
+    "CostumeAwakenStepMaterialGroupId": 40000,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 44003,
+    "CostumeAwakenEffectGroupId": 44003,
+    "CostumeAwakenStepMaterialGroupId": 40000,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 44004,
+    "CostumeAwakenEffectGroupId": 44004,
+    "CostumeAwakenStepMaterialGroupId": 40000,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 45000,
+    "CostumeAwakenEffectGroupId": 45000,
+    "CostumeAwakenStepMaterialGroupId": 40000,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 45001,
+    "CostumeAwakenEffectGroupId": 45001,
+    "CostumeAwakenStepMaterialGroupId": 40000,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 45002,
+    "CostumeAwakenEffectGroupId": 45002,
+    "CostumeAwakenStepMaterialGroupId": 40000,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 45003,
+    "CostumeAwakenEffectGroupId": 45003,
+    "CostumeAwakenStepMaterialGroupId": 40000,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 51001,
+    "CostumeAwakenEffectGroupId": 51001,
+    "CostumeAwakenStepMaterialGroupId": 51001,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 51002,
+    "CostumeAwakenEffectGroupId": 51002,
+    "CostumeAwakenStepMaterialGroupId": 51002,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 51003,
+    "CostumeAwakenEffectGroupId": 51003,
+    "CostumeAwakenStepMaterialGroupId": 51003,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 52001,
+    "CostumeAwakenEffectGroupId": 52001,
+    "CostumeAwakenStepMaterialGroupId": 52001,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 52002,
+    "CostumeAwakenEffectGroupId": 52002,
+    "CostumeAwakenStepMaterialGroupId": 52002,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 53001,
+    "CostumeAwakenEffectGroupId": 53001,
+    "CostumeAwakenStepMaterialGroupId": 53001,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 53002,
+    "CostumeAwakenEffectGroupId": 53002,
+    "CostumeAwakenStepMaterialGroupId": 53002,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 54001,
+    "CostumeAwakenEffectGroupId": 54001,
+    "CostumeAwakenStepMaterialGroupId": 54001,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 54002,
+    "CostumeAwakenEffectGroupId": 54002,
+    "CostumeAwakenStepMaterialGroupId": 54002,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 55001,
+    "CostumeAwakenEffectGroupId": 55001,
+    "CostumeAwakenStepMaterialGroupId": 55001,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 55002,
+    "CostumeAwakenEffectGroupId": 55002,
+    "CostumeAwakenStepMaterialGroupId": 55002,
+    "CostumeAwakenPriceGroupId": 40
+  },
+  {
+    "CostumeId": 55003,
+    "CostumeAwakenEffectGroupId": 55003,
+    "CostumeAwakenStepMaterialGroupId": 55003,
+    "CostumeAwakenPriceGroupId": 40
+  }
+]

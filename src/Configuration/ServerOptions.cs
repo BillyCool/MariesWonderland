@@ -17,5 +17,6 @@ public sealed class PathsOptions
 public sealed class DataOptions
 {
     public string LatestMasterDataVersion { get; init; } = string.Empty;
-    public string UserDataBasePath { get; init; } = string.Empty;
+    public string UserDataPath { get; init; } = string.Empty;
+    public string MasterDataPath { get; init; } = string.Empty;
 }

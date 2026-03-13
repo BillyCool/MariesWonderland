@@ -1,0 +1,50 @@
+[
+  {
+    "SkillBehaviourActionId": 1,
+    "TargetPolarityType": 2,
+    "SkillRemoveAbnormalTargetAbnormalGroupId": 0,
+    "RemoveAbnormalTargetType": 1,
+    "RemoveCountUpper": 0,
+    "RemoveKindCountUpper": 1
+  },
+  {
+    "SkillBehaviourActionId": 2,
+    "TargetPolarityType": 2,
+    "SkillRemoveAbnormalTargetAbnormalGroupId": 0,
+    "RemoveAbnormalTargetType": 1,
+    "RemoveCountUpper": 0,
+    "RemoveKindCountUpper": 2
+  },
+  {
+    "SkillBehaviourActionId": 3,
+    "TargetPolarityType": 2,
+    "SkillRemoveAbnormalTargetAbnormalGroupId": 0,
+    "RemoveAbnormalTargetType": 1,
+    "RemoveCountUpper": 0,
+    "RemoveKindCountUpper": 0
+  },
+  {
+    "SkillBehaviourActionId": 11,
+    "TargetPolarityType": 1,
+    "SkillRemoveAbnormalTargetAbnormalGroupId": 0,
+    "RemoveAbnormalTargetType": 1,
+    "RemoveCountUpper": 0,
+    "RemoveKindCountUpper": 1
+  },
+  {
+    "SkillBehaviourActionId": 13,
+    "TargetPolarityType": 1,
+    "SkillRemoveAbnormalTargetAbnormalGroupId": 0,
+    "RemoveAbnormalTargetType": 1,
+    "RemoveCountUpper": 0,
+    "RemoveKindCountUpper": 0
+  },
+  {
+    "SkillBehaviourActionId": 8000001,
+    "TargetPolarityType": 1,
+    "SkillRemoveAbnormalTargetAbnormalGroupId": 0,
+    "RemoveAbnormalTargetType": 1,
+    "RemoveCountUpper": 0,
+    "RemoveKindCountUpper": 0
+  }
+]

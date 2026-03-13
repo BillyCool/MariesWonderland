@@ -1,0 +1,1190 @@
+[
+  {
+    "CharacterBoardId": 100101,
+    "CharacterBoardGroupId": 100101,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 100102,
+    "CharacterBoardGroupId": 100101,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 100103,
+    "CharacterBoardGroupId": 100101,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 100104,
+    "CharacterBoardGroupId": 100102,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 100105,
+    "CharacterBoardGroupId": 100102,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 100106,
+    "CharacterBoardGroupId": 100102,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 100201,
+    "CharacterBoardGroupId": 100201,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 100202,
+    "CharacterBoardGroupId": 100201,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 100203,
+    "CharacterBoardGroupId": 100201,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 100204,
+    "CharacterBoardGroupId": 100202,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 100205,
+    "CharacterBoardGroupId": 100202,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 100206,
+    "CharacterBoardGroupId": 100202,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 100301,
+    "CharacterBoardGroupId": 100301,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 100302,
+    "CharacterBoardGroupId": 100301,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 100303,
+    "CharacterBoardGroupId": 100301,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 100304,
+    "CharacterBoardGroupId": 100302,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 100305,
+    "CharacterBoardGroupId": 100302,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 100306,
+    "CharacterBoardGroupId": 100302,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 100401,
+    "CharacterBoardGroupId": 100401,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 100402,
+    "CharacterBoardGroupId": 100401,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 100403,
+    "CharacterBoardGroupId": 100401,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 100404,
+    "CharacterBoardGroupId": 100402,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 100405,
+    "CharacterBoardGroupId": 100402,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 100406,
+    "CharacterBoardGroupId": 100402,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 100501,
+    "CharacterBoardGroupId": 100501,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 100502,
+    "CharacterBoardGroupId": 100501,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 100503,
+    "CharacterBoardGroupId": 100501,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 100504,
+    "CharacterBoardGroupId": 100502,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 100505,
+    "CharacterBoardGroupId": 100502,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 100506,
+    "CharacterBoardGroupId": 100502,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 100601,
+    "CharacterBoardGroupId": 100601,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 100602,
+    "CharacterBoardGroupId": 100601,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 100603,
+    "CharacterBoardGroupId": 100601,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 100604,
+    "CharacterBoardGroupId": 100602,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 100605,
+    "CharacterBoardGroupId": 100602,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 100606,
+    "CharacterBoardGroupId": 100602,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 100701,
+    "CharacterBoardGroupId": 100701,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 100702,
+    "CharacterBoardGroupId": 100701,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 100703,
+    "CharacterBoardGroupId": 100701,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 100704,
+    "CharacterBoardGroupId": 100702,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 100705,
+    "CharacterBoardGroupId": 100702,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 100706,
+    "CharacterBoardGroupId": 100702,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 100801,
+    "CharacterBoardGroupId": 100801,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 100802,
+    "CharacterBoardGroupId": 100801,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 100803,
+    "CharacterBoardGroupId": 100801,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 100804,
+    "CharacterBoardGroupId": 100802,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 100805,
+    "CharacterBoardGroupId": 100802,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 100806,
+    "CharacterBoardGroupId": 100802,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 100901,
+    "CharacterBoardGroupId": 100901,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 100902,
+    "CharacterBoardGroupId": 100901,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 100903,
+    "CharacterBoardGroupId": 100901,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 100904,
+    "CharacterBoardGroupId": 100902,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 100905,
+    "CharacterBoardGroupId": 100902,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 100906,
+    "CharacterBoardGroupId": 100902,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 101001,
+    "CharacterBoardGroupId": 101001,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 101002,
+    "CharacterBoardGroupId": 101001,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 101003,
+    "CharacterBoardGroupId": 101001,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 101004,
+    "CharacterBoardGroupId": 101002,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 101005,
+    "CharacterBoardGroupId": 101002,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 101006,
+    "CharacterBoardGroupId": 101002,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 101101,
+    "CharacterBoardGroupId": 101101,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 101102,
+    "CharacterBoardGroupId": 101101,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 101103,
+    "CharacterBoardGroupId": 101101,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 101104,
+    "CharacterBoardGroupId": 101102,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 101105,
+    "CharacterBoardGroupId": 101102,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 101106,
+    "CharacterBoardGroupId": 101102,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 101201,
+    "CharacterBoardGroupId": 101201,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 101202,
+    "CharacterBoardGroupId": 101201,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 101203,
+    "CharacterBoardGroupId": 101201,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 101204,
+    "CharacterBoardGroupId": 101202,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 101205,
+    "CharacterBoardGroupId": 101202,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 101206,
+    "CharacterBoardGroupId": 101202,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 101301,
+    "CharacterBoardGroupId": 101301,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 101302,
+    "CharacterBoardGroupId": 101301,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 101303,
+    "CharacterBoardGroupId": 101301,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 101304,
+    "CharacterBoardGroupId": 101302,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 101305,
+    "CharacterBoardGroupId": 101302,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 101306,
+    "CharacterBoardGroupId": 101302,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 101401,
+    "CharacterBoardGroupId": 101401,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 101402,
+    "CharacterBoardGroupId": 101401,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 101403,
+    "CharacterBoardGroupId": 101401,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 101404,
+    "CharacterBoardGroupId": 101402,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 101405,
+    "CharacterBoardGroupId": 101402,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 101406,
+    "CharacterBoardGroupId": 101402,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 101501,
+    "CharacterBoardGroupId": 101501,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 101502,
+    "CharacterBoardGroupId": 101501,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 101503,
+    "CharacterBoardGroupId": 101501,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 101504,
+    "CharacterBoardGroupId": 101502,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 101505,
+    "CharacterBoardGroupId": 101502,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 101506,
+    "CharacterBoardGroupId": 101502,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 101601,
+    "CharacterBoardGroupId": 101601,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 101602,
+    "CharacterBoardGroupId": 101601,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 101603,
+    "CharacterBoardGroupId": 101601,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 101604,
+    "CharacterBoardGroupId": 101602,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 101605,
+    "CharacterBoardGroupId": 101602,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 101606,
+    "CharacterBoardGroupId": 101602,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 101701,
+    "CharacterBoardGroupId": 101701,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 101702,
+    "CharacterBoardGroupId": 101701,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 101703,
+    "CharacterBoardGroupId": 101701,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 101704,
+    "CharacterBoardGroupId": 101702,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 101705,
+    "CharacterBoardGroupId": 101702,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 101706,
+    "CharacterBoardGroupId": 101702,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 101801,
+    "CharacterBoardGroupId": 101801,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 101802,
+    "CharacterBoardGroupId": 101801,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 101803,
+    "CharacterBoardGroupId": 101801,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 101804,
+    "CharacterBoardGroupId": 101802,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 101805,
+    "CharacterBoardGroupId": 101802,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 101806,
+    "CharacterBoardGroupId": 101802,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 101901,
+    "CharacterBoardGroupId": 101901,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 101902,
+    "CharacterBoardGroupId": 101901,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 101903,
+    "CharacterBoardGroupId": 101901,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 101904,
+    "CharacterBoardGroupId": 101902,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 101905,
+    "CharacterBoardGroupId": 101902,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 101906,
+    "CharacterBoardGroupId": 101902,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 102001,
+    "CharacterBoardGroupId": 102001,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 102002,
+    "CharacterBoardGroupId": 102001,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 102003,
+    "CharacterBoardGroupId": 102001,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 102004,
+    "CharacterBoardGroupId": 102002,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 102005,
+    "CharacterBoardGroupId": 102002,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 102006,
+    "CharacterBoardGroupId": 102002,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 102101,
+    "CharacterBoardGroupId": 102101,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 102102,
+    "CharacterBoardGroupId": 102101,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 102103,
+    "CharacterBoardGroupId": 102101,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 102104,
+    "CharacterBoardGroupId": 102102,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 102105,
+    "CharacterBoardGroupId": 102102,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 102106,
+    "CharacterBoardGroupId": 102102,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 500101,
+    "CharacterBoardGroupId": 500101,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 500102,
+    "CharacterBoardGroupId": 500101,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 500103,
+    "CharacterBoardGroupId": 500101,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 500104,
+    "CharacterBoardGroupId": 500102,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 500105,
+    "CharacterBoardGroupId": 500102,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 500106,
+    "CharacterBoardGroupId": 500102,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 500201,
+    "CharacterBoardGroupId": 500201,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 500202,
+    "CharacterBoardGroupId": 500201,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 500203,
+    "CharacterBoardGroupId": 500201,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 500204,
+    "CharacterBoardGroupId": 500202,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 500205,
+    "CharacterBoardGroupId": 500202,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 500206,
+    "CharacterBoardGroupId": 500202,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 500301,
+    "CharacterBoardGroupId": 500301,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 500302,
+    "CharacterBoardGroupId": 500301,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 500303,
+    "CharacterBoardGroupId": 500301,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 500304,
+    "CharacterBoardGroupId": 500302,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 500305,
+    "CharacterBoardGroupId": 500302,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 500306,
+    "CharacterBoardGroupId": 500302,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 500401,
+    "CharacterBoardGroupId": 500401,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 500402,
+    "CharacterBoardGroupId": 500401,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 500403,
+    "CharacterBoardGroupId": 500401,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 500404,
+    "CharacterBoardGroupId": 500402,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 500405,
+    "CharacterBoardGroupId": 500402,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 500406,
+    "CharacterBoardGroupId": 500402,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 500501,
+    "CharacterBoardGroupId": 500501,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 500502,
+    "CharacterBoardGroupId": 500501,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 500503,
+    "CharacterBoardGroupId": 500501,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 500504,
+    "CharacterBoardGroupId": 500502,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 500505,
+    "CharacterBoardGroupId": 500502,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 500506,
+    "CharacterBoardGroupId": 500502,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 500601,
+    "CharacterBoardGroupId": 500601,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 500602,
+    "CharacterBoardGroupId": 500601,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 500603,
+    "CharacterBoardGroupId": 500601,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 500604,
+    "CharacterBoardGroupId": 500602,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 500605,
+    "CharacterBoardGroupId": 500602,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 500606,
+    "CharacterBoardGroupId": 500602,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 500701,
+    "CharacterBoardGroupId": 500701,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 500702,
+    "CharacterBoardGroupId": 500701,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 500703,
+    "CharacterBoardGroupId": 500701,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 500704,
+    "CharacterBoardGroupId": 500702,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 500705,
+    "CharacterBoardGroupId": 500702,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 500706,
+    "CharacterBoardGroupId": 500702,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 500801,
+    "CharacterBoardGroupId": 500801,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 500802,
+    "CharacterBoardGroupId": 500801,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 500803,
+    "CharacterBoardGroupId": 500801,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 500804,
+    "CharacterBoardGroupId": 500802,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 500805,
+    "CharacterBoardGroupId": 500802,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 500806,
+    "CharacterBoardGroupId": 500802,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 500901,
+    "CharacterBoardGroupId": 500901,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 500902,
+    "CharacterBoardGroupId": 500901,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 500903,
+    "CharacterBoardGroupId": 500901,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 500904,
+    "CharacterBoardGroupId": 500902,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 500905,
+    "CharacterBoardGroupId": 500902,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 500906,
+    "CharacterBoardGroupId": 500902,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 501001,
+    "CharacterBoardGroupId": 501001,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 501002,
+    "CharacterBoardGroupId": 501001,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 501003,
+    "CharacterBoardGroupId": 501001,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 501004,
+    "CharacterBoardGroupId": 501002,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 501005,
+    "CharacterBoardGroupId": 501002,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 501006,
+    "CharacterBoardGroupId": 501002,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 501101,
+    "CharacterBoardGroupId": 501101,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 501102,
+    "CharacterBoardGroupId": 501101,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 501103,
+    "CharacterBoardGroupId": 501101,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 501104,
+    "CharacterBoardGroupId": 501102,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 501105,
+    "CharacterBoardGroupId": 501102,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 501106,
+    "CharacterBoardGroupId": 501102,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 501201,
+    "CharacterBoardGroupId": 501201,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 501202,
+    "CharacterBoardGroupId": 501201,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 501203,
+    "CharacterBoardGroupId": 501201,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  },
+  {
+    "CharacterBoardId": 501204,
+    "CharacterBoardGroupId": 501202,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 1
+  },
+  {
+    "CharacterBoardId": 501205,
+    "CharacterBoardGroupId": 501202,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 2
+  },
+  {
+    "CharacterBoardId": 501206,
+    "CharacterBoardGroupId": 501202,
+    "CharacterBoardUnlockConditionGroupId": 0,
+    "ReleaseRank": 3
+  }
+]

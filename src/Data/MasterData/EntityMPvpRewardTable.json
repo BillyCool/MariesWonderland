@@ -1,0 +1,1562 @@
+[
+  {
+    "PvpRewardId": 101,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 20
+  },
+  {
+    "PvpRewardId": 111,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 20
+  },
+  {
+    "PvpRewardId": 112,
+    "PossessionType": 6,
+    "PossessionId": 4001,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 121,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 20
+  },
+  {
+    "PvpRewardId": 122,
+    "PossessionType": 6,
+    "PossessionId": 4001,
+    "Count": 2
+  },
+  {
+    "PvpRewardId": 131,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 20
+  },
+  {
+    "PvpRewardId": 132,
+    "PossessionType": 6,
+    "PossessionId": 4001,
+    "Count": 3
+  },
+  {
+    "PvpRewardId": 141,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 20
+  },
+  {
+    "PvpRewardId": 142,
+    "PossessionType": 6,
+    "PossessionId": 4001,
+    "Count": 4
+  },
+  {
+    "PvpRewardId": 201,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 40
+  },
+  {
+    "PvpRewardId": 202,
+    "PossessionType": 6,
+    "PossessionId": 4002,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 203,
+    "PossessionType": 6,
+    "PossessionId": 4001,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 211,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 40
+  },
+  {
+    "PvpRewardId": 212,
+    "PossessionType": 6,
+    "PossessionId": 4002,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 213,
+    "PossessionType": 6,
+    "PossessionId": 4001,
+    "Count": 2
+  },
+  {
+    "PvpRewardId": 221,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 40
+  },
+  {
+    "PvpRewardId": 222,
+    "PossessionType": 6,
+    "PossessionId": 4002,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 223,
+    "PossessionType": 6,
+    "PossessionId": 4001,
+    "Count": 3
+  },
+  {
+    "PvpRewardId": 231,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 40
+  },
+  {
+    "PvpRewardId": 232,
+    "PossessionType": 6,
+    "PossessionId": 4002,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 233,
+    "PossessionType": 6,
+    "PossessionId": 4001,
+    "Count": 4
+  },
+  {
+    "PvpRewardId": 241,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 40
+  },
+  {
+    "PvpRewardId": 242,
+    "PossessionType": 6,
+    "PossessionId": 4003,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 301,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 60
+  },
+  {
+    "PvpRewardId": 302,
+    "PossessionType": 6,
+    "PossessionId": 4003,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 303,
+    "PossessionType": 6,
+    "PossessionId": 4001,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 311,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 60
+  },
+  {
+    "PvpRewardId": 312,
+    "PossessionType": 6,
+    "PossessionId": 4003,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 313,
+    "PossessionType": 6,
+    "PossessionId": 4001,
+    "Count": 2
+  },
+  {
+    "PvpRewardId": 321,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 60
+  },
+  {
+    "PvpRewardId": 322,
+    "PossessionType": 6,
+    "PossessionId": 4003,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 323,
+    "PossessionType": 6,
+    "PossessionId": 4001,
+    "Count": 3
+  },
+  {
+    "PvpRewardId": 331,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 60
+  },
+  {
+    "PvpRewardId": 332,
+    "PossessionType": 6,
+    "PossessionId": 4003,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 333,
+    "PossessionType": 6,
+    "PossessionId": 4001,
+    "Count": 4
+  },
+  {
+    "PvpRewardId": 341,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 60
+  },
+  {
+    "PvpRewardId": 342,
+    "PossessionType": 6,
+    "PossessionId": 4003,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 343,
+    "PossessionType": 6,
+    "PossessionId": 4002,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 401,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 80
+  },
+  {
+    "PvpRewardId": 402,
+    "PossessionType": 6,
+    "PossessionId": 4003,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 403,
+    "PossessionType": 6,
+    "PossessionId": 4002,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 404,
+    "PossessionType": 6,
+    "PossessionId": 4001,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 411,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 80
+  },
+  {
+    "PvpRewardId": 412,
+    "PossessionType": 6,
+    "PossessionId": 4003,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 413,
+    "PossessionType": 6,
+    "PossessionId": 4002,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 414,
+    "PossessionType": 6,
+    "PossessionId": 4001,
+    "Count": 2
+  },
+  {
+    "PvpRewardId": 421,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 80
+  },
+  {
+    "PvpRewardId": 422,
+    "PossessionType": 6,
+    "PossessionId": 4003,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 423,
+    "PossessionType": 6,
+    "PossessionId": 4002,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 424,
+    "PossessionType": 6,
+    "PossessionId": 4001,
+    "Count": 3
+  },
+  {
+    "PvpRewardId": 431,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 80
+  },
+  {
+    "PvpRewardId": 432,
+    "PossessionType": 6,
+    "PossessionId": 4003,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 433,
+    "PossessionType": 6,
+    "PossessionId": 4002,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 434,
+    "PossessionType": 6,
+    "PossessionId": 4001,
+    "Count": 4
+  },
+  {
+    "PvpRewardId": 441,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 80
+  },
+  {
+    "PvpRewardId": 442,
+    "PossessionType": 6,
+    "PossessionId": 4003,
+    "Count": 2
+  },
+  {
+    "PvpRewardId": 501,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 100
+  },
+  {
+    "PvpRewardId": 502,
+    "PossessionType": 6,
+    "PossessionId": 4003,
+    "Count": 2
+  },
+  {
+    "PvpRewardId": 503,
+    "PossessionType": 6,
+    "PossessionId": 4001,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 511,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 100
+  },
+  {
+    "PvpRewardId": 512,
+    "PossessionType": 6,
+    "PossessionId": 4003,
+    "Count": 2
+  },
+  {
+    "PvpRewardId": 513,
+    "PossessionType": 6,
+    "PossessionId": 4001,
+    "Count": 2
+  },
+  {
+    "PvpRewardId": 521,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 100
+  },
+  {
+    "PvpRewardId": 522,
+    "PossessionType": 6,
+    "PossessionId": 4003,
+    "Count": 2
+  },
+  {
+    "PvpRewardId": 523,
+    "PossessionType": 6,
+    "PossessionId": 4001,
+    "Count": 3
+  },
+  {
+    "PvpRewardId": 531,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 100
+  },
+  {
+    "PvpRewardId": 532,
+    "PossessionType": 6,
+    "PossessionId": 4003,
+    "Count": 2
+  },
+  {
+    "PvpRewardId": 533,
+    "PossessionType": 6,
+    "PossessionId": 4001,
+    "Count": 4
+  },
+  {
+    "PvpRewardId": 541,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 100
+  },
+  {
+    "PvpRewardId": 542,
+    "PossessionType": 6,
+    "PossessionId": 4003,
+    "Count": 2
+  },
+  {
+    "PvpRewardId": 543,
+    "PossessionType": 6,
+    "PossessionId": 4002,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 1001,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 1000
+  },
+  {
+    "PvpRewardId": 1002,
+    "PossessionType": 6,
+    "PossessionId": 1006,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 1003,
+    "PossessionType": 6,
+    "PossessionId": 1005,
+    "Count": 3
+  },
+  {
+    "PvpRewardId": 1004,
+    "PossessionType": 6,
+    "PossessionId": 1003,
+    "Count": 2
+  },
+  {
+    "PvpRewardId": 1005,
+    "PossessionType": 6,
+    "PossessionId": 1002,
+    "Count": 10
+  },
+  {
+    "PvpRewardId": 1006,
+    "PossessionType": 6,
+    "PossessionId": 199,
+    "Count": 10
+  },
+  {
+    "PvpRewardId": 2001,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 1000
+  },
+  {
+    "PvpRewardId": 2002,
+    "PossessionType": 6,
+    "PossessionId": 1005,
+    "Count": 3
+  },
+  {
+    "PvpRewardId": 2004,
+    "PossessionType": 6,
+    "PossessionId": 1003,
+    "Count": 2
+  },
+  {
+    "PvpRewardId": 2005,
+    "PossessionType": 6,
+    "PossessionId": 1002,
+    "Count": 10
+  },
+  {
+    "PvpRewardId": 2006,
+    "PossessionType": 6,
+    "PossessionId": 199,
+    "Count": 10
+  },
+  {
+    "PvpRewardId": 3001,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 1000
+  },
+  {
+    "PvpRewardId": 3002,
+    "PossessionType": 6,
+    "PossessionId": 1005,
+    "Count": 2
+  },
+  {
+    "PvpRewardId": 3004,
+    "PossessionType": 6,
+    "PossessionId": 1003,
+    "Count": 2
+  },
+  {
+    "PvpRewardId": 3005,
+    "PossessionType": 6,
+    "PossessionId": 1002,
+    "Count": 10
+  },
+  {
+    "PvpRewardId": 3006,
+    "PossessionType": 6,
+    "PossessionId": 199,
+    "Count": 10
+  },
+  {
+    "PvpRewardId": 4001,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 900
+  },
+  {
+    "PvpRewardId": 4002,
+    "PossessionType": 6,
+    "PossessionId": 1005,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 4004,
+    "PossessionType": 6,
+    "PossessionId": 1003,
+    "Count": 2
+  },
+  {
+    "PvpRewardId": 4005,
+    "PossessionType": 6,
+    "PossessionId": 1002,
+    "Count": 10
+  },
+  {
+    "PvpRewardId": 4006,
+    "PossessionType": 6,
+    "PossessionId": 199,
+    "Count": 10
+  },
+  {
+    "PvpRewardId": 5001,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 800
+  },
+  {
+    "PvpRewardId": 5003,
+    "PossessionType": 6,
+    "PossessionId": 1003,
+    "Count": 2
+  },
+  {
+    "PvpRewardId": 5004,
+    "PossessionType": 6,
+    "PossessionId": 1002,
+    "Count": 10
+  },
+  {
+    "PvpRewardId": 5005,
+    "PossessionType": 6,
+    "PossessionId": 199,
+    "Count": 10
+  },
+  {
+    "PvpRewardId": 6001,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 700
+  },
+  {
+    "PvpRewardId": 6003,
+    "PossessionType": 6,
+    "PossessionId": 1003,
+    "Count": 2
+  },
+  {
+    "PvpRewardId": 6004,
+    "PossessionType": 6,
+    "PossessionId": 1002,
+    "Count": 5
+  },
+  {
+    "PvpRewardId": 6005,
+    "PossessionType": 6,
+    "PossessionId": 199,
+    "Count": 10
+  },
+  {
+    "PvpRewardId": 7001,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 600
+  },
+  {
+    "PvpRewardId": 7003,
+    "PossessionType": 6,
+    "PossessionId": 1003,
+    "Count": 2
+  },
+  {
+    "PvpRewardId": 7004,
+    "PossessionType": 6,
+    "PossessionId": 199,
+    "Count": 5
+  },
+  {
+    "PvpRewardId": 8001,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 500
+  },
+  {
+    "PvpRewardId": 8003,
+    "PossessionType": 6,
+    "PossessionId": 1002,
+    "Count": 10
+  },
+  {
+    "PvpRewardId": 8004,
+    "PossessionType": 6,
+    "PossessionId": 199,
+    "Count": 3
+  },
+  {
+    "PvpRewardId": 9001,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 400
+  },
+  {
+    "PvpRewardId": 9003,
+    "PossessionType": 6,
+    "PossessionId": 1002,
+    "Count": 5
+  },
+  {
+    "PvpRewardId": 9004,
+    "PossessionType": 6,
+    "PossessionId": 199,
+    "Count": 2
+  },
+  {
+    "PvpRewardId": 10001,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 300
+  },
+  {
+    "PvpRewardId": 10003,
+    "PossessionType": 6,
+    "PossessionId": 1002,
+    "Count": 5
+  },
+  {
+    "PvpRewardId": 10004,
+    "PossessionType": 6,
+    "PossessionId": 199,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 11001,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 200
+  },
+  {
+    "PvpRewardId": 11002,
+    "PossessionType": 6,
+    "PossessionId": 199,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 12001,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 100
+  },
+  {
+    "PvpRewardId": 12002,
+    "PossessionType": 6,
+    "PossessionId": 199,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 13001,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 50
+  },
+  {
+    "PvpRewardId": 13002,
+    "PossessionType": 6,
+    "PossessionId": 199,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 14001,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 10
+  },
+  {
+    "PvpRewardId": 14002,
+    "PossessionType": 6,
+    "PossessionId": 199,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 15001,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 15002,
+    "PossessionType": 5,
+    "PossessionId": 200002,
+    "Count": 5
+  },
+  {
+    "PvpRewardId": 16001,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 16002,
+    "PossessionType": 5,
+    "PossessionId": 200002,
+    "Count": 10
+  },
+  {
+    "PvpRewardId": 17001,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 17002,
+    "PossessionType": 5,
+    "PossessionId": 200002,
+    "Count": 12
+  },
+  {
+    "PvpRewardId": 17003,
+    "PossessionType": 5,
+    "PossessionId": 200003,
+    "Count": 3
+  },
+  {
+    "PvpRewardId": 18001,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 18002,
+    "PossessionType": 5,
+    "PossessionId": 200002,
+    "Count": 9
+  },
+  {
+    "PvpRewardId": 18003,
+    "PossessionType": 5,
+    "PossessionId": 200003,
+    "Count": 6
+  },
+  {
+    "PvpRewardId": 19001,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 19002,
+    "PossessionType": 5,
+    "PossessionId": 200002,
+    "Count": 12
+  },
+  {
+    "PvpRewardId": 19003,
+    "PossessionType": 5,
+    "PossessionId": 200003,
+    "Count": 6
+  },
+  {
+    "PvpRewardId": 20001,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 20002,
+    "PossessionType": 5,
+    "PossessionId": 200002,
+    "Count": 9
+  },
+  {
+    "PvpRewardId": 20003,
+    "PossessionType": 5,
+    "PossessionId": 200003,
+    "Count": 9
+  },
+  {
+    "PvpRewardId": 21001,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 21002,
+    "PossessionType": 5,
+    "PossessionId": 200002,
+    "Count": 12
+  },
+  {
+    "PvpRewardId": 21003,
+    "PossessionType": 5,
+    "PossessionId": 200003,
+    "Count": 9
+  },
+  {
+    "PvpRewardId": 22001,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 22002,
+    "PossessionType": 5,
+    "PossessionId": 200003,
+    "Count": 9
+  },
+  {
+    "PvpRewardId": 22003,
+    "PossessionType": 5,
+    "PossessionId": 200004,
+    "Count": 3
+  },
+  {
+    "PvpRewardId": 23001,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 23002,
+    "PossessionType": 5,
+    "PossessionId": 200003,
+    "Count": 6
+  },
+  {
+    "PvpRewardId": 23003,
+    "PossessionType": 5,
+    "PossessionId": 200004,
+    "Count": 6
+  },
+  {
+    "PvpRewardId": 24001,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 24002,
+    "PossessionType": 5,
+    "PossessionId": 200003,
+    "Count": 9
+  },
+  {
+    "PvpRewardId": 24003,
+    "PossessionType": 5,
+    "PossessionId": 200004,
+    "Count": 6
+  },
+  {
+    "PvpRewardId": 25001,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 25002,
+    "PossessionType": 5,
+    "PossessionId": 200003,
+    "Count": 12
+  },
+  {
+    "PvpRewardId": 25003,
+    "PossessionType": 5,
+    "PossessionId": 200004,
+    "Count": 6
+  },
+  {
+    "PvpRewardId": 26001,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 26002,
+    "PossessionType": 5,
+    "PossessionId": 200003,
+    "Count": 9
+  },
+  {
+    "PvpRewardId": 26003,
+    "PossessionType": 5,
+    "PossessionId": 200004,
+    "Count": 9
+  },
+  {
+    "PvpRewardId": 27001,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 2
+  },
+  {
+    "PvpRewardId": 27002,
+    "PossessionType": 5,
+    "PossessionId": 200003,
+    "Count": 12
+  },
+  {
+    "PvpRewardId": 27003,
+    "PossessionType": 5,
+    "PossessionId": 200004,
+    "Count": 9
+  },
+  {
+    "PvpRewardId": 28001,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 2
+  },
+  {
+    "PvpRewardId": 28002,
+    "PossessionType": 5,
+    "PossessionId": 200003,
+    "Count": 15
+  },
+  {
+    "PvpRewardId": 28003,
+    "PossessionType": 5,
+    "PossessionId": 200004,
+    "Count": 9
+  },
+  {
+    "PvpRewardId": 29001,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 2
+  },
+  {
+    "PvpRewardId": 29002,
+    "PossessionType": 5,
+    "PossessionId": 200003,
+    "Count": 12
+  },
+  {
+    "PvpRewardId": 29003,
+    "PossessionType": 5,
+    "PossessionId": 200004,
+    "Count": 12
+  },
+  {
+    "PvpRewardId": 30001,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 2
+  },
+  {
+    "PvpRewardId": 30002,
+    "PossessionType": 5,
+    "PossessionId": 200003,
+    "Count": 15
+  },
+  {
+    "PvpRewardId": 30003,
+    "PossessionType": 5,
+    "PossessionId": 200004,
+    "Count": 12
+  },
+  {
+    "PvpRewardId": 31001,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 2
+  },
+  {
+    "PvpRewardId": 31002,
+    "PossessionType": 5,
+    "PossessionId": 200003,
+    "Count": 12
+  },
+  {
+    "PvpRewardId": 31003,
+    "PossessionType": 5,
+    "PossessionId": 200004,
+    "Count": 15
+  },
+  {
+    "PvpRewardId": 32001,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 350
+  },
+  {
+    "PvpRewardId": 32002,
+    "PossessionType": 6,
+    "PossessionId": 1006,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 32003,
+    "PossessionType": 6,
+    "PossessionId": 1005,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 32004,
+    "PossessionType": 6,
+    "PossessionId": 1003,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 33001,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 350
+  },
+  {
+    "PvpRewardId": 33002,
+    "PossessionType": 6,
+    "PossessionId": 1005,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 33003,
+    "PossessionType": 6,
+    "PossessionId": 1003,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 34001,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 350
+  },
+  {
+    "PvpRewardId": 34002,
+    "PossessionType": 6,
+    "PossessionId": 1005,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 34003,
+    "PossessionType": 6,
+    "PossessionId": 1003,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 35001,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 300
+  },
+  {
+    "PvpRewardId": 35002,
+    "PossessionType": 6,
+    "PossessionId": 1005,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 35003,
+    "PossessionType": 6,
+    "PossessionId": 1003,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 36001,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 270
+  },
+  {
+    "PvpRewardId": 36002,
+    "PossessionType": 6,
+    "PossessionId": 1003,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 37001,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 240
+  },
+  {
+    "PvpRewardId": 37002,
+    "PossessionType": 6,
+    "PossessionId": 1002,
+    "Count": 8
+  },
+  {
+    "PvpRewardId": 38001,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 200
+  },
+  {
+    "PvpRewardId": 38002,
+    "PossessionType": 6,
+    "PossessionId": 1002,
+    "Count": 6
+  },
+  {
+    "PvpRewardId": 39001,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 170
+  },
+  {
+    "PvpRewardId": 39002,
+    "PossessionType": 6,
+    "PossessionId": 1002,
+    "Count": 3
+  },
+  {
+    "PvpRewardId": 40001,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 140
+  },
+  {
+    "PvpRewardId": 40002,
+    "PossessionType": 6,
+    "PossessionId": 1002,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 41001,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 100
+  },
+  {
+    "PvpRewardId": 41002,
+    "PossessionType": 6,
+    "PossessionId": 1002,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 42001,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 70
+  },
+  {
+    "PvpRewardId": 43001,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 40
+  },
+  {
+    "PvpRewardId": 44001,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 17
+  },
+  {
+    "PvpRewardId": 45001,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 4
+  },
+  {
+    "PvpRewardId": 60001,
+    "PossessionType": 13,
+    "PossessionId": 420011,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 60002,
+    "PossessionType": 5,
+    "PossessionId": 315001,
+    "Count": 50
+  },
+  {
+    "PvpRewardId": 60003,
+    "PossessionType": 5,
+    "PossessionId": 314001,
+    "Count": 5
+  },
+  {
+    "PvpRewardId": 60004,
+    "PossessionType": 5,
+    "PossessionId": 325001,
+    "Count": 30
+  },
+  {
+    "PvpRewardId": 61001,
+    "PossessionType": 13,
+    "PossessionId": 420012,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 61002,
+    "PossessionType": 5,
+    "PossessionId": 315001,
+    "Count": 40
+  },
+  {
+    "PvpRewardId": 61003,
+    "PossessionType": 5,
+    "PossessionId": 314001,
+    "Count": 4
+  },
+  {
+    "PvpRewardId": 61004,
+    "PossessionType": 5,
+    "PossessionId": 325001,
+    "Count": 20
+  },
+  {
+    "PvpRewardId": 62002,
+    "PossessionType": 5,
+    "PossessionId": 315001,
+    "Count": 30
+  },
+  {
+    "PvpRewardId": 62003,
+    "PossessionType": 5,
+    "PossessionId": 314001,
+    "Count": 3
+  },
+  {
+    "PvpRewardId": 62004,
+    "PossessionType": 5,
+    "PossessionId": 325001,
+    "Count": 10
+  },
+  {
+    "PvpRewardId": 63002,
+    "PossessionType": 5,
+    "PossessionId": 315001,
+    "Count": 20
+  },
+  {
+    "PvpRewardId": 63003,
+    "PossessionType": 5,
+    "PossessionId": 314001,
+    "Count": 2
+  },
+  {
+    "PvpRewardId": 64001,
+    "PossessionType": 13,
+    "PossessionId": 420013,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 64002,
+    "PossessionType": 5,
+    "PossessionId": 315001,
+    "Count": 10
+  },
+  {
+    "PvpRewardId": 64003,
+    "PossessionType": 5,
+    "PossessionId": 314001,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 65004,
+    "PossessionType": 5,
+    "PossessionId": 311003,
+    "Count": 40
+  },
+  {
+    "PvpRewardId": 66001,
+    "PossessionType": 13,
+    "PossessionId": 420014,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 66004,
+    "PossessionType": 5,
+    "PossessionId": 311003,
+    "Count": 30
+  },
+  {
+    "PvpRewardId": 67004,
+    "PossessionType": 5,
+    "PossessionId": 311003,
+    "Count": 20
+  },
+  {
+    "PvpRewardId": 68002,
+    "PossessionType": 5,
+    "PossessionId": 315001,
+    "Count": 5
+  },
+  {
+    "PvpRewardId": 68004,
+    "PossessionType": 5,
+    "PossessionId": 311003,
+    "Count": 10
+  },
+  {
+    "PvpRewardId": 69004,
+    "PossessionType": 5,
+    "PossessionId": 311003,
+    "Count": 5
+  },
+  {
+    "PvpRewardId": 100101,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 10
+  },
+  {
+    "PvpRewardId": 100102,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 20
+  },
+  {
+    "PvpRewardId": 100103,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 30
+  },
+  {
+    "PvpRewardId": 100104,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 40
+  },
+  {
+    "PvpRewardId": 100105,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 50
+  },
+  {
+    "PvpRewardId": 100106,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 60
+  },
+  {
+    "PvpRewardId": 100107,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 70
+  },
+  {
+    "PvpRewardId": 100108,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 80
+  },
+  {
+    "PvpRewardId": 100109,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 90
+  },
+  {
+    "PvpRewardId": 100110,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 100
+  },
+  {
+    "PvpRewardId": 100111,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 120
+  },
+  {
+    "PvpRewardId": 100112,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 140
+  },
+  {
+    "PvpRewardId": 100113,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 160
+  },
+  {
+    "PvpRewardId": 100114,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 180
+  },
+  {
+    "PvpRewardId": 100115,
+    "PossessionType": 6,
+    "PossessionId": 4,
+    "Count": 200
+  },
+  {
+    "PvpRewardId": 200001,
+    "PossessionType": 13,
+    "PossessionId": 421004,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 1000001,
+    "PossessionType": 5,
+    "PossessionId": 501001,
+    "Count": 2
+  },
+  {
+    "PvpRewardId": 1000002,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 100
+  },
+  {
+    "PvpRewardId": 1000003,
+    "PossessionType": 6,
+    "PossessionId": 3001,
+    "Count": 50
+  },
+  {
+    "PvpRewardId": 1100001,
+    "PossessionType": 5,
+    "PossessionId": 501001,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 1100002,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 100
+  },
+  {
+    "PvpRewardId": 1100003,
+    "PossessionType": 6,
+    "PossessionId": 3001,
+    "Count": 45
+  },
+  {
+    "PvpRewardId": 1200001,
+    "PossessionType": 5,
+    "PossessionId": 501001,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 1200002,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 100
+  },
+  {
+    "PvpRewardId": 1200003,
+    "PossessionType": 6,
+    "PossessionId": 3001,
+    "Count": 40
+  },
+  {
+    "PvpRewardId": 1300001,
+    "PossessionType": 5,
+    "PossessionId": 501001,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 1300002,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 100
+  },
+  {
+    "PvpRewardId": 1300003,
+    "PossessionType": 6,
+    "PossessionId": 3001,
+    "Count": 35
+  },
+  {
+    "PvpRewardId": 1400001,
+    "PossessionType": 5,
+    "PossessionId": 501001,
+    "Count": 1
+  },
+  {
+    "PvpRewardId": 1400002,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 100
+  },
+  {
+    "PvpRewardId": 1400003,
+    "PossessionType": 6,
+    "PossessionId": 3001,
+    "Count": 30
+  },
+  {
+    "PvpRewardId": 1500001,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 70
+  },
+  {
+    "PvpRewardId": 1500002,
+    "PossessionType": 6,
+    "PossessionId": 3001,
+    "Count": 25
+  },
+  {
+    "PvpRewardId": 1600001,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 40
+  },
+  {
+    "PvpRewardId": 1600002,
+    "PossessionType": 6,
+    "PossessionId": 3001,
+    "Count": 20
+  },
+  {
+    "PvpRewardId": 1700001,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 20
+  },
+  {
+    "PvpRewardId": 1700002,
+    "PossessionType": 6,
+    "PossessionId": 3001,
+    "Count": 15
+  },
+  {
+    "PvpRewardId": 1800001,
+    "PossessionType": 6,
+    "PossessionId": 3001,
+    "Count": 10
+  },
+  {
+    "PvpRewardId": 1900001,
+    "PossessionType": 6,
+    "PossessionId": 3001,
+    "Count": 5
+  }
+]

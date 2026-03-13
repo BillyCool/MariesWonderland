@@ -1,0 +1,912 @@
+[
+  {
+    "QuestId": 240001,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3495,
+    "EffectTargetWeaponAttributeType": 1
+  },
+  {
+    "QuestId": 240002,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3494,
+    "EffectTargetWeaponAttributeType": 3
+  },
+  {
+    "QuestId": 240003,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3495,
+    "EffectTargetWeaponAttributeType": 1
+  },
+  {
+    "QuestId": 240004,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3494,
+    "EffectTargetWeaponAttributeType": 3
+  },
+  {
+    "QuestId": 240005,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3495,
+    "EffectTargetWeaponAttributeType": 1
+  },
+  {
+    "QuestId": 240006,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3494,
+    "EffectTargetWeaponAttributeType": 3
+  },
+  {
+    "QuestId": 240007,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3495,
+    "EffectTargetWeaponAttributeType": 1
+  },
+  {
+    "QuestId": 240008,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3494,
+    "EffectTargetWeaponAttributeType": 3
+  },
+  {
+    "QuestId": 240009,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3495,
+    "EffectTargetWeaponAttributeType": 1
+  },
+  {
+    "QuestId": 240010,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3494,
+    "EffectTargetWeaponAttributeType": 3
+  },
+  {
+    "QuestId": 240011,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3492,
+    "EffectTargetWeaponAttributeType": 5
+  },
+  {
+    "QuestId": 240012,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3491,
+    "EffectTargetWeaponAttributeType": 2
+  },
+  {
+    "QuestId": 240013,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3493,
+    "EffectTargetWeaponAttributeType": 6
+  },
+  {
+    "QuestId": 240014,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3492,
+    "EffectTargetWeaponAttributeType": 5
+  },
+  {
+    "QuestId": 240015,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3491,
+    "EffectTargetWeaponAttributeType": 2
+  },
+  {
+    "QuestId": 240016,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3493,
+    "EffectTargetWeaponAttributeType": 6
+  },
+  {
+    "QuestId": 240017,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3492,
+    "EffectTargetWeaponAttributeType": 5
+  },
+  {
+    "QuestId": 240018,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3491,
+    "EffectTargetWeaponAttributeType": 2
+  },
+  {
+    "QuestId": 240019,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3493,
+    "EffectTargetWeaponAttributeType": 6
+  },
+  {
+    "QuestId": 240020,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3492,
+    "EffectTargetWeaponAttributeType": 5
+  },
+  {
+    "QuestId": 240021,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3495,
+    "EffectTargetWeaponAttributeType": 1
+  },
+  {
+    "QuestId": 240022,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3494,
+    "EffectTargetWeaponAttributeType": 3
+  },
+  {
+    "QuestId": 240023,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3495,
+    "EffectTargetWeaponAttributeType": 1
+  },
+  {
+    "QuestId": 240024,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3494,
+    "EffectTargetWeaponAttributeType": 3
+  },
+  {
+    "QuestId": 240025,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3495,
+    "EffectTargetWeaponAttributeType": 1
+  },
+  {
+    "QuestId": 240026,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3491,
+    "EffectTargetWeaponAttributeType": 2
+  },
+  {
+    "QuestId": 240027,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3493,
+    "EffectTargetWeaponAttributeType": 6
+  },
+  {
+    "QuestId": 240028,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3492,
+    "EffectTargetWeaponAttributeType": 5
+  },
+  {
+    "QuestId": 240029,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3491,
+    "EffectTargetWeaponAttributeType": 2
+  },
+  {
+    "QuestId": 240030,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3493,
+    "EffectTargetWeaponAttributeType": 6
+  },
+  {
+    "QuestId": 240031,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3494,
+    "EffectTargetWeaponAttributeType": 3
+  },
+  {
+    "QuestId": 240032,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3495,
+    "EffectTargetWeaponAttributeType": 1
+  },
+  {
+    "QuestId": 240033,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3494,
+    "EffectTargetWeaponAttributeType": 3
+  },
+  {
+    "QuestId": 240034,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3495,
+    "EffectTargetWeaponAttributeType": 1
+  },
+  {
+    "QuestId": 240035,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3494,
+    "EffectTargetWeaponAttributeType": 3
+  },
+  {
+    "QuestId": 240036,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3492,
+    "EffectTargetWeaponAttributeType": 5
+  },
+  {
+    "QuestId": 240037,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3491,
+    "EffectTargetWeaponAttributeType": 2
+  },
+  {
+    "QuestId": 240038,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3493,
+    "EffectTargetWeaponAttributeType": 6
+  },
+  {
+    "QuestId": 240039,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3492,
+    "EffectTargetWeaponAttributeType": 5
+  },
+  {
+    "QuestId": 240040,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3491,
+    "EffectTargetWeaponAttributeType": 2
+  },
+  {
+    "QuestId": 240041,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3495,
+    "EffectTargetWeaponAttributeType": 1
+  },
+  {
+    "QuestId": 240042,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3494,
+    "EffectTargetWeaponAttributeType": 3
+  },
+  {
+    "QuestId": 240043,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3495,
+    "EffectTargetWeaponAttributeType": 1
+  },
+  {
+    "QuestId": 240044,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3494,
+    "EffectTargetWeaponAttributeType": 3
+  },
+  {
+    "QuestId": 240045,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3495,
+    "EffectTargetWeaponAttributeType": 1
+  },
+  {
+    "QuestId": 240046,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3493,
+    "EffectTargetWeaponAttributeType": 6
+  },
+  {
+    "QuestId": 240047,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3492,
+    "EffectTargetWeaponAttributeType": 5
+  },
+  {
+    "QuestId": 240048,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3491,
+    "EffectTargetWeaponAttributeType": 2
+  },
+  {
+    "QuestId": 240049,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3493,
+    "EffectTargetWeaponAttributeType": 6
+  },
+  {
+    "QuestId": 240050,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3492,
+    "EffectTargetWeaponAttributeType": 5
+  },
+  {
+    "QuestId": 240051,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3494,
+    "EffectTargetWeaponAttributeType": 3
+  },
+  {
+    "QuestId": 240052,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3495,
+    "EffectTargetWeaponAttributeType": 1
+  },
+  {
+    "QuestId": 240053,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3494,
+    "EffectTargetWeaponAttributeType": 3
+  },
+  {
+    "QuestId": 240054,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3495,
+    "EffectTargetWeaponAttributeType": 1
+  },
+  {
+    "QuestId": 240055,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3494,
+    "EffectTargetWeaponAttributeType": 3
+  },
+  {
+    "QuestId": 240056,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3491,
+    "EffectTargetWeaponAttributeType": 2
+  },
+  {
+    "QuestId": 240057,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3493,
+    "EffectTargetWeaponAttributeType": 6
+  },
+  {
+    "QuestId": 240058,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3492,
+    "EffectTargetWeaponAttributeType": 5
+  },
+  {
+    "QuestId": 240059,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3491,
+    "EffectTargetWeaponAttributeType": 2
+  },
+  {
+    "QuestId": 240060,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3493,
+    "EffectTargetWeaponAttributeType": 6
+  },
+  {
+    "QuestId": 240061,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3495,
+    "EffectTargetWeaponAttributeType": 1
+  },
+  {
+    "QuestId": 240062,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3494,
+    "EffectTargetWeaponAttributeType": 3
+  },
+  {
+    "QuestId": 240063,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3495,
+    "EffectTargetWeaponAttributeType": 1
+  },
+  {
+    "QuestId": 240064,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3494,
+    "EffectTargetWeaponAttributeType": 3
+  },
+  {
+    "QuestId": 240065,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3495,
+    "EffectTargetWeaponAttributeType": 1
+  },
+  {
+    "QuestId": 240066,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3492,
+    "EffectTargetWeaponAttributeType": 5
+  },
+  {
+    "QuestId": 240067,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3491,
+    "EffectTargetWeaponAttributeType": 2
+  },
+  {
+    "QuestId": 240068,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3493,
+    "EffectTargetWeaponAttributeType": 6
+  },
+  {
+    "QuestId": 240069,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3492,
+    "EffectTargetWeaponAttributeType": 5
+  },
+  {
+    "QuestId": 240070,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3491,
+    "EffectTargetWeaponAttributeType": 2
+  },
+  {
+    "QuestId": 240071,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3494,
+    "EffectTargetWeaponAttributeType": 3
+  },
+  {
+    "QuestId": 240072,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3495,
+    "EffectTargetWeaponAttributeType": 1
+  },
+  {
+    "QuestId": 240073,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3494,
+    "EffectTargetWeaponAttributeType": 3
+  },
+  {
+    "QuestId": 240074,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3495,
+    "EffectTargetWeaponAttributeType": 1
+  },
+  {
+    "QuestId": 240075,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3494,
+    "EffectTargetWeaponAttributeType": 3
+  },
+  {
+    "QuestId": 240076,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3493,
+    "EffectTargetWeaponAttributeType": 6
+  },
+  {
+    "QuestId": 240077,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3492,
+    "EffectTargetWeaponAttributeType": 5
+  },
+  {
+    "QuestId": 240078,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3491,
+    "EffectTargetWeaponAttributeType": 2
+  },
+  {
+    "QuestId": 240079,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3493,
+    "EffectTargetWeaponAttributeType": 6
+  },
+  {
+    "QuestId": 240080,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3492,
+    "EffectTargetWeaponAttributeType": 5
+  },
+  {
+    "QuestId": 240081,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3495,
+    "EffectTargetWeaponAttributeType": 1
+  },
+  {
+    "QuestId": 240082,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3494,
+    "EffectTargetWeaponAttributeType": 3
+  },
+  {
+    "QuestId": 240083,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3495,
+    "EffectTargetWeaponAttributeType": 1
+  },
+  {
+    "QuestId": 240084,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3494,
+    "EffectTargetWeaponAttributeType": 3
+  },
+  {
+    "QuestId": 240085,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3495,
+    "EffectTargetWeaponAttributeType": 1
+  },
+  {
+    "QuestId": 240086,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3491,
+    "EffectTargetWeaponAttributeType": 2
+  },
+  {
+    "QuestId": 240087,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3493,
+    "EffectTargetWeaponAttributeType": 6
+  },
+  {
+    "QuestId": 240088,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3492,
+    "EffectTargetWeaponAttributeType": 5
+  },
+  {
+    "QuestId": 240089,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3491,
+    "EffectTargetWeaponAttributeType": 2
+  },
+  {
+    "QuestId": 240090,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3493,
+    "EffectTargetWeaponAttributeType": 6
+  },
+  {
+    "QuestId": 240091,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3494,
+    "EffectTargetWeaponAttributeType": 3
+  },
+  {
+    "QuestId": 240092,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3495,
+    "EffectTargetWeaponAttributeType": 1
+  },
+  {
+    "QuestId": 240093,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3494,
+    "EffectTargetWeaponAttributeType": 3
+  },
+  {
+    "QuestId": 240094,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3495,
+    "EffectTargetWeaponAttributeType": 1
+  },
+  {
+    "QuestId": 240095,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3494,
+    "EffectTargetWeaponAttributeType": 3
+  },
+  {
+    "QuestId": 240096,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3492,
+    "EffectTargetWeaponAttributeType": 5
+  },
+  {
+    "QuestId": 240097,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3491,
+    "EffectTargetWeaponAttributeType": 2
+  },
+  {
+    "QuestId": 240098,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3493,
+    "EffectTargetWeaponAttributeType": 6
+  },
+  {
+    "QuestId": 240099,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3492,
+    "EffectTargetWeaponAttributeType": 5
+  },
+  {
+    "QuestId": 240100,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3491,
+    "EffectTargetWeaponAttributeType": 2
+  },
+  {
+    "QuestId": 240101,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3495,
+    "EffectTargetWeaponAttributeType": 1
+  },
+  {
+    "QuestId": 240102,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3494,
+    "EffectTargetWeaponAttributeType": 3
+  },
+  {
+    "QuestId": 240103,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3495,
+    "EffectTargetWeaponAttributeType": 1
+  },
+  {
+    "QuestId": 240104,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3494,
+    "EffectTargetWeaponAttributeType": 3
+  },
+  {
+    "QuestId": 240105,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3495,
+    "EffectTargetWeaponAttributeType": 1
+  },
+  {
+    "QuestId": 240106,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3493,
+    "EffectTargetWeaponAttributeType": 6
+  },
+  {
+    "QuestId": 240107,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3492,
+    "EffectTargetWeaponAttributeType": 5
+  },
+  {
+    "QuestId": 240108,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3491,
+    "EffectTargetWeaponAttributeType": 2
+  },
+  {
+    "QuestId": 240109,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3493,
+    "EffectTargetWeaponAttributeType": 6
+  },
+  {
+    "QuestId": 240110,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3492,
+    "EffectTargetWeaponAttributeType": 5
+  },
+  {
+    "QuestId": 240111,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3494,
+    "EffectTargetWeaponAttributeType": 3
+  },
+  {
+    "QuestId": 240112,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3495,
+    "EffectTargetWeaponAttributeType": 1
+  },
+  {
+    "QuestId": 240113,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3494,
+    "EffectTargetWeaponAttributeType": 3
+  },
+  {
+    "QuestId": 240114,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3495,
+    "EffectTargetWeaponAttributeType": 1
+  },
+  {
+    "QuestId": 240115,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3494,
+    "EffectTargetWeaponAttributeType": 3
+  },
+  {
+    "QuestId": 240116,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3491,
+    "EffectTargetWeaponAttributeType": 2
+  },
+  {
+    "QuestId": 240117,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3493,
+    "EffectTargetWeaponAttributeType": 6
+  },
+  {
+    "QuestId": 240118,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3492,
+    "EffectTargetWeaponAttributeType": 5
+  },
+  {
+    "QuestId": 240119,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3491,
+    "EffectTargetWeaponAttributeType": 2
+  },
+  {
+    "QuestId": 240120,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3493,
+    "EffectTargetWeaponAttributeType": 6
+  },
+  {
+    "QuestId": 240121,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3495,
+    "EffectTargetWeaponAttributeType": 1
+  },
+  {
+    "QuestId": 240122,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3494,
+    "EffectTargetWeaponAttributeType": 3
+  },
+  {
+    "QuestId": 240123,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3495,
+    "EffectTargetWeaponAttributeType": 1
+  },
+  {
+    "QuestId": 240124,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3494,
+    "EffectTargetWeaponAttributeType": 3
+  },
+  {
+    "QuestId": 240125,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3495,
+    "EffectTargetWeaponAttributeType": 1
+  },
+  {
+    "QuestId": 240126,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3492,
+    "EffectTargetWeaponAttributeType": 5
+  },
+  {
+    "QuestId": 240127,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3491,
+    "EffectTargetWeaponAttributeType": 2
+  },
+  {
+    "QuestId": 240128,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3493,
+    "EffectTargetWeaponAttributeType": 6
+  },
+  {
+    "QuestId": 240129,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3492,
+    "EffectTargetWeaponAttributeType": 5
+  },
+  {
+    "QuestId": 240130,
+    "SortOrder": 1,
+    "LabyrinthQuestEffectDescriptionType": 2,
+    "EventQuestLabyrinthQuestEffectDescriptionId": 3491,
+    "EffectTargetWeaponAttributeType": 2
+  }
+]

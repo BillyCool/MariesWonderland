@@ -1,0 +1,982 @@
+[
+  {
+    "RankLowerLimit": 1,
+    "PvpSeasonId": 202001,
+    "PvpSeasonRankRewardGroupId": 1
+  },
+  {
+    "RankLowerLimit": 1,
+    "PvpSeasonId": 202002,
+    "PvpSeasonRankRewardGroupId": 1
+  },
+  {
+    "RankLowerLimit": 1,
+    "PvpSeasonId": 202003,
+    "PvpSeasonRankRewardGroupId": 1
+  },
+  {
+    "RankLowerLimit": 1,
+    "PvpSeasonId": 202004,
+    "PvpSeasonRankRewardGroupId": 1
+  },
+  {
+    "RankLowerLimit": 1,
+    "PvpSeasonId": 202005,
+    "PvpSeasonRankRewardGroupId": 1
+  },
+  {
+    "RankLowerLimit": 1,
+    "PvpSeasonId": 202006,
+    "PvpSeasonRankRewardGroupId": 0
+  },
+  {
+    "RankLowerLimit": 1,
+    "PvpSeasonId": 202007,
+    "PvpSeasonRankRewardGroupId": 1
+  },
+  {
+    "RankLowerLimit": 1,
+    "PvpSeasonId": 202008,
+    "PvpSeasonRankRewardGroupId": 1
+  },
+  {
+    "RankLowerLimit": 1,
+    "PvpSeasonId": 202009,
+    "PvpSeasonRankRewardGroupId": 1
+  },
+  {
+    "RankLowerLimit": 1,
+    "PvpSeasonId": 202010,
+    "PvpSeasonRankRewardGroupId": 1
+  },
+  {
+    "RankLowerLimit": 1,
+    "PvpSeasonId": 202011,
+    "PvpSeasonRankRewardGroupId": 1
+  },
+  {
+    "RankLowerLimit": 1,
+    "PvpSeasonId": 202012,
+    "PvpSeasonRankRewardGroupId": 1
+  },
+  {
+    "RankLowerLimit": 1,
+    "PvpSeasonId": 202013,
+    "PvpSeasonRankRewardGroupId": 1
+  },
+  {
+    "RankLowerLimit": 1,
+    "PvpSeasonId": 202014,
+    "PvpSeasonRankRewardGroupId": 1
+  },
+  {
+    "RankLowerLimit": 2,
+    "PvpSeasonId": 202001,
+    "PvpSeasonRankRewardGroupId": 2
+  },
+  {
+    "RankLowerLimit": 2,
+    "PvpSeasonId": 202002,
+    "PvpSeasonRankRewardGroupId": 2
+  },
+  {
+    "RankLowerLimit": 2,
+    "PvpSeasonId": 202003,
+    "PvpSeasonRankRewardGroupId": 2
+  },
+  {
+    "RankLowerLimit": 2,
+    "PvpSeasonId": 202004,
+    "PvpSeasonRankRewardGroupId": 2
+  },
+  {
+    "RankLowerLimit": 2,
+    "PvpSeasonId": 202005,
+    "PvpSeasonRankRewardGroupId": 2
+  },
+  {
+    "RankLowerLimit": 2,
+    "PvpSeasonId": 202006,
+    "PvpSeasonRankRewardGroupId": 0
+  },
+  {
+    "RankLowerLimit": 2,
+    "PvpSeasonId": 202007,
+    "PvpSeasonRankRewardGroupId": 2
+  },
+  {
+    "RankLowerLimit": 2,
+    "PvpSeasonId": 202008,
+    "PvpSeasonRankRewardGroupId": 2
+  },
+  {
+    "RankLowerLimit": 2,
+    "PvpSeasonId": 202009,
+    "PvpSeasonRankRewardGroupId": 2
+  },
+  {
+    "RankLowerLimit": 2,
+    "PvpSeasonId": 202010,
+    "PvpSeasonRankRewardGroupId": 2
+  },
+  {
+    "RankLowerLimit": 2,
+    "PvpSeasonId": 202011,
+    "PvpSeasonRankRewardGroupId": 2
+  },
+  {
+    "RankLowerLimit": 2,
+    "PvpSeasonId": 202012,
+    "PvpSeasonRankRewardGroupId": 2
+  },
+  {
+    "RankLowerLimit": 2,
+    "PvpSeasonId": 202013,
+    "PvpSeasonRankRewardGroupId": 2
+  },
+  {
+    "RankLowerLimit": 2,
+    "PvpSeasonId": 202014,
+    "PvpSeasonRankRewardGroupId": 2
+  },
+  {
+    "RankLowerLimit": 3,
+    "PvpSeasonId": 202001,
+    "PvpSeasonRankRewardGroupId": 3
+  },
+  {
+    "RankLowerLimit": 3,
+    "PvpSeasonId": 202002,
+    "PvpSeasonRankRewardGroupId": 3
+  },
+  {
+    "RankLowerLimit": 3,
+    "PvpSeasonId": 202003,
+    "PvpSeasonRankRewardGroupId": 3
+  },
+  {
+    "RankLowerLimit": 3,
+    "PvpSeasonId": 202004,
+    "PvpSeasonRankRewardGroupId": 3
+  },
+  {
+    "RankLowerLimit": 3,
+    "PvpSeasonId": 202005,
+    "PvpSeasonRankRewardGroupId": 3
+  },
+  {
+    "RankLowerLimit": 3,
+    "PvpSeasonId": 202006,
+    "PvpSeasonRankRewardGroupId": 0
+  },
+  {
+    "RankLowerLimit": 3,
+    "PvpSeasonId": 202007,
+    "PvpSeasonRankRewardGroupId": 3
+  },
+  {
+    "RankLowerLimit": 3,
+    "PvpSeasonId": 202008,
+    "PvpSeasonRankRewardGroupId": 3
+  },
+  {
+    "RankLowerLimit": 3,
+    "PvpSeasonId": 202009,
+    "PvpSeasonRankRewardGroupId": 3
+  },
+  {
+    "RankLowerLimit": 3,
+    "PvpSeasonId": 202010,
+    "PvpSeasonRankRewardGroupId": 3
+  },
+  {
+    "RankLowerLimit": 3,
+    "PvpSeasonId": 202011,
+    "PvpSeasonRankRewardGroupId": 3
+  },
+  {
+    "RankLowerLimit": 3,
+    "PvpSeasonId": 202012,
+    "PvpSeasonRankRewardGroupId": 3
+  },
+  {
+    "RankLowerLimit": 3,
+    "PvpSeasonId": 202013,
+    "PvpSeasonRankRewardGroupId": 3
+  },
+  {
+    "RankLowerLimit": 3,
+    "PvpSeasonId": 202014,
+    "PvpSeasonRankRewardGroupId": 3
+  },
+  {
+    "RankLowerLimit": 4,
+    "PvpSeasonId": 202001,
+    "PvpSeasonRankRewardGroupId": 4
+  },
+  {
+    "RankLowerLimit": 4,
+    "PvpSeasonId": 202002,
+    "PvpSeasonRankRewardGroupId": 4
+  },
+  {
+    "RankLowerLimit": 4,
+    "PvpSeasonId": 202003,
+    "PvpSeasonRankRewardGroupId": 4
+  },
+  {
+    "RankLowerLimit": 4,
+    "PvpSeasonId": 202004,
+    "PvpSeasonRankRewardGroupId": 4
+  },
+  {
+    "RankLowerLimit": 4,
+    "PvpSeasonId": 202005,
+    "PvpSeasonRankRewardGroupId": 4
+  },
+  {
+    "RankLowerLimit": 4,
+    "PvpSeasonId": 202006,
+    "PvpSeasonRankRewardGroupId": 0
+  },
+  {
+    "RankLowerLimit": 4,
+    "PvpSeasonId": 202007,
+    "PvpSeasonRankRewardGroupId": 4
+  },
+  {
+    "RankLowerLimit": 4,
+    "PvpSeasonId": 202008,
+    "PvpSeasonRankRewardGroupId": 4
+  },
+  {
+    "RankLowerLimit": 4,
+    "PvpSeasonId": 202009,
+    "PvpSeasonRankRewardGroupId": 4
+  },
+  {
+    "RankLowerLimit": 4,
+    "PvpSeasonId": 202010,
+    "PvpSeasonRankRewardGroupId": 4
+  },
+  {
+    "RankLowerLimit": 4,
+    "PvpSeasonId": 202011,
+    "PvpSeasonRankRewardGroupId": 4
+  },
+  {
+    "RankLowerLimit": 4,
+    "PvpSeasonId": 202012,
+    "PvpSeasonRankRewardGroupId": 4
+  },
+  {
+    "RankLowerLimit": 4,
+    "PvpSeasonId": 202013,
+    "PvpSeasonRankRewardGroupId": 4
+  },
+  {
+    "RankLowerLimit": 4,
+    "PvpSeasonId": 202014,
+    "PvpSeasonRankRewardGroupId": 4
+  },
+  {
+    "RankLowerLimit": 11,
+    "PvpSeasonId": 202001,
+    "PvpSeasonRankRewardGroupId": 5
+  },
+  {
+    "RankLowerLimit": 11,
+    "PvpSeasonId": 202002,
+    "PvpSeasonRankRewardGroupId": 5
+  },
+  {
+    "RankLowerLimit": 11,
+    "PvpSeasonId": 202003,
+    "PvpSeasonRankRewardGroupId": 5
+  },
+  {
+    "RankLowerLimit": 11,
+    "PvpSeasonId": 202004,
+    "PvpSeasonRankRewardGroupId": 5
+  },
+  {
+    "RankLowerLimit": 11,
+    "PvpSeasonId": 202005,
+    "PvpSeasonRankRewardGroupId": 5
+  },
+  {
+    "RankLowerLimit": 11,
+    "PvpSeasonId": 202006,
+    "PvpSeasonRankRewardGroupId": 0
+  },
+  {
+    "RankLowerLimit": 11,
+    "PvpSeasonId": 202007,
+    "PvpSeasonRankRewardGroupId": 5
+  },
+  {
+    "RankLowerLimit": 11,
+    "PvpSeasonId": 202008,
+    "PvpSeasonRankRewardGroupId": 5
+  },
+  {
+    "RankLowerLimit": 11,
+    "PvpSeasonId": 202009,
+    "PvpSeasonRankRewardGroupId": 5
+  },
+  {
+    "RankLowerLimit": 11,
+    "PvpSeasonId": 202010,
+    "PvpSeasonRankRewardGroupId": 5
+  },
+  {
+    "RankLowerLimit": 11,
+    "PvpSeasonId": 202011,
+    "PvpSeasonRankRewardGroupId": 5
+  },
+  {
+    "RankLowerLimit": 11,
+    "PvpSeasonId": 202012,
+    "PvpSeasonRankRewardGroupId": 5
+  },
+  {
+    "RankLowerLimit": 11,
+    "PvpSeasonId": 202013,
+    "PvpSeasonRankRewardGroupId": 5
+  },
+  {
+    "RankLowerLimit": 11,
+    "PvpSeasonId": 202014,
+    "PvpSeasonRankRewardGroupId": 5
+  },
+  {
+    "RankLowerLimit": 51,
+    "PvpSeasonId": 202001,
+    "PvpSeasonRankRewardGroupId": 6
+  },
+  {
+    "RankLowerLimit": 51,
+    "PvpSeasonId": 202002,
+    "PvpSeasonRankRewardGroupId": 6
+  },
+  {
+    "RankLowerLimit": 51,
+    "PvpSeasonId": 202003,
+    "PvpSeasonRankRewardGroupId": 6
+  },
+  {
+    "RankLowerLimit": 51,
+    "PvpSeasonId": 202004,
+    "PvpSeasonRankRewardGroupId": 6
+  },
+  {
+    "RankLowerLimit": 51,
+    "PvpSeasonId": 202005,
+    "PvpSeasonRankRewardGroupId": 6
+  },
+  {
+    "RankLowerLimit": 51,
+    "PvpSeasonId": 202006,
+    "PvpSeasonRankRewardGroupId": 0
+  },
+  {
+    "RankLowerLimit": 51,
+    "PvpSeasonId": 202007,
+    "PvpSeasonRankRewardGroupId": 6
+  },
+  {
+    "RankLowerLimit": 51,
+    "PvpSeasonId": 202008,
+    "PvpSeasonRankRewardGroupId": 6
+  },
+  {
+    "RankLowerLimit": 51,
+    "PvpSeasonId": 202009,
+    "PvpSeasonRankRewardGroupId": 6
+  },
+  {
+    "RankLowerLimit": 51,
+    "PvpSeasonId": 202010,
+    "PvpSeasonRankRewardGroupId": 6
+  },
+  {
+    "RankLowerLimit": 51,
+    "PvpSeasonId": 202011,
+    "PvpSeasonRankRewardGroupId": 6
+  },
+  {
+    "RankLowerLimit": 51,
+    "PvpSeasonId": 202012,
+    "PvpSeasonRankRewardGroupId": 6
+  },
+  {
+    "RankLowerLimit": 51,
+    "PvpSeasonId": 202013,
+    "PvpSeasonRankRewardGroupId": 6
+  },
+  {
+    "RankLowerLimit": 51,
+    "PvpSeasonId": 202014,
+    "PvpSeasonRankRewardGroupId": 6
+  },
+  {
+    "RankLowerLimit": 101,
+    "PvpSeasonId": 202001,
+    "PvpSeasonRankRewardGroupId": 7
+  },
+  {
+    "RankLowerLimit": 101,
+    "PvpSeasonId": 202002,
+    "PvpSeasonRankRewardGroupId": 7
+  },
+  {
+    "RankLowerLimit": 101,
+    "PvpSeasonId": 202003,
+    "PvpSeasonRankRewardGroupId": 7
+  },
+  {
+    "RankLowerLimit": 101,
+    "PvpSeasonId": 202004,
+    "PvpSeasonRankRewardGroupId": 7
+  },
+  {
+    "RankLowerLimit": 101,
+    "PvpSeasonId": 202005,
+    "PvpSeasonRankRewardGroupId": 7
+  },
+  {
+    "RankLowerLimit": 101,
+    "PvpSeasonId": 202006,
+    "PvpSeasonRankRewardGroupId": 0
+  },
+  {
+    "RankLowerLimit": 101,
+    "PvpSeasonId": 202007,
+    "PvpSeasonRankRewardGroupId": 7
+  },
+  {
+    "RankLowerLimit": 101,
+    "PvpSeasonId": 202008,
+    "PvpSeasonRankRewardGroupId": 7
+  },
+  {
+    "RankLowerLimit": 101,
+    "PvpSeasonId": 202009,
+    "PvpSeasonRankRewardGroupId": 7
+  },
+  {
+    "RankLowerLimit": 101,
+    "PvpSeasonId": 202010,
+    "PvpSeasonRankRewardGroupId": 7
+  },
+  {
+    "RankLowerLimit": 101,
+    "PvpSeasonId": 202011,
+    "PvpSeasonRankRewardGroupId": 7
+  },
+  {
+    "RankLowerLimit": 101,
+    "PvpSeasonId": 202012,
+    "PvpSeasonRankRewardGroupId": 7
+  },
+  {
+    "RankLowerLimit": 101,
+    "PvpSeasonId": 202013,
+    "PvpSeasonRankRewardGroupId": 7
+  },
+  {
+    "RankLowerLimit": 101,
+    "PvpSeasonId": 202014,
+    "PvpSeasonRankRewardGroupId": 7
+  },
+  {
+    "RankLowerLimit": 501,
+    "PvpSeasonId": 202001,
+    "PvpSeasonRankRewardGroupId": 8
+  },
+  {
+    "RankLowerLimit": 501,
+    "PvpSeasonId": 202002,
+    "PvpSeasonRankRewardGroupId": 8
+  },
+  {
+    "RankLowerLimit": 501,
+    "PvpSeasonId": 202003,
+    "PvpSeasonRankRewardGroupId": 8
+  },
+  {
+    "RankLowerLimit": 501,
+    "PvpSeasonId": 202004,
+    "PvpSeasonRankRewardGroupId": 8
+  },
+  {
+    "RankLowerLimit": 501,
+    "PvpSeasonId": 202005,
+    "PvpSeasonRankRewardGroupId": 8
+  },
+  {
+    "RankLowerLimit": 501,
+    "PvpSeasonId": 202006,
+    "PvpSeasonRankRewardGroupId": 0
+  },
+  {
+    "RankLowerLimit": 501,
+    "PvpSeasonId": 202007,
+    "PvpSeasonRankRewardGroupId": 8
+  },
+  {
+    "RankLowerLimit": 501,
+    "PvpSeasonId": 202008,
+    "PvpSeasonRankRewardGroupId": 8
+  },
+  {
+    "RankLowerLimit": 501,
+    "PvpSeasonId": 202009,
+    "PvpSeasonRankRewardGroupId": 8
+  },
+  {
+    "RankLowerLimit": 501,
+    "PvpSeasonId": 202010,
+    "PvpSeasonRankRewardGroupId": 8
+  },
+  {
+    "RankLowerLimit": 501,
+    "PvpSeasonId": 202011,
+    "PvpSeasonRankRewardGroupId": 8
+  },
+  {
+    "RankLowerLimit": 501,
+    "PvpSeasonId": 202012,
+    "PvpSeasonRankRewardGroupId": 8
+  },
+  {
+    "RankLowerLimit": 501,
+    "PvpSeasonId": 202013,
+    "PvpSeasonRankRewardGroupId": 8
+  },
+  {
+    "RankLowerLimit": 501,
+    "PvpSeasonId": 202014,
+    "PvpSeasonRankRewardGroupId": 8
+  },
+  {
+    "RankLowerLimit": 1001,
+    "PvpSeasonId": 202001,
+    "PvpSeasonRankRewardGroupId": 9
+  },
+  {
+    "RankLowerLimit": 1001,
+    "PvpSeasonId": 202002,
+    "PvpSeasonRankRewardGroupId": 9
+  },
+  {
+    "RankLowerLimit": 1001,
+    "PvpSeasonId": 202003,
+    "PvpSeasonRankRewardGroupId": 9
+  },
+  {
+    "RankLowerLimit": 1001,
+    "PvpSeasonId": 202004,
+    "PvpSeasonRankRewardGroupId": 9
+  },
+  {
+    "RankLowerLimit": 1001,
+    "PvpSeasonId": 202005,
+    "PvpSeasonRankRewardGroupId": 9
+  },
+  {
+    "RankLowerLimit": 1001,
+    "PvpSeasonId": 202006,
+    "PvpSeasonRankRewardGroupId": 0
+  },
+  {
+    "RankLowerLimit": 1001,
+    "PvpSeasonId": 202007,
+    "PvpSeasonRankRewardGroupId": 9
+  },
+  {
+    "RankLowerLimit": 1001,
+    "PvpSeasonId": 202008,
+    "PvpSeasonRankRewardGroupId": 9
+  },
+  {
+    "RankLowerLimit": 1001,
+    "PvpSeasonId": 202009,
+    "PvpSeasonRankRewardGroupId": 9
+  },
+  {
+    "RankLowerLimit": 1001,
+    "PvpSeasonId": 202010,
+    "PvpSeasonRankRewardGroupId": 9
+  },
+  {
+    "RankLowerLimit": 1001,
+    "PvpSeasonId": 202011,
+    "PvpSeasonRankRewardGroupId": 9
+  },
+  {
+    "RankLowerLimit": 1001,
+    "PvpSeasonId": 202012,
+    "PvpSeasonRankRewardGroupId": 9
+  },
+  {
+    "RankLowerLimit": 1001,
+    "PvpSeasonId": 202013,
+    "PvpSeasonRankRewardGroupId": 9
+  },
+  {
+    "RankLowerLimit": 1001,
+    "PvpSeasonId": 202014,
+    "PvpSeasonRankRewardGroupId": 9
+  },
+  {
+    "RankLowerLimit": 5001,
+    "PvpSeasonId": 202001,
+    "PvpSeasonRankRewardGroupId": 10
+  },
+  {
+    "RankLowerLimit": 5001,
+    "PvpSeasonId": 202002,
+    "PvpSeasonRankRewardGroupId": 10
+  },
+  {
+    "RankLowerLimit": 5001,
+    "PvpSeasonId": 202003,
+    "PvpSeasonRankRewardGroupId": 10
+  },
+  {
+    "RankLowerLimit": 5001,
+    "PvpSeasonId": 202004,
+    "PvpSeasonRankRewardGroupId": 10
+  },
+  {
+    "RankLowerLimit": 5001,
+    "PvpSeasonId": 202005,
+    "PvpSeasonRankRewardGroupId": 10
+  },
+  {
+    "RankLowerLimit": 5001,
+    "PvpSeasonId": 202006,
+    "PvpSeasonRankRewardGroupId": 0
+  },
+  {
+    "RankLowerLimit": 5001,
+    "PvpSeasonId": 202007,
+    "PvpSeasonRankRewardGroupId": 10
+  },
+  {
+    "RankLowerLimit": 5001,
+    "PvpSeasonId": 202008,
+    "PvpSeasonRankRewardGroupId": 10
+  },
+  {
+    "RankLowerLimit": 5001,
+    "PvpSeasonId": 202009,
+    "PvpSeasonRankRewardGroupId": 10
+  },
+  {
+    "RankLowerLimit": 5001,
+    "PvpSeasonId": 202010,
+    "PvpSeasonRankRewardGroupId": 10
+  },
+  {
+    "RankLowerLimit": 5001,
+    "PvpSeasonId": 202011,
+    "PvpSeasonRankRewardGroupId": 10
+  },
+  {
+    "RankLowerLimit": 5001,
+    "PvpSeasonId": 202012,
+    "PvpSeasonRankRewardGroupId": 10
+  },
+  {
+    "RankLowerLimit": 5001,
+    "PvpSeasonId": 202013,
+    "PvpSeasonRankRewardGroupId": 10
+  },
+  {
+    "RankLowerLimit": 5001,
+    "PvpSeasonId": 202014,
+    "PvpSeasonRankRewardGroupId": 10
+  },
+  {
+    "RankLowerLimit": 10001,
+    "PvpSeasonId": 202001,
+    "PvpSeasonRankRewardGroupId": 11
+  },
+  {
+    "RankLowerLimit": 10001,
+    "PvpSeasonId": 202002,
+    "PvpSeasonRankRewardGroupId": 11
+  },
+  {
+    "RankLowerLimit": 10001,
+    "PvpSeasonId": 202003,
+    "PvpSeasonRankRewardGroupId": 11
+  },
+  {
+    "RankLowerLimit": 10001,
+    "PvpSeasonId": 202004,
+    "PvpSeasonRankRewardGroupId": 11
+  },
+  {
+    "RankLowerLimit": 10001,
+    "PvpSeasonId": 202005,
+    "PvpSeasonRankRewardGroupId": 11
+  },
+  {
+    "RankLowerLimit": 10001,
+    "PvpSeasonId": 202006,
+    "PvpSeasonRankRewardGroupId": 0
+  },
+  {
+    "RankLowerLimit": 10001,
+    "PvpSeasonId": 202007,
+    "PvpSeasonRankRewardGroupId": 11
+  },
+  {
+    "RankLowerLimit": 10001,
+    "PvpSeasonId": 202008,
+    "PvpSeasonRankRewardGroupId": 11
+  },
+  {
+    "RankLowerLimit": 10001,
+    "PvpSeasonId": 202009,
+    "PvpSeasonRankRewardGroupId": 11
+  },
+  {
+    "RankLowerLimit": 10001,
+    "PvpSeasonId": 202010,
+    "PvpSeasonRankRewardGroupId": 11
+  },
+  {
+    "RankLowerLimit": 10001,
+    "PvpSeasonId": 202011,
+    "PvpSeasonRankRewardGroupId": 11
+  },
+  {
+    "RankLowerLimit": 10001,
+    "PvpSeasonId": 202012,
+    "PvpSeasonRankRewardGroupId": 11
+  },
+  {
+    "RankLowerLimit": 10001,
+    "PvpSeasonId": 202013,
+    "PvpSeasonRankRewardGroupId": 11
+  },
+  {
+    "RankLowerLimit": 10001,
+    "PvpSeasonId": 202014,
+    "PvpSeasonRankRewardGroupId": 11
+  },
+  {
+    "RankLowerLimit": 20001,
+    "PvpSeasonId": 202001,
+    "PvpSeasonRankRewardGroupId": 12
+  },
+  {
+    "RankLowerLimit": 20001,
+    "PvpSeasonId": 202002,
+    "PvpSeasonRankRewardGroupId": 12
+  },
+  {
+    "RankLowerLimit": 20001,
+    "PvpSeasonId": 202003,
+    "PvpSeasonRankRewardGroupId": 12
+  },
+  {
+    "RankLowerLimit": 20001,
+    "PvpSeasonId": 202004,
+    "PvpSeasonRankRewardGroupId": 12
+  },
+  {
+    "RankLowerLimit": 20001,
+    "PvpSeasonId": 202005,
+    "PvpSeasonRankRewardGroupId": 12
+  },
+  {
+    "RankLowerLimit": 20001,
+    "PvpSeasonId": 202006,
+    "PvpSeasonRankRewardGroupId": 0
+  },
+  {
+    "RankLowerLimit": 20001,
+    "PvpSeasonId": 202007,
+    "PvpSeasonRankRewardGroupId": 12
+  },
+  {
+    "RankLowerLimit": 20001,
+    "PvpSeasonId": 202008,
+    "PvpSeasonRankRewardGroupId": 12
+  },
+  {
+    "RankLowerLimit": 20001,
+    "PvpSeasonId": 202009,
+    "PvpSeasonRankRewardGroupId": 12
+  },
+  {
+    "RankLowerLimit": 20001,
+    "PvpSeasonId": 202010,
+    "PvpSeasonRankRewardGroupId": 12
+  },
+  {
+    "RankLowerLimit": 20001,
+    "PvpSeasonId": 202011,
+    "PvpSeasonRankRewardGroupId": 12
+  },
+  {
+    "RankLowerLimit": 20001,
+    "PvpSeasonId": 202012,
+    "PvpSeasonRankRewardGroupId": 12
+  },
+  {
+    "RankLowerLimit": 20001,
+    "PvpSeasonId": 202013,
+    "PvpSeasonRankRewardGroupId": 12
+  },
+  {
+    "RankLowerLimit": 20001,
+    "PvpSeasonId": 202014,
+    "PvpSeasonRankRewardGroupId": 12
+  },
+  {
+    "RankLowerLimit": 30001,
+    "PvpSeasonId": 202001,
+    "PvpSeasonRankRewardGroupId": 13
+  },
+  {
+    "RankLowerLimit": 30001,
+    "PvpSeasonId": 202002,
+    "PvpSeasonRankRewardGroupId": 13
+  },
+  {
+    "RankLowerLimit": 30001,
+    "PvpSeasonId": 202003,
+    "PvpSeasonRankRewardGroupId": 13
+  },
+  {
+    "RankLowerLimit": 30001,
+    "PvpSeasonId": 202004,
+    "PvpSeasonRankRewardGroupId": 13
+  },
+  {
+    "RankLowerLimit": 30001,
+    "PvpSeasonId": 202005,
+    "PvpSeasonRankRewardGroupId": 13
+  },
+  {
+    "RankLowerLimit": 30001,
+    "PvpSeasonId": 202006,
+    "PvpSeasonRankRewardGroupId": 0
+  },
+  {
+    "RankLowerLimit": 30001,
+    "PvpSeasonId": 202007,
+    "PvpSeasonRankRewardGroupId": 13
+  },
+  {
+    "RankLowerLimit": 30001,
+    "PvpSeasonId": 202008,
+    "PvpSeasonRankRewardGroupId": 13
+  },
+  {
+    "RankLowerLimit": 30001,
+    "PvpSeasonId": 202009,
+    "PvpSeasonRankRewardGroupId": 13
+  },
+  {
+    "RankLowerLimit": 30001,
+    "PvpSeasonId": 202010,
+    "PvpSeasonRankRewardGroupId": 13
+  },
+  {
+    "RankLowerLimit": 30001,
+    "PvpSeasonId": 202011,
+    "PvpSeasonRankRewardGroupId": 13
+  },
+  {
+    "RankLowerLimit": 30001,
+    "PvpSeasonId": 202012,
+    "PvpSeasonRankRewardGroupId": 13
+  },
+  {
+    "RankLowerLimit": 30001,
+    "PvpSeasonId": 202013,
+    "PvpSeasonRankRewardGroupId": 13
+  },
+  {
+    "RankLowerLimit": 30001,
+    "PvpSeasonId": 202014,
+    "PvpSeasonRankRewardGroupId": 13
+  },
+  {
+    "RankLowerLimit": 50001,
+    "PvpSeasonId": 202001,
+    "PvpSeasonRankRewardGroupId": 14
+  },
+  {
+    "RankLowerLimit": 50001,
+    "PvpSeasonId": 202002,
+    "PvpSeasonRankRewardGroupId": 14
+  },
+  {
+    "RankLowerLimit": 50001,
+    "PvpSeasonId": 202003,
+    "PvpSeasonRankRewardGroupId": 14
+  },
+  {
+    "RankLowerLimit": 50001,
+    "PvpSeasonId": 202004,
+    "PvpSeasonRankRewardGroupId": 14
+  },
+  {
+    "RankLowerLimit": 50001,
+    "PvpSeasonId": 202005,
+    "PvpSeasonRankRewardGroupId": 14
+  },
+  {
+    "RankLowerLimit": 50001,
+    "PvpSeasonId": 202006,
+    "PvpSeasonRankRewardGroupId": 0
+  },
+  {
+    "RankLowerLimit": 50001,
+    "PvpSeasonId": 202007,
+    "PvpSeasonRankRewardGroupId": 14
+  },
+  {
+    "RankLowerLimit": 50001,
+    "PvpSeasonId": 202008,
+    "PvpSeasonRankRewardGroupId": 14
+  },
+  {
+    "RankLowerLimit": 50001,
+    "PvpSeasonId": 202009,
+    "PvpSeasonRankRewardGroupId": 14
+  },
+  {
+    "RankLowerLimit": 50001,
+    "PvpSeasonId": 202010,
+    "PvpSeasonRankRewardGroupId": 14
+  },
+  {
+    "RankLowerLimit": 50001,
+    "PvpSeasonId": 202011,
+    "PvpSeasonRankRewardGroupId": 14
+  },
+  {
+    "RankLowerLimit": 50001,
+    "PvpSeasonId": 202012,
+    "PvpSeasonRankRewardGroupId": 14
+  },
+  {
+    "RankLowerLimit": 50001,
+    "PvpSeasonId": 202013,
+    "PvpSeasonRankRewardGroupId": 14
+  },
+  {
+    "RankLowerLimit": 50001,
+    "PvpSeasonId": 202014,
+    "PvpSeasonRankRewardGroupId": 14
+  }
+]

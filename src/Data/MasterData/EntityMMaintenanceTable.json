@@ -1,0 +1,440 @@
+[
+  {
+    "MaintenanceId": 1,
+    "StartDatetime": 1619794800000,
+    "EndDatetime": 1619967599000,
+    "MaintenanceGroupId": 1
+  },
+  {
+    "MaintenanceId": 2,
+    "StartDatetime": 1622127600000,
+    "EndDatetime": 1622609999000,
+    "MaintenanceGroupId": 2
+  },
+  {
+    "MaintenanceId": 3,
+    "StartDatetime": 1622127600000,
+    "EndDatetime": 1622609999000,
+    "MaintenanceGroupId": 3
+  },
+  {
+    "MaintenanceId": 4,
+    "StartDatetime": 1622991600000,
+    "EndDatetime": 1623117599000,
+    "MaintenanceGroupId": 4
+  },
+  {
+    "MaintenanceId": 5,
+    "StartDatetime": 1624806000000,
+    "EndDatetime": 1624845599000,
+    "MaintenanceGroupId": 5
+  },
+  {
+    "MaintenanceId": 6,
+    "StartDatetime": 1627261200000,
+    "EndDatetime": 1627264799000,
+    "MaintenanceGroupId": 6
+  },
+  {
+    "MaintenanceId": 7,
+    "StartDatetime": 1627225200000,
+    "EndDatetime": 1627264799000,
+    "MaintenanceGroupId": 7
+  },
+  {
+    "MaintenanceId": 8,
+    "StartDatetime": 1627372800000,
+    "EndDatetime": 1627376399000,
+    "MaintenanceGroupId": 8
+  },
+  {
+    "MaintenanceId": 9,
+    "StartDatetime": 1628236800000,
+    "EndDatetime": 1628240399000,
+    "MaintenanceGroupId": 3
+  },
+  {
+    "MaintenanceId": 10,
+    "StartDatetime": 1627437600000,
+    "EndDatetime": 1629079199000,
+    "MaintenanceGroupId": 7
+  },
+  {
+    "MaintenanceId": 11,
+    "StartDatetime": 1632063600000,
+    "EndDatetime": 1632103199000,
+    "MaintenanceGroupId": 7
+  },
+  {
+    "MaintenanceId": 12,
+    "StartDatetime": 1633878000000,
+    "EndDatetime": 1634695199000,
+    "MaintenanceGroupId": 12
+  },
+  {
+    "MaintenanceId": 13,
+    "StartDatetime": 1634482800000,
+    "EndDatetime": 1634522399000,
+    "MaintenanceGroupId": 7
+  },
+  {
+    "MaintenanceId": 14,
+    "StartDatetime": 1634691600000,
+    "EndDatetime": 1634695199000,
+    "MaintenanceGroupId": 14
+  },
+  {
+    "MaintenanceId": 15,
+    "StartDatetime": 1634673600000,
+    "EndDatetime": 1635299999000,
+    "MaintenanceGroupId": 7
+  },
+  {
+    "MaintenanceId": 16,
+    "StartDatetime": 1636194600000,
+    "EndDatetime": 1636423199000,
+    "MaintenanceGroupId": 7
+  },
+  {
+    "MaintenanceId": 17,
+    "StartDatetime": 1636902000000,
+    "EndDatetime": 1636941599000,
+    "MaintenanceGroupId": 7
+  },
+  {
+    "MaintenanceId": 18,
+    "StartDatetime": 1639321200000,
+    "EndDatetime": 1639360799000,
+    "MaintenanceGroupId": 7
+  },
+  {
+    "MaintenanceId": 19,
+    "StartDatetime": 1642345200000,
+    "EndDatetime": 1642384799000,
+    "MaintenanceGroupId": 7
+  },
+  {
+    "MaintenanceId": 20,
+    "StartDatetime": 1644764400000,
+    "EndDatetime": 1644803999000,
+    "MaintenanceGroupId": 7
+  },
+  {
+    "MaintenanceId": 21,
+    "StartDatetime": 1645059600000,
+    "EndDatetime": 1645408799000,
+    "MaintenanceGroupId": 21
+  },
+  {
+    "MaintenanceId": 22,
+    "StartDatetime": 1646013600000,
+    "EndDatetime": 1646127000000,
+    "MaintenanceGroupId": 22
+  },
+  {
+    "MaintenanceId": 23,
+    "StartDatetime": 1647183600000,
+    "EndDatetime": 1647223199000,
+    "MaintenanceGroupId": 7
+  },
+  {
+    "MaintenanceId": 24,
+    "StartDatetime": 1648393200000,
+    "EndDatetime": 1648432799000,
+    "MaintenanceGroupId": 7
+  },
+  {
+    "MaintenanceId": 25,
+    "StartDatetime": 1649898000000,
+    "EndDatetime": 1649987999000,
+    "MaintenanceGroupId": 25
+  },
+  {
+    "MaintenanceId": 26,
+    "StartDatetime": 1650812400000,
+    "EndDatetime": 1650851999000,
+    "MaintenanceGroupId": 7
+  },
+  {
+    "MaintenanceId": 27,
+    "StartDatetime": 1652058000000,
+    "EndDatetime": 1652065199000,
+    "MaintenanceGroupId": 21
+  },
+  {
+    "MaintenanceId": 28,
+    "StartDatetime": 1652421600000,
+    "EndDatetime": 1652422500000,
+    "MaintenanceGroupId": 28
+  },
+  {
+    "MaintenanceId": 29,
+    "StartDatetime": 1653231600000,
+    "EndDatetime": 1653271199000,
+    "MaintenanceGroupId": 7
+  },
+  {
+    "MaintenanceId": 30,
+    "StartDatetime": 1653272400000,
+    "EndDatetime": 1653278399000,
+    "MaintenanceGroupId": 7
+  },
+  {
+    "MaintenanceId": 31,
+    "StartDatetime": 1656255600000,
+    "EndDatetime": 1656295199000,
+    "MaintenanceGroupId": 7
+  },
+  {
+    "MaintenanceId": 32,
+    "StartDatetime": 1656514800000,
+    "EndDatetime": 1656522000000,
+    "MaintenanceGroupId": 32
+  },
+  {
+    "MaintenanceId": 33,
+    "StartDatetime": 1658674800000,
+    "EndDatetime": 1658714399000,
+    "MaintenanceGroupId": 7
+  },
+  {
+    "MaintenanceId": 34,
+    "StartDatetime": 1659585600000,
+    "EndDatetime": 1659600000000,
+    "MaintenanceGroupId": 34
+  },
+  {
+    "MaintenanceId": 35,
+    "StartDatetime": 1660489200000,
+    "EndDatetime": 1660787999000,
+    "MaintenanceGroupId": 35
+  },
+  {
+    "MaintenanceId": 36,
+    "StartDatetime": 1660489200000,
+    "EndDatetime": 1660787999000,
+    "MaintenanceGroupId": 36
+  },
+  {
+    "MaintenanceId": 37,
+    "StartDatetime": 1661698800000,
+    "EndDatetime": 1661738399000,
+    "MaintenanceGroupId": 7
+  },
+  {
+    "MaintenanceId": 38,
+    "StartDatetime": 1664118000000,
+    "EndDatetime": 1664157599000,
+    "MaintenanceGroupId": 7
+  },
+  {
+    "MaintenanceId": 39,
+    "StartDatetime": 1664982000000,
+    "EndDatetime": 1665043199000,
+    "MaintenanceGroupId": 39
+  },
+  {
+    "MaintenanceId": 40,
+    "StartDatetime": 1666537200000,
+    "EndDatetime": 1666576799000,
+    "MaintenanceGroupId": 7
+  },
+  {
+    "MaintenanceId": 41,
+    "StartDatetime": 1669561200000,
+    "EndDatetime": 1669600799000,
+    "MaintenanceGroupId": 7
+  },
+  {
+    "MaintenanceId": 42,
+    "StartDatetime": 1671375600000,
+    "EndDatetime": 1671415199000,
+    "MaintenanceGroupId": 7
+  },
+  {
+    "MaintenanceId": 43,
+    "StartDatetime": 1670208300000,
+    "EndDatetime": 1670230800000,
+    "MaintenanceGroupId": 43
+  },
+  {
+    "MaintenanceId": 44,
+    "StartDatetime": 1674399600000,
+    "EndDatetime": 1674439199000,
+    "MaintenanceGroupId": 7
+  },
+  {
+    "MaintenanceId": 45,
+    "StartDatetime": 1673881200000,
+    "EndDatetime": 1674007200000,
+    "MaintenanceGroupId": 45
+  },
+  {
+    "MaintenanceId": 46,
+    "StartDatetime": 1677423600000,
+    "EndDatetime": 1677463199000,
+    "MaintenanceGroupId": 7
+  },
+  {
+    "MaintenanceId": 47,
+    "StartDatetime": 1672498800000,
+    "EndDatetime": 1676685599000,
+    "MaintenanceGroupId": 47
+  },
+  {
+    "MaintenanceId": 48,
+    "StartDatetime": 1679238000000,
+    "EndDatetime": 1679277599000,
+    "MaintenanceGroupId": 7
+  },
+  {
+    "MaintenanceId": 49,
+    "StartDatetime": 1679842800000,
+    "EndDatetime": 1679882399000,
+    "MaintenanceGroupId": 7
+  },
+  {
+    "MaintenanceId": 50,
+    "StartDatetime": 1681657200000,
+    "EndDatetime": 1681696799000,
+    "MaintenanceGroupId": 7
+  },
+  {
+    "MaintenanceId": 51,
+    "StartDatetime": 1684076400000,
+    "EndDatetime": 1684115999000,
+    "MaintenanceGroupId": 7
+  },
+  {
+    "MaintenanceId": 52,
+    "StartDatetime": 1686495600000,
+    "EndDatetime": 1686535199000,
+    "MaintenanceGroupId": 7
+  },
+  {
+    "MaintenanceId": 53,
+    "StartDatetime": 1687096800000,
+    "EndDatetime": 1687139999000,
+    "MaintenanceGroupId": 7
+  },
+  {
+    "MaintenanceId": 54,
+    "StartDatetime": 1687964400000,
+    "EndDatetime": 1688090399000,
+    "MaintenanceGroupId": 54
+  },
+  {
+    "MaintenanceId": 55,
+    "StartDatetime": 1689519600000,
+    "EndDatetime": 1689559199000,
+    "MaintenanceGroupId": 7
+  },
+  {
+    "MaintenanceId": 56,
+    "StartDatetime": 1691334000000,
+    "EndDatetime": 1691373599000,
+    "MaintenanceGroupId": 7
+  },
+  {
+    "MaintenanceId": 57,
+    "StartDatetime": 1692198000000,
+    "EndDatetime": 1692323999000,
+    "MaintenanceGroupId": 57
+  },
+  {
+    "MaintenanceId": 58,
+    "StartDatetime": 1693148400000,
+    "EndDatetime": 1693187999000,
+    "MaintenanceGroupId": 7
+  },
+  {
+    "MaintenanceId": 59,
+    "StartDatetime": 1693443600000,
+    "EndDatetime": 1693447199000,
+    "MaintenanceGroupId": 54
+  },
+  {
+    "MaintenanceId": 60,
+    "StartDatetime": 1694962800000,
+    "EndDatetime": 1695002399000,
+    "MaintenanceGroupId": 7
+  },
+  {
+    "MaintenanceId": 61,
+    "StartDatetime": 1696777200000,
+    "EndDatetime": 1696816799000,
+    "MaintenanceGroupId": 7
+  },
+  {
+    "MaintenanceId": 62,
+    "StartDatetime": 1696055400000,
+    "EndDatetime": 1696557599000,
+    "MaintenanceGroupId": 62
+  },
+  {
+    "MaintenanceId": 63,
+    "StartDatetime": 1699837200000,
+    "EndDatetime": 1700445599000,
+    "MaintenanceGroupId": 63
+  },
+  {
+    "MaintenanceId": 64,
+    "StartDatetime": 1699196400000,
+    "EndDatetime": 1699235999000,
+    "MaintenanceGroupId": 7
+  },
+  {
+    "MaintenanceId": 65,
+    "StartDatetime": 1700406000000,
+    "EndDatetime": 1700445599000,
+    "MaintenanceGroupId": 7
+  },
+  {
+    "MaintenanceId": 66,
+    "StartDatetime": 1702220400000,
+    "EndDatetime": 1702259999000,
+    "MaintenanceGroupId": 7
+  },
+  {
+    "MaintenanceId": 67,
+    "StartDatetime": 1699585200000,
+    "EndDatetime": 1699596000000,
+    "MaintenanceGroupId": 67
+  },
+  {
+    "MaintenanceId": 68,
+    "StartDatetime": 1701997200000,
+    "EndDatetime": 1702259999000,
+    "MaintenanceGroupId": 68
+  },
+  {
+    "MaintenanceId": 69,
+    "StartDatetime": 1704034800000,
+    "EndDatetime": 1704074399000,
+    "MaintenanceGroupId": 7
+  },
+  {
+    "MaintenanceId": 70,
+    "StartDatetime": 1705280400000,
+    "EndDatetime": 1705283999000,
+    "MaintenanceGroupId": 54
+  },
+  {
+    "MaintenanceId": 71,
+    "StartDatetime": 1705849200000,
+    "EndDatetime": 1705888799000,
+    "MaintenanceGroupId": 7
+  },
+  {
+    "MaintenanceId": 72,
+    "StartDatetime": 1708268400000,
+    "EndDatetime": 1708307999000,
+    "MaintenanceGroupId": 7
+  },
+  {
+    "MaintenanceId": 73,
+    "StartDatetime": 1711897200000,
+    "EndDatetime": 4078652400000,
+    "MaintenanceGroupId": 7
+  }
+]

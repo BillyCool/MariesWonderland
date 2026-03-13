@@ -1,0 +1,22 @@
+[
+  {
+    "BigHuntQuestScoreCoefficientId": 1,
+    "ScoreDifficultBonusPermil": 0
+  },
+  {
+    "BigHuntQuestScoreCoefficientId": 2,
+    "ScoreDifficultBonusPermil": 1500
+  },
+  {
+    "BigHuntQuestScoreCoefficientId": 3,
+    "ScoreDifficultBonusPermil": 3500
+  },
+  {
+    "BigHuntQuestScoreCoefficientId": 4,
+    "ScoreDifficultBonusPermil": 7000
+  },
+  {
+    "BigHuntQuestScoreCoefficientId": 5,
+    "ScoreDifficultBonusPermil": 26000
+  }
+]

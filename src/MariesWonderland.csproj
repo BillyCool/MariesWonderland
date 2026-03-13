@@ -11,6 +11,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Update="Data\MasterData\**\*.json" CopyToOutputDirectory="PreserveNewest" />
+    <Content Update="Data\UserData\**\*.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Grpc.AspNetCore" Version="2.76.0" />
   </ItemGroup>
 

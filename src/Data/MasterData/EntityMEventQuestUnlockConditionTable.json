@@ -1,0 +1,34 @@
+[
+  {
+    "EventQuestType": 3,
+    "CharacterId": 0,
+    "QuestId": 0,
+    "UnlockConditionType": 1,
+    "ConditionValue": 61,
+    "UnlockEvaluateConditionId": 0
+  },
+  {
+    "EventQuestType": 4,
+    "CharacterId": 0,
+    "QuestId": 0,
+    "UnlockConditionType": 1,
+    "ConditionValue": 21,
+    "UnlockEvaluateConditionId": 0
+  },
+  {
+    "EventQuestType": 5,
+    "CharacterId": 0,
+    "QuestId": 0,
+    "UnlockConditionType": 1,
+    "ConditionValue": 21,
+    "UnlockEvaluateConditionId": 0
+  },
+  {
+    "EventQuestType": 11,
+    "CharacterId": 0,
+    "QuestId": 0,
+    "UnlockConditionType": 1,
+    "ConditionValue": 121,
+    "UnlockEvaluateConditionId": 0
+  }
+]

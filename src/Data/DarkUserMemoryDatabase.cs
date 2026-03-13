@@ -1,220 +1,221 @@
-using MariesWonderland.Models.Tables;
+using MariesWonderland.Models.Entities;
 
-namespace NierReincarnation.Core.Dark;
+namespace MariesWonderland.Data;
 
 public class DarkUserMemoryDatabase
 {
-    public EntityIUserTable EntityIUserTable { get; }
+    public List<EntityIUser> EntityIUser { get; set; } = [];
 
-    public EntityIUserAppleTable EntityIUserAppleTable { get; }
+    public List<EntityIUserApple> EntityIUserApple { get; set; } = [];
 
-    public EntityIUserAutoSaleSettingDetailTable EntityIUserAutoSaleSettingDetailTable { get; }
+    public List<EntityIUserAutoSaleSettingDetail> EntityIUserAutoSaleSettingDetail { get; set; } = [];
 
-    public EntityIUserBeginnerCampaignTable EntityIUserBeginnerCampaignTable { get; }
+    public List<EntityIUserBeginnerCampaign> EntityIUserBeginnerCampaign { get; set; } = [];
 
-    public EntityIUserBigHuntMaxScoreTable EntityIUserBigHuntMaxScoreTable { get; }
+    public List<EntityIUserBigHuntMaxScore> EntityIUserBigHuntMaxScore { get; set; } = [];
 
-    public EntityIUserBigHuntProgressStatusTable EntityIUserBigHuntProgressStatusTable { get; }
+    public List<EntityIUserBigHuntProgressStatus> EntityIUserBigHuntProgressStatus { get; set; } = [];
 
-    public EntityIUserBigHuntScheduleMaxScoreTable EntityIUserBigHuntScheduleMaxScoreTable { get; }
+    public List<EntityIUserBigHuntScheduleMaxScore> EntityIUserBigHuntScheduleMaxScore { get; set; } = [];
 
-    public EntityIUserBigHuntStatusTable EntityIUserBigHuntStatusTable { get; }
+    public List<EntityIUserBigHuntStatus> EntityIUserBigHuntStatus { get; set; } = [];
 
-    public EntityIUserBigHuntWeeklyMaxScoreTable EntityIUserBigHuntWeeklyMaxScoreTable { get; }
+    public List<EntityIUserBigHuntWeeklyMaxScore> EntityIUserBigHuntWeeklyMaxScore { get; set; } = [];
 
-    public EntityIUserBigHuntWeeklyStatusTable EntityIUserBigHuntWeeklyStatusTable { get; }
+    public List<EntityIUserBigHuntWeeklyStatus> EntityIUserBigHuntWeeklyStatus { get; set; } = [];
 
-    public EntityIUserCageOrnamentRewardTable EntityIUserCageOrnamentRewardTable { get; }
+    public List<EntityIUserCageOrnamentReward> EntityIUserCageOrnamentReward { get; set; } = [];
 
-    public EntityIUserCharacterTable EntityIUserCharacterTable { get; }
+    public List<EntityIUserCharacter> EntityIUserCharacter { get; set; } = [];
 
-    public EntityIUserCharacterBoardTable EntityIUserCharacterBoardTable { get; }
+    public List<EntityIUserCharacterBoard> EntityIUserCharacterBoard { get; set; } = [];
 
-    public EntityIUserCharacterBoardAbilityTable EntityIUserCharacterBoardAbilityTable { get; }
+    public List<EntityIUserCharacterBoardAbility> EntityIUserCharacterBoardAbility { get; set; } = [];
 
-    public EntityIUserCharacterBoardCompleteRewardTable EntityIUserCharacterBoardCompleteRewardTable { get; }
+    public List<EntityIUserCharacterBoardCompleteReward> EntityIUserCharacterBoardCompleteReward { get; set; } = [];
 
-    public EntityIUserCharacterBoardStatusUpTable EntityIUserCharacterBoardStatusUpTable { get; }
+    public List<EntityIUserCharacterBoardStatusUp> EntityIUserCharacterBoardStatusUp { get; set; } = [];
 
-    public EntityIUserCharacterCostumeLevelBonusTable EntityIUserCharacterCostumeLevelBonusTable { get; }
+    public List<EntityIUserCharacterCostumeLevelBonus> EntityIUserCharacterCostumeLevelBonus { get; set; } = [];
 
-    public EntityIUserCharacterRebirthTable EntityIUserCharacterRebirthTable { get; }
+    public List<EntityIUserCharacterRebirth> EntityIUserCharacterRebirth { get; set; } = [];
 
-    public EntityIUserCharacterViewerFieldTable EntityIUserCharacterViewerFieldTable { get; }
+    public List<EntityIUserCharacterViewerField> EntityIUserCharacterViewerField { get; set; } = [];
 
-    public EntityIUserComebackCampaignTable EntityIUserComebackCampaignTable { get; }
+    public List<EntityIUserComebackCampaign> EntityIUserComebackCampaign { get; set; } = [];
 
-    public EntityIUserCompanionTable EntityIUserCompanionTable { get; }
+    public List<EntityIUserCompanion> EntityIUserCompanion { get; set; } = [];
 
-    public EntityIUserConsumableItemTable EntityIUserConsumableItemTable { get; }
+    public List<EntityIUserConsumableItem> EntityIUserConsumableItem { get; set; } = [];
 
-    public EntityIUserContentsStoryTable EntityIUserContentsStoryTable { get; }
+    public List<EntityIUserContentsStory> EntityIUserContentsStory { get; set; } = [];
 
-    public EntityIUserCostumeTable EntityIUserCostumeTable { get; }
+    public List<EntityIUserCostume> EntityIUserCostume { get; set; } = [];
 
-    public EntityIUserCostumeActiveSkillTable EntityIUserCostumeActiveSkillTable { get; }
+    public List<EntityIUserCostumeActiveSkill> EntityIUserCostumeActiveSkill { get; set; } = [];
 
-    public EntityIUserCostumeAwakenStatusUpTable EntityIUserCostumeAwakenStatusUpTable { get; }
+    public List<EntityIUserCostumeAwakenStatusUp> EntityIUserCostumeAwakenStatusUp { get; set; } = [];
 
-    public EntityIUserCostumeLevelBonusReleaseStatusTable EntityIUserCostumeLevelBonusReleaseStatusTable { get; }
+    public List<EntityIUserCostumeLevelBonusReleaseStatus> EntityIUserCostumeLevelBonusReleaseStatus { get; set; } = [];
 
-    public EntityIUserCostumeLotteryEffectTable EntityIUserCostumeLotteryEffectTable { get; }
+    public List<EntityIUserCostumeLotteryEffect> EntityIUserCostumeLotteryEffect { get; set; } = [];
 
-    public EntityIUserCostumeLotteryEffectAbilityTable EntityIUserCostumeLotteryEffectAbilityTable { get; }
+    public List<EntityIUserCostumeLotteryEffectAbility> EntityIUserCostumeLotteryEffectAbility { get; set; } = [];
 
-    public EntityIUserCostumeLotteryEffectPendingTable EntityIUserCostumeLotteryEffectPendingTable { get; }
+    public List<EntityIUserCostumeLotteryEffectPending> EntityIUserCostumeLotteryEffectPending { get; set; } = [];
 
-    public EntityIUserCostumeLotteryEffectStatusUpTable EntityIUserCostumeLotteryEffectStatusUpTable { get; }
+    public List<EntityIUserCostumeLotteryEffectStatusUp> EntityIUserCostumeLotteryEffectStatusUp { get; set; } = [];
 
-    public EntityIUserDeckTable EntityIUserDeckTable { get; }
+    public List<EntityIUserDeck> EntityIUserDeck { get; set; } = [];
 
-    public EntityIUserDeckCharacterTable EntityIUserDeckCharacterTable { get; }
+    public List<EntityIUserDeckCharacter> EntityIUserDeckCharacter { get; set; } = [];
 
-    public EntityIUserDeckCharacterDressupCostumeTable EntityIUserDeckCharacterDressupCostumeTable { get; }
+    public List<EntityIUserDeckCharacterDressupCostume> EntityIUserDeckCharacterDressupCostume { get; set; } = [];
 
-    public EntityIUserDeckLimitContentDeletedCharacterTable EntityIUserDeckLimitContentDeletedCharacterTable { get; }
+    public List<EntityIUserDeckLimitContentDeletedCharacter> EntityIUserDeckLimitContentDeletedCharacter { get; set; } = [];
 
-    public EntityIUserDeckLimitContentRestrictedTable EntityIUserDeckLimitContentRestrictedTable { get; }
+    public List<EntityIUserDeckLimitContentRestricted> EntityIUserDeckLimitContentRestricted { get; set; } = [];
 
-    public EntityIUserDeckPartsGroupTable EntityIUserDeckPartsGroupTable { get; }
+    public List<EntityIUserDeckPartsGroup> EntityIUserDeckPartsGroup { get; set; } = [];
 
-    public EntityIUserDeckSubWeaponGroupTable EntityIUserDeckSubWeaponGroupTable { get; }
+    public List<EntityIUserDeckSubWeaponGroup> EntityIUserDeckSubWeaponGroup { get; set; } = [];
 
-    public EntityIUserDeckTypeNoteTable EntityIUserDeckTypeNoteTable { get; }
+    public List<EntityIUserDeckTypeNote> EntityIUserDeckTypeNote { get; set; } = [];
 
-    public EntityIUserDokanTable EntityIUserDokanTable { get; }
+    public List<EntityIUserDokan> EntityIUserDokan { get; set; } = [];
 
-    public EntityIUserEventQuestDailyGroupCompleteRewardTable EntityIUserEventQuestDailyGroupCompleteRewardTable { get; }
+    public List<EntityIUserEventQuestDailyGroupCompleteReward> EntityIUserEventQuestDailyGroupCompleteReward { get; set; } = [];
 
-    public EntityIUserEventQuestGuerrillaFreeOpenTable EntityIUserEventQuestGuerrillaFreeOpenTable { get; }
+    public List<EntityIUserEventQuestGuerrillaFreeOpen> EntityIUserEventQuestGuerrillaFreeOpen { get; set; } = [];
 
-    public EntityIUserEventQuestLabyrinthSeasonTable EntityIUserEventQuestLabyrinthSeasonTable { get; }
+    public List<EntityIUserEventQuestLabyrinthSeason> EntityIUserEventQuestLabyrinthSeason { get; set; } = [];
 
-    public EntityIUserEventQuestLabyrinthStageTable EntityIUserEventQuestLabyrinthStageTable { get; }
+    public List<EntityIUserEventQuestLabyrinthStage> EntityIUserEventQuestLabyrinthStage { get; set; } = [];
 
-    public EntityIUserEventQuestProgressStatusTable EntityIUserEventQuestProgressStatusTable { get; }
+    public List<EntityIUserEventQuestProgressStatus> EntityIUserEventQuestProgressStatus { get; set; } = [];
 
-    public EntityIUserEventQuestTowerAccumulationRewardTable EntityIUserEventQuestTowerAccumulationRewardTable { get; }
+    public List<EntityIUserEventQuestTowerAccumulationReward> EntityIUserEventQuestTowerAccumulationReward { get; set; } = [];
 
-    public EntityIUserExploreTable EntityIUserExploreTable { get; }
+    public List<EntityIUserExplore> EntityIUserExplore { get; set; } = [];
 
-    public EntityIUserExploreScoreTable EntityIUserExploreScoreTable { get; }
+    public List<EntityIUserExploreScore> EntityIUserExploreScore { get; set; } = [];
 
-    public EntityIUserExtraQuestProgressStatusTable EntityIUserExtraQuestProgressStatusTable { get; }
+    public List<EntityIUserExtraQuestProgressStatus> EntityIUserExtraQuestProgressStatus { get; set; } = [];
 
-    public EntityIUserFacebookTable EntityIUserFacebookTable { get; }
+    public List<EntityIUserFacebook> EntityIUserFacebook { get; set; } = [];
 
-    public EntityIUserGemTable EntityIUserGemTable { get; }
+    public List<EntityIUserGem> EntityIUserGem { get; set; } = [];
 
-    public EntityIUserGimmickTable EntityIUserGimmickTable { get; }
+    public List<EntityIUserGimmick> EntityIUserGimmick { get; set; } = [];
 
-    public EntityIUserGimmickOrnamentProgressTable EntityIUserGimmickOrnamentProgressTable { get; }
+    public List<EntityIUserGimmickOrnamentProgress> EntityIUserGimmickOrnamentProgress { get; set; } = [];
 
-    public EntityIUserGimmickSequenceTable EntityIUserGimmickSequenceTable { get; }
+    public List<EntityIUserGimmickSequence> EntityIUserGimmickSequence { get; set; } = [];
 
-    public EntityIUserGimmickUnlockTable EntityIUserGimmickUnlockTable { get; }
+    public List<EntityIUserGimmickUnlock> EntityIUserGimmickUnlock { get; set; } = [];
 
-    public EntityIUserImportantItemTable EntityIUserImportantItemTable { get; }
+    public List<EntityIUserImportantItem> EntityIUserImportantItem { get; set; } = [];
 
-    public EntityIUserLimitedOpenTable EntityIUserLimitedOpenTable { get; }
+    public List<EntityIUserLimitedOpen> EntityIUserLimitedOpen { get; set; } = [];
 
-    public EntityIUserLoginTable EntityIUserLoginTable { get; }
+    public List<EntityIUserLogin> EntityIUserLogin { get; set; } = [];
 
-    public EntityIUserLoginBonusTable EntityIUserLoginBonusTable { get; }
+    public List<EntityIUserLoginBonus> EntityIUserLoginBonus { get; set; } = [];
 
-    public EntityIUserMainQuestFlowStatusTable EntityIUserMainQuestFlowStatusTable { get; }
+    public List<EntityIUserMainQuestFlowStatus> EntityIUserMainQuestFlowStatus { get; set; } = [];
 
-    public EntityIUserMainQuestMainFlowStatusTable EntityIUserMainQuestMainFlowStatusTable { get; }
+    public List<EntityIUserMainQuestMainFlowStatus> EntityIUserMainQuestMainFlowStatus { get; set; } = [];
 
-    public EntityIUserMainQuestProgressStatusTable EntityIUserMainQuestProgressStatusTable { get; }
+    public List<EntityIUserMainQuestProgressStatus> EntityIUserMainQuestProgressStatus { get; set; } = [];
 
-    public EntityIUserMainQuestReplayFlowStatusTable EntityIUserMainQuestReplayFlowStatusTable { get; }
+    public List<EntityIUserMainQuestReplayFlowStatus> EntityIUserMainQuestReplayFlowStatus { get; set; } = [];
 
-    public EntityIUserMainQuestSeasonRouteTable EntityIUserMainQuestSeasonRouteTable { get; }
+    public List<EntityIUserMainQuestSeasonRoute> EntityIUserMainQuestSeasonRoute { get; set; } = [];
 
-    public EntityIUserMaterialTable EntityIUserMaterialTable { get; }
+    public List<EntityIUserMaterial> EntityIUserMaterial { get; set; } = [];
 
-    public EntityIUserMissionTable EntityIUserMissionTable { get; }
+    public List<EntityIUserMission> EntityIUserMission { get; set; } = [];
 
-    public EntityIUserMissionCompletionProgressTable EntityIUserMissionCompletionProgressTable { get; }
+    public List<EntityIUserMissionCompletionProgress> EntityIUserMissionCompletionProgress { get; set; } = [];
 
-    public EntityIUserMissionPassPointTable EntityIUserMissionPassPointTable { get; }
+    public List<EntityIUserMissionPassPoint> EntityIUserMissionPassPoint { get; set; } = [];
 
-    public EntityIUserMovieTable EntityIUserMovieTable { get; }
+    public List<EntityIUserMovie> EntityIUserMovie { get; set; } = [];
 
-    public EntityIUserNaviCutInTable EntityIUserNaviCutInTable { get; }
+    public List<EntityIUserNaviCutIn> EntityIUserNaviCutIn { get; set; } = [];
 
-    public EntityIUserOmikujiTable EntityIUserOmikujiTable { get; }
+    public List<EntityIUserOmikuji> EntityIUserOmikuji { get; set; } = [];
 
-    public EntityIUserPartsTable EntityIUserPartsTable { get; }
+    public List<EntityIUserParts> EntityIUserParts { get; set; } = [];
 
-    public EntityIUserPartsGroupNoteTable EntityIUserPartsGroupNoteTable { get; }
+    public List<EntityIUserPartsGroupNote> EntityIUserPartsGroupNote { get; set; } = [];
 
-    public EntityIUserPartsPresetTable EntityIUserPartsPresetTable { get; }
+    public List<EntityIUserPartsPreset> EntityIUserPartsPreset { get; set; } = [];
 
-    public EntityIUserPartsPresetTagTable EntityIUserPartsPresetTagTable { get; }
+    public List<EntityIUserPartsPresetTag> EntityIUserPartsPresetTag { get; set; } = [];
 
-    public EntityIUserPartsStatusSubTable EntityIUserPartsStatusSubTable { get; }
+    public List<EntityIUserPartsStatusSub> EntityIUserPartsStatusSub { get; set; } = [];
 
-    public EntityIUserPortalCageStatusTable EntityIUserPortalCageStatusTable { get; }
+    public List<EntityIUserPortalCageStatus> EntityIUserPortalCageStatus { get; set; } = [];
 
-    public EntityIUserPossessionAutoConvertTable EntityIUserPossessionAutoConvertTable { get; }
+    public List<EntityIUserPossessionAutoConvert> EntityIUserPossessionAutoConvert { get; set; } = [];
 
-    public EntityIUserPremiumItemTable EntityIUserPremiumItemTable { get; }
+    public List<EntityIUserPremiumItem> EntityIUserPremiumItem { get; set; } = [];
 
-    public EntityIUserProfileTable EntityIUserProfileTable { get; }
+    public List<EntityIUserProfile> EntityIUserProfile { get; set; } = [];
 
-    public EntityIUserPvpDefenseDeckTable EntityIUserPvpDefenseDeckTable { get; }
+    public List<EntityIUserPvpDefenseDeck> EntityIUserPvpDefenseDeck { get; set; } = [];
 
-    public EntityIUserPvpStatusTable EntityIUserPvpStatusTable { get; }
+    public List<EntityIUserPvpStatus> EntityIUserPvpStatus { get; set; } = [];
 
-    public EntityIUserPvpWeeklyResultTable EntityIUserPvpWeeklyResultTable { get; }
+    public List<EntityIUserPvpWeeklyResult> EntityIUserPvpWeeklyResult { get; set; } = [];
 
-    public EntityIUserQuestTable EntityIUserQuestTable { get; }
+    public List<EntityIUserQuest> EntityIUserQuest { get; set; } = [];
 
-    public EntityIUserQuestAutoOrbitTable EntityIUserQuestAutoOrbitTable { get; }
+    public List<EntityIUserQuestAutoOrbit> EntityIUserQuestAutoOrbit { get; set; } = [];
 
-    public EntityIUserQuestLimitContentStatusTable EntityIUserQuestLimitContentStatusTable { get; }
+    public List<EntityIUserQuestLimitContentStatus> EntityIUserQuestLimitContentStatus { get; set; } = [];
 
-    public EntityIUserQuestMissionTable EntityIUserQuestMissionTable { get; }
+    public List<EntityIUserQuestMission> EntityIUserQuestMission { get; set; } = [];
 
-    public EntityIUserQuestReplayFlowRewardGroupTable EntityIUserQuestReplayFlowRewardGroupTable { get; }
+    public List<EntityIUserQuestReplayFlowRewardGroup> EntityIUserQuestReplayFlowRewardGroup { get; set; } = [];
 
-    public EntityIUserQuestSceneChoiceTable EntityIUserQuestSceneChoiceTable { get; }
+    public List<EntityIUserQuestSceneChoice> EntityIUserQuestSceneChoice { get; set; } = [];
 
-    public EntityIUserQuestSceneChoiceHistoryTable EntityIUserQuestSceneChoiceHistoryTable { get; }
+    public List<EntityIUserQuestSceneChoiceHistory> EntityIUserQuestSceneChoiceHistory { get; set; } = [];
 
-    public EntityIUserSettingTable EntityIUserSettingTable { get; }
+    public List<EntityIUserSetting> EntityIUserSetting { get; set; } = [];
 
-    public EntityIUserShopItemTable EntityIUserShopItemTable { get; }
+    public List<EntityIUserShopItem> EntityIUserShopItem { get; set; } = [];
 
-    public EntityIUserShopReplaceableTable EntityIUserShopReplaceableTable { get; }
+    public List<EntityIUserShopReplaceable> EntityIUserShopReplaceable { get; set; } = [];
 
-    public EntityIUserShopReplaceableLineupTable EntityIUserShopReplaceableLineupTable { get; }
+    public List<EntityIUserShopReplaceableLineup> EntityIUserShopReplaceableLineup { get; set; } = [];
 
-    public EntityIUserSideStoryQuestTable EntityIUserSideStoryQuestTable { get; }
+    public List<EntityIUserSideStoryQuest> EntityIUserSideStoryQuest { get; set; } = [];
 
-    public EntityIUserSideStoryQuestSceneProgressStatusTable EntityIUserSideStoryQuestSceneProgressStatusTable { get; }
+    public List<EntityIUserSideStoryQuestSceneProgressStatus> EntityIUserSideStoryQuestSceneProgressStatus { get; set; } = [];
 
-    public EntityIUserStatusTable EntityIUserStatusTable { get; }
+    public List<EntityIUserStatus> EntityIUserStatus { get; set; } = [];
 
-    public EntityIUserThoughtTable EntityIUserThoughtTable { get; }
+    public List<EntityIUserThought> EntityIUserThought { get; set; } = [];
 
-    public EntityIUserTripleDeckTable EntityIUserTripleDeckTable { get; }
+    public List<EntityIUserTripleDeck> EntityIUserTripleDeck { get; set; } = [];
 
-    public EntityIUserTutorialProgressTable EntityIUserTutorialProgressTable { get; }
+    public List<EntityIUserTutorialProgress> EntityIUserTutorialProgress { get; set; } = [];
 
-    public EntityIUserWeaponTable EntityIUserWeaponTable { get; }
+    public List<EntityIUserWeapon> EntityIUserWeapon { get; set; } = [];
 
-    public EntityIUserWeaponAbilityTable EntityIUserWeaponAbilityTable { get; }
+    public List<EntityIUserWeaponAbility> EntityIUserWeaponAbility { get; set; } = [];
 
-    public EntityIUserWeaponAwakenTable EntityIUserWeaponAwakenTable { get; }
+    public List<EntityIUserWeaponAwaken> EntityIUserWeaponAwaken { get; set; } = [];
 
-    public EntityIUserWeaponNoteTable EntityIUserWeaponNoteTable { get; }
+    public List<EntityIUserWeaponNote> EntityIUserWeaponNote { get; set; } = [];
 
-    public EntityIUserWeaponSkillTable EntityIUserWeaponSkillTable { get; }
+    public List<EntityIUserWeaponSkill> EntityIUserWeaponSkill { get; set; } = [];
 
-    public EntityIUserWeaponStoryTable EntityIUserWeaponStoryTable { get; }
+    public List<EntityIUserWeaponStory> EntityIUserWeaponStory { get; set; } = [];
 
-    public EntityIUserWebviewPanelMissionTable EntityIUserWebviewPanelMissionTable { get; }
+    public List<EntityIUserWebviewPanelMission> EntityIUserWebviewPanelMission { get; set; } = [];
+
 }

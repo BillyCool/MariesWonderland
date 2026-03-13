@@ -1,0 +1,6908 @@
+[
+  {
+    "QuestDeckRestrictionGroupId": 101,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1008
+  },
+  {
+    "QuestDeckRestrictionGroupId": 102,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1009
+  },
+  {
+    "QuestDeckRestrictionGroupId": 103,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1007
+  },
+  {
+    "QuestDeckRestrictionGroupId": 104,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1015
+  },
+  {
+    "QuestDeckRestrictionGroupId": 105,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1006
+  },
+  {
+    "QuestDeckRestrictionGroupId": 106,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1004
+  },
+  {
+    "QuestDeckRestrictionGroupId": 107,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1011
+  },
+  {
+    "QuestDeckRestrictionGroupId": 108,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1012
+  },
+  {
+    "QuestDeckRestrictionGroupId": 109,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1013
+  },
+  {
+    "QuestDeckRestrictionGroupId": 110,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1014
+  },
+  {
+    "QuestDeckRestrictionGroupId": 111,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1010
+  },
+  {
+    "QuestDeckRestrictionGroupId": 112,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1019
+  },
+  {
+    "QuestDeckRestrictionGroupId": 113,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1022
+  },
+  {
+    "QuestDeckRestrictionGroupId": 114,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1023
+  },
+  {
+    "QuestDeckRestrictionGroupId": 115,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1024
+  },
+  {
+    "QuestDeckRestrictionGroupId": 116,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1008
+  },
+  {
+    "QuestDeckRestrictionGroupId": 116,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1007
+  },
+  {
+    "QuestDeckRestrictionGroupId": 116,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1009
+  },
+  {
+    "QuestDeckRestrictionGroupId": 117,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1006
+  },
+  {
+    "QuestDeckRestrictionGroupId": 117,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1015
+  },
+  {
+    "QuestDeckRestrictionGroupId": 117,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1019
+  },
+  {
+    "QuestDeckRestrictionGroupId": 118,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1012
+  },
+  {
+    "QuestDeckRestrictionGroupId": 118,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1011
+  },
+  {
+    "QuestDeckRestrictionGroupId": 118,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1004
+  },
+  {
+    "QuestDeckRestrictionGroupId": 119,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1010
+  },
+  {
+    "QuestDeckRestrictionGroupId": 119,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1013
+  },
+  {
+    "QuestDeckRestrictionGroupId": 119,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1014
+  },
+  {
+    "QuestDeckRestrictionGroupId": 120,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1025
+  },
+  {
+    "QuestDeckRestrictionGroupId": 121,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1022
+  },
+  {
+    "QuestDeckRestrictionGroupId": 121,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1015
+  },
+  {
+    "QuestDeckRestrictionGroupId": 121,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1006
+  },
+  {
+    "QuestDeckRestrictionGroupId": 122,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1023
+  },
+  {
+    "QuestDeckRestrictionGroupId": 122,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1008
+  },
+  {
+    "QuestDeckRestrictionGroupId": 122,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1007
+  },
+  {
+    "QuestDeckRestrictionGroupId": 123,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1024
+  },
+  {
+    "QuestDeckRestrictionGroupId": 123,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1011
+  },
+  {
+    "QuestDeckRestrictionGroupId": 123,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1012
+  },
+  {
+    "QuestDeckRestrictionGroupId": 124,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1025
+  },
+  {
+    "QuestDeckRestrictionGroupId": 124,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1019
+  },
+  {
+    "QuestDeckRestrictionGroupId": 124,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1004
+  },
+  {
+    "QuestDeckRestrictionGroupId": 125,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1027
+  },
+  {
+    "QuestDeckRestrictionGroupId": 126,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1027
+  },
+  {
+    "QuestDeckRestrictionGroupId": 126,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1009
+  },
+  {
+    "QuestDeckRestrictionGroupId": 126,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1010
+  },
+  {
+    "QuestDeckRestrictionGroupId": 127,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1026
+  },
+  {
+    "QuestDeckRestrictionGroupId": 128,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1020
+  },
+  {
+    "QuestDeckRestrictionGroupId": 129,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1021
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1026
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1013
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1014
+  },
+  {
+    "QuestDeckRestrictionGroupId": 131,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1023
+  },
+  {
+    "QuestDeckRestrictionGroupId": 131,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1022
+  },
+  {
+    "QuestDeckRestrictionGroupId": 132,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1025
+  },
+  {
+    "QuestDeckRestrictionGroupId": 132,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1024
+  },
+  {
+    "QuestDeckRestrictionGroupId": 133,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1027
+  },
+  {
+    "QuestDeckRestrictionGroupId": 133,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1026
+  },
+  {
+    "QuestDeckRestrictionGroupId": 134,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1021
+  },
+  {
+    "QuestDeckRestrictionGroupId": 134,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1020
+  },
+  {
+    "QuestDeckRestrictionGroupId": 135,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1048
+  },
+  {
+    "QuestDeckRestrictionGroupId": 550,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 5,
+    "RestrictionValue": 55001
+  },
+  {
+    "QuestDeckRestrictionGroupId": 550,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 5,
+    "RestrictionValue": 55001
+  },
+  {
+    "QuestDeckRestrictionGroupId": 550,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 5,
+    "RestrictionValue": 55001
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130001,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130002,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130003,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1019
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130004,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130005,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130006,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1019
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130006,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130007,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130008,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130009,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130010,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1019
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130010,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130011,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130012,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130013,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130014,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130015,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1019
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130015,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130016,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130017,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130018,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1019
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130019,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130020,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130021,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1019
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130021,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130022,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130023,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130024,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130025,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1019
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130025,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130026,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130027,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130028,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130029,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130030,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1019
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130030,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130031,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130032,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130033,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1019
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130034,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130035,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130036,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1019
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130036,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130037,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130038,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130039,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130040,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1019
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130040,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130041,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130042,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130043,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130044,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130045,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1019
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130045,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130046,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130047,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130048,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1008
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130049,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130050,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130051,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1008
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130051,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130052,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130053,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130054,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130055,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1008
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130055,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130056,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130057,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130058,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130059,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130060,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1008
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130060,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130061,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130062,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130063,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1008
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130064,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130065,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130066,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1008
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130066,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130067,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130068,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130069,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130070,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1008
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130070,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130071,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130072,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130073,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130074,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130075,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1008
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130075,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130076,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130077,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130078,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1008
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130079,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130080,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130081,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1008
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130081,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130082,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130083,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130084,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130085,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1008
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130085,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130086,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130087,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130088,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130089,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130090,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1008
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130090,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130091,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130092,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130093,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1007
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130094,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130095,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130096,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1007
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130096,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130097,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130098,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130099,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130100,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1007
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130100,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130101,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130102,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130103,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130104,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130105,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1007
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130105,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130106,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130107,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130108,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1007
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130109,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130110,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130111,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1007
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130111,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130112,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130113,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130114,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130115,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1007
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130115,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130116,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130117,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130118,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130119,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130120,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1007
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130120,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130121,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130122,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130123,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1007
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130124,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130125,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130126,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1007
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130126,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130127,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130128,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130129,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130130,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1007
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130130,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130131,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130132,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130133,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130134,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130135,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1007
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130135,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130136,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130137,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130138,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1009
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130139,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130140,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130141,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1009
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130141,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130142,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130143,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130144,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130145,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1009
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130145,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130146,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130147,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130148,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130149,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130150,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1009
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130150,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130151,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130152,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130153,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1009
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130154,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130155,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130156,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1009
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130156,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130157,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130158,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130159,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130160,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1009
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130160,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130161,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130162,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130163,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130164,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130165,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1009
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130165,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130166,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130167,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130168,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1009
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130169,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130170,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130171,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1009
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130171,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130172,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130173,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130174,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130175,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1009
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130175,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130176,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130177,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130178,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130179,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130180,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1009
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130180,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130181,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130182,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130183,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1004
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130184,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130185,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130186,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1004
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130186,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130187,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130188,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130189,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130190,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1004
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130190,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130191,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130192,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130193,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130194,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130195,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1004
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130195,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130196,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130197,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130198,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1004
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130199,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130200,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130201,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1004
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130201,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130202,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130203,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130204,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130205,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1004
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130205,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130206,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130207,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130208,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130209,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130210,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1004
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130210,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130211,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130212,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130213,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1004
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130214,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130215,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130216,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1004
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130216,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130217,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130218,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130219,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130220,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1004
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130220,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130221,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130222,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130223,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130224,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130225,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1004
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130225,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130226,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130226,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130226,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130227,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1013
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130227,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130227,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130228,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130228,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130228,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130229,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1013
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130229,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130229,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130230,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130230,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130230,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130231,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130231,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130231,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130232,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1013
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130232,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130232,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130233,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130233,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130233,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130234,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130234,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130234,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130235,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1013
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130235,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130235,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130236,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130236,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130236,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130237,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130237,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130237,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130238,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1013
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130238,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130238,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130239,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130239,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130239,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130240,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130240,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130240,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130241,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1013
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130241,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130241,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130242,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130242,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130242,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130243,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130243,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130243,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130244,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130244,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130244,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130245,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1013
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130245,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130245,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130246,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130246,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130246,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130247,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130247,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130247,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130248,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130248,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130248,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130249,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1013
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130249,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130249,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130250,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130250,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130250,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130251,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130251,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130251,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130252,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1013
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130252,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130252,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130253,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130253,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130253,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130254,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130254,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130254,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130255,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1013
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130255,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130255,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130256,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130256,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130256,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130257,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130257,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130257,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130258,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130258,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130258,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130259,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1013
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130259,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130259,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130260,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130260,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130260,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130261,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130261,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130261,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130262,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130262,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130262,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130263,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130263,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130263,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130264,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1013
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130264,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130264,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130265,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130265,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130265,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130266,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1010
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130266,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130266,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130267,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130267,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130267,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130268,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1010
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130268,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130268,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130269,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130269,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130269,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130270,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130270,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130270,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130271,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1010
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130271,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130271,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130272,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130272,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130272,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130273,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130273,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130273,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130274,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1010
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130274,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130274,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130275,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130275,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130275,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130276,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130276,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130276,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130277,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1010
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130277,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130277,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130278,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130278,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130278,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130279,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130279,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130279,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130280,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1010
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130280,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130280,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130281,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130281,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130281,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130282,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130282,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130282,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130283,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130283,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130283,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130284,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1010
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130284,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130284,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130285,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130285,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130285,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130286,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130286,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130286,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130287,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130287,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130287,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130288,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1010
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130288,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130288,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130289,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130289,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130289,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130290,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130290,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130290,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130291,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1010
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130291,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130291,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130292,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130292,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130292,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130293,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130293,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130293,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130294,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1010
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130294,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130294,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130295,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130295,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130295,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130296,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130296,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130296,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130297,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130297,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130297,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130298,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1010
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130298,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130298,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130299,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130299,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130299,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130300,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130300,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130300,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130301,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130301,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130301,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130302,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130302,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130302,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130303,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1010
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130303,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130303,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130304,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130304,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130304,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130305,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1011
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130305,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130305,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130306,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130306,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130306,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130307,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1011
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130307,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130307,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130308,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130308,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130308,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130309,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130309,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130309,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130310,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1011
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130310,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130310,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130311,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130311,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130311,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130312,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130312,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130312,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130313,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1011
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130313,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130313,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130314,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130314,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130314,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130315,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130315,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130315,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130316,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1011
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130316,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130316,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130317,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130317,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130317,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130318,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130318,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130318,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130319,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1011
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130319,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130319,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130320,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130320,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130320,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130321,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130321,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130321,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130322,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130322,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130322,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130323,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1011
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130323,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130323,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130324,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130324,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130324,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130325,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130325,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130325,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130326,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130326,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130326,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130327,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1011
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130327,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130327,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130328,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130328,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130328,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130329,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130329,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130329,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130330,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1011
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130330,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130330,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130331,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130331,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130331,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130332,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130332,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130332,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130333,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1011
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130333,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130333,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130334,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130334,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130334,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130335,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130335,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130335,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130336,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130336,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130336,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130337,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1011
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130337,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130337,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130338,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130338,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130338,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130339,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130339,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130339,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130340,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130340,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130340,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130341,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130341,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130341,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130342,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1011
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130342,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130342,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 2
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130343,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130343,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130343,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130344,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1015
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130344,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130344,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130345,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130345,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130345,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130346,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1015
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130346,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130346,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130347,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130347,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130347,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130348,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130348,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130348,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130349,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1015
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130349,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130349,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130350,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130350,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130350,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130351,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130351,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130351,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130352,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1015
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130352,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130352,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130353,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130353,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130353,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130354,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130354,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130354,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130355,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1015
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130355,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130355,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130356,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130356,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130356,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130357,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130357,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130357,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130358,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1015
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130358,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130358,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130359,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130359,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130359,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130360,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130360,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130360,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130361,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130361,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130361,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130362,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1015
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130362,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130362,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130363,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130363,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130363,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130364,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130364,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130364,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130365,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130365,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130365,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130366,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1015
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130366,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130366,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130367,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130367,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130367,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130368,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130368,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130368,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130369,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1015
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130369,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130369,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130370,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130370,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130370,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130371,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130371,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130371,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130372,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1015
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130372,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130372,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130373,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130373,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130373,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130374,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130374,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130374,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130375,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130375,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130375,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130376,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1015
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130376,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130376,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130377,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130377,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130377,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130378,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130378,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130378,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130379,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130379,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130379,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130380,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130380,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130380,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130381,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1015
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130381,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130381,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 1
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130382,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130382,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130382,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130383,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1014
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130383,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130383,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130384,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130384,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130384,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130385,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1014
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130385,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130385,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130386,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130386,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130386,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130387,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130387,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130387,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130388,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1014
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130388,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130388,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130389,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130389,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130389,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130390,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130390,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130390,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130391,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1014
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130391,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130391,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130392,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130392,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130392,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130393,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130393,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130393,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130394,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1014
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130394,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130394,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130395,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130395,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130395,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130396,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130396,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130396,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130397,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1014
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130397,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130397,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130398,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130398,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130398,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130399,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130399,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130399,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130400,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130400,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130400,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130401,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1014
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130401,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130401,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130402,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130402,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130402,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130403,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130403,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130403,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130404,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130404,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130404,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130405,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1014
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130405,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130405,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130406,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130406,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130406,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130407,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130407,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130407,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130408,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1014
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130408,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130408,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130409,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130409,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130409,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130410,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130410,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130410,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130411,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1014
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130411,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130411,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130412,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130412,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130412,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130413,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130413,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130413,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130414,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130414,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130414,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130415,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1014
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130415,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130415,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130416,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130416,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130416,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130417,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130417,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130417,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130418,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130418,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130418,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130419,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130419,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130419,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130420,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1014
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130420,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130420,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 6
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130421,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130421,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130421,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130422,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1012
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130422,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130422,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130423,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130423,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130423,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130424,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1012
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130424,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130424,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130425,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130425,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130425,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130426,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130426,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130426,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130427,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1012
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130427,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130427,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130428,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130428,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130428,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130429,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130429,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130429,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130430,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1012
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130430,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130430,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130431,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130431,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130431,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130432,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130432,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130432,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130433,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1012
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130433,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130433,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130434,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130434,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130434,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130435,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130435,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130435,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130436,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1012
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130436,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130436,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130437,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130437,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130437,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130438,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130438,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130438,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130439,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130439,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130439,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130440,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1012
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130440,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130440,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130441,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130441,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130441,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130442,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130442,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130442,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130443,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130443,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130443,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130444,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1012
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130444,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130444,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130445,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130445,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130445,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130446,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130446,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130446,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130447,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1012
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130447,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130447,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130448,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130448,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130448,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130449,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130449,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130449,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130450,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1012
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130450,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130450,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130451,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130451,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130451,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130452,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130452,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130452,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130453,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130453,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130453,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130454,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1012
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130454,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130454,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130455,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130455,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130455,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130456,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130456,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130456,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130457,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130457,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130457,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130458,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130458,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130458,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130459,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1012
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130459,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130459,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 5
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130460,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130460,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130460,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130461,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1006
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130461,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130461,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130462,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130462,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130462,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130463,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1006
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130463,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130463,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130464,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130464,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130464,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130465,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130465,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130465,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130466,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1006
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130466,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130466,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130467,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130467,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130467,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130468,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130468,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130468,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130469,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1006
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130469,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130469,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130470,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130470,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130470,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130471,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130471,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130471,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130472,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1006
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130472,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130472,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130473,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130473,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130473,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130474,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130474,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130474,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130475,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1006
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130475,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130475,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130476,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130476,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130476,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130477,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130477,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130477,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130478,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130478,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130478,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130479,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1006
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130479,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130479,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130480,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130480,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130480,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130481,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130481,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130481,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130482,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130482,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130482,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130483,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1006
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130483,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130483,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130484,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130484,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130484,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130485,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130485,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130485,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130486,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1006
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130486,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130486,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130487,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130487,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130487,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130488,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130488,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130488,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130489,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1006
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130489,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130489,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130490,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130490,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130490,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130491,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130491,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130491,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130492,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130492,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130492,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130493,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1006
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130493,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130493,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130494,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130494,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130494,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130495,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130495,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130495,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130496,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130496,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130496,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130497,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130497,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130497,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130498,
+    "SlotNumber": 1,
+    "QuestDeckRestrictionType": 1,
+    "RestrictionValue": 1006
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130498,
+    "SlotNumber": 2,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  },
+  {
+    "QuestDeckRestrictionGroupId": 130498,
+    "SlotNumber": 3,
+    "QuestDeckRestrictionType": 3,
+    "RestrictionValue": 3
+  }
+]

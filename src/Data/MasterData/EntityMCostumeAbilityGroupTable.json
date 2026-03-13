@@ -1,0 +1,3884 @@
+[
+  {
+    "CostumeAbilityGroupId": 10100,
+    "SlotNumber": 1,
+    "AbilityId": 1000406,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 10100,
+    "SlotNumber": 2,
+    "AbilityId": 1000424,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 10101,
+    "SlotNumber": 1,
+    "AbilityId": 1000415,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 10101,
+    "SlotNumber": 2,
+    "AbilityId": 1000433,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 10102,
+    "SlotNumber": 1,
+    "AbilityId": 1000424,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 10102,
+    "SlotNumber": 2,
+    "AbilityId": 1000415,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 10103,
+    "SlotNumber": 1,
+    "AbilityId": 1000415,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 10103,
+    "SlotNumber": 2,
+    "AbilityId": 1000406,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 10104,
+    "SlotNumber": 1,
+    "AbilityId": 1000406,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 10104,
+    "SlotNumber": 2,
+    "AbilityId": 1000424,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 10105,
+    "SlotNumber": 1,
+    "AbilityId": 1000415,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 10105,
+    "SlotNumber": 2,
+    "AbilityId": 1000433,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 10106,
+    "SlotNumber": 1,
+    "AbilityId": 1000406,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 10106,
+    "SlotNumber": 2,
+    "AbilityId": 1000415,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 10107,
+    "SlotNumber": 1,
+    "AbilityId": 1000406,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 10107,
+    "SlotNumber": 2,
+    "AbilityId": 1000424,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 10108,
+    "SlotNumber": 1,
+    "AbilityId": 1000415,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 10108,
+    "SlotNumber": 2,
+    "AbilityId": 1000433,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 10109,
+    "SlotNumber": 1,
+    "AbilityId": 1000433,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 10109,
+    "SlotNumber": 2,
+    "AbilityId": 1000415,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 10110,
+    "SlotNumber": 1,
+    "AbilityId": 1000424,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 10110,
+    "SlotNumber": 2,
+    "AbilityId": 1000406,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 10111,
+    "SlotNumber": 1,
+    "AbilityId": 1000433,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 10111,
+    "SlotNumber": 2,
+    "AbilityId": 1000415,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 10112,
+    "SlotNumber": 1,
+    "AbilityId": 1000424,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 10112,
+    "SlotNumber": 2,
+    "AbilityId": 1000406,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 10113,
+    "SlotNumber": 1,
+    "AbilityId": 1000538,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 10113,
+    "SlotNumber": 2,
+    "AbilityId": 1000406,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 10114,
+    "SlotNumber": 1,
+    "AbilityId": 1000397,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 10114,
+    "SlotNumber": 2,
+    "AbilityId": 1000406,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 10115,
+    "SlotNumber": 1,
+    "AbilityId": 1000109,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 10115,
+    "SlotNumber": 2,
+    "AbilityId": 1000406,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 10116,
+    "SlotNumber": 1,
+    "AbilityId": 1000172,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 10116,
+    "SlotNumber": 2,
+    "AbilityId": 1000433,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 10117,
+    "SlotNumber": 1,
+    "AbilityId": 1000001,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 10117,
+    "SlotNumber": 2,
+    "AbilityId": 1000424,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 10118,
+    "SlotNumber": 1,
+    "AbilityId": 1000109,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 10118,
+    "SlotNumber": 2,
+    "AbilityId": 1000406,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 10119,
+    "SlotNumber": 1,
+    "AbilityId": 1000001,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 10119,
+    "SlotNumber": 2,
+    "AbilityId": 1000442,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 10120,
+    "SlotNumber": 1,
+    "AbilityId": 1000172,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 10120,
+    "SlotNumber": 2,
+    "AbilityId": 1000406,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 10121,
+    "SlotNumber": 1,
+    "AbilityId": 1000433,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 10121,
+    "SlotNumber": 2,
+    "AbilityId": 1000406,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 21000,
+    "SlotNumber": 1,
+    "AbilityId": 1000002,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 21000,
+    "SlotNumber": 2,
+    "AbilityId": 1000434,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 21001,
+    "SlotNumber": 1,
+    "AbilityId": 1000038,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 21001,
+    "SlotNumber": 2,
+    "AbilityId": 1000407,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 21002,
+    "SlotNumber": 1,
+    "AbilityId": 1000002,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 21002,
+    "SlotNumber": 2,
+    "AbilityId": 1000434,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 21003,
+    "SlotNumber": 1,
+    "AbilityId": 1000074,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 21003,
+    "SlotNumber": 2,
+    "AbilityId": 1000434,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 21004,
+    "SlotNumber": 1,
+    "AbilityId": 1000002,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 21004,
+    "SlotNumber": 2,
+    "AbilityId": 1000425,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 21005,
+    "SlotNumber": 1,
+    "AbilityId": 1000623,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 21005,
+    "SlotNumber": 2,
+    "AbilityId": 1000074,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 22000,
+    "SlotNumber": 1,
+    "AbilityId": 1000110,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 22000,
+    "SlotNumber": 2,
+    "AbilityId": 1000416,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 22001,
+    "SlotNumber": 1,
+    "AbilityId": 1000110,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 22001,
+    "SlotNumber": 2,
+    "AbilityId": 1000407,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 22002,
+    "SlotNumber": 1,
+    "AbilityId": 1000113,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 22002,
+    "SlotNumber": 2,
+    "AbilityId": 1000434,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 22003,
+    "SlotNumber": 1,
+    "AbilityId": 1000146,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 22003,
+    "SlotNumber": 2,
+    "AbilityId": 1000425,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 22004,
+    "SlotNumber": 1,
+    "AbilityId": 1000146,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 22004,
+    "SlotNumber": 2,
+    "AbilityId": 1000434,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 22005,
+    "SlotNumber": 1,
+    "AbilityId": 1000146,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 22005,
+    "SlotNumber": 2,
+    "AbilityId": 1000593,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 22006,
+    "SlotNumber": 1,
+    "AbilityId": 1000614,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 22006,
+    "SlotNumber": 2,
+    "AbilityId": 1000593,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 22007,
+    "SlotNumber": 1,
+    "AbilityId": 1000608,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 22007,
+    "SlotNumber": 2,
+    "AbilityId": 1000593,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 22008,
+    "SlotNumber": 1,
+    "AbilityId": 1000110,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 22008,
+    "SlotNumber": 2,
+    "AbilityId": 1000593,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 22009,
+    "SlotNumber": 1,
+    "AbilityId": 1000110,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 22009,
+    "SlotNumber": 2,
+    "AbilityId": 1000593,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 22010,
+    "SlotNumber": 1,
+    "AbilityId": 1000146,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 22010,
+    "SlotNumber": 2,
+    "AbilityId": 1000593,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 23000,
+    "SlotNumber": 1,
+    "AbilityId": 1000173,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 23000,
+    "SlotNumber": 2,
+    "AbilityId": 1000434,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 23001,
+    "SlotNumber": 1,
+    "AbilityId": 1000209,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 23001,
+    "SlotNumber": 2,
+    "AbilityId": 1000407,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 23004,
+    "SlotNumber": 1,
+    "AbilityId": 1000209,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 23004,
+    "SlotNumber": 2,
+    "AbilityId": 1000434,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 23005,
+    "SlotNumber": 1,
+    "AbilityId": 1000173,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 23005,
+    "SlotNumber": 2,
+    "AbilityId": 1000434,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 23006,
+    "SlotNumber": 1,
+    "AbilityId": 1000173,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 23006,
+    "SlotNumber": 2,
+    "AbilityId": 1000581,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 23007,
+    "SlotNumber": 1,
+    "AbilityId": 1000623,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 23007,
+    "SlotNumber": 2,
+    "AbilityId": 1000713,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 23008,
+    "SlotNumber": 1,
+    "AbilityId": 1000623,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 23008,
+    "SlotNumber": 2,
+    "AbilityId": 1000209,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 24000,
+    "SlotNumber": 1,
+    "AbilityId": 1000254,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 24000,
+    "SlotNumber": 2,
+    "AbilityId": 1000434,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 24001,
+    "SlotNumber": 1,
+    "AbilityId": 1000254,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 24001,
+    "SlotNumber": 2,
+    "AbilityId": 1000407,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 24002,
+    "SlotNumber": 1,
+    "AbilityId": 1000290,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 24002,
+    "SlotNumber": 2,
+    "AbilityId": 1000425,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 24003,
+    "SlotNumber": 1,
+    "AbilityId": 1000254,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 24003,
+    "SlotNumber": 2,
+    "AbilityId": 1000416,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 24004,
+    "SlotNumber": 1,
+    "AbilityId": 1000254,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 24004,
+    "SlotNumber": 2,
+    "AbilityId": 1000416,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 24005,
+    "SlotNumber": 1,
+    "AbilityId": 1000254,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 24005,
+    "SlotNumber": 2,
+    "AbilityId": 1000602,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 24006,
+    "SlotNumber": 1,
+    "AbilityId": 1000608,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 24006,
+    "SlotNumber": 2,
+    "AbilityId": 1000602,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 24007,
+    "SlotNumber": 1,
+    "AbilityId": 1000608,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 24007,
+    "SlotNumber": 2,
+    "AbilityId": 1000602,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 24008,
+    "SlotNumber": 1,
+    "AbilityId": 9900002,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 24008,
+    "SlotNumber": 2,
+    "AbilityId": 1000425,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 24009,
+    "SlotNumber": 1,
+    "AbilityId": 1000290,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 24009,
+    "SlotNumber": 2,
+    "AbilityId": 1000407,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 25000,
+    "SlotNumber": 1,
+    "AbilityId": 1000362,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 25000,
+    "SlotNumber": 2,
+    "AbilityId": 1000434,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 25001,
+    "SlotNumber": 1,
+    "AbilityId": 1000398,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 25001,
+    "SlotNumber": 2,
+    "AbilityId": 1000407,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 25002,
+    "SlotNumber": 1,
+    "AbilityId": 1000362,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 25002,
+    "SlotNumber": 2,
+    "AbilityId": 1000425,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 25003,
+    "SlotNumber": 1,
+    "AbilityId": 1000398,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 25003,
+    "SlotNumber": 2,
+    "AbilityId": 1000425,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 25005,
+    "SlotNumber": 1,
+    "AbilityId": 1000362,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 25005,
+    "SlotNumber": 2,
+    "AbilityId": 1000434,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 25006,
+    "SlotNumber": 1,
+    "AbilityId": 1000407,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 25006,
+    "SlotNumber": 2,
+    "AbilityId": 1000554,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 25007,
+    "SlotNumber": 1,
+    "AbilityId": 1000635,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 25007,
+    "SlotNumber": 2,
+    "AbilityId": 1000590,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 25008,
+    "SlotNumber": 1,
+    "AbilityId": 1000407,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 25008,
+    "SlotNumber": 2,
+    "AbilityId": 1000590,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 25009,
+    "SlotNumber": 1,
+    "AbilityId": 1000623,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 25009,
+    "SlotNumber": 2,
+    "AbilityId": 1000695,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 31000,
+    "SlotNumber": 1,
+    "AbilityId": 1000006,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 31000,
+    "SlotNumber": 2,
+    "AbilityId": 1000774,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 31001,
+    "SlotNumber": 1,
+    "AbilityId": 1000039,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 31001,
+    "SlotNumber": 2,
+    "AbilityId": 1000744,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 31002,
+    "SlotNumber": 1,
+    "AbilityId": 9900018,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 31002,
+    "SlotNumber": 2,
+    "AbilityId": 1000444,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 31004,
+    "SlotNumber": 1,
+    "AbilityId": 1000960,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 31004,
+    "SlotNumber": 2,
+    "AbilityId": 1000453,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 31005,
+    "SlotNumber": 1,
+    "AbilityId": 1000006,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 31005,
+    "SlotNumber": 2,
+    "AbilityId": 1000447,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 31008,
+    "SlotNumber": 1,
+    "AbilityId": 1000075,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 31008,
+    "SlotNumber": 2,
+    "AbilityId": 1000600,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 31009,
+    "SlotNumber": 1,
+    "AbilityId": 1000588,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 31009,
+    "SlotNumber": 2,
+    "AbilityId": 1000600,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 31010,
+    "SlotNumber": 1,
+    "AbilityId": 1000576,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 31010,
+    "SlotNumber": 2,
+    "AbilityId": 1000600,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 31011,
+    "SlotNumber": 1,
+    "AbilityId": 1000012,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 31011,
+    "SlotNumber": 2,
+    "AbilityId": 1000600,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 31013,
+    "SlotNumber": 1,
+    "AbilityId": 1000609,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 31013,
+    "SlotNumber": 2,
+    "AbilityId": 1000600,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 31014,
+    "SlotNumber": 1,
+    "AbilityId": 1000624,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 31014,
+    "SlotNumber": 2,
+    "AbilityId": 1000705,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 31015,
+    "SlotNumber": 1,
+    "AbilityId": 1000624,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 31015,
+    "SlotNumber": 2,
+    "AbilityId": 1000705,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 31016,
+    "SlotNumber": 1,
+    "AbilityId": 1000627,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 31016,
+    "SlotNumber": 2,
+    "AbilityId": 1000705,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 31017,
+    "SlotNumber": 1,
+    "AbilityId": 1000006,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 31017,
+    "SlotNumber": 2,
+    "AbilityId": 1000774,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 31018,
+    "SlotNumber": 1,
+    "AbilityId": 1000009,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 31018,
+    "SlotNumber": 2,
+    "AbilityId": 1000807,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 31019,
+    "SlotNumber": 1,
+    "AbilityId": 9900029,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 31019,
+    "SlotNumber": 2,
+    "AbilityId": 9900030,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 31020,
+    "SlotNumber": 1,
+    "AbilityId": 1000006,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 31020,
+    "SlotNumber": 2,
+    "AbilityId": 1000774,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 31021,
+    "SlotNumber": 1,
+    "AbilityId": 1000006,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 31021,
+    "SlotNumber": 2,
+    "AbilityId": 1000807,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 31022,
+    "SlotNumber": 1,
+    "AbilityId": 1000744,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 31022,
+    "SlotNumber": 2,
+    "AbilityId": 1000879,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 31023,
+    "SlotNumber": 1,
+    "AbilityId": 1000906,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 31023,
+    "SlotNumber": 2,
+    "AbilityId": 1000708,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 31024,
+    "SlotNumber": 1,
+    "AbilityId": 1000078,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 31024,
+    "SlotNumber": 2,
+    "AbilityId": 1000912,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 31025,
+    "SlotNumber": 1,
+    "AbilityId": 9900027,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 31025,
+    "SlotNumber": 2,
+    "AbilityId": 1000921,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 31026,
+    "SlotNumber": 1,
+    "AbilityId": 1000744,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 31026,
+    "SlotNumber": 2,
+    "AbilityId": 1000882,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 31027,
+    "SlotNumber": 1,
+    "AbilityId": 1000960,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 31027,
+    "SlotNumber": 2,
+    "AbilityId": 1001002,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 31028,
+    "SlotNumber": 1,
+    "AbilityId": 9900047,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 31028,
+    "SlotNumber": 2,
+    "AbilityId": 9900030,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 31029,
+    "SlotNumber": 1,
+    "AbilityId": 1001053,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 31029,
+    "SlotNumber": 2,
+    "AbilityId": 1000807,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 31030,
+    "SlotNumber": 1,
+    "AbilityId": 1000960,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 31030,
+    "SlotNumber": 2,
+    "AbilityId": 1001068,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 31031,
+    "SlotNumber": 1,
+    "AbilityId": 9900058,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 31031,
+    "SlotNumber": 2,
+    "AbilityId": 1001119,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 31032,
+    "SlotNumber": 1,
+    "AbilityId": 9900061,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 31032,
+    "SlotNumber": 2,
+    "AbilityId": 1001134,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 31033,
+    "SlotNumber": 1,
+    "AbilityId": 1000624,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 31033,
+    "SlotNumber": 2,
+    "AbilityId": 1000705,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 31034,
+    "SlotNumber": 1,
+    "AbilityId": 1001053,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 31034,
+    "SlotNumber": 2,
+    "AbilityId": 9900065,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 32000,
+    "SlotNumber": 1,
+    "AbilityId": 1000885,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 32000,
+    "SlotNumber": 2,
+    "AbilityId": 1000408,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 32001,
+    "SlotNumber": 1,
+    "AbilityId": 1000147,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 32001,
+    "SlotNumber": 2,
+    "AbilityId": 1000417,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 32002,
+    "SlotNumber": 1,
+    "AbilityId": 1000150,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 32002,
+    "SlotNumber": 2,
+    "AbilityId": 1000117,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 32003,
+    "SlotNumber": 1,
+    "AbilityId": 1000111,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 32003,
+    "SlotNumber": 2,
+    "AbilityId": 1000453,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 32004,
+    "SlotNumber": 1,
+    "AbilityId": 1000534,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 32004,
+    "SlotNumber": 2,
+    "AbilityId": 1000471,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 32005,
+    "SlotNumber": 1,
+    "AbilityId": 1000150,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 32005,
+    "SlotNumber": 2,
+    "AbilityId": 1000453,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 32006,
+    "SlotNumber": 1,
+    "AbilityId": 1000534,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 32006,
+    "SlotNumber": 2,
+    "AbilityId": 1001023,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 32007,
+    "SlotNumber": 1,
+    "AbilityId": 1000150,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 32007,
+    "SlotNumber": 2,
+    "AbilityId": 1001107,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 32008,
+    "SlotNumber": 1,
+    "AbilityId": 1000531,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 32008,
+    "SlotNumber": 2,
+    "AbilityId": 1000579,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 32009,
+    "SlotNumber": 1,
+    "AbilityId": 1000588,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 32009,
+    "SlotNumber": 2,
+    "AbilityId": 1000576,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 32011,
+    "SlotNumber": 1,
+    "AbilityId": 9900003,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 32011,
+    "SlotNumber": 2,
+    "AbilityId": 1000579,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 32012,
+    "SlotNumber": 1,
+    "AbilityId": 1000660,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 32012,
+    "SlotNumber": 2,
+    "AbilityId": 1000939,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 32013,
+    "SlotNumber": 1,
+    "AbilityId": 1000408,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 32013,
+    "SlotNumber": 2,
+    "AbilityId": 1000669,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 32014,
+    "SlotNumber": 1,
+    "AbilityId": 1000624,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 32014,
+    "SlotNumber": 2,
+    "AbilityId": 1000669,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 32015,
+    "SlotNumber": 1,
+    "AbilityId": 9900016,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 32015,
+    "SlotNumber": 2,
+    "AbilityId": 9900017,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 32016,
+    "SlotNumber": 1,
+    "AbilityId": 9900021,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 32016,
+    "SlotNumber": 2,
+    "AbilityId": 1000579,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 32017,
+    "SlotNumber": 1,
+    "AbilityId": 1000153,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 32017,
+    "SlotNumber": 2,
+    "AbilityId": 1000726,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 32018,
+    "SlotNumber": 1,
+    "AbilityId": 1000750,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 32018,
+    "SlotNumber": 2,
+    "AbilityId": 1000408,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 32019,
+    "SlotNumber": 1,
+    "AbilityId": 9900034,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 32019,
+    "SlotNumber": 2,
+    "AbilityId": 9900017,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 32020,
+    "SlotNumber": 1,
+    "AbilityId": 9900035,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 32020,
+    "SlotNumber": 2,
+    "AbilityId": 9900017,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 32021,
+    "SlotNumber": 1,
+    "AbilityId": 1000720,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 32021,
+    "SlotNumber": 2,
+    "AbilityId": 1000747,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 32022,
+    "SlotNumber": 1,
+    "AbilityId": 9900027,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 32022,
+    "SlotNumber": 2,
+    "AbilityId": 1000894,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 32023,
+    "SlotNumber": 1,
+    "AbilityId": 1000534,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 32023,
+    "SlotNumber": 2,
+    "AbilityId": 1000726,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 32024,
+    "SlotNumber": 1,
+    "AbilityId": 1000744,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 32024,
+    "SlotNumber": 2,
+    "AbilityId": 1000150,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 32025,
+    "SlotNumber": 1,
+    "AbilityId": 1000534,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 32025,
+    "SlotNumber": 2,
+    "AbilityId": 1000942,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 32026,
+    "SlotNumber": 1,
+    "AbilityId": 1000744,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 32026,
+    "SlotNumber": 2,
+    "AbilityId": 1000975,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 32027,
+    "SlotNumber": 1,
+    "AbilityId": 9900044,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 32027,
+    "SlotNumber": 2,
+    "AbilityId": 9900017,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 32028,
+    "SlotNumber": 1,
+    "AbilityId": 9900046,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 32028,
+    "SlotNumber": 2,
+    "AbilityId": 1001029,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 32029,
+    "SlotNumber": 1,
+    "AbilityId": 1001041,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 32029,
+    "SlotNumber": 2,
+    "AbilityId": 1000912,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 32030,
+    "SlotNumber": 1,
+    "AbilityId": 9900048,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 32030,
+    "SlotNumber": 2,
+    "AbilityId": 1000915,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 32031,
+    "SlotNumber": 1,
+    "AbilityId": 1001053,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 32031,
+    "SlotNumber": 2,
+    "AbilityId": 1001059,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 32032,
+    "SlotNumber": 1,
+    "AbilityId": 9900053,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 32032,
+    "SlotNumber": 2,
+    "AbilityId": 1001077,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 32033,
+    "SlotNumber": 1,
+    "AbilityId": 1000426,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 32033,
+    "SlotNumber": 2,
+    "AbilityId": 1000669,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 32034,
+    "SlotNumber": 1,
+    "AbilityId": 1001053,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 32034,
+    "SlotNumber": 2,
+    "AbilityId": 1000726,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 32035,
+    "SlotNumber": 1,
+    "AbilityId": 9900062,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 32035,
+    "SlotNumber": 2,
+    "AbilityId": 1001137,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 32036,
+    "SlotNumber": 1,
+    "AbilityId": 9900063,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 32036,
+    "SlotNumber": 2,
+    "AbilityId": 1000966,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 33000,
+    "SlotNumber": 1,
+    "AbilityId": 1000174,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 33000,
+    "SlotNumber": 2,
+    "AbilityId": 1000435,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 33001,
+    "SlotNumber": 1,
+    "AbilityId": 1000744,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 33001,
+    "SlotNumber": 2,
+    "AbilityId": 1000426,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 33002,
+    "SlotNumber": 1,
+    "AbilityId": 1000210,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 33002,
+    "SlotNumber": 2,
+    "AbilityId": 1000843,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 33003,
+    "SlotNumber": 1,
+    "AbilityId": 1000213,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 33003,
+    "SlotNumber": 2,
+    "AbilityId": 1000747,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 33005,
+    "SlotNumber": 1,
+    "AbilityId": 1000213,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 33005,
+    "SlotNumber": 2,
+    "AbilityId": 1000777,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 33006,
+    "SlotNumber": 1,
+    "AbilityId": 1000567,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 33006,
+    "SlotNumber": 2,
+    "AbilityId": 1000576,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 33007,
+    "SlotNumber": 1,
+    "AbilityId": 9900057,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 33007,
+    "SlotNumber": 2,
+    "AbilityId": 1000846,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 33009,
+    "SlotNumber": 1,
+    "AbilityId": 1000219,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 33009,
+    "SlotNumber": 2,
+    "AbilityId": 1000597,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 33010,
+    "SlotNumber": 1,
+    "AbilityId": 1000609,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 33010,
+    "SlotNumber": 2,
+    "AbilityId": 1000597,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 33011,
+    "SlotNumber": 1,
+    "AbilityId": 1000633,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 33011,
+    "SlotNumber": 2,
+    "AbilityId": 1000597,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 33012,
+    "SlotNumber": 1,
+    "AbilityId": 1000576,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 33012,
+    "SlotNumber": 2,
+    "AbilityId": 1000597,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 33013,
+    "SlotNumber": 1,
+    "AbilityId": 1000213,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 33013,
+    "SlotNumber": 2,
+    "AbilityId": 1000438,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 33014,
+    "SlotNumber": 1,
+    "AbilityId": 9900012,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 33014,
+    "SlotNumber": 2,
+    "AbilityId": 1000714,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 33015,
+    "SlotNumber": 1,
+    "AbilityId": 1000588,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 33015,
+    "SlotNumber": 2,
+    "AbilityId": 1000633,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 33016,
+    "SlotNumber": 1,
+    "AbilityId": 1000771,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 33016,
+    "SlotNumber": 2,
+    "AbilityId": 1000837,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 33017,
+    "SlotNumber": 1,
+    "AbilityId": 9900031,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 33017,
+    "SlotNumber": 2,
+    "AbilityId": 9900032,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 33018,
+    "SlotNumber": 1,
+    "AbilityId": 1000867,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 33018,
+    "SlotNumber": 2,
+    "AbilityId": 1000852,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 33019,
+    "SlotNumber": 1,
+    "AbilityId": 9900038,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 33019,
+    "SlotNumber": 2,
+    "AbilityId": 9900032,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 33020,
+    "SlotNumber": 1,
+    "AbilityId": 1000177,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 33020,
+    "SlotNumber": 2,
+    "AbilityId": 1000867,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 33021,
+    "SlotNumber": 1,
+    "AbilityId": 1000228,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 33021,
+    "SlotNumber": 2,
+    "AbilityId": 1000867,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 33022,
+    "SlotNumber": 1,
+    "AbilityId": 1001020,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 33022,
+    "SlotNumber": 2,
+    "AbilityId": 1000912,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 33023,
+    "SlotNumber": 1,
+    "AbilityId": 1000231,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 33023,
+    "SlotNumber": 2,
+    "AbilityId": 1000951,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 33024,
+    "SlotNumber": 1,
+    "AbilityId": 1000177,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 33024,
+    "SlotNumber": 2,
+    "AbilityId": 1000852,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 33025,
+    "SlotNumber": 1,
+    "AbilityId": 1000867,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 33025,
+    "SlotNumber": 2,
+    "AbilityId": 1001020,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 33026,
+    "SlotNumber": 1,
+    "AbilityId": 9900045,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 33026,
+    "SlotNumber": 2,
+    "AbilityId": 1000951,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 33027,
+    "SlotNumber": 1,
+    "AbilityId": 1001053,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 33027,
+    "SlotNumber": 2,
+    "AbilityId": 1000867,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 33028,
+    "SlotNumber": 1,
+    "AbilityId": 9900051,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 33028,
+    "SlotNumber": 2,
+    "AbilityId": 9900032,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 33029,
+    "SlotNumber": 1,
+    "AbilityId": 9900052,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 33029,
+    "SlotNumber": 2,
+    "AbilityId": 1001086,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 33030,
+    "SlotNumber": 1,
+    "AbilityId": 9900056,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 33030,
+    "SlotNumber": 2,
+    "AbilityId": 1001029,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 33031,
+    "SlotNumber": 1,
+    "AbilityId": 1000960,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 33031,
+    "SlotNumber": 2,
+    "AbilityId": 9900060,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 33032,
+    "SlotNumber": 1,
+    "AbilityId": 1000870,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 33032,
+    "SlotNumber": 2,
+    "AbilityId": 1000852,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 33033,
+    "SlotNumber": 1,
+    "AbilityId": 1001053,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 33033,
+    "SlotNumber": 2,
+    "AbilityId": 1001143,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 34000,
+    "SlotNumber": 1,
+    "AbilityId": 1000255,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 34000,
+    "SlotNumber": 2,
+    "AbilityId": 1000747,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 34001,
+    "SlotNumber": 1,
+    "AbilityId": 1000255,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 34001,
+    "SlotNumber": 2,
+    "AbilityId": 1000408,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 34002,
+    "SlotNumber": 1,
+    "AbilityId": 1000291,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 34002,
+    "SlotNumber": 2,
+    "AbilityId": 1000777,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 34003,
+    "SlotNumber": 1,
+    "AbilityId": 1000258,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 34003,
+    "SlotNumber": 2,
+    "AbilityId": 1000744,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 34004,
+    "SlotNumber": 1,
+    "AbilityId": 1000291,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 34004,
+    "SlotNumber": 2,
+    "AbilityId": 1000747,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 34005,
+    "SlotNumber": 1,
+    "AbilityId": 1000267,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 34005,
+    "SlotNumber": 2,
+    "AbilityId": 1000420,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 34009,
+    "SlotNumber": 1,
+    "AbilityId": 1000543,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 34009,
+    "SlotNumber": 2,
+    "AbilityId": 1000438,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 34010,
+    "SlotNumber": 1,
+    "AbilityId": 1000561,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 34010,
+    "SlotNumber": 2,
+    "AbilityId": 1000453,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 34011,
+    "SlotNumber": 1,
+    "AbilityId": 1000258,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 34011,
+    "SlotNumber": 2,
+    "AbilityId": 1000480,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 34012,
+    "SlotNumber": 1,
+    "AbilityId": 1000549,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 34012,
+    "SlotNumber": 2,
+    "AbilityId": 1000555,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 34013,
+    "SlotNumber": 1,
+    "AbilityId": 1001116,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 34013,
+    "SlotNumber": 2,
+    "AbilityId": 1001113,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 34014,
+    "SlotNumber": 1,
+    "AbilityId": 1000546,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 34014,
+    "SlotNumber": 2,
+    "AbilityId": 1001110,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 34015,
+    "SlotNumber": 1,
+    "AbilityId": 1000777,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 34015,
+    "SlotNumber": 2,
+    "AbilityId": 1000585,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 34016,
+    "SlotNumber": 1,
+    "AbilityId": 1000420,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 34016,
+    "SlotNumber": 2,
+    "AbilityId": 1000585,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 34017,
+    "SlotNumber": 1,
+    "AbilityId": 1000744,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 34017,
+    "SlotNumber": 2,
+    "AbilityId": 1000585,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 34018,
+    "SlotNumber": 1,
+    "AbilityId": 1000609,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 34018,
+    "SlotNumber": 2,
+    "AbilityId": 1000588,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 34019,
+    "SlotNumber": 1,
+    "AbilityId": 1000609,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 34019,
+    "SlotNumber": 2,
+    "AbilityId": 1000585,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 34020,
+    "SlotNumber": 1,
+    "AbilityId": 9900012,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 34020,
+    "SlotNumber": 2,
+    "AbilityId": 1000687,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 34021,
+    "SlotNumber": 1,
+    "AbilityId": 1000678,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 34021,
+    "SlotNumber": 2,
+    "AbilityId": 1000585,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 34022,
+    "SlotNumber": 1,
+    "AbilityId": 1000609,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 34022,
+    "SlotNumber": 2,
+    "AbilityId": 1000687,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 34023,
+    "SlotNumber": 1,
+    "AbilityId": 1000561,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 34023,
+    "SlotNumber": 2,
+    "AbilityId": 1000585,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 34024,
+    "SlotNumber": 1,
+    "AbilityId": 1000960,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 34024,
+    "SlotNumber": 2,
+    "AbilityId": 1000687,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 34025,
+    "SlotNumber": 1,
+    "AbilityId": 1000564,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 34025,
+    "SlotNumber": 2,
+    "AbilityId": 1000906,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 34026,
+    "SlotNumber": 1,
+    "AbilityId": 9900022,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 34026,
+    "SlotNumber": 2,
+    "AbilityId": 9900023,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 34027,
+    "SlotNumber": 1,
+    "AbilityId": 1000777,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 34027,
+    "SlotNumber": 2,
+    "AbilityId": 1000687,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 34028,
+    "SlotNumber": 1,
+    "AbilityId": 9900027,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 34028,
+    "SlotNumber": 2,
+    "AbilityId": 1000801,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 34029,
+    "SlotNumber": 1,
+    "AbilityId": 1000609,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 34029,
+    "SlotNumber": 2,
+    "AbilityId": 1000687,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 34030,
+    "SlotNumber": 1,
+    "AbilityId": 1000720,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 34030,
+    "SlotNumber": 2,
+    "AbilityId": 1000678,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 34031,
+    "SlotNumber": 1,
+    "AbilityId": 1000774,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 34031,
+    "SlotNumber": 2,
+    "AbilityId": 1000756,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 34032,
+    "SlotNumber": 1,
+    "AbilityId": 9900036,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 34032,
+    "SlotNumber": 2,
+    "AbilityId": 9900023,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 34033,
+    "SlotNumber": 1,
+    "AbilityId": 1000624,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 34033,
+    "SlotNumber": 2,
+    "AbilityId": 1000687,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 34034,
+    "SlotNumber": 1,
+    "AbilityId": 9900039,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 34034,
+    "SlotNumber": 2,
+    "AbilityId": 1000900,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 34035,
+    "SlotNumber": 1,
+    "AbilityId": 1000408,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 34035,
+    "SlotNumber": 2,
+    "AbilityId": 1000417,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 34036,
+    "SlotNumber": 1,
+    "AbilityId": 1000561,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 34036,
+    "SlotNumber": 2,
+    "AbilityId": 1000903,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 34037,
+    "SlotNumber": 1,
+    "AbilityId": 9900041,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 34037,
+    "SlotNumber": 2,
+    "AbilityId": 9900023,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 34038,
+    "SlotNumber": 1,
+    "AbilityId": 9900042,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 34038,
+    "SlotNumber": 2,
+    "AbilityId": 1000981,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 34039,
+    "SlotNumber": 1,
+    "AbilityId": 1000999,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 34039,
+    "SlotNumber": 2,
+    "AbilityId": 1000756,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 34040,
+    "SlotNumber": 1,
+    "AbilityId": 1000561,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 34040,
+    "SlotNumber": 2,
+    "AbilityId": 1001011,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 34041,
+    "SlotNumber": 1,
+    "AbilityId": 1000960,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 34041,
+    "SlotNumber": 2,
+    "AbilityId": 1001047,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 34042,
+    "SlotNumber": 1,
+    "AbilityId": 1001056,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 34042,
+    "SlotNumber": 2,
+    "AbilityId": 1000690,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 34043,
+    "SlotNumber": 1,
+    "AbilityId": 9900049,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 34043,
+    "SlotNumber": 2,
+    "AbilityId": 1000774,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 34044,
+    "SlotNumber": 1,
+    "AbilityId": 1001053,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 34044,
+    "SlotNumber": 2,
+    "AbilityId": 1000756,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 34045,
+    "SlotNumber": 1,
+    "AbilityId": 9900054,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 34045,
+    "SlotNumber": 2,
+    "AbilityId": 1000984,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 34046,
+    "SlotNumber": 1,
+    "AbilityId": 9900059,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 34046,
+    "SlotNumber": 2,
+    "AbilityId": 1001125,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 34047,
+    "SlotNumber": 1,
+    "AbilityId": 1001053,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 34047,
+    "SlotNumber": 2,
+    "AbilityId": 1000759,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 34048,
+    "SlotNumber": 1,
+    "AbilityId": 9900052,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 34048,
+    "SlotNumber": 2,
+    "AbilityId": 1001134,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 35000,
+    "SlotNumber": 1,
+    "AbilityId": 1000366,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 35000,
+    "SlotNumber": 2,
+    "AbilityId": 1001020,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 35001,
+    "SlotNumber": 1,
+    "AbilityId": 1000744,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 35001,
+    "SlotNumber": 2,
+    "AbilityId": 1000435,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 35002,
+    "SlotNumber": 1,
+    "AbilityId": 1000363,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 35002,
+    "SlotNumber": 2,
+    "AbilityId": 1000408,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 35003,
+    "SlotNumber": 1,
+    "AbilityId": 9900020,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 35003,
+    "SlotNumber": 2,
+    "AbilityId": 1000426,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 35005,
+    "SlotNumber": 1,
+    "AbilityId": 1000399,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 35005,
+    "SlotNumber": 2,
+    "AbilityId": 1000426,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 35006,
+    "SlotNumber": 1,
+    "AbilityId": 1000402,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 35006,
+    "SlotNumber": 2,
+    "AbilityId": 1000417,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 35008,
+    "SlotNumber": 1,
+    "AbilityId": 1000363,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 35008,
+    "SlotNumber": 2,
+    "AbilityId": 1000591,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 35009,
+    "SlotNumber": 1,
+    "AbilityId": 1000576,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 35009,
+    "SlotNumber": 2,
+    "AbilityId": 1000606,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 35010,
+    "SlotNumber": 1,
+    "AbilityId": 1000408,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 35010,
+    "SlotNumber": 2,
+    "AbilityId": 1000426,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 35011,
+    "SlotNumber": 1,
+    "AbilityId": 1000648,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 35011,
+    "SlotNumber": 2,
+    "AbilityId": 1000606,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 35012,
+    "SlotNumber": 1,
+    "AbilityId": 1000636,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 35012,
+    "SlotNumber": 2,
+    "AbilityId": 1000591,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 35013,
+    "SlotNumber": 1,
+    "AbilityId": 1000639,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 35013,
+    "SlotNumber": 2,
+    "AbilityId": 1000606,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 35014,
+    "SlotNumber": 1,
+    "AbilityId": 9900015,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 35014,
+    "SlotNumber": 2,
+    "AbilityId": 1000696,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 35015,
+    "SlotNumber": 1,
+    "AbilityId": 1000777,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 35015,
+    "SlotNumber": 2,
+    "AbilityId": 1000696,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 35016,
+    "SlotNumber": 1,
+    "AbilityId": 9900024,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 35016,
+    "SlotNumber": 2,
+    "AbilityId": 1000696,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 35017,
+    "SlotNumber": 1,
+    "AbilityId": 9900025,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 35017,
+    "SlotNumber": 2,
+    "AbilityId": 9900026,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 35018,
+    "SlotNumber": 1,
+    "AbilityId": 9900028,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 35018,
+    "SlotNumber": 2,
+    "AbilityId": 1000816,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 35019,
+    "SlotNumber": 1,
+    "AbilityId": 1000366,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 35019,
+    "SlotNumber": 2,
+    "AbilityId": 1000846,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 35020,
+    "SlotNumber": 1,
+    "AbilityId": 9900033,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 35020,
+    "SlotNumber": 2,
+    "AbilityId": 1000699,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 35021,
+    "SlotNumber": 1,
+    "AbilityId": 1000639,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 35021,
+    "SlotNumber": 2,
+    "AbilityId": 1000816,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 35022,
+    "SlotNumber": 1,
+    "AbilityId": 9900037,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 35022,
+    "SlotNumber": 2,
+    "AbilityId": 1000786,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 35023,
+    "SlotNumber": 1,
+    "AbilityId": 1000624,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 35023,
+    "SlotNumber": 2,
+    "AbilityId": 1000693,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 35024,
+    "SlotNumber": 1,
+    "AbilityId": 9900040,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 35024,
+    "SlotNumber": 2,
+    "AbilityId": 9900026,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 35025,
+    "SlotNumber": 1,
+    "AbilityId": 9900027,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 35025,
+    "SlotNumber": 2,
+    "AbilityId": 1000915,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 35026,
+    "SlotNumber": 1,
+    "AbilityId": 1000366,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 35026,
+    "SlotNumber": 2,
+    "AbilityId": 1000927,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 35027,
+    "SlotNumber": 1,
+    "AbilityId": 1000936,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 35027,
+    "SlotNumber": 2,
+    "AbilityId": 1000819,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 35028,
+    "SlotNumber": 1,
+    "AbilityId": 1000744,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 35028,
+    "SlotNumber": 2,
+    "AbilityId": 1000819,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 35029,
+    "SlotNumber": 1,
+    "AbilityId": 9900043,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 35029,
+    "SlotNumber": 2,
+    "AbilityId": 9900026,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 35030,
+    "SlotNumber": 1,
+    "AbilityId": 1000819,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 35030,
+    "SlotNumber": 2,
+    "AbilityId": 1001032,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 35031,
+    "SlotNumber": 1,
+    "AbilityId": 1001053,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 35031,
+    "SlotNumber": 2,
+    "AbilityId": 1001032,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 35032,
+    "SlotNumber": 1,
+    "AbilityId": 9900050,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 35032,
+    "SlotNumber": 2,
+    "AbilityId": 1001032,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 35033,
+    "SlotNumber": 1,
+    "AbilityId": 1000999,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 35033,
+    "SlotNumber": 2,
+    "AbilityId": 1000846,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 35034,
+    "SlotNumber": 1,
+    "AbilityId": 9900055,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 35034,
+    "SlotNumber": 2,
+    "AbilityId": 1001101,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 35035,
+    "SlotNumber": 1,
+    "AbilityId": 1001131,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 35035,
+    "SlotNumber": 2,
+    "AbilityId": 1000786,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 35036,
+    "SlotNumber": 1,
+    "AbilityId": 9900064,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 35036,
+    "SlotNumber": 2,
+    "AbilityId": 1000786,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 35037,
+    "SlotNumber": 1,
+    "AbilityId": 1000408,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 35037,
+    "SlotNumber": 2,
+    "AbilityId": 1000591,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 35038,
+    "SlotNumber": 1,
+    "AbilityId": 1001026,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 35038,
+    "SlotNumber": 2,
+    "AbilityId": 1001038,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 41000,
+    "SlotNumber": 1,
+    "AbilityId": 1000507,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 41000,
+    "SlotNumber": 2,
+    "AbilityId": 1000519,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 41001,
+    "SlotNumber": 1,
+    "AbilityId": 1000495,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 41001,
+    "SlotNumber": 2,
+    "AbilityId": 1000519,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 41002,
+    "SlotNumber": 1,
+    "AbilityId": 1000507,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 41002,
+    "SlotNumber": 2,
+    "AbilityId": 1000519,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 41003,
+    "SlotNumber": 1,
+    "AbilityId": 1000909,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 41003,
+    "SlotNumber": 2,
+    "AbilityId": 1000519,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 42000,
+    "SlotNumber": 1,
+    "AbilityId": 1000483,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 42000,
+    "SlotNumber": 2,
+    "AbilityId": 1000513,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 42001,
+    "SlotNumber": 1,
+    "AbilityId": 1000528,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 42001,
+    "SlotNumber": 2,
+    "AbilityId": 1000513,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 42002,
+    "SlotNumber": 1,
+    "AbilityId": 1000483,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 42002,
+    "SlotNumber": 2,
+    "AbilityId": 1000513,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 42003,
+    "SlotNumber": 1,
+    "AbilityId": 1000780,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 42003,
+    "SlotNumber": 2,
+    "AbilityId": 1000513,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 43000,
+    "SlotNumber": 1,
+    "AbilityId": 1000510,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 43000,
+    "SlotNumber": 2,
+    "AbilityId": 1000516,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 43001,
+    "SlotNumber": 1,
+    "AbilityId": 1000489,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 43001,
+    "SlotNumber": 2,
+    "AbilityId": 1000516,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 43002,
+    "SlotNumber": 1,
+    "AbilityId": 1000654,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 43002,
+    "SlotNumber": 2,
+    "AbilityId": 1000516,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 43003,
+    "SlotNumber": 1,
+    "AbilityId": 1000780,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 43003,
+    "SlotNumber": 2,
+    "AbilityId": 1000516,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 44000,
+    "SlotNumber": 1,
+    "AbilityId": 1000498,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 44000,
+    "SlotNumber": 2,
+    "AbilityId": 1000525,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 44001,
+    "SlotNumber": 1,
+    "AbilityId": 1000504,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 44001,
+    "SlotNumber": 2,
+    "AbilityId": 1000525,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 44002,
+    "SlotNumber": 1,
+    "AbilityId": 1000510,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 44002,
+    "SlotNumber": 2,
+    "AbilityId": 1000525,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 44003,
+    "SlotNumber": 1,
+    "AbilityId": 1000780,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 44003,
+    "SlotNumber": 2,
+    "AbilityId": 1000525,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 44004,
+    "SlotNumber": 1,
+    "AbilityId": 1001026,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 44004,
+    "SlotNumber": 2,
+    "AbilityId": 1000525,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 45000,
+    "SlotNumber": 1,
+    "AbilityId": 1000501,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 45000,
+    "SlotNumber": 2,
+    "AbilityId": 1000522,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 45001,
+    "SlotNumber": 1,
+    "AbilityId": 1000486,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 45001,
+    "SlotNumber": 2,
+    "AbilityId": 1000522,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 45002,
+    "SlotNumber": 1,
+    "AbilityId": 1000501,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 45002,
+    "SlotNumber": 2,
+    "AbilityId": 1000522,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 45003,
+    "SlotNumber": 1,
+    "AbilityId": 1000780,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 45003,
+    "SlotNumber": 2,
+    "AbilityId": 1000522,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 51001,
+    "SlotNumber": 1,
+    "AbilityId": 1000822,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 51001,
+    "SlotNumber": 2,
+    "AbilityId": 1000519,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 51002,
+    "SlotNumber": 1,
+    "AbilityId": 1000744,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 51002,
+    "SlotNumber": 2,
+    "AbilityId": 1000519,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 51003,
+    "SlotNumber": 1,
+    "AbilityId": 1000777,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 51003,
+    "SlotNumber": 2,
+    "AbilityId": 1000519,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 52001,
+    "SlotNumber": 1,
+    "AbilityId": 1000624,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 52001,
+    "SlotNumber": 2,
+    "AbilityId": 1000513,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 52002,
+    "SlotNumber": 1,
+    "AbilityId": 1000822,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 52002,
+    "SlotNumber": 2,
+    "AbilityId": 1000513,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 53001,
+    "SlotNumber": 1,
+    "AbilityId": 1000822,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 53001,
+    "SlotNumber": 2,
+    "AbilityId": 1000516,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 53002,
+    "SlotNumber": 1,
+    "AbilityId": 1000744,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 53002,
+    "SlotNumber": 2,
+    "AbilityId": 1000516,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 54001,
+    "SlotNumber": 1,
+    "AbilityId": 1000624,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 54001,
+    "SlotNumber": 2,
+    "AbilityId": 1000525,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 54002,
+    "SlotNumber": 1,
+    "AbilityId": 1000744,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 54002,
+    "SlotNumber": 2,
+    "AbilityId": 1000525,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 55001,
+    "SlotNumber": 1,
+    "AbilityId": 1000822,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 55001,
+    "SlotNumber": 2,
+    "AbilityId": 1000522,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 55002,
+    "SlotNumber": 1,
+    "AbilityId": 1000744,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 55002,
+    "SlotNumber": 2,
+    "AbilityId": 1000522,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 55003,
+    "SlotNumber": 1,
+    "AbilityId": 1001149,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 55003,
+    "SlotNumber": 2,
+    "AbilityId": 1000522,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 90000001,
+    "SlotNumber": 1,
+    "AbilityId": 90000002,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000002,
+    "SlotNumber": 1,
+    "AbilityId": 90000003,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000004,
+    "SlotNumber": 1,
+    "AbilityId": 90000004,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000005,
+    "SlotNumber": 1,
+    "AbilityId": 90000007,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000006,
+    "SlotNumber": 1,
+    "AbilityId": 90000008,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000007,
+    "SlotNumber": 1,
+    "AbilityId": 90000009,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000008,
+    "SlotNumber": 1,
+    "AbilityId": 90000010,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000009,
+    "SlotNumber": 1,
+    "AbilityId": 1000172,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000009,
+    "SlotNumber": 2,
+    "AbilityId": 1000406,
+    "CostumeAbilityLevelGroupId": 2
+  },
+  {
+    "CostumeAbilityGroupId": 90000009,
+    "SlotNumber": 3,
+    "AbilityId": 90000104,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000011,
+    "SlotNumber": 1,
+    "AbilityId": 90000011,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000011,
+    "SlotNumber": 2,
+    "AbilityId": 90000002,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000012,
+    "SlotNumber": 1,
+    "AbilityId": 90000012,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000012,
+    "SlotNumber": 2,
+    "AbilityId": 90000002,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000013,
+    "SlotNumber": 1,
+    "AbilityId": 90000013,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000013,
+    "SlotNumber": 2,
+    "AbilityId": 90000002,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000014,
+    "SlotNumber": 1,
+    "AbilityId": 90000014,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000014,
+    "SlotNumber": 2,
+    "AbilityId": 90000002,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000015,
+    "SlotNumber": 1,
+    "AbilityId": 90000014,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000015,
+    "SlotNumber": 2,
+    "AbilityId": 90000002,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000015,
+    "SlotNumber": 3,
+    "AbilityId": 90000006,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000017,
+    "SlotNumber": 1,
+    "AbilityId": 90000013,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000017,
+    "SlotNumber": 2,
+    "AbilityId": 90000002,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000017,
+    "SlotNumber": 3,
+    "AbilityId": 90000006,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000021,
+    "SlotNumber": 1,
+    "AbilityId": 90000021,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000021,
+    "SlotNumber": 2,
+    "AbilityId": 90000002,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000022,
+    "SlotNumber": 1,
+    "AbilityId": 90000022,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000022,
+    "SlotNumber": 2,
+    "AbilityId": 90000002,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000023,
+    "SlotNumber": 1,
+    "AbilityId": 90000023,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000023,
+    "SlotNumber": 2,
+    "AbilityId": 90000002,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000024,
+    "SlotNumber": 1,
+    "AbilityId": 90000024,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000024,
+    "SlotNumber": 2,
+    "AbilityId": 90000002,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000025,
+    "SlotNumber": 1,
+    "AbilityId": 90000024,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000025,
+    "SlotNumber": 2,
+    "AbilityId": 90000002,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000025,
+    "SlotNumber": 3,
+    "AbilityId": 90000006,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000027,
+    "SlotNumber": 1,
+    "AbilityId": 90000023,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000027,
+    "SlotNumber": 2,
+    "AbilityId": 90000002,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000027,
+    "SlotNumber": 3,
+    "AbilityId": 90000006,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000031,
+    "SlotNumber": 1,
+    "AbilityId": 90000031,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000031,
+    "SlotNumber": 2,
+    "AbilityId": 90000002,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000032,
+    "SlotNumber": 1,
+    "AbilityId": 90000032,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000032,
+    "SlotNumber": 2,
+    "AbilityId": 90000002,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000033,
+    "SlotNumber": 1,
+    "AbilityId": 90000033,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000033,
+    "SlotNumber": 2,
+    "AbilityId": 90000002,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000034,
+    "SlotNumber": 1,
+    "AbilityId": 90000034,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000034,
+    "SlotNumber": 2,
+    "AbilityId": 90000002,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000036,
+    "SlotNumber": 1,
+    "AbilityId": 90000036,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000036,
+    "SlotNumber": 2,
+    "AbilityId": 90000002,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000041,
+    "SlotNumber": 1,
+    "AbilityId": 90000041,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000041,
+    "SlotNumber": 2,
+    "AbilityId": 90000002,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000042,
+    "SlotNumber": 1,
+    "AbilityId": 90000042,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000042,
+    "SlotNumber": 2,
+    "AbilityId": 90000002,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000043,
+    "SlotNumber": 1,
+    "AbilityId": 90000043,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000043,
+    "SlotNumber": 2,
+    "AbilityId": 90000002,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000044,
+    "SlotNumber": 1,
+    "AbilityId": 90000044,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000044,
+    "SlotNumber": 2,
+    "AbilityId": 90000002,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000045,
+    "SlotNumber": 1,
+    "AbilityId": 90000044,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000045,
+    "SlotNumber": 2,
+    "AbilityId": 90000002,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000045,
+    "SlotNumber": 3,
+    "AbilityId": 90000006,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000047,
+    "SlotNumber": 1,
+    "AbilityId": 90000043,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000047,
+    "SlotNumber": 2,
+    "AbilityId": 90000002,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000047,
+    "SlotNumber": 3,
+    "AbilityId": 90000006,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000051,
+    "SlotNumber": 1,
+    "AbilityId": 90000051,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000051,
+    "SlotNumber": 2,
+    "AbilityId": 90000002,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000052,
+    "SlotNumber": 1,
+    "AbilityId": 90000052,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000052,
+    "SlotNumber": 2,
+    "AbilityId": 90000002,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000053,
+    "SlotNumber": 1,
+    "AbilityId": 90000053,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000053,
+    "SlotNumber": 2,
+    "AbilityId": 90000002,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000054,
+    "SlotNumber": 1,
+    "AbilityId": 90000054,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 90000054,
+    "SlotNumber": 2,
+    "AbilityId": 90000002,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 91000001,
+    "SlotNumber": 1,
+    "AbilityId": 90000015,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 91000001,
+    "SlotNumber": 2,
+    "AbilityId": 90000005,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 91000001,
+    "SlotNumber": 3,
+    "AbilityId": 90000006,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 91000002,
+    "SlotNumber": 1,
+    "AbilityId": 90000025,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 91000002,
+    "SlotNumber": 2,
+    "AbilityId": 90000005,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 91000002,
+    "SlotNumber": 3,
+    "AbilityId": 90000006,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 91000003,
+    "SlotNumber": 1,
+    "AbilityId": 90000035,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 91000003,
+    "SlotNumber": 2,
+    "AbilityId": 90000005,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 91000003,
+    "SlotNumber": 3,
+    "AbilityId": 90000006,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 91000004,
+    "SlotNumber": 1,
+    "AbilityId": 90000045,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 91000004,
+    "SlotNumber": 2,
+    "AbilityId": 90000005,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 91000004,
+    "SlotNumber": 3,
+    "AbilityId": 90000006,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 91000005,
+    "SlotNumber": 1,
+    "AbilityId": 90000055,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 91000005,
+    "SlotNumber": 2,
+    "AbilityId": 90000005,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 91000005,
+    "SlotNumber": 3,
+    "AbilityId": 90000006,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 99999999,
+    "SlotNumber": 1,
+    "AbilityId": 99999999,
+    "CostumeAbilityLevelGroupId": 1
+  },
+  {
+    "CostumeAbilityGroupId": 99999999,
+    "SlotNumber": 2,
+    "AbilityId": 99999999,
+    "CostumeAbilityLevelGroupId": 2
+  }
+]

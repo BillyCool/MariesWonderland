@@ -1,0 +1,92 @@
+[
+  {
+    "BattleBigHuntPhaseGroupId": 1,
+    "BattleBigHuntPhaseGroupOrder": 1,
+    "KnockDownDamageThresholdGroupId": 11,
+    "NormalPhaseFrameCount": 3600
+  },
+  {
+    "BattleBigHuntPhaseGroupId": 1,
+    "BattleBigHuntPhaseGroupOrder": 2,
+    "KnockDownDamageThresholdGroupId": 12,
+    "NormalPhaseFrameCount": 3600
+  },
+  {
+    "BattleBigHuntPhaseGroupId": 1,
+    "BattleBigHuntPhaseGroupOrder": 3,
+    "KnockDownDamageThresholdGroupId": 13,
+    "NormalPhaseFrameCount": 3600
+  },
+  {
+    "BattleBigHuntPhaseGroupId": 2,
+    "BattleBigHuntPhaseGroupOrder": 1,
+    "KnockDownDamageThresholdGroupId": 21,
+    "NormalPhaseFrameCount": 3600
+  },
+  {
+    "BattleBigHuntPhaseGroupId": 2,
+    "BattleBigHuntPhaseGroupOrder": 2,
+    "KnockDownDamageThresholdGroupId": 22,
+    "NormalPhaseFrameCount": 3600
+  },
+  {
+    "BattleBigHuntPhaseGroupId": 2,
+    "BattleBigHuntPhaseGroupOrder": 3,
+    "KnockDownDamageThresholdGroupId": 23,
+    "NormalPhaseFrameCount": 3600
+  },
+  {
+    "BattleBigHuntPhaseGroupId": 3,
+    "BattleBigHuntPhaseGroupOrder": 1,
+    "KnockDownDamageThresholdGroupId": 31,
+    "NormalPhaseFrameCount": 3600
+  },
+  {
+    "BattleBigHuntPhaseGroupId": 3,
+    "BattleBigHuntPhaseGroupOrder": 2,
+    "KnockDownDamageThresholdGroupId": 32,
+    "NormalPhaseFrameCount": 3600
+  },
+  {
+    "BattleBigHuntPhaseGroupId": 3,
+    "BattleBigHuntPhaseGroupOrder": 3,
+    "KnockDownDamageThresholdGroupId": 33,
+    "NormalPhaseFrameCount": 3600
+  },
+  {
+    "BattleBigHuntPhaseGroupId": 4,
+    "BattleBigHuntPhaseGroupOrder": 1,
+    "KnockDownDamageThresholdGroupId": 41,
+    "NormalPhaseFrameCount": 3600
+  },
+  {
+    "BattleBigHuntPhaseGroupId": 4,
+    "BattleBigHuntPhaseGroupOrder": 2,
+    "KnockDownDamageThresholdGroupId": 42,
+    "NormalPhaseFrameCount": 3600
+  },
+  {
+    "BattleBigHuntPhaseGroupId": 4,
+    "BattleBigHuntPhaseGroupOrder": 3,
+    "KnockDownDamageThresholdGroupId": 43,
+    "NormalPhaseFrameCount": 3600
+  },
+  {
+    "BattleBigHuntPhaseGroupId": 5,
+    "BattleBigHuntPhaseGroupOrder": 1,
+    "KnockDownDamageThresholdGroupId": 51,
+    "NormalPhaseFrameCount": 3600
+  },
+  {
+    "BattleBigHuntPhaseGroupId": 5,
+    "BattleBigHuntPhaseGroupOrder": 2,
+    "KnockDownDamageThresholdGroupId": 52,
+    "NormalPhaseFrameCount": 3600
+  },
+  {
+    "BattleBigHuntPhaseGroupId": 5,
+    "BattleBigHuntPhaseGroupOrder": 3,
+    "KnockDownDamageThresholdGroupId": 53,
+    "NormalPhaseFrameCount": 3600
+  }
+]

@@ -1,0 +1,1253 @@
+[
+  {
+    "MissionPassRewardGroupId": 10001,
+    "Level": 1,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 6,
+    "PossessionId": 1002,
+    "Count": 1
+  },
+  {
+    "MissionPassRewardGroupId": 10001,
+    "Level": 1,
+    "IsPremium": true,
+    "SortOrder": 1,
+    "PossessionType": 6,
+    "PossessionId": 1006,
+    "Count": 1
+  },
+  {
+    "MissionPassRewardGroupId": 10001,
+    "Level": 2,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 6,
+    "PossessionId": 3001,
+    "Count": 20
+  },
+  {
+    "MissionPassRewardGroupId": 10001,
+    "Level": 2,
+    "IsPremium": true,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 321007,
+    "Count": 50
+  },
+  {
+    "MissionPassRewardGroupId": 10001,
+    "Level": 2,
+    "IsPremium": true,
+    "SortOrder": 2,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 10
+  },
+  {
+    "MissionPassRewardGroupId": 10001,
+    "Level": 3,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 100004,
+    "Count": 150
+  },
+  {
+    "MissionPassRewardGroupId": 10001,
+    "Level": 3,
+    "IsPremium": true,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 321008,
+    "Count": 50
+  },
+  {
+    "MissionPassRewardGroupId": 10001,
+    "Level": 3,
+    "IsPremium": true,
+    "SortOrder": 2,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 10
+  },
+  {
+    "MissionPassRewardGroupId": 10001,
+    "Level": 4,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 200004,
+    "Count": 150
+  },
+  {
+    "MissionPassRewardGroupId": 10001,
+    "Level": 4,
+    "IsPremium": true,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 321009,
+    "Count": 50
+  },
+  {
+    "MissionPassRewardGroupId": 10001,
+    "Level": 4,
+    "IsPremium": true,
+    "SortOrder": 2,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 10
+  },
+  {
+    "MissionPassRewardGroupId": 10001,
+    "Level": 5,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 10
+  },
+  {
+    "MissionPassRewardGroupId": 10001,
+    "Level": 5,
+    "IsPremium": true,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 300024,
+    "Count": 2
+  },
+  {
+    "MissionPassRewardGroupId": 10001,
+    "Level": 6,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 6,
+    "PossessionId": 3001,
+    "Count": 20
+  },
+  {
+    "MissionPassRewardGroupId": 10001,
+    "Level": 6,
+    "IsPremium": true,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 321010,
+    "Count": 50
+  },
+  {
+    "MissionPassRewardGroupId": 10001,
+    "Level": 6,
+    "IsPremium": true,
+    "SortOrder": 2,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 10
+  },
+  {
+    "MissionPassRewardGroupId": 10001,
+    "Level": 7,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 100004,
+    "Count": 150
+  },
+  {
+    "MissionPassRewardGroupId": 10001,
+    "Level": 7,
+    "IsPremium": true,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 321011,
+    "Count": 50
+  },
+  {
+    "MissionPassRewardGroupId": 10001,
+    "Level": 7,
+    "IsPremium": true,
+    "SortOrder": 2,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 10
+  },
+  {
+    "MissionPassRewardGroupId": 10001,
+    "Level": 8,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 200004,
+    "Count": 150
+  },
+  {
+    "MissionPassRewardGroupId": 10001,
+    "Level": 8,
+    "IsPremium": true,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 311003,
+    "Count": 5
+  },
+  {
+    "MissionPassRewardGroupId": 10001,
+    "Level": 8,
+    "IsPremium": true,
+    "SortOrder": 2,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 10
+  },
+  {
+    "MissionPassRewardGroupId": 10001,
+    "Level": 9,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 6,
+    "PossessionId": 3001,
+    "Count": 50
+  },
+  {
+    "MissionPassRewardGroupId": 10001,
+    "Level": 9,
+    "IsPremium": true,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 311003,
+    "Count": 5
+  },
+  {
+    "MissionPassRewardGroupId": 10001,
+    "Level": 9,
+    "IsPremium": true,
+    "SortOrder": 2,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 10
+  },
+  {
+    "MissionPassRewardGroupId": 10001,
+    "Level": 10,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 10
+  },
+  {
+    "MissionPassRewardGroupId": 10001,
+    "Level": 10,
+    "IsPremium": true,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 300023,
+    "Count": 1
+  },
+  {
+    "MissionPassRewardGroupId": 10001,
+    "Level": 11,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 100
+  },
+  {
+    "MissionPassRewardGroupId": 10001,
+    "Level": 11,
+    "IsPremium": true,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 100
+  },
+  {
+    "MissionPassRewardGroupId": 10001,
+    "Level": 11,
+    "IsPremium": true,
+    "SortOrder": 2,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 10
+  },
+  {
+    "MissionPassRewardGroupId": 10001,
+    "Level": 12,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 100
+  },
+  {
+    "MissionPassRewardGroupId": 10001,
+    "Level": 12,
+    "IsPremium": true,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 50
+  },
+  {
+    "MissionPassRewardGroupId": 10001,
+    "Level": 12,
+    "IsPremium": true,
+    "SortOrder": 2,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 10
+  },
+  {
+    "MissionPassRewardGroupId": 10001,
+    "Level": 13,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 100
+  },
+  {
+    "MissionPassRewardGroupId": 10001,
+    "Level": 13,
+    "IsPremium": true,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 402002,
+    "Count": 70
+  },
+  {
+    "MissionPassRewardGroupId": 10001,
+    "Level": 13,
+    "IsPremium": true,
+    "SortOrder": 2,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 10
+  },
+  {
+    "MissionPassRewardGroupId": 10001,
+    "Level": 14,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 100
+  },
+  {
+    "MissionPassRewardGroupId": 10001,
+    "Level": 14,
+    "IsPremium": true,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 402003,
+    "Count": 30
+  },
+  {
+    "MissionPassRewardGroupId": 10001,
+    "Level": 14,
+    "IsPremium": true,
+    "SortOrder": 2,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 10
+  },
+  {
+    "MissionPassRewardGroupId": 10001,
+    "Level": 15,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 6,
+    "PossessionId": 1002,
+    "Count": 1
+  },
+  {
+    "MissionPassRewardGroupId": 10001,
+    "Level": 15,
+    "IsPremium": true,
+    "SortOrder": 1,
+    "PossessionType": 6,
+    "PossessionId": 167,
+    "Count": 1
+  },
+  {
+    "MissionPassRewardGroupId": 10004,
+    "Level": 1,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 6,
+    "PossessionId": 1002,
+    "Count": 2
+  },
+  {
+    "MissionPassRewardGroupId": 10004,
+    "Level": 1,
+    "IsPremium": true,
+    "SortOrder": 1,
+    "PossessionType": 6,
+    "PossessionId": 1006,
+    "Count": 1
+  },
+  {
+    "MissionPassRewardGroupId": 10004,
+    "Level": 2,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 6,
+    "PossessionId": 3001,
+    "Count": 40
+  },
+  {
+    "MissionPassRewardGroupId": 10004,
+    "Level": 2,
+    "IsPremium": true,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 321007,
+    "Count": 50
+  },
+  {
+    "MissionPassRewardGroupId": 10004,
+    "Level": 2,
+    "IsPremium": true,
+    "SortOrder": 2,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 10
+  },
+  {
+    "MissionPassRewardGroupId": 10004,
+    "Level": 3,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 100004,
+    "Count": 300
+  },
+  {
+    "MissionPassRewardGroupId": 10004,
+    "Level": 3,
+    "IsPremium": true,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 321008,
+    "Count": 50
+  },
+  {
+    "MissionPassRewardGroupId": 10004,
+    "Level": 3,
+    "IsPremium": true,
+    "SortOrder": 2,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 10
+  },
+  {
+    "MissionPassRewardGroupId": 10004,
+    "Level": 4,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 200004,
+    "Count": 300
+  },
+  {
+    "MissionPassRewardGroupId": 10004,
+    "Level": 4,
+    "IsPremium": true,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 321009,
+    "Count": 50
+  },
+  {
+    "MissionPassRewardGroupId": 10004,
+    "Level": 4,
+    "IsPremium": true,
+    "SortOrder": 2,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 10
+  },
+  {
+    "MissionPassRewardGroupId": 10004,
+    "Level": 5,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 20
+  },
+  {
+    "MissionPassRewardGroupId": 10004,
+    "Level": 5,
+    "IsPremium": true,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 300024,
+    "Count": 2
+  },
+  {
+    "MissionPassRewardGroupId": 10004,
+    "Level": 6,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 6,
+    "PossessionId": 3001,
+    "Count": 40
+  },
+  {
+    "MissionPassRewardGroupId": 10004,
+    "Level": 6,
+    "IsPremium": true,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 321010,
+    "Count": 50
+  },
+  {
+    "MissionPassRewardGroupId": 10004,
+    "Level": 6,
+    "IsPremium": true,
+    "SortOrder": 2,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 10
+  },
+  {
+    "MissionPassRewardGroupId": 10004,
+    "Level": 7,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 100004,
+    "Count": 300
+  },
+  {
+    "MissionPassRewardGroupId": 10004,
+    "Level": 7,
+    "IsPremium": true,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 321011,
+    "Count": 50
+  },
+  {
+    "MissionPassRewardGroupId": 10004,
+    "Level": 7,
+    "IsPremium": true,
+    "SortOrder": 2,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 10
+  },
+  {
+    "MissionPassRewardGroupId": 10004,
+    "Level": 8,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 200004,
+    "Count": 300
+  },
+  {
+    "MissionPassRewardGroupId": 10004,
+    "Level": 8,
+    "IsPremium": true,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 311003,
+    "Count": 5
+  },
+  {
+    "MissionPassRewardGroupId": 10004,
+    "Level": 8,
+    "IsPremium": true,
+    "SortOrder": 2,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 10
+  },
+  {
+    "MissionPassRewardGroupId": 10004,
+    "Level": 9,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 6,
+    "PossessionId": 3001,
+    "Count": 100
+  },
+  {
+    "MissionPassRewardGroupId": 10004,
+    "Level": 9,
+    "IsPremium": true,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 311003,
+    "Count": 5
+  },
+  {
+    "MissionPassRewardGroupId": 10004,
+    "Level": 9,
+    "IsPremium": true,
+    "SortOrder": 2,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 10
+  },
+  {
+    "MissionPassRewardGroupId": 10004,
+    "Level": 10,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 20
+  },
+  {
+    "MissionPassRewardGroupId": 10004,
+    "Level": 10,
+    "IsPremium": true,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 300023,
+    "Count": 1
+  },
+  {
+    "MissionPassRewardGroupId": 10004,
+    "Level": 11,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 200
+  },
+  {
+    "MissionPassRewardGroupId": 10004,
+    "Level": 11,
+    "IsPremium": true,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 100
+  },
+  {
+    "MissionPassRewardGroupId": 10004,
+    "Level": 11,
+    "IsPremium": true,
+    "SortOrder": 2,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 10
+  },
+  {
+    "MissionPassRewardGroupId": 10004,
+    "Level": 12,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 200
+  },
+  {
+    "MissionPassRewardGroupId": 10004,
+    "Level": 12,
+    "IsPremium": true,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 50
+  },
+  {
+    "MissionPassRewardGroupId": 10004,
+    "Level": 12,
+    "IsPremium": true,
+    "SortOrder": 2,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 10
+  },
+  {
+    "MissionPassRewardGroupId": 10004,
+    "Level": 13,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 200
+  },
+  {
+    "MissionPassRewardGroupId": 10004,
+    "Level": 13,
+    "IsPremium": true,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 402002,
+    "Count": 70
+  },
+  {
+    "MissionPassRewardGroupId": 10004,
+    "Level": 13,
+    "IsPremium": true,
+    "SortOrder": 2,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 10
+  },
+  {
+    "MissionPassRewardGroupId": 10004,
+    "Level": 14,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 200
+  },
+  {
+    "MissionPassRewardGroupId": 10004,
+    "Level": 14,
+    "IsPremium": true,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 402003,
+    "Count": 30
+  },
+  {
+    "MissionPassRewardGroupId": 10004,
+    "Level": 14,
+    "IsPremium": true,
+    "SortOrder": 2,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 10
+  },
+  {
+    "MissionPassRewardGroupId": 10004,
+    "Level": 15,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 6,
+    "PossessionId": 1002,
+    "Count": 2
+  },
+  {
+    "MissionPassRewardGroupId": 10004,
+    "Level": 15,
+    "IsPremium": true,
+    "SortOrder": 1,
+    "PossessionType": 6,
+    "PossessionId": 167,
+    "Count": 1
+  },
+  {
+    "MissionPassRewardGroupId": 10005,
+    "Level": 1,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 6,
+    "PossessionId": 1002,
+    "Count": 1
+  },
+  {
+    "MissionPassRewardGroupId": 10005,
+    "Level": 1,
+    "IsPremium": true,
+    "SortOrder": 1,
+    "PossessionType": 6,
+    "PossessionId": 1006,
+    "Count": 1
+  },
+  {
+    "MissionPassRewardGroupId": 10005,
+    "Level": 2,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 6,
+    "PossessionId": 3001,
+    "Count": 20
+  },
+  {
+    "MissionPassRewardGroupId": 10005,
+    "Level": 2,
+    "IsPremium": true,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 321007,
+    "Count": 100
+  },
+  {
+    "MissionPassRewardGroupId": 10005,
+    "Level": 2,
+    "IsPremium": true,
+    "SortOrder": 2,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 10
+  },
+  {
+    "MissionPassRewardGroupId": 10005,
+    "Level": 3,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 100004,
+    "Count": 150
+  },
+  {
+    "MissionPassRewardGroupId": 10005,
+    "Level": 3,
+    "IsPremium": true,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 321008,
+    "Count": 100
+  },
+  {
+    "MissionPassRewardGroupId": 10005,
+    "Level": 3,
+    "IsPremium": true,
+    "SortOrder": 2,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 10
+  },
+  {
+    "MissionPassRewardGroupId": 10005,
+    "Level": 4,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 200004,
+    "Count": 150
+  },
+  {
+    "MissionPassRewardGroupId": 10005,
+    "Level": 4,
+    "IsPremium": true,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 321009,
+    "Count": 100
+  },
+  {
+    "MissionPassRewardGroupId": 10005,
+    "Level": 4,
+    "IsPremium": true,
+    "SortOrder": 2,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 10
+  },
+  {
+    "MissionPassRewardGroupId": 10005,
+    "Level": 5,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 10
+  },
+  {
+    "MissionPassRewardGroupId": 10005,
+    "Level": 5,
+    "IsPremium": true,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 300024,
+    "Count": 2
+  },
+  {
+    "MissionPassRewardGroupId": 10005,
+    "Level": 5,
+    "IsPremium": true,
+    "SortOrder": 2,
+    "PossessionType": 5,
+    "PossessionId": 325001,
+    "Count": 10
+  },
+  {
+    "MissionPassRewardGroupId": 10005,
+    "Level": 6,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 6,
+    "PossessionId": 3001,
+    "Count": 20
+  },
+  {
+    "MissionPassRewardGroupId": 10005,
+    "Level": 6,
+    "IsPremium": true,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 321010,
+    "Count": 100
+  },
+  {
+    "MissionPassRewardGroupId": 10005,
+    "Level": 6,
+    "IsPremium": true,
+    "SortOrder": 2,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 10
+  },
+  {
+    "MissionPassRewardGroupId": 10005,
+    "Level": 7,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 100004,
+    "Count": 150
+  },
+  {
+    "MissionPassRewardGroupId": 10005,
+    "Level": 7,
+    "IsPremium": true,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 321011,
+    "Count": 100
+  },
+  {
+    "MissionPassRewardGroupId": 10005,
+    "Level": 7,
+    "IsPremium": true,
+    "SortOrder": 2,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 10
+  },
+  {
+    "MissionPassRewardGroupId": 10005,
+    "Level": 8,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 200004,
+    "Count": 150
+  },
+  {
+    "MissionPassRewardGroupId": 10005,
+    "Level": 8,
+    "IsPremium": true,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 311003,
+    "Count": 10
+  },
+  {
+    "MissionPassRewardGroupId": 10005,
+    "Level": 8,
+    "IsPremium": true,
+    "SortOrder": 2,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 10
+  },
+  {
+    "MissionPassRewardGroupId": 10005,
+    "Level": 9,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 6,
+    "PossessionId": 3001,
+    "Count": 50
+  },
+  {
+    "MissionPassRewardGroupId": 10005,
+    "Level": 9,
+    "IsPremium": true,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 311003,
+    "Count": 10
+  },
+  {
+    "MissionPassRewardGroupId": 10005,
+    "Level": 9,
+    "IsPremium": true,
+    "SortOrder": 2,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 10
+  },
+  {
+    "MissionPassRewardGroupId": 10005,
+    "Level": 10,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 10
+  },
+  {
+    "MissionPassRewardGroupId": 10005,
+    "Level": 10,
+    "IsPremium": true,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 300023,
+    "Count": 1
+  },
+  {
+    "MissionPassRewardGroupId": 10005,
+    "Level": 11,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 100
+  },
+  {
+    "MissionPassRewardGroupId": 10005,
+    "Level": 11,
+    "IsPremium": true,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 100
+  },
+  {
+    "MissionPassRewardGroupId": 10005,
+    "Level": 11,
+    "IsPremium": true,
+    "SortOrder": 2,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 10
+  },
+  {
+    "MissionPassRewardGroupId": 10005,
+    "Level": 12,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 100
+  },
+  {
+    "MissionPassRewardGroupId": 10005,
+    "Level": 12,
+    "IsPremium": true,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 50
+  },
+  {
+    "MissionPassRewardGroupId": 10005,
+    "Level": 12,
+    "IsPremium": true,
+    "SortOrder": 2,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 10
+  },
+  {
+    "MissionPassRewardGroupId": 10005,
+    "Level": 13,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 100
+  },
+  {
+    "MissionPassRewardGroupId": 10005,
+    "Level": 13,
+    "IsPremium": true,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 402002,
+    "Count": 70
+  },
+  {
+    "MissionPassRewardGroupId": 10005,
+    "Level": 13,
+    "IsPremium": true,
+    "SortOrder": 2,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 10
+  },
+  {
+    "MissionPassRewardGroupId": 10005,
+    "Level": 14,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 100
+  },
+  {
+    "MissionPassRewardGroupId": 10005,
+    "Level": 14,
+    "IsPremium": true,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 402003,
+    "Count": 30
+  },
+  {
+    "MissionPassRewardGroupId": 10005,
+    "Level": 14,
+    "IsPremium": true,
+    "SortOrder": 2,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 10
+  },
+  {
+    "MissionPassRewardGroupId": 10005,
+    "Level": 15,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 6,
+    "PossessionId": 1002,
+    "Count": 1
+  },
+  {
+    "MissionPassRewardGroupId": 10005,
+    "Level": 15,
+    "IsPremium": true,
+    "SortOrder": 1,
+    "PossessionType": 6,
+    "PossessionId": 167,
+    "Count": 1
+  },
+  {
+    "MissionPassRewardGroupId": 10010,
+    "Level": 1,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 6,
+    "PossessionId": 1002,
+    "Count": 1
+  },
+  {
+    "MissionPassRewardGroupId": 10010,
+    "Level": 2,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 6,
+    "PossessionId": 3001,
+    "Count": 20
+  },
+  {
+    "MissionPassRewardGroupId": 10010,
+    "Level": 3,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 100004,
+    "Count": 150
+  },
+  {
+    "MissionPassRewardGroupId": 10010,
+    "Level": 4,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 200004,
+    "Count": 150
+  },
+  {
+    "MissionPassRewardGroupId": 10010,
+    "Level": 5,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 10
+  },
+  {
+    "MissionPassRewardGroupId": 10010,
+    "Level": 6,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 6,
+    "PossessionId": 3001,
+    "Count": 20
+  },
+  {
+    "MissionPassRewardGroupId": 10010,
+    "Level": 7,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 100004,
+    "Count": 150
+  },
+  {
+    "MissionPassRewardGroupId": 10010,
+    "Level": 8,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 200004,
+    "Count": 150
+  },
+  {
+    "MissionPassRewardGroupId": 10010,
+    "Level": 9,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 6,
+    "PossessionId": 3001,
+    "Count": 50
+  },
+  {
+    "MissionPassRewardGroupId": 10010,
+    "Level": 10,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 6,
+    "PossessionId": 2003,
+    "Count": 10
+  },
+  {
+    "MissionPassRewardGroupId": 10010,
+    "Level": 11,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 100
+  },
+  {
+    "MissionPassRewardGroupId": 10010,
+    "Level": 12,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 100
+  },
+  {
+    "MissionPassRewardGroupId": 10010,
+    "Level": 13,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 100
+  },
+  {
+    "MissionPassRewardGroupId": 10010,
+    "Level": 14,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 100
+  },
+  {
+    "MissionPassRewardGroupId": 10010,
+    "Level": 15,
+    "IsPremium": false,
+    "SortOrder": 1,
+    "PossessionType": 6,
+    "PossessionId": 1002,
+    "Count": 1
+  }
+]

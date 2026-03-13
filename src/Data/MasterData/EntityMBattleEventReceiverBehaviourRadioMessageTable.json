@@ -1,0 +1,57 @@
+[
+  {
+    "BattleEventReceiverBehaviourId": 1,
+    "SpeakerId": 90001,
+    "ScenarioKey": "MID_a080_0170b_00100_01020_1"
+  },
+  {
+    "BattleEventReceiverBehaviourId": 2,
+    "SpeakerId": 90001,
+    "ScenarioKey": "MID_a080_0170b_00200_01020_1"
+  },
+  {
+    "BattleEventReceiverBehaviourId": 3,
+    "SpeakerId": 90002,
+    "ScenarioKey": "MID_a080_0170b_00300_01050_1"
+  },
+  {
+    "BattleEventReceiverBehaviourId": 4,
+    "SpeakerId": 90003,
+    "ScenarioKey": "PID_a100_3040b_00100_03070_1"
+  },
+  {
+    "BattleEventReceiverBehaviourId": 5,
+    "SpeakerId": 90003,
+    "ScenarioKey": "PID_a100_3040b_00200_03080_1"
+  },
+  {
+    "BattleEventReceiverBehaviourId": 6,
+    "SpeakerId": 90003,
+    "ScenarioKey": "PID_a100_3040b_00300_03090_1"
+  },
+  {
+    "BattleEventReceiverBehaviourId": 7,
+    "SpeakerId": 90004,
+    "ScenarioKey": "PID_a050_3060b_00100_03030_1"
+  },
+  {
+    "BattleEventReceiverBehaviourId": 8,
+    "SpeakerId": 90004,
+    "ScenarioKey": "PID_a050_3060b_00200_03030_1"
+  },
+  {
+    "BattleEventReceiverBehaviourId": 9,
+    "SpeakerId": 90001,
+    "ScenarioKey": "MID_a100_0170_00100_01020_1"
+  },
+  {
+    "BattleEventReceiverBehaviourId": 10,
+    "SpeakerId": 90005,
+    "ScenarioKey": "MID_a100_0160b_00100_03060_1"
+  },
+  {
+    "BattleEventReceiverBehaviourId": 11,
+    "SpeakerId": 90005,
+    "ScenarioKey": "MID_a100_0160b_00200_03060_1"
+  }
+]

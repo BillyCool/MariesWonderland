@@ -1,0 +1,758 @@
+[
+  {
+    "AttributeDamageCoefficientGroupId": 1,
+    "SkillExecutorAttributeType": 1,
+    "SkillTargetAttributeType": 1,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 1,
+    "SkillExecutorAttributeType": 1,
+    "SkillTargetAttributeType": 2,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 1,
+    "SkillExecutorAttributeType": 1,
+    "SkillTargetAttributeType": 3,
+    "AttributeCompatibilityType": 2,
+    "DamageCoefficientPermil": 1500
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 1,
+    "SkillExecutorAttributeType": 1,
+    "SkillTargetAttributeType": 4,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 1,
+    "SkillExecutorAttributeType": 1,
+    "SkillTargetAttributeType": 5,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 1,
+    "SkillExecutorAttributeType": 1,
+    "SkillTargetAttributeType": 6,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 1,
+    "SkillExecutorAttributeType": 2,
+    "SkillTargetAttributeType": 1,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 1,
+    "SkillExecutorAttributeType": 2,
+    "SkillTargetAttributeType": 2,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 1,
+    "SkillExecutorAttributeType": 2,
+    "SkillTargetAttributeType": 3,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 1,
+    "SkillExecutorAttributeType": 2,
+    "SkillTargetAttributeType": 4,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 1,
+    "SkillExecutorAttributeType": 2,
+    "SkillTargetAttributeType": 5,
+    "AttributeCompatibilityType": 3,
+    "DamageCoefficientPermil": 750
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 1,
+    "SkillExecutorAttributeType": 2,
+    "SkillTargetAttributeType": 6,
+    "AttributeCompatibilityType": 2,
+    "DamageCoefficientPermil": 1500
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 1,
+    "SkillExecutorAttributeType": 3,
+    "SkillTargetAttributeType": 1,
+    "AttributeCompatibilityType": 2,
+    "DamageCoefficientPermil": 1500
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 1,
+    "SkillExecutorAttributeType": 3,
+    "SkillTargetAttributeType": 2,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 1,
+    "SkillExecutorAttributeType": 3,
+    "SkillTargetAttributeType": 3,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 1,
+    "SkillExecutorAttributeType": 3,
+    "SkillTargetAttributeType": 4,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 1,
+    "SkillExecutorAttributeType": 3,
+    "SkillTargetAttributeType": 5,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 1,
+    "SkillExecutorAttributeType": 3,
+    "SkillTargetAttributeType": 6,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 1,
+    "SkillExecutorAttributeType": 4,
+    "SkillTargetAttributeType": 1,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 1,
+    "SkillExecutorAttributeType": 4,
+    "SkillTargetAttributeType": 2,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 1,
+    "SkillExecutorAttributeType": 4,
+    "SkillTargetAttributeType": 3,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 1,
+    "SkillExecutorAttributeType": 4,
+    "SkillTargetAttributeType": 4,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 1,
+    "SkillExecutorAttributeType": 4,
+    "SkillTargetAttributeType": 5,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 1,
+    "SkillExecutorAttributeType": 4,
+    "SkillTargetAttributeType": 6,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 1,
+    "SkillExecutorAttributeType": 5,
+    "SkillTargetAttributeType": 1,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 1,
+    "SkillExecutorAttributeType": 5,
+    "SkillTargetAttributeType": 2,
+    "AttributeCompatibilityType": 2,
+    "DamageCoefficientPermil": 1500
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 1,
+    "SkillExecutorAttributeType": 5,
+    "SkillTargetAttributeType": 3,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 1,
+    "SkillExecutorAttributeType": 5,
+    "SkillTargetAttributeType": 4,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 1,
+    "SkillExecutorAttributeType": 5,
+    "SkillTargetAttributeType": 5,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 1,
+    "SkillExecutorAttributeType": 5,
+    "SkillTargetAttributeType": 6,
+    "AttributeCompatibilityType": 3,
+    "DamageCoefficientPermil": 750
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 1,
+    "SkillExecutorAttributeType": 6,
+    "SkillTargetAttributeType": 1,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 1,
+    "SkillExecutorAttributeType": 6,
+    "SkillTargetAttributeType": 2,
+    "AttributeCompatibilityType": 3,
+    "DamageCoefficientPermil": 750
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 1,
+    "SkillExecutorAttributeType": 6,
+    "SkillTargetAttributeType": 3,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 1,
+    "SkillExecutorAttributeType": 6,
+    "SkillTargetAttributeType": 4,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 1,
+    "SkillExecutorAttributeType": 6,
+    "SkillTargetAttributeType": 5,
+    "AttributeCompatibilityType": 2,
+    "DamageCoefficientPermil": 1500
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 1,
+    "SkillExecutorAttributeType": 6,
+    "SkillTargetAttributeType": 6,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 2,
+    "SkillExecutorAttributeType": 1,
+    "SkillTargetAttributeType": 1,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 2,
+    "SkillExecutorAttributeType": 1,
+    "SkillTargetAttributeType": 2,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 2,
+    "SkillExecutorAttributeType": 1,
+    "SkillTargetAttributeType": 3,
+    "AttributeCompatibilityType": 3,
+    "DamageCoefficientPermil": 750
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 2,
+    "SkillExecutorAttributeType": 1,
+    "SkillTargetAttributeType": 4,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 2,
+    "SkillExecutorAttributeType": 1,
+    "SkillTargetAttributeType": 5,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 2,
+    "SkillExecutorAttributeType": 1,
+    "SkillTargetAttributeType": 6,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 2,
+    "SkillExecutorAttributeType": 2,
+    "SkillTargetAttributeType": 1,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 2,
+    "SkillExecutorAttributeType": 2,
+    "SkillTargetAttributeType": 2,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 2,
+    "SkillExecutorAttributeType": 2,
+    "SkillTargetAttributeType": 3,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 2,
+    "SkillExecutorAttributeType": 2,
+    "SkillTargetAttributeType": 4,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 2,
+    "SkillExecutorAttributeType": 2,
+    "SkillTargetAttributeType": 5,
+    "AttributeCompatibilityType": 3,
+    "DamageCoefficientPermil": 750
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 2,
+    "SkillExecutorAttributeType": 2,
+    "SkillTargetAttributeType": 6,
+    "AttributeCompatibilityType": 2,
+    "DamageCoefficientPermil": 1500
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 2,
+    "SkillExecutorAttributeType": 3,
+    "SkillTargetAttributeType": 1,
+    "AttributeCompatibilityType": 3,
+    "DamageCoefficientPermil": 750
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 2,
+    "SkillExecutorAttributeType": 3,
+    "SkillTargetAttributeType": 2,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 2,
+    "SkillExecutorAttributeType": 3,
+    "SkillTargetAttributeType": 3,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 2,
+    "SkillExecutorAttributeType": 3,
+    "SkillTargetAttributeType": 4,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 2,
+    "SkillExecutorAttributeType": 3,
+    "SkillTargetAttributeType": 5,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 2,
+    "SkillExecutorAttributeType": 3,
+    "SkillTargetAttributeType": 6,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 2,
+    "SkillExecutorAttributeType": 4,
+    "SkillTargetAttributeType": 1,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 2,
+    "SkillExecutorAttributeType": 4,
+    "SkillTargetAttributeType": 2,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 2,
+    "SkillExecutorAttributeType": 4,
+    "SkillTargetAttributeType": 3,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 2,
+    "SkillExecutorAttributeType": 4,
+    "SkillTargetAttributeType": 4,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 2,
+    "SkillExecutorAttributeType": 4,
+    "SkillTargetAttributeType": 5,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 2,
+    "SkillExecutorAttributeType": 4,
+    "SkillTargetAttributeType": 6,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 2,
+    "SkillExecutorAttributeType": 5,
+    "SkillTargetAttributeType": 1,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 2,
+    "SkillExecutorAttributeType": 5,
+    "SkillTargetAttributeType": 2,
+    "AttributeCompatibilityType": 2,
+    "DamageCoefficientPermil": 1500
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 2,
+    "SkillExecutorAttributeType": 5,
+    "SkillTargetAttributeType": 3,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 2,
+    "SkillExecutorAttributeType": 5,
+    "SkillTargetAttributeType": 4,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 2,
+    "SkillExecutorAttributeType": 5,
+    "SkillTargetAttributeType": 5,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 2,
+    "SkillExecutorAttributeType": 5,
+    "SkillTargetAttributeType": 6,
+    "AttributeCompatibilityType": 3,
+    "DamageCoefficientPermil": 750
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 2,
+    "SkillExecutorAttributeType": 6,
+    "SkillTargetAttributeType": 1,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 2,
+    "SkillExecutorAttributeType": 6,
+    "SkillTargetAttributeType": 2,
+    "AttributeCompatibilityType": 3,
+    "DamageCoefficientPermil": 750
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 2,
+    "SkillExecutorAttributeType": 6,
+    "SkillTargetAttributeType": 3,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 2,
+    "SkillExecutorAttributeType": 6,
+    "SkillTargetAttributeType": 4,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 2,
+    "SkillExecutorAttributeType": 6,
+    "SkillTargetAttributeType": 5,
+    "AttributeCompatibilityType": 2,
+    "DamageCoefficientPermil": 1500
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 2,
+    "SkillExecutorAttributeType": 6,
+    "SkillTargetAttributeType": 6,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 3,
+    "SkillExecutorAttributeType": 1,
+    "SkillTargetAttributeType": 1,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 3,
+    "SkillExecutorAttributeType": 1,
+    "SkillTargetAttributeType": 2,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 3,
+    "SkillExecutorAttributeType": 1,
+    "SkillTargetAttributeType": 3,
+    "AttributeCompatibilityType": 2,
+    "DamageCoefficientPermil": 1200
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 3,
+    "SkillExecutorAttributeType": 1,
+    "SkillTargetAttributeType": 4,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 3,
+    "SkillExecutorAttributeType": 1,
+    "SkillTargetAttributeType": 5,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 3,
+    "SkillExecutorAttributeType": 1,
+    "SkillTargetAttributeType": 6,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 3,
+    "SkillExecutorAttributeType": 2,
+    "SkillTargetAttributeType": 1,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 3,
+    "SkillExecutorAttributeType": 2,
+    "SkillTargetAttributeType": 2,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 3,
+    "SkillExecutorAttributeType": 2,
+    "SkillTargetAttributeType": 3,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 3,
+    "SkillExecutorAttributeType": 2,
+    "SkillTargetAttributeType": 4,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 3,
+    "SkillExecutorAttributeType": 2,
+    "SkillTargetAttributeType": 5,
+    "AttributeCompatibilityType": 3,
+    "DamageCoefficientPermil": 800
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 3,
+    "SkillExecutorAttributeType": 2,
+    "SkillTargetAttributeType": 6,
+    "AttributeCompatibilityType": 2,
+    "DamageCoefficientPermil": 1200
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 3,
+    "SkillExecutorAttributeType": 3,
+    "SkillTargetAttributeType": 1,
+    "AttributeCompatibilityType": 2,
+    "DamageCoefficientPermil": 1200
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 3,
+    "SkillExecutorAttributeType": 3,
+    "SkillTargetAttributeType": 2,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 3,
+    "SkillExecutorAttributeType": 3,
+    "SkillTargetAttributeType": 3,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 3,
+    "SkillExecutorAttributeType": 3,
+    "SkillTargetAttributeType": 4,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 3,
+    "SkillExecutorAttributeType": 3,
+    "SkillTargetAttributeType": 5,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 3,
+    "SkillExecutorAttributeType": 3,
+    "SkillTargetAttributeType": 6,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 3,
+    "SkillExecutorAttributeType": 4,
+    "SkillTargetAttributeType": 1,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 3,
+    "SkillExecutorAttributeType": 4,
+    "SkillTargetAttributeType": 2,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 3,
+    "SkillExecutorAttributeType": 4,
+    "SkillTargetAttributeType": 3,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 3,
+    "SkillExecutorAttributeType": 4,
+    "SkillTargetAttributeType": 4,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 3,
+    "SkillExecutorAttributeType": 4,
+    "SkillTargetAttributeType": 5,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 3,
+    "SkillExecutorAttributeType": 4,
+    "SkillTargetAttributeType": 6,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 3,
+    "SkillExecutorAttributeType": 5,
+    "SkillTargetAttributeType": 1,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 3,
+    "SkillExecutorAttributeType": 5,
+    "SkillTargetAttributeType": 2,
+    "AttributeCompatibilityType": 2,
+    "DamageCoefficientPermil": 1200
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 3,
+    "SkillExecutorAttributeType": 5,
+    "SkillTargetAttributeType": 3,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 3,
+    "SkillExecutorAttributeType": 5,
+    "SkillTargetAttributeType": 4,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 3,
+    "SkillExecutorAttributeType": 5,
+    "SkillTargetAttributeType": 5,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 3,
+    "SkillExecutorAttributeType": 5,
+    "SkillTargetAttributeType": 6,
+    "AttributeCompatibilityType": 3,
+    "DamageCoefficientPermil": 800
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 3,
+    "SkillExecutorAttributeType": 6,
+    "SkillTargetAttributeType": 1,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 3,
+    "SkillExecutorAttributeType": 6,
+    "SkillTargetAttributeType": 2,
+    "AttributeCompatibilityType": 3,
+    "DamageCoefficientPermil": 800
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 3,
+    "SkillExecutorAttributeType": 6,
+    "SkillTargetAttributeType": 3,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 3,
+    "SkillExecutorAttributeType": 6,
+    "SkillTargetAttributeType": 4,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 3,
+    "SkillExecutorAttributeType": 6,
+    "SkillTargetAttributeType": 5,
+    "AttributeCompatibilityType": 2,
+    "DamageCoefficientPermil": 1200
+  },
+  {
+    "AttributeDamageCoefficientGroupId": 3,
+    "SkillExecutorAttributeType": 6,
+    "SkillTargetAttributeType": 6,
+    "AttributeCompatibilityType": 1,
+    "DamageCoefficientPermil": 1000
+  }
+]

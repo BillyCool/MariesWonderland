@@ -1,0 +1,428 @@
+[
+  {
+    "ShopItemLimitedStockId": 1,
+    "MaxCount": 1,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 2,
+    "MaxCount": 2,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 3,
+    "MaxCount": 3,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 4,
+    "MaxCount": 4,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 5,
+    "MaxCount": 5,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 6,
+    "MaxCount": 6,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 7,
+    "MaxCount": 7,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 9,
+    "MaxCount": 9,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 10,
+    "MaxCount": 10,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 12,
+    "MaxCount": 12,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 15,
+    "MaxCount": 15,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 16,
+    "MaxCount": 16,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 20,
+    "MaxCount": 20,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 24,
+    "MaxCount": 24,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 25,
+    "MaxCount": 25,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 28,
+    "MaxCount": 28,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 30,
+    "MaxCount": 30,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 32,
+    "MaxCount": 32,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 40,
+    "MaxCount": 40,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 45,
+    "MaxCount": 45,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 50,
+    "MaxCount": 50,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 51,
+    "MaxCount": 51,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 60,
+    "MaxCount": 60,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 75,
+    "MaxCount": 75,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 90,
+    "MaxCount": 90,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 100,
+    "MaxCount": 100,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 110,
+    "MaxCount": 110,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 120,
+    "MaxCount": 120,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 135,
+    "MaxCount": 135,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 150,
+    "MaxCount": 150,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 180,
+    "MaxCount": 180,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 200,
+    "MaxCount": 200,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 210,
+    "MaxCount": 210,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 240,
+    "MaxCount": 240,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 250,
+    "MaxCount": 250,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 270,
+    "MaxCount": 270,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 300,
+    "MaxCount": 300,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 360,
+    "MaxCount": 360,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 375,
+    "MaxCount": 375,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 450,
+    "MaxCount": 450,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 500,
+    "MaxCount": 500,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 600,
+    "MaxCount": 600,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 700,
+    "MaxCount": 700,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 750,
+    "MaxCount": 750,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 800,
+    "MaxCount": 800,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 960,
+    "MaxCount": 960,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 999,
+    "MaxCount": 999,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 1000,
+    "MaxCount": 1000,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 1200,
+    "MaxCount": 1200,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 1500,
+    "MaxCount": 1500,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 2000,
+    "MaxCount": 2000,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 3000,
+    "MaxCount": 3000,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 3600,
+    "MaxCount": 3600,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 4500,
+    "MaxCount": 4500,
+    "ShopItemAutoResetType": 1,
+    "ShopItemAutoResetPeriod": 0
+  },
+  {
+    "ShopItemLimitedStockId": 20017,
+    "MaxCount": 1,
+    "ShopItemAutoResetType": 2,
+    "ShopItemAutoResetPeriod": 7
+  },
+  {
+    "ShopItemLimitedStockId": 20201,
+    "MaxCount": 20,
+    "ShopItemAutoResetType": 2,
+    "ShopItemAutoResetPeriod": 1
+  },
+  {
+    "ShopItemLimitedStockId": 20207,
+    "MaxCount": 20,
+    "ShopItemAutoResetType": 2,
+    "ShopItemAutoResetPeriod": 7
+  },
+  {
+    "ShopItemLimitedStockId": 30011,
+    "MaxCount": 1,
+    "ShopItemAutoResetType": 3,
+    "ShopItemAutoResetPeriod": 1
+  },
+  {
+    "ShopItemLimitedStockId": 30021,
+    "MaxCount": 2,
+    "ShopItemAutoResetType": 3,
+    "ShopItemAutoResetPeriod": 1
+  },
+  {
+    "ShopItemLimitedStockId": 30031,
+    "MaxCount": 3,
+    "ShopItemAutoResetType": 3,
+    "ShopItemAutoResetPeriod": 1
+  },
+  {
+    "ShopItemLimitedStockId": 30041,
+    "MaxCount": 4,
+    "ShopItemAutoResetType": 3,
+    "ShopItemAutoResetPeriod": 1
+  },
+  {
+    "ShopItemLimitedStockId": 30051,
+    "MaxCount": 5,
+    "ShopItemAutoResetType": 3,
+    "ShopItemAutoResetPeriod": 1
+  },
+  {
+    "ShopItemLimitedStockId": 30101,
+    "MaxCount": 10,
+    "ShopItemAutoResetType": 3,
+    "ShopItemAutoResetPeriod": 1
+  },
+  {
+    "ShopItemLimitedStockId": 30201,
+    "MaxCount": 20,
+    "ShopItemAutoResetType": 3,
+    "ShopItemAutoResetPeriod": 1
+  },
+  {
+    "ShopItemLimitedStockId": 30501,
+    "MaxCount": 50,
+    "ShopItemAutoResetType": 3,
+    "ShopItemAutoResetPeriod": 1
+  },
+  {
+    "ShopItemLimitedStockId": 31001,
+    "MaxCount": 100,
+    "ShopItemAutoResetType": 3,
+    "ShopItemAutoResetPeriod": 1
+  },
+  {
+    "ShopItemLimitedStockId": 32001,
+    "MaxCount": 200,
+    "ShopItemAutoResetType": 3,
+    "ShopItemAutoResetPeriod": 1
+  },
+  {
+    "ShopItemLimitedStockId": 33001,
+    "MaxCount": 300,
+    "ShopItemAutoResetType": 3,
+    "ShopItemAutoResetPeriod": 1
+  },
+  {
+    "ShopItemLimitedStockId": 35001,
+    "MaxCount": 500,
+    "ShopItemAutoResetType": 3,
+    "ShopItemAutoResetPeriod": 1
+  },
+  {
+    "ShopItemLimitedStockId": 35501,
+    "MaxCount": 550,
+    "ShopItemAutoResetType": 3,
+    "ShopItemAutoResetPeriod": 1
+  },
+  {
+    "ShopItemLimitedStockId": 37001,
+    "MaxCount": 700,
+    "ShopItemAutoResetType": 3,
+    "ShopItemAutoResetPeriod": 1
+  }
+]

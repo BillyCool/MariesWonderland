@@ -1,0 +1,702 @@
+[
+  {
+    "KnockDownGaugeValueConfigGroupId": 1,
+    "ActiveSkillHitCount": 1,
+    "DamageValueLowerLimit": 0,
+    "GaugeValueLowerLimit": 0,
+    "CorrectionRatioPermil": 40
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 1,
+    "ActiveSkillHitCount": 1,
+    "DamageValueLowerLimit": 30000,
+    "GaugeValueLowerLimit": 1200,
+    "CorrectionRatioPermil": 10
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 1,
+    "ActiveSkillHitCount": 1,
+    "DamageValueLowerLimit": 60000,
+    "GaugeValueLowerLimit": 1500,
+    "CorrectionRatioPermil": 5
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 1,
+    "ActiveSkillHitCount": 1,
+    "DamageValueLowerLimit": 240000,
+    "GaugeValueLowerLimit": 2400,
+    "CorrectionRatioPermil": 1
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 1,
+    "ActiveSkillHitCount": 2,
+    "DamageValueLowerLimit": 0,
+    "GaugeValueLowerLimit": 0,
+    "CorrectionRatioPermil": 40
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 1,
+    "ActiveSkillHitCount": 2,
+    "DamageValueLowerLimit": 15000,
+    "GaugeValueLowerLimit": 600,
+    "CorrectionRatioPermil": 10
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 1,
+    "ActiveSkillHitCount": 2,
+    "DamageValueLowerLimit": 30000,
+    "GaugeValueLowerLimit": 750,
+    "CorrectionRatioPermil": 5
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 1,
+    "ActiveSkillHitCount": 2,
+    "DamageValueLowerLimit": 120000,
+    "GaugeValueLowerLimit": 1200,
+    "CorrectionRatioPermil": 1
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 1,
+    "ActiveSkillHitCount": 3,
+    "DamageValueLowerLimit": 0,
+    "GaugeValueLowerLimit": 0,
+    "CorrectionRatioPermil": 40
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 1,
+    "ActiveSkillHitCount": 3,
+    "DamageValueLowerLimit": 10000,
+    "GaugeValueLowerLimit": 400,
+    "CorrectionRatioPermil": 10
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 1,
+    "ActiveSkillHitCount": 3,
+    "DamageValueLowerLimit": 20000,
+    "GaugeValueLowerLimit": 500,
+    "CorrectionRatioPermil": 5
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 1,
+    "ActiveSkillHitCount": 3,
+    "DamageValueLowerLimit": 80000,
+    "GaugeValueLowerLimit": 800,
+    "CorrectionRatioPermil": 1
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 1,
+    "ActiveSkillHitCount": 4,
+    "DamageValueLowerLimit": 0,
+    "GaugeValueLowerLimit": 0,
+    "CorrectionRatioPermil": 40
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 1,
+    "ActiveSkillHitCount": 4,
+    "DamageValueLowerLimit": 7500,
+    "GaugeValueLowerLimit": 300,
+    "CorrectionRatioPermil": 10
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 1,
+    "ActiveSkillHitCount": 4,
+    "DamageValueLowerLimit": 15000,
+    "GaugeValueLowerLimit": 375,
+    "CorrectionRatioPermil": 5
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 1,
+    "ActiveSkillHitCount": 4,
+    "DamageValueLowerLimit": 60000,
+    "GaugeValueLowerLimit": 600,
+    "CorrectionRatioPermil": 1
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 1,
+    "ActiveSkillHitCount": 5,
+    "DamageValueLowerLimit": 0,
+    "GaugeValueLowerLimit": 0,
+    "CorrectionRatioPermil": 40
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 1,
+    "ActiveSkillHitCount": 5,
+    "DamageValueLowerLimit": 6000,
+    "GaugeValueLowerLimit": 240,
+    "CorrectionRatioPermil": 10
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 1,
+    "ActiveSkillHitCount": 5,
+    "DamageValueLowerLimit": 12000,
+    "GaugeValueLowerLimit": 300,
+    "CorrectionRatioPermil": 5
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 1,
+    "ActiveSkillHitCount": 5,
+    "DamageValueLowerLimit": 48000,
+    "GaugeValueLowerLimit": 480,
+    "CorrectionRatioPermil": 1
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 2,
+    "ActiveSkillHitCount": 1,
+    "DamageValueLowerLimit": 0,
+    "GaugeValueLowerLimit": 0,
+    "CorrectionRatioPermil": 40
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 2,
+    "ActiveSkillHitCount": 1,
+    "DamageValueLowerLimit": 60000,
+    "GaugeValueLowerLimit": 2400,
+    "CorrectionRatioPermil": 10
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 2,
+    "ActiveSkillHitCount": 1,
+    "DamageValueLowerLimit": 120000,
+    "GaugeValueLowerLimit": 3000,
+    "CorrectionRatioPermil": 5
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 2,
+    "ActiveSkillHitCount": 1,
+    "DamageValueLowerLimit": 480000,
+    "GaugeValueLowerLimit": 4800,
+    "CorrectionRatioPermil": 1
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 2,
+    "ActiveSkillHitCount": 2,
+    "DamageValueLowerLimit": 0,
+    "GaugeValueLowerLimit": 0,
+    "CorrectionRatioPermil": 40
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 2,
+    "ActiveSkillHitCount": 2,
+    "DamageValueLowerLimit": 30000,
+    "GaugeValueLowerLimit": 1200,
+    "CorrectionRatioPermil": 10
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 2,
+    "ActiveSkillHitCount": 2,
+    "DamageValueLowerLimit": 60000,
+    "GaugeValueLowerLimit": 1500,
+    "CorrectionRatioPermil": 5
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 2,
+    "ActiveSkillHitCount": 2,
+    "DamageValueLowerLimit": 240000,
+    "GaugeValueLowerLimit": 2400,
+    "CorrectionRatioPermil": 1
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 2,
+    "ActiveSkillHitCount": 3,
+    "DamageValueLowerLimit": 0,
+    "GaugeValueLowerLimit": 0,
+    "CorrectionRatioPermil": 40
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 2,
+    "ActiveSkillHitCount": 3,
+    "DamageValueLowerLimit": 20000,
+    "GaugeValueLowerLimit": 800,
+    "CorrectionRatioPermil": 10
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 2,
+    "ActiveSkillHitCount": 3,
+    "DamageValueLowerLimit": 40000,
+    "GaugeValueLowerLimit": 1000,
+    "CorrectionRatioPermil": 5
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 2,
+    "ActiveSkillHitCount": 3,
+    "DamageValueLowerLimit": 160000,
+    "GaugeValueLowerLimit": 1600,
+    "CorrectionRatioPermil": 1
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 2,
+    "ActiveSkillHitCount": 4,
+    "DamageValueLowerLimit": 0,
+    "GaugeValueLowerLimit": 0,
+    "CorrectionRatioPermil": 40
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 2,
+    "ActiveSkillHitCount": 4,
+    "DamageValueLowerLimit": 15000,
+    "GaugeValueLowerLimit": 600,
+    "CorrectionRatioPermil": 10
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 2,
+    "ActiveSkillHitCount": 4,
+    "DamageValueLowerLimit": 30000,
+    "GaugeValueLowerLimit": 750,
+    "CorrectionRatioPermil": 5
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 2,
+    "ActiveSkillHitCount": 4,
+    "DamageValueLowerLimit": 120000,
+    "GaugeValueLowerLimit": 1200,
+    "CorrectionRatioPermil": 1
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 2,
+    "ActiveSkillHitCount": 5,
+    "DamageValueLowerLimit": 0,
+    "GaugeValueLowerLimit": 0,
+    "CorrectionRatioPermil": 40
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 2,
+    "ActiveSkillHitCount": 5,
+    "DamageValueLowerLimit": 12000,
+    "GaugeValueLowerLimit": 480,
+    "CorrectionRatioPermil": 10
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 2,
+    "ActiveSkillHitCount": 5,
+    "DamageValueLowerLimit": 24000,
+    "GaugeValueLowerLimit": 600,
+    "CorrectionRatioPermil": 5
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 2,
+    "ActiveSkillHitCount": 5,
+    "DamageValueLowerLimit": 96000,
+    "GaugeValueLowerLimit": 960,
+    "CorrectionRatioPermil": 1
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 3,
+    "ActiveSkillHitCount": 1,
+    "DamageValueLowerLimit": 0,
+    "GaugeValueLowerLimit": 0,
+    "CorrectionRatioPermil": 40
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 3,
+    "ActiveSkillHitCount": 1,
+    "DamageValueLowerLimit": 120000,
+    "GaugeValueLowerLimit": 4800,
+    "CorrectionRatioPermil": 10
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 3,
+    "ActiveSkillHitCount": 1,
+    "DamageValueLowerLimit": 240000,
+    "GaugeValueLowerLimit": 6000,
+    "CorrectionRatioPermil": 5
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 3,
+    "ActiveSkillHitCount": 1,
+    "DamageValueLowerLimit": 960000,
+    "GaugeValueLowerLimit": 9600,
+    "CorrectionRatioPermil": 1
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 3,
+    "ActiveSkillHitCount": 2,
+    "DamageValueLowerLimit": 0,
+    "GaugeValueLowerLimit": 0,
+    "CorrectionRatioPermil": 40
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 3,
+    "ActiveSkillHitCount": 2,
+    "DamageValueLowerLimit": 60000,
+    "GaugeValueLowerLimit": 2400,
+    "CorrectionRatioPermil": 10
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 3,
+    "ActiveSkillHitCount": 2,
+    "DamageValueLowerLimit": 120000,
+    "GaugeValueLowerLimit": 3000,
+    "CorrectionRatioPermil": 5
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 3,
+    "ActiveSkillHitCount": 2,
+    "DamageValueLowerLimit": 480000,
+    "GaugeValueLowerLimit": 4800,
+    "CorrectionRatioPermil": 1
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 3,
+    "ActiveSkillHitCount": 3,
+    "DamageValueLowerLimit": 0,
+    "GaugeValueLowerLimit": 0,
+    "CorrectionRatioPermil": 40
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 3,
+    "ActiveSkillHitCount": 3,
+    "DamageValueLowerLimit": 40000,
+    "GaugeValueLowerLimit": 1600,
+    "CorrectionRatioPermil": 10
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 3,
+    "ActiveSkillHitCount": 3,
+    "DamageValueLowerLimit": 80000,
+    "GaugeValueLowerLimit": 2000,
+    "CorrectionRatioPermil": 5
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 3,
+    "ActiveSkillHitCount": 3,
+    "DamageValueLowerLimit": 320000,
+    "GaugeValueLowerLimit": 3200,
+    "CorrectionRatioPermil": 1
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 3,
+    "ActiveSkillHitCount": 4,
+    "DamageValueLowerLimit": 0,
+    "GaugeValueLowerLimit": 0,
+    "CorrectionRatioPermil": 40
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 3,
+    "ActiveSkillHitCount": 4,
+    "DamageValueLowerLimit": 30000,
+    "GaugeValueLowerLimit": 1200,
+    "CorrectionRatioPermil": 10
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 3,
+    "ActiveSkillHitCount": 4,
+    "DamageValueLowerLimit": 60000,
+    "GaugeValueLowerLimit": 1500,
+    "CorrectionRatioPermil": 5
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 3,
+    "ActiveSkillHitCount": 4,
+    "DamageValueLowerLimit": 240000,
+    "GaugeValueLowerLimit": 2400,
+    "CorrectionRatioPermil": 1
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 3,
+    "ActiveSkillHitCount": 5,
+    "DamageValueLowerLimit": 0,
+    "GaugeValueLowerLimit": 0,
+    "CorrectionRatioPermil": 40
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 3,
+    "ActiveSkillHitCount": 5,
+    "DamageValueLowerLimit": 24000,
+    "GaugeValueLowerLimit": 960,
+    "CorrectionRatioPermil": 10
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 3,
+    "ActiveSkillHitCount": 5,
+    "DamageValueLowerLimit": 48000,
+    "GaugeValueLowerLimit": 1200,
+    "CorrectionRatioPermil": 5
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 3,
+    "ActiveSkillHitCount": 5,
+    "DamageValueLowerLimit": 192000,
+    "GaugeValueLowerLimit": 1920,
+    "CorrectionRatioPermil": 1
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 4,
+    "ActiveSkillHitCount": 1,
+    "DamageValueLowerLimit": 0,
+    "GaugeValueLowerLimit": 0,
+    "CorrectionRatioPermil": 40
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 4,
+    "ActiveSkillHitCount": 1,
+    "DamageValueLowerLimit": 240000,
+    "GaugeValueLowerLimit": 9600,
+    "CorrectionRatioPermil": 10
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 4,
+    "ActiveSkillHitCount": 1,
+    "DamageValueLowerLimit": 480000,
+    "GaugeValueLowerLimit": 12000,
+    "CorrectionRatioPermil": 5
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 4,
+    "ActiveSkillHitCount": 1,
+    "DamageValueLowerLimit": 960000,
+    "GaugeValueLowerLimit": 14400,
+    "CorrectionRatioPermil": 1
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 4,
+    "ActiveSkillHitCount": 2,
+    "DamageValueLowerLimit": 0,
+    "GaugeValueLowerLimit": 0,
+    "CorrectionRatioPermil": 40
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 4,
+    "ActiveSkillHitCount": 2,
+    "DamageValueLowerLimit": 120000,
+    "GaugeValueLowerLimit": 4800,
+    "CorrectionRatioPermil": 10
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 4,
+    "ActiveSkillHitCount": 2,
+    "DamageValueLowerLimit": 240000,
+    "GaugeValueLowerLimit": 6000,
+    "CorrectionRatioPermil": 5
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 4,
+    "ActiveSkillHitCount": 2,
+    "DamageValueLowerLimit": 480000,
+    "GaugeValueLowerLimit": 7200,
+    "CorrectionRatioPermil": 1
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 4,
+    "ActiveSkillHitCount": 3,
+    "DamageValueLowerLimit": 0,
+    "GaugeValueLowerLimit": 0,
+    "CorrectionRatioPermil": 40
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 4,
+    "ActiveSkillHitCount": 3,
+    "DamageValueLowerLimit": 80000,
+    "GaugeValueLowerLimit": 3200,
+    "CorrectionRatioPermil": 10
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 4,
+    "ActiveSkillHitCount": 3,
+    "DamageValueLowerLimit": 160000,
+    "GaugeValueLowerLimit": 4000,
+    "CorrectionRatioPermil": 5
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 4,
+    "ActiveSkillHitCount": 3,
+    "DamageValueLowerLimit": 320000,
+    "GaugeValueLowerLimit": 4800,
+    "CorrectionRatioPermil": 1
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 4,
+    "ActiveSkillHitCount": 4,
+    "DamageValueLowerLimit": 0,
+    "GaugeValueLowerLimit": 0,
+    "CorrectionRatioPermil": 40
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 4,
+    "ActiveSkillHitCount": 4,
+    "DamageValueLowerLimit": 60000,
+    "GaugeValueLowerLimit": 2400,
+    "CorrectionRatioPermil": 10
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 4,
+    "ActiveSkillHitCount": 4,
+    "DamageValueLowerLimit": 120000,
+    "GaugeValueLowerLimit": 3000,
+    "CorrectionRatioPermil": 5
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 4,
+    "ActiveSkillHitCount": 4,
+    "DamageValueLowerLimit": 240000,
+    "GaugeValueLowerLimit": 3600,
+    "CorrectionRatioPermil": 1
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 4,
+    "ActiveSkillHitCount": 5,
+    "DamageValueLowerLimit": 0,
+    "GaugeValueLowerLimit": 0,
+    "CorrectionRatioPermil": 40
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 4,
+    "ActiveSkillHitCount": 5,
+    "DamageValueLowerLimit": 48000,
+    "GaugeValueLowerLimit": 1920,
+    "CorrectionRatioPermil": 10
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 4,
+    "ActiveSkillHitCount": 5,
+    "DamageValueLowerLimit": 96000,
+    "GaugeValueLowerLimit": 2400,
+    "CorrectionRatioPermil": 5
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 4,
+    "ActiveSkillHitCount": 5,
+    "DamageValueLowerLimit": 192000,
+    "GaugeValueLowerLimit": 2880,
+    "CorrectionRatioPermil": 1
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 5,
+    "ActiveSkillHitCount": 1,
+    "DamageValueLowerLimit": 0,
+    "GaugeValueLowerLimit": 0,
+    "CorrectionRatioPermil": 40
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 5,
+    "ActiveSkillHitCount": 1,
+    "DamageValueLowerLimit": 360000,
+    "GaugeValueLowerLimit": 14400,
+    "CorrectionRatioPermil": 10
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 5,
+    "ActiveSkillHitCount": 1,
+    "DamageValueLowerLimit": 720000,
+    "GaugeValueLowerLimit": 18000,
+    "CorrectionRatioPermil": 5
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 5,
+    "ActiveSkillHitCount": 1,
+    "DamageValueLowerLimit": 1440000,
+    "GaugeValueLowerLimit": 21600,
+    "CorrectionRatioPermil": 1
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 5,
+    "ActiveSkillHitCount": 2,
+    "DamageValueLowerLimit": 0,
+    "GaugeValueLowerLimit": 0,
+    "CorrectionRatioPermil": 40
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 5,
+    "ActiveSkillHitCount": 2,
+    "DamageValueLowerLimit": 180000,
+    "GaugeValueLowerLimit": 7200,
+    "CorrectionRatioPermil": 10
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 5,
+    "ActiveSkillHitCount": 2,
+    "DamageValueLowerLimit": 360000,
+    "GaugeValueLowerLimit": 9000,
+    "CorrectionRatioPermil": 5
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 5,
+    "ActiveSkillHitCount": 2,
+    "DamageValueLowerLimit": 720000,
+    "GaugeValueLowerLimit": 10800,
+    "CorrectionRatioPermil": 1
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 5,
+    "ActiveSkillHitCount": 3,
+    "DamageValueLowerLimit": 0,
+    "GaugeValueLowerLimit": 0,
+    "CorrectionRatioPermil": 40
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 5,
+    "ActiveSkillHitCount": 3,
+    "DamageValueLowerLimit": 120000,
+    "GaugeValueLowerLimit": 4800,
+    "CorrectionRatioPermil": 10
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 5,
+    "ActiveSkillHitCount": 3,
+    "DamageValueLowerLimit": 240000,
+    "GaugeValueLowerLimit": 6000,
+    "CorrectionRatioPermil": 5
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 5,
+    "ActiveSkillHitCount": 3,
+    "DamageValueLowerLimit": 480000,
+    "GaugeValueLowerLimit": 7200,
+    "CorrectionRatioPermil": 1
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 5,
+    "ActiveSkillHitCount": 4,
+    "DamageValueLowerLimit": 0,
+    "GaugeValueLowerLimit": 0,
+    "CorrectionRatioPermil": 40
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 5,
+    "ActiveSkillHitCount": 4,
+    "DamageValueLowerLimit": 90000,
+    "GaugeValueLowerLimit": 3600,
+    "CorrectionRatioPermil": 10
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 5,
+    "ActiveSkillHitCount": 4,
+    "DamageValueLowerLimit": 180000,
+    "GaugeValueLowerLimit": 4500,
+    "CorrectionRatioPermil": 5
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 5,
+    "ActiveSkillHitCount": 4,
+    "DamageValueLowerLimit": 360000,
+    "GaugeValueLowerLimit": 5400,
+    "CorrectionRatioPermil": 1
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 5,
+    "ActiveSkillHitCount": 5,
+    "DamageValueLowerLimit": 0,
+    "GaugeValueLowerLimit": 0,
+    "CorrectionRatioPermil": 40
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 5,
+    "ActiveSkillHitCount": 5,
+    "DamageValueLowerLimit": 72000,
+    "GaugeValueLowerLimit": 2880,
+    "CorrectionRatioPermil": 10
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 5,
+    "ActiveSkillHitCount": 5,
+    "DamageValueLowerLimit": 144000,
+    "GaugeValueLowerLimit": 3600,
+    "CorrectionRatioPermil": 5
+  },
+  {
+    "KnockDownGaugeValueConfigGroupId": 5,
+    "ActiveSkillHitCount": 5,
+    "DamageValueLowerLimit": 288000,
+    "GaugeValueLowerLimit": 4320,
+    "CorrectionRatioPermil": 1
+  }
+]

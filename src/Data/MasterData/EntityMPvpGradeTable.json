@@ -1,0 +1,177 @@
+[
+  {
+    "PvpGradeId": 1,
+    "NecessaryPvpPoint": 0,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 0,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 2,
+    "NecessaryPvpPoint": 1000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 27,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 3,
+    "NecessaryPvpPoint": 2000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 28,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 4,
+    "NecessaryPvpPoint": 3000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 29,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 5,
+    "NecessaryPvpPoint": 4000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 30,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 6,
+    "NecessaryPvpPoint": 5200,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 31,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 7,
+    "NecessaryPvpPoint": 6400,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 32,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 8,
+    "NecessaryPvpPoint": 7600,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 33,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 9,
+    "NecessaryPvpPoint": 8800,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 34,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 10,
+    "NecessaryPvpPoint": 10000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 35,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 11,
+    "NecessaryPvpPoint": 11600,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 36,
+    "PvpGradeOneMatchRewardGroupId": 3
+  },
+  {
+    "PvpGradeId": 12,
+    "NecessaryPvpPoint": 13200,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 37,
+    "PvpGradeOneMatchRewardGroupId": 4
+  },
+  {
+    "PvpGradeId": 13,
+    "NecessaryPvpPoint": 14800,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 38,
+    "PvpGradeOneMatchRewardGroupId": 5
+  },
+  {
+    "PvpGradeId": 14,
+    "NecessaryPvpPoint": 16400,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 39,
+    "PvpGradeOneMatchRewardGroupId": 6
+  },
+  {
+    "PvpGradeId": 15,
+    "NecessaryPvpPoint": 18000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 40,
+    "PvpGradeOneMatchRewardGroupId": 7
+  },
+  {
+    "PvpGradeId": 16,
+    "NecessaryPvpPoint": 20600,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 41,
+    "PvpGradeOneMatchRewardGroupId": 8
+  },
+  {
+    "PvpGradeId": 17,
+    "NecessaryPvpPoint": 23200,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 42,
+    "PvpGradeOneMatchRewardGroupId": 9
+  },
+  {
+    "PvpGradeId": 18,
+    "NecessaryPvpPoint": 25800,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 43,
+    "PvpGradeOneMatchRewardGroupId": 10
+  },
+  {
+    "PvpGradeId": 19,
+    "NecessaryPvpPoint": 28400,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 44,
+    "PvpGradeOneMatchRewardGroupId": 11
+  },
+  {
+    "PvpGradeId": 20,
+    "NecessaryPvpPoint": 31000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 45,
+    "PvpGradeOneMatchRewardGroupId": 12
+  },
+  {
+    "PvpGradeId": 21,
+    "NecessaryPvpPoint": 34000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 46,
+    "PvpGradeOneMatchRewardGroupId": 13
+  },
+  {
+    "PvpGradeId": 22,
+    "NecessaryPvpPoint": 37000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 47,
+    "PvpGradeOneMatchRewardGroupId": 14
+  },
+  {
+    "PvpGradeId": 23,
+    "NecessaryPvpPoint": 40000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 48,
+    "PvpGradeOneMatchRewardGroupId": 15
+  },
+  {
+    "PvpGradeId": 24,
+    "NecessaryPvpPoint": 43000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 49,
+    "PvpGradeOneMatchRewardGroupId": 16
+  },
+  {
+    "PvpGradeId": 25,
+    "NecessaryPvpPoint": 46000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 50,
+    "PvpGradeOneMatchRewardGroupId": 17
+  }
+]

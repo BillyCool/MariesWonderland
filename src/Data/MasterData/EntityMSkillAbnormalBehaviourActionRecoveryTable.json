@@ -1,0 +1,2624 @@
+[
+  {
+    "SkillAbnormalBehaviourActionId": 1,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 100,
+    "Upper": 5000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 2,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 100,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 3,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 50,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 4,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 200,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 5,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 10,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 6,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 50,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000001,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 33,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000002,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 42,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000003,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 51,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000004,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 60,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000005,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 44,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000006,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 56,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000007,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 68,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000008,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 80,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000009,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 55,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000010,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 70,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000011,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 85,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000012,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 100,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000013,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 49,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000014,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 63,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000015,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 76,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000016,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 90,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000017,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 66,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000018,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 84,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000019,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 102,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000020,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 120,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000021,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 82,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000022,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 105,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000023,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 127,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000024,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 150,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000025,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 66,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000026,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 84,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000027,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 102,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000028,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 120,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000029,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 88,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000030,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 112,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000031,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 136,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000032,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 160,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000033,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 110,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000034,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 140,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000035,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 170,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000036,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 200,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000037,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 33,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000038,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 42,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000039,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 51,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000040,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 60,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000041,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 44,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000042,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 56,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000043,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 68,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000044,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 80,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000045,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 55,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000046,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 70,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000047,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 85,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000048,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 100,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000049,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 66,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000050,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 84,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000051,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 102,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000052,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 120,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000053,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 88,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000054,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 112,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000055,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 136,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000056,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 160,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000057,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 110,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000058,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 140,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000059,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 170,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 11000060,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 200,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000001,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 1,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000002,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 3,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000003,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 5,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000004,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 7,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000005,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 9,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000006,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 11,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000007,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 13,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000008,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 15,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000009,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 17,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000010,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 19,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000011,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 21,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000012,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 23,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000013,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 25,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000014,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 27,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000015,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 30,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000016,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 24,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000017,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 25,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000018,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 26,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000019,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 27,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000020,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 28,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000021,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 29,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000022,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 30,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000023,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 31,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000024,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 32,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000025,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 33,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000026,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 34,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000027,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 35,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000028,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 36,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000029,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 38,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000030,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 40,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000031,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 26,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000032,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 27,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000033,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 28,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000034,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 30,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000035,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 31,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000036,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 32,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000037,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 33,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000038,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 35,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000039,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 37,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000040,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 39,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000041,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 40,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000042,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 42,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000043,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 44,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000044,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 46,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000045,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 50,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000046,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 37,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000047,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 38,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000048,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 39,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000049,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 40,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000050,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 42,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000051,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 43,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000052,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 44,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000053,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 45,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000054,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 47,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000055,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 48,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000056,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 51,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000057,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 53,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000058,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 55,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000059,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 57,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000060,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 60,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000061,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 46,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000062,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 48,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000063,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 49,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000064,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 51,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000065,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 53,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000066,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 55,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000067,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 57,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000068,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 59,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000069,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 62,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000070,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 64,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000071,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 67,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000072,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 70,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000073,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 73,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000074,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 76,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000075,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 80,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000076,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 53,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000077,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 55,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000078,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 57,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000079,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 60,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000080,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 62,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000081,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 65,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000082,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 67,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000083,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 71,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000084,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 74,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000085,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 78,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000086,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 81,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000087,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 85,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000088,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 89,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000089,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 93,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000090,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 100,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000091,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 55,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000092,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 57,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000093,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 59,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000094,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 61,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000095,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 63,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000096,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 64,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000097,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 66,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000098,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 68,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000099,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 71,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000100,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 73,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000101,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 76,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000102,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 79,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000103,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 82,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000104,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 86,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000105,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 90,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000106,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 69,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000107,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 72,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000108,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 74,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000109,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 76,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000110,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 79,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000111,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 82,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000112,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 85,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000113,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 88,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000114,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 93,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000115,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 97,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000116,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 101,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000117,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 105,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000118,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 110,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000119,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 115,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000120,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 120,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000121,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 80,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000122,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 83,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000123,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 86,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000124,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 90,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000125,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 93,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000126,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 97,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000127,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 101,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000128,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 106,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000129,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 111,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000130,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 117,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000131,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 122,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000132,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 128,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000133,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 134,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000134,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 140,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000135,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 150,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000136,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 1,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000137,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 2,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000138,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 3,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000139,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 5,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000140,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 6,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000141,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 7,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000142,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 9,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000143,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 10,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000144,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 11,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000145,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 13,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000146,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 14,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000147,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 15,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000148,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 17,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000149,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 18,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000150,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 20,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000151,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 1,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000152,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 3,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000153,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 5,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000154,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 7,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000155,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 9,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000156,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 11,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000157,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 13,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000158,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 15,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000159,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 17,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000160,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 19,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000161,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 21,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000162,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 23,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000163,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 25,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000164,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 27,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000165,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 30,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000166,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 21,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000167,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 22,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000168,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 23,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000169,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 24,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000170,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 25,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000171,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 26,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000172,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 27,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000173,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 28,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000174,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 29,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000175,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 31,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000176,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 32,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000177,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 34,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000178,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 35,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000179,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 37,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000180,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 40,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000181,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 31,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000182,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 32,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000183,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 33,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000184,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 34,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000185,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 35,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000186,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 36,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000187,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 37,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000188,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 38,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000189,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 39,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000190,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 40,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000191,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 42,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000192,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 44,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000193,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 46,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000194,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 48,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000195,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 50,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000196,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 34,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000197,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 36,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000198,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 37,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000199,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 38,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000200,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 39,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000201,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 41,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000202,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 42,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000203,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 44,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000204,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 46,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000205,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 48,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000206,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 50,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000207,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 52,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000208,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 55,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000209,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 57,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000210,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 60,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000211,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 42,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000212,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 44,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000213,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 46,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000214,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 48,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000215,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 50,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000216,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 52,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000217,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 54,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000218,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 56,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000219,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 59,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000220,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 62,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000221,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 65,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000222,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 68,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000223,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 71,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000224,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 74,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000225,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 80,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000226,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 43,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000227,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 44,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000228,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 46,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000229,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 47,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000230,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 49,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000231,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 50,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000232,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 51,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000233,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 53,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000234,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 55,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000235,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 57,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000236,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 59,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000237,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 61,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000238,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 64,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000239,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 67,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000240,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 70,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000241,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 58,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000242,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 60,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000243,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 62,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000244,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 64,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000245,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 66,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000246,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 69,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000247,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 71,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000248,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 74,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000249,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 77,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000250,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 81,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000251,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 84,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000252,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 88,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000253,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 92,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000254,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 96,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000255,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 100,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000256,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 64,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000257,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 66,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000258,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 69,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000259,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 72,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000260,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 75,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000261,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 78,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000262,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 81,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000263,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 85,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000264,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 89,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000265,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 93,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000266,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 97,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000267,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 102,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000268,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 107,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000269,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 112,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000270,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 120,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000271,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 1,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000272,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 3,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000273,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 5,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000274,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 7,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000275,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 9,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000276,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 11,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000277,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 13,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000278,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 15,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000279,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 17,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000280,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 19,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000281,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 21,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000282,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 23,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000283,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 25,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000284,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 27,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000285,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 30,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000286,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 24,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000287,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 25,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000288,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 26,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000289,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 27,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000290,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 28,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000291,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 29,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000292,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 30,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000293,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 31,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000294,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 32,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000295,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 33,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000296,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 34,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000297,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 35,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000298,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 36,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000299,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 38,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000300,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 40,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000301,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 26,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000302,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 27,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000303,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 28,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000304,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 30,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000305,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 31,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000306,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 32,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000307,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 33,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000308,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 35,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000309,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 37,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000310,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 39,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000311,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 40,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000312,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 42,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000313,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 44,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000314,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 46,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000315,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 50,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000316,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 1,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000317,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 2,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000318,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 3,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000319,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 5,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000320,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 6,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000321,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 7,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000322,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 9,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000323,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 10,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000324,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 11,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000325,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 13,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000326,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 14,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000327,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 15,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000328,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 17,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000329,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 18,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000330,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 20,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000331,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 1,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000332,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 3,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000333,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 5,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000334,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 7,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000335,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 9,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000336,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 11,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000337,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 13,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000338,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 15,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000339,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 17,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000340,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 19,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000341,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 21,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000342,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 23,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000343,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 25,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000344,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 27,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000345,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 30,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000346,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 21,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000347,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 22,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000348,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 23,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000349,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 24,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000350,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 25,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000351,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 26,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000352,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 27,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000353,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 28,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000354,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 29,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000355,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 31,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000356,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 32,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000357,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 34,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000358,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 35,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000359,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 37,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 12000360,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 40,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 17100001,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 30,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 17100002,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 40,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 17100003,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 50,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 17100007,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 90,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 17100008,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 120,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 17100009,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 150,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 17200081,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 50,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 17200082,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 40,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 18000046,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 30,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 18000047,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 40,
+    "Upper": 1000000
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 18000048,
+    "AbnormalBehaviourRecoveryType": 2,
+    "Value": 50,
+    "Upper": 1000000
+  }
+]

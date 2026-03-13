@@ -1,0 +1,6358 @@
+[
+  {
+    "ActorId": 1001001,
+    "NameActorTextId": 8,
+    "ActorAssetId": "ch001001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch001_ac"
+  },
+  {
+    "ActorId": 1001002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch001002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch001_ac"
+  },
+  {
+    "ActorId": 1001003,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch001003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch001_ac"
+  },
+  {
+    "ActorId": 1001004,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch001004",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch001_ac"
+  },
+  {
+    "ActorId": 1001005,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch001005",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch001_ac"
+  },
+  {
+    "ActorId": 1002001,
+    "NameActorTextId": 26,
+    "ActorAssetId": "ch002001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch002_ac"
+  },
+  {
+    "ActorId": 1002002,
+    "NameActorTextId": 26,
+    "ActorAssetId": "ch002002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch002_ac"
+  },
+  {
+    "ActorId": 1003001,
+    "NameActorTextId": 27,
+    "ActorAssetId": "ch003001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch003_ac"
+  },
+  {
+    "ActorId": 1003002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch003002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch003_ac"
+  },
+  {
+    "ActorId": 1004001,
+    "NameActorTextId": 1,
+    "ActorAssetId": "ch004001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch004_ac"
+  },
+  {
+    "ActorId": 1004002,
+    "NameActorTextId": 1,
+    "ActorAssetId": "ch004002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch004_ac"
+  },
+  {
+    "ActorId": 1004003,
+    "NameActorTextId": 1,
+    "ActorAssetId": "ch004003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch004_ac"
+  },
+  {
+    "ActorId": 1004004,
+    "NameActorTextId": 1,
+    "ActorAssetId": "ch004004",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch004_ac"
+  },
+  {
+    "ActorId": 1004005,
+    "NameActorTextId": 1,
+    "ActorAssetId": "ch004005",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch004_ac"
+  },
+  {
+    "ActorId": 1004006,
+    "NameActorTextId": 1,
+    "ActorAssetId": "ch004006",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch004_ac"
+  },
+  {
+    "ActorId": 1005001,
+    "NameActorTextId": 25,
+    "ActorAssetId": "ch005001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch005_ac"
+  },
+  {
+    "ActorId": 1005002,
+    "NameActorTextId": 25,
+    "ActorAssetId": "ch005002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch005_ac"
+  },
+  {
+    "ActorId": 1005003,
+    "NameActorTextId": 25,
+    "ActorAssetId": "ch005003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch005_ac"
+  },
+  {
+    "ActorId": 1005004,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch005004",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch005_ac"
+  },
+  {
+    "ActorId": 1005005,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch005005",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch005_ac"
+  },
+  {
+    "ActorId": 1005006,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch005006",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch005_ac"
+  },
+  {
+    "ActorId": 1005007,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch005007",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch005_ac"
+  },
+  {
+    "ActorId": 1005008,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch005008",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch005_ac"
+  },
+  {
+    "ActorId": 1005009,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch005009",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch005_ac"
+  },
+  {
+    "ActorId": 1005010,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch005010",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch005_ac"
+  },
+  {
+    "ActorId": 1005011,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch005011",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch005_ac"
+  },
+  {
+    "ActorId": 1005012,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch005012",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch005_ac"
+  },
+  {
+    "ActorId": 1005013,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch005013",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch005_ac"
+  },
+  {
+    "ActorId": 1005050,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch005050",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch005_ac"
+  },
+  {
+    "ActorId": 1006001,
+    "NameActorTextId": 3,
+    "ActorAssetId": "ch006001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch006_ac"
+  },
+  {
+    "ActorId": 1006002,
+    "NameActorTextId": 3,
+    "ActorAssetId": "ch006002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch006_ac"
+  },
+  {
+    "ActorId": 1006003,
+    "NameActorTextId": 3,
+    "ActorAssetId": "ch006003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch006_ac"
+  },
+  {
+    "ActorId": 1006004,
+    "NameActorTextId": 3,
+    "ActorAssetId": "ch006004",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch006_ac"
+  },
+  {
+    "ActorId": 1006005,
+    "NameActorTextId": 3,
+    "ActorAssetId": "ch006005",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch006_ac"
+  },
+  {
+    "ActorId": 1006006,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch006006",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch006_ac"
+  },
+  {
+    "ActorId": 1006007,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch006007",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch006_ac"
+  },
+  {
+    "ActorId": 1006008,
+    "NameActorTextId": 3,
+    "ActorAssetId": "ch006008",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch006_ac"
+  },
+  {
+    "ActorId": 1006009,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch006009",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch006_ac"
+  },
+  {
+    "ActorId": 1006010,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch006010",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch006_ac"
+  },
+  {
+    "ActorId": 1006012,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch006012",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch006_ac"
+  },
+  {
+    "ActorId": 1006013,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch006013",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch006_ac"
+  },
+  {
+    "ActorId": 1006014,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch006014",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch006_ac"
+  },
+  {
+    "ActorId": 1006015,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch006015",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch006_ac"
+  },
+  {
+    "ActorId": 1006050,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch006050",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch006_ac"
+  },
+  {
+    "ActorId": 1007001,
+    "NameActorTextId": 9,
+    "ActorAssetId": "ch007001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch007_ac"
+  },
+  {
+    "ActorId": 1007002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch007002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch007_ac"
+  },
+  {
+    "ActorId": 1007003,
+    "NameActorTextId": 9,
+    "ActorAssetId": "ch007003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch007_ac"
+  },
+  {
+    "ActorId": 1007004,
+    "NameActorTextId": 9,
+    "ActorAssetId": "ch007004",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch007_ac"
+  },
+  {
+    "ActorId": 1007005,
+    "NameActorTextId": 9,
+    "ActorAssetId": "ch007005",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch007_ac"
+  },
+  {
+    "ActorId": 1007006,
+    "NameActorTextId": 9,
+    "ActorAssetId": "ch007006",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch007_ac"
+  },
+  {
+    "ActorId": 1007007,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch007007",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch007_ac"
+  },
+  {
+    "ActorId": 1007008,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch007008",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch007_ac"
+  },
+  {
+    "ActorId": 1007009,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch007009",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch007_ac"
+  },
+  {
+    "ActorId": 1007010,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch007010",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch007_ac"
+  },
+  {
+    "ActorId": 1007012,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch007012",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch007_ac"
+  },
+  {
+    "ActorId": 1007013,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch007013",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch007_ac"
+  },
+  {
+    "ActorId": 1007014,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch007014",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch007_ac"
+  },
+  {
+    "ActorId": 1007015,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch007015",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch007_ac"
+  },
+  {
+    "ActorId": 1007016,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch007016",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch007_ac"
+  },
+  {
+    "ActorId": 1007050,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch007050",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch007_ac"
+  },
+  {
+    "ActorId": 1008001,
+    "NameActorTextId": 20,
+    "ActorAssetId": "ch008001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch008_ac"
+  },
+  {
+    "ActorId": 1008002,
+    "NameActorTextId": 20,
+    "ActorAssetId": "ch008002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch008_ac"
+  },
+  {
+    "ActorId": 1008003,
+    "NameActorTextId": 20,
+    "ActorAssetId": "ch008003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch008_ac"
+  },
+  {
+    "ActorId": 1008004,
+    "NameActorTextId": 20,
+    "ActorAssetId": "ch008004",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch008_ac"
+  },
+  {
+    "ActorId": 1008005,
+    "NameActorTextId": 20,
+    "ActorAssetId": "ch008005",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch008_ac"
+  },
+  {
+    "ActorId": 1008006,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch008006",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch008_ac"
+  },
+  {
+    "ActorId": 1008007,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch008007",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch008_ac"
+  },
+  {
+    "ActorId": 1008008,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch008008",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch008_ac"
+  },
+  {
+    "ActorId": 1008009,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch008009",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch008_ac"
+  },
+  {
+    "ActorId": 1008010,
+    "NameActorTextId": 30,
+    "ActorAssetId": "ch008010",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch008_ac"
+  },
+  {
+    "ActorId": 1008011,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch008011",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch008_ac"
+  },
+  {
+    "ActorId": 1008012,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch008012",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch008_ac"
+  },
+  {
+    "ActorId": 1008013,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch008013",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch008_ac"
+  },
+  {
+    "ActorId": 1008014,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch008014",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch008_ac"
+  },
+  {
+    "ActorId": 1008015,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch008015",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch008_ac"
+  },
+  {
+    "ActorId": 1008018,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch008018",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch008_ac"
+  },
+  {
+    "ActorId": 1008019,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch008019",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch008_ac"
+  },
+  {
+    "ActorId": 1008050,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch008050",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch008_ac"
+  },
+  {
+    "ActorId": 1009001,
+    "NameActorTextId": 22,
+    "ActorAssetId": "ch009001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch009_ac"
+  },
+  {
+    "ActorId": 1009002,
+    "NameActorTextId": 22,
+    "ActorAssetId": "ch009002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch009_ac"
+  },
+  {
+    "ActorId": 1009003,
+    "NameActorTextId": 22,
+    "ActorAssetId": "ch009003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch009_ac"
+  },
+  {
+    "ActorId": 1009004,
+    "NameActorTextId": 22,
+    "ActorAssetId": "ch009004",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch009_ac"
+  },
+  {
+    "ActorId": 1009005,
+    "NameActorTextId": 22,
+    "ActorAssetId": "ch009005",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch009_ac"
+  },
+  {
+    "ActorId": 1009006,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch009006",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch009_ac"
+  },
+  {
+    "ActorId": 1009007,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch009007",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch009_ac"
+  },
+  {
+    "ActorId": 1009008,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch009008",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch009_ac"
+  },
+  {
+    "ActorId": 1009009,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch009009",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch009_ac"
+  },
+  {
+    "ActorId": 1009010,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch009010",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch009_ac"
+  },
+  {
+    "ActorId": 1009011,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch009011",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch009_ac"
+  },
+  {
+    "ActorId": 1009012,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch009012",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch009_ac"
+  },
+  {
+    "ActorId": 1009013,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch009013",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch009_ac"
+  },
+  {
+    "ActorId": 1009014,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch009014",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch009_ac"
+  },
+  {
+    "ActorId": 1009015,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch009015",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch009_ac"
+  },
+  {
+    "ActorId": 1009016,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch009016",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch009_ac"
+  },
+  {
+    "ActorId": 1009050,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch009050",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch009_ac"
+  },
+  {
+    "ActorId": 1010001,
+    "NameActorTextId": 30,
+    "ActorAssetId": "ch010001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch010_ac"
+  },
+  {
+    "ActorId": 1010002,
+    "NameActorTextId": 30,
+    "ActorAssetId": "ch010002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch010_ac"
+  },
+  {
+    "ActorId": 1010003,
+    "NameActorTextId": 30,
+    "ActorAssetId": "ch010003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch010_ac"
+  },
+  {
+    "ActorId": 1010004,
+    "NameActorTextId": 30,
+    "ActorAssetId": "ch010004",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch010_ac"
+  },
+  {
+    "ActorId": 1010005,
+    "NameActorTextId": 30,
+    "ActorAssetId": "ch010005",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch010_ac"
+  },
+  {
+    "ActorId": 1010006,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch010006",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch010_ac"
+  },
+  {
+    "ActorId": 1010007,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch010007",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch010_ac"
+  },
+  {
+    "ActorId": 1010008,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch010008",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch010_ac"
+  },
+  {
+    "ActorId": 1010009,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch010009",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch010_ac"
+  },
+  {
+    "ActorId": 1010010,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch010010",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch010_ac"
+  },
+  {
+    "ActorId": 1010011,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch010011",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch010_ac"
+  },
+  {
+    "ActorId": 1010012,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch010012",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch010_ac"
+  },
+  {
+    "ActorId": 1010013,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch010013",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch010_ac"
+  },
+  {
+    "ActorId": 1010014,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch010014",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch010_ac"
+  },
+  {
+    "ActorId": 1010015,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch010015",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch010_ac"
+  },
+  {
+    "ActorId": 1010016,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch010016",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch010_ac"
+  },
+  {
+    "ActorId": 1010017,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch010017",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch010_ac"
+  },
+  {
+    "ActorId": 1010018,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch010018",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch010_ac"
+  },
+  {
+    "ActorId": 1010019,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch010019",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch010_ac"
+  },
+  {
+    "ActorId": 1010050,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch010050",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch010_ac"
+  },
+  {
+    "ActorId": 1011001,
+    "NameActorTextId": 83,
+    "ActorAssetId": "ch011001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch011_ac"
+  },
+  {
+    "ActorId": 1011002,
+    "NameActorTextId": 83,
+    "ActorAssetId": "ch011002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch011_ac"
+  },
+  {
+    "ActorId": 1011003,
+    "NameActorTextId": 83,
+    "ActorAssetId": "ch011003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch011_ac"
+  },
+  {
+    "ActorId": 1011004,
+    "NameActorTextId": 83,
+    "ActorAssetId": "ch011004",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch011_ac"
+  },
+  {
+    "ActorId": 1011005,
+    "NameActorTextId": 83,
+    "ActorAssetId": "ch011005",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch011_ac"
+  },
+  {
+    "ActorId": 1011006,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch011006",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch011_ac"
+  },
+  {
+    "ActorId": 1011007,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch011007",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch011_ac"
+  },
+  {
+    "ActorId": 1011008,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch011008",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch011_ac"
+  },
+  {
+    "ActorId": 1011009,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch011009",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch011_ac"
+  },
+  {
+    "ActorId": 1011010,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch011010",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch011_ac"
+  },
+  {
+    "ActorId": 1011011,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch011011",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch011_ac"
+  },
+  {
+    "ActorId": 1011012,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch011012",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch011_ac"
+  },
+  {
+    "ActorId": 1011013,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch011013",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch011_ac"
+  },
+  {
+    "ActorId": 1011014,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch011014",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch011_ac"
+  },
+  {
+    "ActorId": 1011015,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch011015",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch011_ac"
+  },
+  {
+    "ActorId": 1011050,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch011050",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch011_ac"
+  },
+  {
+    "ActorId": 1012001,
+    "NameActorTextId": 84,
+    "ActorAssetId": "ch012001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch012_ac"
+  },
+  {
+    "ActorId": 1012002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch012002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch012_ac"
+  },
+  {
+    "ActorId": 1012003,
+    "NameActorTextId": 84,
+    "ActorAssetId": "ch012003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch012_ac"
+  },
+  {
+    "ActorId": 1012004,
+    "NameActorTextId": 84,
+    "ActorAssetId": "ch012004",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch012_ac"
+  },
+  {
+    "ActorId": 1012005,
+    "NameActorTextId": 84,
+    "ActorAssetId": "ch012005",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch012_ac"
+  },
+  {
+    "ActorId": 1012006,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch012006",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch012_ac"
+  },
+  {
+    "ActorId": 1012007,
+    "NameActorTextId": 84,
+    "ActorAssetId": "ch012007",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch012_ac"
+  },
+  {
+    "ActorId": 1012008,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch012008",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch012_ac"
+  },
+  {
+    "ActorId": 1012009,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch012009",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch012_ac"
+  },
+  {
+    "ActorId": 1012010,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch012010",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch012_ac"
+  },
+  {
+    "ActorId": 1012011,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch012011",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch012_ac"
+  },
+  {
+    "ActorId": 1012012,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch012012",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch012_ac"
+  },
+  {
+    "ActorId": 1012013,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch012013",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch012_ac"
+  },
+  {
+    "ActorId": 1012050,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch012050",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch012_ac"
+  },
+  {
+    "ActorId": 1013001,
+    "NameActorTextId": 90,
+    "ActorAssetId": "ch013001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch013_ac"
+  },
+  {
+    "ActorId": 1013002,
+    "NameActorTextId": 90,
+    "ActorAssetId": "ch013002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch013_ac"
+  },
+  {
+    "ActorId": 1013003,
+    "NameActorTextId": 90,
+    "ActorAssetId": "ch013003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch013_ac"
+  },
+  {
+    "ActorId": 1013004,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch013004",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch013_ac"
+  },
+  {
+    "ActorId": 1013005,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch013005",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch013_ac"
+  },
+  {
+    "ActorId": 1013006,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch013006",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch013_ac"
+  },
+  {
+    "ActorId": 1013007,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch013007",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch013_ac"
+  },
+  {
+    "ActorId": 1013008,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch013008",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch013_ac"
+  },
+  {
+    "ActorId": 1013009,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch013009",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch013_ac"
+  },
+  {
+    "ActorId": 1013010,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch013010",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch013_ac"
+  },
+  {
+    "ActorId": 1013011,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch013011",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch013_ac"
+  },
+  {
+    "ActorId": 1013012,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch013012",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch013_ac"
+  },
+  {
+    "ActorId": 1013013,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch013013",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch013_ac"
+  },
+  {
+    "ActorId": 1013014,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch013014",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch013_ac"
+  },
+  {
+    "ActorId": 1013050,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch013050",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch013_ac"
+  },
+  {
+    "ActorId": 1014001,
+    "NameActorTextId": 91,
+    "ActorAssetId": "ch014001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch014_ac"
+  },
+  {
+    "ActorId": 1014002,
+    "NameActorTextId": 91,
+    "ActorAssetId": "ch014002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch014_ac"
+  },
+  {
+    "ActorId": 1014003,
+    "NameActorTextId": 91,
+    "ActorAssetId": "ch014003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch014_ac"
+  },
+  {
+    "ActorId": 1014004,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch014004",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch014_ac"
+  },
+  {
+    "ActorId": 1014005,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch014005",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch014_ac"
+  },
+  {
+    "ActorId": 1014006,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch014006",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch014_ac"
+  },
+  {
+    "ActorId": 1014007,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch014007",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch014_ac"
+  },
+  {
+    "ActorId": 1014008,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch014008",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch014_ac"
+  },
+  {
+    "ActorId": 1014009,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch014009",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch014_ac"
+  },
+  {
+    "ActorId": 1014010,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch014010",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch014_ac"
+  },
+  {
+    "ActorId": 1014011,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch014011",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch014_ac"
+  },
+  {
+    "ActorId": 1014012,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch014012",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch014_ac"
+  },
+  {
+    "ActorId": 1014013,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch014013",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch014_ac"
+  },
+  {
+    "ActorId": 1014014,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch014014",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch014_ac"
+  },
+  {
+    "ActorId": 1014015,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch014015",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch014_ac"
+  },
+  {
+    "ActorId": 1014016,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch014016",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch014_ac"
+  },
+  {
+    "ActorId": 1014017,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch014017",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch014_ac"
+  },
+  {
+    "ActorId": 1014050,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch014050",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch014_ac"
+  },
+  {
+    "ActorId": 1015001,
+    "NameActorTextId": 69,
+    "ActorAssetId": "ch015001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch015_ac"
+  },
+  {
+    "ActorId": 1015002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch015002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch015_ac"
+  },
+  {
+    "ActorId": 1015003,
+    "NameActorTextId": 69,
+    "ActorAssetId": "ch015003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch015_ac"
+  },
+  {
+    "ActorId": 1015004,
+    "NameActorTextId": 69,
+    "ActorAssetId": "ch015004",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch015_ac"
+  },
+  {
+    "ActorId": 1015005,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch015005",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch015_ac"
+  },
+  {
+    "ActorId": 1015006,
+    "NameActorTextId": 69,
+    "ActorAssetId": "ch015006",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch015_ac"
+  },
+  {
+    "ActorId": 1015007,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch015007",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch015_ac"
+  },
+  {
+    "ActorId": 1015008,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch015008",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch015_ac"
+  },
+  {
+    "ActorId": 1015009,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch015009",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch015_ac"
+  },
+  {
+    "ActorId": 1015010,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch015010",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch015_ac"
+  },
+  {
+    "ActorId": 1015011,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch015011",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch015_ac"
+  },
+  {
+    "ActorId": 1015012,
+    "NameActorTextId": 69,
+    "ActorAssetId": "ch015012",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch015_ac"
+  },
+  {
+    "ActorId": 1015013,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch015013",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch015_ac"
+  },
+  {
+    "ActorId": 1015014,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch015014",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch015_ac"
+  },
+  {
+    "ActorId": 1015015,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch015015",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch015_ac"
+  },
+  {
+    "ActorId": 1015016,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch015016",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch015_ac"
+  },
+  {
+    "ActorId": 1015017,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch015017",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch015_ac"
+  },
+  {
+    "ActorId": 1015018,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch015018",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch015_ac"
+  },
+  {
+    "ActorId": 1015019,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch015019",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch015_ac"
+  },
+  {
+    "ActorId": 1015020,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch015020",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch015_ac"
+  },
+  {
+    "ActorId": 1015021,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch015021",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch015_ac"
+  },
+  {
+    "ActorId": 1015050,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch015050",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch015_ac"
+  },
+  {
+    "ActorId": 1016001,
+    "NameActorTextId": 39,
+    "ActorAssetId": "ch016001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch016_ac"
+  },
+  {
+    "ActorId": 1016002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch016002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch016_ac"
+  },
+  {
+    "ActorId": 1016003,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch016003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch016_ac"
+  },
+  {
+    "ActorId": 1017001,
+    "NameActorTextId": 40,
+    "ActorAssetId": "ch017001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch017_ac"
+  },
+  {
+    "ActorId": 1017002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch017002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch017_ac"
+  },
+  {
+    "ActorId": 1018001,
+    "NameActorTextId": 41,
+    "ActorAssetId": "ch018001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch018_ac"
+  },
+  {
+    "ActorId": 1018002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch018002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch018_ac"
+  },
+  {
+    "ActorId": 1019001,
+    "NameActorTextId": 36,
+    "ActorAssetId": "ch019001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch019_ac"
+  },
+  {
+    "ActorId": 1019002,
+    "NameActorTextId": 36,
+    "ActorAssetId": "ch019002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch019_ac"
+  },
+  {
+    "ActorId": 1019003,
+    "NameActorTextId": 36,
+    "ActorAssetId": "ch019003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch019_ac"
+  },
+  {
+    "ActorId": 1019004,
+    "NameActorTextId": 36,
+    "ActorAssetId": "ch019004",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch019_ac"
+  },
+  {
+    "ActorId": 1019005,
+    "NameActorTextId": 36,
+    "ActorAssetId": "ch019005",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch019_ac"
+  },
+  {
+    "ActorId": 1019006,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch019006",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch019_ac"
+  },
+  {
+    "ActorId": 1019007,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch019007",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch019_ac"
+  },
+  {
+    "ActorId": 1019008,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch019008",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch019_ac"
+  },
+  {
+    "ActorId": 1019009,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch019009",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch019_ac"
+  },
+  {
+    "ActorId": 1019010,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch019010",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch019_ac"
+  },
+  {
+    "ActorId": 1019011,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch019011",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch019_ac"
+  },
+  {
+    "ActorId": 1019012,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch019012",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch019_ac"
+  },
+  {
+    "ActorId": 1019013,
+    "NameActorTextId": 36,
+    "ActorAssetId": "ch019013",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch019_ac"
+  },
+  {
+    "ActorId": 1019015,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch019015",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch019_ac"
+  },
+  {
+    "ActorId": 1019016,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch019016",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch019_ac"
+  },
+  {
+    "ActorId": 1019017,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch019017",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch017_ac"
+  },
+  {
+    "ActorId": 1019018,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch019018",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch019_ac"
+  },
+  {
+    "ActorId": 1019019,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch019019",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch019_ac"
+  },
+  {
+    "ActorId": 1019050,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch019050",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch019_ac"
+  },
+  {
+    "ActorId": 1019051,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch019051",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch019_ac"
+  },
+  {
+    "ActorId": 1020001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch020001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch020_ac"
+  },
+  {
+    "ActorId": 1020002,
+    "NameActorTextId": 36,
+    "ActorAssetId": "ch020002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch020_ac"
+  },
+  {
+    "ActorId": 1020003,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch020003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch020_ac"
+  },
+  {
+    "ActorId": 1020004,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch020004",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch020_ac"
+  },
+  {
+    "ActorId": 1020005,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch020005",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch020_ac"
+  },
+  {
+    "ActorId": 1020006,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch020006",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch020_ac"
+  },
+  {
+    "ActorId": 1020007,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch020007",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch020_ac"
+  },
+  {
+    "ActorId": 1020050,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch020050",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch020_ac"
+  },
+  {
+    "ActorId": 1021001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch021001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch021_ac"
+  },
+  {
+    "ActorId": 1021002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch021002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch021_ac"
+  },
+  {
+    "ActorId": 1021003,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch021003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch021_ac"
+  },
+  {
+    "ActorId": 1021004,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch021004",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch021_ac"
+  },
+  {
+    "ActorId": 1021005,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch021005",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch021_ac"
+  },
+  {
+    "ActorId": 1021006,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch021006",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch021_ac"
+  },
+  {
+    "ActorId": 1021007,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch021007",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch021_ac"
+  },
+  {
+    "ActorId": 1021050,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch021050",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch021_ac"
+  },
+  {
+    "ActorId": 1022001,
+    "NameActorTextId": 36,
+    "ActorAssetId": "ch022001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch022_ac"
+  },
+  {
+    "ActorId": 1022002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch022002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch022_ac"
+  },
+  {
+    "ActorId": 1022003,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch022003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch022_ac"
+  },
+  {
+    "ActorId": 1022004,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch022004",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch022_ac"
+  },
+  {
+    "ActorId": 1022005,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch022005",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch022_ac"
+  },
+  {
+    "ActorId": 1022006,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch022006",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch022_ac"
+  },
+  {
+    "ActorId": 1022007,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch022007",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch022_ac"
+  },
+  {
+    "ActorId": 1022008,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch022008",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch022_ac"
+  },
+  {
+    "ActorId": 1022009,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch022009",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch022_ac"
+  },
+  {
+    "ActorId": 1022010,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch022010",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch022_ac"
+  },
+  {
+    "ActorId": 1022011,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch022011",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch022_ac"
+  },
+  {
+    "ActorId": 1022012,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch022012",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch022_ac"
+  },
+  {
+    "ActorId": 1022050,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch022050",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch022_ac"
+  },
+  {
+    "ActorId": 1023001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch023001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch023_ac"
+  },
+  {
+    "ActorId": 1023002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch023002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch023_ac"
+  },
+  {
+    "ActorId": 1023003,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch023003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch023_ac"
+  },
+  {
+    "ActorId": 1023004,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch023004",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch023_ac"
+  },
+  {
+    "ActorId": 1023005,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch023005",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch023_ac"
+  },
+  {
+    "ActorId": 1023006,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch023006",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch023_ac"
+  },
+  {
+    "ActorId": 1023007,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch023007",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch023_ac"
+  },
+  {
+    "ActorId": 1023008,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch023008",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch023_ac"
+  },
+  {
+    "ActorId": 1023050,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch023050",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch023_ac"
+  },
+  {
+    "ActorId": 1024001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch024001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch024_ac"
+  },
+  {
+    "ActorId": 1024002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch024002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch024_ac"
+  },
+  {
+    "ActorId": 1024003,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch024003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch024_ac"
+  },
+  {
+    "ActorId": 1024004,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch024004",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch024_ac"
+  },
+  {
+    "ActorId": 1024005,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch024005",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch024_ac"
+  },
+  {
+    "ActorId": 1024006,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch024006",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch024_ac"
+  },
+  {
+    "ActorId": 1024007,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch024007",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch024_ac"
+  },
+  {
+    "ActorId": 1024008,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch024008",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch024_ac"
+  },
+  {
+    "ActorId": 1024009,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch024009",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch024_ac"
+  },
+  {
+    "ActorId": 1024010,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch024010",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch024_ac"
+  },
+  {
+    "ActorId": 1024011,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch024011",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch024_ac"
+  },
+  {
+    "ActorId": 1024050,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch024050",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch024_ac"
+  },
+  {
+    "ActorId": 1025001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch025001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch025_ac"
+  },
+  {
+    "ActorId": 1025002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch025002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch025_ac"
+  },
+  {
+    "ActorId": 1025003,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch025003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch025_ac"
+  },
+  {
+    "ActorId": 1025004,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch025004",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch025_ac"
+  },
+  {
+    "ActorId": 1025005,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch025005",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch025_ac"
+  },
+  {
+    "ActorId": 1025006,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch025006",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch025_ac"
+  },
+  {
+    "ActorId": 1025007,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch025007",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch025_ac"
+  },
+  {
+    "ActorId": 1025008,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch025008",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch025_ac"
+  },
+  {
+    "ActorId": 1025009,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch025009",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch025_ac"
+  },
+  {
+    "ActorId": 1025010,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch025010",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch025_ac"
+  },
+  {
+    "ActorId": 1025011,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch025011",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch025_ac"
+  },
+  {
+    "ActorId": 1025050,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch025050",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch025_ac"
+  },
+  {
+    "ActorId": 1026001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch026001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch026_ac"
+  },
+  {
+    "ActorId": 1026002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch026002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch026_ac"
+  },
+  {
+    "ActorId": 1026003,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch026003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch026_ac"
+  },
+  {
+    "ActorId": 1026004,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch026004",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch026_ac"
+  },
+  {
+    "ActorId": 1026005,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch026005",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch026_ac"
+  },
+  {
+    "ActorId": 1026006,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch026006",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch026_ac"
+  },
+  {
+    "ActorId": 1026007,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch026007",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch026_ac"
+  },
+  {
+    "ActorId": 1026008,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch026008",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch026_ac"
+  },
+  {
+    "ActorId": 1026009,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch026009",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch026_ac"
+  },
+  {
+    "ActorId": 1026050,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch026050",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch026_ac"
+  },
+  {
+    "ActorId": 1027001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch027001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch027_ac"
+  },
+  {
+    "ActorId": 1027002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch027002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch027_ac"
+  },
+  {
+    "ActorId": 1027003,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch027003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch027_ac"
+  },
+  {
+    "ActorId": 1027004,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch027004",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch027_ac"
+  },
+  {
+    "ActorId": 1027005,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch027005",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch027_ac"
+  },
+  {
+    "ActorId": 1027006,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch027006",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch027_ac"
+  },
+  {
+    "ActorId": 1027007,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch027007",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch027_ac"
+  },
+  {
+    "ActorId": 1027008,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch027008",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch027_ac"
+  },
+  {
+    "ActorId": 1027009,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch027009",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch027_ac"
+  },
+  {
+    "ActorId": 1027050,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch027050",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch027_ac"
+  },
+  {
+    "ActorId": 1031001,
+    "NameActorTextId": 30,
+    "ActorAssetId": "ch031001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch031_ac"
+  },
+  {
+    "ActorId": 1031002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch031002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch031_ac"
+  },
+  {
+    "ActorId": 1044001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch044001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch044_ac"
+  },
+  {
+    "ActorId": 1045001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch045001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch045_ac"
+  },
+  {
+    "ActorId": 1046001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch046001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch046_ac"
+  },
+  {
+    "ActorId": 1047001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch047001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch047_ac"
+  },
+  {
+    "ActorId": 1048001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch048001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch048_ac"
+  },
+  {
+    "ActorId": 1048003,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch048003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch048_ac"
+  },
+  {
+    "ActorId": 1048004,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch048004",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch048_ac"
+  },
+  {
+    "ActorId": 1048006,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch048006",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch048_ac"
+  },
+  {
+    "ActorId": 1048050,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch048050",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch048_ac"
+  },
+  {
+    "ActorId": 1048051,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch048051",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch048_ac"
+  },
+  {
+    "ActorId": 1048052,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch048052",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch048_ac"
+  },
+  {
+    "ActorId": 1049001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch049001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch049_ac"
+  },
+  {
+    "ActorId": 1050001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch050001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch050_ac"
+  },
+  {
+    "ActorId": 1051001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch051001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch051_ac"
+  },
+  {
+    "ActorId": 1051002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch051002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/ch051_ac"
+  },
+  {
+    "ActorId": 1907001,
+    "NameActorTextId": 9,
+    "ActorAssetId": "pc007001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 1908001,
+    "NameActorTextId": 20,
+    "ActorAssetId": "pc008001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 1909001,
+    "NameActorTextId": 22,
+    "ActorAssetId": "pc009001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 2001001,
+    "NameActorTextId": 12,
+    "ActorAssetId": "cm001001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm001_ac"
+  },
+  {
+    "ActorId": 2001002,
+    "NameActorTextId": 12,
+    "ActorAssetId": "cm001002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm001_ac"
+  },
+  {
+    "ActorId": 2001003,
+    "NameActorTextId": 12,
+    "ActorAssetId": "cm001003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm001_ac"
+  },
+  {
+    "ActorId": 2001004,
+    "NameActorTextId": 12,
+    "ActorAssetId": "cm001004",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm001_ac"
+  },
+  {
+    "ActorId": 2001005,
+    "NameActorTextId": 12,
+    "ActorAssetId": "cm001005",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm001_ac"
+  },
+  {
+    "ActorId": 2001006,
+    "NameActorTextId": 12,
+    "ActorAssetId": "cm001006",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm001_ac"
+  },
+  {
+    "ActorId": 2001007,
+    "NameActorTextId": 0,
+    "ActorAssetId": "cm001007",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm001_ac"
+  },
+  {
+    "ActorId": 2001010,
+    "NameActorTextId": 0,
+    "ActorAssetId": "cm001010",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm001_ac"
+  },
+  {
+    "ActorId": 2002001,
+    "NameActorTextId": 31,
+    "ActorAssetId": "cm002001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm002_ac"
+  },
+  {
+    "ActorId": 2002002,
+    "NameActorTextId": 31,
+    "ActorAssetId": "cm002002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm002_ac"
+  },
+  {
+    "ActorId": 2002003,
+    "NameActorTextId": 31,
+    "ActorAssetId": "cm002003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm002_ac"
+  },
+  {
+    "ActorId": 2002004,
+    "NameActorTextId": 31,
+    "ActorAssetId": "cm002004",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm002_ac"
+  },
+  {
+    "ActorId": 2002005,
+    "NameActorTextId": 31,
+    "ActorAssetId": "cm002005",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm002_ac"
+  },
+  {
+    "ActorId": 2002006,
+    "NameActorTextId": 31,
+    "ActorAssetId": "cm003006",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm003_ac"
+  },
+  {
+    "ActorId": 2002009,
+    "NameActorTextId": 0,
+    "ActorAssetId": "cm002009",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm002_ac"
+  },
+  {
+    "ActorId": 2002010,
+    "NameActorTextId": 0,
+    "ActorAssetId": "cm002010",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm012_ac"
+  },
+  {
+    "ActorId": 2003001,
+    "NameActorTextId": 32,
+    "ActorAssetId": "cm003001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm003_ac"
+  },
+  {
+    "ActorId": 2003002,
+    "NameActorTextId": 32,
+    "ActorAssetId": "cm003002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm003_ac"
+  },
+  {
+    "ActorId": 2003003,
+    "NameActorTextId": 32,
+    "ActorAssetId": "cm003003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm003_ac"
+  },
+  {
+    "ActorId": 2003004,
+    "NameActorTextId": 32,
+    "ActorAssetId": "cm003004",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm003_ac"
+  },
+  {
+    "ActorId": 2003005,
+    "NameActorTextId": 32,
+    "ActorAssetId": "cm003005",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm003_ac"
+  },
+  {
+    "ActorId": 2003006,
+    "NameActorTextId": 32,
+    "ActorAssetId": "cm003006",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm003_ac"
+  },
+  {
+    "ActorId": 2003007,
+    "NameActorTextId": 0,
+    "ActorAssetId": "cm003007",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm003_ac"
+  },
+  {
+    "ActorId": 2003010,
+    "NameActorTextId": 0,
+    "ActorAssetId": "cm003010",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm003_ac"
+  },
+  {
+    "ActorId": 2004001,
+    "NameActorTextId": 33,
+    "ActorAssetId": "cm004001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm004_ac"
+  },
+  {
+    "ActorId": 2004002,
+    "NameActorTextId": 33,
+    "ActorAssetId": "cm004002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm004_ac"
+  },
+  {
+    "ActorId": 2004003,
+    "NameActorTextId": 33,
+    "ActorAssetId": "cm004003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm004_ac"
+  },
+  {
+    "ActorId": 2004004,
+    "NameActorTextId": 33,
+    "ActorAssetId": "cm004004",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm004_ac"
+  },
+  {
+    "ActorId": 2004005,
+    "NameActorTextId": 33,
+    "ActorAssetId": "cm004005",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm004_ac"
+  },
+  {
+    "ActorId": 2004006,
+    "NameActorTextId": 33,
+    "ActorAssetId": "cm004006",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm004_ac"
+  },
+  {
+    "ActorId": 2004009,
+    "NameActorTextId": 0,
+    "ActorAssetId": "cm004009",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm004_ac"
+  },
+  {
+    "ActorId": 2004010,
+    "NameActorTextId": 0,
+    "ActorAssetId": "cm004010",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm004_ac"
+  },
+  {
+    "ActorId": 2005001,
+    "NameActorTextId": 34,
+    "ActorAssetId": "cm005001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm005_ac"
+  },
+  {
+    "ActorId": 2005002,
+    "NameActorTextId": 34,
+    "ActorAssetId": "cm005002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm005_ac"
+  },
+  {
+    "ActorId": 2005003,
+    "NameActorTextId": 34,
+    "ActorAssetId": "cm005003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm005_ac"
+  },
+  {
+    "ActorId": 2005004,
+    "NameActorTextId": 34,
+    "ActorAssetId": "cm005004",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm005_ac"
+  },
+  {
+    "ActorId": 2005005,
+    "NameActorTextId": 34,
+    "ActorAssetId": "cm005005",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm005_ac"
+  },
+  {
+    "ActorId": 2005006,
+    "NameActorTextId": 34,
+    "ActorAssetId": "cm005006",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm005_ac"
+  },
+  {
+    "ActorId": 2005007,
+    "NameActorTextId": 0,
+    "ActorAssetId": "cm005007",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm005_ac"
+  },
+  {
+    "ActorId": 2005010,
+    "NameActorTextId": 0,
+    "ActorAssetId": "cm005010",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm005_ac"
+  },
+  {
+    "ActorId": 2005011,
+    "NameActorTextId": 0,
+    "ActorAssetId": "cm005011",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm005_ac"
+  },
+  {
+    "ActorId": 2006001,
+    "NameActorTextId": 13,
+    "ActorAssetId": "cm006001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm006_ac"
+  },
+  {
+    "ActorId": 2006002,
+    "NameActorTextId": 13,
+    "ActorAssetId": "cm006002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm006_ac"
+  },
+  {
+    "ActorId": 2006003,
+    "NameActorTextId": 13,
+    "ActorAssetId": "cm006003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm006_ac"
+  },
+  {
+    "ActorId": 2006004,
+    "NameActorTextId": 13,
+    "ActorAssetId": "cm006004",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm006_ac"
+  },
+  {
+    "ActorId": 2006005,
+    "NameActorTextId": 13,
+    "ActorAssetId": "cm006005",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm006_ac"
+  },
+  {
+    "ActorId": 2006006,
+    "NameActorTextId": 13,
+    "ActorAssetId": "cm006006",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm006_ac"
+  },
+  {
+    "ActorId": 2006009,
+    "NameActorTextId": 0,
+    "ActorAssetId": "cm006009",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm006_ac"
+  },
+  {
+    "ActorId": 2006011,
+    "NameActorTextId": 0,
+    "ActorAssetId": "cm006011",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm006_ac"
+  },
+  {
+    "ActorId": 2006012,
+    "NameActorTextId": 0,
+    "ActorAssetId": "cm006012",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm006_ac"
+  },
+  {
+    "ActorId": 2006013,
+    "NameActorTextId": 0,
+    "ActorAssetId": "cm006013",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm006_ac"
+  },
+  {
+    "ActorId": 2008001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "cm008001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm008_ac"
+  },
+  {
+    "ActorId": 2009001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "cm009001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm009_ac"
+  },
+  {
+    "ActorId": 2010001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "cm010001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm010_ac"
+  },
+  {
+    "ActorId": 2011001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "cm011001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm011_ac"
+  },
+  {
+    "ActorId": 2012001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "cm012001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm012_ac"
+  },
+  {
+    "ActorId": 2012002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "cm012002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm012_ac"
+  },
+  {
+    "ActorId": 2013001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "cm013001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm013_ac"
+  },
+  {
+    "ActorId": 2014001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "cm014001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/cm014_ac"
+  },
+  {
+    "ActorId": 3001001,
+    "NameActorTextId": 14,
+    "ActorAssetId": "wp001001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 3001516,
+    "NameActorTextId": 0,
+    "ActorAssetId": "wp001516",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 3001517,
+    "NameActorTextId": 0,
+    "ActorAssetId": "wp001517",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 3004001,
+    "NameActorTextId": 15,
+    "ActorAssetId": "wp004001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 3004506,
+    "NameActorTextId": 0,
+    "ActorAssetId": "wp004506",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 3004509,
+    "NameActorTextId": 0,
+    "ActorAssetId": "wp004509",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 3006001,
+    "NameActorTextId": 16,
+    "ActorAssetId": "wp006001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 3901001,
+    "NameActorTextId": 17,
+    "ActorAssetId": "wp901001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 4001001,
+    "NameActorTextId": 2,
+    "ActorAssetId": "ma001001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 4001004,
+    "NameActorTextId": 2,
+    "ActorAssetId": "ma001004",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 4002001,
+    "NameActorTextId": 29,
+    "ActorAssetId": "ma002001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 4002002,
+    "NameActorTextId": 37,
+    "ActorAssetId": "ma002002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 4003001,
+    "NameActorTextId": 2,
+    "ActorAssetId": "ma003001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 4004001,
+    "NameActorTextId": 19009,
+    "ActorAssetId": "ma004001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 4004002,
+    "NameActorTextId": 19009,
+    "ActorAssetId": "ma004002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 4005001,
+    "NameActorTextId": 19010,
+    "ActorAssetId": "ma005001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 4005002,
+    "NameActorTextId": 19010,
+    "ActorAssetId": "ma005002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 4006001,
+    "NameActorTextId": 19060,
+    "ActorAssetId": "ma006001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 4006002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ma006002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 5001001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt001001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt001_ac"
+  },
+  {
+    "ActorId": 5001002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt001002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt001_ac"
+  },
+  {
+    "ActorId": 5001101,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt001101",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt001_ac"
+  },
+  {
+    "ActorId": 5001103,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt001103",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt001_ac"
+  },
+  {
+    "ActorId": 5001201,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt001201",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt001_ac"
+  },
+  {
+    "ActorId": 5001203,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt001203",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt001_ac"
+  },
+  {
+    "ActorId": 5001301,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt001301",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt001_ac"
+  },
+  {
+    "ActorId": 5001303,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt001303",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt001_ac"
+  },
+  {
+    "ActorId": 5001401,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt001401",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt001_ac"
+  },
+  {
+    "ActorId": 5001403,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt001403",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt001_ac"
+  },
+  {
+    "ActorId": 5001501,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt001501",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt001_ac"
+  },
+  {
+    "ActorId": 5001503,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt001503",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt001_ac"
+  },
+  {
+    "ActorId": 5002001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002003,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002004,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002004",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002005,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002005",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002006,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002006",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002007,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002007",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002008,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002008",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002009,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002009",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002010,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002010",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002011,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002011",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002012,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002012",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002013,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002013",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002014,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002014",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002015,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002015",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002016,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002016",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002017,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002017",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002027,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002027",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002029,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002029",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002034,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002034",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002035,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002035",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002036,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002036",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002037,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002037",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002039,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002039",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002040,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002040",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002041,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002041",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002042,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002042",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002043,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002043",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002044,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002044",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002045,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002045",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002046,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002046",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002047,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002047",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002048,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002048",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002055,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002055",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002056,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002056",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002057,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002057",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002059,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002059",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002101,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002101",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002102,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002102",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002103,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002103",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002104,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002104",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002105,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002105",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002106,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002106",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002107,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002107",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002108,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002108",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002109,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002109",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002110,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002110",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002111,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002111",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002120,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002120",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002121,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002121",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002124,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002124",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002201,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002201",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002202,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002202",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002203,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002203",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002204,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002204",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002205,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002205",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002206,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002206",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002207,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002207",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002208,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002208",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002209,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002209",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002210,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002210",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002211,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002211",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002220,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002220",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002222,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002222",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002226,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002226",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002301,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002301",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002302,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002302",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002303,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002303",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002304,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002304",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002305,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002305",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002306,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002306",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002307,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002307",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002308,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002308",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002309,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002309",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002310,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002310",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002320,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002320",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002326,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002326",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002401,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002401",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002402,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002402",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002403,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002403",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002404,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002404",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002405,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002405",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002406,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002406",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002407,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002407",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002408,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002408",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002409,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002409",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002410,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002410",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002418,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002418",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002420,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002420",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002425,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002425",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002432,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002432",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002433,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002433",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002501,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002501",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002502,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002502",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002503,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002503",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002504,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002504",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002505,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002505",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002506,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002506",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002507,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002507",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002508,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002508",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002509,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002509",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002510,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002510",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002520,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002520",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002529,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002529",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002530,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002530",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002531,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002531",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5002532,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt002532",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt002_ac"
+  },
+  {
+    "ActorId": 5003001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt003001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt003_ac"
+  },
+  {
+    "ActorId": 5003002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt003002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt003_ac"
+  },
+  {
+    "ActorId": 5003003,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt003003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt003_ac"
+  },
+  {
+    "ActorId": 5003004,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt003004",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt003_ac"
+  },
+  {
+    "ActorId": 5004001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt004001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt004_ac"
+  },
+  {
+    "ActorId": 5004101,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt004101",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt004_ac"
+  },
+  {
+    "ActorId": 5004102,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt004102",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt004_ac"
+  },
+  {
+    "ActorId": 5004201,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt004201",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt004_ac"
+  },
+  {
+    "ActorId": 5004202,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt004202",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt004_ac"
+  },
+  {
+    "ActorId": 5004301,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt004301",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt004_ac"
+  },
+  {
+    "ActorId": 5004302,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt004302",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt004_ac"
+  },
+  {
+    "ActorId": 5004401,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt004401",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt004_ac"
+  },
+  {
+    "ActorId": 5004402,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt004402",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt004_ac"
+  },
+  {
+    "ActorId": 5004501,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt004501",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt004_ac"
+  },
+  {
+    "ActorId": 5004502,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt004502",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt004_ac"
+  },
+  {
+    "ActorId": 5005001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt005001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt005_ac"
+  },
+  {
+    "ActorId": 5005101,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt005101",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt005_ac"
+  },
+  {
+    "ActorId": 5005201,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt005201",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt005_ac"
+  },
+  {
+    "ActorId": 5005301,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt005301",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt005_ac"
+  },
+  {
+    "ActorId": 5005401,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt005401",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt005_ac"
+  },
+  {
+    "ActorId": 5005501,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt005501",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt005_ac"
+  },
+  {
+    "ActorId": 5006001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt006001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt006_ac"
+  },
+  {
+    "ActorId": 5006101,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt006101",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt006_ac"
+  },
+  {
+    "ActorId": 5006201,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt006201",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt006_ac"
+  },
+  {
+    "ActorId": 5006301,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt006301",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt006_ac"
+  },
+  {
+    "ActorId": 5006401,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt006401",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt006_ac"
+  },
+  {
+    "ActorId": 5006501,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt006501",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt006_ac"
+  },
+  {
+    "ActorId": 5007001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt007001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt007_ac"
+  },
+  {
+    "ActorId": 5007002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt007002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt007_ac"
+  },
+  {
+    "ActorId": 5007101,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt007101",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt007_ac"
+  },
+  {
+    "ActorId": 5007201,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt007201",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt007_ac"
+  },
+  {
+    "ActorId": 5007301,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt007301",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt007_ac"
+  },
+  {
+    "ActorId": 5007401,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt007401",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt007_ac"
+  },
+  {
+    "ActorId": 5007501,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt007501",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt007_ac"
+  },
+  {
+    "ActorId": 5008001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt008001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt008_ac"
+  },
+  {
+    "ActorId": 5008002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt008002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt008_ac"
+  },
+  {
+    "ActorId": 5008003,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt008003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt008_ac"
+  },
+  {
+    "ActorId": 5008007,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt008007",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt008_ac"
+  },
+  {
+    "ActorId": 5008009,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt008009",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt008_ac"
+  },
+  {
+    "ActorId": 5008101,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt008101",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt008_ac"
+  },
+  {
+    "ActorId": 5008201,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt008201",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt008_ac"
+  },
+  {
+    "ActorId": 5008301,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt008301",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt008_ac"
+  },
+  {
+    "ActorId": 5008401,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt008401",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt008_ac"
+  },
+  {
+    "ActorId": 5008501,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt008501",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt008_ac"
+  },
+  {
+    "ActorId": 5009001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt009001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt009_ac"
+  },
+  {
+    "ActorId": 5009002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt009002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt009_ac"
+  },
+  {
+    "ActorId": 5010001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt010001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt010_ac"
+  },
+  {
+    "ActorId": 5010002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt010002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt010_ac"
+  },
+  {
+    "ActorId": 5011001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt011001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt011_ac"
+  },
+  {
+    "ActorId": 5011002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt011002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt011_ac"
+  },
+  {
+    "ActorId": 5012001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt012001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt012_ac"
+  },
+  {
+    "ActorId": 5012002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt012002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt012_ac"
+  },
+  {
+    "ActorId": 5013001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt013001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt013_ac"
+  },
+  {
+    "ActorId": 5014001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt014001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt014_ac"
+  },
+  {
+    "ActorId": 5015001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt015001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt015_ac"
+  },
+  {
+    "ActorId": 5015002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt015002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt015_ac"
+  },
+  {
+    "ActorId": 5015003,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt015003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt015_ac"
+  },
+  {
+    "ActorId": 5015004,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt015004",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt015_ac"
+  },
+  {
+    "ActorId": 5015101,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt015101",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt015_ac"
+  },
+  {
+    "ActorId": 5015201,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt015201",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt015_ac"
+  },
+  {
+    "ActorId": 5015301,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt015301",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt015_ac"
+  },
+  {
+    "ActorId": 5015401,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt015401",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt015_ac"
+  },
+  {
+    "ActorId": 5015501,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt015501",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt015_ac"
+  },
+  {
+    "ActorId": 5016001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt016001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt016_ac"
+  },
+  {
+    "ActorId": 5017001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt017001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt017_ac"
+  },
+  {
+    "ActorId": 5018001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt018001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt018_ac"
+  },
+  {
+    "ActorId": 5018002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt018002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt018_ac"
+  },
+  {
+    "ActorId": 5019001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt019001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt019_ac"
+  },
+  {
+    "ActorId": 5019002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt019002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt019_ac"
+  },
+  {
+    "ActorId": 5020001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt020001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt020_ac"
+  },
+  {
+    "ActorId": 5020102,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt020102",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt020_ac"
+  },
+  {
+    "ActorId": 5020202,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt020202",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt020_ac"
+  },
+  {
+    "ActorId": 5020302,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt020302",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt020_ac"
+  },
+  {
+    "ActorId": 5020402,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt020402",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt020_ac"
+  },
+  {
+    "ActorId": 5020502,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt020502",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt020_ac"
+  },
+  {
+    "ActorId": 5021001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt021001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt021_ac"
+  },
+  {
+    "ActorId": 5021002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt021002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt021_ac"
+  },
+  {
+    "ActorId": 5022001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt022001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt022_ac"
+  },
+  {
+    "ActorId": 5022002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt022002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt022_ac"
+  },
+  {
+    "ActorId": 5023001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt023001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt023_ac"
+  },
+  {
+    "ActorId": 5023002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt023002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt023_ac"
+  },
+  {
+    "ActorId": 5024001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt024001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt024_ac"
+  },
+  {
+    "ActorId": 5025001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt025001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt025_ac"
+  },
+  {
+    "ActorId": 5026001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt026001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt026_ac"
+  },
+  {
+    "ActorId": 5027001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt027001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt027_ac"
+  },
+  {
+    "ActorId": 5028001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt028001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt028_ac"
+  },
+  {
+    "ActorId": 5035001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt035001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt035_ac"
+  },
+  {
+    "ActorId": 5036001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt036001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt036_ac"
+  },
+  {
+    "ActorId": 5038001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt038001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt038_ac"
+  },
+  {
+    "ActorId": 5039001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt039001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt039_ac"
+  },
+  {
+    "ActorId": 5039002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt039002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt039_ac"
+  },
+  {
+    "ActorId": 5040001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt040001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt040_ac"
+  },
+  {
+    "ActorId": 5040002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt040002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt040_ac"
+  },
+  {
+    "ActorId": 5041001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt041001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt041_ac"
+  },
+  {
+    "ActorId": 5042001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt042001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt042_ac"
+  },
+  {
+    "ActorId": 5043001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt043001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt043_ac"
+  },
+  {
+    "ActorId": 5044001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt044001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt044_ac"
+  },
+  {
+    "ActorId": 5045001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt045001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt045_ac"
+  },
+  {
+    "ActorId": 5045002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt045002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt045_ac"
+  },
+  {
+    "ActorId": 5045050,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch051052",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt045_ac"
+  },
+  {
+    "ActorId": 5045051,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch051051",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt045_ac"
+  },
+  {
+    "ActorId": 5045052,
+    "NameActorTextId": 0,
+    "ActorAssetId": "ch051053",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt045_ac"
+  },
+  {
+    "ActorId": 5046001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "mt046001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/mt046_ac"
+  },
+  {
+    "ActorId": 7001013,
+    "NameActorTextId": 18013,
+    "ActorAssetId": "oa001013",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 7001014,
+    "NameActorTextId": 18014,
+    "ActorAssetId": "oa001014",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 7001015,
+    "NameActorTextId": 18015,
+    "ActorAssetId": "oa001015",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 7001016,
+    "NameActorTextId": 18016,
+    "ActorAssetId": "oa001016",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 7001017,
+    "NameActorTextId": 18017,
+    "ActorAssetId": "oa001017",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 7001018,
+    "NameActorTextId": 18018,
+    "ActorAssetId": "oa001018",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 7001019,
+    "NameActorTextId": 18019,
+    "ActorAssetId": "oa001019",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 7001021,
+    "NameActorTextId": 0,
+    "ActorAssetId": "oa001021",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 7001022,
+    "NameActorTextId": 0,
+    "ActorAssetId": "oa001022",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 7001023,
+    "NameActorTextId": 0,
+    "ActorAssetId": "oa001023",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 7001024,
+    "NameActorTextId": 0,
+    "ActorAssetId": "oa001024",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 7001025,
+    "NameActorTextId": 0,
+    "ActorAssetId": "oa001025",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 7044001,
+    "NameActorTextId": 7,
+    "ActorAssetId": "oa044001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 7045001,
+    "NameActorTextId": 7,
+    "ActorAssetId": "oa045001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 7045002,
+    "NameActorTextId": 7,
+    "ActorAssetId": "oa045002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 7046001,
+    "NameActorTextId": 7,
+    "ActorAssetId": "oa046001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 7047001,
+    "NameActorTextId": 7,
+    "ActorAssetId": "oa047001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 7048001,
+    "NameActorTextId": 7,
+    "ActorAssetId": "oa048001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 7049001,
+    "NameActorTextId": 7,
+    "ActorAssetId": "oa049001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 7049002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "oa049002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 7050001,
+    "NameActorTextId": 7,
+    "ActorAssetId": "oa050001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 7062001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "oa062001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 7062002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "oa062002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 7062003,
+    "NameActorTextId": 0,
+    "ActorAssetId": "oa062003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 7062004,
+    "NameActorTextId": 0,
+    "ActorAssetId": "oa062004",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 7071001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "oa071001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 7071002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "oa071002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 7077001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "oa077001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 7077002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "oa077002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 7079001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "oa079001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 7080001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "oa080001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 7090001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "oa090001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/oa090_ac"
+  },
+  {
+    "ActorId": 7090002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "oa090002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 7098001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "oa098001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 7099001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "oa099001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 7108001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "oa108001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 7116001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "oa116001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 8003001,
+    "NameActorTextId": 1001,
+    "ActorAssetId": "np003001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 8003002,
+    "NameActorTextId": 1002,
+    "ActorAssetId": "np004001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 8003003,
+    "NameActorTextId": 1003,
+    "ActorAssetId": "np004001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 8003004,
+    "NameActorTextId": 1004,
+    "ActorAssetId": "np004001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 8005001,
+    "NameActorTextId": 1101,
+    "ActorAssetId": "np005001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/tw01_np005_ac"
+  },
+  {
+    "ActorId": 8006001,
+    "NameActorTextId": 1102,
+    "ActorAssetId": "np006001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/tw01_np006_ac"
+  },
+  {
+    "ActorId": 8007001,
+    "NameActorTextId": 19026,
+    "ActorAssetId": "np008001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 8015001,
+    "NameActorTextId": 88,
+    "ActorAssetId": "pc020001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 9001001,
+    "NameActorTextId": 18,
+    "ActorAssetId": "um001001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 9002001,
+    "NameActorTextId": 18,
+    "ActorAssetId": "um002001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 9003001,
+    "NameActorTextId": 18,
+    "ActorAssetId": "um003001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 9004001,
+    "NameActorTextId": 18,
+    "ActorAssetId": "um004001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 9005001,
+    "NameActorTextId": 18,
+    "ActorAssetId": "um005001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 9006001,
+    "NameActorTextId": 18,
+    "ActorAssetId": "um006001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 9007001,
+    "NameActorTextId": 18,
+    "ActorAssetId": "um007001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 9008001,
+    "NameActorTextId": 18,
+    "ActorAssetId": "um008001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 9011001,
+    "NameActorTextId": 18,
+    "ActorAssetId": "um011001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 9018001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "oa018001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 9019001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "oa019001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 9019002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "oa019002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 9019003,
+    "NameActorTextId": 0,
+    "ActorAssetId": "oa019003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 9020001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "oa020001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 9020002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "oa020002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 9020003,
+    "NameActorTextId": 0,
+    "ActorAssetId": "oa020003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 9051001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "oa051001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 9051002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "oa051002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 9051003,
+    "NameActorTextId": 0,
+    "ActorAssetId": "oa051003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 10001001,
+    "NameActorTextId": 15001,
+    "ActorAssetId": "ef001001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 10001002,
+    "NameActorTextId": 15002,
+    "ActorAssetId": "ef001002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 10002001,
+    "NameActorTextId": 15007,
+    "ActorAssetId": "ef002001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 11908005,
+    "NameActorTextId": 62,
+    "ActorAssetId": "pc009002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 11908006,
+    "NameActorTextId": 63,
+    "ActorAssetId": "pc004004",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 11908008,
+    "NameActorTextId": 65,
+    "ActorAssetId": "pc004007",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 11908011,
+    "NameActorTextId": 69,
+    "ActorAssetId": "pc015001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 11908029,
+    "NameActorTextId": 87,
+    "ActorAssetId": "pc006001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 11908050,
+    "NameActorTextId": 108,
+    "ActorAssetId": "pe005001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 11908054,
+    "NameActorTextId": 112,
+    "ActorAssetId": "pc021001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 11908067,
+    "NameActorTextId": 125,
+    "ActorAssetId": "pc005001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 11908089,
+    "NameActorTextId": 147,
+    "ActorAssetId": "pc021001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 11908098,
+    "NameActorTextId": 156,
+    "ActorAssetId": "pc005001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 11908099,
+    "NameActorTextId": 157,
+    "ActorAssetId": "pe006001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 11908100,
+    "NameActorTextId": 158,
+    "ActorAssetId": "pe010001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 11908101,
+    "NameActorTextId": 159,
+    "ActorAssetId": "pe011001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 11908102,
+    "NameActorTextId": 160,
+    "ActorAssetId": "pe013001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 11908103,
+    "NameActorTextId": 161,
+    "ActorAssetId": "pe003001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 11908104,
+    "NameActorTextId": 162,
+    "ActorAssetId": "pc004005",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 11908105,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pe003002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 11908106,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pe003003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 11908107,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pe000002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 11908108,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pc011001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 11908109,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pc012001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 11908110,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pc011002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 11908111,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pc012002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 11908112,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pc012003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 11908113,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pc004003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 11908114,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pc004001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 11908115,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pc004002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 11908116,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pe012001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 11908117,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pe013001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 11908118,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pe003004",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 11908119,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pc010001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 11908120,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pe002001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 11908121,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pe001002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 11908122,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pc013001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 11908123,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pc014001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 11908124,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pc004006",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 11908125,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pe001001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 11908126,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pe006002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 11908127,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pc011003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 11908128,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp003016",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 12001001,
+    "NameActorTextId": 18001,
+    "ActorAssetId": "oa001001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 12001002,
+    "NameActorTextId": 18002,
+    "ActorAssetId": "oa001002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 12001003,
+    "NameActorTextId": 18003,
+    "ActorAssetId": "oa001003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 12001004,
+    "NameActorTextId": 18004,
+    "ActorAssetId": "oa001004",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 12001005,
+    "NameActorTextId": 18005,
+    "ActorAssetId": "oa001005",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 12001006,
+    "NameActorTextId": 18006,
+    "ActorAssetId": "oa001006",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 12001007,
+    "NameActorTextId": 18007,
+    "ActorAssetId": "oa001007",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 12001008,
+    "NameActorTextId": 18008,
+    "ActorAssetId": "oa001008",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 12001009,
+    "NameActorTextId": 18009,
+    "ActorAssetId": "oa001009",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 12001010,
+    "NameActorTextId": 18010,
+    "ActorAssetId": "oa001010",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 12001011,
+    "NameActorTextId": 18011,
+    "ActorAssetId": "oa001011",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 12001012,
+    "NameActorTextId": 18012,
+    "ActorAssetId": "oa001012",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 12005002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pe005002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 12006001,
+    "NameActorTextId": 11001,
+    "ActorAssetId": "oa006001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/tw01_oa006_ac"
+  },
+  {
+    "ActorId": 12006003,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pe006003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 12007001,
+    "NameActorTextId": 11003,
+    "ActorAssetId": "oa007001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/tw01_oa007_ac"
+  },
+  {
+    "ActorId": 12013001,
+    "NameActorTextId": 9001,
+    "ActorAssetId": "oa013001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/tw01_oa013_ac"
+  },
+  {
+    "ActorId": 12014001,
+    "NameActorTextId": 9002,
+    "ActorAssetId": "oa014001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": "AnimatorController/tw01_oa014_ac"
+  },
+  {
+    "ActorId": 12902001,
+    "NameActorTextId": 10001,
+    "ActorAssetId": "oa902001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13002015,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp002015",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13002016,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp002016",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13003014,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp003014",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13003025,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp003025",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13003027,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp003027",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13003028,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp003028",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13003029,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp003029",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13004005,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp004005",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13004006,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp004006",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13004007,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp004007",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13004008,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp004008",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13011001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp011001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13011002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp011002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13012001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp012001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13012002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp012002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13012003,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp012003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13013001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp013001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13013002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp013002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13013003,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp013003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13013004,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp013004",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13013005,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp013005",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13013006,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp013006",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13013007,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp013007",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13013008,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp013008",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13014001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp014001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13014002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp014002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13014003,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp014003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13014004,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp014004",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13014005,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp014005",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13014006,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp014006",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13014007,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp014007",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13014008,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp014008",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13014009,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp014009",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13014010,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp014010",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13014011,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp014011",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13014012,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp014012",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13014013,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp014013",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13015001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp015001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13015002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp015002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13015003,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp015003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13015004,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp015004",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13015005,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp015005",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13015006,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp015006",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13015007,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp015007",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13015008,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp015008",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13015009,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp015009",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13015010,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp015010",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13015011,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp015011",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13015012,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp015012",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13015013,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp015013",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13015014,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp015014",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13015015,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp015015",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13015016,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp015016",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13015017,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp015017",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13015018,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp015018",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13015019,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp015019",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13015020,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp015020",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13015021,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp015021",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13015022,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp015022",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13015023,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp015023",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13015024,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp015024",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13016001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp016001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13017001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp017001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13018001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp018001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13019001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp019001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13021001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp021001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13021002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp021002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13021003,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp021003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13021004,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp021004",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13022001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp022001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13023002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp023002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13023003,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp023003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13023004,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp023004",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13023005,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp023005",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13023006,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp023006",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13023007,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp023007",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13023009,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp023009",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13023010,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp023010",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13023011,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp023011",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13023012,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp023012",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13024001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp024001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13025001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp025001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13025002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp025002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13025003,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp025003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13025004,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp025004",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13025005,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp025005",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13027001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp027001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13029001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp029001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13030001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp030001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13030002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp030002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 13030003,
+    "NameActorTextId": 0,
+    "ActorAssetId": "sp030003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 14004008,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pc004008",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 14005002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pc005002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 14022001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pc022001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 14022002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pc022002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 14022003,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pc022003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 14022004,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pc022004",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 14023001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pc023001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 14023002,
+    "NameActorTextId": 1,
+    "ActorAssetId": "pc023002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 14024001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pc024001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 14025001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pc025001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 14026001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pc026001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 14029001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pc029001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 14029002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pc029002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 14031001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pc031001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 14032001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pc032001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 14033001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pc033001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 14034001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pc034001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 14035001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pc035001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 14036001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pc036001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 14037001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pc037001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 14037002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pc037002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 14041001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pc041001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 14043001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pc043001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 14044001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pc044001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 14044002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pc044002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 14045001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pc045001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 14046001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pc046001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 15001003,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pe001003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 15002002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pe002002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 15003005,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pe003005",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 15003006,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pe003006",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 15003007,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pe003007",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 15005003,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pe005003",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 15005004,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pe005004",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 15006004,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pe006004",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 15015001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pe015001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 15015002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pe015002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 15016001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pe016001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 15016002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pe016002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 15017001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pe017001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 15017002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pe017002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 15019001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pe019001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 15019002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pe019002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 15020001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pe020001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 15021001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pe021001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 15022001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pe022001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 15023001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pe023001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 15024001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pe024001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 15025001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pe025001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 15026001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pe026001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 15027001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pe027001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 15028001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pe028001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 15029001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pe029001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 15029002,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pe029002",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 15030001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pe030001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 15907001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pe907001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 15908001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pe908001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 15909001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pe909001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 15910001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pe910001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 15911001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pe911001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 82014001,
+    "NameActorTextId": 0,
+    "ActorAssetId": "pe014001",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  },
+  {
+    "ActorId": 99999999,
+    "NameActorTextId": 0,
+    "ActorAssetId": "",
+    "ActorSpeakerIconAssetPath": "",
+    "AnimatorAssetPath": ""
+  }
+]

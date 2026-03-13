@@ -1,0 +1,70 @@
+[
+  {
+    "ActorAnimationCategoryId": 1,
+    "Name": "idle"
+  },
+  {
+    "ActorAnimationCategoryId": 2,
+    "Name": "idle_custom_1"
+  },
+  {
+    "ActorAnimationCategoryId": 3,
+    "Name": "idle_custom_2"
+  },
+  {
+    "ActorAnimationCategoryId": 4,
+    "Name": "walk"
+  },
+  {
+    "ActorAnimationCategoryId": 5,
+    "Name": "walk_custom_1"
+  },
+  {
+    "ActorAnimationCategoryId": 6,
+    "Name": "run"
+  },
+  {
+    "ActorAnimationCategoryId": 7,
+    "Name": "walk_turn"
+  },
+  {
+    "ActorAnimationCategoryId": 8,
+    "Name": "run_turn"
+  },
+  {
+    "ActorAnimationCategoryId": 9,
+    "Name": "climb_up"
+  },
+  {
+    "ActorAnimationCategoryId": 10,
+    "Name": "give"
+  },
+  {
+    "ActorAnimationCategoryId": 11,
+    "Name": "falldown"
+  },
+  {
+    "ActorAnimationCategoryId": 12,
+    "Name": "climb_down"
+  },
+  {
+    "ActorAnimationCategoryId": 13,
+    "Name": "damage"
+  },
+  {
+    "ActorAnimationCategoryId": 14,
+    "Name": "backstep"
+  },
+  {
+    "ActorAnimationCategoryId": 15,
+    "Name": "frontstep"
+  },
+  {
+    "ActorAnimationCategoryId": 16,
+    "Name": "dash"
+  },
+  {
+    "ActorAnimationCategoryId": 99,
+    "Name": "slot"
+  }
+]

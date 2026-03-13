@@ -1,0 +1,42 @@
+[
+  {
+    "HeadupDisplayViewId": 1,
+    "ViewSkillButtonType": 3,
+    "HpBarDisplayType": 1,
+    "ViewNameTextType": 2,
+    "ViewBuffAbnormalType": 2,
+    "ViewLevelTextType": 1
+  },
+  {
+    "HeadupDisplayViewId": 2,
+    "ViewSkillButtonType": 2,
+    "HpBarDisplayType": 4,
+    "ViewNameTextType": 5,
+    "ViewBuffAbnormalType": 1,
+    "ViewLevelTextType": 1
+  },
+  {
+    "HeadupDisplayViewId": 3,
+    "ViewSkillButtonType": 1,
+    "HpBarDisplayType": 2,
+    "ViewNameTextType": 4,
+    "ViewBuffAbnormalType": 1,
+    "ViewLevelTextType": 2
+  },
+  {
+    "HeadupDisplayViewId": 4,
+    "ViewSkillButtonType": 2,
+    "HpBarDisplayType": 4,
+    "ViewNameTextType": 5,
+    "ViewBuffAbnormalType": 1,
+    "ViewLevelTextType": 2
+  },
+  {
+    "HeadupDisplayViewId": 5,
+    "ViewSkillButtonType": 4,
+    "HpBarDisplayType": 3,
+    "ViewNameTextType": 3,
+    "ViewBuffAbnormalType": 3,
+    "ViewLevelTextType": 3
+  }
+]

@@ -1,0 +1,410 @@
+[
+  {
+    "QuestBonusCharacterGroupId": 101,
+    "CharacterId": 1007,
+    "QuestBonusEffectGroupId": 1031,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 201,
+    "CharacterId": 1008,
+    "QuestBonusEffectGroupId": 1031,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 301,
+    "CharacterId": 1009,
+    "QuestBonusEffectGroupId": 1031,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 401,
+    "CharacterId": 1015,
+    "QuestBonusEffectGroupId": 1031,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 500,
+    "CharacterId": 1001,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 500,
+    "CharacterId": 1002,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 500,
+    "CharacterId": 1003,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 501,
+    "CharacterId": 1006,
+    "QuestBonusEffectGroupId": 1031,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 601,
+    "CharacterId": 1004,
+    "QuestBonusEffectGroupId": 1031,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 701,
+    "CharacterId": 1011,
+    "QuestBonusEffectGroupId": 1031,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 801,
+    "CharacterId": 1012,
+    "QuestBonusEffectGroupId": 1031,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 901,
+    "CharacterId": 1013,
+    "QuestBonusEffectGroupId": 1031,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 1001,
+    "CharacterId": 1014,
+    "QuestBonusEffectGroupId": 1031,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 1101,
+    "CharacterId": 1010,
+    "QuestBonusEffectGroupId": 1031,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 1201,
+    "CharacterId": 1019,
+    "QuestBonusEffectGroupId": 1031,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 1301,
+    "CharacterId": 1022,
+    "QuestBonusEffectGroupId": 1031,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 1401,
+    "CharacterId": 1023,
+    "QuestBonusEffectGroupId": 1031,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 1501,
+    "CharacterId": 1024,
+    "QuestBonusEffectGroupId": 1031,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 1601,
+    "CharacterId": 1025,
+    "QuestBonusEffectGroupId": 1031,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 1701,
+    "CharacterId": 1027,
+    "QuestBonusEffectGroupId": 1031,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 1801,
+    "CharacterId": 1026,
+    "QuestBonusEffectGroupId": 1031,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 1901,
+    "CharacterId": 1048,
+    "QuestBonusEffectGroupId": 1031,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 200031,
+    "CharacterId": 1009,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 200061,
+    "CharacterId": 1016,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 200061,
+    "CharacterId": 1017,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 200061,
+    "CharacterId": 1018,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 200091,
+    "CharacterId": 1006,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 200121,
+    "CharacterId": 1007,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 200151,
+    "CharacterId": 1031,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 200181,
+    "CharacterId": 1008,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 200211,
+    "CharacterId": 1012,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 200241,
+    "CharacterId": 1006,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 200271,
+    "CharacterId": 1001,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 200271,
+    "CharacterId": 1002,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 200271,
+    "CharacterId": 1003,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 200301,
+    "CharacterId": 1010,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 200331,
+    "CharacterId": 1019,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 200361,
+    "CharacterId": 1015,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 200391,
+    "CharacterId": 1014,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 200421,
+    "CharacterId": 1019,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 200601,
+    "CharacterId": 1011,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 200631,
+    "CharacterId": 1013,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 200693,
+    "CharacterId": 1007,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 200737,
+    "CharacterId": 1004,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 200841,
+    "CharacterId": 1022,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 200861,
+    "CharacterId": 1025,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 200891,
+    "CharacterId": 1008,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 200901,
+    "CharacterId": 1015,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 200911,
+    "CharacterId": 1009,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 200921,
+    "CharacterId": 1015,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 200931,
+    "CharacterId": 1004,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 200941,
+    "CharacterId": 1023,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 200951,
+    "CharacterId": 1023,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 200961,
+    "CharacterId": 1013,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 200971,
+    "CharacterId": 1011,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 200981,
+    "CharacterId": 1026,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 200991,
+    "CharacterId": 1022,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 201021,
+    "CharacterId": 1024,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 201031,
+    "CharacterId": 1025,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 201041,
+    "CharacterId": 1027,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 201051,
+    "CharacterId": 1023,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 201061,
+    "CharacterId": 1014,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 201081,
+    "CharacterId": 1009,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 201101,
+    "CharacterId": 1006,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 201121,
+    "CharacterId": 1023,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 201131,
+    "CharacterId": 1014,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 201161,
+    "CharacterId": 1021,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  },
+  {
+    "QuestBonusCharacterGroupId": 201181,
+    "CharacterId": 1020,
+    "QuestBonusEffectGroupId": 1001,
+    "QuestBonusTermGroupId": 0
+  }
+]

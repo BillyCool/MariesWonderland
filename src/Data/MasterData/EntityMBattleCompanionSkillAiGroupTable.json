@@ -1,0 +1,38 @@
+[
+  {
+    "BattleCompanionSkillAiGroupId": 1000,
+    "Priority": 1000,
+    "BattleSchemeType": 1,
+    "IsPlayerSide": true,
+    "SkillAiUnlockConditionValueType": 2,
+    "SkillAiUnlockConditionValue": 1,
+    "BattleCompanionSkillAiId": 1
+  },
+  {
+    "BattleCompanionSkillAiGroupId": 1000,
+    "Priority": 1001,
+    "BattleSchemeType": 2,
+    "IsPlayerSide": true,
+    "SkillAiUnlockConditionValueType": 2,
+    "SkillAiUnlockConditionValue": 1,
+    "BattleCompanionSkillAiId": 1
+  },
+  {
+    "BattleCompanionSkillAiGroupId": 1000,
+    "Priority": 1002,
+    "BattleSchemeType": 2,
+    "IsPlayerSide": false,
+    "SkillAiUnlockConditionValueType": 1,
+    "SkillAiUnlockConditionValue": 0,
+    "BattleCompanionSkillAiId": 2
+  },
+  {
+    "BattleCompanionSkillAiGroupId": 1000,
+    "Priority": 1003,
+    "BattleSchemeType": 2,
+    "IsPlayerSide": false,
+    "SkillAiUnlockConditionValueType": 3,
+    "SkillAiUnlockConditionValue": 20000,
+    "BattleCompanionSkillAiId": 1
+  }
+]

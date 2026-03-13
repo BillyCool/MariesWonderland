@@ -1,0 +1,342 @@
+[
+  {
+    "AssetCalculatorId": 1,
+    "UseCalculatorType": 1,
+    "AssetPath": "Prefab/battle/SkillBehaviourComputer/calculate_skill_behaviour_abnormal_behaviourtree"
+  },
+  {
+    "AssetCalculatorId": 2,
+    "UseCalculatorType": 1,
+    "AssetPath": "Prefab/battle/SkillBehaviourComputer/calculate_skill_behaviour_attack_behaviourtree"
+  },
+  {
+    "AssetCalculatorId": 3,
+    "UseCalculatorType": 1,
+    "AssetPath": "Prefab/battle/SkillBehaviourComputer/calculate_skill_behaviour_buff_behaviourtree"
+  },
+  {
+    "AssetCalculatorId": 4,
+    "UseCalculatorType": 1,
+    "AssetPath": "Prefab/battle/SkillBehaviourComputer/calculate_skill_behaviour_recovery_behaviourtree"
+  },
+  {
+    "AssetCalculatorId": 6,
+    "UseCalculatorType": 1,
+    "AssetPath": "Prefab/battle/SkillBehaviourComputer/calculate_skill_behaviour_changestep_behaviourtree"
+  },
+  {
+    "AssetCalculatorId": 7,
+    "UseCalculatorType": 1,
+    "AssetPath": "Prefab/battle/Order/order_behaviour_selector"
+  },
+  {
+    "AssetCalculatorId": 8,
+    "UseCalculatorType": 1,
+    "AssetPath": "Prefab/battle/computer/counter_check_computer"
+  },
+  {
+    "AssetCalculatorId": 9,
+    "UseCalculatorType": 1,
+    "AssetPath": "Prefab/battle/skill_hit_computer/skill_hit_computer"
+  },
+  {
+    "AssetCalculatorId": 10,
+    "UseCalculatorType": 1,
+    "AssetPath": "Prefab/battle/abnormal_computer/abnormal_poison_computer"
+  },
+  {
+    "AssetCalculatorId": 11,
+    "UseCalculatorType": 1,
+    "AssetPath": "Prefab/battle/abnormal_behaviour_computer/abnormal_behaviour_computer_dummy"
+  },
+  {
+    "AssetCalculatorId": 12,
+    "UseCalculatorType": 1,
+    "AssetPath": "Prefab/battle/abnormal_behaviour_computer/calculate_activate_abnormal_behaviour_damage"
+  },
+  {
+    "AssetCalculatorId": 13,
+    "UseCalculatorType": 1,
+    "AssetPath": "Prefab/battle/abnormal_behaviour_computer/calculate_deactivate_abnormal_behaviour_damage"
+  },
+  {
+    "AssetCalculatorId": 14,
+    "UseCalculatorType": 1,
+    "AssetPath": "Prefab/battle/abnormal_behaviour_computer/calculate_validate_abnormal_behaviour_empty"
+  },
+  {
+    "AssetCalculatorId": 15,
+    "UseCalculatorType": 1,
+    "AssetPath": "Prefab/battle/abnormal_behaviour_computer/calculate_activate_abnormal_behaviour_lock_default_skill_probability"
+  },
+  {
+    "AssetCalculatorId": 16,
+    "UseCalculatorType": 1,
+    "AssetPath": "Prefab/battle/abnormal_behaviour_computer/calculate_deactivate_abnormal_behaviour_lock_default_skill_probability"
+  },
+  {
+    "AssetCalculatorId": 17,
+    "UseCalculatorType": 1,
+    "AssetPath": "Prefab/battle/abnormal_behaviour_computer/calculate_activate_abnormal_behaviour_cancel_active_skill"
+  },
+  {
+    "AssetCalculatorId": 18,
+    "UseCalculatorType": 1,
+    "AssetPath": "Prefab/battle/abnormal_behaviour_computer/calculate_deactivate_abnormal_behaviour_cancel_active_skill"
+  },
+  {
+    "AssetCalculatorId": 19,
+    "UseCalculatorType": 1,
+    "AssetPath": "Prefab/battle/abnormal_behaviour_computer/calculate_activate_abnormal_behaviour_cancel_default_skill"
+  },
+  {
+    "AssetCalculatorId": 20,
+    "UseCalculatorType": 1,
+    "AssetPath": "Prefab/battle/abnormal_behaviour_computer/calculate_deactivate_abnormal_behaviour_cancel_default_skill"
+  },
+  {
+    "AssetCalculatorId": 21,
+    "UseCalculatorType": 1,
+    "AssetPath": "Prefab/battle/abnormal_behaviour_computer/calculate_activate_abnormal_behaviour_lock_active_skill"
+  },
+  {
+    "AssetCalculatorId": 22,
+    "UseCalculatorType": 1,
+    "AssetPath": "Prefab/battle/abnormal_behaviour_computer/calculate_deactivate_abnormal_behaviour_lock_active_skill"
+  },
+  {
+    "AssetCalculatorId": 23,
+    "UseCalculatorType": 1,
+    "AssetPath": "Prefab/battle/abnormal_behaviour_computer/calculate_activate_abnormal_behaviour_lock_default_skill"
+  },
+  {
+    "AssetCalculatorId": 24,
+    "UseCalculatorType": 1,
+    "AssetPath": "Prefab/battle/abnormal_behaviour_computer/calculate_deactivate_abnormal_behaviour_lock_default_skill"
+  },
+  {
+    "AssetCalculatorId": 25,
+    "UseCalculatorType": 1,
+    "AssetPath": "Prefab/battle/abnormal_behaviour_computer/calculate_activate_abnormal_behaviour_recovery"
+  },
+  {
+    "AssetCalculatorId": 26,
+    "UseCalculatorType": 1,
+    "AssetPath": "Prefab/battle/abnormal_behaviour_computer/calculate_deactivate_abnormal_behaviour_recovery"
+  },
+  {
+    "AssetCalculatorId": 27,
+    "UseCalculatorType": 1,
+    "AssetPath": "Prefab/battle/abnormal_behaviour_computer/calculate_validate_abnormal_behaviour_damage"
+  },
+  {
+    "AssetCalculatorId": 100,
+    "UseCalculatorType": 1,
+    "AssetPath": "prefabs)turnbattle)skill_target_selector)target_selector_alive_single_enemy_01"
+  },
+  {
+    "AssetCalculatorId": 101,
+    "UseCalculatorType": 1,
+    "AssetPath": "prefabs)turnbattle)skill_target_selector)target_selector_alive_single_enemy_02"
+  },
+  {
+    "AssetCalculatorId": 102,
+    "UseCalculatorType": 1,
+    "AssetPath": "prefabs)turnbattle)skill_target_selector)target_selector_alive_all_enemy_01"
+  },
+  {
+    "AssetCalculatorId": 103,
+    "UseCalculatorType": 1,
+    "AssetPath": "prefabs)turnbattle)skill_target_selector)target_selector_self_01"
+  },
+  {
+    "AssetCalculatorId": 104,
+    "UseCalculatorType": 1,
+    "AssetPath": "prefabs)turnbattle)skill_target_selector)target_selector_alive_all_self_party_01"
+  },
+  {
+    "AssetCalculatorId": 105,
+    "UseCalculatorType": 1,
+    "AssetPath": "prefabs)turnbattle)skill_target_selector)target_selector_alive_single_ally_01"
+  },
+  {
+    "AssetCalculatorId": 106,
+    "UseCalculatorType": 1,
+    "AssetPath": "prefabs)turnbattle)skill_target_selector)target_selector_dead_all_self_party_01"
+  },
+  {
+    "AssetCalculatorId": 107,
+    "UseCalculatorType": 1,
+    "AssetPath": "Prefab/battle/SkillBehaviourComputer/calculate_skill_behaviour_attribute_damage_correction_behaviourtree"
+  },
+  {
+    "AssetCalculatorId": 108,
+    "UseCalculatorType": 1,
+    "AssetPath": "Prefab/battle/SkillBehaviourComputer/calculate_skill_behaviour_damage_correction_hp_ratio_behaviourtree"
+  },
+  {
+    "AssetCalculatorId": 109,
+    "UseCalculatorType": 1,
+    "AssetPath": "Prefab/battle/SkillBehaviourComputer/calculate_skill_behaviour_advance_active_skill_cooltime_behaviourtree"
+  },
+  {
+    "AssetCalculatorId": 110,
+    "UseCalculatorType": 1,
+    "AssetPath": "prefabs)turnbattle)skill_target_selector)target_selector_dead_single_ally_01"
+  },
+  {
+    "AssetCalculatorId": 111,
+    "UseCalculatorType": 1,
+    "AssetPath": "prefabs)turnbattle)skill_target_selector)target_selector_alive_single_ally_highest_attack"
+  },
+  {
+    "AssetCalculatorId": 112,
+    "UseCalculatorType": 1,
+    "AssetPath": "prefabs)turnbattle)skill_target_selector)target_selector_alive_single_enemy_highest_attack"
+  },
+  {
+    "AssetCalculatorId": 113,
+    "UseCalculatorType": 1,
+    "AssetPath": "prefabs)turnbattle)skill_target_selector)target_selector_alive_single_ally_highest_vitality"
+  },
+  {
+    "AssetCalculatorId": 114,
+    "UseCalculatorType": 1,
+    "AssetPath": "prefabs)turnbattle)skill_target_selector)target_selector_alive_single_enemy_highest_vitality"
+  },
+  {
+    "AssetCalculatorId": 115,
+    "UseCalculatorType": 1,
+    "AssetPath": "prefabs)turnbattle)skill_target_selector)target_selector_alive_single_enemy_highest_hp"
+  },
+  {
+    "AssetCalculatorId": 116,
+    "UseCalculatorType": 1,
+    "AssetPath": "prefabs)turnbattle)skill_target_selector)target_selector_alive_single_enemy_not_bad_attribute"
+  },
+  {
+    "AssetCalculatorId": 117,
+    "UseCalculatorType": 1,
+    "AssetPath": "prefabs)turnbattle)skill_target_selector)target_selector_alive_single_enemy_lowest_hp"
+  },
+  {
+    "AssetCalculatorId": 118,
+    "UseCalculatorType": 1,
+    "AssetPath": "prefabs)turnbattle)skill_target_selector)target_selector_alive_single_enemy_lowest_vitality"
+  },
+  {
+    "AssetCalculatorId": 119,
+    "UseCalculatorType": 1,
+    "AssetPath": "prefabs)turnbattle)skill_target_selector)target_selector_alive_single_enemy_lowest_attack"
+  },
+  {
+    "AssetCalculatorId": 120,
+    "UseCalculatorType": 1,
+    "AssetPath": "prefabs)turnbattle)skill_target_selector)target_selector_alive_all_self_party_without_self"
+  },
+  {
+    "AssetCalculatorId": 121,
+    "UseCalculatorType": 1,
+    "AssetPath": "prefabs)turnbattle)skill_target_selector)target_selector_alive_single_enemy_force_equip_weapontype_1"
+  },
+  {
+    "AssetCalculatorId": 122,
+    "UseCalculatorType": 1,
+    "AssetPath": "prefabs)turnbattle)skill_target_selector)target_selector_alive_single_enemy_force_equip_weapontype_2"
+  },
+  {
+    "AssetCalculatorId": 123,
+    "UseCalculatorType": 1,
+    "AssetPath": "prefabs)turnbattle)skill_target_selector)target_selector_alive_single_enemy_force_equip_weapontype_3"
+  },
+  {
+    "AssetCalculatorId": 124,
+    "UseCalculatorType": 1,
+    "AssetPath": "prefabs)turnbattle)skill_target_selector)target_selector_alive_single_enemy_force_equip_weapontype_4"
+  },
+  {
+    "AssetCalculatorId": 125,
+    "UseCalculatorType": 1,
+    "AssetPath": "prefabs)turnbattle)skill_target_selector)target_selector_alive_single_enemy_force_equip_weapontype_5"
+  },
+  {
+    "AssetCalculatorId": 126,
+    "UseCalculatorType": 1,
+    "AssetPath": "prefabs)turnbattle)skill_target_selector)target_selector_alive_single_enemy_force_equip_weapontype_6"
+  },
+  {
+    "AssetCalculatorId": 127,
+    "UseCalculatorType": 1,
+    "AssetPath": "prefabs)turnbattle)skill_target_selector)target_selector_alive_all_self_party_match_attribute"
+  },
+  {
+    "AssetCalculatorId": 1001,
+    "UseCalculatorType": 1,
+    "AssetPath": "Prefab/battle/actor/actor_status_initializer"
+  },
+  {
+    "AssetCalculatorId": 1002,
+    "UseCalculatorType": 1,
+    "AssetPath": "Prefab/battle/buff/calculate_activate_buff"
+  },
+  {
+    "AssetCalculatorId": 1003,
+    "UseCalculatorType": 1,
+    "AssetPath": "Prefab/battle/buff/calculate_activate_debuff"
+  },
+  {
+    "AssetCalculatorId": 1004,
+    "UseCalculatorType": 1,
+    "AssetPath": "Prefab/battle/buff/calculate_deactivate_buff"
+  },
+  {
+    "AssetCalculatorId": 1005,
+    "UseCalculatorType": 1,
+    "AssetPath": "Prefab/battle/buff/calculate_deactivate_debuff"
+  },
+  {
+    "AssetCalculatorId": 2000,
+    "UseCalculatorType": 1,
+    "AssetPath": "Prefab/battle/combo/combo_computer"
+  },
+  {
+    "AssetCalculatorId": 2001,
+    "UseCalculatorType": 1,
+    "AssetPath": "Prefab/battle/buff/calculate_buff_level"
+  },
+  {
+    "AssetCalculatorId": 3000,
+    "UseCalculatorType": 1,
+    "AssetPath": "Prefab/battle/follow_actor/follow_actor_computer"
+  },
+  {
+    "AssetCalculatorId": 3001,
+    "UseCalculatorType": 1,
+    "AssetPath": "Prefab/battle/follow_actor/follow_target_computer"
+  },
+  {
+    "AssetCalculatorId": 4001,
+    "UseCalculatorType": 1,
+    "AssetPath": "Prefab/battle/actor/calculator_parts_status_add"
+  },
+  {
+    "AssetCalculatorId": 4002,
+    "UseCalculatorType": 1,
+    "AssetPath": "Prefab/battle/actor/calculator_parts_status_multiply"
+  },
+  {
+    "AssetCalculatorId": 5001,
+    "UseCalculatorType": 1,
+    "AssetPath": "Prefab/battle/ability/calculator_ability_behaviour_status_add"
+  },
+  {
+    "AssetCalculatorId": 5002,
+    "UseCalculatorType": 1,
+    "AssetPath": "Prefab/battle/ability/calculator_ability_behaviour_status_multiply"
+  },
+  {
+    "AssetCalculatorId": 6001,
+    "UseCalculatorType": 1,
+    "AssetPath": "Prefab/battle/actor/calculator_level_status"
+  }
+]

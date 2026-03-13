@@ -1,0 +1,1607 @@
+[
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 0,
+    "AssetGradeIconId": 11001
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 2000,
+    "AssetGradeIconId": 11002
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 4000,
+    "AssetGradeIconId": 11003
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 6000,
+    "AssetGradeIconId": 11004
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 8000,
+    "AssetGradeIconId": 11005
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 10000,
+    "AssetGradeIconId": 11006
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 14000,
+    "AssetGradeIconId": 11007
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 18000,
+    "AssetGradeIconId": 11008
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 22000,
+    "AssetGradeIconId": 11009
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 26000,
+    "AssetGradeIconId": 11010
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 30000,
+    "AssetGradeIconId": 12001
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 35000,
+    "AssetGradeIconId": 12002
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 40000,
+    "AssetGradeIconId": 12003
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 45000,
+    "AssetGradeIconId": 12004
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 50000,
+    "AssetGradeIconId": 12005
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 55000,
+    "AssetGradeIconId": 12006
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 60000,
+    "AssetGradeIconId": 12007
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 65000,
+    "AssetGradeIconId": 12008
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 70000,
+    "AssetGradeIconId": 12009
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 75000,
+    "AssetGradeIconId": 12010
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 80000,
+    "AssetGradeIconId": 13001
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 85000,
+    "AssetGradeIconId": 13002
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 90000,
+    "AssetGradeIconId": 13003
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 95000,
+    "AssetGradeIconId": 13004
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 100000,
+    "AssetGradeIconId": 13005
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 105000,
+    "AssetGradeIconId": 13006
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 110000,
+    "AssetGradeIconId": 13007
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 120000,
+    "AssetGradeIconId": 13008
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 130000,
+    "AssetGradeIconId": 13009
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 140000,
+    "AssetGradeIconId": 13010
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 150000,
+    "AssetGradeIconId": 14001
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 160000,
+    "AssetGradeIconId": 14002
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 170000,
+    "AssetGradeIconId": 14003
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 180000,
+    "AssetGradeIconId": 14004
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 190000,
+    "AssetGradeIconId": 14005
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 200000,
+    "AssetGradeIconId": 14006
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 210000,
+    "AssetGradeIconId": 14007
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 220000,
+    "AssetGradeIconId": 14008
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 230000,
+    "AssetGradeIconId": 14009
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 240000,
+    "AssetGradeIconId": 14010
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 250000,
+    "AssetGradeIconId": 15001
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 270000,
+    "AssetGradeIconId": 15002
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 290000,
+    "AssetGradeIconId": 15003
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 310000,
+    "AssetGradeIconId": 15004
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 330000,
+    "AssetGradeIconId": 15005
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 350000,
+    "AssetGradeIconId": 15006
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 370000,
+    "AssetGradeIconId": 15007
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 390000,
+    "AssetGradeIconId": 15008
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 410000,
+    "AssetGradeIconId": 15009
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 430000,
+    "AssetGradeIconId": 15010
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 450000,
+    "AssetGradeIconId": 16001
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 480000,
+    "AssetGradeIconId": 16002
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 510000,
+    "AssetGradeIconId": 16003
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 540000,
+    "AssetGradeIconId": 16004
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 570000,
+    "AssetGradeIconId": 16005
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 600000,
+    "AssetGradeIconId": 16006
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 640000,
+    "AssetGradeIconId": 16007
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 680000,
+    "AssetGradeIconId": 16008
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 720000,
+    "AssetGradeIconId": 16009
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 760000,
+    "AssetGradeIconId": 16010
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 800000,
+    "AssetGradeIconId": 17001
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 850000,
+    "AssetGradeIconId": 17002
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 900000,
+    "AssetGradeIconId": 17003
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 950000,
+    "AssetGradeIconId": 17004
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 1000000,
+    "AssetGradeIconId": 17005
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 1050000,
+    "AssetGradeIconId": 17006
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 1100000,
+    "AssetGradeIconId": 17007
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 1200000,
+    "AssetGradeIconId": 17008
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 1300000,
+    "AssetGradeIconId": 17009
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 1400000,
+    "AssetGradeIconId": 17010
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 1500000,
+    "AssetGradeIconId": 18001
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 1650000,
+    "AssetGradeIconId": 18002
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 1800000,
+    "AssetGradeIconId": 18003
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 1950000,
+    "AssetGradeIconId": 18004
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 2100000,
+    "AssetGradeIconId": 18005
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 2300000,
+    "AssetGradeIconId": 18006
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 2500000,
+    "AssetGradeIconId": 18007
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 2750000,
+    "AssetGradeIconId": 18008
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 3000000,
+    "AssetGradeIconId": 18009
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 3250000,
+    "AssetGradeIconId": 18010
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 3500000,
+    "AssetGradeIconId": 19001
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 3800000,
+    "AssetGradeIconId": 19002
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 4100000,
+    "AssetGradeIconId": 19003
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 4400000,
+    "AssetGradeIconId": 19004
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 4700000,
+    "AssetGradeIconId": 19005
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 5000000,
+    "AssetGradeIconId": 19006
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 5300000,
+    "AssetGradeIconId": 19007
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 5700000,
+    "AssetGradeIconId": 19008
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 6100000,
+    "AssetGradeIconId": 19009
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 6500000,
+    "AssetGradeIconId": 19010
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 9500000,
+    "AssetGradeIconId": 20001
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 15000000,
+    "AssetGradeIconId": 20002
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 20000000,
+    "AssetGradeIconId": 20003
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 25000000,
+    "AssetGradeIconId": 20004
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 30000000,
+    "AssetGradeIconId": 20005
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 36000000,
+    "AssetGradeIconId": 20006
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 44000000,
+    "AssetGradeIconId": 20007
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 52000000,
+    "AssetGradeIconId": 20008
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 60000000,
+    "AssetGradeIconId": 20009
+  },
+  {
+    "BigHuntBossGradeGroupId": 1,
+    "NecessaryScore": 70000000,
+    "AssetGradeIconId": 20010
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 0,
+    "AssetGradeIconId": 11001
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 2000,
+    "AssetGradeIconId": 11002
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 4000,
+    "AssetGradeIconId": 11003
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 6000,
+    "AssetGradeIconId": 11004
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 8000,
+    "AssetGradeIconId": 11005
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 10000,
+    "AssetGradeIconId": 11006
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 14000,
+    "AssetGradeIconId": 11007
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 18000,
+    "AssetGradeIconId": 11008
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 22000,
+    "AssetGradeIconId": 11009
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 26000,
+    "AssetGradeIconId": 11010
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 30000,
+    "AssetGradeIconId": 12001
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 35000,
+    "AssetGradeIconId": 12002
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 40000,
+    "AssetGradeIconId": 12003
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 45000,
+    "AssetGradeIconId": 12004
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 50000,
+    "AssetGradeIconId": 12005
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 55000,
+    "AssetGradeIconId": 12006
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 60000,
+    "AssetGradeIconId": 12007
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 65000,
+    "AssetGradeIconId": 12008
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 70000,
+    "AssetGradeIconId": 12009
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 75000,
+    "AssetGradeIconId": 12010
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 80000,
+    "AssetGradeIconId": 13001
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 85000,
+    "AssetGradeIconId": 13002
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 90000,
+    "AssetGradeIconId": 13003
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 95000,
+    "AssetGradeIconId": 13004
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 100000,
+    "AssetGradeIconId": 13005
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 105000,
+    "AssetGradeIconId": 13006
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 110000,
+    "AssetGradeIconId": 13007
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 120000,
+    "AssetGradeIconId": 13008
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 130000,
+    "AssetGradeIconId": 13009
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 140000,
+    "AssetGradeIconId": 13010
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 150000,
+    "AssetGradeIconId": 14001
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 160000,
+    "AssetGradeIconId": 14002
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 170000,
+    "AssetGradeIconId": 14003
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 180000,
+    "AssetGradeIconId": 14004
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 190000,
+    "AssetGradeIconId": 14005
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 200000,
+    "AssetGradeIconId": 14006
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 210000,
+    "AssetGradeIconId": 14007
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 220000,
+    "AssetGradeIconId": 14008
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 230000,
+    "AssetGradeIconId": 14009
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 240000,
+    "AssetGradeIconId": 14010
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 250000,
+    "AssetGradeIconId": 15001
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 270000,
+    "AssetGradeIconId": 15002
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 290000,
+    "AssetGradeIconId": 15003
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 310000,
+    "AssetGradeIconId": 15004
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 330000,
+    "AssetGradeIconId": 15005
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 350000,
+    "AssetGradeIconId": 15006
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 370000,
+    "AssetGradeIconId": 15007
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 390000,
+    "AssetGradeIconId": 15008
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 410000,
+    "AssetGradeIconId": 15009
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 430000,
+    "AssetGradeIconId": 15010
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 450000,
+    "AssetGradeIconId": 16001
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 480000,
+    "AssetGradeIconId": 16002
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 510000,
+    "AssetGradeIconId": 16003
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 540000,
+    "AssetGradeIconId": 16004
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 570000,
+    "AssetGradeIconId": 16005
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 600000,
+    "AssetGradeIconId": 16006
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 640000,
+    "AssetGradeIconId": 16007
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 680000,
+    "AssetGradeIconId": 16008
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 720000,
+    "AssetGradeIconId": 16009
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 760000,
+    "AssetGradeIconId": 16010
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 800000,
+    "AssetGradeIconId": 17001
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 850000,
+    "AssetGradeIconId": 17002
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 900000,
+    "AssetGradeIconId": 17003
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 950000,
+    "AssetGradeIconId": 17004
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 1000000,
+    "AssetGradeIconId": 17005
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 1050000,
+    "AssetGradeIconId": 17006
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 1100000,
+    "AssetGradeIconId": 17007
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 1200000,
+    "AssetGradeIconId": 17008
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 1300000,
+    "AssetGradeIconId": 17009
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 1400000,
+    "AssetGradeIconId": 17010
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 1500000,
+    "AssetGradeIconId": 18001
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 1650000,
+    "AssetGradeIconId": 18002
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 1800000,
+    "AssetGradeIconId": 18003
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 1950000,
+    "AssetGradeIconId": 18004
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 2100000,
+    "AssetGradeIconId": 18005
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 2300000,
+    "AssetGradeIconId": 18006
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 2500000,
+    "AssetGradeIconId": 18007
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 2750000,
+    "AssetGradeIconId": 18008
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 3000000,
+    "AssetGradeIconId": 18009
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 3250000,
+    "AssetGradeIconId": 18010
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 3500000,
+    "AssetGradeIconId": 19001
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 3800000,
+    "AssetGradeIconId": 19002
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 4100000,
+    "AssetGradeIconId": 19003
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 4400000,
+    "AssetGradeIconId": 19004
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 4700000,
+    "AssetGradeIconId": 19005
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 5000000,
+    "AssetGradeIconId": 19006
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 5300000,
+    "AssetGradeIconId": 19007
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 5700000,
+    "AssetGradeIconId": 19008
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 6100000,
+    "AssetGradeIconId": 19009
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 6500000,
+    "AssetGradeIconId": 19010
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 9500000,
+    "AssetGradeIconId": 20001
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 15000000,
+    "AssetGradeIconId": 20002
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 20000000,
+    "AssetGradeIconId": 20003
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 25000000,
+    "AssetGradeIconId": 20004
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 30000000,
+    "AssetGradeIconId": 20005
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 36000000,
+    "AssetGradeIconId": 20006
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 44000000,
+    "AssetGradeIconId": 20007
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 52000000,
+    "AssetGradeIconId": 20008
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 60000000,
+    "AssetGradeIconId": 20009
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 70000000,
+    "AssetGradeIconId": 20010
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 80000000,
+    "AssetGradeIconId": 21001
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 90000000,
+    "AssetGradeIconId": 21002
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 105000000,
+    "AssetGradeIconId": 21003
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 125000000,
+    "AssetGradeIconId": 21004
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 145000000,
+    "AssetGradeIconId": 21005
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 165000000,
+    "AssetGradeIconId": 21006
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 185000000,
+    "AssetGradeIconId": 21007
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 205000000,
+    "AssetGradeIconId": 21008
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 225000000,
+    "AssetGradeIconId": 21009
+  },
+  {
+    "BigHuntBossGradeGroupId": 2,
+    "NecessaryScore": 250000000,
+    "AssetGradeIconId": 21010
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 0,
+    "AssetGradeIconId": 11001
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 2000,
+    "AssetGradeIconId": 11002
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 4000,
+    "AssetGradeIconId": 11003
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 6000,
+    "AssetGradeIconId": 11004
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 8000,
+    "AssetGradeIconId": 11005
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 10000,
+    "AssetGradeIconId": 11006
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 14000,
+    "AssetGradeIconId": 11007
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 18000,
+    "AssetGradeIconId": 11008
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 22000,
+    "AssetGradeIconId": 11009
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 26000,
+    "AssetGradeIconId": 11010
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 30000,
+    "AssetGradeIconId": 12001
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 35000,
+    "AssetGradeIconId": 12002
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 40000,
+    "AssetGradeIconId": 12003
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 45000,
+    "AssetGradeIconId": 12004
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 50000,
+    "AssetGradeIconId": 12005
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 55000,
+    "AssetGradeIconId": 12006
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 60000,
+    "AssetGradeIconId": 12007
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 65000,
+    "AssetGradeIconId": 12008
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 70000,
+    "AssetGradeIconId": 12009
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 75000,
+    "AssetGradeIconId": 12010
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 80000,
+    "AssetGradeIconId": 13001
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 85000,
+    "AssetGradeIconId": 13002
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 90000,
+    "AssetGradeIconId": 13003
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 95000,
+    "AssetGradeIconId": 13004
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 100000,
+    "AssetGradeIconId": 13005
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 105000,
+    "AssetGradeIconId": 13006
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 110000,
+    "AssetGradeIconId": 13007
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 120000,
+    "AssetGradeIconId": 13008
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 130000,
+    "AssetGradeIconId": 13009
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 140000,
+    "AssetGradeIconId": 13010
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 150000,
+    "AssetGradeIconId": 14001
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 160000,
+    "AssetGradeIconId": 14002
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 170000,
+    "AssetGradeIconId": 14003
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 180000,
+    "AssetGradeIconId": 14004
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 190000,
+    "AssetGradeIconId": 14005
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 200000,
+    "AssetGradeIconId": 14006
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 210000,
+    "AssetGradeIconId": 14007
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 220000,
+    "AssetGradeIconId": 14008
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 230000,
+    "AssetGradeIconId": 14009
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 240000,
+    "AssetGradeIconId": 14010
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 250000,
+    "AssetGradeIconId": 15001
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 270000,
+    "AssetGradeIconId": 15002
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 290000,
+    "AssetGradeIconId": 15003
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 310000,
+    "AssetGradeIconId": 15004
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 330000,
+    "AssetGradeIconId": 15005
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 350000,
+    "AssetGradeIconId": 15006
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 370000,
+    "AssetGradeIconId": 15007
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 390000,
+    "AssetGradeIconId": 15008
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 410000,
+    "AssetGradeIconId": 15009
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 430000,
+    "AssetGradeIconId": 15010
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 450000,
+    "AssetGradeIconId": 16001
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 480000,
+    "AssetGradeIconId": 16002
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 510000,
+    "AssetGradeIconId": 16003
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 540000,
+    "AssetGradeIconId": 16004
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 570000,
+    "AssetGradeIconId": 16005
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 600000,
+    "AssetGradeIconId": 16006
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 640000,
+    "AssetGradeIconId": 16007
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 680000,
+    "AssetGradeIconId": 16008
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 720000,
+    "AssetGradeIconId": 16009
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 760000,
+    "AssetGradeIconId": 16010
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 800000,
+    "AssetGradeIconId": 17001
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 850000,
+    "AssetGradeIconId": 17002
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 900000,
+    "AssetGradeIconId": 17003
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 950000,
+    "AssetGradeIconId": 17004
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 1000000,
+    "AssetGradeIconId": 17005
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 1050000,
+    "AssetGradeIconId": 17006
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 1100000,
+    "AssetGradeIconId": 17007
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 1200000,
+    "AssetGradeIconId": 17008
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 1300000,
+    "AssetGradeIconId": 17009
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 1400000,
+    "AssetGradeIconId": 17010
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 1500000,
+    "AssetGradeIconId": 18001
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 1650000,
+    "AssetGradeIconId": 18002
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 1800000,
+    "AssetGradeIconId": 18003
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 1950000,
+    "AssetGradeIconId": 18004
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 2100000,
+    "AssetGradeIconId": 18005
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 2300000,
+    "AssetGradeIconId": 18006
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 2500000,
+    "AssetGradeIconId": 18007
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 2750000,
+    "AssetGradeIconId": 18008
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 3000000,
+    "AssetGradeIconId": 18009
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 3250000,
+    "AssetGradeIconId": 18010
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 3500000,
+    "AssetGradeIconId": 19001
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 3800000,
+    "AssetGradeIconId": 19002
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 4100000,
+    "AssetGradeIconId": 19003
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 4400000,
+    "AssetGradeIconId": 19004
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 4700000,
+    "AssetGradeIconId": 19005
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 5000000,
+    "AssetGradeIconId": 19006
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 5300000,
+    "AssetGradeIconId": 19007
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 5700000,
+    "AssetGradeIconId": 19008
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 6100000,
+    "AssetGradeIconId": 19009
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 6500000,
+    "AssetGradeIconId": 19010
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 9500000,
+    "AssetGradeIconId": 20001
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 15000000,
+    "AssetGradeIconId": 20002
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 20000000,
+    "AssetGradeIconId": 20003
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 25000000,
+    "AssetGradeIconId": 20004
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 30000000,
+    "AssetGradeIconId": 20005
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 36000000,
+    "AssetGradeIconId": 20006
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 44000000,
+    "AssetGradeIconId": 20007
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 52000000,
+    "AssetGradeIconId": 20008
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 60000000,
+    "AssetGradeIconId": 20009
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 70000000,
+    "AssetGradeIconId": 20010
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 80000000,
+    "AssetGradeIconId": 21001
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 90000000,
+    "AssetGradeIconId": 21002
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 105000000,
+    "AssetGradeIconId": 21003
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 125000000,
+    "AssetGradeIconId": 21004
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 145000000,
+    "AssetGradeIconId": 21005
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 165000000,
+    "AssetGradeIconId": 21006
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 185000000,
+    "AssetGradeIconId": 21007
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 205000000,
+    "AssetGradeIconId": 21008
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 225000000,
+    "AssetGradeIconId": 21009
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 250000000,
+    "AssetGradeIconId": 21010
+  },
+  {
+    "BigHuntBossGradeGroupId": 3,
+    "NecessaryScore": 500000000,
+    "AssetGradeIconId": 22001
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "LibraryMainQuestGroupId": 1,
+    "MainQuestChapterId": 22,
+    "SortOrder": 1,
+    "ChapterTextAssetId": 1,
+    "FirstStillAssetOrder": 3,
+    "SecondStillAssetOrder": 4
+  },
+  {
+    "LibraryMainQuestGroupId": 2,
+    "MainQuestChapterId": 22,
+    "SortOrder": 2,
+    "ChapterTextAssetId": 2,
+    "FirstStillAssetOrder": 5,
+    "SecondStillAssetOrder": 6
+  },
+  {
+    "LibraryMainQuestGroupId": 3,
+    "MainQuestChapterId": 30,
+    "SortOrder": 3,
+    "ChapterTextAssetId": 3,
+    "FirstStillAssetOrder": 5,
+    "SecondStillAssetOrder": 6
+  },
+  {
+    "LibraryMainQuestGroupId": 4,
+    "MainQuestChapterId": 30,
+    "SortOrder": 4,
+    "ChapterTextAssetId": 4,
+    "FirstStillAssetOrder": 3,
+    "SecondStillAssetOrder": 4
+  }
+]

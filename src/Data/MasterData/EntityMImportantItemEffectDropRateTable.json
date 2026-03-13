@@ -1,0 +1,80 @@
+[
+  {
+    "ImportantItemEffectDropRateId": 7,
+    "RatePermil": 500,
+    "ImportantItemEffectTargetQuestGroupId": 701,
+    "ImportantItemEffectTargetItemGroupId": 701
+  },
+  {
+    "ImportantItemEffectDropRateId": 8,
+    "RatePermil": 500,
+    "ImportantItemEffectTargetQuestGroupId": 801,
+    "ImportantItemEffectTargetItemGroupId": 801
+  },
+  {
+    "ImportantItemEffectDropRateId": 9,
+    "RatePermil": 500,
+    "ImportantItemEffectTargetQuestGroupId": 901,
+    "ImportantItemEffectTargetItemGroupId": 901
+  },
+  {
+    "ImportantItemEffectDropRateId": 10,
+    "RatePermil": 500,
+    "ImportantItemEffectTargetQuestGroupId": 1001,
+    "ImportantItemEffectTargetItemGroupId": 1001
+  },
+  {
+    "ImportantItemEffectDropRateId": 11,
+    "RatePermil": 500,
+    "ImportantItemEffectTargetQuestGroupId": 1101,
+    "ImportantItemEffectTargetItemGroupId": 1101
+  },
+  {
+    "ImportantItemEffectDropRateId": 12,
+    "RatePermil": 500,
+    "ImportantItemEffectTargetQuestGroupId": 1201,
+    "ImportantItemEffectTargetItemGroupId": 1201
+  },
+  {
+    "ImportantItemEffectDropRateId": 14,
+    "RatePermil": 800,
+    "ImportantItemEffectTargetQuestGroupId": 701,
+    "ImportantItemEffectTargetItemGroupId": 701
+  },
+  {
+    "ImportantItemEffectDropRateId": 15,
+    "RatePermil": 800,
+    "ImportantItemEffectTargetQuestGroupId": 801,
+    "ImportantItemEffectTargetItemGroupId": 801
+  },
+  {
+    "ImportantItemEffectDropRateId": 16,
+    "RatePermil": 800,
+    "ImportantItemEffectTargetQuestGroupId": 901,
+    "ImportantItemEffectTargetItemGroupId": 901
+  },
+  {
+    "ImportantItemEffectDropRateId": 17,
+    "RatePermil": 800,
+    "ImportantItemEffectTargetQuestGroupId": 1001,
+    "ImportantItemEffectTargetItemGroupId": 1001
+  },
+  {
+    "ImportantItemEffectDropRateId": 18,
+    "RatePermil": 800,
+    "ImportantItemEffectTargetQuestGroupId": 1101,
+    "ImportantItemEffectTargetItemGroupId": 1101
+  },
+  {
+    "ImportantItemEffectDropRateId": 19,
+    "RatePermil": 1000,
+    "ImportantItemEffectTargetQuestGroupId": 1201,
+    "ImportantItemEffectTargetItemGroupId": 1201
+  },
+  {
+    "ImportantItemEffectDropRateId": 21,
+    "RatePermil": 1000,
+    "ImportantItemEffectTargetQuestGroupId": 2101,
+    "ImportantItemEffectTargetItemGroupId": 0
+  }
+]

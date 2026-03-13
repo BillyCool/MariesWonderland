@@ -1,0 +1,47 @@
+[
+  {
+    "SkillBehaviourActivationConditionId": 1,
+    "SkillBehaviourActivationConditionHpRatioThresholdType": 4,
+    "ThresholdRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActivationConditionId": 2,
+    "SkillBehaviourActivationConditionHpRatioThresholdType": 4,
+    "ThresholdRatioPermil": 600
+  },
+  {
+    "SkillBehaviourActivationConditionId": 3,
+    "SkillBehaviourActivationConditionHpRatioThresholdType": 2,
+    "ThresholdRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActivationConditionId": 4,
+    "SkillBehaviourActivationConditionHpRatioThresholdType": 4,
+    "ThresholdRatioPermil": 150
+  },
+  {
+    "SkillBehaviourActivationConditionId": 5,
+    "SkillBehaviourActivationConditionHpRatioThresholdType": 2,
+    "ThresholdRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActivationConditionId": 6,
+    "SkillBehaviourActivationConditionHpRatioThresholdType": 2,
+    "ThresholdRatioPermil": 800
+  },
+  {
+    "SkillBehaviourActivationConditionId": 7,
+    "SkillBehaviourActivationConditionHpRatioThresholdType": 4,
+    "ThresholdRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActivationConditionId": 8,
+    "SkillBehaviourActivationConditionHpRatioThresholdType": 4,
+    "ThresholdRatioPermil": 200
+  },
+  {
+    "SkillBehaviourActivationConditionId": 9,
+    "SkillBehaviourActivationConditionHpRatioThresholdType": 4,
+    "ThresholdRatioPermil": 300
+  }
+]

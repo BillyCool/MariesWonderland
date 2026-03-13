@@ -1,0 +1,498 @@
+[
+  {
+    "QuestReleaseConditionId": 100001,
+    "MaxDeckPower": 15000
+  },
+  {
+    "QuestReleaseConditionId": 100002,
+    "MaxDeckPower": 25000
+  },
+  {
+    "QuestReleaseConditionId": 100003,
+    "MaxDeckPower": 40000
+  },
+  {
+    "QuestReleaseConditionId": 100005,
+    "MaxDeckPower": 15000
+  },
+  {
+    "QuestReleaseConditionId": 100006,
+    "MaxDeckPower": 25000
+  },
+  {
+    "QuestReleaseConditionId": 100007,
+    "MaxDeckPower": 40000
+  },
+  {
+    "QuestReleaseConditionId": 100009,
+    "MaxDeckPower": 15000
+  },
+  {
+    "QuestReleaseConditionId": 100010,
+    "MaxDeckPower": 25000
+  },
+  {
+    "QuestReleaseConditionId": 100011,
+    "MaxDeckPower": 40000
+  },
+  {
+    "QuestReleaseConditionId": 100013,
+    "MaxDeckPower": 15000
+  },
+  {
+    "QuestReleaseConditionId": 100014,
+    "MaxDeckPower": 25000
+  },
+  {
+    "QuestReleaseConditionId": 100015,
+    "MaxDeckPower": 40000
+  },
+  {
+    "QuestReleaseConditionId": 100017,
+    "MaxDeckPower": 15000
+  },
+  {
+    "QuestReleaseConditionId": 100018,
+    "MaxDeckPower": 25000
+  },
+  {
+    "QuestReleaseConditionId": 100019,
+    "MaxDeckPower": 40000
+  },
+  {
+    "QuestReleaseConditionId": 100021,
+    "MaxDeckPower": 15000
+  },
+  {
+    "QuestReleaseConditionId": 100022,
+    "MaxDeckPower": 25000
+  },
+  {
+    "QuestReleaseConditionId": 100023,
+    "MaxDeckPower": 40000
+  },
+  {
+    "QuestReleaseConditionId": 100025,
+    "MaxDeckPower": 15000
+  },
+  {
+    "QuestReleaseConditionId": 100026,
+    "MaxDeckPower": 25000
+  },
+  {
+    "QuestReleaseConditionId": 100027,
+    "MaxDeckPower": 40000
+  },
+  {
+    "QuestReleaseConditionId": 100029,
+    "MaxDeckPower": 15000
+  },
+  {
+    "QuestReleaseConditionId": 100030,
+    "MaxDeckPower": 25000
+  },
+  {
+    "QuestReleaseConditionId": 100031,
+    "MaxDeckPower": 40000
+  },
+  {
+    "QuestReleaseConditionId": 100033,
+    "MaxDeckPower": 15000
+  },
+  {
+    "QuestReleaseConditionId": 100034,
+    "MaxDeckPower": 25000
+  },
+  {
+    "QuestReleaseConditionId": 100035,
+    "MaxDeckPower": 40000
+  },
+  {
+    "QuestReleaseConditionId": 100037,
+    "MaxDeckPower": 15000
+  },
+  {
+    "QuestReleaseConditionId": 100038,
+    "MaxDeckPower": 25000
+  },
+  {
+    "QuestReleaseConditionId": 100039,
+    "MaxDeckPower": 40000
+  },
+  {
+    "QuestReleaseConditionId": 100041,
+    "MaxDeckPower": 15000
+  },
+  {
+    "QuestReleaseConditionId": 100042,
+    "MaxDeckPower": 25000
+  },
+  {
+    "QuestReleaseConditionId": 100043,
+    "MaxDeckPower": 40000
+  },
+  {
+    "QuestReleaseConditionId": 100045,
+    "MaxDeckPower": 15000
+  },
+  {
+    "QuestReleaseConditionId": 100046,
+    "MaxDeckPower": 25000
+  },
+  {
+    "QuestReleaseConditionId": 100047,
+    "MaxDeckPower": 40000
+  },
+  {
+    "QuestReleaseConditionId": 100049,
+    "MaxDeckPower": 15000
+  },
+  {
+    "QuestReleaseConditionId": 100050,
+    "MaxDeckPower": 25000
+  },
+  {
+    "QuestReleaseConditionId": 100051,
+    "MaxDeckPower": 40000
+  },
+  {
+    "QuestReleaseConditionId": 100053,
+    "MaxDeckPower": 15000
+  },
+  {
+    "QuestReleaseConditionId": 100054,
+    "MaxDeckPower": 25000
+  },
+  {
+    "QuestReleaseConditionId": 100055,
+    "MaxDeckPower": 40000
+  },
+  {
+    "QuestReleaseConditionId": 100057,
+    "MaxDeckPower": 15000
+  },
+  {
+    "QuestReleaseConditionId": 100058,
+    "MaxDeckPower": 25000
+  },
+  {
+    "QuestReleaseConditionId": 100059,
+    "MaxDeckPower": 40000
+  },
+  {
+    "QuestReleaseConditionId": 100061,
+    "MaxDeckPower": 15000
+  },
+  {
+    "QuestReleaseConditionId": 100062,
+    "MaxDeckPower": 25000
+  },
+  {
+    "QuestReleaseConditionId": 100063,
+    "MaxDeckPower": 40000
+  },
+  {
+    "QuestReleaseConditionId": 100065,
+    "MaxDeckPower": 15000
+  },
+  {
+    "QuestReleaseConditionId": 100066,
+    "MaxDeckPower": 25000
+  },
+  {
+    "QuestReleaseConditionId": 100067,
+    "MaxDeckPower": 40000
+  },
+  {
+    "QuestReleaseConditionId": 100069,
+    "MaxDeckPower": 15000
+  },
+  {
+    "QuestReleaseConditionId": 100070,
+    "MaxDeckPower": 25000
+  },
+  {
+    "QuestReleaseConditionId": 100071,
+    "MaxDeckPower": 40000
+  },
+  {
+    "QuestReleaseConditionId": 100072,
+    "MaxDeckPower": 15000
+  },
+  {
+    "QuestReleaseConditionId": 100073,
+    "MaxDeckPower": 25000
+  },
+  {
+    "QuestReleaseConditionId": 100074,
+    "MaxDeckPower": 40000
+  },
+  {
+    "QuestReleaseConditionId": 210001,
+    "MaxDeckPower": 16000
+  },
+  {
+    "QuestReleaseConditionId": 210002,
+    "MaxDeckPower": 20000
+  },
+  {
+    "QuestReleaseConditionId": 210003,
+    "MaxDeckPower": 24000
+  },
+  {
+    "QuestReleaseConditionId": 210004,
+    "MaxDeckPower": 28000
+  },
+  {
+    "QuestReleaseConditionId": 210005,
+    "MaxDeckPower": 32000
+  },
+  {
+    "QuestReleaseConditionId": 210006,
+    "MaxDeckPower": 40000
+  },
+  {
+    "QuestReleaseConditionId": 210007,
+    "MaxDeckPower": 48000
+  },
+  {
+    "QuestReleaseConditionId": 210008,
+    "MaxDeckPower": 56000
+  },
+  {
+    "QuestReleaseConditionId": 210009,
+    "MaxDeckPower": 64000
+  },
+  {
+    "QuestReleaseConditionId": 210010,
+    "MaxDeckPower": 72000
+  },
+  {
+    "QuestReleaseConditionId": 210011,
+    "MaxDeckPower": 24000
+  },
+  {
+    "QuestReleaseConditionId": 210012,
+    "MaxDeckPower": 28000
+  },
+  {
+    "QuestReleaseConditionId": 210013,
+    "MaxDeckPower": 32000
+  },
+  {
+    "QuestReleaseConditionId": 210014,
+    "MaxDeckPower": 36000
+  },
+  {
+    "QuestReleaseConditionId": 210015,
+    "MaxDeckPower": 40000
+  },
+  {
+    "QuestReleaseConditionId": 210016,
+    "MaxDeckPower": 48000
+  },
+  {
+    "QuestReleaseConditionId": 210017,
+    "MaxDeckPower": 56000
+  },
+  {
+    "QuestReleaseConditionId": 210018,
+    "MaxDeckPower": 64000
+  },
+  {
+    "QuestReleaseConditionId": 210019,
+    "MaxDeckPower": 72000
+  },
+  {
+    "QuestReleaseConditionId": 210020,
+    "MaxDeckPower": 80000
+  },
+  {
+    "QuestReleaseConditionId": 210021,
+    "MaxDeckPower": 32000
+  },
+  {
+    "QuestReleaseConditionId": 210022,
+    "MaxDeckPower": 36000
+  },
+  {
+    "QuestReleaseConditionId": 210023,
+    "MaxDeckPower": 40000
+  },
+  {
+    "QuestReleaseConditionId": 210024,
+    "MaxDeckPower": 44000
+  },
+  {
+    "QuestReleaseConditionId": 210025,
+    "MaxDeckPower": 48000
+  },
+  {
+    "QuestReleaseConditionId": 210026,
+    "MaxDeckPower": 55000
+  },
+  {
+    "QuestReleaseConditionId": 210027,
+    "MaxDeckPower": 60000
+  },
+  {
+    "QuestReleaseConditionId": 210028,
+    "MaxDeckPower": 70000
+  },
+  {
+    "QuestReleaseConditionId": 210029,
+    "MaxDeckPower": 80000
+  },
+  {
+    "QuestReleaseConditionId": 210030,
+    "MaxDeckPower": 90000
+  },
+  {
+    "QuestReleaseConditionId": 210031,
+    "MaxDeckPower": 36000
+  },
+  {
+    "QuestReleaseConditionId": 210032,
+    "MaxDeckPower": 40000
+  },
+  {
+    "QuestReleaseConditionId": 210033,
+    "MaxDeckPower": 44000
+  },
+  {
+    "QuestReleaseConditionId": 210034,
+    "MaxDeckPower": 48000
+  },
+  {
+    "QuestReleaseConditionId": 210035,
+    "MaxDeckPower": 60000
+  },
+  {
+    "QuestReleaseConditionId": 210036,
+    "MaxDeckPower": 60000
+  },
+  {
+    "QuestReleaseConditionId": 210037,
+    "MaxDeckPower": 70000
+  },
+  {
+    "QuestReleaseConditionId": 210038,
+    "MaxDeckPower": 80000
+  },
+  {
+    "QuestReleaseConditionId": 210039,
+    "MaxDeckPower": 80000
+  },
+  {
+    "QuestReleaseConditionId": 210040,
+    "MaxDeckPower": 90000
+  },
+  {
+    "QuestReleaseConditionId": 210042,
+    "MaxDeckPower": 75000
+  },
+  {
+    "QuestReleaseConditionId": 210043,
+    "MaxDeckPower": 80000
+  },
+  {
+    "QuestReleaseConditionId": 210044,
+    "MaxDeckPower": 85000
+  },
+  {
+    "QuestReleaseConditionId": 210045,
+    "MaxDeckPower": 90000
+  },
+  {
+    "QuestReleaseConditionId": 210046,
+    "MaxDeckPower": 100000
+  },
+  {
+    "QuestReleaseConditionId": 210047,
+    "MaxDeckPower": 110000
+  },
+  {
+    "QuestReleaseConditionId": 210048,
+    "MaxDeckPower": 120000
+  },
+  {
+    "QuestReleaseConditionId": 210049,
+    "MaxDeckPower": 130000
+  },
+  {
+    "QuestReleaseConditionId": 210050,
+    "MaxDeckPower": 140000
+  },
+  {
+    "QuestReleaseConditionId": 210052,
+    "MaxDeckPower": 125000
+  },
+  {
+    "QuestReleaseConditionId": 210053,
+    "MaxDeckPower": 130000
+  },
+  {
+    "QuestReleaseConditionId": 210054,
+    "MaxDeckPower": 135000
+  },
+  {
+    "QuestReleaseConditionId": 210055,
+    "MaxDeckPower": 140000
+  },
+  {
+    "QuestReleaseConditionId": 210056,
+    "MaxDeckPower": 150000
+  },
+  {
+    "QuestReleaseConditionId": 210057,
+    "MaxDeckPower": 160000
+  },
+  {
+    "QuestReleaseConditionId": 210058,
+    "MaxDeckPower": 170000
+  },
+  {
+    "QuestReleaseConditionId": 210059,
+    "MaxDeckPower": 180000
+  },
+  {
+    "QuestReleaseConditionId": 210060,
+    "MaxDeckPower": 190000
+  },
+  {
+    "QuestReleaseConditionId": 210062,
+    "MaxDeckPower": 165000
+  },
+  {
+    "QuestReleaseConditionId": 210063,
+    "MaxDeckPower": 170000
+  },
+  {
+    "QuestReleaseConditionId": 210064,
+    "MaxDeckPower": 175000
+  },
+  {
+    "QuestReleaseConditionId": 210065,
+    "MaxDeckPower": 180000
+  },
+  {
+    "QuestReleaseConditionId": 210066,
+    "MaxDeckPower": 190000
+  },
+  {
+    "QuestReleaseConditionId": 210067,
+    "MaxDeckPower": 200000
+  },
+  {
+    "QuestReleaseConditionId": 210068,
+    "MaxDeckPower": 210000
+  },
+  {
+    "QuestReleaseConditionId": 210069,
+    "MaxDeckPower": 220000
+  },
+  {
+    "QuestReleaseConditionId": 210070,
+    "MaxDeckPower": 230000
+  }
+]

@@ -1,0 +1,2338 @@
+[
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 900001,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 900
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 900002,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 700
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 900003,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 500
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 900004,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 300
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 900005,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 30,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1100
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 900006,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 30,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1200
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 900007,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 30,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1300
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 900008,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 31,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1100
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 900009,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 31,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1200
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 900010,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 31,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1300
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 900011,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 32,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1100
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 900012,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 32,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1200
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 900013,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 32,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1300
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 900014,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 33,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1100
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 900015,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 33,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1200
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 900016,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 33,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1300
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 900017,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 34,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1100
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 900018,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 34,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1200
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 900019,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 34,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1300
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 900020,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 16,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1100
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 900021,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 16,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1200
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 900022,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 16,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1300
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 900023,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 11,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1100
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 900024,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 11,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1200
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 900025,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 11,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1300
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 900026,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 12,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1100
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 900027,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 12,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1200
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 900028,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 12,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1300
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 900029,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 13,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1100
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 900030,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 13,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1200
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 900031,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 13,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1300
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 900032,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 14,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1100
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 900033,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 14,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1200
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 900034,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 14,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1300
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 900035,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 15,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1100
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 900036,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 15,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1200
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 900037,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 15,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1300
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 900038,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 100
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000001,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1440
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000002,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1460
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000003,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1480
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000004,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1500
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000005,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1520
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000006,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1540
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000007,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1560
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000008,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1580
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000009,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1610
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000010,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1640
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000011,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1670
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000012,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1700
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000013,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1730
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000014,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1760
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000015,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1800
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000016,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1440
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000017,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1460
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000018,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1480
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000019,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1500
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000020,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1520
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000021,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1540
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000022,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1560
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000023,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1580
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000024,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1610
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000025,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1640
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000026,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1670
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000027,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1700
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000028,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1730
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000029,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1760
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000030,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1800
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000031,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1400
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000032,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1420
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000033,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1440
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000034,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1460
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000035,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1480
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000036,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1500
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000037,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1530
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000038,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1560
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000039,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1590
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000040,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1620
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000041,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1650
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000042,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1680
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000043,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1710
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000044,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1740
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000045,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1800
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000046,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1400
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000047,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1420
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000048,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1440
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000049,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1460
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000050,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1480
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000051,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1500
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000052,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1530
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000053,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1560
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000054,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1590
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000055,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1620
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000056,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1650
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000057,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1680
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000058,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1710
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000059,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1740
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000060,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1800
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000061,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1500
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000062,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1520
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000063,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1550
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000064,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1570
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000065,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1600
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000066,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1630
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000067,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1670
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000068,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1700
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000069,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1740
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000070,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1770
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000071,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1810
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000072,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1850
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000073,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1890
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000074,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1930
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000075,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 2000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000076,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1400
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000077,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1420
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000078,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1440
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000079,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1460
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000080,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1480
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000081,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1500
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000082,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1530
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000083,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1560
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000084,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1590
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000085,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1620
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000086,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1650
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000087,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1680
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000088,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1710
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000089,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1740
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000090,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1800
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000091,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1500
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000092,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1520
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000093,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1550
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000094,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1570
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000095,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1600
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000096,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1630
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000097,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1670
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000098,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1700
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000099,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1740
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000100,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1770
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000101,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1810
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000102,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1850
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000103,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1890
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000104,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1930
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000105,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 2000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000106,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 7,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1500
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000107,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 7,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1520
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000108,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 7,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1550
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000109,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 7,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1570
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000110,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 7,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1600
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000111,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 7,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1630
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000112,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 7,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1670
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000113,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 7,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1700
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000114,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 7,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1740
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000115,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 7,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1770
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000116,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 7,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1810
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000117,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 7,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1850
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000118,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 7,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1890
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000119,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 7,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1930
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000120,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 7,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 2000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000121,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 32,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1500
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000122,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 32,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1520
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000123,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 32,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1550
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000124,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 32,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1570
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000125,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 32,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1600
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000126,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 32,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1630
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000127,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 32,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1670
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000128,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 32,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1700
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000129,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 32,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1740
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000130,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 32,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1770
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000131,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 32,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1810
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000132,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 32,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1850
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000133,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 32,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1890
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000134,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 32,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1930
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000135,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 32,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 2000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000136,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1500
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000137,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1520
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000138,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1550
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000139,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1570
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000140,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1600
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000141,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1630
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000142,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1670
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000143,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1700
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000144,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1740
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000145,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1770
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000146,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1810
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000147,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1850
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000148,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1890
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000149,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1930
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 1000150,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 2000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 2000001,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1350
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 2000002,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1360
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 2000003,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1370
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 2000004,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1380
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 2000005,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1400
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 2000006,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1420
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 2000007,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1440
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 2000008,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1460
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 2000009,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1480
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 2000010,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1500
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 2000011,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1520
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 2000012,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1540
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 2000013,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1560
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 2000014,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1580
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 2000015,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 2,
+    "SkillAbnormalTypeIdCondition": 0,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1600
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 2000016,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1350
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 2000017,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1360
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 2000018,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1370
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 2000019,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1380
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 2000020,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1400
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 2000021,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1420
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 2000022,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1440
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 2000023,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1460
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 2000024,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1480
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 2000025,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1500
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 2000026,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1520
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 2000027,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1540
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 2000028,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1560
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 2000029,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1580
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 2000030,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1600
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 2000031,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1350
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 2000032,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1360
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 2000033,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1370
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 2000034,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1380
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 2000035,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1400
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 2000036,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1420
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 2000037,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1440
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 2000038,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1460
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 2000039,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1480
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 2000040,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1500
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 2000041,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1520
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 2000042,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1540
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 2000043,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1560
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 2000044,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1580
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 2000045,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1600
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 8000001,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 2000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 8000001,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 1,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 7,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 2000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 8000001,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 2,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 17,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 2000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 8000001,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 3,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 15,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 2000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 8000002,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 4000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 8000003,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 4000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 8000004,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 4000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 8000005,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1700
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 8000006,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1700
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 8000007,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1700
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 8000008,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1700
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 8000009,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1700
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 8000010,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 1,
+    "DamageMultiplyCoefficientValuePermil": 1700
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 9000003,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 3000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 9000008,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 3000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 9000013,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 3000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 9000018,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 3000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 9000021,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1500
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 9000022,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1500
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 9000024,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1500
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 9000028,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 2000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 9000029,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 2000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 9000030,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 2000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 9000031,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 3000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 9000032,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 3000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 9000033,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 3000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 9000036,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 6000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 9000039,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 6000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 9000040,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 6000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 9000042,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 6000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 9000044,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 6000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 9000045,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 6000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 9000048,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1500
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 9000050,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 1,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1500
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 9000051,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 2,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 3000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 9000052,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 2,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 6000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 9000053,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 2,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 3000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 9000054,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 2,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 6000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 9000055,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 2,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 3000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 9000056,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 2,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 6000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 9000061,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 2,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 3000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 9000062,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 2,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 6000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 9000067,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 2,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 3000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 9000068,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 2,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 6000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 9000069,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 2,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 3000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 9000070,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 2,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 6000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 9000073,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 2,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 3000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 9000074,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 2,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 6000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 9000075,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 2,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 3000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 9000076,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 2,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 6000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 9000079,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 2,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 3000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 9000080,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 2,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 6000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 9000083,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 2,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 3000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 9000084,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 2,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 6000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 9000087,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 2,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 3000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 9000088,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 2,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 6000
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 9000091,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 7,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1500
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 9000092,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 7,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1500
+  },
+  {
+    "SkillDamageMultiplyAbnormalAttachedValueGroupId": 9000093,
+    "SkillDamageMultiplyAbnormalAttachedValueGroupIndex": 0,
+    "PolarityConditionType": 3,
+    "SkillAbnormalTypeIdCondition": 7,
+    "TargetType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1500
+  }
+]

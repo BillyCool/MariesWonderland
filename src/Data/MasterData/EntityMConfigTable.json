@@ -1,0 +1,438 @@
+[
+  {
+    "ConfigKey": "API_CALL_INTERVAL_SECOND_FOR_HEADER_NOTICE_COUNT",
+    "Value": "30"
+  },
+  {
+    "ConfigKey": "AUTO_ORGANIZATION_BRESS_ADDITIONAL_COEFFICIENT_APPLY_THRESHOLD",
+    "Value": "800"
+  },
+  {
+    "ConfigKey": "AUTO_ORGANIZATION_BRESS_ADDITIONAL_COEFFICIENT_PERMIL",
+    "Value": "100"
+  },
+  {
+    "ConfigKey": "CAGE_POLLING_DISTANCE",
+    "Value": "100"
+  },
+  {
+    "ConfigKey": "CHARACTER_REBIRTH_AVAILABLE_COUNT",
+    "Value": "5"
+  },
+  {
+    "ConfigKey": "CHARACTER_REBIRTH_CONSUME_GOLD",
+    "Value": "50000"
+  },
+  {
+    "ConfigKey": "CONSUMABLE_ITEM_ID_FOR_ARENA_COIN",
+    "Value": "4"
+  },
+  {
+    "ConfigKey": "CONSUMABLE_ITEM_ID_FOR_EXPLORE_TICKET",
+    "Value": "2001"
+  },
+  {
+    "ConfigKey": "CONSUMABLE_ITEM_ID_FOR_GOLD",
+    "Value": "1"
+  },
+  {
+    "ConfigKey": "CONSUMABLE_ITEM_ID_FOR_MEDAL",
+    "Value": "2"
+  },
+  {
+    "ConfigKey": "CONSUMABLE_ITEM_ID_FOR_MOM_POINT",
+    "Value": "9001"
+  },
+  {
+    "ConfigKey": "CONSUMABLE_ITEM_ID_FOR_PREMIUM_GACHA_TICKET",
+    "Value": "1002"
+  },
+  {
+    "ConfigKey": "CONSUMABLE_ITEM_ID_FOR_QUEST_SKIP_TICKET",
+    "Value": "2003"
+  },
+  {
+    "ConfigKey": "CONSUMABLE_ITEM_ID_FOR_RARE_MEDAL",
+    "Value": "3"
+  },
+  {
+    "ConfigKey": "CONSUMABLE_ITEM_MAX_SALABLE_COUNT_AT_ONCE",
+    "Value": "99"
+  },
+  {
+    "ConfigKey": "COSTUME_AWAKEN_AVAILABLE_COUNT",
+    "Value": "5"
+  },
+  {
+    "ConfigKey": "COSTUME_LIMIT_BREAK_AVAILABLE_COUNT",
+    "Value": "4"
+  },
+  {
+    "ConfigKey": "COSTUME_LOTTERY_EFFECT_DRAW_SLOT_CONSUME_GOLD",
+    "Value": "30000"
+  },
+  {
+    "ConfigKey": "COSTUME_LOTTERY_EFFECT_SLOT_MAX_COUNT",
+    "Value": "3"
+  },
+  {
+    "ConfigKey": "COSTUME_LOTTERY_EFFECT_UNLOCK_SLOT_CONSUME_GOLD",
+    "Value": "100000"
+  },
+  {
+    "ConfigKey": "COSTUME_SKILL_1_LEVEL_LIST",
+    "Value": "1,1,2,2,3"
+  },
+  {
+    "ConfigKey": "COSTUME_SKILL_2_LEVEL_LIST",
+    "Value": "0,1,1,2,3"
+  },
+  {
+    "ConfigKey": "COSTUME_STATUS_FUNCTION_THRESHOLD_LEVEL",
+    "Value": "90"
+  },
+  {
+    "ConfigKey": "COSTUME_STATUS_FUNCTION_THRESHOLD_OVER_COEFFICIENT",
+    "Value": "850"
+  },
+  {
+    "ConfigKey": "DECK_NAME_MAX_LENGTH",
+    "Value": "10"
+  },
+  {
+    "ConfigKey": "DECK_NAME_MIN_LENGTH",
+    "Value": "1"
+  },
+  {
+    "ConfigKey": "END_QUEST_TUTORIAL_WEB_VIEW_PLAY_GUIDE_ID",
+    "Value": "4"
+  },
+  {
+    "ConfigKey": "ENHANCE_CONSUMABLE_WEAPON_COUNT_AT_ONCE",
+    "Value": "20"
+  },
+  {
+    "ConfigKey": "EXPLORE_PLAY_INTERVAL_MINUTE",
+    "Value": "480"
+  },
+  {
+    "ConfigKey": "FUNCTION_LOSE_FIRST_THRESHOLD_AFTER_CHAPTER_QUEST_ID",
+    "Value": "61"
+  },
+  {
+    "ConfigKey": "FUNCTION_UNLOCK_CHAPTER_ID_FOR_MENU",
+    "Value": "2"
+  },
+  {
+    "ConfigKey": "FUNCTION_UNLOCK_EVALUATE_CONDITION_ID_FOR_BIG_HUNT_BOARD",
+    "Value": "3000"
+  },
+  {
+    "ConfigKey": "FUNCTION_UNLOCK_QUEST_ID_FOR_BIG_HUNT",
+    "Value": "81"
+  },
+  {
+    "ConfigKey": "FUNCTION_UNLOCK_QUEST_ID_FOR_CHARACTER_BOARD",
+    "Value": "42"
+  },
+  {
+    "ConfigKey": "FUNCTION_UNLOCK_QUEST_ID_FOR_CHARACTER_VIEWER",
+    "Value": "21"
+  },
+  {
+    "ConfigKey": "FUNCTION_UNLOCK_QUEST_ID_FOR_COMPANION",
+    "Value": "21"
+  },
+  {
+    "ConfigKey": "FUNCTION_UNLOCK_QUEST_ID_FOR_DAILY_GACHA",
+    "Value": "61"
+  },
+  {
+    "ConfigKey": "FUNCTION_UNLOCK_QUEST_ID_FOR_DAILY_MISSION_V2",
+    "Value": "0"
+  },
+  {
+    "ConfigKey": "FUNCTION_UNLOCK_QUEST_ID_FOR_DAILY_QUEST",
+    "Value": "0"
+  },
+  {
+    "ConfigKey": "FUNCTION_UNLOCK_QUEST_ID_FOR_DRESSUP_COSTUME",
+    "Value": "121"
+  },
+  {
+    "ConfigKey": "FUNCTION_UNLOCK_QUEST_ID_FOR_EVENT_QUEST",
+    "Value": "21"
+  },
+  {
+    "ConfigKey": "FUNCTION_UNLOCK_QUEST_ID_FOR_HARDQUEST",
+    "Value": "61"
+  },
+  {
+    "ConfigKey": "FUNCTION_UNLOCK_QUEST_ID_FOR_MAP",
+    "Value": "22"
+  },
+  {
+    "ConfigKey": "FUNCTION_UNLOCK_QUEST_ID_FOR_PARTS",
+    "Value": "61"
+  },
+  {
+    "ConfigKey": "FUNCTION_UNLOCK_QUEST_ID_FOR_PORTAL_CAGE",
+    "Value": "21"
+  },
+  {
+    "ConfigKey": "FUNCTION_UNLOCK_QUEST_ID_FOR_PVP",
+    "Value": "61"
+  },
+  {
+    "ConfigKey": "FUNCTION_UNLOCK_QUEST_ID_FOR_QUEST_SKIP",
+    "Value": "11"
+  },
+  {
+    "ConfigKey": "FUNCTION_UNLOCK_QUEST_ID_FOR_VERYHARDQUEST",
+    "Value": "10054"
+  },
+  {
+    "ConfigKey": "GIFT_RECEIVED_LIST_TOTAL_COUNT",
+    "Value": "100"
+  },
+  {
+    "ConfigKey": "GRPC_TIMEOUT_MILLISECONDS",
+    "Value": "10000"
+  },
+  {
+    "ConfigKey": "INITIAL_USER_QUEST_SCENE_ID",
+    "Value": "2"
+  },
+  {
+    "ConfigKey": "LIMITED_SHOP_ID",
+    "Value": "1901"
+  },
+  {
+    "ConfigKey": "LIMIT_QUEST_TUTORIAL_WEB_VIEW_PLAY_GUIDE_ID",
+    "Value": "966"
+  },
+  {
+    "ConfigKey": "LOSE_FIRST_MINIMUM_THRESHOLD_QUEST_ID",
+    "Value": "11"
+  },
+  {
+    "ConfigKey": "LOSE_FIRST_THRESHOLD_QUEST_ID",
+    "Value": "41"
+  },
+  {
+    "ConfigKey": "MAMA_TAP_COUNT_INTERVAL",
+    "Value": "5"
+  },
+  {
+    "ConfigKey": "MATERIAL_MAX_SALABLE_COUNT_AT_ONCE",
+    "Value": "99"
+  },
+  {
+    "ConfigKey": "MATERIAL_SAME_WEAPON_EXP_COEFFICIENT_PERMIL",
+    "Value": "1500"
+  },
+  {
+    "ConfigKey": "MISSION_TAP_TARGET_ACTOR_ID",
+    "Value": "4001001"
+  },
+  {
+    "ConfigKey": "MOM_POINT_OPEN_DATE_MILLI_SECOND",
+    "Value": "4102412400000"
+  },
+  {
+    "ConfigKey": "MOM_POINT_SHOP_ID",
+    "Value": "12001"
+  },
+  {
+    "ConfigKey": "NECESSARY_GEM_COUNT_FOR_GUERRILLA_OPEN",
+    "Value": "100"
+  },
+  {
+    "ConfigKey": "PARTS_PRESET_NAME_MAX_LENGTH",
+    "Value": "10"
+  },
+  {
+    "ConfigKey": "PARTS_PRESET_NAME_MIN_LENGTH",
+    "Value": "1"
+  },
+  {
+    "ConfigKey": "PARTS_PRESET_TAG_NAME_MAX_LENGTH",
+    "Value": "8"
+  },
+  {
+    "ConfigKey": "PARTS_PRESET_TAG_NAME_MIN_LENGTH",
+    "Value": "1"
+  },
+  {
+    "ConfigKey": "PORTAL_CAGE_SCENE_ID",
+    "Value": "1"
+  },
+  {
+    "ConfigKey": "POSSESSION_COUNT_LIMIT_BP",
+    "Value": "999"
+  },
+  {
+    "ConfigKey": "POSSESSION_COUNT_LIMIT_CONSUMABLE_ITEM",
+    "Value": "99999"
+  },
+  {
+    "ConfigKey": "POSSESSION_COUNT_LIMIT_GACHA_MEDAL",
+    "Value": "9999999"
+  },
+  {
+    "ConfigKey": "POSSESSION_COUNT_LIMIT_IMPORTANT_ITEM",
+    "Value": "999"
+  },
+  {
+    "ConfigKey": "POSSESSION_COUNT_LIMIT_MATERIAL",
+    "Value": "99999"
+  },
+  {
+    "ConfigKey": "POSSESSION_COUNT_LIMIT_MISSION_PASS_POINT",
+    "Value": "9999999"
+  },
+  {
+    "ConfigKey": "POSSESSION_COUNT_LIMIT_MONEY",
+    "Value": "999999999"
+  },
+  {
+    "ConfigKey": "POSSESSION_COUNT_LIMIT_PARTS",
+    "Value": "999"
+  },
+  {
+    "ConfigKey": "POSSESSION_COUNT_LIMIT_PREMIUM_PASS",
+    "Value": "9999999"
+  },
+  {
+    "ConfigKey": "POSSESSION_COUNT_LIMIT_STAMINA",
+    "Value": "999"
+  },
+  {
+    "ConfigKey": "POSSESSION_COUNT_LIMIT_WEAPON",
+    "Value": "999"
+  },
+  {
+    "ConfigKey": "POSSESSION_SELL_COUNT_LIMIT_AT_ONCE",
+    "Value": "99"
+  },
+  {
+    "ConfigKey": "PURCHASE_ALERT_THRESHOLD_MONEY",
+    "Value": "100000"
+  },
+  {
+    "ConfigKey": "PVP_BATTLE_CONSUME_BATTLE_POINT",
+    "Value": "10"
+  },
+  {
+    "ConfigKey": "PVP_MAX_BATTLE_POINT",
+    "Value": "100"
+  },
+  {
+    "ConfigKey": "PVP_UPDATE_MATCHING_CONSUME_BATTLE_POINT",
+    "Value": "5"
+  },
+  {
+    "ConfigKey": "QUEST_MISSION_BIG_WIN_BONUS_POWER",
+    "Value": "30000"
+  },
+  {
+    "ConfigKey": "QUEST_RESTART_GRACE_TIME_AFTER_EVENT",
+    "Value": "60"
+  },
+  {
+    "ConfigKey": "QUEST_SKIP_MAX_COUNT_AT_ONCE",
+    "Value": "100"
+  },
+  {
+    "ConfigKey": "SWITCH_REWARD_RECEIVE_FLOW_DATE_MILLI_SECOND_FOR_BIG_HUNT",
+    "Value": "1676818800000"
+  },
+  {
+    "ConfigKey": "SWITCH_REWARD_RECEIVE_FLOW_DATE_MILLI_SECOND_FOR_PVP",
+    "Value": "1676818800000"
+  },
+  {
+    "ConfigKey": "TUTORIAL_SORT_CHARACTER_ID",
+    "Value": "1007"
+  },
+  {
+    "ConfigKey": "TUTORIAL_SORT_WEAPON_ID",
+    "Value": "100011"
+  },
+  {
+    "ConfigKey": "USER_BATTLE_POINT_RECOVERY_SECOND",
+    "Value": "180"
+  },
+  {
+    "ConfigKey": "USER_COMPANION_DEFAULT_HEADUP_DISPLAY_ID",
+    "Value": "1"
+  },
+  {
+    "ConfigKey": "USER_COSTUME_DEFAULT_HEADUP_DISPLAY_ID",
+    "Value": "1"
+  },
+  {
+    "ConfigKey": "USER_FRIEND_MAX_NUMBER",
+    "Value": "100"
+  },
+  {
+    "ConfigKey": "USER_FRIEND_RECEIVE_CHEER_MAX_NUMBER",
+    "Value": "100"
+  },
+  {
+    "ConfigKey": "USER_FRIEND_RECEIVE_REQUEST_MAX_NUMBER",
+    "Value": "100"
+  },
+  {
+    "ConfigKey": "USER_FRIEND_SEND_CHEER_MAX_NUMBER",
+    "Value": "100"
+  },
+  {
+    "ConfigKey": "USER_LEVEL_EXP_NUMERICAL_PARAMETER_MAP_ID",
+    "Value": "1"
+  },
+  {
+    "ConfigKey": "USER_MESSAGE_MAX_LENGTH",
+    "Value": "36"
+  },
+  {
+    "ConfigKey": "USER_MESSAGE_MIN_LENGTH",
+    "Value": "1"
+  },
+  {
+    "ConfigKey": "USER_NAME_MAX_LENGTH",
+    "Value": "10"
+  },
+  {
+    "ConfigKey": "USER_NAME_MIN_LENGTH",
+    "Value": "1"
+  },
+  {
+    "ConfigKey": "USER_STAMINA_RECOVERY_SECOND",
+    "Value": "180"
+  },
+  {
+    "ConfigKey": "USE_TIER_PRICE_FLAG",
+    "Value": "0"
+  },
+  {
+    "ConfigKey": "WEAPON_ENHANCE_CALC_COEFFICIENT_PERMIL",
+    "Value": "100"
+  },
+  {
+    "ConfigKey": "WEAPON_LIMIT_BREAK_AVAILABLE_COUNT",
+    "Value": "4"
+  },
+  {
+    "ConfigKey": "WEAPON_SELL_PRICE_CALC_FIXED_VALUE_PERMIL",
+    "Value": "100"
+  },
+  {
+    "ConfigKey": "WEAPON_STATUS_FUNCTION_THRESHOLD_LEVEL",
+    "Value": "90"
+  },
+  {
+    "ConfigKey": "WEAPON_STATUS_FUNCTION_THRESHOLD_OVER_COEFFICIENT",
+    "Value": "290"
+  }
+]

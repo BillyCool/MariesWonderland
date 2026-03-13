@@ -1,0 +1,47 @@
+[
+  {
+    "BigHuntBossQuestId": 1,
+    "BigHuntBossId": 1,
+    "BigHuntQuestGroupId": 1,
+    "BigHuntBossQuestScoreCoefficientId": 1,
+    "BigHuntScoreRewardGroupScheduleId": 1,
+    "BigHuntLinkId": 1,
+    "DailyChallengeCount": 1
+  },
+  {
+    "BigHuntBossQuestId": 2,
+    "BigHuntBossId": 2,
+    "BigHuntQuestGroupId": 2,
+    "BigHuntBossQuestScoreCoefficientId": 1,
+    "BigHuntScoreRewardGroupScheduleId": 2,
+    "BigHuntLinkId": 1,
+    "DailyChallengeCount": 1
+  },
+  {
+    "BigHuntBossQuestId": 3,
+    "BigHuntBossId": 3,
+    "BigHuntQuestGroupId": 3,
+    "BigHuntBossQuestScoreCoefficientId": 1,
+    "BigHuntScoreRewardGroupScheduleId": 3,
+    "BigHuntLinkId": 1,
+    "DailyChallengeCount": 1
+  },
+  {
+    "BigHuntBossQuestId": 4,
+    "BigHuntBossId": 4,
+    "BigHuntQuestGroupId": 4,
+    "BigHuntBossQuestScoreCoefficientId": 1,
+    "BigHuntScoreRewardGroupScheduleId": 4,
+    "BigHuntLinkId": 1,
+    "DailyChallengeCount": 1
+  },
+  {
+    "BigHuntBossQuestId": 5,
+    "BigHuntBossId": 5,
+    "BigHuntQuestGroupId": 5,
+    "BigHuntBossQuestScoreCoefficientId": 1,
+    "BigHuntScoreRewardGroupScheduleId": 5,
+    "BigHuntLinkId": 1,
+    "DailyChallengeCount": 1
+  }
+]

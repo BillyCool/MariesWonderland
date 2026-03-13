@@ -1,0 +1,618 @@
+[
+  {
+    "WeaponStoryReleaseConditionGroupId": 1,
+    "StoryIndex": 1,
+    "WeaponStoryReleaseConditionType": 1,
+    "ConditionValue": 0,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 1,
+    "StoryIndex": 2,
+    "WeaponStoryReleaseConditionType": 3,
+    "ConditionValue": 0,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 1,
+    "StoryIndex": 3,
+    "WeaponStoryReleaseConditionType": 5,
+    "ConditionValue": 1,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 1,
+    "StoryIndex": 4,
+    "WeaponStoryReleaseConditionType": 4,
+    "ConditionValue": 0,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 2,
+    "StoryIndex": 1,
+    "WeaponStoryReleaseConditionType": 1,
+    "ConditionValue": 0,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 2,
+    "StoryIndex": 2,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 5,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 2,
+    "StoryIndex": 3,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 8,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 2,
+    "StoryIndex": 4,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 11,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 3,
+    "StoryIndex": 1,
+    "WeaponStoryReleaseConditionType": 1,
+    "ConditionValue": 0,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 3,
+    "StoryIndex": 2,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 15,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 3,
+    "StoryIndex": 3,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 18,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 3,
+    "StoryIndex": 4,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 21,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 4,
+    "StoryIndex": 1,
+    "WeaponStoryReleaseConditionType": 1,
+    "ConditionValue": 0,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 4,
+    "StoryIndex": 2,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 25,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 4,
+    "StoryIndex": 3,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 28,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 4,
+    "StoryIndex": 4,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 31,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 5,
+    "StoryIndex": 1,
+    "WeaponStoryReleaseConditionType": 1,
+    "ConditionValue": 0,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 5,
+    "StoryIndex": 2,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 35,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 5,
+    "StoryIndex": 3,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 38,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 5,
+    "StoryIndex": 4,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 41,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 6,
+    "StoryIndex": 1,
+    "WeaponStoryReleaseConditionType": 1,
+    "ConditionValue": 0,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 6,
+    "StoryIndex": 2,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 45,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 6,
+    "StoryIndex": 3,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 48,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 6,
+    "StoryIndex": 4,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 51,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 7,
+    "StoryIndex": 1,
+    "WeaponStoryReleaseConditionType": 1,
+    "ConditionValue": 0,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 7,
+    "StoryIndex": 2,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 61,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 7,
+    "StoryIndex": 3,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 61,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 7,
+    "StoryIndex": 4,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 61,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 8,
+    "StoryIndex": 1,
+    "WeaponStoryReleaseConditionType": 1,
+    "ConditionValue": 0,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 8,
+    "StoryIndex": 2,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 65,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 8,
+    "StoryIndex": 3,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 68,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 8,
+    "StoryIndex": 4,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 71,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 9,
+    "StoryIndex": 1,
+    "WeaponStoryReleaseConditionType": 1,
+    "ConditionValue": 0,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 9,
+    "StoryIndex": 2,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 75,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 9,
+    "StoryIndex": 3,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 78,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 9,
+    "StoryIndex": 4,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 81,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 10,
+    "StoryIndex": 1,
+    "WeaponStoryReleaseConditionType": 1,
+    "ConditionValue": 0,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 10,
+    "StoryIndex": 2,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 85,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 10,
+    "StoryIndex": 3,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 88,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 10,
+    "StoryIndex": 4,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 91,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 11,
+    "StoryIndex": 1,
+    "WeaponStoryReleaseConditionType": 1,
+    "ConditionValue": 0,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 11,
+    "StoryIndex": 2,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 95,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 11,
+    "StoryIndex": 3,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 98,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 11,
+    "StoryIndex": 4,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 101,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 12,
+    "StoryIndex": 1,
+    "WeaponStoryReleaseConditionType": 1,
+    "ConditionValue": 0,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 12,
+    "StoryIndex": 2,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 105,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 12,
+    "StoryIndex": 3,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 108,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 12,
+    "StoryIndex": 4,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 111,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 13,
+    "StoryIndex": 1,
+    "WeaponStoryReleaseConditionType": 1,
+    "ConditionValue": 0,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 13,
+    "StoryIndex": 2,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 115,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 13,
+    "StoryIndex": 3,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 118,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 13,
+    "StoryIndex": 4,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 121,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 14,
+    "StoryIndex": 1,
+    "WeaponStoryReleaseConditionType": 1,
+    "ConditionValue": 0,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 14,
+    "StoryIndex": 2,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 0,
+    "WeaponStoryReleaseConditionOperationGroupId": 141
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 14,
+    "StoryIndex": 3,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 0,
+    "WeaponStoryReleaseConditionOperationGroupId": 142
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 14,
+    "StoryIndex": 4,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 0,
+    "WeaponStoryReleaseConditionOperationGroupId": 143
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 15,
+    "StoryIndex": 1,
+    "WeaponStoryReleaseConditionType": 1,
+    "ConditionValue": 0,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 15,
+    "StoryIndex": 2,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 0,
+    "WeaponStoryReleaseConditionOperationGroupId": 151
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 15,
+    "StoryIndex": 3,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 0,
+    "WeaponStoryReleaseConditionOperationGroupId": 152
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 15,
+    "StoryIndex": 4,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 0,
+    "WeaponStoryReleaseConditionOperationGroupId": 153
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 16,
+    "StoryIndex": 1,
+    "WeaponStoryReleaseConditionType": 1,
+    "ConditionValue": 0,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 16,
+    "StoryIndex": 2,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 0,
+    "WeaponStoryReleaseConditionOperationGroupId": 161
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 16,
+    "StoryIndex": 3,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 0,
+    "WeaponStoryReleaseConditionOperationGroupId": 162
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 16,
+    "StoryIndex": 4,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 0,
+    "WeaponStoryReleaseConditionOperationGroupId": 163
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 17,
+    "StoryIndex": 1,
+    "WeaponStoryReleaseConditionType": 1,
+    "ConditionValue": 0,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 17,
+    "StoryIndex": 2,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 0,
+    "WeaponStoryReleaseConditionOperationGroupId": 171
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 17,
+    "StoryIndex": 3,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 0,
+    "WeaponStoryReleaseConditionOperationGroupId": 172
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 17,
+    "StoryIndex": 4,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 0,
+    "WeaponStoryReleaseConditionOperationGroupId": 173
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 18,
+    "StoryIndex": 1,
+    "WeaponStoryReleaseConditionType": 1,
+    "ConditionValue": 0,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 18,
+    "StoryIndex": 2,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 0,
+    "WeaponStoryReleaseConditionOperationGroupId": 181
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 18,
+    "StoryIndex": 3,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 0,
+    "WeaponStoryReleaseConditionOperationGroupId": 182
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 18,
+    "StoryIndex": 4,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 0,
+    "WeaponStoryReleaseConditionOperationGroupId": 183
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 19,
+    "StoryIndex": 1,
+    "WeaponStoryReleaseConditionType": 1,
+    "ConditionValue": 0,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 19,
+    "StoryIndex": 2,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 0,
+    "WeaponStoryReleaseConditionOperationGroupId": 191
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 19,
+    "StoryIndex": 3,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 0,
+    "WeaponStoryReleaseConditionOperationGroupId": 192
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 19,
+    "StoryIndex": 4,
+    "WeaponStoryReleaseConditionType": 6,
+    "ConditionValue": 0,
+    "WeaponStoryReleaseConditionOperationGroupId": 193
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 20,
+    "StoryIndex": 1,
+    "WeaponStoryReleaseConditionType": 1,
+    "ConditionValue": 0,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 20,
+    "StoryIndex": 2,
+    "WeaponStoryReleaseConditionType": 1,
+    "ConditionValue": 0,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 20,
+    "StoryIndex": 3,
+    "WeaponStoryReleaseConditionType": 1,
+    "ConditionValue": 0,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 20,
+    "StoryIndex": 4,
+    "WeaponStoryReleaseConditionType": 1,
+    "ConditionValue": 0,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 101,
+    "StoryIndex": 1,
+    "WeaponStoryReleaseConditionType": 1,
+    "ConditionValue": 0,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 101,
+    "StoryIndex": 2,
+    "WeaponStoryReleaseConditionType": 2,
+    "ConditionValue": 10,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 101,
+    "StoryIndex": 3,
+    "WeaponStoryReleaseConditionType": 2,
+    "ConditionValue": 30,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 101,
+    "StoryIndex": 4,
+    "WeaponStoryReleaseConditionType": 3,
+    "ConditionValue": 0,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 10001,
+    "StoryIndex": 1,
+    "WeaponStoryReleaseConditionType": 1,
+    "ConditionValue": 0,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 10001,
+    "StoryIndex": 2,
+    "WeaponStoryReleaseConditionType": 5,
+    "ConditionValue": 4,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 10001,
+    "StoryIndex": 3,
+    "WeaponStoryReleaseConditionType": 5,
+    "ConditionValue": 7,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  },
+  {
+    "WeaponStoryReleaseConditionGroupId": 10001,
+    "StoryIndex": 4,
+    "WeaponStoryReleaseConditionType": 5,
+    "ConditionValue": 10,
+    "WeaponStoryReleaseConditionOperationGroupId": 0
+  }
+]

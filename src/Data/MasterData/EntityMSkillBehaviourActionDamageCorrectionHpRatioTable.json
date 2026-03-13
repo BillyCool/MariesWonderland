@@ -1,0 +1,4712 @@
+[
+  {
+    "SkillBehaviourActionId": 1000001,
+    "CorrectionMaxValuePermil": 1060,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 0
+  },
+  {
+    "SkillBehaviourActionId": 1000002,
+    "CorrectionMaxValuePermil": 1070,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 0
+  },
+  {
+    "SkillBehaviourActionId": 1000003,
+    "CorrectionMaxValuePermil": 1080,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 0
+  },
+  {
+    "SkillBehaviourActionId": 1000004,
+    "CorrectionMaxValuePermil": 1090,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 0
+  },
+  {
+    "SkillBehaviourActionId": 1000005,
+    "CorrectionMaxValuePermil": 1100,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 0
+  },
+  {
+    "SkillBehaviourActionId": 1000006,
+    "CorrectionMaxValuePermil": 1110,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 0
+  },
+  {
+    "SkillBehaviourActionId": 1000007,
+    "CorrectionMaxValuePermil": 1120,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 0
+  },
+  {
+    "SkillBehaviourActionId": 1000008,
+    "CorrectionMaxValuePermil": 1130,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 0
+  },
+  {
+    "SkillBehaviourActionId": 1000009,
+    "CorrectionMaxValuePermil": 1140,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 0
+  },
+  {
+    "SkillBehaviourActionId": 1000010,
+    "CorrectionMaxValuePermil": 1150,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 0
+  },
+  {
+    "SkillBehaviourActionId": 1000011,
+    "CorrectionMaxValuePermil": 1160,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 0
+  },
+  {
+    "SkillBehaviourActionId": 1000012,
+    "CorrectionMaxValuePermil": 1170,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 0
+  },
+  {
+    "SkillBehaviourActionId": 1000013,
+    "CorrectionMaxValuePermil": 1180,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 0
+  },
+  {
+    "SkillBehaviourActionId": 1000014,
+    "CorrectionMaxValuePermil": 1190,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 0
+  },
+  {
+    "SkillBehaviourActionId": 1000015,
+    "CorrectionMaxValuePermil": 1200,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 0
+  },
+  {
+    "SkillBehaviourActionId": 1000016,
+    "CorrectionMaxValuePermil": 1060,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 1000017,
+    "CorrectionMaxValuePermil": 1070,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 1000018,
+    "CorrectionMaxValuePermil": 1080,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 1000019,
+    "CorrectionMaxValuePermil": 1090,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 1000020,
+    "CorrectionMaxValuePermil": 1100,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 1000021,
+    "CorrectionMaxValuePermil": 1110,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 1000022,
+    "CorrectionMaxValuePermil": 1120,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 1000023,
+    "CorrectionMaxValuePermil": 1130,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 1000024,
+    "CorrectionMaxValuePermil": 1140,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 1000025,
+    "CorrectionMaxValuePermil": 1150,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 1000026,
+    "CorrectionMaxValuePermil": 1160,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 1000027,
+    "CorrectionMaxValuePermil": 1170,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 1000028,
+    "CorrectionMaxValuePermil": 1180,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 1000029,
+    "CorrectionMaxValuePermil": 1190,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 1000030,
+    "CorrectionMaxValuePermil": 1200,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 1000031,
+    "CorrectionMaxValuePermil": 1400,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000032,
+    "CorrectionMaxValuePermil": 1420,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000033,
+    "CorrectionMaxValuePermil": 1440,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000034,
+    "CorrectionMaxValuePermil": 1460,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000035,
+    "CorrectionMaxValuePermil": 1480,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000036,
+    "CorrectionMaxValuePermil": 1500,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000037,
+    "CorrectionMaxValuePermil": 1530,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000038,
+    "CorrectionMaxValuePermil": 1560,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000039,
+    "CorrectionMaxValuePermil": 1590,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000040,
+    "CorrectionMaxValuePermil": 1620,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000041,
+    "CorrectionMaxValuePermil": 1650,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000042,
+    "CorrectionMaxValuePermil": 1680,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000043,
+    "CorrectionMaxValuePermil": 1710,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000044,
+    "CorrectionMaxValuePermil": 1740,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000045,
+    "CorrectionMaxValuePermil": 1800,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000046,
+    "CorrectionMaxValuePermil": 1400,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000047,
+    "CorrectionMaxValuePermil": 1420,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000048,
+    "CorrectionMaxValuePermil": 1440,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000049,
+    "CorrectionMaxValuePermil": 1460,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000050,
+    "CorrectionMaxValuePermil": 1480,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000051,
+    "CorrectionMaxValuePermil": 1500,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000052,
+    "CorrectionMaxValuePermil": 1530,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000053,
+    "CorrectionMaxValuePermil": 1560,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000054,
+    "CorrectionMaxValuePermil": 1590,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000055,
+    "CorrectionMaxValuePermil": 1620,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000056,
+    "CorrectionMaxValuePermil": 1650,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000057,
+    "CorrectionMaxValuePermil": 1680,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000058,
+    "CorrectionMaxValuePermil": 1710,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000059,
+    "CorrectionMaxValuePermil": 1740,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000060,
+    "CorrectionMaxValuePermil": 1800,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000061,
+    "CorrectionMaxValuePermil": 1260,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 1000062,
+    "CorrectionMaxValuePermil": 1270,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 1000063,
+    "CorrectionMaxValuePermil": 1280,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 1000064,
+    "CorrectionMaxValuePermil": 1290,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 1000065,
+    "CorrectionMaxValuePermil": 1300,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 1000066,
+    "CorrectionMaxValuePermil": 1310,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 1000067,
+    "CorrectionMaxValuePermil": 1320,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 1000068,
+    "CorrectionMaxValuePermil": 1330,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 1000069,
+    "CorrectionMaxValuePermil": 1340,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 1000070,
+    "CorrectionMaxValuePermil": 1350,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 1000071,
+    "CorrectionMaxValuePermil": 1360,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 1000072,
+    "CorrectionMaxValuePermil": 1370,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 1000073,
+    "CorrectionMaxValuePermil": 1380,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 1000074,
+    "CorrectionMaxValuePermil": 1390,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 1000075,
+    "CorrectionMaxValuePermil": 1400,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 1000076,
+    "CorrectionMaxValuePermil": 1060,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 0
+  },
+  {
+    "SkillBehaviourActionId": 1000077,
+    "CorrectionMaxValuePermil": 1070,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 0
+  },
+  {
+    "SkillBehaviourActionId": 1000078,
+    "CorrectionMaxValuePermil": 1080,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 0
+  },
+  {
+    "SkillBehaviourActionId": 1000079,
+    "CorrectionMaxValuePermil": 1090,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 0
+  },
+  {
+    "SkillBehaviourActionId": 1000080,
+    "CorrectionMaxValuePermil": 1100,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 0
+  },
+  {
+    "SkillBehaviourActionId": 1000081,
+    "CorrectionMaxValuePermil": 1110,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 0
+  },
+  {
+    "SkillBehaviourActionId": 1000082,
+    "CorrectionMaxValuePermil": 1120,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 0
+  },
+  {
+    "SkillBehaviourActionId": 1000083,
+    "CorrectionMaxValuePermil": 1130,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 0
+  },
+  {
+    "SkillBehaviourActionId": 1000084,
+    "CorrectionMaxValuePermil": 1140,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 0
+  },
+  {
+    "SkillBehaviourActionId": 1000085,
+    "CorrectionMaxValuePermil": 1150,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 0
+  },
+  {
+    "SkillBehaviourActionId": 1000086,
+    "CorrectionMaxValuePermil": 1160,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 0
+  },
+  {
+    "SkillBehaviourActionId": 1000087,
+    "CorrectionMaxValuePermil": 1170,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 0
+  },
+  {
+    "SkillBehaviourActionId": 1000088,
+    "CorrectionMaxValuePermil": 1180,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 0
+  },
+  {
+    "SkillBehaviourActionId": 1000089,
+    "CorrectionMaxValuePermil": 1190,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 0
+  },
+  {
+    "SkillBehaviourActionId": 1000090,
+    "CorrectionMaxValuePermil": 1200,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 0
+  },
+  {
+    "SkillBehaviourActionId": 1000091,
+    "CorrectionMaxValuePermil": 1060,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 1000092,
+    "CorrectionMaxValuePermil": 1070,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 1000093,
+    "CorrectionMaxValuePermil": 1080,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 1000094,
+    "CorrectionMaxValuePermil": 1090,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 1000095,
+    "CorrectionMaxValuePermil": 1100,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 1000096,
+    "CorrectionMaxValuePermil": 1110,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 1000097,
+    "CorrectionMaxValuePermil": 1120,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 1000098,
+    "CorrectionMaxValuePermil": 1130,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 1000099,
+    "CorrectionMaxValuePermil": 1140,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 1000100,
+    "CorrectionMaxValuePermil": 1150,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 1000101,
+    "CorrectionMaxValuePermil": 1160,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 1000102,
+    "CorrectionMaxValuePermil": 1170,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 1000103,
+    "CorrectionMaxValuePermil": 1180,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 1000104,
+    "CorrectionMaxValuePermil": 1190,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 1000105,
+    "CorrectionMaxValuePermil": 1200,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 1000106,
+    "CorrectionMaxValuePermil": 2000,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000107,
+    "CorrectionMaxValuePermil": 2050,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000108,
+    "CorrectionMaxValuePermil": 2100,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000109,
+    "CorrectionMaxValuePermil": 2140,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000110,
+    "CorrectionMaxValuePermil": 2200,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000111,
+    "CorrectionMaxValuePermil": 2270,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000112,
+    "CorrectionMaxValuePermil": 2340,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000113,
+    "CorrectionMaxValuePermil": 2410,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000114,
+    "CorrectionMaxValuePermil": 2480,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000115,
+    "CorrectionMaxValuePermil": 2550,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000116,
+    "CorrectionMaxValuePermil": 2630,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000117,
+    "CorrectionMaxValuePermil": 2710,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000118,
+    "CorrectionMaxValuePermil": 2790,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000119,
+    "CorrectionMaxValuePermil": 2870,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000120,
+    "CorrectionMaxValuePermil": 3000,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000121,
+    "CorrectionMaxValuePermil": 1320,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 1000122,
+    "CorrectionMaxValuePermil": 1330,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 1000123,
+    "CorrectionMaxValuePermil": 1340,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 1000124,
+    "CorrectionMaxValuePermil": 1350,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 1000125,
+    "CorrectionMaxValuePermil": 1360,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 1000126,
+    "CorrectionMaxValuePermil": 1370,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 1000127,
+    "CorrectionMaxValuePermil": 1380,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 1000128,
+    "CorrectionMaxValuePermil": 1390,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 1000129,
+    "CorrectionMaxValuePermil": 1400,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 1000130,
+    "CorrectionMaxValuePermil": 1410,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 1000131,
+    "CorrectionMaxValuePermil": 1420,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 1000132,
+    "CorrectionMaxValuePermil": 1440,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 1000133,
+    "CorrectionMaxValuePermil": 1460,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 1000134,
+    "CorrectionMaxValuePermil": 1480,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 1000135,
+    "CorrectionMaxValuePermil": 1500,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 1000136,
+    "CorrectionMaxValuePermil": 1350,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 1000137,
+    "CorrectionMaxValuePermil": 1360,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 1000138,
+    "CorrectionMaxValuePermil": 1370,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 1000139,
+    "CorrectionMaxValuePermil": 1380,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 1000140,
+    "CorrectionMaxValuePermil": 1400,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 1000141,
+    "CorrectionMaxValuePermil": 1420,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 1000142,
+    "CorrectionMaxValuePermil": 1440,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 1000143,
+    "CorrectionMaxValuePermil": 1460,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 1000144,
+    "CorrectionMaxValuePermil": 1480,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 1000145,
+    "CorrectionMaxValuePermil": 1500,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 1000146,
+    "CorrectionMaxValuePermil": 1520,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 1000147,
+    "CorrectionMaxValuePermil": 1540,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 1000148,
+    "CorrectionMaxValuePermil": 1560,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 1000149,
+    "CorrectionMaxValuePermil": 1580,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 1000150,
+    "CorrectionMaxValuePermil": 1600,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 1000151,
+    "CorrectionMaxValuePermil": 1500,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000152,
+    "CorrectionMaxValuePermil": 1520,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000153,
+    "CorrectionMaxValuePermil": 1550,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000154,
+    "CorrectionMaxValuePermil": 1570,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000155,
+    "CorrectionMaxValuePermil": 1600,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000156,
+    "CorrectionMaxValuePermil": 1630,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000157,
+    "CorrectionMaxValuePermil": 1670,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000158,
+    "CorrectionMaxValuePermil": 1700,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000159,
+    "CorrectionMaxValuePermil": 1740,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000160,
+    "CorrectionMaxValuePermil": 1770,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000161,
+    "CorrectionMaxValuePermil": 1810,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000162,
+    "CorrectionMaxValuePermil": 1850,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000163,
+    "CorrectionMaxValuePermil": 1890,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000164,
+    "CorrectionMaxValuePermil": 1930,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 1000165,
+    "CorrectionMaxValuePermil": 2000,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 2000001,
+    "CorrectionMaxValuePermil": 1350,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000002,
+    "CorrectionMaxValuePermil": 1360,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000003,
+    "CorrectionMaxValuePermil": 1370,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000004,
+    "CorrectionMaxValuePermil": 1380,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000005,
+    "CorrectionMaxValuePermil": 1400,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000006,
+    "CorrectionMaxValuePermil": 1420,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000007,
+    "CorrectionMaxValuePermil": 1440,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000008,
+    "CorrectionMaxValuePermil": 1460,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000009,
+    "CorrectionMaxValuePermil": 1480,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000010,
+    "CorrectionMaxValuePermil": 1500,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000011,
+    "CorrectionMaxValuePermil": 1520,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000012,
+    "CorrectionMaxValuePermil": 1540,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000013,
+    "CorrectionMaxValuePermil": 1560,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000014,
+    "CorrectionMaxValuePermil": 1580,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000015,
+    "CorrectionMaxValuePermil": 1600,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000016,
+    "CorrectionMaxValuePermil": 1260,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000017,
+    "CorrectionMaxValuePermil": 1270,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000018,
+    "CorrectionMaxValuePermil": 1280,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000019,
+    "CorrectionMaxValuePermil": 1290,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000020,
+    "CorrectionMaxValuePermil": 1300,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000021,
+    "CorrectionMaxValuePermil": 1310,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000022,
+    "CorrectionMaxValuePermil": 1320,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000023,
+    "CorrectionMaxValuePermil": 1330,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000024,
+    "CorrectionMaxValuePermil": 1340,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000025,
+    "CorrectionMaxValuePermil": 1350,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000026,
+    "CorrectionMaxValuePermil": 1360,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000027,
+    "CorrectionMaxValuePermil": 1370,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000028,
+    "CorrectionMaxValuePermil": 1380,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000029,
+    "CorrectionMaxValuePermil": 1390,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000030,
+    "CorrectionMaxValuePermil": 1400,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000031,
+    "CorrectionMaxValuePermil": 1350,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000032,
+    "CorrectionMaxValuePermil": 1360,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000033,
+    "CorrectionMaxValuePermil": 1370,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000034,
+    "CorrectionMaxValuePermil": 1380,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000035,
+    "CorrectionMaxValuePermil": 1400,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000036,
+    "CorrectionMaxValuePermil": 1420,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000037,
+    "CorrectionMaxValuePermil": 1440,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000038,
+    "CorrectionMaxValuePermil": 1460,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000039,
+    "CorrectionMaxValuePermil": 1480,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000040,
+    "CorrectionMaxValuePermil": 1500,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000041,
+    "CorrectionMaxValuePermil": 1520,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000042,
+    "CorrectionMaxValuePermil": 1540,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000043,
+    "CorrectionMaxValuePermil": 1560,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000044,
+    "CorrectionMaxValuePermil": 1580,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000045,
+    "CorrectionMaxValuePermil": 1600,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000046,
+    "CorrectionMaxValuePermil": 1260,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000047,
+    "CorrectionMaxValuePermil": 1270,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000048,
+    "CorrectionMaxValuePermil": 1280,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000049,
+    "CorrectionMaxValuePermil": 1290,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000050,
+    "CorrectionMaxValuePermil": 1300,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000051,
+    "CorrectionMaxValuePermil": 1310,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000052,
+    "CorrectionMaxValuePermil": 1320,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000053,
+    "CorrectionMaxValuePermil": 1330,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000054,
+    "CorrectionMaxValuePermil": 1340,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000055,
+    "CorrectionMaxValuePermil": 1350,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000056,
+    "CorrectionMaxValuePermil": 1360,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000057,
+    "CorrectionMaxValuePermil": 1370,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000058,
+    "CorrectionMaxValuePermil": 1380,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000059,
+    "CorrectionMaxValuePermil": 1390,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000060,
+    "CorrectionMaxValuePermil": 1400,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000061,
+    "CorrectionMaxValuePermil": 1350,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000062,
+    "CorrectionMaxValuePermil": 1360,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000063,
+    "CorrectionMaxValuePermil": 1370,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000064,
+    "CorrectionMaxValuePermil": 1380,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000065,
+    "CorrectionMaxValuePermil": 1400,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000066,
+    "CorrectionMaxValuePermil": 1420,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000067,
+    "CorrectionMaxValuePermil": 1440,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000068,
+    "CorrectionMaxValuePermil": 1460,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000069,
+    "CorrectionMaxValuePermil": 1480,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000070,
+    "CorrectionMaxValuePermil": 1500,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000071,
+    "CorrectionMaxValuePermil": 1520,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000072,
+    "CorrectionMaxValuePermil": 1540,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000073,
+    "CorrectionMaxValuePermil": 1560,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000074,
+    "CorrectionMaxValuePermil": 1580,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000075,
+    "CorrectionMaxValuePermil": 1600,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000076,
+    "CorrectionMaxValuePermil": 1260,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000077,
+    "CorrectionMaxValuePermil": 1270,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000078,
+    "CorrectionMaxValuePermil": 1280,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000079,
+    "CorrectionMaxValuePermil": 1290,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000080,
+    "CorrectionMaxValuePermil": 1300,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000081,
+    "CorrectionMaxValuePermil": 1310,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000082,
+    "CorrectionMaxValuePermil": 1320,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000083,
+    "CorrectionMaxValuePermil": 1330,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000084,
+    "CorrectionMaxValuePermil": 1340,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000085,
+    "CorrectionMaxValuePermil": 1350,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000086,
+    "CorrectionMaxValuePermil": 1360,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000087,
+    "CorrectionMaxValuePermil": 1370,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000088,
+    "CorrectionMaxValuePermil": 1380,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000089,
+    "CorrectionMaxValuePermil": 1390,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000090,
+    "CorrectionMaxValuePermil": 1400,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000091,
+    "CorrectionMaxValuePermil": 1260,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000092,
+    "CorrectionMaxValuePermil": 1270,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000093,
+    "CorrectionMaxValuePermil": 1280,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000094,
+    "CorrectionMaxValuePermil": 1290,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000095,
+    "CorrectionMaxValuePermil": 1300,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000096,
+    "CorrectionMaxValuePermil": 1310,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000097,
+    "CorrectionMaxValuePermil": 1320,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000098,
+    "CorrectionMaxValuePermil": 1330,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000099,
+    "CorrectionMaxValuePermil": 1340,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000100,
+    "CorrectionMaxValuePermil": 1350,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000101,
+    "CorrectionMaxValuePermil": 1360,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000102,
+    "CorrectionMaxValuePermil": 1370,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000103,
+    "CorrectionMaxValuePermil": 1380,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000104,
+    "CorrectionMaxValuePermil": 1390,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000105,
+    "CorrectionMaxValuePermil": 1400,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000106,
+    "CorrectionMaxValuePermil": 1350,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000107,
+    "CorrectionMaxValuePermil": 1360,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000108,
+    "CorrectionMaxValuePermil": 1370,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000109,
+    "CorrectionMaxValuePermil": 1380,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000110,
+    "CorrectionMaxValuePermil": 1400,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000111,
+    "CorrectionMaxValuePermil": 1420,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000112,
+    "CorrectionMaxValuePermil": 1440,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000113,
+    "CorrectionMaxValuePermil": 1460,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000114,
+    "CorrectionMaxValuePermil": 1480,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000115,
+    "CorrectionMaxValuePermil": 1500,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000116,
+    "CorrectionMaxValuePermil": 1520,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000117,
+    "CorrectionMaxValuePermil": 1540,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000118,
+    "CorrectionMaxValuePermil": 1560,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000119,
+    "CorrectionMaxValuePermil": 1580,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000120,
+    "CorrectionMaxValuePermil": 1600,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000121,
+    "CorrectionMaxValuePermil": 1260,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000122,
+    "CorrectionMaxValuePermil": 1270,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000123,
+    "CorrectionMaxValuePermil": 1280,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000124,
+    "CorrectionMaxValuePermil": 1290,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000125,
+    "CorrectionMaxValuePermil": 1300,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000126,
+    "CorrectionMaxValuePermil": 1310,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000127,
+    "CorrectionMaxValuePermil": 1320,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000128,
+    "CorrectionMaxValuePermil": 1330,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000129,
+    "CorrectionMaxValuePermil": 1340,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000130,
+    "CorrectionMaxValuePermil": 1350,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000131,
+    "CorrectionMaxValuePermil": 1360,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000132,
+    "CorrectionMaxValuePermil": 1370,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000133,
+    "CorrectionMaxValuePermil": 1380,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000134,
+    "CorrectionMaxValuePermil": 1390,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000135,
+    "CorrectionMaxValuePermil": 1400,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000136,
+    "CorrectionMaxValuePermil": 1060,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000137,
+    "CorrectionMaxValuePermil": 1070,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000138,
+    "CorrectionMaxValuePermil": 1080,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000139,
+    "CorrectionMaxValuePermil": 1090,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000140,
+    "CorrectionMaxValuePermil": 1100,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000141,
+    "CorrectionMaxValuePermil": 1110,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000142,
+    "CorrectionMaxValuePermil": 1120,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000143,
+    "CorrectionMaxValuePermil": 1130,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000144,
+    "CorrectionMaxValuePermil": 1140,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000145,
+    "CorrectionMaxValuePermil": 1150,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000146,
+    "CorrectionMaxValuePermil": 1160,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000147,
+    "CorrectionMaxValuePermil": 1170,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000148,
+    "CorrectionMaxValuePermil": 1180,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000149,
+    "CorrectionMaxValuePermil": 1190,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000150,
+    "CorrectionMaxValuePermil": 1200,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000151,
+    "CorrectionMaxValuePermil": 1260,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000152,
+    "CorrectionMaxValuePermil": 1270,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000153,
+    "CorrectionMaxValuePermil": 1280,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000154,
+    "CorrectionMaxValuePermil": 1290,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000155,
+    "CorrectionMaxValuePermil": 1300,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000156,
+    "CorrectionMaxValuePermil": 1310,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000157,
+    "CorrectionMaxValuePermil": 1320,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000158,
+    "CorrectionMaxValuePermil": 1330,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000159,
+    "CorrectionMaxValuePermil": 1340,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000160,
+    "CorrectionMaxValuePermil": 1350,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000161,
+    "CorrectionMaxValuePermil": 1360,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000162,
+    "CorrectionMaxValuePermil": 1370,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000163,
+    "CorrectionMaxValuePermil": 1380,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000164,
+    "CorrectionMaxValuePermil": 1390,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000165,
+    "CorrectionMaxValuePermil": 1400,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000166,
+    "CorrectionMaxValuePermil": 1350,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000167,
+    "CorrectionMaxValuePermil": 1360,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000168,
+    "CorrectionMaxValuePermil": 1370,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000169,
+    "CorrectionMaxValuePermil": 1380,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000170,
+    "CorrectionMaxValuePermil": 1400,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000171,
+    "CorrectionMaxValuePermil": 1420,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000172,
+    "CorrectionMaxValuePermil": 1440,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000173,
+    "CorrectionMaxValuePermil": 1460,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000174,
+    "CorrectionMaxValuePermil": 1480,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000175,
+    "CorrectionMaxValuePermil": 1500,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000176,
+    "CorrectionMaxValuePermil": 1520,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000177,
+    "CorrectionMaxValuePermil": 1540,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000178,
+    "CorrectionMaxValuePermil": 1560,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000179,
+    "CorrectionMaxValuePermil": 1580,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000180,
+    "CorrectionMaxValuePermil": 1600,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000181,
+    "CorrectionMaxValuePermil": 1260,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000182,
+    "CorrectionMaxValuePermil": 1270,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000183,
+    "CorrectionMaxValuePermil": 1280,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000184,
+    "CorrectionMaxValuePermil": 1290,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000185,
+    "CorrectionMaxValuePermil": 1300,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000186,
+    "CorrectionMaxValuePermil": 1310,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000187,
+    "CorrectionMaxValuePermil": 1320,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000188,
+    "CorrectionMaxValuePermil": 1330,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000189,
+    "CorrectionMaxValuePermil": 1340,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000190,
+    "CorrectionMaxValuePermil": 1350,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000191,
+    "CorrectionMaxValuePermil": 1360,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000192,
+    "CorrectionMaxValuePermil": 1370,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000193,
+    "CorrectionMaxValuePermil": 1380,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000194,
+    "CorrectionMaxValuePermil": 1390,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000195,
+    "CorrectionMaxValuePermil": 1400,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000196,
+    "CorrectionMaxValuePermil": 1420,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000197,
+    "CorrectionMaxValuePermil": 1440,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000198,
+    "CorrectionMaxValuePermil": 1460,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000199,
+    "CorrectionMaxValuePermil": 1480,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000200,
+    "CorrectionMaxValuePermil": 1500,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000201,
+    "CorrectionMaxValuePermil": 1520,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000202,
+    "CorrectionMaxValuePermil": 1540,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000203,
+    "CorrectionMaxValuePermil": 1560,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000204,
+    "CorrectionMaxValuePermil": 1590,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000205,
+    "CorrectionMaxValuePermil": 1620,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000206,
+    "CorrectionMaxValuePermil": 1650,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000207,
+    "CorrectionMaxValuePermil": 1680,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000208,
+    "CorrectionMaxValuePermil": 1710,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000209,
+    "CorrectionMaxValuePermil": 1740,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2000210,
+    "CorrectionMaxValuePermil": 1800,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2900001,
+    "CorrectionMaxValuePermil": 1050,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2900002,
+    "CorrectionMaxValuePermil": 1050,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2900003,
+    "CorrectionMaxValuePermil": 1050,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2900004,
+    "CorrectionMaxValuePermil": 1050,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2900005,
+    "CorrectionMaxValuePermil": 1050,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2900006,
+    "CorrectionMaxValuePermil": 1050,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2900007,
+    "CorrectionMaxValuePermil": 1050,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2900008,
+    "CorrectionMaxValuePermil": 1100,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2900009,
+    "CorrectionMaxValuePermil": 1100,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2900010,
+    "CorrectionMaxValuePermil": 1100,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2900011,
+    "CorrectionMaxValuePermil": 1100,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2900012,
+    "CorrectionMaxValuePermil": 1200,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2900013,
+    "CorrectionMaxValuePermil": 1250,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2900014,
+    "CorrectionMaxValuePermil": 1300,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2900015,
+    "CorrectionMaxValuePermil": 1400,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2900016,
+    "CorrectionMaxValuePermil": 1100,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2900017,
+    "CorrectionMaxValuePermil": 1100,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2900018,
+    "CorrectionMaxValuePermil": 1100,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2900019,
+    "CorrectionMaxValuePermil": 1100,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2900020,
+    "CorrectionMaxValuePermil": 1100,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2900021,
+    "CorrectionMaxValuePermil": 1100,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2900022,
+    "CorrectionMaxValuePermil": 1100,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2900023,
+    "CorrectionMaxValuePermil": 1200,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2900024,
+    "CorrectionMaxValuePermil": 1200,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2900025,
+    "CorrectionMaxValuePermil": 1200,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2900026,
+    "CorrectionMaxValuePermil": 1200,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2900027,
+    "CorrectionMaxValuePermil": 1400,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2900028,
+    "CorrectionMaxValuePermil": 1450,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2900029,
+    "CorrectionMaxValuePermil": 1500,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 2900030,
+    "CorrectionMaxValuePermil": 1600,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 9000001,
+    "CorrectionMaxValuePermil": 1200,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 9000002,
+    "CorrectionMaxValuePermil": 1200,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 9000003,
+    "CorrectionMaxValuePermil": 1200,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 9000004,
+    "CorrectionMaxValuePermil": 1200,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 9000005,
+    "CorrectionMaxValuePermil": 1200,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 9000006,
+    "CorrectionMaxValuePermil": 1200,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 0
+  },
+  {
+    "SkillBehaviourActionId": 9000007,
+    "CorrectionMaxValuePermil": 1200,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 0
+  },
+  {
+    "SkillBehaviourActionId": 9000008,
+    "CorrectionMaxValuePermil": 1200,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 0
+  },
+  {
+    "SkillBehaviourActionId": 9000009,
+    "CorrectionMaxValuePermil": 1200,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 0
+  },
+  {
+    "SkillBehaviourActionId": 9000010,
+    "CorrectionMaxValuePermil": 1200,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 0
+  },
+  {
+    "SkillBehaviourActionId": 9000014,
+    "CorrectionMaxValuePermil": 2000,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 9000019,
+    "CorrectionMaxValuePermil": 2000,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 9000021,
+    "CorrectionMaxValuePermil": 2000,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 9000025,
+    "CorrectionMaxValuePermil": 2000,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 9000026,
+    "CorrectionMaxValuePermil": 2000,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 9000027,
+    "CorrectionMaxValuePermil": 2000,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 9000030,
+    "CorrectionMaxValuePermil": 2000,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 9000035,
+    "CorrectionMaxValuePermil": 1600,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 9000040,
+    "CorrectionMaxValuePermil": 1600,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 9000045,
+    "CorrectionMaxValuePermil": 1600,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 9000047,
+    "CorrectionMaxValuePermil": 1500,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 9000052,
+    "CorrectionMaxValuePermil": 1500,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 9000057,
+    "CorrectionMaxValuePermil": 2000,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 9000065,
+    "CorrectionMaxValuePermil": 1500,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 9000066,
+    "CorrectionMaxValuePermil": 1600,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 9000074,
+    "CorrectionMaxValuePermil": 2000,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 0
+  },
+  {
+    "SkillBehaviourActionId": 9000080,
+    "CorrectionMaxValuePermil": 2000,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 9000090,
+    "CorrectionMaxValuePermil": 1600,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 0
+  },
+  {
+    "SkillBehaviourActionId": 9000091,
+    "CorrectionMaxValuePermil": 1300,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 0
+  },
+  {
+    "SkillBehaviourActionId": 9000092,
+    "CorrectionMaxValuePermil": 1300,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 0
+  },
+  {
+    "SkillBehaviourActionId": 9000100,
+    "CorrectionMaxValuePermil": 1600,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 9000113,
+    "CorrectionMaxValuePermil": 2000,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 9000114,
+    "CorrectionMaxValuePermil": 1800,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 9000115,
+    "CorrectionMaxValuePermil": 1800,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 1000
+  },
+  {
+    "SkillBehaviourActionId": 9000117,
+    "CorrectionMaxValuePermil": 1500,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000001,
+    "CorrectionMaxValuePermil": 1198,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000002,
+    "CorrectionMaxValuePermil": 1252,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000003,
+    "CorrectionMaxValuePermil": 1306,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000004,
+    "CorrectionMaxValuePermil": 1360,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000005,
+    "CorrectionMaxValuePermil": 1264,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000006,
+    "CorrectionMaxValuePermil": 1336,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000007,
+    "CorrectionMaxValuePermil": 1408,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000008,
+    "CorrectionMaxValuePermil": 1480,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000009,
+    "CorrectionMaxValuePermil": 1330,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000010,
+    "CorrectionMaxValuePermil": 1420,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000011,
+    "CorrectionMaxValuePermil": 1510,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000012,
+    "CorrectionMaxValuePermil": 1600,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000013,
+    "CorrectionMaxValuePermil": 1264,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000014,
+    "CorrectionMaxValuePermil": 1336,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000015,
+    "CorrectionMaxValuePermil": 1408,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000016,
+    "CorrectionMaxValuePermil": 1480,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000017,
+    "CorrectionMaxValuePermil": 1352,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000018,
+    "CorrectionMaxValuePermil": 1448,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000019,
+    "CorrectionMaxValuePermil": 1544,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000020,
+    "CorrectionMaxValuePermil": 1640,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000021,
+    "CorrectionMaxValuePermil": 1440,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000022,
+    "CorrectionMaxValuePermil": 1560,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000023,
+    "CorrectionMaxValuePermil": 1680,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000024,
+    "CorrectionMaxValuePermil": 1800,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000025,
+    "CorrectionMaxValuePermil": 1330,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000026,
+    "CorrectionMaxValuePermil": 1420,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000027,
+    "CorrectionMaxValuePermil": 1510,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000028,
+    "CorrectionMaxValuePermil": 1600,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000029,
+    "CorrectionMaxValuePermil": 1440,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000030,
+    "CorrectionMaxValuePermil": 1560,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000031,
+    "CorrectionMaxValuePermil": 1680,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000032,
+    "CorrectionMaxValuePermil": 1800,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000033,
+    "CorrectionMaxValuePermil": 1550,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000034,
+    "CorrectionMaxValuePermil": 1700,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000035,
+    "CorrectionMaxValuePermil": 1850,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000036,
+    "CorrectionMaxValuePermil": 2000,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000037,
+    "CorrectionMaxValuePermil": 1132,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000038,
+    "CorrectionMaxValuePermil": 1168,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000039,
+    "CorrectionMaxValuePermil": 1204,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000040,
+    "CorrectionMaxValuePermil": 1240,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000041,
+    "CorrectionMaxValuePermil": 1176,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000042,
+    "CorrectionMaxValuePermil": 1224,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000043,
+    "CorrectionMaxValuePermil": 1272,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000044,
+    "CorrectionMaxValuePermil": 1320,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000045,
+    "CorrectionMaxValuePermil": 1220,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000046,
+    "CorrectionMaxValuePermil": 1280,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000047,
+    "CorrectionMaxValuePermil": 1340,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000048,
+    "CorrectionMaxValuePermil": 1400,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000049,
+    "CorrectionMaxValuePermil": 1165,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000050,
+    "CorrectionMaxValuePermil": 1210,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000051,
+    "CorrectionMaxValuePermil": 1255,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000052,
+    "CorrectionMaxValuePermil": 1300,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000053,
+    "CorrectionMaxValuePermil": 1220,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000054,
+    "CorrectionMaxValuePermil": 1280,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000055,
+    "CorrectionMaxValuePermil": 1340,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000056,
+    "CorrectionMaxValuePermil": 1400,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000057,
+    "CorrectionMaxValuePermil": 1275,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000058,
+    "CorrectionMaxValuePermil": 1350,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000059,
+    "CorrectionMaxValuePermil": 1425,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000060,
+    "CorrectionMaxValuePermil": 1500,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000061,
+    "CorrectionMaxValuePermil": 1198,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000062,
+    "CorrectionMaxValuePermil": 1252,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000063,
+    "CorrectionMaxValuePermil": 1306,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000064,
+    "CorrectionMaxValuePermil": 1360,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000065,
+    "CorrectionMaxValuePermil": 1264,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000066,
+    "CorrectionMaxValuePermil": 1336,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000067,
+    "CorrectionMaxValuePermil": 1408,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000068,
+    "CorrectionMaxValuePermil": 1480,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000069,
+    "CorrectionMaxValuePermil": 1330,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000070,
+    "CorrectionMaxValuePermil": 1420,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000071,
+    "CorrectionMaxValuePermil": 1510,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000072,
+    "CorrectionMaxValuePermil": 1600,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000001,
+    "CorrectionMaxValuePermil": 1111,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000002,
+    "CorrectionMaxValuePermil": 1115,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000003,
+    "CorrectionMaxValuePermil": 1118,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000004,
+    "CorrectionMaxValuePermil": 1122,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000005,
+    "CorrectionMaxValuePermil": 1126,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000006,
+    "CorrectionMaxValuePermil": 1129,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000007,
+    "CorrectionMaxValuePermil": 1133,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000008,
+    "CorrectionMaxValuePermil": 1137,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000009,
+    "CorrectionMaxValuePermil": 1142,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000010,
+    "CorrectionMaxValuePermil": 1146,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000011,
+    "CorrectionMaxValuePermil": 1153,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000012,
+    "CorrectionMaxValuePermil": 1159,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000013,
+    "CorrectionMaxValuePermil": 1165,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000014,
+    "CorrectionMaxValuePermil": 1172,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000015,
+    "CorrectionMaxValuePermil": 1180,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000016,
+    "CorrectionMaxValuePermil": 1139,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000017,
+    "CorrectionMaxValuePermil": 1144,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000018,
+    "CorrectionMaxValuePermil": 1148,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000019,
+    "CorrectionMaxValuePermil": 1153,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000020,
+    "CorrectionMaxValuePermil": 1159,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000021,
+    "CorrectionMaxValuePermil": 1165,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000022,
+    "CorrectionMaxValuePermil": 1171,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000023,
+    "CorrectionMaxValuePermil": 1177,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000024,
+    "CorrectionMaxValuePermil": 1186,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000025,
+    "CorrectionMaxValuePermil": 1194,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000026,
+    "CorrectionMaxValuePermil": 1202,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000027,
+    "CorrectionMaxValuePermil": 1211,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000028,
+    "CorrectionMaxValuePermil": 1220,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000029,
+    "CorrectionMaxValuePermil": 1230,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000030,
+    "CorrectionMaxValuePermil": 1240,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000031,
+    "CorrectionMaxValuePermil": 1160,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000032,
+    "CorrectionMaxValuePermil": 1166,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000033,
+    "CorrectionMaxValuePermil": 1172,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000034,
+    "CorrectionMaxValuePermil": 1180,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000035,
+    "CorrectionMaxValuePermil": 1187,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000036,
+    "CorrectionMaxValuePermil": 1195,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000037,
+    "CorrectionMaxValuePermil": 1202,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000038,
+    "CorrectionMaxValuePermil": 1213,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000039,
+    "CorrectionMaxValuePermil": 1223,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000040,
+    "CorrectionMaxValuePermil": 1234,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000041,
+    "CorrectionMaxValuePermil": 1244,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000042,
+    "CorrectionMaxValuePermil": 1256,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000043,
+    "CorrectionMaxValuePermil": 1268,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000044,
+    "CorrectionMaxValuePermil": 1280,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000045,
+    "CorrectionMaxValuePermil": 1300,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000046,
+    "CorrectionMaxValuePermil": 1148,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000047,
+    "CorrectionMaxValuePermil": 1153,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000048,
+    "CorrectionMaxValuePermil": 1158,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000049,
+    "CorrectionMaxValuePermil": 1163,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000050,
+    "CorrectionMaxValuePermil": 1168,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000051,
+    "CorrectionMaxValuePermil": 1172,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000052,
+    "CorrectionMaxValuePermil": 1177,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000053,
+    "CorrectionMaxValuePermil": 1183,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000054,
+    "CorrectionMaxValuePermil": 1189,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000055,
+    "CorrectionMaxValuePermil": 1195,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000056,
+    "CorrectionMaxValuePermil": 1204,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000057,
+    "CorrectionMaxValuePermil": 1212,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000058,
+    "CorrectionMaxValuePermil": 1220,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000059,
+    "CorrectionMaxValuePermil": 1230,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000060,
+    "CorrectionMaxValuePermil": 1240,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000061,
+    "CorrectionMaxValuePermil": 1185,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000062,
+    "CorrectionMaxValuePermil": 1192,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000063,
+    "CorrectionMaxValuePermil": 1198,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000064,
+    "CorrectionMaxValuePermil": 1204,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000065,
+    "CorrectionMaxValuePermil": 1212,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000066,
+    "CorrectionMaxValuePermil": 1220,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000067,
+    "CorrectionMaxValuePermil": 1228,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000068,
+    "CorrectionMaxValuePermil": 1236,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000069,
+    "CorrectionMaxValuePermil": 1248,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000070,
+    "CorrectionMaxValuePermil": 1259,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000071,
+    "CorrectionMaxValuePermil": 1270,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000072,
+    "CorrectionMaxValuePermil": 1281,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000073,
+    "CorrectionMaxValuePermil": 1294,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000074,
+    "CorrectionMaxValuePermil": 1307,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000075,
+    "CorrectionMaxValuePermil": 1320,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000076,
+    "CorrectionMaxValuePermil": 1214,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000077,
+    "CorrectionMaxValuePermil": 1222,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000078,
+    "CorrectionMaxValuePermil": 1230,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000079,
+    "CorrectionMaxValuePermil": 1240,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000080,
+    "CorrectionMaxValuePermil": 1250,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000081,
+    "CorrectionMaxValuePermil": 1260,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000082,
+    "CorrectionMaxValuePermil": 1270,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000083,
+    "CorrectionMaxValuePermil": 1284,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000084,
+    "CorrectionMaxValuePermil": 1298,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000085,
+    "CorrectionMaxValuePermil": 1312,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000086,
+    "CorrectionMaxValuePermil": 1326,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000087,
+    "CorrectionMaxValuePermil": 1342,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000088,
+    "CorrectionMaxValuePermil": 1358,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000089,
+    "CorrectionMaxValuePermil": 1374,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000090,
+    "CorrectionMaxValuePermil": 1400,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000091,
+    "CorrectionMaxValuePermil": 1186,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000092,
+    "CorrectionMaxValuePermil": 1192,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000093,
+    "CorrectionMaxValuePermil": 1198,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000094,
+    "CorrectionMaxValuePermil": 1204,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000095,
+    "CorrectionMaxValuePermil": 1210,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000096,
+    "CorrectionMaxValuePermil": 1216,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000097,
+    "CorrectionMaxValuePermil": 1222,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000098,
+    "CorrectionMaxValuePermil": 1229,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000099,
+    "CorrectionMaxValuePermil": 1237,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000100,
+    "CorrectionMaxValuePermil": 1244,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000101,
+    "CorrectionMaxValuePermil": 1255,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000102,
+    "CorrectionMaxValuePermil": 1265,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000103,
+    "CorrectionMaxValuePermil": 1276,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000104,
+    "CorrectionMaxValuePermil": 1288,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000105,
+    "CorrectionMaxValuePermil": 1300,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000106,
+    "CorrectionMaxValuePermil": 1232,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000107,
+    "CorrectionMaxValuePermil": 1240,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000108,
+    "CorrectionMaxValuePermil": 1248,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000109,
+    "CorrectionMaxValuePermil": 1256,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000110,
+    "CorrectionMaxValuePermil": 1266,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000111,
+    "CorrectionMaxValuePermil": 1276,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000112,
+    "CorrectionMaxValuePermil": 1286,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000113,
+    "CorrectionMaxValuePermil": 1296,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000114,
+    "CorrectionMaxValuePermil": 1310,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000115,
+    "CorrectionMaxValuePermil": 1324,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000116,
+    "CorrectionMaxValuePermil": 1338,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000117,
+    "CorrectionMaxValuePermil": 1352,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000118,
+    "CorrectionMaxValuePermil": 1368,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000119,
+    "CorrectionMaxValuePermil": 1384,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000120,
+    "CorrectionMaxValuePermil": 1400,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000121,
+    "CorrectionMaxValuePermil": 1267,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000122,
+    "CorrectionMaxValuePermil": 1277,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000123,
+    "CorrectionMaxValuePermil": 1287,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000124,
+    "CorrectionMaxValuePermil": 1300,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000125,
+    "CorrectionMaxValuePermil": 1312,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000126,
+    "CorrectionMaxValuePermil": 1325,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000127,
+    "CorrectionMaxValuePermil": 1337,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000128,
+    "CorrectionMaxValuePermil": 1355,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000129,
+    "CorrectionMaxValuePermil": 1372,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000130,
+    "CorrectionMaxValuePermil": 1390,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000131,
+    "CorrectionMaxValuePermil": 1407,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000132,
+    "CorrectionMaxValuePermil": 1427,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000133,
+    "CorrectionMaxValuePermil": 1447,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000134,
+    "CorrectionMaxValuePermil": 1467,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000135,
+    "CorrectionMaxValuePermil": 1500,
+    "DamageCorrectionHpRatioType": 1,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000136,
+    "CorrectionMaxValuePermil": 1074,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000137,
+    "CorrectionMaxValuePermil": 1076,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000138,
+    "CorrectionMaxValuePermil": 1079,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000139,
+    "CorrectionMaxValuePermil": 1081,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000140,
+    "CorrectionMaxValuePermil": 1084,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000141,
+    "CorrectionMaxValuePermil": 1086,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000142,
+    "CorrectionMaxValuePermil": 1088,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000143,
+    "CorrectionMaxValuePermil": 1091,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000144,
+    "CorrectionMaxValuePermil": 1094,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000145,
+    "CorrectionMaxValuePermil": 1097,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000146,
+    "CorrectionMaxValuePermil": 1102,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000147,
+    "CorrectionMaxValuePermil": 1106,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000148,
+    "CorrectionMaxValuePermil": 1110,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000149,
+    "CorrectionMaxValuePermil": 1115,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000150,
+    "CorrectionMaxValuePermil": 1120,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000151,
+    "CorrectionMaxValuePermil": 1092,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000152,
+    "CorrectionMaxValuePermil": 1096,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000153,
+    "CorrectionMaxValuePermil": 1099,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000154,
+    "CorrectionMaxValuePermil": 1102,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000155,
+    "CorrectionMaxValuePermil": 1106,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000156,
+    "CorrectionMaxValuePermil": 1110,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000157,
+    "CorrectionMaxValuePermil": 1114,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000158,
+    "CorrectionMaxValuePermil": 1118,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000159,
+    "CorrectionMaxValuePermil": 1124,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000160,
+    "CorrectionMaxValuePermil": 1129,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000161,
+    "CorrectionMaxValuePermil": 1135,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000162,
+    "CorrectionMaxValuePermil": 1140,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000163,
+    "CorrectionMaxValuePermil": 1147,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000164,
+    "CorrectionMaxValuePermil": 1153,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000165,
+    "CorrectionMaxValuePermil": 1160,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000166,
+    "CorrectionMaxValuePermil": 1107,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000167,
+    "CorrectionMaxValuePermil": 1111,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000168,
+    "CorrectionMaxValuePermil": 1115,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000169,
+    "CorrectionMaxValuePermil": 1120,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000170,
+    "CorrectionMaxValuePermil": 1125,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000171,
+    "CorrectionMaxValuePermil": 1130,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000172,
+    "CorrectionMaxValuePermil": 1135,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000173,
+    "CorrectionMaxValuePermil": 1142,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000174,
+    "CorrectionMaxValuePermil": 1149,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000175,
+    "CorrectionMaxValuePermil": 1156,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000176,
+    "CorrectionMaxValuePermil": 1163,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000177,
+    "CorrectionMaxValuePermil": 1171,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000178,
+    "CorrectionMaxValuePermil": 1179,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000179,
+    "CorrectionMaxValuePermil": 1187,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000180,
+    "CorrectionMaxValuePermil": 1200,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000181,
+    "CorrectionMaxValuePermil": 1111,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000182,
+    "CorrectionMaxValuePermil": 1115,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000183,
+    "CorrectionMaxValuePermil": 1118,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000184,
+    "CorrectionMaxValuePermil": 1122,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000185,
+    "CorrectionMaxValuePermil": 1126,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000186,
+    "CorrectionMaxValuePermil": 1129,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000187,
+    "CorrectionMaxValuePermil": 1133,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000188,
+    "CorrectionMaxValuePermil": 1137,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000189,
+    "CorrectionMaxValuePermil": 1142,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000190,
+    "CorrectionMaxValuePermil": 1146,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000191,
+    "CorrectionMaxValuePermil": 1153,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000192,
+    "CorrectionMaxValuePermil": 1159,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000193,
+    "CorrectionMaxValuePermil": 1165,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000194,
+    "CorrectionMaxValuePermil": 1172,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000195,
+    "CorrectionMaxValuePermil": 1180,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000196,
+    "CorrectionMaxValuePermil": 1139,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000197,
+    "CorrectionMaxValuePermil": 1144,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000198,
+    "CorrectionMaxValuePermil": 1148,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000199,
+    "CorrectionMaxValuePermil": 1153,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000200,
+    "CorrectionMaxValuePermil": 1159,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000201,
+    "CorrectionMaxValuePermil": 1165,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000202,
+    "CorrectionMaxValuePermil": 1171,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000203,
+    "CorrectionMaxValuePermil": 1177,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000204,
+    "CorrectionMaxValuePermil": 1186,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000205,
+    "CorrectionMaxValuePermil": 1194,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000206,
+    "CorrectionMaxValuePermil": 1202,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000207,
+    "CorrectionMaxValuePermil": 1211,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000208,
+    "CorrectionMaxValuePermil": 1220,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000209,
+    "CorrectionMaxValuePermil": 1230,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000210,
+    "CorrectionMaxValuePermil": 1240,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000211,
+    "CorrectionMaxValuePermil": 1160,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000212,
+    "CorrectionMaxValuePermil": 1166,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000213,
+    "CorrectionMaxValuePermil": 1172,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000214,
+    "CorrectionMaxValuePermil": 1180,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000215,
+    "CorrectionMaxValuePermil": 1187,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000216,
+    "CorrectionMaxValuePermil": 1195,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000217,
+    "CorrectionMaxValuePermil": 1202,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000218,
+    "CorrectionMaxValuePermil": 1213,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000219,
+    "CorrectionMaxValuePermil": 1223,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000220,
+    "CorrectionMaxValuePermil": 1234,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000221,
+    "CorrectionMaxValuePermil": 1244,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000222,
+    "CorrectionMaxValuePermil": 1256,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000223,
+    "CorrectionMaxValuePermil": 1268,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000224,
+    "CorrectionMaxValuePermil": 1280,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000225,
+    "CorrectionMaxValuePermil": 1300,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000226,
+    "CorrectionMaxValuePermil": 1148,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000227,
+    "CorrectionMaxValuePermil": 1153,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000228,
+    "CorrectionMaxValuePermil": 1158,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000229,
+    "CorrectionMaxValuePermil": 1163,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000230,
+    "CorrectionMaxValuePermil": 1168,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000231,
+    "CorrectionMaxValuePermil": 1172,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000232,
+    "CorrectionMaxValuePermil": 1177,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000233,
+    "CorrectionMaxValuePermil": 1183,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000234,
+    "CorrectionMaxValuePermil": 1189,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000235,
+    "CorrectionMaxValuePermil": 1195,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000236,
+    "CorrectionMaxValuePermil": 1204,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000237,
+    "CorrectionMaxValuePermil": 1212,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000238,
+    "CorrectionMaxValuePermil": 1220,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000239,
+    "CorrectionMaxValuePermil": 1230,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000240,
+    "CorrectionMaxValuePermil": 1240,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000241,
+    "CorrectionMaxValuePermil": 1185,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000242,
+    "CorrectionMaxValuePermil": 1192,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000243,
+    "CorrectionMaxValuePermil": 1198,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000244,
+    "CorrectionMaxValuePermil": 1204,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000245,
+    "CorrectionMaxValuePermil": 1212,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000246,
+    "CorrectionMaxValuePermil": 1220,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000247,
+    "CorrectionMaxValuePermil": 1228,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000248,
+    "CorrectionMaxValuePermil": 1236,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000249,
+    "CorrectionMaxValuePermil": 1248,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000250,
+    "CorrectionMaxValuePermil": 1259,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000251,
+    "CorrectionMaxValuePermil": 1270,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000252,
+    "CorrectionMaxValuePermil": 1281,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000253,
+    "CorrectionMaxValuePermil": 1294,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000254,
+    "CorrectionMaxValuePermil": 1307,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000255,
+    "CorrectionMaxValuePermil": 1320,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000256,
+    "CorrectionMaxValuePermil": 1214,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000257,
+    "CorrectionMaxValuePermil": 1222,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000258,
+    "CorrectionMaxValuePermil": 1230,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000259,
+    "CorrectionMaxValuePermil": 1240,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000260,
+    "CorrectionMaxValuePermil": 1250,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000261,
+    "CorrectionMaxValuePermil": 1260,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000262,
+    "CorrectionMaxValuePermil": 1270,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000263,
+    "CorrectionMaxValuePermil": 1284,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000264,
+    "CorrectionMaxValuePermil": 1298,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000265,
+    "CorrectionMaxValuePermil": 1312,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000266,
+    "CorrectionMaxValuePermil": 1326,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000267,
+    "CorrectionMaxValuePermil": 1342,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000268,
+    "CorrectionMaxValuePermil": 1358,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000269,
+    "CorrectionMaxValuePermil": 1374,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 12000270,
+    "CorrectionMaxValuePermil": 1400,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 17200001,
+    "CorrectionMaxValuePermil": 1300,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 17200002,
+    "CorrectionMaxValuePermil": 1250,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 17200003,
+    "CorrectionMaxValuePermil": 1200,
+    "DamageCorrectionHpRatioType": 2,
+    "ActivationThresholdHpRatioPermil": 700
+  }
+]

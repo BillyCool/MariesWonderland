@@ -1,0 +1,922 @@
+[
+  {
+    "CostumeId": 10107,
+    "CostumeAutoOrganizationConditionType": 1,
+    "TargetValue": 5
+  },
+  {
+    "CostumeId": 10107,
+    "CostumeAutoOrganizationConditionType": 2,
+    "TargetValue": 5
+  },
+  {
+    "CostumeId": 10107,
+    "CostumeAutoOrganizationConditionType": 3,
+    "TargetValue": 5
+  },
+  {
+    "CostumeId": 10107,
+    "CostumeAutoOrganizationConditionType": 4,
+    "TargetValue": 5
+  },
+  {
+    "CostumeId": 10107,
+    "CostumeAutoOrganizationConditionType": 5,
+    "TargetValue": 5
+  },
+  {
+    "CostumeId": 10107,
+    "CostumeAutoOrganizationConditionType": 6,
+    "TargetValue": 1
+  },
+  {
+    "CostumeId": 10115,
+    "CostumeAutoOrganizationConditionType": 1,
+    "TargetValue": 4
+  },
+  {
+    "CostumeId": 10115,
+    "CostumeAutoOrganizationConditionType": 2,
+    "TargetValue": 4
+  },
+  {
+    "CostumeId": 10115,
+    "CostumeAutoOrganizationConditionType": 3,
+    "TargetValue": 4
+  },
+  {
+    "CostumeId": 10115,
+    "CostumeAutoOrganizationConditionType": 4,
+    "TargetValue": 4
+  },
+  {
+    "CostumeId": 10115,
+    "CostumeAutoOrganizationConditionType": 5,
+    "TargetValue": 4
+  },
+  {
+    "CostumeId": 10115,
+    "CostumeAutoOrganizationConditionType": 6,
+    "TargetValue": 1
+  },
+  {
+    "CostumeId": 10121,
+    "CostumeAutoOrganizationConditionType": 1,
+    "TargetValue": 4
+  },
+  {
+    "CostumeId": 10121,
+    "CostumeAutoOrganizationConditionType": 2,
+    "TargetValue": 4
+  },
+  {
+    "CostumeId": 10121,
+    "CostumeAutoOrganizationConditionType": 3,
+    "TargetValue": 4
+  },
+  {
+    "CostumeId": 10121,
+    "CostumeAutoOrganizationConditionType": 4,
+    "TargetValue": 4
+  },
+  {
+    "CostumeId": 10121,
+    "CostumeAutoOrganizationConditionType": 5,
+    "TargetValue": 4
+  },
+  {
+    "CostumeId": 10121,
+    "CostumeAutoOrganizationConditionType": 6,
+    "TargetValue": 1
+  },
+  {
+    "CostumeId": 24002,
+    "CostumeAutoOrganizationConditionType": 1,
+    "TargetValue": 6
+  },
+  {
+    "CostumeId": 24002,
+    "CostumeAutoOrganizationConditionType": 2,
+    "TargetValue": 6
+  },
+  {
+    "CostumeId": 24002,
+    "CostumeAutoOrganizationConditionType": 3,
+    "TargetValue": 6
+  },
+  {
+    "CostumeId": 24002,
+    "CostumeAutoOrganizationConditionType": 4,
+    "TargetValue": 6
+  },
+  {
+    "CostumeId": 24002,
+    "CostumeAutoOrganizationConditionType": 5,
+    "TargetValue": 6
+  },
+  {
+    "CostumeId": 24002,
+    "CostumeAutoOrganizationConditionType": 6,
+    "TargetValue": 1
+  },
+  {
+    "CostumeId": 24005,
+    "CostumeAutoOrganizationConditionType": 6,
+    "TargetValue": 1
+  },
+  {
+    "CostumeId": 24008,
+    "CostumeAutoOrganizationConditionType": 6,
+    "TargetValue": 1
+  },
+  {
+    "CostumeId": 31009,
+    "CostumeAutoOrganizationConditionType": 6,
+    "TargetValue": 1
+  },
+  {
+    "CostumeId": 31013,
+    "CostumeAutoOrganizationConditionType": 6,
+    "TargetValue": 1
+  },
+  {
+    "CostumeId": 31014,
+    "CostumeAutoOrganizationConditionType": 1,
+    "TargetValue": 9
+  },
+  {
+    "CostumeId": 31014,
+    "CostumeAutoOrganizationConditionType": 2,
+    "TargetValue": 9
+  },
+  {
+    "CostumeId": 31014,
+    "CostumeAutoOrganizationConditionType": 3,
+    "TargetValue": 9
+  },
+  {
+    "CostumeId": 31014,
+    "CostumeAutoOrganizationConditionType": 4,
+    "TargetValue": 9
+  },
+  {
+    "CostumeId": 31014,
+    "CostumeAutoOrganizationConditionType": 5,
+    "TargetValue": 9
+  },
+  {
+    "CostumeId": 31014,
+    "CostumeAutoOrganizationConditionType": 6,
+    "TargetValue": 1
+  },
+  {
+    "CostumeId": 31025,
+    "CostumeAutoOrganizationConditionType": 1,
+    "TargetValue": 22
+  },
+  {
+    "CostumeId": 31025,
+    "CostumeAutoOrganizationConditionType": 2,
+    "TargetValue": 21
+  },
+  {
+    "CostumeId": 31025,
+    "CostumeAutoOrganizationConditionType": 3,
+    "TargetValue": 21
+  },
+  {
+    "CostumeId": 31025,
+    "CostumeAutoOrganizationConditionType": 4,
+    "TargetValue": 21
+  },
+  {
+    "CostumeId": 31025,
+    "CostumeAutoOrganizationConditionType": 5,
+    "TargetValue": 21
+  },
+  {
+    "CostumeId": 31025,
+    "CostumeAutoOrganizationConditionType": 6,
+    "TargetValue": 1
+  },
+  {
+    "CostumeId": 31032,
+    "CostumeAutoOrganizationConditionType": 6,
+    "TargetValue": 1
+  },
+  {
+    "CostumeId": 32009,
+    "CostumeAutoOrganizationConditionType": 6,
+    "TargetValue": 1
+  },
+  {
+    "CostumeId": 32011,
+    "CostumeAutoOrganizationConditionType": 6,
+    "TargetValue": 1
+  },
+  {
+    "CostumeId": 32012,
+    "CostumeAutoOrganizationConditionType": 2,
+    "TargetValue": 14
+  },
+  {
+    "CostumeId": 32012,
+    "CostumeAutoOrganizationConditionType": 6,
+    "TargetValue": 1
+  },
+  {
+    "CostumeId": 32021,
+    "CostumeAutoOrganizationConditionType": 6,
+    "TargetValue": 1
+  },
+  {
+    "CostumeId": 32022,
+    "CostumeAutoOrganizationConditionType": 1,
+    "TargetValue": 21
+  },
+  {
+    "CostumeId": 32022,
+    "CostumeAutoOrganizationConditionType": 2,
+    "TargetValue": 22
+  },
+  {
+    "CostumeId": 32022,
+    "CostumeAutoOrganizationConditionType": 3,
+    "TargetValue": 21
+  },
+  {
+    "CostumeId": 32022,
+    "CostumeAutoOrganizationConditionType": 4,
+    "TargetValue": 21
+  },
+  {
+    "CostumeId": 32022,
+    "CostumeAutoOrganizationConditionType": 5,
+    "TargetValue": 21
+  },
+  {
+    "CostumeId": 32022,
+    "CostumeAutoOrganizationConditionType": 6,
+    "TargetValue": 1
+  },
+  {
+    "CostumeId": 32028,
+    "CostumeAutoOrganizationConditionType": 6,
+    "TargetValue": 1
+  },
+  {
+    "CostumeId": 32030,
+    "CostumeAutoOrganizationConditionType": 6,
+    "TargetValue": 1
+  },
+  {
+    "CostumeId": 32032,
+    "CostumeAutoOrganizationConditionType": 6,
+    "TargetValue": 1
+  },
+  {
+    "CostumeId": 33005,
+    "CostumeAutoOrganizationConditionType": 3,
+    "TargetValue": 17
+  },
+  {
+    "CostumeId": 33010,
+    "CostumeAutoOrganizationConditionType": 1,
+    "TargetValue": 12
+  },
+  {
+    "CostumeId": 33010,
+    "CostumeAutoOrganizationConditionType": 2,
+    "TargetValue": 12
+  },
+  {
+    "CostumeId": 33010,
+    "CostumeAutoOrganizationConditionType": 3,
+    "TargetValue": 12
+  },
+  {
+    "CostumeId": 33010,
+    "CostumeAutoOrganizationConditionType": 4,
+    "TargetValue": 12
+  },
+  {
+    "CostumeId": 33010,
+    "CostumeAutoOrganizationConditionType": 5,
+    "TargetValue": 12
+  },
+  {
+    "CostumeId": 33014,
+    "CostumeAutoOrganizationConditionType": 1,
+    "TargetValue": 4
+  },
+  {
+    "CostumeId": 33014,
+    "CostumeAutoOrganizationConditionType": 2,
+    "TargetValue": 4
+  },
+  {
+    "CostumeId": 33014,
+    "CostumeAutoOrganizationConditionType": 3,
+    "TargetValue": 4
+  },
+  {
+    "CostumeId": 33014,
+    "CostumeAutoOrganizationConditionType": 4,
+    "TargetValue": 4
+  },
+  {
+    "CostumeId": 33014,
+    "CostumeAutoOrganizationConditionType": 5,
+    "TargetValue": 4
+  },
+  {
+    "CostumeId": 33014,
+    "CostumeAutoOrganizationConditionType": 6,
+    "TargetValue": 1
+  },
+  {
+    "CostumeId": 33015,
+    "CostumeAutoOrganizationConditionType": 6,
+    "TargetValue": 1
+  },
+  {
+    "CostumeId": 33016,
+    "CostumeAutoOrganizationConditionType": 6,
+    "TargetValue": 1
+  },
+  {
+    "CostumeId": 33029,
+    "CostumeAutoOrganizationConditionType": 1,
+    "TargetValue": 21
+  },
+  {
+    "CostumeId": 33029,
+    "CostumeAutoOrganizationConditionType": 2,
+    "TargetValue": 21
+  },
+  {
+    "CostumeId": 33029,
+    "CostumeAutoOrganizationConditionType": 3,
+    "TargetValue": 22
+  },
+  {
+    "CostumeId": 33029,
+    "CostumeAutoOrganizationConditionType": 4,
+    "TargetValue": 21
+  },
+  {
+    "CostumeId": 33029,
+    "CostumeAutoOrganizationConditionType": 5,
+    "TargetValue": 21
+  },
+  {
+    "CostumeId": 33029,
+    "CostumeAutoOrganizationConditionType": 6,
+    "TargetValue": 1
+  },
+  {
+    "CostumeId": 33031,
+    "CostumeAutoOrganizationConditionType": 6,
+    "TargetValue": 1
+  },
+  {
+    "CostumeId": 34002,
+    "CostumeAutoOrganizationConditionType": 1,
+    "TargetValue": 16
+  },
+  {
+    "CostumeId": 34002,
+    "CostumeAutoOrganizationConditionType": 2,
+    "TargetValue": 16
+  },
+  {
+    "CostumeId": 34002,
+    "CostumeAutoOrganizationConditionType": 3,
+    "TargetValue": 16
+  },
+  {
+    "CostumeId": 34002,
+    "CostumeAutoOrganizationConditionType": 4,
+    "TargetValue": 17
+  },
+  {
+    "CostumeId": 34002,
+    "CostumeAutoOrganizationConditionType": 5,
+    "TargetValue": 16
+  },
+  {
+    "CostumeId": 34002,
+    "CostumeAutoOrganizationConditionType": 6,
+    "TargetValue": 1
+  },
+  {
+    "CostumeId": 34004,
+    "CostumeAutoOrganizationConditionType": 1,
+    "TargetValue": 17
+  },
+  {
+    "CostumeId": 34004,
+    "CostumeAutoOrganizationConditionType": 2,
+    "TargetValue": 17
+  },
+  {
+    "CostumeId": 34004,
+    "CostumeAutoOrganizationConditionType": 3,
+    "TargetValue": 17
+  },
+  {
+    "CostumeId": 34004,
+    "CostumeAutoOrganizationConditionType": 4,
+    "TargetValue": 17
+  },
+  {
+    "CostumeId": 34004,
+    "CostumeAutoOrganizationConditionType": 5,
+    "TargetValue": 17
+  },
+  {
+    "CostumeId": 34004,
+    "CostumeAutoOrganizationConditionType": 6,
+    "TargetValue": 1
+  },
+  {
+    "CostumeId": 34011,
+    "CostumeAutoOrganizationConditionType": 1,
+    "TargetValue": 7
+  },
+  {
+    "CostumeId": 34011,
+    "CostumeAutoOrganizationConditionType": 2,
+    "TargetValue": 7
+  },
+  {
+    "CostumeId": 34011,
+    "CostumeAutoOrganizationConditionType": 3,
+    "TargetValue": 7
+  },
+  {
+    "CostumeId": 34011,
+    "CostumeAutoOrganizationConditionType": 4,
+    "TargetValue": 7
+  },
+  {
+    "CostumeId": 34011,
+    "CostumeAutoOrganizationConditionType": 5,
+    "TargetValue": 7
+  },
+  {
+    "CostumeId": 34015,
+    "CostumeAutoOrganizationConditionType": 1,
+    "TargetValue": 6
+  },
+  {
+    "CostumeId": 34015,
+    "CostumeAutoOrganizationConditionType": 2,
+    "TargetValue": 6
+  },
+  {
+    "CostumeId": 34015,
+    "CostumeAutoOrganizationConditionType": 3,
+    "TargetValue": 6
+  },
+  {
+    "CostumeId": 34015,
+    "CostumeAutoOrganizationConditionType": 4,
+    "TargetValue": 6
+  },
+  {
+    "CostumeId": 34015,
+    "CostumeAutoOrganizationConditionType": 5,
+    "TargetValue": 6
+  },
+  {
+    "CostumeId": 34018,
+    "CostumeAutoOrganizationConditionType": 6,
+    "TargetValue": 1
+  },
+  {
+    "CostumeId": 34019,
+    "CostumeAutoOrganizationConditionType": 1,
+    "TargetValue": 7
+  },
+  {
+    "CostumeId": 34019,
+    "CostumeAutoOrganizationConditionType": 2,
+    "TargetValue": 7
+  },
+  {
+    "CostumeId": 34019,
+    "CostumeAutoOrganizationConditionType": 3,
+    "TargetValue": 7
+  },
+  {
+    "CostumeId": 34019,
+    "CostumeAutoOrganizationConditionType": 4,
+    "TargetValue": 7
+  },
+  {
+    "CostumeId": 34019,
+    "CostumeAutoOrganizationConditionType": 5,
+    "TargetValue": 7
+  },
+  {
+    "CostumeId": 34019,
+    "CostumeAutoOrganizationConditionType": 6,
+    "TargetValue": 1
+  },
+  {
+    "CostumeId": 34020,
+    "CostumeAutoOrganizationConditionType": 6,
+    "TargetValue": 1
+  },
+  {
+    "CostumeId": 34022,
+    "CostumeAutoOrganizationConditionType": 1,
+    "TargetValue": 7
+  },
+  {
+    "CostumeId": 34022,
+    "CostumeAutoOrganizationConditionType": 2,
+    "TargetValue": 7
+  },
+  {
+    "CostumeId": 34022,
+    "CostumeAutoOrganizationConditionType": 3,
+    "TargetValue": 7
+  },
+  {
+    "CostumeId": 34022,
+    "CostumeAutoOrganizationConditionType": 4,
+    "TargetValue": 7
+  },
+  {
+    "CostumeId": 34022,
+    "CostumeAutoOrganizationConditionType": 5,
+    "TargetValue": 7
+  },
+  {
+    "CostumeId": 34027,
+    "CostumeAutoOrganizationConditionType": 1,
+    "TargetValue": 14
+  },
+  {
+    "CostumeId": 34027,
+    "CostumeAutoOrganizationConditionType": 2,
+    "TargetValue": 14
+  },
+  {
+    "CostumeId": 34027,
+    "CostumeAutoOrganizationConditionType": 3,
+    "TargetValue": 14
+  },
+  {
+    "CostumeId": 34027,
+    "CostumeAutoOrganizationConditionType": 4,
+    "TargetValue": 14
+  },
+  {
+    "CostumeId": 34027,
+    "CostumeAutoOrganizationConditionType": 5,
+    "TargetValue": 14
+  },
+  {
+    "CostumeId": 34028,
+    "CostumeAutoOrganizationConditionType": 6,
+    "TargetValue": 1
+  },
+  {
+    "CostumeId": 34029,
+    "CostumeAutoOrganizationConditionType": 1,
+    "TargetValue": 6
+  },
+  {
+    "CostumeId": 34029,
+    "CostumeAutoOrganizationConditionType": 2,
+    "TargetValue": 6
+  },
+  {
+    "CostumeId": 34029,
+    "CostumeAutoOrganizationConditionType": 3,
+    "TargetValue": 6
+  },
+  {
+    "CostumeId": 34029,
+    "CostumeAutoOrganizationConditionType": 4,
+    "TargetValue": 6
+  },
+  {
+    "CostumeId": 34029,
+    "CostumeAutoOrganizationConditionType": 5,
+    "TargetValue": 6
+  },
+  {
+    "CostumeId": 34034,
+    "CostumeAutoOrganizationConditionType": 6,
+    "TargetValue": 1
+  },
+  {
+    "CostumeId": 34038,
+    "CostumeAutoOrganizationConditionType": 1,
+    "TargetValue": 16
+  },
+  {
+    "CostumeId": 34038,
+    "CostumeAutoOrganizationConditionType": 2,
+    "TargetValue": 16
+  },
+  {
+    "CostumeId": 34038,
+    "CostumeAutoOrganizationConditionType": 3,
+    "TargetValue": 16
+  },
+  {
+    "CostumeId": 34038,
+    "CostumeAutoOrganizationConditionType": 4,
+    "TargetValue": 17
+  },
+  {
+    "CostumeId": 34038,
+    "CostumeAutoOrganizationConditionType": 5,
+    "TargetValue": 16
+  },
+  {
+    "CostumeId": 34038,
+    "CostumeAutoOrganizationConditionType": 6,
+    "TargetValue": 1
+  },
+  {
+    "CostumeId": 34046,
+    "CostumeAutoOrganizationConditionType": 1,
+    "TargetValue": 9
+  },
+  {
+    "CostumeId": 34046,
+    "CostumeAutoOrganizationConditionType": 2,
+    "TargetValue": 9
+  },
+  {
+    "CostumeId": 34046,
+    "CostumeAutoOrganizationConditionType": 3,
+    "TargetValue": 9
+  },
+  {
+    "CostumeId": 34046,
+    "CostumeAutoOrganizationConditionType": 4,
+    "TargetValue": 10
+  },
+  {
+    "CostumeId": 34046,
+    "CostumeAutoOrganizationConditionType": 5,
+    "TargetValue": 9
+  },
+  {
+    "CostumeId": 34048,
+    "CostumeAutoOrganizationConditionType": 6,
+    "TargetValue": 1
+  },
+  {
+    "CostumeId": 35013,
+    "CostumeAutoOrganizationConditionType": 6,
+    "TargetValue": 1
+  },
+  {
+    "CostumeId": 35014,
+    "CostumeAutoOrganizationConditionType": 6,
+    "TargetValue": 1
+  },
+  {
+    "CostumeId": 35016,
+    "CostumeAutoOrganizationConditionType": 6,
+    "TargetValue": 1
+  },
+  {
+    "CostumeId": 35018,
+    "CostumeAutoOrganizationConditionType": 6,
+    "TargetValue": 1
+  },
+  {
+    "CostumeId": 35020,
+    "CostumeAutoOrganizationConditionType": 6,
+    "TargetValue": 1
+  },
+  {
+    "CostumeId": 35025,
+    "CostumeAutoOrganizationConditionType": 6,
+    "TargetValue": 1
+  },
+  {
+    "CostumeId": 35028,
+    "CostumeAutoOrganizationConditionType": 1,
+    "TargetValue": 18
+  },
+  {
+    "CostumeId": 35028,
+    "CostumeAutoOrganizationConditionType": 2,
+    "TargetValue": 18
+  },
+  {
+    "CostumeId": 35028,
+    "CostumeAutoOrganizationConditionType": 3,
+    "TargetValue": 18
+  },
+  {
+    "CostumeId": 35028,
+    "CostumeAutoOrganizationConditionType": 4,
+    "TargetValue": 18
+  },
+  {
+    "CostumeId": 35028,
+    "CostumeAutoOrganizationConditionType": 5,
+    "TargetValue": 19
+  },
+  {
+    "CostumeId": 35032,
+    "CostumeAutoOrganizationConditionType": 1,
+    "TargetValue": 17
+  },
+  {
+    "CostumeId": 35032,
+    "CostumeAutoOrganizationConditionType": 2,
+    "TargetValue": 17
+  },
+  {
+    "CostumeId": 35032,
+    "CostumeAutoOrganizationConditionType": 3,
+    "TargetValue": 17
+  },
+  {
+    "CostumeId": 35032,
+    "CostumeAutoOrganizationConditionType": 4,
+    "TargetValue": 17
+  },
+  {
+    "CostumeId": 35032,
+    "CostumeAutoOrganizationConditionType": 5,
+    "TargetValue": 18
+  },
+  {
+    "CostumeId": 35032,
+    "CostumeAutoOrganizationConditionType": 6,
+    "TargetValue": 1
+  },
+  {
+    "CostumeId": 35036,
+    "CostumeAutoOrganizationConditionType": 6,
+    "TargetValue": 1
+  },
+  {
+    "CostumeId": 35037,
+    "CostumeAutoOrganizationConditionType": 1,
+    "TargetValue": 9
+  },
+  {
+    "CostumeId": 35037,
+    "CostumeAutoOrganizationConditionType": 2,
+    "TargetValue": 9
+  },
+  {
+    "CostumeId": 35037,
+    "CostumeAutoOrganizationConditionType": 3,
+    "TargetValue": 9
+  },
+  {
+    "CostumeId": 35037,
+    "CostumeAutoOrganizationConditionType": 4,
+    "TargetValue": 9
+  },
+  {
+    "CostumeId": 35037,
+    "CostumeAutoOrganizationConditionType": 5,
+    "TargetValue": 10
+  },
+  {
+    "CostumeId": 35038,
+    "CostumeAutoOrganizationConditionType": 1,
+    "TargetValue": 21
+  },
+  {
+    "CostumeId": 35038,
+    "CostumeAutoOrganizationConditionType": 2,
+    "TargetValue": 21
+  },
+  {
+    "CostumeId": 35038,
+    "CostumeAutoOrganizationConditionType": 3,
+    "TargetValue": 21
+  },
+  {
+    "CostumeId": 35038,
+    "CostumeAutoOrganizationConditionType": 4,
+    "TargetValue": 21
+  },
+  {
+    "CostumeId": 35038,
+    "CostumeAutoOrganizationConditionType": 5,
+    "TargetValue": 22
+  },
+  {
+    "CostumeId": 42002,
+    "CostumeAutoOrganizationConditionType": 1,
+    "TargetValue": 9
+  },
+  {
+    "CostumeId": 42002,
+    "CostumeAutoOrganizationConditionType": 2,
+    "TargetValue": 9
+  },
+  {
+    "CostumeId": 42002,
+    "CostumeAutoOrganizationConditionType": 3,
+    "TargetValue": 9
+  },
+  {
+    "CostumeId": 42002,
+    "CostumeAutoOrganizationConditionType": 4,
+    "TargetValue": 9
+  },
+  {
+    "CostumeId": 42002,
+    "CostumeAutoOrganizationConditionType": 5,
+    "TargetValue": 9
+  },
+  {
+    "CostumeId": 44000,
+    "CostumeAutoOrganizationConditionType": 1,
+    "TargetValue": 7
+  },
+  {
+    "CostumeId": 44000,
+    "CostumeAutoOrganizationConditionType": 2,
+    "TargetValue": 7
+  },
+  {
+    "CostumeId": 44000,
+    "CostumeAutoOrganizationConditionType": 3,
+    "TargetValue": 7
+  },
+  {
+    "CostumeId": 44000,
+    "CostumeAutoOrganizationConditionType": 4,
+    "TargetValue": 7
+  },
+  {
+    "CostumeId": 44000,
+    "CostumeAutoOrganizationConditionType": 5,
+    "TargetValue": 7
+  },
+  {
+    "CostumeId": 44004,
+    "CostumeAutoOrganizationConditionType": 1,
+    "TargetValue": 14
+  },
+  {
+    "CostumeId": 44004,
+    "CostumeAutoOrganizationConditionType": 2,
+    "TargetValue": 14
+  },
+  {
+    "CostumeId": 44004,
+    "CostumeAutoOrganizationConditionType": 3,
+    "TargetValue": 14
+  },
+  {
+    "CostumeId": 44004,
+    "CostumeAutoOrganizationConditionType": 4,
+    "TargetValue": 14
+  },
+  {
+    "CostumeId": 44004,
+    "CostumeAutoOrganizationConditionType": 5,
+    "TargetValue": 14
+  },
+  {
+    "CostumeId": 51003,
+    "CostumeAutoOrganizationConditionType": 1,
+    "TargetValue": 6
+  },
+  {
+    "CostumeId": 51003,
+    "CostumeAutoOrganizationConditionType": 2,
+    "TargetValue": 5
+  },
+  {
+    "CostumeId": 51003,
+    "CostumeAutoOrganizationConditionType": 3,
+    "TargetValue": 5
+  },
+  {
+    "CostumeId": 51003,
+    "CostumeAutoOrganizationConditionType": 4,
+    "TargetValue": 5
+  },
+  {
+    "CostumeId": 51003,
+    "CostumeAutoOrganizationConditionType": 5,
+    "TargetValue": 5
+  },
+  {
+    "CostumeId": 51003,
+    "CostumeAutoOrganizationConditionType": 6,
+    "TargetValue": 1
+  }
+]

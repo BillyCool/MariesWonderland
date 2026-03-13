@@ -1,0 +1,1298 @@
+[
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100011,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100011,
+    "StatusKindType": 2,
+    "StatusCalculationType": 2,
+    "EffectValue": 50
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100012,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "EffectValue": 125
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100012,
+    "StatusKindType": 2,
+    "StatusCalculationType": 2,
+    "EffectValue": 70
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100013,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "EffectValue": 150
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100013,
+    "StatusKindType": 2,
+    "StatusCalculationType": 2,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100021,
+    "StatusKindType": 2,
+    "StatusCalculationType": 2,
+    "EffectValue": 50
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100021,
+    "StatusKindType": 4,
+    "StatusCalculationType": 1,
+    "EffectValue": 30
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100022,
+    "StatusKindType": 2,
+    "StatusCalculationType": 2,
+    "EffectValue": 70
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100022,
+    "StatusKindType": 4,
+    "StatusCalculationType": 1,
+    "EffectValue": 40
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100023,
+    "StatusKindType": 2,
+    "StatusCalculationType": 2,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100023,
+    "StatusKindType": 4,
+    "StatusCalculationType": 1,
+    "EffectValue": 50
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100031,
+    "StatusKindType": 3,
+    "StatusCalculationType": 1,
+    "EffectValue": 50
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100031,
+    "StatusKindType": 4,
+    "StatusCalculationType": 1,
+    "EffectValue": 30
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100032,
+    "StatusKindType": 3,
+    "StatusCalculationType": 1,
+    "EffectValue": 70
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100032,
+    "StatusKindType": 4,
+    "StatusCalculationType": 1,
+    "EffectValue": 40
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100033,
+    "StatusKindType": 3,
+    "StatusCalculationType": 1,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100033,
+    "StatusKindType": 4,
+    "StatusCalculationType": 1,
+    "EffectValue": 50
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100041,
+    "StatusKindType": 2,
+    "StatusCalculationType": 2,
+    "EffectValue": 50
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100041,
+    "StatusKindType": 3,
+    "StatusCalculationType": 1,
+    "EffectValue": 50
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100042,
+    "StatusKindType": 2,
+    "StatusCalculationType": 2,
+    "EffectValue": 70
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100042,
+    "StatusKindType": 3,
+    "StatusCalculationType": 1,
+    "EffectValue": 70
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100043,
+    "StatusKindType": 2,
+    "StatusCalculationType": 2,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100043,
+    "StatusKindType": 3,
+    "StatusCalculationType": 1,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100051,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100051,
+    "StatusKindType": 3,
+    "StatusCalculationType": 1,
+    "EffectValue": 50
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100052,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "EffectValue": 125
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100052,
+    "StatusKindType": 3,
+    "StatusCalculationType": 1,
+    "EffectValue": 70
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100053,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "EffectValue": 150
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100053,
+    "StatusKindType": 3,
+    "StatusCalculationType": 1,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100061,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100061,
+    "StatusKindType": 2,
+    "StatusCalculationType": 2,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100062,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "EffectValue": 125
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100062,
+    "StatusKindType": 2,
+    "StatusCalculationType": 2,
+    "EffectValue": 140
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100063,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "EffectValue": 150
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100063,
+    "StatusKindType": 2,
+    "StatusCalculationType": 2,
+    "EffectValue": 200
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100071,
+    "StatusKindType": 2,
+    "StatusCalculationType": 2,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100071,
+    "StatusKindType": 4,
+    "StatusCalculationType": 1,
+    "EffectValue": 60
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100072,
+    "StatusKindType": 2,
+    "StatusCalculationType": 2,
+    "EffectValue": 140
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100072,
+    "StatusKindType": 4,
+    "StatusCalculationType": 1,
+    "EffectValue": 80
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100073,
+    "StatusKindType": 2,
+    "StatusCalculationType": 2,
+    "EffectValue": 200
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100073,
+    "StatusKindType": 4,
+    "StatusCalculationType": 1,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100081,
+    "StatusKindType": 3,
+    "StatusCalculationType": 1,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100081,
+    "StatusKindType": 4,
+    "StatusCalculationType": 1,
+    "EffectValue": 60
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100082,
+    "StatusKindType": 3,
+    "StatusCalculationType": 1,
+    "EffectValue": 140
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100082,
+    "StatusKindType": 4,
+    "StatusCalculationType": 1,
+    "EffectValue": 80
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100083,
+    "StatusKindType": 3,
+    "StatusCalculationType": 1,
+    "EffectValue": 200
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100083,
+    "StatusKindType": 4,
+    "StatusCalculationType": 1,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100091,
+    "StatusKindType": 2,
+    "StatusCalculationType": 2,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100091,
+    "StatusKindType": 3,
+    "StatusCalculationType": 1,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100092,
+    "StatusKindType": 2,
+    "StatusCalculationType": 2,
+    "EffectValue": 140
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100092,
+    "StatusKindType": 3,
+    "StatusCalculationType": 1,
+    "EffectValue": 140
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100093,
+    "StatusKindType": 2,
+    "StatusCalculationType": 2,
+    "EffectValue": 200
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100093,
+    "StatusKindType": 3,
+    "StatusCalculationType": 1,
+    "EffectValue": 200
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100101,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100101,
+    "StatusKindType": 3,
+    "StatusCalculationType": 1,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100102,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "EffectValue": 125
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100102,
+    "StatusKindType": 3,
+    "StatusCalculationType": 1,
+    "EffectValue": 140
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100103,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "EffectValue": 150
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100103,
+    "StatusKindType": 3,
+    "StatusCalculationType": 1,
+    "EffectValue": 200
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100111,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100111,
+    "StatusKindType": 2,
+    "StatusCalculationType": 2,
+    "EffectValue": 80
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100112,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "EffectValue": 125
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100112,
+    "StatusKindType": 2,
+    "StatusCalculationType": 2,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100113,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "EffectValue": 150
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100113,
+    "StatusKindType": 2,
+    "StatusCalculationType": 2,
+    "EffectValue": 150
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100121,
+    "StatusKindType": 2,
+    "StatusCalculationType": 2,
+    "EffectValue": 80
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100121,
+    "StatusKindType": 4,
+    "StatusCalculationType": 1,
+    "EffectValue": 60
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100122,
+    "StatusKindType": 2,
+    "StatusCalculationType": 2,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100122,
+    "StatusKindType": 4,
+    "StatusCalculationType": 1,
+    "EffectValue": 80
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100123,
+    "StatusKindType": 2,
+    "StatusCalculationType": 2,
+    "EffectValue": 150
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100123,
+    "StatusKindType": 4,
+    "StatusCalculationType": 1,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100131,
+    "StatusKindType": 3,
+    "StatusCalculationType": 1,
+    "EffectValue": 80
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100131,
+    "StatusKindType": 4,
+    "StatusCalculationType": 1,
+    "EffectValue": 60
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100132,
+    "StatusKindType": 3,
+    "StatusCalculationType": 1,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100132,
+    "StatusKindType": 4,
+    "StatusCalculationType": 1,
+    "EffectValue": 80
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100133,
+    "StatusKindType": 3,
+    "StatusCalculationType": 1,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100133,
+    "StatusKindType": 4,
+    "StatusCalculationType": 1,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100141,
+    "StatusKindType": 2,
+    "StatusCalculationType": 2,
+    "EffectValue": 80
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100141,
+    "StatusKindType": 3,
+    "StatusCalculationType": 1,
+    "EffectValue": 80
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100142,
+    "StatusKindType": 2,
+    "StatusCalculationType": 2,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100142,
+    "StatusKindType": 3,
+    "StatusCalculationType": 1,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100143,
+    "StatusKindType": 2,
+    "StatusCalculationType": 2,
+    "EffectValue": 150
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100143,
+    "StatusKindType": 3,
+    "StatusCalculationType": 1,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100151,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100151,
+    "StatusKindType": 3,
+    "StatusCalculationType": 1,
+    "EffectValue": 80
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100152,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "EffectValue": 125
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100152,
+    "StatusKindType": 3,
+    "StatusCalculationType": 1,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100153,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "EffectValue": 150
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100153,
+    "StatusKindType": 3,
+    "StatusCalculationType": 1,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100161,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100161,
+    "StatusKindType": 2,
+    "StatusCalculationType": 2,
+    "EffectValue": 50
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100162,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "EffectValue": 125
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100162,
+    "StatusKindType": 2,
+    "StatusCalculationType": 2,
+    "EffectValue": 70
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100163,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "EffectValue": 150
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100163,
+    "StatusKindType": 2,
+    "StatusCalculationType": 2,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100171,
+    "StatusKindType": 2,
+    "StatusCalculationType": 2,
+    "EffectValue": 50
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100171,
+    "StatusKindType": 4,
+    "StatusCalculationType": 1,
+    "EffectValue": 30
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100172,
+    "StatusKindType": 2,
+    "StatusCalculationType": 2,
+    "EffectValue": 70
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100172,
+    "StatusKindType": 4,
+    "StatusCalculationType": 1,
+    "EffectValue": 40
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100173,
+    "StatusKindType": 2,
+    "StatusCalculationType": 2,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100173,
+    "StatusKindType": 4,
+    "StatusCalculationType": 1,
+    "EffectValue": 50
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100181,
+    "StatusKindType": 3,
+    "StatusCalculationType": 1,
+    "EffectValue": 50
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100181,
+    "StatusKindType": 4,
+    "StatusCalculationType": 1,
+    "EffectValue": 30
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100182,
+    "StatusKindType": 3,
+    "StatusCalculationType": 1,
+    "EffectValue": 70
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100182,
+    "StatusKindType": 4,
+    "StatusCalculationType": 1,
+    "EffectValue": 40
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100183,
+    "StatusKindType": 3,
+    "StatusCalculationType": 1,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100183,
+    "StatusKindType": 4,
+    "StatusCalculationType": 1,
+    "EffectValue": 50
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100191,
+    "StatusKindType": 2,
+    "StatusCalculationType": 2,
+    "EffectValue": 50
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100191,
+    "StatusKindType": 3,
+    "StatusCalculationType": 1,
+    "EffectValue": 50
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100192,
+    "StatusKindType": 2,
+    "StatusCalculationType": 2,
+    "EffectValue": 70
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100192,
+    "StatusKindType": 3,
+    "StatusCalculationType": 1,
+    "EffectValue": 70
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100193,
+    "StatusKindType": 2,
+    "StatusCalculationType": 2,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100193,
+    "StatusKindType": 3,
+    "StatusCalculationType": 1,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100201,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100201,
+    "StatusKindType": 3,
+    "StatusCalculationType": 1,
+    "EffectValue": 50
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100202,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "EffectValue": 125
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100202,
+    "StatusKindType": 3,
+    "StatusCalculationType": 1,
+    "EffectValue": 70
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100203,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "EffectValue": 150
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100203,
+    "StatusKindType": 3,
+    "StatusCalculationType": 1,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100211,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100211,
+    "StatusKindType": 6,
+    "StatusCalculationType": 2,
+    "EffectValue": 50
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100212,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "EffectValue": 125
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100212,
+    "StatusKindType": 6,
+    "StatusCalculationType": 2,
+    "EffectValue": 70
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100213,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "EffectValue": 150
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100213,
+    "StatusKindType": 6,
+    "StatusCalculationType": 2,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100221,
+    "StatusKindType": 6,
+    "StatusCalculationType": 2,
+    "EffectValue": 50
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100221,
+    "StatusKindType": 7,
+    "StatusCalculationType": 2,
+    "EffectValue": 50
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100222,
+    "StatusKindType": 6,
+    "StatusCalculationType": 2,
+    "EffectValue": 70
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100222,
+    "StatusKindType": 7,
+    "StatusCalculationType": 2,
+    "EffectValue": 70
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100223,
+    "StatusKindType": 6,
+    "StatusCalculationType": 2,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100223,
+    "StatusKindType": 7,
+    "StatusCalculationType": 2,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100231,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100231,
+    "StatusKindType": 7,
+    "StatusCalculationType": 2,
+    "EffectValue": 50
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100232,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "EffectValue": 125
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100232,
+    "StatusKindType": 7,
+    "StatusCalculationType": 2,
+    "EffectValue": 70
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100233,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "EffectValue": 150
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100233,
+    "StatusKindType": 7,
+    "StatusCalculationType": 2,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100241,
+    "StatusKindType": 7,
+    "StatusCalculationType": 2,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100242,
+    "StatusKindType": 7,
+    "StatusCalculationType": 2,
+    "EffectValue": 140
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100243,
+    "StatusKindType": 7,
+    "StatusCalculationType": 2,
+    "EffectValue": 200
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100251,
+    "StatusKindType": 6,
+    "StatusCalculationType": 2,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100252,
+    "StatusKindType": 6,
+    "StatusCalculationType": 2,
+    "EffectValue": 140
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100253,
+    "StatusKindType": 6,
+    "StatusCalculationType": 2,
+    "EffectValue": 200
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100261,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100261,
+    "StatusKindType": 6,
+    "StatusCalculationType": 2,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100262,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "EffectValue": 125
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100262,
+    "StatusKindType": 6,
+    "StatusCalculationType": 2,
+    "EffectValue": 140
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100263,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "EffectValue": 150
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100263,
+    "StatusKindType": 6,
+    "StatusCalculationType": 2,
+    "EffectValue": 200
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100271,
+    "StatusKindType": 6,
+    "StatusCalculationType": 2,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100271,
+    "StatusKindType": 7,
+    "StatusCalculationType": 2,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100272,
+    "StatusKindType": 6,
+    "StatusCalculationType": 2,
+    "EffectValue": 140
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100272,
+    "StatusKindType": 7,
+    "StatusCalculationType": 2,
+    "EffectValue": 140
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100273,
+    "StatusKindType": 6,
+    "StatusCalculationType": 2,
+    "EffectValue": 200
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100273,
+    "StatusKindType": 7,
+    "StatusCalculationType": 2,
+    "EffectValue": 200
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100281,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100281,
+    "StatusKindType": 7,
+    "StatusCalculationType": 2,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100282,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "EffectValue": 125
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100282,
+    "StatusKindType": 7,
+    "StatusCalculationType": 2,
+    "EffectValue": 140
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100283,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "EffectValue": 150
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100283,
+    "StatusKindType": 7,
+    "StatusCalculationType": 2,
+    "EffectValue": 200
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100291,
+    "StatusKindType": 7,
+    "StatusCalculationType": 2,
+    "EffectValue": 130
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100292,
+    "StatusKindType": 7,
+    "StatusCalculationType": 2,
+    "EffectValue": 200
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100293,
+    "StatusKindType": 7,
+    "StatusCalculationType": 2,
+    "EffectValue": 260
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100301,
+    "StatusKindType": 6,
+    "StatusCalculationType": 2,
+    "EffectValue": 130
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100302,
+    "StatusKindType": 6,
+    "StatusCalculationType": 2,
+    "EffectValue": 200
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100303,
+    "StatusKindType": 6,
+    "StatusCalculationType": 2,
+    "EffectValue": 260
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100311,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100311,
+    "StatusKindType": 6,
+    "StatusCalculationType": 2,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100312,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "EffectValue": 125
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100312,
+    "StatusKindType": 6,
+    "StatusCalculationType": 2,
+    "EffectValue": 120
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100313,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "EffectValue": 150
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100313,
+    "StatusKindType": 6,
+    "StatusCalculationType": 2,
+    "EffectValue": 150
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100321,
+    "StatusKindType": 6,
+    "StatusCalculationType": 2,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100321,
+    "StatusKindType": 7,
+    "StatusCalculationType": 2,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100322,
+    "StatusKindType": 6,
+    "StatusCalculationType": 2,
+    "EffectValue": 120
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100322,
+    "StatusKindType": 7,
+    "StatusCalculationType": 2,
+    "EffectValue": 120
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100323,
+    "StatusKindType": 6,
+    "StatusCalculationType": 2,
+    "EffectValue": 150
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100323,
+    "StatusKindType": 7,
+    "StatusCalculationType": 2,
+    "EffectValue": 150
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100331,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100331,
+    "StatusKindType": 7,
+    "StatusCalculationType": 2,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100332,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "EffectValue": 125
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100332,
+    "StatusKindType": 7,
+    "StatusCalculationType": 2,
+    "EffectValue": 120
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100333,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "EffectValue": 150
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100333,
+    "StatusKindType": 7,
+    "StatusCalculationType": 2,
+    "EffectValue": 150
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100341,
+    "StatusKindType": 7,
+    "StatusCalculationType": 2,
+    "EffectValue": 200
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100342,
+    "StatusKindType": 7,
+    "StatusCalculationType": 2,
+    "EffectValue": 250
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100343,
+    "StatusKindType": 7,
+    "StatusCalculationType": 2,
+    "EffectValue": 300
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100351,
+    "StatusKindType": 6,
+    "StatusCalculationType": 2,
+    "EffectValue": 200
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100352,
+    "StatusKindType": 6,
+    "StatusCalculationType": 2,
+    "EffectValue": 250
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100353,
+    "StatusKindType": 6,
+    "StatusCalculationType": 2,
+    "EffectValue": 300
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100361,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100361,
+    "StatusKindType": 6,
+    "StatusCalculationType": 2,
+    "EffectValue": 50
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100362,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "EffectValue": 125
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100362,
+    "StatusKindType": 6,
+    "StatusCalculationType": 2,
+    "EffectValue": 70
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100363,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "EffectValue": 150
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100363,
+    "StatusKindType": 6,
+    "StatusCalculationType": 2,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100371,
+    "StatusKindType": 6,
+    "StatusCalculationType": 2,
+    "EffectValue": 50
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100371,
+    "StatusKindType": 7,
+    "StatusCalculationType": 2,
+    "EffectValue": 50
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100372,
+    "StatusKindType": 6,
+    "StatusCalculationType": 2,
+    "EffectValue": 70
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100372,
+    "StatusKindType": 7,
+    "StatusCalculationType": 2,
+    "EffectValue": 70
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100373,
+    "StatusKindType": 6,
+    "StatusCalculationType": 2,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100373,
+    "StatusKindType": 7,
+    "StatusCalculationType": 2,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100381,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100381,
+    "StatusKindType": 7,
+    "StatusCalculationType": 2,
+    "EffectValue": 50
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100382,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "EffectValue": 125
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100382,
+    "StatusKindType": 7,
+    "StatusCalculationType": 2,
+    "EffectValue": 70
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100383,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "EffectValue": 150
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100383,
+    "StatusKindType": 7,
+    "StatusCalculationType": 2,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100391,
+    "StatusKindType": 7,
+    "StatusCalculationType": 2,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100392,
+    "StatusKindType": 7,
+    "StatusCalculationType": 2,
+    "EffectValue": 150
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100393,
+    "StatusKindType": 7,
+    "StatusCalculationType": 2,
+    "EffectValue": 200
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100401,
+    "StatusKindType": 6,
+    "StatusCalculationType": 2,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100402,
+    "StatusKindType": 6,
+    "StatusCalculationType": 2,
+    "EffectValue": 150
+  },
+  {
+    "CostumeLotteryEffectTargetStatusUpId": 100403,
+    "StatusKindType": 6,
+    "StatusCalculationType": 2,
+    "EffectValue": 200
+  }
+]

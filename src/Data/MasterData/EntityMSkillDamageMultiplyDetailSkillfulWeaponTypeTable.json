@@ -1,0 +1,212 @@
+[
+  {
+    "SkillDamageMultiplyDetailId": 900001,
+    "ConditionTargetType": 1,
+    "WeaponType": 1,
+    "IsSkillfulMainWeapon": true,
+    "DamageMultiplyCoefficientValuePermil": 1100
+  },
+  {
+    "SkillDamageMultiplyDetailId": 900002,
+    "ConditionTargetType": 1,
+    "WeaponType": 2,
+    "IsSkillfulMainWeapon": true,
+    "DamageMultiplyCoefficientValuePermil": 1100
+  },
+  {
+    "SkillDamageMultiplyDetailId": 900003,
+    "ConditionTargetType": 1,
+    "WeaponType": 3,
+    "IsSkillfulMainWeapon": true,
+    "DamageMultiplyCoefficientValuePermil": 1100
+  },
+  {
+    "SkillDamageMultiplyDetailId": 900004,
+    "ConditionTargetType": 1,
+    "WeaponType": 4,
+    "IsSkillfulMainWeapon": true,
+    "DamageMultiplyCoefficientValuePermil": 1100
+  },
+  {
+    "SkillDamageMultiplyDetailId": 900005,
+    "ConditionTargetType": 1,
+    "WeaponType": 5,
+    "IsSkillfulMainWeapon": true,
+    "DamageMultiplyCoefficientValuePermil": 1100
+  },
+  {
+    "SkillDamageMultiplyDetailId": 900006,
+    "ConditionTargetType": 1,
+    "WeaponType": 6,
+    "IsSkillfulMainWeapon": true,
+    "DamageMultiplyCoefficientValuePermil": 1100
+  },
+  {
+    "SkillDamageMultiplyDetailId": 900007,
+    "ConditionTargetType": 1,
+    "WeaponType": 1,
+    "IsSkillfulMainWeapon": true,
+    "DamageMultiplyCoefficientValuePermil": 1200
+  },
+  {
+    "SkillDamageMultiplyDetailId": 900008,
+    "ConditionTargetType": 1,
+    "WeaponType": 2,
+    "IsSkillfulMainWeapon": true,
+    "DamageMultiplyCoefficientValuePermil": 1200
+  },
+  {
+    "SkillDamageMultiplyDetailId": 900009,
+    "ConditionTargetType": 1,
+    "WeaponType": 3,
+    "IsSkillfulMainWeapon": true,
+    "DamageMultiplyCoefficientValuePermil": 1200
+  },
+  {
+    "SkillDamageMultiplyDetailId": 900010,
+    "ConditionTargetType": 1,
+    "WeaponType": 4,
+    "IsSkillfulMainWeapon": true,
+    "DamageMultiplyCoefficientValuePermil": 1200
+  },
+  {
+    "SkillDamageMultiplyDetailId": 900011,
+    "ConditionTargetType": 1,
+    "WeaponType": 5,
+    "IsSkillfulMainWeapon": true,
+    "DamageMultiplyCoefficientValuePermil": 1200
+  },
+  {
+    "SkillDamageMultiplyDetailId": 900012,
+    "ConditionTargetType": 1,
+    "WeaponType": 6,
+    "IsSkillfulMainWeapon": true,
+    "DamageMultiplyCoefficientValuePermil": 1200
+  },
+  {
+    "SkillDamageMultiplyDetailId": 900013,
+    "ConditionTargetType": 1,
+    "WeaponType": 1,
+    "IsSkillfulMainWeapon": true,
+    "DamageMultiplyCoefficientValuePermil": 1300
+  },
+  {
+    "SkillDamageMultiplyDetailId": 900014,
+    "ConditionTargetType": 1,
+    "WeaponType": 2,
+    "IsSkillfulMainWeapon": true,
+    "DamageMultiplyCoefficientValuePermil": 1300
+  },
+  {
+    "SkillDamageMultiplyDetailId": 900015,
+    "ConditionTargetType": 1,
+    "WeaponType": 3,
+    "IsSkillfulMainWeapon": true,
+    "DamageMultiplyCoefficientValuePermil": 1300
+  },
+  {
+    "SkillDamageMultiplyDetailId": 900016,
+    "ConditionTargetType": 1,
+    "WeaponType": 4,
+    "IsSkillfulMainWeapon": true,
+    "DamageMultiplyCoefficientValuePermil": 1300
+  },
+  {
+    "SkillDamageMultiplyDetailId": 900017,
+    "ConditionTargetType": 1,
+    "WeaponType": 5,
+    "IsSkillfulMainWeapon": true,
+    "DamageMultiplyCoefficientValuePermil": 1300
+  },
+  {
+    "SkillDamageMultiplyDetailId": 900018,
+    "ConditionTargetType": 1,
+    "WeaponType": 6,
+    "IsSkillfulMainWeapon": true,
+    "DamageMultiplyCoefficientValuePermil": 1300
+  },
+  {
+    "SkillDamageMultiplyDetailId": 900019,
+    "ConditionTargetType": 1,
+    "WeaponType": 1,
+    "IsSkillfulMainWeapon": true,
+    "DamageMultiplyCoefficientValuePermil": 1400
+  },
+  {
+    "SkillDamageMultiplyDetailId": 900020,
+    "ConditionTargetType": 1,
+    "WeaponType": 2,
+    "IsSkillfulMainWeapon": true,
+    "DamageMultiplyCoefficientValuePermil": 1400
+  },
+  {
+    "SkillDamageMultiplyDetailId": 900021,
+    "ConditionTargetType": 1,
+    "WeaponType": 3,
+    "IsSkillfulMainWeapon": true,
+    "DamageMultiplyCoefficientValuePermil": 1400
+  },
+  {
+    "SkillDamageMultiplyDetailId": 900022,
+    "ConditionTargetType": 1,
+    "WeaponType": 4,
+    "IsSkillfulMainWeapon": true,
+    "DamageMultiplyCoefficientValuePermil": 1400
+  },
+  {
+    "SkillDamageMultiplyDetailId": 900023,
+    "ConditionTargetType": 1,
+    "WeaponType": 5,
+    "IsSkillfulMainWeapon": true,
+    "DamageMultiplyCoefficientValuePermil": 1400
+  },
+  {
+    "SkillDamageMultiplyDetailId": 900024,
+    "ConditionTargetType": 1,
+    "WeaponType": 6,
+    "IsSkillfulMainWeapon": true,
+    "DamageMultiplyCoefficientValuePermil": 1400
+  },
+  {
+    "SkillDamageMultiplyDetailId": 900025,
+    "ConditionTargetType": 1,
+    "WeaponType": 1,
+    "IsSkillfulMainWeapon": true,
+    "DamageMultiplyCoefficientValuePermil": 1500
+  },
+  {
+    "SkillDamageMultiplyDetailId": 900026,
+    "ConditionTargetType": 1,
+    "WeaponType": 2,
+    "IsSkillfulMainWeapon": true,
+    "DamageMultiplyCoefficientValuePermil": 1500
+  },
+  {
+    "SkillDamageMultiplyDetailId": 900027,
+    "ConditionTargetType": 1,
+    "WeaponType": 3,
+    "IsSkillfulMainWeapon": true,
+    "DamageMultiplyCoefficientValuePermil": 1500
+  },
+  {
+    "SkillDamageMultiplyDetailId": 900028,
+    "ConditionTargetType": 1,
+    "WeaponType": 4,
+    "IsSkillfulMainWeapon": true,
+    "DamageMultiplyCoefficientValuePermil": 1500
+  },
+  {
+    "SkillDamageMultiplyDetailId": 900029,
+    "ConditionTargetType": 1,
+    "WeaponType": 5,
+    "IsSkillfulMainWeapon": true,
+    "DamageMultiplyCoefficientValuePermil": 1500
+  },
+  {
+    "SkillDamageMultiplyDetailId": 900030,
+    "ConditionTargetType": 1,
+    "WeaponType": 6,
+    "IsSkillfulMainWeapon": true,
+    "DamageMultiplyCoefficientValuePermil": 1500
+  }
+]

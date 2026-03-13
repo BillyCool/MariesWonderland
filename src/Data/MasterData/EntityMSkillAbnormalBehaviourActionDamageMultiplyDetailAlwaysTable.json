@@ -1,0 +1,758 @@
+[
+  {
+    "DamageMultiplyAbnormalDetailId": 1,
+    "DamageMultiplyCoefficientValuePermil": 0
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 2,
+    "DamageMultiplyCoefficientValuePermil": 200
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 3,
+    "DamageMultiplyCoefficientValuePermil": 900
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 4,
+    "DamageMultiplyCoefficientValuePermil": 100
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 5,
+    "DamageMultiplyCoefficientValuePermil": 500
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 6,
+    "DamageMultiplyCoefficientValuePermil": 300
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 7,
+    "DamageMultiplyCoefficientValuePermil": 700
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 8,
+    "DamageMultiplyCoefficientValuePermil": 10
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 9,
+    "DamageMultiplyCoefficientValuePermil": 800
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 900001,
+    "DamageMultiplyCoefficientValuePermil": 500
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 900002,
+    "DamageMultiplyCoefficientValuePermil": 0
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 900003,
+    "DamageMultiplyCoefficientValuePermil": 1
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 900004,
+    "DamageMultiplyCoefficientValuePermil": 2000
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 900005,
+    "DamageMultiplyCoefficientValuePermil": 500
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 1000857,
+    "DamageMultiplyCoefficientValuePermil": 550
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 1000859,
+    "DamageMultiplyCoefficientValuePermil": 530
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 1000861,
+    "DamageMultiplyCoefficientValuePermil": 510
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 1000863,
+    "DamageMultiplyCoefficientValuePermil": 490
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 1000865,
+    "DamageMultiplyCoefficientValuePermil": 460
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 1000867,
+    "DamageMultiplyCoefficientValuePermil": 430
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 1000869,
+    "DamageMultiplyCoefficientValuePermil": 400
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 1000871,
+    "DamageMultiplyCoefficientValuePermil": 370
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 1000873,
+    "DamageMultiplyCoefficientValuePermil": 340
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 1000875,
+    "DamageMultiplyCoefficientValuePermil": 310
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 1000877,
+    "DamageMultiplyCoefficientValuePermil": 270
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 1000879,
+    "DamageMultiplyCoefficientValuePermil": 240
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 1000881,
+    "DamageMultiplyCoefficientValuePermil": 200
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 1000883,
+    "DamageMultiplyCoefficientValuePermil": 160
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 1000885,
+    "DamageMultiplyCoefficientValuePermil": 100
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 1001172,
+    "DamageMultiplyCoefficientValuePermil": 680
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 1001174,
+    "DamageMultiplyCoefficientValuePermil": 670
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 1001176,
+    "DamageMultiplyCoefficientValuePermil": 660
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 1001178,
+    "DamageMultiplyCoefficientValuePermil": 650
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 1001180,
+    "DamageMultiplyCoefficientValuePermil": 640
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 1001182,
+    "DamageMultiplyCoefficientValuePermil": 630
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 1001184,
+    "DamageMultiplyCoefficientValuePermil": 620
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 1001186,
+    "DamageMultiplyCoefficientValuePermil": 610
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 1001188,
+    "DamageMultiplyCoefficientValuePermil": 600
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 1001190,
+    "DamageMultiplyCoefficientValuePermil": 590
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 1001192,
+    "DamageMultiplyCoefficientValuePermil": 580
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 1001194,
+    "DamageMultiplyCoefficientValuePermil": 560
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 1001196,
+    "DamageMultiplyCoefficientValuePermil": 540
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 1001198,
+    "DamageMultiplyCoefficientValuePermil": 520
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 1001200,
+    "DamageMultiplyCoefficientValuePermil": 500
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 1002372,
+    "DamageMultiplyCoefficientValuePermil": 600
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 1002375,
+    "DamageMultiplyCoefficientValuePermil": 580
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 1002378,
+    "DamageMultiplyCoefficientValuePermil": 560
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 1002381,
+    "DamageMultiplyCoefficientValuePermil": 540
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 1002384,
+    "DamageMultiplyCoefficientValuePermil": 520
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 1002387,
+    "DamageMultiplyCoefficientValuePermil": 500
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 1002390,
+    "DamageMultiplyCoefficientValuePermil": 470
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 1002393,
+    "DamageMultiplyCoefficientValuePermil": 440
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 1002396,
+    "DamageMultiplyCoefficientValuePermil": 410
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 1002399,
+    "DamageMultiplyCoefficientValuePermil": 380
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 1002402,
+    "DamageMultiplyCoefficientValuePermil": 350
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 1002405,
+    "DamageMultiplyCoefficientValuePermil": 320
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 1002408,
+    "DamageMultiplyCoefficientValuePermil": 290
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 1002411,
+    "DamageMultiplyCoefficientValuePermil": 260
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 1002414,
+    "DamageMultiplyCoefficientValuePermil": 200
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 2900032,
+    "DamageMultiplyCoefficientValuePermil": 970
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 2900034,
+    "DamageMultiplyCoefficientValuePermil": 970
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 2900036,
+    "DamageMultiplyCoefficientValuePermil": 970
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 2900038,
+    "DamageMultiplyCoefficientValuePermil": 970
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 2900040,
+    "DamageMultiplyCoefficientValuePermil": 970
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 2900042,
+    "DamageMultiplyCoefficientValuePermil": 970
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 2900044,
+    "DamageMultiplyCoefficientValuePermil": 970
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 2900046,
+    "DamageMultiplyCoefficientValuePermil": 950
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 2900048,
+    "DamageMultiplyCoefficientValuePermil": 950
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 2900050,
+    "DamageMultiplyCoefficientValuePermil": 950
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 2900052,
+    "DamageMultiplyCoefficientValuePermil": 950
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 2900054,
+    "DamageMultiplyCoefficientValuePermil": 900
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 2900056,
+    "DamageMultiplyCoefficientValuePermil": 875
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 2900058,
+    "DamageMultiplyCoefficientValuePermil": 850
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 2900060,
+    "DamageMultiplyCoefficientValuePermil": 800
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 11000001,
+    "DamageMultiplyCoefficientValuePermil": 934
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 11000002,
+    "DamageMultiplyCoefficientValuePermil": 916
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 11000003,
+    "DamageMultiplyCoefficientValuePermil": 898
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 11000004,
+    "DamageMultiplyCoefficientValuePermil": 880
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 11000005,
+    "DamageMultiplyCoefficientValuePermil": 912
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 11000006,
+    "DamageMultiplyCoefficientValuePermil": 888
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 11000007,
+    "DamageMultiplyCoefficientValuePermil": 864
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 11000008,
+    "DamageMultiplyCoefficientValuePermil": 840
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 11000009,
+    "DamageMultiplyCoefficientValuePermil": 890
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 11000010,
+    "DamageMultiplyCoefficientValuePermil": 860
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 11000011,
+    "DamageMultiplyCoefficientValuePermil": 830
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 11000012,
+    "DamageMultiplyCoefficientValuePermil": 800
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 11000013,
+    "DamageMultiplyCoefficientValuePermil": 868
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 11000014,
+    "DamageMultiplyCoefficientValuePermil": 832
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 11000015,
+    "DamageMultiplyCoefficientValuePermil": 796
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 11000016,
+    "DamageMultiplyCoefficientValuePermil": 760
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 11000017,
+    "DamageMultiplyCoefficientValuePermil": 824
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 11000018,
+    "DamageMultiplyCoefficientValuePermil": 776
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 11000019,
+    "DamageMultiplyCoefficientValuePermil": 728
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 11000020,
+    "DamageMultiplyCoefficientValuePermil": 680
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 11000021,
+    "DamageMultiplyCoefficientValuePermil": 780
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 11000022,
+    "DamageMultiplyCoefficientValuePermil": 720
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 11000023,
+    "DamageMultiplyCoefficientValuePermil": 660
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 11000024,
+    "DamageMultiplyCoefficientValuePermil": 600
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 11000025,
+    "DamageMultiplyCoefficientValuePermil": 835
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 11000026,
+    "DamageMultiplyCoefficientValuePermil": 790
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 11000027,
+    "DamageMultiplyCoefficientValuePermil": 745
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 11000028,
+    "DamageMultiplyCoefficientValuePermil": 700
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 11000029,
+    "DamageMultiplyCoefficientValuePermil": 780
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 11000030,
+    "DamageMultiplyCoefficientValuePermil": 720
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 11000031,
+    "DamageMultiplyCoefficientValuePermil": 660
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 11000032,
+    "DamageMultiplyCoefficientValuePermil": 600
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 11000033,
+    "DamageMultiplyCoefficientValuePermil": 725
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 11000034,
+    "DamageMultiplyCoefficientValuePermil": 650
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 11000035,
+    "DamageMultiplyCoefficientValuePermil": 575
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 11000036,
+    "DamageMultiplyCoefficientValuePermil": 500
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 11000037,
+    "DamageMultiplyCoefficientValuePermil": 769
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 11000038,
+    "DamageMultiplyCoefficientValuePermil": 706
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 11000039,
+    "DamageMultiplyCoefficientValuePermil": 643
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 11000040,
+    "DamageMultiplyCoefficientValuePermil": 580
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 11000041,
+    "DamageMultiplyCoefficientValuePermil": 692
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 11000042,
+    "DamageMultiplyCoefficientValuePermil": 608
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 11000043,
+    "DamageMultiplyCoefficientValuePermil": 524
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 11000044,
+    "DamageMultiplyCoefficientValuePermil": 440
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 11000045,
+    "DamageMultiplyCoefficientValuePermil": 615
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 11000046,
+    "DamageMultiplyCoefficientValuePermil": 510
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 11000047,
+    "DamageMultiplyCoefficientValuePermil": 405
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 11000048,
+    "DamageMultiplyCoefficientValuePermil": 300
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 12000271,
+    "DamageMultiplyCoefficientValuePermil": 963
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 12000272,
+    "DamageMultiplyCoefficientValuePermil": 962
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 12000273,
+    "DamageMultiplyCoefficientValuePermil": 961
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 12000274,
+    "DamageMultiplyCoefficientValuePermil": 960
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 12000275,
+    "DamageMultiplyCoefficientValuePermil": 958
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 12000276,
+    "DamageMultiplyCoefficientValuePermil": 957
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 12000277,
+    "DamageMultiplyCoefficientValuePermil": 956
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 12000278,
+    "DamageMultiplyCoefficientValuePermil": 955
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 12000279,
+    "DamageMultiplyCoefficientValuePermil": 953
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 12000280,
+    "DamageMultiplyCoefficientValuePermil": 952
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 12000281,
+    "DamageMultiplyCoefficientValuePermil": 949
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 12000282,
+    "DamageMultiplyCoefficientValuePermil": 947
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 12000283,
+    "DamageMultiplyCoefficientValuePermil": 945
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 12000284,
+    "DamageMultiplyCoefficientValuePermil": 943
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 12000285,
+    "DamageMultiplyCoefficientValuePermil": 940
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 12000286,
+    "DamageMultiplyCoefficientValuePermil": 954
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 12000287,
+    "DamageMultiplyCoefficientValuePermil": 952
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 12000288,
+    "DamageMultiplyCoefficientValuePermil": 951
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 12000289,
+    "DamageMultiplyCoefficientValuePermil": 949
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 12000290,
+    "DamageMultiplyCoefficientValuePermil": 947
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 12000291,
+    "DamageMultiplyCoefficientValuePermil": 945
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 12000292,
+    "DamageMultiplyCoefficientValuePermil": 943
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 12000293,
+    "DamageMultiplyCoefficientValuePermil": 941
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 12000294,
+    "DamageMultiplyCoefficientValuePermil": 938
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 12000295,
+    "DamageMultiplyCoefficientValuePermil": 936
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 12000296,
+    "DamageMultiplyCoefficientValuePermil": 933
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 12000297,
+    "DamageMultiplyCoefficientValuePermil": 930
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 12000298,
+    "DamageMultiplyCoefficientValuePermil": 927
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 12000299,
+    "DamageMultiplyCoefficientValuePermil": 924
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 12000300,
+    "DamageMultiplyCoefficientValuePermil": 920
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 12000301,
+    "DamageMultiplyCoefficientValuePermil": 947
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 12000302,
+    "DamageMultiplyCoefficientValuePermil": 945
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 12000303,
+    "DamageMultiplyCoefficientValuePermil": 943
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 12000304,
+    "DamageMultiplyCoefficientValuePermil": 940
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 12000305,
+    "DamageMultiplyCoefficientValuePermil": 938
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 12000306,
+    "DamageMultiplyCoefficientValuePermil": 935
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 12000307,
+    "DamageMultiplyCoefficientValuePermil": 933
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 12000308,
+    "DamageMultiplyCoefficientValuePermil": 929
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 12000309,
+    "DamageMultiplyCoefficientValuePermil": 926
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 12000310,
+    "DamageMultiplyCoefficientValuePermil": 922
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 12000311,
+    "DamageMultiplyCoefficientValuePermil": 919
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 12000312,
+    "DamageMultiplyCoefficientValuePermil": 915
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 12000313,
+    "DamageMultiplyCoefficientValuePermil": 911
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 12000314,
+    "DamageMultiplyCoefficientValuePermil": 907
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 12000315,
+    "DamageMultiplyCoefficientValuePermil": 900
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 15000091,
+    "DamageMultiplyCoefficientValuePermil": 900
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 15000092,
+    "DamageMultiplyCoefficientValuePermil": 850
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 17100004,
+    "DamageMultiplyCoefficientValuePermil": 940
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 17100005,
+    "DamageMultiplyCoefficientValuePermil": 920
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 17100006,
+    "DamageMultiplyCoefficientValuePermil": 900
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 17100010,
+    "DamageMultiplyCoefficientValuePermil": 760
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 17100011,
+    "DamageMultiplyCoefficientValuePermil": 680
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 17100012,
+    "DamageMultiplyCoefficientValuePermil": 600
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 17100013,
+    "DamageMultiplyCoefficientValuePermil": 850
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 17100014,
+    "DamageMultiplyCoefficientValuePermil": 800
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 17100015,
+    "DamageMultiplyCoefficientValuePermil": 750
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 17200076,
+    "DamageMultiplyCoefficientValuePermil": 800
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 17200077,
+    "DamageMultiplyCoefficientValuePermil": 900
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 18000037,
+    "DamageMultiplyCoefficientValuePermil": 950
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 18000038,
+    "DamageMultiplyCoefficientValuePermil": 940
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 18000039,
+    "DamageMultiplyCoefficientValuePermil": 920
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 18000040,
+    "DamageMultiplyCoefficientValuePermil": 940
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 18000041,
+    "DamageMultiplyCoefficientValuePermil": 920
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 18000042,
+    "DamageMultiplyCoefficientValuePermil": 900
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 18000043,
+    "DamageMultiplyCoefficientValuePermil": 920
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 18000044,
+    "DamageMultiplyCoefficientValuePermil": 900
+  },
+  {
+    "DamageMultiplyAbnormalDetailId": 18000045,
+    "DamageMultiplyCoefficientValuePermil": 880
+  }
+]

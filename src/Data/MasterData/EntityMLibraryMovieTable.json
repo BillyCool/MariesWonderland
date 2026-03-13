@@ -1,0 +1,254 @@
+[
+  {
+    "LibraryMovieId": 1,
+    "TitleLibraryTextId": 1001,
+    "LibraryMovieCategoryId": 1,
+    "SortOrder": 1,
+    "LibraryMovieUnlockConditionId": 1,
+    "LibraryMovieUnlockEvaluateConditionId": 0,
+    "MovieId": 1
+  },
+  {
+    "LibraryMovieId": 2,
+    "TitleLibraryTextId": 1002,
+    "LibraryMovieCategoryId": 1,
+    "SortOrder": 2,
+    "LibraryMovieUnlockConditionId": 2,
+    "LibraryMovieUnlockEvaluateConditionId": 0,
+    "MovieId": 2
+  },
+  {
+    "LibraryMovieId": 4,
+    "TitleLibraryTextId": 1003,
+    "LibraryMovieCategoryId": 1,
+    "SortOrder": 3,
+    "LibraryMovieUnlockConditionId": 3,
+    "LibraryMovieUnlockEvaluateConditionId": 0,
+    "MovieId": 4
+  },
+  {
+    "LibraryMovieId": 5,
+    "TitleLibraryTextId": 1004,
+    "LibraryMovieCategoryId": 1,
+    "SortOrder": 4,
+    "LibraryMovieUnlockConditionId": 3,
+    "LibraryMovieUnlockEvaluateConditionId": 0,
+    "MovieId": 5
+  },
+  {
+    "LibraryMovieId": 6,
+    "TitleLibraryTextId": 1005,
+    "LibraryMovieCategoryId": 2,
+    "SortOrder": 5,
+    "LibraryMovieUnlockConditionId": 0,
+    "LibraryMovieUnlockEvaluateConditionId": 4,
+    "MovieId": 6
+  },
+  {
+    "LibraryMovieId": 7,
+    "TitleLibraryTextId": 1006,
+    "LibraryMovieCategoryId": 2,
+    "SortOrder": 6,
+    "LibraryMovieUnlockConditionId": 0,
+    "LibraryMovieUnlockEvaluateConditionId": 2013,
+    "MovieId": 7
+  },
+  {
+    "LibraryMovieId": 8,
+    "TitleLibraryTextId": 1007,
+    "LibraryMovieCategoryId": 2,
+    "SortOrder": 7,
+    "LibraryMovieUnlockConditionId": 0,
+    "LibraryMovieUnlockEvaluateConditionId": 2014,
+    "MovieId": 8
+  },
+  {
+    "LibraryMovieId": 9,
+    "TitleLibraryTextId": 1008,
+    "LibraryMovieCategoryId": 2,
+    "SortOrder": 8,
+    "LibraryMovieUnlockConditionId": 0,
+    "LibraryMovieUnlockEvaluateConditionId": 2018,
+    "MovieId": 9
+  },
+  {
+    "LibraryMovieId": 10,
+    "TitleLibraryTextId": 1009,
+    "LibraryMovieCategoryId": 2,
+    "SortOrder": 9,
+    "LibraryMovieUnlockConditionId": 0,
+    "LibraryMovieUnlockEvaluateConditionId": 2019,
+    "MovieId": 10
+  },
+  {
+    "LibraryMovieId": 11,
+    "TitleLibraryTextId": 1010,
+    "LibraryMovieCategoryId": 2,
+    "SortOrder": 10,
+    "LibraryMovieUnlockConditionId": 0,
+    "LibraryMovieUnlockEvaluateConditionId": 2009,
+    "MovieId": 11
+  },
+  {
+    "LibraryMovieId": 12,
+    "TitleLibraryTextId": 1011,
+    "LibraryMovieCategoryId": 2,
+    "SortOrder": 11,
+    "LibraryMovieUnlockConditionId": 0,
+    "LibraryMovieUnlockEvaluateConditionId": 2010,
+    "MovieId": 12
+  },
+  {
+    "LibraryMovieId": 13,
+    "TitleLibraryTextId": 1012,
+    "LibraryMovieCategoryId": 2,
+    "SortOrder": 12,
+    "LibraryMovieUnlockConditionId": 0,
+    "LibraryMovieUnlockEvaluateConditionId": 2011,
+    "MovieId": 13
+  },
+  {
+    "LibraryMovieId": 14,
+    "TitleLibraryTextId": 1013,
+    "LibraryMovieCategoryId": 2,
+    "SortOrder": 13,
+    "LibraryMovieUnlockConditionId": 0,
+    "LibraryMovieUnlockEvaluateConditionId": 2012,
+    "MovieId": 14
+  },
+  {
+    "LibraryMovieId": 15,
+    "TitleLibraryTextId": 1014,
+    "LibraryMovieCategoryId": 3,
+    "SortOrder": 14,
+    "LibraryMovieUnlockConditionId": 0,
+    "LibraryMovieUnlockEvaluateConditionId": 2015,
+    "MovieId": 15
+  },
+  {
+    "LibraryMovieId": 16,
+    "TitleLibraryTextId": 1015,
+    "LibraryMovieCategoryId": 3,
+    "SortOrder": 15,
+    "LibraryMovieUnlockConditionId": 0,
+    "LibraryMovieUnlockEvaluateConditionId": 2015,
+    "MovieId": 16
+  },
+  {
+    "LibraryMovieId": 17,
+    "TitleLibraryTextId": 1016,
+    "LibraryMovieCategoryId": 3,
+    "SortOrder": 16,
+    "LibraryMovieUnlockConditionId": 0,
+    "LibraryMovieUnlockEvaluateConditionId": 2015,
+    "MovieId": 17
+  },
+  {
+    "LibraryMovieId": 18,
+    "TitleLibraryTextId": 1017,
+    "LibraryMovieCategoryId": 3,
+    "SortOrder": 17,
+    "LibraryMovieUnlockConditionId": 0,
+    "LibraryMovieUnlockEvaluateConditionId": 2015,
+    "MovieId": 18
+  },
+  {
+    "LibraryMovieId": 19,
+    "TitleLibraryTextId": 1018,
+    "LibraryMovieCategoryId": 3,
+    "SortOrder": 18,
+    "LibraryMovieUnlockConditionId": 0,
+    "LibraryMovieUnlockEvaluateConditionId": 2016,
+    "MovieId": 19
+  },
+  {
+    "LibraryMovieId": 20,
+    "TitleLibraryTextId": 1019,
+    "LibraryMovieCategoryId": 3,
+    "SortOrder": 19,
+    "LibraryMovieUnlockConditionId": 0,
+    "LibraryMovieUnlockEvaluateConditionId": 2016,
+    "MovieId": 20
+  },
+  {
+    "LibraryMovieId": 21,
+    "TitleLibraryTextId": 1020,
+    "LibraryMovieCategoryId": 3,
+    "SortOrder": 20,
+    "LibraryMovieUnlockConditionId": 0,
+    "LibraryMovieUnlockEvaluateConditionId": 2016,
+    "MovieId": 21
+  },
+  {
+    "LibraryMovieId": 22,
+    "TitleLibraryTextId": 1021,
+    "LibraryMovieCategoryId": 3,
+    "SortOrder": 21,
+    "LibraryMovieUnlockConditionId": 0,
+    "LibraryMovieUnlockEvaluateConditionId": 2017,
+    "MovieId": 22
+  },
+  {
+    "LibraryMovieId": 23,
+    "TitleLibraryTextId": 1022,
+    "LibraryMovieCategoryId": 3,
+    "SortOrder": 22,
+    "LibraryMovieUnlockConditionId": 0,
+    "LibraryMovieUnlockEvaluateConditionId": 2020,
+    "MovieId": 23
+  },
+  {
+    "LibraryMovieId": 101,
+    "TitleLibraryTextId": 100001,
+    "LibraryMovieCategoryId": 101,
+    "SortOrder": 1,
+    "LibraryMovieUnlockConditionId": 0,
+    "LibraryMovieUnlockEvaluateConditionId": 0,
+    "MovieId": 101
+  },
+  {
+    "LibraryMovieId": 102,
+    "TitleLibraryTextId": 100002,
+    "LibraryMovieCategoryId": 101,
+    "SortOrder": 2,
+    "LibraryMovieUnlockConditionId": 0,
+    "LibraryMovieUnlockEvaluateConditionId": 0,
+    "MovieId": 102
+  },
+  {
+    "LibraryMovieId": 104,
+    "TitleLibraryTextId": 100004,
+    "LibraryMovieCategoryId": 101,
+    "SortOrder": 4,
+    "LibraryMovieUnlockConditionId": 0,
+    "LibraryMovieUnlockEvaluateConditionId": 0,
+    "MovieId": 104
+  },
+  {
+    "LibraryMovieId": 105,
+    "TitleLibraryTextId": 100005,
+    "LibraryMovieCategoryId": 101,
+    "SortOrder": 5,
+    "LibraryMovieUnlockConditionId": 0,
+    "LibraryMovieUnlockEvaluateConditionId": 0,
+    "MovieId": 105
+  },
+  {
+    "LibraryMovieId": 106,
+    "TitleLibraryTextId": 100006,
+    "LibraryMovieCategoryId": 101,
+    "SortOrder": 6,
+    "LibraryMovieUnlockConditionId": 0,
+    "LibraryMovieUnlockEvaluateConditionId": 0,
+    "MovieId": 106
+  },
+  {
+    "LibraryMovieId": 107,
+    "TitleLibraryTextId": 100007,
+    "LibraryMovieCategoryId": 101,
+    "SortOrder": 7,
+    "LibraryMovieUnlockConditionId": 0,
+    "LibraryMovieUnlockEvaluateConditionId": 0,
+    "MovieId": 107
+  }
+]

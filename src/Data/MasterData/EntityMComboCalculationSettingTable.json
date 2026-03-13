@@ -1,0 +1,102 @@
+[
+  {
+    "ComboCountLowerLimit": 0,
+    "DamageCoefficientPermil": 1000,
+    "UiEffectIndex": 0
+  },
+  {
+    "ComboCountLowerLimit": 1,
+    "DamageCoefficientPermil": 1030,
+    "UiEffectIndex": 0
+  },
+  {
+    "ComboCountLowerLimit": 2,
+    "DamageCoefficientPermil": 1060,
+    "UiEffectIndex": 0
+  },
+  {
+    "ComboCountLowerLimit": 3,
+    "DamageCoefficientPermil": 1090,
+    "UiEffectIndex": 0
+  },
+  {
+    "ComboCountLowerLimit": 4,
+    "DamageCoefficientPermil": 1250,
+    "UiEffectIndex": 1
+  },
+  {
+    "ComboCountLowerLimit": 5,
+    "DamageCoefficientPermil": 1280,
+    "UiEffectIndex": 1
+  },
+  {
+    "ComboCountLowerLimit": 6,
+    "DamageCoefficientPermil": 1310,
+    "UiEffectIndex": 1
+  },
+  {
+    "ComboCountLowerLimit": 7,
+    "DamageCoefficientPermil": 1340,
+    "UiEffectIndex": 1
+  },
+  {
+    "ComboCountLowerLimit": 8,
+    "DamageCoefficientPermil": 1370,
+    "UiEffectIndex": 1
+  },
+  {
+    "ComboCountLowerLimit": 9,
+    "DamageCoefficientPermil": 1500,
+    "UiEffectIndex": 2
+  },
+  {
+    "ComboCountLowerLimit": 10,
+    "DamageCoefficientPermil": 1530,
+    "UiEffectIndex": 2
+  },
+  {
+    "ComboCountLowerLimit": 11,
+    "DamageCoefficientPermil": 1560,
+    "UiEffectIndex": 2
+  },
+  {
+    "ComboCountLowerLimit": 12,
+    "DamageCoefficientPermil": 1590,
+    "UiEffectIndex": 2
+  },
+  {
+    "ComboCountLowerLimit": 13,
+    "DamageCoefficientPermil": 1620,
+    "UiEffectIndex": 2
+  },
+  {
+    "ComboCountLowerLimit": 14,
+    "DamageCoefficientPermil": 1750,
+    "UiEffectIndex": 3
+  },
+  {
+    "ComboCountLowerLimit": 15,
+    "DamageCoefficientPermil": 1780,
+    "UiEffectIndex": 3
+  },
+  {
+    "ComboCountLowerLimit": 16,
+    "DamageCoefficientPermil": 1810,
+    "UiEffectIndex": 3
+  },
+  {
+    "ComboCountLowerLimit": 17,
+    "DamageCoefficientPermil": 1840,
+    "UiEffectIndex": 3
+  },
+  {
+    "ComboCountLowerLimit": 18,
+    "DamageCoefficientPermil": 1870,
+    "UiEffectIndex": 3
+  },
+  {
+    "ComboCountLowerLimit": 19,
+    "DamageCoefficientPermil": 2000,
+    "UiEffectIndex": 3
+  }
+]

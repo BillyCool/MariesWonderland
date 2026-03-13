@@ -1,0 +1,98 @@
+[
+  {
+    "MissionPassId": 10001,
+    "StartDatetime": 1682866800000,
+    "EndDatetime": 1685545199000,
+    "PremiumItemId": 10001,
+    "MissionPassLevelGroupId": 10001,
+    "MissionPassRewardGroupId": 10001
+  },
+  {
+    "MissionPassId": 10002,
+    "StartDatetime": 1685545200000,
+    "EndDatetime": 1688137199000,
+    "PremiumItemId": 10002,
+    "MissionPassLevelGroupId": 10001,
+    "MissionPassRewardGroupId": 10001
+  },
+  {
+    "MissionPassId": 10003,
+    "StartDatetime": 1688137200000,
+    "EndDatetime": 1690815599000,
+    "PremiumItemId": 10003,
+    "MissionPassLevelGroupId": 10001,
+    "MissionPassRewardGroupId": 10001
+  },
+  {
+    "MissionPassId": 10004,
+    "StartDatetime": 1690815600000,
+    "EndDatetime": 1693493999000,
+    "PremiumItemId": 10004,
+    "MissionPassLevelGroupId": 10001,
+    "MissionPassRewardGroupId": 10004
+  },
+  {
+    "MissionPassId": 10005,
+    "StartDatetime": 1693494000000,
+    "EndDatetime": 1696085999000,
+    "PremiumItemId": 10005,
+    "MissionPassLevelGroupId": 10001,
+    "MissionPassRewardGroupId": 10005
+  },
+  {
+    "MissionPassId": 10006,
+    "StartDatetime": 1696086000000,
+    "EndDatetime": 1698764399000,
+    "PremiumItemId": 10006,
+    "MissionPassLevelGroupId": 10001,
+    "MissionPassRewardGroupId": 10005
+  },
+  {
+    "MissionPassId": 10007,
+    "StartDatetime": 1698764400000,
+    "EndDatetime": 1701356399000,
+    "PremiumItemId": 10007,
+    "MissionPassLevelGroupId": 10001,
+    "MissionPassRewardGroupId": 10005
+  },
+  {
+    "MissionPassId": 10008,
+    "StartDatetime": 1701356400000,
+    "EndDatetime": 1704034799000,
+    "PremiumItemId": 10008,
+    "MissionPassLevelGroupId": 10001,
+    "MissionPassRewardGroupId": 10005
+  },
+  {
+    "MissionPassId": 10009,
+    "StartDatetime": 1704034800000,
+    "EndDatetime": 1706713199000,
+    "PremiumItemId": 10009,
+    "MissionPassLevelGroupId": 10001,
+    "MissionPassRewardGroupId": 10005
+  },
+  {
+    "MissionPassId": 10010,
+    "StartDatetime": 1706713200000,
+    "EndDatetime": 1709218799000,
+    "PremiumItemId": 0,
+    "MissionPassLevelGroupId": 10001,
+    "MissionPassRewardGroupId": 10010
+  },
+  {
+    "MissionPassId": 10011,
+    "StartDatetime": 1709218800000,
+    "EndDatetime": 1711897199000,
+    "PremiumItemId": 0,
+    "MissionPassLevelGroupId": 10001,
+    "MissionPassRewardGroupId": 10010
+  },
+  {
+    "MissionPassId": 10012,
+    "StartDatetime": 1711897200000,
+    "EndDatetime": 1714456799000,
+    "PremiumItemId": 0,
+    "MissionPassLevelGroupId": 10001,
+    "MissionPassRewardGroupId": 10010
+  }
+]

@@ -1,0 +1,662 @@
+[
+  {
+    "PvpGradeWeeklyRewardGroupId": 1,
+    "PvpRewardId": 101,
+    "SortOrder": 1
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 2,
+    "PvpRewardId": 111,
+    "SortOrder": 1
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 2,
+    "PvpRewardId": 112,
+    "SortOrder": 2
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 3,
+    "PvpRewardId": 121,
+    "SortOrder": 1
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 3,
+    "PvpRewardId": 122,
+    "SortOrder": 2
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 4,
+    "PvpRewardId": 131,
+    "SortOrder": 1
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 4,
+    "PvpRewardId": 132,
+    "SortOrder": 2
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 5,
+    "PvpRewardId": 141,
+    "SortOrder": 1
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 5,
+    "PvpRewardId": 142,
+    "SortOrder": 2
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 6,
+    "PvpRewardId": 201,
+    "SortOrder": 1
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 6,
+    "PvpRewardId": 202,
+    "SortOrder": 2
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 6,
+    "PvpRewardId": 203,
+    "SortOrder": 3
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 7,
+    "PvpRewardId": 211,
+    "SortOrder": 1
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 7,
+    "PvpRewardId": 212,
+    "SortOrder": 2
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 7,
+    "PvpRewardId": 213,
+    "SortOrder": 3
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 8,
+    "PvpRewardId": 221,
+    "SortOrder": 1
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 8,
+    "PvpRewardId": 222,
+    "SortOrder": 2
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 8,
+    "PvpRewardId": 223,
+    "SortOrder": 3
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 9,
+    "PvpRewardId": 231,
+    "SortOrder": 1
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 9,
+    "PvpRewardId": 232,
+    "SortOrder": 2
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 9,
+    "PvpRewardId": 233,
+    "SortOrder": 3
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 10,
+    "PvpRewardId": 241,
+    "SortOrder": 1
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 10,
+    "PvpRewardId": 242,
+    "SortOrder": 2
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 11,
+    "PvpRewardId": 301,
+    "SortOrder": 1
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 11,
+    "PvpRewardId": 302,
+    "SortOrder": 2
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 11,
+    "PvpRewardId": 303,
+    "SortOrder": 3
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 12,
+    "PvpRewardId": 311,
+    "SortOrder": 1
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 12,
+    "PvpRewardId": 312,
+    "SortOrder": 2
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 12,
+    "PvpRewardId": 313,
+    "SortOrder": 3
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 13,
+    "PvpRewardId": 321,
+    "SortOrder": 1
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 13,
+    "PvpRewardId": 322,
+    "SortOrder": 2
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 13,
+    "PvpRewardId": 323,
+    "SortOrder": 3
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 14,
+    "PvpRewardId": 331,
+    "SortOrder": 1
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 14,
+    "PvpRewardId": 332,
+    "SortOrder": 2
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 14,
+    "PvpRewardId": 333,
+    "SortOrder": 3
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 15,
+    "PvpRewardId": 341,
+    "SortOrder": 1
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 15,
+    "PvpRewardId": 342,
+    "SortOrder": 2
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 15,
+    "PvpRewardId": 343,
+    "SortOrder": 3
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 16,
+    "PvpRewardId": 401,
+    "SortOrder": 1
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 16,
+    "PvpRewardId": 402,
+    "SortOrder": 2
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 16,
+    "PvpRewardId": 403,
+    "SortOrder": 3
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 16,
+    "PvpRewardId": 404,
+    "SortOrder": 4
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 17,
+    "PvpRewardId": 411,
+    "SortOrder": 1
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 17,
+    "PvpRewardId": 412,
+    "SortOrder": 2
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 17,
+    "PvpRewardId": 413,
+    "SortOrder": 3
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 17,
+    "PvpRewardId": 414,
+    "SortOrder": 4
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 18,
+    "PvpRewardId": 421,
+    "SortOrder": 1
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 18,
+    "PvpRewardId": 422,
+    "SortOrder": 2
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 18,
+    "PvpRewardId": 423,
+    "SortOrder": 3
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 18,
+    "PvpRewardId": 424,
+    "SortOrder": 4
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 19,
+    "PvpRewardId": 431,
+    "SortOrder": 1
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 19,
+    "PvpRewardId": 432,
+    "SortOrder": 2
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 19,
+    "PvpRewardId": 433,
+    "SortOrder": 3
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 19,
+    "PvpRewardId": 434,
+    "SortOrder": 4
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 20,
+    "PvpRewardId": 441,
+    "SortOrder": 1
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 20,
+    "PvpRewardId": 442,
+    "SortOrder": 2
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 21,
+    "PvpRewardId": 501,
+    "SortOrder": 1
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 21,
+    "PvpRewardId": 502,
+    "SortOrder": 2
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 21,
+    "PvpRewardId": 503,
+    "SortOrder": 3
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 22,
+    "PvpRewardId": 511,
+    "SortOrder": 1
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 22,
+    "PvpRewardId": 512,
+    "SortOrder": 2
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 22,
+    "PvpRewardId": 513,
+    "SortOrder": 3
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 23,
+    "PvpRewardId": 521,
+    "SortOrder": 1
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 23,
+    "PvpRewardId": 522,
+    "SortOrder": 2
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 23,
+    "PvpRewardId": 523,
+    "SortOrder": 3
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 24,
+    "PvpRewardId": 531,
+    "SortOrder": 1
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 24,
+    "PvpRewardId": 532,
+    "SortOrder": 2
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 24,
+    "PvpRewardId": 533,
+    "SortOrder": 3
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 25,
+    "PvpRewardId": 541,
+    "SortOrder": 1
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 25,
+    "PvpRewardId": 542,
+    "SortOrder": 2
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 25,
+    "PvpRewardId": 543,
+    "SortOrder": 3
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 27,
+    "PvpRewardId": 112,
+    "SortOrder": 1
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 28,
+    "PvpRewardId": 122,
+    "SortOrder": 1
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 29,
+    "PvpRewardId": 132,
+    "SortOrder": 1
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 30,
+    "PvpRewardId": 142,
+    "SortOrder": 1
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 31,
+    "PvpRewardId": 202,
+    "SortOrder": 1
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 31,
+    "PvpRewardId": 203,
+    "SortOrder": 2
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 32,
+    "PvpRewardId": 212,
+    "SortOrder": 1
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 32,
+    "PvpRewardId": 213,
+    "SortOrder": 2
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 33,
+    "PvpRewardId": 222,
+    "SortOrder": 1
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 33,
+    "PvpRewardId": 223,
+    "SortOrder": 2
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 34,
+    "PvpRewardId": 232,
+    "SortOrder": 1
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 34,
+    "PvpRewardId": 233,
+    "SortOrder": 2
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 35,
+    "PvpRewardId": 242,
+    "SortOrder": 1
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 36,
+    "PvpRewardId": 302,
+    "SortOrder": 2
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 36,
+    "PvpRewardId": 303,
+    "SortOrder": 3
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 36,
+    "PvpRewardId": 100101,
+    "SortOrder": 1
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 37,
+    "PvpRewardId": 312,
+    "SortOrder": 2
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 37,
+    "PvpRewardId": 313,
+    "SortOrder": 3
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 37,
+    "PvpRewardId": 100102,
+    "SortOrder": 1
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 38,
+    "PvpRewardId": 322,
+    "SortOrder": 2
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 38,
+    "PvpRewardId": 323,
+    "SortOrder": 3
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 38,
+    "PvpRewardId": 100103,
+    "SortOrder": 1
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 39,
+    "PvpRewardId": 332,
+    "SortOrder": 2
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 39,
+    "PvpRewardId": 333,
+    "SortOrder": 3
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 39,
+    "PvpRewardId": 100104,
+    "SortOrder": 1
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 40,
+    "PvpRewardId": 342,
+    "SortOrder": 2
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 40,
+    "PvpRewardId": 343,
+    "SortOrder": 3
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 40,
+    "PvpRewardId": 100105,
+    "SortOrder": 1
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 41,
+    "PvpRewardId": 402,
+    "SortOrder": 2
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 41,
+    "PvpRewardId": 403,
+    "SortOrder": 3
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 41,
+    "PvpRewardId": 404,
+    "SortOrder": 4
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 41,
+    "PvpRewardId": 100106,
+    "SortOrder": 1
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 42,
+    "PvpRewardId": 412,
+    "SortOrder": 2
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 42,
+    "PvpRewardId": 413,
+    "SortOrder": 3
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 42,
+    "PvpRewardId": 414,
+    "SortOrder": 4
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 42,
+    "PvpRewardId": 100107,
+    "SortOrder": 1
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 43,
+    "PvpRewardId": 422,
+    "SortOrder": 2
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 43,
+    "PvpRewardId": 423,
+    "SortOrder": 3
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 43,
+    "PvpRewardId": 424,
+    "SortOrder": 4
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 43,
+    "PvpRewardId": 100108,
+    "SortOrder": 1
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 44,
+    "PvpRewardId": 432,
+    "SortOrder": 2
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 44,
+    "PvpRewardId": 433,
+    "SortOrder": 3
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 44,
+    "PvpRewardId": 434,
+    "SortOrder": 4
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 44,
+    "PvpRewardId": 100109,
+    "SortOrder": 1
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 45,
+    "PvpRewardId": 442,
+    "SortOrder": 2
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 45,
+    "PvpRewardId": 100110,
+    "SortOrder": 1
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 46,
+    "PvpRewardId": 502,
+    "SortOrder": 2
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 46,
+    "PvpRewardId": 503,
+    "SortOrder": 3
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 46,
+    "PvpRewardId": 100111,
+    "SortOrder": 1
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 47,
+    "PvpRewardId": 512,
+    "SortOrder": 2
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 47,
+    "PvpRewardId": 513,
+    "SortOrder": 3
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 47,
+    "PvpRewardId": 100112,
+    "SortOrder": 1
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 48,
+    "PvpRewardId": 522,
+    "SortOrder": 2
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 48,
+    "PvpRewardId": 523,
+    "SortOrder": 3
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 48,
+    "PvpRewardId": 100113,
+    "SortOrder": 1
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 49,
+    "PvpRewardId": 532,
+    "SortOrder": 2
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 49,
+    "PvpRewardId": 533,
+    "SortOrder": 3
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 49,
+    "PvpRewardId": 100114,
+    "SortOrder": 1
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 50,
+    "PvpRewardId": 542,
+    "SortOrder": 2
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 50,
+    "PvpRewardId": 543,
+    "SortOrder": 3
+  },
+  {
+    "PvpGradeWeeklyRewardGroupId": 50,
+    "PvpRewardId": 100115,
+    "SortOrder": 1
+  }
+]

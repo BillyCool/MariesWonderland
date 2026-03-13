@@ -1,0 +1,330 @@
+[
+  {
+    "PortalCageAccessPointFunctionGroupScheduleId": 1,
+    "PriorityDesc": 1,
+    "AccessPointType": 1,
+    "AccessPointFunctionGroupId": 1005,
+    "StartDatetime": 1577804400000,
+    "EndDatetime": 253390345140000
+  },
+  {
+    "PortalCageAccessPointFunctionGroupScheduleId": 2,
+    "PriorityDesc": 1,
+    "AccessPointType": 5,
+    "AccessPointFunctionGroupId": 1004,
+    "StartDatetime": 1577804400000,
+    "EndDatetime": 1620917999000
+  },
+  {
+    "PortalCageAccessPointFunctionGroupScheduleId": 2,
+    "PriorityDesc": 2,
+    "AccessPointType": 5,
+    "AccessPointFunctionGroupId": 1004,
+    "StartDatetime": 1620957600000,
+    "EndDatetime": 1622473199000
+  },
+  {
+    "PortalCageAccessPointFunctionGroupScheduleId": 2,
+    "PriorityDesc": 3,
+    "AccessPointType": 5,
+    "AccessPointFunctionGroupId": 1014,
+    "StartDatetime": 1622473200000,
+    "EndDatetime": 1625065199000
+  },
+  {
+    "PortalCageAccessPointFunctionGroupScheduleId": 2,
+    "PriorityDesc": 4,
+    "AccessPointType": 5,
+    "AccessPointFunctionGroupId": 1024,
+    "StartDatetime": 1625065200000,
+    "EndDatetime": 1625756399000
+  },
+  {
+    "PortalCageAccessPointFunctionGroupScheduleId": 2,
+    "PriorityDesc": 5,
+    "AccessPointType": 5,
+    "AccessPointFunctionGroupId": 1024,
+    "StartDatetime": 1625796000000,
+    "EndDatetime": 1627743599000
+  },
+  {
+    "PortalCageAccessPointFunctionGroupScheduleId": 2,
+    "PriorityDesc": 6,
+    "AccessPointType": 5,
+    "AccessPointFunctionGroupId": 1034,
+    "StartDatetime": 1627743600000,
+    "EndDatetime": 1630421999000
+  },
+  {
+    "PortalCageAccessPointFunctionGroupScheduleId": 2,
+    "PriorityDesc": 7,
+    "AccessPointType": 5,
+    "AccessPointFunctionGroupId": 1044,
+    "StartDatetime": 1630422000000,
+    "EndDatetime": 1633013999000
+  },
+  {
+    "PortalCageAccessPointFunctionGroupScheduleId": 2,
+    "PriorityDesc": 8,
+    "AccessPointType": 5,
+    "AccessPointFunctionGroupId": 1054,
+    "StartDatetime": 1633014000000,
+    "EndDatetime": 1634569199000
+  },
+  {
+    "PortalCageAccessPointFunctionGroupScheduleId": 2,
+    "PriorityDesc": 9,
+    "AccessPointType": 5,
+    "AccessPointFunctionGroupId": 1064,
+    "StartDatetime": 1635174000000,
+    "EndDatetime": 1635692399000
+  },
+  {
+    "PortalCageAccessPointFunctionGroupScheduleId": 2,
+    "PriorityDesc": 10,
+    "AccessPointType": 5,
+    "AccessPointFunctionGroupId": 1074,
+    "StartDatetime": 1635692400000,
+    "EndDatetime": 1638284399000
+  },
+  {
+    "PortalCageAccessPointFunctionGroupScheduleId": 2,
+    "PriorityDesc": 11,
+    "AccessPointType": 5,
+    "AccessPointFunctionGroupId": 1084,
+    "StartDatetime": 1638284400000,
+    "EndDatetime": 1640962799000
+  },
+  {
+    "PortalCageAccessPointFunctionGroupScheduleId": 2,
+    "PriorityDesc": 12,
+    "AccessPointType": 5,
+    "AccessPointFunctionGroupId": 1094,
+    "StartDatetime": 1640962800000,
+    "EndDatetime": 1643641199000
+  },
+  {
+    "PortalCageAccessPointFunctionGroupScheduleId": 2,
+    "PriorityDesc": 13,
+    "AccessPointType": 5,
+    "AccessPointFunctionGroupId": 1104,
+    "StartDatetime": 1643641200000,
+    "EndDatetime": 1646060399000
+  },
+  {
+    "PortalCageAccessPointFunctionGroupScheduleId": 2,
+    "PriorityDesc": 14,
+    "AccessPointType": 5,
+    "AccessPointFunctionGroupId": 1204,
+    "StartDatetime": 1646060400000,
+    "EndDatetime": 1646924399000
+  },
+  {
+    "PortalCageAccessPointFunctionGroupScheduleId": 2,
+    "PriorityDesc": 15,
+    "AccessPointType": 5,
+    "AccessPointFunctionGroupId": 1304,
+    "StartDatetime": 1646924400000,
+    "EndDatetime": 1647961199000
+  },
+  {
+    "PortalCageAccessPointFunctionGroupScheduleId": 2,
+    "PriorityDesc": 16,
+    "AccessPointType": 5,
+    "AccessPointFunctionGroupId": 1404,
+    "StartDatetime": 1647961200000,
+    "EndDatetime": 1648738799000
+  },
+  {
+    "PortalCageAccessPointFunctionGroupScheduleId": 2,
+    "PriorityDesc": 17,
+    "AccessPointType": 5,
+    "AccessPointFunctionGroupId": 1504,
+    "StartDatetime": 1648738800000,
+    "EndDatetime": 1651330799000
+  },
+  {
+    "PortalCageAccessPointFunctionGroupScheduleId": 2,
+    "PriorityDesc": 18,
+    "AccessPointType": 5,
+    "AccessPointFunctionGroupId": 1604,
+    "StartDatetime": 1651330800000,
+    "EndDatetime": 1654009199000
+  },
+  {
+    "PortalCageAccessPointFunctionGroupScheduleId": 2,
+    "PriorityDesc": 19,
+    "AccessPointType": 5,
+    "AccessPointFunctionGroupId": 1704,
+    "StartDatetime": 1654009200000,
+    "EndDatetime": 1656601199000
+  },
+  {
+    "PortalCageAccessPointFunctionGroupScheduleId": 2,
+    "PriorityDesc": 20,
+    "AccessPointType": 5,
+    "AccessPointFunctionGroupId": 1804,
+    "StartDatetime": 1656601200000,
+    "EndDatetime": 1659279599000
+  },
+  {
+    "PortalCageAccessPointFunctionGroupScheduleId": 2,
+    "PriorityDesc": 21,
+    "AccessPointType": 5,
+    "AccessPointFunctionGroupId": 1904,
+    "StartDatetime": 1659279600000,
+    "EndDatetime": 1661957999000
+  },
+  {
+    "PortalCageAccessPointFunctionGroupScheduleId": 2,
+    "PriorityDesc": 22,
+    "AccessPointType": 5,
+    "AccessPointFunctionGroupId": 2004,
+    "StartDatetime": 1661958000000,
+    "EndDatetime": 1664549999000
+  },
+  {
+    "PortalCageAccessPointFunctionGroupScheduleId": 2,
+    "PriorityDesc": 23,
+    "AccessPointType": 5,
+    "AccessPointFunctionGroupId": 2104,
+    "StartDatetime": 1664550000000,
+    "EndDatetime": 1667228399000
+  },
+  {
+    "PortalCageAccessPointFunctionGroupScheduleId": 2,
+    "PriorityDesc": 24,
+    "AccessPointType": 5,
+    "AccessPointFunctionGroupId": 2204,
+    "StartDatetime": 1667228400000,
+    "EndDatetime": 1669820399000
+  },
+  {
+    "PortalCageAccessPointFunctionGroupScheduleId": 2,
+    "PriorityDesc": 25,
+    "AccessPointType": 5,
+    "AccessPointFunctionGroupId": 2214,
+    "StartDatetime": 1669820400000,
+    "EndDatetime": 1672498799000
+  },
+  {
+    "PortalCageAccessPointFunctionGroupScheduleId": 2,
+    "PriorityDesc": 26,
+    "AccessPointType": 5,
+    "AccessPointFunctionGroupId": 2224,
+    "StartDatetime": 1672498800000,
+    "EndDatetime": 1675177199000
+  },
+  {
+    "PortalCageAccessPointFunctionGroupScheduleId": 2,
+    "PriorityDesc": 27,
+    "AccessPointType": 5,
+    "AccessPointFunctionGroupId": 2234,
+    "StartDatetime": 1675177200000,
+    "EndDatetime": 1677596399000
+  },
+  {
+    "PortalCageAccessPointFunctionGroupScheduleId": 2,
+    "PriorityDesc": 28,
+    "AccessPointType": 5,
+    "AccessPointFunctionGroupId": 2244,
+    "StartDatetime": 1677596400000,
+    "EndDatetime": 1680274799000
+  },
+  {
+    "PortalCageAccessPointFunctionGroupScheduleId": 2,
+    "PriorityDesc": 29,
+    "AccessPointType": 5,
+    "AccessPointFunctionGroupId": 2254,
+    "StartDatetime": 1680274800000,
+    "EndDatetime": 1690815599000
+  },
+  {
+    "PortalCageAccessPointFunctionGroupScheduleId": 2,
+    "PriorityDesc": 30,
+    "AccessPointType": 5,
+    "AccessPointFunctionGroupId": 2264,
+    "StartDatetime": 1690815600000,
+    "EndDatetime": 1692284399000
+  },
+  {
+    "PortalCageAccessPointFunctionGroupScheduleId": 2,
+    "PriorityDesc": 31,
+    "AccessPointType": 5,
+    "AccessPointFunctionGroupId": 2274,
+    "StartDatetime": 1692284400000,
+    "EndDatetime": 1708181999000
+  },
+  {
+    "PortalCageAccessPointFunctionGroupScheduleId": 2,
+    "PriorityDesc": 32,
+    "AccessPointType": 5,
+    "AccessPointFunctionGroupId": 2284,
+    "StartDatetime": 1708182000000,
+    "EndDatetime": 1714456799000
+  },
+  {
+    "PortalCageAccessPointFunctionGroupScheduleId": 3,
+    "PriorityDesc": 1,
+    "AccessPointType": 2,
+    "AccessPointFunctionGroupId": 1001,
+    "StartDatetime": 1577804400000,
+    "EndDatetime": 253390345140000
+  },
+  {
+    "PortalCageAccessPointFunctionGroupScheduleId": 4,
+    "PriorityDesc": 1,
+    "AccessPointType": 3,
+    "AccessPointFunctionGroupId": 1003,
+    "StartDatetime": 1577804400000,
+    "EndDatetime": 1618325999000
+  },
+  {
+    "PortalCageAccessPointFunctionGroupScheduleId": 4,
+    "PriorityDesc": 2,
+    "AccessPointType": 3,
+    "AccessPointFunctionGroupId": 1013,
+    "StartDatetime": 1618365600000,
+    "EndDatetime": 1620917999000
+  },
+  {
+    "PortalCageAccessPointFunctionGroupScheduleId": 4,
+    "PriorityDesc": 3,
+    "AccessPointType": 3,
+    "AccessPointFunctionGroupId": 1023,
+    "StartDatetime": 1620957600000,
+    "EndDatetime": 1625756399000
+  },
+  {
+    "PortalCageAccessPointFunctionGroupScheduleId": 4,
+    "PriorityDesc": 4,
+    "AccessPointType": 3,
+    "AccessPointFunctionGroupId": 1033,
+    "StartDatetime": 1625796000000,
+    "EndDatetime": 1634569199000
+  },
+  {
+    "PortalCageAccessPointFunctionGroupScheduleId": 4,
+    "PriorityDesc": 5,
+    "AccessPointType": 3,
+    "AccessPointFunctionGroupId": 1033,
+    "StartDatetime": 1635174000000,
+    "EndDatetime": 1666018799000
+  },
+  {
+    "PortalCageAccessPointFunctionGroupScheduleId": 4,
+    "PriorityDesc": 6,
+    "AccessPointType": 3,
+    "AccessPointFunctionGroupId": 1043,
+    "StartDatetime": 1666058400000,
+    "EndDatetime": 1690815599000
+  },
+  {
+    "PortalCageAccessPointFunctionGroupScheduleId": 5,
+    "PriorityDesc": 1,
+    "AccessPointType": 4,
+    "AccessPointFunctionGroupId": 1002,
+    "StartDatetime": 1577804400000,
+    "EndDatetime": 253390345140000
+  }
+]

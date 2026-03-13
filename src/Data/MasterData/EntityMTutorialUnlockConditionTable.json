@@ -1,0 +1,467 @@
+[
+  {
+    "TutorialType": 1,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 2,
+    "TutorialUnlockConditionType": 3,
+    "ConditionValue": 42
+  },
+  {
+    "TutorialType": 3,
+    "TutorialUnlockConditionType": 2,
+    "ConditionValue": 42
+  },
+  {
+    "TutorialType": 4,
+    "TutorialUnlockConditionType": 2,
+    "ConditionValue": 11
+  },
+  {
+    "TutorialType": 5,
+    "TutorialUnlockConditionType": 2,
+    "ConditionValue": 20
+  },
+  {
+    "TutorialType": 6,
+    "TutorialUnlockConditionType": 3,
+    "ConditionValue": 295
+  },
+  {
+    "TutorialType": 7,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 8,
+    "TutorialUnlockConditionType": 2,
+    "ConditionValue": 76
+  },
+  {
+    "TutorialType": 9,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 10,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 11,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 12,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 13,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 14,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 15,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 16,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 17,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 18,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 19,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 20,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 21,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 22,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 23,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 24,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 25,
+    "TutorialUnlockConditionType": 3,
+    "ConditionValue": 295
+  },
+  {
+    "TutorialType": 26,
+    "TutorialUnlockConditionType": 3,
+    "ConditionValue": 295
+  },
+  {
+    "TutorialType": 27,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 28,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 29,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 30,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 31,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 32,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 33,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 34,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 35,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 36,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 37,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 38,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 39,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 42,
+    "TutorialUnlockConditionType": 2,
+    "ConditionValue": 210011
+  },
+  {
+    "TutorialType": 43,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 44,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 46,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 47,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 48,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 49,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 50,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 51,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 52,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 53,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 54,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 55,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 57,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 58,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 59,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 60,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 101,
+    "TutorialUnlockConditionType": 2,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 102,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 103,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 201,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 301,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 401,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 501,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 601,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 701,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 801,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 901,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 1001,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 1101,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 1201,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 1202,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 1301,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 1302,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 1303,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 1304,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 1305,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 1402,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 1501,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 1502,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 1503,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 1601,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 1701,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 1702,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 1801,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 1901,
+    "TutorialUnlockConditionType": 2,
+    "ConditionValue": 2230
+  },
+  {
+    "TutorialType": 1902,
+    "TutorialUnlockConditionType": 2,
+    "ConditionValue": 2231
+  },
+  {
+    "TutorialType": 1903,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 1904,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 1905,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 1906,
+    "TutorialUnlockConditionType": 2,
+    "ConditionValue": 2232
+  },
+  {
+    "TutorialType": 1907,
+    "TutorialUnlockConditionType": 2,
+    "ConditionValue": 2232
+  },
+  {
+    "TutorialType": 2001,
+    "TutorialUnlockConditionType": 1,
+    "ConditionValue": 0
+  },
+  {
+    "TutorialType": 2101,
+    "TutorialUnlockConditionType": 2,
+    "ConditionValue": 1
+  }
+]

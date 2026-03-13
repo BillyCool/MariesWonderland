@@ -1,0 +1,27 @@
+[
+  {
+    "SkillBehaviourActionId": 20,
+    "CalculateDenominatorType": 1,
+    "DamageRatioPermil": 200
+  },
+  {
+    "SkillBehaviourActionId": 30,
+    "CalculateDenominatorType": 1,
+    "DamageRatioPermil": 300
+  },
+  {
+    "SkillBehaviourActionId": 40,
+    "CalculateDenominatorType": 1,
+    "DamageRatioPermil": 400
+  },
+  {
+    "SkillBehaviourActionId": 50,
+    "CalculateDenominatorType": 1,
+    "DamageRatioPermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 99,
+    "CalculateDenominatorType": 1,
+    "DamageRatioPermil": 990
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "WeaponAwakenStatusUpGroupId": 1,
+    "StatusKindType": 2,
+    "StatusCalculationType": 2,
+    "EffectValue": 25
+  },
+  {
+    "WeaponAwakenStatusUpGroupId": 1,
+    "StatusKindType": 6,
+    "StatusCalculationType": 2,
+    "EffectValue": 25
+  },
+  {
+    "WeaponAwakenStatusUpGroupId": 1,
+    "StatusKindType": 7,
+    "StatusCalculationType": 2,
+    "EffectValue": 25
+  }
+]

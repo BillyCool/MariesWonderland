@@ -1,0 +1,74 @@
+[
+  {
+    "ComebackCampaignId": 1,
+    "ComebackJudgeStartDatetime": 1627437600000,
+    "ComebackJudgeEndDatetime": 1649987999000,
+    "ComebackJudgeDayCount": 30,
+    "GrantCampaignTermDayCount": 14,
+    "CampaignUnlockQuestId": 1,
+    "ComebackCampaignGradeGroupId": 0
+  },
+  {
+    "ComebackCampaignId": 2,
+    "ComebackJudgeStartDatetime": 1649988000000,
+    "ComebackJudgeEndDatetime": 2262869999000,
+    "ComebackJudgeDayCount": 28,
+    "GrantCampaignTermDayCount": 7,
+    "CampaignUnlockQuestId": 1,
+    "ComebackCampaignGradeGroupId": 0
+  },
+  {
+    "ComebackCampaignId": 3,
+    "ComebackJudgeStartDatetime": 1659924000000,
+    "ComebackJudgeEndDatetime": 1662649199000,
+    "ComebackJudgeDayCount": 30,
+    "GrantCampaignTermDayCount": 7,
+    "CampaignUnlockQuestId": 1,
+    "ComebackCampaignGradeGroupId": 1
+  },
+  {
+    "ComebackCampaignId": 4,
+    "ComebackJudgeStartDatetime": 1666058400000,
+    "ComebackJudgeEndDatetime": 1667228399000,
+    "ComebackJudgeDayCount": 30,
+    "GrantCampaignTermDayCount": 7,
+    "CampaignUnlockQuestId": 1,
+    "ComebackCampaignGradeGroupId": 1
+  },
+  {
+    "ComebackCampaignId": 5,
+    "ComebackJudgeStartDatetime": 1674007200000,
+    "ComebackJudgeEndDatetime": 1675177199000,
+    "ComebackJudgeDayCount": 30,
+    "GrantCampaignTermDayCount": 7,
+    "CampaignUnlockQuestId": 1,
+    "ComebackCampaignGradeGroupId": 1
+  },
+  {
+    "ComebackCampaignId": 6,
+    "ComebackJudgeStartDatetime": 1684375200000,
+    "ComebackJudgeEndDatetime": 1685325599000,
+    "ComebackJudgeDayCount": 30,
+    "GrantCampaignTermDayCount": 7,
+    "CampaignUnlockQuestId": 1,
+    "ComebackCampaignGradeGroupId": 1
+  },
+  {
+    "ComebackCampaignId": 7,
+    "ComebackJudgeStartDatetime": 1690106400000,
+    "ComebackJudgeEndDatetime": 1694397599000,
+    "ComebackJudgeDayCount": 280,
+    "GrantCampaignTermDayCount": 7,
+    "CampaignUnlockQuestId": 1,
+    "ComebackCampaignGradeGroupId": 2
+  },
+  {
+    "ComebackCampaignId": 8,
+    "ComebackJudgeStartDatetime": 1692324000000,
+    "ComebackJudgeEndDatetime": 1696557599000,
+    "ComebackJudgeDayCount": 30,
+    "GrantCampaignTermDayCount": 7,
+    "CampaignUnlockQuestId": 1,
+    "ComebackCampaignGradeGroupId": 3
+  }
+]

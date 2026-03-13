@@ -1,0 +1,6687 @@
+[
+  {
+    "WeaponEvolutionGroupId": 10000,
+    "EvolutionOrder": 1,
+    "WeaponId": 100001
+  },
+  {
+    "WeaponEvolutionGroupId": 10000,
+    "EvolutionOrder": 2,
+    "WeaponId": 100002
+  },
+  {
+    "WeaponEvolutionGroupId": 10001,
+    "EvolutionOrder": 1,
+    "WeaponId": 100011
+  },
+  {
+    "WeaponEvolutionGroupId": 10001,
+    "EvolutionOrder": 2,
+    "WeaponId": 100012
+  },
+  {
+    "WeaponEvolutionGroupId": 10002,
+    "EvolutionOrder": 1,
+    "WeaponId": 100021
+  },
+  {
+    "WeaponEvolutionGroupId": 10002,
+    "EvolutionOrder": 2,
+    "WeaponId": 100022
+  },
+  {
+    "WeaponEvolutionGroupId": 10100,
+    "EvolutionOrder": 1,
+    "WeaponId": 101001
+  },
+  {
+    "WeaponEvolutionGroupId": 10100,
+    "EvolutionOrder": 2,
+    "WeaponId": 101002
+  },
+  {
+    "WeaponEvolutionGroupId": 10101,
+    "EvolutionOrder": 1,
+    "WeaponId": 101011
+  },
+  {
+    "WeaponEvolutionGroupId": 10101,
+    "EvolutionOrder": 2,
+    "WeaponId": 101012
+  },
+  {
+    "WeaponEvolutionGroupId": 10102,
+    "EvolutionOrder": 1,
+    "WeaponId": 101021
+  },
+  {
+    "WeaponEvolutionGroupId": 10102,
+    "EvolutionOrder": 2,
+    "WeaponId": 101022
+  },
+  {
+    "WeaponEvolutionGroupId": 10103,
+    "EvolutionOrder": 1,
+    "WeaponId": 101031
+  },
+  {
+    "WeaponEvolutionGroupId": 10103,
+    "EvolutionOrder": 2,
+    "WeaponId": 101032
+  },
+  {
+    "WeaponEvolutionGroupId": 10104,
+    "EvolutionOrder": 1,
+    "WeaponId": 101041
+  },
+  {
+    "WeaponEvolutionGroupId": 10104,
+    "EvolutionOrder": 2,
+    "WeaponId": 101042
+  },
+  {
+    "WeaponEvolutionGroupId": 10105,
+    "EvolutionOrder": 1,
+    "WeaponId": 101051
+  },
+  {
+    "WeaponEvolutionGroupId": 10105,
+    "EvolutionOrder": 2,
+    "WeaponId": 101052
+  },
+  {
+    "WeaponEvolutionGroupId": 10106,
+    "EvolutionOrder": 1,
+    "WeaponId": 101061
+  },
+  {
+    "WeaponEvolutionGroupId": 10106,
+    "EvolutionOrder": 2,
+    "WeaponId": 101062
+  },
+  {
+    "WeaponEvolutionGroupId": 10107,
+    "EvolutionOrder": 1,
+    "WeaponId": 101071
+  },
+  {
+    "WeaponEvolutionGroupId": 10107,
+    "EvolutionOrder": 2,
+    "WeaponId": 101072
+  },
+  {
+    "WeaponEvolutionGroupId": 10108,
+    "EvolutionOrder": 1,
+    "WeaponId": 101081
+  },
+  {
+    "WeaponEvolutionGroupId": 10108,
+    "EvolutionOrder": 2,
+    "WeaponId": 101082
+  },
+  {
+    "WeaponEvolutionGroupId": 10109,
+    "EvolutionOrder": 1,
+    "WeaponId": 101091
+  },
+  {
+    "WeaponEvolutionGroupId": 10109,
+    "EvolutionOrder": 2,
+    "WeaponId": 101092
+  },
+  {
+    "WeaponEvolutionGroupId": 10110,
+    "EvolutionOrder": 1,
+    "WeaponId": 101101
+  },
+  {
+    "WeaponEvolutionGroupId": 10110,
+    "EvolutionOrder": 2,
+    "WeaponId": 101102
+  },
+  {
+    "WeaponEvolutionGroupId": 10111,
+    "EvolutionOrder": 1,
+    "WeaponId": 101111
+  },
+  {
+    "WeaponEvolutionGroupId": 10111,
+    "EvolutionOrder": 2,
+    "WeaponId": 101112
+  },
+  {
+    "WeaponEvolutionGroupId": 10112,
+    "EvolutionOrder": 1,
+    "WeaponId": 101121
+  },
+  {
+    "WeaponEvolutionGroupId": 10112,
+    "EvolutionOrder": 2,
+    "WeaponId": 101122
+  },
+  {
+    "WeaponEvolutionGroupId": 10113,
+    "EvolutionOrder": 1,
+    "WeaponId": 101131
+  },
+  {
+    "WeaponEvolutionGroupId": 10113,
+    "EvolutionOrder": 2,
+    "WeaponId": 101132
+  },
+  {
+    "WeaponEvolutionGroupId": 10114,
+    "EvolutionOrder": 1,
+    "WeaponId": 101141
+  },
+  {
+    "WeaponEvolutionGroupId": 10114,
+    "EvolutionOrder": 2,
+    "WeaponId": 101142
+  },
+  {
+    "WeaponEvolutionGroupId": 10115,
+    "EvolutionOrder": 1,
+    "WeaponId": 101151
+  },
+  {
+    "WeaponEvolutionGroupId": 10115,
+    "EvolutionOrder": 2,
+    "WeaponId": 101152
+  },
+  {
+    "WeaponEvolutionGroupId": 10116,
+    "EvolutionOrder": 1,
+    "WeaponId": 101161
+  },
+  {
+    "WeaponEvolutionGroupId": 10116,
+    "EvolutionOrder": 2,
+    "WeaponId": 101162
+  },
+  {
+    "WeaponEvolutionGroupId": 10117,
+    "EvolutionOrder": 1,
+    "WeaponId": 101171
+  },
+  {
+    "WeaponEvolutionGroupId": 10117,
+    "EvolutionOrder": 2,
+    "WeaponId": 101172
+  },
+  {
+    "WeaponEvolutionGroupId": 10118,
+    "EvolutionOrder": 1,
+    "WeaponId": 101181
+  },
+  {
+    "WeaponEvolutionGroupId": 10118,
+    "EvolutionOrder": 2,
+    "WeaponId": 101182
+  },
+  {
+    "WeaponEvolutionGroupId": 10119,
+    "EvolutionOrder": 1,
+    "WeaponId": 101191
+  },
+  {
+    "WeaponEvolutionGroupId": 10119,
+    "EvolutionOrder": 2,
+    "WeaponId": 101192
+  },
+  {
+    "WeaponEvolutionGroupId": 10120,
+    "EvolutionOrder": 1,
+    "WeaponId": 101201
+  },
+  {
+    "WeaponEvolutionGroupId": 10120,
+    "EvolutionOrder": 2,
+    "WeaponId": 101202
+  },
+  {
+    "WeaponEvolutionGroupId": 10121,
+    "EvolutionOrder": 1,
+    "WeaponId": 101211
+  },
+  {
+    "WeaponEvolutionGroupId": 10121,
+    "EvolutionOrder": 2,
+    "WeaponId": 101212
+  },
+  {
+    "WeaponEvolutionGroupId": 11000,
+    "EvolutionOrder": 1,
+    "WeaponId": 110001
+  },
+  {
+    "WeaponEvolutionGroupId": 11000,
+    "EvolutionOrder": 2,
+    "WeaponId": 110002
+  },
+  {
+    "WeaponEvolutionGroupId": 11001,
+    "EvolutionOrder": 1,
+    "WeaponId": 110011
+  },
+  {
+    "WeaponEvolutionGroupId": 11001,
+    "EvolutionOrder": 2,
+    "WeaponId": 110012
+  },
+  {
+    "WeaponEvolutionGroupId": 11002,
+    "EvolutionOrder": 1,
+    "WeaponId": 110021
+  },
+  {
+    "WeaponEvolutionGroupId": 11002,
+    "EvolutionOrder": 2,
+    "WeaponId": 110022
+  },
+  {
+    "WeaponEvolutionGroupId": 11003,
+    "EvolutionOrder": 1,
+    "WeaponId": 110031
+  },
+  {
+    "WeaponEvolutionGroupId": 11003,
+    "EvolutionOrder": 2,
+    "WeaponId": 110032
+  },
+  {
+    "WeaponEvolutionGroupId": 11004,
+    "EvolutionOrder": 1,
+    "WeaponId": 110041
+  },
+  {
+    "WeaponEvolutionGroupId": 11004,
+    "EvolutionOrder": 2,
+    "WeaponId": 110042
+  },
+  {
+    "WeaponEvolutionGroupId": 11005,
+    "EvolutionOrder": 1,
+    "WeaponId": 110051
+  },
+  {
+    "WeaponEvolutionGroupId": 11005,
+    "EvolutionOrder": 2,
+    "WeaponId": 110052
+  },
+  {
+    "WeaponEvolutionGroupId": 12000,
+    "EvolutionOrder": 1,
+    "WeaponId": 120001
+  },
+  {
+    "WeaponEvolutionGroupId": 12000,
+    "EvolutionOrder": 2,
+    "WeaponId": 120002
+  },
+  {
+    "WeaponEvolutionGroupId": 12001,
+    "EvolutionOrder": 1,
+    "WeaponId": 120011
+  },
+  {
+    "WeaponEvolutionGroupId": 12001,
+    "EvolutionOrder": 2,
+    "WeaponId": 120012
+  },
+  {
+    "WeaponEvolutionGroupId": 12002,
+    "EvolutionOrder": 1,
+    "WeaponId": 120021
+  },
+  {
+    "WeaponEvolutionGroupId": 12002,
+    "EvolutionOrder": 2,
+    "WeaponId": 120022
+  },
+  {
+    "WeaponEvolutionGroupId": 12003,
+    "EvolutionOrder": 1,
+    "WeaponId": 120031
+  },
+  {
+    "WeaponEvolutionGroupId": 12003,
+    "EvolutionOrder": 2,
+    "WeaponId": 120032
+  },
+  {
+    "WeaponEvolutionGroupId": 12004,
+    "EvolutionOrder": 1,
+    "WeaponId": 120041
+  },
+  {
+    "WeaponEvolutionGroupId": 12004,
+    "EvolutionOrder": 2,
+    "WeaponId": 120042
+  },
+  {
+    "WeaponEvolutionGroupId": 12005,
+    "EvolutionOrder": 1,
+    "WeaponId": 120051
+  },
+  {
+    "WeaponEvolutionGroupId": 12005,
+    "EvolutionOrder": 2,
+    "WeaponId": 120052
+  },
+  {
+    "WeaponEvolutionGroupId": 13000,
+    "EvolutionOrder": 1,
+    "WeaponId": 130001
+  },
+  {
+    "WeaponEvolutionGroupId": 13000,
+    "EvolutionOrder": 2,
+    "WeaponId": 130002
+  },
+  {
+    "WeaponEvolutionGroupId": 13001,
+    "EvolutionOrder": 1,
+    "WeaponId": 130011
+  },
+  {
+    "WeaponEvolutionGroupId": 13001,
+    "EvolutionOrder": 2,
+    "WeaponId": 130012
+  },
+  {
+    "WeaponEvolutionGroupId": 13002,
+    "EvolutionOrder": 1,
+    "WeaponId": 130021
+  },
+  {
+    "WeaponEvolutionGroupId": 13002,
+    "EvolutionOrder": 2,
+    "WeaponId": 130022
+  },
+  {
+    "WeaponEvolutionGroupId": 13003,
+    "EvolutionOrder": 1,
+    "WeaponId": 130031
+  },
+  {
+    "WeaponEvolutionGroupId": 13003,
+    "EvolutionOrder": 2,
+    "WeaponId": 130032
+  },
+  {
+    "WeaponEvolutionGroupId": 13004,
+    "EvolutionOrder": 1,
+    "WeaponId": 130041
+  },
+  {
+    "WeaponEvolutionGroupId": 13004,
+    "EvolutionOrder": 2,
+    "WeaponId": 130042
+  },
+  {
+    "WeaponEvolutionGroupId": 13005,
+    "EvolutionOrder": 1,
+    "WeaponId": 130051
+  },
+  {
+    "WeaponEvolutionGroupId": 13005,
+    "EvolutionOrder": 2,
+    "WeaponId": 130052
+  },
+  {
+    "WeaponEvolutionGroupId": 14000,
+    "EvolutionOrder": 1,
+    "WeaponId": 140001
+  },
+  {
+    "WeaponEvolutionGroupId": 14000,
+    "EvolutionOrder": 2,
+    "WeaponId": 140002
+  },
+  {
+    "WeaponEvolutionGroupId": 14001,
+    "EvolutionOrder": 1,
+    "WeaponId": 140011
+  },
+  {
+    "WeaponEvolutionGroupId": 14001,
+    "EvolutionOrder": 2,
+    "WeaponId": 140012
+  },
+  {
+    "WeaponEvolutionGroupId": 14002,
+    "EvolutionOrder": 1,
+    "WeaponId": 140021
+  },
+  {
+    "WeaponEvolutionGroupId": 14002,
+    "EvolutionOrder": 2,
+    "WeaponId": 140022
+  },
+  {
+    "WeaponEvolutionGroupId": 14003,
+    "EvolutionOrder": 1,
+    "WeaponId": 140031
+  },
+  {
+    "WeaponEvolutionGroupId": 14003,
+    "EvolutionOrder": 2,
+    "WeaponId": 140032
+  },
+  {
+    "WeaponEvolutionGroupId": 14004,
+    "EvolutionOrder": 1,
+    "WeaponId": 140041
+  },
+  {
+    "WeaponEvolutionGroupId": 14004,
+    "EvolutionOrder": 2,
+    "WeaponId": 140042
+  },
+  {
+    "WeaponEvolutionGroupId": 14005,
+    "EvolutionOrder": 1,
+    "WeaponId": 140051
+  },
+  {
+    "WeaponEvolutionGroupId": 14005,
+    "EvolutionOrder": 2,
+    "WeaponId": 140052
+  },
+  {
+    "WeaponEvolutionGroupId": 15000,
+    "EvolutionOrder": 1,
+    "WeaponId": 150001
+  },
+  {
+    "WeaponEvolutionGroupId": 15000,
+    "EvolutionOrder": 2,
+    "WeaponId": 150002
+  },
+  {
+    "WeaponEvolutionGroupId": 15001,
+    "EvolutionOrder": 1,
+    "WeaponId": 150011
+  },
+  {
+    "WeaponEvolutionGroupId": 15001,
+    "EvolutionOrder": 2,
+    "WeaponId": 150012
+  },
+  {
+    "WeaponEvolutionGroupId": 15002,
+    "EvolutionOrder": 1,
+    "WeaponId": 150021
+  },
+  {
+    "WeaponEvolutionGroupId": 15002,
+    "EvolutionOrder": 2,
+    "WeaponId": 150022
+  },
+  {
+    "WeaponEvolutionGroupId": 15003,
+    "EvolutionOrder": 1,
+    "WeaponId": 150031
+  },
+  {
+    "WeaponEvolutionGroupId": 15003,
+    "EvolutionOrder": 2,
+    "WeaponId": 150032
+  },
+  {
+    "WeaponEvolutionGroupId": 15004,
+    "EvolutionOrder": 1,
+    "WeaponId": 150041
+  },
+  {
+    "WeaponEvolutionGroupId": 15004,
+    "EvolutionOrder": 2,
+    "WeaponId": 150042
+  },
+  {
+    "WeaponEvolutionGroupId": 15005,
+    "EvolutionOrder": 1,
+    "WeaponId": 150051
+  },
+  {
+    "WeaponEvolutionGroupId": 15005,
+    "EvolutionOrder": 2,
+    "WeaponId": 150052
+  },
+  {
+    "WeaponEvolutionGroupId": 21000,
+    "EvolutionOrder": 1,
+    "WeaponId": 210001
+  },
+  {
+    "WeaponEvolutionGroupId": 21000,
+    "EvolutionOrder": 2,
+    "WeaponId": 210002
+  },
+  {
+    "WeaponEvolutionGroupId": 21002,
+    "EvolutionOrder": 1,
+    "WeaponId": 210021
+  },
+  {
+    "WeaponEvolutionGroupId": 21002,
+    "EvolutionOrder": 2,
+    "WeaponId": 210022
+  },
+  {
+    "WeaponEvolutionGroupId": 21003,
+    "EvolutionOrder": 1,
+    "WeaponId": 210031
+  },
+  {
+    "WeaponEvolutionGroupId": 21003,
+    "EvolutionOrder": 2,
+    "WeaponId": 210032
+  },
+  {
+    "WeaponEvolutionGroupId": 21004,
+    "EvolutionOrder": 1,
+    "WeaponId": 210041
+  },
+  {
+    "WeaponEvolutionGroupId": 21004,
+    "EvolutionOrder": 2,
+    "WeaponId": 210042
+  },
+  {
+    "WeaponEvolutionGroupId": 21006,
+    "EvolutionOrder": 1,
+    "WeaponId": 210061
+  },
+  {
+    "WeaponEvolutionGroupId": 21006,
+    "EvolutionOrder": 2,
+    "WeaponId": 210062
+  },
+  {
+    "WeaponEvolutionGroupId": 21007,
+    "EvolutionOrder": 1,
+    "WeaponId": 210071
+  },
+  {
+    "WeaponEvolutionGroupId": 21007,
+    "EvolutionOrder": 2,
+    "WeaponId": 210072
+  },
+  {
+    "WeaponEvolutionGroupId": 21009,
+    "EvolutionOrder": 1,
+    "WeaponId": 210091
+  },
+  {
+    "WeaponEvolutionGroupId": 21009,
+    "EvolutionOrder": 2,
+    "WeaponId": 210092
+  },
+  {
+    "WeaponEvolutionGroupId": 21010,
+    "EvolutionOrder": 1,
+    "WeaponId": 210101
+  },
+  {
+    "WeaponEvolutionGroupId": 21010,
+    "EvolutionOrder": 2,
+    "WeaponId": 210102
+  },
+  {
+    "WeaponEvolutionGroupId": 21013,
+    "EvolutionOrder": 1,
+    "WeaponId": 210131
+  },
+  {
+    "WeaponEvolutionGroupId": 21013,
+    "EvolutionOrder": 2,
+    "WeaponId": 210132
+  },
+  {
+    "WeaponEvolutionGroupId": 21014,
+    "EvolutionOrder": 1,
+    "WeaponId": 210141
+  },
+  {
+    "WeaponEvolutionGroupId": 21014,
+    "EvolutionOrder": 2,
+    "WeaponId": 210142
+  },
+  {
+    "WeaponEvolutionGroupId": 21015,
+    "EvolutionOrder": 1,
+    "WeaponId": 210151
+  },
+  {
+    "WeaponEvolutionGroupId": 21015,
+    "EvolutionOrder": 2,
+    "WeaponId": 210152
+  },
+  {
+    "WeaponEvolutionGroupId": 21016,
+    "EvolutionOrder": 1,
+    "WeaponId": 210161
+  },
+  {
+    "WeaponEvolutionGroupId": 21016,
+    "EvolutionOrder": 2,
+    "WeaponId": 210162
+  },
+  {
+    "WeaponEvolutionGroupId": 21017,
+    "EvolutionOrder": 1,
+    "WeaponId": 210171
+  },
+  {
+    "WeaponEvolutionGroupId": 21017,
+    "EvolutionOrder": 2,
+    "WeaponId": 210172
+  },
+  {
+    "WeaponEvolutionGroupId": 21018,
+    "EvolutionOrder": 1,
+    "WeaponId": 210181
+  },
+  {
+    "WeaponEvolutionGroupId": 21018,
+    "EvolutionOrder": 2,
+    "WeaponId": 210182
+  },
+  {
+    "WeaponEvolutionGroupId": 21019,
+    "EvolutionOrder": 1,
+    "WeaponId": 210191
+  },
+  {
+    "WeaponEvolutionGroupId": 21019,
+    "EvolutionOrder": 2,
+    "WeaponId": 210192
+  },
+  {
+    "WeaponEvolutionGroupId": 21020,
+    "EvolutionOrder": 1,
+    "WeaponId": 210201
+  },
+  {
+    "WeaponEvolutionGroupId": 21020,
+    "EvolutionOrder": 2,
+    "WeaponId": 210202
+  },
+  {
+    "WeaponEvolutionGroupId": 21021,
+    "EvolutionOrder": 1,
+    "WeaponId": 210211
+  },
+  {
+    "WeaponEvolutionGroupId": 21021,
+    "EvolutionOrder": 2,
+    "WeaponId": 210212
+  },
+  {
+    "WeaponEvolutionGroupId": 21022,
+    "EvolutionOrder": 1,
+    "WeaponId": 210221
+  },
+  {
+    "WeaponEvolutionGroupId": 21022,
+    "EvolutionOrder": 2,
+    "WeaponId": 210222
+  },
+  {
+    "WeaponEvolutionGroupId": 21024,
+    "EvolutionOrder": 1,
+    "WeaponId": 210241
+  },
+  {
+    "WeaponEvolutionGroupId": 21024,
+    "EvolutionOrder": 2,
+    "WeaponId": 210242
+  },
+  {
+    "WeaponEvolutionGroupId": 21025,
+    "EvolutionOrder": 1,
+    "WeaponId": 210251
+  },
+  {
+    "WeaponEvolutionGroupId": 21025,
+    "EvolutionOrder": 2,
+    "WeaponId": 210252
+  },
+  {
+    "WeaponEvolutionGroupId": 21026,
+    "EvolutionOrder": 1,
+    "WeaponId": 210261
+  },
+  {
+    "WeaponEvolutionGroupId": 21026,
+    "EvolutionOrder": 2,
+    "WeaponId": 210262
+  },
+  {
+    "WeaponEvolutionGroupId": 21027,
+    "EvolutionOrder": 1,
+    "WeaponId": 210271
+  },
+  {
+    "WeaponEvolutionGroupId": 21027,
+    "EvolutionOrder": 2,
+    "WeaponId": 210272
+  },
+  {
+    "WeaponEvolutionGroupId": 21028,
+    "EvolutionOrder": 1,
+    "WeaponId": 210281
+  },
+  {
+    "WeaponEvolutionGroupId": 21028,
+    "EvolutionOrder": 2,
+    "WeaponId": 210282
+  },
+  {
+    "WeaponEvolutionGroupId": 22000,
+    "EvolutionOrder": 1,
+    "WeaponId": 220001
+  },
+  {
+    "WeaponEvolutionGroupId": 22000,
+    "EvolutionOrder": 2,
+    "WeaponId": 220002
+  },
+  {
+    "WeaponEvolutionGroupId": 22001,
+    "EvolutionOrder": 1,
+    "WeaponId": 220011
+  },
+  {
+    "WeaponEvolutionGroupId": 22001,
+    "EvolutionOrder": 2,
+    "WeaponId": 220012
+  },
+  {
+    "WeaponEvolutionGroupId": 22002,
+    "EvolutionOrder": 1,
+    "WeaponId": 220021
+  },
+  {
+    "WeaponEvolutionGroupId": 22002,
+    "EvolutionOrder": 2,
+    "WeaponId": 220022
+  },
+  {
+    "WeaponEvolutionGroupId": 22003,
+    "EvolutionOrder": 1,
+    "WeaponId": 220031
+  },
+  {
+    "WeaponEvolutionGroupId": 22003,
+    "EvolutionOrder": 2,
+    "WeaponId": 220032
+  },
+  {
+    "WeaponEvolutionGroupId": 22004,
+    "EvolutionOrder": 1,
+    "WeaponId": 220041
+  },
+  {
+    "WeaponEvolutionGroupId": 22004,
+    "EvolutionOrder": 2,
+    "WeaponId": 220042
+  },
+  {
+    "WeaponEvolutionGroupId": 22005,
+    "EvolutionOrder": 1,
+    "WeaponId": 220051
+  },
+  {
+    "WeaponEvolutionGroupId": 22005,
+    "EvolutionOrder": 2,
+    "WeaponId": 220052
+  },
+  {
+    "WeaponEvolutionGroupId": 22006,
+    "EvolutionOrder": 1,
+    "WeaponId": 220061
+  },
+  {
+    "WeaponEvolutionGroupId": 22006,
+    "EvolutionOrder": 2,
+    "WeaponId": 220062
+  },
+  {
+    "WeaponEvolutionGroupId": 22007,
+    "EvolutionOrder": 1,
+    "WeaponId": 220071
+  },
+  {
+    "WeaponEvolutionGroupId": 22007,
+    "EvolutionOrder": 2,
+    "WeaponId": 220072
+  },
+  {
+    "WeaponEvolutionGroupId": 22008,
+    "EvolutionOrder": 1,
+    "WeaponId": 220081
+  },
+  {
+    "WeaponEvolutionGroupId": 22008,
+    "EvolutionOrder": 2,
+    "WeaponId": 220082
+  },
+  {
+    "WeaponEvolutionGroupId": 22009,
+    "EvolutionOrder": 1,
+    "WeaponId": 220091
+  },
+  {
+    "WeaponEvolutionGroupId": 22009,
+    "EvolutionOrder": 2,
+    "WeaponId": 220092
+  },
+  {
+    "WeaponEvolutionGroupId": 22010,
+    "EvolutionOrder": 1,
+    "WeaponId": 220101
+  },
+  {
+    "WeaponEvolutionGroupId": 22010,
+    "EvolutionOrder": 2,
+    "WeaponId": 220102
+  },
+  {
+    "WeaponEvolutionGroupId": 22011,
+    "EvolutionOrder": 1,
+    "WeaponId": 220111
+  },
+  {
+    "WeaponEvolutionGroupId": 22011,
+    "EvolutionOrder": 2,
+    "WeaponId": 220112
+  },
+  {
+    "WeaponEvolutionGroupId": 22012,
+    "EvolutionOrder": 1,
+    "WeaponId": 220121
+  },
+  {
+    "WeaponEvolutionGroupId": 22012,
+    "EvolutionOrder": 2,
+    "WeaponId": 220122
+  },
+  {
+    "WeaponEvolutionGroupId": 22014,
+    "EvolutionOrder": 1,
+    "WeaponId": 220141
+  },
+  {
+    "WeaponEvolutionGroupId": 22014,
+    "EvolutionOrder": 2,
+    "WeaponId": 220142
+  },
+  {
+    "WeaponEvolutionGroupId": 22015,
+    "EvolutionOrder": 1,
+    "WeaponId": 220151
+  },
+  {
+    "WeaponEvolutionGroupId": 22015,
+    "EvolutionOrder": 2,
+    "WeaponId": 220152
+  },
+  {
+    "WeaponEvolutionGroupId": 22016,
+    "EvolutionOrder": 1,
+    "WeaponId": 220161
+  },
+  {
+    "WeaponEvolutionGroupId": 22016,
+    "EvolutionOrder": 2,
+    "WeaponId": 220162
+  },
+  {
+    "WeaponEvolutionGroupId": 22017,
+    "EvolutionOrder": 1,
+    "WeaponId": 220171
+  },
+  {
+    "WeaponEvolutionGroupId": 22017,
+    "EvolutionOrder": 2,
+    "WeaponId": 220172
+  },
+  {
+    "WeaponEvolutionGroupId": 22018,
+    "EvolutionOrder": 1,
+    "WeaponId": 220181
+  },
+  {
+    "WeaponEvolutionGroupId": 22018,
+    "EvolutionOrder": 2,
+    "WeaponId": 220182
+  },
+  {
+    "WeaponEvolutionGroupId": 22019,
+    "EvolutionOrder": 1,
+    "WeaponId": 220191
+  },
+  {
+    "WeaponEvolutionGroupId": 22019,
+    "EvolutionOrder": 2,
+    "WeaponId": 220192
+  },
+  {
+    "WeaponEvolutionGroupId": 22020,
+    "EvolutionOrder": 1,
+    "WeaponId": 220201
+  },
+  {
+    "WeaponEvolutionGroupId": 22020,
+    "EvolutionOrder": 2,
+    "WeaponId": 220202
+  },
+  {
+    "WeaponEvolutionGroupId": 22021,
+    "EvolutionOrder": 1,
+    "WeaponId": 220211
+  },
+  {
+    "WeaponEvolutionGroupId": 22021,
+    "EvolutionOrder": 2,
+    "WeaponId": 220212
+  },
+  {
+    "WeaponEvolutionGroupId": 22022,
+    "EvolutionOrder": 1,
+    "WeaponId": 220221
+  },
+  {
+    "WeaponEvolutionGroupId": 22022,
+    "EvolutionOrder": 2,
+    "WeaponId": 220222
+  },
+  {
+    "WeaponEvolutionGroupId": 22023,
+    "EvolutionOrder": 1,
+    "WeaponId": 220231
+  },
+  {
+    "WeaponEvolutionGroupId": 22023,
+    "EvolutionOrder": 2,
+    "WeaponId": 220232
+  },
+  {
+    "WeaponEvolutionGroupId": 22024,
+    "EvolutionOrder": 1,
+    "WeaponId": 220241
+  },
+  {
+    "WeaponEvolutionGroupId": 22024,
+    "EvolutionOrder": 2,
+    "WeaponId": 220242
+  },
+  {
+    "WeaponEvolutionGroupId": 22025,
+    "EvolutionOrder": 1,
+    "WeaponId": 220251
+  },
+  {
+    "WeaponEvolutionGroupId": 22025,
+    "EvolutionOrder": 2,
+    "WeaponId": 220252
+  },
+  {
+    "WeaponEvolutionGroupId": 22026,
+    "EvolutionOrder": 1,
+    "WeaponId": 220261
+  },
+  {
+    "WeaponEvolutionGroupId": 22026,
+    "EvolutionOrder": 2,
+    "WeaponId": 220262
+  },
+  {
+    "WeaponEvolutionGroupId": 23000,
+    "EvolutionOrder": 1,
+    "WeaponId": 230001
+  },
+  {
+    "WeaponEvolutionGroupId": 23000,
+    "EvolutionOrder": 2,
+    "WeaponId": 230002
+  },
+  {
+    "WeaponEvolutionGroupId": 23001,
+    "EvolutionOrder": 1,
+    "WeaponId": 230011
+  },
+  {
+    "WeaponEvolutionGroupId": 23001,
+    "EvolutionOrder": 2,
+    "WeaponId": 230012
+  },
+  {
+    "WeaponEvolutionGroupId": 23002,
+    "EvolutionOrder": 1,
+    "WeaponId": 230021
+  },
+  {
+    "WeaponEvolutionGroupId": 23002,
+    "EvolutionOrder": 2,
+    "WeaponId": 230022
+  },
+  {
+    "WeaponEvolutionGroupId": 23003,
+    "EvolutionOrder": 1,
+    "WeaponId": 230031
+  },
+  {
+    "WeaponEvolutionGroupId": 23003,
+    "EvolutionOrder": 2,
+    "WeaponId": 230032
+  },
+  {
+    "WeaponEvolutionGroupId": 23005,
+    "EvolutionOrder": 1,
+    "WeaponId": 230051
+  },
+  {
+    "WeaponEvolutionGroupId": 23005,
+    "EvolutionOrder": 2,
+    "WeaponId": 230052
+  },
+  {
+    "WeaponEvolutionGroupId": 23006,
+    "EvolutionOrder": 1,
+    "WeaponId": 230061
+  },
+  {
+    "WeaponEvolutionGroupId": 23006,
+    "EvolutionOrder": 2,
+    "WeaponId": 230062
+  },
+  {
+    "WeaponEvolutionGroupId": 23007,
+    "EvolutionOrder": 1,
+    "WeaponId": 230071
+  },
+  {
+    "WeaponEvolutionGroupId": 23007,
+    "EvolutionOrder": 2,
+    "WeaponId": 230072
+  },
+  {
+    "WeaponEvolutionGroupId": 23009,
+    "EvolutionOrder": 1,
+    "WeaponId": 230091
+  },
+  {
+    "WeaponEvolutionGroupId": 23009,
+    "EvolutionOrder": 2,
+    "WeaponId": 230092
+  },
+  {
+    "WeaponEvolutionGroupId": 23010,
+    "EvolutionOrder": 1,
+    "WeaponId": 230101
+  },
+  {
+    "WeaponEvolutionGroupId": 23010,
+    "EvolutionOrder": 2,
+    "WeaponId": 230102
+  },
+  {
+    "WeaponEvolutionGroupId": 23011,
+    "EvolutionOrder": 1,
+    "WeaponId": 230111
+  },
+  {
+    "WeaponEvolutionGroupId": 23011,
+    "EvolutionOrder": 2,
+    "WeaponId": 230112
+  },
+  {
+    "WeaponEvolutionGroupId": 23012,
+    "EvolutionOrder": 1,
+    "WeaponId": 230121
+  },
+  {
+    "WeaponEvolutionGroupId": 23012,
+    "EvolutionOrder": 2,
+    "WeaponId": 230122
+  },
+  {
+    "WeaponEvolutionGroupId": 23013,
+    "EvolutionOrder": 1,
+    "WeaponId": 230131
+  },
+  {
+    "WeaponEvolutionGroupId": 23013,
+    "EvolutionOrder": 2,
+    "WeaponId": 230132
+  },
+  {
+    "WeaponEvolutionGroupId": 23015,
+    "EvolutionOrder": 1,
+    "WeaponId": 230151
+  },
+  {
+    "WeaponEvolutionGroupId": 23015,
+    "EvolutionOrder": 2,
+    "WeaponId": 230152
+  },
+  {
+    "WeaponEvolutionGroupId": 23016,
+    "EvolutionOrder": 1,
+    "WeaponId": 230161
+  },
+  {
+    "WeaponEvolutionGroupId": 23016,
+    "EvolutionOrder": 2,
+    "WeaponId": 230162
+  },
+  {
+    "WeaponEvolutionGroupId": 23017,
+    "EvolutionOrder": 1,
+    "WeaponId": 230171
+  },
+  {
+    "WeaponEvolutionGroupId": 23017,
+    "EvolutionOrder": 2,
+    "WeaponId": 230172
+  },
+  {
+    "WeaponEvolutionGroupId": 23018,
+    "EvolutionOrder": 1,
+    "WeaponId": 230181
+  },
+  {
+    "WeaponEvolutionGroupId": 23018,
+    "EvolutionOrder": 2,
+    "WeaponId": 230182
+  },
+  {
+    "WeaponEvolutionGroupId": 23019,
+    "EvolutionOrder": 1,
+    "WeaponId": 230191
+  },
+  {
+    "WeaponEvolutionGroupId": 23019,
+    "EvolutionOrder": 2,
+    "WeaponId": 230192
+  },
+  {
+    "WeaponEvolutionGroupId": 23020,
+    "EvolutionOrder": 1,
+    "WeaponId": 230201
+  },
+  {
+    "WeaponEvolutionGroupId": 23020,
+    "EvolutionOrder": 2,
+    "WeaponId": 230202
+  },
+  {
+    "WeaponEvolutionGroupId": 23021,
+    "EvolutionOrder": 1,
+    "WeaponId": 230211
+  },
+  {
+    "WeaponEvolutionGroupId": 23021,
+    "EvolutionOrder": 2,
+    "WeaponId": 230212
+  },
+  {
+    "WeaponEvolutionGroupId": 23022,
+    "EvolutionOrder": 1,
+    "WeaponId": 230221
+  },
+  {
+    "WeaponEvolutionGroupId": 23022,
+    "EvolutionOrder": 2,
+    "WeaponId": 230222
+  },
+  {
+    "WeaponEvolutionGroupId": 23023,
+    "EvolutionOrder": 1,
+    "WeaponId": 230231
+  },
+  {
+    "WeaponEvolutionGroupId": 23023,
+    "EvolutionOrder": 2,
+    "WeaponId": 230232
+  },
+  {
+    "WeaponEvolutionGroupId": 23024,
+    "EvolutionOrder": 1,
+    "WeaponId": 230241
+  },
+  {
+    "WeaponEvolutionGroupId": 23024,
+    "EvolutionOrder": 2,
+    "WeaponId": 230242
+  },
+  {
+    "WeaponEvolutionGroupId": 23025,
+    "EvolutionOrder": 1,
+    "WeaponId": 230251
+  },
+  {
+    "WeaponEvolutionGroupId": 23025,
+    "EvolutionOrder": 2,
+    "WeaponId": 230252
+  },
+  {
+    "WeaponEvolutionGroupId": 23026,
+    "EvolutionOrder": 1,
+    "WeaponId": 230261
+  },
+  {
+    "WeaponEvolutionGroupId": 23026,
+    "EvolutionOrder": 2,
+    "WeaponId": 230262
+  },
+  {
+    "WeaponEvolutionGroupId": 23027,
+    "EvolutionOrder": 1,
+    "WeaponId": 230271
+  },
+  {
+    "WeaponEvolutionGroupId": 23027,
+    "EvolutionOrder": 2,
+    "WeaponId": 230272
+  },
+  {
+    "WeaponEvolutionGroupId": 23028,
+    "EvolutionOrder": 1,
+    "WeaponId": 230281
+  },
+  {
+    "WeaponEvolutionGroupId": 23028,
+    "EvolutionOrder": 2,
+    "WeaponId": 230282
+  },
+  {
+    "WeaponEvolutionGroupId": 24000,
+    "EvolutionOrder": 1,
+    "WeaponId": 240001
+  },
+  {
+    "WeaponEvolutionGroupId": 24000,
+    "EvolutionOrder": 2,
+    "WeaponId": 240002
+  },
+  {
+    "WeaponEvolutionGroupId": 24001,
+    "EvolutionOrder": 1,
+    "WeaponId": 240011
+  },
+  {
+    "WeaponEvolutionGroupId": 24001,
+    "EvolutionOrder": 2,
+    "WeaponId": 240012
+  },
+  {
+    "WeaponEvolutionGroupId": 24002,
+    "EvolutionOrder": 1,
+    "WeaponId": 240021
+  },
+  {
+    "WeaponEvolutionGroupId": 24002,
+    "EvolutionOrder": 2,
+    "WeaponId": 240022
+  },
+  {
+    "WeaponEvolutionGroupId": 24003,
+    "EvolutionOrder": 1,
+    "WeaponId": 240031
+  },
+  {
+    "WeaponEvolutionGroupId": 24003,
+    "EvolutionOrder": 2,
+    "WeaponId": 240032
+  },
+  {
+    "WeaponEvolutionGroupId": 24004,
+    "EvolutionOrder": 1,
+    "WeaponId": 240041
+  },
+  {
+    "WeaponEvolutionGroupId": 24004,
+    "EvolutionOrder": 2,
+    "WeaponId": 240042
+  },
+  {
+    "WeaponEvolutionGroupId": 24005,
+    "EvolutionOrder": 1,
+    "WeaponId": 240051
+  },
+  {
+    "WeaponEvolutionGroupId": 24005,
+    "EvolutionOrder": 2,
+    "WeaponId": 240052
+  },
+  {
+    "WeaponEvolutionGroupId": 24008,
+    "EvolutionOrder": 1,
+    "WeaponId": 240081
+  },
+  {
+    "WeaponEvolutionGroupId": 24008,
+    "EvolutionOrder": 2,
+    "WeaponId": 240082
+  },
+  {
+    "WeaponEvolutionGroupId": 24009,
+    "EvolutionOrder": 1,
+    "WeaponId": 240091
+  },
+  {
+    "WeaponEvolutionGroupId": 24009,
+    "EvolutionOrder": 2,
+    "WeaponId": 240092
+  },
+  {
+    "WeaponEvolutionGroupId": 24010,
+    "EvolutionOrder": 1,
+    "WeaponId": 240101
+  },
+  {
+    "WeaponEvolutionGroupId": 24010,
+    "EvolutionOrder": 2,
+    "WeaponId": 240102
+  },
+  {
+    "WeaponEvolutionGroupId": 24012,
+    "EvolutionOrder": 1,
+    "WeaponId": 240121
+  },
+  {
+    "WeaponEvolutionGroupId": 24012,
+    "EvolutionOrder": 2,
+    "WeaponId": 240122
+  },
+  {
+    "WeaponEvolutionGroupId": 24013,
+    "EvolutionOrder": 1,
+    "WeaponId": 240131
+  },
+  {
+    "WeaponEvolutionGroupId": 24013,
+    "EvolutionOrder": 2,
+    "WeaponId": 240132
+  },
+  {
+    "WeaponEvolutionGroupId": 24014,
+    "EvolutionOrder": 1,
+    "WeaponId": 240141
+  },
+  {
+    "WeaponEvolutionGroupId": 24014,
+    "EvolutionOrder": 2,
+    "WeaponId": 240142
+  },
+  {
+    "WeaponEvolutionGroupId": 24015,
+    "EvolutionOrder": 1,
+    "WeaponId": 240151
+  },
+  {
+    "WeaponEvolutionGroupId": 24015,
+    "EvolutionOrder": 2,
+    "WeaponId": 240152
+  },
+  {
+    "WeaponEvolutionGroupId": 24017,
+    "EvolutionOrder": 1,
+    "WeaponId": 240171
+  },
+  {
+    "WeaponEvolutionGroupId": 24017,
+    "EvolutionOrder": 2,
+    "WeaponId": 240172
+  },
+  {
+    "WeaponEvolutionGroupId": 24019,
+    "EvolutionOrder": 1,
+    "WeaponId": 240191
+  },
+  {
+    "WeaponEvolutionGroupId": 24019,
+    "EvolutionOrder": 2,
+    "WeaponId": 240192
+  },
+  {
+    "WeaponEvolutionGroupId": 24020,
+    "EvolutionOrder": 1,
+    "WeaponId": 240201
+  },
+  {
+    "WeaponEvolutionGroupId": 24020,
+    "EvolutionOrder": 2,
+    "WeaponId": 240202
+  },
+  {
+    "WeaponEvolutionGroupId": 24021,
+    "EvolutionOrder": 1,
+    "WeaponId": 240211
+  },
+  {
+    "WeaponEvolutionGroupId": 24021,
+    "EvolutionOrder": 2,
+    "WeaponId": 240212
+  },
+  {
+    "WeaponEvolutionGroupId": 24022,
+    "EvolutionOrder": 1,
+    "WeaponId": 240221
+  },
+  {
+    "WeaponEvolutionGroupId": 24022,
+    "EvolutionOrder": 2,
+    "WeaponId": 240222
+  },
+  {
+    "WeaponEvolutionGroupId": 24023,
+    "EvolutionOrder": 1,
+    "WeaponId": 240231
+  },
+  {
+    "WeaponEvolutionGroupId": 24023,
+    "EvolutionOrder": 2,
+    "WeaponId": 240232
+  },
+  {
+    "WeaponEvolutionGroupId": 24024,
+    "EvolutionOrder": 1,
+    "WeaponId": 240241
+  },
+  {
+    "WeaponEvolutionGroupId": 24024,
+    "EvolutionOrder": 2,
+    "WeaponId": 240242
+  },
+  {
+    "WeaponEvolutionGroupId": 24025,
+    "EvolutionOrder": 1,
+    "WeaponId": 240251
+  },
+  {
+    "WeaponEvolutionGroupId": 24025,
+    "EvolutionOrder": 2,
+    "WeaponId": 240252
+  },
+  {
+    "WeaponEvolutionGroupId": 24026,
+    "EvolutionOrder": 1,
+    "WeaponId": 240261
+  },
+  {
+    "WeaponEvolutionGroupId": 24026,
+    "EvolutionOrder": 2,
+    "WeaponId": 240262
+  },
+  {
+    "WeaponEvolutionGroupId": 24027,
+    "EvolutionOrder": 1,
+    "WeaponId": 240271
+  },
+  {
+    "WeaponEvolutionGroupId": 24027,
+    "EvolutionOrder": 2,
+    "WeaponId": 240272
+  },
+  {
+    "WeaponEvolutionGroupId": 24028,
+    "EvolutionOrder": 1,
+    "WeaponId": 240281
+  },
+  {
+    "WeaponEvolutionGroupId": 24028,
+    "EvolutionOrder": 2,
+    "WeaponId": 240282
+  },
+  {
+    "WeaponEvolutionGroupId": 24029,
+    "EvolutionOrder": 1,
+    "WeaponId": 240291
+  },
+  {
+    "WeaponEvolutionGroupId": 24029,
+    "EvolutionOrder": 2,
+    "WeaponId": 240292
+  },
+  {
+    "WeaponEvolutionGroupId": 24030,
+    "EvolutionOrder": 1,
+    "WeaponId": 240301
+  },
+  {
+    "WeaponEvolutionGroupId": 24030,
+    "EvolutionOrder": 2,
+    "WeaponId": 240302
+  },
+  {
+    "WeaponEvolutionGroupId": 24031,
+    "EvolutionOrder": 1,
+    "WeaponId": 240311
+  },
+  {
+    "WeaponEvolutionGroupId": 24031,
+    "EvolutionOrder": 2,
+    "WeaponId": 240312
+  },
+  {
+    "WeaponEvolutionGroupId": 25000,
+    "EvolutionOrder": 1,
+    "WeaponId": 250001
+  },
+  {
+    "WeaponEvolutionGroupId": 25000,
+    "EvolutionOrder": 2,
+    "WeaponId": 250002
+  },
+  {
+    "WeaponEvolutionGroupId": 25001,
+    "EvolutionOrder": 1,
+    "WeaponId": 250011
+  },
+  {
+    "WeaponEvolutionGroupId": 25001,
+    "EvolutionOrder": 2,
+    "WeaponId": 250012
+  },
+  {
+    "WeaponEvolutionGroupId": 25002,
+    "EvolutionOrder": 1,
+    "WeaponId": 250021
+  },
+  {
+    "WeaponEvolutionGroupId": 25002,
+    "EvolutionOrder": 2,
+    "WeaponId": 250022
+  },
+  {
+    "WeaponEvolutionGroupId": 25003,
+    "EvolutionOrder": 1,
+    "WeaponId": 250031
+  },
+  {
+    "WeaponEvolutionGroupId": 25003,
+    "EvolutionOrder": 2,
+    "WeaponId": 250032
+  },
+  {
+    "WeaponEvolutionGroupId": 25004,
+    "EvolutionOrder": 1,
+    "WeaponId": 250041
+  },
+  {
+    "WeaponEvolutionGroupId": 25004,
+    "EvolutionOrder": 2,
+    "WeaponId": 250042
+  },
+  {
+    "WeaponEvolutionGroupId": 25005,
+    "EvolutionOrder": 1,
+    "WeaponId": 250051
+  },
+  {
+    "WeaponEvolutionGroupId": 25005,
+    "EvolutionOrder": 2,
+    "WeaponId": 250052
+  },
+  {
+    "WeaponEvolutionGroupId": 25006,
+    "EvolutionOrder": 1,
+    "WeaponId": 250061
+  },
+  {
+    "WeaponEvolutionGroupId": 25006,
+    "EvolutionOrder": 2,
+    "WeaponId": 250062
+  },
+  {
+    "WeaponEvolutionGroupId": 25007,
+    "EvolutionOrder": 1,
+    "WeaponId": 250071
+  },
+  {
+    "WeaponEvolutionGroupId": 25007,
+    "EvolutionOrder": 2,
+    "WeaponId": 250072
+  },
+  {
+    "WeaponEvolutionGroupId": 25008,
+    "EvolutionOrder": 1,
+    "WeaponId": 250081
+  },
+  {
+    "WeaponEvolutionGroupId": 25008,
+    "EvolutionOrder": 2,
+    "WeaponId": 250082
+  },
+  {
+    "WeaponEvolutionGroupId": 25009,
+    "EvolutionOrder": 1,
+    "WeaponId": 250091
+  },
+  {
+    "WeaponEvolutionGroupId": 25009,
+    "EvolutionOrder": 2,
+    "WeaponId": 250092
+  },
+  {
+    "WeaponEvolutionGroupId": 25010,
+    "EvolutionOrder": 1,
+    "WeaponId": 250101
+  },
+  {
+    "WeaponEvolutionGroupId": 25010,
+    "EvolutionOrder": 2,
+    "WeaponId": 250102
+  },
+  {
+    "WeaponEvolutionGroupId": 25011,
+    "EvolutionOrder": 1,
+    "WeaponId": 250111
+  },
+  {
+    "WeaponEvolutionGroupId": 25011,
+    "EvolutionOrder": 2,
+    "WeaponId": 250112
+  },
+  {
+    "WeaponEvolutionGroupId": 25012,
+    "EvolutionOrder": 1,
+    "WeaponId": 250121
+  },
+  {
+    "WeaponEvolutionGroupId": 25012,
+    "EvolutionOrder": 2,
+    "WeaponId": 250122
+  },
+  {
+    "WeaponEvolutionGroupId": 25014,
+    "EvolutionOrder": 1,
+    "WeaponId": 250141
+  },
+  {
+    "WeaponEvolutionGroupId": 25014,
+    "EvolutionOrder": 2,
+    "WeaponId": 250142
+  },
+  {
+    "WeaponEvolutionGroupId": 25015,
+    "EvolutionOrder": 1,
+    "WeaponId": 250151
+  },
+  {
+    "WeaponEvolutionGroupId": 25015,
+    "EvolutionOrder": 2,
+    "WeaponId": 250152
+  },
+  {
+    "WeaponEvolutionGroupId": 25017,
+    "EvolutionOrder": 1,
+    "WeaponId": 250171
+  },
+  {
+    "WeaponEvolutionGroupId": 25017,
+    "EvolutionOrder": 2,
+    "WeaponId": 250172
+  },
+  {
+    "WeaponEvolutionGroupId": 25018,
+    "EvolutionOrder": 1,
+    "WeaponId": 250181
+  },
+  {
+    "WeaponEvolutionGroupId": 25018,
+    "EvolutionOrder": 2,
+    "WeaponId": 250182
+  },
+  {
+    "WeaponEvolutionGroupId": 25019,
+    "EvolutionOrder": 1,
+    "WeaponId": 250191
+  },
+  {
+    "WeaponEvolutionGroupId": 25019,
+    "EvolutionOrder": 2,
+    "WeaponId": 250192
+  },
+  {
+    "WeaponEvolutionGroupId": 25020,
+    "EvolutionOrder": 1,
+    "WeaponId": 250201
+  },
+  {
+    "WeaponEvolutionGroupId": 25020,
+    "EvolutionOrder": 2,
+    "WeaponId": 250202
+  },
+  {
+    "WeaponEvolutionGroupId": 25021,
+    "EvolutionOrder": 1,
+    "WeaponId": 250211
+  },
+  {
+    "WeaponEvolutionGroupId": 25021,
+    "EvolutionOrder": 2,
+    "WeaponId": 250212
+  },
+  {
+    "WeaponEvolutionGroupId": 25022,
+    "EvolutionOrder": 1,
+    "WeaponId": 250221
+  },
+  {
+    "WeaponEvolutionGroupId": 25022,
+    "EvolutionOrder": 2,
+    "WeaponId": 250222
+  },
+  {
+    "WeaponEvolutionGroupId": 25023,
+    "EvolutionOrder": 1,
+    "WeaponId": 250231
+  },
+  {
+    "WeaponEvolutionGroupId": 25023,
+    "EvolutionOrder": 2,
+    "WeaponId": 250232
+  },
+  {
+    "WeaponEvolutionGroupId": 25024,
+    "EvolutionOrder": 1,
+    "WeaponId": 250241
+  },
+  {
+    "WeaponEvolutionGroupId": 25024,
+    "EvolutionOrder": 2,
+    "WeaponId": 250242
+  },
+  {
+    "WeaponEvolutionGroupId": 25025,
+    "EvolutionOrder": 1,
+    "WeaponId": 250251
+  },
+  {
+    "WeaponEvolutionGroupId": 25025,
+    "EvolutionOrder": 2,
+    "WeaponId": 250252
+  },
+  {
+    "WeaponEvolutionGroupId": 25026,
+    "EvolutionOrder": 1,
+    "WeaponId": 250261
+  },
+  {
+    "WeaponEvolutionGroupId": 25026,
+    "EvolutionOrder": 2,
+    "WeaponId": 250262
+  },
+  {
+    "WeaponEvolutionGroupId": 25027,
+    "EvolutionOrder": 1,
+    "WeaponId": 250271
+  },
+  {
+    "WeaponEvolutionGroupId": 25027,
+    "EvolutionOrder": 2,
+    "WeaponId": 250272
+  },
+  {
+    "WeaponEvolutionGroupId": 31000,
+    "EvolutionOrder": 1,
+    "WeaponId": 310001
+  },
+  {
+    "WeaponEvolutionGroupId": 31000,
+    "EvolutionOrder": 2,
+    "WeaponId": 310002
+  },
+  {
+    "WeaponEvolutionGroupId": 31001,
+    "EvolutionOrder": 1,
+    "WeaponId": 310011
+  },
+  {
+    "WeaponEvolutionGroupId": 31001,
+    "EvolutionOrder": 2,
+    "WeaponId": 310012
+  },
+  {
+    "WeaponEvolutionGroupId": 31002,
+    "EvolutionOrder": 1,
+    "WeaponId": 310021
+  },
+  {
+    "WeaponEvolutionGroupId": 31002,
+    "EvolutionOrder": 2,
+    "WeaponId": 310022
+  },
+  {
+    "WeaponEvolutionGroupId": 31005,
+    "EvolutionOrder": 1,
+    "WeaponId": 310051
+  },
+  {
+    "WeaponEvolutionGroupId": 31005,
+    "EvolutionOrder": 2,
+    "WeaponId": 310052
+  },
+  {
+    "WeaponEvolutionGroupId": 31006,
+    "EvolutionOrder": 1,
+    "WeaponId": 310061
+  },
+  {
+    "WeaponEvolutionGroupId": 31006,
+    "EvolutionOrder": 2,
+    "WeaponId": 310062
+  },
+  {
+    "WeaponEvolutionGroupId": 31007,
+    "EvolutionOrder": 1,
+    "WeaponId": 310071
+  },
+  {
+    "WeaponEvolutionGroupId": 31007,
+    "EvolutionOrder": 2,
+    "WeaponId": 310072
+  },
+  {
+    "WeaponEvolutionGroupId": 31008,
+    "EvolutionOrder": 1,
+    "WeaponId": 310081
+  },
+  {
+    "WeaponEvolutionGroupId": 31008,
+    "EvolutionOrder": 2,
+    "WeaponId": 310082
+  },
+  {
+    "WeaponEvolutionGroupId": 31011,
+    "EvolutionOrder": 1,
+    "WeaponId": 310111
+  },
+  {
+    "WeaponEvolutionGroupId": 31011,
+    "EvolutionOrder": 2,
+    "WeaponId": 310112
+  },
+  {
+    "WeaponEvolutionGroupId": 31013,
+    "EvolutionOrder": 1,
+    "WeaponId": 310131
+  },
+  {
+    "WeaponEvolutionGroupId": 31013,
+    "EvolutionOrder": 2,
+    "WeaponId": 310132
+  },
+  {
+    "WeaponEvolutionGroupId": 31014,
+    "EvolutionOrder": 1,
+    "WeaponId": 310141
+  },
+  {
+    "WeaponEvolutionGroupId": 31014,
+    "EvolutionOrder": 2,
+    "WeaponId": 310142
+  },
+  {
+    "WeaponEvolutionGroupId": 31017,
+    "EvolutionOrder": 1,
+    "WeaponId": 310171
+  },
+  {
+    "WeaponEvolutionGroupId": 31017,
+    "EvolutionOrder": 2,
+    "WeaponId": 310172
+  },
+  {
+    "WeaponEvolutionGroupId": 31018,
+    "EvolutionOrder": 1,
+    "WeaponId": 310181
+  },
+  {
+    "WeaponEvolutionGroupId": 31018,
+    "EvolutionOrder": 2,
+    "WeaponId": 310182
+  },
+  {
+    "WeaponEvolutionGroupId": 31019,
+    "EvolutionOrder": 1,
+    "WeaponId": 310191
+  },
+  {
+    "WeaponEvolutionGroupId": 31019,
+    "EvolutionOrder": 2,
+    "WeaponId": 310192
+  },
+  {
+    "WeaponEvolutionGroupId": 31021,
+    "EvolutionOrder": 1,
+    "WeaponId": 310211
+  },
+  {
+    "WeaponEvolutionGroupId": 31021,
+    "EvolutionOrder": 2,
+    "WeaponId": 310212
+  },
+  {
+    "WeaponEvolutionGroupId": 31022,
+    "EvolutionOrder": 1,
+    "WeaponId": 310221
+  },
+  {
+    "WeaponEvolutionGroupId": 31022,
+    "EvolutionOrder": 2,
+    "WeaponId": 310222
+  },
+  {
+    "WeaponEvolutionGroupId": 31023,
+    "EvolutionOrder": 1,
+    "WeaponId": 310231
+  },
+  {
+    "WeaponEvolutionGroupId": 31023,
+    "EvolutionOrder": 2,
+    "WeaponId": 310232
+  },
+  {
+    "WeaponEvolutionGroupId": 31024,
+    "EvolutionOrder": 1,
+    "WeaponId": 310241
+  },
+  {
+    "WeaponEvolutionGroupId": 31024,
+    "EvolutionOrder": 2,
+    "WeaponId": 310242
+  },
+  {
+    "WeaponEvolutionGroupId": 31025,
+    "EvolutionOrder": 1,
+    "WeaponId": 310251
+  },
+  {
+    "WeaponEvolutionGroupId": 31025,
+    "EvolutionOrder": 2,
+    "WeaponId": 310252
+  },
+  {
+    "WeaponEvolutionGroupId": 31026,
+    "EvolutionOrder": 1,
+    "WeaponId": 310261
+  },
+  {
+    "WeaponEvolutionGroupId": 31026,
+    "EvolutionOrder": 2,
+    "WeaponId": 310262
+  },
+  {
+    "WeaponEvolutionGroupId": 31027,
+    "EvolutionOrder": 1,
+    "WeaponId": 310271
+  },
+  {
+    "WeaponEvolutionGroupId": 31027,
+    "EvolutionOrder": 2,
+    "WeaponId": 310272
+  },
+  {
+    "WeaponEvolutionGroupId": 31028,
+    "EvolutionOrder": 1,
+    "WeaponId": 310281
+  },
+  {
+    "WeaponEvolutionGroupId": 31028,
+    "EvolutionOrder": 2,
+    "WeaponId": 310282
+  },
+  {
+    "WeaponEvolutionGroupId": 31029,
+    "EvolutionOrder": 1,
+    "WeaponId": 310291
+  },
+  {
+    "WeaponEvolutionGroupId": 31029,
+    "EvolutionOrder": 2,
+    "WeaponId": 310292
+  },
+  {
+    "WeaponEvolutionGroupId": 31032,
+    "EvolutionOrder": 1,
+    "WeaponId": 310321
+  },
+  {
+    "WeaponEvolutionGroupId": 31032,
+    "EvolutionOrder": 2,
+    "WeaponId": 310322
+  },
+  {
+    "WeaponEvolutionGroupId": 31033,
+    "EvolutionOrder": 1,
+    "WeaponId": 310331
+  },
+  {
+    "WeaponEvolutionGroupId": 31033,
+    "EvolutionOrder": 2,
+    "WeaponId": 310332
+  },
+  {
+    "WeaponEvolutionGroupId": 31034,
+    "EvolutionOrder": 1,
+    "WeaponId": 310341
+  },
+  {
+    "WeaponEvolutionGroupId": 31034,
+    "EvolutionOrder": 2,
+    "WeaponId": 310342
+  },
+  {
+    "WeaponEvolutionGroupId": 31035,
+    "EvolutionOrder": 1,
+    "WeaponId": 310351
+  },
+  {
+    "WeaponEvolutionGroupId": 31035,
+    "EvolutionOrder": 2,
+    "WeaponId": 310352
+  },
+  {
+    "WeaponEvolutionGroupId": 31036,
+    "EvolutionOrder": 1,
+    "WeaponId": 310361
+  },
+  {
+    "WeaponEvolutionGroupId": 31036,
+    "EvolutionOrder": 2,
+    "WeaponId": 310362
+  },
+  {
+    "WeaponEvolutionGroupId": 31037,
+    "EvolutionOrder": 1,
+    "WeaponId": 310371
+  },
+  {
+    "WeaponEvolutionGroupId": 31037,
+    "EvolutionOrder": 2,
+    "WeaponId": 310372
+  },
+  {
+    "WeaponEvolutionGroupId": 31038,
+    "EvolutionOrder": 1,
+    "WeaponId": 310381
+  },
+  {
+    "WeaponEvolutionGroupId": 31038,
+    "EvolutionOrder": 2,
+    "WeaponId": 310382
+  },
+  {
+    "WeaponEvolutionGroupId": 31039,
+    "EvolutionOrder": 1,
+    "WeaponId": 310391
+  },
+  {
+    "WeaponEvolutionGroupId": 31039,
+    "EvolutionOrder": 2,
+    "WeaponId": 310392
+  },
+  {
+    "WeaponEvolutionGroupId": 31040,
+    "EvolutionOrder": 1,
+    "WeaponId": 310401
+  },
+  {
+    "WeaponEvolutionGroupId": 31040,
+    "EvolutionOrder": 2,
+    "WeaponId": 310402
+  },
+  {
+    "WeaponEvolutionGroupId": 31041,
+    "EvolutionOrder": 1,
+    "WeaponId": 310411
+  },
+  {
+    "WeaponEvolutionGroupId": 31041,
+    "EvolutionOrder": 2,
+    "WeaponId": 310412
+  },
+  {
+    "WeaponEvolutionGroupId": 31042,
+    "EvolutionOrder": 1,
+    "WeaponId": 310421
+  },
+  {
+    "WeaponEvolutionGroupId": 31042,
+    "EvolutionOrder": 2,
+    "WeaponId": 310422
+  },
+  {
+    "WeaponEvolutionGroupId": 31043,
+    "EvolutionOrder": 1,
+    "WeaponId": 310431
+  },
+  {
+    "WeaponEvolutionGroupId": 31043,
+    "EvolutionOrder": 2,
+    "WeaponId": 310432
+  },
+  {
+    "WeaponEvolutionGroupId": 31044,
+    "EvolutionOrder": 1,
+    "WeaponId": 310441
+  },
+  {
+    "WeaponEvolutionGroupId": 31044,
+    "EvolutionOrder": 2,
+    "WeaponId": 310442
+  },
+  {
+    "WeaponEvolutionGroupId": 31045,
+    "EvolutionOrder": 1,
+    "WeaponId": 310451
+  },
+  {
+    "WeaponEvolutionGroupId": 31045,
+    "EvolutionOrder": 2,
+    "WeaponId": 310452
+  },
+  {
+    "WeaponEvolutionGroupId": 31046,
+    "EvolutionOrder": 1,
+    "WeaponId": 310461
+  },
+  {
+    "WeaponEvolutionGroupId": 31046,
+    "EvolutionOrder": 2,
+    "WeaponId": 310462
+  },
+  {
+    "WeaponEvolutionGroupId": 31047,
+    "EvolutionOrder": 1,
+    "WeaponId": 310471
+  },
+  {
+    "WeaponEvolutionGroupId": 31047,
+    "EvolutionOrder": 2,
+    "WeaponId": 310472
+  },
+  {
+    "WeaponEvolutionGroupId": 31048,
+    "EvolutionOrder": 1,
+    "WeaponId": 310481
+  },
+  {
+    "WeaponEvolutionGroupId": 31048,
+    "EvolutionOrder": 2,
+    "WeaponId": 310482
+  },
+  {
+    "WeaponEvolutionGroupId": 31049,
+    "EvolutionOrder": 1,
+    "WeaponId": 310491
+  },
+  {
+    "WeaponEvolutionGroupId": 31049,
+    "EvolutionOrder": 2,
+    "WeaponId": 310492
+  },
+  {
+    "WeaponEvolutionGroupId": 31050,
+    "EvolutionOrder": 1,
+    "WeaponId": 310501
+  },
+  {
+    "WeaponEvolutionGroupId": 31050,
+    "EvolutionOrder": 2,
+    "WeaponId": 310502
+  },
+  {
+    "WeaponEvolutionGroupId": 31051,
+    "EvolutionOrder": 1,
+    "WeaponId": 310511
+  },
+  {
+    "WeaponEvolutionGroupId": 31051,
+    "EvolutionOrder": 2,
+    "WeaponId": 310512
+  },
+  {
+    "WeaponEvolutionGroupId": 31052,
+    "EvolutionOrder": 1,
+    "WeaponId": 310521
+  },
+  {
+    "WeaponEvolutionGroupId": 31052,
+    "EvolutionOrder": 2,
+    "WeaponId": 310522
+  },
+  {
+    "WeaponEvolutionGroupId": 31053,
+    "EvolutionOrder": 1,
+    "WeaponId": 310531
+  },
+  {
+    "WeaponEvolutionGroupId": 31053,
+    "EvolutionOrder": 2,
+    "WeaponId": 310532
+  },
+  {
+    "WeaponEvolutionGroupId": 31054,
+    "EvolutionOrder": 1,
+    "WeaponId": 310541
+  },
+  {
+    "WeaponEvolutionGroupId": 31054,
+    "EvolutionOrder": 2,
+    "WeaponId": 310542
+  },
+  {
+    "WeaponEvolutionGroupId": 31055,
+    "EvolutionOrder": 1,
+    "WeaponId": 310551
+  },
+  {
+    "WeaponEvolutionGroupId": 31055,
+    "EvolutionOrder": 2,
+    "WeaponId": 310552
+  },
+  {
+    "WeaponEvolutionGroupId": 31056,
+    "EvolutionOrder": 1,
+    "WeaponId": 310561
+  },
+  {
+    "WeaponEvolutionGroupId": 31056,
+    "EvolutionOrder": 2,
+    "WeaponId": 310562
+  },
+  {
+    "WeaponEvolutionGroupId": 31057,
+    "EvolutionOrder": 1,
+    "WeaponId": 310571
+  },
+  {
+    "WeaponEvolutionGroupId": 31057,
+    "EvolutionOrder": 2,
+    "WeaponId": 310572
+  },
+  {
+    "WeaponEvolutionGroupId": 31058,
+    "EvolutionOrder": 1,
+    "WeaponId": 310581
+  },
+  {
+    "WeaponEvolutionGroupId": 31058,
+    "EvolutionOrder": 2,
+    "WeaponId": 310582
+  },
+  {
+    "WeaponEvolutionGroupId": 31059,
+    "EvolutionOrder": 1,
+    "WeaponId": 310591
+  },
+  {
+    "WeaponEvolutionGroupId": 31059,
+    "EvolutionOrder": 2,
+    "WeaponId": 310592
+  },
+  {
+    "WeaponEvolutionGroupId": 31060,
+    "EvolutionOrder": 1,
+    "WeaponId": 310601
+  },
+  {
+    "WeaponEvolutionGroupId": 31060,
+    "EvolutionOrder": 2,
+    "WeaponId": 310602
+  },
+  {
+    "WeaponEvolutionGroupId": 31061,
+    "EvolutionOrder": 1,
+    "WeaponId": 310611
+  },
+  {
+    "WeaponEvolutionGroupId": 31061,
+    "EvolutionOrder": 2,
+    "WeaponId": 310612
+  },
+  {
+    "WeaponEvolutionGroupId": 31062,
+    "EvolutionOrder": 1,
+    "WeaponId": 310621
+  },
+  {
+    "WeaponEvolutionGroupId": 31062,
+    "EvolutionOrder": 2,
+    "WeaponId": 310622
+  },
+  {
+    "WeaponEvolutionGroupId": 31063,
+    "EvolutionOrder": 1,
+    "WeaponId": 310631
+  },
+  {
+    "WeaponEvolutionGroupId": 31063,
+    "EvolutionOrder": 2,
+    "WeaponId": 310632
+  },
+  {
+    "WeaponEvolutionGroupId": 31064,
+    "EvolutionOrder": 1,
+    "WeaponId": 310641
+  },
+  {
+    "WeaponEvolutionGroupId": 31064,
+    "EvolutionOrder": 2,
+    "WeaponId": 310642
+  },
+  {
+    "WeaponEvolutionGroupId": 31065,
+    "EvolutionOrder": 1,
+    "WeaponId": 310651
+  },
+  {
+    "WeaponEvolutionGroupId": 31065,
+    "EvolutionOrder": 2,
+    "WeaponId": 310652
+  },
+  {
+    "WeaponEvolutionGroupId": 31066,
+    "EvolutionOrder": 1,
+    "WeaponId": 310661
+  },
+  {
+    "WeaponEvolutionGroupId": 31066,
+    "EvolutionOrder": 2,
+    "WeaponId": 310662
+  },
+  {
+    "WeaponEvolutionGroupId": 31067,
+    "EvolutionOrder": 1,
+    "WeaponId": 310671
+  },
+  {
+    "WeaponEvolutionGroupId": 31067,
+    "EvolutionOrder": 2,
+    "WeaponId": 310672
+  },
+  {
+    "WeaponEvolutionGroupId": 31068,
+    "EvolutionOrder": 1,
+    "WeaponId": 310681
+  },
+  {
+    "WeaponEvolutionGroupId": 31068,
+    "EvolutionOrder": 2,
+    "WeaponId": 310682
+  },
+  {
+    "WeaponEvolutionGroupId": 31069,
+    "EvolutionOrder": 1,
+    "WeaponId": 310691
+  },
+  {
+    "WeaponEvolutionGroupId": 31069,
+    "EvolutionOrder": 2,
+    "WeaponId": 310692
+  },
+  {
+    "WeaponEvolutionGroupId": 31070,
+    "EvolutionOrder": 1,
+    "WeaponId": 310701
+  },
+  {
+    "WeaponEvolutionGroupId": 31070,
+    "EvolutionOrder": 2,
+    "WeaponId": 310702
+  },
+  {
+    "WeaponEvolutionGroupId": 31071,
+    "EvolutionOrder": 1,
+    "WeaponId": 310711
+  },
+  {
+    "WeaponEvolutionGroupId": 31071,
+    "EvolutionOrder": 2,
+    "WeaponId": 310712
+  },
+  {
+    "WeaponEvolutionGroupId": 32000,
+    "EvolutionOrder": 1,
+    "WeaponId": 320001
+  },
+  {
+    "WeaponEvolutionGroupId": 32000,
+    "EvolutionOrder": 2,
+    "WeaponId": 320002
+  },
+  {
+    "WeaponEvolutionGroupId": 32001,
+    "EvolutionOrder": 1,
+    "WeaponId": 320011
+  },
+  {
+    "WeaponEvolutionGroupId": 32001,
+    "EvolutionOrder": 2,
+    "WeaponId": 320012
+  },
+  {
+    "WeaponEvolutionGroupId": 32002,
+    "EvolutionOrder": 1,
+    "WeaponId": 320021
+  },
+  {
+    "WeaponEvolutionGroupId": 32002,
+    "EvolutionOrder": 2,
+    "WeaponId": 320022
+  },
+  {
+    "WeaponEvolutionGroupId": 32003,
+    "EvolutionOrder": 1,
+    "WeaponId": 320031
+  },
+  {
+    "WeaponEvolutionGroupId": 32003,
+    "EvolutionOrder": 2,
+    "WeaponId": 320032
+  },
+  {
+    "WeaponEvolutionGroupId": 32004,
+    "EvolutionOrder": 1,
+    "WeaponId": 320041
+  },
+  {
+    "WeaponEvolutionGroupId": 32004,
+    "EvolutionOrder": 2,
+    "WeaponId": 320042
+  },
+  {
+    "WeaponEvolutionGroupId": 32005,
+    "EvolutionOrder": 1,
+    "WeaponId": 320051
+  },
+  {
+    "WeaponEvolutionGroupId": 32005,
+    "EvolutionOrder": 2,
+    "WeaponId": 320052
+  },
+  {
+    "WeaponEvolutionGroupId": 32006,
+    "EvolutionOrder": 1,
+    "WeaponId": 320061
+  },
+  {
+    "WeaponEvolutionGroupId": 32006,
+    "EvolutionOrder": 2,
+    "WeaponId": 320062
+  },
+  {
+    "WeaponEvolutionGroupId": 32007,
+    "EvolutionOrder": 1,
+    "WeaponId": 320071
+  },
+  {
+    "WeaponEvolutionGroupId": 32007,
+    "EvolutionOrder": 2,
+    "WeaponId": 320072
+  },
+  {
+    "WeaponEvolutionGroupId": 32008,
+    "EvolutionOrder": 1,
+    "WeaponId": 320081
+  },
+  {
+    "WeaponEvolutionGroupId": 32008,
+    "EvolutionOrder": 2,
+    "WeaponId": 320082
+  },
+  {
+    "WeaponEvolutionGroupId": 32009,
+    "EvolutionOrder": 1,
+    "WeaponId": 320091
+  },
+  {
+    "WeaponEvolutionGroupId": 32009,
+    "EvolutionOrder": 2,
+    "WeaponId": 320092
+  },
+  {
+    "WeaponEvolutionGroupId": 32010,
+    "EvolutionOrder": 1,
+    "WeaponId": 320101
+  },
+  {
+    "WeaponEvolutionGroupId": 32010,
+    "EvolutionOrder": 2,
+    "WeaponId": 320102
+  },
+  {
+    "WeaponEvolutionGroupId": 32011,
+    "EvolutionOrder": 1,
+    "WeaponId": 320111
+  },
+  {
+    "WeaponEvolutionGroupId": 32011,
+    "EvolutionOrder": 2,
+    "WeaponId": 320112
+  },
+  {
+    "WeaponEvolutionGroupId": 32012,
+    "EvolutionOrder": 1,
+    "WeaponId": 320121
+  },
+  {
+    "WeaponEvolutionGroupId": 32012,
+    "EvolutionOrder": 2,
+    "WeaponId": 320122
+  },
+  {
+    "WeaponEvolutionGroupId": 32013,
+    "EvolutionOrder": 1,
+    "WeaponId": 320131
+  },
+  {
+    "WeaponEvolutionGroupId": 32013,
+    "EvolutionOrder": 2,
+    "WeaponId": 320132
+  },
+  {
+    "WeaponEvolutionGroupId": 32014,
+    "EvolutionOrder": 1,
+    "WeaponId": 320141
+  },
+  {
+    "WeaponEvolutionGroupId": 32014,
+    "EvolutionOrder": 2,
+    "WeaponId": 320142
+  },
+  {
+    "WeaponEvolutionGroupId": 32015,
+    "EvolutionOrder": 1,
+    "WeaponId": 320151
+  },
+  {
+    "WeaponEvolutionGroupId": 32015,
+    "EvolutionOrder": 2,
+    "WeaponId": 320152
+  },
+  {
+    "WeaponEvolutionGroupId": 32016,
+    "EvolutionOrder": 1,
+    "WeaponId": 320161
+  },
+  {
+    "WeaponEvolutionGroupId": 32016,
+    "EvolutionOrder": 2,
+    "WeaponId": 320162
+  },
+  {
+    "WeaponEvolutionGroupId": 32017,
+    "EvolutionOrder": 1,
+    "WeaponId": 320171
+  },
+  {
+    "WeaponEvolutionGroupId": 32017,
+    "EvolutionOrder": 2,
+    "WeaponId": 320172
+  },
+  {
+    "WeaponEvolutionGroupId": 32018,
+    "EvolutionOrder": 1,
+    "WeaponId": 320181
+  },
+  {
+    "WeaponEvolutionGroupId": 32018,
+    "EvolutionOrder": 2,
+    "WeaponId": 320182
+  },
+  {
+    "WeaponEvolutionGroupId": 32019,
+    "EvolutionOrder": 1,
+    "WeaponId": 320191
+  },
+  {
+    "WeaponEvolutionGroupId": 32019,
+    "EvolutionOrder": 2,
+    "WeaponId": 320192
+  },
+  {
+    "WeaponEvolutionGroupId": 32020,
+    "EvolutionOrder": 1,
+    "WeaponId": 320201
+  },
+  {
+    "WeaponEvolutionGroupId": 32020,
+    "EvolutionOrder": 2,
+    "WeaponId": 320202
+  },
+  {
+    "WeaponEvolutionGroupId": 32022,
+    "EvolutionOrder": 1,
+    "WeaponId": 320221
+  },
+  {
+    "WeaponEvolutionGroupId": 32022,
+    "EvolutionOrder": 2,
+    "WeaponId": 320222
+  },
+  {
+    "WeaponEvolutionGroupId": 32023,
+    "EvolutionOrder": 1,
+    "WeaponId": 320231
+  },
+  {
+    "WeaponEvolutionGroupId": 32023,
+    "EvolutionOrder": 2,
+    "WeaponId": 320232
+  },
+  {
+    "WeaponEvolutionGroupId": 32024,
+    "EvolutionOrder": 1,
+    "WeaponId": 320241
+  },
+  {
+    "WeaponEvolutionGroupId": 32024,
+    "EvolutionOrder": 2,
+    "WeaponId": 320242
+  },
+  {
+    "WeaponEvolutionGroupId": 32025,
+    "EvolutionOrder": 1,
+    "WeaponId": 320251
+  },
+  {
+    "WeaponEvolutionGroupId": 32025,
+    "EvolutionOrder": 2,
+    "WeaponId": 320252
+  },
+  {
+    "WeaponEvolutionGroupId": 32026,
+    "EvolutionOrder": 1,
+    "WeaponId": 320261
+  },
+  {
+    "WeaponEvolutionGroupId": 32026,
+    "EvolutionOrder": 2,
+    "WeaponId": 320262
+  },
+  {
+    "WeaponEvolutionGroupId": 32027,
+    "EvolutionOrder": 1,
+    "WeaponId": 320271
+  },
+  {
+    "WeaponEvolutionGroupId": 32027,
+    "EvolutionOrder": 2,
+    "WeaponId": 320272
+  },
+  {
+    "WeaponEvolutionGroupId": 32028,
+    "EvolutionOrder": 1,
+    "WeaponId": 320281
+  },
+  {
+    "WeaponEvolutionGroupId": 32028,
+    "EvolutionOrder": 2,
+    "WeaponId": 320282
+  },
+  {
+    "WeaponEvolutionGroupId": 32029,
+    "EvolutionOrder": 1,
+    "WeaponId": 320291
+  },
+  {
+    "WeaponEvolutionGroupId": 32029,
+    "EvolutionOrder": 2,
+    "WeaponId": 320292
+  },
+  {
+    "WeaponEvolutionGroupId": 32030,
+    "EvolutionOrder": 1,
+    "WeaponId": 320301
+  },
+  {
+    "WeaponEvolutionGroupId": 32030,
+    "EvolutionOrder": 2,
+    "WeaponId": 320302
+  },
+  {
+    "WeaponEvolutionGroupId": 32031,
+    "EvolutionOrder": 1,
+    "WeaponId": 320311
+  },
+  {
+    "WeaponEvolutionGroupId": 32031,
+    "EvolutionOrder": 2,
+    "WeaponId": 320312
+  },
+  {
+    "WeaponEvolutionGroupId": 32032,
+    "EvolutionOrder": 1,
+    "WeaponId": 320321
+  },
+  {
+    "WeaponEvolutionGroupId": 32032,
+    "EvolutionOrder": 2,
+    "WeaponId": 320322
+  },
+  {
+    "WeaponEvolutionGroupId": 32033,
+    "EvolutionOrder": 1,
+    "WeaponId": 320331
+  },
+  {
+    "WeaponEvolutionGroupId": 32033,
+    "EvolutionOrder": 2,
+    "WeaponId": 320332
+  },
+  {
+    "WeaponEvolutionGroupId": 32034,
+    "EvolutionOrder": 1,
+    "WeaponId": 320341
+  },
+  {
+    "WeaponEvolutionGroupId": 32034,
+    "EvolutionOrder": 2,
+    "WeaponId": 320342
+  },
+  {
+    "WeaponEvolutionGroupId": 32035,
+    "EvolutionOrder": 1,
+    "WeaponId": 320351
+  },
+  {
+    "WeaponEvolutionGroupId": 32035,
+    "EvolutionOrder": 2,
+    "WeaponId": 320352
+  },
+  {
+    "WeaponEvolutionGroupId": 32036,
+    "EvolutionOrder": 1,
+    "WeaponId": 320361
+  },
+  {
+    "WeaponEvolutionGroupId": 32036,
+    "EvolutionOrder": 2,
+    "WeaponId": 320362
+  },
+  {
+    "WeaponEvolutionGroupId": 32037,
+    "EvolutionOrder": 1,
+    "WeaponId": 320371
+  },
+  {
+    "WeaponEvolutionGroupId": 32037,
+    "EvolutionOrder": 2,
+    "WeaponId": 320372
+  },
+  {
+    "WeaponEvolutionGroupId": 32038,
+    "EvolutionOrder": 1,
+    "WeaponId": 320381
+  },
+  {
+    "WeaponEvolutionGroupId": 32038,
+    "EvolutionOrder": 2,
+    "WeaponId": 320382
+  },
+  {
+    "WeaponEvolutionGroupId": 32039,
+    "EvolutionOrder": 1,
+    "WeaponId": 320391
+  },
+  {
+    "WeaponEvolutionGroupId": 32039,
+    "EvolutionOrder": 2,
+    "WeaponId": 320392
+  },
+  {
+    "WeaponEvolutionGroupId": 32040,
+    "EvolutionOrder": 1,
+    "WeaponId": 320401
+  },
+  {
+    "WeaponEvolutionGroupId": 32040,
+    "EvolutionOrder": 2,
+    "WeaponId": 320402
+  },
+  {
+    "WeaponEvolutionGroupId": 32041,
+    "EvolutionOrder": 1,
+    "WeaponId": 320411
+  },
+  {
+    "WeaponEvolutionGroupId": 32041,
+    "EvolutionOrder": 2,
+    "WeaponId": 320412
+  },
+  {
+    "WeaponEvolutionGroupId": 32042,
+    "EvolutionOrder": 1,
+    "WeaponId": 320421
+  },
+  {
+    "WeaponEvolutionGroupId": 32042,
+    "EvolutionOrder": 2,
+    "WeaponId": 320422
+  },
+  {
+    "WeaponEvolutionGroupId": 32043,
+    "EvolutionOrder": 1,
+    "WeaponId": 320431
+  },
+  {
+    "WeaponEvolutionGroupId": 32043,
+    "EvolutionOrder": 2,
+    "WeaponId": 320432
+  },
+  {
+    "WeaponEvolutionGroupId": 32044,
+    "EvolutionOrder": 1,
+    "WeaponId": 320441
+  },
+  {
+    "WeaponEvolutionGroupId": 32044,
+    "EvolutionOrder": 2,
+    "WeaponId": 320442
+  },
+  {
+    "WeaponEvolutionGroupId": 32045,
+    "EvolutionOrder": 1,
+    "WeaponId": 320451
+  },
+  {
+    "WeaponEvolutionGroupId": 32045,
+    "EvolutionOrder": 2,
+    "WeaponId": 320452
+  },
+  {
+    "WeaponEvolutionGroupId": 32046,
+    "EvolutionOrder": 1,
+    "WeaponId": 320461
+  },
+  {
+    "WeaponEvolutionGroupId": 32046,
+    "EvolutionOrder": 2,
+    "WeaponId": 320462
+  },
+  {
+    "WeaponEvolutionGroupId": 32047,
+    "EvolutionOrder": 1,
+    "WeaponId": 320471
+  },
+  {
+    "WeaponEvolutionGroupId": 32047,
+    "EvolutionOrder": 2,
+    "WeaponId": 320472
+  },
+  {
+    "WeaponEvolutionGroupId": 32048,
+    "EvolutionOrder": 1,
+    "WeaponId": 320481
+  },
+  {
+    "WeaponEvolutionGroupId": 32048,
+    "EvolutionOrder": 2,
+    "WeaponId": 320482
+  },
+  {
+    "WeaponEvolutionGroupId": 32049,
+    "EvolutionOrder": 1,
+    "WeaponId": 320491
+  },
+  {
+    "WeaponEvolutionGroupId": 32049,
+    "EvolutionOrder": 2,
+    "WeaponId": 320492
+  },
+  {
+    "WeaponEvolutionGroupId": 32050,
+    "EvolutionOrder": 1,
+    "WeaponId": 320501
+  },
+  {
+    "WeaponEvolutionGroupId": 32050,
+    "EvolutionOrder": 2,
+    "WeaponId": 320502
+  },
+  {
+    "WeaponEvolutionGroupId": 32051,
+    "EvolutionOrder": 1,
+    "WeaponId": 320511
+  },
+  {
+    "WeaponEvolutionGroupId": 32051,
+    "EvolutionOrder": 2,
+    "WeaponId": 320512
+  },
+  {
+    "WeaponEvolutionGroupId": 32052,
+    "EvolutionOrder": 1,
+    "WeaponId": 320521
+  },
+  {
+    "WeaponEvolutionGroupId": 32052,
+    "EvolutionOrder": 2,
+    "WeaponId": 320522
+  },
+  {
+    "WeaponEvolutionGroupId": 32053,
+    "EvolutionOrder": 1,
+    "WeaponId": 320531
+  },
+  {
+    "WeaponEvolutionGroupId": 32053,
+    "EvolutionOrder": 2,
+    "WeaponId": 320532
+  },
+  {
+    "WeaponEvolutionGroupId": 32054,
+    "EvolutionOrder": 1,
+    "WeaponId": 320541
+  },
+  {
+    "WeaponEvolutionGroupId": 32054,
+    "EvolutionOrder": 2,
+    "WeaponId": 320542
+  },
+  {
+    "WeaponEvolutionGroupId": 32055,
+    "EvolutionOrder": 1,
+    "WeaponId": 320551
+  },
+  {
+    "WeaponEvolutionGroupId": 32055,
+    "EvolutionOrder": 2,
+    "WeaponId": 320552
+  },
+  {
+    "WeaponEvolutionGroupId": 32056,
+    "EvolutionOrder": 1,
+    "WeaponId": 320561
+  },
+  {
+    "WeaponEvolutionGroupId": 32056,
+    "EvolutionOrder": 2,
+    "WeaponId": 320562
+  },
+  {
+    "WeaponEvolutionGroupId": 32057,
+    "EvolutionOrder": 1,
+    "WeaponId": 320571
+  },
+  {
+    "WeaponEvolutionGroupId": 32057,
+    "EvolutionOrder": 2,
+    "WeaponId": 320572
+  },
+  {
+    "WeaponEvolutionGroupId": 32058,
+    "EvolutionOrder": 1,
+    "WeaponId": 320581
+  },
+  {
+    "WeaponEvolutionGroupId": 32058,
+    "EvolutionOrder": 2,
+    "WeaponId": 320582
+  },
+  {
+    "WeaponEvolutionGroupId": 32059,
+    "EvolutionOrder": 1,
+    "WeaponId": 320591
+  },
+  {
+    "WeaponEvolutionGroupId": 32059,
+    "EvolutionOrder": 2,
+    "WeaponId": 320592
+  },
+  {
+    "WeaponEvolutionGroupId": 32060,
+    "EvolutionOrder": 1,
+    "WeaponId": 320601
+  },
+  {
+    "WeaponEvolutionGroupId": 32060,
+    "EvolutionOrder": 2,
+    "WeaponId": 320602
+  },
+  {
+    "WeaponEvolutionGroupId": 32061,
+    "EvolutionOrder": 1,
+    "WeaponId": 320611
+  },
+  {
+    "WeaponEvolutionGroupId": 32061,
+    "EvolutionOrder": 2,
+    "WeaponId": 320612
+  },
+  {
+    "WeaponEvolutionGroupId": 32062,
+    "EvolutionOrder": 1,
+    "WeaponId": 320621
+  },
+  {
+    "WeaponEvolutionGroupId": 32062,
+    "EvolutionOrder": 2,
+    "WeaponId": 320622
+  },
+  {
+    "WeaponEvolutionGroupId": 32063,
+    "EvolutionOrder": 1,
+    "WeaponId": 320631
+  },
+  {
+    "WeaponEvolutionGroupId": 32063,
+    "EvolutionOrder": 2,
+    "WeaponId": 320632
+  },
+  {
+    "WeaponEvolutionGroupId": 32064,
+    "EvolutionOrder": 1,
+    "WeaponId": 320641
+  },
+  {
+    "WeaponEvolutionGroupId": 32064,
+    "EvolutionOrder": 2,
+    "WeaponId": 320642
+  },
+  {
+    "WeaponEvolutionGroupId": 32065,
+    "EvolutionOrder": 1,
+    "WeaponId": 320651
+  },
+  {
+    "WeaponEvolutionGroupId": 32065,
+    "EvolutionOrder": 2,
+    "WeaponId": 320652
+  },
+  {
+    "WeaponEvolutionGroupId": 32066,
+    "EvolutionOrder": 1,
+    "WeaponId": 320661
+  },
+  {
+    "WeaponEvolutionGroupId": 32066,
+    "EvolutionOrder": 2,
+    "WeaponId": 320662
+  },
+  {
+    "WeaponEvolutionGroupId": 33000,
+    "EvolutionOrder": 1,
+    "WeaponId": 330001
+  },
+  {
+    "WeaponEvolutionGroupId": 33000,
+    "EvolutionOrder": 2,
+    "WeaponId": 330002
+  },
+  {
+    "WeaponEvolutionGroupId": 33001,
+    "EvolutionOrder": 1,
+    "WeaponId": 330011
+  },
+  {
+    "WeaponEvolutionGroupId": 33001,
+    "EvolutionOrder": 2,
+    "WeaponId": 330012
+  },
+  {
+    "WeaponEvolutionGroupId": 33002,
+    "EvolutionOrder": 1,
+    "WeaponId": 330021
+  },
+  {
+    "WeaponEvolutionGroupId": 33002,
+    "EvolutionOrder": 2,
+    "WeaponId": 330022
+  },
+  {
+    "WeaponEvolutionGroupId": 33003,
+    "EvolutionOrder": 1,
+    "WeaponId": 330031
+  },
+  {
+    "WeaponEvolutionGroupId": 33003,
+    "EvolutionOrder": 2,
+    "WeaponId": 330032
+  },
+  {
+    "WeaponEvolutionGroupId": 33004,
+    "EvolutionOrder": 1,
+    "WeaponId": 330041
+  },
+  {
+    "WeaponEvolutionGroupId": 33004,
+    "EvolutionOrder": 2,
+    "WeaponId": 330042
+  },
+  {
+    "WeaponEvolutionGroupId": 33005,
+    "EvolutionOrder": 1,
+    "WeaponId": 330051
+  },
+  {
+    "WeaponEvolutionGroupId": 33005,
+    "EvolutionOrder": 2,
+    "WeaponId": 330052
+  },
+  {
+    "WeaponEvolutionGroupId": 33006,
+    "EvolutionOrder": 1,
+    "WeaponId": 330061
+  },
+  {
+    "WeaponEvolutionGroupId": 33006,
+    "EvolutionOrder": 2,
+    "WeaponId": 330062
+  },
+  {
+    "WeaponEvolutionGroupId": 33007,
+    "EvolutionOrder": 1,
+    "WeaponId": 330071
+  },
+  {
+    "WeaponEvolutionGroupId": 33007,
+    "EvolutionOrder": 2,
+    "WeaponId": 330072
+  },
+  {
+    "WeaponEvolutionGroupId": 33008,
+    "EvolutionOrder": 1,
+    "WeaponId": 330081
+  },
+  {
+    "WeaponEvolutionGroupId": 33008,
+    "EvolutionOrder": 2,
+    "WeaponId": 330082
+  },
+  {
+    "WeaponEvolutionGroupId": 33010,
+    "EvolutionOrder": 1,
+    "WeaponId": 330101
+  },
+  {
+    "WeaponEvolutionGroupId": 33010,
+    "EvolutionOrder": 2,
+    "WeaponId": 330102
+  },
+  {
+    "WeaponEvolutionGroupId": 33011,
+    "EvolutionOrder": 1,
+    "WeaponId": 330111
+  },
+  {
+    "WeaponEvolutionGroupId": 33011,
+    "EvolutionOrder": 2,
+    "WeaponId": 330112
+  },
+  {
+    "WeaponEvolutionGroupId": 33012,
+    "EvolutionOrder": 1,
+    "WeaponId": 330121
+  },
+  {
+    "WeaponEvolutionGroupId": 33012,
+    "EvolutionOrder": 2,
+    "WeaponId": 330122
+  },
+  {
+    "WeaponEvolutionGroupId": 33015,
+    "EvolutionOrder": 1,
+    "WeaponId": 330151
+  },
+  {
+    "WeaponEvolutionGroupId": 33015,
+    "EvolutionOrder": 2,
+    "WeaponId": 330152
+  },
+  {
+    "WeaponEvolutionGroupId": 33016,
+    "EvolutionOrder": 1,
+    "WeaponId": 330161
+  },
+  {
+    "WeaponEvolutionGroupId": 33016,
+    "EvolutionOrder": 2,
+    "WeaponId": 330162
+  },
+  {
+    "WeaponEvolutionGroupId": 33017,
+    "EvolutionOrder": 1,
+    "WeaponId": 330171
+  },
+  {
+    "WeaponEvolutionGroupId": 33017,
+    "EvolutionOrder": 2,
+    "WeaponId": 330172
+  },
+  {
+    "WeaponEvolutionGroupId": 33018,
+    "EvolutionOrder": 1,
+    "WeaponId": 330181
+  },
+  {
+    "WeaponEvolutionGroupId": 33018,
+    "EvolutionOrder": 2,
+    "WeaponId": 330182
+  },
+  {
+    "WeaponEvolutionGroupId": 33019,
+    "EvolutionOrder": 1,
+    "WeaponId": 330191
+  },
+  {
+    "WeaponEvolutionGroupId": 33019,
+    "EvolutionOrder": 2,
+    "WeaponId": 330192
+  },
+  {
+    "WeaponEvolutionGroupId": 33021,
+    "EvolutionOrder": 1,
+    "WeaponId": 330211
+  },
+  {
+    "WeaponEvolutionGroupId": 33021,
+    "EvolutionOrder": 2,
+    "WeaponId": 330212
+  },
+  {
+    "WeaponEvolutionGroupId": 33022,
+    "EvolutionOrder": 1,
+    "WeaponId": 330221
+  },
+  {
+    "WeaponEvolutionGroupId": 33022,
+    "EvolutionOrder": 2,
+    "WeaponId": 330222
+  },
+  {
+    "WeaponEvolutionGroupId": 33023,
+    "EvolutionOrder": 1,
+    "WeaponId": 330231
+  },
+  {
+    "WeaponEvolutionGroupId": 33023,
+    "EvolutionOrder": 2,
+    "WeaponId": 330232
+  },
+  {
+    "WeaponEvolutionGroupId": 33024,
+    "EvolutionOrder": 1,
+    "WeaponId": 330241
+  },
+  {
+    "WeaponEvolutionGroupId": 33024,
+    "EvolutionOrder": 2,
+    "WeaponId": 330242
+  },
+  {
+    "WeaponEvolutionGroupId": 33025,
+    "EvolutionOrder": 1,
+    "WeaponId": 330251
+  },
+  {
+    "WeaponEvolutionGroupId": 33025,
+    "EvolutionOrder": 2,
+    "WeaponId": 330252
+  },
+  {
+    "WeaponEvolutionGroupId": 33026,
+    "EvolutionOrder": 1,
+    "WeaponId": 330261
+  },
+  {
+    "WeaponEvolutionGroupId": 33026,
+    "EvolutionOrder": 2,
+    "WeaponId": 330262
+  },
+  {
+    "WeaponEvolutionGroupId": 33027,
+    "EvolutionOrder": 1,
+    "WeaponId": 330271
+  },
+  {
+    "WeaponEvolutionGroupId": 33027,
+    "EvolutionOrder": 2,
+    "WeaponId": 330272
+  },
+  {
+    "WeaponEvolutionGroupId": 33028,
+    "EvolutionOrder": 1,
+    "WeaponId": 330281
+  },
+  {
+    "WeaponEvolutionGroupId": 33028,
+    "EvolutionOrder": 2,
+    "WeaponId": 330282
+  },
+  {
+    "WeaponEvolutionGroupId": 33029,
+    "EvolutionOrder": 1,
+    "WeaponId": 330291
+  },
+  {
+    "WeaponEvolutionGroupId": 33029,
+    "EvolutionOrder": 2,
+    "WeaponId": 330292
+  },
+  {
+    "WeaponEvolutionGroupId": 33030,
+    "EvolutionOrder": 1,
+    "WeaponId": 330301
+  },
+  {
+    "WeaponEvolutionGroupId": 33030,
+    "EvolutionOrder": 2,
+    "WeaponId": 330302
+  },
+  {
+    "WeaponEvolutionGroupId": 33031,
+    "EvolutionOrder": 1,
+    "WeaponId": 330311
+  },
+  {
+    "WeaponEvolutionGroupId": 33031,
+    "EvolutionOrder": 2,
+    "WeaponId": 330312
+  },
+  {
+    "WeaponEvolutionGroupId": 33032,
+    "EvolutionOrder": 1,
+    "WeaponId": 330321
+  },
+  {
+    "WeaponEvolutionGroupId": 33032,
+    "EvolutionOrder": 2,
+    "WeaponId": 330322
+  },
+  {
+    "WeaponEvolutionGroupId": 33033,
+    "EvolutionOrder": 1,
+    "WeaponId": 330331
+  },
+  {
+    "WeaponEvolutionGroupId": 33033,
+    "EvolutionOrder": 2,
+    "WeaponId": 330332
+  },
+  {
+    "WeaponEvolutionGroupId": 33034,
+    "EvolutionOrder": 1,
+    "WeaponId": 330341
+  },
+  {
+    "WeaponEvolutionGroupId": 33034,
+    "EvolutionOrder": 2,
+    "WeaponId": 330342
+  },
+  {
+    "WeaponEvolutionGroupId": 33035,
+    "EvolutionOrder": 1,
+    "WeaponId": 330351
+  },
+  {
+    "WeaponEvolutionGroupId": 33035,
+    "EvolutionOrder": 2,
+    "WeaponId": 330352
+  },
+  {
+    "WeaponEvolutionGroupId": 33036,
+    "EvolutionOrder": 1,
+    "WeaponId": 330361
+  },
+  {
+    "WeaponEvolutionGroupId": 33036,
+    "EvolutionOrder": 2,
+    "WeaponId": 330362
+  },
+  {
+    "WeaponEvolutionGroupId": 33037,
+    "EvolutionOrder": 1,
+    "WeaponId": 330371
+  },
+  {
+    "WeaponEvolutionGroupId": 33037,
+    "EvolutionOrder": 2,
+    "WeaponId": 330372
+  },
+  {
+    "WeaponEvolutionGroupId": 33038,
+    "EvolutionOrder": 1,
+    "WeaponId": 330381
+  },
+  {
+    "WeaponEvolutionGroupId": 33038,
+    "EvolutionOrder": 2,
+    "WeaponId": 330382
+  },
+  {
+    "WeaponEvolutionGroupId": 33039,
+    "EvolutionOrder": 1,
+    "WeaponId": 330391
+  },
+  {
+    "WeaponEvolutionGroupId": 33039,
+    "EvolutionOrder": 2,
+    "WeaponId": 330392
+  },
+  {
+    "WeaponEvolutionGroupId": 33040,
+    "EvolutionOrder": 1,
+    "WeaponId": 330401
+  },
+  {
+    "WeaponEvolutionGroupId": 33040,
+    "EvolutionOrder": 2,
+    "WeaponId": 330402
+  },
+  {
+    "WeaponEvolutionGroupId": 33041,
+    "EvolutionOrder": 1,
+    "WeaponId": 330411
+  },
+  {
+    "WeaponEvolutionGroupId": 33041,
+    "EvolutionOrder": 2,
+    "WeaponId": 330412
+  },
+  {
+    "WeaponEvolutionGroupId": 33042,
+    "EvolutionOrder": 1,
+    "WeaponId": 330421
+  },
+  {
+    "WeaponEvolutionGroupId": 33042,
+    "EvolutionOrder": 2,
+    "WeaponId": 330422
+  },
+  {
+    "WeaponEvolutionGroupId": 33043,
+    "EvolutionOrder": 1,
+    "WeaponId": 330431
+  },
+  {
+    "WeaponEvolutionGroupId": 33043,
+    "EvolutionOrder": 2,
+    "WeaponId": 330432
+  },
+  {
+    "WeaponEvolutionGroupId": 33044,
+    "EvolutionOrder": 1,
+    "WeaponId": 330441
+  },
+  {
+    "WeaponEvolutionGroupId": 33044,
+    "EvolutionOrder": 2,
+    "WeaponId": 330442
+  },
+  {
+    "WeaponEvolutionGroupId": 33045,
+    "EvolutionOrder": 1,
+    "WeaponId": 330451
+  },
+  {
+    "WeaponEvolutionGroupId": 33045,
+    "EvolutionOrder": 2,
+    "WeaponId": 330452
+  },
+  {
+    "WeaponEvolutionGroupId": 33046,
+    "EvolutionOrder": 1,
+    "WeaponId": 330461
+  },
+  {
+    "WeaponEvolutionGroupId": 33046,
+    "EvolutionOrder": 2,
+    "WeaponId": 330462
+  },
+  {
+    "WeaponEvolutionGroupId": 33047,
+    "EvolutionOrder": 1,
+    "WeaponId": 330471
+  },
+  {
+    "WeaponEvolutionGroupId": 33047,
+    "EvolutionOrder": 2,
+    "WeaponId": 330472
+  },
+  {
+    "WeaponEvolutionGroupId": 33048,
+    "EvolutionOrder": 1,
+    "WeaponId": 330481
+  },
+  {
+    "WeaponEvolutionGroupId": 33048,
+    "EvolutionOrder": 2,
+    "WeaponId": 330482
+  },
+  {
+    "WeaponEvolutionGroupId": 33049,
+    "EvolutionOrder": 1,
+    "WeaponId": 330491
+  },
+  {
+    "WeaponEvolutionGroupId": 33049,
+    "EvolutionOrder": 2,
+    "WeaponId": 330492
+  },
+  {
+    "WeaponEvolutionGroupId": 33050,
+    "EvolutionOrder": 1,
+    "WeaponId": 330501
+  },
+  {
+    "WeaponEvolutionGroupId": 33050,
+    "EvolutionOrder": 2,
+    "WeaponId": 330502
+  },
+  {
+    "WeaponEvolutionGroupId": 33051,
+    "EvolutionOrder": 1,
+    "WeaponId": 330511
+  },
+  {
+    "WeaponEvolutionGroupId": 33051,
+    "EvolutionOrder": 2,
+    "WeaponId": 330512
+  },
+  {
+    "WeaponEvolutionGroupId": 33052,
+    "EvolutionOrder": 1,
+    "WeaponId": 330521
+  },
+  {
+    "WeaponEvolutionGroupId": 33052,
+    "EvolutionOrder": 2,
+    "WeaponId": 330522
+  },
+  {
+    "WeaponEvolutionGroupId": 33053,
+    "EvolutionOrder": 1,
+    "WeaponId": 330531
+  },
+  {
+    "WeaponEvolutionGroupId": 33053,
+    "EvolutionOrder": 2,
+    "WeaponId": 330532
+  },
+  {
+    "WeaponEvolutionGroupId": 33054,
+    "EvolutionOrder": 1,
+    "WeaponId": 330541
+  },
+  {
+    "WeaponEvolutionGroupId": 33054,
+    "EvolutionOrder": 2,
+    "WeaponId": 330542
+  },
+  {
+    "WeaponEvolutionGroupId": 33055,
+    "EvolutionOrder": 1,
+    "WeaponId": 330551
+  },
+  {
+    "WeaponEvolutionGroupId": 33055,
+    "EvolutionOrder": 2,
+    "WeaponId": 330552
+  },
+  {
+    "WeaponEvolutionGroupId": 33056,
+    "EvolutionOrder": 1,
+    "WeaponId": 330561
+  },
+  {
+    "WeaponEvolutionGroupId": 33056,
+    "EvolutionOrder": 2,
+    "WeaponId": 330562
+  },
+  {
+    "WeaponEvolutionGroupId": 33057,
+    "EvolutionOrder": 1,
+    "WeaponId": 330571
+  },
+  {
+    "WeaponEvolutionGroupId": 33057,
+    "EvolutionOrder": 2,
+    "WeaponId": 330572
+  },
+  {
+    "WeaponEvolutionGroupId": 33058,
+    "EvolutionOrder": 1,
+    "WeaponId": 330581
+  },
+  {
+    "WeaponEvolutionGroupId": 33058,
+    "EvolutionOrder": 2,
+    "WeaponId": 330582
+  },
+  {
+    "WeaponEvolutionGroupId": 33059,
+    "EvolutionOrder": 1,
+    "WeaponId": 330591
+  },
+  {
+    "WeaponEvolutionGroupId": 33059,
+    "EvolutionOrder": 2,
+    "WeaponId": 330592
+  },
+  {
+    "WeaponEvolutionGroupId": 33060,
+    "EvolutionOrder": 1,
+    "WeaponId": 330601
+  },
+  {
+    "WeaponEvolutionGroupId": 33060,
+    "EvolutionOrder": 2,
+    "WeaponId": 330602
+  },
+  {
+    "WeaponEvolutionGroupId": 33061,
+    "EvolutionOrder": 1,
+    "WeaponId": 330611
+  },
+  {
+    "WeaponEvolutionGroupId": 33061,
+    "EvolutionOrder": 2,
+    "WeaponId": 330612
+  },
+  {
+    "WeaponEvolutionGroupId": 33062,
+    "EvolutionOrder": 1,
+    "WeaponId": 330621
+  },
+  {
+    "WeaponEvolutionGroupId": 33062,
+    "EvolutionOrder": 2,
+    "WeaponId": 330622
+  },
+  {
+    "WeaponEvolutionGroupId": 33063,
+    "EvolutionOrder": 1,
+    "WeaponId": 330631
+  },
+  {
+    "WeaponEvolutionGroupId": 33063,
+    "EvolutionOrder": 2,
+    "WeaponId": 330632
+  },
+  {
+    "WeaponEvolutionGroupId": 33064,
+    "EvolutionOrder": 1,
+    "WeaponId": 330641
+  },
+  {
+    "WeaponEvolutionGroupId": 33064,
+    "EvolutionOrder": 2,
+    "WeaponId": 330642
+  },
+  {
+    "WeaponEvolutionGroupId": 33065,
+    "EvolutionOrder": 1,
+    "WeaponId": 330651
+  },
+  {
+    "WeaponEvolutionGroupId": 33065,
+    "EvolutionOrder": 2,
+    "WeaponId": 330652
+  },
+  {
+    "WeaponEvolutionGroupId": 33066,
+    "EvolutionOrder": 1,
+    "WeaponId": 330661
+  },
+  {
+    "WeaponEvolutionGroupId": 33066,
+    "EvolutionOrder": 2,
+    "WeaponId": 330662
+  },
+  {
+    "WeaponEvolutionGroupId": 33067,
+    "EvolutionOrder": 1,
+    "WeaponId": 330671
+  },
+  {
+    "WeaponEvolutionGroupId": 33067,
+    "EvolutionOrder": 2,
+    "WeaponId": 330672
+  },
+  {
+    "WeaponEvolutionGroupId": 33068,
+    "EvolutionOrder": 1,
+    "WeaponId": 330681
+  },
+  {
+    "WeaponEvolutionGroupId": 33068,
+    "EvolutionOrder": 2,
+    "WeaponId": 330682
+  },
+  {
+    "WeaponEvolutionGroupId": 33069,
+    "EvolutionOrder": 1,
+    "WeaponId": 330691
+  },
+  {
+    "WeaponEvolutionGroupId": 33069,
+    "EvolutionOrder": 2,
+    "WeaponId": 330692
+  },
+  {
+    "WeaponEvolutionGroupId": 33070,
+    "EvolutionOrder": 1,
+    "WeaponId": 330701
+  },
+  {
+    "WeaponEvolutionGroupId": 33070,
+    "EvolutionOrder": 2,
+    "WeaponId": 330702
+  },
+  {
+    "WeaponEvolutionGroupId": 33071,
+    "EvolutionOrder": 1,
+    "WeaponId": 330711
+  },
+  {
+    "WeaponEvolutionGroupId": 33071,
+    "EvolutionOrder": 2,
+    "WeaponId": 330712
+  },
+  {
+    "WeaponEvolutionGroupId": 33072,
+    "EvolutionOrder": 1,
+    "WeaponId": 330721
+  },
+  {
+    "WeaponEvolutionGroupId": 33072,
+    "EvolutionOrder": 2,
+    "WeaponId": 330722
+  },
+  {
+    "WeaponEvolutionGroupId": 33073,
+    "EvolutionOrder": 1,
+    "WeaponId": 330731
+  },
+  {
+    "WeaponEvolutionGroupId": 33073,
+    "EvolutionOrder": 2,
+    "WeaponId": 330732
+  },
+  {
+    "WeaponEvolutionGroupId": 34000,
+    "EvolutionOrder": 1,
+    "WeaponId": 340001
+  },
+  {
+    "WeaponEvolutionGroupId": 34000,
+    "EvolutionOrder": 2,
+    "WeaponId": 340002
+  },
+  {
+    "WeaponEvolutionGroupId": 34001,
+    "EvolutionOrder": 1,
+    "WeaponId": 340011
+  },
+  {
+    "WeaponEvolutionGroupId": 34001,
+    "EvolutionOrder": 2,
+    "WeaponId": 340012
+  },
+  {
+    "WeaponEvolutionGroupId": 34003,
+    "EvolutionOrder": 1,
+    "WeaponId": 340031
+  },
+  {
+    "WeaponEvolutionGroupId": 34003,
+    "EvolutionOrder": 2,
+    "WeaponId": 340032
+  },
+  {
+    "WeaponEvolutionGroupId": 34005,
+    "EvolutionOrder": 1,
+    "WeaponId": 340051
+  },
+  {
+    "WeaponEvolutionGroupId": 34005,
+    "EvolutionOrder": 2,
+    "WeaponId": 340052
+  },
+  {
+    "WeaponEvolutionGroupId": 34006,
+    "EvolutionOrder": 1,
+    "WeaponId": 340061
+  },
+  {
+    "WeaponEvolutionGroupId": 34006,
+    "EvolutionOrder": 2,
+    "WeaponId": 340062
+  },
+  {
+    "WeaponEvolutionGroupId": 34007,
+    "EvolutionOrder": 1,
+    "WeaponId": 340071
+  },
+  {
+    "WeaponEvolutionGroupId": 34007,
+    "EvolutionOrder": 2,
+    "WeaponId": 340072
+  },
+  {
+    "WeaponEvolutionGroupId": 34008,
+    "EvolutionOrder": 1,
+    "WeaponId": 340081
+  },
+  {
+    "WeaponEvolutionGroupId": 34008,
+    "EvolutionOrder": 2,
+    "WeaponId": 340082
+  },
+  {
+    "WeaponEvolutionGroupId": 34010,
+    "EvolutionOrder": 1,
+    "WeaponId": 340101
+  },
+  {
+    "WeaponEvolutionGroupId": 34010,
+    "EvolutionOrder": 2,
+    "WeaponId": 340102
+  },
+  {
+    "WeaponEvolutionGroupId": 34011,
+    "EvolutionOrder": 1,
+    "WeaponId": 340111
+  },
+  {
+    "WeaponEvolutionGroupId": 34011,
+    "EvolutionOrder": 2,
+    "WeaponId": 340112
+  },
+  {
+    "WeaponEvolutionGroupId": 34012,
+    "EvolutionOrder": 1,
+    "WeaponId": 340121
+  },
+  {
+    "WeaponEvolutionGroupId": 34012,
+    "EvolutionOrder": 2,
+    "WeaponId": 340122
+  },
+  {
+    "WeaponEvolutionGroupId": 34013,
+    "EvolutionOrder": 1,
+    "WeaponId": 340131
+  },
+  {
+    "WeaponEvolutionGroupId": 34013,
+    "EvolutionOrder": 2,
+    "WeaponId": 340132
+  },
+  {
+    "WeaponEvolutionGroupId": 34014,
+    "EvolutionOrder": 1,
+    "WeaponId": 340141
+  },
+  {
+    "WeaponEvolutionGroupId": 34014,
+    "EvolutionOrder": 2,
+    "WeaponId": 340142
+  },
+  {
+    "WeaponEvolutionGroupId": 34015,
+    "EvolutionOrder": 1,
+    "WeaponId": 340151
+  },
+  {
+    "WeaponEvolutionGroupId": 34015,
+    "EvolutionOrder": 2,
+    "WeaponId": 340152
+  },
+  {
+    "WeaponEvolutionGroupId": 34016,
+    "EvolutionOrder": 1,
+    "WeaponId": 340161
+  },
+  {
+    "WeaponEvolutionGroupId": 34016,
+    "EvolutionOrder": 2,
+    "WeaponId": 340162
+  },
+  {
+    "WeaponEvolutionGroupId": 34020,
+    "EvolutionOrder": 1,
+    "WeaponId": 340201
+  },
+  {
+    "WeaponEvolutionGroupId": 34020,
+    "EvolutionOrder": 2,
+    "WeaponId": 340202
+  },
+  {
+    "WeaponEvolutionGroupId": 34021,
+    "EvolutionOrder": 1,
+    "WeaponId": 340211
+  },
+  {
+    "WeaponEvolutionGroupId": 34021,
+    "EvolutionOrder": 2,
+    "WeaponId": 340212
+  },
+  {
+    "WeaponEvolutionGroupId": 34023,
+    "EvolutionOrder": 1,
+    "WeaponId": 340231
+  },
+  {
+    "WeaponEvolutionGroupId": 34023,
+    "EvolutionOrder": 2,
+    "WeaponId": 340232
+  },
+  {
+    "WeaponEvolutionGroupId": 34024,
+    "EvolutionOrder": 1,
+    "WeaponId": 340241
+  },
+  {
+    "WeaponEvolutionGroupId": 34024,
+    "EvolutionOrder": 2,
+    "WeaponId": 340242
+  },
+  {
+    "WeaponEvolutionGroupId": 34025,
+    "EvolutionOrder": 1,
+    "WeaponId": 340251
+  },
+  {
+    "WeaponEvolutionGroupId": 34025,
+    "EvolutionOrder": 2,
+    "WeaponId": 340252
+  },
+  {
+    "WeaponEvolutionGroupId": 34026,
+    "EvolutionOrder": 1,
+    "WeaponId": 340261
+  },
+  {
+    "WeaponEvolutionGroupId": 34026,
+    "EvolutionOrder": 2,
+    "WeaponId": 340262
+  },
+  {
+    "WeaponEvolutionGroupId": 34027,
+    "EvolutionOrder": 1,
+    "WeaponId": 340271
+  },
+  {
+    "WeaponEvolutionGroupId": 34027,
+    "EvolutionOrder": 2,
+    "WeaponId": 340272
+  },
+  {
+    "WeaponEvolutionGroupId": 34028,
+    "EvolutionOrder": 1,
+    "WeaponId": 340281
+  },
+  {
+    "WeaponEvolutionGroupId": 34028,
+    "EvolutionOrder": 2,
+    "WeaponId": 340282
+  },
+  {
+    "WeaponEvolutionGroupId": 34029,
+    "EvolutionOrder": 1,
+    "WeaponId": 340291
+  },
+  {
+    "WeaponEvolutionGroupId": 34029,
+    "EvolutionOrder": 2,
+    "WeaponId": 340292
+  },
+  {
+    "WeaponEvolutionGroupId": 34030,
+    "EvolutionOrder": 1,
+    "WeaponId": 340301
+  },
+  {
+    "WeaponEvolutionGroupId": 34030,
+    "EvolutionOrder": 2,
+    "WeaponId": 340302
+  },
+  {
+    "WeaponEvolutionGroupId": 34031,
+    "EvolutionOrder": 1,
+    "WeaponId": 340311
+  },
+  {
+    "WeaponEvolutionGroupId": 34031,
+    "EvolutionOrder": 2,
+    "WeaponId": 340312
+  },
+  {
+    "WeaponEvolutionGroupId": 34032,
+    "EvolutionOrder": 1,
+    "WeaponId": 340321
+  },
+  {
+    "WeaponEvolutionGroupId": 34032,
+    "EvolutionOrder": 2,
+    "WeaponId": 340322
+  },
+  {
+    "WeaponEvolutionGroupId": 34033,
+    "EvolutionOrder": 1,
+    "WeaponId": 340331
+  },
+  {
+    "WeaponEvolutionGroupId": 34033,
+    "EvolutionOrder": 2,
+    "WeaponId": 340332
+  },
+  {
+    "WeaponEvolutionGroupId": 34034,
+    "EvolutionOrder": 1,
+    "WeaponId": 340341
+  },
+  {
+    "WeaponEvolutionGroupId": 34034,
+    "EvolutionOrder": 2,
+    "WeaponId": 340342
+  },
+  {
+    "WeaponEvolutionGroupId": 34035,
+    "EvolutionOrder": 1,
+    "WeaponId": 340351
+  },
+  {
+    "WeaponEvolutionGroupId": 34035,
+    "EvolutionOrder": 2,
+    "WeaponId": 340352
+  },
+  {
+    "WeaponEvolutionGroupId": 34036,
+    "EvolutionOrder": 1,
+    "WeaponId": 340361
+  },
+  {
+    "WeaponEvolutionGroupId": 34036,
+    "EvolutionOrder": 2,
+    "WeaponId": 340362
+  },
+  {
+    "WeaponEvolutionGroupId": 34037,
+    "EvolutionOrder": 1,
+    "WeaponId": 340371
+  },
+  {
+    "WeaponEvolutionGroupId": 34037,
+    "EvolutionOrder": 2,
+    "WeaponId": 340372
+  },
+  {
+    "WeaponEvolutionGroupId": 34038,
+    "EvolutionOrder": 1,
+    "WeaponId": 340381
+  },
+  {
+    "WeaponEvolutionGroupId": 34038,
+    "EvolutionOrder": 2,
+    "WeaponId": 340382
+  },
+  {
+    "WeaponEvolutionGroupId": 34039,
+    "EvolutionOrder": 1,
+    "WeaponId": 340391
+  },
+  {
+    "WeaponEvolutionGroupId": 34039,
+    "EvolutionOrder": 2,
+    "WeaponId": 340392
+  },
+  {
+    "WeaponEvolutionGroupId": 34040,
+    "EvolutionOrder": 1,
+    "WeaponId": 340401
+  },
+  {
+    "WeaponEvolutionGroupId": 34040,
+    "EvolutionOrder": 2,
+    "WeaponId": 340402
+  },
+  {
+    "WeaponEvolutionGroupId": 34041,
+    "EvolutionOrder": 1,
+    "WeaponId": 340411
+  },
+  {
+    "WeaponEvolutionGroupId": 34041,
+    "EvolutionOrder": 2,
+    "WeaponId": 340412
+  },
+  {
+    "WeaponEvolutionGroupId": 34042,
+    "EvolutionOrder": 1,
+    "WeaponId": 340421
+  },
+  {
+    "WeaponEvolutionGroupId": 34042,
+    "EvolutionOrder": 2,
+    "WeaponId": 340422
+  },
+  {
+    "WeaponEvolutionGroupId": 34043,
+    "EvolutionOrder": 1,
+    "WeaponId": 340431
+  },
+  {
+    "WeaponEvolutionGroupId": 34043,
+    "EvolutionOrder": 2,
+    "WeaponId": 340432
+  },
+  {
+    "WeaponEvolutionGroupId": 34044,
+    "EvolutionOrder": 1,
+    "WeaponId": 340441
+  },
+  {
+    "WeaponEvolutionGroupId": 34044,
+    "EvolutionOrder": 2,
+    "WeaponId": 340442
+  },
+  {
+    "WeaponEvolutionGroupId": 34045,
+    "EvolutionOrder": 1,
+    "WeaponId": 340451
+  },
+  {
+    "WeaponEvolutionGroupId": 34045,
+    "EvolutionOrder": 2,
+    "WeaponId": 340452
+  },
+  {
+    "WeaponEvolutionGroupId": 34046,
+    "EvolutionOrder": 1,
+    "WeaponId": 340461
+  },
+  {
+    "WeaponEvolutionGroupId": 34046,
+    "EvolutionOrder": 2,
+    "WeaponId": 340462
+  },
+  {
+    "WeaponEvolutionGroupId": 34047,
+    "EvolutionOrder": 1,
+    "WeaponId": 340471
+  },
+  {
+    "WeaponEvolutionGroupId": 34047,
+    "EvolutionOrder": 2,
+    "WeaponId": 340472
+  },
+  {
+    "WeaponEvolutionGroupId": 34048,
+    "EvolutionOrder": 1,
+    "WeaponId": 340481
+  },
+  {
+    "WeaponEvolutionGroupId": 34048,
+    "EvolutionOrder": 2,
+    "WeaponId": 340482
+  },
+  {
+    "WeaponEvolutionGroupId": 34049,
+    "EvolutionOrder": 1,
+    "WeaponId": 340491
+  },
+  {
+    "WeaponEvolutionGroupId": 34049,
+    "EvolutionOrder": 2,
+    "WeaponId": 340492
+  },
+  {
+    "WeaponEvolutionGroupId": 34050,
+    "EvolutionOrder": 1,
+    "WeaponId": 340501
+  },
+  {
+    "WeaponEvolutionGroupId": 34050,
+    "EvolutionOrder": 2,
+    "WeaponId": 340502
+  },
+  {
+    "WeaponEvolutionGroupId": 34051,
+    "EvolutionOrder": 1,
+    "WeaponId": 340511
+  },
+  {
+    "WeaponEvolutionGroupId": 34051,
+    "EvolutionOrder": 2,
+    "WeaponId": 340512
+  },
+  {
+    "WeaponEvolutionGroupId": 34052,
+    "EvolutionOrder": 1,
+    "WeaponId": 340521
+  },
+  {
+    "WeaponEvolutionGroupId": 34052,
+    "EvolutionOrder": 2,
+    "WeaponId": 340522
+  },
+  {
+    "WeaponEvolutionGroupId": 34053,
+    "EvolutionOrder": 1,
+    "WeaponId": 340531
+  },
+  {
+    "WeaponEvolutionGroupId": 34053,
+    "EvolutionOrder": 2,
+    "WeaponId": 340532
+  },
+  {
+    "WeaponEvolutionGroupId": 34054,
+    "EvolutionOrder": 1,
+    "WeaponId": 340541
+  },
+  {
+    "WeaponEvolutionGroupId": 34054,
+    "EvolutionOrder": 2,
+    "WeaponId": 340542
+  },
+  {
+    "WeaponEvolutionGroupId": 34055,
+    "EvolutionOrder": 1,
+    "WeaponId": 340551
+  },
+  {
+    "WeaponEvolutionGroupId": 34055,
+    "EvolutionOrder": 2,
+    "WeaponId": 340552
+  },
+  {
+    "WeaponEvolutionGroupId": 34056,
+    "EvolutionOrder": 1,
+    "WeaponId": 340561
+  },
+  {
+    "WeaponEvolutionGroupId": 34056,
+    "EvolutionOrder": 2,
+    "WeaponId": 340562
+  },
+  {
+    "WeaponEvolutionGroupId": 34057,
+    "EvolutionOrder": 1,
+    "WeaponId": 340571
+  },
+  {
+    "WeaponEvolutionGroupId": 34057,
+    "EvolutionOrder": 2,
+    "WeaponId": 340572
+  },
+  {
+    "WeaponEvolutionGroupId": 34058,
+    "EvolutionOrder": 1,
+    "WeaponId": 340581
+  },
+  {
+    "WeaponEvolutionGroupId": 34058,
+    "EvolutionOrder": 2,
+    "WeaponId": 340582
+  },
+  {
+    "WeaponEvolutionGroupId": 34059,
+    "EvolutionOrder": 1,
+    "WeaponId": 340591
+  },
+  {
+    "WeaponEvolutionGroupId": 34059,
+    "EvolutionOrder": 2,
+    "WeaponId": 340592
+  },
+  {
+    "WeaponEvolutionGroupId": 34060,
+    "EvolutionOrder": 1,
+    "WeaponId": 340601
+  },
+  {
+    "WeaponEvolutionGroupId": 34060,
+    "EvolutionOrder": 2,
+    "WeaponId": 340602
+  },
+  {
+    "WeaponEvolutionGroupId": 34061,
+    "EvolutionOrder": 1,
+    "WeaponId": 340611
+  },
+  {
+    "WeaponEvolutionGroupId": 34061,
+    "EvolutionOrder": 2,
+    "WeaponId": 340612
+  },
+  {
+    "WeaponEvolutionGroupId": 34062,
+    "EvolutionOrder": 1,
+    "WeaponId": 340621
+  },
+  {
+    "WeaponEvolutionGroupId": 34062,
+    "EvolutionOrder": 2,
+    "WeaponId": 340622
+  },
+  {
+    "WeaponEvolutionGroupId": 34063,
+    "EvolutionOrder": 1,
+    "WeaponId": 340631
+  },
+  {
+    "WeaponEvolutionGroupId": 34063,
+    "EvolutionOrder": 2,
+    "WeaponId": 340632
+  },
+  {
+    "WeaponEvolutionGroupId": 34064,
+    "EvolutionOrder": 1,
+    "WeaponId": 340641
+  },
+  {
+    "WeaponEvolutionGroupId": 34064,
+    "EvolutionOrder": 2,
+    "WeaponId": 340642
+  },
+  {
+    "WeaponEvolutionGroupId": 34065,
+    "EvolutionOrder": 1,
+    "WeaponId": 340651
+  },
+  {
+    "WeaponEvolutionGroupId": 34065,
+    "EvolutionOrder": 2,
+    "WeaponId": 340652
+  },
+  {
+    "WeaponEvolutionGroupId": 34066,
+    "EvolutionOrder": 1,
+    "WeaponId": 340661
+  },
+  {
+    "WeaponEvolutionGroupId": 34066,
+    "EvolutionOrder": 2,
+    "WeaponId": 340662
+  },
+  {
+    "WeaponEvolutionGroupId": 34067,
+    "EvolutionOrder": 1,
+    "WeaponId": 340671
+  },
+  {
+    "WeaponEvolutionGroupId": 34067,
+    "EvolutionOrder": 2,
+    "WeaponId": 340672
+  },
+  {
+    "WeaponEvolutionGroupId": 34068,
+    "EvolutionOrder": 1,
+    "WeaponId": 340681
+  },
+  {
+    "WeaponEvolutionGroupId": 34068,
+    "EvolutionOrder": 2,
+    "WeaponId": 340682
+  },
+  {
+    "WeaponEvolutionGroupId": 34069,
+    "EvolutionOrder": 1,
+    "WeaponId": 340691
+  },
+  {
+    "WeaponEvolutionGroupId": 34069,
+    "EvolutionOrder": 2,
+    "WeaponId": 340692
+  },
+  {
+    "WeaponEvolutionGroupId": 34070,
+    "EvolutionOrder": 1,
+    "WeaponId": 340701
+  },
+  {
+    "WeaponEvolutionGroupId": 34070,
+    "EvolutionOrder": 2,
+    "WeaponId": 340702
+  },
+  {
+    "WeaponEvolutionGroupId": 34071,
+    "EvolutionOrder": 1,
+    "WeaponId": 340711
+  },
+  {
+    "WeaponEvolutionGroupId": 34071,
+    "EvolutionOrder": 2,
+    "WeaponId": 340712
+  },
+  {
+    "WeaponEvolutionGroupId": 34072,
+    "EvolutionOrder": 1,
+    "WeaponId": 340721
+  },
+  {
+    "WeaponEvolutionGroupId": 34072,
+    "EvolutionOrder": 2,
+    "WeaponId": 340722
+  },
+  {
+    "WeaponEvolutionGroupId": 34073,
+    "EvolutionOrder": 1,
+    "WeaponId": 340731
+  },
+  {
+    "WeaponEvolutionGroupId": 34073,
+    "EvolutionOrder": 2,
+    "WeaponId": 340732
+  },
+  {
+    "WeaponEvolutionGroupId": 34074,
+    "EvolutionOrder": 1,
+    "WeaponId": 340741
+  },
+  {
+    "WeaponEvolutionGroupId": 34074,
+    "EvolutionOrder": 2,
+    "WeaponId": 340742
+  },
+  {
+    "WeaponEvolutionGroupId": 34075,
+    "EvolutionOrder": 1,
+    "WeaponId": 340751
+  },
+  {
+    "WeaponEvolutionGroupId": 34075,
+    "EvolutionOrder": 2,
+    "WeaponId": 340752
+  },
+  {
+    "WeaponEvolutionGroupId": 34076,
+    "EvolutionOrder": 1,
+    "WeaponId": 340761
+  },
+  {
+    "WeaponEvolutionGroupId": 34076,
+    "EvolutionOrder": 2,
+    "WeaponId": 340762
+  },
+  {
+    "WeaponEvolutionGroupId": 34077,
+    "EvolutionOrder": 1,
+    "WeaponId": 340771
+  },
+  {
+    "WeaponEvolutionGroupId": 34077,
+    "EvolutionOrder": 2,
+    "WeaponId": 340772
+  },
+  {
+    "WeaponEvolutionGroupId": 34078,
+    "EvolutionOrder": 1,
+    "WeaponId": 340781
+  },
+  {
+    "WeaponEvolutionGroupId": 34078,
+    "EvolutionOrder": 2,
+    "WeaponId": 340782
+  },
+  {
+    "WeaponEvolutionGroupId": 34079,
+    "EvolutionOrder": 1,
+    "WeaponId": 340791
+  },
+  {
+    "WeaponEvolutionGroupId": 34079,
+    "EvolutionOrder": 2,
+    "WeaponId": 340792
+  },
+  {
+    "WeaponEvolutionGroupId": 34080,
+    "EvolutionOrder": 1,
+    "WeaponId": 340801
+  },
+  {
+    "WeaponEvolutionGroupId": 34080,
+    "EvolutionOrder": 2,
+    "WeaponId": 340802
+  },
+  {
+    "WeaponEvolutionGroupId": 34081,
+    "EvolutionOrder": 1,
+    "WeaponId": 340811
+  },
+  {
+    "WeaponEvolutionGroupId": 34081,
+    "EvolutionOrder": 2,
+    "WeaponId": 340812
+  },
+  {
+    "WeaponEvolutionGroupId": 34082,
+    "EvolutionOrder": 1,
+    "WeaponId": 340821
+  },
+  {
+    "WeaponEvolutionGroupId": 34082,
+    "EvolutionOrder": 2,
+    "WeaponId": 340822
+  },
+  {
+    "WeaponEvolutionGroupId": 34083,
+    "EvolutionOrder": 1,
+    "WeaponId": 340831
+  },
+  {
+    "WeaponEvolutionGroupId": 34083,
+    "EvolutionOrder": 2,
+    "WeaponId": 340832
+  },
+  {
+    "WeaponEvolutionGroupId": 34084,
+    "EvolutionOrder": 1,
+    "WeaponId": 340841
+  },
+  {
+    "WeaponEvolutionGroupId": 34084,
+    "EvolutionOrder": 2,
+    "WeaponId": 340842
+  },
+  {
+    "WeaponEvolutionGroupId": 34085,
+    "EvolutionOrder": 1,
+    "WeaponId": 340851
+  },
+  {
+    "WeaponEvolutionGroupId": 34085,
+    "EvolutionOrder": 2,
+    "WeaponId": 340852
+  },
+  {
+    "WeaponEvolutionGroupId": 34086,
+    "EvolutionOrder": 1,
+    "WeaponId": 340861
+  },
+  {
+    "WeaponEvolutionGroupId": 34086,
+    "EvolutionOrder": 2,
+    "WeaponId": 340862
+  },
+  {
+    "WeaponEvolutionGroupId": 34087,
+    "EvolutionOrder": 1,
+    "WeaponId": 340871
+  },
+  {
+    "WeaponEvolutionGroupId": 34087,
+    "EvolutionOrder": 2,
+    "WeaponId": 340872
+  },
+  {
+    "WeaponEvolutionGroupId": 35000,
+    "EvolutionOrder": 1,
+    "WeaponId": 350001
+  },
+  {
+    "WeaponEvolutionGroupId": 35000,
+    "EvolutionOrder": 2,
+    "WeaponId": 350002
+  },
+  {
+    "WeaponEvolutionGroupId": 35001,
+    "EvolutionOrder": 1,
+    "WeaponId": 350011
+  },
+  {
+    "WeaponEvolutionGroupId": 35001,
+    "EvolutionOrder": 2,
+    "WeaponId": 350012
+  },
+  {
+    "WeaponEvolutionGroupId": 35002,
+    "EvolutionOrder": 1,
+    "WeaponId": 350021
+  },
+  {
+    "WeaponEvolutionGroupId": 35002,
+    "EvolutionOrder": 2,
+    "WeaponId": 350022
+  },
+  {
+    "WeaponEvolutionGroupId": 35003,
+    "EvolutionOrder": 1,
+    "WeaponId": 350031
+  },
+  {
+    "WeaponEvolutionGroupId": 35003,
+    "EvolutionOrder": 2,
+    "WeaponId": 350032
+  },
+  {
+    "WeaponEvolutionGroupId": 35004,
+    "EvolutionOrder": 1,
+    "WeaponId": 350041
+  },
+  {
+    "WeaponEvolutionGroupId": 35004,
+    "EvolutionOrder": 2,
+    "WeaponId": 350042
+  },
+  {
+    "WeaponEvolutionGroupId": 35005,
+    "EvolutionOrder": 1,
+    "WeaponId": 350051
+  },
+  {
+    "WeaponEvolutionGroupId": 35005,
+    "EvolutionOrder": 2,
+    "WeaponId": 350052
+  },
+  {
+    "WeaponEvolutionGroupId": 35006,
+    "EvolutionOrder": 1,
+    "WeaponId": 350061
+  },
+  {
+    "WeaponEvolutionGroupId": 35006,
+    "EvolutionOrder": 2,
+    "WeaponId": 350062
+  },
+  {
+    "WeaponEvolutionGroupId": 35008,
+    "EvolutionOrder": 1,
+    "WeaponId": 350081
+  },
+  {
+    "WeaponEvolutionGroupId": 35008,
+    "EvolutionOrder": 2,
+    "WeaponId": 350082
+  },
+  {
+    "WeaponEvolutionGroupId": 35010,
+    "EvolutionOrder": 1,
+    "WeaponId": 350101
+  },
+  {
+    "WeaponEvolutionGroupId": 35010,
+    "EvolutionOrder": 2,
+    "WeaponId": 350102
+  },
+  {
+    "WeaponEvolutionGroupId": 35012,
+    "EvolutionOrder": 1,
+    "WeaponId": 350121
+  },
+  {
+    "WeaponEvolutionGroupId": 35012,
+    "EvolutionOrder": 2,
+    "WeaponId": 350122
+  },
+  {
+    "WeaponEvolutionGroupId": 35013,
+    "EvolutionOrder": 1,
+    "WeaponId": 350131
+  },
+  {
+    "WeaponEvolutionGroupId": 35013,
+    "EvolutionOrder": 2,
+    "WeaponId": 350132
+  },
+  {
+    "WeaponEvolutionGroupId": 35014,
+    "EvolutionOrder": 1,
+    "WeaponId": 350141
+  },
+  {
+    "WeaponEvolutionGroupId": 35014,
+    "EvolutionOrder": 2,
+    "WeaponId": 350142
+  },
+  {
+    "WeaponEvolutionGroupId": 35015,
+    "EvolutionOrder": 1,
+    "WeaponId": 350151
+  },
+  {
+    "WeaponEvolutionGroupId": 35015,
+    "EvolutionOrder": 2,
+    "WeaponId": 350152
+  },
+  {
+    "WeaponEvolutionGroupId": 35016,
+    "EvolutionOrder": 1,
+    "WeaponId": 350161
+  },
+  {
+    "WeaponEvolutionGroupId": 35016,
+    "EvolutionOrder": 2,
+    "WeaponId": 350162
+  },
+  {
+    "WeaponEvolutionGroupId": 35018,
+    "EvolutionOrder": 1,
+    "WeaponId": 350181
+  },
+  {
+    "WeaponEvolutionGroupId": 35018,
+    "EvolutionOrder": 2,
+    "WeaponId": 350182
+  },
+  {
+    "WeaponEvolutionGroupId": 35019,
+    "EvolutionOrder": 1,
+    "WeaponId": 350191
+  },
+  {
+    "WeaponEvolutionGroupId": 35019,
+    "EvolutionOrder": 2,
+    "WeaponId": 350192
+  },
+  {
+    "WeaponEvolutionGroupId": 35020,
+    "EvolutionOrder": 1,
+    "WeaponId": 350201
+  },
+  {
+    "WeaponEvolutionGroupId": 35020,
+    "EvolutionOrder": 2,
+    "WeaponId": 350202
+  },
+  {
+    "WeaponEvolutionGroupId": 35021,
+    "EvolutionOrder": 1,
+    "WeaponId": 350211
+  },
+  {
+    "WeaponEvolutionGroupId": 35021,
+    "EvolutionOrder": 2,
+    "WeaponId": 350212
+  },
+  {
+    "WeaponEvolutionGroupId": 35022,
+    "EvolutionOrder": 1,
+    "WeaponId": 350221
+  },
+  {
+    "WeaponEvolutionGroupId": 35022,
+    "EvolutionOrder": 2,
+    "WeaponId": 350222
+  },
+  {
+    "WeaponEvolutionGroupId": 35023,
+    "EvolutionOrder": 1,
+    "WeaponId": 350231
+  },
+  {
+    "WeaponEvolutionGroupId": 35023,
+    "EvolutionOrder": 2,
+    "WeaponId": 350232
+  },
+  {
+    "WeaponEvolutionGroupId": 35024,
+    "EvolutionOrder": 1,
+    "WeaponId": 350241
+  },
+  {
+    "WeaponEvolutionGroupId": 35024,
+    "EvolutionOrder": 2,
+    "WeaponId": 350242
+  },
+  {
+    "WeaponEvolutionGroupId": 35025,
+    "EvolutionOrder": 1,
+    "WeaponId": 350251
+  },
+  {
+    "WeaponEvolutionGroupId": 35025,
+    "EvolutionOrder": 2,
+    "WeaponId": 350252
+  },
+  {
+    "WeaponEvolutionGroupId": 35026,
+    "EvolutionOrder": 1,
+    "WeaponId": 350261
+  },
+  {
+    "WeaponEvolutionGroupId": 35026,
+    "EvolutionOrder": 2,
+    "WeaponId": 350262
+  },
+  {
+    "WeaponEvolutionGroupId": 35027,
+    "EvolutionOrder": 1,
+    "WeaponId": 350271
+  },
+  {
+    "WeaponEvolutionGroupId": 35027,
+    "EvolutionOrder": 2,
+    "WeaponId": 350272
+  },
+  {
+    "WeaponEvolutionGroupId": 35028,
+    "EvolutionOrder": 1,
+    "WeaponId": 350281
+  },
+  {
+    "WeaponEvolutionGroupId": 35028,
+    "EvolutionOrder": 2,
+    "WeaponId": 350282
+  },
+  {
+    "WeaponEvolutionGroupId": 35029,
+    "EvolutionOrder": 1,
+    "WeaponId": 350291
+  },
+  {
+    "WeaponEvolutionGroupId": 35029,
+    "EvolutionOrder": 2,
+    "WeaponId": 350292
+  },
+  {
+    "WeaponEvolutionGroupId": 35030,
+    "EvolutionOrder": 1,
+    "WeaponId": 350301
+  },
+  {
+    "WeaponEvolutionGroupId": 35030,
+    "EvolutionOrder": 2,
+    "WeaponId": 350302
+  },
+  {
+    "WeaponEvolutionGroupId": 35031,
+    "EvolutionOrder": 1,
+    "WeaponId": 350311
+  },
+  {
+    "WeaponEvolutionGroupId": 35031,
+    "EvolutionOrder": 2,
+    "WeaponId": 350312
+  },
+  {
+    "WeaponEvolutionGroupId": 35032,
+    "EvolutionOrder": 1,
+    "WeaponId": 350321
+  },
+  {
+    "WeaponEvolutionGroupId": 35032,
+    "EvolutionOrder": 2,
+    "WeaponId": 350322
+  },
+  {
+    "WeaponEvolutionGroupId": 35033,
+    "EvolutionOrder": 1,
+    "WeaponId": 350331
+  },
+  {
+    "WeaponEvolutionGroupId": 35033,
+    "EvolutionOrder": 2,
+    "WeaponId": 350332
+  },
+  {
+    "WeaponEvolutionGroupId": 35034,
+    "EvolutionOrder": 1,
+    "WeaponId": 350341
+  },
+  {
+    "WeaponEvolutionGroupId": 35034,
+    "EvolutionOrder": 2,
+    "WeaponId": 350342
+  },
+  {
+    "WeaponEvolutionGroupId": 35035,
+    "EvolutionOrder": 1,
+    "WeaponId": 350351
+  },
+  {
+    "WeaponEvolutionGroupId": 35035,
+    "EvolutionOrder": 2,
+    "WeaponId": 350352
+  },
+  {
+    "WeaponEvolutionGroupId": 35036,
+    "EvolutionOrder": 1,
+    "WeaponId": 350361
+  },
+  {
+    "WeaponEvolutionGroupId": 35036,
+    "EvolutionOrder": 2,
+    "WeaponId": 350362
+  },
+  {
+    "WeaponEvolutionGroupId": 35037,
+    "EvolutionOrder": 1,
+    "WeaponId": 350371
+  },
+  {
+    "WeaponEvolutionGroupId": 35037,
+    "EvolutionOrder": 2,
+    "WeaponId": 350372
+  },
+  {
+    "WeaponEvolutionGroupId": 35038,
+    "EvolutionOrder": 1,
+    "WeaponId": 350381
+  },
+  {
+    "WeaponEvolutionGroupId": 35038,
+    "EvolutionOrder": 2,
+    "WeaponId": 350382
+  },
+  {
+    "WeaponEvolutionGroupId": 35039,
+    "EvolutionOrder": 1,
+    "WeaponId": 350391
+  },
+  {
+    "WeaponEvolutionGroupId": 35039,
+    "EvolutionOrder": 2,
+    "WeaponId": 350392
+  },
+  {
+    "WeaponEvolutionGroupId": 35040,
+    "EvolutionOrder": 1,
+    "WeaponId": 350401
+  },
+  {
+    "WeaponEvolutionGroupId": 35040,
+    "EvolutionOrder": 2,
+    "WeaponId": 350402
+  },
+  {
+    "WeaponEvolutionGroupId": 35041,
+    "EvolutionOrder": 1,
+    "WeaponId": 350411
+  },
+  {
+    "WeaponEvolutionGroupId": 35041,
+    "EvolutionOrder": 2,
+    "WeaponId": 350412
+  },
+  {
+    "WeaponEvolutionGroupId": 35042,
+    "EvolutionOrder": 1,
+    "WeaponId": 350421
+  },
+  {
+    "WeaponEvolutionGroupId": 35042,
+    "EvolutionOrder": 2,
+    "WeaponId": 350422
+  },
+  {
+    "WeaponEvolutionGroupId": 35043,
+    "EvolutionOrder": 1,
+    "WeaponId": 350431
+  },
+  {
+    "WeaponEvolutionGroupId": 35043,
+    "EvolutionOrder": 2,
+    "WeaponId": 350432
+  },
+  {
+    "WeaponEvolutionGroupId": 35044,
+    "EvolutionOrder": 1,
+    "WeaponId": 350441
+  },
+  {
+    "WeaponEvolutionGroupId": 35044,
+    "EvolutionOrder": 2,
+    "WeaponId": 350442
+  },
+  {
+    "WeaponEvolutionGroupId": 35045,
+    "EvolutionOrder": 1,
+    "WeaponId": 350451
+  },
+  {
+    "WeaponEvolutionGroupId": 35045,
+    "EvolutionOrder": 2,
+    "WeaponId": 350452
+  },
+  {
+    "WeaponEvolutionGroupId": 35046,
+    "EvolutionOrder": 1,
+    "WeaponId": 350461
+  },
+  {
+    "WeaponEvolutionGroupId": 35046,
+    "EvolutionOrder": 2,
+    "WeaponId": 350462
+  },
+  {
+    "WeaponEvolutionGroupId": 35047,
+    "EvolutionOrder": 1,
+    "WeaponId": 350471
+  },
+  {
+    "WeaponEvolutionGroupId": 35047,
+    "EvolutionOrder": 2,
+    "WeaponId": 350472
+  },
+  {
+    "WeaponEvolutionGroupId": 35048,
+    "EvolutionOrder": 1,
+    "WeaponId": 350481
+  },
+  {
+    "WeaponEvolutionGroupId": 35048,
+    "EvolutionOrder": 2,
+    "WeaponId": 350482
+  },
+  {
+    "WeaponEvolutionGroupId": 35049,
+    "EvolutionOrder": 1,
+    "WeaponId": 350491
+  },
+  {
+    "WeaponEvolutionGroupId": 35049,
+    "EvolutionOrder": 2,
+    "WeaponId": 350492
+  },
+  {
+    "WeaponEvolutionGroupId": 35050,
+    "EvolutionOrder": 1,
+    "WeaponId": 350501
+  },
+  {
+    "WeaponEvolutionGroupId": 35050,
+    "EvolutionOrder": 2,
+    "WeaponId": 350502
+  },
+  {
+    "WeaponEvolutionGroupId": 35051,
+    "EvolutionOrder": 1,
+    "WeaponId": 350511
+  },
+  {
+    "WeaponEvolutionGroupId": 35051,
+    "EvolutionOrder": 2,
+    "WeaponId": 350512
+  },
+  {
+    "WeaponEvolutionGroupId": 35052,
+    "EvolutionOrder": 1,
+    "WeaponId": 350521
+  },
+  {
+    "WeaponEvolutionGroupId": 35052,
+    "EvolutionOrder": 2,
+    "WeaponId": 350522
+  },
+  {
+    "WeaponEvolutionGroupId": 35053,
+    "EvolutionOrder": 1,
+    "WeaponId": 350531
+  },
+  {
+    "WeaponEvolutionGroupId": 35053,
+    "EvolutionOrder": 2,
+    "WeaponId": 350532
+  },
+  {
+    "WeaponEvolutionGroupId": 35054,
+    "EvolutionOrder": 1,
+    "WeaponId": 350541
+  },
+  {
+    "WeaponEvolutionGroupId": 35054,
+    "EvolutionOrder": 2,
+    "WeaponId": 350542
+  },
+  {
+    "WeaponEvolutionGroupId": 35055,
+    "EvolutionOrder": 1,
+    "WeaponId": 350551
+  },
+  {
+    "WeaponEvolutionGroupId": 35055,
+    "EvolutionOrder": 2,
+    "WeaponId": 350552
+  },
+  {
+    "WeaponEvolutionGroupId": 35056,
+    "EvolutionOrder": 1,
+    "WeaponId": 350561
+  },
+  {
+    "WeaponEvolutionGroupId": 35056,
+    "EvolutionOrder": 2,
+    "WeaponId": 350562
+  },
+  {
+    "WeaponEvolutionGroupId": 35057,
+    "EvolutionOrder": 1,
+    "WeaponId": 350571
+  },
+  {
+    "WeaponEvolutionGroupId": 35057,
+    "EvolutionOrder": 2,
+    "WeaponId": 350572
+  },
+  {
+    "WeaponEvolutionGroupId": 35058,
+    "EvolutionOrder": 1,
+    "WeaponId": 350581
+  },
+  {
+    "WeaponEvolutionGroupId": 35058,
+    "EvolutionOrder": 2,
+    "WeaponId": 350582
+  },
+  {
+    "WeaponEvolutionGroupId": 35059,
+    "EvolutionOrder": 1,
+    "WeaponId": 350591
+  },
+  {
+    "WeaponEvolutionGroupId": 35059,
+    "EvolutionOrder": 2,
+    "WeaponId": 350592
+  },
+  {
+    "WeaponEvolutionGroupId": 35060,
+    "EvolutionOrder": 1,
+    "WeaponId": 350601
+  },
+  {
+    "WeaponEvolutionGroupId": 35060,
+    "EvolutionOrder": 2,
+    "WeaponId": 350602
+  },
+  {
+    "WeaponEvolutionGroupId": 35061,
+    "EvolutionOrder": 1,
+    "WeaponId": 350611
+  },
+  {
+    "WeaponEvolutionGroupId": 35061,
+    "EvolutionOrder": 2,
+    "WeaponId": 350612
+  },
+  {
+    "WeaponEvolutionGroupId": 35062,
+    "EvolutionOrder": 1,
+    "WeaponId": 350621
+  },
+  {
+    "WeaponEvolutionGroupId": 35062,
+    "EvolutionOrder": 2,
+    "WeaponId": 350622
+  },
+  {
+    "WeaponEvolutionGroupId": 35063,
+    "EvolutionOrder": 1,
+    "WeaponId": 350631
+  },
+  {
+    "WeaponEvolutionGroupId": 35063,
+    "EvolutionOrder": 2,
+    "WeaponId": 350632
+  },
+  {
+    "WeaponEvolutionGroupId": 35064,
+    "EvolutionOrder": 1,
+    "WeaponId": 350641
+  },
+  {
+    "WeaponEvolutionGroupId": 35064,
+    "EvolutionOrder": 2,
+    "WeaponId": 350642
+  },
+  {
+    "WeaponEvolutionGroupId": 35065,
+    "EvolutionOrder": 1,
+    "WeaponId": 350651
+  },
+  {
+    "WeaponEvolutionGroupId": 35065,
+    "EvolutionOrder": 2,
+    "WeaponId": 350652
+  },
+  {
+    "WeaponEvolutionGroupId": 35066,
+    "EvolutionOrder": 1,
+    "WeaponId": 350661
+  },
+  {
+    "WeaponEvolutionGroupId": 35066,
+    "EvolutionOrder": 2,
+    "WeaponId": 350662
+  },
+  {
+    "WeaponEvolutionGroupId": 35067,
+    "EvolutionOrder": 1,
+    "WeaponId": 350671
+  },
+  {
+    "WeaponEvolutionGroupId": 35067,
+    "EvolutionOrder": 2,
+    "WeaponId": 350672
+  },
+  {
+    "WeaponEvolutionGroupId": 35068,
+    "EvolutionOrder": 1,
+    "WeaponId": 350681
+  },
+  {
+    "WeaponEvolutionGroupId": 35068,
+    "EvolutionOrder": 2,
+    "WeaponId": 350682
+  },
+  {
+    "WeaponEvolutionGroupId": 35069,
+    "EvolutionOrder": 1,
+    "WeaponId": 350691
+  },
+  {
+    "WeaponEvolutionGroupId": 35069,
+    "EvolutionOrder": 2,
+    "WeaponId": 350692
+  },
+  {
+    "WeaponEvolutionGroupId": 35070,
+    "EvolutionOrder": 1,
+    "WeaponId": 350701
+  },
+  {
+    "WeaponEvolutionGroupId": 35070,
+    "EvolutionOrder": 2,
+    "WeaponId": 350702
+  },
+  {
+    "WeaponEvolutionGroupId": 35071,
+    "EvolutionOrder": 1,
+    "WeaponId": 350711
+  },
+  {
+    "WeaponEvolutionGroupId": 35071,
+    "EvolutionOrder": 2,
+    "WeaponId": 350712
+  },
+  {
+    "WeaponEvolutionGroupId": 40000,
+    "EvolutionOrder": 1,
+    "WeaponId": 400001
+  },
+  {
+    "WeaponEvolutionGroupId": 40000,
+    "EvolutionOrder": 2,
+    "WeaponId": 400002
+  },
+  {
+    "WeaponEvolutionGroupId": 40001,
+    "EvolutionOrder": 1,
+    "WeaponId": 400011
+  },
+  {
+    "WeaponEvolutionGroupId": 40001,
+    "EvolutionOrder": 2,
+    "WeaponId": 400012
+  },
+  {
+    "WeaponEvolutionGroupId": 40002,
+    "EvolutionOrder": 1,
+    "WeaponId": 400021
+  },
+  {
+    "WeaponEvolutionGroupId": 40002,
+    "EvolutionOrder": 2,
+    "WeaponId": 400022
+  },
+  {
+    "WeaponEvolutionGroupId": 40003,
+    "EvolutionOrder": 1,
+    "WeaponId": 400031
+  },
+  {
+    "WeaponEvolutionGroupId": 40003,
+    "EvolutionOrder": 2,
+    "WeaponId": 400032
+  },
+  {
+    "WeaponEvolutionGroupId": 40004,
+    "EvolutionOrder": 1,
+    "WeaponId": 400041
+  },
+  {
+    "WeaponEvolutionGroupId": 40004,
+    "EvolutionOrder": 2,
+    "WeaponId": 400042
+  },
+  {
+    "WeaponEvolutionGroupId": 40005,
+    "EvolutionOrder": 1,
+    "WeaponId": 400051
+  },
+  {
+    "WeaponEvolutionGroupId": 40005,
+    "EvolutionOrder": 2,
+    "WeaponId": 400052
+  },
+  {
+    "WeaponEvolutionGroupId": 41000,
+    "EvolutionOrder": 1,
+    "WeaponId": 410001
+  },
+  {
+    "WeaponEvolutionGroupId": 41000,
+    "EvolutionOrder": 2,
+    "WeaponId": 410002
+  },
+  {
+    "WeaponEvolutionGroupId": 41000,
+    "EvolutionOrder": 3,
+    "WeaponId": 410003
+  },
+  {
+    "WeaponEvolutionGroupId": 41000,
+    "EvolutionOrder": 4,
+    "WeaponId": 410004
+  },
+  {
+    "WeaponEvolutionGroupId": 41000,
+    "EvolutionOrder": 5,
+    "WeaponId": 410011
+  },
+  {
+    "WeaponEvolutionGroupId": 41000,
+    "EvolutionOrder": 6,
+    "WeaponId": 410012
+  },
+  {
+    "WeaponEvolutionGroupId": 41000,
+    "EvolutionOrder": 7,
+    "WeaponId": 410013
+  },
+  {
+    "WeaponEvolutionGroupId": 41000,
+    "EvolutionOrder": 8,
+    "WeaponId": 410021
+  },
+  {
+    "WeaponEvolutionGroupId": 41000,
+    "EvolutionOrder": 9,
+    "WeaponId": 410022
+  },
+  {
+    "WeaponEvolutionGroupId": 41000,
+    "EvolutionOrder": 10,
+    "WeaponId": 410023
+  },
+  {
+    "WeaponEvolutionGroupId": 41000,
+    "EvolutionOrder": 11,
+    "WeaponId": 410031
+  },
+  {
+    "WeaponEvolutionGroupId": 41004,
+    "EvolutionOrder": 1,
+    "WeaponId": 410041
+  },
+  {
+    "WeaponEvolutionGroupId": 41004,
+    "EvolutionOrder": 2,
+    "WeaponId": 410042
+  },
+  {
+    "WeaponEvolutionGroupId": 41004,
+    "EvolutionOrder": 3,
+    "WeaponId": 410043
+  },
+  {
+    "WeaponEvolutionGroupId": 41004,
+    "EvolutionOrder": 4,
+    "WeaponId": 410044
+  },
+  {
+    "WeaponEvolutionGroupId": 41004,
+    "EvolutionOrder": 5,
+    "WeaponId": 410051
+  },
+  {
+    "WeaponEvolutionGroupId": 41004,
+    "EvolutionOrder": 6,
+    "WeaponId": 410052
+  },
+  {
+    "WeaponEvolutionGroupId": 41004,
+    "EvolutionOrder": 7,
+    "WeaponId": 410053
+  },
+  {
+    "WeaponEvolutionGroupId": 41004,
+    "EvolutionOrder": 8,
+    "WeaponId": 410061
+  },
+  {
+    "WeaponEvolutionGroupId": 41004,
+    "EvolutionOrder": 9,
+    "WeaponId": 410062
+  },
+  {
+    "WeaponEvolutionGroupId": 41004,
+    "EvolutionOrder": 10,
+    "WeaponId": 410063
+  },
+  {
+    "WeaponEvolutionGroupId": 41004,
+    "EvolutionOrder": 11,
+    "WeaponId": 410071
+  },
+  {
+    "WeaponEvolutionGroupId": 41008,
+    "EvolutionOrder": 1,
+    "WeaponId": 410081
+  },
+  {
+    "WeaponEvolutionGroupId": 41008,
+    "EvolutionOrder": 2,
+    "WeaponId": 410082
+  },
+  {
+    "WeaponEvolutionGroupId": 41008,
+    "EvolutionOrder": 3,
+    "WeaponId": 410083
+  },
+  {
+    "WeaponEvolutionGroupId": 41008,
+    "EvolutionOrder": 4,
+    "WeaponId": 410084
+  },
+  {
+    "WeaponEvolutionGroupId": 41008,
+    "EvolutionOrder": 5,
+    "WeaponId": 410091
+  },
+  {
+    "WeaponEvolutionGroupId": 41008,
+    "EvolutionOrder": 6,
+    "WeaponId": 410092
+  },
+  {
+    "WeaponEvolutionGroupId": 41008,
+    "EvolutionOrder": 7,
+    "WeaponId": 410093
+  },
+  {
+    "WeaponEvolutionGroupId": 41008,
+    "EvolutionOrder": 8,
+    "WeaponId": 410101
+  },
+  {
+    "WeaponEvolutionGroupId": 41008,
+    "EvolutionOrder": 9,
+    "WeaponId": 410102
+  },
+  {
+    "WeaponEvolutionGroupId": 41008,
+    "EvolutionOrder": 10,
+    "WeaponId": 410103
+  },
+  {
+    "WeaponEvolutionGroupId": 41008,
+    "EvolutionOrder": 11,
+    "WeaponId": 410111
+  },
+  {
+    "WeaponEvolutionGroupId": 41012,
+    "EvolutionOrder": 1,
+    "WeaponId": 410121
+  },
+  {
+    "WeaponEvolutionGroupId": 41012,
+    "EvolutionOrder": 2,
+    "WeaponId": 410122
+  },
+  {
+    "WeaponEvolutionGroupId": 41012,
+    "EvolutionOrder": 3,
+    "WeaponId": 410123
+  },
+  {
+    "WeaponEvolutionGroupId": 41012,
+    "EvolutionOrder": 4,
+    "WeaponId": 410124
+  },
+  {
+    "WeaponEvolutionGroupId": 41012,
+    "EvolutionOrder": 5,
+    "WeaponId": 410131
+  },
+  {
+    "WeaponEvolutionGroupId": 41012,
+    "EvolutionOrder": 6,
+    "WeaponId": 410132
+  },
+  {
+    "WeaponEvolutionGroupId": 41012,
+    "EvolutionOrder": 7,
+    "WeaponId": 410133
+  },
+  {
+    "WeaponEvolutionGroupId": 41012,
+    "EvolutionOrder": 8,
+    "WeaponId": 410141
+  },
+  {
+    "WeaponEvolutionGroupId": 41012,
+    "EvolutionOrder": 9,
+    "WeaponId": 410142
+  },
+  {
+    "WeaponEvolutionGroupId": 41012,
+    "EvolutionOrder": 10,
+    "WeaponId": 410143
+  },
+  {
+    "WeaponEvolutionGroupId": 41012,
+    "EvolutionOrder": 11,
+    "WeaponId": 410151
+  },
+  {
+    "WeaponEvolutionGroupId": 42000,
+    "EvolutionOrder": 1,
+    "WeaponId": 420001
+  },
+  {
+    "WeaponEvolutionGroupId": 42000,
+    "EvolutionOrder": 2,
+    "WeaponId": 420002
+  },
+  {
+    "WeaponEvolutionGroupId": 42000,
+    "EvolutionOrder": 3,
+    "WeaponId": 420003
+  },
+  {
+    "WeaponEvolutionGroupId": 42000,
+    "EvolutionOrder": 4,
+    "WeaponId": 420004
+  },
+  {
+    "WeaponEvolutionGroupId": 42000,
+    "EvolutionOrder": 5,
+    "WeaponId": 420011
+  },
+  {
+    "WeaponEvolutionGroupId": 42000,
+    "EvolutionOrder": 6,
+    "WeaponId": 420012
+  },
+  {
+    "WeaponEvolutionGroupId": 42000,
+    "EvolutionOrder": 7,
+    "WeaponId": 420013
+  },
+  {
+    "WeaponEvolutionGroupId": 42000,
+    "EvolutionOrder": 8,
+    "WeaponId": 420021
+  },
+  {
+    "WeaponEvolutionGroupId": 42000,
+    "EvolutionOrder": 9,
+    "WeaponId": 420022
+  },
+  {
+    "WeaponEvolutionGroupId": 42000,
+    "EvolutionOrder": 10,
+    "WeaponId": 420023
+  },
+  {
+    "WeaponEvolutionGroupId": 42000,
+    "EvolutionOrder": 11,
+    "WeaponId": 420031
+  },
+  {
+    "WeaponEvolutionGroupId": 42004,
+    "EvolutionOrder": 1,
+    "WeaponId": 420041
+  },
+  {
+    "WeaponEvolutionGroupId": 42004,
+    "EvolutionOrder": 2,
+    "WeaponId": 420042
+  },
+  {
+    "WeaponEvolutionGroupId": 42004,
+    "EvolutionOrder": 3,
+    "WeaponId": 420043
+  },
+  {
+    "WeaponEvolutionGroupId": 42004,
+    "EvolutionOrder": 4,
+    "WeaponId": 420044
+  },
+  {
+    "WeaponEvolutionGroupId": 42004,
+    "EvolutionOrder": 5,
+    "WeaponId": 420051
+  },
+  {
+    "WeaponEvolutionGroupId": 42004,
+    "EvolutionOrder": 6,
+    "WeaponId": 420052
+  },
+  {
+    "WeaponEvolutionGroupId": 42004,
+    "EvolutionOrder": 7,
+    "WeaponId": 420053
+  },
+  {
+    "WeaponEvolutionGroupId": 42004,
+    "EvolutionOrder": 8,
+    "WeaponId": 420061
+  },
+  {
+    "WeaponEvolutionGroupId": 42004,
+    "EvolutionOrder": 9,
+    "WeaponId": 420062
+  },
+  {
+    "WeaponEvolutionGroupId": 42004,
+    "EvolutionOrder": 10,
+    "WeaponId": 420063
+  },
+  {
+    "WeaponEvolutionGroupId": 42004,
+    "EvolutionOrder": 11,
+    "WeaponId": 420071
+  },
+  {
+    "WeaponEvolutionGroupId": 42008,
+    "EvolutionOrder": 1,
+    "WeaponId": 420081
+  },
+  {
+    "WeaponEvolutionGroupId": 42008,
+    "EvolutionOrder": 2,
+    "WeaponId": 420082
+  },
+  {
+    "WeaponEvolutionGroupId": 42008,
+    "EvolutionOrder": 3,
+    "WeaponId": 420083
+  },
+  {
+    "WeaponEvolutionGroupId": 42008,
+    "EvolutionOrder": 4,
+    "WeaponId": 420084
+  },
+  {
+    "WeaponEvolutionGroupId": 42008,
+    "EvolutionOrder": 5,
+    "WeaponId": 420091
+  },
+  {
+    "WeaponEvolutionGroupId": 42008,
+    "EvolutionOrder": 6,
+    "WeaponId": 420092
+  },
+  {
+    "WeaponEvolutionGroupId": 42008,
+    "EvolutionOrder": 7,
+    "WeaponId": 420093
+  },
+  {
+    "WeaponEvolutionGroupId": 42008,
+    "EvolutionOrder": 8,
+    "WeaponId": 420101
+  },
+  {
+    "WeaponEvolutionGroupId": 42008,
+    "EvolutionOrder": 9,
+    "WeaponId": 420102
+  },
+  {
+    "WeaponEvolutionGroupId": 42008,
+    "EvolutionOrder": 10,
+    "WeaponId": 420103
+  },
+  {
+    "WeaponEvolutionGroupId": 42008,
+    "EvolutionOrder": 11,
+    "WeaponId": 420111
+  },
+  {
+    "WeaponEvolutionGroupId": 42012,
+    "EvolutionOrder": 1,
+    "WeaponId": 420121
+  },
+  {
+    "WeaponEvolutionGroupId": 42012,
+    "EvolutionOrder": 2,
+    "WeaponId": 420122
+  },
+  {
+    "WeaponEvolutionGroupId": 42012,
+    "EvolutionOrder": 3,
+    "WeaponId": 420123
+  },
+  {
+    "WeaponEvolutionGroupId": 42012,
+    "EvolutionOrder": 4,
+    "WeaponId": 420124
+  },
+  {
+    "WeaponEvolutionGroupId": 42012,
+    "EvolutionOrder": 5,
+    "WeaponId": 420131
+  },
+  {
+    "WeaponEvolutionGroupId": 42012,
+    "EvolutionOrder": 6,
+    "WeaponId": 420132
+  },
+  {
+    "WeaponEvolutionGroupId": 42012,
+    "EvolutionOrder": 7,
+    "WeaponId": 420133
+  },
+  {
+    "WeaponEvolutionGroupId": 42012,
+    "EvolutionOrder": 8,
+    "WeaponId": 420141
+  },
+  {
+    "WeaponEvolutionGroupId": 42012,
+    "EvolutionOrder": 9,
+    "WeaponId": 420142
+  },
+  {
+    "WeaponEvolutionGroupId": 42012,
+    "EvolutionOrder": 10,
+    "WeaponId": 420143
+  },
+  {
+    "WeaponEvolutionGroupId": 42012,
+    "EvolutionOrder": 11,
+    "WeaponId": 420151
+  },
+  {
+    "WeaponEvolutionGroupId": 43000,
+    "EvolutionOrder": 1,
+    "WeaponId": 430001
+  },
+  {
+    "WeaponEvolutionGroupId": 43000,
+    "EvolutionOrder": 2,
+    "WeaponId": 430002
+  },
+  {
+    "WeaponEvolutionGroupId": 43000,
+    "EvolutionOrder": 3,
+    "WeaponId": 430003
+  },
+  {
+    "WeaponEvolutionGroupId": 43000,
+    "EvolutionOrder": 4,
+    "WeaponId": 430004
+  },
+  {
+    "WeaponEvolutionGroupId": 43000,
+    "EvolutionOrder": 5,
+    "WeaponId": 430011
+  },
+  {
+    "WeaponEvolutionGroupId": 43000,
+    "EvolutionOrder": 6,
+    "WeaponId": 430012
+  },
+  {
+    "WeaponEvolutionGroupId": 43000,
+    "EvolutionOrder": 7,
+    "WeaponId": 430013
+  },
+  {
+    "WeaponEvolutionGroupId": 43000,
+    "EvolutionOrder": 8,
+    "WeaponId": 430021
+  },
+  {
+    "WeaponEvolutionGroupId": 43000,
+    "EvolutionOrder": 9,
+    "WeaponId": 430022
+  },
+  {
+    "WeaponEvolutionGroupId": 43000,
+    "EvolutionOrder": 10,
+    "WeaponId": 430023
+  },
+  {
+    "WeaponEvolutionGroupId": 43000,
+    "EvolutionOrder": 11,
+    "WeaponId": 430031
+  },
+  {
+    "WeaponEvolutionGroupId": 43004,
+    "EvolutionOrder": 1,
+    "WeaponId": 430041
+  },
+  {
+    "WeaponEvolutionGroupId": 43004,
+    "EvolutionOrder": 2,
+    "WeaponId": 430042
+  },
+  {
+    "WeaponEvolutionGroupId": 43004,
+    "EvolutionOrder": 3,
+    "WeaponId": 430043
+  },
+  {
+    "WeaponEvolutionGroupId": 43004,
+    "EvolutionOrder": 4,
+    "WeaponId": 430044
+  },
+  {
+    "WeaponEvolutionGroupId": 43004,
+    "EvolutionOrder": 5,
+    "WeaponId": 430051
+  },
+  {
+    "WeaponEvolutionGroupId": 43004,
+    "EvolutionOrder": 6,
+    "WeaponId": 430052
+  },
+  {
+    "WeaponEvolutionGroupId": 43004,
+    "EvolutionOrder": 7,
+    "WeaponId": 430053
+  },
+  {
+    "WeaponEvolutionGroupId": 43004,
+    "EvolutionOrder": 8,
+    "WeaponId": 430061
+  },
+  {
+    "WeaponEvolutionGroupId": 43004,
+    "EvolutionOrder": 9,
+    "WeaponId": 430062
+  },
+  {
+    "WeaponEvolutionGroupId": 43004,
+    "EvolutionOrder": 10,
+    "WeaponId": 430063
+  },
+  {
+    "WeaponEvolutionGroupId": 43004,
+    "EvolutionOrder": 11,
+    "WeaponId": 430071
+  },
+  {
+    "WeaponEvolutionGroupId": 43008,
+    "EvolutionOrder": 1,
+    "WeaponId": 430081
+  },
+  {
+    "WeaponEvolutionGroupId": 43008,
+    "EvolutionOrder": 2,
+    "WeaponId": 430082
+  },
+  {
+    "WeaponEvolutionGroupId": 43008,
+    "EvolutionOrder": 3,
+    "WeaponId": 430083
+  },
+  {
+    "WeaponEvolutionGroupId": 43008,
+    "EvolutionOrder": 4,
+    "WeaponId": 430084
+  },
+  {
+    "WeaponEvolutionGroupId": 43008,
+    "EvolutionOrder": 5,
+    "WeaponId": 430091
+  },
+  {
+    "WeaponEvolutionGroupId": 43008,
+    "EvolutionOrder": 6,
+    "WeaponId": 430092
+  },
+  {
+    "WeaponEvolutionGroupId": 43008,
+    "EvolutionOrder": 7,
+    "WeaponId": 430093
+  },
+  {
+    "WeaponEvolutionGroupId": 43008,
+    "EvolutionOrder": 8,
+    "WeaponId": 430101
+  },
+  {
+    "WeaponEvolutionGroupId": 43008,
+    "EvolutionOrder": 9,
+    "WeaponId": 430102
+  },
+  {
+    "WeaponEvolutionGroupId": 43008,
+    "EvolutionOrder": 10,
+    "WeaponId": 430103
+  },
+  {
+    "WeaponEvolutionGroupId": 43008,
+    "EvolutionOrder": 11,
+    "WeaponId": 430111
+  },
+  {
+    "WeaponEvolutionGroupId": 43012,
+    "EvolutionOrder": 1,
+    "WeaponId": 430121
+  },
+  {
+    "WeaponEvolutionGroupId": 43012,
+    "EvolutionOrder": 2,
+    "WeaponId": 430122
+  },
+  {
+    "WeaponEvolutionGroupId": 43012,
+    "EvolutionOrder": 3,
+    "WeaponId": 430123
+  },
+  {
+    "WeaponEvolutionGroupId": 43012,
+    "EvolutionOrder": 4,
+    "WeaponId": 430124
+  },
+  {
+    "WeaponEvolutionGroupId": 43012,
+    "EvolutionOrder": 5,
+    "WeaponId": 430131
+  },
+  {
+    "WeaponEvolutionGroupId": 43012,
+    "EvolutionOrder": 6,
+    "WeaponId": 430132
+  },
+  {
+    "WeaponEvolutionGroupId": 43012,
+    "EvolutionOrder": 7,
+    "WeaponId": 430133
+  },
+  {
+    "WeaponEvolutionGroupId": 43012,
+    "EvolutionOrder": 8,
+    "WeaponId": 430141
+  },
+  {
+    "WeaponEvolutionGroupId": 43012,
+    "EvolutionOrder": 9,
+    "WeaponId": 430142
+  },
+  {
+    "WeaponEvolutionGroupId": 43012,
+    "EvolutionOrder": 10,
+    "WeaponId": 430143
+  },
+  {
+    "WeaponEvolutionGroupId": 43012,
+    "EvolutionOrder": 11,
+    "WeaponId": 430151
+  },
+  {
+    "WeaponEvolutionGroupId": 44000,
+    "EvolutionOrder": 1,
+    "WeaponId": 440001
+  },
+  {
+    "WeaponEvolutionGroupId": 44000,
+    "EvolutionOrder": 2,
+    "WeaponId": 440002
+  },
+  {
+    "WeaponEvolutionGroupId": 44000,
+    "EvolutionOrder": 3,
+    "WeaponId": 440003
+  },
+  {
+    "WeaponEvolutionGroupId": 44000,
+    "EvolutionOrder": 4,
+    "WeaponId": 440004
+  },
+  {
+    "WeaponEvolutionGroupId": 44000,
+    "EvolutionOrder": 5,
+    "WeaponId": 440011
+  },
+  {
+    "WeaponEvolutionGroupId": 44000,
+    "EvolutionOrder": 6,
+    "WeaponId": 440012
+  },
+  {
+    "WeaponEvolutionGroupId": 44000,
+    "EvolutionOrder": 7,
+    "WeaponId": 440013
+  },
+  {
+    "WeaponEvolutionGroupId": 44000,
+    "EvolutionOrder": 8,
+    "WeaponId": 440021
+  },
+  {
+    "WeaponEvolutionGroupId": 44000,
+    "EvolutionOrder": 9,
+    "WeaponId": 440022
+  },
+  {
+    "WeaponEvolutionGroupId": 44000,
+    "EvolutionOrder": 10,
+    "WeaponId": 440023
+  },
+  {
+    "WeaponEvolutionGroupId": 44000,
+    "EvolutionOrder": 11,
+    "WeaponId": 440031
+  },
+  {
+    "WeaponEvolutionGroupId": 44004,
+    "EvolutionOrder": 1,
+    "WeaponId": 440041
+  },
+  {
+    "WeaponEvolutionGroupId": 44004,
+    "EvolutionOrder": 2,
+    "WeaponId": 440042
+  },
+  {
+    "WeaponEvolutionGroupId": 44004,
+    "EvolutionOrder": 3,
+    "WeaponId": 440043
+  },
+  {
+    "WeaponEvolutionGroupId": 44004,
+    "EvolutionOrder": 4,
+    "WeaponId": 440044
+  },
+  {
+    "WeaponEvolutionGroupId": 44004,
+    "EvolutionOrder": 5,
+    "WeaponId": 440051
+  },
+  {
+    "WeaponEvolutionGroupId": 44004,
+    "EvolutionOrder": 6,
+    "WeaponId": 440052
+  },
+  {
+    "WeaponEvolutionGroupId": 44004,
+    "EvolutionOrder": 7,
+    "WeaponId": 440053
+  },
+  {
+    "WeaponEvolutionGroupId": 44004,
+    "EvolutionOrder": 8,
+    "WeaponId": 440061
+  },
+  {
+    "WeaponEvolutionGroupId": 44004,
+    "EvolutionOrder": 9,
+    "WeaponId": 440062
+  },
+  {
+    "WeaponEvolutionGroupId": 44004,
+    "EvolutionOrder": 10,
+    "WeaponId": 440063
+  },
+  {
+    "WeaponEvolutionGroupId": 44004,
+    "EvolutionOrder": 11,
+    "WeaponId": 440071
+  },
+  {
+    "WeaponEvolutionGroupId": 44008,
+    "EvolutionOrder": 1,
+    "WeaponId": 440081
+  },
+  {
+    "WeaponEvolutionGroupId": 44008,
+    "EvolutionOrder": 2,
+    "WeaponId": 440082
+  },
+  {
+    "WeaponEvolutionGroupId": 44008,
+    "EvolutionOrder": 3,
+    "WeaponId": 440083
+  },
+  {
+    "WeaponEvolutionGroupId": 44008,
+    "EvolutionOrder": 4,
+    "WeaponId": 440084
+  },
+  {
+    "WeaponEvolutionGroupId": 44008,
+    "EvolutionOrder": 5,
+    "WeaponId": 440091
+  },
+  {
+    "WeaponEvolutionGroupId": 44008,
+    "EvolutionOrder": 6,
+    "WeaponId": 440092
+  },
+  {
+    "WeaponEvolutionGroupId": 44008,
+    "EvolutionOrder": 7,
+    "WeaponId": 440093
+  },
+  {
+    "WeaponEvolutionGroupId": 44008,
+    "EvolutionOrder": 8,
+    "WeaponId": 440101
+  },
+  {
+    "WeaponEvolutionGroupId": 44008,
+    "EvolutionOrder": 9,
+    "WeaponId": 440102
+  },
+  {
+    "WeaponEvolutionGroupId": 44008,
+    "EvolutionOrder": 10,
+    "WeaponId": 440103
+  },
+  {
+    "WeaponEvolutionGroupId": 44008,
+    "EvolutionOrder": 11,
+    "WeaponId": 440111
+  },
+  {
+    "WeaponEvolutionGroupId": 44012,
+    "EvolutionOrder": 1,
+    "WeaponId": 440121
+  },
+  {
+    "WeaponEvolutionGroupId": 44012,
+    "EvolutionOrder": 2,
+    "WeaponId": 440122
+  },
+  {
+    "WeaponEvolutionGroupId": 44012,
+    "EvolutionOrder": 3,
+    "WeaponId": 440123
+  },
+  {
+    "WeaponEvolutionGroupId": 44012,
+    "EvolutionOrder": 4,
+    "WeaponId": 440124
+  },
+  {
+    "WeaponEvolutionGroupId": 44012,
+    "EvolutionOrder": 5,
+    "WeaponId": 440131
+  },
+  {
+    "WeaponEvolutionGroupId": 44012,
+    "EvolutionOrder": 6,
+    "WeaponId": 440132
+  },
+  {
+    "WeaponEvolutionGroupId": 44012,
+    "EvolutionOrder": 7,
+    "WeaponId": 440133
+  },
+  {
+    "WeaponEvolutionGroupId": 44012,
+    "EvolutionOrder": 8,
+    "WeaponId": 440141
+  },
+  {
+    "WeaponEvolutionGroupId": 44012,
+    "EvolutionOrder": 9,
+    "WeaponId": 440142
+  },
+  {
+    "WeaponEvolutionGroupId": 44012,
+    "EvolutionOrder": 10,
+    "WeaponId": 440143
+  },
+  {
+    "WeaponEvolutionGroupId": 44012,
+    "EvolutionOrder": 11,
+    "WeaponId": 440151
+  },
+  {
+    "WeaponEvolutionGroupId": 44016,
+    "EvolutionOrder": 1,
+    "WeaponId": 440161
+  },
+  {
+    "WeaponEvolutionGroupId": 44016,
+    "EvolutionOrder": 2,
+    "WeaponId": 440162
+  },
+  {
+    "WeaponEvolutionGroupId": 44016,
+    "EvolutionOrder": 3,
+    "WeaponId": 440163
+  },
+  {
+    "WeaponEvolutionGroupId": 44016,
+    "EvolutionOrder": 4,
+    "WeaponId": 440164
+  },
+  {
+    "WeaponEvolutionGroupId": 44016,
+    "EvolutionOrder": 5,
+    "WeaponId": 440171
+  },
+  {
+    "WeaponEvolutionGroupId": 44016,
+    "EvolutionOrder": 6,
+    "WeaponId": 440172
+  },
+  {
+    "WeaponEvolutionGroupId": 44016,
+    "EvolutionOrder": 7,
+    "WeaponId": 440173
+  },
+  {
+    "WeaponEvolutionGroupId": 44016,
+    "EvolutionOrder": 8,
+    "WeaponId": 440181
+  },
+  {
+    "WeaponEvolutionGroupId": 44016,
+    "EvolutionOrder": 9,
+    "WeaponId": 440182
+  },
+  {
+    "WeaponEvolutionGroupId": 44016,
+    "EvolutionOrder": 10,
+    "WeaponId": 440183
+  },
+  {
+    "WeaponEvolutionGroupId": 44016,
+    "EvolutionOrder": 11,
+    "WeaponId": 440191
+  },
+  {
+    "WeaponEvolutionGroupId": 45000,
+    "EvolutionOrder": 1,
+    "WeaponId": 450001
+  },
+  {
+    "WeaponEvolutionGroupId": 45000,
+    "EvolutionOrder": 2,
+    "WeaponId": 450002
+  },
+  {
+    "WeaponEvolutionGroupId": 45000,
+    "EvolutionOrder": 3,
+    "WeaponId": 450003
+  },
+  {
+    "WeaponEvolutionGroupId": 45000,
+    "EvolutionOrder": 4,
+    "WeaponId": 450004
+  },
+  {
+    "WeaponEvolutionGroupId": 45000,
+    "EvolutionOrder": 5,
+    "WeaponId": 450011
+  },
+  {
+    "WeaponEvolutionGroupId": 45000,
+    "EvolutionOrder": 6,
+    "WeaponId": 450012
+  },
+  {
+    "WeaponEvolutionGroupId": 45000,
+    "EvolutionOrder": 7,
+    "WeaponId": 450013
+  },
+  {
+    "WeaponEvolutionGroupId": 45000,
+    "EvolutionOrder": 8,
+    "WeaponId": 450021
+  },
+  {
+    "WeaponEvolutionGroupId": 45000,
+    "EvolutionOrder": 9,
+    "WeaponId": 450022
+  },
+  {
+    "WeaponEvolutionGroupId": 45000,
+    "EvolutionOrder": 10,
+    "WeaponId": 450023
+  },
+  {
+    "WeaponEvolutionGroupId": 45000,
+    "EvolutionOrder": 11,
+    "WeaponId": 450031
+  },
+  {
+    "WeaponEvolutionGroupId": 45004,
+    "EvolutionOrder": 1,
+    "WeaponId": 450041
+  },
+  {
+    "WeaponEvolutionGroupId": 45004,
+    "EvolutionOrder": 2,
+    "WeaponId": 450042
+  },
+  {
+    "WeaponEvolutionGroupId": 45004,
+    "EvolutionOrder": 3,
+    "WeaponId": 450043
+  },
+  {
+    "WeaponEvolutionGroupId": 45004,
+    "EvolutionOrder": 4,
+    "WeaponId": 450044
+  },
+  {
+    "WeaponEvolutionGroupId": 45004,
+    "EvolutionOrder": 5,
+    "WeaponId": 450051
+  },
+  {
+    "WeaponEvolutionGroupId": 45004,
+    "EvolutionOrder": 6,
+    "WeaponId": 450052
+  },
+  {
+    "WeaponEvolutionGroupId": 45004,
+    "EvolutionOrder": 7,
+    "WeaponId": 450053
+  },
+  {
+    "WeaponEvolutionGroupId": 45004,
+    "EvolutionOrder": 8,
+    "WeaponId": 450061
+  },
+  {
+    "WeaponEvolutionGroupId": 45004,
+    "EvolutionOrder": 9,
+    "WeaponId": 450062
+  },
+  {
+    "WeaponEvolutionGroupId": 45004,
+    "EvolutionOrder": 10,
+    "WeaponId": 450063
+  },
+  {
+    "WeaponEvolutionGroupId": 45004,
+    "EvolutionOrder": 11,
+    "WeaponId": 450071
+  },
+  {
+    "WeaponEvolutionGroupId": 45008,
+    "EvolutionOrder": 1,
+    "WeaponId": 450081
+  },
+  {
+    "WeaponEvolutionGroupId": 45008,
+    "EvolutionOrder": 2,
+    "WeaponId": 450082
+  },
+  {
+    "WeaponEvolutionGroupId": 45008,
+    "EvolutionOrder": 3,
+    "WeaponId": 450083
+  },
+  {
+    "WeaponEvolutionGroupId": 45008,
+    "EvolutionOrder": 4,
+    "WeaponId": 450084
+  },
+  {
+    "WeaponEvolutionGroupId": 45008,
+    "EvolutionOrder": 5,
+    "WeaponId": 450091
+  },
+  {
+    "WeaponEvolutionGroupId": 45008,
+    "EvolutionOrder": 6,
+    "WeaponId": 450092
+  },
+  {
+    "WeaponEvolutionGroupId": 45008,
+    "EvolutionOrder": 7,
+    "WeaponId": 450093
+  },
+  {
+    "WeaponEvolutionGroupId": 45008,
+    "EvolutionOrder": 8,
+    "WeaponId": 450101
+  },
+  {
+    "WeaponEvolutionGroupId": 45008,
+    "EvolutionOrder": 9,
+    "WeaponId": 450102
+  },
+  {
+    "WeaponEvolutionGroupId": 45008,
+    "EvolutionOrder": 10,
+    "WeaponId": 450103
+  },
+  {
+    "WeaponEvolutionGroupId": 45008,
+    "EvolutionOrder": 11,
+    "WeaponId": 450111
+  },
+  {
+    "WeaponEvolutionGroupId": 45012,
+    "EvolutionOrder": 1,
+    "WeaponId": 450121
+  },
+  {
+    "WeaponEvolutionGroupId": 45012,
+    "EvolutionOrder": 2,
+    "WeaponId": 450122
+  },
+  {
+    "WeaponEvolutionGroupId": 45012,
+    "EvolutionOrder": 3,
+    "WeaponId": 450123
+  },
+  {
+    "WeaponEvolutionGroupId": 45012,
+    "EvolutionOrder": 4,
+    "WeaponId": 450124
+  },
+  {
+    "WeaponEvolutionGroupId": 45012,
+    "EvolutionOrder": 5,
+    "WeaponId": 450131
+  },
+  {
+    "WeaponEvolutionGroupId": 45012,
+    "EvolutionOrder": 6,
+    "WeaponId": 450132
+  },
+  {
+    "WeaponEvolutionGroupId": 45012,
+    "EvolutionOrder": 7,
+    "WeaponId": 450133
+  },
+  {
+    "WeaponEvolutionGroupId": 45012,
+    "EvolutionOrder": 8,
+    "WeaponId": 450141
+  },
+  {
+    "WeaponEvolutionGroupId": 45012,
+    "EvolutionOrder": 9,
+    "WeaponId": 450142
+  },
+  {
+    "WeaponEvolutionGroupId": 45012,
+    "EvolutionOrder": 10,
+    "WeaponId": 450143
+  },
+  {
+    "WeaponEvolutionGroupId": 45012,
+    "EvolutionOrder": 11,
+    "WeaponId": 450151
+  },
+  {
+    "WeaponEvolutionGroupId": 50001,
+    "EvolutionOrder": 1,
+    "WeaponId": 500011
+  },
+  {
+    "WeaponEvolutionGroupId": 50001,
+    "EvolutionOrder": 2,
+    "WeaponId": 500012
+  },
+  {
+    "WeaponEvolutionGroupId": 50002,
+    "EvolutionOrder": 1,
+    "WeaponId": 500021
+  },
+  {
+    "WeaponEvolutionGroupId": 50002,
+    "EvolutionOrder": 2,
+    "WeaponId": 500022
+  },
+  {
+    "WeaponEvolutionGroupId": 50003,
+    "EvolutionOrder": 1,
+    "WeaponId": 500031
+  },
+  {
+    "WeaponEvolutionGroupId": 50003,
+    "EvolutionOrder": 2,
+    "WeaponId": 500032
+  },
+  {
+    "WeaponEvolutionGroupId": 50004,
+    "EvolutionOrder": 1,
+    "WeaponId": 500041
+  },
+  {
+    "WeaponEvolutionGroupId": 50004,
+    "EvolutionOrder": 2,
+    "WeaponId": 500042
+  },
+  {
+    "WeaponEvolutionGroupId": 50005,
+    "EvolutionOrder": 1,
+    "WeaponId": 500051
+  },
+  {
+    "WeaponEvolutionGroupId": 50005,
+    "EvolutionOrder": 2,
+    "WeaponId": 500052
+  },
+  {
+    "WeaponEvolutionGroupId": 51001,
+    "EvolutionOrder": 1,
+    "WeaponId": 510011
+  },
+  {
+    "WeaponEvolutionGroupId": 51001,
+    "EvolutionOrder": 2,
+    "WeaponId": 510012
+  },
+  {
+    "WeaponEvolutionGroupId": 51002,
+    "EvolutionOrder": 1,
+    "WeaponId": 510021
+  },
+  {
+    "WeaponEvolutionGroupId": 51002,
+    "EvolutionOrder": 2,
+    "WeaponId": 510022
+  },
+  {
+    "WeaponEvolutionGroupId": 51003,
+    "EvolutionOrder": 1,
+    "WeaponId": 510031
+  },
+  {
+    "WeaponEvolutionGroupId": 51003,
+    "EvolutionOrder": 2,
+    "WeaponId": 510032
+  },
+  {
+    "WeaponEvolutionGroupId": 52001,
+    "EvolutionOrder": 1,
+    "WeaponId": 520011
+  },
+  {
+    "WeaponEvolutionGroupId": 52001,
+    "EvolutionOrder": 2,
+    "WeaponId": 520012
+  },
+  {
+    "WeaponEvolutionGroupId": 52002,
+    "EvolutionOrder": 1,
+    "WeaponId": 520021
+  },
+  {
+    "WeaponEvolutionGroupId": 52002,
+    "EvolutionOrder": 2,
+    "WeaponId": 520022
+  },
+  {
+    "WeaponEvolutionGroupId": 53001,
+    "EvolutionOrder": 1,
+    "WeaponId": 530011
+  },
+  {
+    "WeaponEvolutionGroupId": 53001,
+    "EvolutionOrder": 2,
+    "WeaponId": 530012
+  },
+  {
+    "WeaponEvolutionGroupId": 53002,
+    "EvolutionOrder": 1,
+    "WeaponId": 530021
+  },
+  {
+    "WeaponEvolutionGroupId": 53002,
+    "EvolutionOrder": 2,
+    "WeaponId": 530022
+  },
+  {
+    "WeaponEvolutionGroupId": 54001,
+    "EvolutionOrder": 1,
+    "WeaponId": 540011
+  },
+  {
+    "WeaponEvolutionGroupId": 54001,
+    "EvolutionOrder": 2,
+    "WeaponId": 540012
+  },
+  {
+    "WeaponEvolutionGroupId": 54002,
+    "EvolutionOrder": 1,
+    "WeaponId": 540021
+  },
+  {
+    "WeaponEvolutionGroupId": 54002,
+    "EvolutionOrder": 2,
+    "WeaponId": 540022
+  },
+  {
+    "WeaponEvolutionGroupId": 55001,
+    "EvolutionOrder": 1,
+    "WeaponId": 550011
+  },
+  {
+    "WeaponEvolutionGroupId": 55001,
+    "EvolutionOrder": 2,
+    "WeaponId": 550012
+  },
+  {
+    "WeaponEvolutionGroupId": 55002,
+    "EvolutionOrder": 1,
+    "WeaponId": 550021
+  },
+  {
+    "WeaponEvolutionGroupId": 55002,
+    "EvolutionOrder": 2,
+    "WeaponId": 550022
+  },
+  {
+    "WeaponEvolutionGroupId": 55003,
+    "EvolutionOrder": 1,
+    "WeaponId": 550031
+  },
+  {
+    "WeaponEvolutionGroupId": 55003,
+    "EvolutionOrder": 2,
+    "WeaponId": 550032
+  }
+]

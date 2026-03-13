@@ -1,0 +1,12 @@
+[
+  {
+    "MainQuestRouteId": 2,
+    "UnlockEvaluateConditionId": 4207,
+    "UnlockTargetMainQuestRouteId": 3
+  },
+  {
+    "MainQuestRouteId": 3,
+    "UnlockEvaluateConditionId": 4307,
+    "UnlockTargetMainQuestRouteId": 2
+  }
+]

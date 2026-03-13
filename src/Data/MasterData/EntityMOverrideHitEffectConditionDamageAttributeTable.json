@@ -1,0 +1,27 @@
+[
+  {
+    "OverrideHitEffectConditionId": 1,
+    "IsExcepting": true,
+    "AttributeType": 5
+  },
+  {
+    "OverrideHitEffectConditionId": 2,
+    "IsExcepting": true,
+    "AttributeType": 6
+  },
+  {
+    "OverrideHitEffectConditionId": 3,
+    "IsExcepting": true,
+    "AttributeType": 2
+  },
+  {
+    "OverrideHitEffectConditionId": 4,
+    "IsExcepting": true,
+    "AttributeType": 1
+  },
+  {
+    "OverrideHitEffectConditionId": 5,
+    "IsExcepting": true,
+    "AttributeType": 3
+  }
+]

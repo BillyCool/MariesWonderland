@@ -1,0 +1,42 @@
+[
+  {
+    "QuestSceneChoiceWeaponEffectGroupId": 1,
+    "SortOrder": 1,
+    "WeaponId": 101141
+  },
+  {
+    "QuestSceneChoiceWeaponEffectGroupId": 1,
+    "SortOrder": 2,
+    "WeaponId": 101142
+  },
+  {
+    "QuestSceneChoiceWeaponEffectGroupId": 2,
+    "SortOrder": 1,
+    "WeaponId": 101131
+  },
+  {
+    "QuestSceneChoiceWeaponEffectGroupId": 2,
+    "SortOrder": 2,
+    "WeaponId": 101132
+  },
+  {
+    "QuestSceneChoiceWeaponEffectGroupId": 3,
+    "SortOrder": 1,
+    "WeaponId": 101141
+  },
+  {
+    "QuestSceneChoiceWeaponEffectGroupId": 3,
+    "SortOrder": 2,
+    "WeaponId": 101131
+  },
+  {
+    "QuestSceneChoiceWeaponEffectGroupId": 3,
+    "SortOrder": 3,
+    "WeaponId": 101142
+  },
+  {
+    "QuestSceneChoiceWeaponEffectGroupId": 3,
+    "SortOrder": 4,
+    "WeaponId": 101132
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "QuestSceneId": 2265,
+    "PictureBookNameQuestTextId": 524,
+    "IsExcludeSubflow": false,
+    "IsExcludeRecollection": false
+  },
+  {
+    "QuestSceneId": 2327,
+    "PictureBookNameQuestTextId": 0,
+    "IsExcludeSubflow": true,
+    "IsExcludeRecollection": true
+  }
+]

@@ -1,0 +1,132 @@
+[
+  {
+    "BattleNpcId": 2,
+    "BattleNpcPartsUuid": "17",
+    "StatusIndex": 1,
+    "PartsStatusSubLotteryId": 30,
+    "Level": 15,
+    "StatusKindType": 6,
+    "StatusCalculationType": 1,
+    "StatusChangeValue": 20000
+  },
+  {
+    "BattleNpcId": 2,
+    "BattleNpcPartsUuid": "17",
+    "StatusIndex": 2,
+    "PartsStatusSubLotteryId": 29,
+    "Level": 15,
+    "StatusKindType": 7,
+    "StatusCalculationType": 1,
+    "StatusChangeValue": 1500
+  },
+  {
+    "BattleNpcId": 2,
+    "BattleNpcPartsUuid": "18",
+    "StatusIndex": 1,
+    "PartsStatusSubLotteryId": 30,
+    "Level": 15,
+    "StatusKindType": 6,
+    "StatusCalculationType": 1,
+    "StatusChangeValue": 20000
+  },
+  {
+    "BattleNpcId": 2,
+    "BattleNpcPartsUuid": "18",
+    "StatusIndex": 2,
+    "PartsStatusSubLotteryId": 29,
+    "Level": 15,
+    "StatusKindType": 7,
+    "StatusCalculationType": 1,
+    "StatusChangeValue": 1500
+  },
+  {
+    "BattleNpcId": 2,
+    "BattleNpcPartsUuid": "19",
+    "StatusIndex": 1,
+    "PartsStatusSubLotteryId": 30,
+    "Level": 15,
+    "StatusKindType": 6,
+    "StatusCalculationType": 1,
+    "StatusChangeValue": 20000
+  },
+  {
+    "BattleNpcId": 2,
+    "BattleNpcPartsUuid": "19",
+    "StatusIndex": 2,
+    "PartsStatusSubLotteryId": 29,
+    "Level": 15,
+    "StatusKindType": 7,
+    "StatusCalculationType": 1,
+    "StatusChangeValue": 1500
+  },
+  {
+    "BattleNpcId": 2,
+    "BattleNpcPartsUuid": "20",
+    "StatusIndex": 1,
+    "PartsStatusSubLotteryId": 29,
+    "Level": 15,
+    "StatusKindType": 7,
+    "StatusCalculationType": 1,
+    "StatusChangeValue": 1500
+  },
+  {
+    "BattleNpcId": 2,
+    "BattleNpcPartsUuid": "21",
+    "StatusIndex": 1,
+    "PartsStatusSubLotteryId": 29,
+    "Level": 15,
+    "StatusKindType": 7,
+    "StatusCalculationType": 1,
+    "StatusChangeValue": 1500
+  },
+  {
+    "BattleNpcId": 2,
+    "BattleNpcPartsUuid": "25",
+    "StatusIndex": 1,
+    "PartsStatusSubLotteryId": 29,
+    "Level": 15,
+    "StatusKindType": 7,
+    "StatusCalculationType": 1,
+    "StatusChangeValue": 1500
+  },
+  {
+    "BattleNpcId": 2,
+    "BattleNpcPartsUuid": "26",
+    "StatusIndex": 1,
+    "PartsStatusSubLotteryId": 29,
+    "Level": 15,
+    "StatusKindType": 7,
+    "StatusCalculationType": 1,
+    "StatusChangeValue": 8000
+  },
+  {
+    "BattleNpcId": 2,
+    "BattleNpcPartsUuid": "26",
+    "StatusIndex": 2,
+    "PartsStatusSubLotteryId": 30,
+    "Level": 15,
+    "StatusKindType": 6,
+    "StatusCalculationType": 1,
+    "StatusChangeValue": 8000
+  },
+  {
+    "BattleNpcId": 2,
+    "BattleNpcPartsUuid": "27",
+    "StatusIndex": 1,
+    "PartsStatusSubLotteryId": 33,
+    "Level": 15,
+    "StatusKindType": 2,
+    "StatusCalculationType": 1,
+    "StatusChangeValue": 150
+  },
+  {
+    "BattleNpcId": 2,
+    "BattleNpcPartsUuid": "27",
+    "StatusIndex": 2,
+    "PartsStatusSubLotteryId": 34,
+    "Level": 15,
+    "StatusKindType": 6,
+    "StatusCalculationType": 1,
+    "StatusChangeValue": 52000
+  }
+]

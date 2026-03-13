@@ -1,0 +1,2312 @@
+[
+  {
+    "TipDisplayConditionGroupId": 1003,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 61,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 1004,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 61,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 1005,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 71,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 1006,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 121,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 1007,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 1,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 1008,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 62,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 1010,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 1,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 1011,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 81,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 1012,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 2,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 1013,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 11,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 1014,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 1015,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 31,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 1016,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 41,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 1017,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 51,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 1018,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 61,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 1019,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 71,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 1020,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 81,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 1025,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 1026,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 401,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 1026,
+    "SortOrder": 2,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 337,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 1027,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 301,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 1027,
+    "SortOrder": 2,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 437,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 1028,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 301,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 1028,
+    "SortOrder": 2,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 437,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 1029,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 401,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 1029,
+    "SortOrder": 2,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 337,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 1030,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 314,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 1030,
+    "SortOrder": 2,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 450,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 1031,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 414,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 1031,
+    "SortOrder": 2,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 350,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 2003,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 2,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 2004,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 2,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 2006,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 2,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 2006,
+    "SortOrder": 2,
+    "TipDisplayConditionType": 7,
+    "ConditionValue": 61,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 2007,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 2008,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 2009,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 2010,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 61,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 2013,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 31,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 2014,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 31,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 2026,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 11,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 2027,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 91,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 2028,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 81,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 3008,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 61,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 3015,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 22,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 3025,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 61,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 3027,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 210001,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 3027,
+    "SortOrder": 2,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 210011,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 3027,
+    "SortOrder": 3,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 210021,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 3028,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 42,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4000,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4000,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 4001,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4001,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 4002,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4002,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 4003,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4003,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 4005,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4006,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4005,
+    "SortOrder": 2,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4007,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4005,
+    "SortOrder": 3,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4008,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4005,
+    "SortOrder": 5,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4023,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4006,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4005,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4006,
+    "SortOrder": 2,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4007,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4006,
+    "SortOrder": 3,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4008,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4006,
+    "SortOrder": 5,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4023,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4007,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4005,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4007,
+    "SortOrder": 2,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4006,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4007,
+    "SortOrder": 3,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4008,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4007,
+    "SortOrder": 5,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4023,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4008,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4005,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4008,
+    "SortOrder": 2,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4006,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4008,
+    "SortOrder": 3,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4007,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4008,
+    "SortOrder": 5,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4023,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4013,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4014,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4013,
+    "SortOrder": 2,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4015,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4013,
+    "SortOrder": 3,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4016,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4013,
+    "SortOrder": 4,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4017,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4013,
+    "SortOrder": 5,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4020,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4013,
+    "SortOrder": 6,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4021,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4014,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4013,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4014,
+    "SortOrder": 2,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4015,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4014,
+    "SortOrder": 3,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4016,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4014,
+    "SortOrder": 4,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4017,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4014,
+    "SortOrder": 5,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4020,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4014,
+    "SortOrder": 6,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4021,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4015,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4013,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4015,
+    "SortOrder": 2,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4014,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4015,
+    "SortOrder": 3,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4016,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4015,
+    "SortOrder": 4,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4017,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4015,
+    "SortOrder": 5,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4020,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4015,
+    "SortOrder": 6,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4021,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4016,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4013,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4016,
+    "SortOrder": 2,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4014,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4016,
+    "SortOrder": 3,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4015,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4016,
+    "SortOrder": 4,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4017,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4016,
+    "SortOrder": 5,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4020,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4016,
+    "SortOrder": 6,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4021,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4017,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4013,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4017,
+    "SortOrder": 2,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4014,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4017,
+    "SortOrder": 3,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4015,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4017,
+    "SortOrder": 4,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4016,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4017,
+    "SortOrder": 5,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4020,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4017,
+    "SortOrder": 6,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4021,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4020,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4013,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4020,
+    "SortOrder": 2,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4014,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4020,
+    "SortOrder": 3,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4015,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4020,
+    "SortOrder": 4,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4016,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4020,
+    "SortOrder": 5,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4017,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4020,
+    "SortOrder": 6,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4021,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4021,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4013,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4021,
+    "SortOrder": 2,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4014,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4021,
+    "SortOrder": 3,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4015,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4021,
+    "SortOrder": 4,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4016,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4021,
+    "SortOrder": 5,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4017,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4021,
+    "SortOrder": 6,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4020,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4022,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4022,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 4023,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4005,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4023,
+    "SortOrder": 2,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4006,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4023,
+    "SortOrder": 3,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4007,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4023,
+    "SortOrder": 5,
+    "TipDisplayConditionType": 4,
+    "ConditionValue": 4008,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4024,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 314,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 4024,
+    "SortOrder": 2,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 414,
+    "ConditionOperationType": 2
+  },
+  {
+    "TipDisplayConditionGroupId": 9001,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9002,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9003,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9004,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9005,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9006,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9007,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9008,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9009,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9010,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9011,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9012,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9013,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9014,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9015,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9016,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9017,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9018,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9019,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9020,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9021,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9022,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9023,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9024,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9025,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9026,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9027,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9028,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9029,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9030,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9031,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9032,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9034,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9035,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9036,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9037,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9038,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9039,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9040,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9041,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9042,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9043,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9044,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9045,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9046,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9047,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9048,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9049,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9050,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9051,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9052,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9053,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9054,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9055,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9057,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9058,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9059,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9060,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9061,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9062,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9063,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9064,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9065,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9066,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9067,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9068,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9069,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9070,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9071,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9072,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9073,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9074,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9075,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9076,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9077,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9078,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9079,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9080,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9081,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9082,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9083,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9084,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9085,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9086,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9087,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9088,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9089,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9090,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9091,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9092,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9093,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9094,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9095,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9096,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9097,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9098,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9099,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9100,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9101,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9102,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9103,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9104,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9105,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9106,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9107,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9108,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9109,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9110,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9111,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9112,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9113,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9114,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9115,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9116,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9117,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9118,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9119,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9120,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9121,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9122,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9123,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9124,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9125,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9126,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9127,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9128,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9129,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9130,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9131,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9132,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9133,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9134,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9135,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9136,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9137,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9138,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9139,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9140,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9141,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9142,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 9143,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 1010203,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 18,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 1010204,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 1010205,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 21,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 1010301,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 22,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 1010302,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 23,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 1010303,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 24,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 1010401,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 32,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 1010402,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 32,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 1010403,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 32,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 1010404,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 32,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 1010405,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 34,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 1010407,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 35,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 1010501,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 42,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 1010502,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 42,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 1010503,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 42,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 1010504,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 51,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 1010601,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 52,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 1010801,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 72,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 1010802,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 74,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 1010803,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 74,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 1010804,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 75,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 1010805,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 311,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 1010806,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 411,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 2021701,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 318,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 2021702,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 324,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 2021801,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 325,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 2021802,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 328,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 2021803,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 331,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 2021804,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 334,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 2022001,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 344,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 2022002,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 347,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 2022101,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 351,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 2022102,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 354,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 2022103,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 360,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 2022201,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 361,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 2022202,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 367,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 2022203,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 370,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 2032501,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 418,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 2032502,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 424,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 2032601,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 425,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 2032602,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 428,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 2032603,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 431,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 2032604,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 434,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 2032801,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 444,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 2032802,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 447,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 2032901,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 451,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 2032902,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 454,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 2032903,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 460,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 2033001,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 461,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 2033002,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 467,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 2033003,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 470,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 3043101,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 500,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 3043201,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 502,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 3043301,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 508,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 3043302,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 510,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 3043303,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 511,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 3043304,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 512,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 3043401,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 515,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 3043402,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 517,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 3043403,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 518,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 3043404,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 519,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 3043501,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 523,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 3043502,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 526,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 3043503,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 529,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 3043601,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 530,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 3043602,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 532,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 3043603,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 536,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 3043701,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 540,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 3043702,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 542,
+    "ConditionOperationType": 1
+  },
+  {
+    "TipDisplayConditionGroupId": 3043703,
+    "SortOrder": 1,
+    "TipDisplayConditionType": 5,
+    "ConditionValue": 547,
+    "ConditionOperationType": 1
+  }
+]

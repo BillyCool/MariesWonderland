@@ -1,0 +1,3662 @@
+[
+  {
+    "ConsumableItemTermId": 4,
+    "StartDatetime": 1620439200000,
+    "EndDatetime": 1622685599000
+  },
+  {
+    "ConsumableItemTermId": 5,
+    "StartDatetime": 946652400000,
+    "EndDatetime": 1621216799000
+  },
+  {
+    "ConsumableItemTermId": 6,
+    "StartDatetime": 946652401000,
+    "EndDatetime": 1621216799000
+  },
+  {
+    "ConsumableItemTermId": 7,
+    "StartDatetime": 946652402000,
+    "EndDatetime": 1621216799000
+  },
+  {
+    "ConsumableItemTermId": 8,
+    "StartDatetime": 946652403000,
+    "EndDatetime": 1621216799000
+  },
+  {
+    "ConsumableItemTermId": 9,
+    "StartDatetime": 946652404000,
+    "EndDatetime": 1621216799000
+  },
+  {
+    "ConsumableItemTermId": 10,
+    "StartDatetime": 946652405000,
+    "EndDatetime": 1621216799000
+  },
+  {
+    "ConsumableItemTermId": 11,
+    "StartDatetime": 946652406000,
+    "EndDatetime": 1621216799000
+  },
+  {
+    "ConsumableItemTermId": 12,
+    "StartDatetime": 946652407000,
+    "EndDatetime": 1621216799000
+  },
+  {
+    "ConsumableItemTermId": 13,
+    "StartDatetime": 946652408000,
+    "EndDatetime": 1621216799000
+  },
+  {
+    "ConsumableItemTermId": 14,
+    "StartDatetime": 1621476000000,
+    "EndDatetime": 1622685599000
+  },
+  {
+    "ConsumableItemTermId": 15,
+    "StartDatetime": 1622426400000,
+    "EndDatetime": 1623549599000
+  },
+  {
+    "ConsumableItemTermId": 16,
+    "StartDatetime": 1623376800000,
+    "EndDatetime": 1624586399000
+  },
+  {
+    "ConsumableItemTermId": 17,
+    "StartDatetime": 1624327200000,
+    "EndDatetime": 1625191199000
+  },
+  {
+    "ConsumableItemTermId": 18,
+    "StartDatetime": 1625018400000,
+    "EndDatetime": 1627869599000
+  },
+  {
+    "ConsumableItemTermId": 19,
+    "StartDatetime": 1627696800000,
+    "EndDatetime": 1629424799000
+  },
+  {
+    "ConsumableItemTermId": 20,
+    "StartDatetime": 1625796000000,
+    "EndDatetime": 1627005599000
+  },
+  {
+    "ConsumableItemTermId": 21,
+    "StartDatetime": 1626832800000,
+    "EndDatetime": 1627869599000
+  },
+  {
+    "ConsumableItemTermId": 28,
+    "StartDatetime": 1629252000000,
+    "EndDatetime": 1631066399000
+  },
+  {
+    "ConsumableItemTermId": 29,
+    "StartDatetime": 1630375200000,
+    "EndDatetime": 1631411999000
+  },
+  {
+    "ConsumableItemTermId": 31,
+    "StartDatetime": 1632794400000,
+    "EndDatetime": 1634090399000
+  },
+  {
+    "ConsumableItemTermId": 32,
+    "StartDatetime": 1635645600000,
+    "EndDatetime": 1636682399000
+  },
+  {
+    "ConsumableItemTermId": 33,
+    "StartDatetime": 1637373600000,
+    "EndDatetime": 1638496799000
+  },
+  {
+    "ConsumableItemTermId": 34,
+    "StartDatetime": 1638237600000,
+    "EndDatetime": 1640656799000
+  },
+  {
+    "ConsumableItemTermId": 35,
+    "StartDatetime": 1639965600000,
+    "EndDatetime": 1641135599000
+  },
+  {
+    "ConsumableItemTermId": 36,
+    "StartDatetime": 1640962800000,
+    "EndDatetime": 1642557599000
+  },
+  {
+    "ConsumableItemTermId": 38,
+    "StartDatetime": 1643594400000,
+    "EndDatetime": 1644631199000
+  },
+  {
+    "ConsumableItemTermId": 40,
+    "StartDatetime": 1642730400000,
+    "EndDatetime": 1643767199000
+  },
+  {
+    "ConsumableItemTermId": 42,
+    "StartDatetime": 1645156800000,
+    "EndDatetime": 1647050399000
+  },
+  {
+    "ConsumableItemTermId": 43,
+    "StartDatetime": 1646877600000,
+    "EndDatetime": 1648087199000
+  },
+  {
+    "ConsumableItemTermId": 44,
+    "StartDatetime": 1646877600000,
+    "EndDatetime": 1648087199000
+  },
+  {
+    "ConsumableItemTermId": 45,
+    "StartDatetime": 1647914400000,
+    "EndDatetime": 1648864799000
+  },
+  {
+    "ConsumableItemTermId": 46,
+    "StartDatetime": 1645581600000,
+    "EndDatetime": 1647482399000
+  },
+  {
+    "ConsumableItemTermId": 47,
+    "StartDatetime": 1647914400000,
+    "EndDatetime": 1648864799000
+  },
+  {
+    "ConsumableItemTermId": 48,
+    "StartDatetime": 1652148000000,
+    "EndDatetime": 1655258399000
+  },
+  {
+    "ConsumableItemTermId": 49,
+    "StartDatetime": 1652148000000,
+    "EndDatetime": 1655258399000
+  },
+  {
+    "ConsumableItemTermId": 50,
+    "StartDatetime": 1648692000000,
+    "EndDatetime": 1649815199000
+  },
+  {
+    "ConsumableItemTermId": 51,
+    "StartDatetime": 1648692000000,
+    "EndDatetime": 1649815199000
+  },
+  {
+    "ConsumableItemTermId": 52,
+    "StartDatetime": 1649988000000,
+    "EndDatetime": 1652320799000
+  },
+  {
+    "ConsumableItemTermId": 53,
+    "StartDatetime": 1650938400000,
+    "EndDatetime": 1652234399000
+  },
+  {
+    "ConsumableItemTermId": 54,
+    "StartDatetime": 1650938400000,
+    "EndDatetime": 1652234399000
+  },
+  {
+    "ConsumableItemTermId": 55,
+    "StartDatetime": 1653012000000,
+    "EndDatetime": 1654653599000
+  },
+  {
+    "ConsumableItemTermId": 56,
+    "StartDatetime": 1653012000000,
+    "EndDatetime": 1654653599000
+  },
+  {
+    "ConsumableItemTermId": 57,
+    "StartDatetime": 1653962400000,
+    "EndDatetime": 1654999199000
+  },
+  {
+    "ConsumableItemTermId": 58,
+    "StartDatetime": 1653962400000,
+    "EndDatetime": 1654999199000
+  },
+  {
+    "ConsumableItemTermId": 59,
+    "StartDatetime": 1653962400000,
+    "EndDatetime": 1654999199000
+  },
+  {
+    "ConsumableItemTermId": 60,
+    "StartDatetime": 1655085600000,
+    "EndDatetime": 1657677599000
+  },
+  {
+    "ConsumableItemTermId": 61,
+    "StartDatetime": 1655085600000,
+    "EndDatetime": 1657677599000
+  },
+  {
+    "ConsumableItemTermId": 62,
+    "StartDatetime": 1655085600000,
+    "EndDatetime": 1657677599000
+  },
+  {
+    "ConsumableItemTermId": 63,
+    "StartDatetime": 1655690400000,
+    "EndDatetime": 1657072799000
+  },
+  {
+    "ConsumableItemTermId": 64,
+    "StartDatetime": 1655690400000,
+    "EndDatetime": 1657072799000
+  },
+  {
+    "ConsumableItemTermId": 65,
+    "StartDatetime": 1655690400000,
+    "EndDatetime": 1657072799000
+  },
+  {
+    "ConsumableItemTermId": 67,
+    "StartDatetime": 1656554400000,
+    "EndDatetime": 1659491999000
+  },
+  {
+    "ConsumableItemTermId": 68,
+    "StartDatetime": 1656554400000,
+    "EndDatetime": 1659491999000
+  },
+  {
+    "ConsumableItemTermId": 69,
+    "StartDatetime": 1656554400000,
+    "EndDatetime": 1659491999000
+  },
+  {
+    "ConsumableItemTermId": 70,
+    "StartDatetime": 1656900000000,
+    "EndDatetime": 1658541599000
+  },
+  {
+    "ConsumableItemTermId": 71,
+    "StartDatetime": 1656900000000,
+    "EndDatetime": 1658541599000
+  },
+  {
+    "ConsumableItemTermId": 72,
+    "StartDatetime": 1656900000000,
+    "EndDatetime": 1658541599000
+  },
+  {
+    "ConsumableItemTermId": 74,
+    "StartDatetime": 1662688800000,
+    "EndDatetime": 1665799199000
+  },
+  {
+    "ConsumableItemTermId": 75,
+    "StartDatetime": 1662688800000,
+    "EndDatetime": 1665799199000
+  },
+  {
+    "ConsumableItemTermId": 76,
+    "StartDatetime": 1662688800000,
+    "EndDatetime": 1665799199000
+  },
+  {
+    "ConsumableItemTermId": 77,
+    "StartDatetime": 1658368800000,
+    "EndDatetime": 1659837599000
+  },
+  {
+    "ConsumableItemTermId": 78,
+    "StartDatetime": 1658368800000,
+    "EndDatetime": 1659837599000
+  },
+  {
+    "ConsumableItemTermId": 79,
+    "StartDatetime": 1658368800000,
+    "EndDatetime": 1659837599000
+  },
+  {
+    "ConsumableItemTermId": 80,
+    "StartDatetime": 1659060000000,
+    "EndDatetime": 1660096799000
+  },
+  {
+    "ConsumableItemTermId": 81,
+    "StartDatetime": 1659060000000,
+    "EndDatetime": 1660096799000
+  },
+  {
+    "ConsumableItemTermId": 82,
+    "StartDatetime": 1659060000000,
+    "EndDatetime": 1660096799000
+  },
+  {
+    "ConsumableItemTermId": 83,
+    "StartDatetime": 1659924000000,
+    "EndDatetime": 1661306399000
+  },
+  {
+    "ConsumableItemTermId": 84,
+    "StartDatetime": 1659924000000,
+    "EndDatetime": 1661306399000
+  },
+  {
+    "ConsumableItemTermId": 85,
+    "StartDatetime": 1659924000000,
+    "EndDatetime": 1661306399000
+  },
+  {
+    "ConsumableItemTermId": 86,
+    "StartDatetime": 1659924000000,
+    "EndDatetime": 1661306399000
+  },
+  {
+    "ConsumableItemTermId": 87,
+    "StartDatetime": 1659924000000,
+    "EndDatetime": 1661306399000
+  },
+  {
+    "ConsumableItemTermId": 88,
+    "StartDatetime": 1659924000000,
+    "EndDatetime": 1661306399000
+  },
+  {
+    "ConsumableItemTermId": 89,
+    "StartDatetime": 1660788000000,
+    "EndDatetime": 1662861599000
+  },
+  {
+    "ConsumableItemTermId": 90,
+    "StartDatetime": 1660788000000,
+    "EndDatetime": 1662861599000
+  },
+  {
+    "ConsumableItemTermId": 91,
+    "StartDatetime": 1660788000000,
+    "EndDatetime": 1662861599000
+  },
+  {
+    "ConsumableItemTermId": 92,
+    "StartDatetime": 1663293600000,
+    "EndDatetime": 1665799199000
+  },
+  {
+    "ConsumableItemTermId": 93,
+    "StartDatetime": 1663293600000,
+    "EndDatetime": 1665799199000
+  },
+  {
+    "ConsumableItemTermId": 94,
+    "StartDatetime": 1663293600000,
+    "EndDatetime": 1665799199000
+  },
+  {
+    "ConsumableItemTermId": 95,
+    "StartDatetime": 1663812000000,
+    "EndDatetime": 1665626399000
+  },
+  {
+    "ConsumableItemTermId": 96,
+    "StartDatetime": 1663812000000,
+    "EndDatetime": 1665626399000
+  },
+  {
+    "ConsumableItemTermId": 97,
+    "StartDatetime": 1663812000000,
+    "EndDatetime": 1665626399000
+  },
+  {
+    "ConsumableItemTermId": 98,
+    "StartDatetime": 1664503200000,
+    "EndDatetime": 1665799199000
+  },
+  {
+    "ConsumableItemTermId": 99,
+    "StartDatetime": 1664503200000,
+    "EndDatetime": 1665799199000
+  },
+  {
+    "ConsumableItemTermId": 100,
+    "StartDatetime": 1664503200000,
+    "EndDatetime": 1665799199000
+  },
+  {
+    "ConsumableItemTermId": 101,
+    "StartDatetime": 1666317600000,
+    "EndDatetime": 1667959199000
+  },
+  {
+    "ConsumableItemTermId": 102,
+    "StartDatetime": 1666317600000,
+    "EndDatetime": 1667959199000
+  },
+  {
+    "ConsumableItemTermId": 103,
+    "StartDatetime": 1666317600000,
+    "EndDatetime": 1667959199000
+  },
+  {
+    "ConsumableItemTermId": 104,
+    "StartDatetime": 1667181600000,
+    "EndDatetime": 1668563999000
+  },
+  {
+    "ConsumableItemTermId": 105,
+    "StartDatetime": 1667181600000,
+    "EndDatetime": 1668563999000
+  },
+  {
+    "ConsumableItemTermId": 106,
+    "StartDatetime": 1667181600000,
+    "EndDatetime": 1668563999000
+  },
+  {
+    "ConsumableItemTermId": 108,
+    "StartDatetime": 1669082400000,
+    "EndDatetime": 1670378399000
+  },
+  {
+    "ConsumableItemTermId": 109,
+    "StartDatetime": 1669082400000,
+    "EndDatetime": 1670378399000
+  },
+  {
+    "ConsumableItemTermId": 110,
+    "StartDatetime": 1669082400000,
+    "EndDatetime": 1670378399000
+  },
+  {
+    "ConsumableItemTermId": 111,
+    "StartDatetime": 1671156000000,
+    "EndDatetime": 1672192799000
+  },
+  {
+    "ConsumableItemTermId": 112,
+    "StartDatetime": 1671156000000,
+    "EndDatetime": 1672192799000
+  },
+  {
+    "ConsumableItemTermId": 113,
+    "StartDatetime": 1671156000000,
+    "EndDatetime": 1672192799000
+  },
+  {
+    "ConsumableItemTermId": 114,
+    "StartDatetime": 1669773600000,
+    "EndDatetime": 1672192799000
+  },
+  {
+    "ConsumableItemTermId": 115,
+    "StartDatetime": 1669773600000,
+    "EndDatetime": 1672192799000
+  },
+  {
+    "ConsumableItemTermId": 116,
+    "StartDatetime": 1669773600000,
+    "EndDatetime": 1672192799000
+  },
+  {
+    "ConsumableItemTermId": 117,
+    "StartDatetime": 1672020000000,
+    "EndDatetime": 1673488799000
+  },
+  {
+    "ConsumableItemTermId": 118,
+    "StartDatetime": 1672020000000,
+    "EndDatetime": 1673488799000
+  },
+  {
+    "ConsumableItemTermId": 119,
+    "StartDatetime": 1672020000000,
+    "EndDatetime": 1673488799000
+  },
+  {
+    "ConsumableItemTermId": 120,
+    "StartDatetime": 1672498800000,
+    "EndDatetime": 1674179999000
+  },
+  {
+    "ConsumableItemTermId": 121,
+    "StartDatetime": 1672498800000,
+    "EndDatetime": 1674179999000
+  },
+  {
+    "ConsumableItemTermId": 122,
+    "StartDatetime": 1672498800000,
+    "EndDatetime": 1674179999000
+  },
+  {
+    "ConsumableItemTermId": 123,
+    "StartDatetime": 1672498800000,
+    "EndDatetime": 1674179999000
+  },
+  {
+    "ConsumableItemTermId": 124,
+    "StartDatetime": 1672498800000,
+    "EndDatetime": 1674179999000
+  },
+  {
+    "ConsumableItemTermId": 125,
+    "StartDatetime": 1672498800000,
+    "EndDatetime": 1674179999000
+  },
+  {
+    "ConsumableItemTermId": 126,
+    "StartDatetime": 1672498800000,
+    "EndDatetime": 1675349999000
+  },
+  {
+    "ConsumableItemTermId": 127,
+    "StartDatetime": 1673103600000,
+    "EndDatetime": 1683730799000
+  },
+  {
+    "ConsumableItemTermId": 128,
+    "StartDatetime": 1674439200000,
+    "EndDatetime": 1676426399000
+  },
+  {
+    "ConsumableItemTermId": 129,
+    "StartDatetime": 1674439200000,
+    "EndDatetime": 1676426399000
+  },
+  {
+    "ConsumableItemTermId": 130,
+    "StartDatetime": 1674439200000,
+    "EndDatetime": 1676426399000
+  },
+  {
+    "ConsumableItemTermId": 131,
+    "StartDatetime": 1675130400000,
+    "EndDatetime": 1676426399000
+  },
+  {
+    "ConsumableItemTermId": 132,
+    "StartDatetime": 1675130400000,
+    "EndDatetime": 1676426399000
+  },
+  {
+    "ConsumableItemTermId": 133,
+    "StartDatetime": 1675130400000,
+    "EndDatetime": 1676426399000
+  },
+  {
+    "ConsumableItemTermId": 134,
+    "StartDatetime": 1675648800000,
+    "EndDatetime": 1677031199000
+  },
+  {
+    "ConsumableItemTermId": 135,
+    "StartDatetime": 1675648800000,
+    "EndDatetime": 1677031199000
+  },
+  {
+    "ConsumableItemTermId": 136,
+    "StartDatetime": 1675648800000,
+    "EndDatetime": 1677031199000
+  },
+  {
+    "ConsumableItemTermId": 138,
+    "StartDatetime": 1676685600000,
+    "EndDatetime": 1679623199000
+  },
+  {
+    "ConsumableItemTermId": 139,
+    "StartDatetime": 1676685600000,
+    "EndDatetime": 1679623199000
+  },
+  {
+    "ConsumableItemTermId": 140,
+    "StartDatetime": 1676685600000,
+    "EndDatetime": 1679623199000
+  },
+  {
+    "ConsumableItemTermId": 141,
+    "StartDatetime": 1677204000000,
+    "EndDatetime": 1678240799000
+  },
+  {
+    "ConsumableItemTermId": 142,
+    "StartDatetime": 1677204000000,
+    "EndDatetime": 1678240799000
+  },
+  {
+    "ConsumableItemTermId": 143,
+    "StartDatetime": 1677204000000,
+    "EndDatetime": 1678240799000
+  },
+  {
+    "ConsumableItemTermId": 145,
+    "StartDatetime": 1677549600000,
+    "EndDatetime": 1679623199000
+  },
+  {
+    "ConsumableItemTermId": 146,
+    "StartDatetime": 1677549600000,
+    "EndDatetime": 1679623199000
+  },
+  {
+    "ConsumableItemTermId": 147,
+    "StartDatetime": 1677549600000,
+    "EndDatetime": 1679623199000
+  },
+  {
+    "ConsumableItemTermId": 148,
+    "StartDatetime": 1677549600000,
+    "EndDatetime": 1683730799000
+  },
+  {
+    "ConsumableItemTermId": 149,
+    "StartDatetime": 1680228000000,
+    "EndDatetime": 1683683999000
+  },
+  {
+    "ConsumableItemTermId": 150,
+    "StartDatetime": 1680228000000,
+    "EndDatetime": 1683683999000
+  },
+  {
+    "ConsumableItemTermId": 151,
+    "StartDatetime": 1680228000000,
+    "EndDatetime": 1683683999000
+  },
+  {
+    "ConsumableItemTermId": 152,
+    "StartDatetime": 1680228000000,
+    "EndDatetime": 1683683999000
+  },
+  {
+    "ConsumableItemTermId": 153,
+    "StartDatetime": 1680228000000,
+    "EndDatetime": 1683683999000
+  },
+  {
+    "ConsumableItemTermId": 154,
+    "StartDatetime": 1680228000000,
+    "EndDatetime": 1683683999000
+  },
+  {
+    "ConsumableItemTermId": 155,
+    "StartDatetime": 1679454000000,
+    "EndDatetime": 1681264799000
+  },
+  {
+    "ConsumableItemTermId": 156,
+    "StartDatetime": 1679454000000,
+    "EndDatetime": 1681264799000
+  },
+  {
+    "ConsumableItemTermId": 157,
+    "StartDatetime": 1679454000000,
+    "EndDatetime": 1681264799000
+  },
+  {
+    "ConsumableItemTermId": 159,
+    "StartDatetime": 1680832800000,
+    "EndDatetime": 1682474399000
+  },
+  {
+    "ConsumableItemTermId": 160,
+    "StartDatetime": 1680832800000,
+    "EndDatetime": 1682474399000
+  },
+  {
+    "ConsumableItemTermId": 161,
+    "StartDatetime": 1680832800000,
+    "EndDatetime": 1682474399000
+  },
+  {
+    "ConsumableItemTermId": 164,
+    "StartDatetime": 1682042400000,
+    "EndDatetime": 1683683999000
+  },
+  {
+    "ConsumableItemTermId": 165,
+    "StartDatetime": 1682042400000,
+    "EndDatetime": 1683683999000
+  },
+  {
+    "ConsumableItemTermId": 166,
+    "StartDatetime": 1682042400000,
+    "EndDatetime": 1683683999000
+  },
+  {
+    "ConsumableItemTermId": 168,
+    "StartDatetime": 1682647200000,
+    "EndDatetime": 1684288799000
+  },
+  {
+    "ConsumableItemTermId": 169,
+    "StartDatetime": 1682647200000,
+    "EndDatetime": 1684288799000
+  },
+  {
+    "ConsumableItemTermId": 170,
+    "StartDatetime": 1682647200000,
+    "EndDatetime": 1684288799000
+  },
+  {
+    "ConsumableItemTermId": 171,
+    "StartDatetime": 1685066400000,
+    "EndDatetime": 1686707999000
+  },
+  {
+    "ConsumableItemTermId": 172,
+    "StartDatetime": 1685066400000,
+    "EndDatetime": 1686707999000
+  },
+  {
+    "ConsumableItemTermId": 173,
+    "StartDatetime": 1685066400000,
+    "EndDatetime": 1686707999000
+  },
+  {
+    "ConsumableItemTermId": 174,
+    "StartDatetime": 1685498400000,
+    "EndDatetime": 1687312799000
+  },
+  {
+    "ConsumableItemTermId": 175,
+    "StartDatetime": 1685498400000,
+    "EndDatetime": 1687312799000
+  },
+  {
+    "ConsumableItemTermId": 176,
+    "StartDatetime": 1685498400000,
+    "EndDatetime": 1687312799000
+  },
+  {
+    "ConsumableItemTermId": 177,
+    "StartDatetime": 1686276000000,
+    "EndDatetime": 1689991199000
+  },
+  {
+    "ConsumableItemTermId": 178,
+    "StartDatetime": 1686276000000,
+    "EndDatetime": 1689991199000
+  },
+  {
+    "ConsumableItemTermId": 179,
+    "StartDatetime": 1686276000000,
+    "EndDatetime": 1689991199000
+  },
+  {
+    "ConsumableItemTermId": 180,
+    "StartDatetime": 1686276000000,
+    "EndDatetime": 1689818399000
+  },
+  {
+    "ConsumableItemTermId": 181,
+    "StartDatetime": 1687485600000,
+    "EndDatetime": 1689127199000
+  },
+  {
+    "ConsumableItemTermId": 182,
+    "StartDatetime": 1687485600000,
+    "EndDatetime": 1689127199000
+  },
+  {
+    "ConsumableItemTermId": 183,
+    "StartDatetime": 1687485600000,
+    "EndDatetime": 1689127199000
+  },
+  {
+    "ConsumableItemTermId": 184,
+    "StartDatetime": 1688090400000,
+    "EndDatetime": 1691546399000
+  },
+  {
+    "ConsumableItemTermId": 185,
+    "StartDatetime": 1688090400000,
+    "EndDatetime": 1691546399000
+  },
+  {
+    "ConsumableItemTermId": 186,
+    "StartDatetime": 1688090400000,
+    "EndDatetime": 1691546399000
+  },
+  {
+    "ConsumableItemTermId": 187,
+    "StartDatetime": 1687485600000,
+    "EndDatetime": 1691546399000
+  },
+  {
+    "ConsumableItemTermId": 188,
+    "StartDatetime": 1688090400000,
+    "EndDatetime": 1691546399000
+  },
+  {
+    "ConsumableItemTermId": 189,
+    "StartDatetime": 1688090400000,
+    "EndDatetime": 1691546399000
+  },
+  {
+    "ConsumableItemTermId": 190,
+    "StartDatetime": 1688090400000,
+    "EndDatetime": 1691546399000
+  },
+  {
+    "ConsumableItemTermId": 191,
+    "StartDatetime": 1689300000000,
+    "EndDatetime": 1691546399000
+  },
+  {
+    "ConsumableItemTermId": 192,
+    "StartDatetime": 1689300000000,
+    "EndDatetime": 1691546399000
+  },
+  {
+    "ConsumableItemTermId": 193,
+    "StartDatetime": 1689300000000,
+    "EndDatetime": 1691546399000
+  },
+  {
+    "ConsumableItemTermId": 194,
+    "StartDatetime": 1691373600000,
+    "EndDatetime": 1694570399000
+  },
+  {
+    "ConsumableItemTermId": 195,
+    "StartDatetime": 1690106400000,
+    "EndDatetime": 1694570399000
+  },
+  {
+    "ConsumableItemTermId": 196,
+    "StartDatetime": 1691114400000,
+    "EndDatetime": 1692496799000
+  },
+  {
+    "ConsumableItemTermId": 197,
+    "StartDatetime": 1691114400000,
+    "EndDatetime": 1692496799000
+  },
+  {
+    "ConsumableItemTermId": 198,
+    "StartDatetime": 1691114400000,
+    "EndDatetime": 1692496799000
+  },
+  {
+    "ConsumableItemTermId": 200,
+    "StartDatetime": 1692324000000,
+    "EndDatetime": 1694570399000
+  },
+  {
+    "ConsumableItemTermId": 201,
+    "StartDatetime": 1692324000000,
+    "EndDatetime": 1694570399000
+  },
+  {
+    "ConsumableItemTermId": 202,
+    "StartDatetime": 1692324000000,
+    "EndDatetime": 1694570399000
+  },
+  {
+    "ConsumableItemTermId": 203,
+    "StartDatetime": 1694138400000,
+    "EndDatetime": 1696730399000
+  },
+  {
+    "ConsumableItemTermId": 204,
+    "StartDatetime": 1694138400000,
+    "EndDatetime": 1696730399000
+  },
+  {
+    "ConsumableItemTermId": 205,
+    "StartDatetime": 1694138400000,
+    "EndDatetime": 1696730399000
+  },
+  {
+    "ConsumableItemTermId": 206,
+    "StartDatetime": 1695607200000,
+    "EndDatetime": 1697075999000
+  },
+  {
+    "ConsumableItemTermId": 207,
+    "StartDatetime": 1695607200000,
+    "EndDatetime": 1697075999000
+  },
+  {
+    "ConsumableItemTermId": 208,
+    "StartDatetime": 1695607200000,
+    "EndDatetime": 1697075999000
+  },
+  {
+    "ConsumableItemTermId": 209,
+    "StartDatetime": 1695866400000,
+    "EndDatetime": 1697594399000
+  },
+  {
+    "ConsumableItemTermId": 210,
+    "StartDatetime": 1695866400000,
+    "EndDatetime": 1697594399000
+  },
+  {
+    "ConsumableItemTermId": 211,
+    "StartDatetime": 1695866400000,
+    "EndDatetime": 1697594399000
+  },
+  {
+    "ConsumableItemTermId": 212,
+    "StartDatetime": 1698026400000,
+    "EndDatetime": 1699408799000
+  },
+  {
+    "ConsumableItemTermId": 213,
+    "StartDatetime": 1698026400000,
+    "EndDatetime": 1699408799000
+  },
+  {
+    "ConsumableItemTermId": 214,
+    "StartDatetime": 1698026400000,
+    "EndDatetime": 1699408799000
+  },
+  {
+    "ConsumableItemTermId": 215,
+    "StartDatetime": 1698717600000,
+    "EndDatetime": 1700618399000
+  },
+  {
+    "ConsumableItemTermId": 216,
+    "StartDatetime": 1698717600000,
+    "EndDatetime": 1700618399000
+  },
+  {
+    "ConsumableItemTermId": 217,
+    "StartDatetime": 1698717600000,
+    "EndDatetime": 1700618399000
+  },
+  {
+    "ConsumableItemTermId": 218,
+    "StartDatetime": 1700186400000,
+    "EndDatetime": 1701827999000
+  },
+  {
+    "ConsumableItemTermId": 219,
+    "StartDatetime": 1700186400000,
+    "EndDatetime": 1701827999000
+  },
+  {
+    "ConsumableItemTermId": 220,
+    "StartDatetime": 1700186400000,
+    "EndDatetime": 1701827999000
+  },
+  {
+    "ConsumableItemTermId": 221,
+    "StartDatetime": 1701309600000,
+    "EndDatetime": 1704207599000
+  },
+  {
+    "ConsumableItemTermId": 222,
+    "StartDatetime": 1701309600000,
+    "EndDatetime": 1704207599000
+  },
+  {
+    "ConsumableItemTermId": 223,
+    "StartDatetime": 1701309600000,
+    "EndDatetime": 1704207599000
+  },
+  {
+    "ConsumableItemTermId": 224,
+    "StartDatetime": 1703210400000,
+    "EndDatetime": 1704207599000
+  },
+  {
+    "ConsumableItemTermId": 225,
+    "StartDatetime": 1703210400000,
+    "EndDatetime": 1704207599000
+  },
+  {
+    "ConsumableItemTermId": 226,
+    "StartDatetime": 1703210400000,
+    "EndDatetime": 1704207599000
+  },
+  {
+    "ConsumableItemTermId": 227,
+    "StartDatetime": 1704034800000,
+    "EndDatetime": 1706839199000
+  },
+  {
+    "ConsumableItemTermId": 228,
+    "StartDatetime": 1704034800000,
+    "EndDatetime": 1706839199000
+  },
+  {
+    "ConsumableItemTermId": 229,
+    "StartDatetime": 1704034800000,
+    "EndDatetime": 1706839199000
+  },
+  {
+    "ConsumableItemTermId": 230,
+    "StartDatetime": 1705024800000,
+    "EndDatetime": 1706666399000
+  },
+  {
+    "ConsumableItemTermId": 231,
+    "StartDatetime": 1705024800000,
+    "EndDatetime": 1706666399000
+  },
+  {
+    "ConsumableItemTermId": 232,
+    "StartDatetime": 1705024800000,
+    "EndDatetime": 1706666399000
+  },
+  {
+    "ConsumableItemTermId": 233,
+    "StartDatetime": 1707444000000,
+    "EndDatetime": 1709085599000
+  },
+  {
+    "ConsumableItemTermId": 234,
+    "StartDatetime": 1707444000000,
+    "EndDatetime": 1709085599000
+  },
+  {
+    "ConsumableItemTermId": 235,
+    "StartDatetime": 1707444000000,
+    "EndDatetime": 1709085599000
+  },
+  {
+    "ConsumableItemTermId": 236,
+    "StartDatetime": 1708653600000,
+    "EndDatetime": 1710295199000
+  },
+  {
+    "ConsumableItemTermId": 237,
+    "StartDatetime": 1708653600000,
+    "EndDatetime": 1710295199000
+  },
+  {
+    "ConsumableItemTermId": 238,
+    "StartDatetime": 1708653600000,
+    "EndDatetime": 1710295199000
+  },
+  {
+    "ConsumableItemTermId": 239,
+    "StartDatetime": 1708221600000,
+    "EndDatetime": 1714456799000
+  },
+  {
+    "ConsumableItemTermId": 240,
+    "StartDatetime": 1708221600000,
+    "EndDatetime": 1714456799000
+  },
+  {
+    "ConsumableItemTermId": 241,
+    "StartDatetime": 1708221600000,
+    "EndDatetime": 1714456799000
+  },
+  {
+    "ConsumableItemTermId": 242,
+    "StartDatetime": 1707444000000,
+    "EndDatetime": 1714456799000
+  },
+  {
+    "ConsumableItemTermId": 243,
+    "StartDatetime": 1709172000000,
+    "EndDatetime": 1710899999000
+  },
+  {
+    "ConsumableItemTermId": 244,
+    "StartDatetime": 1709172000000,
+    "EndDatetime": 1710899999000
+  },
+  {
+    "ConsumableItemTermId": 245,
+    "StartDatetime": 1709172000000,
+    "EndDatetime": 1710899999000
+  },
+  {
+    "ConsumableItemTermId": 246,
+    "StartDatetime": 1709863200000,
+    "EndDatetime": 1714456799000
+  },
+  {
+    "ConsumableItemTermId": 247,
+    "StartDatetime": 1709863200000,
+    "EndDatetime": 1714456799000
+  },
+  {
+    "ConsumableItemTermId": 248,
+    "StartDatetime": 1709863200000,
+    "EndDatetime": 1714456799000
+  },
+  {
+    "ConsumableItemTermId": 249,
+    "StartDatetime": 1710468000000,
+    "EndDatetime": 1714456799000
+  },
+  {
+    "ConsumableItemTermId": 250,
+    "StartDatetime": 1710468000000,
+    "EndDatetime": 1714456799000
+  },
+  {
+    "ConsumableItemTermId": 251,
+    "StartDatetime": 1710468000000,
+    "EndDatetime": 1714456799000
+  },
+  {
+    "ConsumableItemTermId": 252,
+    "StartDatetime": 1709863200000,
+    "EndDatetime": 1714456799000
+  },
+  {
+    "ConsumableItemTermId": 1201,
+    "StartDatetime": 1660788000000,
+    "EndDatetime": 1662861599000
+  },
+  {
+    "ConsumableItemTermId": 1202,
+    "StartDatetime": 1666058400000,
+    "EndDatetime": 1668736799000
+  },
+  {
+    "ConsumableItemTermId": 1203,
+    "StartDatetime": 1687140000000,
+    "EndDatetime": 1689818399000
+  },
+  {
+    "ConsumableItemTermId": 1204,
+    "StartDatetime": 1689300000000,
+    "EndDatetime": 1691546399000
+  },
+  {
+    "ConsumableItemTermId": 1205,
+    "StartDatetime": 1696816800000,
+    "EndDatetime": 1699408799000
+  },
+  {
+    "ConsumableItemTermId": 1206,
+    "StartDatetime": 1697421600000,
+    "EndDatetime": 1699408799000
+  },
+  {
+    "ConsumableItemTermId": 1207,
+    "StartDatetime": 1698026400000,
+    "EndDatetime": 1699408799000
+  },
+  {
+    "ConsumableItemTermId": 1208,
+    "StartDatetime": 1698631200000,
+    "EndDatetime": 1699408799000
+  },
+  {
+    "ConsumableItemTermId": 1209,
+    "StartDatetime": 1698631200000,
+    "EndDatetime": 1699408799000
+  },
+  {
+    "ConsumableItemTermId": 1210,
+    "StartDatetime": 1702864800000,
+    "EndDatetime": 1704207599000
+  },
+  {
+    "ConsumableItemTermId": 1211,
+    "StartDatetime": 1702260000000,
+    "EndDatetime": 1704207599000
+  },
+  {
+    "ConsumableItemTermId": 1212,
+    "StartDatetime": 1701655200000,
+    "EndDatetime": 1704207599000
+  },
+  {
+    "ConsumableItemTermId": 1213,
+    "StartDatetime": 1703469600000,
+    "EndDatetime": 1704207599000
+  },
+  {
+    "ConsumableItemTermId": 1214,
+    "StartDatetime": 1703469600000,
+    "EndDatetime": 1704207599000
+  },
+  {
+    "ConsumableItemTermId": 1215,
+    "StartDatetime": 1705197600000,
+    "EndDatetime": 1706147999000
+  },
+  {
+    "ConsumableItemTermId": 1216,
+    "StartDatetime": 1705197600000,
+    "EndDatetime": 1706147999000
+  },
+  {
+    "ConsumableItemTermId": 1217,
+    "StartDatetime": 1705197600000,
+    "EndDatetime": 1706147999000
+  },
+  {
+    "ConsumableItemTermId": 1218,
+    "StartDatetime": 1705197600000,
+    "EndDatetime": 1706147999000
+  },
+  {
+    "ConsumableItemTermId": 1219,
+    "StartDatetime": 1705197600000,
+    "EndDatetime": 1706147999000
+  },
+  {
+    "ConsumableItemTermId": 1220,
+    "StartDatetime": 1706839200000,
+    "EndDatetime": 1714456799000
+  },
+  {
+    "ConsumableItemTermId": 1221,
+    "StartDatetime": 1706839200000,
+    "EndDatetime": 1714456799000
+  },
+  {
+    "ConsumableItemTermId": 1222,
+    "StartDatetime": 1706839200000,
+    "EndDatetime": 1714456799000
+  },
+  {
+    "ConsumableItemTermId": 1223,
+    "StartDatetime": 1709863200000,
+    "EndDatetime": 1714456799000
+  },
+  {
+    "ConsumableItemTermId": 1224,
+    "StartDatetime": 1709863200000,
+    "EndDatetime": 1714456799000
+  },
+  {
+    "ConsumableItemTermId": 3007,
+    "StartDatetime": 1627696800000,
+    "EndDatetime": 1629251999000
+  },
+  {
+    "ConsumableItemTermId": 3008,
+    "StartDatetime": 1628474400000,
+    "EndDatetime": 1629251999000
+  },
+  {
+    "ConsumableItemTermId": 3009,
+    "StartDatetime": 1629252000000,
+    "EndDatetime": 1630893599000
+  },
+  {
+    "ConsumableItemTermId": 3010,
+    "StartDatetime": 1630375200000,
+    "EndDatetime": 1631239199000
+  },
+  {
+    "ConsumableItemTermId": 3011,
+    "StartDatetime": 1632794400000,
+    "EndDatetime": 1633917599000
+  },
+  {
+    "ConsumableItemTermId": 3012,
+    "StartDatetime": 1633917600000,
+    "EndDatetime": 1635127199000
+  },
+  {
+    "ConsumableItemTermId": 3013,
+    "StartDatetime": 1634176800000,
+    "EndDatetime": 1635778799000
+  },
+  {
+    "ConsumableItemTermId": 3014,
+    "StartDatetime": 1635645600000,
+    "EndDatetime": 1636509599000
+  },
+  {
+    "ConsumableItemTermId": 3015,
+    "StartDatetime": 1636509600000,
+    "EndDatetime": 1637287199000
+  },
+  {
+    "ConsumableItemTermId": 3016,
+    "StartDatetime": 1637373600000,
+    "EndDatetime": 1638323999000
+  },
+  {
+    "ConsumableItemTermId": 3017,
+    "StartDatetime": 1638237600000,
+    "EndDatetime": 1640483999000
+  },
+  {
+    "ConsumableItemTermId": 3018,
+    "StartDatetime": 1639101600000,
+    "EndDatetime": 1639965599000
+  },
+  {
+    "ConsumableItemTermId": 3019,
+    "StartDatetime": 1639965600000,
+    "EndDatetime": 1640962799000
+  },
+  {
+    "ConsumableItemTermId": 3020,
+    "StartDatetime": 1640962800000,
+    "EndDatetime": 1642384799000
+  },
+  {
+    "ConsumableItemTermId": 3021,
+    "StartDatetime": 1641866400000,
+    "EndDatetime": 1642816799000
+  },
+  {
+    "ConsumableItemTermId": 3022,
+    "StartDatetime": 1642730400000,
+    "EndDatetime": 1643594399000
+  },
+  {
+    "ConsumableItemTermId": 3023,
+    "StartDatetime": 1643594400000,
+    "EndDatetime": 1644458399000
+  },
+  {
+    "ConsumableItemTermId": 3024,
+    "StartDatetime": 1644458400000,
+    "EndDatetime": 1645149599000
+  },
+  {
+    "ConsumableItemTermId": 3025,
+    "StartDatetime": 1645156800000,
+    "EndDatetime": 1646877599000
+  },
+  {
+    "ConsumableItemTermId": 3026,
+    "StartDatetime": 1645581600000,
+    "EndDatetime": 1647309599000
+  },
+  {
+    "ConsumableItemTermId": 3027,
+    "StartDatetime": 1646013600000,
+    "EndDatetime": 1646877599000
+  },
+  {
+    "ConsumableItemTermId": 3028,
+    "StartDatetime": 1646877600000,
+    "EndDatetime": 1647914399000
+  },
+  {
+    "ConsumableItemTermId": 3029,
+    "StartDatetime": 1647914400000,
+    "EndDatetime": 1648691999000
+  },
+  {
+    "ConsumableItemTermId": 3030,
+    "StartDatetime": 1648692000000,
+    "EndDatetime": 1649642399000
+  },
+  {
+    "ConsumableItemTermId": 3031,
+    "StartDatetime": 1649988000000,
+    "EndDatetime": 1652147999000
+  },
+  {
+    "ConsumableItemTermId": 3032,
+    "StartDatetime": 1649642400000,
+    "EndDatetime": 1650419999000
+  },
+  {
+    "ConsumableItemTermId": 3033,
+    "StartDatetime": 1650938400000,
+    "EndDatetime": 1652061599000
+  },
+  {
+    "ConsumableItemTermId": 3034,
+    "StartDatetime": 1651284000000,
+    "EndDatetime": 1652147999000
+  },
+  {
+    "ConsumableItemTermId": 3035,
+    "StartDatetime": 1652148000000,
+    "EndDatetime": 1655085599000
+  },
+  {
+    "ConsumableItemTermId": 3036,
+    "StartDatetime": 1653012000000,
+    "EndDatetime": 1654480799000
+  },
+  {
+    "ConsumableItemTermId": 3037,
+    "StartDatetime": 1653962400000,
+    "EndDatetime": 1654826399000
+  },
+  {
+    "ConsumableItemTermId": 3038,
+    "StartDatetime": 1654826400000,
+    "EndDatetime": 1655690399000
+  },
+  {
+    "ConsumableItemTermId": 3039,
+    "StartDatetime": 1655085600000,
+    "EndDatetime": 1657504799000
+  },
+  {
+    "ConsumableItemTermId": 3040,
+    "StartDatetime": 1655690400000,
+    "EndDatetime": 1656899999000
+  },
+  {
+    "ConsumableItemTermId": 3041,
+    "StartDatetime": 1656554400000,
+    "EndDatetime": 1659319199000
+  },
+  {
+    "ConsumableItemTermId": 3042,
+    "StartDatetime": 1656900000000,
+    "EndDatetime": 1658368799000
+  },
+  {
+    "ConsumableItemTermId": 3043,
+    "StartDatetime": 1657504800000,
+    "EndDatetime": 1658368799000
+  },
+  {
+    "ConsumableItemTermId": 3044,
+    "StartDatetime": 1658368800000,
+    "EndDatetime": 1659664799000
+  },
+  {
+    "ConsumableItemTermId": 3045,
+    "StartDatetime": 1659060000000,
+    "EndDatetime": 1659923999000
+  },
+  {
+    "ConsumableItemTermId": 3046,
+    "StartDatetime": 1659924000000,
+    "EndDatetime": 1661133599000
+  },
+  {
+    "ConsumableItemTermId": 3047,
+    "StartDatetime": 1659924000000,
+    "EndDatetime": 1661133599000
+  },
+  {
+    "ConsumableItemTermId": 3048,
+    "StartDatetime": 1660788000000,
+    "EndDatetime": 1662688799000
+  },
+  {
+    "ConsumableItemTermId": 3049,
+    "StartDatetime": 1661911200000,
+    "EndDatetime": 1662947999000
+  },
+  {
+    "ConsumableItemTermId": 3050,
+    "StartDatetime": 1662688800000,
+    "EndDatetime": 1665626399000
+  },
+  {
+    "ConsumableItemTermId": 3051,
+    "StartDatetime": 1663293600000,
+    "EndDatetime": 1665626399000
+  },
+  {
+    "ConsumableItemTermId": 3052,
+    "StartDatetime": 1663812000000,
+    "EndDatetime": 1665453599000
+  },
+  {
+    "ConsumableItemTermId": 3053,
+    "StartDatetime": 1664503200000,
+    "EndDatetime": 1665626399000
+  },
+  {
+    "ConsumableItemTermId": 3054,
+    "StartDatetime": 1665626400000,
+    "EndDatetime": 1666576799000
+  },
+  {
+    "ConsumableItemTermId": 3055,
+    "StartDatetime": 1666317600000,
+    "EndDatetime": 1667786399000
+  },
+  {
+    "ConsumableItemTermId": 3056,
+    "StartDatetime": 1667181600000,
+    "EndDatetime": 1668391199000
+  },
+  {
+    "ConsumableItemTermId": 3057,
+    "StartDatetime": 1668132000000,
+    "EndDatetime": 1670810399000
+  },
+  {
+    "ConsumableItemTermId": 3058,
+    "StartDatetime": 1669082400000,
+    "EndDatetime": 1670205599000
+  },
+  {
+    "ConsumableItemTermId": 3059,
+    "StartDatetime": 1669773600000,
+    "EndDatetime": 1672019999000
+  },
+  {
+    "ConsumableItemTermId": 3060,
+    "StartDatetime": 1670551200000,
+    "EndDatetime": 1672019999000
+  },
+  {
+    "ConsumableItemTermId": 3061,
+    "StartDatetime": 1671156000000,
+    "EndDatetime": 1672019999000
+  },
+  {
+    "ConsumableItemTermId": 3062,
+    "StartDatetime": 1672020000000,
+    "EndDatetime": 1673315999000
+  },
+  {
+    "ConsumableItemTermId": 3063,
+    "StartDatetime": 1672498800000,
+    "EndDatetime": 1673834399000
+  },
+  {
+    "ConsumableItemTermId": 3064,
+    "StartDatetime": 1672498800000,
+    "EndDatetime": 1673834399000
+  },
+  {
+    "ConsumableItemTermId": 3065,
+    "StartDatetime": 1673575200000,
+    "EndDatetime": 1675043999000
+  },
+  {
+    "ConsumableItemTermId": 3066,
+    "StartDatetime": 1674439200000,
+    "EndDatetime": 1676253599000
+  },
+  {
+    "ConsumableItemTermId": 3067,
+    "StartDatetime": 1675130400000,
+    "EndDatetime": 1676253599000
+  },
+  {
+    "ConsumableItemTermId": 3068,
+    "StartDatetime": 1675648800000,
+    "EndDatetime": 1676858399000
+  },
+  {
+    "ConsumableItemTermId": 3069,
+    "StartDatetime": 1677204000000,
+    "EndDatetime": 1678067999000
+  },
+  {
+    "ConsumableItemTermId": 3070,
+    "StartDatetime": 1676685600000,
+    "EndDatetime": 1679450399000
+  },
+  {
+    "ConsumableItemTermId": 3071,
+    "StartDatetime": 1677549600000,
+    "EndDatetime": 1679450399000
+  },
+  {
+    "ConsumableItemTermId": 3072,
+    "StartDatetime": 1678413600000,
+    "EndDatetime": 1679882399000
+  },
+  {
+    "ConsumableItemTermId": 3073,
+    "StartDatetime": 1679454000000,
+    "EndDatetime": 1681091999000
+  },
+  {
+    "ConsumableItemTermId": 3074,
+    "StartDatetime": 1680228000000,
+    "EndDatetime": 1683511199000
+  },
+  {
+    "ConsumableItemTermId": 3075,
+    "StartDatetime": 1680228000000,
+    "EndDatetime": 1683511199000
+  },
+  {
+    "ConsumableItemTermId": 3076,
+    "StartDatetime": 1680832800000,
+    "EndDatetime": 1682301599000
+  },
+  {
+    "ConsumableItemTermId": 3077,
+    "StartDatetime": 1682042400000,
+    "EndDatetime": 1683511199000
+  },
+  {
+    "ConsumableItemTermId": 3078,
+    "StartDatetime": 1683511200000,
+    "EndDatetime": 1686275999000
+  },
+  {
+    "ConsumableItemTermId": 3079,
+    "StartDatetime": 1683856800000,
+    "EndDatetime": 1685325599000
+  },
+  {
+    "ConsumableItemTermId": 3080,
+    "StartDatetime": 1682647200000,
+    "EndDatetime": 1684115999000
+  },
+  {
+    "ConsumableItemTermId": 3081,
+    "StartDatetime": 1685066400000,
+    "EndDatetime": 1686535199000
+  },
+  {
+    "ConsumableItemTermId": 3082,
+    "StartDatetime": 1685498400000,
+    "EndDatetime": 1687139999000
+  },
+  {
+    "ConsumableItemTermId": 3083,
+    "StartDatetime": 1686276000000,
+    "EndDatetime": 1689645599000
+  },
+  {
+    "ConsumableItemTermId": 3084,
+    "StartDatetime": 1686880800000,
+    "EndDatetime": 1688349599000
+  },
+  {
+    "ConsumableItemTermId": 3085,
+    "StartDatetime": 1687485600000,
+    "EndDatetime": 1688954399000
+  },
+  {
+    "ConsumableItemTermId": 3086,
+    "StartDatetime": 1688090400000,
+    "EndDatetime": 1691373599000
+  },
+  {
+    "ConsumableItemTermId": 3087,
+    "StartDatetime": 1688090400000,
+    "EndDatetime": 1691373599000
+  },
+  {
+    "ConsumableItemTermId": 3088,
+    "StartDatetime": 1689300000000,
+    "EndDatetime": 1691373599000
+  },
+  {
+    "ConsumableItemTermId": 3089,
+    "StartDatetime": 1688695200000,
+    "EndDatetime": 1690163999000
+  },
+  {
+    "ConsumableItemTermId": 3090,
+    "StartDatetime": 1690164000000,
+    "EndDatetime": 1691373599000
+  },
+  {
+    "ConsumableItemTermId": 3091,
+    "StartDatetime": 1690768800000,
+    "EndDatetime": 1691978399000
+  },
+  {
+    "ConsumableItemTermId": 3092,
+    "StartDatetime": 1691114400000,
+    "EndDatetime": 1692313199000
+  },
+  {
+    "ConsumableItemTermId": 3093,
+    "StartDatetime": 1692324000000,
+    "EndDatetime": 1694397599000
+  },
+  {
+    "ConsumableItemTermId": 3094,
+    "StartDatetime": 1692928800000,
+    "EndDatetime": 1694397599000
+  },
+  {
+    "ConsumableItemTermId": 3095,
+    "StartDatetime": 1693447200000,
+    "EndDatetime": 1695088799000
+  },
+  {
+    "ConsumableItemTermId": 3096,
+    "StartDatetime": 1694138400000,
+    "EndDatetime": 1696557599000
+  },
+  {
+    "ConsumableItemTermId": 3097,
+    "StartDatetime": 1695607200000,
+    "EndDatetime": 1696903199000
+  },
+  {
+    "ConsumableItemTermId": 3098,
+    "StartDatetime": 1695866400000,
+    "EndDatetime": 1697421599000
+  },
+  {
+    "ConsumableItemTermId": 3099,
+    "StartDatetime": 1696557600000,
+    "EndDatetime": 1699235999000
+  },
+  {
+    "ConsumableItemTermId": 3100,
+    "StartDatetime": 1698026400000,
+    "EndDatetime": 1699235999000
+  },
+  {
+    "ConsumableItemTermId": 3101,
+    "StartDatetime": 1699581600000,
+    "EndDatetime": 1700791199000
+  },
+  {
+    "ConsumableItemTermId": 3102,
+    "StartDatetime": 1698717600000,
+    "EndDatetime": 1700445599000
+  },
+  {
+    "ConsumableItemTermId": 3103,
+    "StartDatetime": 1700186400000,
+    "EndDatetime": 1701655199000
+  },
+  {
+    "ConsumableItemTermId": 3104,
+    "StartDatetime": 1701309600000,
+    "EndDatetime": 1704034799000
+  },
+  {
+    "ConsumableItemTermId": 3105,
+    "StartDatetime": 1702000800000,
+    "EndDatetime": 1704034799000
+  },
+  {
+    "ConsumableItemTermId": 3106,
+    "StartDatetime": 1703210400000,
+    "EndDatetime": 1704034799000
+  },
+  {
+    "ConsumableItemTermId": 3107,
+    "StartDatetime": 1704034800000,
+    "EndDatetime": 1706666399000
+  },
+  {
+    "ConsumableItemTermId": 3108,
+    "StartDatetime": 1704420000000,
+    "EndDatetime": 1705888799000
+  },
+  {
+    "ConsumableItemTermId": 3109,
+    "StartDatetime": 1705024800000,
+    "EndDatetime": 1706493599000
+  },
+  {
+    "ConsumableItemTermId": 3110,
+    "StartDatetime": 1707444000000,
+    "EndDatetime": 1708912799000
+  },
+  {
+    "ConsumableItemTermId": 3111,
+    "StartDatetime": 1706666400000,
+    "EndDatetime": 1708221599000
+  },
+  {
+    "ConsumableItemTermId": 3112,
+    "StartDatetime": 1708653600000,
+    "EndDatetime": 1710122399000
+  },
+  {
+    "ConsumableItemTermId": 3113,
+    "StartDatetime": 1708221600000,
+    "EndDatetime": 1714456799000
+  },
+  {
+    "ConsumableItemTermId": 3114,
+    "StartDatetime": 1709172000000,
+    "EndDatetime": 1710727199000
+  },
+  {
+    "ConsumableItemTermId": 3115,
+    "StartDatetime": 1709863200000,
+    "EndDatetime": 1714456799000
+  },
+  {
+    "ConsumableItemTermId": 3116,
+    "StartDatetime": 1710468000000,
+    "EndDatetime": 1714456799000
+  },
+  {
+    "ConsumableItemTermId": 4004,
+    "StartDatetime": 1686535200000,
+    "EndDatetime": 1687096799000
+  },
+  {
+    "ConsumableItemTermId": 4005,
+    "StartDatetime": 1699236000000,
+    "EndDatetime": 1700405999000
+  },
+  {
+    "ConsumableItemTermId": 6005,
+    "StartDatetime": 1628474400000,
+    "EndDatetime": 1629424799000
+  },
+  {
+    "ConsumableItemTermId": 6006,
+    "StartDatetime": 1633917600000,
+    "EndDatetime": 1635299999000
+  },
+  {
+    "ConsumableItemTermId": 6007,
+    "StartDatetime": 1636509600000,
+    "EndDatetime": 1637459999000
+  },
+  {
+    "ConsumableItemTermId": 6008,
+    "StartDatetime": 1639101600000,
+    "EndDatetime": 1640138399000
+  },
+  {
+    "ConsumableItemTermId": 6009,
+    "StartDatetime": 1641866400000,
+    "EndDatetime": 1642989599000
+  },
+  {
+    "ConsumableItemTermId": 6010,
+    "StartDatetime": 1644458400000,
+    "EndDatetime": 1645322399000
+  },
+  {
+    "ConsumableItemTermId": 6011,
+    "StartDatetime": 1646013600000,
+    "EndDatetime": 1647050399000
+  },
+  {
+    "ConsumableItemTermId": 6012,
+    "StartDatetime": 1646013600000,
+    "EndDatetime": 1647050399000
+  },
+  {
+    "ConsumableItemTermId": 6013,
+    "StartDatetime": 1649642400000,
+    "EndDatetime": 1650578399000
+  },
+  {
+    "ConsumableItemTermId": 6014,
+    "StartDatetime": 1649642400000,
+    "EndDatetime": 1650578399000
+  },
+  {
+    "ConsumableItemTermId": 6015,
+    "StartDatetime": 1651284000000,
+    "EndDatetime": 1652320799000
+  },
+  {
+    "ConsumableItemTermId": 6016,
+    "StartDatetime": 1651284000000,
+    "EndDatetime": 1652320799000
+  },
+  {
+    "ConsumableItemTermId": 6017,
+    "StartDatetime": 1654826400000,
+    "EndDatetime": 1655863199000
+  },
+  {
+    "ConsumableItemTermId": 6018,
+    "StartDatetime": 1654826400000,
+    "EndDatetime": 1655863199000
+  },
+  {
+    "ConsumableItemTermId": 6019,
+    "StartDatetime": 1654826400000,
+    "EndDatetime": 1655863199000
+  },
+  {
+    "ConsumableItemTermId": 6020,
+    "StartDatetime": 1657504800000,
+    "EndDatetime": 1658541599000
+  },
+  {
+    "ConsumableItemTermId": 6021,
+    "StartDatetime": 1657504800000,
+    "EndDatetime": 1658541599000
+  },
+  {
+    "ConsumableItemTermId": 6022,
+    "StartDatetime": 1657504800000,
+    "EndDatetime": 1658541599000
+  },
+  {
+    "ConsumableItemTermId": 6023,
+    "StartDatetime": 1661911200000,
+    "EndDatetime": 1663120799000
+  },
+  {
+    "ConsumableItemTermId": 6024,
+    "StartDatetime": 1661911200000,
+    "EndDatetime": 1663120799000
+  },
+  {
+    "ConsumableItemTermId": 6025,
+    "StartDatetime": 1661911200000,
+    "EndDatetime": 1663120799000
+  },
+  {
+    "ConsumableItemTermId": 6026,
+    "StartDatetime": 1665626400000,
+    "EndDatetime": 1666749599000
+  },
+  {
+    "ConsumableItemTermId": 6027,
+    "StartDatetime": 1665626400000,
+    "EndDatetime": 1666749599000
+  },
+  {
+    "ConsumableItemTermId": 6028,
+    "StartDatetime": 1665626400000,
+    "EndDatetime": 1666749599000
+  },
+  {
+    "ConsumableItemTermId": 6029,
+    "StartDatetime": 1668132000000,
+    "EndDatetime": 1670983199000
+  },
+  {
+    "ConsumableItemTermId": 6030,
+    "StartDatetime": 1668132000000,
+    "EndDatetime": 1670983199000
+  },
+  {
+    "ConsumableItemTermId": 6031,
+    "StartDatetime": 1668132000000,
+    "EndDatetime": 1670983199000
+  },
+  {
+    "ConsumableItemTermId": 6032,
+    "StartDatetime": 1668132000000,
+    "EndDatetime": 1671029999000
+  },
+  {
+    "ConsumableItemTermId": 6033,
+    "StartDatetime": 1670551200000,
+    "EndDatetime": 1672192799000
+  },
+  {
+    "ConsumableItemTermId": 6034,
+    "StartDatetime": 1670551200000,
+    "EndDatetime": 1672192799000
+  },
+  {
+    "ConsumableItemTermId": 6035,
+    "StartDatetime": 1670551200000,
+    "EndDatetime": 1672192799000
+  },
+  {
+    "ConsumableItemTermId": 6036,
+    "StartDatetime": 1673575200000,
+    "EndDatetime": 1675216799000
+  },
+  {
+    "ConsumableItemTermId": 6037,
+    "StartDatetime": 1673575200000,
+    "EndDatetime": 1675216799000
+  },
+  {
+    "ConsumableItemTermId": 6038,
+    "StartDatetime": 1673575200000,
+    "EndDatetime": 1675216799000
+  },
+  {
+    "ConsumableItemTermId": 6039,
+    "StartDatetime": 1678413600000,
+    "EndDatetime": 1680055199000
+  },
+  {
+    "ConsumableItemTermId": 6040,
+    "StartDatetime": 1678413600000,
+    "EndDatetime": 1680055199000
+  },
+  {
+    "ConsumableItemTermId": 6041,
+    "StartDatetime": 1678413600000,
+    "EndDatetime": 1680055199000
+  },
+  {
+    "ConsumableItemTermId": 6042,
+    "StartDatetime": 1683511200000,
+    "EndDatetime": 1686448799000
+  },
+  {
+    "ConsumableItemTermId": 6043,
+    "StartDatetime": 1683511200000,
+    "EndDatetime": 1686448799000
+  },
+  {
+    "ConsumableItemTermId": 6044,
+    "StartDatetime": 1683511200000,
+    "EndDatetime": 1686448799000
+  },
+  {
+    "ConsumableItemTermId": 6045,
+    "StartDatetime": 1683511200000,
+    "EndDatetime": 1686495599000
+  },
+  {
+    "ConsumableItemTermId": 6046,
+    "StartDatetime": 1683856800000,
+    "EndDatetime": 1685498399000
+  },
+  {
+    "ConsumableItemTermId": 6047,
+    "StartDatetime": 1683856800000,
+    "EndDatetime": 1685498399000
+  },
+  {
+    "ConsumableItemTermId": 6048,
+    "StartDatetime": 1683856800000,
+    "EndDatetime": 1685498399000
+  },
+  {
+    "ConsumableItemTermId": 6049,
+    "StartDatetime": 1686880800000,
+    "EndDatetime": 1688522399000
+  },
+  {
+    "ConsumableItemTermId": 6050,
+    "StartDatetime": 1686880800000,
+    "EndDatetime": 1688522399000
+  },
+  {
+    "ConsumableItemTermId": 6051,
+    "StartDatetime": 1686880800000,
+    "EndDatetime": 1688522399000
+  },
+  {
+    "ConsumableItemTermId": 6052,
+    "StartDatetime": 1688695200000,
+    "EndDatetime": 1690336799000
+  },
+  {
+    "ConsumableItemTermId": 6053,
+    "StartDatetime": 1688695200000,
+    "EndDatetime": 1690336799000
+  },
+  {
+    "ConsumableItemTermId": 6054,
+    "StartDatetime": 1688695200000,
+    "EndDatetime": 1690336799000
+  },
+  {
+    "ConsumableItemTermId": 6055,
+    "StartDatetime": 1690164000000,
+    "EndDatetime": 1691546399000
+  },
+  {
+    "ConsumableItemTermId": 6056,
+    "StartDatetime": 1690164000000,
+    "EndDatetime": 1691546399000
+  },
+  {
+    "ConsumableItemTermId": 6057,
+    "StartDatetime": 1690164000000,
+    "EndDatetime": 1691546399000
+  },
+  {
+    "ConsumableItemTermId": 6058,
+    "StartDatetime": 1690768800000,
+    "EndDatetime": 1692151199000
+  },
+  {
+    "ConsumableItemTermId": 6059,
+    "StartDatetime": 1690768800000,
+    "EndDatetime": 1692151199000
+  },
+  {
+    "ConsumableItemTermId": 6060,
+    "StartDatetime": 1690768800000,
+    "EndDatetime": 1692151199000
+  },
+  {
+    "ConsumableItemTermId": 6061,
+    "StartDatetime": 1692928800000,
+    "EndDatetime": 1694570399000
+  },
+  {
+    "ConsumableItemTermId": 6062,
+    "StartDatetime": 1692928800000,
+    "EndDatetime": 1694570399000
+  },
+  {
+    "ConsumableItemTermId": 6063,
+    "StartDatetime": 1692928800000,
+    "EndDatetime": 1694570399000
+  },
+  {
+    "ConsumableItemTermId": 6064,
+    "StartDatetime": 1692324000000,
+    "EndDatetime": 1694397599000
+  },
+  {
+    "ConsumableItemTermId": 6065,
+    "StartDatetime": 1693447200000,
+    "EndDatetime": 1695261599000
+  },
+  {
+    "ConsumableItemTermId": 6066,
+    "StartDatetime": 1696557600000,
+    "EndDatetime": 1699408799000
+  },
+  {
+    "ConsumableItemTermId": 6067,
+    "StartDatetime": 1699581600000,
+    "EndDatetime": 1700963999000
+  },
+  {
+    "ConsumableItemTermId": 6068,
+    "StartDatetime": 1702000800000,
+    "EndDatetime": 1704207599000
+  },
+  {
+    "ConsumableItemTermId": 6069,
+    "StartDatetime": 1703728800000,
+    "EndDatetime": 1705283999000
+  },
+  {
+    "ConsumableItemTermId": 6070,
+    "StartDatetime": 1704420000000,
+    "EndDatetime": 1706061599000
+  },
+  {
+    "ConsumableItemTermId": 6071,
+    "StartDatetime": 1706666400000,
+    "EndDatetime": 1708394399000
+  },
+  {
+    "ConsumableItemTermId": 6072,
+    "StartDatetime": 1708221600000,
+    "EndDatetime": 1709863199000
+  },
+  {
+    "ConsumableItemTermId": 7001,
+    "StartDatetime": 1625018400000,
+    "EndDatetime": 1628560799000
+  },
+  {
+    "ConsumableItemTermId": 7002,
+    "StartDatetime": 1627696800000,
+    "EndDatetime": 1631066399000
+  },
+  {
+    "ConsumableItemTermId": 7003,
+    "StartDatetime": 1630375200000,
+    "EndDatetime": 1633359599000
+  },
+  {
+    "ConsumableItemTermId": 7004,
+    "StartDatetime": 1632794400000,
+    "EndDatetime": 1635951599000
+  },
+  {
+    "ConsumableItemTermId": 7005,
+    "StartDatetime": 1635645600000,
+    "EndDatetime": 1638583199000
+  },
+  {
+    "ConsumableItemTermId": 7006,
+    "StartDatetime": 1638237600000,
+    "EndDatetime": 1641221999000
+  },
+  {
+    "ConsumableItemTermId": 7007,
+    "StartDatetime": 1640962800000,
+    "EndDatetime": 1643900399000
+  },
+  {
+    "ConsumableItemTermId": 7008,
+    "StartDatetime": 1643594400000,
+    "EndDatetime": 1647097199000
+  },
+  {
+    "ConsumableItemTermId": 7009,
+    "StartDatetime": 1646013600000,
+    "EndDatetime": 1648911599000
+  },
+  {
+    "ConsumableItemTermId": 7010,
+    "StartDatetime": 1648692000000,
+    "EndDatetime": 1651589999000
+  },
+  {
+    "ConsumableItemTermId": 7011,
+    "StartDatetime": 1651284000000,
+    "EndDatetime": 1654653599000
+  },
+  {
+    "ConsumableItemTermId": 7012,
+    "StartDatetime": 1653962400000,
+    "EndDatetime": 1656860399000
+  },
+  {
+    "ConsumableItemTermId": 7013,
+    "StartDatetime": 1656554400000,
+    "EndDatetime": 1659625199000
+  },
+  {
+    "ConsumableItemTermId": 7014,
+    "StartDatetime": 1658714400000,
+    "EndDatetime": 1663120799000
+  },
+  {
+    "ConsumableItemTermId": 7015,
+    "StartDatetime": 1661911200000,
+    "EndDatetime": 1665799199000
+  },
+  {
+    "ConsumableItemTermId": 7016,
+    "StartDatetime": 1664503200000,
+    "EndDatetime": 1667959199000
+  },
+  {
+    "ConsumableItemTermId": 7017,
+    "StartDatetime": 1667181600000,
+    "EndDatetime": 1670983199000
+  },
+  {
+    "ConsumableItemTermId": 7018,
+    "StartDatetime": 1669773600000,
+    "EndDatetime": 1672671599000
+  },
+  {
+    "ConsumableItemTermId": 8002,
+    "StartDatetime": 1625018400000,
+    "EndDatetime": 1627869599000
+  },
+  {
+    "ConsumableItemTermId": 8003,
+    "StartDatetime": 1627696800000,
+    "EndDatetime": 1629424799000
+  },
+  {
+    "ConsumableItemTermId": 8004,
+    "StartDatetime": 1625796000000,
+    "EndDatetime": 1627005599000
+  },
+  {
+    "ConsumableItemTermId": 8005,
+    "StartDatetime": 1626832800000,
+    "EndDatetime": 1627869599000
+  },
+  {
+    "ConsumableItemTermId": 8006,
+    "StartDatetime": 1628474400000,
+    "EndDatetime": 1629424799000
+  },
+  {
+    "ConsumableItemTermId": 8007,
+    "StartDatetime": 1629252000000,
+    "EndDatetime": 1631066399000
+  },
+  {
+    "ConsumableItemTermId": 8008,
+    "StartDatetime": 1630375200000,
+    "EndDatetime": 1631411999000
+  },
+  {
+    "ConsumableItemTermId": 8009,
+    "StartDatetime": 1631239200000,
+    "EndDatetime": 1632275999000
+  },
+  {
+    "ConsumableItemTermId": 8010,
+    "StartDatetime": 1631844000000,
+    "EndDatetime": 1632967199000
+  },
+  {
+    "ConsumableItemTermId": 8011,
+    "StartDatetime": 1632794400000,
+    "EndDatetime": 1634090399000
+  },
+  {
+    "ConsumableItemTermId": 8012,
+    "StartDatetime": 1633917600000,
+    "EndDatetime": 1635299999000
+  },
+  {
+    "ConsumableItemTermId": 8013,
+    "StartDatetime": 1634868000000,
+    "EndDatetime": 1635904799000
+  },
+  {
+    "ConsumableItemTermId": 8014,
+    "StartDatetime": 1634695200000,
+    "EndDatetime": 1635127199000
+  },
+  {
+    "ConsumableItemTermId": 8015,
+    "StartDatetime": 1635645600000,
+    "EndDatetime": 1636682399000
+  },
+  {
+    "ConsumableItemTermId": 8016,
+    "StartDatetime": 1636509600000,
+    "EndDatetime": 1637459999000
+  },
+  {
+    "ConsumableItemTermId": 8017,
+    "StartDatetime": 1637373600000,
+    "EndDatetime": 1638496799000
+  },
+  {
+    "ConsumableItemTermId": 8018,
+    "StartDatetime": 1638237600000,
+    "EndDatetime": 1640656799000
+  },
+  {
+    "ConsumableItemTermId": 8019,
+    "StartDatetime": 1639101600000,
+    "EndDatetime": 1640138399000
+  },
+  {
+    "ConsumableItemTermId": 8020,
+    "StartDatetime": 1639965600000,
+    "EndDatetime": 1641135599000
+  },
+  {
+    "ConsumableItemTermId": 8021,
+    "StartDatetime": 1640224800000,
+    "EndDatetime": 1640656799000
+  },
+  {
+    "ConsumableItemTermId": 8022,
+    "StartDatetime": 1640962800000,
+    "EndDatetime": 1642557599000
+  },
+  {
+    "ConsumableItemTermId": 8023,
+    "StartDatetime": 1640962800000,
+    "EndDatetime": 1642557599000
+  },
+  {
+    "ConsumableItemTermId": 8024,
+    "StartDatetime": 1641866400000,
+    "EndDatetime": 1642989599000
+  },
+  {
+    "ConsumableItemTermId": 8025,
+    "StartDatetime": 1642730400000,
+    "EndDatetime": 1643767199000
+  },
+  {
+    "ConsumableItemTermId": 8026,
+    "StartDatetime": 1643594400000,
+    "EndDatetime": 1644631199000
+  },
+  {
+    "ConsumableItemTermId": 8027,
+    "StartDatetime": 1642597200000,
+    "EndDatetime": 1643594399000
+  },
+  {
+    "ConsumableItemTermId": 8029,
+    "StartDatetime": 1643940000000,
+    "EndDatetime": 1645322399000
+  },
+  {
+    "ConsumableItemTermId": 8030,
+    "StartDatetime": 1645156800000,
+    "EndDatetime": 1647050399000
+  },
+  {
+    "ConsumableItemTermId": 8031,
+    "StartDatetime": 1645156800000,
+    "EndDatetime": 1647050399000
+  },
+  {
+    "ConsumableItemTermId": 8032,
+    "StartDatetime": 1646013600000,
+    "EndDatetime": 1647050399000
+  },
+  {
+    "ConsumableItemTermId": 8033,
+    "StartDatetime": 1645581600000,
+    "EndDatetime": 1647482399000
+  },
+  {
+    "ConsumableItemTermId": 8034,
+    "StartDatetime": 1646877600000,
+    "EndDatetime": 1648087199000
+  },
+  {
+    "ConsumableItemTermId": 8035,
+    "StartDatetime": 1647914400000,
+    "EndDatetime": 1648864799000
+  },
+  {
+    "ConsumableItemTermId": 8036,
+    "StartDatetime": 1647223200000,
+    "EndDatetime": 1648000799000
+  },
+  {
+    "ConsumableItemTermId": 8037,
+    "StartDatetime": 1647828000000,
+    "EndDatetime": 1648605599000
+  },
+  {
+    "ConsumableItemTermId": 8038,
+    "StartDatetime": 1648432800000,
+    "EndDatetime": 1649210399000
+  },
+  {
+    "ConsumableItemTermId": 8039,
+    "StartDatetime": 1652148000000,
+    "EndDatetime": 1655258399000
+  },
+  {
+    "ConsumableItemTermId": 8040,
+    "StartDatetime": 1649037600000,
+    "EndDatetime": 1649815199000
+  },
+  {
+    "ConsumableItemTermId": 8041,
+    "StartDatetime": 1649642400000,
+    "EndDatetime": 1650419999000
+  },
+  {
+    "ConsumableItemTermId": 8042,
+    "StartDatetime": 1650247200000,
+    "EndDatetime": 1651024799000
+  },
+  {
+    "ConsumableItemTermId": 8043,
+    "StartDatetime": 1650852000000,
+    "EndDatetime": 1651629599000
+  },
+  {
+    "ConsumableItemTermId": 8044,
+    "StartDatetime": 1648692000000,
+    "EndDatetime": 1649815199000
+  },
+  {
+    "ConsumableItemTermId": 8045,
+    "StartDatetime": 1649988000000,
+    "EndDatetime": 1652320799000
+  },
+  {
+    "ConsumableItemTermId": 8046,
+    "StartDatetime": 1650592800000,
+    "EndDatetime": 1651456799000
+  },
+  {
+    "ConsumableItemTermId": 8047,
+    "StartDatetime": 1649642400000,
+    "EndDatetime": 1650578399000
+  },
+  {
+    "ConsumableItemTermId": 8048,
+    "StartDatetime": 1650938400000,
+    "EndDatetime": 1652234399000
+  },
+  {
+    "ConsumableItemTermId": 8049,
+    "StartDatetime": 1651284000000,
+    "EndDatetime": 1652320799000
+  },
+  {
+    "ConsumableItemTermId": 8050,
+    "StartDatetime": 1652148000000,
+    "EndDatetime": 1655258399000
+  },
+  {
+    "ConsumableItemTermId": 8051,
+    "StartDatetime": 1653012000000,
+    "EndDatetime": 1654653599000
+  },
+  {
+    "ConsumableItemTermId": 8052,
+    "StartDatetime": 1653962400000,
+    "EndDatetime": 1654999199000
+  },
+  {
+    "ConsumableItemTermId": 8055,
+    "StartDatetime": 1651456800000,
+    "EndDatetime": 1652234399000
+  },
+  {
+    "ConsumableItemTermId": 8056,
+    "StartDatetime": 1652061600000,
+    "EndDatetime": 1652839199000
+  },
+  {
+    "ConsumableItemTermId": 8057,
+    "StartDatetime": 1652666400000,
+    "EndDatetime": 1653443999000
+  },
+  {
+    "ConsumableItemTermId": 8058,
+    "StartDatetime": 1653271200000,
+    "EndDatetime": 1654048799000
+  },
+  {
+    "ConsumableItemTermId": 8059,
+    "StartDatetime": 1653876000000,
+    "EndDatetime": 1654653599000
+  },
+  {
+    "ConsumableItemTermId": 8060,
+    "StartDatetime": 1654480800000,
+    "EndDatetime": 1655258399000
+  },
+  {
+    "ConsumableItemTermId": 8061,
+    "StartDatetime": 1655085600000,
+    "EndDatetime": 1655863199000
+  },
+  {
+    "ConsumableItemTermId": 8062,
+    "StartDatetime": 1655690400000,
+    "EndDatetime": 1656475199000
+  },
+  {
+    "ConsumableItemTermId": 8063,
+    "StartDatetime": 1656295200000,
+    "EndDatetime": 1657072799000
+  },
+  {
+    "ConsumableItemTermId": 8064,
+    "StartDatetime": 1655085600000,
+    "EndDatetime": 1657677599000
+  },
+  {
+    "ConsumableItemTermId": 8065,
+    "StartDatetime": 1654826400000,
+    "EndDatetime": 1655863199000
+  },
+  {
+    "ConsumableItemTermId": 8066,
+    "StartDatetime": 1655690400000,
+    "EndDatetime": 1657072799000
+  },
+  {
+    "ConsumableItemTermId": 8067,
+    "StartDatetime": 1656554400000,
+    "EndDatetime": 1659491999000
+  },
+  {
+    "ConsumableItemTermId": 8068,
+    "StartDatetime": 1657504800000,
+    "EndDatetime": 1659491999000
+  },
+  {
+    "ConsumableItemTermId": 8069,
+    "StartDatetime": 1656036000000,
+    "EndDatetime": 1656899999000
+  },
+  {
+    "ConsumableItemTermId": 8070,
+    "StartDatetime": 1658714400000,
+    "EndDatetime": 1659837599000
+  },
+  {
+    "ConsumableItemTermId": 8075,
+    "StartDatetime": 1662688800000,
+    "EndDatetime": 1665799199000
+  },
+  {
+    "ConsumableItemTermId": 8076,
+    "StartDatetime": 1663293600000,
+    "EndDatetime": 1665799199000
+  },
+  {
+    "ConsumableItemTermId": 8084,
+    "StartDatetime": 1658368800000,
+    "EndDatetime": 1659837599000
+  },
+  {
+    "ConsumableItemTermId": 8085,
+    "StartDatetime": 1659060000000,
+    "EndDatetime": 1660096799000
+  },
+  {
+    "ConsumableItemTermId": 8087,
+    "StartDatetime": 1660788000000,
+    "EndDatetime": 1662861599000
+  },
+  {
+    "ConsumableItemTermId": 8088,
+    "StartDatetime": 1659924000000,
+    "EndDatetime": 1660960799000
+  },
+  {
+    "ConsumableItemTermId": 8089,
+    "StartDatetime": 1661479200000,
+    "EndDatetime": 1662861599000
+  },
+  {
+    "ConsumableItemTermId": 8090,
+    "StartDatetime": 1661911200000,
+    "EndDatetime": 1663120799000
+  },
+  {
+    "ConsumableItemTermId": 8091,
+    "StartDatetime": 1663812000000,
+    "EndDatetime": 1665626399000
+  },
+  {
+    "ConsumableItemTermId": 8092,
+    "StartDatetime": 1664157600000,
+    "EndDatetime": 1665280799000
+  },
+  {
+    "ConsumableItemTermId": 8093,
+    "StartDatetime": 1665043200000,
+    "EndDatetime": 1666144799000
+  },
+  {
+    "ConsumableItemTermId": 8100,
+    "StartDatetime": 1660788000000,
+    "EndDatetime": 1662861599000
+  },
+  {
+    "ConsumableItemTermId": 8105,
+    "StartDatetime": 1664503200000,
+    "EndDatetime": 1665799199000
+  },
+  {
+    "ConsumableItemTermId": 8106,
+    "StartDatetime": 1668132000000,
+    "EndDatetime": 1670983199000
+  },
+  {
+    "ConsumableItemTermId": 8107,
+    "StartDatetime": 1668132000000,
+    "EndDatetime": 1670983199000
+  },
+  {
+    "ConsumableItemTermId": 8108,
+    "StartDatetime": 1665626400000,
+    "EndDatetime": 1666749599000
+  },
+  {
+    "ConsumableItemTermId": 8109,
+    "StartDatetime": 1666317600000,
+    "EndDatetime": 1667959199000
+  },
+  {
+    "ConsumableItemTermId": 8110,
+    "StartDatetime": 1666922400000,
+    "EndDatetime": 1667699999000
+  },
+  {
+    "ConsumableItemTermId": 8120,
+    "StartDatetime": 1667181600000,
+    "EndDatetime": 1668563999000
+  },
+  {
+    "ConsumableItemTermId": 8121,
+    "StartDatetime": 1667527200000,
+    "EndDatetime": 1668563999000
+  },
+  {
+    "ConsumableItemTermId": 8122,
+    "StartDatetime": 1669082400000,
+    "EndDatetime": 1670378399000
+  },
+  {
+    "ConsumableItemTermId": 8132,
+    "StartDatetime": 1669302000000,
+    "EndDatetime": 1670378399000
+  },
+  {
+    "ConsumableItemTermId": 8133,
+    "StartDatetime": 1668736800000,
+    "EndDatetime": 1669514399000
+  },
+  {
+    "ConsumableItemTermId": 8134,
+    "StartDatetime": 1669773600000,
+    "EndDatetime": 1672192799000
+  },
+  {
+    "ConsumableItemTermId": 8135,
+    "StartDatetime": 1670551200000,
+    "EndDatetime": 1672192799000
+  },
+  {
+    "ConsumableItemTermId": 8137,
+    "StartDatetime": 1671156000000,
+    "EndDatetime": 1672192799000
+  },
+  {
+    "ConsumableItemTermId": 8138,
+    "StartDatetime": 1671760800000,
+    "EndDatetime": 1672192799000
+  },
+  {
+    "ConsumableItemTermId": 8139,
+    "StartDatetime": 1672020000000,
+    "EndDatetime": 1673488799000
+  },
+  {
+    "ConsumableItemTermId": 8140,
+    "StartDatetime": 1672498800000,
+    "EndDatetime": 1674179999000
+  },
+  {
+    "ConsumableItemTermId": 8141,
+    "StartDatetime": 1672498800000,
+    "EndDatetime": 1674179999000
+  },
+  {
+    "ConsumableItemTermId": 8142,
+    "StartDatetime": 1672192800000,
+    "EndDatetime": 1672671599000
+  },
+  {
+    "ConsumableItemTermId": 8143,
+    "StartDatetime": 1673575200000,
+    "EndDatetime": 1676426399000
+  },
+  {
+    "ConsumableItemTermId": 8144,
+    "StartDatetime": 1674007200000,
+    "EndDatetime": 1674957599000
+  },
+  {
+    "ConsumableItemTermId": 8145,
+    "StartDatetime": 1674439200000,
+    "EndDatetime": 1676426399000
+  },
+  {
+    "ConsumableItemTermId": 8146,
+    "StartDatetime": 1675130400000,
+    "EndDatetime": 1677722399000
+  },
+  {
+    "ConsumableItemTermId": 8147,
+    "StartDatetime": 1674784800000,
+    "EndDatetime": 1675821599000
+  },
+  {
+    "ConsumableItemTermId": 8148,
+    "StartDatetime": 1676685600000,
+    "EndDatetime": 1679623199000
+  },
+  {
+    "ConsumableItemTermId": 8149,
+    "StartDatetime": 1675648800000,
+    "EndDatetime": 1676858399000
+  },
+  {
+    "ConsumableItemTermId": 8150,
+    "StartDatetime": 1676685600000,
+    "EndDatetime": 1679623199000
+  },
+  {
+    "ConsumableItemTermId": 8151,
+    "StartDatetime": 1677549600000,
+    "EndDatetime": 1679623199000
+  },
+  {
+    "ConsumableItemTermId": 8152,
+    "StartDatetime": 1677549600000,
+    "EndDatetime": 1679623199000
+  },
+  {
+    "ConsumableItemTermId": 8153,
+    "StartDatetime": 1677204000000,
+    "EndDatetime": 1678240799000
+  },
+  {
+    "ConsumableItemTermId": 8154,
+    "StartDatetime": 1680228000000,
+    "EndDatetime": 1683683999000
+  },
+  {
+    "ConsumableItemTermId": 8155,
+    "StartDatetime": 1680228000000,
+    "EndDatetime": 1683683999000
+  },
+  {
+    "ConsumableItemTermId": 8156,
+    "StartDatetime": 1678413600000,
+    "EndDatetime": 1681264799000
+  },
+  {
+    "ConsumableItemTermId": 8158,
+    "StartDatetime": 1678672800000,
+    "EndDatetime": 1679623199000
+  },
+  {
+    "ConsumableItemTermId": 8159,
+    "StartDatetime": 1679018400000,
+    "EndDatetime": 1679795999000
+  },
+  {
+    "ConsumableItemTermId": 8160,
+    "StartDatetime": 1679454000000,
+    "EndDatetime": 1681264799000
+  },
+  {
+    "ConsumableItemTermId": 8161,
+    "StartDatetime": 1682042400000,
+    "EndDatetime": 1683683999000
+  },
+  {
+    "ConsumableItemTermId": 8162,
+    "StartDatetime": 1680228000000,
+    "EndDatetime": 1683683999000
+  },
+  {
+    "ConsumableItemTermId": 8163,
+    "StartDatetime": 1680832800000,
+    "EndDatetime": 1683683999000
+  },
+  {
+    "ConsumableItemTermId": 8164,
+    "StartDatetime": 1681437600000,
+    "EndDatetime": 1682819999000
+  },
+  {
+    "ConsumableItemTermId": 8165,
+    "StartDatetime": 1683511200000,
+    "EndDatetime": 1686448799000
+  },
+  {
+    "ConsumableItemTermId": 8166,
+    "StartDatetime": 1682647200000,
+    "EndDatetime": 1684288799000
+  },
+  {
+    "ConsumableItemTermId": 8167,
+    "StartDatetime": 1683856800000,
+    "EndDatetime": 1686707999000
+  },
+  {
+    "ConsumableItemTermId": 8168,
+    "StartDatetime": 1684375200000,
+    "EndDatetime": 1685498399000
+  },
+  {
+    "ConsumableItemTermId": 8169,
+    "StartDatetime": 1685066400000,
+    "EndDatetime": 1686707999000
+  },
+  {
+    "ConsumableItemTermId": 8171,
+    "StartDatetime": 1684461600000,
+    "EndDatetime": 1685671199000
+  },
+  {
+    "ConsumableItemTermId": 8172,
+    "StartDatetime": 1686880800000,
+    "EndDatetime": 1687917599000
+  },
+  {
+    "ConsumableItemTermId": 8174,
+    "StartDatetime": 1685498400000,
+    "EndDatetime": 1688522399000
+  },
+  {
+    "ConsumableItemTermId": 8175,
+    "StartDatetime": 1686276000000,
+    "EndDatetime": 1689818399000
+  },
+  {
+    "ConsumableItemTermId": 8177,
+    "StartDatetime": 1686276000000,
+    "EndDatetime": 1689818399000
+  },
+  {
+    "ConsumableItemTermId": 8178,
+    "StartDatetime": 1686276000000,
+    "EndDatetime": 1689818399000
+  },
+  {
+    "ConsumableItemTermId": 8179,
+    "StartDatetime": 1686276000000,
+    "EndDatetime": 1689818399000
+  },
+  {
+    "ConsumableItemTermId": 8180,
+    "StartDatetime": 1687485600000,
+    "EndDatetime": 1689127199000
+  },
+  {
+    "ConsumableItemTermId": 8183,
+    "StartDatetime": 1688090400000,
+    "EndDatetime": 1691546399000
+  },
+  {
+    "ConsumableItemTermId": 8185,
+    "StartDatetime": 1688695200000,
+    "EndDatetime": 1689472799000
+  },
+  {
+    "ConsumableItemTermId": 8186,
+    "StartDatetime": 1689300000000,
+    "EndDatetime": 1691546399000
+  },
+  {
+    "ConsumableItemTermId": 8188,
+    "StartDatetime": 1690164000000,
+    "EndDatetime": 1691546399000
+  },
+  {
+    "ConsumableItemTermId": 8189,
+    "StartDatetime": 1690509600000,
+    "EndDatetime": 1691546399000
+  },
+  {
+    "ConsumableItemTermId": 8190,
+    "StartDatetime": 1690815600000,
+    "EndDatetime": 1694570399000
+  },
+  {
+    "ConsumableItemTermId": 8191,
+    "StartDatetime": 1690768800000,
+    "EndDatetime": 1692151199000
+  },
+  {
+    "ConsumableItemTermId": 8192,
+    "StartDatetime": 1691114400000,
+    "EndDatetime": 1693706399000
+  },
+  {
+    "ConsumableItemTermId": 8193,
+    "StartDatetime": 1693533600000,
+    "EndDatetime": 1694570399000
+  },
+  {
+    "ConsumableItemTermId": 8194,
+    "StartDatetime": 1693447200000,
+    "EndDatetime": 1696384799000
+  },
+  {
+    "ConsumableItemTermId": 8195,
+    "StartDatetime": 1693447200000,
+    "EndDatetime": 1695261599000
+  },
+  {
+    "ConsumableItemTermId": 8196,
+    "StartDatetime": 1693447200000,
+    "EndDatetime": 1695261599000
+  },
+  {
+    "ConsumableItemTermId": 8197,
+    "StartDatetime": 1694138400000,
+    "EndDatetime": 1696125599000
+  },
+  {
+    "ConsumableItemTermId": 8198,
+    "StartDatetime": 1694138400000,
+    "EndDatetime": 1696125599000
+  },
+  {
+    "ConsumableItemTermId": 8199,
+    "StartDatetime": 1695952800000,
+    "EndDatetime": 1696730399000
+  },
+  {
+    "ConsumableItemTermId": 8200,
+    "StartDatetime": 1695952800000,
+    "EndDatetime": 1696730399000
+  },
+  {
+    "ConsumableItemTermId": 8201,
+    "StartDatetime": 1695607200000,
+    "EndDatetime": 1697075999000
+  },
+  {
+    "ConsumableItemTermId": 8202,
+    "StartDatetime": 1695866400000,
+    "EndDatetime": 1697594399000
+  },
+  {
+    "ConsumableItemTermId": 8203,
+    "StartDatetime": 1696557600000,
+    "EndDatetime": 1698544799000
+  },
+  {
+    "ConsumableItemTermId": 8204,
+    "StartDatetime": 1696557600000,
+    "EndDatetime": 1698544799000
+  },
+  {
+    "ConsumableItemTermId": 8205,
+    "StartDatetime": 1698372000000,
+    "EndDatetime": 1699408799000
+  },
+  {
+    "ConsumableItemTermId": 8206,
+    "StartDatetime": 1698372000000,
+    "EndDatetime": 1699408799000
+  },
+  {
+    "ConsumableItemTermId": 8207,
+    "StartDatetime": 1696816800000,
+    "EndDatetime": 1698890399000
+  },
+  {
+    "ConsumableItemTermId": 8208,
+    "StartDatetime": 1697421600000,
+    "EndDatetime": 1698199199000
+  },
+  {
+    "ConsumableItemTermId": 8209,
+    "StartDatetime": 1698026400000,
+    "EndDatetime": 1698803999000
+  },
+  {
+    "ConsumableItemTermId": 8210,
+    "StartDatetime": 1698026400000,
+    "EndDatetime": 1699408799000
+  },
+  {
+    "ConsumableItemTermId": 8211,
+    "StartDatetime": 1698026400000,
+    "EndDatetime": 1699408799000
+  },
+  {
+    "ConsumableItemTermId": 8212,
+    "StartDatetime": 1698717600000,
+    "EndDatetime": 1700618399000
+  },
+  {
+    "ConsumableItemTermId": 8213,
+    "StartDatetime": 1698717600000,
+    "EndDatetime": 1700618399000
+  },
+  {
+    "ConsumableItemTermId": 8214,
+    "StartDatetime": 1699581600000,
+    "EndDatetime": 1702173599000
+  },
+  {
+    "ConsumableItemTermId": 8216,
+    "StartDatetime": 1700445600000,
+    "EndDatetime": 1701827999000
+  },
+  {
+    "ConsumableItemTermId": 8217,
+    "StartDatetime": 1700445600000,
+    "EndDatetime": 1701827999000
+  },
+  {
+    "ConsumableItemTermId": 8219,
+    "StartDatetime": 1700186400000,
+    "EndDatetime": 1701827999000
+  },
+  {
+    "ConsumableItemTermId": 8220,
+    "StartDatetime": 1700186400000,
+    "EndDatetime": 1701827999000
+  },
+  {
+    "ConsumableItemTermId": 8221,
+    "StartDatetime": 1699927200000,
+    "EndDatetime": 1700963999000
+  },
+  {
+    "ConsumableItemTermId": 8222,
+    "StartDatetime": 1701309600000,
+    "EndDatetime": 1703987999000
+  },
+  {
+    "ConsumableItemTermId": 8223,
+    "StartDatetime": 1701309600000,
+    "EndDatetime": 1703987999000
+  },
+  {
+    "ConsumableItemTermId": 8224,
+    "StartDatetime": 1702260000000,
+    "EndDatetime": 1703642399000
+  },
+  {
+    "ConsumableItemTermId": 8225,
+    "StartDatetime": 1703815200000,
+    "EndDatetime": 1705456799000
+  },
+  {
+    "ConsumableItemTermId": 8226,
+    "StartDatetime": 1700791200000,
+    "EndDatetime": 1701827999000
+  },
+  {
+    "ConsumableItemTermId": 8227,
+    "StartDatetime": 1700791200000,
+    "EndDatetime": 1702432799000
+  },
+  {
+    "ConsumableItemTermId": 8228,
+    "StartDatetime": 1700791200000,
+    "EndDatetime": 1702432799000
+  },
+  {
+    "ConsumableItemTermId": 8229,
+    "StartDatetime": 1703383200000,
+    "EndDatetime": 1704207599000
+  },
+  {
+    "ConsumableItemTermId": 8230,
+    "StartDatetime": 1703383200000,
+    "EndDatetime": 1704207599000
+  },
+  {
+    "ConsumableItemTermId": 8231,
+    "StartDatetime": 1704420000000,
+    "EndDatetime": 1706061599000
+  },
+  {
+    "ConsumableItemTermId": 8232,
+    "StartDatetime": 1704420000000,
+    "EndDatetime": 1706061599000
+  },
+  {
+    "ConsumableItemTermId": 8233,
+    "StartDatetime": 1705024800000,
+    "EndDatetime": 1706666399000
+  },
+  {
+    "ConsumableItemTermId": 8234,
+    "StartDatetime": 1705024800000,
+    "EndDatetime": 1706666399000
+  },
+  {
+    "ConsumableItemTermId": 8235,
+    "StartDatetime": 1706493600000,
+    "EndDatetime": 1707875999000
+  },
+  {
+    "ConsumableItemTermId": 8236,
+    "StartDatetime": 1705284000000,
+    "EndDatetime": 1706839199000
+  },
+  {
+    "ConsumableItemTermId": 8237,
+    "StartDatetime": 1704034800000,
+    "EndDatetime": 1706839199000
+  },
+  {
+    "ConsumableItemTermId": 8238,
+    "StartDatetime": 1704034800000,
+    "EndDatetime": 1706839199000
+  },
+  {
+    "ConsumableItemTermId": 8239,
+    "StartDatetime": 1707444000000,
+    "EndDatetime": 1711897199000
+  },
+  {
+    "ConsumableItemTermId": 8240,
+    "StartDatetime": 1706839200000,
+    "EndDatetime": 1711897199000
+  },
+  {
+    "ConsumableItemTermId": 8241,
+    "StartDatetime": 1708221600000,
+    "EndDatetime": 1714456799000
+  },
+  {
+    "ConsumableItemTermId": 8242,
+    "StartDatetime": 1708221600000,
+    "EndDatetime": 1714456799000
+  },
+  {
+    "ConsumableItemTermId": 8243,
+    "StartDatetime": 1709863200000,
+    "EndDatetime": 1714456799000
+  },
+  {
+    "ConsumableItemTermId": 8244,
+    "StartDatetime": 1711677600000,
+    "EndDatetime": 1714456799000
+  },
+  {
+    "ConsumableItemTermId": 8501,
+    "StartDatetime": 1656900000000,
+    "EndDatetime": 1657677599000
+  },
+  {
+    "ConsumableItemTermId": 8502,
+    "StartDatetime": 1657504800000,
+    "EndDatetime": 1658282399000
+  },
+  {
+    "ConsumableItemTermId": 8503,
+    "StartDatetime": 1658109600000,
+    "EndDatetime": 1658887199000
+  },
+  {
+    "ConsumableItemTermId": 8504,
+    "StartDatetime": 1658109600000,
+    "EndDatetime": 1658887199000
+  },
+  {
+    "ConsumableItemTermId": 8505,
+    "StartDatetime": 1658714400000,
+    "EndDatetime": 1659491999000
+  },
+  {
+    "ConsumableItemTermId": 8506,
+    "StartDatetime": 1658714400000,
+    "EndDatetime": 1659491999000
+  },
+  {
+    "ConsumableItemTermId": 8507,
+    "StartDatetime": 1659319200000,
+    "EndDatetime": 1660096799000
+  },
+  {
+    "ConsumableItemTermId": 8508,
+    "StartDatetime": 1659319200000,
+    "EndDatetime": 1660096799000
+  },
+  {
+    "ConsumableItemTermId": 8509,
+    "StartDatetime": 1659924000000,
+    "EndDatetime": 1660701599000
+  },
+  {
+    "ConsumableItemTermId": 8510,
+    "StartDatetime": 1659924000000,
+    "EndDatetime": 1660701599000
+  },
+  {
+    "ConsumableItemTermId": 8511,
+    "StartDatetime": 1660528800000,
+    "EndDatetime": 1661306399000
+  },
+  {
+    "ConsumableItemTermId": 8512,
+    "StartDatetime": 1660528800000,
+    "EndDatetime": 1661306399000
+  },
+  {
+    "ConsumableItemTermId": 8513,
+    "StartDatetime": 1661133600000,
+    "EndDatetime": 1661911199000
+  },
+  {
+    "ConsumableItemTermId": 8514,
+    "StartDatetime": 1661133600000,
+    "EndDatetime": 1661911199000
+  },
+  {
+    "ConsumableItemTermId": 8515,
+    "StartDatetime": 1661738400000,
+    "EndDatetime": 1662515999000
+  },
+  {
+    "ConsumableItemTermId": 8516,
+    "StartDatetime": 1661738400000,
+    "EndDatetime": 1662515999000
+  },
+  {
+    "ConsumableItemTermId": 8517,
+    "StartDatetime": 1661738400000,
+    "EndDatetime": 1662515999000
+  },
+  {
+    "ConsumableItemTermId": 8518,
+    "StartDatetime": 1662343200000,
+    "EndDatetime": 1663120799000
+  },
+  {
+    "ConsumableItemTermId": 8519,
+    "StartDatetime": 1662343200000,
+    "EndDatetime": 1663120799000
+  },
+  {
+    "ConsumableItemTermId": 8520,
+    "StartDatetime": 1662948000000,
+    "EndDatetime": 1663725599000
+  },
+  {
+    "ConsumableItemTermId": 8521,
+    "StartDatetime": 1662948000000,
+    "EndDatetime": 1663725599000
+  },
+  {
+    "ConsumableItemTermId": 8522,
+    "StartDatetime": 1663552800000,
+    "EndDatetime": 1664330399000
+  },
+  {
+    "ConsumableItemTermId": 8523,
+    "StartDatetime": 1663552800000,
+    "EndDatetime": 1664330399000
+  },
+  {
+    "ConsumableItemTermId": 8524,
+    "StartDatetime": 1664157600000,
+    "EndDatetime": 1664935199000
+  },
+  {
+    "ConsumableItemTermId": 8525,
+    "StartDatetime": 1664157600000,
+    "EndDatetime": 1664935199000
+  },
+  {
+    "ConsumableItemTermId": 8526,
+    "StartDatetime": 1664762400000,
+    "EndDatetime": 1665539999000
+  },
+  {
+    "ConsumableItemTermId": 8527,
+    "StartDatetime": 1664762400000,
+    "EndDatetime": 1665539999000
+  },
+  {
+    "ConsumableItemTermId": 8528,
+    "StartDatetime": 1665367200000,
+    "EndDatetime": 1666144799000
+  },
+  {
+    "ConsumableItemTermId": 8529,
+    "StartDatetime": 1665367200000,
+    "EndDatetime": 1666144799000
+  },
+  {
+    "ConsumableItemTermId": 8530,
+    "StartDatetime": 1665367200000,
+    "EndDatetime": 1666144799000
+  },
+  {
+    "ConsumableItemTermId": 8531,
+    "StartDatetime": 1665972000000,
+    "EndDatetime": 1666749599000
+  },
+  {
+    "ConsumableItemTermId": 8532,
+    "StartDatetime": 1665972000000,
+    "EndDatetime": 1666749599000
+  },
+  {
+    "ConsumableItemTermId": 8533,
+    "StartDatetime": 1666576800000,
+    "EndDatetime": 1667354399000
+  },
+  {
+    "ConsumableItemTermId": 8534,
+    "StartDatetime": 1666576800000,
+    "EndDatetime": 1667354399000
+  },
+  {
+    "ConsumableItemTermId": 8535,
+    "StartDatetime": 1667181600000,
+    "EndDatetime": 1667959199000
+  },
+  {
+    "ConsumableItemTermId": 8536,
+    "StartDatetime": 1667181600000,
+    "EndDatetime": 1667959199000
+  },
+  {
+    "ConsumableItemTermId": 8537,
+    "StartDatetime": 1667786400000,
+    "EndDatetime": 1668563999000
+  },
+  {
+    "ConsumableItemTermId": 8538,
+    "StartDatetime": 1667786400000,
+    "EndDatetime": 1668563999000
+  },
+  {
+    "ConsumableItemTermId": 8539,
+    "StartDatetime": 1668391200000,
+    "EndDatetime": 1669168799000
+  },
+  {
+    "ConsumableItemTermId": 8540,
+    "StartDatetime": 1668391200000,
+    "EndDatetime": 1669168799000
+  },
+  {
+    "ConsumableItemTermId": 8541,
+    "StartDatetime": 1668996000000,
+    "EndDatetime": 1669773599000
+  },
+  {
+    "ConsumableItemTermId": 8542,
+    "StartDatetime": 1668996000000,
+    "EndDatetime": 1669773599000
+  },
+  {
+    "ConsumableItemTermId": 8543,
+    "StartDatetime": 1668996000000,
+    "EndDatetime": 1669773599000
+  },
+  {
+    "ConsumableItemTermId": 8544,
+    "StartDatetime": 1669600800000,
+    "EndDatetime": 1670378399000
+  },
+  {
+    "ConsumableItemTermId": 8545,
+    "StartDatetime": 1669600800000,
+    "EndDatetime": 1670378399000
+  },
+  {
+    "ConsumableItemTermId": 8546,
+    "StartDatetime": 1670205600000,
+    "EndDatetime": 1670983199000
+  },
+  {
+    "ConsumableItemTermId": 8547,
+    "StartDatetime": 1670205600000,
+    "EndDatetime": 1670983199000
+  },
+  {
+    "ConsumableItemTermId": 8548,
+    "StartDatetime": 1670810400000,
+    "EndDatetime": 1671587999000
+  },
+  {
+    "ConsumableItemTermId": 8549,
+    "StartDatetime": 1670810400000,
+    "EndDatetime": 1671587999000
+  },
+  {
+    "ConsumableItemTermId": 8550,
+    "StartDatetime": 1671415200000,
+    "EndDatetime": 1672192799000
+  },
+  {
+    "ConsumableItemTermId": 8551,
+    "StartDatetime": 1671415200000,
+    "EndDatetime": 1672192799000
+  },
+  {
+    "ConsumableItemTermId": 8552,
+    "StartDatetime": 1672020000000,
+    "EndDatetime": 1672797599000
+  },
+  {
+    "ConsumableItemTermId": 8553,
+    "StartDatetime": 1672020000000,
+    "EndDatetime": 1672797599000
+  },
+  {
+    "ConsumableItemTermId": 8554,
+    "StartDatetime": 1672624800000,
+    "EndDatetime": 1673402399000
+  },
+  {
+    "ConsumableItemTermId": 8555,
+    "StartDatetime": 1672624800000,
+    "EndDatetime": 1673402399000
+  },
+  {
+    "ConsumableItemTermId": 8556,
+    "StartDatetime": 1672624800000,
+    "EndDatetime": 1673402399000
+  },
+  {
+    "ConsumableItemTermId": 8557,
+    "StartDatetime": 1673229600000,
+    "EndDatetime": 1674179999000
+  },
+  {
+    "ConsumableItemTermId": 8558,
+    "StartDatetime": 1673229600000,
+    "EndDatetime": 1674179999000
+  },
+  {
+    "ConsumableItemTermId": 8559,
+    "StartDatetime": 1673834400000,
+    "EndDatetime": 1674611999000
+  },
+  {
+    "ConsumableItemTermId": 8560,
+    "StartDatetime": 1673834400000,
+    "EndDatetime": 1674611999000
+  },
+  {
+    "ConsumableItemTermId": 8561,
+    "StartDatetime": 1674439200000,
+    "EndDatetime": 1675216799000
+  },
+  {
+    "ConsumableItemTermId": 8562,
+    "StartDatetime": 1674439200000,
+    "EndDatetime": 1675216799000
+  },
+  {
+    "ConsumableItemTermId": 8563,
+    "StartDatetime": 1675044000000,
+    "EndDatetime": 1675821599000
+  },
+  {
+    "ConsumableItemTermId": 8564,
+    "StartDatetime": 1675044000000,
+    "EndDatetime": 1675821599000
+  },
+  {
+    "ConsumableItemTermId": 8565,
+    "StartDatetime": 1675648800000,
+    "EndDatetime": 1676426399000
+  },
+  {
+    "ConsumableItemTermId": 8566,
+    "StartDatetime": 1675648800000,
+    "EndDatetime": 1676426399000
+  },
+  {
+    "ConsumableItemTermId": 8567,
+    "StartDatetime": 1676253600000,
+    "EndDatetime": 1677031199000
+  },
+  {
+    "ConsumableItemTermId": 8568,
+    "StartDatetime": 1676253600000,
+    "EndDatetime": 1677031199000
+  },
+  {
+    "ConsumableItemTermId": 8569,
+    "StartDatetime": 1676253600000,
+    "EndDatetime": 1677031199000
+  },
+  {
+    "ConsumableItemTermId": 8570,
+    "StartDatetime": 1676858400000,
+    "EndDatetime": 1677635999000
+  },
+  {
+    "ConsumableItemTermId": 8571,
+    "StartDatetime": 1676858400000,
+    "EndDatetime": 1677635999000
+  },
+  {
+    "ConsumableItemTermId": 8572,
+    "StartDatetime": 1677463200000,
+    "EndDatetime": 1678240799000
+  },
+  {
+    "ConsumableItemTermId": 8573,
+    "StartDatetime": 1677463200000,
+    "EndDatetime": 1678240799000
+  },
+  {
+    "ConsumableItemTermId": 8574,
+    "StartDatetime": 1678068000000,
+    "EndDatetime": 1678845599000
+  },
+  {
+    "ConsumableItemTermId": 8575,
+    "StartDatetime": 1678068000000,
+    "EndDatetime": 1678845599000
+  },
+  {
+    "ConsumableItemTermId": 8576,
+    "StartDatetime": 1678672800000,
+    "EndDatetime": 1679450399000
+  },
+  {
+    "ConsumableItemTermId": 8577,
+    "StartDatetime": 1678672800000,
+    "EndDatetime": 1679450399000
+  },
+  {
+    "ConsumableItemTermId": 8578,
+    "StartDatetime": 1679277600000,
+    "EndDatetime": 1680055199000
+  },
+  {
+    "ConsumableItemTermId": 8579,
+    "StartDatetime": 1679277600000,
+    "EndDatetime": 1680055199000
+  },
+  {
+    "ConsumableItemTermId": 8580,
+    "StartDatetime": 1679882400000,
+    "EndDatetime": 1680659999000
+  },
+  {
+    "ConsumableItemTermId": 8581,
+    "StartDatetime": 1679882400000,
+    "EndDatetime": 1680659999000
+  },
+  {
+    "ConsumableItemTermId": 8582,
+    "StartDatetime": 1679882400000,
+    "EndDatetime": 1680659999000
+  },
+  {
+    "ConsumableItemTermId": 8583,
+    "StartDatetime": 1680487200000,
+    "EndDatetime": 1681264799000
+  },
+  {
+    "ConsumableItemTermId": 8584,
+    "StartDatetime": 1680487200000,
+    "EndDatetime": 1681264799000
+  },
+  {
+    "ConsumableItemTermId": 8585,
+    "StartDatetime": 1681092000000,
+    "EndDatetime": 1681869599000
+  },
+  {
+    "ConsumableItemTermId": 8586,
+    "StartDatetime": 1681092000000,
+    "EndDatetime": 1681869599000
+  },
+  {
+    "ConsumableItemTermId": 8587,
+    "StartDatetime": 1681696800000,
+    "EndDatetime": 1682474399000
+  },
+  {
+    "ConsumableItemTermId": 8588,
+    "StartDatetime": 1681696800000,
+    "EndDatetime": 1682474399000
+  },
+  {
+    "ConsumableItemTermId": 8589,
+    "StartDatetime": 1682301600000,
+    "EndDatetime": 1683079199000
+  },
+  {
+    "ConsumableItemTermId": 8590,
+    "StartDatetime": 1682301600000,
+    "EndDatetime": 1683079199000
+  },
+  {
+    "ConsumableItemTermId": 8591,
+    "StartDatetime": 1682906400000,
+    "EndDatetime": 1683683999000
+  },
+  {
+    "ConsumableItemTermId": 8592,
+    "StartDatetime": 1682906400000,
+    "EndDatetime": 1683683999000
+  }
+]

@@ -1,0 +1,240 @@
+[
+  {
+    "StainedGlassStatusUpGroupId": 210001,
+    "GroupIndex": 1,
+    "StatusKindType": 2,
+    "StatusCalculationType": 1,
+    "EffectValue": 300
+  },
+  {
+    "StainedGlassStatusUpGroupId": 210001,
+    "GroupIndex": 2,
+    "StatusKindType": 6,
+    "StatusCalculationType": 1,
+    "EffectValue": 4000
+  },
+  {
+    "StainedGlassStatusUpGroupId": 210001,
+    "GroupIndex": 3,
+    "StatusKindType": 7,
+    "StatusCalculationType": 1,
+    "EffectValue": 300
+  },
+  {
+    "StainedGlassStatusUpGroupId": 220001,
+    "GroupIndex": 1,
+    "StatusKindType": 2,
+    "StatusCalculationType": 1,
+    "EffectValue": 150
+  },
+  {
+    "StainedGlassStatusUpGroupId": 220001,
+    "GroupIndex": 2,
+    "StatusKindType": 6,
+    "StatusCalculationType": 1,
+    "EffectValue": 2000
+  },
+  {
+    "StainedGlassStatusUpGroupId": 220001,
+    "GroupIndex": 3,
+    "StatusKindType": 7,
+    "StatusCalculationType": 1,
+    "EffectValue": 150
+  },
+  {
+    "StainedGlassStatusUpGroupId": 220007,
+    "GroupIndex": 1,
+    "StatusKindType": 2,
+    "StatusCalculationType": 1,
+    "EffectValue": 200
+  },
+  {
+    "StainedGlassStatusUpGroupId": 220007,
+    "GroupIndex": 2,
+    "StatusKindType": 6,
+    "StatusCalculationType": 1,
+    "EffectValue": 2400
+  },
+  {
+    "StainedGlassStatusUpGroupId": 220007,
+    "GroupIndex": 3,
+    "StatusKindType": 7,
+    "StatusCalculationType": 1,
+    "EffectValue": 200
+  },
+  {
+    "StainedGlassStatusUpGroupId": 220008,
+    "GroupIndex": 1,
+    "StatusKindType": 2,
+    "StatusCalculationType": 1,
+    "EffectValue": 400
+  },
+  {
+    "StainedGlassStatusUpGroupId": 220008,
+    "GroupIndex": 2,
+    "StatusKindType": 6,
+    "StatusCalculationType": 1,
+    "EffectValue": 2400
+  },
+  {
+    "StainedGlassStatusUpGroupId": 220009,
+    "GroupIndex": 1,
+    "StatusKindType": 2,
+    "StatusCalculationType": 1,
+    "EffectValue": 300
+  },
+  {
+    "StainedGlassStatusUpGroupId": 220009,
+    "GroupIndex": 2,
+    "StatusKindType": 7,
+    "StatusCalculationType": 1,
+    "EffectValue": 300
+  },
+  {
+    "StainedGlassStatusUpGroupId": 220010,
+    "GroupIndex": 1,
+    "StatusKindType": 2,
+    "StatusCalculationType": 1,
+    "EffectValue": 150
+  },
+  {
+    "StainedGlassStatusUpGroupId": 220010,
+    "GroupIndex": 2,
+    "StatusKindType": 6,
+    "StatusCalculationType": 1,
+    "EffectValue": 1200
+  },
+  {
+    "StainedGlassStatusUpGroupId": 220010,
+    "GroupIndex": 3,
+    "StatusKindType": 7,
+    "StatusCalculationType": 1,
+    "EffectValue": 350
+  },
+  {
+    "StainedGlassStatusUpGroupId": 220011,
+    "GroupIndex": 1,
+    "StatusKindType": 6,
+    "StatusCalculationType": 1,
+    "EffectValue": 1200
+  },
+  {
+    "StainedGlassStatusUpGroupId": 220011,
+    "GroupIndex": 2,
+    "StatusKindType": 7,
+    "StatusCalculationType": 1,
+    "EffectValue": 500
+  },
+  {
+    "StainedGlassStatusUpGroupId": 220012,
+    "GroupIndex": 1,
+    "StatusKindType": 2,
+    "StatusCalculationType": 1,
+    "EffectValue": 300
+  },
+  {
+    "StainedGlassStatusUpGroupId": 220012,
+    "GroupIndex": 2,
+    "StatusKindType": 6,
+    "StatusCalculationType": 1,
+    "EffectValue": 3600
+  },
+  {
+    "StainedGlassStatusUpGroupId": 220013,
+    "GroupIndex": 1,
+    "StatusKindType": 2,
+    "StatusCalculationType": 1,
+    "EffectValue": 100
+  },
+  {
+    "StainedGlassStatusUpGroupId": 220013,
+    "GroupIndex": 2,
+    "StatusKindType": 6,
+    "StatusCalculationType": 1,
+    "EffectValue": 2400
+  },
+  {
+    "StainedGlassStatusUpGroupId": 220013,
+    "GroupIndex": 3,
+    "StatusKindType": 7,
+    "StatusCalculationType": 1,
+    "EffectValue": 300
+  },
+  {
+    "StainedGlassStatusUpGroupId": 220018,
+    "GroupIndex": 1,
+    "StatusKindType": 2,
+    "StatusCalculationType": 1,
+    "EffectValue": 400
+  },
+  {
+    "StainedGlassStatusUpGroupId": 220018,
+    "GroupIndex": 2,
+    "StatusKindType": 6,
+    "StatusCalculationType": 1,
+    "EffectValue": 1200
+  },
+  {
+    "StainedGlassStatusUpGroupId": 220018,
+    "GroupIndex": 3,
+    "StatusKindType": 7,
+    "StatusCalculationType": 1,
+    "EffectValue": 100
+  },
+  {
+    "StainedGlassStatusUpGroupId": 220019,
+    "GroupIndex": 1,
+    "StatusKindType": 2,
+    "StatusCalculationType": 1,
+    "EffectValue": 300
+  },
+  {
+    "StainedGlassStatusUpGroupId": 220019,
+    "GroupIndex": 2,
+    "StatusKindType": 6,
+    "StatusCalculationType": 1,
+    "EffectValue": 2400
+  },
+  {
+    "StainedGlassStatusUpGroupId": 220019,
+    "GroupIndex": 3,
+    "StatusKindType": 7,
+    "StatusCalculationType": 1,
+    "EffectValue": 100
+  },
+  {
+    "StainedGlassStatusUpGroupId": 220020,
+    "GroupIndex": 1,
+    "StatusKindType": 2,
+    "StatusCalculationType": 1,
+    "EffectValue": 150
+  },
+  {
+    "StainedGlassStatusUpGroupId": 220020,
+    "GroupIndex": 2,
+    "StatusKindType": 6,
+    "StatusCalculationType": 1,
+    "EffectValue": 3600
+  },
+  {
+    "StainedGlassStatusUpGroupId": 220020,
+    "GroupIndex": 3,
+    "StatusKindType": 7,
+    "StatusCalculationType": 1,
+    "EffectValue": 150
+  },
+  {
+    "StainedGlassStatusUpGroupId": 220026,
+    "GroupIndex": 1,
+    "StatusKindType": 6,
+    "StatusCalculationType": 1,
+    "EffectValue": 3600
+  },
+  {
+    "StainedGlassStatusUpGroupId": 220026,
+    "GroupIndex": 2,
+    "StatusKindType": 7,
+    "StatusCalculationType": 1,
+    "EffectValue": 300
+  }
+]

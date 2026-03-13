@@ -1,0 +1,3512 @@
+[
+  {
+    "SkillBehaviourActionId": 1000001,
+    "SkillPower": 2000,
+    "AttributeType": 2,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000002,
+    "SkillPower": 2100,
+    "AttributeType": 2,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000003,
+    "SkillPower": 2200,
+    "AttributeType": 2,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000004,
+    "SkillPower": 2290,
+    "AttributeType": 2,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000005,
+    "SkillPower": 2400,
+    "AttributeType": 2,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000006,
+    "SkillPower": 2540,
+    "AttributeType": 2,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000007,
+    "SkillPower": 2680,
+    "AttributeType": 2,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000008,
+    "SkillPower": 2820,
+    "AttributeType": 2,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000009,
+    "SkillPower": 2960,
+    "AttributeType": 2,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000010,
+    "SkillPower": 3100,
+    "AttributeType": 2,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000011,
+    "SkillPower": 3260,
+    "AttributeType": 2,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000012,
+    "SkillPower": 3420,
+    "AttributeType": 2,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000013,
+    "SkillPower": 3580,
+    "AttributeType": 2,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000014,
+    "SkillPower": 3740,
+    "AttributeType": 2,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000015,
+    "SkillPower": 4000,
+    "AttributeType": 2,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000016,
+    "SkillPower": 1650,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000017,
+    "SkillPower": 1730,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000018,
+    "SkillPower": 1810,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000019,
+    "SkillPower": 1890,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000020,
+    "SkillPower": 1980,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000021,
+    "SkillPower": 2090,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000022,
+    "SkillPower": 2210,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000023,
+    "SkillPower": 2320,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000024,
+    "SkillPower": 2440,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000025,
+    "SkillPower": 2550,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000026,
+    "SkillPower": 2680,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000027,
+    "SkillPower": 2820,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000028,
+    "SkillPower": 2950,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000029,
+    "SkillPower": 3080,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000030,
+    "SkillPower": 3300,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000031,
+    "SkillPower": 1500,
+    "AttributeType": 1,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000032,
+    "SkillPower": 1570,
+    "AttributeType": 1,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000033,
+    "SkillPower": 1650,
+    "AttributeType": 1,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000034,
+    "SkillPower": 1720,
+    "AttributeType": 1,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000035,
+    "SkillPower": 1800,
+    "AttributeType": 1,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000036,
+    "SkillPower": 1900,
+    "AttributeType": 1,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000037,
+    "SkillPower": 2010,
+    "AttributeType": 1,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000038,
+    "SkillPower": 2110,
+    "AttributeType": 1,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000039,
+    "SkillPower": 2220,
+    "AttributeType": 1,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000040,
+    "SkillPower": 2320,
+    "AttributeType": 1,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000041,
+    "SkillPower": 2440,
+    "AttributeType": 1,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000042,
+    "SkillPower": 2560,
+    "AttributeType": 1,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000043,
+    "SkillPower": 2680,
+    "AttributeType": 1,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000044,
+    "SkillPower": 2800,
+    "AttributeType": 1,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000045,
+    "SkillPower": 3000,
+    "AttributeType": 1,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000046,
+    "SkillPower": 1500,
+    "AttributeType": 5,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000047,
+    "SkillPower": 1570,
+    "AttributeType": 5,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000048,
+    "SkillPower": 1650,
+    "AttributeType": 5,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000049,
+    "SkillPower": 1720,
+    "AttributeType": 5,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000050,
+    "SkillPower": 1800,
+    "AttributeType": 5,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000051,
+    "SkillPower": 1900,
+    "AttributeType": 5,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000052,
+    "SkillPower": 2010,
+    "AttributeType": 5,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000053,
+    "SkillPower": 2110,
+    "AttributeType": 5,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000054,
+    "SkillPower": 2220,
+    "AttributeType": 5,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000055,
+    "SkillPower": 2320,
+    "AttributeType": 5,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000056,
+    "SkillPower": 2440,
+    "AttributeType": 5,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000057,
+    "SkillPower": 2560,
+    "AttributeType": 5,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000058,
+    "SkillPower": 2680,
+    "AttributeType": 5,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000059,
+    "SkillPower": 2800,
+    "AttributeType": 5,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000060,
+    "SkillPower": 3000,
+    "AttributeType": 5,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000061,
+    "SkillPower": 1500,
+    "AttributeType": 6,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000062,
+    "SkillPower": 1570,
+    "AttributeType": 6,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000063,
+    "SkillPower": 1650,
+    "AttributeType": 6,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000064,
+    "SkillPower": 1720,
+    "AttributeType": 6,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000065,
+    "SkillPower": 1800,
+    "AttributeType": 6,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000066,
+    "SkillPower": 1900,
+    "AttributeType": 6,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000067,
+    "SkillPower": 2010,
+    "AttributeType": 6,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000068,
+    "SkillPower": 2110,
+    "AttributeType": 6,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000069,
+    "SkillPower": 2220,
+    "AttributeType": 6,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000070,
+    "SkillPower": 2320,
+    "AttributeType": 6,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000071,
+    "SkillPower": 2440,
+    "AttributeType": 6,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000072,
+    "SkillPower": 2560,
+    "AttributeType": 6,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000073,
+    "SkillPower": 2680,
+    "AttributeType": 6,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000074,
+    "SkillPower": 2800,
+    "AttributeType": 6,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000075,
+    "SkillPower": 3000,
+    "AttributeType": 6,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000076,
+    "SkillPower": 1900,
+    "AttributeType": 1,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000077,
+    "SkillPower": 1990,
+    "AttributeType": 1,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000078,
+    "SkillPower": 2090,
+    "AttributeType": 1,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000079,
+    "SkillPower": 2180,
+    "AttributeType": 1,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000080,
+    "SkillPower": 2280,
+    "AttributeType": 1,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000081,
+    "SkillPower": 2410,
+    "AttributeType": 1,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000082,
+    "SkillPower": 2540,
+    "AttributeType": 1,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000083,
+    "SkillPower": 2670,
+    "AttributeType": 1,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000084,
+    "SkillPower": 2810,
+    "AttributeType": 1,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000085,
+    "SkillPower": 2940,
+    "AttributeType": 1,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000086,
+    "SkillPower": 3090,
+    "AttributeType": 1,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000087,
+    "SkillPower": 3240,
+    "AttributeType": 1,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000088,
+    "SkillPower": 3400,
+    "AttributeType": 1,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000089,
+    "SkillPower": 3550,
+    "AttributeType": 1,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000090,
+    "SkillPower": 3800,
+    "AttributeType": 1,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000091,
+    "SkillPower": 1900,
+    "AttributeType": 2,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000092,
+    "SkillPower": 1990,
+    "AttributeType": 2,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000093,
+    "SkillPower": 2090,
+    "AttributeType": 2,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000094,
+    "SkillPower": 2180,
+    "AttributeType": 2,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000095,
+    "SkillPower": 2280,
+    "AttributeType": 2,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000096,
+    "SkillPower": 2410,
+    "AttributeType": 2,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000097,
+    "SkillPower": 2540,
+    "AttributeType": 2,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000098,
+    "SkillPower": 2670,
+    "AttributeType": 2,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000099,
+    "SkillPower": 2810,
+    "AttributeType": 2,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000100,
+    "SkillPower": 2940,
+    "AttributeType": 2,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000101,
+    "SkillPower": 3090,
+    "AttributeType": 2,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000102,
+    "SkillPower": 3240,
+    "AttributeType": 2,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000103,
+    "SkillPower": 3400,
+    "AttributeType": 2,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000104,
+    "SkillPower": 3550,
+    "AttributeType": 2,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000105,
+    "SkillPower": 3800,
+    "AttributeType": 2,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000106,
+    "SkillPower": 1650,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000107,
+    "SkillPower": 1730,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000108,
+    "SkillPower": 1810,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000109,
+    "SkillPower": 1890,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000110,
+    "SkillPower": 1980,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000111,
+    "SkillPower": 2090,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000112,
+    "SkillPower": 2210,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000113,
+    "SkillPower": 2320,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000114,
+    "SkillPower": 2440,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000115,
+    "SkillPower": 2550,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000116,
+    "SkillPower": 2680,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000117,
+    "SkillPower": 2820,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000118,
+    "SkillPower": 2950,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000119,
+    "SkillPower": 3080,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000120,
+    "SkillPower": 3300,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000121,
+    "SkillPower": 1900,
+    "AttributeType": 1,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000122,
+    "SkillPower": 1990,
+    "AttributeType": 1,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000123,
+    "SkillPower": 2090,
+    "AttributeType": 1,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000124,
+    "SkillPower": 2180,
+    "AttributeType": 1,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000125,
+    "SkillPower": 2280,
+    "AttributeType": 1,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000126,
+    "SkillPower": 2410,
+    "AttributeType": 1,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000127,
+    "SkillPower": 2540,
+    "AttributeType": 1,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000128,
+    "SkillPower": 2670,
+    "AttributeType": 1,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000129,
+    "SkillPower": 2810,
+    "AttributeType": 1,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000130,
+    "SkillPower": 2940,
+    "AttributeType": 1,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000131,
+    "SkillPower": 3090,
+    "AttributeType": 1,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000132,
+    "SkillPower": 3240,
+    "AttributeType": 1,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000133,
+    "SkillPower": 3400,
+    "AttributeType": 1,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000134,
+    "SkillPower": 3550,
+    "AttributeType": 1,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000135,
+    "SkillPower": 3800,
+    "AttributeType": 1,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000136,
+    "SkillPower": 2000,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000137,
+    "SkillPower": 2100,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000138,
+    "SkillPower": 2200,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000139,
+    "SkillPower": 2290,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000140,
+    "SkillPower": 2400,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000141,
+    "SkillPower": 2540,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000142,
+    "SkillPower": 2680,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000143,
+    "SkillPower": 2820,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000144,
+    "SkillPower": 2960,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000145,
+    "SkillPower": 3100,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000146,
+    "SkillPower": 3260,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000147,
+    "SkillPower": 3420,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000148,
+    "SkillPower": 3580,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000149,
+    "SkillPower": 3740,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000150,
+    "SkillPower": 4000,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000151,
+    "SkillPower": 750,
+    "AttributeType": 2,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000152,
+    "SkillPower": 780,
+    "AttributeType": 2,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000153,
+    "SkillPower": 820,
+    "AttributeType": 2,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000154,
+    "SkillPower": 860,
+    "AttributeType": 2,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000155,
+    "SkillPower": 900,
+    "AttributeType": 2,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000156,
+    "SkillPower": 950,
+    "AttributeType": 2,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000157,
+    "SkillPower": 1000,
+    "AttributeType": 2,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000158,
+    "SkillPower": 1050,
+    "AttributeType": 2,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000159,
+    "SkillPower": 1110,
+    "AttributeType": 2,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000160,
+    "SkillPower": 1160,
+    "AttributeType": 2,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000161,
+    "SkillPower": 1220,
+    "AttributeType": 2,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000162,
+    "SkillPower": 1280,
+    "AttributeType": 2,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000163,
+    "SkillPower": 1340,
+    "AttributeType": 2,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000164,
+    "SkillPower": 1400,
+    "AttributeType": 2,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000165,
+    "SkillPower": 1500,
+    "AttributeType": 2,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000166,
+    "SkillPower": 600,
+    "AttributeType": 3,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000167,
+    "SkillPower": 630,
+    "AttributeType": 3,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000168,
+    "SkillPower": 660,
+    "AttributeType": 3,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000169,
+    "SkillPower": 690,
+    "AttributeType": 3,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000170,
+    "SkillPower": 720,
+    "AttributeType": 3,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000171,
+    "SkillPower": 760,
+    "AttributeType": 3,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000172,
+    "SkillPower": 800,
+    "AttributeType": 3,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000173,
+    "SkillPower": 840,
+    "AttributeType": 3,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000174,
+    "SkillPower": 880,
+    "AttributeType": 3,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000175,
+    "SkillPower": 930,
+    "AttributeType": 3,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000176,
+    "SkillPower": 970,
+    "AttributeType": 3,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000177,
+    "SkillPower": 1020,
+    "AttributeType": 3,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000178,
+    "SkillPower": 1070,
+    "AttributeType": 3,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000179,
+    "SkillPower": 1120,
+    "AttributeType": 3,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000180,
+    "SkillPower": 1200,
+    "AttributeType": 3,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000181,
+    "SkillPower": 1650,
+    "AttributeType": 6,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000182,
+    "SkillPower": 1730,
+    "AttributeType": 6,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000183,
+    "SkillPower": 1810,
+    "AttributeType": 6,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000184,
+    "SkillPower": 1890,
+    "AttributeType": 6,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000185,
+    "SkillPower": 1980,
+    "AttributeType": 6,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000186,
+    "SkillPower": 2090,
+    "AttributeType": 6,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000187,
+    "SkillPower": 2210,
+    "AttributeType": 6,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000188,
+    "SkillPower": 2320,
+    "AttributeType": 6,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000189,
+    "SkillPower": 2440,
+    "AttributeType": 6,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000190,
+    "SkillPower": 2550,
+    "AttributeType": 6,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000191,
+    "SkillPower": 2680,
+    "AttributeType": 6,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000192,
+    "SkillPower": 2820,
+    "AttributeType": 6,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000193,
+    "SkillPower": 2950,
+    "AttributeType": 6,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000194,
+    "SkillPower": 3080,
+    "AttributeType": 6,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000195,
+    "SkillPower": 3300,
+    "AttributeType": 6,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000196,
+    "SkillPower": 2000,
+    "AttributeType": 1,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000197,
+    "SkillPower": 2100,
+    "AttributeType": 1,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000198,
+    "SkillPower": 2200,
+    "AttributeType": 1,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000199,
+    "SkillPower": 2290,
+    "AttributeType": 1,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000200,
+    "SkillPower": 2400,
+    "AttributeType": 1,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000201,
+    "SkillPower": 2540,
+    "AttributeType": 1,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000202,
+    "SkillPower": 2680,
+    "AttributeType": 1,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000203,
+    "SkillPower": 2820,
+    "AttributeType": 1,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000204,
+    "SkillPower": 2960,
+    "AttributeType": 1,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000205,
+    "SkillPower": 3100,
+    "AttributeType": 1,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000206,
+    "SkillPower": 3260,
+    "AttributeType": 1,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000207,
+    "SkillPower": 3420,
+    "AttributeType": 1,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000208,
+    "SkillPower": 3580,
+    "AttributeType": 1,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000209,
+    "SkillPower": 3740,
+    "AttributeType": 1,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000210,
+    "SkillPower": 4000,
+    "AttributeType": 1,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000211,
+    "SkillPower": 1500,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000212,
+    "SkillPower": 1570,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000213,
+    "SkillPower": 1650,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000214,
+    "SkillPower": 1720,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000215,
+    "SkillPower": 1800,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000216,
+    "SkillPower": 1900,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000217,
+    "SkillPower": 2010,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000218,
+    "SkillPower": 2110,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000219,
+    "SkillPower": 2220,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000220,
+    "SkillPower": 2320,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000221,
+    "SkillPower": 2440,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000222,
+    "SkillPower": 2560,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000223,
+    "SkillPower": 2680,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000224,
+    "SkillPower": 2800,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000225,
+    "SkillPower": 3000,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000226,
+    "SkillPower": 1000,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000227,
+    "SkillPower": 1050,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000228,
+    "SkillPower": 1100,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000229,
+    "SkillPower": 1140,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000230,
+    "SkillPower": 1200,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000231,
+    "SkillPower": 1270,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000232,
+    "SkillPower": 1340,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000233,
+    "SkillPower": 1410,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000234,
+    "SkillPower": 1480,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000235,
+    "SkillPower": 1550,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000236,
+    "SkillPower": 1630,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000237,
+    "SkillPower": 1710,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000238,
+    "SkillPower": 1790,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000239,
+    "SkillPower": 1870,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000240,
+    "SkillPower": 2000,
+    "AttributeType": 3,
+    "MagnificationRate": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1000241,
+    "SkillPower": 1000,
+    "AttributeType": 3,
+    "MagnificationRate": 1250
+  },
+  {
+    "SkillBehaviourActionId": 1000242,
+    "SkillPower": 1050,
+    "AttributeType": 3,
+    "MagnificationRate": 1250
+  },
+  {
+    "SkillBehaviourActionId": 1000243,
+    "SkillPower": 1100,
+    "AttributeType": 3,
+    "MagnificationRate": 1250
+  },
+  {
+    "SkillBehaviourActionId": 1000244,
+    "SkillPower": 1140,
+    "AttributeType": 3,
+    "MagnificationRate": 1250
+  },
+  {
+    "SkillBehaviourActionId": 1000245,
+    "SkillPower": 1200,
+    "AttributeType": 3,
+    "MagnificationRate": 1250
+  },
+  {
+    "SkillBehaviourActionId": 1000246,
+    "SkillPower": 1270,
+    "AttributeType": 3,
+    "MagnificationRate": 1250
+  },
+  {
+    "SkillBehaviourActionId": 1000247,
+    "SkillPower": 1340,
+    "AttributeType": 3,
+    "MagnificationRate": 1250
+  },
+  {
+    "SkillBehaviourActionId": 1000248,
+    "SkillPower": 1410,
+    "AttributeType": 3,
+    "MagnificationRate": 1250
+  },
+  {
+    "SkillBehaviourActionId": 1000249,
+    "SkillPower": 1480,
+    "AttributeType": 3,
+    "MagnificationRate": 1250
+  },
+  {
+    "SkillBehaviourActionId": 1000250,
+    "SkillPower": 1550,
+    "AttributeType": 3,
+    "MagnificationRate": 1250
+  },
+  {
+    "SkillBehaviourActionId": 1000251,
+    "SkillPower": 1630,
+    "AttributeType": 3,
+    "MagnificationRate": 1250
+  },
+  {
+    "SkillBehaviourActionId": 1000252,
+    "SkillPower": 1710,
+    "AttributeType": 3,
+    "MagnificationRate": 1250
+  },
+  {
+    "SkillBehaviourActionId": 1000253,
+    "SkillPower": 1790,
+    "AttributeType": 3,
+    "MagnificationRate": 1250
+  },
+  {
+    "SkillBehaviourActionId": 1000254,
+    "SkillPower": 1870,
+    "AttributeType": 3,
+    "MagnificationRate": 1250
+  },
+  {
+    "SkillBehaviourActionId": 1000255,
+    "SkillPower": 2000,
+    "AttributeType": 3,
+    "MagnificationRate": 1250
+  },
+  {
+    "SkillBehaviourActionId": 1000256,
+    "SkillPower": 1650,
+    "AttributeType": 3,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000257,
+    "SkillPower": 1730,
+    "AttributeType": 3,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000258,
+    "SkillPower": 1810,
+    "AttributeType": 3,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000259,
+    "SkillPower": 1890,
+    "AttributeType": 3,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000260,
+    "SkillPower": 1980,
+    "AttributeType": 3,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000261,
+    "SkillPower": 2090,
+    "AttributeType": 3,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000262,
+    "SkillPower": 2210,
+    "AttributeType": 3,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000263,
+    "SkillPower": 2320,
+    "AttributeType": 3,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000264,
+    "SkillPower": 2440,
+    "AttributeType": 3,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000265,
+    "SkillPower": 2550,
+    "AttributeType": 3,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000266,
+    "SkillPower": 2680,
+    "AttributeType": 3,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000267,
+    "SkillPower": 2820,
+    "AttributeType": 3,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000268,
+    "SkillPower": 2950,
+    "AttributeType": 3,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000269,
+    "SkillPower": 3080,
+    "AttributeType": 3,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000270,
+    "SkillPower": 3300,
+    "AttributeType": 3,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000271,
+    "SkillPower": 750,
+    "AttributeType": 2,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000272,
+    "SkillPower": 780,
+    "AttributeType": 2,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000273,
+    "SkillPower": 820,
+    "AttributeType": 2,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000274,
+    "SkillPower": 860,
+    "AttributeType": 2,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000275,
+    "SkillPower": 900,
+    "AttributeType": 2,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000276,
+    "SkillPower": 950,
+    "AttributeType": 2,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000277,
+    "SkillPower": 1000,
+    "AttributeType": 2,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000278,
+    "SkillPower": 1050,
+    "AttributeType": 2,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000279,
+    "SkillPower": 1110,
+    "AttributeType": 2,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000280,
+    "SkillPower": 1160,
+    "AttributeType": 2,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000281,
+    "SkillPower": 1220,
+    "AttributeType": 2,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000282,
+    "SkillPower": 1280,
+    "AttributeType": 2,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000283,
+    "SkillPower": 1340,
+    "AttributeType": 2,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000284,
+    "SkillPower": 1400,
+    "AttributeType": 2,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000285,
+    "SkillPower": 1500,
+    "AttributeType": 2,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000286,
+    "SkillPower": 1000,
+    "AttributeType": 5,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000287,
+    "SkillPower": 1050,
+    "AttributeType": 5,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000288,
+    "SkillPower": 1100,
+    "AttributeType": 5,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000289,
+    "SkillPower": 1140,
+    "AttributeType": 5,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000290,
+    "SkillPower": 1200,
+    "AttributeType": 5,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000291,
+    "SkillPower": 1270,
+    "AttributeType": 5,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000292,
+    "SkillPower": 1340,
+    "AttributeType": 5,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000293,
+    "SkillPower": 1410,
+    "AttributeType": 5,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000294,
+    "SkillPower": 1480,
+    "AttributeType": 5,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000295,
+    "SkillPower": 1550,
+    "AttributeType": 5,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000296,
+    "SkillPower": 1630,
+    "AttributeType": 5,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000297,
+    "SkillPower": 1710,
+    "AttributeType": 5,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000298,
+    "SkillPower": 1790,
+    "AttributeType": 5,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000299,
+    "SkillPower": 1870,
+    "AttributeType": 5,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000300,
+    "SkillPower": 2000,
+    "AttributeType": 5,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000301,
+    "SkillPower": 2100,
+    "AttributeType": 5,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000302,
+    "SkillPower": 2200,
+    "AttributeType": 5,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000303,
+    "SkillPower": 2310,
+    "AttributeType": 5,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000304,
+    "SkillPower": 2410,
+    "AttributeType": 5,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000305,
+    "SkillPower": 2520,
+    "AttributeType": 5,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000306,
+    "SkillPower": 2660,
+    "AttributeType": 5,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000307,
+    "SkillPower": 2810,
+    "AttributeType": 5,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000308,
+    "SkillPower": 2960,
+    "AttributeType": 5,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000309,
+    "SkillPower": 3100,
+    "AttributeType": 5,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000310,
+    "SkillPower": 3250,
+    "AttributeType": 5,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000311,
+    "SkillPower": 3420,
+    "AttributeType": 5,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000312,
+    "SkillPower": 3590,
+    "AttributeType": 5,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000313,
+    "SkillPower": 3750,
+    "AttributeType": 5,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000314,
+    "SkillPower": 3920,
+    "AttributeType": 5,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000315,
+    "SkillPower": 4200,
+    "AttributeType": 5,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000316,
+    "SkillPower": 1650,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000317,
+    "SkillPower": 1730,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000318,
+    "SkillPower": 1810,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000319,
+    "SkillPower": 1890,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000320,
+    "SkillPower": 1980,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000321,
+    "SkillPower": 2090,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000322,
+    "SkillPower": 2210,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000323,
+    "SkillPower": 2320,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000324,
+    "SkillPower": 2440,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000325,
+    "SkillPower": 2550,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000326,
+    "SkillPower": 2680,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000327,
+    "SkillPower": 2820,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000328,
+    "SkillPower": 2950,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000329,
+    "SkillPower": 3080,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000330,
+    "SkillPower": 3300,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000331,
+    "SkillPower": 1700,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000332,
+    "SkillPower": 1780,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000333,
+    "SkillPower": 1870,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000334,
+    "SkillPower": 1950,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000335,
+    "SkillPower": 2040,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000336,
+    "SkillPower": 2150,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000337,
+    "SkillPower": 2270,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000338,
+    "SkillPower": 2390,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000339,
+    "SkillPower": 2510,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000340,
+    "SkillPower": 2630,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000341,
+    "SkillPower": 2770,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000342,
+    "SkillPower": 2900,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000343,
+    "SkillPower": 3040,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000344,
+    "SkillPower": 3170,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000345,
+    "SkillPower": 3400,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000346,
+    "SkillPower": 1650,
+    "AttributeType": 6,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000347,
+    "SkillPower": 1730,
+    "AttributeType": 6,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000348,
+    "SkillPower": 1810,
+    "AttributeType": 6,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000349,
+    "SkillPower": 1890,
+    "AttributeType": 6,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000350,
+    "SkillPower": 1980,
+    "AttributeType": 6,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000351,
+    "SkillPower": 2090,
+    "AttributeType": 6,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000352,
+    "SkillPower": 2210,
+    "AttributeType": 6,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000353,
+    "SkillPower": 2320,
+    "AttributeType": 6,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000354,
+    "SkillPower": 2440,
+    "AttributeType": 6,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000355,
+    "SkillPower": 2550,
+    "AttributeType": 6,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000356,
+    "SkillPower": 2680,
+    "AttributeType": 6,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000357,
+    "SkillPower": 2820,
+    "AttributeType": 6,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000358,
+    "SkillPower": 2950,
+    "AttributeType": 6,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000359,
+    "SkillPower": 3080,
+    "AttributeType": 6,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000360,
+    "SkillPower": 3300,
+    "AttributeType": 6,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000361,
+    "SkillPower": 1700,
+    "AttributeType": 6,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000362,
+    "SkillPower": 1780,
+    "AttributeType": 6,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000363,
+    "SkillPower": 1870,
+    "AttributeType": 6,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000364,
+    "SkillPower": 1950,
+    "AttributeType": 6,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000365,
+    "SkillPower": 2040,
+    "AttributeType": 6,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000366,
+    "SkillPower": 2150,
+    "AttributeType": 6,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000367,
+    "SkillPower": 2270,
+    "AttributeType": 6,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000368,
+    "SkillPower": 2390,
+    "AttributeType": 6,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000369,
+    "SkillPower": 2510,
+    "AttributeType": 6,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000370,
+    "SkillPower": 2630,
+    "AttributeType": 6,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000371,
+    "SkillPower": 2770,
+    "AttributeType": 6,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000372,
+    "SkillPower": 2900,
+    "AttributeType": 6,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000373,
+    "SkillPower": 3040,
+    "AttributeType": 6,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000374,
+    "SkillPower": 3170,
+    "AttributeType": 6,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000375,
+    "SkillPower": 3400,
+    "AttributeType": 6,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000376,
+    "SkillPower": 1650,
+    "AttributeType": 3,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000377,
+    "SkillPower": 1730,
+    "AttributeType": 3,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000378,
+    "SkillPower": 1810,
+    "AttributeType": 3,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000379,
+    "SkillPower": 1890,
+    "AttributeType": 3,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000380,
+    "SkillPower": 1980,
+    "AttributeType": 3,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000381,
+    "SkillPower": 2090,
+    "AttributeType": 3,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000382,
+    "SkillPower": 2210,
+    "AttributeType": 3,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000383,
+    "SkillPower": 2320,
+    "AttributeType": 3,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000384,
+    "SkillPower": 2440,
+    "AttributeType": 3,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000385,
+    "SkillPower": 2550,
+    "AttributeType": 3,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000386,
+    "SkillPower": 2680,
+    "AttributeType": 3,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000387,
+    "SkillPower": 2820,
+    "AttributeType": 3,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000388,
+    "SkillPower": 2950,
+    "AttributeType": 3,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000389,
+    "SkillPower": 3080,
+    "AttributeType": 3,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000390,
+    "SkillPower": 3300,
+    "AttributeType": 3,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000391,
+    "SkillPower": 500,
+    "AttributeType": 1,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000392,
+    "SkillPower": 520,
+    "AttributeType": 1,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000393,
+    "SkillPower": 550,
+    "AttributeType": 1,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000394,
+    "SkillPower": 570,
+    "AttributeType": 1,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000395,
+    "SkillPower": 600,
+    "AttributeType": 1,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000396,
+    "SkillPower": 630,
+    "AttributeType": 1,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000397,
+    "SkillPower": 670,
+    "AttributeType": 1,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000398,
+    "SkillPower": 700,
+    "AttributeType": 1,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000399,
+    "SkillPower": 740,
+    "AttributeType": 1,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000400,
+    "SkillPower": 770,
+    "AttributeType": 1,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000401,
+    "SkillPower": 810,
+    "AttributeType": 1,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000402,
+    "SkillPower": 850,
+    "AttributeType": 1,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000403,
+    "SkillPower": 890,
+    "AttributeType": 1,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000404,
+    "SkillPower": 930,
+    "AttributeType": 1,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000405,
+    "SkillPower": 1000,
+    "AttributeType": 1,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000406,
+    "SkillPower": 2000,
+    "AttributeType": 1,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000407,
+    "SkillPower": 2100,
+    "AttributeType": 1,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000408,
+    "SkillPower": 2200,
+    "AttributeType": 1,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000409,
+    "SkillPower": 2290,
+    "AttributeType": 1,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000410,
+    "SkillPower": 2400,
+    "AttributeType": 1,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000411,
+    "SkillPower": 2540,
+    "AttributeType": 1,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000412,
+    "SkillPower": 2680,
+    "AttributeType": 1,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000413,
+    "SkillPower": 2820,
+    "AttributeType": 1,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000414,
+    "SkillPower": 2960,
+    "AttributeType": 1,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000415,
+    "SkillPower": 3100,
+    "AttributeType": 1,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000416,
+    "SkillPower": 3260,
+    "AttributeType": 1,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000417,
+    "SkillPower": 3420,
+    "AttributeType": 1,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000418,
+    "SkillPower": 3580,
+    "AttributeType": 1,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000419,
+    "SkillPower": 3740,
+    "AttributeType": 1,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000420,
+    "SkillPower": 4000,
+    "AttributeType": 1,
+    "MagnificationRate": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1000421,
+    "SkillPower": 1900,
+    "AttributeType": 1,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000422,
+    "SkillPower": 1990,
+    "AttributeType": 1,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000423,
+    "SkillPower": 2090,
+    "AttributeType": 1,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000424,
+    "SkillPower": 2180,
+    "AttributeType": 1,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000425,
+    "SkillPower": 2280,
+    "AttributeType": 1,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000426,
+    "SkillPower": 2410,
+    "AttributeType": 1,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000427,
+    "SkillPower": 2540,
+    "AttributeType": 1,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000428,
+    "SkillPower": 2670,
+    "AttributeType": 1,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000429,
+    "SkillPower": 2810,
+    "AttributeType": 1,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000430,
+    "SkillPower": 2940,
+    "AttributeType": 1,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000431,
+    "SkillPower": 3090,
+    "AttributeType": 1,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000432,
+    "SkillPower": 3240,
+    "AttributeType": 1,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000433,
+    "SkillPower": 3400,
+    "AttributeType": 1,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000434,
+    "SkillPower": 3550,
+    "AttributeType": 1,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000435,
+    "SkillPower": 3800,
+    "AttributeType": 1,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000436,
+    "SkillPower": 2000,
+    "AttributeType": 5,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000437,
+    "SkillPower": 2100,
+    "AttributeType": 5,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000438,
+    "SkillPower": 2200,
+    "AttributeType": 5,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000439,
+    "SkillPower": 2290,
+    "AttributeType": 5,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000440,
+    "SkillPower": 2400,
+    "AttributeType": 5,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000441,
+    "SkillPower": 2540,
+    "AttributeType": 5,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000442,
+    "SkillPower": 2680,
+    "AttributeType": 5,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000443,
+    "SkillPower": 2820,
+    "AttributeType": 5,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000444,
+    "SkillPower": 2960,
+    "AttributeType": 5,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000445,
+    "SkillPower": 3100,
+    "AttributeType": 5,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000446,
+    "SkillPower": 3260,
+    "AttributeType": 5,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000447,
+    "SkillPower": 3420,
+    "AttributeType": 5,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000448,
+    "SkillPower": 3580,
+    "AttributeType": 5,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000449,
+    "SkillPower": 3740,
+    "AttributeType": 5,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000450,
+    "SkillPower": 4000,
+    "AttributeType": 5,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000451,
+    "SkillPower": 1700,
+    "AttributeType": 3,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000452,
+    "SkillPower": 1780,
+    "AttributeType": 3,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000453,
+    "SkillPower": 1870,
+    "AttributeType": 3,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000454,
+    "SkillPower": 1950,
+    "AttributeType": 3,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000455,
+    "SkillPower": 2040,
+    "AttributeType": 3,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000456,
+    "SkillPower": 2150,
+    "AttributeType": 3,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000457,
+    "SkillPower": 2270,
+    "AttributeType": 3,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000458,
+    "SkillPower": 2390,
+    "AttributeType": 3,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000459,
+    "SkillPower": 2510,
+    "AttributeType": 3,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000460,
+    "SkillPower": 2630,
+    "AttributeType": 3,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000461,
+    "SkillPower": 2770,
+    "AttributeType": 3,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000462,
+    "SkillPower": 2900,
+    "AttributeType": 3,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000463,
+    "SkillPower": 3040,
+    "AttributeType": 3,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000464,
+    "SkillPower": 3170,
+    "AttributeType": 3,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000465,
+    "SkillPower": 3400,
+    "AttributeType": 3,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000466,
+    "SkillPower": 1700,
+    "AttributeType": 6,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000467,
+    "SkillPower": 1780,
+    "AttributeType": 6,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000468,
+    "SkillPower": 1870,
+    "AttributeType": 6,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000469,
+    "SkillPower": 1950,
+    "AttributeType": 6,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000470,
+    "SkillPower": 2040,
+    "AttributeType": 6,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000471,
+    "SkillPower": 2150,
+    "AttributeType": 6,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000472,
+    "SkillPower": 2270,
+    "AttributeType": 6,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000473,
+    "SkillPower": 2390,
+    "AttributeType": 6,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000474,
+    "SkillPower": 2510,
+    "AttributeType": 6,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000475,
+    "SkillPower": 2630,
+    "AttributeType": 6,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000476,
+    "SkillPower": 2770,
+    "AttributeType": 6,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000477,
+    "SkillPower": 2900,
+    "AttributeType": 6,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000478,
+    "SkillPower": 3040,
+    "AttributeType": 6,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000479,
+    "SkillPower": 3170,
+    "AttributeType": 6,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000480,
+    "SkillPower": 3400,
+    "AttributeType": 6,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000481,
+    "SkillPower": 1250,
+    "AttributeType": 3,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000482,
+    "SkillPower": 1310,
+    "AttributeType": 3,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000483,
+    "SkillPower": 1370,
+    "AttributeType": 3,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000484,
+    "SkillPower": 1430,
+    "AttributeType": 3,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000485,
+    "SkillPower": 1500,
+    "AttributeType": 3,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000486,
+    "SkillPower": 1580,
+    "AttributeType": 3,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000487,
+    "SkillPower": 1670,
+    "AttributeType": 3,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000488,
+    "SkillPower": 1760,
+    "AttributeType": 3,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000489,
+    "SkillPower": 1850,
+    "AttributeType": 3,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000490,
+    "SkillPower": 1930,
+    "AttributeType": 3,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000491,
+    "SkillPower": 2030,
+    "AttributeType": 3,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000492,
+    "SkillPower": 2130,
+    "AttributeType": 3,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000493,
+    "SkillPower": 2230,
+    "AttributeType": 3,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000494,
+    "SkillPower": 2330,
+    "AttributeType": 3,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000495,
+    "SkillPower": 2500,
+    "AttributeType": 3,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000496,
+    "SkillPower": 1250,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000497,
+    "SkillPower": 1310,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000498,
+    "SkillPower": 1370,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000499,
+    "SkillPower": 1430,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000500,
+    "SkillPower": 1500,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000501,
+    "SkillPower": 1580,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000502,
+    "SkillPower": 1670,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000503,
+    "SkillPower": 1760,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000504,
+    "SkillPower": 1850,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000505,
+    "SkillPower": 1930,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000506,
+    "SkillPower": 2030,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000507,
+    "SkillPower": 2130,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000508,
+    "SkillPower": 2230,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000509,
+    "SkillPower": 2330,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000510,
+    "SkillPower": 2500,
+    "AttributeType": 2,
+    "MagnificationRate": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1000511,
+    "SkillPower": 420,
+    "AttributeType": 3,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000512,
+    "SkillPower": 440,
+    "AttributeType": 3,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000513,
+    "SkillPower": 460,
+    "AttributeType": 3,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000514,
+    "SkillPower": 480,
+    "AttributeType": 3,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000515,
+    "SkillPower": 510,
+    "AttributeType": 3,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000516,
+    "SkillPower": 530,
+    "AttributeType": 3,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000517,
+    "SkillPower": 560,
+    "AttributeType": 3,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000518,
+    "SkillPower": 590,
+    "AttributeType": 3,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000519,
+    "SkillPower": 620,
+    "AttributeType": 3,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000520,
+    "SkillPower": 650,
+    "AttributeType": 3,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000521,
+    "SkillPower": 690,
+    "AttributeType": 3,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000522,
+    "SkillPower": 720,
+    "AttributeType": 3,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000523,
+    "SkillPower": 760,
+    "AttributeType": 3,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000524,
+    "SkillPower": 790,
+    "AttributeType": 3,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000525,
+    "SkillPower": 850,
+    "AttributeType": 3,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000526,
+    "SkillPower": 1700,
+    "AttributeType": 5,
+    "MagnificationRate": 1900
+  },
+  {
+    "SkillBehaviourActionId": 1000527,
+    "SkillPower": 1780,
+    "AttributeType": 5,
+    "MagnificationRate": 1900
+  },
+  {
+    "SkillBehaviourActionId": 1000528,
+    "SkillPower": 1870,
+    "AttributeType": 5,
+    "MagnificationRate": 1900
+  },
+  {
+    "SkillBehaviourActionId": 1000529,
+    "SkillPower": 1950,
+    "AttributeType": 5,
+    "MagnificationRate": 1900
+  },
+  {
+    "SkillBehaviourActionId": 1000530,
+    "SkillPower": 2040,
+    "AttributeType": 5,
+    "MagnificationRate": 1900
+  },
+  {
+    "SkillBehaviourActionId": 1000531,
+    "SkillPower": 2150,
+    "AttributeType": 5,
+    "MagnificationRate": 1900
+  },
+  {
+    "SkillBehaviourActionId": 1000532,
+    "SkillPower": 2270,
+    "AttributeType": 5,
+    "MagnificationRate": 1900
+  },
+  {
+    "SkillBehaviourActionId": 1000533,
+    "SkillPower": 2390,
+    "AttributeType": 5,
+    "MagnificationRate": 1900
+  },
+  {
+    "SkillBehaviourActionId": 1000534,
+    "SkillPower": 2510,
+    "AttributeType": 5,
+    "MagnificationRate": 1900
+  },
+  {
+    "SkillBehaviourActionId": 1000535,
+    "SkillPower": 2630,
+    "AttributeType": 5,
+    "MagnificationRate": 1900
+  },
+  {
+    "SkillBehaviourActionId": 1000536,
+    "SkillPower": 2770,
+    "AttributeType": 5,
+    "MagnificationRate": 1900
+  },
+  {
+    "SkillBehaviourActionId": 1000537,
+    "SkillPower": 2900,
+    "AttributeType": 5,
+    "MagnificationRate": 1900
+  },
+  {
+    "SkillBehaviourActionId": 1000538,
+    "SkillPower": 3040,
+    "AttributeType": 5,
+    "MagnificationRate": 1900
+  },
+  {
+    "SkillBehaviourActionId": 1000539,
+    "SkillPower": 3170,
+    "AttributeType": 5,
+    "MagnificationRate": 1900
+  },
+  {
+    "SkillBehaviourActionId": 1000540,
+    "SkillPower": 3400,
+    "AttributeType": 5,
+    "MagnificationRate": 1900
+  },
+  {
+    "SkillBehaviourActionId": 1000541,
+    "SkillPower": 1700,
+    "AttributeType": 1,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000542,
+    "SkillPower": 1780,
+    "AttributeType": 1,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000543,
+    "SkillPower": 1870,
+    "AttributeType": 1,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000544,
+    "SkillPower": 1950,
+    "AttributeType": 1,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000545,
+    "SkillPower": 2040,
+    "AttributeType": 1,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000546,
+    "SkillPower": 2150,
+    "AttributeType": 1,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000547,
+    "SkillPower": 2270,
+    "AttributeType": 1,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000548,
+    "SkillPower": 2390,
+    "AttributeType": 1,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000549,
+    "SkillPower": 2510,
+    "AttributeType": 1,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000550,
+    "SkillPower": 2630,
+    "AttributeType": 1,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000551,
+    "SkillPower": 2770,
+    "AttributeType": 1,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000552,
+    "SkillPower": 2900,
+    "AttributeType": 1,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000553,
+    "SkillPower": 3040,
+    "AttributeType": 1,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000554,
+    "SkillPower": 3170,
+    "AttributeType": 1,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000555,
+    "SkillPower": 3400,
+    "AttributeType": 1,
+    "MagnificationRate": 2000
+  },
+  {
+    "SkillBehaviourActionId": 1000556,
+    "SkillPower": 1750,
+    "AttributeType": 6,
+    "MagnificationRate": 2200
+  },
+  {
+    "SkillBehaviourActionId": 1000557,
+    "SkillPower": 1830,
+    "AttributeType": 6,
+    "MagnificationRate": 2200
+  },
+  {
+    "SkillBehaviourActionId": 1000558,
+    "SkillPower": 1920,
+    "AttributeType": 6,
+    "MagnificationRate": 2200
+  },
+  {
+    "SkillBehaviourActionId": 1000559,
+    "SkillPower": 2010,
+    "AttributeType": 6,
+    "MagnificationRate": 2200
+  },
+  {
+    "SkillBehaviourActionId": 1000560,
+    "SkillPower": 2100,
+    "AttributeType": 6,
+    "MagnificationRate": 2200
+  },
+  {
+    "SkillBehaviourActionId": 1000561,
+    "SkillPower": 2220,
+    "AttributeType": 6,
+    "MagnificationRate": 2200
+  },
+  {
+    "SkillBehaviourActionId": 1000562,
+    "SkillPower": 2340,
+    "AttributeType": 6,
+    "MagnificationRate": 2200
+  },
+  {
+    "SkillBehaviourActionId": 1000563,
+    "SkillPower": 2460,
+    "AttributeType": 6,
+    "MagnificationRate": 2200
+  },
+  {
+    "SkillBehaviourActionId": 1000564,
+    "SkillPower": 2590,
+    "AttributeType": 6,
+    "MagnificationRate": 2200
+  },
+  {
+    "SkillBehaviourActionId": 1000565,
+    "SkillPower": 2710,
+    "AttributeType": 6,
+    "MagnificationRate": 2200
+  },
+  {
+    "SkillBehaviourActionId": 1000566,
+    "SkillPower": 2850,
+    "AttributeType": 6,
+    "MagnificationRate": 2200
+  },
+  {
+    "SkillBehaviourActionId": 1000567,
+    "SkillPower": 2990,
+    "AttributeType": 6,
+    "MagnificationRate": 2200
+  },
+  {
+    "SkillBehaviourActionId": 1000568,
+    "SkillPower": 3130,
+    "AttributeType": 6,
+    "MagnificationRate": 2200
+  },
+  {
+    "SkillBehaviourActionId": 1000569,
+    "SkillPower": 3270,
+    "AttributeType": 6,
+    "MagnificationRate": 2200
+  },
+  {
+    "SkillBehaviourActionId": 1000570,
+    "SkillPower": 3500,
+    "AttributeType": 6,
+    "MagnificationRate": 2200
+  },
+  {
+    "SkillBehaviourActionId": 1000571,
+    "SkillPower": 1650,
+    "AttributeType": 3,
+    "MagnificationRate": 2200
+  },
+  {
+    "SkillBehaviourActionId": 1000572,
+    "SkillPower": 1730,
+    "AttributeType": 3,
+    "MagnificationRate": 2200
+  },
+  {
+    "SkillBehaviourActionId": 1000573,
+    "SkillPower": 1810,
+    "AttributeType": 3,
+    "MagnificationRate": 2200
+  },
+  {
+    "SkillBehaviourActionId": 1000574,
+    "SkillPower": 1890,
+    "AttributeType": 3,
+    "MagnificationRate": 2200
+  },
+  {
+    "SkillBehaviourActionId": 1000575,
+    "SkillPower": 1980,
+    "AttributeType": 3,
+    "MagnificationRate": 2200
+  },
+  {
+    "SkillBehaviourActionId": 1000576,
+    "SkillPower": 2090,
+    "AttributeType": 3,
+    "MagnificationRate": 2200
+  },
+  {
+    "SkillBehaviourActionId": 1000577,
+    "SkillPower": 2210,
+    "AttributeType": 3,
+    "MagnificationRate": 2200
+  },
+  {
+    "SkillBehaviourActionId": 1000578,
+    "SkillPower": 2320,
+    "AttributeType": 3,
+    "MagnificationRate": 2200
+  },
+  {
+    "SkillBehaviourActionId": 1000579,
+    "SkillPower": 2440,
+    "AttributeType": 3,
+    "MagnificationRate": 2200
+  },
+  {
+    "SkillBehaviourActionId": 1000580,
+    "SkillPower": 2550,
+    "AttributeType": 3,
+    "MagnificationRate": 2200
+  },
+  {
+    "SkillBehaviourActionId": 1000581,
+    "SkillPower": 2680,
+    "AttributeType": 3,
+    "MagnificationRate": 2200
+  },
+  {
+    "SkillBehaviourActionId": 1000582,
+    "SkillPower": 2820,
+    "AttributeType": 3,
+    "MagnificationRate": 2200
+  },
+  {
+    "SkillBehaviourActionId": 1000583,
+    "SkillPower": 2950,
+    "AttributeType": 3,
+    "MagnificationRate": 2200
+  },
+  {
+    "SkillBehaviourActionId": 1000584,
+    "SkillPower": 3080,
+    "AttributeType": 3,
+    "MagnificationRate": 2200
+  },
+  {
+    "SkillBehaviourActionId": 1000585,
+    "SkillPower": 3300,
+    "AttributeType": 3,
+    "MagnificationRate": 2200
+  }
+]

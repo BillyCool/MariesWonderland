@@ -1,0 +1,34 @@
+[
+  {
+    "QuestSceneId": 2,
+    "PossessionType": 1,
+    "PossessionId": 10100,
+    "Count": 1,
+    "IsGift": false,
+    "IsDebug": false
+  },
+  {
+    "QuestSceneId": 2,
+    "PossessionType": 2,
+    "PossessionId": 100001,
+    "Count": 1,
+    "IsGift": false,
+    "IsDebug": false
+  },
+  {
+    "QuestSceneId": 2,
+    "PossessionType": 2,
+    "PossessionId": 100011,
+    "Count": 1,
+    "IsGift": false,
+    "IsDebug": false
+  },
+  {
+    "QuestSceneId": 2,
+    "PossessionType": 2,
+    "PossessionId": 100021,
+    "Count": 1,
+    "IsGift": false,
+    "IsDebug": false
+  }
+]

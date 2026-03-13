@@ -1,0 +1,464 @@
+[
+  {
+    "CharacterBoardGroupId": 100101,
+    "CharacterBoardCategoryId": 100101,
+    "SortOrder": 1,
+    "CharacterBoardGroupType": 1,
+    "TextAssetId": 1001
+  },
+  {
+    "CharacterBoardGroupId": 100102,
+    "CharacterBoardCategoryId": 100101,
+    "SortOrder": 2,
+    "CharacterBoardGroupType": 2,
+    "TextAssetId": 1002
+  },
+  {
+    "CharacterBoardGroupId": 100201,
+    "CharacterBoardCategoryId": 100201,
+    "SortOrder": 1,
+    "CharacterBoardGroupType": 1,
+    "TextAssetId": 1001
+  },
+  {
+    "CharacterBoardGroupId": 100202,
+    "CharacterBoardCategoryId": 100201,
+    "SortOrder": 2,
+    "CharacterBoardGroupType": 2,
+    "TextAssetId": 1002
+  },
+  {
+    "CharacterBoardGroupId": 100301,
+    "CharacterBoardCategoryId": 100301,
+    "SortOrder": 1,
+    "CharacterBoardGroupType": 1,
+    "TextAssetId": 1001
+  },
+  {
+    "CharacterBoardGroupId": 100302,
+    "CharacterBoardCategoryId": 100301,
+    "SortOrder": 2,
+    "CharacterBoardGroupType": 2,
+    "TextAssetId": 1002
+  },
+  {
+    "CharacterBoardGroupId": 100401,
+    "CharacterBoardCategoryId": 100401,
+    "SortOrder": 1,
+    "CharacterBoardGroupType": 1,
+    "TextAssetId": 1001
+  },
+  {
+    "CharacterBoardGroupId": 100402,
+    "CharacterBoardCategoryId": 100401,
+    "SortOrder": 2,
+    "CharacterBoardGroupType": 2,
+    "TextAssetId": 1002
+  },
+  {
+    "CharacterBoardGroupId": 100501,
+    "CharacterBoardCategoryId": 100501,
+    "SortOrder": 1,
+    "CharacterBoardGroupType": 1,
+    "TextAssetId": 1001
+  },
+  {
+    "CharacterBoardGroupId": 100502,
+    "CharacterBoardCategoryId": 100501,
+    "SortOrder": 2,
+    "CharacterBoardGroupType": 2,
+    "TextAssetId": 1002
+  },
+  {
+    "CharacterBoardGroupId": 100601,
+    "CharacterBoardCategoryId": 100601,
+    "SortOrder": 1,
+    "CharacterBoardGroupType": 1,
+    "TextAssetId": 1001
+  },
+  {
+    "CharacterBoardGroupId": 100602,
+    "CharacterBoardCategoryId": 100601,
+    "SortOrder": 2,
+    "CharacterBoardGroupType": 2,
+    "TextAssetId": 1002
+  },
+  {
+    "CharacterBoardGroupId": 100701,
+    "CharacterBoardCategoryId": 100701,
+    "SortOrder": 1,
+    "CharacterBoardGroupType": 1,
+    "TextAssetId": 1001
+  },
+  {
+    "CharacterBoardGroupId": 100702,
+    "CharacterBoardCategoryId": 100701,
+    "SortOrder": 2,
+    "CharacterBoardGroupType": 2,
+    "TextAssetId": 1002
+  },
+  {
+    "CharacterBoardGroupId": 100801,
+    "CharacterBoardCategoryId": 100801,
+    "SortOrder": 1,
+    "CharacterBoardGroupType": 1,
+    "TextAssetId": 1001
+  },
+  {
+    "CharacterBoardGroupId": 100802,
+    "CharacterBoardCategoryId": 100801,
+    "SortOrder": 2,
+    "CharacterBoardGroupType": 2,
+    "TextAssetId": 1002
+  },
+  {
+    "CharacterBoardGroupId": 100901,
+    "CharacterBoardCategoryId": 100901,
+    "SortOrder": 1,
+    "CharacterBoardGroupType": 1,
+    "TextAssetId": 1001
+  },
+  {
+    "CharacterBoardGroupId": 100902,
+    "CharacterBoardCategoryId": 100901,
+    "SortOrder": 2,
+    "CharacterBoardGroupType": 2,
+    "TextAssetId": 1002
+  },
+  {
+    "CharacterBoardGroupId": 101001,
+    "CharacterBoardCategoryId": 101001,
+    "SortOrder": 1,
+    "CharacterBoardGroupType": 1,
+    "TextAssetId": 1001
+  },
+  {
+    "CharacterBoardGroupId": 101002,
+    "CharacterBoardCategoryId": 101001,
+    "SortOrder": 2,
+    "CharacterBoardGroupType": 2,
+    "TextAssetId": 1002
+  },
+  {
+    "CharacterBoardGroupId": 101101,
+    "CharacterBoardCategoryId": 101101,
+    "SortOrder": 1,
+    "CharacterBoardGroupType": 1,
+    "TextAssetId": 1001
+  },
+  {
+    "CharacterBoardGroupId": 101102,
+    "CharacterBoardCategoryId": 101101,
+    "SortOrder": 2,
+    "CharacterBoardGroupType": 2,
+    "TextAssetId": 1002
+  },
+  {
+    "CharacterBoardGroupId": 101201,
+    "CharacterBoardCategoryId": 101201,
+    "SortOrder": 1,
+    "CharacterBoardGroupType": 1,
+    "TextAssetId": 1001
+  },
+  {
+    "CharacterBoardGroupId": 101202,
+    "CharacterBoardCategoryId": 101201,
+    "SortOrder": 2,
+    "CharacterBoardGroupType": 2,
+    "TextAssetId": 1002
+  },
+  {
+    "CharacterBoardGroupId": 101301,
+    "CharacterBoardCategoryId": 101301,
+    "SortOrder": 1,
+    "CharacterBoardGroupType": 1,
+    "TextAssetId": 1001
+  },
+  {
+    "CharacterBoardGroupId": 101302,
+    "CharacterBoardCategoryId": 101301,
+    "SortOrder": 2,
+    "CharacterBoardGroupType": 2,
+    "TextAssetId": 1002
+  },
+  {
+    "CharacterBoardGroupId": 101401,
+    "CharacterBoardCategoryId": 101401,
+    "SortOrder": 1,
+    "CharacterBoardGroupType": 1,
+    "TextAssetId": 1001
+  },
+  {
+    "CharacterBoardGroupId": 101402,
+    "CharacterBoardCategoryId": 101401,
+    "SortOrder": 2,
+    "CharacterBoardGroupType": 2,
+    "TextAssetId": 1002
+  },
+  {
+    "CharacterBoardGroupId": 101501,
+    "CharacterBoardCategoryId": 101501,
+    "SortOrder": 1,
+    "CharacterBoardGroupType": 1,
+    "TextAssetId": 1001
+  },
+  {
+    "CharacterBoardGroupId": 101502,
+    "CharacterBoardCategoryId": 101501,
+    "SortOrder": 2,
+    "CharacterBoardGroupType": 2,
+    "TextAssetId": 1002
+  },
+  {
+    "CharacterBoardGroupId": 101601,
+    "CharacterBoardCategoryId": 101601,
+    "SortOrder": 1,
+    "CharacterBoardGroupType": 1,
+    "TextAssetId": 1001
+  },
+  {
+    "CharacterBoardGroupId": 101602,
+    "CharacterBoardCategoryId": 101601,
+    "SortOrder": 2,
+    "CharacterBoardGroupType": 2,
+    "TextAssetId": 1002
+  },
+  {
+    "CharacterBoardGroupId": 101701,
+    "CharacterBoardCategoryId": 101701,
+    "SortOrder": 1,
+    "CharacterBoardGroupType": 1,
+    "TextAssetId": 1001
+  },
+  {
+    "CharacterBoardGroupId": 101702,
+    "CharacterBoardCategoryId": 101701,
+    "SortOrder": 2,
+    "CharacterBoardGroupType": 2,
+    "TextAssetId": 1002
+  },
+  {
+    "CharacterBoardGroupId": 101801,
+    "CharacterBoardCategoryId": 101801,
+    "SortOrder": 1,
+    "CharacterBoardGroupType": 1,
+    "TextAssetId": 1001
+  },
+  {
+    "CharacterBoardGroupId": 101802,
+    "CharacterBoardCategoryId": 101801,
+    "SortOrder": 2,
+    "CharacterBoardGroupType": 2,
+    "TextAssetId": 1002
+  },
+  {
+    "CharacterBoardGroupId": 101901,
+    "CharacterBoardCategoryId": 101901,
+    "SortOrder": 1,
+    "CharacterBoardGroupType": 1,
+    "TextAssetId": 1001
+  },
+  {
+    "CharacterBoardGroupId": 101902,
+    "CharacterBoardCategoryId": 101901,
+    "SortOrder": 2,
+    "CharacterBoardGroupType": 2,
+    "TextAssetId": 1002
+  },
+  {
+    "CharacterBoardGroupId": 102001,
+    "CharacterBoardCategoryId": 102001,
+    "SortOrder": 1,
+    "CharacterBoardGroupType": 1,
+    "TextAssetId": 1001
+  },
+  {
+    "CharacterBoardGroupId": 102002,
+    "CharacterBoardCategoryId": 102001,
+    "SortOrder": 2,
+    "CharacterBoardGroupType": 2,
+    "TextAssetId": 1002
+  },
+  {
+    "CharacterBoardGroupId": 102101,
+    "CharacterBoardCategoryId": 102101,
+    "SortOrder": 1,
+    "CharacterBoardGroupType": 1,
+    "TextAssetId": 1001
+  },
+  {
+    "CharacterBoardGroupId": 102102,
+    "CharacterBoardCategoryId": 102101,
+    "SortOrder": 2,
+    "CharacterBoardGroupType": 2,
+    "TextAssetId": 1002
+  },
+  {
+    "CharacterBoardGroupId": 500101,
+    "CharacterBoardCategoryId": 500101,
+    "SortOrder": 1,
+    "CharacterBoardGroupType": 1,
+    "TextAssetId": 1001
+  },
+  {
+    "CharacterBoardGroupId": 500102,
+    "CharacterBoardCategoryId": 500101,
+    "SortOrder": 2,
+    "CharacterBoardGroupType": 2,
+    "TextAssetId": 1002
+  },
+  {
+    "CharacterBoardGroupId": 500201,
+    "CharacterBoardCategoryId": 500201,
+    "SortOrder": 1,
+    "CharacterBoardGroupType": 1,
+    "TextAssetId": 1001
+  },
+  {
+    "CharacterBoardGroupId": 500202,
+    "CharacterBoardCategoryId": 500201,
+    "SortOrder": 2,
+    "CharacterBoardGroupType": 2,
+    "TextAssetId": 1002
+  },
+  {
+    "CharacterBoardGroupId": 500301,
+    "CharacterBoardCategoryId": 500301,
+    "SortOrder": 1,
+    "CharacterBoardGroupType": 1,
+    "TextAssetId": 1001
+  },
+  {
+    "CharacterBoardGroupId": 500302,
+    "CharacterBoardCategoryId": 500301,
+    "SortOrder": 2,
+    "CharacterBoardGroupType": 2,
+    "TextAssetId": 1002
+  },
+  {
+    "CharacterBoardGroupId": 500401,
+    "CharacterBoardCategoryId": 500401,
+    "SortOrder": 1,
+    "CharacterBoardGroupType": 1,
+    "TextAssetId": 1001
+  },
+  {
+    "CharacterBoardGroupId": 500402,
+    "CharacterBoardCategoryId": 500401,
+    "SortOrder": 2,
+    "CharacterBoardGroupType": 2,
+    "TextAssetId": 1002
+  },
+  {
+    "CharacterBoardGroupId": 500501,
+    "CharacterBoardCategoryId": 500501,
+    "SortOrder": 1,
+    "CharacterBoardGroupType": 1,
+    "TextAssetId": 1001
+  },
+  {
+    "CharacterBoardGroupId": 500502,
+    "CharacterBoardCategoryId": 500501,
+    "SortOrder": 2,
+    "CharacterBoardGroupType": 2,
+    "TextAssetId": 1002
+  },
+  {
+    "CharacterBoardGroupId": 500601,
+    "CharacterBoardCategoryId": 500601,
+    "SortOrder": 1,
+    "CharacterBoardGroupType": 1,
+    "TextAssetId": 1001
+  },
+  {
+    "CharacterBoardGroupId": 500602,
+    "CharacterBoardCategoryId": 500601,
+    "SortOrder": 2,
+    "CharacterBoardGroupType": 2,
+    "TextAssetId": 1002
+  },
+  {
+    "CharacterBoardGroupId": 500701,
+    "CharacterBoardCategoryId": 500701,
+    "SortOrder": 1,
+    "CharacterBoardGroupType": 1,
+    "TextAssetId": 1001
+  },
+  {
+    "CharacterBoardGroupId": 500702,
+    "CharacterBoardCategoryId": 500701,
+    "SortOrder": 2,
+    "CharacterBoardGroupType": 2,
+    "TextAssetId": 1002
+  },
+  {
+    "CharacterBoardGroupId": 500801,
+    "CharacterBoardCategoryId": 500801,
+    "SortOrder": 1,
+    "CharacterBoardGroupType": 1,
+    "TextAssetId": 1001
+  },
+  {
+    "CharacterBoardGroupId": 500802,
+    "CharacterBoardCategoryId": 500801,
+    "SortOrder": 2,
+    "CharacterBoardGroupType": 2,
+    "TextAssetId": 1002
+  },
+  {
+    "CharacterBoardGroupId": 500901,
+    "CharacterBoardCategoryId": 500901,
+    "SortOrder": 1,
+    "CharacterBoardGroupType": 1,
+    "TextAssetId": 1001
+  },
+  {
+    "CharacterBoardGroupId": 500902,
+    "CharacterBoardCategoryId": 500901,
+    "SortOrder": 2,
+    "CharacterBoardGroupType": 2,
+    "TextAssetId": 1002
+  },
+  {
+    "CharacterBoardGroupId": 501001,
+    "CharacterBoardCategoryId": 501001,
+    "SortOrder": 1,
+    "CharacterBoardGroupType": 1,
+    "TextAssetId": 1001
+  },
+  {
+    "CharacterBoardGroupId": 501002,
+    "CharacterBoardCategoryId": 501001,
+    "SortOrder": 2,
+    "CharacterBoardGroupType": 2,
+    "TextAssetId": 1002
+  },
+  {
+    "CharacterBoardGroupId": 501101,
+    "CharacterBoardCategoryId": 501101,
+    "SortOrder": 1,
+    "CharacterBoardGroupType": 1,
+    "TextAssetId": 1001
+  },
+  {
+    "CharacterBoardGroupId": 501102,
+    "CharacterBoardCategoryId": 501101,
+    "SortOrder": 2,
+    "CharacterBoardGroupType": 2,
+    "TextAssetId": 1002
+  },
+  {
+    "CharacterBoardGroupId": 501201,
+    "CharacterBoardCategoryId": 501201,
+    "SortOrder": 1,
+    "CharacterBoardGroupType": 1,
+    "TextAssetId": 1001
+  },
+  {
+    "CharacterBoardGroupId": 501202,
+    "CharacterBoardCategoryId": 501201,
+    "SortOrder": 2,
+    "CharacterBoardGroupType": 2,
+    "TextAssetId": 1002
+  }
+]

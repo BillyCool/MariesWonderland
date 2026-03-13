@@ -1,0 +1,12 @@
+[
+  {
+    "BattleSchemeType": 1,
+    "PlayerAttributeDamageCoefficientGroupId": 1,
+    "NpcAttributeDamageCoefficientGroupId": 2
+  },
+  {
+    "BattleSchemeType": 2,
+    "PlayerAttributeDamageCoefficientGroupId": 3,
+    "NpcAttributeDamageCoefficientGroupId": 3
+  }
+]

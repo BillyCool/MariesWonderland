@@ -1,0 +1,5448 @@
+[
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11001,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11001,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11002,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 15,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11002,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11003,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 15,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11003,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11004,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11004,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11005,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 15,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11005,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11006,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 15,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11006,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11007,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 20,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11007,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11008,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 20,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11008,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11009,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 15,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11009,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11010,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 15,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11010,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11011,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 15,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11011,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11012,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 20,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11012,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11013,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 20,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11013,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11014,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 15,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11014,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11015,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 15,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11015,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11016,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 25,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11016,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11017,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 20,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11017,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11018,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 25,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11018,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11019,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 20,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11019,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11020,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 40,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11020,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11021,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11021,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11022,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11022,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11023,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 25,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11023,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11024,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 20,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11024,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11025,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 25,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11025,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11026,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 25,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11026,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11027,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11027,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11028,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 25,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11028,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11029,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11029,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 5,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11029,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11030,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11030,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11031,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11031,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 5,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11031,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11032,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11032,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11033,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11033,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 5,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11033,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11034,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11034,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 5,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11034,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11035,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11035,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 5,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11035,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11036,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11036,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 5,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11036,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11037,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 60,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11037,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 10,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11037,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11038,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11038,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 5,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 11038,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12001,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 20,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12001,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 10,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12001,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12002,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 40,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12002,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12003,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12003,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 15,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12003,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12004,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 20,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12004,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 10,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12004,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12005,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12005,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 15,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12005,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12006,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 20,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12006,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12007,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 20,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12007,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12008,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 20,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12008,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12009,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 20,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12009,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12010,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12010,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 15,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12010,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12011,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 20,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12011,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12012,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 20,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12012,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12013,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 20,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12013,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12014,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 20,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12014,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12015,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 20,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12015,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12016,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 60,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12016,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12017,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 25,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12017,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12018,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12018,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12019,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 20,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12019,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12020,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 50,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12020,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12021,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12021,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12022,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12022,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12023,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12023,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12024,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 25,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12024,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12025,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12025,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12026,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12026,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12027,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12027,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12028,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12028,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12029,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12029,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 5,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12029,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12030,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 60,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12030,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12031,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12031,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 5,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12031,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12032,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12032,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12033,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12033,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 5,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12033,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12034,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12034,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 5,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12034,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12035,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12035,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 5,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12035,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12036,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12036,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 5,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12036,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12037,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 60,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12037,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 10,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12037,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12038,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12038,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 5,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 12038,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13001,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 20,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13001,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 10,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13001,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13002,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 200,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13002,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13003,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13003,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 15,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13003,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13004,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 20,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13004,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 10,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13004,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13005,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13005,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 15,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13005,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13006,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13006,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 15,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13006,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13007,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 20,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13007,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13008,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 20,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13008,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13009,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13009,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 15,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13009,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13010,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13010,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 15,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13010,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13011,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13011,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 15,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13011,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13012,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 40,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13012,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13013,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 20,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13013,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13014,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13014,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 15,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13014,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13015,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13015,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 15,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13015,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13016,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 300,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13016,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13017,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 25,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13017,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13018,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 25,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13018,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13019,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 20,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13019,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13020,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 2000,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13020,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13021,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 60,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13021,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13022,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13022,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13023,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 25,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13023,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13024,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 25,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13024,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13025,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 25,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13025,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13026,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 25,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13026,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13027,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13027,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13028,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 25,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13028,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13029,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13029,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13030,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 2500,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13030,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13031,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13031,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13032,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13032,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13033,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13033,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13034,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13034,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13035,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13035,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13036,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 60,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13036,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13037,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13037,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13038,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13038,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13039,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 60,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13039,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13040,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 13040,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 21001,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 21001,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 21003,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 40,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 21003,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 21004,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 21004,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 21005,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 40,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 21005,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 21008,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 40,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 21008,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 21009,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 21009,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 21010,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 40,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 21010,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 21013,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 40,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 21013,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 21015,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 50,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 21015,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 21016,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 40,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 21016,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 21017,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 50,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 21017,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 21020,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 50,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 21020,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 21021,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 50,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 21021,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 21022,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 50,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 21022,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 21025,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 60,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 21025,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 21028,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 70,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 21028,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 21029,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 60,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 21029,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 21030,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 70,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 21030,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 21031,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 70,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 21031,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 21032,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 70,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 21032,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 21033,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 70,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 21033,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 22001,
+    "PossessionType": 5,
+    "PossessionId": 402002,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 22001,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 22003,
+    "PossessionType": 5,
+    "PossessionId": 402002,
+    "Count": 40,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 22003,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 22004,
+    "PossessionType": 5,
+    "PossessionId": 402002,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 22004,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 22005,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 700,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 22005,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 22008,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 800,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 22008,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 22009,
+    "PossessionType": 5,
+    "PossessionId": 402002,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 22009,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 22010,
+    "PossessionType": 5,
+    "PossessionId": 402002,
+    "Count": 40,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 22010,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 22013,
+    "PossessionType": 5,
+    "PossessionId": 402002,
+    "Count": 40,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 22013,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 22015,
+    "PossessionType": 5,
+    "PossessionId": 402002,
+    "Count": 50,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 22015,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 22016,
+    "PossessionType": 5,
+    "PossessionId": 402002,
+    "Count": 40,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 22016,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 22017,
+    "PossessionType": 5,
+    "PossessionId": 402002,
+    "Count": 50,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 22017,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 22020,
+    "PossessionType": 5,
+    "PossessionId": 402002,
+    "Count": 50,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 22020,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 22021,
+    "PossessionType": 5,
+    "PossessionId": 402002,
+    "Count": 50,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 22021,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 22022,
+    "PossessionType": 5,
+    "PossessionId": 402002,
+    "Count": 50,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 22022,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 22025,
+    "PossessionType": 5,
+    "PossessionId": 402002,
+    "Count": 60,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 22025,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 22028,
+    "PossessionType": 5,
+    "PossessionId": 402002,
+    "Count": 70,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 22028,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 22029,
+    "PossessionType": 5,
+    "PossessionId": 402002,
+    "Count": 60,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 22029,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 22030,
+    "PossessionType": 5,
+    "PossessionId": 402002,
+    "Count": 70,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 22030,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 22031,
+    "PossessionType": 5,
+    "PossessionId": 402002,
+    "Count": 70,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 22031,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 22032,
+    "PossessionType": 5,
+    "PossessionId": 402002,
+    "Count": 70,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 22032,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 22033,
+    "PossessionType": 5,
+    "PossessionId": 402002,
+    "Count": 70,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 22033,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 23001,
+    "PossessionType": 5,
+    "PossessionId": 402003,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 23001,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 23003,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 3000,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 23003,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 23004,
+    "PossessionType": 5,
+    "PossessionId": 402003,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 23004,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 23005,
+    "PossessionType": 5,
+    "PossessionId": 402003,
+    "Count": 40,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 23005,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 23008,
+    "PossessionType": 5,
+    "PossessionId": 402003,
+    "Count": 40,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 23008,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 23009,
+    "PossessionType": 5,
+    "PossessionId": 402003,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 23009,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 23010,
+    "PossessionType": 5,
+    "PossessionId": 402002,
+    "Count": 1000,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 23010,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 23013,
+    "PossessionType": 5,
+    "PossessionId": 402003,
+    "Count": 40,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 23013,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 23015,
+    "PossessionType": 5,
+    "PossessionId": 402003,
+    "Count": 50,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 23015,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 23016,
+    "PossessionType": 5,
+    "PossessionId": 402003,
+    "Count": 40,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 23016,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 23017,
+    "PossessionType": 5,
+    "PossessionId": 402003,
+    "Count": 50,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 23017,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 23020,
+    "PossessionType": 5,
+    "PossessionId": 402003,
+    "Count": 50,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 23020,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 23021,
+    "PossessionType": 5,
+    "PossessionId": 402003,
+    "Count": 50,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 23021,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 23022,
+    "PossessionType": 5,
+    "PossessionId": 402003,
+    "Count": 50,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 23022,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 23024,
+    "PossessionType": 5,
+    "PossessionId": 402003,
+    "Count": 60,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 23024,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 23030,
+    "PossessionType": 5,
+    "PossessionId": 402003,
+    "Count": 70,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 23030,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 23031,
+    "PossessionType": 5,
+    "PossessionId": 402003,
+    "Count": 60,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 23031,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 23032,
+    "PossessionType": 5,
+    "PossessionId": 402003,
+    "Count": 70,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 23032,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 23034,
+    "PossessionType": 5,
+    "PossessionId": 402003,
+    "Count": 70,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 23034,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 23035,
+    "PossessionType": 5,
+    "PossessionId": 402003,
+    "Count": 70,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 23035,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 23036,
+    "PossessionType": 5,
+    "PossessionId": 402003,
+    "Count": 70,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 23036,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111001,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 2,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111001,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111002,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 3,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111002,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111003,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 3,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111003,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111004,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 2,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111004,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111005,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 3,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111005,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111006,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 3,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111006,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111007,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111007,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111008,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111008,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111009,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 3,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111009,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111010,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 3,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111010,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111011,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 3,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111011,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111012,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111012,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111013,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111013,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111014,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 3,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111014,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111015,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 3,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111015,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111016,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 6,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111016,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111017,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111017,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111018,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 6,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111018,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111019,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111019,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111020,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111020,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111021,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111021,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111022,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111022,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111023,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 6,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111023,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111024,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111024,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111025,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 6,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111025,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111026,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 6,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111026,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111027,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111027,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111028,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 6,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111028,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111029,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111029,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111029,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111030,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111030,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111031,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111031,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111031,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111032,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111032,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111033,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111033,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111033,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111034,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111034,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111034,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111035,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111035,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111035,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111036,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111036,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111036,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111037,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 15,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111037,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 2,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111037,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111038,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111038,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 111038,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112001,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112001,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 2,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112001,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112002,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112002,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112003,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 2,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112003,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 3,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112003,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112004,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112004,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 2,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112004,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112005,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 2,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112005,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 3,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112005,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112006,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112006,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112007,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112007,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112008,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112008,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112009,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112009,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112010,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 2,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112010,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 3,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112010,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112011,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112011,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112012,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112012,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112013,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112013,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112014,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112014,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112015,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112015,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112016,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 15,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112016,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112017,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 6,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112017,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112018,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112018,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112019,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112019,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112020,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 12,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112020,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112021,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112021,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112022,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112022,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112023,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112023,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112024,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 6,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112024,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112025,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112025,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112026,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112026,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112027,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112027,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112028,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112028,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112029,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112029,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112029,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112030,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 15,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112030,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112031,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112031,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112031,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112032,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112032,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112033,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112033,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112033,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112034,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112034,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112034,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112035,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112035,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112035,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112036,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112036,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112036,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112037,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 15,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112037,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 2,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112037,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112038,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112038,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 112038,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113001,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113001,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 2,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113001,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113002,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 50,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113002,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113003,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 2,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113003,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 3,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113003,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113004,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113004,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 2,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113004,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113005,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 2,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113005,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 3,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113005,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113006,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 2,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113006,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 3,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113006,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113007,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113007,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113008,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113008,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113009,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 2,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113009,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 3,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113009,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113010,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 2,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113010,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 3,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113010,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113011,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 2,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113011,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 3,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113011,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113012,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113012,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113013,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113013,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113014,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 2,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113014,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 3,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113014,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113015,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 2,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113015,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 3,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113015,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113016,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 75,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113016,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113017,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 6,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113017,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113018,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 6,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113018,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113019,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113019,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113020,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 500,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113020,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113021,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 15,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113021,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113022,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113022,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113023,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 6,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113023,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113024,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 6,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113024,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113025,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 6,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113025,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113026,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 6,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113026,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113027,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113027,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113028,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 6,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113028,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113029,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113029,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113030,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 625,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113030,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113031,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113031,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113032,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113032,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113033,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113033,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113034,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113034,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113035,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113035,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113036,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 15,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113036,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113037,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113037,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113038,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113038,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113039,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 15,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113039,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113040,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 113040,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 121001,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 121001,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 121003,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 121003,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 121004,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 121004,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 121005,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 121005,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 121008,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 121008,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 121009,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 121009,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 121010,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 121010,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 121013,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 121013,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 121015,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 12,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 121015,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 121016,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 121016,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 121017,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 12,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 121017,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 121020,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 12,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 121020,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 121021,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 12,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 121021,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 3
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 121022,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 12,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 121022,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 121025,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 15,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 121025,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 121028,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 17,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 121028,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 121029,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 15,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 121029,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 121030,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 17,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 121030,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 121031,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 17,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 121031,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 121032,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 17,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 121032,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 121033,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 17,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 121033,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 3000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 122001,
+    "PossessionType": 5,
+    "PossessionId": 402002,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 122001,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 122003,
+    "PossessionType": 5,
+    "PossessionId": 402002,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 122003,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 122004,
+    "PossessionType": 5,
+    "PossessionId": 402002,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 122004,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 122005,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 175,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 122005,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 122008,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 200,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 122008,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 122009,
+    "PossessionType": 5,
+    "PossessionId": 402002,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 122009,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 122010,
+    "PossessionType": 5,
+    "PossessionId": 402002,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 122010,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 122013,
+    "PossessionType": 5,
+    "PossessionId": 402002,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 122013,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 122015,
+    "PossessionType": 5,
+    "PossessionId": 402002,
+    "Count": 12,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 122015,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 122016,
+    "PossessionType": 5,
+    "PossessionId": 402002,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 122016,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 122017,
+    "PossessionType": 5,
+    "PossessionId": 402002,
+    "Count": 12,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 122017,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 122020,
+    "PossessionType": 5,
+    "PossessionId": 402002,
+    "Count": 12,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 122020,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 122021,
+    "PossessionType": 5,
+    "PossessionId": 402002,
+    "Count": 12,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 122021,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 122022,
+    "PossessionType": 5,
+    "PossessionId": 402002,
+    "Count": 12,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 122022,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 122025,
+    "PossessionType": 5,
+    "PossessionId": 402002,
+    "Count": 15,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 122025,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 122028,
+    "PossessionType": 5,
+    "PossessionId": 402002,
+    "Count": 17,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 122028,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 122029,
+    "PossessionType": 5,
+    "PossessionId": 402002,
+    "Count": 15,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 122029,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 122030,
+    "PossessionType": 5,
+    "PossessionId": 402002,
+    "Count": 17,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 122030,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 122031,
+    "PossessionType": 5,
+    "PossessionId": 402002,
+    "Count": 17,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 122031,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 122032,
+    "PossessionType": 5,
+    "PossessionId": 402002,
+    "Count": 17,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 122032,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 122033,
+    "PossessionType": 5,
+    "PossessionId": 402002,
+    "Count": 17,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 122033,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 4000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 123001,
+    "PossessionType": 5,
+    "PossessionId": 402003,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 123001,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 123003,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 750,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 123003,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 123004,
+    "PossessionType": 5,
+    "PossessionId": 402003,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 123004,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 123005,
+    "PossessionType": 5,
+    "PossessionId": 402003,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 123005,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 123008,
+    "PossessionType": 5,
+    "PossessionId": 402003,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 123008,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 123009,
+    "PossessionType": 5,
+    "PossessionId": 402003,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 123009,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 123010,
+    "PossessionType": 5,
+    "PossessionId": 402002,
+    "Count": 250,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 123010,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 123013,
+    "PossessionType": 5,
+    "PossessionId": 402003,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 123013,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 123015,
+    "PossessionType": 5,
+    "PossessionId": 402003,
+    "Count": 12,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 123015,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 123016,
+    "PossessionType": 5,
+    "PossessionId": 402003,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 123016,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 123017,
+    "PossessionType": 5,
+    "PossessionId": 402003,
+    "Count": 12,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 123017,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 123020,
+    "PossessionType": 5,
+    "PossessionId": 402003,
+    "Count": 12,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 123020,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 123021,
+    "PossessionType": 5,
+    "PossessionId": 402003,
+    "Count": 12,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 123021,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 123022,
+    "PossessionType": 5,
+    "PossessionId": 402003,
+    "Count": 12,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 123022,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 123024,
+    "PossessionType": 5,
+    "PossessionId": 402003,
+    "Count": 15,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 123024,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 123030,
+    "PossessionType": 5,
+    "PossessionId": 402003,
+    "Count": 17,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 123030,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 123031,
+    "PossessionType": 5,
+    "PossessionId": 402003,
+    "Count": 15,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 123031,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 123032,
+    "PossessionType": 5,
+    "PossessionId": 402003,
+    "Count": 17,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 123032,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 123034,
+    "PossessionType": 5,
+    "PossessionId": 402003,
+    "Count": 17,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 123034,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 123035,
+    "PossessionType": 5,
+    "PossessionId": 402003,
+    "Count": 17,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 123035,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 123036,
+    "PossessionType": 5,
+    "PossessionId": 402003,
+    "Count": 17,
+    "SortOrder": 1
+  },
+  {
+    "CharacterBoardPanelReleasePossessionGroupId": 123036,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 5000,
+    "SortOrder": 2
+  }
+]

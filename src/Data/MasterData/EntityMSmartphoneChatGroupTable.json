@@ -1,0 +1,282 @@
+[
+  {
+    "SmartphoneChatGroupId": 1001,
+    "SmartphoneGroupUnlockSceneId": 611,
+    "SmartphoneGroupUnlockValue": 0,
+    "SortOrder": 101,
+    "SmartphoneGroupEndSceneId": 848
+  },
+  {
+    "SmartphoneChatGroupId": 1002,
+    "SmartphoneGroupUnlockSceneId": 611,
+    "SmartphoneGroupUnlockValue": 0,
+    "SortOrder": 102,
+    "SmartphoneGroupEndSceneId": 848
+  },
+  {
+    "SmartphoneChatGroupId": 1003,
+    "SmartphoneGroupUnlockSceneId": 611,
+    "SmartphoneGroupUnlockValue": 0,
+    "SortOrder": 103,
+    "SmartphoneGroupEndSceneId": 848
+  },
+  {
+    "SmartphoneChatGroupId": 1004,
+    "SmartphoneGroupUnlockSceneId": 611,
+    "SmartphoneGroupUnlockValue": 0,
+    "SortOrder": 104,
+    "SmartphoneGroupEndSceneId": 848
+  },
+  {
+    "SmartphoneChatGroupId": 1005,
+    "SmartphoneGroupUnlockSceneId": 611,
+    "SmartphoneGroupUnlockValue": 999,
+    "SortOrder": 1001,
+    "SmartphoneGroupEndSceneId": 848
+  },
+  {
+    "SmartphoneChatGroupId": 1006,
+    "SmartphoneGroupUnlockSceneId": 611,
+    "SmartphoneGroupUnlockValue": 999,
+    "SortOrder": 1002,
+    "SmartphoneGroupEndSceneId": 848
+  },
+  {
+    "SmartphoneChatGroupId": 1007,
+    "SmartphoneGroupUnlockSceneId": 611,
+    "SmartphoneGroupUnlockValue": 999,
+    "SortOrder": 1003,
+    "SmartphoneGroupEndSceneId": 848
+  },
+  {
+    "SmartphoneChatGroupId": 1008,
+    "SmartphoneGroupUnlockSceneId": 611,
+    "SmartphoneGroupUnlockValue": 999,
+    "SortOrder": 1004,
+    "SmartphoneGroupEndSceneId": 848
+  },
+  {
+    "SmartphoneChatGroupId": 1009,
+    "SmartphoneGroupUnlockSceneId": 611,
+    "SmartphoneGroupUnlockValue": 999,
+    "SortOrder": 1005,
+    "SmartphoneGroupEndSceneId": 848
+  },
+  {
+    "SmartphoneChatGroupId": 1010,
+    "SmartphoneGroupUnlockSceneId": 611,
+    "SmartphoneGroupUnlockValue": 999,
+    "SortOrder": 1006,
+    "SmartphoneGroupEndSceneId": 848
+  },
+  {
+    "SmartphoneChatGroupId": 1011,
+    "SmartphoneGroupUnlockSceneId": 691,
+    "SmartphoneGroupUnlockValue": 0,
+    "SortOrder": 11,
+    "SmartphoneGroupEndSceneId": 848
+  },
+  {
+    "SmartphoneChatGroupId": 1012,
+    "SmartphoneGroupUnlockSceneId": 691,
+    "SmartphoneGroupUnlockValue": 0,
+    "SortOrder": 105,
+    "SmartphoneGroupEndSceneId": 848
+  },
+  {
+    "SmartphoneChatGroupId": 1013,
+    "SmartphoneGroupUnlockSceneId": 771,
+    "SmartphoneGroupUnlockValue": 0,
+    "SortOrder": 106,
+    "SmartphoneGroupEndSceneId": 848
+  },
+  {
+    "SmartphoneChatGroupId": 2001,
+    "SmartphoneGroupUnlockSceneId": 1211,
+    "SmartphoneGroupUnlockValue": 0,
+    "SortOrder": 101,
+    "SmartphoneGroupEndSceneId": 1448
+  },
+  {
+    "SmartphoneChatGroupId": 2002,
+    "SmartphoneGroupUnlockSceneId": 1211,
+    "SmartphoneGroupUnlockValue": 0,
+    "SortOrder": 102,
+    "SmartphoneGroupEndSceneId": 1448
+  },
+  {
+    "SmartphoneChatGroupId": 2003,
+    "SmartphoneGroupUnlockSceneId": 1211,
+    "SmartphoneGroupUnlockValue": 999,
+    "SortOrder": 1001,
+    "SmartphoneGroupEndSceneId": 1448
+  },
+  {
+    "SmartphoneChatGroupId": 2004,
+    "SmartphoneGroupUnlockSceneId": 1211,
+    "SmartphoneGroupUnlockValue": 999,
+    "SortOrder": 1002,
+    "SmartphoneGroupEndSceneId": 1448
+  },
+  {
+    "SmartphoneChatGroupId": 2005,
+    "SmartphoneGroupUnlockSceneId": 1291,
+    "SmartphoneGroupUnlockValue": 0,
+    "SortOrder": 11,
+    "SmartphoneGroupEndSceneId": 1448
+  },
+  {
+    "SmartphoneChatGroupId": 2006,
+    "SmartphoneGroupUnlockSceneId": 1291,
+    "SmartphoneGroupUnlockValue": 0,
+    "SortOrder": 105,
+    "SmartphoneGroupEndSceneId": 1448
+  },
+  {
+    "SmartphoneChatGroupId": 2007,
+    "SmartphoneGroupUnlockSceneId": 1371,
+    "SmartphoneGroupUnlockValue": 0,
+    "SortOrder": 106,
+    "SmartphoneGroupEndSceneId": 1448
+  },
+  {
+    "SmartphoneChatGroupId": 3001,
+    "SmartphoneGroupUnlockSceneId": 861,
+    "SmartphoneGroupUnlockValue": 0,
+    "SortOrder": 101,
+    "SmartphoneGroupEndSceneId": 1111
+  },
+  {
+    "SmartphoneChatGroupId": 3002,
+    "SmartphoneGroupUnlockSceneId": 861,
+    "SmartphoneGroupUnlockValue": 0,
+    "SortOrder": 102,
+    "SmartphoneGroupEndSceneId": 1111
+  },
+  {
+    "SmartphoneChatGroupId": 3003,
+    "SmartphoneGroupUnlockSceneId": 861,
+    "SmartphoneGroupUnlockValue": 999,
+    "SortOrder": 1001,
+    "SmartphoneGroupEndSceneId": 1111
+  },
+  {
+    "SmartphoneChatGroupId": 3004,
+    "SmartphoneGroupUnlockSceneId": 861,
+    "SmartphoneGroupUnlockValue": 999,
+    "SortOrder": 1002,
+    "SmartphoneGroupEndSceneId": 1111
+  },
+  {
+    "SmartphoneChatGroupId": 3005,
+    "SmartphoneGroupUnlockSceneId": 941,
+    "SmartphoneGroupUnlockValue": 0,
+    "SortOrder": 11,
+    "SmartphoneGroupEndSceneId": 1111
+  },
+  {
+    "SmartphoneChatGroupId": 3006,
+    "SmartphoneGroupUnlockSceneId": 941,
+    "SmartphoneGroupUnlockValue": 0,
+    "SortOrder": 103,
+    "SmartphoneGroupEndSceneId": 1111
+  },
+  {
+    "SmartphoneChatGroupId": 3007,
+    "SmartphoneGroupUnlockSceneId": 1021,
+    "SmartphoneGroupUnlockValue": 0,
+    "SortOrder": 106,
+    "SmartphoneGroupEndSceneId": 1111
+  },
+  {
+    "SmartphoneChatGroupId": 4001,
+    "SmartphoneGroupUnlockSceneId": 1461,
+    "SmartphoneGroupUnlockValue": 0,
+    "SortOrder": 101,
+    "SmartphoneGroupEndSceneId": 1711
+  },
+  {
+    "SmartphoneChatGroupId": 4002,
+    "SmartphoneGroupUnlockSceneId": 1461,
+    "SmartphoneGroupUnlockValue": 0,
+    "SortOrder": 102,
+    "SmartphoneGroupEndSceneId": 1711
+  },
+  {
+    "SmartphoneChatGroupId": 4003,
+    "SmartphoneGroupUnlockSceneId": 1461,
+    "SmartphoneGroupUnlockValue": 0,
+    "SortOrder": 103,
+    "SmartphoneGroupEndSceneId": 1711
+  },
+  {
+    "SmartphoneChatGroupId": 4004,
+    "SmartphoneGroupUnlockSceneId": 1461,
+    "SmartphoneGroupUnlockValue": 0,
+    "SortOrder": 104,
+    "SmartphoneGroupEndSceneId": 1711
+  },
+  {
+    "SmartphoneChatGroupId": 4005,
+    "SmartphoneGroupUnlockSceneId": 1461,
+    "SmartphoneGroupUnlockValue": 999,
+    "SortOrder": 1001,
+    "SmartphoneGroupEndSceneId": 1711
+  },
+  {
+    "SmartphoneChatGroupId": 4006,
+    "SmartphoneGroupUnlockSceneId": 1461,
+    "SmartphoneGroupUnlockValue": 999,
+    "SortOrder": 1002,
+    "SmartphoneGroupEndSceneId": 1711
+  },
+  {
+    "SmartphoneChatGroupId": 4007,
+    "SmartphoneGroupUnlockSceneId": 1461,
+    "SmartphoneGroupUnlockValue": 999,
+    "SortOrder": 1003,
+    "SmartphoneGroupEndSceneId": 1711
+  },
+  {
+    "SmartphoneChatGroupId": 4008,
+    "SmartphoneGroupUnlockSceneId": 1461,
+    "SmartphoneGroupUnlockValue": 999,
+    "SortOrder": 1004,
+    "SmartphoneGroupEndSceneId": 1711
+  },
+  {
+    "SmartphoneChatGroupId": 4009,
+    "SmartphoneGroupUnlockSceneId": 1461,
+    "SmartphoneGroupUnlockValue": 999,
+    "SortOrder": 1005,
+    "SmartphoneGroupEndSceneId": 1711
+  },
+  {
+    "SmartphoneChatGroupId": 4010,
+    "SmartphoneGroupUnlockSceneId": 1461,
+    "SmartphoneGroupUnlockValue": 999,
+    "SortOrder": 1006,
+    "SmartphoneGroupEndSceneId": 1711
+  },
+  {
+    "SmartphoneChatGroupId": 4011,
+    "SmartphoneGroupUnlockSceneId": 1541,
+    "SmartphoneGroupUnlockValue": 0,
+    "SortOrder": 11,
+    "SmartphoneGroupEndSceneId": 1711
+  },
+  {
+    "SmartphoneChatGroupId": 4012,
+    "SmartphoneGroupUnlockSceneId": 1541,
+    "SmartphoneGroupUnlockValue": 0,
+    "SortOrder": 105,
+    "SmartphoneGroupEndSceneId": 1711
+  },
+  {
+    "SmartphoneChatGroupId": 4013,
+    "SmartphoneGroupUnlockSceneId": 1621,
+    "SmartphoneGroupUnlockValue": 0,
+    "SortOrder": 106,
+    "SmartphoneGroupEndSceneId": 1711
+  }
+]

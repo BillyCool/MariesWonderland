@@ -1,0 +1,6487 @@
+[
+  {
+    "SkillBehaviourActionId": 900001,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 900002,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 300
+  },
+  {
+    "SkillBehaviourActionId": 900003,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 900004,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 600
+  },
+  {
+    "SkillBehaviourActionId": 900005,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 500
+  },
+  {
+    "SkillBehaviourActionId": 900006,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 900
+  },
+  {
+    "SkillBehaviourActionId": 900007,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 800
+  },
+  {
+    "SkillBehaviourActionId": 11000001,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 984
+  },
+  {
+    "SkillBehaviourActionId": 11000002,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 979
+  },
+  {
+    "SkillBehaviourActionId": 11000003,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 975
+  },
+  {
+    "SkillBehaviourActionId": 11000004,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 970
+  },
+  {
+    "SkillBehaviourActionId": 11000005,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 978
+  },
+  {
+    "SkillBehaviourActionId": 11000006,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 972
+  },
+  {
+    "SkillBehaviourActionId": 11000007,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 966
+  },
+  {
+    "SkillBehaviourActionId": 11000008,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 960
+  },
+  {
+    "SkillBehaviourActionId": 11000009,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 973
+  },
+  {
+    "SkillBehaviourActionId": 11000010,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 965
+  },
+  {
+    "SkillBehaviourActionId": 11000011,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 958
+  },
+  {
+    "SkillBehaviourActionId": 11000012,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 950
+  },
+  {
+    "SkillBehaviourActionId": 11000013,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 973
+  },
+  {
+    "SkillBehaviourActionId": 11000014,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 965
+  },
+  {
+    "SkillBehaviourActionId": 11000015,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 958
+  },
+  {
+    "SkillBehaviourActionId": 11000016,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 950
+  },
+  {
+    "SkillBehaviourActionId": 11000017,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 967
+  },
+  {
+    "SkillBehaviourActionId": 11000018,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 958
+  },
+  {
+    "SkillBehaviourActionId": 11000019,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 949
+  },
+  {
+    "SkillBehaviourActionId": 11000020,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 940
+  },
+  {
+    "SkillBehaviourActionId": 11000021,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 956
+  },
+  {
+    "SkillBehaviourActionId": 11000022,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 944
+  },
+  {
+    "SkillBehaviourActionId": 11000023,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 932
+  },
+  {
+    "SkillBehaviourActionId": 11000024,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 920
+  },
+  {
+    "SkillBehaviourActionId": 11000025,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 967
+  },
+  {
+    "SkillBehaviourActionId": 11000026,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 958
+  },
+  {
+    "SkillBehaviourActionId": 11000027,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 949
+  },
+  {
+    "SkillBehaviourActionId": 11000028,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 940
+  },
+  {
+    "SkillBehaviourActionId": 11000029,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 956
+  },
+  {
+    "SkillBehaviourActionId": 11000030,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 944
+  },
+  {
+    "SkillBehaviourActionId": 11000031,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 932
+  },
+  {
+    "SkillBehaviourActionId": 11000032,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 920
+  },
+  {
+    "SkillBehaviourActionId": 11000033,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 945
+  },
+  {
+    "SkillBehaviourActionId": 11000034,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 930
+  },
+  {
+    "SkillBehaviourActionId": 11000035,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 915
+  },
+  {
+    "SkillBehaviourActionId": 11000036,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 900
+  },
+  {
+    "SkillBehaviourActionId": 11000037,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 984
+  },
+  {
+    "SkillBehaviourActionId": 11000038,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 979
+  },
+  {
+    "SkillBehaviourActionId": 11000039,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 975
+  },
+  {
+    "SkillBehaviourActionId": 11000040,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 970
+  },
+  {
+    "SkillBehaviourActionId": 11000041,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 978
+  },
+  {
+    "SkillBehaviourActionId": 11000042,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 972
+  },
+  {
+    "SkillBehaviourActionId": 11000043,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 966
+  },
+  {
+    "SkillBehaviourActionId": 11000044,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 960
+  },
+  {
+    "SkillBehaviourActionId": 11000045,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 973
+  },
+  {
+    "SkillBehaviourActionId": 11000046,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 965
+  },
+  {
+    "SkillBehaviourActionId": 11000047,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 958
+  },
+  {
+    "SkillBehaviourActionId": 11000048,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 950
+  },
+  {
+    "SkillBehaviourActionId": 11000049,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 973
+  },
+  {
+    "SkillBehaviourActionId": 11000050,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 965
+  },
+  {
+    "SkillBehaviourActionId": 11000051,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 958
+  },
+  {
+    "SkillBehaviourActionId": 11000052,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 950
+  },
+  {
+    "SkillBehaviourActionId": 11000053,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 967
+  },
+  {
+    "SkillBehaviourActionId": 11000054,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 958
+  },
+  {
+    "SkillBehaviourActionId": 11000055,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 949
+  },
+  {
+    "SkillBehaviourActionId": 11000056,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 940
+  },
+  {
+    "SkillBehaviourActionId": 11000057,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 956
+  },
+  {
+    "SkillBehaviourActionId": 11000058,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 944
+  },
+  {
+    "SkillBehaviourActionId": 11000059,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 932
+  },
+  {
+    "SkillBehaviourActionId": 11000060,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 920
+  },
+  {
+    "SkillBehaviourActionId": 11000061,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 967
+  },
+  {
+    "SkillBehaviourActionId": 11000062,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 958
+  },
+  {
+    "SkillBehaviourActionId": 11000063,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 949
+  },
+  {
+    "SkillBehaviourActionId": 11000064,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 940
+  },
+  {
+    "SkillBehaviourActionId": 11000065,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 956
+  },
+  {
+    "SkillBehaviourActionId": 11000066,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 944
+  },
+  {
+    "SkillBehaviourActionId": 11000067,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 932
+  },
+  {
+    "SkillBehaviourActionId": 11000068,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 920
+  },
+  {
+    "SkillBehaviourActionId": 11000069,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 945
+  },
+  {
+    "SkillBehaviourActionId": 11000070,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 930
+  },
+  {
+    "SkillBehaviourActionId": 11000071,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 915
+  },
+  {
+    "SkillBehaviourActionId": 11000072,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 900
+  },
+  {
+    "SkillBehaviourActionId": 11000073,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 984
+  },
+  {
+    "SkillBehaviourActionId": 11000074,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 979
+  },
+  {
+    "SkillBehaviourActionId": 11000075,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 975
+  },
+  {
+    "SkillBehaviourActionId": 11000076,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 970
+  },
+  {
+    "SkillBehaviourActionId": 11000077,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 978
+  },
+  {
+    "SkillBehaviourActionId": 11000078,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 972
+  },
+  {
+    "SkillBehaviourActionId": 11000079,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 966
+  },
+  {
+    "SkillBehaviourActionId": 11000080,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 960
+  },
+  {
+    "SkillBehaviourActionId": 11000081,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 973
+  },
+  {
+    "SkillBehaviourActionId": 11000082,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 965
+  },
+  {
+    "SkillBehaviourActionId": 11000083,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 958
+  },
+  {
+    "SkillBehaviourActionId": 11000084,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 950
+  },
+  {
+    "SkillBehaviourActionId": 11000085,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 973
+  },
+  {
+    "SkillBehaviourActionId": 11000086,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 965
+  },
+  {
+    "SkillBehaviourActionId": 11000087,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 958
+  },
+  {
+    "SkillBehaviourActionId": 11000088,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 950
+  },
+  {
+    "SkillBehaviourActionId": 11000089,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 967
+  },
+  {
+    "SkillBehaviourActionId": 11000090,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 958
+  },
+  {
+    "SkillBehaviourActionId": 11000091,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 949
+  },
+  {
+    "SkillBehaviourActionId": 11000092,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 940
+  },
+  {
+    "SkillBehaviourActionId": 11000093,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 956
+  },
+  {
+    "SkillBehaviourActionId": 11000094,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 944
+  },
+  {
+    "SkillBehaviourActionId": 11000095,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 932
+  },
+  {
+    "SkillBehaviourActionId": 11000096,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 920
+  },
+  {
+    "SkillBehaviourActionId": 11000097,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 967
+  },
+  {
+    "SkillBehaviourActionId": 11000098,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 958
+  },
+  {
+    "SkillBehaviourActionId": 11000099,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 949
+  },
+  {
+    "SkillBehaviourActionId": 11000100,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 940
+  },
+  {
+    "SkillBehaviourActionId": 11000101,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 956
+  },
+  {
+    "SkillBehaviourActionId": 11000102,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 944
+  },
+  {
+    "SkillBehaviourActionId": 11000103,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 932
+  },
+  {
+    "SkillBehaviourActionId": 11000104,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 920
+  },
+  {
+    "SkillBehaviourActionId": 11000105,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 945
+  },
+  {
+    "SkillBehaviourActionId": 11000106,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 930
+  },
+  {
+    "SkillBehaviourActionId": 11000107,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 915
+  },
+  {
+    "SkillBehaviourActionId": 11000108,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 900
+  },
+  {
+    "SkillBehaviourActionId": 11000109,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 984
+  },
+  {
+    "SkillBehaviourActionId": 11000110,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 979
+  },
+  {
+    "SkillBehaviourActionId": 11000111,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 975
+  },
+  {
+    "SkillBehaviourActionId": 11000112,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 970
+  },
+  {
+    "SkillBehaviourActionId": 11000113,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 978
+  },
+  {
+    "SkillBehaviourActionId": 11000114,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 972
+  },
+  {
+    "SkillBehaviourActionId": 11000115,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 966
+  },
+  {
+    "SkillBehaviourActionId": 11000116,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 960
+  },
+  {
+    "SkillBehaviourActionId": 11000117,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 973
+  },
+  {
+    "SkillBehaviourActionId": 11000118,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 965
+  },
+  {
+    "SkillBehaviourActionId": 11000119,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 958
+  },
+  {
+    "SkillBehaviourActionId": 11000120,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 950
+  },
+  {
+    "SkillBehaviourActionId": 11000121,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 973
+  },
+  {
+    "SkillBehaviourActionId": 11000122,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 965
+  },
+  {
+    "SkillBehaviourActionId": 11000123,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 958
+  },
+  {
+    "SkillBehaviourActionId": 11000124,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 950
+  },
+  {
+    "SkillBehaviourActionId": 11000125,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 967
+  },
+  {
+    "SkillBehaviourActionId": 11000126,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 958
+  },
+  {
+    "SkillBehaviourActionId": 11000127,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 949
+  },
+  {
+    "SkillBehaviourActionId": 11000128,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 940
+  },
+  {
+    "SkillBehaviourActionId": 11000129,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 956
+  },
+  {
+    "SkillBehaviourActionId": 11000130,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 944
+  },
+  {
+    "SkillBehaviourActionId": 11000131,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 932
+  },
+  {
+    "SkillBehaviourActionId": 11000132,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 920
+  },
+  {
+    "SkillBehaviourActionId": 11000133,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 967
+  },
+  {
+    "SkillBehaviourActionId": 11000134,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 958
+  },
+  {
+    "SkillBehaviourActionId": 11000135,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 949
+  },
+  {
+    "SkillBehaviourActionId": 11000136,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 940
+  },
+  {
+    "SkillBehaviourActionId": 11000137,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 956
+  },
+  {
+    "SkillBehaviourActionId": 11000138,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 944
+  },
+  {
+    "SkillBehaviourActionId": 11000139,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 932
+  },
+  {
+    "SkillBehaviourActionId": 11000140,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 920
+  },
+  {
+    "SkillBehaviourActionId": 11000141,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 945
+  },
+  {
+    "SkillBehaviourActionId": 11000142,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 930
+  },
+  {
+    "SkillBehaviourActionId": 11000143,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 915
+  },
+  {
+    "SkillBehaviourActionId": 11000144,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 900
+  },
+  {
+    "SkillBehaviourActionId": 11000145,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 984
+  },
+  {
+    "SkillBehaviourActionId": 11000146,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 979
+  },
+  {
+    "SkillBehaviourActionId": 11000147,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 975
+  },
+  {
+    "SkillBehaviourActionId": 11000148,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 970
+  },
+  {
+    "SkillBehaviourActionId": 11000149,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 978
+  },
+  {
+    "SkillBehaviourActionId": 11000150,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 972
+  },
+  {
+    "SkillBehaviourActionId": 11000151,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 966
+  },
+  {
+    "SkillBehaviourActionId": 11000152,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 960
+  },
+  {
+    "SkillBehaviourActionId": 11000153,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 973
+  },
+  {
+    "SkillBehaviourActionId": 11000154,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 965
+  },
+  {
+    "SkillBehaviourActionId": 11000155,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 958
+  },
+  {
+    "SkillBehaviourActionId": 11000156,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 950
+  },
+  {
+    "SkillBehaviourActionId": 11000157,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 973
+  },
+  {
+    "SkillBehaviourActionId": 11000158,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 965
+  },
+  {
+    "SkillBehaviourActionId": 11000159,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 958
+  },
+  {
+    "SkillBehaviourActionId": 11000160,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 950
+  },
+  {
+    "SkillBehaviourActionId": 11000161,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 967
+  },
+  {
+    "SkillBehaviourActionId": 11000162,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 958
+  },
+  {
+    "SkillBehaviourActionId": 11000163,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 949
+  },
+  {
+    "SkillBehaviourActionId": 11000164,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 940
+  },
+  {
+    "SkillBehaviourActionId": 11000165,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 956
+  },
+  {
+    "SkillBehaviourActionId": 11000166,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 944
+  },
+  {
+    "SkillBehaviourActionId": 11000167,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 932
+  },
+  {
+    "SkillBehaviourActionId": 11000168,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 920
+  },
+  {
+    "SkillBehaviourActionId": 11000169,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 967
+  },
+  {
+    "SkillBehaviourActionId": 11000170,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 958
+  },
+  {
+    "SkillBehaviourActionId": 11000171,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 949
+  },
+  {
+    "SkillBehaviourActionId": 11000172,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 940
+  },
+  {
+    "SkillBehaviourActionId": 11000173,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 956
+  },
+  {
+    "SkillBehaviourActionId": 11000174,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 944
+  },
+  {
+    "SkillBehaviourActionId": 11000175,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 932
+  },
+  {
+    "SkillBehaviourActionId": 11000176,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 920
+  },
+  {
+    "SkillBehaviourActionId": 11000177,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 945
+  },
+  {
+    "SkillBehaviourActionId": 11000178,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 930
+  },
+  {
+    "SkillBehaviourActionId": 11000179,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 915
+  },
+  {
+    "SkillBehaviourActionId": 11000180,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 900
+  },
+  {
+    "SkillBehaviourActionId": 11000181,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 984
+  },
+  {
+    "SkillBehaviourActionId": 11000182,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 979
+  },
+  {
+    "SkillBehaviourActionId": 11000183,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 975
+  },
+  {
+    "SkillBehaviourActionId": 11000184,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 970
+  },
+  {
+    "SkillBehaviourActionId": 11000185,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 978
+  },
+  {
+    "SkillBehaviourActionId": 11000186,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 972
+  },
+  {
+    "SkillBehaviourActionId": 11000187,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 966
+  },
+  {
+    "SkillBehaviourActionId": 11000188,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 960
+  },
+  {
+    "SkillBehaviourActionId": 11000189,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 973
+  },
+  {
+    "SkillBehaviourActionId": 11000190,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 965
+  },
+  {
+    "SkillBehaviourActionId": 11000191,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 958
+  },
+  {
+    "SkillBehaviourActionId": 11000192,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 950
+  },
+  {
+    "SkillBehaviourActionId": 11000193,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 973
+  },
+  {
+    "SkillBehaviourActionId": 11000194,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 965
+  },
+  {
+    "SkillBehaviourActionId": 11000195,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 958
+  },
+  {
+    "SkillBehaviourActionId": 11000196,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 950
+  },
+  {
+    "SkillBehaviourActionId": 11000197,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 967
+  },
+  {
+    "SkillBehaviourActionId": 11000198,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 958
+  },
+  {
+    "SkillBehaviourActionId": 11000199,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 949
+  },
+  {
+    "SkillBehaviourActionId": 11000200,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 940
+  },
+  {
+    "SkillBehaviourActionId": 11000201,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 956
+  },
+  {
+    "SkillBehaviourActionId": 11000202,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 944
+  },
+  {
+    "SkillBehaviourActionId": 11000203,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 932
+  },
+  {
+    "SkillBehaviourActionId": 11000204,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 920
+  },
+  {
+    "SkillBehaviourActionId": 11000205,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 967
+  },
+  {
+    "SkillBehaviourActionId": 11000206,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 958
+  },
+  {
+    "SkillBehaviourActionId": 11000207,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 949
+  },
+  {
+    "SkillBehaviourActionId": 11000208,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 940
+  },
+  {
+    "SkillBehaviourActionId": 11000209,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 956
+  },
+  {
+    "SkillBehaviourActionId": 11000210,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 944
+  },
+  {
+    "SkillBehaviourActionId": 11000211,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 932
+  },
+  {
+    "SkillBehaviourActionId": 11000212,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 920
+  },
+  {
+    "SkillBehaviourActionId": 11000213,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 945
+  },
+  {
+    "SkillBehaviourActionId": 11000214,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 930
+  },
+  {
+    "SkillBehaviourActionId": 11000215,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 915
+  },
+  {
+    "SkillBehaviourActionId": 11000216,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 900
+  },
+  {
+    "SkillBehaviourActionId": 11000217,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 951
+  },
+  {
+    "SkillBehaviourActionId": 11000218,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 937
+  },
+  {
+    "SkillBehaviourActionId": 11000219,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 924
+  },
+  {
+    "SkillBehaviourActionId": 11000220,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 910
+  },
+  {
+    "SkillBehaviourActionId": 11000221,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 934
+  },
+  {
+    "SkillBehaviourActionId": 11000222,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 916
+  },
+  {
+    "SkillBehaviourActionId": 11000223,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 898
+  },
+  {
+    "SkillBehaviourActionId": 11000224,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 880
+  },
+  {
+    "SkillBehaviourActionId": 11000225,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 918
+  },
+  {
+    "SkillBehaviourActionId": 11000226,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 895
+  },
+  {
+    "SkillBehaviourActionId": 11000227,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 873
+  },
+  {
+    "SkillBehaviourActionId": 11000228,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 850
+  },
+  {
+    "SkillBehaviourActionId": 12000001,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 999
+  },
+  {
+    "SkillBehaviourActionId": 12000002,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 997
+  },
+  {
+    "SkillBehaviourActionId": 12000003,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 995
+  },
+  {
+    "SkillBehaviourActionId": 12000004,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 993
+  },
+  {
+    "SkillBehaviourActionId": 12000005,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 991
+  },
+  {
+    "SkillBehaviourActionId": 12000006,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 989
+  },
+  {
+    "SkillBehaviourActionId": 12000007,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 987
+  },
+  {
+    "SkillBehaviourActionId": 12000008,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 985
+  },
+  {
+    "SkillBehaviourActionId": 12000009,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 983
+  },
+  {
+    "SkillBehaviourActionId": 12000010,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 981
+  },
+  {
+    "SkillBehaviourActionId": 12000011,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 979
+  },
+  {
+    "SkillBehaviourActionId": 12000012,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 977
+  },
+  {
+    "SkillBehaviourActionId": 12000013,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 975
+  },
+  {
+    "SkillBehaviourActionId": 12000014,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 973
+  },
+  {
+    "SkillBehaviourActionId": 12000015,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 970
+  },
+  {
+    "SkillBehaviourActionId": 12000016,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 976
+  },
+  {
+    "SkillBehaviourActionId": 12000017,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 975
+  },
+  {
+    "SkillBehaviourActionId": 12000018,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 974
+  },
+  {
+    "SkillBehaviourActionId": 12000019,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 973
+  },
+  {
+    "SkillBehaviourActionId": 12000020,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 972
+  },
+  {
+    "SkillBehaviourActionId": 12000021,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 971
+  },
+  {
+    "SkillBehaviourActionId": 12000022,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 970
+  },
+  {
+    "SkillBehaviourActionId": 12000023,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 969
+  },
+  {
+    "SkillBehaviourActionId": 12000024,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 968
+  },
+  {
+    "SkillBehaviourActionId": 12000025,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 967
+  },
+  {
+    "SkillBehaviourActionId": 12000026,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 966
+  },
+  {
+    "SkillBehaviourActionId": 12000027,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 965
+  },
+  {
+    "SkillBehaviourActionId": 12000028,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 964
+  },
+  {
+    "SkillBehaviourActionId": 12000029,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 962
+  },
+  {
+    "SkillBehaviourActionId": 12000030,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 960
+  },
+  {
+    "SkillBehaviourActionId": 12000031,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 974
+  },
+  {
+    "SkillBehaviourActionId": 12000032,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 973
+  },
+  {
+    "SkillBehaviourActionId": 12000033,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 972
+  },
+  {
+    "SkillBehaviourActionId": 12000034,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 970
+  },
+  {
+    "SkillBehaviourActionId": 12000035,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 969
+  },
+  {
+    "SkillBehaviourActionId": 12000036,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 968
+  },
+  {
+    "SkillBehaviourActionId": 12000037,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 967
+  },
+  {
+    "SkillBehaviourActionId": 12000038,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 965
+  },
+  {
+    "SkillBehaviourActionId": 12000039,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 963
+  },
+  {
+    "SkillBehaviourActionId": 12000040,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 961
+  },
+  {
+    "SkillBehaviourActionId": 12000041,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 960
+  },
+  {
+    "SkillBehaviourActionId": 12000042,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 958
+  },
+  {
+    "SkillBehaviourActionId": 12000043,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 956
+  },
+  {
+    "SkillBehaviourActionId": 12000044,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 954
+  },
+  {
+    "SkillBehaviourActionId": 12000045,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 950
+  },
+  {
+    "SkillBehaviourActionId": 12000046,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 963
+  },
+  {
+    "SkillBehaviourActionId": 12000047,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 962
+  },
+  {
+    "SkillBehaviourActionId": 12000048,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 961
+  },
+  {
+    "SkillBehaviourActionId": 12000049,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 960
+  },
+  {
+    "SkillBehaviourActionId": 12000050,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 958
+  },
+  {
+    "SkillBehaviourActionId": 12000051,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 957
+  },
+  {
+    "SkillBehaviourActionId": 12000052,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 956
+  },
+  {
+    "SkillBehaviourActionId": 12000053,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 955
+  },
+  {
+    "SkillBehaviourActionId": 12000054,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 953
+  },
+  {
+    "SkillBehaviourActionId": 12000055,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 952
+  },
+  {
+    "SkillBehaviourActionId": 12000056,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 949
+  },
+  {
+    "SkillBehaviourActionId": 12000057,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 947
+  },
+  {
+    "SkillBehaviourActionId": 12000058,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 945
+  },
+  {
+    "SkillBehaviourActionId": 12000059,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 943
+  },
+  {
+    "SkillBehaviourActionId": 12000060,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 940
+  },
+  {
+    "SkillBehaviourActionId": 12000061,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 954
+  },
+  {
+    "SkillBehaviourActionId": 12000062,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 952
+  },
+  {
+    "SkillBehaviourActionId": 12000063,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 951
+  },
+  {
+    "SkillBehaviourActionId": 12000064,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 949
+  },
+  {
+    "SkillBehaviourActionId": 12000065,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 947
+  },
+  {
+    "SkillBehaviourActionId": 12000066,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 945
+  },
+  {
+    "SkillBehaviourActionId": 12000067,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 943
+  },
+  {
+    "SkillBehaviourActionId": 12000068,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 941
+  },
+  {
+    "SkillBehaviourActionId": 12000069,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 938
+  },
+  {
+    "SkillBehaviourActionId": 12000070,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 936
+  },
+  {
+    "SkillBehaviourActionId": 12000071,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 933
+  },
+  {
+    "SkillBehaviourActionId": 12000072,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 930
+  },
+  {
+    "SkillBehaviourActionId": 12000073,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 927
+  },
+  {
+    "SkillBehaviourActionId": 12000074,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 924
+  },
+  {
+    "SkillBehaviourActionId": 12000075,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 920
+  },
+  {
+    "SkillBehaviourActionId": 12000076,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 947
+  },
+  {
+    "SkillBehaviourActionId": 12000077,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 945
+  },
+  {
+    "SkillBehaviourActionId": 12000078,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 943
+  },
+  {
+    "SkillBehaviourActionId": 12000079,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 940
+  },
+  {
+    "SkillBehaviourActionId": 12000080,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 938
+  },
+  {
+    "SkillBehaviourActionId": 12000081,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 935
+  },
+  {
+    "SkillBehaviourActionId": 12000082,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 933
+  },
+  {
+    "SkillBehaviourActionId": 12000083,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 929
+  },
+  {
+    "SkillBehaviourActionId": 12000084,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 926
+  },
+  {
+    "SkillBehaviourActionId": 12000085,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 922
+  },
+  {
+    "SkillBehaviourActionId": 12000086,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 919
+  },
+  {
+    "SkillBehaviourActionId": 12000087,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 915
+  },
+  {
+    "SkillBehaviourActionId": 12000088,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 911
+  },
+  {
+    "SkillBehaviourActionId": 12000089,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 907
+  },
+  {
+    "SkillBehaviourActionId": 12000090,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 900
+  },
+  {
+    "SkillBehaviourActionId": 12000091,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 999
+  },
+  {
+    "SkillBehaviourActionId": 12000092,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 997
+  },
+  {
+    "SkillBehaviourActionId": 12000093,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 995
+  },
+  {
+    "SkillBehaviourActionId": 12000094,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 993
+  },
+  {
+    "SkillBehaviourActionId": 12000095,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 991
+  },
+  {
+    "SkillBehaviourActionId": 12000096,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 989
+  },
+  {
+    "SkillBehaviourActionId": 12000097,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 987
+  },
+  {
+    "SkillBehaviourActionId": 12000098,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 985
+  },
+  {
+    "SkillBehaviourActionId": 12000099,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 983
+  },
+  {
+    "SkillBehaviourActionId": 12000100,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 981
+  },
+  {
+    "SkillBehaviourActionId": 12000101,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 979
+  },
+  {
+    "SkillBehaviourActionId": 12000102,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 977
+  },
+  {
+    "SkillBehaviourActionId": 12000103,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 975
+  },
+  {
+    "SkillBehaviourActionId": 12000104,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 973
+  },
+  {
+    "SkillBehaviourActionId": 12000105,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 970
+  },
+  {
+    "SkillBehaviourActionId": 12000106,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 976
+  },
+  {
+    "SkillBehaviourActionId": 12000107,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 975
+  },
+  {
+    "SkillBehaviourActionId": 12000108,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 974
+  },
+  {
+    "SkillBehaviourActionId": 12000109,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 973
+  },
+  {
+    "SkillBehaviourActionId": 12000110,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 972
+  },
+  {
+    "SkillBehaviourActionId": 12000111,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 971
+  },
+  {
+    "SkillBehaviourActionId": 12000112,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 970
+  },
+  {
+    "SkillBehaviourActionId": 12000113,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 969
+  },
+  {
+    "SkillBehaviourActionId": 12000114,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 968
+  },
+  {
+    "SkillBehaviourActionId": 12000115,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 967
+  },
+  {
+    "SkillBehaviourActionId": 12000116,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 966
+  },
+  {
+    "SkillBehaviourActionId": 12000117,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 965
+  },
+  {
+    "SkillBehaviourActionId": 12000118,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 964
+  },
+  {
+    "SkillBehaviourActionId": 12000119,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 962
+  },
+  {
+    "SkillBehaviourActionId": 12000120,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 960
+  },
+  {
+    "SkillBehaviourActionId": 12000121,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 974
+  },
+  {
+    "SkillBehaviourActionId": 12000122,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 973
+  },
+  {
+    "SkillBehaviourActionId": 12000123,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 972
+  },
+  {
+    "SkillBehaviourActionId": 12000124,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 970
+  },
+  {
+    "SkillBehaviourActionId": 12000125,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 969
+  },
+  {
+    "SkillBehaviourActionId": 12000126,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 968
+  },
+  {
+    "SkillBehaviourActionId": 12000127,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 967
+  },
+  {
+    "SkillBehaviourActionId": 12000128,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 965
+  },
+  {
+    "SkillBehaviourActionId": 12000129,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 963
+  },
+  {
+    "SkillBehaviourActionId": 12000130,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 961
+  },
+  {
+    "SkillBehaviourActionId": 12000131,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 960
+  },
+  {
+    "SkillBehaviourActionId": 12000132,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 958
+  },
+  {
+    "SkillBehaviourActionId": 12000133,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 956
+  },
+  {
+    "SkillBehaviourActionId": 12000134,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 954
+  },
+  {
+    "SkillBehaviourActionId": 12000135,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 950
+  },
+  {
+    "SkillBehaviourActionId": 12000136,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 963
+  },
+  {
+    "SkillBehaviourActionId": 12000137,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 962
+  },
+  {
+    "SkillBehaviourActionId": 12000138,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 961
+  },
+  {
+    "SkillBehaviourActionId": 12000139,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 960
+  },
+  {
+    "SkillBehaviourActionId": 12000140,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 958
+  },
+  {
+    "SkillBehaviourActionId": 12000141,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 957
+  },
+  {
+    "SkillBehaviourActionId": 12000142,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 956
+  },
+  {
+    "SkillBehaviourActionId": 12000143,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 955
+  },
+  {
+    "SkillBehaviourActionId": 12000144,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 953
+  },
+  {
+    "SkillBehaviourActionId": 12000145,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 952
+  },
+  {
+    "SkillBehaviourActionId": 12000146,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 949
+  },
+  {
+    "SkillBehaviourActionId": 12000147,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 947
+  },
+  {
+    "SkillBehaviourActionId": 12000148,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 945
+  },
+  {
+    "SkillBehaviourActionId": 12000149,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 943
+  },
+  {
+    "SkillBehaviourActionId": 12000150,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 940
+  },
+  {
+    "SkillBehaviourActionId": 12000151,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 954
+  },
+  {
+    "SkillBehaviourActionId": 12000152,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 952
+  },
+  {
+    "SkillBehaviourActionId": 12000153,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 951
+  },
+  {
+    "SkillBehaviourActionId": 12000154,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 949
+  },
+  {
+    "SkillBehaviourActionId": 12000155,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 947
+  },
+  {
+    "SkillBehaviourActionId": 12000156,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 945
+  },
+  {
+    "SkillBehaviourActionId": 12000157,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 943
+  },
+  {
+    "SkillBehaviourActionId": 12000158,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 941
+  },
+  {
+    "SkillBehaviourActionId": 12000159,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 938
+  },
+  {
+    "SkillBehaviourActionId": 12000160,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 936
+  },
+  {
+    "SkillBehaviourActionId": 12000161,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 933
+  },
+  {
+    "SkillBehaviourActionId": 12000162,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 930
+  },
+  {
+    "SkillBehaviourActionId": 12000163,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 927
+  },
+  {
+    "SkillBehaviourActionId": 12000164,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 924
+  },
+  {
+    "SkillBehaviourActionId": 12000165,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 920
+  },
+  {
+    "SkillBehaviourActionId": 12000166,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 947
+  },
+  {
+    "SkillBehaviourActionId": 12000167,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 945
+  },
+  {
+    "SkillBehaviourActionId": 12000168,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 943
+  },
+  {
+    "SkillBehaviourActionId": 12000169,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 940
+  },
+  {
+    "SkillBehaviourActionId": 12000170,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 938
+  },
+  {
+    "SkillBehaviourActionId": 12000171,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 935
+  },
+  {
+    "SkillBehaviourActionId": 12000172,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 933
+  },
+  {
+    "SkillBehaviourActionId": 12000173,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 929
+  },
+  {
+    "SkillBehaviourActionId": 12000174,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 926
+  },
+  {
+    "SkillBehaviourActionId": 12000175,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 922
+  },
+  {
+    "SkillBehaviourActionId": 12000176,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 919
+  },
+  {
+    "SkillBehaviourActionId": 12000177,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 915
+  },
+  {
+    "SkillBehaviourActionId": 12000178,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 911
+  },
+  {
+    "SkillBehaviourActionId": 12000179,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 907
+  },
+  {
+    "SkillBehaviourActionId": 12000180,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 900
+  },
+  {
+    "SkillBehaviourActionId": 12000181,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 945
+  },
+  {
+    "SkillBehaviourActionId": 12000182,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 943
+  },
+  {
+    "SkillBehaviourActionId": 12000183,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 941
+  },
+  {
+    "SkillBehaviourActionId": 12000184,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 939
+  },
+  {
+    "SkillBehaviourActionId": 12000185,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 937
+  },
+  {
+    "SkillBehaviourActionId": 12000186,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 936
+  },
+  {
+    "SkillBehaviourActionId": 12000187,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 934
+  },
+  {
+    "SkillBehaviourActionId": 12000188,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 932
+  },
+  {
+    "SkillBehaviourActionId": 12000189,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 929
+  },
+  {
+    "SkillBehaviourActionId": 12000190,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 927
+  },
+  {
+    "SkillBehaviourActionId": 12000191,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 924
+  },
+  {
+    "SkillBehaviourActionId": 12000192,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 921
+  },
+  {
+    "SkillBehaviourActionId": 12000193,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 918
+  },
+  {
+    "SkillBehaviourActionId": 12000194,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 914
+  },
+  {
+    "SkillBehaviourActionId": 12000195,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 910
+  },
+  {
+    "SkillBehaviourActionId": 12000196,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 931
+  },
+  {
+    "SkillBehaviourActionId": 12000197,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 928
+  },
+  {
+    "SkillBehaviourActionId": 12000198,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 926
+  },
+  {
+    "SkillBehaviourActionId": 12000199,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 924
+  },
+  {
+    "SkillBehaviourActionId": 12000200,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 921
+  },
+  {
+    "SkillBehaviourActionId": 12000201,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 918
+  },
+  {
+    "SkillBehaviourActionId": 12000202,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 915
+  },
+  {
+    "SkillBehaviourActionId": 12000203,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 912
+  },
+  {
+    "SkillBehaviourActionId": 12000204,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 907
+  },
+  {
+    "SkillBehaviourActionId": 12000205,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 903
+  },
+  {
+    "SkillBehaviourActionId": 12000206,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 899
+  },
+  {
+    "SkillBehaviourActionId": 12000207,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 895
+  },
+  {
+    "SkillBehaviourActionId": 12000208,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 890
+  },
+  {
+    "SkillBehaviourActionId": 12000209,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 885
+  },
+  {
+    "SkillBehaviourActionId": 12000210,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 880
+  },
+  {
+    "SkillBehaviourActionId": 12000211,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 920
+  },
+  {
+    "SkillBehaviourActionId": 12000212,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 917
+  },
+  {
+    "SkillBehaviourActionId": 12000213,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 914
+  },
+  {
+    "SkillBehaviourActionId": 12000214,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 910
+  },
+  {
+    "SkillBehaviourActionId": 12000215,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 907
+  },
+  {
+    "SkillBehaviourActionId": 12000216,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 903
+  },
+  {
+    "SkillBehaviourActionId": 12000217,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 899
+  },
+  {
+    "SkillBehaviourActionId": 12000218,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 894
+  },
+  {
+    "SkillBehaviourActionId": 12000219,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 889
+  },
+  {
+    "SkillBehaviourActionId": 12000220,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 883
+  },
+  {
+    "SkillBehaviourActionId": 12000221,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 878
+  },
+  {
+    "SkillBehaviourActionId": 12000222,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 872
+  },
+  {
+    "SkillBehaviourActionId": 12000223,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 866
+  },
+  {
+    "SkillBehaviourActionId": 12000224,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 860
+  },
+  {
+    "SkillBehaviourActionId": 12000225,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 850
+  },
+  {
+    "SkillBehaviourActionId": 12000226,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 999
+  },
+  {
+    "SkillBehaviourActionId": 12000227,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 997
+  },
+  {
+    "SkillBehaviourActionId": 12000228,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 995
+  },
+  {
+    "SkillBehaviourActionId": 12000229,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 993
+  },
+  {
+    "SkillBehaviourActionId": 12000230,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 991
+  },
+  {
+    "SkillBehaviourActionId": 12000231,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 989
+  },
+  {
+    "SkillBehaviourActionId": 12000232,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 987
+  },
+  {
+    "SkillBehaviourActionId": 12000233,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 985
+  },
+  {
+    "SkillBehaviourActionId": 12000234,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 983
+  },
+  {
+    "SkillBehaviourActionId": 12000235,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 981
+  },
+  {
+    "SkillBehaviourActionId": 12000236,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 979
+  },
+  {
+    "SkillBehaviourActionId": 12000237,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 977
+  },
+  {
+    "SkillBehaviourActionId": 12000238,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 975
+  },
+  {
+    "SkillBehaviourActionId": 12000239,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 973
+  },
+  {
+    "SkillBehaviourActionId": 12000240,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 970
+  },
+  {
+    "SkillBehaviourActionId": 12000241,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 976
+  },
+  {
+    "SkillBehaviourActionId": 12000242,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 975
+  },
+  {
+    "SkillBehaviourActionId": 12000243,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 974
+  },
+  {
+    "SkillBehaviourActionId": 12000244,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 973
+  },
+  {
+    "SkillBehaviourActionId": 12000245,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 972
+  },
+  {
+    "SkillBehaviourActionId": 12000246,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 971
+  },
+  {
+    "SkillBehaviourActionId": 12000247,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 970
+  },
+  {
+    "SkillBehaviourActionId": 12000248,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 969
+  },
+  {
+    "SkillBehaviourActionId": 12000249,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 968
+  },
+  {
+    "SkillBehaviourActionId": 12000250,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 967
+  },
+  {
+    "SkillBehaviourActionId": 12000251,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 966
+  },
+  {
+    "SkillBehaviourActionId": 12000252,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 965
+  },
+  {
+    "SkillBehaviourActionId": 12000253,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 964
+  },
+  {
+    "SkillBehaviourActionId": 12000254,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 962
+  },
+  {
+    "SkillBehaviourActionId": 12000255,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 960
+  },
+  {
+    "SkillBehaviourActionId": 12000256,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 974
+  },
+  {
+    "SkillBehaviourActionId": 12000257,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 973
+  },
+  {
+    "SkillBehaviourActionId": 12000258,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 972
+  },
+  {
+    "SkillBehaviourActionId": 12000259,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 970
+  },
+  {
+    "SkillBehaviourActionId": 12000260,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 969
+  },
+  {
+    "SkillBehaviourActionId": 12000261,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 968
+  },
+  {
+    "SkillBehaviourActionId": 12000262,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 967
+  },
+  {
+    "SkillBehaviourActionId": 12000263,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 965
+  },
+  {
+    "SkillBehaviourActionId": 12000264,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 963
+  },
+  {
+    "SkillBehaviourActionId": 12000265,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 961
+  },
+  {
+    "SkillBehaviourActionId": 12000266,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 960
+  },
+  {
+    "SkillBehaviourActionId": 12000267,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 958
+  },
+  {
+    "SkillBehaviourActionId": 12000268,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 956
+  },
+  {
+    "SkillBehaviourActionId": 12000269,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 954
+  },
+  {
+    "SkillBehaviourActionId": 12000270,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 950
+  },
+  {
+    "SkillBehaviourActionId": 12000271,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 963
+  },
+  {
+    "SkillBehaviourActionId": 12000272,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 962
+  },
+  {
+    "SkillBehaviourActionId": 12000273,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 961
+  },
+  {
+    "SkillBehaviourActionId": 12000274,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 960
+  },
+  {
+    "SkillBehaviourActionId": 12000275,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 958
+  },
+  {
+    "SkillBehaviourActionId": 12000276,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 957
+  },
+  {
+    "SkillBehaviourActionId": 12000277,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 956
+  },
+  {
+    "SkillBehaviourActionId": 12000278,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 955
+  },
+  {
+    "SkillBehaviourActionId": 12000279,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 953
+  },
+  {
+    "SkillBehaviourActionId": 12000280,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 952
+  },
+  {
+    "SkillBehaviourActionId": 12000281,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 949
+  },
+  {
+    "SkillBehaviourActionId": 12000282,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 947
+  },
+  {
+    "SkillBehaviourActionId": 12000283,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 945
+  },
+  {
+    "SkillBehaviourActionId": 12000284,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 943
+  },
+  {
+    "SkillBehaviourActionId": 12000285,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 940
+  },
+  {
+    "SkillBehaviourActionId": 12000286,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 954
+  },
+  {
+    "SkillBehaviourActionId": 12000287,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 952
+  },
+  {
+    "SkillBehaviourActionId": 12000288,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 951
+  },
+  {
+    "SkillBehaviourActionId": 12000289,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 949
+  },
+  {
+    "SkillBehaviourActionId": 12000290,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 947
+  },
+  {
+    "SkillBehaviourActionId": 12000291,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 945
+  },
+  {
+    "SkillBehaviourActionId": 12000292,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 943
+  },
+  {
+    "SkillBehaviourActionId": 12000293,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 941
+  },
+  {
+    "SkillBehaviourActionId": 12000294,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 938
+  },
+  {
+    "SkillBehaviourActionId": 12000295,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 936
+  },
+  {
+    "SkillBehaviourActionId": 12000296,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 933
+  },
+  {
+    "SkillBehaviourActionId": 12000297,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 930
+  },
+  {
+    "SkillBehaviourActionId": 12000298,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 927
+  },
+  {
+    "SkillBehaviourActionId": 12000299,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 924
+  },
+  {
+    "SkillBehaviourActionId": 12000300,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 920
+  },
+  {
+    "SkillBehaviourActionId": 12000301,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 947
+  },
+  {
+    "SkillBehaviourActionId": 12000302,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 945
+  },
+  {
+    "SkillBehaviourActionId": 12000303,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 943
+  },
+  {
+    "SkillBehaviourActionId": 12000304,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 940
+  },
+  {
+    "SkillBehaviourActionId": 12000305,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 938
+  },
+  {
+    "SkillBehaviourActionId": 12000306,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 935
+  },
+  {
+    "SkillBehaviourActionId": 12000307,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 933
+  },
+  {
+    "SkillBehaviourActionId": 12000308,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 929
+  },
+  {
+    "SkillBehaviourActionId": 12000309,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 926
+  },
+  {
+    "SkillBehaviourActionId": 12000310,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 922
+  },
+  {
+    "SkillBehaviourActionId": 12000311,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 919
+  },
+  {
+    "SkillBehaviourActionId": 12000312,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 915
+  },
+  {
+    "SkillBehaviourActionId": 12000313,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 911
+  },
+  {
+    "SkillBehaviourActionId": 12000314,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 907
+  },
+  {
+    "SkillBehaviourActionId": 12000315,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 900
+  },
+  {
+    "SkillBehaviourActionId": 12000316,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 945
+  },
+  {
+    "SkillBehaviourActionId": 12000317,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 943
+  },
+  {
+    "SkillBehaviourActionId": 12000318,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 941
+  },
+  {
+    "SkillBehaviourActionId": 12000319,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 939
+  },
+  {
+    "SkillBehaviourActionId": 12000320,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 937
+  },
+  {
+    "SkillBehaviourActionId": 12000321,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 936
+  },
+  {
+    "SkillBehaviourActionId": 12000322,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 934
+  },
+  {
+    "SkillBehaviourActionId": 12000323,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 932
+  },
+  {
+    "SkillBehaviourActionId": 12000324,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 929
+  },
+  {
+    "SkillBehaviourActionId": 12000325,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 927
+  },
+  {
+    "SkillBehaviourActionId": 12000326,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 924
+  },
+  {
+    "SkillBehaviourActionId": 12000327,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 921
+  },
+  {
+    "SkillBehaviourActionId": 12000328,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 918
+  },
+  {
+    "SkillBehaviourActionId": 12000329,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 914
+  },
+  {
+    "SkillBehaviourActionId": 12000330,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 910
+  },
+  {
+    "SkillBehaviourActionId": 12000331,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 931
+  },
+  {
+    "SkillBehaviourActionId": 12000332,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 928
+  },
+  {
+    "SkillBehaviourActionId": 12000333,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 926
+  },
+  {
+    "SkillBehaviourActionId": 12000334,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 924
+  },
+  {
+    "SkillBehaviourActionId": 12000335,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 921
+  },
+  {
+    "SkillBehaviourActionId": 12000336,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 918
+  },
+  {
+    "SkillBehaviourActionId": 12000337,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 915
+  },
+  {
+    "SkillBehaviourActionId": 12000338,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 912
+  },
+  {
+    "SkillBehaviourActionId": 12000339,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 907
+  },
+  {
+    "SkillBehaviourActionId": 12000340,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 903
+  },
+  {
+    "SkillBehaviourActionId": 12000341,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 899
+  },
+  {
+    "SkillBehaviourActionId": 12000342,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 895
+  },
+  {
+    "SkillBehaviourActionId": 12000343,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 890
+  },
+  {
+    "SkillBehaviourActionId": 12000344,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 885
+  },
+  {
+    "SkillBehaviourActionId": 12000345,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 880
+  },
+  {
+    "SkillBehaviourActionId": 12000346,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 920
+  },
+  {
+    "SkillBehaviourActionId": 12000347,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 917
+  },
+  {
+    "SkillBehaviourActionId": 12000348,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 914
+  },
+  {
+    "SkillBehaviourActionId": 12000349,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 910
+  },
+  {
+    "SkillBehaviourActionId": 12000350,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 907
+  },
+  {
+    "SkillBehaviourActionId": 12000351,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 903
+  },
+  {
+    "SkillBehaviourActionId": 12000352,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 899
+  },
+  {
+    "SkillBehaviourActionId": 12000353,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 894
+  },
+  {
+    "SkillBehaviourActionId": 12000354,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 889
+  },
+  {
+    "SkillBehaviourActionId": 12000355,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 883
+  },
+  {
+    "SkillBehaviourActionId": 12000356,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 878
+  },
+  {
+    "SkillBehaviourActionId": 12000357,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 872
+  },
+  {
+    "SkillBehaviourActionId": 12000358,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 866
+  },
+  {
+    "SkillBehaviourActionId": 12000359,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 860
+  },
+  {
+    "SkillBehaviourActionId": 12000360,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 850
+  },
+  {
+    "SkillBehaviourActionId": 12000361,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 999
+  },
+  {
+    "SkillBehaviourActionId": 12000362,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 997
+  },
+  {
+    "SkillBehaviourActionId": 12000363,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 995
+  },
+  {
+    "SkillBehaviourActionId": 12000364,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 993
+  },
+  {
+    "SkillBehaviourActionId": 12000365,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 991
+  },
+  {
+    "SkillBehaviourActionId": 12000366,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 989
+  },
+  {
+    "SkillBehaviourActionId": 12000367,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 987
+  },
+  {
+    "SkillBehaviourActionId": 12000368,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 985
+  },
+  {
+    "SkillBehaviourActionId": 12000369,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 983
+  },
+  {
+    "SkillBehaviourActionId": 12000370,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 981
+  },
+  {
+    "SkillBehaviourActionId": 12000371,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 979
+  },
+  {
+    "SkillBehaviourActionId": 12000372,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 977
+  },
+  {
+    "SkillBehaviourActionId": 12000373,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 975
+  },
+  {
+    "SkillBehaviourActionId": 12000374,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 973
+  },
+  {
+    "SkillBehaviourActionId": 12000375,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 970
+  },
+  {
+    "SkillBehaviourActionId": 12000376,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 976
+  },
+  {
+    "SkillBehaviourActionId": 12000377,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 975
+  },
+  {
+    "SkillBehaviourActionId": 12000378,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 974
+  },
+  {
+    "SkillBehaviourActionId": 12000379,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 973
+  },
+  {
+    "SkillBehaviourActionId": 12000380,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 972
+  },
+  {
+    "SkillBehaviourActionId": 12000381,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 971
+  },
+  {
+    "SkillBehaviourActionId": 12000382,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 970
+  },
+  {
+    "SkillBehaviourActionId": 12000383,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 969
+  },
+  {
+    "SkillBehaviourActionId": 12000384,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 968
+  },
+  {
+    "SkillBehaviourActionId": 12000385,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 967
+  },
+  {
+    "SkillBehaviourActionId": 12000386,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 966
+  },
+  {
+    "SkillBehaviourActionId": 12000387,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 965
+  },
+  {
+    "SkillBehaviourActionId": 12000388,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 964
+  },
+  {
+    "SkillBehaviourActionId": 12000389,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 962
+  },
+  {
+    "SkillBehaviourActionId": 12000390,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 960
+  },
+  {
+    "SkillBehaviourActionId": 12000391,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 974
+  },
+  {
+    "SkillBehaviourActionId": 12000392,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 973
+  },
+  {
+    "SkillBehaviourActionId": 12000393,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 972
+  },
+  {
+    "SkillBehaviourActionId": 12000394,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 970
+  },
+  {
+    "SkillBehaviourActionId": 12000395,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 969
+  },
+  {
+    "SkillBehaviourActionId": 12000396,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 968
+  },
+  {
+    "SkillBehaviourActionId": 12000397,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 967
+  },
+  {
+    "SkillBehaviourActionId": 12000398,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 965
+  },
+  {
+    "SkillBehaviourActionId": 12000399,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 963
+  },
+  {
+    "SkillBehaviourActionId": 12000400,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 961
+  },
+  {
+    "SkillBehaviourActionId": 12000401,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 960
+  },
+  {
+    "SkillBehaviourActionId": 12000402,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 958
+  },
+  {
+    "SkillBehaviourActionId": 12000403,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 956
+  },
+  {
+    "SkillBehaviourActionId": 12000404,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 954
+  },
+  {
+    "SkillBehaviourActionId": 12000405,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 950
+  },
+  {
+    "SkillBehaviourActionId": 12000406,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 963
+  },
+  {
+    "SkillBehaviourActionId": 12000407,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 962
+  },
+  {
+    "SkillBehaviourActionId": 12000408,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 961
+  },
+  {
+    "SkillBehaviourActionId": 12000409,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 960
+  },
+  {
+    "SkillBehaviourActionId": 12000410,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 958
+  },
+  {
+    "SkillBehaviourActionId": 12000411,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 957
+  },
+  {
+    "SkillBehaviourActionId": 12000412,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 956
+  },
+  {
+    "SkillBehaviourActionId": 12000413,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 955
+  },
+  {
+    "SkillBehaviourActionId": 12000414,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 953
+  },
+  {
+    "SkillBehaviourActionId": 12000415,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 952
+  },
+  {
+    "SkillBehaviourActionId": 12000416,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 949
+  },
+  {
+    "SkillBehaviourActionId": 12000417,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 947
+  },
+  {
+    "SkillBehaviourActionId": 12000418,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 945
+  },
+  {
+    "SkillBehaviourActionId": 12000419,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 943
+  },
+  {
+    "SkillBehaviourActionId": 12000420,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 940
+  },
+  {
+    "SkillBehaviourActionId": 12000421,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 954
+  },
+  {
+    "SkillBehaviourActionId": 12000422,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 952
+  },
+  {
+    "SkillBehaviourActionId": 12000423,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 951
+  },
+  {
+    "SkillBehaviourActionId": 12000424,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 949
+  },
+  {
+    "SkillBehaviourActionId": 12000425,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 947
+  },
+  {
+    "SkillBehaviourActionId": 12000426,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 945
+  },
+  {
+    "SkillBehaviourActionId": 12000427,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 943
+  },
+  {
+    "SkillBehaviourActionId": 12000428,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 941
+  },
+  {
+    "SkillBehaviourActionId": 12000429,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 938
+  },
+  {
+    "SkillBehaviourActionId": 12000430,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 936
+  },
+  {
+    "SkillBehaviourActionId": 12000431,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 933
+  },
+  {
+    "SkillBehaviourActionId": 12000432,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 930
+  },
+  {
+    "SkillBehaviourActionId": 12000433,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 927
+  },
+  {
+    "SkillBehaviourActionId": 12000434,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 924
+  },
+  {
+    "SkillBehaviourActionId": 12000435,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 920
+  },
+  {
+    "SkillBehaviourActionId": 12000436,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 947
+  },
+  {
+    "SkillBehaviourActionId": 12000437,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 945
+  },
+  {
+    "SkillBehaviourActionId": 12000438,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 943
+  },
+  {
+    "SkillBehaviourActionId": 12000439,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 940
+  },
+  {
+    "SkillBehaviourActionId": 12000440,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 938
+  },
+  {
+    "SkillBehaviourActionId": 12000441,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 935
+  },
+  {
+    "SkillBehaviourActionId": 12000442,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 933
+  },
+  {
+    "SkillBehaviourActionId": 12000443,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 929
+  },
+  {
+    "SkillBehaviourActionId": 12000444,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 926
+  },
+  {
+    "SkillBehaviourActionId": 12000445,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 922
+  },
+  {
+    "SkillBehaviourActionId": 12000446,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 919
+  },
+  {
+    "SkillBehaviourActionId": 12000447,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 915
+  },
+  {
+    "SkillBehaviourActionId": 12000448,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 911
+  },
+  {
+    "SkillBehaviourActionId": 12000449,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 907
+  },
+  {
+    "SkillBehaviourActionId": 12000450,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 900
+  },
+  {
+    "SkillBehaviourActionId": 12000451,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 945
+  },
+  {
+    "SkillBehaviourActionId": 12000452,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 943
+  },
+  {
+    "SkillBehaviourActionId": 12000453,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 941
+  },
+  {
+    "SkillBehaviourActionId": 12000454,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 939
+  },
+  {
+    "SkillBehaviourActionId": 12000455,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 937
+  },
+  {
+    "SkillBehaviourActionId": 12000456,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 936
+  },
+  {
+    "SkillBehaviourActionId": 12000457,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 934
+  },
+  {
+    "SkillBehaviourActionId": 12000458,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 932
+  },
+  {
+    "SkillBehaviourActionId": 12000459,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 929
+  },
+  {
+    "SkillBehaviourActionId": 12000460,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 927
+  },
+  {
+    "SkillBehaviourActionId": 12000461,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 924
+  },
+  {
+    "SkillBehaviourActionId": 12000462,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 921
+  },
+  {
+    "SkillBehaviourActionId": 12000463,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 918
+  },
+  {
+    "SkillBehaviourActionId": 12000464,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 914
+  },
+  {
+    "SkillBehaviourActionId": 12000465,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 910
+  },
+  {
+    "SkillBehaviourActionId": 12000466,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 931
+  },
+  {
+    "SkillBehaviourActionId": 12000467,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 928
+  },
+  {
+    "SkillBehaviourActionId": 12000468,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 926
+  },
+  {
+    "SkillBehaviourActionId": 12000469,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 924
+  },
+  {
+    "SkillBehaviourActionId": 12000470,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 921
+  },
+  {
+    "SkillBehaviourActionId": 12000471,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 918
+  },
+  {
+    "SkillBehaviourActionId": 12000472,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 915
+  },
+  {
+    "SkillBehaviourActionId": 12000473,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 912
+  },
+  {
+    "SkillBehaviourActionId": 12000474,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 907
+  },
+  {
+    "SkillBehaviourActionId": 12000475,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 903
+  },
+  {
+    "SkillBehaviourActionId": 12000476,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 899
+  },
+  {
+    "SkillBehaviourActionId": 12000477,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 895
+  },
+  {
+    "SkillBehaviourActionId": 12000478,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 890
+  },
+  {
+    "SkillBehaviourActionId": 12000479,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 885
+  },
+  {
+    "SkillBehaviourActionId": 12000480,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 880
+  },
+  {
+    "SkillBehaviourActionId": 12000481,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 920
+  },
+  {
+    "SkillBehaviourActionId": 12000482,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 917
+  },
+  {
+    "SkillBehaviourActionId": 12000483,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 914
+  },
+  {
+    "SkillBehaviourActionId": 12000484,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 910
+  },
+  {
+    "SkillBehaviourActionId": 12000485,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 907
+  },
+  {
+    "SkillBehaviourActionId": 12000486,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 903
+  },
+  {
+    "SkillBehaviourActionId": 12000487,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 899
+  },
+  {
+    "SkillBehaviourActionId": 12000488,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 894
+  },
+  {
+    "SkillBehaviourActionId": 12000489,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 889
+  },
+  {
+    "SkillBehaviourActionId": 12000490,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 883
+  },
+  {
+    "SkillBehaviourActionId": 12000491,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 878
+  },
+  {
+    "SkillBehaviourActionId": 12000492,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 872
+  },
+  {
+    "SkillBehaviourActionId": 12000493,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 866
+  },
+  {
+    "SkillBehaviourActionId": 12000494,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 860
+  },
+  {
+    "SkillBehaviourActionId": 12000495,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 850
+  },
+  {
+    "SkillBehaviourActionId": 12000496,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 999
+  },
+  {
+    "SkillBehaviourActionId": 12000497,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 997
+  },
+  {
+    "SkillBehaviourActionId": 12000498,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 995
+  },
+  {
+    "SkillBehaviourActionId": 12000499,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 993
+  },
+  {
+    "SkillBehaviourActionId": 12000500,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 991
+  },
+  {
+    "SkillBehaviourActionId": 12000501,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 989
+  },
+  {
+    "SkillBehaviourActionId": 12000502,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 987
+  },
+  {
+    "SkillBehaviourActionId": 12000503,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 985
+  },
+  {
+    "SkillBehaviourActionId": 12000504,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 983
+  },
+  {
+    "SkillBehaviourActionId": 12000505,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 981
+  },
+  {
+    "SkillBehaviourActionId": 12000506,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 979
+  },
+  {
+    "SkillBehaviourActionId": 12000507,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 977
+  },
+  {
+    "SkillBehaviourActionId": 12000508,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 975
+  },
+  {
+    "SkillBehaviourActionId": 12000509,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 973
+  },
+  {
+    "SkillBehaviourActionId": 12000510,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 970
+  },
+  {
+    "SkillBehaviourActionId": 12000511,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 976
+  },
+  {
+    "SkillBehaviourActionId": 12000512,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 975
+  },
+  {
+    "SkillBehaviourActionId": 12000513,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 974
+  },
+  {
+    "SkillBehaviourActionId": 12000514,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 973
+  },
+  {
+    "SkillBehaviourActionId": 12000515,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 972
+  },
+  {
+    "SkillBehaviourActionId": 12000516,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 971
+  },
+  {
+    "SkillBehaviourActionId": 12000517,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 970
+  },
+  {
+    "SkillBehaviourActionId": 12000518,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 969
+  },
+  {
+    "SkillBehaviourActionId": 12000519,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 968
+  },
+  {
+    "SkillBehaviourActionId": 12000520,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 967
+  },
+  {
+    "SkillBehaviourActionId": 12000521,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 966
+  },
+  {
+    "SkillBehaviourActionId": 12000522,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 965
+  },
+  {
+    "SkillBehaviourActionId": 12000523,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 964
+  },
+  {
+    "SkillBehaviourActionId": 12000524,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 962
+  },
+  {
+    "SkillBehaviourActionId": 12000525,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 960
+  },
+  {
+    "SkillBehaviourActionId": 12000526,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 974
+  },
+  {
+    "SkillBehaviourActionId": 12000527,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 973
+  },
+  {
+    "SkillBehaviourActionId": 12000528,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 972
+  },
+  {
+    "SkillBehaviourActionId": 12000529,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 970
+  },
+  {
+    "SkillBehaviourActionId": 12000530,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 969
+  },
+  {
+    "SkillBehaviourActionId": 12000531,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 968
+  },
+  {
+    "SkillBehaviourActionId": 12000532,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 967
+  },
+  {
+    "SkillBehaviourActionId": 12000533,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 965
+  },
+  {
+    "SkillBehaviourActionId": 12000534,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 963
+  },
+  {
+    "SkillBehaviourActionId": 12000535,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 961
+  },
+  {
+    "SkillBehaviourActionId": 12000536,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 960
+  },
+  {
+    "SkillBehaviourActionId": 12000537,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 958
+  },
+  {
+    "SkillBehaviourActionId": 12000538,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 956
+  },
+  {
+    "SkillBehaviourActionId": 12000539,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 954
+  },
+  {
+    "SkillBehaviourActionId": 12000540,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 950
+  },
+  {
+    "SkillBehaviourActionId": 12000541,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 963
+  },
+  {
+    "SkillBehaviourActionId": 12000542,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 962
+  },
+  {
+    "SkillBehaviourActionId": 12000543,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 961
+  },
+  {
+    "SkillBehaviourActionId": 12000544,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 960
+  },
+  {
+    "SkillBehaviourActionId": 12000545,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 958
+  },
+  {
+    "SkillBehaviourActionId": 12000546,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 957
+  },
+  {
+    "SkillBehaviourActionId": 12000547,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 956
+  },
+  {
+    "SkillBehaviourActionId": 12000548,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 955
+  },
+  {
+    "SkillBehaviourActionId": 12000549,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 953
+  },
+  {
+    "SkillBehaviourActionId": 12000550,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 952
+  },
+  {
+    "SkillBehaviourActionId": 12000551,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 949
+  },
+  {
+    "SkillBehaviourActionId": 12000552,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 947
+  },
+  {
+    "SkillBehaviourActionId": 12000553,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 945
+  },
+  {
+    "SkillBehaviourActionId": 12000554,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 943
+  },
+  {
+    "SkillBehaviourActionId": 12000555,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 940
+  },
+  {
+    "SkillBehaviourActionId": 12000556,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 954
+  },
+  {
+    "SkillBehaviourActionId": 12000557,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 952
+  },
+  {
+    "SkillBehaviourActionId": 12000558,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 951
+  },
+  {
+    "SkillBehaviourActionId": 12000559,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 949
+  },
+  {
+    "SkillBehaviourActionId": 12000560,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 947
+  },
+  {
+    "SkillBehaviourActionId": 12000561,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 945
+  },
+  {
+    "SkillBehaviourActionId": 12000562,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 943
+  },
+  {
+    "SkillBehaviourActionId": 12000563,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 941
+  },
+  {
+    "SkillBehaviourActionId": 12000564,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 938
+  },
+  {
+    "SkillBehaviourActionId": 12000565,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 936
+  },
+  {
+    "SkillBehaviourActionId": 12000566,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 933
+  },
+  {
+    "SkillBehaviourActionId": 12000567,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 930
+  },
+  {
+    "SkillBehaviourActionId": 12000568,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 927
+  },
+  {
+    "SkillBehaviourActionId": 12000569,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 924
+  },
+  {
+    "SkillBehaviourActionId": 12000570,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 920
+  },
+  {
+    "SkillBehaviourActionId": 12000571,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 947
+  },
+  {
+    "SkillBehaviourActionId": 12000572,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 945
+  },
+  {
+    "SkillBehaviourActionId": 12000573,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 943
+  },
+  {
+    "SkillBehaviourActionId": 12000574,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 940
+  },
+  {
+    "SkillBehaviourActionId": 12000575,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 938
+  },
+  {
+    "SkillBehaviourActionId": 12000576,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 935
+  },
+  {
+    "SkillBehaviourActionId": 12000577,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 933
+  },
+  {
+    "SkillBehaviourActionId": 12000578,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 929
+  },
+  {
+    "SkillBehaviourActionId": 12000579,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 926
+  },
+  {
+    "SkillBehaviourActionId": 12000580,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 922
+  },
+  {
+    "SkillBehaviourActionId": 12000581,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 919
+  },
+  {
+    "SkillBehaviourActionId": 12000582,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 915
+  },
+  {
+    "SkillBehaviourActionId": 12000583,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 911
+  },
+  {
+    "SkillBehaviourActionId": 12000584,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 907
+  },
+  {
+    "SkillBehaviourActionId": 12000585,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 900
+  },
+  {
+    "SkillBehaviourActionId": 12000586,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 945
+  },
+  {
+    "SkillBehaviourActionId": 12000587,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 943
+  },
+  {
+    "SkillBehaviourActionId": 12000588,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 941
+  },
+  {
+    "SkillBehaviourActionId": 12000589,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 939
+  },
+  {
+    "SkillBehaviourActionId": 12000590,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 937
+  },
+  {
+    "SkillBehaviourActionId": 12000591,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 936
+  },
+  {
+    "SkillBehaviourActionId": 12000592,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 934
+  },
+  {
+    "SkillBehaviourActionId": 12000593,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 932
+  },
+  {
+    "SkillBehaviourActionId": 12000594,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 929
+  },
+  {
+    "SkillBehaviourActionId": 12000595,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 927
+  },
+  {
+    "SkillBehaviourActionId": 12000596,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 924
+  },
+  {
+    "SkillBehaviourActionId": 12000597,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 921
+  },
+  {
+    "SkillBehaviourActionId": 12000598,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 918
+  },
+  {
+    "SkillBehaviourActionId": 12000599,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 914
+  },
+  {
+    "SkillBehaviourActionId": 12000600,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 910
+  },
+  {
+    "SkillBehaviourActionId": 12000601,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 931
+  },
+  {
+    "SkillBehaviourActionId": 12000602,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 928
+  },
+  {
+    "SkillBehaviourActionId": 12000603,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 926
+  },
+  {
+    "SkillBehaviourActionId": 12000604,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 924
+  },
+  {
+    "SkillBehaviourActionId": 12000605,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 921
+  },
+  {
+    "SkillBehaviourActionId": 12000606,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 918
+  },
+  {
+    "SkillBehaviourActionId": 12000607,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 915
+  },
+  {
+    "SkillBehaviourActionId": 12000608,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 912
+  },
+  {
+    "SkillBehaviourActionId": 12000609,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 907
+  },
+  {
+    "SkillBehaviourActionId": 12000610,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 903
+  },
+  {
+    "SkillBehaviourActionId": 12000611,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 899
+  },
+  {
+    "SkillBehaviourActionId": 12000612,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 895
+  },
+  {
+    "SkillBehaviourActionId": 12000613,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 890
+  },
+  {
+    "SkillBehaviourActionId": 12000614,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 885
+  },
+  {
+    "SkillBehaviourActionId": 12000615,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 880
+  },
+  {
+    "SkillBehaviourActionId": 12000616,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 920
+  },
+  {
+    "SkillBehaviourActionId": 12000617,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 917
+  },
+  {
+    "SkillBehaviourActionId": 12000618,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 914
+  },
+  {
+    "SkillBehaviourActionId": 12000619,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 910
+  },
+  {
+    "SkillBehaviourActionId": 12000620,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 907
+  },
+  {
+    "SkillBehaviourActionId": 12000621,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 903
+  },
+  {
+    "SkillBehaviourActionId": 12000622,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 899
+  },
+  {
+    "SkillBehaviourActionId": 12000623,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 894
+  },
+  {
+    "SkillBehaviourActionId": 12000624,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 889
+  },
+  {
+    "SkillBehaviourActionId": 12000625,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 883
+  },
+  {
+    "SkillBehaviourActionId": 12000626,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 878
+  },
+  {
+    "SkillBehaviourActionId": 12000627,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 872
+  },
+  {
+    "SkillBehaviourActionId": 12000628,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 866
+  },
+  {
+    "SkillBehaviourActionId": 12000629,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 860
+  },
+  {
+    "SkillBehaviourActionId": 12000630,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 850
+  },
+  {
+    "SkillBehaviourActionId": 12000631,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 963
+  },
+  {
+    "SkillBehaviourActionId": 12000632,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 962
+  },
+  {
+    "SkillBehaviourActionId": 12000633,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 961
+  },
+  {
+    "SkillBehaviourActionId": 12000634,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 960
+  },
+  {
+    "SkillBehaviourActionId": 12000635,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 958
+  },
+  {
+    "SkillBehaviourActionId": 12000636,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 957
+  },
+  {
+    "SkillBehaviourActionId": 12000637,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 956
+  },
+  {
+    "SkillBehaviourActionId": 12000638,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 955
+  },
+  {
+    "SkillBehaviourActionId": 12000639,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 953
+  },
+  {
+    "SkillBehaviourActionId": 12000640,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 952
+  },
+  {
+    "SkillBehaviourActionId": 12000641,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 949
+  },
+  {
+    "SkillBehaviourActionId": 12000642,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 947
+  },
+  {
+    "SkillBehaviourActionId": 12000643,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 945
+  },
+  {
+    "SkillBehaviourActionId": 12000644,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 943
+  },
+  {
+    "SkillBehaviourActionId": 12000645,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 940
+  },
+  {
+    "SkillBehaviourActionId": 12000646,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 954
+  },
+  {
+    "SkillBehaviourActionId": 12000647,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 952
+  },
+  {
+    "SkillBehaviourActionId": 12000648,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 951
+  },
+  {
+    "SkillBehaviourActionId": 12000649,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 949
+  },
+  {
+    "SkillBehaviourActionId": 12000650,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 947
+  },
+  {
+    "SkillBehaviourActionId": 12000651,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 945
+  },
+  {
+    "SkillBehaviourActionId": 12000652,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 943
+  },
+  {
+    "SkillBehaviourActionId": 12000653,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 941
+  },
+  {
+    "SkillBehaviourActionId": 12000654,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 938
+  },
+  {
+    "SkillBehaviourActionId": 12000655,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 936
+  },
+  {
+    "SkillBehaviourActionId": 12000656,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 933
+  },
+  {
+    "SkillBehaviourActionId": 12000657,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 930
+  },
+  {
+    "SkillBehaviourActionId": 12000658,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 927
+  },
+  {
+    "SkillBehaviourActionId": 12000659,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 924
+  },
+  {
+    "SkillBehaviourActionId": 12000660,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 920
+  },
+  {
+    "SkillBehaviourActionId": 12000661,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 947
+  },
+  {
+    "SkillBehaviourActionId": 12000662,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 945
+  },
+  {
+    "SkillBehaviourActionId": 12000663,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 943
+  },
+  {
+    "SkillBehaviourActionId": 12000664,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 940
+  },
+  {
+    "SkillBehaviourActionId": 12000665,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 938
+  },
+  {
+    "SkillBehaviourActionId": 12000666,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 935
+  },
+  {
+    "SkillBehaviourActionId": 12000667,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 933
+  },
+  {
+    "SkillBehaviourActionId": 12000668,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 929
+  },
+  {
+    "SkillBehaviourActionId": 12000669,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 926
+  },
+  {
+    "SkillBehaviourActionId": 12000670,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 922
+  },
+  {
+    "SkillBehaviourActionId": 12000671,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 919
+  },
+  {
+    "SkillBehaviourActionId": 12000672,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 915
+  },
+  {
+    "SkillBehaviourActionId": 12000673,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 911
+  },
+  {
+    "SkillBehaviourActionId": 12000674,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 907
+  },
+  {
+    "SkillBehaviourActionId": 12000675,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 900
+  },
+  {
+    "SkillBehaviourActionId": 12000676,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 999
+  },
+  {
+    "SkillBehaviourActionId": 12000677,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 997
+  },
+  {
+    "SkillBehaviourActionId": 12000678,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 995
+  },
+  {
+    "SkillBehaviourActionId": 12000679,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 993
+  },
+  {
+    "SkillBehaviourActionId": 12000680,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 991
+  },
+  {
+    "SkillBehaviourActionId": 12000681,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 989
+  },
+  {
+    "SkillBehaviourActionId": 12000682,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 987
+  },
+  {
+    "SkillBehaviourActionId": 12000683,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 985
+  },
+  {
+    "SkillBehaviourActionId": 12000684,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 983
+  },
+  {
+    "SkillBehaviourActionId": 12000685,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 981
+  },
+  {
+    "SkillBehaviourActionId": 12000686,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 979
+  },
+  {
+    "SkillBehaviourActionId": 12000687,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 977
+  },
+  {
+    "SkillBehaviourActionId": 12000688,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 975
+  },
+  {
+    "SkillBehaviourActionId": 12000689,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 973
+  },
+  {
+    "SkillBehaviourActionId": 12000690,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 970
+  },
+  {
+    "SkillBehaviourActionId": 12000691,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 976
+  },
+  {
+    "SkillBehaviourActionId": 12000692,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 975
+  },
+  {
+    "SkillBehaviourActionId": 12000693,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 974
+  },
+  {
+    "SkillBehaviourActionId": 12000694,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 973
+  },
+  {
+    "SkillBehaviourActionId": 12000695,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 972
+  },
+  {
+    "SkillBehaviourActionId": 12000696,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 971
+  },
+  {
+    "SkillBehaviourActionId": 12000697,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 970
+  },
+  {
+    "SkillBehaviourActionId": 12000698,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 969
+  },
+  {
+    "SkillBehaviourActionId": 12000699,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 968
+  },
+  {
+    "SkillBehaviourActionId": 12000700,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 967
+  },
+  {
+    "SkillBehaviourActionId": 12000701,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 966
+  },
+  {
+    "SkillBehaviourActionId": 12000702,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 965
+  },
+  {
+    "SkillBehaviourActionId": 12000703,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 964
+  },
+  {
+    "SkillBehaviourActionId": 12000704,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 962
+  },
+  {
+    "SkillBehaviourActionId": 12000705,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 960
+  },
+  {
+    "SkillBehaviourActionId": 12000706,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 974
+  },
+  {
+    "SkillBehaviourActionId": 12000707,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 973
+  },
+  {
+    "SkillBehaviourActionId": 12000708,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 972
+  },
+  {
+    "SkillBehaviourActionId": 12000709,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 970
+  },
+  {
+    "SkillBehaviourActionId": 12000710,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 969
+  },
+  {
+    "SkillBehaviourActionId": 12000711,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 968
+  },
+  {
+    "SkillBehaviourActionId": 12000712,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 967
+  },
+  {
+    "SkillBehaviourActionId": 12000713,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 965
+  },
+  {
+    "SkillBehaviourActionId": 12000714,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 963
+  },
+  {
+    "SkillBehaviourActionId": 12000715,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 961
+  },
+  {
+    "SkillBehaviourActionId": 12000716,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 960
+  },
+  {
+    "SkillBehaviourActionId": 12000717,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 958
+  },
+  {
+    "SkillBehaviourActionId": 12000718,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 956
+  },
+  {
+    "SkillBehaviourActionId": 12000719,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 954
+  },
+  {
+    "SkillBehaviourActionId": 12000720,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 950
+  },
+  {
+    "SkillBehaviourActionId": 12000721,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 963
+  },
+  {
+    "SkillBehaviourActionId": 12000722,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 962
+  },
+  {
+    "SkillBehaviourActionId": 12000723,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 961
+  },
+  {
+    "SkillBehaviourActionId": 12000724,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 960
+  },
+  {
+    "SkillBehaviourActionId": 12000725,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 958
+  },
+  {
+    "SkillBehaviourActionId": 12000726,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 957
+  },
+  {
+    "SkillBehaviourActionId": 12000727,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 956
+  },
+  {
+    "SkillBehaviourActionId": 12000728,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 955
+  },
+  {
+    "SkillBehaviourActionId": 12000729,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 953
+  },
+  {
+    "SkillBehaviourActionId": 12000730,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 952
+  },
+  {
+    "SkillBehaviourActionId": 12000731,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 949
+  },
+  {
+    "SkillBehaviourActionId": 12000732,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 947
+  },
+  {
+    "SkillBehaviourActionId": 12000733,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 945
+  },
+  {
+    "SkillBehaviourActionId": 12000734,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 943
+  },
+  {
+    "SkillBehaviourActionId": 12000735,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 940
+  },
+  {
+    "SkillBehaviourActionId": 12000736,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 954
+  },
+  {
+    "SkillBehaviourActionId": 12000737,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 952
+  },
+  {
+    "SkillBehaviourActionId": 12000738,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 951
+  },
+  {
+    "SkillBehaviourActionId": 12000739,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 949
+  },
+  {
+    "SkillBehaviourActionId": 12000740,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 947
+  },
+  {
+    "SkillBehaviourActionId": 12000741,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 945
+  },
+  {
+    "SkillBehaviourActionId": 12000742,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 943
+  },
+  {
+    "SkillBehaviourActionId": 12000743,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 941
+  },
+  {
+    "SkillBehaviourActionId": 12000744,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 938
+  },
+  {
+    "SkillBehaviourActionId": 12000745,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 936
+  },
+  {
+    "SkillBehaviourActionId": 12000746,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 933
+  },
+  {
+    "SkillBehaviourActionId": 12000747,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 930
+  },
+  {
+    "SkillBehaviourActionId": 12000748,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 927
+  },
+  {
+    "SkillBehaviourActionId": 12000749,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 924
+  },
+  {
+    "SkillBehaviourActionId": 12000750,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 920
+  },
+  {
+    "SkillBehaviourActionId": 12000751,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 947
+  },
+  {
+    "SkillBehaviourActionId": 12000752,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 945
+  },
+  {
+    "SkillBehaviourActionId": 12000753,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 943
+  },
+  {
+    "SkillBehaviourActionId": 12000754,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 940
+  },
+  {
+    "SkillBehaviourActionId": 12000755,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 938
+  },
+  {
+    "SkillBehaviourActionId": 12000756,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 935
+  },
+  {
+    "SkillBehaviourActionId": 12000757,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 933
+  },
+  {
+    "SkillBehaviourActionId": 12000758,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 929
+  },
+  {
+    "SkillBehaviourActionId": 12000759,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 926
+  },
+  {
+    "SkillBehaviourActionId": 12000760,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 922
+  },
+  {
+    "SkillBehaviourActionId": 12000761,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 919
+  },
+  {
+    "SkillBehaviourActionId": 12000762,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 915
+  },
+  {
+    "SkillBehaviourActionId": 12000763,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 911
+  },
+  {
+    "SkillBehaviourActionId": 12000764,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 907
+  },
+  {
+    "SkillBehaviourActionId": 12000765,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 900
+  },
+  {
+    "SkillBehaviourActionId": 12000766,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 945
+  },
+  {
+    "SkillBehaviourActionId": 12000767,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 943
+  },
+  {
+    "SkillBehaviourActionId": 12000768,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 941
+  },
+  {
+    "SkillBehaviourActionId": 12000769,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 939
+  },
+  {
+    "SkillBehaviourActionId": 12000770,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 937
+  },
+  {
+    "SkillBehaviourActionId": 12000771,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 936
+  },
+  {
+    "SkillBehaviourActionId": 12000772,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 934
+  },
+  {
+    "SkillBehaviourActionId": 12000773,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 932
+  },
+  {
+    "SkillBehaviourActionId": 12000774,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 929
+  },
+  {
+    "SkillBehaviourActionId": 12000775,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 927
+  },
+  {
+    "SkillBehaviourActionId": 12000776,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 924
+  },
+  {
+    "SkillBehaviourActionId": 12000777,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 921
+  },
+  {
+    "SkillBehaviourActionId": 12000778,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 918
+  },
+  {
+    "SkillBehaviourActionId": 12000779,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 914
+  },
+  {
+    "SkillBehaviourActionId": 12000780,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 910
+  },
+  {
+    "SkillBehaviourActionId": 12000781,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 931
+  },
+  {
+    "SkillBehaviourActionId": 12000782,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 928
+  },
+  {
+    "SkillBehaviourActionId": 12000783,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 926
+  },
+  {
+    "SkillBehaviourActionId": 12000784,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 924
+  },
+  {
+    "SkillBehaviourActionId": 12000785,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 921
+  },
+  {
+    "SkillBehaviourActionId": 12000786,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 918
+  },
+  {
+    "SkillBehaviourActionId": 12000787,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 915
+  },
+  {
+    "SkillBehaviourActionId": 12000788,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 912
+  },
+  {
+    "SkillBehaviourActionId": 12000789,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 907
+  },
+  {
+    "SkillBehaviourActionId": 12000790,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 903
+  },
+  {
+    "SkillBehaviourActionId": 12000791,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 899
+  },
+  {
+    "SkillBehaviourActionId": 12000792,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 895
+  },
+  {
+    "SkillBehaviourActionId": 12000793,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 890
+  },
+  {
+    "SkillBehaviourActionId": 12000794,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 885
+  },
+  {
+    "SkillBehaviourActionId": 12000795,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 880
+  },
+  {
+    "SkillBehaviourActionId": 12000796,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 920
+  },
+  {
+    "SkillBehaviourActionId": 12000797,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 917
+  },
+  {
+    "SkillBehaviourActionId": 12000798,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 914
+  },
+  {
+    "SkillBehaviourActionId": 12000799,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 910
+  },
+  {
+    "SkillBehaviourActionId": 12000800,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 907
+  },
+  {
+    "SkillBehaviourActionId": 12000801,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 903
+  },
+  {
+    "SkillBehaviourActionId": 12000802,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 899
+  },
+  {
+    "SkillBehaviourActionId": 12000803,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 894
+  },
+  {
+    "SkillBehaviourActionId": 12000804,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 889
+  },
+  {
+    "SkillBehaviourActionId": 12000805,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 883
+  },
+  {
+    "SkillBehaviourActionId": 12000806,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 878
+  },
+  {
+    "SkillBehaviourActionId": 12000807,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 872
+  },
+  {
+    "SkillBehaviourActionId": 12000808,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 866
+  },
+  {
+    "SkillBehaviourActionId": 12000809,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 860
+  },
+  {
+    "SkillBehaviourActionId": 12000810,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 850
+  },
+  {
+    "SkillBehaviourActionId": 12000811,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 963
+  },
+  {
+    "SkillBehaviourActionId": 12000812,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 962
+  },
+  {
+    "SkillBehaviourActionId": 12000813,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 961
+  },
+  {
+    "SkillBehaviourActionId": 12000814,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 960
+  },
+  {
+    "SkillBehaviourActionId": 12000815,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 958
+  },
+  {
+    "SkillBehaviourActionId": 12000816,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 957
+  },
+  {
+    "SkillBehaviourActionId": 12000817,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 956
+  },
+  {
+    "SkillBehaviourActionId": 12000818,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 955
+  },
+  {
+    "SkillBehaviourActionId": 12000819,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 953
+  },
+  {
+    "SkillBehaviourActionId": 12000820,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 952
+  },
+  {
+    "SkillBehaviourActionId": 12000821,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 949
+  },
+  {
+    "SkillBehaviourActionId": 12000822,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 947
+  },
+  {
+    "SkillBehaviourActionId": 12000823,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 945
+  },
+  {
+    "SkillBehaviourActionId": 12000824,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 943
+  },
+  {
+    "SkillBehaviourActionId": 12000825,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 940
+  },
+  {
+    "SkillBehaviourActionId": 12000826,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 954
+  },
+  {
+    "SkillBehaviourActionId": 12000827,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 952
+  },
+  {
+    "SkillBehaviourActionId": 12000828,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 951
+  },
+  {
+    "SkillBehaviourActionId": 12000829,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 949
+  },
+  {
+    "SkillBehaviourActionId": 12000830,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 947
+  },
+  {
+    "SkillBehaviourActionId": 12000831,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 945
+  },
+  {
+    "SkillBehaviourActionId": 12000832,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 943
+  },
+  {
+    "SkillBehaviourActionId": 12000833,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 941
+  },
+  {
+    "SkillBehaviourActionId": 12000834,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 938
+  },
+  {
+    "SkillBehaviourActionId": 12000835,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 936
+  },
+  {
+    "SkillBehaviourActionId": 12000836,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 933
+  },
+  {
+    "SkillBehaviourActionId": 12000837,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 930
+  },
+  {
+    "SkillBehaviourActionId": 12000838,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 927
+  },
+  {
+    "SkillBehaviourActionId": 12000839,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 924
+  },
+  {
+    "SkillBehaviourActionId": 12000840,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 920
+  },
+  {
+    "SkillBehaviourActionId": 12000841,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 947
+  },
+  {
+    "SkillBehaviourActionId": 12000842,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 945
+  },
+  {
+    "SkillBehaviourActionId": 12000843,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 943
+  },
+  {
+    "SkillBehaviourActionId": 12000844,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 940
+  },
+  {
+    "SkillBehaviourActionId": 12000845,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 938
+  },
+  {
+    "SkillBehaviourActionId": 12000846,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 935
+  },
+  {
+    "SkillBehaviourActionId": 12000847,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 933
+  },
+  {
+    "SkillBehaviourActionId": 12000848,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 929
+  },
+  {
+    "SkillBehaviourActionId": 12000849,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 926
+  },
+  {
+    "SkillBehaviourActionId": 12000850,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 922
+  },
+  {
+    "SkillBehaviourActionId": 12000851,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 919
+  },
+  {
+    "SkillBehaviourActionId": 12000852,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 915
+  },
+  {
+    "SkillBehaviourActionId": 12000853,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 911
+  },
+  {
+    "SkillBehaviourActionId": 12000854,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 907
+  },
+  {
+    "SkillBehaviourActionId": 12000855,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 900
+  },
+  {
+    "SkillBehaviourActionId": 12000856,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 963
+  },
+  {
+    "SkillBehaviourActionId": 12000857,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 962
+  },
+  {
+    "SkillBehaviourActionId": 12000858,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 961
+  },
+  {
+    "SkillBehaviourActionId": 12000859,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 960
+  },
+  {
+    "SkillBehaviourActionId": 12000860,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 958
+  },
+  {
+    "SkillBehaviourActionId": 12000861,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 957
+  },
+  {
+    "SkillBehaviourActionId": 12000862,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 956
+  },
+  {
+    "SkillBehaviourActionId": 12000863,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 955
+  },
+  {
+    "SkillBehaviourActionId": 12000864,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 953
+  },
+  {
+    "SkillBehaviourActionId": 12000865,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 952
+  },
+  {
+    "SkillBehaviourActionId": 12000866,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 949
+  },
+  {
+    "SkillBehaviourActionId": 12000867,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 947
+  },
+  {
+    "SkillBehaviourActionId": 12000868,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 945
+  },
+  {
+    "SkillBehaviourActionId": 12000869,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 943
+  },
+  {
+    "SkillBehaviourActionId": 12000870,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 940
+  },
+  {
+    "SkillBehaviourActionId": 12000871,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 954
+  },
+  {
+    "SkillBehaviourActionId": 12000872,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 952
+  },
+  {
+    "SkillBehaviourActionId": 12000873,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 951
+  },
+  {
+    "SkillBehaviourActionId": 12000874,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 949
+  },
+  {
+    "SkillBehaviourActionId": 12000875,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 947
+  },
+  {
+    "SkillBehaviourActionId": 12000876,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 945
+  },
+  {
+    "SkillBehaviourActionId": 12000877,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 943
+  },
+  {
+    "SkillBehaviourActionId": 12000878,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 941
+  },
+  {
+    "SkillBehaviourActionId": 12000879,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 938
+  },
+  {
+    "SkillBehaviourActionId": 12000880,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 936
+  },
+  {
+    "SkillBehaviourActionId": 12000881,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 933
+  },
+  {
+    "SkillBehaviourActionId": 12000882,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 930
+  },
+  {
+    "SkillBehaviourActionId": 12000883,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 927
+  },
+  {
+    "SkillBehaviourActionId": 12000884,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 924
+  },
+  {
+    "SkillBehaviourActionId": 12000885,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 920
+  },
+  {
+    "SkillBehaviourActionId": 12000886,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 947
+  },
+  {
+    "SkillBehaviourActionId": 12000887,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 945
+  },
+  {
+    "SkillBehaviourActionId": 12000888,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 943
+  },
+  {
+    "SkillBehaviourActionId": 12000889,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 940
+  },
+  {
+    "SkillBehaviourActionId": 12000890,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 938
+  },
+  {
+    "SkillBehaviourActionId": 12000891,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 935
+  },
+  {
+    "SkillBehaviourActionId": 12000892,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 933
+  },
+  {
+    "SkillBehaviourActionId": 12000893,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 929
+  },
+  {
+    "SkillBehaviourActionId": 12000894,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 926
+  },
+  {
+    "SkillBehaviourActionId": 12000895,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 922
+  },
+  {
+    "SkillBehaviourActionId": 12000896,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 919
+  },
+  {
+    "SkillBehaviourActionId": 12000897,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 915
+  },
+  {
+    "SkillBehaviourActionId": 12000898,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 911
+  },
+  {
+    "SkillBehaviourActionId": 12000899,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 907
+  },
+  {
+    "SkillBehaviourActionId": 12000900,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 900
+  },
+  {
+    "SkillBehaviourActionId": 12000901,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 963
+  },
+  {
+    "SkillBehaviourActionId": 12000902,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 962
+  },
+  {
+    "SkillBehaviourActionId": 12000903,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 961
+  },
+  {
+    "SkillBehaviourActionId": 12000904,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 960
+  },
+  {
+    "SkillBehaviourActionId": 12000905,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 958
+  },
+  {
+    "SkillBehaviourActionId": 12000906,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 957
+  },
+  {
+    "SkillBehaviourActionId": 12000907,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 956
+  },
+  {
+    "SkillBehaviourActionId": 12000908,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 955
+  },
+  {
+    "SkillBehaviourActionId": 12000909,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 953
+  },
+  {
+    "SkillBehaviourActionId": 12000910,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 952
+  },
+  {
+    "SkillBehaviourActionId": 12000911,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 949
+  },
+  {
+    "SkillBehaviourActionId": 12000912,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 947
+  },
+  {
+    "SkillBehaviourActionId": 12000913,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 945
+  },
+  {
+    "SkillBehaviourActionId": 12000914,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 943
+  },
+  {
+    "SkillBehaviourActionId": 12000915,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 940
+  },
+  {
+    "SkillBehaviourActionId": 12000916,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 954
+  },
+  {
+    "SkillBehaviourActionId": 12000917,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 952
+  },
+  {
+    "SkillBehaviourActionId": 12000918,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 951
+  },
+  {
+    "SkillBehaviourActionId": 12000919,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 949
+  },
+  {
+    "SkillBehaviourActionId": 12000920,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 947
+  },
+  {
+    "SkillBehaviourActionId": 12000921,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 945
+  },
+  {
+    "SkillBehaviourActionId": 12000922,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 943
+  },
+  {
+    "SkillBehaviourActionId": 12000923,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 941
+  },
+  {
+    "SkillBehaviourActionId": 12000924,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 938
+  },
+  {
+    "SkillBehaviourActionId": 12000925,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 936
+  },
+  {
+    "SkillBehaviourActionId": 12000926,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 933
+  },
+  {
+    "SkillBehaviourActionId": 12000927,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 930
+  },
+  {
+    "SkillBehaviourActionId": 12000928,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 927
+  },
+  {
+    "SkillBehaviourActionId": 12000929,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 924
+  },
+  {
+    "SkillBehaviourActionId": 12000930,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 920
+  },
+  {
+    "SkillBehaviourActionId": 12000931,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 947
+  },
+  {
+    "SkillBehaviourActionId": 12000932,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 945
+  },
+  {
+    "SkillBehaviourActionId": 12000933,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 943
+  },
+  {
+    "SkillBehaviourActionId": 12000934,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 940
+  },
+  {
+    "SkillBehaviourActionId": 12000935,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 938
+  },
+  {
+    "SkillBehaviourActionId": 12000936,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 935
+  },
+  {
+    "SkillBehaviourActionId": 12000937,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 933
+  },
+  {
+    "SkillBehaviourActionId": 12000938,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 929
+  },
+  {
+    "SkillBehaviourActionId": 12000939,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 926
+  },
+  {
+    "SkillBehaviourActionId": 12000940,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 922
+  },
+  {
+    "SkillBehaviourActionId": 12000941,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 919
+  },
+  {
+    "SkillBehaviourActionId": 12000942,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 915
+  },
+  {
+    "SkillBehaviourActionId": 12000943,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 911
+  },
+  {
+    "SkillBehaviourActionId": 12000944,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 907
+  },
+  {
+    "SkillBehaviourActionId": 12000945,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 900
+  },
+  {
+    "SkillBehaviourActionId": 12000946,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 963
+  },
+  {
+    "SkillBehaviourActionId": 12000947,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 962
+  },
+  {
+    "SkillBehaviourActionId": 12000948,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 961
+  },
+  {
+    "SkillBehaviourActionId": 12000949,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 960
+  },
+  {
+    "SkillBehaviourActionId": 12000950,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 958
+  },
+  {
+    "SkillBehaviourActionId": 12000951,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 957
+  },
+  {
+    "SkillBehaviourActionId": 12000952,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 956
+  },
+  {
+    "SkillBehaviourActionId": 12000953,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 955
+  },
+  {
+    "SkillBehaviourActionId": 12000954,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 953
+  },
+  {
+    "SkillBehaviourActionId": 12000955,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 952
+  },
+  {
+    "SkillBehaviourActionId": 12000956,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 949
+  },
+  {
+    "SkillBehaviourActionId": 12000957,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 947
+  },
+  {
+    "SkillBehaviourActionId": 12000958,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 945
+  },
+  {
+    "SkillBehaviourActionId": 12000959,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 943
+  },
+  {
+    "SkillBehaviourActionId": 12000960,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 940
+  },
+  {
+    "SkillBehaviourActionId": 12000961,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 954
+  },
+  {
+    "SkillBehaviourActionId": 12000962,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 952
+  },
+  {
+    "SkillBehaviourActionId": 12000963,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 951
+  },
+  {
+    "SkillBehaviourActionId": 12000964,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 949
+  },
+  {
+    "SkillBehaviourActionId": 12000965,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 947
+  },
+  {
+    "SkillBehaviourActionId": 12000966,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 945
+  },
+  {
+    "SkillBehaviourActionId": 12000967,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 943
+  },
+  {
+    "SkillBehaviourActionId": 12000968,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 941
+  },
+  {
+    "SkillBehaviourActionId": 12000969,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 938
+  },
+  {
+    "SkillBehaviourActionId": 12000970,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 936
+  },
+  {
+    "SkillBehaviourActionId": 12000971,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 933
+  },
+  {
+    "SkillBehaviourActionId": 12000972,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 930
+  },
+  {
+    "SkillBehaviourActionId": 12000973,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 927
+  },
+  {
+    "SkillBehaviourActionId": 12000974,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 924
+  },
+  {
+    "SkillBehaviourActionId": 12000975,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 920
+  },
+  {
+    "SkillBehaviourActionId": 12000976,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 947
+  },
+  {
+    "SkillBehaviourActionId": 12000977,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 945
+  },
+  {
+    "SkillBehaviourActionId": 12000978,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 943
+  },
+  {
+    "SkillBehaviourActionId": 12000979,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 940
+  },
+  {
+    "SkillBehaviourActionId": 12000980,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 938
+  },
+  {
+    "SkillBehaviourActionId": 12000981,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 935
+  },
+  {
+    "SkillBehaviourActionId": 12000982,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 933
+  },
+  {
+    "SkillBehaviourActionId": 12000983,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 929
+  },
+  {
+    "SkillBehaviourActionId": 12000984,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 926
+  },
+  {
+    "SkillBehaviourActionId": 12000985,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 922
+  },
+  {
+    "SkillBehaviourActionId": 12000986,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 919
+  },
+  {
+    "SkillBehaviourActionId": 12000987,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 915
+  },
+  {
+    "SkillBehaviourActionId": 12000988,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 911
+  },
+  {
+    "SkillBehaviourActionId": 12000989,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 907
+  },
+  {
+    "SkillBehaviourActionId": 12000990,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 900
+  },
+  {
+    "SkillBehaviourActionId": 17200001,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 900
+  },
+  {
+    "SkillBehaviourActionId": 17200002,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 950
+  },
+  {
+    "SkillBehaviourActionId": 17200006,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 900
+  },
+  {
+    "SkillBehaviourActionId": 17200007,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 950
+  },
+  {
+    "SkillBehaviourActionId": 17200011,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 900
+  },
+  {
+    "SkillBehaviourActionId": 17200012,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 950
+  },
+  {
+    "SkillBehaviourActionId": 17200016,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 900
+  },
+  {
+    "SkillBehaviourActionId": 17200017,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 950
+  },
+  {
+    "SkillBehaviourActionId": 17200021,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 900
+  },
+  {
+    "SkillBehaviourActionId": 17200022,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 950
+  },
+  {
+    "SkillBehaviourActionId": 17200023,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 850
+  },
+  {
+    "SkillBehaviourActionId": 17200026,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 900
+  },
+  {
+    "SkillBehaviourActionId": 17200027,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 950
+  },
+  {
+    "SkillBehaviourActionId": 17200031,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 850
+  },
+  {
+    "SkillBehaviourActionId": 17200032,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 900
+  },
+  {
+    "SkillBehaviourActionId": 17200036,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 850
+  },
+  {
+    "SkillBehaviourActionId": 17200037,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 900
+  },
+  {
+    "SkillBehaviourActionId": 17200041,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 850
+  },
+  {
+    "SkillBehaviourActionId": 17200042,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 900
+  },
+  {
+    "SkillBehaviourActionId": 17200043,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 800
+  },
+  {
+    "SkillBehaviourActionId": 17200046,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 850
+  },
+  {
+    "SkillBehaviourActionId": 17200047,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 900
+  },
+  {
+    "SkillBehaviourActionId": 17200051,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 850
+  },
+  {
+    "SkillBehaviourActionId": 17200052,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 900
+  },
+  {
+    "SkillBehaviourActionId": 17200053,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 800
+  },
+  {
+    "SkillBehaviourActionId": 17200056,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 900
+  },
+  {
+    "SkillBehaviourActionId": 17200057,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 950
+  },
+  {
+    "SkillBehaviourActionId": 17200058,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 920
+  },
+  {
+    "SkillBehaviourActionId": 18000001,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 950
+  },
+  {
+    "SkillBehaviourActionId": 18000002,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 940
+  },
+  {
+    "SkillBehaviourActionId": 18000003,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 920
+  },
+  {
+    "SkillBehaviourActionId": 18000004,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 950
+  },
+  {
+    "SkillBehaviourActionId": 18000005,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 940
+  },
+  {
+    "SkillBehaviourActionId": 18000006,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 920
+  },
+  {
+    "SkillBehaviourActionId": 18000007,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 950
+  },
+  {
+    "SkillBehaviourActionId": 18000008,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 940
+  },
+  {
+    "SkillBehaviourActionId": 18000009,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 920
+  },
+  {
+    "SkillBehaviourActionId": 18000010,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 950
+  },
+  {
+    "SkillBehaviourActionId": 18000011,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 940
+  },
+  {
+    "SkillBehaviourActionId": 18000012,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 920
+  },
+  {
+    "SkillBehaviourActionId": 18000013,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 950
+  },
+  {
+    "SkillBehaviourActionId": 18000014,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 940
+  },
+  {
+    "SkillBehaviourActionId": 18000015,
+    "ActiveSkillType": 3,
+    "ShortenValuePermil": 920
+  },
+  {
+    "SkillBehaviourActionId": 18000016,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 950
+  },
+  {
+    "SkillBehaviourActionId": 18000017,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 940
+  },
+  {
+    "SkillBehaviourActionId": 18000018,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 920
+  },
+  {
+    "SkillBehaviourActionId": 18000019,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 950
+  },
+  {
+    "SkillBehaviourActionId": 18000020,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 940
+  },
+  {
+    "SkillBehaviourActionId": 18000021,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 920
+  },
+  {
+    "SkillBehaviourActionId": 18000022,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 950
+  },
+  {
+    "SkillBehaviourActionId": 18000023,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 940
+  },
+  {
+    "SkillBehaviourActionId": 18000024,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 920
+  },
+  {
+    "SkillBehaviourActionId": 18000025,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 950
+  },
+  {
+    "SkillBehaviourActionId": 18000026,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 940
+  },
+  {
+    "SkillBehaviourActionId": 18000027,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 920
+  },
+  {
+    "SkillBehaviourActionId": 18000028,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 950
+  },
+  {
+    "SkillBehaviourActionId": 18000029,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 940
+  },
+  {
+    "SkillBehaviourActionId": 18000030,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 920
+  },
+  {
+    "SkillBehaviourActionId": 18000031,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 820
+  },
+  {
+    "SkillBehaviourActionId": 18000032,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 760
+  },
+  {
+    "SkillBehaviourActionId": 18000033,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 700
+  },
+  {
+    "SkillBehaviourActionId": 19100022,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 1200
+  },
+  {
+    "SkillBehaviourActionId": 19100023,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 1400
+  },
+  {
+    "SkillBehaviourActionId": 19100024,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 1600
+  },
+  {
+    "SkillBehaviourActionId": 19100025,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 1800
+  },
+  {
+    "SkillBehaviourActionId": 19100026,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 2000
+  },
+  {
+    "SkillBehaviourActionId": 19100027,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 2200
+  },
+  {
+    "SkillBehaviourActionId": 19100028,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 2400
+  },
+  {
+    "SkillBehaviourActionId": 19100029,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 2600
+  },
+  {
+    "SkillBehaviourActionId": 19100030,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 2800
+  },
+  {
+    "SkillBehaviourActionId": 19100031,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 3000
+  },
+  {
+    "SkillBehaviourActionId": 19900001,
+    "ActiveSkillType": 2,
+    "ShortenValuePermil": 1200
+  }
+]

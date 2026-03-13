@@ -1,0 +1,62 @@
+[
+  {
+    "OverrideHitEffectConditionGroupId": 1,
+    "ConditionIndex": 1,
+    "ConditionType": 2,
+    "OverrideHitEffectConditionId": 1
+  },
+  {
+    "OverrideHitEffectConditionGroupId": 1,
+    "ConditionIndex": 2,
+    "ConditionType": 4,
+    "OverrideHitEffectConditionId": 1
+  },
+  {
+    "OverrideHitEffectConditionGroupId": 2,
+    "ConditionIndex": 1,
+    "ConditionType": 2,
+    "OverrideHitEffectConditionId": 2
+  },
+  {
+    "OverrideHitEffectConditionGroupId": 2,
+    "ConditionIndex": 2,
+    "ConditionType": 4,
+    "OverrideHitEffectConditionId": 1
+  },
+  {
+    "OverrideHitEffectConditionGroupId": 3,
+    "ConditionIndex": 1,
+    "ConditionType": 2,
+    "OverrideHitEffectConditionId": 3
+  },
+  {
+    "OverrideHitEffectConditionGroupId": 3,
+    "ConditionIndex": 2,
+    "ConditionType": 4,
+    "OverrideHitEffectConditionId": 1
+  },
+  {
+    "OverrideHitEffectConditionGroupId": 4,
+    "ConditionIndex": 1,
+    "ConditionType": 2,
+    "OverrideHitEffectConditionId": 4
+  },
+  {
+    "OverrideHitEffectConditionGroupId": 4,
+    "ConditionIndex": 2,
+    "ConditionType": 4,
+    "OverrideHitEffectConditionId": 1
+  },
+  {
+    "OverrideHitEffectConditionGroupId": 5,
+    "ConditionIndex": 1,
+    "ConditionType": 2,
+    "OverrideHitEffectConditionId": 5
+  },
+  {
+    "OverrideHitEffectConditionGroupId": 5,
+    "ConditionIndex": 2,
+    "ConditionType": 4,
+    "OverrideHitEffectConditionId": 1
+  }
+]

@@ -1,0 +1,1526 @@
+[
+  {
+    "CostumeId": 10116,
+    "DisplayCoordinateAdjustmentFunctionType": 3,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": -100000
+  },
+  {
+    "CostumeId": 10116,
+    "DisplayCoordinateAdjustmentFunctionType": 5,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": -60000
+  },
+  {
+    "CostumeId": 10116,
+    "DisplayCoordinateAdjustmentFunctionType": 6,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": -20000
+  },
+  {
+    "CostumeId": 10116,
+    "DisplayCoordinateAdjustmentFunctionType": 7,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": -60000
+  },
+  {
+    "CostumeId": 10118,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": 1000
+  },
+  {
+    "CostumeId": 10118,
+    "DisplayCoordinateAdjustmentFunctionType": 3,
+    "HorizontalCoordinateCountPermil": -8000,
+    "VerticalCoordinateCountPermil": 3000
+  },
+  {
+    "CostumeId": 22008,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 38000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 22010,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": 8000
+  },
+  {
+    "CostumeId": 22010,
+    "DisplayCoordinateAdjustmentFunctionType": 5,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": -50000
+  },
+  {
+    "CostumeId": 22010,
+    "DisplayCoordinateAdjustmentFunctionType": 6,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": -18000
+  },
+  {
+    "CostumeId": 24000,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": -100000
+  },
+  {
+    "CostumeId": 24009,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 30000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 24009,
+    "DisplayCoordinateAdjustmentFunctionType": 5,
+    "HorizontalCoordinateCountPermil": -10000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 24009,
+    "DisplayCoordinateAdjustmentFunctionType": 6,
+    "HorizontalCoordinateCountPermil": -30000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 31008,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": -130000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 31010,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 20000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 31015,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": -16000
+  },
+  {
+    "CostumeId": 31016,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 16000,
+    "VerticalCoordinateCountPermil": -54000
+  },
+  {
+    "CostumeId": 31016,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 31017,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": 15000
+  },
+  {
+    "CostumeId": 31019,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 8000,
+    "VerticalCoordinateCountPermil": -4000
+  },
+  {
+    "CostumeId": 31020,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": -145000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 31021,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": -4000
+  },
+  {
+    "CostumeId": 31021,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 31022,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 6000,
+    "VerticalCoordinateCountPermil": -20000
+  },
+  {
+    "CostumeId": 31022,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 31023,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": -4000
+  },
+  {
+    "CostumeId": 31025,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 8000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 31025,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 31026,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": -10000,
+    "VerticalCoordinateCountPermil": -20000
+  },
+  {
+    "CostumeId": 31027,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 40000,
+    "VerticalCoordinateCountPermil": -50000
+  },
+  {
+    "CostumeId": 31027,
+    "DisplayCoordinateAdjustmentFunctionType": 5,
+    "HorizontalCoordinateCountPermil": 15000,
+    "VerticalCoordinateCountPermil": -10000
+  },
+  {
+    "CostumeId": 31027,
+    "DisplayCoordinateAdjustmentFunctionType": 6,
+    "HorizontalCoordinateCountPermil": 25000,
+    "VerticalCoordinateCountPermil": -20000
+  },
+  {
+    "CostumeId": 31028,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 31028,
+    "DisplayCoordinateAdjustmentFunctionType": 5,
+    "HorizontalCoordinateCountPermil": -10000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 31028,
+    "DisplayCoordinateAdjustmentFunctionType": 6,
+    "HorizontalCoordinateCountPermil": -10000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 31029,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": -30000
+  },
+  {
+    "CostumeId": 31031,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": -13000
+  },
+  {
+    "CostumeId": 31032,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 5000,
+    "VerticalCoordinateCountPermil": -34000
+  },
+  {
+    "CostumeId": 31032,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 20000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 31034,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 25000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 31034,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 32003,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": -100000
+  },
+  {
+    "CostumeId": 32009,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 30000,
+    "VerticalCoordinateCountPermil": -100000
+  },
+  {
+    "CostumeId": 32012,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 15000,
+    "VerticalCoordinateCountPermil": -150000
+  },
+  {
+    "CostumeId": 32012,
+    "DisplayCoordinateAdjustmentFunctionType": 5,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": -60000
+  },
+  {
+    "CostumeId": 32012,
+    "DisplayCoordinateAdjustmentFunctionType": 6,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": -20000
+  },
+  {
+    "CostumeId": 32015,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 13000,
+    "VerticalCoordinateCountPermil": -86000
+  },
+  {
+    "CostumeId": 32015,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": -56000,
+    "VerticalCoordinateCountPermil": 42000
+  },
+  {
+    "CostumeId": 32016,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": -34000
+  },
+  {
+    "CostumeId": 32016,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": 12000
+  },
+  {
+    "CostumeId": 32017,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 7000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 32018,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": 35000
+  },
+  {
+    "CostumeId": 32019,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 1000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 32020,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": -100000
+  },
+  {
+    "CostumeId": 32021,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": -34000
+  },
+  {
+    "CostumeId": 32021,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 32022,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": -20000
+  },
+  {
+    "CostumeId": 32022,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 32023,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 11000,
+    "VerticalCoordinateCountPermil": 5000
+  },
+  {
+    "CostumeId": 32023,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 6000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 32024,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 11000,
+    "VerticalCoordinateCountPermil": -46000
+  },
+  {
+    "CostumeId": 32024,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 6000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 32025,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 38000,
+    "VerticalCoordinateCountPermil": -14000
+  },
+  {
+    "CostumeId": 32025,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 32026,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 25000,
+    "VerticalCoordinateCountPermil": -4000
+  },
+  {
+    "CostumeId": 32027,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 16000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 32027,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 12000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 32030,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 32031,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 21000,
+    "VerticalCoordinateCountPermil": 24000
+  },
+  {
+    "CostumeId": 32031,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 50000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 32032,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 8000,
+    "VerticalCoordinateCountPermil": 10000
+  },
+  {
+    "CostumeId": 32033,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 13000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 32034,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": -10000
+  },
+  {
+    "CostumeId": 32034,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 4000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 32035,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": -30000,
+    "VerticalCoordinateCountPermil": -50000
+  },
+  {
+    "CostumeId": 32035,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": -10000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 32035,
+    "DisplayCoordinateAdjustmentFunctionType": 5,
+    "HorizontalCoordinateCountPermil": -24000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 32035,
+    "DisplayCoordinateAdjustmentFunctionType": 6,
+    "HorizontalCoordinateCountPermil": -30000,
+    "VerticalCoordinateCountPermil": -10000
+  },
+  {
+    "CostumeId": 32036,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": -30000
+  },
+  {
+    "CostumeId": 32036,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 8000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 33005,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": -100000
+  },
+  {
+    "CostumeId": 33006,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": -100000
+  },
+  {
+    "CostumeId": 33010,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 85000,
+    "VerticalCoordinateCountPermil": -100000
+  },
+  {
+    "CostumeId": 33011,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 20000,
+    "VerticalCoordinateCountPermil": -100000
+  },
+  {
+    "CostumeId": 33013,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": -150000
+  },
+  {
+    "CostumeId": 33013,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": 70000
+  },
+  {
+    "CostumeId": 33014,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 8000,
+    "VerticalCoordinateCountPermil": -12000
+  },
+  {
+    "CostumeId": 33015,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 33016,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": -14000
+  },
+  {
+    "CostumeId": 33017,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": 15000
+  },
+  {
+    "CostumeId": 33018,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 30000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 33019,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 33019,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 33019,
+    "DisplayCoordinateAdjustmentFunctionType": 6,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 33020,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 11000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 33021,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": -10000,
+    "VerticalCoordinateCountPermil": -10000
+  },
+  {
+    "CostumeId": 33021,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 20000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 33021,
+    "DisplayCoordinateAdjustmentFunctionType": 5,
+    "HorizontalCoordinateCountPermil": -10000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 33022,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 5000,
+    "VerticalCoordinateCountPermil": -4000
+  },
+  {
+    "CostumeId": 33023,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": -10000
+  },
+  {
+    "CostumeId": 33024,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": -10000,
+    "VerticalCoordinateCountPermil": -20000
+  },
+  {
+    "CostumeId": 33025,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 33025,
+    "DisplayCoordinateAdjustmentFunctionType": 5,
+    "HorizontalCoordinateCountPermil": -10000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 33027,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": -18000,
+    "VerticalCoordinateCountPermil": -10000
+  },
+  {
+    "CostumeId": 33027,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 20000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 33027,
+    "DisplayCoordinateAdjustmentFunctionType": 5,
+    "HorizontalCoordinateCountPermil": -14000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 33028,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 20000,
+    "VerticalCoordinateCountPermil": -30000
+  },
+  {
+    "CostumeId": 33028,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 5000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 33029,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 11000,
+    "VerticalCoordinateCountPermil": -24000
+  },
+  {
+    "CostumeId": 33030,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 15000,
+    "VerticalCoordinateCountPermil": -4000
+  },
+  {
+    "CostumeId": 33031,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 15000,
+    "VerticalCoordinateCountPermil": -34000
+  },
+  {
+    "CostumeId": 33032,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": -10000
+  },
+  {
+    "CostumeId": 33032,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 33033,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": -50000
+  },
+  {
+    "CostumeId": 34001,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": -100000
+  },
+  {
+    "CostumeId": 34004,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": -100000
+  },
+  {
+    "CostumeId": 34011,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": -100000
+  },
+  {
+    "CostumeId": 34017,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 30000,
+    "VerticalCoordinateCountPermil": -100000
+  },
+  {
+    "CostumeId": 34024,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": -6000
+  },
+  {
+    "CostumeId": 34026,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 5000,
+    "VerticalCoordinateCountPermil": -30000
+  },
+  {
+    "CostumeId": 34026,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 56000,
+    "VerticalCoordinateCountPermil": 20000
+  },
+  {
+    "CostumeId": 34027,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": -29000
+  },
+  {
+    "CostumeId": 34027,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": 5000
+  },
+  {
+    "CostumeId": 34028,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 9000,
+    "VerticalCoordinateCountPermil": -10000
+  },
+  {
+    "CostumeId": 34028,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 18000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 34029,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 6000,
+    "VerticalCoordinateCountPermil": 20000
+  },
+  {
+    "CostumeId": 34029,
+    "DisplayCoordinateAdjustmentFunctionType": 5,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": -60000
+  },
+  {
+    "CostumeId": 34029,
+    "DisplayCoordinateAdjustmentFunctionType": 6,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": -20000
+  },
+  {
+    "CostumeId": 34030,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": -80000,
+    "VerticalCoordinateCountPermil": -30000
+  },
+  {
+    "CostumeId": 34030,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": -3000,
+    "VerticalCoordinateCountPermil": 2000
+  },
+  {
+    "CostumeId": 34031,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 16000,
+    "VerticalCoordinateCountPermil": -20000
+  },
+  {
+    "CostumeId": 34032,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 34032,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 34034,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": -4000
+  },
+  {
+    "CostumeId": 34034,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 34034,
+    "DisplayCoordinateAdjustmentFunctionType": 6,
+    "HorizontalCoordinateCountPermil": 24000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 34035,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 6000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 34036,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 34036,
+    "DisplayCoordinateAdjustmentFunctionType": 5,
+    "HorizontalCoordinateCountPermil": -6000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 34037,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": 4000
+  },
+  {
+    "CostumeId": 34038,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": -10000
+  },
+  {
+    "CostumeId": 34039,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 20000,
+    "VerticalCoordinateCountPermil": -120000
+  },
+  {
+    "CostumeId": 34039,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": 27000
+  },
+  {
+    "CostumeId": 34039,
+    "DisplayCoordinateAdjustmentFunctionType": 5,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": -44000
+  },
+  {
+    "CostumeId": 34039,
+    "DisplayCoordinateAdjustmentFunctionType": 6,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": -30000
+  },
+  {
+    "CostumeId": 34040,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": -10000
+  },
+  {
+    "CostumeId": 34041,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 9000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 34042,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 18000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 34043,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 34043,
+    "DisplayCoordinateAdjustmentFunctionType": 5,
+    "HorizontalCoordinateCountPermil": 7000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 34044,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": -13000,
+    "VerticalCoordinateCountPermil": -10000
+  },
+  {
+    "CostumeId": 34045,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 20000,
+    "VerticalCoordinateCountPermil": -4000
+  },
+  {
+    "CostumeId": 34045,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 34046,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": -120000
+  },
+  {
+    "CostumeId": 34046,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 15000,
+    "VerticalCoordinateCountPermil": -20000
+  },
+  {
+    "CostumeId": 34046,
+    "DisplayCoordinateAdjustmentFunctionType": 5,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": -50000
+  },
+  {
+    "CostumeId": 34046,
+    "DisplayCoordinateAdjustmentFunctionType": 6,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": -20000
+  },
+  {
+    "CostumeId": 34047,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": -30000,
+    "VerticalCoordinateCountPermil": -20000
+  },
+  {
+    "CostumeId": 34047,
+    "DisplayCoordinateAdjustmentFunctionType": 5,
+    "HorizontalCoordinateCountPermil": -27000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 34047,
+    "DisplayCoordinateAdjustmentFunctionType": 6,
+    "HorizontalCoordinateCountPermil": -15000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 34048,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": -50000
+  },
+  {
+    "CostumeId": 34048,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 5000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 35006,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": -100000
+  },
+  {
+    "CostumeId": 35009,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": -50000,
+    "VerticalCoordinateCountPermil": -100000
+  },
+  {
+    "CostumeId": 35014,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": -100000
+  },
+  {
+    "CostumeId": 35016,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 35016,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 6000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 35017,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": -14000,
+    "VerticalCoordinateCountPermil": -20000
+  },
+  {
+    "CostumeId": 35017,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 50000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 35018,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 9000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 35019,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 25000,
+    "VerticalCoordinateCountPermil": -60000
+  },
+  {
+    "CostumeId": 35020,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 11000,
+    "VerticalCoordinateCountPermil": -20000
+  },
+  {
+    "CostumeId": 35020,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 4000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 35021,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 35021,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 35022,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": -110000
+  },
+  {
+    "CostumeId": 35022,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": 25000
+  },
+  {
+    "CostumeId": 35022,
+    "DisplayCoordinateAdjustmentFunctionType": 5,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": -40000
+  },
+  {
+    "CostumeId": 35022,
+    "DisplayCoordinateAdjustmentFunctionType": 6,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": -10000
+  },
+  {
+    "CostumeId": 35024,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": -4000
+  },
+  {
+    "CostumeId": 35024,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 2000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 35024,
+    "DisplayCoordinateAdjustmentFunctionType": 5,
+    "HorizontalCoordinateCountPermil": 2000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 35025,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": -10000
+  },
+  {
+    "CostumeId": 35026,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 35026,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 12000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 35027,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 6000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 35027,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 6000,
+    "VerticalCoordinateCountPermil": -8000
+  },
+  {
+    "CostumeId": 35028,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 14000,
+    "VerticalCoordinateCountPermil": -5000
+  },
+  {
+    "CostumeId": 35028,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 6000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 35029,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 15000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 35031,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": -20000,
+    "VerticalCoordinateCountPermil": -10000
+  },
+  {
+    "CostumeId": 35031,
+    "DisplayCoordinateAdjustmentFunctionType": 5,
+    "HorizontalCoordinateCountPermil": -30000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 35031,
+    "DisplayCoordinateAdjustmentFunctionType": 6,
+    "HorizontalCoordinateCountPermil": -34000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 35032,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 16000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 35032,
+    "DisplayCoordinateAdjustmentFunctionType": 5,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 35033,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 7000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 35034,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": -7000
+  },
+  {
+    "CostumeId": 35035,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 20000,
+    "VerticalCoordinateCountPermil": -26000
+  },
+  {
+    "CostumeId": 35035,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 35036,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 15000,
+    "VerticalCoordinateCountPermil": -10000
+  },
+  {
+    "CostumeId": 35038,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 22000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 35038,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 41002,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 4000,
+    "VerticalCoordinateCountPermil": 10000
+  },
+  {
+    "CostumeId": 42003,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 12000,
+    "VerticalCoordinateCountPermil": 10000
+  },
+  {
+    "CostumeId": 43002,
+    "DisplayCoordinateAdjustmentFunctionType": 3,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": -100000
+  },
+  {
+    "CostumeId": 43002,
+    "DisplayCoordinateAdjustmentFunctionType": 5,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": -60000
+  },
+  {
+    "CostumeId": 43002,
+    "DisplayCoordinateAdjustmentFunctionType": 6,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": -20000
+  },
+  {
+    "CostumeId": 44004,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 5000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 51001,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 51001,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 6000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 51001,
+    "DisplayCoordinateAdjustmentFunctionType": 3,
+    "HorizontalCoordinateCountPermil": 20000,
+    "VerticalCoordinateCountPermil": -140000
+  },
+  {
+    "CostumeId": 51001,
+    "DisplayCoordinateAdjustmentFunctionType": 4,
+    "HorizontalCoordinateCountPermil": 6000,
+    "VerticalCoordinateCountPermil": -140000
+  },
+  {
+    "CostumeId": 51002,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": -23000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 51002,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": -30000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 51002,
+    "DisplayCoordinateAdjustmentFunctionType": 3,
+    "HorizontalCoordinateCountPermil": 150000,
+    "VerticalCoordinateCountPermil": -100000
+  },
+  {
+    "CostumeId": 51002,
+    "DisplayCoordinateAdjustmentFunctionType": 4,
+    "HorizontalCoordinateCountPermil": 125000,
+    "VerticalCoordinateCountPermil": -110000
+  },
+  {
+    "CostumeId": 51003,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 50000,
+    "VerticalCoordinateCountPermil": -20000
+  },
+  {
+    "CostumeId": 51003,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 51003,
+    "DisplayCoordinateAdjustmentFunctionType": 3,
+    "HorizontalCoordinateCountPermil": -160000,
+    "VerticalCoordinateCountPermil": -90000
+  },
+  {
+    "CostumeId": 51003,
+    "DisplayCoordinateAdjustmentFunctionType": 4,
+    "HorizontalCoordinateCountPermil": -145000,
+    "VerticalCoordinateCountPermil": -80000
+  },
+  {
+    "CostumeId": 52001,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 27000,
+    "VerticalCoordinateCountPermil": -32000
+  },
+  {
+    "CostumeId": 52001,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 20000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 52001,
+    "DisplayCoordinateAdjustmentFunctionType": 3,
+    "HorizontalCoordinateCountPermil": -72000,
+    "VerticalCoordinateCountPermil": -80000
+  },
+  {
+    "CostumeId": 52001,
+    "DisplayCoordinateAdjustmentFunctionType": 4,
+    "HorizontalCoordinateCountPermil": -70000,
+    "VerticalCoordinateCountPermil": -78000
+  },
+  {
+    "CostumeId": 52002,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 20000,
+    "VerticalCoordinateCountPermil": -10000
+  },
+  {
+    "CostumeId": 52002,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 52002,
+    "DisplayCoordinateAdjustmentFunctionType": 3,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": -150000
+  },
+  {
+    "CostumeId": 52002,
+    "DisplayCoordinateAdjustmentFunctionType": 4,
+    "HorizontalCoordinateCountPermil": 0,
+    "VerticalCoordinateCountPermil": -130000
+  },
+  {
+    "CostumeId": 53001,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": -50000
+  },
+  {
+    "CostumeId": 53002,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 150000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 53002,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 25000,
+    "VerticalCoordinateCountPermil": 25000
+  },
+  {
+    "CostumeId": 53002,
+    "DisplayCoordinateAdjustmentFunctionType": 3,
+    "HorizontalCoordinateCountPermil": -200000,
+    "VerticalCoordinateCountPermil": -95000
+  },
+  {
+    "CostumeId": 53002,
+    "DisplayCoordinateAdjustmentFunctionType": 4,
+    "HorizontalCoordinateCountPermil": -200000,
+    "VerticalCoordinateCountPermil": -100000
+  },
+  {
+    "CostumeId": 53002,
+    "DisplayCoordinateAdjustmentFunctionType": 5,
+    "HorizontalCoordinateCountPermil": 25000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 53002,
+    "DisplayCoordinateAdjustmentFunctionType": 6,
+    "HorizontalCoordinateCountPermil": 30000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 54001,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 54001,
+    "DisplayCoordinateAdjustmentFunctionType": 3,
+    "HorizontalCoordinateCountPermil": 65000,
+    "VerticalCoordinateCountPermil": -130000
+  },
+  {
+    "CostumeId": 54001,
+    "DisplayCoordinateAdjustmentFunctionType": 4,
+    "HorizontalCoordinateCountPermil": 60000,
+    "VerticalCoordinateCountPermil": -130000
+  },
+  {
+    "CostumeId": 54002,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 15000,
+    "VerticalCoordinateCountPermil": -10000
+  },
+  {
+    "CostumeId": 54002,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 54002,
+    "DisplayCoordinateAdjustmentFunctionType": 3,
+    "HorizontalCoordinateCountPermil": -56000,
+    "VerticalCoordinateCountPermil": -130000
+  },
+  {
+    "CostumeId": 54002,
+    "DisplayCoordinateAdjustmentFunctionType": 4,
+    "HorizontalCoordinateCountPermil": -56000,
+    "VerticalCoordinateCountPermil": -130000
+  },
+  {
+    "CostumeId": 55001,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 55001,
+    "DisplayCoordinateAdjustmentFunctionType": 3,
+    "HorizontalCoordinateCountPermil": 32000,
+    "VerticalCoordinateCountPermil": -38000
+  },
+  {
+    "CostumeId": 55001,
+    "DisplayCoordinateAdjustmentFunctionType": 4,
+    "HorizontalCoordinateCountPermil": 23000,
+    "VerticalCoordinateCountPermil": -38000
+  },
+  {
+    "CostumeId": 55002,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 14000,
+    "VerticalCoordinateCountPermil": -4000
+  },
+  {
+    "CostumeId": 55002,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 8000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 55002,
+    "DisplayCoordinateAdjustmentFunctionType": 3,
+    "HorizontalCoordinateCountPermil": -30000,
+    "VerticalCoordinateCountPermil": -110000
+  },
+  {
+    "CostumeId": 55002,
+    "DisplayCoordinateAdjustmentFunctionType": 4,
+    "HorizontalCoordinateCountPermil": -30000,
+    "VerticalCoordinateCountPermil": -110000
+  },
+  {
+    "CostumeId": 55003,
+    "DisplayCoordinateAdjustmentFunctionType": 1,
+    "HorizontalCoordinateCountPermil": 20000,
+    "VerticalCoordinateCountPermil": 34000
+  },
+  {
+    "CostumeId": 55003,
+    "DisplayCoordinateAdjustmentFunctionType": 2,
+    "HorizontalCoordinateCountPermil": 10000,
+    "VerticalCoordinateCountPermil": 0
+  },
+  {
+    "CostumeId": 55003,
+    "DisplayCoordinateAdjustmentFunctionType": 3,
+    "HorizontalCoordinateCountPermil": -105000,
+    "VerticalCoordinateCountPermil": -80000
+  },
+  {
+    "CostumeId": 55003,
+    "DisplayCoordinateAdjustmentFunctionType": 4,
+    "HorizontalCoordinateCountPermil": -103000,
+    "VerticalCoordinateCountPermil": -75000
+  }
+]

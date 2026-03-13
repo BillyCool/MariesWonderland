@@ -1,0 +1,58 @@
+[
+  {
+    "RankLowerLimit": 1,
+    "PvpSeasonRankRewardGroupId": 1
+  },
+  {
+    "RankLowerLimit": 2,
+    "PvpSeasonRankRewardGroupId": 2
+  },
+  {
+    "RankLowerLimit": 3,
+    "PvpSeasonRankRewardGroupId": 3
+  },
+  {
+    "RankLowerLimit": 4,
+    "PvpSeasonRankRewardGroupId": 4
+  },
+  {
+    "RankLowerLimit": 11,
+    "PvpSeasonRankRewardGroupId": 5
+  },
+  {
+    "RankLowerLimit": 51,
+    "PvpSeasonRankRewardGroupId": 6
+  },
+  {
+    "RankLowerLimit": 101,
+    "PvpSeasonRankRewardGroupId": 7
+  },
+  {
+    "RankLowerLimit": 501,
+    "PvpSeasonRankRewardGroupId": 8
+  },
+  {
+    "RankLowerLimit": 1001,
+    "PvpSeasonRankRewardGroupId": 9
+  },
+  {
+    "RankLowerLimit": 5001,
+    "PvpSeasonRankRewardGroupId": 10
+  },
+  {
+    "RankLowerLimit": 10001,
+    "PvpSeasonRankRewardGroupId": 11
+  },
+  {
+    "RankLowerLimit": 20001,
+    "PvpSeasonRankRewardGroupId": 12
+  },
+  {
+    "RankLowerLimit": 30001,
+    "PvpSeasonRankRewardGroupId": 13
+  },
+  {
+    "RankLowerLimit": 50001,
+    "PvpSeasonRankRewardGroupId": 14
+  }
+]

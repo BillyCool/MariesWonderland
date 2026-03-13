@@ -1,0 +1,17 @@
+[
+  {
+    "CostumeAwakenPriceGroupId": 20,
+    "AwakenStepLowerLimit": 1,
+    "Gold": 25000
+  },
+  {
+    "CostumeAwakenPriceGroupId": 30,
+    "AwakenStepLowerLimit": 1,
+    "Gold": 50000
+  },
+  {
+    "CostumeAwakenPriceGroupId": 40,
+    "AwakenStepLowerLimit": 1,
+    "Gold": 100000
+  }
+]

@@ -1,0 +1,5942 @@
+[
+  {
+    "CharacterBoardAbilityId": 10001037,
+    "CharacterBoardEffectTargetGroupId": 100101,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 10001137,
+    "CharacterBoardEffectTargetGroupId": 100101,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 10001212,
+    "CharacterBoardEffectTargetGroupId": 100101,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 10001221,
+    "CharacterBoardEffectTargetGroupId": 100101,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 10001236,
+    "CharacterBoardEffectTargetGroupId": 100101,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 10001239,
+    "CharacterBoardEffectTargetGroupId": 100101,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 10001315,
+    "CharacterBoardEffectTargetGroupId": 100101,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10001317,
+    "CharacterBoardEffectTargetGroupId": 100101,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10001320,
+    "CharacterBoardEffectTargetGroupId": 100101,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10001321,
+    "CharacterBoardEffectTargetGroupId": 100101,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10001322,
+    "CharacterBoardEffectTargetGroupId": 100101,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10001328,
+    "CharacterBoardEffectTargetGroupId": 100101,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10001330,
+    "CharacterBoardEffectTargetGroupId": 100101,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10001331,
+    "CharacterBoardEffectTargetGroupId": 100101,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10001332,
+    "CharacterBoardEffectTargetGroupId": 100101,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10001333,
+    "CharacterBoardEffectTargetGroupId": 100101,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10001415,
+    "CharacterBoardEffectTargetGroupId": 100101,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10001417,
+    "CharacterBoardEffectTargetGroupId": 100101,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10001420,
+    "CharacterBoardEffectTargetGroupId": 100101,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10001421,
+    "CharacterBoardEffectTargetGroupId": 100101,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10001422,
+    "CharacterBoardEffectTargetGroupId": 100101,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10001428,
+    "CharacterBoardEffectTargetGroupId": 100101,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10001430,
+    "CharacterBoardEffectTargetGroupId": 100101,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10001431,
+    "CharacterBoardEffectTargetGroupId": 100101,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10001432,
+    "CharacterBoardEffectTargetGroupId": 100101,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10001433,
+    "CharacterBoardEffectTargetGroupId": 100101,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10001515,
+    "CharacterBoardEffectTargetGroupId": 100101,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10001517,
+    "CharacterBoardEffectTargetGroupId": 100101,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10001520,
+    "CharacterBoardEffectTargetGroupId": 100101,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10001521,
+    "CharacterBoardEffectTargetGroupId": 100101,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10001522,
+    "CharacterBoardEffectTargetGroupId": 100101,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10001530,
+    "CharacterBoardEffectTargetGroupId": 100101,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10001532,
+    "CharacterBoardEffectTargetGroupId": 100101,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10001534,
+    "CharacterBoardEffectTargetGroupId": 100101,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10001535,
+    "CharacterBoardEffectTargetGroupId": 100101,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10001536,
+    "CharacterBoardEffectTargetGroupId": 100101,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10002037,
+    "CharacterBoardEffectTargetGroupId": 100201,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 10002137,
+    "CharacterBoardEffectTargetGroupId": 100201,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 10002212,
+    "CharacterBoardEffectTargetGroupId": 100201,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 10002221,
+    "CharacterBoardEffectTargetGroupId": 100201,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 10002236,
+    "CharacterBoardEffectTargetGroupId": 100201,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 10002239,
+    "CharacterBoardEffectTargetGroupId": 100201,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 10002315,
+    "CharacterBoardEffectTargetGroupId": 100201,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10002317,
+    "CharacterBoardEffectTargetGroupId": 100201,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10002320,
+    "CharacterBoardEffectTargetGroupId": 100201,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10002321,
+    "CharacterBoardEffectTargetGroupId": 100201,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10002322,
+    "CharacterBoardEffectTargetGroupId": 100201,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10002328,
+    "CharacterBoardEffectTargetGroupId": 100201,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10002330,
+    "CharacterBoardEffectTargetGroupId": 100201,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10002331,
+    "CharacterBoardEffectTargetGroupId": 100201,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10002332,
+    "CharacterBoardEffectTargetGroupId": 100201,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10002333,
+    "CharacterBoardEffectTargetGroupId": 100201,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10002415,
+    "CharacterBoardEffectTargetGroupId": 100201,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10002417,
+    "CharacterBoardEffectTargetGroupId": 100201,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10002420,
+    "CharacterBoardEffectTargetGroupId": 100201,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10002421,
+    "CharacterBoardEffectTargetGroupId": 100201,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10002422,
+    "CharacterBoardEffectTargetGroupId": 100201,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10002428,
+    "CharacterBoardEffectTargetGroupId": 100201,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10002430,
+    "CharacterBoardEffectTargetGroupId": 100201,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10002431,
+    "CharacterBoardEffectTargetGroupId": 100201,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10002432,
+    "CharacterBoardEffectTargetGroupId": 100201,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10002433,
+    "CharacterBoardEffectTargetGroupId": 100201,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10002515,
+    "CharacterBoardEffectTargetGroupId": 100201,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10002517,
+    "CharacterBoardEffectTargetGroupId": 100201,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10002520,
+    "CharacterBoardEffectTargetGroupId": 100201,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10002521,
+    "CharacterBoardEffectTargetGroupId": 100201,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10002522,
+    "CharacterBoardEffectTargetGroupId": 100201,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10002530,
+    "CharacterBoardEffectTargetGroupId": 100201,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10002532,
+    "CharacterBoardEffectTargetGroupId": 100201,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10002534,
+    "CharacterBoardEffectTargetGroupId": 100201,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10002535,
+    "CharacterBoardEffectTargetGroupId": 100201,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10002536,
+    "CharacterBoardEffectTargetGroupId": 100201,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10003037,
+    "CharacterBoardEffectTargetGroupId": 100301,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 10003137,
+    "CharacterBoardEffectTargetGroupId": 100301,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 10003212,
+    "CharacterBoardEffectTargetGroupId": 100301,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 10003221,
+    "CharacterBoardEffectTargetGroupId": 100301,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 10003236,
+    "CharacterBoardEffectTargetGroupId": 100301,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 10003239,
+    "CharacterBoardEffectTargetGroupId": 100301,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 10003315,
+    "CharacterBoardEffectTargetGroupId": 100301,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10003317,
+    "CharacterBoardEffectTargetGroupId": 100301,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10003320,
+    "CharacterBoardEffectTargetGroupId": 100301,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10003321,
+    "CharacterBoardEffectTargetGroupId": 100301,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10003322,
+    "CharacterBoardEffectTargetGroupId": 100301,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10003328,
+    "CharacterBoardEffectTargetGroupId": 100301,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10003330,
+    "CharacterBoardEffectTargetGroupId": 100301,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10003331,
+    "CharacterBoardEffectTargetGroupId": 100301,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10003332,
+    "CharacterBoardEffectTargetGroupId": 100301,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10003333,
+    "CharacterBoardEffectTargetGroupId": 100301,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10003415,
+    "CharacterBoardEffectTargetGroupId": 100301,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10003417,
+    "CharacterBoardEffectTargetGroupId": 100301,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10003420,
+    "CharacterBoardEffectTargetGroupId": 100301,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10003421,
+    "CharacterBoardEffectTargetGroupId": 100301,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10003422,
+    "CharacterBoardEffectTargetGroupId": 100301,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10003428,
+    "CharacterBoardEffectTargetGroupId": 100301,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10003430,
+    "CharacterBoardEffectTargetGroupId": 100301,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10003431,
+    "CharacterBoardEffectTargetGroupId": 100301,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10003432,
+    "CharacterBoardEffectTargetGroupId": 100301,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10003433,
+    "CharacterBoardEffectTargetGroupId": 100301,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10003515,
+    "CharacterBoardEffectTargetGroupId": 100301,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10003517,
+    "CharacterBoardEffectTargetGroupId": 100301,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10003520,
+    "CharacterBoardEffectTargetGroupId": 100301,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10003521,
+    "CharacterBoardEffectTargetGroupId": 100301,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10003522,
+    "CharacterBoardEffectTargetGroupId": 100301,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10003530,
+    "CharacterBoardEffectTargetGroupId": 100301,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10003532,
+    "CharacterBoardEffectTargetGroupId": 100301,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10003534,
+    "CharacterBoardEffectTargetGroupId": 100301,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10003535,
+    "CharacterBoardEffectTargetGroupId": 100301,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10003536,
+    "CharacterBoardEffectTargetGroupId": 100301,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10004037,
+    "CharacterBoardEffectTargetGroupId": 100401,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 10004137,
+    "CharacterBoardEffectTargetGroupId": 100401,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 10004212,
+    "CharacterBoardEffectTargetGroupId": 100401,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 10004221,
+    "CharacterBoardEffectTargetGroupId": 100401,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 10004236,
+    "CharacterBoardEffectTargetGroupId": 100401,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 10004239,
+    "CharacterBoardEffectTargetGroupId": 100401,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 10004315,
+    "CharacterBoardEffectTargetGroupId": 100401,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10004317,
+    "CharacterBoardEffectTargetGroupId": 100401,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10004320,
+    "CharacterBoardEffectTargetGroupId": 100401,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10004321,
+    "CharacterBoardEffectTargetGroupId": 100401,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10004322,
+    "CharacterBoardEffectTargetGroupId": 100401,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10004328,
+    "CharacterBoardEffectTargetGroupId": 100401,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10004330,
+    "CharacterBoardEffectTargetGroupId": 100401,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10004331,
+    "CharacterBoardEffectTargetGroupId": 100401,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10004332,
+    "CharacterBoardEffectTargetGroupId": 100401,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10004333,
+    "CharacterBoardEffectTargetGroupId": 100401,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10004415,
+    "CharacterBoardEffectTargetGroupId": 100401,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10004417,
+    "CharacterBoardEffectTargetGroupId": 100401,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10004420,
+    "CharacterBoardEffectTargetGroupId": 100401,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10004421,
+    "CharacterBoardEffectTargetGroupId": 100401,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10004422,
+    "CharacterBoardEffectTargetGroupId": 100401,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10004428,
+    "CharacterBoardEffectTargetGroupId": 100401,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10004430,
+    "CharacterBoardEffectTargetGroupId": 100401,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10004431,
+    "CharacterBoardEffectTargetGroupId": 100401,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10004432,
+    "CharacterBoardEffectTargetGroupId": 100401,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10004433,
+    "CharacterBoardEffectTargetGroupId": 100401,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10004515,
+    "CharacterBoardEffectTargetGroupId": 100401,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10004517,
+    "CharacterBoardEffectTargetGroupId": 100401,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10004520,
+    "CharacterBoardEffectTargetGroupId": 100401,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10004521,
+    "CharacterBoardEffectTargetGroupId": 100401,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10004522,
+    "CharacterBoardEffectTargetGroupId": 100401,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10004530,
+    "CharacterBoardEffectTargetGroupId": 100401,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10004532,
+    "CharacterBoardEffectTargetGroupId": 100401,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10004534,
+    "CharacterBoardEffectTargetGroupId": 100401,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10004535,
+    "CharacterBoardEffectTargetGroupId": 100401,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10004536,
+    "CharacterBoardEffectTargetGroupId": 100401,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10005037,
+    "CharacterBoardEffectTargetGroupId": 100501,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 10005137,
+    "CharacterBoardEffectTargetGroupId": 100501,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 10005212,
+    "CharacterBoardEffectTargetGroupId": 100501,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 10005221,
+    "CharacterBoardEffectTargetGroupId": 100501,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 10005236,
+    "CharacterBoardEffectTargetGroupId": 100501,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 10005239,
+    "CharacterBoardEffectTargetGroupId": 100501,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 10005315,
+    "CharacterBoardEffectTargetGroupId": 100501,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10005317,
+    "CharacterBoardEffectTargetGroupId": 100501,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10005320,
+    "CharacterBoardEffectTargetGroupId": 100501,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10005321,
+    "CharacterBoardEffectTargetGroupId": 100501,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10005322,
+    "CharacterBoardEffectTargetGroupId": 100501,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10005328,
+    "CharacterBoardEffectTargetGroupId": 100501,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10005330,
+    "CharacterBoardEffectTargetGroupId": 100501,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10005331,
+    "CharacterBoardEffectTargetGroupId": 100501,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10005332,
+    "CharacterBoardEffectTargetGroupId": 100501,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10005333,
+    "CharacterBoardEffectTargetGroupId": 100501,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10005415,
+    "CharacterBoardEffectTargetGroupId": 100501,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10005417,
+    "CharacterBoardEffectTargetGroupId": 100501,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10005420,
+    "CharacterBoardEffectTargetGroupId": 100501,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10005421,
+    "CharacterBoardEffectTargetGroupId": 100501,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10005422,
+    "CharacterBoardEffectTargetGroupId": 100501,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10005428,
+    "CharacterBoardEffectTargetGroupId": 100501,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10005430,
+    "CharacterBoardEffectTargetGroupId": 100501,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10005431,
+    "CharacterBoardEffectTargetGroupId": 100501,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10005432,
+    "CharacterBoardEffectTargetGroupId": 100501,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10005433,
+    "CharacterBoardEffectTargetGroupId": 100501,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10005515,
+    "CharacterBoardEffectTargetGroupId": 100501,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10005517,
+    "CharacterBoardEffectTargetGroupId": 100501,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10005520,
+    "CharacterBoardEffectTargetGroupId": 100501,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10005521,
+    "CharacterBoardEffectTargetGroupId": 100501,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10005522,
+    "CharacterBoardEffectTargetGroupId": 100501,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10005530,
+    "CharacterBoardEffectTargetGroupId": 100501,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10005532,
+    "CharacterBoardEffectTargetGroupId": 100501,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10005534,
+    "CharacterBoardEffectTargetGroupId": 100501,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10005535,
+    "CharacterBoardEffectTargetGroupId": 100501,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10005536,
+    "CharacterBoardEffectTargetGroupId": 100501,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10006037,
+    "CharacterBoardEffectTargetGroupId": 100601,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 10006137,
+    "CharacterBoardEffectTargetGroupId": 100601,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 10006212,
+    "CharacterBoardEffectTargetGroupId": 100601,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 10006221,
+    "CharacterBoardEffectTargetGroupId": 100601,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 10006236,
+    "CharacterBoardEffectTargetGroupId": 100601,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 10006239,
+    "CharacterBoardEffectTargetGroupId": 100601,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 10006315,
+    "CharacterBoardEffectTargetGroupId": 100601,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10006317,
+    "CharacterBoardEffectTargetGroupId": 100601,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10006320,
+    "CharacterBoardEffectTargetGroupId": 100601,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10006321,
+    "CharacterBoardEffectTargetGroupId": 100601,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10006322,
+    "CharacterBoardEffectTargetGroupId": 100601,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10006328,
+    "CharacterBoardEffectTargetGroupId": 100601,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10006330,
+    "CharacterBoardEffectTargetGroupId": 100601,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10006331,
+    "CharacterBoardEffectTargetGroupId": 100601,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10006332,
+    "CharacterBoardEffectTargetGroupId": 100601,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10006333,
+    "CharacterBoardEffectTargetGroupId": 100601,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10006415,
+    "CharacterBoardEffectTargetGroupId": 100601,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10006417,
+    "CharacterBoardEffectTargetGroupId": 100601,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10006420,
+    "CharacterBoardEffectTargetGroupId": 100601,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10006421,
+    "CharacterBoardEffectTargetGroupId": 100601,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10006422,
+    "CharacterBoardEffectTargetGroupId": 100601,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10006428,
+    "CharacterBoardEffectTargetGroupId": 100601,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10006430,
+    "CharacterBoardEffectTargetGroupId": 100601,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10006431,
+    "CharacterBoardEffectTargetGroupId": 100601,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10006432,
+    "CharacterBoardEffectTargetGroupId": 100601,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10006433,
+    "CharacterBoardEffectTargetGroupId": 100601,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10006515,
+    "CharacterBoardEffectTargetGroupId": 100601,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10006517,
+    "CharacterBoardEffectTargetGroupId": 100601,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10006520,
+    "CharacterBoardEffectTargetGroupId": 100601,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10006521,
+    "CharacterBoardEffectTargetGroupId": 100601,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10006522,
+    "CharacterBoardEffectTargetGroupId": 100601,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10006530,
+    "CharacterBoardEffectTargetGroupId": 100601,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10006532,
+    "CharacterBoardEffectTargetGroupId": 100601,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10006534,
+    "CharacterBoardEffectTargetGroupId": 100601,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10006535,
+    "CharacterBoardEffectTargetGroupId": 100601,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10006536,
+    "CharacterBoardEffectTargetGroupId": 100601,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10007037,
+    "CharacterBoardEffectTargetGroupId": 100701,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 10007137,
+    "CharacterBoardEffectTargetGroupId": 100701,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 10007212,
+    "CharacterBoardEffectTargetGroupId": 100701,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 10007221,
+    "CharacterBoardEffectTargetGroupId": 100701,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 10007236,
+    "CharacterBoardEffectTargetGroupId": 100701,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 10007239,
+    "CharacterBoardEffectTargetGroupId": 100701,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 10007315,
+    "CharacterBoardEffectTargetGroupId": 100701,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10007317,
+    "CharacterBoardEffectTargetGroupId": 100701,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10007320,
+    "CharacterBoardEffectTargetGroupId": 100701,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10007321,
+    "CharacterBoardEffectTargetGroupId": 100701,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10007322,
+    "CharacterBoardEffectTargetGroupId": 100701,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10007328,
+    "CharacterBoardEffectTargetGroupId": 100701,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10007330,
+    "CharacterBoardEffectTargetGroupId": 100701,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10007331,
+    "CharacterBoardEffectTargetGroupId": 100701,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10007332,
+    "CharacterBoardEffectTargetGroupId": 100701,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10007333,
+    "CharacterBoardEffectTargetGroupId": 100701,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10007415,
+    "CharacterBoardEffectTargetGroupId": 100701,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10007417,
+    "CharacterBoardEffectTargetGroupId": 100701,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10007420,
+    "CharacterBoardEffectTargetGroupId": 100701,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10007421,
+    "CharacterBoardEffectTargetGroupId": 100701,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10007422,
+    "CharacterBoardEffectTargetGroupId": 100701,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10007428,
+    "CharacterBoardEffectTargetGroupId": 100701,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10007430,
+    "CharacterBoardEffectTargetGroupId": 100701,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10007431,
+    "CharacterBoardEffectTargetGroupId": 100701,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10007432,
+    "CharacterBoardEffectTargetGroupId": 100701,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10007433,
+    "CharacterBoardEffectTargetGroupId": 100701,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10007515,
+    "CharacterBoardEffectTargetGroupId": 100701,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10007517,
+    "CharacterBoardEffectTargetGroupId": 100701,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10007520,
+    "CharacterBoardEffectTargetGroupId": 100701,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10007521,
+    "CharacterBoardEffectTargetGroupId": 100701,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10007522,
+    "CharacterBoardEffectTargetGroupId": 100701,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10007530,
+    "CharacterBoardEffectTargetGroupId": 100701,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10007532,
+    "CharacterBoardEffectTargetGroupId": 100701,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10007534,
+    "CharacterBoardEffectTargetGroupId": 100701,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10007535,
+    "CharacterBoardEffectTargetGroupId": 100701,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10007536,
+    "CharacterBoardEffectTargetGroupId": 100701,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10008037,
+    "CharacterBoardEffectTargetGroupId": 100801,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 10008137,
+    "CharacterBoardEffectTargetGroupId": 100801,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 10008212,
+    "CharacterBoardEffectTargetGroupId": 100801,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 10008221,
+    "CharacterBoardEffectTargetGroupId": 100801,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 10008236,
+    "CharacterBoardEffectTargetGroupId": 100801,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 10008239,
+    "CharacterBoardEffectTargetGroupId": 100801,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 10008315,
+    "CharacterBoardEffectTargetGroupId": 100801,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10008317,
+    "CharacterBoardEffectTargetGroupId": 100801,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10008320,
+    "CharacterBoardEffectTargetGroupId": 100801,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10008321,
+    "CharacterBoardEffectTargetGroupId": 100801,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10008322,
+    "CharacterBoardEffectTargetGroupId": 100801,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10008328,
+    "CharacterBoardEffectTargetGroupId": 100801,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10008330,
+    "CharacterBoardEffectTargetGroupId": 100801,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10008331,
+    "CharacterBoardEffectTargetGroupId": 100801,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10008332,
+    "CharacterBoardEffectTargetGroupId": 100801,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10008333,
+    "CharacterBoardEffectTargetGroupId": 100801,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10008415,
+    "CharacterBoardEffectTargetGroupId": 100801,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10008417,
+    "CharacterBoardEffectTargetGroupId": 100801,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10008420,
+    "CharacterBoardEffectTargetGroupId": 100801,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10008421,
+    "CharacterBoardEffectTargetGroupId": 100801,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10008422,
+    "CharacterBoardEffectTargetGroupId": 100801,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10008428,
+    "CharacterBoardEffectTargetGroupId": 100801,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10008430,
+    "CharacterBoardEffectTargetGroupId": 100801,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10008431,
+    "CharacterBoardEffectTargetGroupId": 100801,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10008432,
+    "CharacterBoardEffectTargetGroupId": 100801,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10008433,
+    "CharacterBoardEffectTargetGroupId": 100801,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10008515,
+    "CharacterBoardEffectTargetGroupId": 100801,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10008517,
+    "CharacterBoardEffectTargetGroupId": 100801,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10008520,
+    "CharacterBoardEffectTargetGroupId": 100801,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10008521,
+    "CharacterBoardEffectTargetGroupId": 100801,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10008522,
+    "CharacterBoardEffectTargetGroupId": 100801,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10008530,
+    "CharacterBoardEffectTargetGroupId": 100801,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10008532,
+    "CharacterBoardEffectTargetGroupId": 100801,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10008534,
+    "CharacterBoardEffectTargetGroupId": 100801,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10008535,
+    "CharacterBoardEffectTargetGroupId": 100801,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10008536,
+    "CharacterBoardEffectTargetGroupId": 100801,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10009037,
+    "CharacterBoardEffectTargetGroupId": 100901,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 10009137,
+    "CharacterBoardEffectTargetGroupId": 100901,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 10009212,
+    "CharacterBoardEffectTargetGroupId": 100901,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 10009221,
+    "CharacterBoardEffectTargetGroupId": 100901,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 10009236,
+    "CharacterBoardEffectTargetGroupId": 100901,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 10009239,
+    "CharacterBoardEffectTargetGroupId": 100901,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 10009315,
+    "CharacterBoardEffectTargetGroupId": 100901,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10009317,
+    "CharacterBoardEffectTargetGroupId": 100901,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10009320,
+    "CharacterBoardEffectTargetGroupId": 100901,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10009321,
+    "CharacterBoardEffectTargetGroupId": 100901,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10009322,
+    "CharacterBoardEffectTargetGroupId": 100901,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10009328,
+    "CharacterBoardEffectTargetGroupId": 100901,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10009330,
+    "CharacterBoardEffectTargetGroupId": 100901,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10009331,
+    "CharacterBoardEffectTargetGroupId": 100901,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10009332,
+    "CharacterBoardEffectTargetGroupId": 100901,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10009333,
+    "CharacterBoardEffectTargetGroupId": 100901,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10009415,
+    "CharacterBoardEffectTargetGroupId": 100901,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10009417,
+    "CharacterBoardEffectTargetGroupId": 100901,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10009420,
+    "CharacterBoardEffectTargetGroupId": 100901,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10009421,
+    "CharacterBoardEffectTargetGroupId": 100901,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10009422,
+    "CharacterBoardEffectTargetGroupId": 100901,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10009428,
+    "CharacterBoardEffectTargetGroupId": 100901,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10009430,
+    "CharacterBoardEffectTargetGroupId": 100901,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10009431,
+    "CharacterBoardEffectTargetGroupId": 100901,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10009432,
+    "CharacterBoardEffectTargetGroupId": 100901,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10009433,
+    "CharacterBoardEffectTargetGroupId": 100901,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10009515,
+    "CharacterBoardEffectTargetGroupId": 100901,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10009517,
+    "CharacterBoardEffectTargetGroupId": 100901,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10009520,
+    "CharacterBoardEffectTargetGroupId": 100901,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10009521,
+    "CharacterBoardEffectTargetGroupId": 100901,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10009522,
+    "CharacterBoardEffectTargetGroupId": 100901,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10009530,
+    "CharacterBoardEffectTargetGroupId": 100901,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10009532,
+    "CharacterBoardEffectTargetGroupId": 100901,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10009534,
+    "CharacterBoardEffectTargetGroupId": 100901,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10009535,
+    "CharacterBoardEffectTargetGroupId": 100901,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10009536,
+    "CharacterBoardEffectTargetGroupId": 100901,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10010037,
+    "CharacterBoardEffectTargetGroupId": 101001,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 10010137,
+    "CharacterBoardEffectTargetGroupId": 101001,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 10010212,
+    "CharacterBoardEffectTargetGroupId": 101001,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 10010221,
+    "CharacterBoardEffectTargetGroupId": 101001,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 10010236,
+    "CharacterBoardEffectTargetGroupId": 101001,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 10010239,
+    "CharacterBoardEffectTargetGroupId": 101001,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 10010315,
+    "CharacterBoardEffectTargetGroupId": 101001,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10010317,
+    "CharacterBoardEffectTargetGroupId": 101001,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10010320,
+    "CharacterBoardEffectTargetGroupId": 101001,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10010321,
+    "CharacterBoardEffectTargetGroupId": 101001,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10010322,
+    "CharacterBoardEffectTargetGroupId": 101001,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10010328,
+    "CharacterBoardEffectTargetGroupId": 101001,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10010330,
+    "CharacterBoardEffectTargetGroupId": 101001,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10010331,
+    "CharacterBoardEffectTargetGroupId": 101001,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10010332,
+    "CharacterBoardEffectTargetGroupId": 101001,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10010333,
+    "CharacterBoardEffectTargetGroupId": 101001,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10010415,
+    "CharacterBoardEffectTargetGroupId": 101001,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10010417,
+    "CharacterBoardEffectTargetGroupId": 101001,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10010420,
+    "CharacterBoardEffectTargetGroupId": 101001,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10010421,
+    "CharacterBoardEffectTargetGroupId": 101001,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10010422,
+    "CharacterBoardEffectTargetGroupId": 101001,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10010428,
+    "CharacterBoardEffectTargetGroupId": 101001,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10010430,
+    "CharacterBoardEffectTargetGroupId": 101001,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10010431,
+    "CharacterBoardEffectTargetGroupId": 101001,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10010432,
+    "CharacterBoardEffectTargetGroupId": 101001,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10010433,
+    "CharacterBoardEffectTargetGroupId": 101001,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10010515,
+    "CharacterBoardEffectTargetGroupId": 101001,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10010517,
+    "CharacterBoardEffectTargetGroupId": 101001,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10010520,
+    "CharacterBoardEffectTargetGroupId": 101001,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10010521,
+    "CharacterBoardEffectTargetGroupId": 101001,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10010522,
+    "CharacterBoardEffectTargetGroupId": 101001,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10010530,
+    "CharacterBoardEffectTargetGroupId": 101001,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10010532,
+    "CharacterBoardEffectTargetGroupId": 101001,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10010534,
+    "CharacterBoardEffectTargetGroupId": 101001,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10010535,
+    "CharacterBoardEffectTargetGroupId": 101001,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10010536,
+    "CharacterBoardEffectTargetGroupId": 101001,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10011037,
+    "CharacterBoardEffectTargetGroupId": 101101,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 10011137,
+    "CharacterBoardEffectTargetGroupId": 101101,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 10011212,
+    "CharacterBoardEffectTargetGroupId": 101101,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 10011221,
+    "CharacterBoardEffectTargetGroupId": 101101,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 10011236,
+    "CharacterBoardEffectTargetGroupId": 101101,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 10011239,
+    "CharacterBoardEffectTargetGroupId": 101101,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 10011315,
+    "CharacterBoardEffectTargetGroupId": 101101,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10011317,
+    "CharacterBoardEffectTargetGroupId": 101101,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10011320,
+    "CharacterBoardEffectTargetGroupId": 101101,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10011321,
+    "CharacterBoardEffectTargetGroupId": 101101,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10011322,
+    "CharacterBoardEffectTargetGroupId": 101101,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10011328,
+    "CharacterBoardEffectTargetGroupId": 101101,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10011330,
+    "CharacterBoardEffectTargetGroupId": 101101,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10011331,
+    "CharacterBoardEffectTargetGroupId": 101101,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10011332,
+    "CharacterBoardEffectTargetGroupId": 101101,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10011333,
+    "CharacterBoardEffectTargetGroupId": 101101,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10011415,
+    "CharacterBoardEffectTargetGroupId": 101101,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10011417,
+    "CharacterBoardEffectTargetGroupId": 101101,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10011420,
+    "CharacterBoardEffectTargetGroupId": 101101,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10011421,
+    "CharacterBoardEffectTargetGroupId": 101101,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10011422,
+    "CharacterBoardEffectTargetGroupId": 101101,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10011428,
+    "CharacterBoardEffectTargetGroupId": 101101,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10011430,
+    "CharacterBoardEffectTargetGroupId": 101101,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10011431,
+    "CharacterBoardEffectTargetGroupId": 101101,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10011432,
+    "CharacterBoardEffectTargetGroupId": 101101,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10011433,
+    "CharacterBoardEffectTargetGroupId": 101101,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10011515,
+    "CharacterBoardEffectTargetGroupId": 101101,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10011517,
+    "CharacterBoardEffectTargetGroupId": 101101,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10011520,
+    "CharacterBoardEffectTargetGroupId": 101101,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10011521,
+    "CharacterBoardEffectTargetGroupId": 101101,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10011522,
+    "CharacterBoardEffectTargetGroupId": 101101,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10011530,
+    "CharacterBoardEffectTargetGroupId": 101101,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10011532,
+    "CharacterBoardEffectTargetGroupId": 101101,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10011534,
+    "CharacterBoardEffectTargetGroupId": 101101,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10011535,
+    "CharacterBoardEffectTargetGroupId": 101101,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10011536,
+    "CharacterBoardEffectTargetGroupId": 101101,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10012037,
+    "CharacterBoardEffectTargetGroupId": 101201,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 10012137,
+    "CharacterBoardEffectTargetGroupId": 101201,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 10012212,
+    "CharacterBoardEffectTargetGroupId": 101201,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 10012221,
+    "CharacterBoardEffectTargetGroupId": 101201,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 10012236,
+    "CharacterBoardEffectTargetGroupId": 101201,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 10012239,
+    "CharacterBoardEffectTargetGroupId": 101201,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 10012315,
+    "CharacterBoardEffectTargetGroupId": 101201,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10012317,
+    "CharacterBoardEffectTargetGroupId": 101201,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10012320,
+    "CharacterBoardEffectTargetGroupId": 101201,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10012321,
+    "CharacterBoardEffectTargetGroupId": 101201,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10012322,
+    "CharacterBoardEffectTargetGroupId": 101201,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10012328,
+    "CharacterBoardEffectTargetGroupId": 101201,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10012330,
+    "CharacterBoardEffectTargetGroupId": 101201,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10012331,
+    "CharacterBoardEffectTargetGroupId": 101201,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10012332,
+    "CharacterBoardEffectTargetGroupId": 101201,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10012333,
+    "CharacterBoardEffectTargetGroupId": 101201,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10012415,
+    "CharacterBoardEffectTargetGroupId": 101201,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10012417,
+    "CharacterBoardEffectTargetGroupId": 101201,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10012420,
+    "CharacterBoardEffectTargetGroupId": 101201,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10012421,
+    "CharacterBoardEffectTargetGroupId": 101201,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10012422,
+    "CharacterBoardEffectTargetGroupId": 101201,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10012428,
+    "CharacterBoardEffectTargetGroupId": 101201,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10012430,
+    "CharacterBoardEffectTargetGroupId": 101201,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10012431,
+    "CharacterBoardEffectTargetGroupId": 101201,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10012432,
+    "CharacterBoardEffectTargetGroupId": 101201,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10012433,
+    "CharacterBoardEffectTargetGroupId": 101201,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10012515,
+    "CharacterBoardEffectTargetGroupId": 101201,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10012517,
+    "CharacterBoardEffectTargetGroupId": 101201,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10012520,
+    "CharacterBoardEffectTargetGroupId": 101201,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10012521,
+    "CharacterBoardEffectTargetGroupId": 101201,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10012522,
+    "CharacterBoardEffectTargetGroupId": 101201,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10012530,
+    "CharacterBoardEffectTargetGroupId": 101201,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10012532,
+    "CharacterBoardEffectTargetGroupId": 101201,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10012534,
+    "CharacterBoardEffectTargetGroupId": 101201,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10012535,
+    "CharacterBoardEffectTargetGroupId": 101201,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10012536,
+    "CharacterBoardEffectTargetGroupId": 101201,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10013037,
+    "CharacterBoardEffectTargetGroupId": 101301,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 10013137,
+    "CharacterBoardEffectTargetGroupId": 101301,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 10013212,
+    "CharacterBoardEffectTargetGroupId": 101301,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 10013221,
+    "CharacterBoardEffectTargetGroupId": 101301,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 10013236,
+    "CharacterBoardEffectTargetGroupId": 101301,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 10013239,
+    "CharacterBoardEffectTargetGroupId": 101301,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 10013315,
+    "CharacterBoardEffectTargetGroupId": 101301,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10013317,
+    "CharacterBoardEffectTargetGroupId": 101301,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10013320,
+    "CharacterBoardEffectTargetGroupId": 101301,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10013321,
+    "CharacterBoardEffectTargetGroupId": 101301,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10013322,
+    "CharacterBoardEffectTargetGroupId": 101301,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10013328,
+    "CharacterBoardEffectTargetGroupId": 101301,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10013330,
+    "CharacterBoardEffectTargetGroupId": 101301,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10013331,
+    "CharacterBoardEffectTargetGroupId": 101301,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10013332,
+    "CharacterBoardEffectTargetGroupId": 101301,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10013333,
+    "CharacterBoardEffectTargetGroupId": 101301,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10013415,
+    "CharacterBoardEffectTargetGroupId": 101301,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10013417,
+    "CharacterBoardEffectTargetGroupId": 101301,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10013420,
+    "CharacterBoardEffectTargetGroupId": 101301,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10013421,
+    "CharacterBoardEffectTargetGroupId": 101301,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10013422,
+    "CharacterBoardEffectTargetGroupId": 101301,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10013428,
+    "CharacterBoardEffectTargetGroupId": 101301,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10013430,
+    "CharacterBoardEffectTargetGroupId": 101301,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10013431,
+    "CharacterBoardEffectTargetGroupId": 101301,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10013432,
+    "CharacterBoardEffectTargetGroupId": 101301,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10013433,
+    "CharacterBoardEffectTargetGroupId": 101301,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10013515,
+    "CharacterBoardEffectTargetGroupId": 101301,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10013517,
+    "CharacterBoardEffectTargetGroupId": 101301,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10013520,
+    "CharacterBoardEffectTargetGroupId": 101301,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10013521,
+    "CharacterBoardEffectTargetGroupId": 101301,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10013522,
+    "CharacterBoardEffectTargetGroupId": 101301,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10013530,
+    "CharacterBoardEffectTargetGroupId": 101301,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10013532,
+    "CharacterBoardEffectTargetGroupId": 101301,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10013534,
+    "CharacterBoardEffectTargetGroupId": 101301,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10013535,
+    "CharacterBoardEffectTargetGroupId": 101301,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10013536,
+    "CharacterBoardEffectTargetGroupId": 101301,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10014037,
+    "CharacterBoardEffectTargetGroupId": 101401,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 10014137,
+    "CharacterBoardEffectTargetGroupId": 101401,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 10014212,
+    "CharacterBoardEffectTargetGroupId": 101401,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 10014221,
+    "CharacterBoardEffectTargetGroupId": 101401,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 10014236,
+    "CharacterBoardEffectTargetGroupId": 101401,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 10014239,
+    "CharacterBoardEffectTargetGroupId": 101401,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 10014315,
+    "CharacterBoardEffectTargetGroupId": 101401,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10014317,
+    "CharacterBoardEffectTargetGroupId": 101401,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10014320,
+    "CharacterBoardEffectTargetGroupId": 101401,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10014321,
+    "CharacterBoardEffectTargetGroupId": 101401,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10014322,
+    "CharacterBoardEffectTargetGroupId": 101401,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10014328,
+    "CharacterBoardEffectTargetGroupId": 101401,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10014330,
+    "CharacterBoardEffectTargetGroupId": 101401,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10014331,
+    "CharacterBoardEffectTargetGroupId": 101401,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10014332,
+    "CharacterBoardEffectTargetGroupId": 101401,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10014333,
+    "CharacterBoardEffectTargetGroupId": 101401,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10014415,
+    "CharacterBoardEffectTargetGroupId": 101401,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10014417,
+    "CharacterBoardEffectTargetGroupId": 101401,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10014420,
+    "CharacterBoardEffectTargetGroupId": 101401,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10014421,
+    "CharacterBoardEffectTargetGroupId": 101401,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10014422,
+    "CharacterBoardEffectTargetGroupId": 101401,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10014428,
+    "CharacterBoardEffectTargetGroupId": 101401,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10014430,
+    "CharacterBoardEffectTargetGroupId": 101401,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10014431,
+    "CharacterBoardEffectTargetGroupId": 101401,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10014432,
+    "CharacterBoardEffectTargetGroupId": 101401,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10014433,
+    "CharacterBoardEffectTargetGroupId": 101401,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10014515,
+    "CharacterBoardEffectTargetGroupId": 101401,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10014517,
+    "CharacterBoardEffectTargetGroupId": 101401,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10014520,
+    "CharacterBoardEffectTargetGroupId": 101401,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10014521,
+    "CharacterBoardEffectTargetGroupId": 101401,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10014522,
+    "CharacterBoardEffectTargetGroupId": 101401,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10014530,
+    "CharacterBoardEffectTargetGroupId": 101401,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10014532,
+    "CharacterBoardEffectTargetGroupId": 101401,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10014534,
+    "CharacterBoardEffectTargetGroupId": 101401,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10014535,
+    "CharacterBoardEffectTargetGroupId": 101401,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10014536,
+    "CharacterBoardEffectTargetGroupId": 101401,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10015037,
+    "CharacterBoardEffectTargetGroupId": 101501,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 10015137,
+    "CharacterBoardEffectTargetGroupId": 101501,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 10015212,
+    "CharacterBoardEffectTargetGroupId": 101501,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 10015221,
+    "CharacterBoardEffectTargetGroupId": 101501,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 10015236,
+    "CharacterBoardEffectTargetGroupId": 101501,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 10015239,
+    "CharacterBoardEffectTargetGroupId": 101501,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 10015315,
+    "CharacterBoardEffectTargetGroupId": 101501,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10015317,
+    "CharacterBoardEffectTargetGroupId": 101501,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10015320,
+    "CharacterBoardEffectTargetGroupId": 101501,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10015321,
+    "CharacterBoardEffectTargetGroupId": 101501,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10015322,
+    "CharacterBoardEffectTargetGroupId": 101501,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10015328,
+    "CharacterBoardEffectTargetGroupId": 101501,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10015330,
+    "CharacterBoardEffectTargetGroupId": 101501,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10015331,
+    "CharacterBoardEffectTargetGroupId": 101501,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10015332,
+    "CharacterBoardEffectTargetGroupId": 101501,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10015333,
+    "CharacterBoardEffectTargetGroupId": 101501,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10015415,
+    "CharacterBoardEffectTargetGroupId": 101501,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10015417,
+    "CharacterBoardEffectTargetGroupId": 101501,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10015420,
+    "CharacterBoardEffectTargetGroupId": 101501,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10015421,
+    "CharacterBoardEffectTargetGroupId": 101501,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10015422,
+    "CharacterBoardEffectTargetGroupId": 101501,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10015428,
+    "CharacterBoardEffectTargetGroupId": 101501,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10015430,
+    "CharacterBoardEffectTargetGroupId": 101501,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10015431,
+    "CharacterBoardEffectTargetGroupId": 101501,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10015432,
+    "CharacterBoardEffectTargetGroupId": 101501,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10015433,
+    "CharacterBoardEffectTargetGroupId": 101501,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10015515,
+    "CharacterBoardEffectTargetGroupId": 101501,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10015517,
+    "CharacterBoardEffectTargetGroupId": 101501,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10015520,
+    "CharacterBoardEffectTargetGroupId": 101501,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10015521,
+    "CharacterBoardEffectTargetGroupId": 101501,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10015522,
+    "CharacterBoardEffectTargetGroupId": 101501,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10015530,
+    "CharacterBoardEffectTargetGroupId": 101501,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10015532,
+    "CharacterBoardEffectTargetGroupId": 101501,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10015534,
+    "CharacterBoardEffectTargetGroupId": 101501,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10015535,
+    "CharacterBoardEffectTargetGroupId": 101501,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10015536,
+    "CharacterBoardEffectTargetGroupId": 101501,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10016037,
+    "CharacterBoardEffectTargetGroupId": 101601,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 10016137,
+    "CharacterBoardEffectTargetGroupId": 101601,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 10016212,
+    "CharacterBoardEffectTargetGroupId": 101601,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 10016221,
+    "CharacterBoardEffectTargetGroupId": 101601,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 10016236,
+    "CharacterBoardEffectTargetGroupId": 101601,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 10016239,
+    "CharacterBoardEffectTargetGroupId": 101601,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 10016315,
+    "CharacterBoardEffectTargetGroupId": 101601,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10016317,
+    "CharacterBoardEffectTargetGroupId": 101601,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10016320,
+    "CharacterBoardEffectTargetGroupId": 101601,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10016321,
+    "CharacterBoardEffectTargetGroupId": 101601,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10016322,
+    "CharacterBoardEffectTargetGroupId": 101601,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10016328,
+    "CharacterBoardEffectTargetGroupId": 101601,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10016330,
+    "CharacterBoardEffectTargetGroupId": 101601,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10016331,
+    "CharacterBoardEffectTargetGroupId": 101601,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10016332,
+    "CharacterBoardEffectTargetGroupId": 101601,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10016333,
+    "CharacterBoardEffectTargetGroupId": 101601,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10016415,
+    "CharacterBoardEffectTargetGroupId": 101601,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10016417,
+    "CharacterBoardEffectTargetGroupId": 101601,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10016420,
+    "CharacterBoardEffectTargetGroupId": 101601,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10016421,
+    "CharacterBoardEffectTargetGroupId": 101601,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10016422,
+    "CharacterBoardEffectTargetGroupId": 101601,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10016428,
+    "CharacterBoardEffectTargetGroupId": 101601,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10016430,
+    "CharacterBoardEffectTargetGroupId": 101601,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10016431,
+    "CharacterBoardEffectTargetGroupId": 101601,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10016432,
+    "CharacterBoardEffectTargetGroupId": 101601,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10016433,
+    "CharacterBoardEffectTargetGroupId": 101601,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10016515,
+    "CharacterBoardEffectTargetGroupId": 101601,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10016517,
+    "CharacterBoardEffectTargetGroupId": 101601,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10016520,
+    "CharacterBoardEffectTargetGroupId": 101601,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10016521,
+    "CharacterBoardEffectTargetGroupId": 101601,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10016522,
+    "CharacterBoardEffectTargetGroupId": 101601,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10016530,
+    "CharacterBoardEffectTargetGroupId": 101601,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10016532,
+    "CharacterBoardEffectTargetGroupId": 101601,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10016534,
+    "CharacterBoardEffectTargetGroupId": 101601,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10016535,
+    "CharacterBoardEffectTargetGroupId": 101601,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10016536,
+    "CharacterBoardEffectTargetGroupId": 101601,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10017037,
+    "CharacterBoardEffectTargetGroupId": 101701,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 10017137,
+    "CharacterBoardEffectTargetGroupId": 101701,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 10017212,
+    "CharacterBoardEffectTargetGroupId": 101701,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 10017221,
+    "CharacterBoardEffectTargetGroupId": 101701,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 10017236,
+    "CharacterBoardEffectTargetGroupId": 101701,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 10017239,
+    "CharacterBoardEffectTargetGroupId": 101701,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 10017315,
+    "CharacterBoardEffectTargetGroupId": 101701,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10017317,
+    "CharacterBoardEffectTargetGroupId": 101701,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10017320,
+    "CharacterBoardEffectTargetGroupId": 101701,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10017321,
+    "CharacterBoardEffectTargetGroupId": 101701,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10017322,
+    "CharacterBoardEffectTargetGroupId": 101701,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10017328,
+    "CharacterBoardEffectTargetGroupId": 101701,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10017330,
+    "CharacterBoardEffectTargetGroupId": 101701,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10017331,
+    "CharacterBoardEffectTargetGroupId": 101701,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10017332,
+    "CharacterBoardEffectTargetGroupId": 101701,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10017333,
+    "CharacterBoardEffectTargetGroupId": 101701,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10017415,
+    "CharacterBoardEffectTargetGroupId": 101701,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10017417,
+    "CharacterBoardEffectTargetGroupId": 101701,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10017420,
+    "CharacterBoardEffectTargetGroupId": 101701,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10017421,
+    "CharacterBoardEffectTargetGroupId": 101701,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10017422,
+    "CharacterBoardEffectTargetGroupId": 101701,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10017428,
+    "CharacterBoardEffectTargetGroupId": 101701,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10017430,
+    "CharacterBoardEffectTargetGroupId": 101701,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10017431,
+    "CharacterBoardEffectTargetGroupId": 101701,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10017432,
+    "CharacterBoardEffectTargetGroupId": 101701,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10017433,
+    "CharacterBoardEffectTargetGroupId": 101701,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10017515,
+    "CharacterBoardEffectTargetGroupId": 101701,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10017517,
+    "CharacterBoardEffectTargetGroupId": 101701,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10017520,
+    "CharacterBoardEffectTargetGroupId": 101701,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10017521,
+    "CharacterBoardEffectTargetGroupId": 101701,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10017522,
+    "CharacterBoardEffectTargetGroupId": 101701,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10017530,
+    "CharacterBoardEffectTargetGroupId": 101701,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10017532,
+    "CharacterBoardEffectTargetGroupId": 101701,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10017534,
+    "CharacterBoardEffectTargetGroupId": 101701,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10017535,
+    "CharacterBoardEffectTargetGroupId": 101701,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10017536,
+    "CharacterBoardEffectTargetGroupId": 101701,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10018037,
+    "CharacterBoardEffectTargetGroupId": 101801,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 10018137,
+    "CharacterBoardEffectTargetGroupId": 101801,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 10018212,
+    "CharacterBoardEffectTargetGroupId": 101801,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 10018221,
+    "CharacterBoardEffectTargetGroupId": 101801,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 10018236,
+    "CharacterBoardEffectTargetGroupId": 101801,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 10018239,
+    "CharacterBoardEffectTargetGroupId": 101801,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 10018315,
+    "CharacterBoardEffectTargetGroupId": 101801,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10018317,
+    "CharacterBoardEffectTargetGroupId": 101801,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10018320,
+    "CharacterBoardEffectTargetGroupId": 101801,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10018321,
+    "CharacterBoardEffectTargetGroupId": 101801,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10018322,
+    "CharacterBoardEffectTargetGroupId": 101801,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10018328,
+    "CharacterBoardEffectTargetGroupId": 101801,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10018330,
+    "CharacterBoardEffectTargetGroupId": 101801,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10018331,
+    "CharacterBoardEffectTargetGroupId": 101801,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10018332,
+    "CharacterBoardEffectTargetGroupId": 101801,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10018333,
+    "CharacterBoardEffectTargetGroupId": 101801,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10018415,
+    "CharacterBoardEffectTargetGroupId": 101801,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10018417,
+    "CharacterBoardEffectTargetGroupId": 101801,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10018420,
+    "CharacterBoardEffectTargetGroupId": 101801,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10018421,
+    "CharacterBoardEffectTargetGroupId": 101801,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10018422,
+    "CharacterBoardEffectTargetGroupId": 101801,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10018428,
+    "CharacterBoardEffectTargetGroupId": 101801,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10018430,
+    "CharacterBoardEffectTargetGroupId": 101801,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10018431,
+    "CharacterBoardEffectTargetGroupId": 101801,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10018432,
+    "CharacterBoardEffectTargetGroupId": 101801,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10018433,
+    "CharacterBoardEffectTargetGroupId": 101801,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10018515,
+    "CharacterBoardEffectTargetGroupId": 101801,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10018517,
+    "CharacterBoardEffectTargetGroupId": 101801,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10018520,
+    "CharacterBoardEffectTargetGroupId": 101801,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10018521,
+    "CharacterBoardEffectTargetGroupId": 101801,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10018522,
+    "CharacterBoardEffectTargetGroupId": 101801,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10018530,
+    "CharacterBoardEffectTargetGroupId": 101801,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10018532,
+    "CharacterBoardEffectTargetGroupId": 101801,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10018534,
+    "CharacterBoardEffectTargetGroupId": 101801,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10018535,
+    "CharacterBoardEffectTargetGroupId": 101801,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10018536,
+    "CharacterBoardEffectTargetGroupId": 101801,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10019037,
+    "CharacterBoardEffectTargetGroupId": 101901,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 10019137,
+    "CharacterBoardEffectTargetGroupId": 101901,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 10019212,
+    "CharacterBoardEffectTargetGroupId": 101901,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 10019221,
+    "CharacterBoardEffectTargetGroupId": 101901,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 10019236,
+    "CharacterBoardEffectTargetGroupId": 101901,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 10019239,
+    "CharacterBoardEffectTargetGroupId": 101901,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 10019315,
+    "CharacterBoardEffectTargetGroupId": 101901,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10019317,
+    "CharacterBoardEffectTargetGroupId": 101901,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10019320,
+    "CharacterBoardEffectTargetGroupId": 101901,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10019321,
+    "CharacterBoardEffectTargetGroupId": 101901,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10019322,
+    "CharacterBoardEffectTargetGroupId": 101901,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10019328,
+    "CharacterBoardEffectTargetGroupId": 101901,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10019330,
+    "CharacterBoardEffectTargetGroupId": 101901,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10019331,
+    "CharacterBoardEffectTargetGroupId": 101901,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10019332,
+    "CharacterBoardEffectTargetGroupId": 101901,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10019333,
+    "CharacterBoardEffectTargetGroupId": 101901,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10019415,
+    "CharacterBoardEffectTargetGroupId": 101901,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10019417,
+    "CharacterBoardEffectTargetGroupId": 101901,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10019420,
+    "CharacterBoardEffectTargetGroupId": 101901,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10019421,
+    "CharacterBoardEffectTargetGroupId": 101901,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10019422,
+    "CharacterBoardEffectTargetGroupId": 101901,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10019428,
+    "CharacterBoardEffectTargetGroupId": 101901,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10019430,
+    "CharacterBoardEffectTargetGroupId": 101901,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10019431,
+    "CharacterBoardEffectTargetGroupId": 101901,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10019432,
+    "CharacterBoardEffectTargetGroupId": 101901,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10019433,
+    "CharacterBoardEffectTargetGroupId": 101901,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10019515,
+    "CharacterBoardEffectTargetGroupId": 101901,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10019517,
+    "CharacterBoardEffectTargetGroupId": 101901,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10019520,
+    "CharacterBoardEffectTargetGroupId": 101901,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10019521,
+    "CharacterBoardEffectTargetGroupId": 101901,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10019522,
+    "CharacterBoardEffectTargetGroupId": 101901,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10019530,
+    "CharacterBoardEffectTargetGroupId": 101901,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10019532,
+    "CharacterBoardEffectTargetGroupId": 101901,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10019534,
+    "CharacterBoardEffectTargetGroupId": 101901,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10019535,
+    "CharacterBoardEffectTargetGroupId": 101901,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10019536,
+    "CharacterBoardEffectTargetGroupId": 101901,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10020037,
+    "CharacterBoardEffectTargetGroupId": 102001,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 10020137,
+    "CharacterBoardEffectTargetGroupId": 102001,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 10020212,
+    "CharacterBoardEffectTargetGroupId": 102001,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 10020221,
+    "CharacterBoardEffectTargetGroupId": 102001,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 10020236,
+    "CharacterBoardEffectTargetGroupId": 102001,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 10020239,
+    "CharacterBoardEffectTargetGroupId": 102001,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 10020315,
+    "CharacterBoardEffectTargetGroupId": 102001,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10020317,
+    "CharacterBoardEffectTargetGroupId": 102001,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10020320,
+    "CharacterBoardEffectTargetGroupId": 102001,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10020321,
+    "CharacterBoardEffectTargetGroupId": 102001,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10020322,
+    "CharacterBoardEffectTargetGroupId": 102001,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10020328,
+    "CharacterBoardEffectTargetGroupId": 102001,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10020330,
+    "CharacterBoardEffectTargetGroupId": 102001,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10020331,
+    "CharacterBoardEffectTargetGroupId": 102001,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10020332,
+    "CharacterBoardEffectTargetGroupId": 102001,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10020333,
+    "CharacterBoardEffectTargetGroupId": 102001,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10020415,
+    "CharacterBoardEffectTargetGroupId": 102001,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10020417,
+    "CharacterBoardEffectTargetGroupId": 102001,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10020420,
+    "CharacterBoardEffectTargetGroupId": 102001,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10020421,
+    "CharacterBoardEffectTargetGroupId": 102001,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10020422,
+    "CharacterBoardEffectTargetGroupId": 102001,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10020428,
+    "CharacterBoardEffectTargetGroupId": 102001,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10020430,
+    "CharacterBoardEffectTargetGroupId": 102001,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10020431,
+    "CharacterBoardEffectTargetGroupId": 102001,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10020432,
+    "CharacterBoardEffectTargetGroupId": 102001,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10020433,
+    "CharacterBoardEffectTargetGroupId": 102001,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10020515,
+    "CharacterBoardEffectTargetGroupId": 102001,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10020517,
+    "CharacterBoardEffectTargetGroupId": 102001,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10020520,
+    "CharacterBoardEffectTargetGroupId": 102001,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10020521,
+    "CharacterBoardEffectTargetGroupId": 102001,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10020522,
+    "CharacterBoardEffectTargetGroupId": 102001,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10020530,
+    "CharacterBoardEffectTargetGroupId": 102001,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10020532,
+    "CharacterBoardEffectTargetGroupId": 102001,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10020534,
+    "CharacterBoardEffectTargetGroupId": 102001,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10020535,
+    "CharacterBoardEffectTargetGroupId": 102001,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10020536,
+    "CharacterBoardEffectTargetGroupId": 102001,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10021037,
+    "CharacterBoardEffectTargetGroupId": 102101,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 10021137,
+    "CharacterBoardEffectTargetGroupId": 102101,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 10021212,
+    "CharacterBoardEffectTargetGroupId": 102101,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 10021221,
+    "CharacterBoardEffectTargetGroupId": 102101,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 10021236,
+    "CharacterBoardEffectTargetGroupId": 102101,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 10021239,
+    "CharacterBoardEffectTargetGroupId": 102101,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 10021315,
+    "CharacterBoardEffectTargetGroupId": 102101,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10021317,
+    "CharacterBoardEffectTargetGroupId": 102101,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10021320,
+    "CharacterBoardEffectTargetGroupId": 102101,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10021321,
+    "CharacterBoardEffectTargetGroupId": 102101,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10021322,
+    "CharacterBoardEffectTargetGroupId": 102101,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10021328,
+    "CharacterBoardEffectTargetGroupId": 102101,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10021330,
+    "CharacterBoardEffectTargetGroupId": 102101,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10021331,
+    "CharacterBoardEffectTargetGroupId": 102101,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10021332,
+    "CharacterBoardEffectTargetGroupId": 102101,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10021333,
+    "CharacterBoardEffectTargetGroupId": 102101,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10021415,
+    "CharacterBoardEffectTargetGroupId": 102101,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10021417,
+    "CharacterBoardEffectTargetGroupId": 102101,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10021420,
+    "CharacterBoardEffectTargetGroupId": 102101,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10021421,
+    "CharacterBoardEffectTargetGroupId": 102101,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10021422,
+    "CharacterBoardEffectTargetGroupId": 102101,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10021428,
+    "CharacterBoardEffectTargetGroupId": 102101,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10021430,
+    "CharacterBoardEffectTargetGroupId": 102101,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10021431,
+    "CharacterBoardEffectTargetGroupId": 102101,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10021432,
+    "CharacterBoardEffectTargetGroupId": 102101,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10021433,
+    "CharacterBoardEffectTargetGroupId": 102101,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 10021515,
+    "CharacterBoardEffectTargetGroupId": 102101,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 10021517,
+    "CharacterBoardEffectTargetGroupId": 102101,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 10021520,
+    "CharacterBoardEffectTargetGroupId": 102101,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 10021521,
+    "CharacterBoardEffectTargetGroupId": 102101,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 10021522,
+    "CharacterBoardEffectTargetGroupId": 102101,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 10021530,
+    "CharacterBoardEffectTargetGroupId": 102101,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 10021532,
+    "CharacterBoardEffectTargetGroupId": 102101,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 10021534,
+    "CharacterBoardEffectTargetGroupId": 102101,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 10021535,
+    "CharacterBoardEffectTargetGroupId": 102101,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 10021536,
+    "CharacterBoardEffectTargetGroupId": 102101,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 50001037,
+    "CharacterBoardEffectTargetGroupId": 500101,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 50001137,
+    "CharacterBoardEffectTargetGroupId": 500101,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 50001212,
+    "CharacterBoardEffectTargetGroupId": 500101,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 50001221,
+    "CharacterBoardEffectTargetGroupId": 500101,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 50001236,
+    "CharacterBoardEffectTargetGroupId": 500101,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 50001239,
+    "CharacterBoardEffectTargetGroupId": 500101,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 50001315,
+    "CharacterBoardEffectTargetGroupId": 500101,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 50001317,
+    "CharacterBoardEffectTargetGroupId": 500101,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 50001320,
+    "CharacterBoardEffectTargetGroupId": 500101,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 50001321,
+    "CharacterBoardEffectTargetGroupId": 500101,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 50001322,
+    "CharacterBoardEffectTargetGroupId": 500101,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 50001328,
+    "CharacterBoardEffectTargetGroupId": 500101,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 50001330,
+    "CharacterBoardEffectTargetGroupId": 500101,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 50001331,
+    "CharacterBoardEffectTargetGroupId": 500101,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 50001332,
+    "CharacterBoardEffectTargetGroupId": 500101,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 50001333,
+    "CharacterBoardEffectTargetGroupId": 500101,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 50001415,
+    "CharacterBoardEffectTargetGroupId": 500101,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 50001417,
+    "CharacterBoardEffectTargetGroupId": 500101,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 50001420,
+    "CharacterBoardEffectTargetGroupId": 500101,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 50001421,
+    "CharacterBoardEffectTargetGroupId": 500101,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 50001422,
+    "CharacterBoardEffectTargetGroupId": 500101,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 50001428,
+    "CharacterBoardEffectTargetGroupId": 500101,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 50001430,
+    "CharacterBoardEffectTargetGroupId": 500101,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 50001431,
+    "CharacterBoardEffectTargetGroupId": 500101,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 50001432,
+    "CharacterBoardEffectTargetGroupId": 500101,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 50001433,
+    "CharacterBoardEffectTargetGroupId": 500101,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 50001515,
+    "CharacterBoardEffectTargetGroupId": 500101,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 50001517,
+    "CharacterBoardEffectTargetGroupId": 500101,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 50001520,
+    "CharacterBoardEffectTargetGroupId": 500101,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 50001521,
+    "CharacterBoardEffectTargetGroupId": 500101,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 50001522,
+    "CharacterBoardEffectTargetGroupId": 500101,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 50001530,
+    "CharacterBoardEffectTargetGroupId": 500101,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 50001532,
+    "CharacterBoardEffectTargetGroupId": 500101,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 50001534,
+    "CharacterBoardEffectTargetGroupId": 500101,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 50001535,
+    "CharacterBoardEffectTargetGroupId": 500101,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 50001536,
+    "CharacterBoardEffectTargetGroupId": 500101,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 50002037,
+    "CharacterBoardEffectTargetGroupId": 500201,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 50002137,
+    "CharacterBoardEffectTargetGroupId": 500201,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 50002212,
+    "CharacterBoardEffectTargetGroupId": 500201,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 50002221,
+    "CharacterBoardEffectTargetGroupId": 500201,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 50002236,
+    "CharacterBoardEffectTargetGroupId": 500201,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 50002239,
+    "CharacterBoardEffectTargetGroupId": 500201,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 50002315,
+    "CharacterBoardEffectTargetGroupId": 500201,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 50002317,
+    "CharacterBoardEffectTargetGroupId": 500201,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 50002320,
+    "CharacterBoardEffectTargetGroupId": 500201,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 50002321,
+    "CharacterBoardEffectTargetGroupId": 500201,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 50002322,
+    "CharacterBoardEffectTargetGroupId": 500201,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 50002328,
+    "CharacterBoardEffectTargetGroupId": 500201,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 50002330,
+    "CharacterBoardEffectTargetGroupId": 500201,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 50002331,
+    "CharacterBoardEffectTargetGroupId": 500201,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 50002332,
+    "CharacterBoardEffectTargetGroupId": 500201,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 50002333,
+    "CharacterBoardEffectTargetGroupId": 500201,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 50002415,
+    "CharacterBoardEffectTargetGroupId": 500201,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 50002417,
+    "CharacterBoardEffectTargetGroupId": 500201,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 50002420,
+    "CharacterBoardEffectTargetGroupId": 500201,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 50002421,
+    "CharacterBoardEffectTargetGroupId": 500201,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 50002422,
+    "CharacterBoardEffectTargetGroupId": 500201,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 50002428,
+    "CharacterBoardEffectTargetGroupId": 500201,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 50002430,
+    "CharacterBoardEffectTargetGroupId": 500201,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 50002431,
+    "CharacterBoardEffectTargetGroupId": 500201,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 50002432,
+    "CharacterBoardEffectTargetGroupId": 500201,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 50002433,
+    "CharacterBoardEffectTargetGroupId": 500201,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 50002515,
+    "CharacterBoardEffectTargetGroupId": 500201,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 50002517,
+    "CharacterBoardEffectTargetGroupId": 500201,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 50002520,
+    "CharacterBoardEffectTargetGroupId": 500201,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 50002521,
+    "CharacterBoardEffectTargetGroupId": 500201,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 50002522,
+    "CharacterBoardEffectTargetGroupId": 500201,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 50002530,
+    "CharacterBoardEffectTargetGroupId": 500201,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 50002532,
+    "CharacterBoardEffectTargetGroupId": 500201,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 50002534,
+    "CharacterBoardEffectTargetGroupId": 500201,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 50002535,
+    "CharacterBoardEffectTargetGroupId": 500201,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 50002536,
+    "CharacterBoardEffectTargetGroupId": 500201,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 50003037,
+    "CharacterBoardEffectTargetGroupId": 500301,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 50003137,
+    "CharacterBoardEffectTargetGroupId": 500301,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 50003212,
+    "CharacterBoardEffectTargetGroupId": 500301,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 50003221,
+    "CharacterBoardEffectTargetGroupId": 500301,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 50003236,
+    "CharacterBoardEffectTargetGroupId": 500301,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 50003239,
+    "CharacterBoardEffectTargetGroupId": 500301,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 50003315,
+    "CharacterBoardEffectTargetGroupId": 500301,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 50003317,
+    "CharacterBoardEffectTargetGroupId": 500301,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 50003320,
+    "CharacterBoardEffectTargetGroupId": 500301,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 50003321,
+    "CharacterBoardEffectTargetGroupId": 500301,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 50003322,
+    "CharacterBoardEffectTargetGroupId": 500301,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 50003328,
+    "CharacterBoardEffectTargetGroupId": 500301,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 50003330,
+    "CharacterBoardEffectTargetGroupId": 500301,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 50003331,
+    "CharacterBoardEffectTargetGroupId": 500301,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 50003332,
+    "CharacterBoardEffectTargetGroupId": 500301,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 50003333,
+    "CharacterBoardEffectTargetGroupId": 500301,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 50003415,
+    "CharacterBoardEffectTargetGroupId": 500301,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 50003417,
+    "CharacterBoardEffectTargetGroupId": 500301,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 50003420,
+    "CharacterBoardEffectTargetGroupId": 500301,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 50003421,
+    "CharacterBoardEffectTargetGroupId": 500301,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 50003422,
+    "CharacterBoardEffectTargetGroupId": 500301,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 50003428,
+    "CharacterBoardEffectTargetGroupId": 500301,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 50003430,
+    "CharacterBoardEffectTargetGroupId": 500301,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 50003431,
+    "CharacterBoardEffectTargetGroupId": 500301,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 50003432,
+    "CharacterBoardEffectTargetGroupId": 500301,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 50003433,
+    "CharacterBoardEffectTargetGroupId": 500301,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 50003515,
+    "CharacterBoardEffectTargetGroupId": 500301,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 50003517,
+    "CharacterBoardEffectTargetGroupId": 500301,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 50003520,
+    "CharacterBoardEffectTargetGroupId": 500301,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 50003521,
+    "CharacterBoardEffectTargetGroupId": 500301,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 50003522,
+    "CharacterBoardEffectTargetGroupId": 500301,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 50003530,
+    "CharacterBoardEffectTargetGroupId": 500301,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 50003532,
+    "CharacterBoardEffectTargetGroupId": 500301,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 50003534,
+    "CharacterBoardEffectTargetGroupId": 500301,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 50003535,
+    "CharacterBoardEffectTargetGroupId": 500301,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 50003536,
+    "CharacterBoardEffectTargetGroupId": 500301,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 50004037,
+    "CharacterBoardEffectTargetGroupId": 500401,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 50004137,
+    "CharacterBoardEffectTargetGroupId": 500401,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 50004212,
+    "CharacterBoardEffectTargetGroupId": 500401,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 50004221,
+    "CharacterBoardEffectTargetGroupId": 500401,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 50004236,
+    "CharacterBoardEffectTargetGroupId": 500401,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 50004239,
+    "CharacterBoardEffectTargetGroupId": 500401,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 50004315,
+    "CharacterBoardEffectTargetGroupId": 500401,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 50004317,
+    "CharacterBoardEffectTargetGroupId": 500401,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 50004320,
+    "CharacterBoardEffectTargetGroupId": 500401,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 50004321,
+    "CharacterBoardEffectTargetGroupId": 500401,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 50004322,
+    "CharacterBoardEffectTargetGroupId": 500401,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 50004328,
+    "CharacterBoardEffectTargetGroupId": 500401,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 50004330,
+    "CharacterBoardEffectTargetGroupId": 500401,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 50004331,
+    "CharacterBoardEffectTargetGroupId": 500401,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 50004332,
+    "CharacterBoardEffectTargetGroupId": 500401,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 50004333,
+    "CharacterBoardEffectTargetGroupId": 500401,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 50004415,
+    "CharacterBoardEffectTargetGroupId": 500401,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 50004417,
+    "CharacterBoardEffectTargetGroupId": 500401,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 50004420,
+    "CharacterBoardEffectTargetGroupId": 500401,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 50004421,
+    "CharacterBoardEffectTargetGroupId": 500401,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 50004422,
+    "CharacterBoardEffectTargetGroupId": 500401,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 50004428,
+    "CharacterBoardEffectTargetGroupId": 500401,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 50004430,
+    "CharacterBoardEffectTargetGroupId": 500401,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 50004431,
+    "CharacterBoardEffectTargetGroupId": 500401,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 50004432,
+    "CharacterBoardEffectTargetGroupId": 500401,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 50004433,
+    "CharacterBoardEffectTargetGroupId": 500401,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 50004515,
+    "CharacterBoardEffectTargetGroupId": 500401,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 50004517,
+    "CharacterBoardEffectTargetGroupId": 500401,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 50004520,
+    "CharacterBoardEffectTargetGroupId": 500401,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 50004521,
+    "CharacterBoardEffectTargetGroupId": 500401,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 50004522,
+    "CharacterBoardEffectTargetGroupId": 500401,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 50004530,
+    "CharacterBoardEffectTargetGroupId": 500401,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 50004532,
+    "CharacterBoardEffectTargetGroupId": 500401,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 50004534,
+    "CharacterBoardEffectTargetGroupId": 500401,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 50004535,
+    "CharacterBoardEffectTargetGroupId": 500401,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 50004536,
+    "CharacterBoardEffectTargetGroupId": 500401,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 50005037,
+    "CharacterBoardEffectTargetGroupId": 500501,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 50005137,
+    "CharacterBoardEffectTargetGroupId": 500501,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 50005212,
+    "CharacterBoardEffectTargetGroupId": 500501,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 50005221,
+    "CharacterBoardEffectTargetGroupId": 500501,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 50005236,
+    "CharacterBoardEffectTargetGroupId": 500501,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 50005239,
+    "CharacterBoardEffectTargetGroupId": 500501,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 50005315,
+    "CharacterBoardEffectTargetGroupId": 500501,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 50005317,
+    "CharacterBoardEffectTargetGroupId": 500501,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 50005320,
+    "CharacterBoardEffectTargetGroupId": 500501,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 50005321,
+    "CharacterBoardEffectTargetGroupId": 500501,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 50005322,
+    "CharacterBoardEffectTargetGroupId": 500501,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 50005328,
+    "CharacterBoardEffectTargetGroupId": 500501,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 50005330,
+    "CharacterBoardEffectTargetGroupId": 500501,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 50005331,
+    "CharacterBoardEffectTargetGroupId": 500501,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 50005332,
+    "CharacterBoardEffectTargetGroupId": 500501,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 50005333,
+    "CharacterBoardEffectTargetGroupId": 500501,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 50005415,
+    "CharacterBoardEffectTargetGroupId": 500501,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 50005417,
+    "CharacterBoardEffectTargetGroupId": 500501,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 50005420,
+    "CharacterBoardEffectTargetGroupId": 500501,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 50005421,
+    "CharacterBoardEffectTargetGroupId": 500501,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 50005422,
+    "CharacterBoardEffectTargetGroupId": 500501,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 50005428,
+    "CharacterBoardEffectTargetGroupId": 500501,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 50005430,
+    "CharacterBoardEffectTargetGroupId": 500501,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 50005431,
+    "CharacterBoardEffectTargetGroupId": 500501,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 50005432,
+    "CharacterBoardEffectTargetGroupId": 500501,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 50005433,
+    "CharacterBoardEffectTargetGroupId": 500501,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 50005515,
+    "CharacterBoardEffectTargetGroupId": 500501,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 50005517,
+    "CharacterBoardEffectTargetGroupId": 500501,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 50005520,
+    "CharacterBoardEffectTargetGroupId": 500501,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 50005521,
+    "CharacterBoardEffectTargetGroupId": 500501,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 50005522,
+    "CharacterBoardEffectTargetGroupId": 500501,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 50005530,
+    "CharacterBoardEffectTargetGroupId": 500501,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 50005532,
+    "CharacterBoardEffectTargetGroupId": 500501,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 50005534,
+    "CharacterBoardEffectTargetGroupId": 500501,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 50005535,
+    "CharacterBoardEffectTargetGroupId": 500501,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 50005536,
+    "CharacterBoardEffectTargetGroupId": 500501,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 50006037,
+    "CharacterBoardEffectTargetGroupId": 500601,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 50006137,
+    "CharacterBoardEffectTargetGroupId": 500601,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 50006212,
+    "CharacterBoardEffectTargetGroupId": 500601,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 50006221,
+    "CharacterBoardEffectTargetGroupId": 500601,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 50006236,
+    "CharacterBoardEffectTargetGroupId": 500601,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 50006239,
+    "CharacterBoardEffectTargetGroupId": 500601,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 50006315,
+    "CharacterBoardEffectTargetGroupId": 500601,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 50006317,
+    "CharacterBoardEffectTargetGroupId": 500601,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 50006320,
+    "CharacterBoardEffectTargetGroupId": 500601,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 50006321,
+    "CharacterBoardEffectTargetGroupId": 500601,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 50006322,
+    "CharacterBoardEffectTargetGroupId": 500601,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 50006328,
+    "CharacterBoardEffectTargetGroupId": 500601,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 50006330,
+    "CharacterBoardEffectTargetGroupId": 500601,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 50006331,
+    "CharacterBoardEffectTargetGroupId": 500601,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 50006332,
+    "CharacterBoardEffectTargetGroupId": 500601,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 50006333,
+    "CharacterBoardEffectTargetGroupId": 500601,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 50006415,
+    "CharacterBoardEffectTargetGroupId": 500601,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 50006417,
+    "CharacterBoardEffectTargetGroupId": 500601,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 50006420,
+    "CharacterBoardEffectTargetGroupId": 500601,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 50006421,
+    "CharacterBoardEffectTargetGroupId": 500601,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 50006422,
+    "CharacterBoardEffectTargetGroupId": 500601,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 50006428,
+    "CharacterBoardEffectTargetGroupId": 500601,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 50006430,
+    "CharacterBoardEffectTargetGroupId": 500601,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 50006431,
+    "CharacterBoardEffectTargetGroupId": 500601,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 50006432,
+    "CharacterBoardEffectTargetGroupId": 500601,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 50006433,
+    "CharacterBoardEffectTargetGroupId": 500601,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 50006515,
+    "CharacterBoardEffectTargetGroupId": 500601,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 50006517,
+    "CharacterBoardEffectTargetGroupId": 500601,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 50006520,
+    "CharacterBoardEffectTargetGroupId": 500601,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 50006521,
+    "CharacterBoardEffectTargetGroupId": 500601,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 50006522,
+    "CharacterBoardEffectTargetGroupId": 500601,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 50006530,
+    "CharacterBoardEffectTargetGroupId": 500601,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 50006532,
+    "CharacterBoardEffectTargetGroupId": 500601,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 50006534,
+    "CharacterBoardEffectTargetGroupId": 500601,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 50006535,
+    "CharacterBoardEffectTargetGroupId": 500601,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 50006536,
+    "CharacterBoardEffectTargetGroupId": 500601,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 50007037,
+    "CharacterBoardEffectTargetGroupId": 500701,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 50007137,
+    "CharacterBoardEffectTargetGroupId": 500701,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 50007212,
+    "CharacterBoardEffectTargetGroupId": 500701,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 50007221,
+    "CharacterBoardEffectTargetGroupId": 500701,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 50007236,
+    "CharacterBoardEffectTargetGroupId": 500701,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 50007239,
+    "CharacterBoardEffectTargetGroupId": 500701,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 50007315,
+    "CharacterBoardEffectTargetGroupId": 500701,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 50007317,
+    "CharacterBoardEffectTargetGroupId": 500701,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 50007320,
+    "CharacterBoardEffectTargetGroupId": 500701,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 50007321,
+    "CharacterBoardEffectTargetGroupId": 500701,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 50007322,
+    "CharacterBoardEffectTargetGroupId": 500701,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 50007328,
+    "CharacterBoardEffectTargetGroupId": 500701,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 50007330,
+    "CharacterBoardEffectTargetGroupId": 500701,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 50007331,
+    "CharacterBoardEffectTargetGroupId": 500701,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 50007332,
+    "CharacterBoardEffectTargetGroupId": 500701,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 50007333,
+    "CharacterBoardEffectTargetGroupId": 500701,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 50007415,
+    "CharacterBoardEffectTargetGroupId": 500701,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 50007417,
+    "CharacterBoardEffectTargetGroupId": 500701,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 50007420,
+    "CharacterBoardEffectTargetGroupId": 500701,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 50007421,
+    "CharacterBoardEffectTargetGroupId": 500701,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 50007422,
+    "CharacterBoardEffectTargetGroupId": 500701,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 50007428,
+    "CharacterBoardEffectTargetGroupId": 500701,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 50007430,
+    "CharacterBoardEffectTargetGroupId": 500701,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 50007431,
+    "CharacterBoardEffectTargetGroupId": 500701,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 50007432,
+    "CharacterBoardEffectTargetGroupId": 500701,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 50007433,
+    "CharacterBoardEffectTargetGroupId": 500701,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 50007515,
+    "CharacterBoardEffectTargetGroupId": 500701,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 50007517,
+    "CharacterBoardEffectTargetGroupId": 500701,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 50007520,
+    "CharacterBoardEffectTargetGroupId": 500701,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 50007521,
+    "CharacterBoardEffectTargetGroupId": 500701,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 50007522,
+    "CharacterBoardEffectTargetGroupId": 500701,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 50007530,
+    "CharacterBoardEffectTargetGroupId": 500701,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 50007532,
+    "CharacterBoardEffectTargetGroupId": 500701,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 50007534,
+    "CharacterBoardEffectTargetGroupId": 500701,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 50007535,
+    "CharacterBoardEffectTargetGroupId": 500701,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 50007536,
+    "CharacterBoardEffectTargetGroupId": 500701,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 50008037,
+    "CharacterBoardEffectTargetGroupId": 500801,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 50008137,
+    "CharacterBoardEffectTargetGroupId": 500801,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 50008212,
+    "CharacterBoardEffectTargetGroupId": 500801,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 50008221,
+    "CharacterBoardEffectTargetGroupId": 500801,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 50008236,
+    "CharacterBoardEffectTargetGroupId": 500801,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 50008239,
+    "CharacterBoardEffectTargetGroupId": 500801,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 50008315,
+    "CharacterBoardEffectTargetGroupId": 500801,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 50008317,
+    "CharacterBoardEffectTargetGroupId": 500801,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 50008320,
+    "CharacterBoardEffectTargetGroupId": 500801,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 50008321,
+    "CharacterBoardEffectTargetGroupId": 500801,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 50008322,
+    "CharacterBoardEffectTargetGroupId": 500801,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 50008328,
+    "CharacterBoardEffectTargetGroupId": 500801,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 50008330,
+    "CharacterBoardEffectTargetGroupId": 500801,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 50008331,
+    "CharacterBoardEffectTargetGroupId": 500801,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 50008332,
+    "CharacterBoardEffectTargetGroupId": 500801,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 50008333,
+    "CharacterBoardEffectTargetGroupId": 500801,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 50008415,
+    "CharacterBoardEffectTargetGroupId": 500801,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 50008417,
+    "CharacterBoardEffectTargetGroupId": 500801,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 50008420,
+    "CharacterBoardEffectTargetGroupId": 500801,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 50008421,
+    "CharacterBoardEffectTargetGroupId": 500801,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 50008422,
+    "CharacterBoardEffectTargetGroupId": 500801,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 50008428,
+    "CharacterBoardEffectTargetGroupId": 500801,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 50008430,
+    "CharacterBoardEffectTargetGroupId": 500801,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 50008431,
+    "CharacterBoardEffectTargetGroupId": 500801,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 50008432,
+    "CharacterBoardEffectTargetGroupId": 500801,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 50008433,
+    "CharacterBoardEffectTargetGroupId": 500801,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 50008515,
+    "CharacterBoardEffectTargetGroupId": 500801,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 50008517,
+    "CharacterBoardEffectTargetGroupId": 500801,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 50008520,
+    "CharacterBoardEffectTargetGroupId": 500801,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 50008521,
+    "CharacterBoardEffectTargetGroupId": 500801,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 50008522,
+    "CharacterBoardEffectTargetGroupId": 500801,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 50008530,
+    "CharacterBoardEffectTargetGroupId": 500801,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 50008532,
+    "CharacterBoardEffectTargetGroupId": 500801,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 50008534,
+    "CharacterBoardEffectTargetGroupId": 500801,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 50008535,
+    "CharacterBoardEffectTargetGroupId": 500801,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 50008536,
+    "CharacterBoardEffectTargetGroupId": 500801,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 50009037,
+    "CharacterBoardEffectTargetGroupId": 500901,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 50009137,
+    "CharacterBoardEffectTargetGroupId": 500901,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 50009212,
+    "CharacterBoardEffectTargetGroupId": 500901,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 50009221,
+    "CharacterBoardEffectTargetGroupId": 500901,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 50009236,
+    "CharacterBoardEffectTargetGroupId": 500901,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 50009239,
+    "CharacterBoardEffectTargetGroupId": 500901,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 50009315,
+    "CharacterBoardEffectTargetGroupId": 500901,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 50009317,
+    "CharacterBoardEffectTargetGroupId": 500901,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 50009320,
+    "CharacterBoardEffectTargetGroupId": 500901,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 50009321,
+    "CharacterBoardEffectTargetGroupId": 500901,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 50009322,
+    "CharacterBoardEffectTargetGroupId": 500901,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 50009328,
+    "CharacterBoardEffectTargetGroupId": 500901,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 50009330,
+    "CharacterBoardEffectTargetGroupId": 500901,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 50009331,
+    "CharacterBoardEffectTargetGroupId": 500901,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 50009332,
+    "CharacterBoardEffectTargetGroupId": 500901,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 50009333,
+    "CharacterBoardEffectTargetGroupId": 500901,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 50009415,
+    "CharacterBoardEffectTargetGroupId": 500901,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 50009417,
+    "CharacterBoardEffectTargetGroupId": 500901,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 50009420,
+    "CharacterBoardEffectTargetGroupId": 500901,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 50009421,
+    "CharacterBoardEffectTargetGroupId": 500901,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 50009422,
+    "CharacterBoardEffectTargetGroupId": 500901,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 50009428,
+    "CharacterBoardEffectTargetGroupId": 500901,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 50009430,
+    "CharacterBoardEffectTargetGroupId": 500901,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 50009431,
+    "CharacterBoardEffectTargetGroupId": 500901,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 50009432,
+    "CharacterBoardEffectTargetGroupId": 500901,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 50009433,
+    "CharacterBoardEffectTargetGroupId": 500901,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 50009515,
+    "CharacterBoardEffectTargetGroupId": 500901,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 50009517,
+    "CharacterBoardEffectTargetGroupId": 500901,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 50009520,
+    "CharacterBoardEffectTargetGroupId": 500901,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 50009521,
+    "CharacterBoardEffectTargetGroupId": 500901,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 50009522,
+    "CharacterBoardEffectTargetGroupId": 500901,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 50009530,
+    "CharacterBoardEffectTargetGroupId": 500901,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 50009532,
+    "CharacterBoardEffectTargetGroupId": 500901,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 50009534,
+    "CharacterBoardEffectTargetGroupId": 500901,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 50009535,
+    "CharacterBoardEffectTargetGroupId": 500901,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 50009536,
+    "CharacterBoardEffectTargetGroupId": 500901,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 50010037,
+    "CharacterBoardEffectTargetGroupId": 501001,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 50010137,
+    "CharacterBoardEffectTargetGroupId": 501001,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 50010212,
+    "CharacterBoardEffectTargetGroupId": 501001,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 50010221,
+    "CharacterBoardEffectTargetGroupId": 501001,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 50010236,
+    "CharacterBoardEffectTargetGroupId": 501001,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 50010239,
+    "CharacterBoardEffectTargetGroupId": 501001,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 50010315,
+    "CharacterBoardEffectTargetGroupId": 501001,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 50010317,
+    "CharacterBoardEffectTargetGroupId": 501001,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 50010320,
+    "CharacterBoardEffectTargetGroupId": 501001,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 50010321,
+    "CharacterBoardEffectTargetGroupId": 501001,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 50010322,
+    "CharacterBoardEffectTargetGroupId": 501001,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 50010328,
+    "CharacterBoardEffectTargetGroupId": 501001,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 50010330,
+    "CharacterBoardEffectTargetGroupId": 501001,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 50010331,
+    "CharacterBoardEffectTargetGroupId": 501001,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 50010332,
+    "CharacterBoardEffectTargetGroupId": 501001,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 50010333,
+    "CharacterBoardEffectTargetGroupId": 501001,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 50010415,
+    "CharacterBoardEffectTargetGroupId": 501001,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 50010417,
+    "CharacterBoardEffectTargetGroupId": 501001,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 50010420,
+    "CharacterBoardEffectTargetGroupId": 501001,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 50010421,
+    "CharacterBoardEffectTargetGroupId": 501001,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 50010422,
+    "CharacterBoardEffectTargetGroupId": 501001,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 50010428,
+    "CharacterBoardEffectTargetGroupId": 501001,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 50010430,
+    "CharacterBoardEffectTargetGroupId": 501001,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 50010431,
+    "CharacterBoardEffectTargetGroupId": 501001,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 50010432,
+    "CharacterBoardEffectTargetGroupId": 501001,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 50010433,
+    "CharacterBoardEffectTargetGroupId": 501001,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 50010515,
+    "CharacterBoardEffectTargetGroupId": 501001,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 50010517,
+    "CharacterBoardEffectTargetGroupId": 501001,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 50010520,
+    "CharacterBoardEffectTargetGroupId": 501001,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 50010521,
+    "CharacterBoardEffectTargetGroupId": 501001,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 50010522,
+    "CharacterBoardEffectTargetGroupId": 501001,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 50010530,
+    "CharacterBoardEffectTargetGroupId": 501001,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 50010532,
+    "CharacterBoardEffectTargetGroupId": 501001,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 50010534,
+    "CharacterBoardEffectTargetGroupId": 501001,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 50010535,
+    "CharacterBoardEffectTargetGroupId": 501001,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 50010536,
+    "CharacterBoardEffectTargetGroupId": 501001,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 50011037,
+    "CharacterBoardEffectTargetGroupId": 501101,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 50011137,
+    "CharacterBoardEffectTargetGroupId": 501101,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 50011212,
+    "CharacterBoardEffectTargetGroupId": 501101,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 50011221,
+    "CharacterBoardEffectTargetGroupId": 501101,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 50011236,
+    "CharacterBoardEffectTargetGroupId": 501101,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 50011239,
+    "CharacterBoardEffectTargetGroupId": 501101,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 50011315,
+    "CharacterBoardEffectTargetGroupId": 501101,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 50011317,
+    "CharacterBoardEffectTargetGroupId": 501101,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 50011320,
+    "CharacterBoardEffectTargetGroupId": 501101,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 50011321,
+    "CharacterBoardEffectTargetGroupId": 501101,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 50011322,
+    "CharacterBoardEffectTargetGroupId": 501101,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 50011328,
+    "CharacterBoardEffectTargetGroupId": 501101,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 50011330,
+    "CharacterBoardEffectTargetGroupId": 501101,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 50011331,
+    "CharacterBoardEffectTargetGroupId": 501101,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 50011332,
+    "CharacterBoardEffectTargetGroupId": 501101,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 50011333,
+    "CharacterBoardEffectTargetGroupId": 501101,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 50011415,
+    "CharacterBoardEffectTargetGroupId": 501101,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 50011417,
+    "CharacterBoardEffectTargetGroupId": 501101,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 50011420,
+    "CharacterBoardEffectTargetGroupId": 501101,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 50011421,
+    "CharacterBoardEffectTargetGroupId": 501101,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 50011422,
+    "CharacterBoardEffectTargetGroupId": 501101,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 50011428,
+    "CharacterBoardEffectTargetGroupId": 501101,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 50011430,
+    "CharacterBoardEffectTargetGroupId": 501101,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 50011431,
+    "CharacterBoardEffectTargetGroupId": 501101,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 50011432,
+    "CharacterBoardEffectTargetGroupId": 501101,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 50011433,
+    "CharacterBoardEffectTargetGroupId": 501101,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 50011515,
+    "CharacterBoardEffectTargetGroupId": 501101,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 50011517,
+    "CharacterBoardEffectTargetGroupId": 501101,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 50011520,
+    "CharacterBoardEffectTargetGroupId": 501101,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 50011521,
+    "CharacterBoardEffectTargetGroupId": 501101,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 50011522,
+    "CharacterBoardEffectTargetGroupId": 501101,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 50011530,
+    "CharacterBoardEffectTargetGroupId": 501101,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 50011532,
+    "CharacterBoardEffectTargetGroupId": 501101,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 50011534,
+    "CharacterBoardEffectTargetGroupId": 501101,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 50011535,
+    "CharacterBoardEffectTargetGroupId": 501101,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 50011536,
+    "CharacterBoardEffectTargetGroupId": 501101,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 50012037,
+    "CharacterBoardEffectTargetGroupId": 501201,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 50012137,
+    "CharacterBoardEffectTargetGroupId": 501201,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 50012212,
+    "CharacterBoardEffectTargetGroupId": 501201,
+    "AbilityId": 7000001
+  },
+  {
+    "CharacterBoardAbilityId": 50012221,
+    "CharacterBoardEffectTargetGroupId": 501201,
+    "AbilityId": 7000002
+  },
+  {
+    "CharacterBoardAbilityId": 50012236,
+    "CharacterBoardEffectTargetGroupId": 501201,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 50012239,
+    "CharacterBoardEffectTargetGroupId": 501201,
+    "AbilityId": 7000003
+  },
+  {
+    "CharacterBoardAbilityId": 50012315,
+    "CharacterBoardEffectTargetGroupId": 501201,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 50012317,
+    "CharacterBoardEffectTargetGroupId": 501201,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 50012320,
+    "CharacterBoardEffectTargetGroupId": 501201,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 50012321,
+    "CharacterBoardEffectTargetGroupId": 501201,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 50012322,
+    "CharacterBoardEffectTargetGroupId": 501201,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 50012328,
+    "CharacterBoardEffectTargetGroupId": 501201,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 50012330,
+    "CharacterBoardEffectTargetGroupId": 501201,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 50012331,
+    "CharacterBoardEffectTargetGroupId": 501201,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 50012332,
+    "CharacterBoardEffectTargetGroupId": 501201,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 50012333,
+    "CharacterBoardEffectTargetGroupId": 501201,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 50012415,
+    "CharacterBoardEffectTargetGroupId": 501201,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 50012417,
+    "CharacterBoardEffectTargetGroupId": 501201,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 50012420,
+    "CharacterBoardEffectTargetGroupId": 501201,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 50012421,
+    "CharacterBoardEffectTargetGroupId": 501201,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 50012422,
+    "CharacterBoardEffectTargetGroupId": 501201,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 50012428,
+    "CharacterBoardEffectTargetGroupId": 501201,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 50012430,
+    "CharacterBoardEffectTargetGroupId": 501201,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 50012431,
+    "CharacterBoardEffectTargetGroupId": 501201,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 50012432,
+    "CharacterBoardEffectTargetGroupId": 501201,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 50012433,
+    "CharacterBoardEffectTargetGroupId": 501201,
+    "AbilityId": 7000016
+  },
+  {
+    "CharacterBoardAbilityId": 50012515,
+    "CharacterBoardEffectTargetGroupId": 501201,
+    "AbilityId": 7000007
+  },
+  {
+    "CharacterBoardAbilityId": 50012517,
+    "CharacterBoardEffectTargetGroupId": 501201,
+    "AbilityId": 7000008
+  },
+  {
+    "CharacterBoardAbilityId": 50012520,
+    "CharacterBoardEffectTargetGroupId": 501201,
+    "AbilityId": 7000009
+  },
+  {
+    "CharacterBoardAbilityId": 50012521,
+    "CharacterBoardEffectTargetGroupId": 501201,
+    "AbilityId": 7000010
+  },
+  {
+    "CharacterBoardAbilityId": 50012522,
+    "CharacterBoardEffectTargetGroupId": 501201,
+    "AbilityId": 7000011
+  },
+  {
+    "CharacterBoardAbilityId": 50012530,
+    "CharacterBoardEffectTargetGroupId": 501201,
+    "AbilityId": 7000012
+  },
+  {
+    "CharacterBoardAbilityId": 50012532,
+    "CharacterBoardEffectTargetGroupId": 501201,
+    "AbilityId": 7000013
+  },
+  {
+    "CharacterBoardAbilityId": 50012534,
+    "CharacterBoardEffectTargetGroupId": 501201,
+    "AbilityId": 7000014
+  },
+  {
+    "CharacterBoardAbilityId": 50012535,
+    "CharacterBoardEffectTargetGroupId": 501201,
+    "AbilityId": 7000015
+  },
+  {
+    "CharacterBoardAbilityId": 50012536,
+    "CharacterBoardEffectTargetGroupId": 501201,
+    "AbilityId": 7000016
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "BigHuntBossId": 1,
+    "BigHuntBossGradeGroupId": 3,
+    "NameBigHuntBossTextId": 100001,
+    "BigHuntBossAssetId": 101,
+    "AttributeType": 2
+  },
+  {
+    "BigHuntBossId": 2,
+    "BigHuntBossGradeGroupId": 3,
+    "NameBigHuntBossTextId": 100002,
+    "BigHuntBossAssetId": 102,
+    "AttributeType": 5
+  },
+  {
+    "BigHuntBossId": 3,
+    "BigHuntBossGradeGroupId": 3,
+    "NameBigHuntBossTextId": 100003,
+    "BigHuntBossAssetId": 103,
+    "AttributeType": 6
+  },
+  {
+    "BigHuntBossId": 4,
+    "BigHuntBossGradeGroupId": 3,
+    "NameBigHuntBossTextId": 100004,
+    "BigHuntBossAssetId": 104,
+    "AttributeType": 3
+  },
+  {
+    "BigHuntBossId": 5,
+    "BigHuntBossGradeGroupId": 3,
+    "NameBigHuntBossTextId": 100005,
+    "BigHuntBossAssetId": 105,
+    "AttributeType": 1
+  }
+]

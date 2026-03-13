@@ -1,0 +1,1297 @@
+[
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 1,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312101,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 2,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312201,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 3,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312202,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 4,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312203,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 5,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312204,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 6,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312205,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 7,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312204,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 21002,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312002,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 21002,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312011,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 21018,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312002,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 21018,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312015,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 21019,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312002,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 21019,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312012,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 21027,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312002,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 21027,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312013,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 22006,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312002,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 22006,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312012,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 22007,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312002,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 22007,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312012,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 22016,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312002,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 22016,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312013,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 22018,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312002,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 22018,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312013,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 22019,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312002,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 22019,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312013,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 22021,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312002,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 22021,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312014,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 22023,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312002,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 22023,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312016,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 22024,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312002,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 22024,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312014,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 23012,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312002,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 23012,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312015,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 23015,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312002,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 23015,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312015,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 23017,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312002,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 23017,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312013,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 23026,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312002,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 23026,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312012,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 23027,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312002,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 23027,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312011,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 23028,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312002,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 23028,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312011,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 24020,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312002,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 24020,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312016,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 24022,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312002,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 24022,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312014,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 24024,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312002,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 24024,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312016,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 24027,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312002,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 24027,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312011,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 24031,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312002,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 24031,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312011,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 25001,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312002,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 25001,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312011,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 25014,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312002,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 25014,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312016,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 25015,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312002,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 25015,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312016,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 25017,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312002,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 25017,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312012,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 25018,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312002,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 25018,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312014,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 25022,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312002,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 25022,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312011,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 25023,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312002,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 25023,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312015,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 25026,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312002,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 25026,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312016,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 31013,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 31013,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312024,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 31028,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 31028,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312023,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 31032,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 31032,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312021,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 31036,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 31036,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312024,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 31039,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 31039,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312022,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 31049,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 31049,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312026,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 31050,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 31050,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312022,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 31058,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 31058,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312025,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 31063,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 31063,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312026,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 31070,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 31070,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312026,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 32002,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 32002,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312021,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 32007,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 32007,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312022,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 32016,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 32016,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312026,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 32022,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 32022,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312025,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 32036,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 32036,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312021,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 32037,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 32037,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312021,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 32049,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 32049,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312022,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 32059,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 32059,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312023,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 32060,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 32060,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312023,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 32063,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 32063,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312025,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 33006,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 33006,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312023,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 33030,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 33030,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312024,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 33031,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 33031,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312022,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 33037,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 33037,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312025,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 33051,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 33051,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312025,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 33068,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 33068,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312021,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 33073,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 33073,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312024,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 34003,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 34003,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312021,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 34027,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 34027,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312025,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 34037,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 34037,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312026,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 34052,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 34052,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312024,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 34056,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 34056,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312023,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 34060,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 34060,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312022,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 34062,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 34062,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312023,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 34064,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 34064,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312022,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 34075,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 34075,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312026,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 34077,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 34077,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312024,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 34079,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 34079,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312023,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 35018,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 35018,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312024,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 35021,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 35021,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312021,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 35022,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 35022,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312025,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 35026,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 35026,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312021,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 35029,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 35029,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312022,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 35033,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 35033,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312021,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 35035,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 35035,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312026,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 35045,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 35045,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312023,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 35054,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 35054,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312024,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 35058,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 35058,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312024,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 35059,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 35059,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312026,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 35061,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 35061,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312021,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 35065,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 35065,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312023,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 35070,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312003,
+    "Count": 1,
+    "SortOrder": 2
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 35070,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312025,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 51001,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312303,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 51002,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312307,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 51003,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312311,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 52001,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312305,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 52002,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312310,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 53001,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312301,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 53002,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312308,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 54001,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312304,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 54002,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312309,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 55001,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312302,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 55002,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312306,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponSpecificLimitBreakMaterialGroupId": 55003,
+    "LimitBreakCountLowerLimit": 0,
+    "MaterialId": 312312,
+    "Count": 1,
+    "SortOrder": 1
+  }
+]

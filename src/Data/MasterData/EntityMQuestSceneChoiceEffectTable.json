@@ -1,0 +1,20 @@
+[
+  {
+    "QuestSceneChoiceEffectId": 1,
+    "QuestSceneChoiceGroupingId": 1,
+    "QuestSceneChoiceCostumeEffectGroupId": 1,
+    "QuestSceneChoiceWeaponEffectGroupId": 1
+  },
+  {
+    "QuestSceneChoiceEffectId": 2,
+    "QuestSceneChoiceGroupingId": 1,
+    "QuestSceneChoiceCostumeEffectGroupId": 2,
+    "QuestSceneChoiceWeaponEffectGroupId": 2
+  },
+  {
+    "QuestSceneChoiceEffectId": 3,
+    "QuestSceneChoiceGroupingId": 1,
+    "QuestSceneChoiceCostumeEffectGroupId": 3,
+    "QuestSceneChoiceWeaponEffectGroupId": 3
+  }
+]

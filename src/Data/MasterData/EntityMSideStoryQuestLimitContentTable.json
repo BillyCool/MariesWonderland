@@ -1,0 +1,1010 @@
+[
+  {
+    "SideStoryQuestLimitContentId": 1,
+    "CharacterId": 1019,
+    "EventQuestChapterId": 500001,
+    "DifficultyType": 1,
+    "NextSideStoryQuestId": 2
+  },
+  {
+    "SideStoryQuestLimitContentId": 2,
+    "CharacterId": 1019,
+    "EventQuestChapterId": 500002,
+    "DifficultyType": 1,
+    "NextSideStoryQuestId": 3
+  },
+  {
+    "SideStoryQuestLimitContentId": 3,
+    "CharacterId": 1019,
+    "EventQuestChapterId": 500003,
+    "DifficultyType": 1,
+    "NextSideStoryQuestId": 4
+  },
+  {
+    "SideStoryQuestLimitContentId": 4,
+    "CharacterId": 1019,
+    "EventQuestChapterId": 500004,
+    "DifficultyType": 1,
+    "NextSideStoryQuestId": 5
+  },
+  {
+    "SideStoryQuestLimitContentId": 5,
+    "CharacterId": 1019,
+    "EventQuestChapterId": 500001,
+    "DifficultyType": 2,
+    "NextSideStoryQuestId": 6
+  },
+  {
+    "SideStoryQuestLimitContentId": 6,
+    "CharacterId": 1019,
+    "EventQuestChapterId": 500002,
+    "DifficultyType": 2,
+    "NextSideStoryQuestId": 7
+  },
+  {
+    "SideStoryQuestLimitContentId": 7,
+    "CharacterId": 1019,
+    "EventQuestChapterId": 500003,
+    "DifficultyType": 2,
+    "NextSideStoryQuestId": 8
+  },
+  {
+    "SideStoryQuestLimitContentId": 8,
+    "CharacterId": 1019,
+    "EventQuestChapterId": 500004,
+    "DifficultyType": 2,
+    "NextSideStoryQuestId": 9
+  },
+  {
+    "SideStoryQuestLimitContentId": 9,
+    "CharacterId": 1019,
+    "EventQuestChapterId": 500001,
+    "DifficultyType": 3,
+    "NextSideStoryQuestId": 10
+  },
+  {
+    "SideStoryQuestLimitContentId": 10,
+    "CharacterId": 1019,
+    "EventQuestChapterId": 500002,
+    "DifficultyType": 3,
+    "NextSideStoryQuestId": 11
+  },
+  {
+    "SideStoryQuestLimitContentId": 11,
+    "CharacterId": 1019,
+    "EventQuestChapterId": 500003,
+    "DifficultyType": 3,
+    "NextSideStoryQuestId": 12
+  },
+  {
+    "SideStoryQuestLimitContentId": 12,
+    "CharacterId": 1019,
+    "EventQuestChapterId": 500004,
+    "DifficultyType": 3,
+    "NextSideStoryQuestId": 0
+  },
+  {
+    "SideStoryQuestLimitContentId": 13,
+    "CharacterId": 1008,
+    "EventQuestChapterId": 500011,
+    "DifficultyType": 1,
+    "NextSideStoryQuestId": 14
+  },
+  {
+    "SideStoryQuestLimitContentId": 14,
+    "CharacterId": 1008,
+    "EventQuestChapterId": 500012,
+    "DifficultyType": 1,
+    "NextSideStoryQuestId": 15
+  },
+  {
+    "SideStoryQuestLimitContentId": 15,
+    "CharacterId": 1008,
+    "EventQuestChapterId": 500013,
+    "DifficultyType": 1,
+    "NextSideStoryQuestId": 16
+  },
+  {
+    "SideStoryQuestLimitContentId": 16,
+    "CharacterId": 1008,
+    "EventQuestChapterId": 500014,
+    "DifficultyType": 1,
+    "NextSideStoryQuestId": 17
+  },
+  {
+    "SideStoryQuestLimitContentId": 17,
+    "CharacterId": 1008,
+    "EventQuestChapterId": 500011,
+    "DifficultyType": 2,
+    "NextSideStoryQuestId": 18
+  },
+  {
+    "SideStoryQuestLimitContentId": 18,
+    "CharacterId": 1008,
+    "EventQuestChapterId": 500012,
+    "DifficultyType": 2,
+    "NextSideStoryQuestId": 19
+  },
+  {
+    "SideStoryQuestLimitContentId": 19,
+    "CharacterId": 1008,
+    "EventQuestChapterId": 500013,
+    "DifficultyType": 2,
+    "NextSideStoryQuestId": 20
+  },
+  {
+    "SideStoryQuestLimitContentId": 20,
+    "CharacterId": 1008,
+    "EventQuestChapterId": 500014,
+    "DifficultyType": 2,
+    "NextSideStoryQuestId": 21
+  },
+  {
+    "SideStoryQuestLimitContentId": 21,
+    "CharacterId": 1008,
+    "EventQuestChapterId": 500011,
+    "DifficultyType": 3,
+    "NextSideStoryQuestId": 22
+  },
+  {
+    "SideStoryQuestLimitContentId": 22,
+    "CharacterId": 1008,
+    "EventQuestChapterId": 500012,
+    "DifficultyType": 3,
+    "NextSideStoryQuestId": 23
+  },
+  {
+    "SideStoryQuestLimitContentId": 23,
+    "CharacterId": 1008,
+    "EventQuestChapterId": 500013,
+    "DifficultyType": 3,
+    "NextSideStoryQuestId": 24
+  },
+  {
+    "SideStoryQuestLimitContentId": 24,
+    "CharacterId": 1008,
+    "EventQuestChapterId": 500014,
+    "DifficultyType": 3,
+    "NextSideStoryQuestId": 0
+  },
+  {
+    "SideStoryQuestLimitContentId": 25,
+    "CharacterId": 1007,
+    "EventQuestChapterId": 500021,
+    "DifficultyType": 1,
+    "NextSideStoryQuestId": 26
+  },
+  {
+    "SideStoryQuestLimitContentId": 26,
+    "CharacterId": 1007,
+    "EventQuestChapterId": 500022,
+    "DifficultyType": 1,
+    "NextSideStoryQuestId": 27
+  },
+  {
+    "SideStoryQuestLimitContentId": 27,
+    "CharacterId": 1007,
+    "EventQuestChapterId": 500023,
+    "DifficultyType": 1,
+    "NextSideStoryQuestId": 28
+  },
+  {
+    "SideStoryQuestLimitContentId": 28,
+    "CharacterId": 1007,
+    "EventQuestChapterId": 500024,
+    "DifficultyType": 1,
+    "NextSideStoryQuestId": 29
+  },
+  {
+    "SideStoryQuestLimitContentId": 29,
+    "CharacterId": 1007,
+    "EventQuestChapterId": 500021,
+    "DifficultyType": 2,
+    "NextSideStoryQuestId": 30
+  },
+  {
+    "SideStoryQuestLimitContentId": 30,
+    "CharacterId": 1007,
+    "EventQuestChapterId": 500022,
+    "DifficultyType": 2,
+    "NextSideStoryQuestId": 31
+  },
+  {
+    "SideStoryQuestLimitContentId": 31,
+    "CharacterId": 1007,
+    "EventQuestChapterId": 500023,
+    "DifficultyType": 2,
+    "NextSideStoryQuestId": 32
+  },
+  {
+    "SideStoryQuestLimitContentId": 32,
+    "CharacterId": 1007,
+    "EventQuestChapterId": 500024,
+    "DifficultyType": 2,
+    "NextSideStoryQuestId": 33
+  },
+  {
+    "SideStoryQuestLimitContentId": 33,
+    "CharacterId": 1007,
+    "EventQuestChapterId": 500021,
+    "DifficultyType": 3,
+    "NextSideStoryQuestId": 34
+  },
+  {
+    "SideStoryQuestLimitContentId": 34,
+    "CharacterId": 1007,
+    "EventQuestChapterId": 500022,
+    "DifficultyType": 3,
+    "NextSideStoryQuestId": 35
+  },
+  {
+    "SideStoryQuestLimitContentId": 35,
+    "CharacterId": 1007,
+    "EventQuestChapterId": 500023,
+    "DifficultyType": 3,
+    "NextSideStoryQuestId": 36
+  },
+  {
+    "SideStoryQuestLimitContentId": 36,
+    "CharacterId": 1007,
+    "EventQuestChapterId": 500024,
+    "DifficultyType": 3,
+    "NextSideStoryQuestId": 0
+  },
+  {
+    "SideStoryQuestLimitContentId": 37,
+    "CharacterId": 1009,
+    "EventQuestChapterId": 500031,
+    "DifficultyType": 1,
+    "NextSideStoryQuestId": 38
+  },
+  {
+    "SideStoryQuestLimitContentId": 38,
+    "CharacterId": 1009,
+    "EventQuestChapterId": 500032,
+    "DifficultyType": 1,
+    "NextSideStoryQuestId": 39
+  },
+  {
+    "SideStoryQuestLimitContentId": 39,
+    "CharacterId": 1009,
+    "EventQuestChapterId": 500033,
+    "DifficultyType": 1,
+    "NextSideStoryQuestId": 40
+  },
+  {
+    "SideStoryQuestLimitContentId": 40,
+    "CharacterId": 1009,
+    "EventQuestChapterId": 500034,
+    "DifficultyType": 1,
+    "NextSideStoryQuestId": 41
+  },
+  {
+    "SideStoryQuestLimitContentId": 41,
+    "CharacterId": 1009,
+    "EventQuestChapterId": 500031,
+    "DifficultyType": 2,
+    "NextSideStoryQuestId": 42
+  },
+  {
+    "SideStoryQuestLimitContentId": 42,
+    "CharacterId": 1009,
+    "EventQuestChapterId": 500032,
+    "DifficultyType": 2,
+    "NextSideStoryQuestId": 43
+  },
+  {
+    "SideStoryQuestLimitContentId": 43,
+    "CharacterId": 1009,
+    "EventQuestChapterId": 500033,
+    "DifficultyType": 2,
+    "NextSideStoryQuestId": 44
+  },
+  {
+    "SideStoryQuestLimitContentId": 44,
+    "CharacterId": 1009,
+    "EventQuestChapterId": 500034,
+    "DifficultyType": 2,
+    "NextSideStoryQuestId": 45
+  },
+  {
+    "SideStoryQuestLimitContentId": 45,
+    "CharacterId": 1009,
+    "EventQuestChapterId": 500031,
+    "DifficultyType": 3,
+    "NextSideStoryQuestId": 46
+  },
+  {
+    "SideStoryQuestLimitContentId": 46,
+    "CharacterId": 1009,
+    "EventQuestChapterId": 500032,
+    "DifficultyType": 3,
+    "NextSideStoryQuestId": 47
+  },
+  {
+    "SideStoryQuestLimitContentId": 47,
+    "CharacterId": 1009,
+    "EventQuestChapterId": 500033,
+    "DifficultyType": 3,
+    "NextSideStoryQuestId": 48
+  },
+  {
+    "SideStoryQuestLimitContentId": 48,
+    "CharacterId": 1009,
+    "EventQuestChapterId": 500034,
+    "DifficultyType": 3,
+    "NextSideStoryQuestId": 0
+  },
+  {
+    "SideStoryQuestLimitContentId": 49,
+    "CharacterId": 1004,
+    "EventQuestChapterId": 500041,
+    "DifficultyType": 1,
+    "NextSideStoryQuestId": 50
+  },
+  {
+    "SideStoryQuestLimitContentId": 50,
+    "CharacterId": 1004,
+    "EventQuestChapterId": 500042,
+    "DifficultyType": 1,
+    "NextSideStoryQuestId": 51
+  },
+  {
+    "SideStoryQuestLimitContentId": 51,
+    "CharacterId": 1004,
+    "EventQuestChapterId": 500043,
+    "DifficultyType": 1,
+    "NextSideStoryQuestId": 52
+  },
+  {
+    "SideStoryQuestLimitContentId": 52,
+    "CharacterId": 1004,
+    "EventQuestChapterId": 500044,
+    "DifficultyType": 1,
+    "NextSideStoryQuestId": 53
+  },
+  {
+    "SideStoryQuestLimitContentId": 53,
+    "CharacterId": 1004,
+    "EventQuestChapterId": 500041,
+    "DifficultyType": 2,
+    "NextSideStoryQuestId": 54
+  },
+  {
+    "SideStoryQuestLimitContentId": 54,
+    "CharacterId": 1004,
+    "EventQuestChapterId": 500042,
+    "DifficultyType": 2,
+    "NextSideStoryQuestId": 55
+  },
+  {
+    "SideStoryQuestLimitContentId": 55,
+    "CharacterId": 1004,
+    "EventQuestChapterId": 500043,
+    "DifficultyType": 2,
+    "NextSideStoryQuestId": 56
+  },
+  {
+    "SideStoryQuestLimitContentId": 56,
+    "CharacterId": 1004,
+    "EventQuestChapterId": 500044,
+    "DifficultyType": 2,
+    "NextSideStoryQuestId": 57
+  },
+  {
+    "SideStoryQuestLimitContentId": 57,
+    "CharacterId": 1004,
+    "EventQuestChapterId": 500041,
+    "DifficultyType": 3,
+    "NextSideStoryQuestId": 58
+  },
+  {
+    "SideStoryQuestLimitContentId": 58,
+    "CharacterId": 1004,
+    "EventQuestChapterId": 500042,
+    "DifficultyType": 3,
+    "NextSideStoryQuestId": 59
+  },
+  {
+    "SideStoryQuestLimitContentId": 59,
+    "CharacterId": 1004,
+    "EventQuestChapterId": 500043,
+    "DifficultyType": 3,
+    "NextSideStoryQuestId": 60
+  },
+  {
+    "SideStoryQuestLimitContentId": 60,
+    "CharacterId": 1004,
+    "EventQuestChapterId": 500044,
+    "DifficultyType": 3,
+    "NextSideStoryQuestId": 0
+  },
+  {
+    "SideStoryQuestLimitContentId": 61,
+    "CharacterId": 1013,
+    "EventQuestChapterId": 500051,
+    "DifficultyType": 1,
+    "NextSideStoryQuestId": 62
+  },
+  {
+    "SideStoryQuestLimitContentId": 62,
+    "CharacterId": 1013,
+    "EventQuestChapterId": 500052,
+    "DifficultyType": 1,
+    "NextSideStoryQuestId": 63
+  },
+  {
+    "SideStoryQuestLimitContentId": 63,
+    "CharacterId": 1013,
+    "EventQuestChapterId": 500053,
+    "DifficultyType": 1,
+    "NextSideStoryQuestId": 64
+  },
+  {
+    "SideStoryQuestLimitContentId": 64,
+    "CharacterId": 1013,
+    "EventQuestChapterId": 500054,
+    "DifficultyType": 1,
+    "NextSideStoryQuestId": 65
+  },
+  {
+    "SideStoryQuestLimitContentId": 65,
+    "CharacterId": 1013,
+    "EventQuestChapterId": 500051,
+    "DifficultyType": 2,
+    "NextSideStoryQuestId": 66
+  },
+  {
+    "SideStoryQuestLimitContentId": 66,
+    "CharacterId": 1013,
+    "EventQuestChapterId": 500052,
+    "DifficultyType": 2,
+    "NextSideStoryQuestId": 67
+  },
+  {
+    "SideStoryQuestLimitContentId": 67,
+    "CharacterId": 1013,
+    "EventQuestChapterId": 500053,
+    "DifficultyType": 2,
+    "NextSideStoryQuestId": 68
+  },
+  {
+    "SideStoryQuestLimitContentId": 68,
+    "CharacterId": 1013,
+    "EventQuestChapterId": 500054,
+    "DifficultyType": 2,
+    "NextSideStoryQuestId": 69
+  },
+  {
+    "SideStoryQuestLimitContentId": 69,
+    "CharacterId": 1013,
+    "EventQuestChapterId": 500051,
+    "DifficultyType": 3,
+    "NextSideStoryQuestId": 70
+  },
+  {
+    "SideStoryQuestLimitContentId": 70,
+    "CharacterId": 1013,
+    "EventQuestChapterId": 500052,
+    "DifficultyType": 3,
+    "NextSideStoryQuestId": 71
+  },
+  {
+    "SideStoryQuestLimitContentId": 71,
+    "CharacterId": 1013,
+    "EventQuestChapterId": 500053,
+    "DifficultyType": 3,
+    "NextSideStoryQuestId": 72
+  },
+  {
+    "SideStoryQuestLimitContentId": 72,
+    "CharacterId": 1013,
+    "EventQuestChapterId": 500054,
+    "DifficultyType": 3,
+    "NextSideStoryQuestId": 0
+  },
+  {
+    "SideStoryQuestLimitContentId": 73,
+    "CharacterId": 1010,
+    "EventQuestChapterId": 500061,
+    "DifficultyType": 1,
+    "NextSideStoryQuestId": 74
+  },
+  {
+    "SideStoryQuestLimitContentId": 74,
+    "CharacterId": 1010,
+    "EventQuestChapterId": 500062,
+    "DifficultyType": 1,
+    "NextSideStoryQuestId": 75
+  },
+  {
+    "SideStoryQuestLimitContentId": 75,
+    "CharacterId": 1010,
+    "EventQuestChapterId": 500063,
+    "DifficultyType": 1,
+    "NextSideStoryQuestId": 76
+  },
+  {
+    "SideStoryQuestLimitContentId": 76,
+    "CharacterId": 1010,
+    "EventQuestChapterId": 500064,
+    "DifficultyType": 1,
+    "NextSideStoryQuestId": 77
+  },
+  {
+    "SideStoryQuestLimitContentId": 77,
+    "CharacterId": 1010,
+    "EventQuestChapterId": 500061,
+    "DifficultyType": 2,
+    "NextSideStoryQuestId": 78
+  },
+  {
+    "SideStoryQuestLimitContentId": 78,
+    "CharacterId": 1010,
+    "EventQuestChapterId": 500062,
+    "DifficultyType": 2,
+    "NextSideStoryQuestId": 79
+  },
+  {
+    "SideStoryQuestLimitContentId": 79,
+    "CharacterId": 1010,
+    "EventQuestChapterId": 500063,
+    "DifficultyType": 2,
+    "NextSideStoryQuestId": 80
+  },
+  {
+    "SideStoryQuestLimitContentId": 80,
+    "CharacterId": 1010,
+    "EventQuestChapterId": 500064,
+    "DifficultyType": 2,
+    "NextSideStoryQuestId": 81
+  },
+  {
+    "SideStoryQuestLimitContentId": 81,
+    "CharacterId": 1010,
+    "EventQuestChapterId": 500061,
+    "DifficultyType": 3,
+    "NextSideStoryQuestId": 82
+  },
+  {
+    "SideStoryQuestLimitContentId": 82,
+    "CharacterId": 1010,
+    "EventQuestChapterId": 500062,
+    "DifficultyType": 3,
+    "NextSideStoryQuestId": 83
+  },
+  {
+    "SideStoryQuestLimitContentId": 83,
+    "CharacterId": 1010,
+    "EventQuestChapterId": 500063,
+    "DifficultyType": 3,
+    "NextSideStoryQuestId": 84
+  },
+  {
+    "SideStoryQuestLimitContentId": 84,
+    "CharacterId": 1010,
+    "EventQuestChapterId": 500064,
+    "DifficultyType": 3,
+    "NextSideStoryQuestId": 0
+  },
+  {
+    "SideStoryQuestLimitContentId": 85,
+    "CharacterId": 1011,
+    "EventQuestChapterId": 500071,
+    "DifficultyType": 1,
+    "NextSideStoryQuestId": 86
+  },
+  {
+    "SideStoryQuestLimitContentId": 86,
+    "CharacterId": 1011,
+    "EventQuestChapterId": 500072,
+    "DifficultyType": 1,
+    "NextSideStoryQuestId": 87
+  },
+  {
+    "SideStoryQuestLimitContentId": 87,
+    "CharacterId": 1011,
+    "EventQuestChapterId": 500073,
+    "DifficultyType": 1,
+    "NextSideStoryQuestId": 88
+  },
+  {
+    "SideStoryQuestLimitContentId": 88,
+    "CharacterId": 1011,
+    "EventQuestChapterId": 500074,
+    "DifficultyType": 1,
+    "NextSideStoryQuestId": 89
+  },
+  {
+    "SideStoryQuestLimitContentId": 89,
+    "CharacterId": 1011,
+    "EventQuestChapterId": 500071,
+    "DifficultyType": 2,
+    "NextSideStoryQuestId": 90
+  },
+  {
+    "SideStoryQuestLimitContentId": 90,
+    "CharacterId": 1011,
+    "EventQuestChapterId": 500072,
+    "DifficultyType": 2,
+    "NextSideStoryQuestId": 91
+  },
+  {
+    "SideStoryQuestLimitContentId": 91,
+    "CharacterId": 1011,
+    "EventQuestChapterId": 500073,
+    "DifficultyType": 2,
+    "NextSideStoryQuestId": 92
+  },
+  {
+    "SideStoryQuestLimitContentId": 92,
+    "CharacterId": 1011,
+    "EventQuestChapterId": 500074,
+    "DifficultyType": 2,
+    "NextSideStoryQuestId": 93
+  },
+  {
+    "SideStoryQuestLimitContentId": 93,
+    "CharacterId": 1011,
+    "EventQuestChapterId": 500071,
+    "DifficultyType": 3,
+    "NextSideStoryQuestId": 94
+  },
+  {
+    "SideStoryQuestLimitContentId": 94,
+    "CharacterId": 1011,
+    "EventQuestChapterId": 500072,
+    "DifficultyType": 3,
+    "NextSideStoryQuestId": 95
+  },
+  {
+    "SideStoryQuestLimitContentId": 95,
+    "CharacterId": 1011,
+    "EventQuestChapterId": 500073,
+    "DifficultyType": 3,
+    "NextSideStoryQuestId": 96
+  },
+  {
+    "SideStoryQuestLimitContentId": 96,
+    "CharacterId": 1011,
+    "EventQuestChapterId": 500074,
+    "DifficultyType": 3,
+    "NextSideStoryQuestId": 0
+  },
+  {
+    "SideStoryQuestLimitContentId": 97,
+    "CharacterId": 1015,
+    "EventQuestChapterId": 500081,
+    "DifficultyType": 1,
+    "NextSideStoryQuestId": 98
+  },
+  {
+    "SideStoryQuestLimitContentId": 98,
+    "CharacterId": 1015,
+    "EventQuestChapterId": 500082,
+    "DifficultyType": 1,
+    "NextSideStoryQuestId": 99
+  },
+  {
+    "SideStoryQuestLimitContentId": 99,
+    "CharacterId": 1015,
+    "EventQuestChapterId": 500083,
+    "DifficultyType": 1,
+    "NextSideStoryQuestId": 100
+  },
+  {
+    "SideStoryQuestLimitContentId": 100,
+    "CharacterId": 1015,
+    "EventQuestChapterId": 500084,
+    "DifficultyType": 1,
+    "NextSideStoryQuestId": 101
+  },
+  {
+    "SideStoryQuestLimitContentId": 101,
+    "CharacterId": 1015,
+    "EventQuestChapterId": 500081,
+    "DifficultyType": 2,
+    "NextSideStoryQuestId": 102
+  },
+  {
+    "SideStoryQuestLimitContentId": 102,
+    "CharacterId": 1015,
+    "EventQuestChapterId": 500082,
+    "DifficultyType": 2,
+    "NextSideStoryQuestId": 103
+  },
+  {
+    "SideStoryQuestLimitContentId": 103,
+    "CharacterId": 1015,
+    "EventQuestChapterId": 500083,
+    "DifficultyType": 2,
+    "NextSideStoryQuestId": 104
+  },
+  {
+    "SideStoryQuestLimitContentId": 104,
+    "CharacterId": 1015,
+    "EventQuestChapterId": 500084,
+    "DifficultyType": 2,
+    "NextSideStoryQuestId": 105
+  },
+  {
+    "SideStoryQuestLimitContentId": 105,
+    "CharacterId": 1015,
+    "EventQuestChapterId": 500081,
+    "DifficultyType": 3,
+    "NextSideStoryQuestId": 106
+  },
+  {
+    "SideStoryQuestLimitContentId": 106,
+    "CharacterId": 1015,
+    "EventQuestChapterId": 500082,
+    "DifficultyType": 3,
+    "NextSideStoryQuestId": 107
+  },
+  {
+    "SideStoryQuestLimitContentId": 107,
+    "CharacterId": 1015,
+    "EventQuestChapterId": 500083,
+    "DifficultyType": 3,
+    "NextSideStoryQuestId": 108
+  },
+  {
+    "SideStoryQuestLimitContentId": 108,
+    "CharacterId": 1015,
+    "EventQuestChapterId": 500084,
+    "DifficultyType": 3,
+    "NextSideStoryQuestId": 0
+  },
+  {
+    "SideStoryQuestLimitContentId": 109,
+    "CharacterId": 1014,
+    "EventQuestChapterId": 500091,
+    "DifficultyType": 1,
+    "NextSideStoryQuestId": 110
+  },
+  {
+    "SideStoryQuestLimitContentId": 110,
+    "CharacterId": 1014,
+    "EventQuestChapterId": 500092,
+    "DifficultyType": 1,
+    "NextSideStoryQuestId": 111
+  },
+  {
+    "SideStoryQuestLimitContentId": 111,
+    "CharacterId": 1014,
+    "EventQuestChapterId": 500093,
+    "DifficultyType": 1,
+    "NextSideStoryQuestId": 112
+  },
+  {
+    "SideStoryQuestLimitContentId": 112,
+    "CharacterId": 1014,
+    "EventQuestChapterId": 500094,
+    "DifficultyType": 1,
+    "NextSideStoryQuestId": 113
+  },
+  {
+    "SideStoryQuestLimitContentId": 113,
+    "CharacterId": 1014,
+    "EventQuestChapterId": 500091,
+    "DifficultyType": 2,
+    "NextSideStoryQuestId": 114
+  },
+  {
+    "SideStoryQuestLimitContentId": 114,
+    "CharacterId": 1014,
+    "EventQuestChapterId": 500092,
+    "DifficultyType": 2,
+    "NextSideStoryQuestId": 115
+  },
+  {
+    "SideStoryQuestLimitContentId": 115,
+    "CharacterId": 1014,
+    "EventQuestChapterId": 500093,
+    "DifficultyType": 2,
+    "NextSideStoryQuestId": 116
+  },
+  {
+    "SideStoryQuestLimitContentId": 116,
+    "CharacterId": 1014,
+    "EventQuestChapterId": 500094,
+    "DifficultyType": 2,
+    "NextSideStoryQuestId": 117
+  },
+  {
+    "SideStoryQuestLimitContentId": 117,
+    "CharacterId": 1014,
+    "EventQuestChapterId": 500091,
+    "DifficultyType": 3,
+    "NextSideStoryQuestId": 118
+  },
+  {
+    "SideStoryQuestLimitContentId": 118,
+    "CharacterId": 1014,
+    "EventQuestChapterId": 500092,
+    "DifficultyType": 3,
+    "NextSideStoryQuestId": 119
+  },
+  {
+    "SideStoryQuestLimitContentId": 119,
+    "CharacterId": 1014,
+    "EventQuestChapterId": 500093,
+    "DifficultyType": 3,
+    "NextSideStoryQuestId": 120
+  },
+  {
+    "SideStoryQuestLimitContentId": 120,
+    "CharacterId": 1014,
+    "EventQuestChapterId": 500094,
+    "DifficultyType": 3,
+    "NextSideStoryQuestId": 0
+  },
+  {
+    "SideStoryQuestLimitContentId": 121,
+    "CharacterId": 1012,
+    "EventQuestChapterId": 500101,
+    "DifficultyType": 1,
+    "NextSideStoryQuestId": 122
+  },
+  {
+    "SideStoryQuestLimitContentId": 122,
+    "CharacterId": 1012,
+    "EventQuestChapterId": 500102,
+    "DifficultyType": 1,
+    "NextSideStoryQuestId": 123
+  },
+  {
+    "SideStoryQuestLimitContentId": 123,
+    "CharacterId": 1012,
+    "EventQuestChapterId": 500103,
+    "DifficultyType": 1,
+    "NextSideStoryQuestId": 124
+  },
+  {
+    "SideStoryQuestLimitContentId": 124,
+    "CharacterId": 1012,
+    "EventQuestChapterId": 500104,
+    "DifficultyType": 1,
+    "NextSideStoryQuestId": 125
+  },
+  {
+    "SideStoryQuestLimitContentId": 125,
+    "CharacterId": 1012,
+    "EventQuestChapterId": 500101,
+    "DifficultyType": 2,
+    "NextSideStoryQuestId": 126
+  },
+  {
+    "SideStoryQuestLimitContentId": 126,
+    "CharacterId": 1012,
+    "EventQuestChapterId": 500102,
+    "DifficultyType": 2,
+    "NextSideStoryQuestId": 127
+  },
+  {
+    "SideStoryQuestLimitContentId": 127,
+    "CharacterId": 1012,
+    "EventQuestChapterId": 500103,
+    "DifficultyType": 2,
+    "NextSideStoryQuestId": 128
+  },
+  {
+    "SideStoryQuestLimitContentId": 128,
+    "CharacterId": 1012,
+    "EventQuestChapterId": 500104,
+    "DifficultyType": 2,
+    "NextSideStoryQuestId": 129
+  },
+  {
+    "SideStoryQuestLimitContentId": 129,
+    "CharacterId": 1012,
+    "EventQuestChapterId": 500101,
+    "DifficultyType": 3,
+    "NextSideStoryQuestId": 130
+  },
+  {
+    "SideStoryQuestLimitContentId": 130,
+    "CharacterId": 1012,
+    "EventQuestChapterId": 500102,
+    "DifficultyType": 3,
+    "NextSideStoryQuestId": 131
+  },
+  {
+    "SideStoryQuestLimitContentId": 131,
+    "CharacterId": 1012,
+    "EventQuestChapterId": 500103,
+    "DifficultyType": 3,
+    "NextSideStoryQuestId": 132
+  },
+  {
+    "SideStoryQuestLimitContentId": 132,
+    "CharacterId": 1012,
+    "EventQuestChapterId": 500104,
+    "DifficultyType": 3,
+    "NextSideStoryQuestId": 0
+  },
+  {
+    "SideStoryQuestLimitContentId": 133,
+    "CharacterId": 1006,
+    "EventQuestChapterId": 500111,
+    "DifficultyType": 1,
+    "NextSideStoryQuestId": 134
+  },
+  {
+    "SideStoryQuestLimitContentId": 134,
+    "CharacterId": 1006,
+    "EventQuestChapterId": 500112,
+    "DifficultyType": 1,
+    "NextSideStoryQuestId": 135
+  },
+  {
+    "SideStoryQuestLimitContentId": 135,
+    "CharacterId": 1006,
+    "EventQuestChapterId": 500113,
+    "DifficultyType": 1,
+    "NextSideStoryQuestId": 136
+  },
+  {
+    "SideStoryQuestLimitContentId": 136,
+    "CharacterId": 1006,
+    "EventQuestChapterId": 500114,
+    "DifficultyType": 1,
+    "NextSideStoryQuestId": 137
+  },
+  {
+    "SideStoryQuestLimitContentId": 137,
+    "CharacterId": 1006,
+    "EventQuestChapterId": 500111,
+    "DifficultyType": 2,
+    "NextSideStoryQuestId": 138
+  },
+  {
+    "SideStoryQuestLimitContentId": 138,
+    "CharacterId": 1006,
+    "EventQuestChapterId": 500112,
+    "DifficultyType": 2,
+    "NextSideStoryQuestId": 139
+  },
+  {
+    "SideStoryQuestLimitContentId": 139,
+    "CharacterId": 1006,
+    "EventQuestChapterId": 500113,
+    "DifficultyType": 2,
+    "NextSideStoryQuestId": 140
+  },
+  {
+    "SideStoryQuestLimitContentId": 140,
+    "CharacterId": 1006,
+    "EventQuestChapterId": 500114,
+    "DifficultyType": 2,
+    "NextSideStoryQuestId": 141
+  },
+  {
+    "SideStoryQuestLimitContentId": 141,
+    "CharacterId": 1006,
+    "EventQuestChapterId": 500111,
+    "DifficultyType": 3,
+    "NextSideStoryQuestId": 142
+  },
+  {
+    "SideStoryQuestLimitContentId": 142,
+    "CharacterId": 1006,
+    "EventQuestChapterId": 500112,
+    "DifficultyType": 3,
+    "NextSideStoryQuestId": 143
+  },
+  {
+    "SideStoryQuestLimitContentId": 143,
+    "CharacterId": 1006,
+    "EventQuestChapterId": 500113,
+    "DifficultyType": 3,
+    "NextSideStoryQuestId": 144
+  },
+  {
+    "SideStoryQuestLimitContentId": 144,
+    "CharacterId": 1006,
+    "EventQuestChapterId": 500114,
+    "DifficultyType": 3,
+    "NextSideStoryQuestId": 0
+  }
+]

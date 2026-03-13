@@ -1,0 +1,3962 @@
+[
+  {
+    "EnhanceCampaignId": 1,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 1,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1616209200000,
+    "EndDatetime": 1617159599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 2,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 1,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1616209200000,
+    "EndDatetime": 1617159599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 3,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1619575200000,
+    "EndDatetime": 1620525599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 4,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1619575200000,
+    "EndDatetime": 1620525599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 5,
+    "EnhanceCampaignTargetGroupId": 103,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1620439200000,
+    "EndDatetime": 1622512799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 6,
+    "EnhanceCampaignTargetGroupId": 104,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1620439200000,
+    "EndDatetime": 1622512799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 7,
+    "EnhanceCampaignTargetGroupId": 105,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1621476000000,
+    "EndDatetime": 1622512799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 8,
+    "EnhanceCampaignTargetGroupId": 106,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1621476000000,
+    "EndDatetime": 1622512799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 9,
+    "EnhanceCampaignTargetGroupId": 107,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1622426400000,
+    "EndDatetime": 1623376799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 10,
+    "EnhanceCampaignTargetGroupId": 108,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1622426400000,
+    "EndDatetime": 1623376799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 11,
+    "EnhanceCampaignTargetGroupId": 109,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1623376800000,
+    "EndDatetime": 1624327199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 12,
+    "EnhanceCampaignTargetGroupId": 110,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1623376800000,
+    "EndDatetime": 1624327199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 13,
+    "EnhanceCampaignTargetGroupId": 111,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1623549600000,
+    "EndDatetime": 1625450399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 14,
+    "EnhanceCampaignTargetGroupId": 112,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1624327200000,
+    "EndDatetime": 1625018399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 15,
+    "EnhanceCampaignTargetGroupId": 113,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1624327200000,
+    "EndDatetime": 1625018399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 16,
+    "EnhanceCampaignTargetGroupId": 114,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1625018400000,
+    "EndDatetime": 1627696799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 17,
+    "EnhanceCampaignTargetGroupId": 115,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1625018400000,
+    "EndDatetime": 1627696799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 18,
+    "EnhanceCampaignTargetGroupId": 116,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1625796000000,
+    "EndDatetime": 1626832799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 19,
+    "EnhanceCampaignTargetGroupId": 117,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1625796000000,
+    "EndDatetime": 1626832799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 20,
+    "EnhanceCampaignTargetGroupId": 118,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1627696800000,
+    "EndDatetime": 1629251999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 21,
+    "EnhanceCampaignTargetGroupId": 119,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1627696800000,
+    "EndDatetime": 1629251999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 22,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 200,
+    "StartDatetime": 1625796000000,
+    "EndDatetime": 1626400799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 23,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 200,
+    "StartDatetime": 1625796000000,
+    "EndDatetime": 1626400799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 24,
+    "EnhanceCampaignTargetGroupId": 120,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1626400800000,
+    "EndDatetime": 1627955999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 25,
+    "EnhanceCampaignTargetGroupId": 121,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1628474400000,
+    "EndDatetime": 1629251999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 26,
+    "EnhanceCampaignTargetGroupId": 122,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1628474400000,
+    "EndDatetime": 1629251999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 27,
+    "EnhanceCampaignTargetGroupId": 123,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1626832800000,
+    "EndDatetime": 1627869599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 28,
+    "EnhanceCampaignTargetGroupId": 124,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1626832800000,
+    "EndDatetime": 1627869599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 29,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 200,
+    "StartDatetime": 1628175600000,
+    "EndDatetime": 1629251999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 30,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 200,
+    "StartDatetime": 1628175600000,
+    "EndDatetime": 1629251999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 31,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 200,
+    "StartDatetime": 1627398000000,
+    "EndDatetime": 1628261999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 32,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 200,
+    "StartDatetime": 1627398000000,
+    "EndDatetime": 1628261999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 33,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1629252000000,
+    "EndDatetime": 1630893599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 34,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1629252000000,
+    "EndDatetime": 1630893599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 35,
+    "EnhanceCampaignTargetGroupId": 131,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1629252000000,
+    "EndDatetime": 1630893599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 37,
+    "EnhanceCampaignTargetGroupId": 133,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1630893600000,
+    "EndDatetime": 1631239199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 38,
+    "EnhanceCampaignTargetGroupId": 134,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1630893600000,
+    "EndDatetime": 1631239199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 39,
+    "EnhanceCampaignTargetGroupId": 135,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1631239200000,
+    "EndDatetime": 1632103199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 40,
+    "EnhanceCampaignTargetGroupId": 136,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1631239200000,
+    "EndDatetime": 1632103199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 42,
+    "EnhanceCampaignTargetGroupId": 138,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1632794400000,
+    "EndDatetime": 1633917599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 43,
+    "EnhanceCampaignTargetGroupId": 139,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1632794400000,
+    "EndDatetime": 1633917599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 44,
+    "EnhanceCampaignTargetGroupId": 140,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1633917600000,
+    "EndDatetime": 1635127199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 45,
+    "EnhanceCampaignTargetGroupId": 141,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1633917600000,
+    "EndDatetime": 1635127199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 46,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 200,
+    "StartDatetime": 1634176800000,
+    "EndDatetime": 1634695199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 47,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 200,
+    "StartDatetime": 1634176800000,
+    "EndDatetime": 1634695199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 48,
+    "EnhanceCampaignTargetGroupId": 131,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 300,
+    "StartDatetime": 1634176800000,
+    "EndDatetime": 1634695199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 49,
+    "EnhanceCampaignTargetGroupId": 142,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1635645600000,
+    "EndDatetime": 1636509599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 50,
+    "EnhanceCampaignTargetGroupId": 143,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1635645600000,
+    "EndDatetime": 1636509599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 51,
+    "EnhanceCampaignTargetGroupId": 111,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1637373600000,
+    "EndDatetime": 1638323999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 52,
+    "EnhanceCampaignTargetGroupId": 144,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1636509600000,
+    "EndDatetime": 1637287199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 53,
+    "EnhanceCampaignTargetGroupId": 145,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1636509600000,
+    "EndDatetime": 1637287199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 54,
+    "EnhanceCampaignTargetGroupId": 146,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1637373600000,
+    "EndDatetime": 1638323999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 55,
+    "EnhanceCampaignTargetGroupId": 147,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1637373600000,
+    "EndDatetime": 1638323999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 56,
+    "EnhanceCampaignTargetGroupId": 148,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1638237600000,
+    "EndDatetime": 1640483999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 57,
+    "EnhanceCampaignTargetGroupId": 149,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1638237600000,
+    "EndDatetime": 1640483999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 58,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 200,
+    "StartDatetime": 1638237600000,
+    "EndDatetime": 1638802799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 59,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 200,
+    "StartDatetime": 1638237600000,
+    "EndDatetime": 1638802799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 60,
+    "EnhanceCampaignTargetGroupId": 150,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1639101600000,
+    "EndDatetime": 1639965599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 61,
+    "EnhanceCampaignTargetGroupId": 151,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1639101600000,
+    "EndDatetime": 1639965599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 62,
+    "EnhanceCampaignTargetGroupId": 152,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1639965600000,
+    "EndDatetime": 1640962799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 63,
+    "EnhanceCampaignTargetGroupId": 153,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1639965600000,
+    "EndDatetime": 1640962799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 64,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 200,
+    "StartDatetime": 1640962800000,
+    "EndDatetime": 1641866399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 65,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 200,
+    "StartDatetime": 1640962800000,
+    "EndDatetime": 1641866399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 66,
+    "EnhanceCampaignTargetGroupId": 131,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 300,
+    "StartDatetime": 1640484000000,
+    "EndDatetime": 1640962799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 67,
+    "EnhanceCampaignTargetGroupId": 120,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1639965600000,
+    "EndDatetime": 1640962799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 69,
+    "EnhanceCampaignTargetGroupId": 159,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1640962800000,
+    "EndDatetime": 1642384799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 70,
+    "EnhanceCampaignTargetGroupId": 160,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1640962800000,
+    "EndDatetime": 1642384799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 71,
+    "EnhanceCampaignTargetGroupId": 161,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1641866400000,
+    "EndDatetime": 1642816799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 72,
+    "EnhanceCampaignTargetGroupId": 162,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1641866400000,
+    "EndDatetime": 1642816799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 73,
+    "EnhanceCampaignTargetGroupId": 163,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1642730400000,
+    "EndDatetime": 1643594399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 74,
+    "EnhanceCampaignTargetGroupId": 164,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1642730400000,
+    "EndDatetime": 1643594399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 75,
+    "EnhanceCampaignTargetGroupId": 165,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1642730400000,
+    "EndDatetime": 1643594399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 76,
+    "EnhanceCampaignTargetGroupId": 166,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1643594400000,
+    "EndDatetime": 1644458399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 77,
+    "EnhanceCampaignTargetGroupId": 167,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1643594400000,
+    "EndDatetime": 1644458399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 78,
+    "EnhanceCampaignTargetGroupId": 168,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1644458400000,
+    "EndDatetime": 1645149599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 79,
+    "EnhanceCampaignTargetGroupId": 169,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1644458400000,
+    "EndDatetime": 1645149599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 80,
+    "EnhanceCampaignTargetGroupId": 170,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1645754400000,
+    "EndDatetime": 1646272799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 81,
+    "EnhanceCampaignTargetGroupId": 131,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 300,
+    "StartDatetime": 1644544800000,
+    "EndDatetime": 1645149599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 82,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1645156800000,
+    "EndDatetime": 1645754399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 83,
+    "EnhanceCampaignTargetGroupId": 131,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1645156800000,
+    "EndDatetime": 1645754399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 84,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1645156800000,
+    "EndDatetime": 1645754399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 85,
+    "EnhanceCampaignTargetGroupId": 175,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1645156800000,
+    "EndDatetime": 1646877599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 86,
+    "EnhanceCampaignTargetGroupId": 176,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1645156800000,
+    "EndDatetime": 1646877599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 87,
+    "EnhanceCampaignTargetGroupId": 118,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1645581600000,
+    "EndDatetime": 1647309599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 88,
+    "EnhanceCampaignTargetGroupId": 119,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1645581600000,
+    "EndDatetime": 1647309599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 89,
+    "EnhanceCampaignTargetGroupId": 179,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1646013600000,
+    "EndDatetime": 1646877599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 90,
+    "EnhanceCampaignTargetGroupId": 180,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1646013600000,
+    "EndDatetime": 1646877599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 93,
+    "EnhanceCampaignTargetGroupId": 183,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1646877600000,
+    "EndDatetime": 1647914399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 94,
+    "EnhanceCampaignTargetGroupId": 184,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1646877600000,
+    "EndDatetime": 1647914399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 95,
+    "EnhanceCampaignTargetGroupId": 131,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 500,
+    "StartDatetime": 1647914400000,
+    "EndDatetime": 1648778399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 96,
+    "EnhanceCampaignTargetGroupId": 185,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1647914400000,
+    "EndDatetime": 1648691999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 97,
+    "EnhanceCampaignTargetGroupId": 187,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1647914400000,
+    "EndDatetime": 1648691999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 98,
+    "EnhanceCampaignTargetGroupId": 188,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1647914400000,
+    "EndDatetime": 1648691999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 99,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1648393200000,
+    "EndDatetime": 1648479599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 100,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1648393200000,
+    "EndDatetime": 1648479599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 101,
+    "EnhanceCampaignTargetGroupId": 191,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1648692000000,
+    "EndDatetime": 1649642399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 102,
+    "EnhanceCampaignTargetGroupId": 192,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1648692000000,
+    "EndDatetime": 1649642399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 103,
+    "EnhanceCampaignTargetGroupId": 131,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 500,
+    "StartDatetime": 1649469600000,
+    "EndDatetime": 1649987999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 104,
+    "EnhanceCampaignTargetGroupId": 194,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1649988000000,
+    "EndDatetime": 1652147999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 105,
+    "EnhanceCampaignTargetGroupId": 195,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1649988000000,
+    "EndDatetime": 1652147999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 106,
+    "EnhanceCampaignTargetGroupId": 197,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1649642400000,
+    "EndDatetime": 1650419999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 107,
+    "EnhanceCampaignTargetGroupId": 198,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1649642400000,
+    "EndDatetime": 1650419999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 108,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1650592800000,
+    "EndDatetime": 1651456799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 109,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1650592800000,
+    "EndDatetime": 1651456799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 110,
+    "EnhanceCampaignTargetGroupId": 185,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1650938400000,
+    "EndDatetime": 1651543199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 111,
+    "EnhanceCampaignTargetGroupId": 165,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1650938400000,
+    "EndDatetime": 1651543199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 112,
+    "EnhanceCampaignTargetGroupId": 111,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1650938400000,
+    "EndDatetime": 1651543199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 113,
+    "EnhanceCampaignTargetGroupId": 170,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1651543200000,
+    "EndDatetime": 1652061599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 114,
+    "EnhanceCampaignTargetGroupId": 120,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1651543200000,
+    "EndDatetime": 1652061599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 115,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1651071600000,
+    "EndDatetime": 1651157999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 116,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1651071600000,
+    "EndDatetime": 1651157999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 117,
+    "EnhanceCampaignTargetGroupId": 207,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1650938400000,
+    "EndDatetime": 1652061599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 118,
+    "EnhanceCampaignTargetGroupId": 208,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1650938400000,
+    "EndDatetime": 1652061599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 119,
+    "EnhanceCampaignTargetGroupId": 219,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1651284000000,
+    "EndDatetime": 1652147999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 120,
+    "EnhanceCampaignTargetGroupId": 220,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1651284000000,
+    "EndDatetime": 1652147999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 121,
+    "EnhanceCampaignTargetGroupId": 221,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1652148000000,
+    "EndDatetime": 1655085599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 122,
+    "EnhanceCampaignTargetGroupId": 222,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1652148000000,
+    "EndDatetime": 1655085599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 123,
+    "EnhanceCampaignTargetGroupId": 223,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1653012000000,
+    "EndDatetime": 1654480799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 124,
+    "EnhanceCampaignTargetGroupId": 224,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1653012000000,
+    "EndDatetime": 1654480799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 125,
+    "EnhanceCampaignTargetGroupId": 165,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1653012000000,
+    "EndDatetime": 1654480799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 126,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1653663600000,
+    "EndDatetime": 1653749999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 127,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1653663600000,
+    "EndDatetime": 1653749999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 128,
+    "EnhanceCampaignTargetGroupId": 131,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 500,
+    "StartDatetime": 1653876000000,
+    "EndDatetime": 1654480799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 129,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1654221600000,
+    "EndDatetime": 1655085599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 130,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1654221600000,
+    "EndDatetime": 1655085599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 131,
+    "EnhanceCampaignTargetGroupId": 231,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1653962400000,
+    "EndDatetime": 1654826399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 132,
+    "EnhanceCampaignTargetGroupId": 232,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1653962400000,
+    "EndDatetime": 1654826399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 133,
+    "EnhanceCampaignTargetGroupId": 233,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1655085600000,
+    "EndDatetime": 1657504799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 134,
+    "EnhanceCampaignTargetGroupId": 104,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1655085600000,
+    "EndDatetime": 1657504799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 135,
+    "EnhanceCampaignTargetGroupId": 235,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1654826400000,
+    "EndDatetime": 1655690399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 136,
+    "EnhanceCampaignTargetGroupId": 236,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1654826400000,
+    "EndDatetime": 1655690399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 137,
+    "EnhanceCampaignTargetGroupId": 170,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1655690400000,
+    "EndDatetime": 1656899999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 138,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1656342000000,
+    "EndDatetime": 1656428399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 139,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1656342000000,
+    "EndDatetime": 1656428399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 140,
+    "EnhanceCampaignTargetGroupId": 131,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 500,
+    "StartDatetime": 1656295200000,
+    "EndDatetime": 1656899999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 141,
+    "EnhanceCampaignTargetGroupId": 241,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1655690400000,
+    "EndDatetime": 1656899999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 142,
+    "EnhanceCampaignTargetGroupId": 242,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1655690400000,
+    "EndDatetime": 1656899999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 143,
+    "EnhanceCampaignTargetGroupId": 131,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 500,
+    "StartDatetime": 1658714400000,
+    "EndDatetime": 1659319199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 144,
+    "EnhanceCampaignTargetGroupId": 244,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1656554400000,
+    "EndDatetime": 1659319199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 145,
+    "EnhanceCampaignTargetGroupId": 245,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1656554400000,
+    "EndDatetime": 1659319199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 146,
+    "EnhanceCampaignTargetGroupId": 246,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1657504800000,
+    "EndDatetime": 1658368799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 147,
+    "EnhanceCampaignTargetGroupId": 247,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1657504800000,
+    "EndDatetime": 1658368799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 148,
+    "EnhanceCampaignTargetGroupId": 120,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1658368800000,
+    "EndDatetime": 1659664799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 149,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1657850400000,
+    "EndDatetime": 1658714399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 150,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1657850400000,
+    "EndDatetime": 1658714399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 151,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1658934000000,
+    "EndDatetime": 1659020399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 152,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1658934000000,
+    "EndDatetime": 1659020399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 153,
+    "EnhanceCampaignTargetGroupId": 253,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1658368800000,
+    "EndDatetime": 1659664799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 154,
+    "EnhanceCampaignTargetGroupId": 254,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1658368800000,
+    "EndDatetime": 1659664799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 155,
+    "EnhanceCampaignTargetGroupId": 255,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1659060000000,
+    "EndDatetime": 1659923999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 156,
+    "EnhanceCampaignTargetGroupId": 256,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1659060000000,
+    "EndDatetime": 1659923999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 157,
+    "EnhanceCampaignTargetGroupId": 131,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 500,
+    "StartDatetime": 1660442400000,
+    "EndDatetime": 1660777199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 158,
+    "EnhanceCampaignTargetGroupId": 258,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1659924000000,
+    "EndDatetime": 1661133599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 159,
+    "EnhanceCampaignTargetGroupId": 259,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1659924000000,
+    "EndDatetime": 1661133599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 161,
+    "EnhanceCampaignTargetGroupId": 261,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1660788000000,
+    "EndDatetime": 1662688799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 162,
+    "EnhanceCampaignTargetGroupId": 262,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1660788000000,
+    "EndDatetime": 1662688799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 170,
+    "EnhanceCampaignTargetGroupId": 131,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1660788000000,
+    "EndDatetime": 1661738399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 171,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1660788000000,
+    "EndDatetime": 1661738399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 172,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1660788000000,
+    "EndDatetime": 1661738399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 173,
+    "EnhanceCampaignTargetGroupId": 185,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1661479200000,
+    "EndDatetime": 1662688799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 174,
+    "EnhanceCampaignTargetGroupId": 165,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1661479200000,
+    "EndDatetime": 1662170399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 175,
+    "EnhanceCampaignTargetGroupId": 111,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1661479200000,
+    "EndDatetime": 1662170399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 176,
+    "EnhanceCampaignTargetGroupId": 170,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1662170400000,
+    "EndDatetime": 1662688799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 177,
+    "EnhanceCampaignTargetGroupId": 120,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1662170400000,
+    "EndDatetime": 1662688799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 182,
+    "EnhanceCampaignTargetGroupId": 282,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1661911200000,
+    "EndDatetime": 1662947999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 183,
+    "EnhanceCampaignTargetGroupId": 283,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1661911200000,
+    "EndDatetime": 1662947999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 184,
+    "EnhanceCampaignTargetGroupId": 284,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1662688800000,
+    "EndDatetime": 1665626399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 185,
+    "EnhanceCampaignTargetGroupId": 285,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1662688800000,
+    "EndDatetime": 1665626399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 186,
+    "EnhanceCampaignTargetGroupId": 111,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1663812000000,
+    "EndDatetime": 1665453599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 187,
+    "EnhanceCampaignTargetGroupId": 131,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 500,
+    "StartDatetime": 1666576800000,
+    "EndDatetime": 1667181599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 188,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1664290800000,
+    "EndDatetime": 1664377199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 189,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1664290800000,
+    "EndDatetime": 1664377199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 190,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1664157600000,
+    "EndDatetime": 1665021599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 191,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1664157600000,
+    "EndDatetime": 1665021599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 192,
+    "EnhanceCampaignTargetGroupId": 292,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1663293600000,
+    "EndDatetime": 1665626399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 193,
+    "EnhanceCampaignTargetGroupId": 293,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1663293600000,
+    "EndDatetime": 1665626399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 194,
+    "EnhanceCampaignTargetGroupId": 294,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1663812000000,
+    "EndDatetime": 1665453599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 195,
+    "EnhanceCampaignTargetGroupId": 295,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1663812000000,
+    "EndDatetime": 1665453599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 196,
+    "EnhanceCampaignTargetGroupId": 296,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1664503200000,
+    "EndDatetime": 1665626399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 197,
+    "EnhanceCampaignTargetGroupId": 297,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1664503200000,
+    "EndDatetime": 1665626399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 198,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1666058400000,
+    "EndDatetime": 1666835999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 199,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1666058400000,
+    "EndDatetime": 1666835999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 200,
+    "EnhanceCampaignTargetGroupId": 300,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1665626400000,
+    "EndDatetime": 1666576799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 201,
+    "EnhanceCampaignTargetGroupId": 301,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1665626400000,
+    "EndDatetime": 1666576799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 202,
+    "EnhanceCampaignTargetGroupId": 165,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1666317600000,
+    "EndDatetime": 1667786399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 203,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1666882800000,
+    "EndDatetime": 1666969199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 204,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1666882800000,
+    "EndDatetime": 1666969199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 205,
+    "EnhanceCampaignTargetGroupId": 305,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1666317600000,
+    "EndDatetime": 1667786399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 206,
+    "EnhanceCampaignTargetGroupId": 306,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1666317600000,
+    "EndDatetime": 1667786399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 207,
+    "EnhanceCampaignTargetGroupId": 307,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1667181600000,
+    "EndDatetime": 1668391199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 208,
+    "EnhanceCampaignTargetGroupId": 308,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1667181600000,
+    "EndDatetime": 1668391199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 209,
+    "EnhanceCampaignTargetGroupId": 309,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1668132000000,
+    "EndDatetime": 1670810399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 210,
+    "EnhanceCampaignTargetGroupId": 310,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1668132000000,
+    "EndDatetime": 1670810399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 211,
+    "EnhanceCampaignTargetGroupId": 131,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1668132000000,
+    "EndDatetime": 1669600799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 212,
+    "EnhanceCampaignTargetGroupId": 170,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1669082400000,
+    "EndDatetime": 1670205599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 213,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1669561200000,
+    "EndDatetime": 1669647599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 214,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1669561200000,
+    "EndDatetime": 1669647599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 215,
+    "EnhanceCampaignTargetGroupId": 131,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 500,
+    "StartDatetime": 1670205600000,
+    "EndDatetime": 1670810399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 216,
+    "EnhanceCampaignTargetGroupId": 316,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1669082400000,
+    "EndDatetime": 1670205599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 217,
+    "EnhanceCampaignTargetGroupId": 317,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1669082400000,
+    "EndDatetime": 1670205599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 218,
+    "EnhanceCampaignTargetGroupId": 318,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1669773600000,
+    "EndDatetime": 1672019999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 219,
+    "EnhanceCampaignTargetGroupId": 319,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1669773600000,
+    "EndDatetime": 1672019999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 220,
+    "EnhanceCampaignTargetGroupId": 320,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1670551200000,
+    "EndDatetime": 1672019999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 221,
+    "EnhanceCampaignTargetGroupId": 321,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1670551200000,
+    "EndDatetime": 1672019999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 222,
+    "EnhanceCampaignTargetGroupId": 322,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1671156000000,
+    "EndDatetime": 1672019999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 223,
+    "EnhanceCampaignTargetGroupId": 323,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1671156000000,
+    "EndDatetime": 1672019999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 224,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1672020000000,
+    "EndDatetime": 1673315999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 225,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1672153200000,
+    "EndDatetime": 1672239599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 226,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1672153200000,
+    "EndDatetime": 1672239599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 227,
+    "EnhanceCampaignTargetGroupId": 327,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1672020000000,
+    "EndDatetime": 1673315999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 228,
+    "EnhanceCampaignTargetGroupId": 328,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1672020000000,
+    "EndDatetime": 1673315999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 229,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1671760800000,
+    "EndDatetime": 1672019999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 230,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1671760800000,
+    "EndDatetime": 1672019999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 231,
+    "EnhanceCampaignTargetGroupId": 131,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1671760800000,
+    "EndDatetime": 1672019999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 232,
+    "EnhanceCampaignTargetGroupId": 131,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 500,
+    "StartDatetime": 1672624800000,
+    "EndDatetime": 1673229599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 234,
+    "EnhanceCampaignTargetGroupId": 334,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1672498800000,
+    "EndDatetime": 1673834399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 235,
+    "EnhanceCampaignTargetGroupId": 335,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1672498800000,
+    "EndDatetime": 1673834399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 236,
+    "EnhanceCampaignTargetGroupId": 336,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1672498800000,
+    "EndDatetime": 1673834399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 237,
+    "EnhanceCampaignTargetGroupId": 337,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1672498800000,
+    "EndDatetime": 1673834399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 238,
+    "EnhanceCampaignTargetGroupId": 338,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1673575200000,
+    "EndDatetime": 1675043999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 239,
+    "EnhanceCampaignTargetGroupId": 339,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1673575200000,
+    "EndDatetime": 1675043999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 240,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1674007200000,
+    "EndDatetime": 1675130399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 241,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1674007200000,
+    "EndDatetime": 1675130399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 242,
+    "EnhanceCampaignTargetGroupId": 342,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1674439200000,
+    "EndDatetime": 1676253599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 243,
+    "EnhanceCampaignTargetGroupId": 343,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1674439200000,
+    "EndDatetime": 1676253599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 244,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1674831600000,
+    "EndDatetime": 1674917999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 245,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1674831600000,
+    "EndDatetime": 1674917999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 246,
+    "EnhanceCampaignTargetGroupId": 120,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1674439200000,
+    "EndDatetime": 1676253599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 247,
+    "EnhanceCampaignTargetGroupId": 347,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1675130400000,
+    "EndDatetime": 1676253599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 248,
+    "EnhanceCampaignTargetGroupId": 348,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1675130400000,
+    "EndDatetime": 1676253599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 249,
+    "EnhanceCampaignTargetGroupId": 185,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1677204000000,
+    "EndDatetime": 1678067999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 250,
+    "EnhanceCampaignTargetGroupId": 131,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1674784800000,
+    "EndDatetime": 1675648799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 251,
+    "EnhanceCampaignTargetGroupId": 351,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1675648800000,
+    "EndDatetime": 1676858399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 252,
+    "EnhanceCampaignTargetGroupId": 352,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1675648800000,
+    "EndDatetime": 1676858399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 253,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1677510000000,
+    "EndDatetime": 1677596399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 254,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1677510000000,
+    "EndDatetime": 1677596399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 255,
+    "EnhanceCampaignTargetGroupId": 355,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1677204000000,
+    "EndDatetime": 1678067999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 256,
+    "EnhanceCampaignTargetGroupId": 356,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1677204000000,
+    "EndDatetime": 1678067999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 257,
+    "EnhanceCampaignTargetGroupId": 357,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1676685600000,
+    "EndDatetime": 1679450399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 258,
+    "EnhanceCampaignTargetGroupId": 358,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1676685600000,
+    "EndDatetime": 1679450399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 259,
+    "EnhanceCampaignTargetGroupId": 131,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1676685600000,
+    "EndDatetime": 1677549599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 260,
+    "EnhanceCampaignTargetGroupId": 360,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1677549600000,
+    "EndDatetime": 1679450399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 261,
+    "EnhanceCampaignTargetGroupId": 361,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1677549600000,
+    "EndDatetime": 1679450399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 262,
+    "EnhanceCampaignTargetGroupId": 131,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 500,
+    "StartDatetime": 1678068000000,
+    "EndDatetime": 1678672799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 263,
+    "EnhanceCampaignTargetGroupId": 363,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1678413600000,
+    "EndDatetime": 1679882399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 264,
+    "EnhanceCampaignTargetGroupId": 364,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1678413600000,
+    "EndDatetime": 1679882399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 265,
+    "EnhanceCampaignTargetGroupId": 131,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1681138800000,
+    "EndDatetime": 1682002799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 266,
+    "EnhanceCampaignTargetGroupId": 366,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1679454000000,
+    "EndDatetime": 1681091999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 267,
+    "EnhanceCampaignTargetGroupId": 367,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1679454000000,
+    "EndDatetime": 1681091999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 268,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1679929200000,
+    "EndDatetime": 1680015599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 269,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1679929200000,
+    "EndDatetime": 1680015599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 270,
+    "EnhanceCampaignTargetGroupId": 370,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1680228000000,
+    "EndDatetime": 1683511199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 271,
+    "EnhanceCampaignTargetGroupId": 371,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1680228000000,
+    "EndDatetime": 1683511199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 274,
+    "EnhanceCampaignTargetGroupId": 374,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1680832800000,
+    "EndDatetime": 1682301599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 275,
+    "EnhanceCampaignTargetGroupId": 375,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1680832800000,
+    "EndDatetime": 1682301599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 276,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1680228000000,
+    "EndDatetime": 1681351199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 277,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1680228000000,
+    "EndDatetime": 1681351199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 278,
+    "EnhanceCampaignTargetGroupId": 131,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1680228000000,
+    "EndDatetime": 1681351199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 279,
+    "EnhanceCampaignTargetGroupId": 379,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1682042400000,
+    "EndDatetime": 1683511199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 280,
+    "EnhanceCampaignTargetGroupId": 380,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1682042400000,
+    "EndDatetime": 1683511199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 281,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1682607600000,
+    "EndDatetime": 1682693999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 282,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1682607600000,
+    "EndDatetime": 1682693999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 283,
+    "EnhanceCampaignTargetGroupId": 131,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1683730800000,
+    "EndDatetime": 1684594799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 284,
+    "EnhanceCampaignTargetGroupId": 384,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1683511200000,
+    "EndDatetime": 1686275999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 285,
+    "EnhanceCampaignTargetGroupId": 385,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1683511200000,
+    "EndDatetime": 1686275999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 286,
+    "EnhanceCampaignTargetGroupId": 386,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1682647200000,
+    "EndDatetime": 1684115999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 287,
+    "EnhanceCampaignTargetGroupId": 387,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1682647200000,
+    "EndDatetime": 1684115999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 288,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1683511200000,
+    "EndDatetime": 1684720799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 289,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1683511200000,
+    "EndDatetime": 1684720799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 290,
+    "EnhanceCampaignTargetGroupId": 131,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1683511200000,
+    "EndDatetime": 1684720799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 291,
+    "EnhanceCampaignTargetGroupId": 391,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1683856800000,
+    "EndDatetime": 1685325599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 292,
+    "EnhanceCampaignTargetGroupId": 392,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1683856800000,
+    "EndDatetime": 1685325599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 293,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1684375200000,
+    "EndDatetime": 1685325599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 294,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1684375200000,
+    "EndDatetime": 1685325599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 295,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1685199600000,
+    "EndDatetime": 1685285999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 296,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1685199600000,
+    "EndDatetime": 1685285999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 297,
+    "EnhanceCampaignTargetGroupId": 397,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1685066400000,
+    "EndDatetime": 1686535199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 298,
+    "EnhanceCampaignTargetGroupId": 398,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1685066400000,
+    "EndDatetime": 1686535199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 299,
+    "EnhanceCampaignTargetGroupId": 399,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1685498400000,
+    "EndDatetime": 1687139999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 300,
+    "EnhanceCampaignTargetGroupId": 400,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1685498400000,
+    "EndDatetime": 1687139999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 301,
+    "EnhanceCampaignTargetGroupId": 131,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1686409200000,
+    "EndDatetime": 1688137199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 302,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1686276000000,
+    "EndDatetime": 1687139999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 303,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1686276000000,
+    "EndDatetime": 1687139999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 304,
+    "EnhanceCampaignTargetGroupId": 131,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1686276000000,
+    "EndDatetime": 1687139999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 305,
+    "EnhanceCampaignTargetGroupId": 405,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1686276000000,
+    "EndDatetime": 1689645599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 306,
+    "EnhanceCampaignTargetGroupId": 406,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1686276000000,
+    "EndDatetime": 1689645599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 308,
+    "EnhanceCampaignTargetGroupId": 408,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1686880800000,
+    "EndDatetime": 1688349599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 309,
+    "EnhanceCampaignTargetGroupId": 409,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1687485600000,
+    "EndDatetime": 1689645599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 310,
+    "EnhanceCampaignTargetGroupId": 410,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1687485600000,
+    "EndDatetime": 1688954399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 311,
+    "EnhanceCampaignTargetGroupId": 411,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1687485600000,
+    "EndDatetime": 1688954399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 312,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1687878000000,
+    "EndDatetime": 1687964399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 313,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1687878000000,
+    "EndDatetime": 1687964399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 314,
+    "EnhanceCampaignTargetGroupId": 414,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1688090400000,
+    "EndDatetime": 1691373599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 315,
+    "EnhanceCampaignTargetGroupId": 415,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1688090400000,
+    "EndDatetime": 1691373599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 316,
+    "EnhanceCampaignTargetGroupId": 416,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1688090400000,
+    "EndDatetime": 1691373599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 317,
+    "EnhanceCampaignTargetGroupId": 417,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1688090400000,
+    "EndDatetime": 1691373599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 318,
+    "EnhanceCampaignTargetGroupId": 131,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1689001200000,
+    "EndDatetime": 1689865199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 319,
+    "EnhanceCampaignTargetGroupId": 419,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1689300000000,
+    "EndDatetime": 1691373599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 320,
+    "EnhanceCampaignTargetGroupId": 420,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1689300000000,
+    "EndDatetime": 1691373599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 322,
+    "EnhanceCampaignTargetGroupId": 422,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1688695200000,
+    "EndDatetime": 1690163999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 323,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1689818400000,
+    "EndDatetime": 1690768799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 324,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1689818400000,
+    "EndDatetime": 1690768799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 325,
+    "EnhanceCampaignTargetGroupId": 425,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1690164000000,
+    "EndDatetime": 1691373599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 326,
+    "EnhanceCampaignTargetGroupId": 426,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1690164000000,
+    "EndDatetime": 1691373599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 327,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1690470000000,
+    "EndDatetime": 1690556399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 328,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1690470000000,
+    "EndDatetime": 1690556399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 329,
+    "EnhanceCampaignTargetGroupId": 429,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1690768800000,
+    "EndDatetime": 1691978399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 330,
+    "EnhanceCampaignTargetGroupId": 430,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1690768800000,
+    "EndDatetime": 1691978399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 331,
+    "EnhanceCampaignTargetGroupId": 431,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1691114400000,
+    "EndDatetime": 1692313199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 332,
+    "EnhanceCampaignTargetGroupId": 432,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1691114400000,
+    "EndDatetime": 1692313199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 333,
+    "EnhanceCampaignTargetGroupId": 433,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1691719200000,
+    "EndDatetime": 1692313199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 334,
+    "EnhanceCampaignTargetGroupId": 434,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1691719200000,
+    "EndDatetime": 1692313199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 335,
+    "EnhanceCampaignTargetGroupId": 131,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1691679600000,
+    "EndDatetime": 1692543599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 336,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1693148400000,
+    "EndDatetime": 1693234799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 337,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1693148400000,
+    "EndDatetime": 1693234799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 338,
+    "EnhanceCampaignTargetGroupId": 438,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1692324000000,
+    "EndDatetime": 1694397599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 339,
+    "EnhanceCampaignTargetGroupId": 439,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1692324000000,
+    "EndDatetime": 1694397599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 340,
+    "EnhanceCampaignTargetGroupId": 440,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1692928800000,
+    "EndDatetime": 1694397599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 341,
+    "EnhanceCampaignTargetGroupId": 441,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1692928800000,
+    "EndDatetime": 1694397599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 342,
+    "EnhanceCampaignTargetGroupId": 442,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1693447200000,
+    "EndDatetime": 1695088799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 343,
+    "EnhanceCampaignTargetGroupId": 443,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1693447200000,
+    "EndDatetime": 1695088799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 344,
+    "EnhanceCampaignTargetGroupId": 131,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1694358000000,
+    "EndDatetime": 1695221999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 345,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1694138400000,
+    "EndDatetime": 1695952799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 346,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1694138400000,
+    "EndDatetime": 1695952799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 347,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1695826800000,
+    "EndDatetime": 1695913199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 348,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1695826800000,
+    "EndDatetime": 1695913199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 349,
+    "EnhanceCampaignTargetGroupId": 449,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1694138400000,
+    "EndDatetime": 1696557599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 350,
+    "EnhanceCampaignTargetGroupId": 450,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1694138400000,
+    "EndDatetime": 1696557599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 351,
+    "EnhanceCampaignTargetGroupId": 451,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1694743200000,
+    "EndDatetime": 1696557599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 352,
+    "EnhanceCampaignTargetGroupId": 452,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1694743200000,
+    "EndDatetime": 1696557599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 353,
+    "EnhanceCampaignTargetGroupId": 453,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1695348000000,
+    "EndDatetime": 1696557599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 354,
+    "EnhanceCampaignTargetGroupId": 454,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1695348000000,
+    "EndDatetime": 1696557599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 355,
+    "EnhanceCampaignTargetGroupId": 455,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1695607200000,
+    "EndDatetime": 1696903199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 356,
+    "EnhanceCampaignTargetGroupId": 456,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1695607200000,
+    "EndDatetime": 1696903199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 357,
+    "EnhanceCampaignTargetGroupId": 131,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1696950000000,
+    "EndDatetime": 1697813999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 358,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1695866400000,
+    "EndDatetime": 1696903199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 359,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1695866400000,
+    "EndDatetime": 1696903199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 360,
+    "EnhanceCampaignTargetGroupId": 457,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1695866400000,
+    "EndDatetime": 1697421599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 361,
+    "EnhanceCampaignTargetGroupId": 458,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1695866400000,
+    "EndDatetime": 1697421599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 362,
+    "EnhanceCampaignTargetGroupId": 459,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1698372000000,
+    "EndDatetime": 1699235999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 363,
+    "EnhanceCampaignTargetGroupId": 460,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1698372000000,
+    "EndDatetime": 1699235999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 364,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1698418800000,
+    "EndDatetime": 1698505199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 365,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1698418800000,
+    "EndDatetime": 1698505199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 366,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1696557600000,
+    "EndDatetime": 1698371999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 367,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1696557600000,
+    "EndDatetime": 1698371999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 368,
+    "EnhanceCampaignTargetGroupId": 461,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1698026400000,
+    "EndDatetime": 1699235999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 369,
+    "EnhanceCampaignTargetGroupId": 462,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1698026400000,
+    "EndDatetime": 1699235999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 370,
+    "EnhanceCampaignTargetGroupId": 131,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1699628400000,
+    "EndDatetime": 1700492399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 371,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1701097200000,
+    "EndDatetime": 1701183599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 372,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1701097200000,
+    "EndDatetime": 1701183599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 373,
+    "EnhanceCampaignTargetGroupId": 463,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1699581600000,
+    "EndDatetime": 1700791199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 374,
+    "EnhanceCampaignTargetGroupId": 464,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1699581600000,
+    "EndDatetime": 1700791199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 375,
+    "EnhanceCampaignTargetGroupId": 465,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1698717600000,
+    "EndDatetime": 1700445599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 376,
+    "EnhanceCampaignTargetGroupId": 466,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1698717600000,
+    "EndDatetime": 1700445599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 377,
+    "EnhanceCampaignTargetGroupId": 467,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1700186400000,
+    "EndDatetime": 1701655199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 378,
+    "EnhanceCampaignTargetGroupId": 468,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1700186400000,
+    "EndDatetime": 1701655199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 379,
+    "EnhanceCampaignTargetGroupId": 131,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1702220400000,
+    "EndDatetime": 1703084399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 380,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1701136800000,
+    "EndDatetime": 1702173599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 381,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1701136800000,
+    "EndDatetime": 1702173599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 382,
+    "EnhanceCampaignTargetGroupId": 469,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1701309600000,
+    "EndDatetime": 1704034799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 383,
+    "EnhanceCampaignTargetGroupId": 470,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1701309600000,
+    "EndDatetime": 1704034799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 384,
+    "EnhanceCampaignTargetGroupId": 471,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1702000800000,
+    "EndDatetime": 1704034799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 385,
+    "EnhanceCampaignTargetGroupId": 472,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1702000800000,
+    "EndDatetime": 1704034799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 386,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1703689200000,
+    "EndDatetime": 1703775599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 387,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1703689200000,
+    "EndDatetime": 1703775599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 388,
+    "EnhanceCampaignTargetGroupId": 131,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1704898800000,
+    "EndDatetime": 1705762799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 389,
+    "EnhanceCampaignTargetGroupId": 475,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1703210400000,
+    "EndDatetime": 1704034799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 390,
+    "EnhanceCampaignTargetGroupId": 476,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1703210400000,
+    "EndDatetime": 1704034799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 391,
+    "EnhanceCampaignTargetGroupId": 473,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1702605600000,
+    "EndDatetime": 1704034799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 392,
+    "EnhanceCampaignTargetGroupId": 474,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1702605600000,
+    "EndDatetime": 1704034799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 393,
+    "EnhanceCampaignTargetGroupId": 477,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1704034800000,
+    "EndDatetime": 1706666399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 394,
+    "EnhanceCampaignTargetGroupId": 478,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1704034800000,
+    "EndDatetime": 1706666399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 395,
+    "EnhanceCampaignTargetGroupId": 479,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1704420000000,
+    "EndDatetime": 1705888799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 396,
+    "EnhanceCampaignTargetGroupId": 480,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1704420000000,
+    "EndDatetime": 1705888799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 397,
+    "EnhanceCampaignTargetGroupId": 481,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1705024800000,
+    "EndDatetime": 1706493599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 398,
+    "EnhanceCampaignTargetGroupId": 482,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1705024800000,
+    "EndDatetime": 1706493599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 399,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1706367600000,
+    "EndDatetime": 1706453999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 400,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1706367600000,
+    "EndDatetime": 1706453999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 401,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1705975200000,
+    "EndDatetime": 1707098399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 402,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1705975200000,
+    "EndDatetime": 1707098399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 405,
+    "EnhanceCampaignTargetGroupId": 131,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1707577200000,
+    "EndDatetime": 1708441199000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 406,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1709046000000,
+    "EndDatetime": 1709132399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 407,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1709046000000,
+    "EndDatetime": 1709132399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 408,
+    "EnhanceCampaignTargetGroupId": 484,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1706666400000,
+    "EndDatetime": 1708221599000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 409,
+    "EnhanceCampaignTargetGroupId": 131,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1710082800000,
+    "EndDatetime": 1710946799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 410,
+    "EnhanceCampaignTargetGroupId": 131,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1711897200000,
+    "EndDatetime": 1714456799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 411,
+    "EnhanceCampaignTargetGroupId": 485,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1708221600000,
+    "EndDatetime": 1714456799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 412,
+    "EnhanceCampaignTargetGroupId": 486,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1708221600000,
+    "EndDatetime": 1714456799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 413,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1711677600000,
+    "EndDatetime": 1714456799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 414,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1711677600000,
+    "EndDatetime": 1714456799000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 415,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1714230000000,
+    "EndDatetime": 1714316399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 416,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1714230000000,
+    "EndDatetime": 1714316399000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 417,
+    "EnhanceCampaignTargetGroupId": 101,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1711551600000,
+    "EndDatetime": 1711637999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 418,
+    "EnhanceCampaignTargetGroupId": 102,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1711551600000,
+    "EndDatetime": 1711637999000,
+    "TargetUserStatusType": 1,
+    "SortOrder": 0
+  },
+  {
+    "EnhanceCampaignId": 10001,
+    "EnhanceCampaignTargetGroupId": 10001,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 400,
+    "StartDatetime": 1649988000000,
+    "EndDatetime": 2262869999000,
+    "TargetUserStatusType": 2,
+    "SortOrder": 2
+  },
+  {
+    "EnhanceCampaignId": 20001,
+    "EnhanceCampaignTargetGroupId": 20001,
+    "EnhanceCampaignEffectType": 2,
+    "EnhanceCampaignEffectValue": 800,
+    "StartDatetime": 1649988000000,
+    "EndDatetime": 2262869999000,
+    "TargetUserStatusType": 3,
+    "SortOrder": 2
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "TitleStillGroupId": 101,
+    "DisplayStillCount": 10,
+    "Weight": 100,
+    "Priority": 3
+  },
+  {
+    "TitleStillGroupId": 201,
+    "DisplayStillCount": 6,
+    "Weight": 150,
+    "Priority": 2
+  },
+  {
+    "TitleStillGroupId": 301,
+    "DisplayStillCount": 6,
+    "Weight": 250,
+    "Priority": 1
+  }
+]

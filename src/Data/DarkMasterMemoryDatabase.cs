@@ -1,1220 +1,1221 @@
-using MariesWonderland.Models.Tables;
+using MariesWonderland.Models.Entities;
 
-namespace NierReincarnation.Core.Dark;
+namespace MariesWonderland.Data;
 
-public sealed class DarkMasterMemoryDatabase
+public class DarkMasterMemoryDatabase
 {
-    public EntityMAbilityTable EntityMAbilityTable { get; }
+    public List<EntityMAbility> EntityMAbility { get; set; } = [];
 
-    public EntityMAbilityBehaviourTable EntityMAbilityBehaviourTable { get; }
+    public List<EntityMAbilityBehaviour> EntityMAbilityBehaviour { get; set; } = [];
 
-    public EntityMAbilityBehaviourActionBlessTable EntityMAbilityBehaviourActionBlessTable { get; }
+    public List<EntityMAbilityBehaviourActionBless> EntityMAbilityBehaviourActionBless { get; set; } = [];
 
-    public EntityMAbilityBehaviourActionPassiveSkillTable EntityMAbilityBehaviourActionPassiveSkillTable { get; }
+    public List<EntityMAbilityBehaviourActionPassiveSkill> EntityMAbilityBehaviourActionPassiveSkill { get; set; } = [];
 
-    public EntityMAbilityBehaviourActionStatusTable EntityMAbilityBehaviourActionStatusTable { get; }
+    public List<EntityMAbilityBehaviourActionStatus> EntityMAbilityBehaviourActionStatus { get; set; } = [];
 
-    public EntityMAbilityBehaviourActionStatusDownTable EntityMAbilityBehaviourActionStatusDownTable { get; }
+    public List<EntityMAbilityBehaviourActionStatusDown> EntityMAbilityBehaviourActionStatusDown { get; set; } = [];
 
-    public EntityMAbilityBehaviourGroupTable EntityMAbilityBehaviourGroupTable { get; }
+    public List<EntityMAbilityBehaviourGroup> EntityMAbilityBehaviourGroup { get; set; } = [];
 
-    public EntityMAbilityDetailTable EntityMAbilityDetailTable { get; }
+    public List<EntityMAbilityDetail> EntityMAbilityDetail { get; set; } = [];
 
-    public EntityMAbilityLevelGroupTable EntityMAbilityLevelGroupTable { get; }
+    public List<EntityMAbilityLevelGroup> EntityMAbilityLevelGroup { get; set; } = [];
 
-    public EntityMAbilityStatusTable EntityMAbilityStatusTable { get; }
+    public List<EntityMAbilityStatus> EntityMAbilityStatus { get; set; } = [];
 
-    public EntityMActorTable EntityMActorTable { get; }
+    public List<EntityMActor> EntityMActor { get; set; } = [];
 
-    public EntityMActorAnimationTable EntityMActorAnimationTable { get; }
+    public List<EntityMActorAnimation> EntityMActorAnimation { get; set; } = [];
 
-    public EntityMActorAnimationCategoryTable EntityMActorAnimationCategoryTable { get; }
+    public List<EntityMActorAnimationCategory> EntityMActorAnimationCategory { get; set; } = [];
 
-    public EntityMActorAnimationControllerTable EntityMActorAnimationControllerTable { get; }
+    public List<EntityMActorAnimationController> EntityMActorAnimationController { get; set; } = [];
 
-    public EntityMActorObjectTable EntityMActorObjectTable { get; }
+    public List<EntityMActorObject> EntityMActorObject { get; set; } = [];
 
-    public EntityMAppealDialogTable EntityMAppealDialogTable { get; }
+    public List<EntityMAppealDialog> EntityMAppealDialog { get; set; } = [];
 
-    public EntityMAssetBackgroundTable EntityMAssetBackgroundTable { get; }
+    public List<EntityMAssetBackground> EntityMAssetBackground { get; set; } = [];
 
-    public EntityMAssetCalculatorTable EntityMAssetCalculatorTable { get; }
+    public List<EntityMAssetCalculator> EntityMAssetCalculator { get; set; } = [];
 
-    public EntityMAssetDataSettingTable EntityMAssetDataSettingTable { get; }
+    public List<EntityMAssetDataSetting> EntityMAssetDataSetting { get; set; } = [];
 
-    public EntityMAssetEffectTable EntityMAssetEffectTable { get; }
+    public List<EntityMAssetEffect> EntityMAssetEffect { get; set; } = [];
 
-    public EntityMAssetGradeIconTable EntityMAssetGradeIconTable { get; }
+    public List<EntityMAssetGradeIcon> EntityMAssetGradeIcon { get; set; } = [];
 
-    public EntityMAssetTimelineTable EntityMAssetTimelineTable { get; }
+    public List<EntityMAssetTimeline> EntityMAssetTimeline { get; set; } = [];
 
-    public EntityMAssetTurnbattlePrefabTable EntityMAssetTurnbattlePrefabTable { get; }
+    public List<EntityMAssetTurnbattlePrefab> EntityMAssetTurnbattlePrefab { get; set; } = [];
 
-    public EntityMBattleTable EntityMBattleTable { get; }
+    public List<EntityMBattle> EntityMBattle { get; set; } = [];
 
-    public EntityMBattleActorAiTable EntityMBattleActorAiTable { get; }
+    public List<EntityMBattleActorAi> EntityMBattleActorAi { get; set; } = [];
 
-    public EntityMBattleActorSkillAiGroupTable EntityMBattleActorSkillAiGroupTable { get; }
+    public List<EntityMBattleActorSkillAiGroup> EntityMBattleActorSkillAiGroup { get; set; } = [];
 
-    public EntityMBattleAdditionalAbilityTable EntityMBattleAdditionalAbilityTable { get; }
+    public List<EntityMBattleAdditionalAbility> EntityMBattleAdditionalAbility { get; set; } = [];
 
-    public EntityMBattleAttributeDamageCoefficientDefineTable EntityMBattleAttributeDamageCoefficientDefineTable { get; }
+    public List<EntityMBattleAttributeDamageCoefficientDefine> EntityMBattleAttributeDamageCoefficientDefine { get; set; } = [];
 
-    public EntityMBattleAttributeDamageCoefficientGroupTable EntityMBattleAttributeDamageCoefficientGroupTable { get; }
+    public List<EntityMBattleAttributeDamageCoefficientGroup> EntityMBattleAttributeDamageCoefficientGroup { get; set; } = [];
 
-    public EntityMBattleBgmSetTable EntityMBattleBgmSetTable { get; }
+    public List<EntityMBattleBgmSet> EntityMBattleBgmSet { get; set; } = [];
 
-    public EntityMBattleBgmSetGroupTable EntityMBattleBgmSetGroupTable { get; }
+    public List<EntityMBattleBgmSetGroup> EntityMBattleBgmSetGroup { get; set; } = [];
 
-    public EntityMBattleBigHuntTable EntityMBattleBigHuntTable { get; }
+    public List<EntityMBattleBigHunt> EntityMBattleBigHunt { get; set; } = [];
 
-    public EntityMBattleBigHuntDamageThresholdGroupTable EntityMBattleBigHuntDamageThresholdGroupTable { get; }
+    public List<EntityMBattleBigHuntDamageThresholdGroup> EntityMBattleBigHuntDamageThresholdGroup { get; set; } = [];
 
-    public EntityMBattleBigHuntKnockDownGaugeValueConfigGroupTable EntityMBattleBigHuntKnockDownGaugeValueConfigGroupTable { get; }
+    public List<EntityMBattleBigHuntKnockDownGaugeValueConfigGroup> EntityMBattleBigHuntKnockDownGaugeValueConfigGroup { get; set; } = [];
 
-    public EntityMBattleBigHuntPhaseGroupTable EntityMBattleBigHuntPhaseGroupTable { get; }
+    public List<EntityMBattleBigHuntPhaseGroup> EntityMBattleBigHuntPhaseGroup { get; set; } = [];
 
-    public EntityMBattleCompanionSkillAiGroupTable EntityMBattleCompanionSkillAiGroupTable { get; }
+    public List<EntityMBattleCompanionSkillAiGroup> EntityMBattleCompanionSkillAiGroup { get; set; } = [];
 
-    public EntityMBattleCostumeSkillFireActTable EntityMBattleCostumeSkillFireActTable { get; }
+    public List<EntityMBattleCostumeSkillFireAct> EntityMBattleCostumeSkillFireAct { get; set; } = [];
 
-    public EntityMBattleCostumeSkillSeTable EntityMBattleCostumeSkillSeTable { get; }
+    public List<EntityMBattleCostumeSkillSe> EntityMBattleCostumeSkillSe { get; set; } = [];
 
-    public EntityMBattleDropRewardTable EntityMBattleDropRewardTable { get; }
+    public List<EntityMBattleDropReward> EntityMBattleDropReward { get; set; } = [];
 
-    public EntityMBattleEnemySizeTypeConfigTable EntityMBattleEnemySizeTypeConfigTable { get; }
+    public List<EntityMBattleEnemySizeTypeConfig> EntityMBattleEnemySizeTypeConfig { get; set; } = [];
 
-    public EntityMBattleEventTable EntityMBattleEventTable { get; }
+    public List<EntityMBattleEvent> EntityMBattleEvent { get; set; } = [];
 
-    public EntityMBattleEventGroupTable EntityMBattleEventGroupTable { get; }
+    public List<EntityMBattleEventGroup> EntityMBattleEventGroup { get; set; } = [];
 
-    public EntityMBattleEventReceiverBehaviourGroupTable EntityMBattleEventReceiverBehaviourGroupTable { get; }
+    public List<EntityMBattleEventReceiverBehaviourGroup> EntityMBattleEventReceiverBehaviourGroup { get; set; } = [];
 
-    public EntityMBattleEventReceiverBehaviourHudActSequenceTable EntityMBattleEventReceiverBehaviourHudActSequenceTable { get; }
+    public List<EntityMBattleEventReceiverBehaviourHudActSequence> EntityMBattleEventReceiverBehaviourHudActSequence { get; set; } = [];
 
-    public EntityMBattleEventReceiverBehaviourRadioMessageTable EntityMBattleEventReceiverBehaviourRadioMessageTable { get; }
+    public List<EntityMBattleEventReceiverBehaviourRadioMessage> EntityMBattleEventReceiverBehaviourRadioMessage { get; set; } = [];
 
-    public EntityMBattleEventTriggerBehaviourBattleStartTable EntityMBattleEventTriggerBehaviourBattleStartTable { get; }
+    public List<EntityMBattleEventTriggerBehaviourBattleStart> EntityMBattleEventTriggerBehaviourBattleStart { get; set; } = [];
 
-    public EntityMBattleEventTriggerBehaviourGroupTable EntityMBattleEventTriggerBehaviourGroupTable { get; }
+    public List<EntityMBattleEventTriggerBehaviourGroup> EntityMBattleEventTriggerBehaviourGroup { get; set; } = [];
 
-    public EntityMBattleEventTriggerBehaviourWaveStartTable EntityMBattleEventTriggerBehaviourWaveStartTable { get; }
+    public List<EntityMBattleEventTriggerBehaviourWaveStart> EntityMBattleEventTriggerBehaviourWaveStart { get; set; } = [];
 
-    public EntityMBattleGeneralViewConfigurationTable EntityMBattleGeneralViewConfigurationTable { get; }
+    public List<EntityMBattleGeneralViewConfiguration> EntityMBattleGeneralViewConfiguration { get; set; } = [];
 
-    public EntityMBattleGroupTable EntityMBattleGroupTable { get; }
+    public List<EntityMBattleGroup> EntityMBattleGroup { get; set; } = [];
 
-    public EntityMBattleNpcTable EntityMBattleNpcTable { get; }
+    public List<EntityMBattleNpc> EntityMBattleNpc { get; set; } = [];
 
-    public EntityMBattleNpcCharacterTable EntityMBattleNpcCharacterTable { get; }
+    public List<EntityMBattleNpcCharacter> EntityMBattleNpcCharacter { get; set; } = [];
 
-    public EntityMBattleNpcCharacterBoardTable EntityMBattleNpcCharacterBoardTable { get; }
+    public List<EntityMBattleNpcCharacterBoard> EntityMBattleNpcCharacterBoard { get; set; } = [];
 
-    public EntityMBattleNpcCharacterBoardAbilityTable EntityMBattleNpcCharacterBoardAbilityTable { get; }
+    public List<EntityMBattleNpcCharacterBoardAbility> EntityMBattleNpcCharacterBoardAbility { get; set; } = [];
 
-    public EntityMBattleNpcCharacterBoardCompleteRewardTable EntityMBattleNpcCharacterBoardCompleteRewardTable { get; }
+    public List<EntityMBattleNpcCharacterBoardCompleteReward> EntityMBattleNpcCharacterBoardCompleteReward { get; set; } = [];
 
-    public EntityMBattleNpcCharacterBoardStatusUpTable EntityMBattleNpcCharacterBoardStatusUpTable { get; }
+    public List<EntityMBattleNpcCharacterBoardStatusUp> EntityMBattleNpcCharacterBoardStatusUp { get; set; } = [];
 
-    public EntityMBattleNpcCharacterCostumeLevelBonusTable EntityMBattleNpcCharacterCostumeLevelBonusTable { get; }
+    public List<EntityMBattleNpcCharacterCostumeLevelBonus> EntityMBattleNpcCharacterCostumeLevelBonus { get; set; } = [];
 
-    public EntityMBattleNpcCharacterRebirthTable EntityMBattleNpcCharacterRebirthTable { get; }
+    public List<EntityMBattleNpcCharacterRebirth> EntityMBattleNpcCharacterRebirth { get; set; } = [];
 
-    public EntityMBattleNpcCharacterViewerFieldTable EntityMBattleNpcCharacterViewerFieldTable { get; }
+    public List<EntityMBattleNpcCharacterViewerField> EntityMBattleNpcCharacterViewerField { get; set; } = [];
 
-    public EntityMBattleNpcCompanionTable EntityMBattleNpcCompanionTable { get; }
+    public List<EntityMBattleNpcCompanion> EntityMBattleNpcCompanion { get; set; } = [];
 
-    public EntityMBattleNpcCostumeTable EntityMBattleNpcCostumeTable { get; }
+    public List<EntityMBattleNpcCostume> EntityMBattleNpcCostume { get; set; } = [];
 
-    public EntityMBattleNpcCostumeActiveSkillTable EntityMBattleNpcCostumeActiveSkillTable { get; }
+    public List<EntityMBattleNpcCostumeActiveSkill> EntityMBattleNpcCostumeActiveSkill { get; set; } = [];
 
-    public EntityMBattleNpcCostumeAwakenStatusUpTable EntityMBattleNpcCostumeAwakenStatusUpTable { get; }
+    public List<EntityMBattleNpcCostumeAwakenStatusUp> EntityMBattleNpcCostumeAwakenStatusUp { get; set; } = [];
 
-    public EntityMBattleNpcCostumeLevelBonusReevaluateTable EntityMBattleNpcCostumeLevelBonusReevaluateTable { get; }
+    public List<EntityMBattleNpcCostumeLevelBonusReevaluate> EntityMBattleNpcCostumeLevelBonusReevaluate { get; set; } = [];
 
-    public EntityMBattleNpcCostumeLevelBonusReleaseStatusTable EntityMBattleNpcCostumeLevelBonusReleaseStatusTable { get; }
+    public List<EntityMBattleNpcCostumeLevelBonusReleaseStatus> EntityMBattleNpcCostumeLevelBonusReleaseStatus { get; set; } = [];
 
-    public EntityMBattleNpcCostumeLotteryEffectTable EntityMBattleNpcCostumeLotteryEffectTable { get; }
+    public List<EntityMBattleNpcCostumeLotteryEffect> EntityMBattleNpcCostumeLotteryEffect { get; set; } = [];
 
-    public EntityMBattleNpcCostumeLotteryEffectAbilityTable EntityMBattleNpcCostumeLotteryEffectAbilityTable { get; }
+    public List<EntityMBattleNpcCostumeLotteryEffectAbility> EntityMBattleNpcCostumeLotteryEffectAbility { get; set; } = [];
 
-    public EntityMBattleNpcCostumeLotteryEffectPendingTable EntityMBattleNpcCostumeLotteryEffectPendingTable { get; }
+    public List<EntityMBattleNpcCostumeLotteryEffectPending> EntityMBattleNpcCostumeLotteryEffectPending { get; set; } = [];
 
-    public EntityMBattleNpcCostumeLotteryEffectStatusUpTable EntityMBattleNpcCostumeLotteryEffectStatusUpTable { get; }
+    public List<EntityMBattleNpcCostumeLotteryEffectStatusUp> EntityMBattleNpcCostumeLotteryEffectStatusUp { get; set; } = [];
 
-    public EntityMBattleNpcDeckTable EntityMBattleNpcDeckTable { get; }
+    public List<EntityMBattleNpcDeck> EntityMBattleNpcDeck { get; set; } = [];
 
-    public EntityMBattleNpcDeckBackupTable EntityMBattleNpcDeckBackupTable { get; }
+    public List<EntityMBattleNpcDeckBackup> EntityMBattleNpcDeckBackup { get; set; } = [];
 
-    public EntityMBattleNpcDeckCharacterTable EntityMBattleNpcDeckCharacterTable { get; }
+    public List<EntityMBattleNpcDeckCharacter> EntityMBattleNpcDeckCharacter { get; set; } = [];
 
-    public EntityMBattleNpcDeckCharacterDressupCostumeTable EntityMBattleNpcDeckCharacterDressupCostumeTable { get; }
+    public List<EntityMBattleNpcDeckCharacterDressupCostume> EntityMBattleNpcDeckCharacterDressupCostume { get; set; } = [];
 
-    public EntityMBattleNpcDeckCharacterDropCategoryTable EntityMBattleNpcDeckCharacterDropCategoryTable { get; }
+    public List<EntityMBattleNpcDeckCharacterDropCategory> EntityMBattleNpcDeckCharacterDropCategory { get; set; } = [];
 
-    public EntityMBattleNpcDeckCharacterTypeTable EntityMBattleNpcDeckCharacterTypeTable { get; }
+    public List<EntityMBattleNpcDeckCharacterType> EntityMBattleNpcDeckCharacterType { get; set; } = [];
 
-    public EntityMBattleNpcDeckLimitContentBackupTable EntityMBattleNpcDeckLimitContentBackupTable { get; }
+    public List<EntityMBattleNpcDeckLimitContentBackup> EntityMBattleNpcDeckLimitContentBackup { get; set; } = [];
 
-    public EntityMBattleNpcDeckLimitContentBackupRestoredTable EntityMBattleNpcDeckLimitContentBackupRestoredTable { get; }
+    public List<EntityMBattleNpcDeckLimitContentBackupRestored> EntityMBattleNpcDeckLimitContentBackupRestored { get; set; } = [];
 
-    public EntityMBattleNpcDeckLimitContentDeletedCharacterTable EntityMBattleNpcDeckLimitContentDeletedCharacterTable { get; }
+    public List<EntityMBattleNpcDeckLimitContentDeletedCharacter> EntityMBattleNpcDeckLimitContentDeletedCharacter { get; set; } = [];
 
-    public EntityMBattleNpcDeckLimitContentRestrictedTable EntityMBattleNpcDeckLimitContentRestrictedTable { get; }
+    public List<EntityMBattleNpcDeckLimitContentRestricted> EntityMBattleNpcDeckLimitContentRestricted { get; set; } = [];
 
-    public EntityMBattleNpcDeckPartsGroupTable EntityMBattleNpcDeckPartsGroupTable { get; }
+    public List<EntityMBattleNpcDeckPartsGroup> EntityMBattleNpcDeckPartsGroup { get; set; } = [];
 
-    public EntityMBattleNpcDeckSubWeaponGroupTable EntityMBattleNpcDeckSubWeaponGroupTable { get; }
+    public List<EntityMBattleNpcDeckSubWeaponGroup> EntityMBattleNpcDeckSubWeaponGroup { get; set; } = [];
 
-    public EntityMBattleNpcDeckTypeNoteTable EntityMBattleNpcDeckTypeNoteTable { get; }
+    public List<EntityMBattleNpcDeckTypeNote> EntityMBattleNpcDeckTypeNote { get; set; } = [];
 
-    public EntityMBattleNpcPartsTable EntityMBattleNpcPartsTable { get; }
+    public List<EntityMBattleNpcParts> EntityMBattleNpcParts { get; set; } = [];
 
-    public EntityMBattleNpcPartsGroupNoteTable EntityMBattleNpcPartsGroupNoteTable { get; }
+    public List<EntityMBattleNpcPartsGroupNote> EntityMBattleNpcPartsGroupNote { get; set; } = [];
 
-    public EntityMBattleNpcPartsPresetTable EntityMBattleNpcPartsPresetTable { get; }
+    public List<EntityMBattleNpcPartsPreset> EntityMBattleNpcPartsPreset { get; set; } = [];
 
-    public EntityMBattleNpcPartsPresetTagTable EntityMBattleNpcPartsPresetTagTable { get; }
+    public List<EntityMBattleNpcPartsPresetTag> EntityMBattleNpcPartsPresetTag { get; set; } = [];
 
-    public EntityMBattleNpcPartsStatusSubTable EntityMBattleNpcPartsStatusSubTable { get; }
+    public List<EntityMBattleNpcPartsStatusSub> EntityMBattleNpcPartsStatusSub { get; set; } = [];
 
-    public EntityMBattleNpcSpecialEndActTable EntityMBattleNpcSpecialEndActTable { get; }
+    public List<EntityMBattleNpcSpecialEndAct> EntityMBattleNpcSpecialEndAct { get; set; } = [];
 
-    public EntityMBattleNpcWeaponTable EntityMBattleNpcWeaponTable { get; }
+    public List<EntityMBattleNpcWeapon> EntityMBattleNpcWeapon { get; set; } = [];
 
-    public EntityMBattleNpcWeaponAbilityTable EntityMBattleNpcWeaponAbilityTable { get; }
+    public List<EntityMBattleNpcWeaponAbility> EntityMBattleNpcWeaponAbility { get; set; } = [];
 
-    public EntityMBattleNpcWeaponAbilityReevaluateTable EntityMBattleNpcWeaponAbilityReevaluateTable { get; }
+    public List<EntityMBattleNpcWeaponAbilityReevaluate> EntityMBattleNpcWeaponAbilityReevaluate { get; set; } = [];
 
-    public EntityMBattleNpcWeaponAwakenTable EntityMBattleNpcWeaponAwakenTable { get; }
+    public List<EntityMBattleNpcWeaponAwaken> EntityMBattleNpcWeaponAwaken { get; set; } = [];
 
-    public EntityMBattleNpcWeaponNoteTable EntityMBattleNpcWeaponNoteTable { get; }
+    public List<EntityMBattleNpcWeaponNote> EntityMBattleNpcWeaponNote { get; set; } = [];
 
-    public EntityMBattleNpcWeaponNoteReevaluateTable EntityMBattleNpcWeaponNoteReevaluateTable { get; }
+    public List<EntityMBattleNpcWeaponNoteReevaluate> EntityMBattleNpcWeaponNoteReevaluate { get; set; } = [];
 
-    public EntityMBattleNpcWeaponSkillTable EntityMBattleNpcWeaponSkillTable { get; }
+    public List<EntityMBattleNpcWeaponSkill> EntityMBattleNpcWeaponSkill { get; set; } = [];
 
-    public EntityMBattleNpcWeaponStoryTable EntityMBattleNpcWeaponStoryTable { get; }
+    public List<EntityMBattleNpcWeaponStory> EntityMBattleNpcWeaponStory { get; set; } = [];
 
-    public EntityMBattleNpcWeaponStoryReevaluateTable EntityMBattleNpcWeaponStoryReevaluateTable { get; }
+    public List<EntityMBattleNpcWeaponStoryReevaluate> EntityMBattleNpcWeaponStoryReevaluate { get; set; } = [];
 
-    public EntityMBattleProgressUiTypeTable EntityMBattleProgressUiTypeTable { get; }
+    public List<EntityMBattleProgressUiType> EntityMBattleProgressUiType { get; set; } = [];
 
-    public EntityMBattleQuestSceneBgmTable EntityMBattleQuestSceneBgmTable { get; }
+    public List<EntityMBattleQuestSceneBgm> EntityMBattleQuestSceneBgm { get; set; } = [];
 
-    public EntityMBattleQuestSceneBgmSetGroupTable EntityMBattleQuestSceneBgmSetGroupTable { get; }
+    public List<EntityMBattleQuestSceneBgmSetGroup> EntityMBattleQuestSceneBgmSetGroup { get; set; } = [];
 
-    public EntityMBattleRentalDeckTable EntityMBattleRentalDeckTable { get; }
+    public List<EntityMBattleRentalDeck> EntityMBattleRentalDeck { get; set; } = [];
 
-    public EntityMBattleSkillBehaviourHitDamageConfigurationTable EntityMBattleSkillBehaviourHitDamageConfigurationTable { get; }
+    public List<EntityMBattleSkillBehaviourHitDamageConfiguration> EntityMBattleSkillBehaviourHitDamageConfiguration { get; set; } = [];
 
-    public EntityMBattleSkillFireActTable EntityMBattleSkillFireActTable { get; }
+    public List<EntityMBattleSkillFireAct> EntityMBattleSkillFireAct { get; set; } = [];
 
-    public EntityMBattleSkillFireActConditionAttributeTypeTable EntityMBattleSkillFireActConditionAttributeTypeTable { get; }
+    public List<EntityMBattleSkillFireActConditionAttributeType> EntityMBattleSkillFireActConditionAttributeType { get; set; } = [];
 
-    public EntityMBattleSkillFireActConditionGroupTable EntityMBattleSkillFireActConditionGroupTable { get; }
+    public List<EntityMBattleSkillFireActConditionGroup> EntityMBattleSkillFireActConditionGroup { get; set; } = [];
 
-    public EntityMBattleSkillFireActConditionSkillCategoryTypeTable EntityMBattleSkillFireActConditionSkillCategoryTypeTable { get; }
+    public List<EntityMBattleSkillFireActConditionSkillCategoryType> EntityMBattleSkillFireActConditionSkillCategoryType { get; set; } = [];
 
-    public EntityMBattleSkillFireActConditionWeaponTypeTable EntityMBattleSkillFireActConditionWeaponTypeTable { get; }
+    public List<EntityMBattleSkillFireActConditionWeaponType> EntityMBattleSkillFireActConditionWeaponType { get; set; } = [];
 
-    public EntityMBeginnerCampaignTable EntityMBeginnerCampaignTable { get; }
+    public List<EntityMBeginnerCampaign> EntityMBeginnerCampaign { get; set; } = [];
 
-    public EntityMBigHuntBossTable EntityMBigHuntBossTable { get; }
+    public List<EntityMBigHuntBoss> EntityMBigHuntBoss { get; set; } = [];
 
-    public EntityMBigHuntBossGradeGroupTable EntityMBigHuntBossGradeGroupTable { get; }
+    public List<EntityMBigHuntBossGradeGroup> EntityMBigHuntBossGradeGroup { get; set; } = [];
 
-    public EntityMBigHuntBossGradeGroupAttributeTable EntityMBigHuntBossGradeGroupAttributeTable { get; }
+    public List<EntityMBigHuntBossGradeGroupAttribute> EntityMBigHuntBossGradeGroupAttribute { get; set; } = [];
 
-    public EntityMBigHuntBossQuestTable EntityMBigHuntBossQuestTable { get; }
+    public List<EntityMBigHuntBossQuest> EntityMBigHuntBossQuest { get; set; } = [];
 
-    public EntityMBigHuntBossQuestGroupTable EntityMBigHuntBossQuestGroupTable { get; }
+    public List<EntityMBigHuntBossQuestGroup> EntityMBigHuntBossQuestGroup { get; set; } = [];
 
-    public EntityMBigHuntBossQuestGroupChallengeCategoryTable EntityMBigHuntBossQuestGroupChallengeCategoryTable { get; }
+    public List<EntityMBigHuntBossQuestGroupChallengeCategory> EntityMBigHuntBossQuestGroupChallengeCategory { get; set; } = [];
 
-    public EntityMBigHuntLinkTable EntityMBigHuntLinkTable { get; }
+    public List<EntityMBigHuntLink> EntityMBigHuntLink { get; set; } = [];
 
-    public EntityMBigHuntQuestTable EntityMBigHuntQuestTable { get; }
+    public List<EntityMBigHuntQuest> EntityMBigHuntQuest { get; set; } = [];
 
-    public EntityMBigHuntQuestGroupTable EntityMBigHuntQuestGroupTable { get; }
+    public List<EntityMBigHuntQuestGroup> EntityMBigHuntQuestGroup { get; set; } = [];
 
-    public EntityMBigHuntQuestScoreCoefficientTable EntityMBigHuntQuestScoreCoefficientTable { get; }
+    public List<EntityMBigHuntQuestScoreCoefficient> EntityMBigHuntQuestScoreCoefficient { get; set; } = [];
 
-    public EntityMBigHuntRewardGroupTable EntityMBigHuntRewardGroupTable { get; }
+    public List<EntityMBigHuntRewardGroup> EntityMBigHuntRewardGroup { get; set; } = [];
 
-    public EntityMBigHuntScheduleTable EntityMBigHuntScheduleTable { get; }
+    public List<EntityMBigHuntSchedule> EntityMBigHuntSchedule { get; set; } = [];
 
-    public EntityMBigHuntScoreRewardGroupTable EntityMBigHuntScoreRewardGroupTable { get; }
+    public List<EntityMBigHuntScoreRewardGroup> EntityMBigHuntScoreRewardGroup { get; set; } = [];
 
-    public EntityMBigHuntScoreRewardGroupScheduleTable EntityMBigHuntScoreRewardGroupScheduleTable { get; }
+    public List<EntityMBigHuntScoreRewardGroupSchedule> EntityMBigHuntScoreRewardGroupSchedule { get; set; } = [];
 
-    public EntityMBigHuntWeeklyAttributeScoreRewardGroupScheduleTable EntityMBigHuntWeeklyAttributeScoreRewardGroupScheduleTable { get; }
+    public List<EntityMBigHuntWeeklyAttributeScoreRewardGroupSchedule> EntityMBigHuntWeeklyAttributeScoreRewardGroupSchedule { get; set; } = [];
 
-    public EntityMCageMemoryTable EntityMCageMemoryTable { get; }
+    public List<EntityMCageMemory> EntityMCageMemory { get; set; } = [];
 
-    public EntityMCageOrnamentTable EntityMCageOrnamentTable { get; }
+    public List<EntityMCageOrnament> EntityMCageOrnament { get; set; } = [];
 
-    public EntityMCageOrnamentMainQuestChapterStillTable EntityMCageOrnamentMainQuestChapterStillTable { get; }
+    public List<EntityMCageOrnamentMainQuestChapterStill> EntityMCageOrnamentMainQuestChapterStill { get; set; } = [];
 
-    public EntityMCageOrnamentRewardTable EntityMCageOrnamentRewardTable { get; }
+    public List<EntityMCageOrnamentReward> EntityMCageOrnamentReward { get; set; } = [];
 
-    public EntityMCageOrnamentStillReleaseConditionTable EntityMCageOrnamentStillReleaseConditionTable { get; }
+    public List<EntityMCageOrnamentStillReleaseCondition> EntityMCageOrnamentStillReleaseCondition { get; set; } = [];
 
-    public EntityMCatalogCompanionTable EntityMCatalogCompanionTable { get; }
+    public List<EntityMCatalogCompanion> EntityMCatalogCompanion { get; set; } = [];
 
-    public EntityMCatalogCostumeTable EntityMCatalogCostumeTable { get; }
+    public List<EntityMCatalogCostume> EntityMCatalogCostume { get; set; } = [];
 
-    public EntityMCatalogPartsGroupTable EntityMCatalogPartsGroupTable { get; }
+    public List<EntityMCatalogPartsGroup> EntityMCatalogPartsGroup { get; set; } = [];
 
-    public EntityMCatalogTermTable EntityMCatalogTermTable { get; }
+    public List<EntityMCatalogTerm> EntityMCatalogTerm { get; set; } = [];
 
-    public EntityMCatalogThoughtTable EntityMCatalogThoughtTable { get; }
+    public List<EntityMCatalogThought> EntityMCatalogThought { get; set; } = [];
 
-    public EntityMCatalogWeaponTable EntityMCatalogWeaponTable { get; }
+    public List<EntityMCatalogWeapon> EntityMCatalogWeapon { get; set; } = [];
 
-    public EntityMCharacterTable EntityMCharacterTable { get; }
+    public List<EntityMCharacter> EntityMCharacter { get; set; } = [];
 
-    public EntityMCharacterBoardTable EntityMCharacterBoardTable { get; }
+    public List<EntityMCharacterBoard> EntityMCharacterBoard { get; set; } = [];
 
-    public EntityMCharacterBoardAbilityTable EntityMCharacterBoardAbilityTable { get; }
+    public List<EntityMCharacterBoardAbility> EntityMCharacterBoardAbility { get; set; } = [];
 
-    public EntityMCharacterBoardAbilityMaxLevelTable EntityMCharacterBoardAbilityMaxLevelTable { get; }
+    public List<EntityMCharacterBoardAbilityMaxLevel> EntityMCharacterBoardAbilityMaxLevel { get; set; } = [];
 
-    public EntityMCharacterBoardAssignmentTable EntityMCharacterBoardAssignmentTable { get; }
+    public List<EntityMCharacterBoardAssignment> EntityMCharacterBoardAssignment { get; set; } = [];
 
-    public EntityMCharacterBoardCategoryTable EntityMCharacterBoardCategoryTable { get; }
+    public List<EntityMCharacterBoardCategory> EntityMCharacterBoardCategory { get; set; } = [];
 
-    public EntityMCharacterBoardCompleteRewardTable EntityMCharacterBoardCompleteRewardTable { get; }
+    public List<EntityMCharacterBoardCompleteReward> EntityMCharacterBoardCompleteReward { get; set; } = [];
 
-    public EntityMCharacterBoardCompleteRewardGroupTable EntityMCharacterBoardCompleteRewardGroupTable { get; }
+    public List<EntityMCharacterBoardCompleteRewardGroup> EntityMCharacterBoardCompleteRewardGroup { get; set; } = [];
 
-    public EntityMCharacterBoardConditionTable EntityMCharacterBoardConditionTable { get; }
+    public List<EntityMCharacterBoardCondition> EntityMCharacterBoardCondition { get; set; } = [];
 
-    public EntityMCharacterBoardConditionDetailTable EntityMCharacterBoardConditionDetailTable { get; }
+    public List<EntityMCharacterBoardConditionDetail> EntityMCharacterBoardConditionDetail { get; set; } = [];
 
-    public EntityMCharacterBoardConditionGroupTable EntityMCharacterBoardConditionGroupTable { get; }
+    public List<EntityMCharacterBoardConditionGroup> EntityMCharacterBoardConditionGroup { get; set; } = [];
 
-    public EntityMCharacterBoardConditionIgnoreTable EntityMCharacterBoardConditionIgnoreTable { get; }
+    public List<EntityMCharacterBoardConditionIgnore> EntityMCharacterBoardConditionIgnore { get; set; } = [];
 
-    public EntityMCharacterBoardEffectTargetGroupTable EntityMCharacterBoardEffectTargetGroupTable { get; }
+    public List<EntityMCharacterBoardEffectTargetGroup> EntityMCharacterBoardEffectTargetGroup { get; set; } = [];
 
-    public EntityMCharacterBoardGroupTable EntityMCharacterBoardGroupTable { get; }
+    public List<EntityMCharacterBoardGroup> EntityMCharacterBoardGroup { get; set; } = [];
 
-    public EntityMCharacterBoardPanelTable EntityMCharacterBoardPanelTable { get; }
+    public List<EntityMCharacterBoardPanel> EntityMCharacterBoardPanel { get; set; } = [];
 
-    public EntityMCharacterBoardPanelReleaseEffectGroupTable EntityMCharacterBoardPanelReleaseEffectGroupTable { get; }
+    public List<EntityMCharacterBoardPanelReleaseEffectGroup> EntityMCharacterBoardPanelReleaseEffectGroup { get; set; } = [];
 
-    public EntityMCharacterBoardPanelReleasePossessionGroupTable EntityMCharacterBoardPanelReleasePossessionGroupTable { get; }
+    public List<EntityMCharacterBoardPanelReleasePossessionGroup> EntityMCharacterBoardPanelReleasePossessionGroup { get; set; } = [];
 
-    public EntityMCharacterBoardPanelReleaseRewardGroupTable EntityMCharacterBoardPanelReleaseRewardGroupTable { get; }
+    public List<EntityMCharacterBoardPanelReleaseRewardGroup> EntityMCharacterBoardPanelReleaseRewardGroup { get; set; } = [];
 
-    public EntityMCharacterBoardStatusUpTable EntityMCharacterBoardStatusUpTable { get; }
+    public List<EntityMCharacterBoardStatusUp> EntityMCharacterBoardStatusUp { get; set; } = [];
 
-    public EntityMCharacterDisplaySwitchTable EntityMCharacterDisplaySwitchTable { get; }
+    public List<EntityMCharacterDisplaySwitch> EntityMCharacterDisplaySwitch { get; set; } = [];
 
-    public EntityMCharacterLevelBonusAbilityGroupTable EntityMCharacterLevelBonusAbilityGroupTable { get; }
+    public List<EntityMCharacterLevelBonusAbilityGroup> EntityMCharacterLevelBonusAbilityGroup { get; set; } = [];
 
-    public EntityMCharacterRebirthTable EntityMCharacterRebirthTable { get; }
+    public List<EntityMCharacterRebirth> EntityMCharacterRebirth { get; set; } = [];
 
-    public EntityMCharacterRebirthMaterialGroupTable EntityMCharacterRebirthMaterialGroupTable { get; }
+    public List<EntityMCharacterRebirthMaterialGroup> EntityMCharacterRebirthMaterialGroup { get; set; } = [];
 
-    public EntityMCharacterRebirthStepGroupTable EntityMCharacterRebirthStepGroupTable { get; }
+    public List<EntityMCharacterRebirthStepGroup> EntityMCharacterRebirthStepGroup { get; set; } = [];
 
-    public EntityMCharacterViewerActorIconTable EntityMCharacterViewerActorIconTable { get; }
+    public List<EntityMCharacterViewerActorIcon> EntityMCharacterViewerActorIcon { get; set; } = [];
 
-    public EntityMCharacterViewerFieldTable EntityMCharacterViewerFieldTable { get; }
+    public List<EntityMCharacterViewerField> EntityMCharacterViewerField { get; set; } = [];
 
-    public EntityMCharacterViewerFieldSettingsTable EntityMCharacterViewerFieldSettingsTable { get; }
+    public List<EntityMCharacterViewerFieldSettings> EntityMCharacterViewerFieldSettings { get; set; } = [];
 
-    public EntityMCharacterVoiceUnlockConditionTable EntityMCharacterVoiceUnlockConditionTable { get; }
+    public List<EntityMCharacterVoiceUnlockCondition> EntityMCharacterVoiceUnlockCondition { get; set; } = [];
 
-    public EntityMCollectionBonusEffectTable EntityMCollectionBonusEffectTable { get; }
+    public List<EntityMCollectionBonusEffect> EntityMCollectionBonusEffect { get; set; } = [];
 
-    public EntityMCollectionBonusQuestAssignmentTable EntityMCollectionBonusQuestAssignmentTable { get; }
+    public List<EntityMCollectionBonusQuestAssignment> EntityMCollectionBonusQuestAssignment { get; set; } = [];
 
-    public EntityMCollectionBonusQuestAssignmentGroupTable EntityMCollectionBonusQuestAssignmentGroupTable { get; }
+    public List<EntityMCollectionBonusQuestAssignmentGroup> EntityMCollectionBonusQuestAssignmentGroup { get; set; } = [];
 
-    public EntityMComboCalculationSettingTable EntityMComboCalculationSettingTable { get; }
+    public List<EntityMComboCalculationSetting> EntityMComboCalculationSetting { get; set; } = [];
 
-    public EntityMComebackCampaignTable EntityMComebackCampaignTable { get; }
+    public List<EntityMComebackCampaign> EntityMComebackCampaign { get; set; } = [];
 
-    public EntityMCompanionTable EntityMCompanionTable { get; }
+    public List<EntityMCompanion> EntityMCompanion { get; set; } = [];
 
-    public EntityMCompanionAbilityGroupTable EntityMCompanionAbilityGroupTable { get; }
+    public List<EntityMCompanionAbilityGroup> EntityMCompanionAbilityGroup { get; set; } = [];
 
-    public EntityMCompanionAbilityLevelTable EntityMCompanionAbilityLevelTable { get; }
+    public List<EntityMCompanionAbilityLevel> EntityMCompanionAbilityLevel { get; set; } = [];
 
-    public EntityMCompanionBaseStatusTable EntityMCompanionBaseStatusTable { get; }
+    public List<EntityMCompanionBaseStatus> EntityMCompanionBaseStatus { get; set; } = [];
 
-    public EntityMCompanionCategoryTable EntityMCompanionCategoryTable { get; }
+    public List<EntityMCompanionCategory> EntityMCompanionCategory { get; set; } = [];
 
-    public EntityMCompanionDuplicationExchangePossessionGroupTable EntityMCompanionDuplicationExchangePossessionGroupTable { get; }
+    public List<EntityMCompanionDuplicationExchangePossessionGroup> EntityMCompanionDuplicationExchangePossessionGroup { get; set; } = [];
 
-    public EntityMCompanionEnhancedTable EntityMCompanionEnhancedTable { get; }
+    public List<EntityMCompanionEnhanced> EntityMCompanionEnhanced { get; set; } = [];
 
-    public EntityMCompanionEnhancementMaterialTable EntityMCompanionEnhancementMaterialTable { get; }
+    public List<EntityMCompanionEnhancementMaterial> EntityMCompanionEnhancementMaterial { get; set; } = [];
 
-    public EntityMCompanionSkillLevelTable EntityMCompanionSkillLevelTable { get; }
+    public List<EntityMCompanionSkillLevel> EntityMCompanionSkillLevel { get; set; } = [];
 
-    public EntityMCompanionStatusCalculationTable EntityMCompanionStatusCalculationTable { get; }
+    public List<EntityMCompanionStatusCalculation> EntityMCompanionStatusCalculation { get; set; } = [];
 
-    public EntityMCompleteMissionGroupTable EntityMCompleteMissionGroupTable { get; }
+    public List<EntityMCompleteMissionGroup> EntityMCompleteMissionGroup { get; set; } = [];
 
-    public EntityMConfigTable EntityMConfigTable { get; }
+    public List<EntityMConfig> EntityMConfig { get; set; } = [];
 
-    public EntityMConsumableItemTable EntityMConsumableItemTable { get; }
+    public List<EntityMConsumableItem> EntityMConsumableItem { get; set; } = [];
 
-    public EntityMConsumableItemEffectTable EntityMConsumableItemEffectTable { get; }
+    public List<EntityMConsumableItemEffect> EntityMConsumableItemEffect { get; set; } = [];
 
-    public EntityMConsumableItemTermTable EntityMConsumableItemTermTable { get; }
+    public List<EntityMConsumableItemTerm> EntityMConsumableItemTerm { get; set; } = [];
 
-    public EntityMContentsStoryTable EntityMContentsStoryTable { get; }
+    public List<EntityMContentsStory> EntityMContentsStory { get; set; } = [];
 
-    public EntityMCostumeTable EntityMCostumeTable { get; }
+    public List<EntityMCostume> EntityMCostume { get; set; } = [];
 
-    public EntityMCostumeAbilityGroupTable EntityMCostumeAbilityGroupTable { get; }
+    public List<EntityMCostumeAbilityGroup> EntityMCostumeAbilityGroup { get; set; } = [];
 
-    public EntityMCostumeAbilityLevelGroupTable EntityMCostumeAbilityLevelGroupTable { get; }
+    public List<EntityMCostumeAbilityLevelGroup> EntityMCostumeAbilityLevelGroup { get; set; } = [];
 
-    public EntityMCostumeActiveSkillEnhancementMaterialTable EntityMCostumeActiveSkillEnhancementMaterialTable { get; }
+    public List<EntityMCostumeActiveSkillEnhancementMaterial> EntityMCostumeActiveSkillEnhancementMaterial { get; set; } = [];
 
-    public EntityMCostumeActiveSkillGroupTable EntityMCostumeActiveSkillGroupTable { get; }
+    public List<EntityMCostumeActiveSkillGroup> EntityMCostumeActiveSkillGroup { get; set; } = [];
 
-    public EntityMCostumeAnimationStepTable EntityMCostumeAnimationStepTable { get; }
+    public List<EntityMCostumeAnimationStep> EntityMCostumeAnimationStep { get; set; } = [];
 
-    public EntityMCostumeAutoOrganizationConditionTable EntityMCostumeAutoOrganizationConditionTable { get; }
+    public List<EntityMCostumeAutoOrganizationCondition> EntityMCostumeAutoOrganizationCondition { get; set; } = [];
 
-    public EntityMCostumeAwakenTable EntityMCostumeAwakenTable { get; }
+    public List<EntityMCostumeAwaken> EntityMCostumeAwaken { get; set; } = [];
 
-    public EntityMCostumeAwakenAbilityTable EntityMCostumeAwakenAbilityTable { get; }
+    public List<EntityMCostumeAwakenAbility> EntityMCostumeAwakenAbility { get; set; } = [];
 
-    public EntityMCostumeAwakenEffectGroupTable EntityMCostumeAwakenEffectGroupTable { get; }
+    public List<EntityMCostumeAwakenEffectGroup> EntityMCostumeAwakenEffectGroup { get; set; } = [];
 
-    public EntityMCostumeAwakenItemAcquireTable EntityMCostumeAwakenItemAcquireTable { get; }
+    public List<EntityMCostumeAwakenItemAcquire> EntityMCostumeAwakenItemAcquire { get; set; } = [];
 
-    public EntityMCostumeAwakenMaterialGroupTable EntityMCostumeAwakenMaterialGroupTable { get; }
+    public List<EntityMCostumeAwakenMaterialGroup> EntityMCostumeAwakenMaterialGroup { get; set; } = [];
 
-    public EntityMCostumeAwakenPriceGroupTable EntityMCostumeAwakenPriceGroupTable { get; }
+    public List<EntityMCostumeAwakenPriceGroup> EntityMCostumeAwakenPriceGroup { get; set; } = [];
 
-    public EntityMCostumeAwakenStatusUpGroupTable EntityMCostumeAwakenStatusUpGroupTable { get; }
+    public List<EntityMCostumeAwakenStatusUpGroup> EntityMCostumeAwakenStatusUpGroup { get; set; } = [];
 
-    public EntityMCostumeAwakenStepMaterialGroupTable EntityMCostumeAwakenStepMaterialGroupTable { get; }
+    public List<EntityMCostumeAwakenStepMaterialGroup> EntityMCostumeAwakenStepMaterialGroup { get; set; } = [];
 
-    public EntityMCostumeBaseStatusTable EntityMCostumeBaseStatusTable { get; }
+    public List<EntityMCostumeBaseStatus> EntityMCostumeBaseStatus { get; set; } = [];
 
-    public EntityMCostumeCollectionBonusTable EntityMCostumeCollectionBonusTable { get; }
+    public List<EntityMCostumeCollectionBonus> EntityMCostumeCollectionBonus { get; set; } = [];
 
-    public EntityMCostumeCollectionBonusGroupTable EntityMCostumeCollectionBonusGroupTable { get; }
+    public List<EntityMCostumeCollectionBonusGroup> EntityMCostumeCollectionBonusGroup { get; set; } = [];
 
-    public EntityMCostumeDefaultSkillGroupTable EntityMCostumeDefaultSkillGroupTable { get; }
+    public List<EntityMCostumeDefaultSkillGroup> EntityMCostumeDefaultSkillGroup { get; set; } = [];
 
-    public EntityMCostumeDefaultSkillLotteryGroupTable EntityMCostumeDefaultSkillLotteryGroupTable { get; }
+    public List<EntityMCostumeDefaultSkillLotteryGroup> EntityMCostumeDefaultSkillLotteryGroup { get; set; } = [];
 
-    public EntityMCostumeDeleteTable EntityMCostumeDeleteTable { get; }
+    public List<EntityMCostumeDelete> EntityMCostumeDelete { get; set; } = [];
 
-    public EntityMCostumeDisplayCoordinateAdjustmentTable EntityMCostumeDisplayCoordinateAdjustmentTable { get; }
+    public List<EntityMCostumeDisplayCoordinateAdjustment> EntityMCostumeDisplayCoordinateAdjustment { get; set; } = [];
 
-    public EntityMCostumeDisplaySwitchTable EntityMCostumeDisplaySwitchTable { get; }
+    public List<EntityMCostumeDisplaySwitch> EntityMCostumeDisplaySwitch { get; set; } = [];
 
-    public EntityMCostumeDuplicationExchangePossessionGroupTable EntityMCostumeDuplicationExchangePossessionGroupTable { get; }
+    public List<EntityMCostumeDuplicationExchangePossessionGroup> EntityMCostumeDuplicationExchangePossessionGroup { get; set; } = [];
 
-    public EntityMCostumeEmblemTable EntityMCostumeEmblemTable { get; }
+    public List<EntityMCostumeEmblem> EntityMCostumeEmblem { get; set; } = [];
 
-    public EntityMCostumeEnhancedTable EntityMCostumeEnhancedTable { get; }
+    public List<EntityMCostumeEnhanced> EntityMCostumeEnhanced { get; set; } = [];
 
-    public EntityMCostumeLevelBonusTable EntityMCostumeLevelBonusTable { get; }
+    public List<EntityMCostumeLevelBonus> EntityMCostumeLevelBonus { get; set; } = [];
 
-    public EntityMCostumeLimitBreakMaterialGroupTable EntityMCostumeLimitBreakMaterialGroupTable { get; }
+    public List<EntityMCostumeLimitBreakMaterialGroup> EntityMCostumeLimitBreakMaterialGroup { get; set; } = [];
 
-    public EntityMCostumeLimitBreakMaterialRarityGroupTable EntityMCostumeLimitBreakMaterialRarityGroupTable { get; }
+    public List<EntityMCostumeLimitBreakMaterialRarityGroup> EntityMCostumeLimitBreakMaterialRarityGroup { get; set; } = [];
 
-    public EntityMCostumeLotteryEffectTable EntityMCostumeLotteryEffectTable { get; }
+    public List<EntityMCostumeLotteryEffect> EntityMCostumeLotteryEffect { get; set; } = [];
 
-    public EntityMCostumeLotteryEffectMaterialGroupTable EntityMCostumeLotteryEffectMaterialGroupTable { get; }
+    public List<EntityMCostumeLotteryEffectMaterialGroup> EntityMCostumeLotteryEffectMaterialGroup { get; set; } = [];
 
-    public EntityMCostumeLotteryEffectOddsGroupTable EntityMCostumeLotteryEffectOddsGroupTable { get; }
+    public List<EntityMCostumeLotteryEffectOddsGroup> EntityMCostumeLotteryEffectOddsGroup { get; set; } = [];
 
-    public EntityMCostumeLotteryEffectReleaseScheduleTable EntityMCostumeLotteryEffectReleaseScheduleTable { get; }
+    public List<EntityMCostumeLotteryEffectReleaseSchedule> EntityMCostumeLotteryEffectReleaseSchedule { get; set; } = [];
 
-    public EntityMCostumeLotteryEffectTargetAbilityTable EntityMCostumeLotteryEffectTargetAbilityTable { get; }
+    public List<EntityMCostumeLotteryEffectTargetAbility> EntityMCostumeLotteryEffectTargetAbility { get; set; } = [];
 
-    public EntityMCostumeLotteryEffectTargetStatusUpTable EntityMCostumeLotteryEffectTargetStatusUpTable { get; }
+    public List<EntityMCostumeLotteryEffectTargetStatusUp> EntityMCostumeLotteryEffectTargetStatusUp { get; set; } = [];
 
-    public EntityMCostumeOverflowExchangePossessionGroupTable EntityMCostumeOverflowExchangePossessionGroupTable { get; }
+    public List<EntityMCostumeOverflowExchangePossessionGroup> EntityMCostumeOverflowExchangePossessionGroup { get; set; } = [];
 
-    public EntityMCostumeProperAttributeHpBonusTable EntityMCostumeProperAttributeHpBonusTable { get; }
+    public List<EntityMCostumeProperAttributeHpBonus> EntityMCostumeProperAttributeHpBonus { get; set; } = [];
 
-    public EntityMCostumeRarityTable EntityMCostumeRarityTable { get; }
+    public List<EntityMCostumeRarity> EntityMCostumeRarity { get; set; } = [];
 
-    public EntityMCostumeSpecialActActiveSkillTable EntityMCostumeSpecialActActiveSkillTable { get; }
+    public List<EntityMCostumeSpecialActActiveSkill> EntityMCostumeSpecialActActiveSkill { get; set; } = [];
 
-    public EntityMCostumeSpecialActActiveSkillConditionAttributeTable EntityMCostumeSpecialActActiveSkillConditionAttributeTable { get; }
+    public List<EntityMCostumeSpecialActActiveSkillConditionAttribute> EntityMCostumeSpecialActActiveSkillConditionAttribute { get; set; } = [];
 
-    public EntityMCostumeStatusCalculationTable EntityMCostumeStatusCalculationTable { get; }
+    public List<EntityMCostumeStatusCalculation> EntityMCostumeStatusCalculation { get; set; } = [];
 
-    public EntityMDeckEntrustCoefficientAttributeTable EntityMDeckEntrustCoefficientAttributeTable { get; }
+    public List<EntityMDeckEntrustCoefficientAttribute> EntityMDeckEntrustCoefficientAttribute { get; set; } = [];
 
-    public EntityMDeckEntrustCoefficientPartsSeriesBonusCountTable EntityMDeckEntrustCoefficientPartsSeriesBonusCountTable { get; }
+    public List<EntityMDeckEntrustCoefficientPartsSeriesBonusCount> EntityMDeckEntrustCoefficientPartsSeriesBonusCount { get; set; } = [];
 
-    public EntityMDeckEntrustCoefficientStatusTable EntityMDeckEntrustCoefficientStatusTable { get; }
+    public List<EntityMDeckEntrustCoefficientStatus> EntityMDeckEntrustCoefficientStatus { get; set; } = [];
 
-    public EntityMDokanTable EntityMDokanTable { get; }
+    public List<EntityMDokan> EntityMDokan { get; set; } = [];
 
-    public EntityMDokanContentGroupTable EntityMDokanContentGroupTable { get; }
+    public List<EntityMDokanContentGroup> EntityMDokanContentGroup { get; set; } = [];
 
-    public EntityMDokanTextTable EntityMDokanTextTable { get; }
+    public List<EntityMDokanText> EntityMDokanText { get; set; } = [];
 
-    public EntityMEnhanceCampaignTable EntityMEnhanceCampaignTable { get; }
+    public List<EntityMEnhanceCampaign> EntityMEnhanceCampaign { get; set; } = [];
 
-    public EntityMEnhanceCampaignTargetGroupTable EntityMEnhanceCampaignTargetGroupTable { get; }
+    public List<EntityMEnhanceCampaignTargetGroup> EntityMEnhanceCampaignTargetGroup { get; set; } = [];
 
-    public EntityMEvaluateConditionTable EntityMEvaluateConditionTable { get; }
+    public List<EntityMEvaluateCondition> EntityMEvaluateCondition { get; set; } = [];
 
-    public EntityMEvaluateConditionValueGroupTable EntityMEvaluateConditionValueGroupTable { get; }
+    public List<EntityMEvaluateConditionValueGroup> EntityMEvaluateConditionValueGroup { get; set; } = [];
 
-    public EntityMEventQuestChapterTable EntityMEventQuestChapterTable { get; }
+    public List<EntityMEventQuestChapter> EntityMEventQuestChapter { get; set; } = [];
 
-    public EntityMEventQuestChapterCharacterTable EntityMEventQuestChapterCharacterTable { get; }
+    public List<EntityMEventQuestChapterCharacter> EntityMEventQuestChapterCharacter { get; set; } = [];
 
-    public EntityMEventQuestChapterDifficultyLimitContentUnlockTable EntityMEventQuestChapterDifficultyLimitContentUnlockTable { get; }
+    public List<EntityMEventQuestChapterDifficultyLimitContentUnlock> EntityMEventQuestChapterDifficultyLimitContentUnlock { get; set; } = [];
 
-    public EntityMEventQuestChapterLimitContentRelationTable EntityMEventQuestChapterLimitContentRelationTable { get; }
+    public List<EntityMEventQuestChapterLimitContentRelation> EntityMEventQuestChapterLimitContentRelation { get; set; } = [];
 
-    public EntityMEventQuestDailyGroupTable EntityMEventQuestDailyGroupTable { get; }
+    public List<EntityMEventQuestDailyGroup> EntityMEventQuestDailyGroup { get; set; } = [];
 
-    public EntityMEventQuestDailyGroupCompleteRewardTable EntityMEventQuestDailyGroupCompleteRewardTable { get; }
+    public List<EntityMEventQuestDailyGroupCompleteReward> EntityMEventQuestDailyGroupCompleteReward { get; set; } = [];
 
-    public EntityMEventQuestDailyGroupMessageTable EntityMEventQuestDailyGroupMessageTable { get; }
+    public List<EntityMEventQuestDailyGroupMessage> EntityMEventQuestDailyGroupMessage { get; set; } = [];
 
-    public EntityMEventQuestDailyGroupTargetChapterTable EntityMEventQuestDailyGroupTargetChapterTable { get; }
+    public List<EntityMEventQuestDailyGroupTargetChapter> EntityMEventQuestDailyGroupTargetChapter { get; set; } = [];
 
-    public EntityMEventQuestDisplayItemGroupTable EntityMEventQuestDisplayItemGroupTable { get; }
+    public List<EntityMEventQuestDisplayItemGroup> EntityMEventQuestDisplayItemGroup { get; set; } = [];
 
-    public EntityMEventQuestGuerrillaFreeOpenTable EntityMEventQuestGuerrillaFreeOpenTable { get; }
+    public List<EntityMEventQuestGuerrillaFreeOpen> EntityMEventQuestGuerrillaFreeOpen { get; set; } = [];
 
-    public EntityMEventQuestGuerrillaFreeOpenScheduleCorrespondenceTable EntityMEventQuestGuerrillaFreeOpenScheduleCorrespondenceTable { get; }
+    public List<EntityMEventQuestGuerrillaFreeOpenScheduleCorrespondence> EntityMEventQuestGuerrillaFreeOpenScheduleCorrespondence { get; set; } = [];
 
-    public EntityMEventQuestLabyrinthMobTable EntityMEventQuestLabyrinthMobTable { get; }
+    public List<EntityMEventQuestLabyrinthMob> EntityMEventQuestLabyrinthMob { get; set; } = [];
 
-    public EntityMEventQuestLabyrinthQuestDisplayTable EntityMEventQuestLabyrinthQuestDisplayTable { get; }
+    public List<EntityMEventQuestLabyrinthQuestDisplay> EntityMEventQuestLabyrinthQuestDisplay { get; set; } = [];
 
-    public EntityMEventQuestLabyrinthQuestEffectDescriptionAbilityTable EntityMEventQuestLabyrinthQuestEffectDescriptionAbilityTable { get; }
+    public List<EntityMEventQuestLabyrinthQuestEffectDescriptionAbility> EntityMEventQuestLabyrinthQuestEffectDescriptionAbility { get; set; } = [];
 
-    public EntityMEventQuestLabyrinthQuestEffectDescriptionFreeTable EntityMEventQuestLabyrinthQuestEffectDescriptionFreeTable { get; }
+    public List<EntityMEventQuestLabyrinthQuestEffectDescriptionFree> EntityMEventQuestLabyrinthQuestEffectDescriptionFree { get; set; } = [];
 
-    public EntityMEventQuestLabyrinthQuestEffectDisplayTable EntityMEventQuestLabyrinthQuestEffectDisplayTable { get; }
+    public List<EntityMEventQuestLabyrinthQuestEffectDisplay> EntityMEventQuestLabyrinthQuestEffectDisplay { get; set; } = [];
 
-    public EntityMEventQuestLabyrinthRewardGroupTable EntityMEventQuestLabyrinthRewardGroupTable { get; }
+    public List<EntityMEventQuestLabyrinthRewardGroup> EntityMEventQuestLabyrinthRewardGroup { get; set; } = [];
 
-    public EntityMEventQuestLabyrinthSeasonTable EntityMEventQuestLabyrinthSeasonTable { get; }
+    public List<EntityMEventQuestLabyrinthSeason> EntityMEventQuestLabyrinthSeason { get; set; } = [];
 
-    public EntityMEventQuestLabyrinthSeasonRewardGroupTable EntityMEventQuestLabyrinthSeasonRewardGroupTable { get; }
+    public List<EntityMEventQuestLabyrinthSeasonRewardGroup> EntityMEventQuestLabyrinthSeasonRewardGroup { get; set; } = [];
 
-    public EntityMEventQuestLabyrinthStageTable EntityMEventQuestLabyrinthStageTable { get; }
+    public List<EntityMEventQuestLabyrinthStage> EntityMEventQuestLabyrinthStage { get; set; } = [];
 
-    public EntityMEventQuestLabyrinthStageAccumulationRewardGroupTable EntityMEventQuestLabyrinthStageAccumulationRewardGroupTable { get; }
+    public List<EntityMEventQuestLabyrinthStageAccumulationRewardGroup> EntityMEventQuestLabyrinthStageAccumulationRewardGroup { get; set; } = [];
 
-    public EntityMEventQuestLimitContentTable EntityMEventQuestLimitContentTable { get; }
+    public List<EntityMEventQuestLimitContent> EntityMEventQuestLimitContent { get; set; } = [];
 
-    public EntityMEventQuestLimitContentDeckRestrictionTable EntityMEventQuestLimitContentDeckRestrictionTable { get; }
+    public List<EntityMEventQuestLimitContentDeckRestriction> EntityMEventQuestLimitContentDeckRestriction { get; set; } = [];
 
-    public EntityMEventQuestLimitContentDeckRestrictionTargetTable EntityMEventQuestLimitContentDeckRestrictionTargetTable { get; }
+    public List<EntityMEventQuestLimitContentDeckRestrictionTarget> EntityMEventQuestLimitContentDeckRestrictionTarget { get; set; } = [];
 
-    public EntityMEventQuestLinkTable EntityMEventQuestLinkTable { get; }
+    public List<EntityMEventQuestLink> EntityMEventQuestLink { get; set; } = [];
 
-    public EntityMEventQuestSequenceTable EntityMEventQuestSequenceTable { get; }
+    public List<EntityMEventQuestSequence> EntityMEventQuestSequence { get; set; } = [];
 
-    public EntityMEventQuestSequenceGroupTable EntityMEventQuestSequenceGroupTable { get; }
+    public List<EntityMEventQuestSequenceGroup> EntityMEventQuestSequenceGroup { get; set; } = [];
 
-    public EntityMEventQuestTowerAccumulationRewardTable EntityMEventQuestTowerAccumulationRewardTable { get; }
+    public List<EntityMEventQuestTowerAccumulationReward> EntityMEventQuestTowerAccumulationReward { get; set; } = [];
 
-    public EntityMEventQuestTowerAccumulationRewardGroupTable EntityMEventQuestTowerAccumulationRewardGroupTable { get; }
+    public List<EntityMEventQuestTowerAccumulationRewardGroup> EntityMEventQuestTowerAccumulationRewardGroup { get; set; } = [];
 
-    public EntityMEventQuestTowerAssetTable EntityMEventQuestTowerAssetTable { get; }
+    public List<EntityMEventQuestTowerAsset> EntityMEventQuestTowerAsset { get; set; } = [];
 
-    public EntityMEventQuestTowerRewardGroupTable EntityMEventQuestTowerRewardGroupTable { get; }
+    public List<EntityMEventQuestTowerRewardGroup> EntityMEventQuestTowerRewardGroup { get; set; } = [];
 
-    public EntityMEventQuestUnlockConditionTable EntityMEventQuestUnlockConditionTable { get; }
+    public List<EntityMEventQuestUnlockCondition> EntityMEventQuestUnlockCondition { get; set; } = [];
 
-    public EntityMExploreTable EntityMExploreTable { get; }
+    public List<EntityMExplore> EntityMExplore { get; set; } = [];
 
-    public EntityMExploreGradeAssetTable EntityMExploreGradeAssetTable { get; }
+    public List<EntityMExploreGradeAsset> EntityMExploreGradeAsset { get; set; } = [];
 
-    public EntityMExploreGradeScoreTable EntityMExploreGradeScoreTable { get; }
+    public List<EntityMExploreGradeScore> EntityMExploreGradeScore { get; set; } = [];
 
-    public EntityMExploreGroupTable EntityMExploreGroupTable { get; }
+    public List<EntityMExploreGroup> EntityMExploreGroup { get; set; } = [];
 
-    public EntityMExploreUnlockConditionTable EntityMExploreUnlockConditionTable { get; }
+    public List<EntityMExploreUnlockCondition> EntityMExploreUnlockCondition { get; set; } = [];
 
-    public EntityMExtraQuestGroupTable EntityMExtraQuestGroupTable { get; }
+    public List<EntityMExtraQuestGroup> EntityMExtraQuestGroup { get; set; } = [];
 
-    public EntityMExtraQuestGroupInMainQuestChapterTable EntityMExtraQuestGroupInMainQuestChapterTable { get; }
+    public List<EntityMExtraQuestGroupInMainQuestChapter> EntityMExtraQuestGroupInMainQuestChapter { get; set; } = [];
 
-    public EntityMFieldEffectBlessRelationTable EntityMFieldEffectBlessRelationTable { get; }
+    public List<EntityMFieldEffectBlessRelation> EntityMFieldEffectBlessRelation { get; set; } = [];
 
-    public EntityMFieldEffectDecreasePointTable EntityMFieldEffectDecreasePointTable { get; }
+    public List<EntityMFieldEffectDecreasePoint> EntityMFieldEffectDecreasePoint { get; set; } = [];
 
-    public EntityMFieldEffectGroupTable EntityMFieldEffectGroupTable { get; }
+    public List<EntityMFieldEffectGroup> EntityMFieldEffectGroup { get; set; } = [];
 
-    public EntityMGachaMedalTable EntityMGachaMedalTable { get; }
+    public List<EntityMGachaMedal> EntityMGachaMedal { get; set; } = [];
 
-    public EntityMGiftTextTable EntityMGiftTextTable { get; }
+    public List<EntityMGiftText> EntityMGiftText { get; set; } = [];
 
-    public EntityMGimmickTable EntityMGimmickTable { get; }
+    public List<EntityMGimmick> EntityMGimmick { get; set; } = [];
 
-    public EntityMGimmickAdditionalAssetTable EntityMGimmickAdditionalAssetTable { get; }
+    public List<EntityMGimmickAdditionalAsset> EntityMGimmickAdditionalAsset { get; set; } = [];
 
-    public EntityMGimmickExtraQuestTable EntityMGimmickExtraQuestTable { get; }
+    public List<EntityMGimmickExtraQuest> EntityMGimmickExtraQuest { get; set; } = [];
 
-    public EntityMGimmickGroupTable EntityMGimmickGroupTable { get; }
+    public List<EntityMGimmickGroup> EntityMGimmickGroup { get; set; } = [];
 
-    public EntityMGimmickGroupEventLogTable EntityMGimmickGroupEventLogTable { get; }
+    public List<EntityMGimmickGroupEventLog> EntityMGimmickGroupEventLog { get; set; } = [];
 
-    public EntityMGimmickIntervalTable EntityMGimmickIntervalTable { get; }
+    public List<EntityMGimmickInterval> EntityMGimmickInterval { get; set; } = [];
 
-    public EntityMGimmickOrnamentTable EntityMGimmickOrnamentTable { get; }
+    public List<EntityMGimmickOrnament> EntityMGimmickOrnament { get; set; } = [];
 
-    public EntityMGimmickSequenceTable EntityMGimmickSequenceTable { get; }
+    public List<EntityMGimmickSequence> EntityMGimmickSequence { get; set; } = [];
 
-    public EntityMGimmickSequenceGroupTable EntityMGimmickSequenceGroupTable { get; }
+    public List<EntityMGimmickSequenceGroup> EntityMGimmickSequenceGroup { get; set; } = [];
 
-    public EntityMGimmickSequenceRewardGroupTable EntityMGimmickSequenceRewardGroupTable { get; }
+    public List<EntityMGimmickSequenceRewardGroup> EntityMGimmickSequenceRewardGroup { get; set; } = [];
 
-    public EntityMGimmickSequenceScheduleTable EntityMGimmickSequenceScheduleTable { get; }
+    public List<EntityMGimmickSequenceSchedule> EntityMGimmickSequenceSchedule { get; set; } = [];
 
-    public EntityMHeadupDisplayViewTable EntityMHeadupDisplayViewTable { get; }
+    public List<EntityMHeadupDisplayView> EntityMHeadupDisplayView { get; set; } = [];
 
-    public EntityMHelpTable EntityMHelpTable { get; }
+    public List<EntityMHelp> EntityMHelp { get; set; } = [];
 
-    public EntityMHelpCategoryTable EntityMHelpCategoryTable { get; }
+    public List<EntityMHelpCategory> EntityMHelpCategory { get; set; } = [];
 
-    public EntityMHelpItemTable EntityMHelpItemTable { get; }
+    public List<EntityMHelpItem> EntityMHelpItem { get; set; } = [];
 
-    public EntityMHelpPageGroupTable EntityMHelpPageGroupTable { get; }
+    public List<EntityMHelpPageGroup> EntityMHelpPageGroup { get; set; } = [];
 
-    public EntityMImportantItemTable EntityMImportantItemTable { get; }
+    public List<EntityMImportantItem> EntityMImportantItem { get; set; } = [];
 
-    public EntityMImportantItemEffectTable EntityMImportantItemEffectTable { get; }
+    public List<EntityMImportantItemEffect> EntityMImportantItemEffect { get; set; } = [];
 
-    public EntityMImportantItemEffectDropCountTable EntityMImportantItemEffectDropCountTable { get; }
+    public List<EntityMImportantItemEffectDropCount> EntityMImportantItemEffectDropCount { get; set; } = [];
 
-    public EntityMImportantItemEffectDropRateTable EntityMImportantItemEffectDropRateTable { get; }
+    public List<EntityMImportantItemEffectDropRate> EntityMImportantItemEffectDropRate { get; set; } = [];
 
-    public EntityMImportantItemEffectTargetItemGroupTable EntityMImportantItemEffectTargetItemGroupTable { get; }
+    public List<EntityMImportantItemEffectTargetItemGroup> EntityMImportantItemEffectTargetItemGroup { get; set; } = [];
 
-    public EntityMImportantItemEffectTargetQuestGroupTable EntityMImportantItemEffectTargetQuestGroupTable { get; }
+    public List<EntityMImportantItemEffectTargetQuestGroup> EntityMImportantItemEffectTargetQuestGroup { get; set; } = [];
 
-    public EntityMImportantItemEffectUnlockFunctionTable EntityMImportantItemEffectUnlockFunctionTable { get; }
+    public List<EntityMImportantItemEffectUnlockFunction> EntityMImportantItemEffectUnlockFunction { get; set; } = [];
 
-    public EntityMLibraryEventQuestStoryGroupingTable EntityMLibraryEventQuestStoryGroupingTable { get; }
+    public List<EntityMLibraryEventQuestStoryGrouping> EntityMLibraryEventQuestStoryGrouping { get; set; } = [];
 
-    public EntityMLibraryMainQuestGroupTable EntityMLibraryMainQuestGroupTable { get; }
+    public List<EntityMLibraryMainQuestGroup> EntityMLibraryMainQuestGroup { get; set; } = [];
 
-    public EntityMLibraryMainQuestStoryTable EntityMLibraryMainQuestStoryTable { get; }
+    public List<EntityMLibraryMainQuestStory> EntityMLibraryMainQuestStory { get; set; } = [];
 
-    public EntityMLibraryMovieTable EntityMLibraryMovieTable { get; }
+    public List<EntityMLibraryMovie> EntityMLibraryMovie { get; set; } = [];
 
-    public EntityMLibraryMovieCategoryTable EntityMLibraryMovieCategoryTable { get; }
+    public List<EntityMLibraryMovieCategory> EntityMLibraryMovieCategory { get; set; } = [];
 
-    public EntityMLibraryMovieUnlockConditionTable EntityMLibraryMovieUnlockConditionTable { get; }
+    public List<EntityMLibraryMovieUnlockCondition> EntityMLibraryMovieUnlockCondition { get; set; } = [];
 
-    public EntityMLibraryRecordGroupingTable EntityMLibraryRecordGroupingTable { get; }
+    public List<EntityMLibraryRecordGrouping> EntityMLibraryRecordGrouping { get; set; } = [];
 
-    public EntityMLibraryStoryGroupTable EntityMLibraryStoryGroupTable { get; }
+    public List<EntityMLibraryStoryGroup> EntityMLibraryStoryGroup { get; set; } = [];
 
-    public EntityMLimitedOpenTextTable EntityMLimitedOpenTextTable { get; }
+    public List<EntityMLimitedOpenText> EntityMLimitedOpenText { get; set; } = [];
 
-    public EntityMLimitedOpenTextGroupTable EntityMLimitedOpenTextGroupTable { get; }
+    public List<EntityMLimitedOpenTextGroup> EntityMLimitedOpenTextGroup { get; set; } = [];
 
-    public EntityMListSettingAbilityGroupTable EntityMListSettingAbilityGroupTable { get; }
+    public List<EntityMListSettingAbilityGroup> EntityMListSettingAbilityGroup { get; set; } = [];
 
-    public EntityMListSettingAbilityGroupTargetTable EntityMListSettingAbilityGroupTargetTable { get; }
+    public List<EntityMListSettingAbilityGroupTarget> EntityMListSettingAbilityGroupTarget { get; set; } = [];
 
-    public EntityMLoginBonusTable EntityMLoginBonusTable { get; }
+    public List<EntityMLoginBonus> EntityMLoginBonus { get; set; } = [];
 
-    public EntityMLoginBonusStampTable EntityMLoginBonusStampTable { get; }
+    public List<EntityMLoginBonusStamp> EntityMLoginBonusStamp { get; set; } = [];
 
-    public EntityMMainQuestChapterTable EntityMMainQuestChapterTable { get; }
+    public List<EntityMMainQuestChapter> EntityMMainQuestChapter { get; set; } = [];
 
-    public EntityMMainQuestPortalCageCharacterTable EntityMMainQuestPortalCageCharacterTable { get; }
+    public List<EntityMMainQuestPortalCageCharacter> EntityMMainQuestPortalCageCharacter { get; set; } = [];
 
-    public EntityMMainQuestRouteTable EntityMMainQuestRouteTable { get; }
+    public List<EntityMMainQuestRoute> EntityMMainQuestRoute { get; set; } = [];
 
-    public EntityMMainQuestRouteAnotherReplayFlowUnlockConditionTable EntityMMainQuestRouteAnotherReplayFlowUnlockConditionTable { get; }
+    public List<EntityMMainQuestRouteAnotherReplayFlowUnlockCondition> EntityMMainQuestRouteAnotherReplayFlowUnlockCondition { get; set; } = [];
 
-    public EntityMMainQuestSeasonTable EntityMMainQuestSeasonTable { get; }
+    public List<EntityMMainQuestSeason> EntityMMainQuestSeason { get; set; } = [];
 
-    public EntityMMainQuestSequenceTable EntityMMainQuestSequenceTable { get; }
+    public List<EntityMMainQuestSequence> EntityMMainQuestSequence { get; set; } = [];
 
-    public EntityMMainQuestSequenceGroupTable EntityMMainQuestSequenceGroupTable { get; }
+    public List<EntityMMainQuestSequenceGroup> EntityMMainQuestSequenceGroup { get; set; } = [];
 
-    public EntityMMaintenanceTable EntityMMaintenanceTable { get; }
+    public List<EntityMMaintenance> EntityMMaintenance { get; set; } = [];
 
-    public EntityMMaintenanceGroupTable EntityMMaintenanceGroupTable { get; }
+    public List<EntityMMaintenanceGroup> EntityMMaintenanceGroup { get; set; } = [];
 
-    public EntityMMaterialTable EntityMMaterialTable { get; }
+    public List<EntityMMaterial> EntityMMaterial { get; set; } = [];
 
-    public EntityMMaterialSaleObtainPossessionTable EntityMMaterialSaleObtainPossessionTable { get; }
+    public List<EntityMMaterialSaleObtainPossession> EntityMMaterialSaleObtainPossession { get; set; } = [];
 
-    public EntityMMissionTable EntityMMissionTable { get; }
+    public List<EntityMMission> EntityMMission { get; set; } = [];
 
-    public EntityMMissionClearConditionValueViewTable EntityMMissionClearConditionValueViewTable { get; }
+    public List<EntityMMissionClearConditionValueView> EntityMMissionClearConditionValueView { get; set; } = [];
 
-    public EntityMMissionGroupTable EntityMMissionGroupTable { get; }
+    public List<EntityMMissionGroup> EntityMMissionGroup { get; set; } = [];
 
-    public EntityMMissionLinkTable EntityMMissionLinkTable { get; }
+    public List<EntityMMissionLink> EntityMMissionLink { get; set; } = [];
 
-    public EntityMMissionPassTable EntityMMissionPassTable { get; }
+    public List<EntityMMissionPass> EntityMMissionPass { get; set; } = [];
 
-    public EntityMMissionPassLevelGroupTable EntityMMissionPassLevelGroupTable { get; }
+    public List<EntityMMissionPassLevelGroup> EntityMMissionPassLevelGroup { get; set; } = [];
 
-    public EntityMMissionPassMissionGroupTable EntityMMissionPassMissionGroupTable { get; }
+    public List<EntityMMissionPassMissionGroup> EntityMMissionPassMissionGroup { get; set; } = [];
 
-    public EntityMMissionPassRewardGroupTable EntityMMissionPassRewardGroupTable { get; }
+    public List<EntityMMissionPassRewardGroup> EntityMMissionPassRewardGroup { get; set; } = [];
 
-    public EntityMMissionRewardTable EntityMMissionRewardTable { get; }
+    public List<EntityMMissionReward> EntityMMissionReward { get; set; } = [];
 
-    public EntityMMissionSubCategoryTextTable EntityMMissionSubCategoryTextTable { get; }
+    public List<EntityMMissionSubCategoryText> EntityMMissionSubCategoryText { get; set; } = [];
 
-    public EntityMMissionTermTable EntityMMissionTermTable { get; }
+    public List<EntityMMissionTerm> EntityMMissionTerm { get; set; } = [];
 
-    public EntityMMissionUnlockConditionTable EntityMMissionUnlockConditionTable { get; }
+    public List<EntityMMissionUnlockCondition> EntityMMissionUnlockCondition { get; set; } = [];
 
-    public EntityMMomBannerTable EntityMMomBannerTable { get; }
+    public List<EntityMMomBanner> EntityMMomBanner { get; set; } = [];
 
-    public EntityMMomPointBannerTable EntityMMomPointBannerTable { get; }
+    public List<EntityMMomPointBanner> EntityMMomPointBanner { get; set; } = [];
 
-    public EntityMMovieTable EntityMMovieTable { get; }
+    public List<EntityMMovie> EntityMMovie { get; set; } = [];
 
-    public EntityMNaviCutInTable EntityMNaviCutInTable { get; }
+    public List<EntityMNaviCutIn> EntityMNaviCutIn { get; set; } = [];
 
-    public EntityMNaviCutInContentGroupTable EntityMNaviCutInContentGroupTable { get; }
+    public List<EntityMNaviCutInContentGroup> EntityMNaviCutInContentGroup { get; set; } = [];
 
-    public EntityMNaviCutInTextTable EntityMNaviCutInTextTable { get; }
+    public List<EntityMNaviCutInText> EntityMNaviCutInText { get; set; } = [];
 
-    public EntityMNumericalFunctionTable EntityMNumericalFunctionTable { get; }
+    public List<EntityMNumericalFunction> EntityMNumericalFunction { get; set; } = [];
 
-    public EntityMNumericalFunctionParameterGroupTable EntityMNumericalFunctionParameterGroupTable { get; }
+    public List<EntityMNumericalFunctionParameterGroup> EntityMNumericalFunctionParameterGroup { get; set; } = [];
 
-    public EntityMNumericalParameterMapTable EntityMNumericalParameterMapTable { get; }
+    public List<EntityMNumericalParameterMap> EntityMNumericalParameterMap { get; set; } = [];
 
-    public EntityMOmikujiTable EntityMOmikujiTable { get; }
+    public List<EntityMOmikuji> EntityMOmikuji { get; set; } = [];
 
-    public EntityMOverrideHitEffectConditionCriticalTable EntityMOverrideHitEffectConditionCriticalTable { get; }
+    public List<EntityMOverrideHitEffectConditionCritical> EntityMOverrideHitEffectConditionCritical { get; set; } = [];
 
-    public EntityMOverrideHitEffectConditionDamageAttributeTable EntityMOverrideHitEffectConditionDamageAttributeTable { get; }
+    public List<EntityMOverrideHitEffectConditionDamageAttribute> EntityMOverrideHitEffectConditionDamageAttribute { get; set; } = [];
 
-    public EntityMOverrideHitEffectConditionGroupTable EntityMOverrideHitEffectConditionGroupTable { get; }
+    public List<EntityMOverrideHitEffectConditionGroup> EntityMOverrideHitEffectConditionGroup { get; set; } = [];
 
-    public EntityMOverrideHitEffectConditionSkillExecutorTable EntityMOverrideHitEffectConditionSkillExecutorTable { get; }
+    public List<EntityMOverrideHitEffectConditionSkillExecutor> EntityMOverrideHitEffectConditionSkillExecutor { get; set; } = [];
 
-    public EntityMPartsTable EntityMPartsTable { get; }
+    public List<EntityMParts> EntityMParts { get; set; } = [];
 
-    public EntityMPartsEnhancedTable EntityMPartsEnhancedTable { get; }
+    public List<EntityMPartsEnhanced> EntityMPartsEnhanced { get; set; } = [];
 
-    public EntityMPartsEnhancedSubStatusTable EntityMPartsEnhancedSubStatusTable { get; }
+    public List<EntityMPartsEnhancedSubStatus> EntityMPartsEnhancedSubStatus { get; set; } = [];
 
-    public EntityMPartsGroupTable EntityMPartsGroupTable { get; }
+    public List<EntityMPartsGroup> EntityMPartsGroup { get; set; } = [];
 
-    public EntityMPartsLevelUpPriceGroupTable EntityMPartsLevelUpPriceGroupTable { get; }
+    public List<EntityMPartsLevelUpPriceGroup> EntityMPartsLevelUpPriceGroup { get; set; } = [];
 
-    public EntityMPartsLevelUpRateGroupTable EntityMPartsLevelUpRateGroupTable { get; }
+    public List<EntityMPartsLevelUpRateGroup> EntityMPartsLevelUpRateGroup { get; set; } = [];
 
-    public EntityMPartsRarityTable EntityMPartsRarityTable { get; }
+    public List<EntityMPartsRarity> EntityMPartsRarity { get; set; } = [];
 
-    public EntityMPartsSeriesTable EntityMPartsSeriesTable { get; }
+    public List<EntityMPartsSeries> EntityMPartsSeries { get; set; } = [];
 
-    public EntityMPartsSeriesBonusAbilityGroupTable EntityMPartsSeriesBonusAbilityGroupTable { get; }
+    public List<EntityMPartsSeriesBonusAbilityGroup> EntityMPartsSeriesBonusAbilityGroup { get; set; } = [];
 
-    public EntityMPartsStatusMainTable EntityMPartsStatusMainTable { get; }
+    public List<EntityMPartsStatusMain> EntityMPartsStatusMain { get; set; } = [];
 
-    public EntityMPlatformPaymentTable EntityMPlatformPaymentTable { get; }
+    public List<EntityMPlatformPayment> EntityMPlatformPayment { get; set; } = [];
 
-    public EntityMPlatformPaymentPriceTable EntityMPlatformPaymentPriceTable { get; }
+    public List<EntityMPlatformPaymentPrice> EntityMPlatformPaymentPrice { get; set; } = [];
 
-    public EntityMPortalCageAccessPointFunctionGroupTable EntityMPortalCageAccessPointFunctionGroupTable { get; }
+    public List<EntityMPortalCageAccessPointFunctionGroup> EntityMPortalCageAccessPointFunctionGroup { get; set; } = [];
 
-    public EntityMPortalCageAccessPointFunctionGroupScheduleTable EntityMPortalCageAccessPointFunctionGroupScheduleTable { get; }
+    public List<EntityMPortalCageAccessPointFunctionGroupSchedule> EntityMPortalCageAccessPointFunctionGroupSchedule { get; set; } = [];
 
-    public EntityMPortalCageCharacterGroupTable EntityMPortalCageCharacterGroupTable { get; }
+    public List<EntityMPortalCageCharacterGroup> EntityMPortalCageCharacterGroup { get; set; } = [];
 
-    public EntityMPortalCageGateTable EntityMPortalCageGateTable { get; }
+    public List<EntityMPortalCageGate> EntityMPortalCageGate { get; set; } = [];
 
-    public EntityMPortalCageSceneTable EntityMPortalCageSceneTable { get; }
+    public List<EntityMPortalCageScene> EntityMPortalCageScene { get; set; } = [];
 
-    public EntityMPossessionAcquisitionRouteTable EntityMPossessionAcquisitionRouteTable { get; }
+    public List<EntityMPossessionAcquisitionRoute> EntityMPossessionAcquisitionRoute { get; set; } = [];
 
-    public EntityMPowerCalculationConstantValueTable EntityMPowerCalculationConstantValueTable { get; }
+    public List<EntityMPowerCalculationConstantValue> EntityMPowerCalculationConstantValue { get; set; } = [];
 
-    public EntityMPowerReferenceStatusGroupTable EntityMPowerReferenceStatusGroupTable { get; }
+    public List<EntityMPowerReferenceStatusGroup> EntityMPowerReferenceStatusGroup { get; set; } = [];
 
-    public EntityMPremiumItemTable EntityMPremiumItemTable { get; }
+    public List<EntityMPremiumItem> EntityMPremiumItem { get; set; } = [];
 
-    public EntityMPvpBackgroundTable EntityMPvpBackgroundTable { get; }
+    public List<EntityMPvpBackground> EntityMPvpBackground { get; set; } = [];
 
-    public EntityMPvpGradeTable EntityMPvpGradeTable { get; }
+    public List<EntityMPvpGrade> EntityMPvpGrade { get; set; } = [];
 
-    public EntityMPvpGradeGroupTable EntityMPvpGradeGroupTable { get; }
+    public List<EntityMPvpGradeGroup> EntityMPvpGradeGroup { get; set; } = [];
 
-    public EntityMPvpGradeOneMatchRewardTable EntityMPvpGradeOneMatchRewardTable { get; }
+    public List<EntityMPvpGradeOneMatchReward> EntityMPvpGradeOneMatchReward { get; set; } = [];
 
-    public EntityMPvpGradeOneMatchRewardGroupTable EntityMPvpGradeOneMatchRewardGroupTable { get; }
+    public List<EntityMPvpGradeOneMatchRewardGroup> EntityMPvpGradeOneMatchRewardGroup { get; set; } = [];
 
-    public EntityMPvpGradeWeeklyRewardGroupTable EntityMPvpGradeWeeklyRewardGroupTable { get; }
+    public List<EntityMPvpGradeWeeklyRewardGroup> EntityMPvpGradeWeeklyRewardGroup { get; set; } = [];
 
-    public EntityMPvpRewardTable EntityMPvpRewardTable { get; }
+    public List<EntityMPvpReward> EntityMPvpReward { get; set; } = [];
 
-    public EntityMPvpSeasonTable EntityMPvpSeasonTable { get; }
+    public List<EntityMPvpSeason> EntityMPvpSeason { get; set; } = [];
 
-    public EntityMPvpSeasonGradeTable EntityMPvpSeasonGradeTable { get; }
+    public List<EntityMPvpSeasonGrade> EntityMPvpSeasonGrade { get; set; } = [];
 
-    public EntityMPvpSeasonGroupingTable EntityMPvpSeasonGroupingTable { get; }
+    public List<EntityMPvpSeasonGrouping> EntityMPvpSeasonGrouping { get; set; } = [];
 
-    public EntityMPvpSeasonRankRewardTable EntityMPvpSeasonRankRewardTable { get; }
+    public List<EntityMPvpSeasonRankReward> EntityMPvpSeasonRankReward { get; set; } = [];
 
-    public EntityMPvpSeasonRankRewardGroupTable EntityMPvpSeasonRankRewardGroupTable { get; }
+    public List<EntityMPvpSeasonRankRewardGroup> EntityMPvpSeasonRankRewardGroup { get; set; } = [];
 
-    public EntityMPvpSeasonRankRewardPerSeasonTable EntityMPvpSeasonRankRewardPerSeasonTable { get; }
+    public List<EntityMPvpSeasonRankRewardPerSeason> EntityMPvpSeasonRankRewardPerSeason { get; set; } = [];
 
-    public EntityMPvpSeasonRankRewardRankGroupTable EntityMPvpSeasonRankRewardRankGroupTable { get; }
+    public List<EntityMPvpSeasonRankRewardRankGroup> EntityMPvpSeasonRankRewardRankGroup { get; set; } = [];
 
-    public EntityMPvpWeeklyRankRewardGroupTable EntityMPvpWeeklyRankRewardGroupTable { get; }
+    public List<EntityMPvpWeeklyRankRewardGroup> EntityMPvpWeeklyRankRewardGroup { get; set; } = [];
 
-    public EntityMPvpWeeklyRankRewardRankGroupTable EntityMPvpWeeklyRankRewardRankGroupTable { get; }
+    public List<EntityMPvpWeeklyRankRewardRankGroup> EntityMPvpWeeklyRankRewardRankGroup { get; set; } = [];
 
-    public EntityMPvpWinStreakCountEffectTable EntityMPvpWinStreakCountEffectTable { get; }
+    public List<EntityMPvpWinStreakCountEffect> EntityMPvpWinStreakCountEffect { get; set; } = [];
 
-    public EntityMQuestTable EntityMQuestTable { get; }
+    public List<EntityMQuest> EntityMQuest { get; set; } = [];
 
-    public EntityMQuestBonusTable EntityMQuestBonusTable { get; }
+    public List<EntityMQuestBonus> EntityMQuestBonus { get; set; } = [];
 
-    public EntityMQuestBonusAbilityTable EntityMQuestBonusAbilityTable { get; }
+    public List<EntityMQuestBonusAbility> EntityMQuestBonusAbility { get; set; } = [];
 
-    public EntityMQuestBonusAllyCharacterTable EntityMQuestBonusAllyCharacterTable { get; }
+    public List<EntityMQuestBonusAllyCharacter> EntityMQuestBonusAllyCharacter { get; set; } = [];
 
-    public EntityMQuestBonusCharacterGroupTable EntityMQuestBonusCharacterGroupTable { get; }
+    public List<EntityMQuestBonusCharacterGroup> EntityMQuestBonusCharacterGroup { get; set; } = [];
 
-    public EntityMQuestBonusCostumeGroupTable EntityMQuestBonusCostumeGroupTable { get; }
+    public List<EntityMQuestBonusCostumeGroup> EntityMQuestBonusCostumeGroup { get; set; } = [];
 
-    public EntityMQuestBonusCostumeSettingGroupTable EntityMQuestBonusCostumeSettingGroupTable { get; }
+    public List<EntityMQuestBonusCostumeSettingGroup> EntityMQuestBonusCostumeSettingGroup { get; set; } = [];
 
-    public EntityMQuestBonusDropRewardTable EntityMQuestBonusDropRewardTable { get; }
+    public List<EntityMQuestBonusDropReward> EntityMQuestBonusDropReward { get; set; } = [];
 
-    public EntityMQuestBonusEffectGroupTable EntityMQuestBonusEffectGroupTable { get; }
+    public List<EntityMQuestBonusEffectGroup> EntityMQuestBonusEffectGroup { get; set; } = [];
 
-    public EntityMQuestBonusExpTable EntityMQuestBonusExpTable { get; }
+    public List<EntityMQuestBonusExp> EntityMQuestBonusExp { get; set; } = [];
 
-    public EntityMQuestBonusTermGroupTable EntityMQuestBonusTermGroupTable { get; }
+    public List<EntityMQuestBonusTermGroup> EntityMQuestBonusTermGroup { get; set; } = [];
 
-    public EntityMQuestBonusWeaponGroupTable EntityMQuestBonusWeaponGroupTable { get; }
+    public List<EntityMQuestBonusWeaponGroup> EntityMQuestBonusWeaponGroup { get; set; } = [];
 
-    public EntityMQuestCampaignTable EntityMQuestCampaignTable { get; }
+    public List<EntityMQuestCampaign> EntityMQuestCampaign { get; set; } = [];
 
-    public EntityMQuestCampaignEffectGroupTable EntityMQuestCampaignEffectGroupTable { get; }
+    public List<EntityMQuestCampaignEffectGroup> EntityMQuestCampaignEffectGroup { get; set; } = [];
 
-    public EntityMQuestCampaignTargetGroupTable EntityMQuestCampaignTargetGroupTable { get; }
+    public List<EntityMQuestCampaignTargetGroup> EntityMQuestCampaignTargetGroup { get; set; } = [];
 
-    public EntityMQuestCampaignTargetItemGroupTable EntityMQuestCampaignTargetItemGroupTable { get; }
+    public List<EntityMQuestCampaignTargetItemGroup> EntityMQuestCampaignTargetItemGroup { get; set; } = [];
 
-    public EntityMQuestDeckMultiRestrictionGroupTable EntityMQuestDeckMultiRestrictionGroupTable { get; }
+    public List<EntityMQuestDeckMultiRestrictionGroup> EntityMQuestDeckMultiRestrictionGroup { get; set; } = [];
 
-    public EntityMQuestDeckRestrictionGroupTable EntityMQuestDeckRestrictionGroupTable { get; }
+    public List<EntityMQuestDeckRestrictionGroup> EntityMQuestDeckRestrictionGroup { get; set; } = [];
 
-    public EntityMQuestDeckRestrictionGroupUnlockTable EntityMQuestDeckRestrictionGroupUnlockTable { get; }
+    public List<EntityMQuestDeckRestrictionGroupUnlock> EntityMQuestDeckRestrictionGroupUnlock { get; set; } = [];
 
-    public EntityMQuestDisplayAttributeGroupTable EntityMQuestDisplayAttributeGroupTable { get; }
+    public List<EntityMQuestDisplayAttributeGroup> EntityMQuestDisplayAttributeGroup { get; set; } = [];
 
-    public EntityMQuestDisplayEnemyThumbnailReplaceTable EntityMQuestDisplayEnemyThumbnailReplaceTable { get; }
+    public List<EntityMQuestDisplayEnemyThumbnailReplace> EntityMQuestDisplayEnemyThumbnailReplace { get; set; } = [];
 
-    public EntityMQuestFirstClearRewardGroupTable EntityMQuestFirstClearRewardGroupTable { get; }
+    public List<EntityMQuestFirstClearRewardGroup> EntityMQuestFirstClearRewardGroup { get; set; } = [];
 
-    public EntityMQuestFirstClearRewardSwitchTable EntityMQuestFirstClearRewardSwitchTable { get; }
+    public List<EntityMQuestFirstClearRewardSwitch> EntityMQuestFirstClearRewardSwitch { get; set; } = [];
 
-    public EntityMQuestMissionTable EntityMQuestMissionTable { get; }
+    public List<EntityMQuestMission> EntityMQuestMission { get; set; } = [];
 
-    public EntityMQuestMissionConditionValueGroupTable EntityMQuestMissionConditionValueGroupTable { get; }
+    public List<EntityMQuestMissionConditionValueGroup> EntityMQuestMissionConditionValueGroup { get; set; } = [];
 
-    public EntityMQuestMissionGroupTable EntityMQuestMissionGroupTable { get; }
+    public List<EntityMQuestMissionGroup> EntityMQuestMissionGroup { get; set; } = [];
 
-    public EntityMQuestMissionRewardTable EntityMQuestMissionRewardTable { get; }
+    public List<EntityMQuestMissionReward> EntityMQuestMissionReward { get; set; } = [];
 
-    public EntityMQuestPickupRewardGroupTable EntityMQuestPickupRewardGroupTable { get; }
+    public List<EntityMQuestPickupRewardGroup> EntityMQuestPickupRewardGroup { get; set; } = [];
 
-    public EntityMQuestRelationMainFlowTable EntityMQuestRelationMainFlowTable { get; }
+    public List<EntityMQuestRelationMainFlow> EntityMQuestRelationMainFlow { get; set; } = [];
 
-    public EntityMQuestReleaseConditionBigHuntScoreTable EntityMQuestReleaseConditionBigHuntScoreTable { get; }
+    public List<EntityMQuestReleaseConditionBigHuntScore> EntityMQuestReleaseConditionBigHuntScore { get; set; } = [];
 
-    public EntityMQuestReleaseConditionCharacterLevelTable EntityMQuestReleaseConditionCharacterLevelTable { get; }
+    public List<EntityMQuestReleaseConditionCharacterLevel> EntityMQuestReleaseConditionCharacterLevel { get; set; } = [];
 
-    public EntityMQuestReleaseConditionDeckPowerTable EntityMQuestReleaseConditionDeckPowerTable { get; }
+    public List<EntityMQuestReleaseConditionDeckPower> EntityMQuestReleaseConditionDeckPower { get; set; } = [];
 
-    public EntityMQuestReleaseConditionGroupTable EntityMQuestReleaseConditionGroupTable { get; }
+    public List<EntityMQuestReleaseConditionGroup> EntityMQuestReleaseConditionGroup { get; set; } = [];
 
-    public EntityMQuestReleaseConditionListTable EntityMQuestReleaseConditionListTable { get; }
+    public List<EntityMQuestReleaseConditionList> EntityMQuestReleaseConditionList { get; set; } = [];
 
-    public EntityMQuestReleaseConditionQuestChallengeTable EntityMQuestReleaseConditionQuestChallengeTable { get; }
+    public List<EntityMQuestReleaseConditionQuestChallenge> EntityMQuestReleaseConditionQuestChallenge { get; set; } = [];
 
-    public EntityMQuestReleaseConditionQuestClearTable EntityMQuestReleaseConditionQuestClearTable { get; }
+    public List<EntityMQuestReleaseConditionQuestClear> EntityMQuestReleaseConditionQuestClear { get; set; } = [];
 
-    public EntityMQuestReleaseConditionUserLevelTable EntityMQuestReleaseConditionUserLevelTable { get; }
+    public List<EntityMQuestReleaseConditionUserLevel> EntityMQuestReleaseConditionUserLevel { get; set; } = [];
 
-    public EntityMQuestReleaseConditionWeaponAcquisitionTable EntityMQuestReleaseConditionWeaponAcquisitionTable { get; }
+    public List<EntityMQuestReleaseConditionWeaponAcquisition> EntityMQuestReleaseConditionWeaponAcquisition { get; set; } = [];
 
-    public EntityMQuestReplayFlowRewardGroupTable EntityMQuestReplayFlowRewardGroupTable { get; }
+    public List<EntityMQuestReplayFlowRewardGroup> EntityMQuestReplayFlowRewardGroup { get; set; } = [];
 
-    public EntityMQuestSceneTable EntityMQuestSceneTable { get; }
+    public List<EntityMQuestScene> EntityMQuestScene { get; set; } = [];
 
-    public EntityMQuestSceneBattleTable EntityMQuestSceneBattleTable { get; }
+    public List<EntityMQuestSceneBattle> EntityMQuestSceneBattle { get; set; } = [];
 
-    public EntityMQuestSceneChoiceTable EntityMQuestSceneChoiceTable { get; }
+    public List<EntityMQuestSceneChoice> EntityMQuestSceneChoice { get; set; } = [];
 
-    public EntityMQuestSceneChoiceCostumeEffectGroupTable EntityMQuestSceneChoiceCostumeEffectGroupTable { get; }
+    public List<EntityMQuestSceneChoiceCostumeEffectGroup> EntityMQuestSceneChoiceCostumeEffectGroup { get; set; } = [];
 
-    public EntityMQuestSceneChoiceEffectTable EntityMQuestSceneChoiceEffectTable { get; }
+    public List<EntityMQuestSceneChoiceEffect> EntityMQuestSceneChoiceEffect { get; set; } = [];
 
-    public EntityMQuestSceneChoiceWeaponEffectGroupTable EntityMQuestSceneChoiceWeaponEffectGroupTable { get; }
+    public List<EntityMQuestSceneChoiceWeaponEffectGroup> EntityMQuestSceneChoiceWeaponEffectGroup { get; set; } = [];
 
-    public EntityMQuestSceneNotConfirmTitleDialogTable EntityMQuestSceneNotConfirmTitleDialogTable { get; }
+    public List<EntityMQuestSceneNotConfirmTitleDialog> EntityMQuestSceneNotConfirmTitleDialog { get; set; } = [];
 
-    public EntityMQuestSceneOutgameBlendshapeMotionTable EntityMQuestSceneOutgameBlendshapeMotionTable { get; }
+    public List<EntityMQuestSceneOutgameBlendshapeMotion> EntityMQuestSceneOutgameBlendshapeMotion { get; set; } = [];
 
-    public EntityMQuestScenePictureBookReplaceTable EntityMQuestScenePictureBookReplaceTable { get; }
+    public List<EntityMQuestScenePictureBookReplace> EntityMQuestScenePictureBookReplace { get; set; } = [];
 
-    public EntityMQuestScheduleTable EntityMQuestScheduleTable { get; }
+    public List<EntityMQuestSchedule> EntityMQuestSchedule { get; set; } = [];
 
-    public EntityMQuestScheduleCorrespondenceTable EntityMQuestScheduleCorrespondenceTable { get; }
+    public List<EntityMQuestScheduleCorrespondence> EntityMQuestScheduleCorrespondence { get; set; } = [];
 
-    public EntityMReportTable EntityMReportTable { get; }
+    public List<EntityMReport> EntityMReport { get; set; } = [];
 
-    public EntityMShopTable EntityMShopTable { get; }
+    public List<EntityMShop> EntityMShop { get; set; } = [];
 
-    public EntityMShopDisplayPriceTable EntityMShopDisplayPriceTable { get; }
+    public List<EntityMShopDisplayPrice> EntityMShopDisplayPrice { get; set; } = [];
 
-    public EntityMShopItemTable EntityMShopItemTable { get; }
+    public List<EntityMShopItem> EntityMShopItem { get; set; } = [];
 
-    public EntityMShopItemAdditionalContentTable EntityMShopItemAdditionalContentTable { get; }
+    public List<EntityMShopItemAdditionalContent> EntityMShopItemAdditionalContent { get; set; } = [];
 
-    public EntityMShopItemCellTable EntityMShopItemCellTable { get; }
+    public List<EntityMShopItemCell> EntityMShopItemCell { get; set; } = [];
 
-    public EntityMShopItemCellGroupTable EntityMShopItemCellGroupTable { get; }
+    public List<EntityMShopItemCellGroup> EntityMShopItemCellGroup { get; set; } = [];
 
-    public EntityMShopItemCellLimitedOpenTable EntityMShopItemCellLimitedOpenTable { get; }
+    public List<EntityMShopItemCellLimitedOpen> EntityMShopItemCellLimitedOpen { get; set; } = [];
 
-    public EntityMShopItemCellTermTable EntityMShopItemCellTermTable { get; }
+    public List<EntityMShopItemCellTerm> EntityMShopItemCellTerm { get; set; } = [];
 
-    public EntityMShopItemContentEffectTable EntityMShopItemContentEffectTable { get; }
+    public List<EntityMShopItemContentEffect> EntityMShopItemContentEffect { get; set; } = [];
 
-    public EntityMShopItemContentMissionTable EntityMShopItemContentMissionTable { get; }
+    public List<EntityMShopItemContentMission> EntityMShopItemContentMission { get; set; } = [];
 
-    public EntityMShopItemContentPossessionTable EntityMShopItemContentPossessionTable { get; }
+    public List<EntityMShopItemContentPossession> EntityMShopItemContentPossession { get; set; } = [];
 
-    public EntityMShopItemLimitedStockTable EntityMShopItemLimitedStockTable { get; }
+    public List<EntityMShopItemLimitedStock> EntityMShopItemLimitedStock { get; set; } = [];
 
-    public EntityMShopItemUserLevelConditionTable EntityMShopItemUserLevelConditionTable { get; }
+    public List<EntityMShopItemUserLevelCondition> EntityMShopItemUserLevelCondition { get; set; } = [];
 
-    public EntityMShopReplaceableGemTable EntityMShopReplaceableGemTable { get; }
+    public List<EntityMShopReplaceableGem> EntityMShopReplaceableGem { get; set; } = [];
 
-    public EntityMSideStoryQuestTable EntityMSideStoryQuestTable { get; }
+    public List<EntityMSideStoryQuest> EntityMSideStoryQuest { get; set; } = [];
 
-    public EntityMSideStoryQuestLimitContentTable EntityMSideStoryQuestLimitContentTable { get; }
+    public List<EntityMSideStoryQuestLimitContent> EntityMSideStoryQuestLimitContent { get; set; } = [];
 
-    public EntityMSideStoryQuestSceneTable EntityMSideStoryQuestSceneTable { get; }
+    public List<EntityMSideStoryQuestScene> EntityMSideStoryQuestScene { get; set; } = [];
 
-    public EntityMSkillTable EntityMSkillTable { get; }
+    public List<EntityMSkill> EntityMSkill { get; set; } = [];
 
-    public EntityMSkillAbnormalTable EntityMSkillAbnormalTable { get; }
+    public List<EntityMSkillAbnormal> EntityMSkillAbnormal { get; set; } = [];
 
-    public EntityMSkillAbnormalBehaviourTable EntityMSkillAbnormalBehaviourTable { get; }
+    public List<EntityMSkillAbnormalBehaviour> EntityMSkillAbnormalBehaviour { get; set; } = [];
 
-    public EntityMSkillAbnormalBehaviourActionAbnormalResistanceTable EntityMSkillAbnormalBehaviourActionAbnormalResistanceTable { get; }
+    public List<EntityMSkillAbnormalBehaviourActionAbnormalResistance> EntityMSkillAbnormalBehaviourActionAbnormalResistance { get; set; } = [];
 
-    public EntityMSkillAbnormalBehaviourActionAttributeDamageCorrectionTable EntityMSkillAbnormalBehaviourActionAttributeDamageCorrectionTable { get; }
+    public List<EntityMSkillAbnormalBehaviourActionAttributeDamageCorrection> EntityMSkillAbnormalBehaviourActionAttributeDamageCorrection { get; set; } = [];
 
-    public EntityMSkillAbnormalBehaviourActionBuffResistanceTable EntityMSkillAbnormalBehaviourActionBuffResistanceTable { get; }
+    public List<EntityMSkillAbnormalBehaviourActionBuffResistance> EntityMSkillAbnormalBehaviourActionBuffResistance { get; set; } = [];
 
-    public EntityMSkillAbnormalBehaviourActionDamageTable EntityMSkillAbnormalBehaviourActionDamageTable { get; }
+    public List<EntityMSkillAbnormalBehaviourActionDamage> EntityMSkillAbnormalBehaviourActionDamage { get; set; } = [];
 
-    public EntityMSkillAbnormalBehaviourActionDamageMultiplyTable EntityMSkillAbnormalBehaviourActionDamageMultiplyTable { get; }
+    public List<EntityMSkillAbnormalBehaviourActionDamageMultiply> EntityMSkillAbnormalBehaviourActionDamageMultiply { get; set; } = [];
 
-    public EntityMSkillAbnormalBehaviourActionDamageMultiplyDetailAlwaysTable EntityMSkillAbnormalBehaviourActionDamageMultiplyDetailAlwaysTable { get; }
+    public List<EntityMSkillAbnormalBehaviourActionDamageMultiplyDetailAlways> EntityMSkillAbnormalBehaviourActionDamageMultiplyDetailAlways { get; set; } = [];
 
-    public EntityMSkillAbnormalBehaviourActionDefaultSkillLotteryTable EntityMSkillAbnormalBehaviourActionDefaultSkillLotteryTable { get; }
+    public List<EntityMSkillAbnormalBehaviourActionDefaultSkillLottery> EntityMSkillAbnormalBehaviourActionDefaultSkillLottery { get; set; } = [];
 
-    public EntityMSkillAbnormalBehaviourActionHitRatioDownTable EntityMSkillAbnormalBehaviourActionHitRatioDownTable { get; }
+    public List<EntityMSkillAbnormalBehaviourActionHitRatioDown> EntityMSkillAbnormalBehaviourActionHitRatioDown { get; set; } = [];
 
-    public EntityMSkillAbnormalBehaviourActionModifyHateValueTable EntityMSkillAbnormalBehaviourActionModifyHateValueTable { get; }
+    public List<EntityMSkillAbnormalBehaviourActionModifyHateValue> EntityMSkillAbnormalBehaviourActionModifyHateValue { get; set; } = [];
 
-    public EntityMSkillAbnormalBehaviourActionOverrideEvasionValueTable EntityMSkillAbnormalBehaviourActionOverrideEvasionValueTable { get; }
+    public List<EntityMSkillAbnormalBehaviourActionOverrideEvasionValue> EntityMSkillAbnormalBehaviourActionOverrideEvasionValue { get; set; } = [];
 
-    public EntityMSkillAbnormalBehaviourActionOverrideHitEffectTable EntityMSkillAbnormalBehaviourActionOverrideHitEffectTable { get; }
+    public List<EntityMSkillAbnormalBehaviourActionOverrideHitEffect> EntityMSkillAbnormalBehaviourActionOverrideHitEffect { get; set; } = [];
 
-    public EntityMSkillAbnormalBehaviourActionRecoveryTable EntityMSkillAbnormalBehaviourActionRecoveryTable { get; }
+    public List<EntityMSkillAbnormalBehaviourActionRecovery> EntityMSkillAbnormalBehaviourActionRecovery { get; set; } = [];
 
-    public EntityMSkillAbnormalBehaviourActionTurnRestrictionTable EntityMSkillAbnormalBehaviourActionTurnRestrictionTable { get; }
+    public List<EntityMSkillAbnormalBehaviourActionTurnRestriction> EntityMSkillAbnormalBehaviourActionTurnRestriction { get; set; } = [];
 
-    public EntityMSkillAbnormalBehaviourGroupTable EntityMSkillAbnormalBehaviourGroupTable { get; }
+    public List<EntityMSkillAbnormalBehaviourGroup> EntityMSkillAbnormalBehaviourGroup { get; set; } = [];
 
-    public EntityMSkillAbnormalDamageMultiplyDetailAbnormalTable EntityMSkillAbnormalDamageMultiplyDetailAbnormalTable { get; }
+    public List<EntityMSkillAbnormalDamageMultiplyDetailAbnormal> EntityMSkillAbnormalDamageMultiplyDetailAbnormal { get; set; } = [];
 
-    public EntityMSkillAbnormalDamageMultiplyDetailBuffAttachedTable EntityMSkillAbnormalDamageMultiplyDetailBuffAttachedTable { get; }
+    public List<EntityMSkillAbnormalDamageMultiplyDetailBuffAttached> EntityMSkillAbnormalDamageMultiplyDetailBuffAttached { get; set; } = [];
 
-    public EntityMSkillAbnormalDamageMultiplyDetailCriticalTable EntityMSkillAbnormalDamageMultiplyDetailCriticalTable { get; }
+    public List<EntityMSkillAbnormalDamageMultiplyDetailCritical> EntityMSkillAbnormalDamageMultiplyDetailCritical { get; set; } = [];
 
-    public EntityMSkillAbnormalDamageMultiplyDetailHitIndexTable EntityMSkillAbnormalDamageMultiplyDetailHitIndexTable { get; }
+    public List<EntityMSkillAbnormalDamageMultiplyDetailHitIndex> EntityMSkillAbnormalDamageMultiplyDetailHitIndex { get; set; } = [];
 
-    public EntityMSkillAbnormalDamageMultiplyDetailSkillfulWeaponTable EntityMSkillAbnormalDamageMultiplyDetailSkillfulWeaponTable { get; }
+    public List<EntityMSkillAbnormalDamageMultiplyDetailSkillfulWeapon> EntityMSkillAbnormalDamageMultiplyDetailSkillfulWeapon { get; set; } = [];
 
-    public EntityMSkillAbnormalLifetimeTable EntityMSkillAbnormalLifetimeTable { get; }
+    public List<EntityMSkillAbnormalLifetime> EntityMSkillAbnormalLifetime { get; set; } = [];
 
-    public EntityMSkillAbnormalLifetimeBehaviourActivateCountTable EntityMSkillAbnormalLifetimeBehaviourActivateCountTable { get; }
+    public List<EntityMSkillAbnormalLifetimeBehaviourActivateCount> EntityMSkillAbnormalLifetimeBehaviourActivateCount { get; set; } = [];
 
-    public EntityMSkillAbnormalLifetimeBehaviourFrameCountTable EntityMSkillAbnormalLifetimeBehaviourFrameCountTable { get; }
+    public List<EntityMSkillAbnormalLifetimeBehaviourFrameCount> EntityMSkillAbnormalLifetimeBehaviourFrameCount { get; set; } = [];
 
-    public EntityMSkillAbnormalLifetimeBehaviourGroupTable EntityMSkillAbnormalLifetimeBehaviourGroupTable { get; }
+    public List<EntityMSkillAbnormalLifetimeBehaviourGroup> EntityMSkillAbnormalLifetimeBehaviourGroup { get; set; } = [];
 
-    public EntityMSkillAbnormalLifetimeBehaviourReceiveDamageCountTable EntityMSkillAbnormalLifetimeBehaviourReceiveDamageCountTable { get; }
+    public List<EntityMSkillAbnormalLifetimeBehaviourReceiveDamageCount> EntityMSkillAbnormalLifetimeBehaviourReceiveDamageCount { get; set; } = [];
 
-    public EntityMSkillAbnormalLifetimeBehaviourTurnCountTable EntityMSkillAbnormalLifetimeBehaviourTurnCountTable { get; }
+    public List<EntityMSkillAbnormalLifetimeBehaviourTurnCount> EntityMSkillAbnormalLifetimeBehaviourTurnCount { get; set; } = [];
 
-    public EntityMSkillBehaviourTable EntityMSkillBehaviourTable { get; }
+    public List<EntityMSkillBehaviour> EntityMSkillBehaviour { get; set; } = [];
 
-    public EntityMSkillBehaviourActionAbnormalTable EntityMSkillBehaviourActionAbnormalTable { get; }
+    public List<EntityMSkillBehaviourActionAbnormal> EntityMSkillBehaviourActionAbnormal { get; set; } = [];
 
-    public EntityMSkillBehaviourActionActiveSkillDamageCorrectionTable EntityMSkillBehaviourActionActiveSkillDamageCorrectionTable { get; }
+    public List<EntityMSkillBehaviourActionActiveSkillDamageCorrection> EntityMSkillBehaviourActionActiveSkillDamageCorrection { get; set; } = [];
 
-    public EntityMSkillBehaviourActionAdvanceActiveSkillCooltimeTable EntityMSkillBehaviourActionAdvanceActiveSkillCooltimeTable { get; }
+    public List<EntityMSkillBehaviourActionAdvanceActiveSkillCooltime> EntityMSkillBehaviourActionAdvanceActiveSkillCooltime { get; set; } = [];
 
-    public EntityMSkillBehaviourActionAdvanceActiveSkillCooltimeImmediateTable EntityMSkillBehaviourActionAdvanceActiveSkillCooltimeImmediateTable { get; }
+    public List<EntityMSkillBehaviourActionAdvanceActiveSkillCooltimeImmediate> EntityMSkillBehaviourActionAdvanceActiveSkillCooltimeImmediate { get; set; } = [];
 
-    public EntityMSkillBehaviourActionAttackTable EntityMSkillBehaviourActionAttackTable { get; }
+    public List<EntityMSkillBehaviourActionAttack> EntityMSkillBehaviourActionAttack { get; set; } = [];
 
-    public EntityMSkillBehaviourActionAttackClampHpTable EntityMSkillBehaviourActionAttackClampHpTable { get; }
+    public List<EntityMSkillBehaviourActionAttackClampHp> EntityMSkillBehaviourActionAttackClampHp { get; set; } = [];
 
-    public EntityMSkillBehaviourActionAttackComboTable EntityMSkillBehaviourActionAttackComboTable { get; }
+    public List<EntityMSkillBehaviourActionAttackCombo> EntityMSkillBehaviourActionAttackCombo { get; set; } = [];
 
-    public EntityMSkillBehaviourActionAttackFixedDamageTable EntityMSkillBehaviourActionAttackFixedDamageTable { get; }
+    public List<EntityMSkillBehaviourActionAttackFixedDamage> EntityMSkillBehaviourActionAttackFixedDamage { get; set; } = [];
 
-    public EntityMSkillBehaviourActionAttackHpRatioTable EntityMSkillBehaviourActionAttackHpRatioTable { get; }
+    public List<EntityMSkillBehaviourActionAttackHpRatio> EntityMSkillBehaviourActionAttackHpRatio { get; set; } = [];
 
-    public EntityMSkillBehaviourActionAttackIgnoreVitalityTable EntityMSkillBehaviourActionAttackIgnoreVitalityTable { get; }
+    public List<EntityMSkillBehaviourActionAttackIgnoreVitality> EntityMSkillBehaviourActionAttackIgnoreVitality { get; set; } = [];
 
-    public EntityMSkillBehaviourActionAttackMainWeaponAttributeTable EntityMSkillBehaviourActionAttackMainWeaponAttributeTable { get; }
+    public List<EntityMSkillBehaviourActionAttackMainWeaponAttribute> EntityMSkillBehaviourActionAttackMainWeaponAttribute { get; set; } = [];
 
-    public EntityMSkillBehaviourActionAttackSkillfulMainWeaponTypeTable EntityMSkillBehaviourActionAttackSkillfulMainWeaponTypeTable { get; }
+    public List<EntityMSkillBehaviourActionAttackSkillfulMainWeaponType> EntityMSkillBehaviourActionAttackSkillfulMainWeaponType { get; set; } = [];
 
-    public EntityMSkillBehaviourActionAttackVitalityTable EntityMSkillBehaviourActionAttackVitalityTable { get; }
+    public List<EntityMSkillBehaviourActionAttackVitality> EntityMSkillBehaviourActionAttackVitality { get; set; } = [];
 
-    public EntityMSkillBehaviourActionAttributeDamageCorrectionTable EntityMSkillBehaviourActionAttributeDamageCorrectionTable { get; }
+    public List<EntityMSkillBehaviourActionAttributeDamageCorrection> EntityMSkillBehaviourActionAttributeDamageCorrection { get; set; } = [];
 
-    public EntityMSkillBehaviourActionBuffTable EntityMSkillBehaviourActionBuffTable { get; }
+    public List<EntityMSkillBehaviourActionBuff> EntityMSkillBehaviourActionBuff { get; set; } = [];
 
-    public EntityMSkillBehaviourActionChangestepTable EntityMSkillBehaviourActionChangestepTable { get; }
+    public List<EntityMSkillBehaviourActionChangestep> EntityMSkillBehaviourActionChangestep { get; set; } = [];
 
-    public EntityMSkillBehaviourActionDamageCorrectionHpRatioTable EntityMSkillBehaviourActionDamageCorrectionHpRatioTable { get; }
+    public List<EntityMSkillBehaviourActionDamageCorrectionHpRatio> EntityMSkillBehaviourActionDamageCorrectionHpRatio { get; set; } = [];
 
-    public EntityMSkillBehaviourActionDamageMultiplyTable EntityMSkillBehaviourActionDamageMultiplyTable { get; }
+    public List<EntityMSkillBehaviourActionDamageMultiply> EntityMSkillBehaviourActionDamageMultiply { get; set; } = [];
 
-    public EntityMSkillBehaviourActionDefaultSkillLotteryTable EntityMSkillBehaviourActionDefaultSkillLotteryTable { get; }
+    public List<EntityMSkillBehaviourActionDefaultSkillLottery> EntityMSkillBehaviourActionDefaultSkillLottery { get; set; } = [];
 
-    public EntityMSkillBehaviourActionExtendBuffCooltimeTable EntityMSkillBehaviourActionExtendBuffCooltimeTable { get; }
+    public List<EntityMSkillBehaviourActionExtendBuffCooltime> EntityMSkillBehaviourActionExtendBuffCooltime { get; set; } = [];
 
-    public EntityMSkillBehaviourActionHpRatioDamageTable EntityMSkillBehaviourActionHpRatioDamageTable { get; }
+    public List<EntityMSkillBehaviourActionHpRatioDamage> EntityMSkillBehaviourActionHpRatioDamage { get; set; } = [];
 
-    public EntityMSkillBehaviourActionOverlimitDamageMultiplyTable EntityMSkillBehaviourActionOverlimitDamageMultiplyTable { get; }
+    public List<EntityMSkillBehaviourActionOverlimitDamageMultiply> EntityMSkillBehaviourActionOverlimitDamageMultiply { get; set; } = [];
 
-    public EntityMSkillBehaviourActionRecoveryTable EntityMSkillBehaviourActionRecoveryTable { get; }
+    public List<EntityMSkillBehaviourActionRecovery> EntityMSkillBehaviourActionRecovery { get; set; } = [];
 
-    public EntityMSkillBehaviourActionRecoveryPointCorrectionTable EntityMSkillBehaviourActionRecoveryPointCorrectionTable { get; }
+    public List<EntityMSkillBehaviourActionRecoveryPointCorrection> EntityMSkillBehaviourActionRecoveryPointCorrection { get; set; } = [];
 
-    public EntityMSkillBehaviourActionRemoveAbnormalTable EntityMSkillBehaviourActionRemoveAbnormalTable { get; }
+    public List<EntityMSkillBehaviourActionRemoveAbnormal> EntityMSkillBehaviourActionRemoveAbnormal { get; set; } = [];
 
-    public EntityMSkillBehaviourActionRemoveBuffTable EntityMSkillBehaviourActionRemoveBuffTable { get; }
+    public List<EntityMSkillBehaviourActionRemoveBuff> EntityMSkillBehaviourActionRemoveBuff { get; set; } = [];
 
-    public EntityMSkillBehaviourActionShortenActiveSkillCooltimeTable EntityMSkillBehaviourActionShortenActiveSkillCooltimeTable { get; }
+    public List<EntityMSkillBehaviourActionShortenActiveSkillCooltime> EntityMSkillBehaviourActionShortenActiveSkillCooltime { get; set; } = [];
 
-    public EntityMSkillBehaviourActionSkillRecoveryPowerCorrectionTable EntityMSkillBehaviourActionSkillRecoveryPowerCorrectionTable { get; }
+    public List<EntityMSkillBehaviourActionSkillRecoveryPowerCorrection> EntityMSkillBehaviourActionSkillRecoveryPowerCorrection { get; set; } = [];
 
-    public EntityMSkillBehaviourActivationConditionActivationUpperCountTable EntityMSkillBehaviourActivationConditionActivationUpperCountTable { get; }
+    public List<EntityMSkillBehaviourActivationConditionActivationUpperCount> EntityMSkillBehaviourActivationConditionActivationUpperCount { get; set; } = [];
 
-    public EntityMSkillBehaviourActivationConditionAttributeTable EntityMSkillBehaviourActivationConditionAttributeTable { get; }
+    public List<EntityMSkillBehaviourActivationConditionAttribute> EntityMSkillBehaviourActivationConditionAttribute { get; set; } = [];
 
-    public EntityMSkillBehaviourActivationConditionGroupTable EntityMSkillBehaviourActivationConditionGroupTable { get; }
+    public List<EntityMSkillBehaviourActivationConditionGroup> EntityMSkillBehaviourActivationConditionGroup { get; set; } = [];
 
-    public EntityMSkillBehaviourActivationConditionHpRatioTable EntityMSkillBehaviourActivationConditionHpRatioTable { get; }
+    public List<EntityMSkillBehaviourActivationConditionHpRatio> EntityMSkillBehaviourActivationConditionHpRatio { get; set; } = [];
 
-    public EntityMSkillBehaviourActivationConditionInSkillFlowTable EntityMSkillBehaviourActivationConditionInSkillFlowTable { get; }
+    public List<EntityMSkillBehaviourActivationConditionInSkillFlow> EntityMSkillBehaviourActivationConditionInSkillFlow { get; set; } = [];
 
-    public EntityMSkillBehaviourActivationConditionWaveNumberTable EntityMSkillBehaviourActivationConditionWaveNumberTable { get; }
+    public List<EntityMSkillBehaviourActivationConditionWaveNumber> EntityMSkillBehaviourActivationConditionWaveNumber { get; set; } = [];
 
-    public EntityMSkillBehaviourActivationMethodTable EntityMSkillBehaviourActivationMethodTable { get; }
+    public List<EntityMSkillBehaviourActivationMethod> EntityMSkillBehaviourActivationMethod { get; set; } = [];
 
-    public EntityMSkillBehaviourGroupTable EntityMSkillBehaviourGroupTable { get; }
+    public List<EntityMSkillBehaviourGroup> EntityMSkillBehaviourGroup { get; set; } = [];
 
-    public EntityMSkillBuffTable EntityMSkillBuffTable { get; }
+    public List<EntityMSkillBuff> EntityMSkillBuff { get; set; } = [];
 
-    public EntityMSkillCasttimeTable EntityMSkillCasttimeTable { get; }
+    public List<EntityMSkillCasttime> EntityMSkillCasttime { get; set; } = [];
 
-    public EntityMSkillCasttimeBehaviourTable EntityMSkillCasttimeBehaviourTable { get; }
+    public List<EntityMSkillCasttimeBehaviour> EntityMSkillCasttimeBehaviour { get; set; } = [];
 
-    public EntityMSkillCasttimeBehaviourActionOnFrameUpdateTable EntityMSkillCasttimeBehaviourActionOnFrameUpdateTable { get; }
+    public List<EntityMSkillCasttimeBehaviourActionOnFrameUpdate> EntityMSkillCasttimeBehaviourActionOnFrameUpdate { get; set; } = [];
 
-    public EntityMSkillCasttimeBehaviourActionOnSkillDamageConditionTable EntityMSkillCasttimeBehaviourActionOnSkillDamageConditionTable { get; }
+    public List<EntityMSkillCasttimeBehaviourActionOnSkillDamageCondition> EntityMSkillCasttimeBehaviourActionOnSkillDamageCondition { get; set; } = [];
 
-    public EntityMSkillCasttimeBehaviourGroupTable EntityMSkillCasttimeBehaviourGroupTable { get; }
+    public List<EntityMSkillCasttimeBehaviourGroup> EntityMSkillCasttimeBehaviourGroup { get; set; } = [];
 
-    public EntityMSkillCooltimeAdvanceValueOnDefaultSkillGroupTable EntityMSkillCooltimeAdvanceValueOnDefaultSkillGroupTable { get; }
+    public List<EntityMSkillCooltimeAdvanceValueOnDefaultSkillGroup> EntityMSkillCooltimeAdvanceValueOnDefaultSkillGroup { get; set; } = [];
 
-    public EntityMSkillCooltimeBehaviourTable EntityMSkillCooltimeBehaviourTable { get; }
+    public List<EntityMSkillCooltimeBehaviour> EntityMSkillCooltimeBehaviour { get; set; } = [];
 
-    public EntityMSkillCooltimeBehaviourGroupTable EntityMSkillCooltimeBehaviourGroupTable { get; }
+    public List<EntityMSkillCooltimeBehaviourGroup> EntityMSkillCooltimeBehaviourGroup { get; set; } = [];
 
-    public EntityMSkillCooltimeBehaviourOnExecuteActiveSkillTable EntityMSkillCooltimeBehaviourOnExecuteActiveSkillTable { get; }
+    public List<EntityMSkillCooltimeBehaviourOnExecuteActiveSkill> EntityMSkillCooltimeBehaviourOnExecuteActiveSkill { get; set; } = [];
 
-    public EntityMSkillCooltimeBehaviourOnExecuteCompanionSkillTable EntityMSkillCooltimeBehaviourOnExecuteCompanionSkillTable { get; }
+    public List<EntityMSkillCooltimeBehaviourOnExecuteCompanionSkill> EntityMSkillCooltimeBehaviourOnExecuteCompanionSkill { get; set; } = [];
 
-    public EntityMSkillCooltimeBehaviourOnExecuteDefaultSkillTable EntityMSkillCooltimeBehaviourOnExecuteDefaultSkillTable { get; }
+    public List<EntityMSkillCooltimeBehaviourOnExecuteDefaultSkill> EntityMSkillCooltimeBehaviourOnExecuteDefaultSkill { get; set; } = [];
 
-    public EntityMSkillCooltimeBehaviourOnFrameUpdateTable EntityMSkillCooltimeBehaviourOnFrameUpdateTable { get; }
+    public List<EntityMSkillCooltimeBehaviourOnFrameUpdate> EntityMSkillCooltimeBehaviourOnFrameUpdate { get; set; } = [];
 
-    public EntityMSkillCooltimeBehaviourOnSkillDamageTable EntityMSkillCooltimeBehaviourOnSkillDamageTable { get; }
+    public List<EntityMSkillCooltimeBehaviourOnSkillDamage> EntityMSkillCooltimeBehaviourOnSkillDamage { get; set; } = [];
 
-    public EntityMSkillDamageMultiplyAbnormalAttachedValueGroupTable EntityMSkillDamageMultiplyAbnormalAttachedValueGroupTable { get; }
+    public List<EntityMSkillDamageMultiplyAbnormalAttachedValueGroup> EntityMSkillDamageMultiplyAbnormalAttachedValueGroup { get; set; } = [];
 
-    public EntityMSkillDamageMultiplyDetailAbnormalAttachedTable EntityMSkillDamageMultiplyDetailAbnormalAttachedTable { get; }
+    public List<EntityMSkillDamageMultiplyDetailAbnormalAttached> EntityMSkillDamageMultiplyDetailAbnormalAttached { get; set; } = [];
 
-    public EntityMSkillDamageMultiplyDetailAlwaysTable EntityMSkillDamageMultiplyDetailAlwaysTable { get; }
+    public List<EntityMSkillDamageMultiplyDetailAlways> EntityMSkillDamageMultiplyDetailAlways { get; set; } = [];
 
-    public EntityMSkillDamageMultiplyDetailBuffAttachedTable EntityMSkillDamageMultiplyDetailBuffAttachedTable { get; }
+    public List<EntityMSkillDamageMultiplyDetailBuffAttached> EntityMSkillDamageMultiplyDetailBuffAttached { get; set; } = [];
 
-    public EntityMSkillDamageMultiplyDetailCriticalTable EntityMSkillDamageMultiplyDetailCriticalTable { get; }
+    public List<EntityMSkillDamageMultiplyDetailCritical> EntityMSkillDamageMultiplyDetailCritical { get; set; } = [];
 
-    public EntityMSkillDamageMultiplyDetailHitIndexTable EntityMSkillDamageMultiplyDetailHitIndexTable { get; }
+    public List<EntityMSkillDamageMultiplyDetailHitIndex> EntityMSkillDamageMultiplyDetailHitIndex { get; set; } = [];
 
-    public EntityMSkillDamageMultiplyDetailSkillfulWeaponTypeTable EntityMSkillDamageMultiplyDetailSkillfulWeaponTypeTable { get; }
+    public List<EntityMSkillDamageMultiplyDetailSkillfulWeaponType> EntityMSkillDamageMultiplyDetailSkillfulWeaponType { get; set; } = [];
 
-    public EntityMSkillDamageMultiplyDetailSpecifiedCostumeTypeTable EntityMSkillDamageMultiplyDetailSpecifiedCostumeTypeTable { get; }
+    public List<EntityMSkillDamageMultiplyDetailSpecifiedCostumeType> EntityMSkillDamageMultiplyDetailSpecifiedCostumeType { get; set; } = [];
 
-    public EntityMSkillDamageMultiplyHitIndexValueGroupTable EntityMSkillDamageMultiplyHitIndexValueGroupTable { get; }
+    public List<EntityMSkillDamageMultiplyHitIndexValueGroup> EntityMSkillDamageMultiplyHitIndexValueGroup { get; set; } = [];
 
-    public EntityMSkillDamageMultiplyTargetSpecifiedCostumeGroupTable EntityMSkillDamageMultiplyTargetSpecifiedCostumeGroupTable { get; }
+    public List<EntityMSkillDamageMultiplyTargetSpecifiedCostumeGroup> EntityMSkillDamageMultiplyTargetSpecifiedCostumeGroup { get; set; } = [];
 
-    public EntityMSkillDetailTable EntityMSkillDetailTable { get; }
+    public List<EntityMSkillDetail> EntityMSkillDetail { get; set; } = [];
 
-    public EntityMSkillLevelGroupTable EntityMSkillLevelGroupTable { get; }
+    public List<EntityMSkillLevelGroup> EntityMSkillLevelGroup { get; set; } = [];
 
-    public EntityMSkillRemoveAbnormalTargetAbnormalGroupTable EntityMSkillRemoveAbnormalTargetAbnormalGroupTable { get; }
+    public List<EntityMSkillRemoveAbnormalTargetAbnormalGroup> EntityMSkillRemoveAbnormalTargetAbnormalGroup { get; set; } = [];
 
-    public EntityMSkillRemoveBuffFilterStatusKindTable EntityMSkillRemoveBuffFilterStatusKindTable { get; }
+    public List<EntityMSkillRemoveBuffFilterStatusKind> EntityMSkillRemoveBuffFilterStatusKind { get; set; } = [];
 
-    public EntityMSkillReserveUiTypeTable EntityMSkillReserveUiTypeTable { get; }
+    public List<EntityMSkillReserveUiType> EntityMSkillReserveUiType { get; set; } = [];
 
-    public EntityMSmartphoneChatGroupTable EntityMSmartphoneChatGroupTable { get; }
+    public List<EntityMSmartphoneChatGroup> EntityMSmartphoneChatGroup { get; set; } = [];
 
-    public EntityMSmartphoneChatGroupMessageTable EntityMSmartphoneChatGroupMessageTable { get; }
+    public List<EntityMSmartphoneChatGroupMessage> EntityMSmartphoneChatGroupMessage { get; set; } = [];
 
-    public EntityMSpeakerTable EntityMSpeakerTable { get; }
+    public List<EntityMSpeaker> EntityMSpeaker { get; set; } = [];
 
-    public EntityMStainedGlassTable EntityMStainedGlassTable { get; }
+    public List<EntityMStainedGlass> EntityMStainedGlass { get; set; } = [];
 
-    public EntityMStainedGlassStatusUpGroupTable EntityMStainedGlassStatusUpGroupTable { get; }
+    public List<EntityMStainedGlassStatusUpGroup> EntityMStainedGlassStatusUpGroup { get; set; } = [];
 
-    public EntityMStainedGlassStatusUpTargetGroupTable EntityMStainedGlassStatusUpTargetGroupTable { get; }
+    public List<EntityMStainedGlassStatusUpTargetGroup> EntityMStainedGlassStatusUpTargetGroup { get; set; } = [];
 
-    public EntityMThoughtTable EntityMThoughtTable { get; }
+    public List<EntityMThought> EntityMThought { get; set; } = [];
 
-    public EntityMTipTable EntityMTipTable { get; }
+    public List<EntityMTip> EntityMTip { get; set; } = [];
 
-    public EntityMTipBackgroundAssetTable EntityMTipBackgroundAssetTable { get; }
+    public List<EntityMTipBackgroundAsset> EntityMTipBackgroundAsset { get; set; } = [];
 
-    public EntityMTipDisplayConditionGroupTable EntityMTipDisplayConditionGroupTable { get; }
+    public List<EntityMTipDisplayConditionGroup> EntityMTipDisplayConditionGroup { get; set; } = [];
 
-    public EntityMTipGroupTable EntityMTipGroupTable { get; }
+    public List<EntityMTipGroup> EntityMTipGroup { get; set; } = [];
 
-    public EntityMTipGroupBackgroundAssetTable EntityMTipGroupBackgroundAssetTable { get; }
+    public List<EntityMTipGroupBackgroundAsset> EntityMTipGroupBackgroundAsset { get; set; } = [];
 
-    public EntityMTipGroupBackgroundAssetRelationTable EntityMTipGroupBackgroundAssetRelationTable { get; }
+    public List<EntityMTipGroupBackgroundAssetRelation> EntityMTipGroupBackgroundAssetRelation { get; set; } = [];
 
-    public EntityMTipGroupSelectionTable EntityMTipGroupSelectionTable { get; }
+    public List<EntityMTipGroupSelection> EntityMTipGroupSelection { get; set; } = [];
 
-    public EntityMTipGroupSituationTable EntityMTipGroupSituationTable { get; }
+    public List<EntityMTipGroupSituation> EntityMTipGroupSituation { get; set; } = [];
 
-    public EntityMTipGroupSituationSeasonTable EntityMTipGroupSituationSeasonTable { get; }
+    public List<EntityMTipGroupSituationSeason> EntityMTipGroupSituationSeason { get; set; } = [];
 
-    public EntityMTitleFlowMovieTable EntityMTitleFlowMovieTable { get; }
+    public List<EntityMTitleFlowMovie> EntityMTitleFlowMovie { get; set; } = [];
 
-    public EntityMTitleStillTable EntityMTitleStillTable { get; }
+    public List<EntityMTitleStill> EntityMTitleStill { get; set; } = [];
 
-    public EntityMTitleStillGroupTable EntityMTitleStillGroupTable { get; }
+    public List<EntityMTitleStillGroup> EntityMTitleStillGroup { get; set; } = [];
 
-    public EntityMTutorialConsumePossessionGroupTable EntityMTutorialConsumePossessionGroupTable { get; }
+    public List<EntityMTutorialConsumePossessionGroup> EntityMTutorialConsumePossessionGroup { get; set; } = [];
 
-    public EntityMTutorialDialogTable EntityMTutorialDialogTable { get; }
+    public List<EntityMTutorialDialog> EntityMTutorialDialog { get; set; } = [];
 
-    public EntityMTutorialUnlockConditionTable EntityMTutorialUnlockConditionTable { get; }
+    public List<EntityMTutorialUnlockCondition> EntityMTutorialUnlockCondition { get; set; } = [];
 
-    public EntityMUserLevelTable EntityMUserLevelTable { get; }
+    public List<EntityMUserLevel> EntityMUserLevel { get; set; } = [];
 
-    public EntityMUserQuestSceneGrantPossessionTable EntityMUserQuestSceneGrantPossessionTable { get; }
+    public List<EntityMUserQuestSceneGrantPossession> EntityMUserQuestSceneGrantPossession { get; set; } = [];
 
-    public EntityMWeaponTable EntityMWeaponTable { get; }
+    public List<EntityMWeapon> EntityMWeapon { get; set; } = [];
 
-    public EntityMWeaponAbilityEnhancementMaterialTable EntityMWeaponAbilityEnhancementMaterialTable { get; }
+    public List<EntityMWeaponAbilityEnhancementMaterial> EntityMWeaponAbilityEnhancementMaterial { get; set; } = [];
 
-    public EntityMWeaponAbilityGroupTable EntityMWeaponAbilityGroupTable { get; }
+    public List<EntityMWeaponAbilityGroup> EntityMWeaponAbilityGroup { get; set; } = [];
 
-    public EntityMWeaponAwakenTable EntityMWeaponAwakenTable { get; }
+    public List<EntityMWeaponAwaken> EntityMWeaponAwaken { get; set; } = [];
 
-    public EntityMWeaponAwakenAbilityTable EntityMWeaponAwakenAbilityTable { get; }
+    public List<EntityMWeaponAwakenAbility> EntityMWeaponAwakenAbility { get; set; } = [];
 
-    public EntityMWeaponAwakenEffectGroupTable EntityMWeaponAwakenEffectGroupTable { get; }
+    public List<EntityMWeaponAwakenEffectGroup> EntityMWeaponAwakenEffectGroup { get; set; } = [];
 
-    public EntityMWeaponAwakenMaterialGroupTable EntityMWeaponAwakenMaterialGroupTable { get; }
+    public List<EntityMWeaponAwakenMaterialGroup> EntityMWeaponAwakenMaterialGroup { get; set; } = [];
 
-    public EntityMWeaponAwakenStatusUpGroupTable EntityMWeaponAwakenStatusUpGroupTable { get; }
+    public List<EntityMWeaponAwakenStatusUpGroup> EntityMWeaponAwakenStatusUpGroup { get; set; } = [];
 
-    public EntityMWeaponBaseStatusTable EntityMWeaponBaseStatusTable { get; }
+    public List<EntityMWeaponBaseStatus> EntityMWeaponBaseStatus { get; set; } = [];
 
-    public EntityMWeaponConsumeExchangeConsumableItemGroupTable EntityMWeaponConsumeExchangeConsumableItemGroupTable { get; }
+    public List<EntityMWeaponConsumeExchangeConsumableItemGroup> EntityMWeaponConsumeExchangeConsumableItemGroup { get; set; } = [];
 
-    public EntityMWeaponEnhancedTable EntityMWeaponEnhancedTable { get; }
+    public List<EntityMWeaponEnhanced> EntityMWeaponEnhanced { get; set; } = [];
 
-    public EntityMWeaponEnhancedAbilityTable EntityMWeaponEnhancedAbilityTable { get; }
+    public List<EntityMWeaponEnhancedAbility> EntityMWeaponEnhancedAbility { get; set; } = [];
 
-    public EntityMWeaponEnhancedSkillTable EntityMWeaponEnhancedSkillTable { get; }
+    public List<EntityMWeaponEnhancedSkill> EntityMWeaponEnhancedSkill { get; set; } = [];
 
-    public EntityMWeaponEvolutionGroupTable EntityMWeaponEvolutionGroupTable { get; }
+    public List<EntityMWeaponEvolutionGroup> EntityMWeaponEvolutionGroup { get; set; } = [];
 
-    public EntityMWeaponEvolutionMaterialGroupTable EntityMWeaponEvolutionMaterialGroupTable { get; }
+    public List<EntityMWeaponEvolutionMaterialGroup> EntityMWeaponEvolutionMaterialGroup { get; set; } = [];
 
-    public EntityMWeaponFieldEffectDecreasePointTable EntityMWeaponFieldEffectDecreasePointTable { get; }
+    public List<EntityMWeaponFieldEffectDecreasePoint> EntityMWeaponFieldEffectDecreasePoint { get; set; } = [];
 
-    public EntityMWeaponRarityTable EntityMWeaponRarityTable { get; }
+    public List<EntityMWeaponRarity> EntityMWeaponRarity { get; set; } = [];
 
-    public EntityMWeaponRarityLimitBreakMaterialGroupTable EntityMWeaponRarityLimitBreakMaterialGroupTable { get; }
+    public List<EntityMWeaponRarityLimitBreakMaterialGroup> EntityMWeaponRarityLimitBreakMaterialGroup { get; set; } = [];
 
-    public EntityMWeaponSkillEnhancementMaterialTable EntityMWeaponSkillEnhancementMaterialTable { get; }
+    public List<EntityMWeaponSkillEnhancementMaterial> EntityMWeaponSkillEnhancementMaterial { get; set; } = [];
 
-    public EntityMWeaponSkillGroupTable EntityMWeaponSkillGroupTable { get; }
+    public List<EntityMWeaponSkillGroup> EntityMWeaponSkillGroup { get; set; } = [];
 
-    public EntityMWeaponSpecificEnhanceTable EntityMWeaponSpecificEnhanceTable { get; }
+    public List<EntityMWeaponSpecificEnhance> EntityMWeaponSpecificEnhance { get; set; } = [];
 
-    public EntityMWeaponSpecificLimitBreakMaterialGroupTable EntityMWeaponSpecificLimitBreakMaterialGroupTable { get; }
+    public List<EntityMWeaponSpecificLimitBreakMaterialGroup> EntityMWeaponSpecificLimitBreakMaterialGroup { get; set; } = [];
 
-    public EntityMWeaponStatusCalculationTable EntityMWeaponStatusCalculationTable { get; }
+    public List<EntityMWeaponStatusCalculation> EntityMWeaponStatusCalculation { get; set; } = [];
 
-    public EntityMWeaponStoryReleaseConditionGroupTable EntityMWeaponStoryReleaseConditionGroupTable { get; }
+    public List<EntityMWeaponStoryReleaseConditionGroup> EntityMWeaponStoryReleaseConditionGroup { get; set; } = [];
 
-    public EntityMWeaponStoryReleaseConditionOperationTable EntityMWeaponStoryReleaseConditionOperationTable { get; }
+    public List<EntityMWeaponStoryReleaseConditionOperation> EntityMWeaponStoryReleaseConditionOperation { get; set; } = [];
 
-    public EntityMWeaponStoryReleaseConditionOperationGroupTable EntityMWeaponStoryReleaseConditionOperationGroupTable { get; }
+    public List<EntityMWeaponStoryReleaseConditionOperationGroup> EntityMWeaponStoryReleaseConditionOperationGroup { get; set; } = [];
 
-    public EntityMWebviewMissionTable EntityMWebviewMissionTable { get; }
+    public List<EntityMWebviewMission> EntityMWebviewMission { get; set; } = [];
 
-    public EntityMWebviewMissionTitleTextTable EntityMWebviewMissionTitleTextTable { get; }
+    public List<EntityMWebviewMissionTitleText> EntityMWebviewMissionTitleText { get; set; } = [];
 
-    public EntityMWebviewPanelMissionTable EntityMWebviewPanelMissionTable { get; }
+    public List<EntityMWebviewPanelMission> EntityMWebviewPanelMission { get; set; } = [];
 
-    public EntityMWebviewPanelMissionCompleteFlavorTextTable EntityMWebviewPanelMissionCompleteFlavorTextTable { get; }
+    public List<EntityMWebviewPanelMissionCompleteFlavorText> EntityMWebviewPanelMissionCompleteFlavorText { get; set; } = [];
 
-    public EntityMWebviewPanelMissionPageTable EntityMWebviewPanelMissionPageTable { get; }
+    public List<EntityMWebviewPanelMissionPage> EntityMWebviewPanelMissionPage { get; set; } = [];
+
 }

@@ -1,0 +1,9858 @@
+[
+  {
+    "QuestSceneId": 11,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 29,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 38,
+    "StartWaveNumber": 1,
+    "BgmId": 4030,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 45,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 49,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 49,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 50,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 50,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 54,
+    "StartWaveNumber": 1,
+    "BgmId": 4040,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 58,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 58,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 59,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 59,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 63,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 67,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 67,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 68,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 72,
+    "StartWaveNumber": 1,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 79,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 83,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 83,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 84,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 84,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 88,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 88,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 92,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 92,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 93,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 93,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 97,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 101,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 101,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 102,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 102,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 106,
+    "StartWaveNumber": 1,
+    "BgmId": 4040,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 113,
+    "StartWaveNumber": 1,
+    "BgmId": 6007,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 122,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 131,
+    "StartWaveNumber": 1,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 140,
+    "StartWaveNumber": 1,
+    "BgmId": 4041,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 147,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 156,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 156,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 165,
+    "StartWaveNumber": 1,
+    "BgmId": 4040,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 175,
+    "StartWaveNumber": 1,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 182,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 191,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 191,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 3,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 3,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 209,
+    "StartWaveNumber": 1,
+    "BgmId": 4010,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 215,
+    "StartWaveNumber": 1,
+    "BgmId": 6007,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 215,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 217,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 217,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 220,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 220,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 222,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 222,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 225,
+    "StartWaveNumber": 1,
+    "BgmId": 6007,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 225,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 227,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 227,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 231,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 231,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 233,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 233,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 236,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 236,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 238,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 238,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 241,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 241,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 243,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 243,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 247,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 249,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 252,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 254,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 257,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 259,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 296,
+    "StartWaveNumber": 1,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 301,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 301,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 305,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 305,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 309,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 309,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 314,
+    "StartWaveNumber": 1,
+    "BgmId": 6007,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 314,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 318,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 318,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 322,
+    "StartWaveNumber": 1,
+    "BgmId": 4041,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 327,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 327,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 331,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 331,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 335,
+    "StartWaveNumber": 1,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 339,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 344,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 344,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 348,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 348,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 352,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 352,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 357,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 357,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 361,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 361,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 365,
+    "StartWaveNumber": 1,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 370,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 370,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 374,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 374,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 378,
+    "StartWaveNumber": 1,
+    "BgmId": 4010,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 382,
+    "StartWaveNumber": 1,
+    "BgmId": 2020,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 382,
+    "StartWaveNumber": 3,
+    "BgmId": 2020,
+    "Stem": 3,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 387,
+    "StartWaveNumber": 1,
+    "BgmId": 2010,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 387,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 391,
+    "StartWaveNumber": 1,
+    "BgmId": 2020,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 391,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 395,
+    "StartWaveNumber": 1,
+    "BgmId": 4041,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 395,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 400,
+    "StartWaveNumber": 1,
+    "BgmId": 4090,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 404,
+    "StartWaveNumber": 1,
+    "BgmId": 2010,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 404,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 408,
+    "StartWaveNumber": 1,
+    "BgmId": 4041,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 408,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 413,
+    "StartWaveNumber": 1,
+    "BgmId": 2020,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 413,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 417,
+    "StartWaveNumber": 1,
+    "BgmId": 2030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 421,
+    "StartWaveNumber": 1,
+    "BgmId": 3005,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 425,
+    "StartWaveNumber": 1,
+    "BgmId": 2020,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 430,
+    "StartWaveNumber": 1,
+    "BgmId": 2020,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 430,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 434,
+    "StartWaveNumber": 1,
+    "BgmId": 2030,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 434,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 438,
+    "StartWaveNumber": 1,
+    "BgmId": 2012,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 438,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 443,
+    "StartWaveNumber": 1,
+    "BgmId": 2012,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 443,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 447,
+    "StartWaveNumber": 1,
+    "BgmId": 2020,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 447,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 451,
+    "StartWaveNumber": 1,
+    "BgmId": 4010,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 456,
+    "StartWaveNumber": 1,
+    "BgmId": 2030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 456,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 460,
+    "StartWaveNumber": 1,
+    "BgmId": 2012,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 460,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 464,
+    "StartWaveNumber": 1,
+    "BgmId": 1040,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 464,
+    "StartWaveNumber": 3,
+    "BgmId": 6005,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 468,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 473,
+    "StartWaveNumber": 1,
+    "BgmId": 4041,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 473,
+    "StartWaveNumber": 3,
+    "BgmId": 4041,
+    "Stem": 3,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 477,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 477,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 481,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 481,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 486,
+    "StartWaveNumber": 1,
+    "BgmId": 1040,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 486,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 490,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 490,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 494,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 494,
+    "StartWaveNumber": 3,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 499,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 499,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 503,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 503,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 507,
+    "StartWaveNumber": 1,
+    "BgmId": 3005,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 507,
+    "StartWaveNumber": 3,
+    "BgmId": 3005,
+    "Stem": 3,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 532,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 532,
+    "StartWaveNumber": 3,
+    "BgmId": 1020,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 544,
+    "StartWaveNumber": 1,
+    "BgmId": 3008,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 544,
+    "StartWaveNumber": 3,
+    "BgmId": 1030,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 560,
+    "StartWaveNumber": 1,
+    "BgmId": 4020,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10001,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10002,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10003,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10004,
+    "StartWaveNumber": 1,
+    "BgmId": 4030,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10005,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10006,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10006,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10007,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10007,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10008,
+    "StartWaveNumber": 1,
+    "BgmId": 4040,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10009,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10009,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10010,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10010,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10011,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10012,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10012,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10013,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10014,
+    "StartWaveNumber": 1,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10014,
+    "StartWaveNumber": 3,
+    "BgmId": 4010,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10015,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10016,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10016,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10017,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10017,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10018,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10018,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10019,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10019,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10020,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10020,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10021,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10021,
+    "StartWaveNumber": 3,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10022,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10022,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10023,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10023,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10024,
+    "StartWaveNumber": 1,
+    "BgmId": 4040,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10025,
+    "StartWaveNumber": 1,
+    "BgmId": 6007,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10026,
+    "StartWaveNumber": 1,
+    "BgmId": 6007,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10026,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10027,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10027,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10028,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10029,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10029,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10030,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10030,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10031,
+    "StartWaveNumber": 1,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10032,
+    "StartWaveNumber": 1,
+    "BgmId": 6007,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10032,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10033,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10033,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10034,
+    "StartWaveNumber": 1,
+    "BgmId": 4041,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10035,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10036,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10036,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10037,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10037,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10038,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10038,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10039,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10039,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10040,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10040,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10041,
+    "StartWaveNumber": 1,
+    "BgmId": 4040,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10042,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10042,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10043,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10043,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10044,
+    "StartWaveNumber": 1,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10045,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10046,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10047,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10048,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10048,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 3,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10049,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10050,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10051,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10051,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 3,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10052,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10053,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10054,
+    "StartWaveNumber": 1,
+    "BgmId": 4010,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10055,
+    "StartWaveNumber": 1,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10056,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10056,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10057,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10057,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10058,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10058,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10059,
+    "StartWaveNumber": 1,
+    "BgmId": 6007,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10059,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10060,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10060,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10061,
+    "StartWaveNumber": 1,
+    "BgmId": 4041,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10062,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10062,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10063,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10063,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10064,
+    "StartWaveNumber": 1,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10065,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10066,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10066,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10067,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10067,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10068,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10068,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10069,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10069,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10070,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10070,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10071,
+    "StartWaveNumber": 1,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10072,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10072,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10073,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10073,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10074,
+    "StartWaveNumber": 1,
+    "BgmId": 4010,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10075,
+    "StartWaveNumber": 1,
+    "BgmId": 2020,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10076,
+    "StartWaveNumber": 1,
+    "BgmId": 2010,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10076,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10077,
+    "StartWaveNumber": 1,
+    "BgmId": 2020,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10077,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10078,
+    "StartWaveNumber": 1,
+    "BgmId": 4041,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10078,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10079,
+    "StartWaveNumber": 1,
+    "BgmId": 4090,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10080,
+    "StartWaveNumber": 1,
+    "BgmId": 2010,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10080,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10081,
+    "StartWaveNumber": 1,
+    "BgmId": 4041,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10081,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10082,
+    "StartWaveNumber": 1,
+    "BgmId": 2020,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10082,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10083,
+    "StartWaveNumber": 1,
+    "BgmId": 2030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10084,
+    "StartWaveNumber": 1,
+    "BgmId": 3005,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10085,
+    "StartWaveNumber": 1,
+    "BgmId": 2020,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10086,
+    "StartWaveNumber": 1,
+    "BgmId": 2020,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10086,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10087,
+    "StartWaveNumber": 1,
+    "BgmId": 2030,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10087,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10088,
+    "StartWaveNumber": 1,
+    "BgmId": 2012,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10088,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10089,
+    "StartWaveNumber": 1,
+    "BgmId": 2012,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10089,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10090,
+    "StartWaveNumber": 1,
+    "BgmId": 2020,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10090,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10091,
+    "StartWaveNumber": 1,
+    "BgmId": 4010,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10092,
+    "StartWaveNumber": 1,
+    "BgmId": 2030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10092,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10093,
+    "StartWaveNumber": 1,
+    "BgmId": 2012,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10093,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10094,
+    "StartWaveNumber": 1,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10095,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10096,
+    "StartWaveNumber": 1,
+    "BgmId": 4041,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10096,
+    "StartWaveNumber": 3,
+    "BgmId": 4041,
+    "Stem": 3,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10097,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10097,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10098,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10098,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10099,
+    "StartWaveNumber": 1,
+    "BgmId": 1040,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10099,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10100,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10100,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10101,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10101,
+    "StartWaveNumber": 3,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10102,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10102,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10103,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10103,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 10104,
+    "StartWaveNumber": 1,
+    "BgmId": 3005,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 10104,
+    "StartWaveNumber": 3,
+    "BgmId": 3005,
+    "Stem": 3,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 20001,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20002,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20003,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20004,
+    "StartWaveNumber": 1,
+    "BgmId": 4030,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20005,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20006,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20006,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 20007,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20007,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 20008,
+    "StartWaveNumber": 1,
+    "BgmId": 4040,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20009,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20009,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 20010,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20010,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 20011,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20012,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20012,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 20013,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20014,
+    "StartWaveNumber": 1,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20014,
+    "StartWaveNumber": 3,
+    "BgmId": 4010,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 20015,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20016,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20016,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 20017,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20017,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 20018,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20018,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 20019,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20019,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 20020,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20020,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 20021,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20021,
+    "StartWaveNumber": 3,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 20022,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20022,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 20023,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20023,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 20024,
+    "StartWaveNumber": 1,
+    "BgmId": 4040,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20025,
+    "StartWaveNumber": 1,
+    "BgmId": 6007,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20026,
+    "StartWaveNumber": 1,
+    "BgmId": 6007,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20026,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 20027,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20027,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 20028,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20029,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20029,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 20030,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20030,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 20031,
+    "StartWaveNumber": 1,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20032,
+    "StartWaveNumber": 1,
+    "BgmId": 6007,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20032,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 20033,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20033,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 20034,
+    "StartWaveNumber": 1,
+    "BgmId": 4041,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20035,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20036,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20036,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 20037,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20037,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 20038,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20038,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 20039,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20039,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 20040,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20040,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 20041,
+    "StartWaveNumber": 1,
+    "BgmId": 4040,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20042,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20042,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 20043,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20043,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 20044,
+    "StartWaveNumber": 1,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20045,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20046,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20047,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20048,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20048,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 3,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 20049,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20050,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20051,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20051,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 3,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 20052,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20053,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 20054,
+    "StartWaveNumber": 1,
+    "BgmId": 4010,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100001,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100001,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100002,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100002,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100003,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100003,
+    "StartWaveNumber": 3,
+    "BgmId": 3005,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100004,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100004,
+    "StartWaveNumber": 3,
+    "BgmId": 4030,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100005,
+    "StartWaveNumber": 1,
+    "BgmId": 2020,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100005,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100006,
+    "StartWaveNumber": 1,
+    "BgmId": 2020,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100006,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100007,
+    "StartWaveNumber": 1,
+    "BgmId": 2020,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100007,
+    "StartWaveNumber": 3,
+    "BgmId": 3005,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100008,
+    "StartWaveNumber": 1,
+    "BgmId": 2020,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100008,
+    "StartWaveNumber": 3,
+    "BgmId": 4030,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100009,
+    "StartWaveNumber": 1,
+    "BgmId": 6007,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100009,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100010,
+    "StartWaveNumber": 1,
+    "BgmId": 6007,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100010,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100011,
+    "StartWaveNumber": 1,
+    "BgmId": 6007,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100011,
+    "StartWaveNumber": 3,
+    "BgmId": 3005,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100012,
+    "StartWaveNumber": 1,
+    "BgmId": 6007,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100012,
+    "StartWaveNumber": 3,
+    "BgmId": 4030,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100013,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100013,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100014,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100014,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100015,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100015,
+    "StartWaveNumber": 3,
+    "BgmId": 3005,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100016,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100016,
+    "StartWaveNumber": 3,
+    "BgmId": 4030,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100017,
+    "StartWaveNumber": 1,
+    "BgmId": 2012,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100017,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100018,
+    "StartWaveNumber": 1,
+    "BgmId": 2012,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100018,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100019,
+    "StartWaveNumber": 1,
+    "BgmId": 2012,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100019,
+    "StartWaveNumber": 3,
+    "BgmId": 3005,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100020,
+    "StartWaveNumber": 1,
+    "BgmId": 2012,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100020,
+    "StartWaveNumber": 3,
+    "BgmId": 4030,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100021,
+    "StartWaveNumber": 1,
+    "BgmId": 4041,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100021,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100022,
+    "StartWaveNumber": 1,
+    "BgmId": 4041,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100022,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100023,
+    "StartWaveNumber": 1,
+    "BgmId": 4041,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100023,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100024,
+    "StartWaveNumber": 1,
+    "BgmId": 4041,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100024,
+    "StartWaveNumber": 3,
+    "BgmId": 3005,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100025,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100025,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100026,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100026,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100027,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100027,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100028,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100028,
+    "StartWaveNumber": 3,
+    "BgmId": 3005,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100029,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100029,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100030,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100030,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100031,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100031,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100032,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100032,
+    "StartWaveNumber": 3,
+    "BgmId": 3005,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100033,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100033,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100034,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100034,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100035,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100035,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100036,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100036,
+    "StartWaveNumber": 3,
+    "BgmId": 3005,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100037,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100037,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100038,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100038,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100039,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100039,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100040,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100040,
+    "StartWaveNumber": 3,
+    "BgmId": 3005,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100041,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100041,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100042,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100042,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100043,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100043,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100044,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100044,
+    "StartWaveNumber": 3,
+    "BgmId": 3005,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100045,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100045,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100046,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100046,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100047,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100047,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100048,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100048,
+    "StartWaveNumber": 3,
+    "BgmId": 3005,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100049,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100049,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100050,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100050,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100051,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100051,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100052,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100052,
+    "StartWaveNumber": 3,
+    "BgmId": 4030,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100053,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100053,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100054,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100054,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100055,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100055,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100056,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100056,
+    "StartWaveNumber": 3,
+    "BgmId": 4030,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100057,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100057,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100058,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100058,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100059,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100059,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100060,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100060,
+    "StartWaveNumber": 3,
+    "BgmId": 4030,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100061,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100061,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100062,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100062,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100063,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100063,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100064,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100064,
+    "StartWaveNumber": 3,
+    "BgmId": 4030,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100065,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100065,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100066,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100066,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100067,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100067,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100068,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100068,
+    "StartWaveNumber": 3,
+    "BgmId": 4030,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100069,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100069,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100070,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100070,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100071,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100071,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100072,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100072,
+    "StartWaveNumber": 3,
+    "BgmId": 4030,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100073,
+    "StartWaveNumber": 1,
+    "BgmId": 2030,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100073,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100074,
+    "StartWaveNumber": 1,
+    "BgmId": 2030,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100074,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100075,
+    "StartWaveNumber": 1,
+    "BgmId": 2030,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100075,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 100076,
+    "StartWaveNumber": 1,
+    "BgmId": 2030,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 100076,
+    "StartWaveNumber": 3,
+    "BgmId": 3005,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110001,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110001,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110002,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110002,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110003,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110003,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110004,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110004,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110005,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110005,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110006,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110006,
+    "StartWaveNumber": 3,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110008,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110008,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110009,
+    "StartWaveNumber": 1,
+    "BgmId": 3008,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110010,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110011,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110011,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110012,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110012,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110013,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110013,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110014,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110014,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110015,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110015,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110016,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110016,
+    "StartWaveNumber": 3,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110018,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110018,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110019,
+    "StartWaveNumber": 1,
+    "BgmId": 3008,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110020,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110021,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110021,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110022,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110022,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110023,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110023,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110024,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110024,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110025,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110025,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110026,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110026,
+    "StartWaveNumber": 3,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110028,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110028,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110029,
+    "StartWaveNumber": 1,
+    "BgmId": 3008,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110030,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110031,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110031,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110032,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110032,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110033,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110033,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110034,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110034,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110035,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110035,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110036,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110036,
+    "StartWaveNumber": 3,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110038,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110038,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110039,
+    "StartWaveNumber": 1,
+    "BgmId": 3008,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110040,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110041,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110041,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110042,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110042,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110043,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110043,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110044,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110044,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110045,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110045,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110046,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110046,
+    "StartWaveNumber": 3,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110048,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110048,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110049,
+    "StartWaveNumber": 1,
+    "BgmId": 3008,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110050,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110061,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110061,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110062,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110062,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110063,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110063,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110064,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110064,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110065,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110065,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110066,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110066,
+    "StartWaveNumber": 3,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110068,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110068,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110069,
+    "StartWaveNumber": 1,
+    "BgmId": 3008,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110070,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110071,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110071,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110072,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110072,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110073,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110073,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110074,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110074,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110075,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110075,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110076,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110076,
+    "StartWaveNumber": 3,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110078,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110078,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110079,
+    "StartWaveNumber": 1,
+    "BgmId": 3008,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110080,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110081,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110082,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110083,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110084,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110085,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110086,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110087,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110088,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110089,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110090,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110091,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110092,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110093,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110094,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110095,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110096,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110097,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110098,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110099,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110100,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110101,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110102,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110102,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110103,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110103,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110104,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110104,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110105,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110105,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110106,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110106,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110107,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110107,
+    "StartWaveNumber": 3,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110108,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110108,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110109,
+    "StartWaveNumber": 1,
+    "BgmId": 3008,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110110,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110111,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110112,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110113,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110114,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110114,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110115,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110115,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110116,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110116,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110117,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110117,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110118,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110118,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110119,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110119,
+    "StartWaveNumber": 3,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110120,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110120,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110121,
+    "StartWaveNumber": 1,
+    "BgmId": 3008,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110122,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110123,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110124,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110125,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110126,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110126,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110127,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110127,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110128,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110128,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110129,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110129,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110130,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110130,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110131,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110131,
+    "StartWaveNumber": 3,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110132,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110132,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 110133,
+    "StartWaveNumber": 1,
+    "BgmId": 3008,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110134,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110135,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110136,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 110137,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120001,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120001,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120003,
+    "StartWaveNumber": 1,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120004,
+    "StartWaveNumber": 1,
+    "BgmId": 6007,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120004,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120005,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120005,
+    "StartWaveNumber": 3,
+    "BgmId": 3005,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120007,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120007,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120008,
+    "StartWaveNumber": 1,
+    "BgmId": 4041,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120008,
+    "StartWaveNumber": 3,
+    "BgmId": 3005,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120009,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120009,
+    "StartWaveNumber": 3,
+    "BgmId": 3008,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120011,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120011,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120012,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120013,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120015,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120015,
+    "StartWaveNumber": 3,
+    "BgmId": 4041,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120017,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120017,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120018,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120018,
+    "StartWaveNumber": 3,
+    "BgmId": 3005,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120019,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120021,
+    "StartWaveNumber": 1,
+    "BgmId": 2020,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120021,
+    "StartWaveNumber": 3,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120022,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120022,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120023,
+    "StartWaveNumber": 1,
+    "BgmId": 4041,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120023,
+    "StartWaveNumber": 3,
+    "BgmId": 3005,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120025,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120025,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120026,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120026,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120027,
+    "StartWaveNumber": 1,
+    "BgmId": 3008,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120029,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120029,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120031,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120031,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120032,
+    "StartWaveNumber": 1,
+    "BgmId": 6007,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120032,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120033,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120033,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120035,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120035,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120036,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120036,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120037,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120037,
+    "StartWaveNumber": 3,
+    "BgmId": 3008,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120039,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120039,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120040,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120040,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120041,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120041,
+    "StartWaveNumber": 3,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120043,
+    "StartWaveNumber": 1,
+    "BgmId": 6007,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120043,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120045,
+    "StartWaveNumber": 1,
+    "BgmId": 2011,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120045,
+    "StartWaveNumber": 3,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120046,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120046,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120047,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120047,
+    "StartWaveNumber": 3,
+    "BgmId": 3004,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120049,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120049,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120050,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120050,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120051,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120051,
+    "StartWaveNumber": 3,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120053,
+    "StartWaveNumber": 1,
+    "BgmId": 4010,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120054,
+    "StartWaveNumber": 1,
+    "BgmId": 4010,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120054,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120055,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120055,
+    "StartWaveNumber": 3,
+    "BgmId": 3008,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120057,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120057,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120059,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120059,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120060,
+    "StartWaveNumber": 1,
+    "BgmId": 6007,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120060,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120061,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120061,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120063,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120063,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120064,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120064,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120065,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120065,
+    "StartWaveNumber": 3,
+    "BgmId": 4041,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120067,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120067,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120068,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120068,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120069,
+    "StartWaveNumber": 1,
+    "BgmId": 3008,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120071,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120071,
+    "StartWaveNumber": 3,
+    "BgmId": 3005,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120073,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120073,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120074,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120074,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120075,
+    "StartWaveNumber": 1,
+    "BgmId": 4041,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120077,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120077,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120078,
+    "StartWaveNumber": 1,
+    "BgmId": 6007,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120078,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120079,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120079,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120081,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120081,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120082,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120082,
+    "StartWaveNumber": 3,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120083,
+    "StartWaveNumber": 1,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120083,
+    "StartWaveNumber": 3,
+    "BgmId": 3008,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120085,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120085,
+    "StartWaveNumber": 3,
+    "BgmId": 4041,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120087,
+    "StartWaveNumber": 1,
+    "BgmId": 2030,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120087,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120088,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120088,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120089,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120089,
+    "StartWaveNumber": 3,
+    "BgmId": 3004,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120091,
+    "StartWaveNumber": 1,
+    "BgmId": 6007,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120091,
+    "StartWaveNumber": 3,
+    "BgmId": 3005,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120092,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120092,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120093,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120093,
+    "StartWaveNumber": 3,
+    "BgmId": 3008,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120095,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120095,
+    "StartWaveNumber": 3,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120096,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120096,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120097,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120097,
+    "StartWaveNumber": 3,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120099,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120099,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120101,
+    "StartWaveNumber": 1,
+    "BgmId": 4041,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120102,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120102,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120103,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120103,
+    "StartWaveNumber": 3,
+    "BgmId": 3005,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120105,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120105,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120106,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120106,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120107,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120107,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120109,
+    "StartWaveNumber": 1,
+    "BgmId": 2030,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120110,
+    "StartWaveNumber": 1,
+    "BgmId": 2030,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120110,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120111,
+    "StartWaveNumber": 1,
+    "BgmId": 3005,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120113,
+    "StartWaveNumber": 1,
+    "BgmId": 2020,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120113,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120115,
+    "StartWaveNumber": 1,
+    "BgmId": 2020,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120116,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120117,
+    "StartWaveNumber": 1,
+    "BgmId": 2020,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120117,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120119,
+    "StartWaveNumber": 1,
+    "BgmId": 2030,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120119,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120120,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120120,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120121,
+    "StartWaveNumber": 1,
+    "BgmId": 2030,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120123,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120124,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120124,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120125,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120127,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120127,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120129,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120129,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120130,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120130,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120131,
+    "StartWaveNumber": 1,
+    "BgmId": 2030,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120131,
+    "StartWaveNumber": 3,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120133,
+    "StartWaveNumber": 1,
+    "BgmId": 2030,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120133,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120134,
+    "StartWaveNumber": 1,
+    "BgmId": 2030,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120134,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120135,
+    "StartWaveNumber": 1,
+    "BgmId": 4041,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120137,
+    "StartWaveNumber": 1,
+    "BgmId": 6007,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120137,
+    "StartWaveNumber": 3,
+    "BgmId": 3005,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120138,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 120138,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 120139,
+    "StartWaveNumber": 1,
+    "BgmId": 4060,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200002,
+    "StartWaveNumber": 1,
+    "BgmId": 3007,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200002,
+    "StartWaveNumber": 3,
+    "BgmId": 3007,
+    "Stem": 3,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200003,
+    "StartWaveNumber": 1,
+    "BgmId": 3010,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200003,
+    "StartWaveNumber": 3,
+    "BgmId": 3006,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200004,
+    "StartWaveNumber": 1,
+    "BgmId": 3007,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200004,
+    "StartWaveNumber": 3,
+    "BgmId": 3011,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200006,
+    "StartWaveNumber": 1,
+    "BgmId": 3009,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200006,
+    "StartWaveNumber": 3,
+    "BgmId": 3009,
+    "Stem": 3,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200007,
+    "StartWaveNumber": 1,
+    "BgmId": 3012,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200007,
+    "StartWaveNumber": 3,
+    "BgmId": 3006,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200008,
+    "StartWaveNumber": 1,
+    "BgmId": 3010,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200008,
+    "StartWaveNumber": 3,
+    "BgmId": 3007,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200010,
+    "StartWaveNumber": 1,
+    "BgmId": 3013,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200010,
+    "StartWaveNumber": 3,
+    "BgmId": 3013,
+    "Stem": 3,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200011,
+    "StartWaveNumber": 1,
+    "BgmId": 3010,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200011,
+    "StartWaveNumber": 3,
+    "BgmId": 3006,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200012,
+    "StartWaveNumber": 1,
+    "BgmId": 3011,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200012,
+    "StartWaveNumber": 3,
+    "BgmId": 3007,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200014,
+    "StartWaveNumber": 1,
+    "BgmId": 3014,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200014,
+    "StartWaveNumber": 3,
+    "BgmId": 3014,
+    "Stem": 3,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200015,
+    "StartWaveNumber": 1,
+    "BgmId": 3007,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200015,
+    "StartWaveNumber": 3,
+    "BgmId": 3007,
+    "Stem": 3,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200016,
+    "StartWaveNumber": 1,
+    "BgmId": 3010,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200016,
+    "StartWaveNumber": 3,
+    "BgmId": 3006,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200017,
+    "StartWaveNumber": 1,
+    "BgmId": 3007,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200017,
+    "StartWaveNumber": 3,
+    "BgmId": 3011,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200018,
+    "StartWaveNumber": 1,
+    "BgmId": 3009,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200018,
+    "StartWaveNumber": 3,
+    "BgmId": 3009,
+    "Stem": 3,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200019,
+    "StartWaveNumber": 1,
+    "BgmId": 3012,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200019,
+    "StartWaveNumber": 3,
+    "BgmId": 3006,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200020,
+    "StartWaveNumber": 1,
+    "BgmId": 3010,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200020,
+    "StartWaveNumber": 3,
+    "BgmId": 3007,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200021,
+    "StartWaveNumber": 1,
+    "BgmId": 3013,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200021,
+    "StartWaveNumber": 3,
+    "BgmId": 3013,
+    "Stem": 3,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200022,
+    "StartWaveNumber": 1,
+    "BgmId": 3010,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200022,
+    "StartWaveNumber": 3,
+    "BgmId": 3006,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200023,
+    "StartWaveNumber": 1,
+    "BgmId": 3011,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200023,
+    "StartWaveNumber": 3,
+    "BgmId": 3007,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200024,
+    "StartWaveNumber": 1,
+    "BgmId": 3014,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200024,
+    "StartWaveNumber": 3,
+    "BgmId": 3014,
+    "Stem": 3,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200025,
+    "StartWaveNumber": 1,
+    "BgmId": 3007,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200025,
+    "StartWaveNumber": 3,
+    "BgmId": 3007,
+    "Stem": 3,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200026,
+    "StartWaveNumber": 1,
+    "BgmId": 3010,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200026,
+    "StartWaveNumber": 3,
+    "BgmId": 3006,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200027,
+    "StartWaveNumber": 1,
+    "BgmId": 3007,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200027,
+    "StartWaveNumber": 3,
+    "BgmId": 3011,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200028,
+    "StartWaveNumber": 1,
+    "BgmId": 3009,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200028,
+    "StartWaveNumber": 3,
+    "BgmId": 3009,
+    "Stem": 3,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200029,
+    "StartWaveNumber": 1,
+    "BgmId": 3012,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200029,
+    "StartWaveNumber": 3,
+    "BgmId": 3006,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200030,
+    "StartWaveNumber": 1,
+    "BgmId": 3010,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200030,
+    "StartWaveNumber": 3,
+    "BgmId": 3007,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200031,
+    "StartWaveNumber": 1,
+    "BgmId": 3013,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200031,
+    "StartWaveNumber": 3,
+    "BgmId": 3013,
+    "Stem": 3,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200032,
+    "StartWaveNumber": 1,
+    "BgmId": 3010,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200032,
+    "StartWaveNumber": 3,
+    "BgmId": 3006,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200033,
+    "StartWaveNumber": 1,
+    "BgmId": 3011,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200033,
+    "StartWaveNumber": 3,
+    "BgmId": 3007,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200034,
+    "StartWaveNumber": 1,
+    "BgmId": 3014,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200034,
+    "StartWaveNumber": 3,
+    "BgmId": 3014,
+    "Stem": 3,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200036,
+    "StartWaveNumber": 1,
+    "BgmId": 4041,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200037,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200037,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200038,
+    "StartWaveNumber": 1,
+    "BgmId": 6007,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200038,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200040,
+    "StartWaveNumber": 1,
+    "BgmId": 3005,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200041,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200041,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200042,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200042,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200044,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200045,
+    "StartWaveNumber": 1,
+    "BgmId": 2030,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200045,
+    "StartWaveNumber": 3,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200046,
+    "StartWaveNumber": 1,
+    "BgmId": 2030,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200046,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200048,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200049,
+    "StartWaveNumber": 1,
+    "BgmId": 4041,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200050,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200050,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200051,
+    "StartWaveNumber": 1,
+    "BgmId": 6007,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200051,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200052,
+    "StartWaveNumber": 1,
+    "BgmId": 3005,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200053,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200053,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200054,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200054,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200055,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200056,
+    "StartWaveNumber": 1,
+    "BgmId": 2030,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200056,
+    "StartWaveNumber": 3,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200057,
+    "StartWaveNumber": 1,
+    "BgmId": 2030,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200057,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200058,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200059,
+    "StartWaveNumber": 1,
+    "BgmId": 4041,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200060,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200060,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200061,
+    "StartWaveNumber": 1,
+    "BgmId": 6007,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200061,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200062,
+    "StartWaveNumber": 1,
+    "BgmId": 3005,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200063,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200063,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200064,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200064,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200065,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200066,
+    "StartWaveNumber": 1,
+    "BgmId": 2030,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200066,
+    "StartWaveNumber": 3,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200067,
+    "StartWaveNumber": 1,
+    "BgmId": 2030,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200067,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200068,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200069,
+    "StartWaveNumber": 1,
+    "BgmId": 3015,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200069,
+    "StartWaveNumber": 3,
+    "BgmId": 3015,
+    "Stem": 3,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200071,
+    "StartWaveNumber": 1,
+    "BgmId": 3016,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200071,
+    "StartWaveNumber": 3,
+    "BgmId": 3017,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200072,
+    "StartWaveNumber": 1,
+    "BgmId": 3018,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200072,
+    "StartWaveNumber": 3,
+    "BgmId": 3019,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200073,
+    "StartWaveNumber": 1,
+    "BgmId": 3020,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200073,
+    "StartWaveNumber": 3,
+    "BgmId": 3020,
+    "Stem": 3,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200075,
+    "StartWaveNumber": 1,
+    "BgmId": 3021,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200075,
+    "StartWaveNumber": 3,
+    "BgmId": 3022,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200076,
+    "StartWaveNumber": 1,
+    "BgmId": 3023,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200076,
+    "StartWaveNumber": 3,
+    "BgmId": 3024,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200077,
+    "StartWaveNumber": 1,
+    "BgmId": 3025,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200077,
+    "StartWaveNumber": 3,
+    "BgmId": 3017,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200079,
+    "StartWaveNumber": 1,
+    "BgmId": 3026,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200079,
+    "StartWaveNumber": 3,
+    "BgmId": 3027,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200080,
+    "StartWaveNumber": 1,
+    "BgmId": 3028,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200080,
+    "StartWaveNumber": 3,
+    "BgmId": 3029,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200081,
+    "StartWaveNumber": 1,
+    "BgmId": 3030,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200081,
+    "StartWaveNumber": 3,
+    "BgmId": 3030,
+    "Stem": 3,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200083,
+    "StartWaveNumber": 1,
+    "BgmId": 3015,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200083,
+    "StartWaveNumber": 3,
+    "BgmId": 3015,
+    "Stem": 3,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200084,
+    "StartWaveNumber": 1,
+    "BgmId": 3016,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200084,
+    "StartWaveNumber": 3,
+    "BgmId": 3017,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200085,
+    "StartWaveNumber": 1,
+    "BgmId": 3018,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200085,
+    "StartWaveNumber": 3,
+    "BgmId": 3019,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200086,
+    "StartWaveNumber": 1,
+    "BgmId": 3020,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200086,
+    "StartWaveNumber": 3,
+    "BgmId": 3020,
+    "Stem": 3,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200087,
+    "StartWaveNumber": 1,
+    "BgmId": 3021,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200087,
+    "StartWaveNumber": 3,
+    "BgmId": 3022,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200088,
+    "StartWaveNumber": 1,
+    "BgmId": 3023,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200088,
+    "StartWaveNumber": 3,
+    "BgmId": 3024,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200089,
+    "StartWaveNumber": 1,
+    "BgmId": 3025,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200089,
+    "StartWaveNumber": 3,
+    "BgmId": 3017,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200090,
+    "StartWaveNumber": 1,
+    "BgmId": 3026,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200090,
+    "StartWaveNumber": 3,
+    "BgmId": 3027,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200091,
+    "StartWaveNumber": 1,
+    "BgmId": 3028,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200091,
+    "StartWaveNumber": 3,
+    "BgmId": 3029,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200092,
+    "StartWaveNumber": 1,
+    "BgmId": 3030,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200092,
+    "StartWaveNumber": 3,
+    "BgmId": 3030,
+    "Stem": 3,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200093,
+    "StartWaveNumber": 1,
+    "BgmId": 3015,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200093,
+    "StartWaveNumber": 3,
+    "BgmId": 3015,
+    "Stem": 3,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200094,
+    "StartWaveNumber": 1,
+    "BgmId": 3016,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200094,
+    "StartWaveNumber": 3,
+    "BgmId": 3017,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200095,
+    "StartWaveNumber": 1,
+    "BgmId": 3018,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200095,
+    "StartWaveNumber": 3,
+    "BgmId": 3019,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200096,
+    "StartWaveNumber": 1,
+    "BgmId": 3020,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200096,
+    "StartWaveNumber": 3,
+    "BgmId": 3020,
+    "Stem": 3,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200097,
+    "StartWaveNumber": 1,
+    "BgmId": 3021,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200097,
+    "StartWaveNumber": 3,
+    "BgmId": 3022,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200098,
+    "StartWaveNumber": 1,
+    "BgmId": 3023,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200098,
+    "StartWaveNumber": 3,
+    "BgmId": 3024,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200099,
+    "StartWaveNumber": 1,
+    "BgmId": 3025,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200099,
+    "StartWaveNumber": 3,
+    "BgmId": 3017,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200100,
+    "StartWaveNumber": 1,
+    "BgmId": 3026,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200100,
+    "StartWaveNumber": 3,
+    "BgmId": 3027,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200101,
+    "StartWaveNumber": 1,
+    "BgmId": 3028,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200101,
+    "StartWaveNumber": 3,
+    "BgmId": 3029,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200102,
+    "StartWaveNumber": 1,
+    "BgmId": 3030,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200102,
+    "StartWaveNumber": 3,
+    "BgmId": 3030,
+    "Stem": 3,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200104,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200105,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200105,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200106,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200106,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200108,
+    "StartWaveNumber": 1,
+    "BgmId": 4040,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200109,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200109,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200110,
+    "StartWaveNumber": 1,
+    "BgmId": 6007,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200110,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200112,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200112,
+    "StartWaveNumber": 3,
+    "BgmId": 4030,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200113,
+    "StartWaveNumber": 1,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200114,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200114,
+    "StartWaveNumber": 3,
+    "BgmId": 4040,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200116,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200116,
+    "StartWaveNumber": 3,
+    "BgmId": 3004,
+    "Stem": 3,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200117,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200118,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200118,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200119,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200119,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200120,
+    "StartWaveNumber": 1,
+    "BgmId": 4040,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200121,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200121,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200122,
+    "StartWaveNumber": 1,
+    "BgmId": 6007,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200122,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200123,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200123,
+    "StartWaveNumber": 3,
+    "BgmId": 4030,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200124,
+    "StartWaveNumber": 1,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200125,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200125,
+    "StartWaveNumber": 3,
+    "BgmId": 4040,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200126,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200126,
+    "StartWaveNumber": 3,
+    "BgmId": 3004,
+    "Stem": 3,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200127,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200128,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200128,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200129,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200129,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200130,
+    "StartWaveNumber": 1,
+    "BgmId": 4040,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200131,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200131,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200132,
+    "StartWaveNumber": 1,
+    "BgmId": 6007,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200132,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200133,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200133,
+    "StartWaveNumber": 3,
+    "BgmId": 4030,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200134,
+    "StartWaveNumber": 1,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200135,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200135,
+    "StartWaveNumber": 3,
+    "BgmId": 4040,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200136,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200136,
+    "StartWaveNumber": 3,
+    "BgmId": 3004,
+    "Stem": 3,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200138,
+    "StartWaveNumber": 1,
+    "BgmId": 3005,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200139,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200139,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200140,
+    "StartWaveNumber": 1,
+    "BgmId": 6007,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200140,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200142,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200143,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200143,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200144,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200146,
+    "StartWaveNumber": 1,
+    "BgmId": 4040,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200147,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200147,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200148,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200148,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200150,
+    "StartWaveNumber": 1,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200151,
+    "StartWaveNumber": 1,
+    "BgmId": 3005,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200152,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200152,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200153,
+    "StartWaveNumber": 1,
+    "BgmId": 6007,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200153,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200154,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200155,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200155,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200156,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200157,
+    "StartWaveNumber": 1,
+    "BgmId": 4040,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200158,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200158,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200159,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200159,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200160,
+    "StartWaveNumber": 1,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200161,
+    "StartWaveNumber": 1,
+    "BgmId": 3005,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200162,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200162,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200163,
+    "StartWaveNumber": 1,
+    "BgmId": 6007,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200163,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200164,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200165,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200165,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200166,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200167,
+    "StartWaveNumber": 1,
+    "BgmId": 4040,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200168,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200168,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200169,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200169,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200170,
+    "StartWaveNumber": 1,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200172,
+    "StartWaveNumber": 1,
+    "BgmId": 3045,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200172,
+    "StartWaveNumber": 3,
+    "BgmId": 3032,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200173,
+    "StartWaveNumber": 1,
+    "BgmId": 3041,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200173,
+    "StartWaveNumber": 3,
+    "BgmId": 3034,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200174,
+    "StartWaveNumber": 1,
+    "BgmId": 3033,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200174,
+    "StartWaveNumber": 3,
+    "BgmId": 3036,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200176,
+    "StartWaveNumber": 1,
+    "BgmId": 3037,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200176,
+    "StartWaveNumber": 3,
+    "BgmId": 3038,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200177,
+    "StartWaveNumber": 1,
+    "BgmId": 3049,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200177,
+    "StartWaveNumber": 3,
+    "BgmId": 3040,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200178,
+    "StartWaveNumber": 1,
+    "BgmId": 3037,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200178,
+    "StartWaveNumber": 3,
+    "BgmId": 3042,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200180,
+    "StartWaveNumber": 1,
+    "BgmId": 3049,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200180,
+    "StartWaveNumber": 3,
+    "BgmId": 3044,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200181,
+    "StartWaveNumber": 1,
+    "BgmId": 3041,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200181,
+    "StartWaveNumber": 3,
+    "BgmId": 3046,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200182,
+    "StartWaveNumber": 1,
+    "BgmId": 3045,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200182,
+    "StartWaveNumber": 3,
+    "BgmId": 3048,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200184,
+    "StartWaveNumber": 1,
+    "BgmId": 3033,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200184,
+    "StartWaveNumber": 3,
+    "BgmId": 3050,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200185,
+    "StartWaveNumber": 1,
+    "BgmId": 3045,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200185,
+    "StartWaveNumber": 3,
+    "BgmId": 3032,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200186,
+    "StartWaveNumber": 1,
+    "BgmId": 3041,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200186,
+    "StartWaveNumber": 3,
+    "BgmId": 3034,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200187,
+    "StartWaveNumber": 1,
+    "BgmId": 3033,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200187,
+    "StartWaveNumber": 3,
+    "BgmId": 3036,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200188,
+    "StartWaveNumber": 1,
+    "BgmId": 3037,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200188,
+    "StartWaveNumber": 3,
+    "BgmId": 3038,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200189,
+    "StartWaveNumber": 1,
+    "BgmId": 3049,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200189,
+    "StartWaveNumber": 3,
+    "BgmId": 3040,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200190,
+    "StartWaveNumber": 1,
+    "BgmId": 3037,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200190,
+    "StartWaveNumber": 3,
+    "BgmId": 3042,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200191,
+    "StartWaveNumber": 1,
+    "BgmId": 3049,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200191,
+    "StartWaveNumber": 3,
+    "BgmId": 3044,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200192,
+    "StartWaveNumber": 1,
+    "BgmId": 3041,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200192,
+    "StartWaveNumber": 3,
+    "BgmId": 3046,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200193,
+    "StartWaveNumber": 1,
+    "BgmId": 3045,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200193,
+    "StartWaveNumber": 3,
+    "BgmId": 3048,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200194,
+    "StartWaveNumber": 1,
+    "BgmId": 3033,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200194,
+    "StartWaveNumber": 3,
+    "BgmId": 3050,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200195,
+    "StartWaveNumber": 1,
+    "BgmId": 3045,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200195,
+    "StartWaveNumber": 3,
+    "BgmId": 3032,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200196,
+    "StartWaveNumber": 1,
+    "BgmId": 3041,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200196,
+    "StartWaveNumber": 3,
+    "BgmId": 3034,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200197,
+    "StartWaveNumber": 1,
+    "BgmId": 3033,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200197,
+    "StartWaveNumber": 3,
+    "BgmId": 3036,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200198,
+    "StartWaveNumber": 1,
+    "BgmId": 3037,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200198,
+    "StartWaveNumber": 3,
+    "BgmId": 3038,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200199,
+    "StartWaveNumber": 1,
+    "BgmId": 3049,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200199,
+    "StartWaveNumber": 3,
+    "BgmId": 3040,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200200,
+    "StartWaveNumber": 1,
+    "BgmId": 3037,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200200,
+    "StartWaveNumber": 3,
+    "BgmId": 3042,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200201,
+    "StartWaveNumber": 1,
+    "BgmId": 3049,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200201,
+    "StartWaveNumber": 3,
+    "BgmId": 3044,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200202,
+    "StartWaveNumber": 1,
+    "BgmId": 3041,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200202,
+    "StartWaveNumber": 3,
+    "BgmId": 3046,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200203,
+    "StartWaveNumber": 1,
+    "BgmId": 3045,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200203,
+    "StartWaveNumber": 3,
+    "BgmId": 3048,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 200204,
+    "StartWaveNumber": 1,
+    "BgmId": 3033,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 200204,
+    "StartWaveNumber": 3,
+    "BgmId": 3050,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 210001,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 210001,
+    "StartWaveNumber": 3,
+    "BgmId": 3005,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 210002,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 210002,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 210003,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 210003,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 210004,
+    "StartWaveNumber": 1,
+    "BgmId": 6007,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 210004,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 210005,
+    "StartWaveNumber": 1,
+    "BgmId": 3008,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 210006,
+    "StartWaveNumber": 1,
+    "BgmId": 1040,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 210006,
+    "StartWaveNumber": 3,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 210007,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 210007,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 210008,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 210008,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 210009,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 210009,
+    "StartWaveNumber": 3,
+    "BgmId": 3008,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 210010,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 210011,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 210011,
+    "StartWaveNumber": 3,
+    "BgmId": 4010,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 210012,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 210012,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 210013,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 210013,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 210014,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 210014,
+    "StartWaveNumber": 3,
+    "BgmId": 4041,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 210015,
+    "StartWaveNumber": 1,
+    "BgmId": 4060,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 210016,
+    "StartWaveNumber": 1,
+    "BgmId": 4050,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 210016,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 210017,
+    "StartWaveNumber": 1,
+    "BgmId": 4010,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 210017,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 210018,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 210018,
+    "StartWaveNumber": 3,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 210019,
+    "StartWaveNumber": 1,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 210019,
+    "StartWaveNumber": 3,
+    "BgmId": 3008,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 210020,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 210021,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 210021,
+    "StartWaveNumber": 3,
+    "BgmId": 3005,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 210022,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 210022,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 210023,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 210023,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 210024,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 210024,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 210025,
+    "StartWaveNumber": 1,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 210026,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 210026,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 210027,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 210027,
+    "StartWaveNumber": 3,
+    "BgmId": 3008,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 210028,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 210028,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 210029,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 210029,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 210030,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 220001,
+    "StartWaveNumber": 1,
+    "BgmId": 6007,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 220002,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 220003,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 220004,
+    "StartWaveNumber": 1,
+    "BgmId": 4041,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 220005,
+    "StartWaveNumber": 1,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 220006,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 220011,
+    "StartWaveNumber": 1,
+    "BgmId": 2030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 220012,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 220013,
+    "StartWaveNumber": 1,
+    "BgmId": 6005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 220014,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 220015,
+    "StartWaveNumber": 1,
+    "BgmId": 4020,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 220016,
+    "StartWaveNumber": 1,
+    "BgmId": 4010,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 220021,
+    "StartWaveNumber": 1,
+    "BgmId": 4060,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 220022,
+    "StartWaveNumber": 1,
+    "BgmId": 6007,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 220023,
+    "StartWaveNumber": 1,
+    "BgmId": 4041,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 220024,
+    "StartWaveNumber": 1,
+    "BgmId": 1030,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 220025,
+    "StartWaveNumber": 1,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 220026,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 300001,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 300001,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 300002,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 300002,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 300003,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 300003,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 300004,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 300004,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 300005,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 300005,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 300006,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 300006,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 300007,
+    "StartWaveNumber": 1,
+    "BgmId": 4040,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 300008,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 300008,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 300009,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 300009,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 300010,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 300010,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 300011,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 300011,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 300012,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 300012,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 300013,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 300013,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 300014,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 300014,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 300015,
+    "StartWaveNumber": 1,
+    "BgmId": 4040,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 300016,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 300016,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 300017,
+    "StartWaveNumber": 1,
+    "BgmId": 4010,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 300017,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 300018,
+    "StartWaveNumber": 1,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 300019,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 300019,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 300020,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 300020,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 300021,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 300021,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 300022,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 300022,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 2,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 300023,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 300023,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 300024,
+    "StartWaveNumber": 1,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 300024,
+    "StartWaveNumber": 3,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 300025,
+    "StartWaveNumber": 1,
+    "BgmId": 4040,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 300026,
+    "StartWaveNumber": 1,
+    "BgmId": 3002,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 300026,
+    "StartWaveNumber": 3,
+    "BgmId": 3003,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 300027,
+    "StartWaveNumber": 1,
+    "BgmId": 4010,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 300027,
+    "StartWaveNumber": 3,
+    "BgmId": 3001,
+    "Stem": 1,
+    "TrackNumber": 2
+  },
+  {
+    "QuestSceneId": 300028,
+    "StartWaveNumber": 1,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 300029,
+    "StartWaveNumber": 1,
+    "BgmId": 3004,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 400001,
+    "StartWaveNumber": 1,
+    "BgmId": 4080,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 400003,
+    "StartWaveNumber": 1,
+    "BgmId": 6006,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 400004,
+    "StartWaveNumber": 1,
+    "BgmId": 2011,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 400005,
+    "StartWaveNumber": 1,
+    "BgmId": 4050,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 400006,
+    "StartWaveNumber": 1,
+    "BgmId": 6022,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 400007,
+    "StartWaveNumber": 1,
+    "BgmId": 4041,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 400008,
+    "StartWaveNumber": 1,
+    "BgmId": 1010,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 400009,
+    "StartWaveNumber": 1,
+    "BgmId": 6007,
+    "Stem": 2,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 333005001,
+    "StartWaveNumber": 1,
+    "BgmId": 4010,
+    "Stem": 1,
+    "TrackNumber": 1
+  },
+  {
+    "QuestSceneId": 333005002,
+    "StartWaveNumber": 1,
+    "BgmId": 3005,
+    "Stem": 1,
+    "TrackNumber": 1
+  }
+]

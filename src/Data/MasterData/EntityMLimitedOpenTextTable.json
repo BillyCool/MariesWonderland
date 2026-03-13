@@ -1,0 +1,275 @@
+[
+  {
+    "LimitedOpenTargetType": 1,
+    "TargetId": 1901,
+    "OpenAchievementTextAssetId": 0,
+    "LocalPushTextAssetId": 0,
+    "OpenAchievementTextGroupId": 0
+  },
+  {
+    "LimitedOpenTargetType": 2,
+    "TargetId": 42,
+    "OpenAchievementTextAssetId": 0,
+    "LocalPushTextAssetId": 1002,
+    "OpenAchievementTextGroupId": 1002
+  },
+  {
+    "LimitedOpenTargetType": 2,
+    "TargetId": 93,
+    "OpenAchievementTextAssetId": 0,
+    "LocalPushTextAssetId": 1011,
+    "OpenAchievementTextGroupId": 1011
+  },
+  {
+    "LimitedOpenTargetType": 2,
+    "TargetId": 411,
+    "OpenAchievementTextAssetId": 0,
+    "LocalPushTextAssetId": 1019,
+    "OpenAchievementTextGroupId": 1019
+  },
+  {
+    "LimitedOpenTargetType": 2,
+    "TargetId": 491,
+    "OpenAchievementTextAssetId": 0,
+    "LocalPushTextAssetId": 1033,
+    "OpenAchievementTextGroupId": 1033
+  },
+  {
+    "LimitedOpenTargetType": 2,
+    "TargetId": 492,
+    "OpenAchievementTextAssetId": 0,
+    "LocalPushTextAssetId": 1034,
+    "OpenAchievementTextGroupId": 1034
+  },
+  {
+    "LimitedOpenTargetType": 4,
+    "TargetId": 6,
+    "OpenAchievementTextAssetId": 0,
+    "LocalPushTextAssetId": 1012,
+    "OpenAchievementTextGroupId": 1012
+  },
+  {
+    "LimitedOpenTargetType": 5,
+    "TargetId": 140003,
+    "OpenAchievementTextAssetId": 0,
+    "LocalPushTextAssetId": 1003,
+    "OpenAchievementTextGroupId": 1003
+  },
+  {
+    "LimitedOpenTargetType": 5,
+    "TargetId": 140008,
+    "OpenAchievementTextAssetId": 0,
+    "LocalPushTextAssetId": 1004,
+    "OpenAchievementTextGroupId": 1004
+  },
+  {
+    "LimitedOpenTargetType": 5,
+    "TargetId": 140045,
+    "OpenAchievementTextAssetId": 0,
+    "LocalPushTextAssetId": 1005,
+    "OpenAchievementTextGroupId": 1005
+  },
+  {
+    "LimitedOpenTargetType": 5,
+    "TargetId": 140046,
+    "OpenAchievementTextAssetId": 0,
+    "LocalPushTextAssetId": 1006,
+    "OpenAchievementTextGroupId": 1006
+  },
+  {
+    "LimitedOpenTargetType": 5,
+    "TargetId": 140047,
+    "OpenAchievementTextAssetId": 0,
+    "LocalPushTextAssetId": 1007,
+    "OpenAchievementTextGroupId": 1007
+  },
+  {
+    "LimitedOpenTargetType": 5,
+    "TargetId": 140048,
+    "OpenAchievementTextAssetId": 0,
+    "LocalPushTextAssetId": 1008,
+    "OpenAchievementTextGroupId": 1008
+  },
+  {
+    "LimitedOpenTargetType": 5,
+    "TargetId": 140049,
+    "OpenAchievementTextAssetId": 0,
+    "LocalPushTextAssetId": 1009,
+    "OpenAchievementTextGroupId": 1009
+  },
+  {
+    "LimitedOpenTargetType": 5,
+    "TargetId": 140050,
+    "OpenAchievementTextAssetId": 0,
+    "LocalPushTextAssetId": 1010,
+    "OpenAchievementTextGroupId": 1010
+  },
+  {
+    "LimitedOpenTargetType": 5,
+    "TargetId": 140175,
+    "OpenAchievementTextAssetId": 0,
+    "LocalPushTextAssetId": 1013,
+    "OpenAchievementTextGroupId": 1013
+  },
+  {
+    "LimitedOpenTargetType": 5,
+    "TargetId": 140176,
+    "OpenAchievementTextAssetId": 0,
+    "LocalPushTextAssetId": 1014,
+    "OpenAchievementTextGroupId": 1014
+  },
+  {
+    "LimitedOpenTargetType": 5,
+    "TargetId": 140177,
+    "OpenAchievementTextAssetId": 0,
+    "LocalPushTextAssetId": 1015,
+    "OpenAchievementTextGroupId": 1015
+  },
+  {
+    "LimitedOpenTargetType": 5,
+    "TargetId": 140178,
+    "OpenAchievementTextAssetId": 0,
+    "LocalPushTextAssetId": 1016,
+    "OpenAchievementTextGroupId": 1016
+  },
+  {
+    "LimitedOpenTargetType": 5,
+    "TargetId": 140179,
+    "OpenAchievementTextAssetId": 0,
+    "LocalPushTextAssetId": 1017,
+    "OpenAchievementTextGroupId": 1017
+  },
+  {
+    "LimitedOpenTargetType": 5,
+    "TargetId": 140180,
+    "OpenAchievementTextAssetId": 0,
+    "LocalPushTextAssetId": 1018,
+    "OpenAchievementTextGroupId": 1018
+  },
+  {
+    "LimitedOpenTargetType": 5,
+    "TargetId": 140214,
+    "OpenAchievementTextAssetId": 0,
+    "LocalPushTextAssetId": 1020,
+    "OpenAchievementTextGroupId": 1020
+  },
+  {
+    "LimitedOpenTargetType": 5,
+    "TargetId": 140215,
+    "OpenAchievementTextAssetId": 0,
+    "LocalPushTextAssetId": 1021,
+    "OpenAchievementTextGroupId": 1021
+  },
+  {
+    "LimitedOpenTargetType": 5,
+    "TargetId": 140216,
+    "OpenAchievementTextAssetId": 0,
+    "LocalPushTextAssetId": 1022,
+    "OpenAchievementTextGroupId": 1022
+  },
+  {
+    "LimitedOpenTargetType": 5,
+    "TargetId": 140217,
+    "OpenAchievementTextAssetId": 0,
+    "LocalPushTextAssetId": 1023,
+    "OpenAchievementTextGroupId": 1023
+  },
+  {
+    "LimitedOpenTargetType": 5,
+    "TargetId": 140218,
+    "OpenAchievementTextAssetId": 0,
+    "LocalPushTextAssetId": 1024,
+    "OpenAchievementTextGroupId": 1024
+  },
+  {
+    "LimitedOpenTargetType": 5,
+    "TargetId": 140219,
+    "OpenAchievementTextAssetId": 0,
+    "LocalPushTextAssetId": 1025,
+    "OpenAchievementTextGroupId": 1025
+  },
+  {
+    "LimitedOpenTargetType": 5,
+    "TargetId": 140250,
+    "OpenAchievementTextAssetId": 0,
+    "LocalPushTextAssetId": 1026,
+    "OpenAchievementTextGroupId": 1026
+  },
+  {
+    "LimitedOpenTargetType": 5,
+    "TargetId": 140251,
+    "OpenAchievementTextAssetId": 0,
+    "LocalPushTextAssetId": 1027,
+    "OpenAchievementTextGroupId": 1027
+  },
+  {
+    "LimitedOpenTargetType": 5,
+    "TargetId": 140252,
+    "OpenAchievementTextAssetId": 0,
+    "LocalPushTextAssetId": 1028,
+    "OpenAchievementTextGroupId": 1028
+  },
+  {
+    "LimitedOpenTargetType": 5,
+    "TargetId": 140253,
+    "OpenAchievementTextAssetId": 0,
+    "LocalPushTextAssetId": 1029,
+    "OpenAchievementTextGroupId": 1029
+  },
+  {
+    "LimitedOpenTargetType": 5,
+    "TargetId": 140254,
+    "OpenAchievementTextAssetId": 0,
+    "LocalPushTextAssetId": 1030,
+    "OpenAchievementTextGroupId": 1030
+  },
+  {
+    "LimitedOpenTargetType": 5,
+    "TargetId": 140255,
+    "OpenAchievementTextAssetId": 0,
+    "LocalPushTextAssetId": 1031,
+    "OpenAchievementTextGroupId": 1031
+  },
+  {
+    "LimitedOpenTargetType": 5,
+    "TargetId": 140295,
+    "OpenAchievementTextAssetId": 0,
+    "LocalPushTextAssetId": 1032,
+    "OpenAchievementTextGroupId": 1032
+  },
+  {
+    "LimitedOpenTargetType": 5,
+    "TargetId": 140299,
+    "OpenAchievementTextAssetId": 0,
+    "LocalPushTextAssetId": 1035,
+    "OpenAchievementTextGroupId": 1035
+  },
+  {
+    "LimitedOpenTargetType": 5,
+    "TargetId": 140312,
+    "OpenAchievementTextAssetId": 0,
+    "LocalPushTextAssetId": 1036,
+    "OpenAchievementTextGroupId": 1036
+  },
+  {
+    "LimitedOpenTargetType": 5,
+    "TargetId": 140319,
+    "OpenAchievementTextAssetId": 0,
+    "LocalPushTextAssetId": 1037,
+    "OpenAchievementTextGroupId": 1037
+  },
+  {
+    "LimitedOpenTargetType": 5,
+    "TargetId": 140332,
+    "OpenAchievementTextAssetId": 0,
+    "LocalPushTextAssetId": 1038,
+    "OpenAchievementTextGroupId": 1038
+  },
+  {
+    "LimitedOpenTargetType": 5,
+    "TargetId": 140364,
+    "OpenAchievementTextAssetId": 0,
+    "LocalPushTextAssetId": 1039,
+    "OpenAchievementTextGroupId": 1039
+  }
+]

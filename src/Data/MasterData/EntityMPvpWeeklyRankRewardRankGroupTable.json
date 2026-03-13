@@ -1,0 +1,52 @@
+[
+  {
+    "PvpWeeklyRankRewardRankGroupId": 1,
+    "RankLowerLimit": 1,
+    "PvpWeeklyRankRewardGroupId": 1
+  },
+  {
+    "PvpWeeklyRankRewardRankGroupId": 1,
+    "RankLowerLimit": 101,
+    "PvpWeeklyRankRewardGroupId": 2
+  },
+  {
+    "PvpWeeklyRankRewardRankGroupId": 1,
+    "RankLowerLimit": 201,
+    "PvpWeeklyRankRewardGroupId": 3
+  },
+  {
+    "PvpWeeklyRankRewardRankGroupId": 1,
+    "RankLowerLimit": 301,
+    "PvpWeeklyRankRewardGroupId": 4
+  },
+  {
+    "PvpWeeklyRankRewardRankGroupId": 1,
+    "RankLowerLimit": 401,
+    "PvpWeeklyRankRewardGroupId": 5
+  },
+  {
+    "PvpWeeklyRankRewardRankGroupId": 1,
+    "RankLowerLimit": 501,
+    "PvpWeeklyRankRewardGroupId": 6
+  },
+  {
+    "PvpWeeklyRankRewardRankGroupId": 1,
+    "RankLowerLimit": 1001,
+    "PvpWeeklyRankRewardGroupId": 7
+  },
+  {
+    "PvpWeeklyRankRewardRankGroupId": 1,
+    "RankLowerLimit": 1501,
+    "PvpWeeklyRankRewardGroupId": 8
+  },
+  {
+    "PvpWeeklyRankRewardRankGroupId": 1,
+    "RankLowerLimit": 2001,
+    "PvpWeeklyRankRewardGroupId": 9
+  },
+  {
+    "PvpWeeklyRankRewardRankGroupId": 1,
+    "RankLowerLimit": 3001,
+    "PvpWeeklyRankRewardGroupId": 10
+  }
+]

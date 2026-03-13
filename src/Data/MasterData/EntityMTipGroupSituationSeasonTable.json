@@ -1,0 +1,296 @@
+[
+  {
+    "TipSituationType": 1,
+    "TipSituationSeasonId": 0,
+    "TipGroupId": 10001,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 1,
+    "TipSituationSeasonId": 0,
+    "TipGroupId": 10002,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 1,
+    "TipSituationSeasonId": 0,
+    "TipGroupId": 10004,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 1,
+    "TipSituationSeasonId": 0,
+    "TipGroupId": 10007,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 1,
+    "TipSituationSeasonId": 1,
+    "TipGroupId": 10001,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 1,
+    "TipSituationSeasonId": 1,
+    "TipGroupId": 10002,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 1,
+    "TipSituationSeasonId": 1,
+    "TipGroupId": 10004,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 1,
+    "TipSituationSeasonId": 1,
+    "TipGroupId": 10007,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 1,
+    "TipSituationSeasonId": 2,
+    "TipGroupId": 20001,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 1,
+    "TipSituationSeasonId": 2,
+    "TipGroupId": 20002,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 1,
+    "TipSituationSeasonId": 2,
+    "TipGroupId": 20004,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 1,
+    "TipSituationSeasonId": 2,
+    "TipGroupId": 20007,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 1,
+    "TipSituationSeasonId": 3,
+    "TipGroupId": 30001,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 1,
+    "TipSituationSeasonId": 3,
+    "TipGroupId": 30002,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 1,
+    "TipSituationSeasonId": 3,
+    "TipGroupId": 30004,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 1,
+    "TipSituationSeasonId": 3,
+    "TipGroupId": 30007,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 2,
+    "TipSituationSeasonId": 0,
+    "TipGroupId": 10001,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 2,
+    "TipSituationSeasonId": 0,
+    "TipGroupId": 10002,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 2,
+    "TipSituationSeasonId": 0,
+    "TipGroupId": 10003,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 2,
+    "TipSituationSeasonId": 0,
+    "TipGroupId": 10004,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 2,
+    "TipSituationSeasonId": 0,
+    "TipGroupId": 10005,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 2,
+    "TipSituationSeasonId": 0,
+    "TipGroupId": 10006,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 2,
+    "TipSituationSeasonId": 0,
+    "TipGroupId": 10007,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 2,
+    "TipSituationSeasonId": 1,
+    "TipGroupId": 10001,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 2,
+    "TipSituationSeasonId": 1,
+    "TipGroupId": 10002,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 2,
+    "TipSituationSeasonId": 1,
+    "TipGroupId": 10003,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 2,
+    "TipSituationSeasonId": 1,
+    "TipGroupId": 10004,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 2,
+    "TipSituationSeasonId": 1,
+    "TipGroupId": 10005,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 2,
+    "TipSituationSeasonId": 1,
+    "TipGroupId": 10006,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 2,
+    "TipSituationSeasonId": 1,
+    "TipGroupId": 10007,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 3,
+    "TipSituationSeasonId": 0,
+    "TipGroupId": 10003,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 3,
+    "TipSituationSeasonId": 1,
+    "TipGroupId": 10003,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 3,
+    "TipSituationSeasonId": 2,
+    "TipGroupId": 20003,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 3,
+    "TipSituationSeasonId": 3,
+    "TipGroupId": 30003,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 4,
+    "TipSituationSeasonId": 0,
+    "TipGroupId": 10001,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 4,
+    "TipSituationSeasonId": 0,
+    "TipGroupId": 10002,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 4,
+    "TipSituationSeasonId": 1,
+    "TipGroupId": 10001,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 4,
+    "TipSituationSeasonId": 1,
+    "TipGroupId": 10002,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 4,
+    "TipSituationSeasonId": 2,
+    "TipGroupId": 20001,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 4,
+    "TipSituationSeasonId": 2,
+    "TipGroupId": 20002,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 4,
+    "TipSituationSeasonId": 3,
+    "TipGroupId": 30001,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 4,
+    "TipSituationSeasonId": 3,
+    "TipGroupId": 30002,
+    "Weight": 100,
+    "TargetId": 0
+  }
+]

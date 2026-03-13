@@ -1,0 +1,42 @@
+[
+  {
+    "AssetTurnbattlePrefabId": 1,
+    "AssetPath": "field01"
+  },
+  {
+    "AssetTurnbattlePrefabId": 2,
+    "AssetPath": "partner_locator01"
+  },
+  {
+    "AssetTurnbattlePrefabId": 3,
+    "AssetPath": "observer_turnbattle_companion_skill"
+  },
+  {
+    "AssetTurnbattlePrefabId": 4,
+    "AssetPath": "field02"
+  },
+  {
+    "AssetTurnbattlePrefabId": 5,
+    "AssetPath": "field03"
+  },
+  {
+    "AssetTurnbattlePrefabId": 6,
+    "AssetPath": "turnbattle_input_detector"
+  },
+  {
+    "AssetTurnbattlePrefabId": 7,
+    "AssetPath": "movable_area_stub"
+  },
+  {
+    "AssetTurnbattlePrefabId": 8,
+    "AssetPath": "field04"
+  },
+  {
+    "AssetTurnbattlePrefabId": 9,
+    "AssetPath": "field05"
+  },
+  {
+    "AssetTurnbattlePrefabId": 10,
+    "AssetPath": "field06"
+  }
+]

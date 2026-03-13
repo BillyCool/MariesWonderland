@@ -1,0 +1,3467 @@
+[
+  {
+    "SkillBehaviourActionId": 1000001,
+    "TargetCountLower": 2,
+    "TargetCountUpper": 2,
+    "ValuePermil": 1100,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000002,
+    "TargetCountLower": 2,
+    "TargetCountUpper": 2,
+    "ValuePermil": 1120,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000003,
+    "TargetCountLower": 2,
+    "TargetCountUpper": 2,
+    "ValuePermil": 1140,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000004,
+    "TargetCountLower": 2,
+    "TargetCountUpper": 2,
+    "ValuePermil": 1160,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000005,
+    "TargetCountLower": 2,
+    "TargetCountUpper": 2,
+    "ValuePermil": 1160,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000006,
+    "TargetCountLower": 2,
+    "TargetCountUpper": 2,
+    "ValuePermil": 1190,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000007,
+    "TargetCountLower": 2,
+    "TargetCountUpper": 2,
+    "ValuePermil": 1220,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000008,
+    "TargetCountLower": 2,
+    "TargetCountUpper": 2,
+    "ValuePermil": 1250,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000009,
+    "TargetCountLower": 2,
+    "TargetCountUpper": 2,
+    "ValuePermil": 1250,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000010,
+    "TargetCountLower": 2,
+    "TargetCountUpper": 2,
+    "ValuePermil": 1333,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000011,
+    "TargetCountLower": 2,
+    "TargetCountUpper": 2,
+    "ValuePermil": 1417,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000012,
+    "TargetCountLower": 2,
+    "TargetCountUpper": 2,
+    "ValuePermil": 1500,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000013,
+    "TargetCountLower": 2,
+    "TargetCountUpper": 2,
+    "ValuePermil": 1060,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000014,
+    "TargetCountLower": 2,
+    "TargetCountUpper": 2,
+    "ValuePermil": 1073,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000015,
+    "TargetCountLower": 2,
+    "TargetCountUpper": 2,
+    "ValuePermil": 1087,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000016,
+    "TargetCountLower": 2,
+    "TargetCountUpper": 2,
+    "ValuePermil": 1100,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000017,
+    "TargetCountLower": 2,
+    "TargetCountUpper": 2,
+    "ValuePermil": 1100,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000018,
+    "TargetCountLower": 2,
+    "TargetCountUpper": 2,
+    "ValuePermil": 1120,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000019,
+    "TargetCountLower": 2,
+    "TargetCountUpper": 2,
+    "ValuePermil": 1140,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000020,
+    "TargetCountLower": 2,
+    "TargetCountUpper": 2,
+    "ValuePermil": 1160,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000021,
+    "TargetCountLower": 2,
+    "TargetCountUpper": 2,
+    "ValuePermil": 1160,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000022,
+    "TargetCountLower": 2,
+    "TargetCountUpper": 2,
+    "ValuePermil": 1217,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000023,
+    "TargetCountLower": 2,
+    "TargetCountUpper": 2,
+    "ValuePermil": 1273,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000024,
+    "TargetCountLower": 2,
+    "TargetCountUpper": 2,
+    "ValuePermil": 1330,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000025,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 1080,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000026,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 1097,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000027,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 1113,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000028,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 1130,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000029,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 1130,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000030,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 1153,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000031,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 1177,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000032,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 1200,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000033,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 1200,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000034,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 1267,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000035,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 1333,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000036,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 1400,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000037,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 1070,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000038,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 1083,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000039,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 1097,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000040,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 1110,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000041,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 1110,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000042,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 1130,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000043,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 1150,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000044,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 1170,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000045,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 1170,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000046,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 1200,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000047,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 1230,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000048,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 1260,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000049,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1060,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000050,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1073,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000051,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1087,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000052,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1100,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000053,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1100,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000054,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1133,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000055,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1167,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000056,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1200,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000057,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1200,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000058,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1233,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000059,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1267,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000060,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1300,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000061,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1040,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000062,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1050,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000063,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1060,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000064,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1070,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000065,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1070,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000066,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1090,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000067,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1110,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000068,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1130,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000069,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1130,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000070,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1153,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000071,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1177,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000072,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1200,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000073,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1070,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000074,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1080,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000075,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1090,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000076,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1100,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000077,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1100,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000078,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1116,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000079,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1132,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000080,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1150,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000081,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1150,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000082,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1173,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000083,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1196,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000084,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1220,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000085,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1045,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000086,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1053,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000087,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1061,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000088,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1070,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000089,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1070,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000090,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1080,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000091,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1090,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000092,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1100,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000093,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1100,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000094,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1116,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000095,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1132,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000096,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1150,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000097,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 1080,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000098,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 1096,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000099,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 1112,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000100,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 1130,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000101,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1070,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000102,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1080,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000103,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1090,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000104,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1100,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000105,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 1130,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000106,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 1153,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000107,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 1177,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000108,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 1200,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000109,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1100,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000110,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1116,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000111,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1132,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000112,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1150,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000113,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 1200,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000114,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 1233,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000115,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 1266,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000116,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 1300,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000117,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1150,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000118,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1173,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000119,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1196,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000120,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1220,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000121,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 1050,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000122,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 1060,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000123,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 1070,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000124,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 1080,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000125,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1045,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000126,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1053,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000127,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1061,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000128,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1070,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000129,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 1080,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000130,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 1096,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000131,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 1112,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000132,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 1130,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000133,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1070,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000134,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1080,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000135,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1090,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000136,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1100,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000137,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 1130,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000138,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 1153,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000139,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 1177,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000140,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 1200,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000141,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1100,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000142,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1116,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000143,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1132,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000144,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1150,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000145,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1070,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000146,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1080,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000147,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1090,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000148,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1100,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000149,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 1030,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000150,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 1035,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000151,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 1040,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000152,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 1045,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000153,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1100,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000154,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1116,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000155,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1132,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000156,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1150,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000157,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 1070,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000158,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 1080,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000159,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 1090,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000160,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 1100,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000161,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1150,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000162,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1173,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000163,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1196,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000164,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1220,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000165,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 1100,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000166,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 1116,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000167,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 1132,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000168,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 1150,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000169,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1045,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000170,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1053,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000171,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1061,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000172,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1070,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000173,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 1020,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000174,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 1023,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000175,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 1026,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000176,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 1030,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000177,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1070,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000178,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1080,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000179,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1090,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000180,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1100,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000181,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 1030,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000182,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 1035,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000183,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 1040,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000184,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 1045,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000185,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1100,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000186,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1116,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000187,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1132,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000188,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 1150,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000189,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 1070,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000190,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 1080,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000191,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 1090,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 1000192,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 1100,
+    "CalculationType": 3
+  },
+  {
+    "SkillBehaviourActionId": 11000001,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 33,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000002,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 42,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000003,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 51,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000004,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 60,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000005,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 44,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000006,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 56,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000007,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 68,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000008,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 80,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000009,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 55,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000010,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 70,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000011,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 85,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000012,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 100,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000013,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 33,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000014,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 42,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000015,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 51,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000016,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 60,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000017,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 44,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000018,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 56,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000019,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 68,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000020,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 80,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000021,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 55,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000022,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 70,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000023,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 85,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000024,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 100,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000025,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 49,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000026,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 63,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000027,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 76,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000028,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 90,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000029,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 66,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000030,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 84,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000031,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 102,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000032,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 120,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000033,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 82,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000034,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 105,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000035,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 127,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000036,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 150,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000037,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 66,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000038,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 84,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000039,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 102,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000040,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 120,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000041,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 88,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000042,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 112,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000043,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 136,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000044,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 160,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000045,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 110,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000046,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 140,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000047,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 170,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000048,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 200,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000049,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 16,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000050,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 21,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000051,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 25,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000052,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 30,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000053,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 22,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000054,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 28,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000055,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 34,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000056,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 40,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000057,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 27,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000058,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 35,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000059,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 42,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000060,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 50,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000061,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 49,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000062,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 63,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000063,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 76,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000064,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 90,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000065,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 66,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000066,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 84,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000067,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 102,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000068,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 120,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000069,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 82,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000070,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 105,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000071,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 127,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000072,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 150,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000073,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 231,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000074,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 294,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000075,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 357,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000076,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 420,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000077,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 308,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000078,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 392,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000079,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 476,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000080,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 560,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000081,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 385,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000082,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 490,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000083,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 595,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11000084,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 700,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000001,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 1,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000002,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 3,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000003,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 5,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000004,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 7,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000005,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 9,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000006,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 11,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000007,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 13,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000008,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 15,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000009,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 17,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000010,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 19,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000011,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 21,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000012,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 23,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000013,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 25,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000014,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 27,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000015,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 30,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000016,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 24,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000017,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 25,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000018,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 26,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000019,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 27,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000020,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 28,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000021,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 29,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000022,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 30,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000023,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 31,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000024,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 32,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000025,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 33,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000026,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 34,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000027,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 35,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000028,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 36,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000029,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 38,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000030,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 40,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000031,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 26,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000032,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 27,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000033,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 28,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000034,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 30,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000035,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 31,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000036,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 32,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000037,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 33,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000038,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 35,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000039,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 37,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000040,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 39,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000041,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 40,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000042,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 42,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000043,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 44,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000044,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 46,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000045,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 50,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000046,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 1,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000047,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 2,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000048,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 3,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000049,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 5,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000050,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 6,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000051,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 7,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000052,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 9,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000053,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 10,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000054,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 11,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000055,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 13,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000056,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 14,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000057,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 15,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000058,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 17,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000059,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 18,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000060,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 20,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000061,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 1,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000062,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 3,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000063,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 5,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000064,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 7,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000065,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 9,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000066,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 11,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000067,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 13,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000068,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 15,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000069,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 17,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000070,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 19,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000071,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 21,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000072,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 23,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000073,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 25,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000074,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 27,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000075,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 30,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000076,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 21,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000077,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 22,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000078,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 23,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000079,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 24,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000080,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 25,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000081,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 26,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000082,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 27,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000083,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 28,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000084,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 29,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000085,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 31,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000086,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 32,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000087,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 34,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000088,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 35,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000089,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 37,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000090,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 40,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000091,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 31,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000092,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 32,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000093,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 33,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000094,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 34,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000095,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 35,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000096,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 36,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000097,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 37,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000098,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 38,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000099,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 39,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000100,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 40,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000101,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 42,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000102,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 44,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000103,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 46,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000104,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 48,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000105,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 50,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000106,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 34,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000107,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 36,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000108,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 37,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000109,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 38,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000110,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 39,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000111,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 41,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000112,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 42,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000113,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 44,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000114,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 46,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000115,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 48,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000116,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 50,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000117,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 52,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000118,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 55,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000119,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 57,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000120,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 60,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000121,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 42,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000122,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 44,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000123,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 46,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000124,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 48,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000125,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 50,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000126,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 52,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000127,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 54,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000128,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 56,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000129,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 59,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000130,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 62,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000131,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 65,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000132,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 68,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000133,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 71,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000134,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 74,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 12000135,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 80,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 15000111,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 50,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 15000112,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 100,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 15000181,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 30,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 15000182,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 50,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000001,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 10,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000002,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 20,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000003,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 30,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000004,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 40,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000005,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 50,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000006,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 60,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000007,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 70,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000008,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 80,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000009,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 90,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000010,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 100,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000011,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 110,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000012,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 120,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000013,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 130,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000014,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 140,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000015,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 150,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000016,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 160,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000017,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 170,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000018,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 180,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000019,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 190,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000020,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 3,
+    "ValuePermil": 200,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000051,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 10,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000052,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 20,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000053,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 30,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000054,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 40,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000055,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 50,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000056,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 60,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000057,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 70,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000058,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 80,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000059,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 90,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000060,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 100,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000061,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 110,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000062,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 120,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000063,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 130,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000064,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 140,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000065,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 150,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000066,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 160,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000067,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 170,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000068,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 180,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000069,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 190,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000070,
+    "TargetCountLower": 4,
+    "TargetCountUpper": 4,
+    "ValuePermil": 200,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000101,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 10,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000102,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 20,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000103,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 30,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000104,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 40,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000105,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 50,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000106,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 60,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000107,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 70,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000108,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 80,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000109,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 90,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000110,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 100,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000111,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 110,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000112,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 120,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000113,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 130,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000114,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 140,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000115,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 150,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000116,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 160,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000117,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 170,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000118,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 180,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000119,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 190,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17000120,
+    "TargetCountLower": 5,
+    "TargetCountUpper": 5,
+    "ValuePermil": 200,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17100001,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 30,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17100002,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 40,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17100003,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 50,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17100004,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 30,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17100005,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 40,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17100006,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 50,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17100007,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 40,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17100008,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 50,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17100009,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 60,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17100010,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 50,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17100011,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 60,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17100012,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 80,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17100013,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 120,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17100014,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 160,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17100015,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 200,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17200001,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 100,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 17200002,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 50,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 18000001,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 10,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 18000002,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 20,
+    "CalculationType": 1
+  },
+  {
+    "SkillBehaviourActionId": 18000003,
+    "TargetCountLower": 3,
+    "TargetCountUpper": 5,
+    "ValuePermil": 30,
+    "CalculationType": 1
+  }
+]

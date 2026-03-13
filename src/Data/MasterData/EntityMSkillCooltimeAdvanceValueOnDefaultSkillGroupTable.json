@@ -1,0 +1,27 @@
+[
+  {
+    "SkillCooltimeAdvanceValueOnDefaultSkillGroupId": 1,
+    "SkillHitCountLowerLimit": 1,
+    "SkillCooltimeAdvanceValue": 50
+  },
+  {
+    "SkillCooltimeAdvanceValueOnDefaultSkillGroupId": 1,
+    "SkillHitCountLowerLimit": 2,
+    "SkillCooltimeAdvanceValue": 100
+  },
+  {
+    "SkillCooltimeAdvanceValueOnDefaultSkillGroupId": 1,
+    "SkillHitCountLowerLimit": 3,
+    "SkillCooltimeAdvanceValue": 150
+  },
+  {
+    "SkillCooltimeAdvanceValueOnDefaultSkillGroupId": 1,
+    "SkillHitCountLowerLimit": 4,
+    "SkillCooltimeAdvanceValue": 175
+  },
+  {
+    "SkillCooltimeAdvanceValueOnDefaultSkillGroupId": 1,
+    "SkillHitCountLowerLimit": 5,
+    "SkillCooltimeAdvanceValue": 200
+  }
+]

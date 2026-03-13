@@ -1,0 +1,242 @@
+[
+  {
+    "KnockDownDamageThresholdGroupId": 11,
+    "KnockDownDamageThresholdGroupOrder": 1,
+    "KnockDownCumulativeDamageThreshold": 6000,
+    "IsKnockDown": false,
+    "KnockDownDurationFrameCount": 0,
+    "DamageRatio": 0
+  },
+  {
+    "KnockDownDamageThresholdGroupId": 11,
+    "KnockDownDamageThresholdGroupOrder": 2,
+    "KnockDownCumulativeDamageThreshold": 12000,
+    "IsKnockDown": true,
+    "KnockDownDurationFrameCount": 1050,
+    "DamageRatio": 4000
+  },
+  {
+    "KnockDownDamageThresholdGroupId": 12,
+    "KnockDownDamageThresholdGroupOrder": 1,
+    "KnockDownCumulativeDamageThreshold": 6000,
+    "IsKnockDown": false,
+    "KnockDownDurationFrameCount": 0,
+    "DamageRatio": 0
+  },
+  {
+    "KnockDownDamageThresholdGroupId": 12,
+    "KnockDownDamageThresholdGroupOrder": 2,
+    "KnockDownCumulativeDamageThreshold": 12000,
+    "IsKnockDown": true,
+    "KnockDownDurationFrameCount": 1050,
+    "DamageRatio": 4250
+  },
+  {
+    "KnockDownDamageThresholdGroupId": 13,
+    "KnockDownDamageThresholdGroupOrder": 1,
+    "KnockDownCumulativeDamageThreshold": 6000,
+    "IsKnockDown": false,
+    "KnockDownDurationFrameCount": 0,
+    "DamageRatio": 0
+  },
+  {
+    "KnockDownDamageThresholdGroupId": 13,
+    "KnockDownDamageThresholdGroupOrder": 2,
+    "KnockDownCumulativeDamageThreshold": 12000,
+    "IsKnockDown": true,
+    "KnockDownDurationFrameCount": 1050,
+    "DamageRatio": 4500
+  },
+  {
+    "KnockDownDamageThresholdGroupId": 21,
+    "KnockDownDamageThresholdGroupOrder": 1,
+    "KnockDownCumulativeDamageThreshold": 13000,
+    "IsKnockDown": false,
+    "KnockDownDurationFrameCount": 0,
+    "DamageRatio": 0
+  },
+  {
+    "KnockDownDamageThresholdGroupId": 21,
+    "KnockDownDamageThresholdGroupOrder": 2,
+    "KnockDownCumulativeDamageThreshold": 26000,
+    "IsKnockDown": true,
+    "KnockDownDurationFrameCount": 1050,
+    "DamageRatio": 5000
+  },
+  {
+    "KnockDownDamageThresholdGroupId": 22,
+    "KnockDownDamageThresholdGroupOrder": 1,
+    "KnockDownCumulativeDamageThreshold": 13000,
+    "IsKnockDown": false,
+    "KnockDownDurationFrameCount": 0,
+    "DamageRatio": 0
+  },
+  {
+    "KnockDownDamageThresholdGroupId": 22,
+    "KnockDownDamageThresholdGroupOrder": 2,
+    "KnockDownCumulativeDamageThreshold": 26000,
+    "IsKnockDown": true,
+    "KnockDownDurationFrameCount": 1050,
+    "DamageRatio": 5250
+  },
+  {
+    "KnockDownDamageThresholdGroupId": 23,
+    "KnockDownDamageThresholdGroupOrder": 1,
+    "KnockDownCumulativeDamageThreshold": 13000,
+    "IsKnockDown": false,
+    "KnockDownDurationFrameCount": 0,
+    "DamageRatio": 0
+  },
+  {
+    "KnockDownDamageThresholdGroupId": 23,
+    "KnockDownDamageThresholdGroupOrder": 2,
+    "KnockDownCumulativeDamageThreshold": 26000,
+    "IsKnockDown": true,
+    "KnockDownDurationFrameCount": 1050,
+    "DamageRatio": 5500
+  },
+  {
+    "KnockDownDamageThresholdGroupId": 31,
+    "KnockDownDamageThresholdGroupOrder": 1,
+    "KnockDownCumulativeDamageThreshold": 28000,
+    "IsKnockDown": false,
+    "KnockDownDurationFrameCount": 0,
+    "DamageRatio": 0
+  },
+  {
+    "KnockDownDamageThresholdGroupId": 31,
+    "KnockDownDamageThresholdGroupOrder": 2,
+    "KnockDownCumulativeDamageThreshold": 56000,
+    "IsKnockDown": true,
+    "KnockDownDurationFrameCount": 1050,
+    "DamageRatio": 6000
+  },
+  {
+    "KnockDownDamageThresholdGroupId": 32,
+    "KnockDownDamageThresholdGroupOrder": 1,
+    "KnockDownCumulativeDamageThreshold": 28000,
+    "IsKnockDown": false,
+    "KnockDownDurationFrameCount": 0,
+    "DamageRatio": 0
+  },
+  {
+    "KnockDownDamageThresholdGroupId": 32,
+    "KnockDownDamageThresholdGroupOrder": 2,
+    "KnockDownCumulativeDamageThreshold": 56000,
+    "IsKnockDown": true,
+    "KnockDownDurationFrameCount": 1050,
+    "DamageRatio": 6250
+  },
+  {
+    "KnockDownDamageThresholdGroupId": 33,
+    "KnockDownDamageThresholdGroupOrder": 1,
+    "KnockDownCumulativeDamageThreshold": 28000,
+    "IsKnockDown": false,
+    "KnockDownDurationFrameCount": 0,
+    "DamageRatio": 0
+  },
+  {
+    "KnockDownDamageThresholdGroupId": 33,
+    "KnockDownDamageThresholdGroupOrder": 2,
+    "KnockDownCumulativeDamageThreshold": 56000,
+    "IsKnockDown": true,
+    "KnockDownDurationFrameCount": 1050,
+    "DamageRatio": 6500
+  },
+  {
+    "KnockDownDamageThresholdGroupId": 41,
+    "KnockDownDamageThresholdGroupOrder": 1,
+    "KnockDownCumulativeDamageThreshold": 40000,
+    "IsKnockDown": false,
+    "KnockDownDurationFrameCount": 0,
+    "DamageRatio": 0
+  },
+  {
+    "KnockDownDamageThresholdGroupId": 41,
+    "KnockDownDamageThresholdGroupOrder": 2,
+    "KnockDownCumulativeDamageThreshold": 80000,
+    "IsKnockDown": true,
+    "KnockDownDurationFrameCount": 1050,
+    "DamageRatio": 7000
+  },
+  {
+    "KnockDownDamageThresholdGroupId": 42,
+    "KnockDownDamageThresholdGroupOrder": 1,
+    "KnockDownCumulativeDamageThreshold": 40000,
+    "IsKnockDown": false,
+    "KnockDownDurationFrameCount": 0,
+    "DamageRatio": 0
+  },
+  {
+    "KnockDownDamageThresholdGroupId": 42,
+    "KnockDownDamageThresholdGroupOrder": 2,
+    "KnockDownCumulativeDamageThreshold": 80000,
+    "IsKnockDown": true,
+    "KnockDownDurationFrameCount": 1050,
+    "DamageRatio": 7250
+  },
+  {
+    "KnockDownDamageThresholdGroupId": 43,
+    "KnockDownDamageThresholdGroupOrder": 1,
+    "KnockDownCumulativeDamageThreshold": 40000,
+    "IsKnockDown": false,
+    "KnockDownDurationFrameCount": 0,
+    "DamageRatio": 0
+  },
+  {
+    "KnockDownDamageThresholdGroupId": 43,
+    "KnockDownDamageThresholdGroupOrder": 2,
+    "KnockDownCumulativeDamageThreshold": 80000,
+    "IsKnockDown": true,
+    "KnockDownDurationFrameCount": 1050,
+    "DamageRatio": 7500
+  },
+  {
+    "KnockDownDamageThresholdGroupId": 51,
+    "KnockDownDamageThresholdGroupOrder": 1,
+    "KnockDownCumulativeDamageThreshold": 53000,
+    "IsKnockDown": false,
+    "KnockDownDurationFrameCount": 0,
+    "DamageRatio": 0
+  },
+  {
+    "KnockDownDamageThresholdGroupId": 51,
+    "KnockDownDamageThresholdGroupOrder": 2,
+    "KnockDownCumulativeDamageThreshold": 106000,
+    "IsKnockDown": true,
+    "KnockDownDurationFrameCount": 1050,
+    "DamageRatio": 9000
+  },
+  {
+    "KnockDownDamageThresholdGroupId": 52,
+    "KnockDownDamageThresholdGroupOrder": 1,
+    "KnockDownCumulativeDamageThreshold": 53000,
+    "IsKnockDown": false,
+    "KnockDownDurationFrameCount": 0,
+    "DamageRatio": 0
+  },
+  {
+    "KnockDownDamageThresholdGroupId": 52,
+    "KnockDownDamageThresholdGroupOrder": 2,
+    "KnockDownCumulativeDamageThreshold": 106000,
+    "IsKnockDown": true,
+    "KnockDownDurationFrameCount": 1050,
+    "DamageRatio": 10000
+  },
+  {
+    "KnockDownDamageThresholdGroupId": 53,
+    "KnockDownDamageThresholdGroupOrder": 1,
+    "KnockDownCumulativeDamageThreshold": 53000,
+    "IsKnockDown": false,
+    "KnockDownDurationFrameCount": 0,
+    "DamageRatio": 0
+  },
+  {
+    "KnockDownDamageThresholdGroupId": 53,
+    "KnockDownDamageThresholdGroupOrder": 2,
+    "KnockDownCumulativeDamageThreshold": 106000,
+    "IsKnockDown": true,
+    "KnockDownDurationFrameCount": 1050,
+    "DamageRatio": 11000
+  }
+]

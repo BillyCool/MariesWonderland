@@ -1,0 +1,142 @@
+[
+  {
+    "BigHuntWeeklyAttributeScoreRewardGroupScheduleId": 1,
+    "AttributeType": 2,
+    "GroupIndex": 1,
+    "BigHuntScoreRewardGroupId": 2011,
+    "StartDatetime": 1645408800000
+  },
+  {
+    "BigHuntWeeklyAttributeScoreRewardGroupScheduleId": 1,
+    "AttributeType": 2,
+    "GroupIndex": 2,
+    "BigHuntScoreRewardGroupId": 2021,
+    "StartDatetime": 1676818800000
+  },
+  {
+    "BigHuntWeeklyAttributeScoreRewardGroupScheduleId": 1,
+    "AttributeType": 2,
+    "GroupIndex": 3,
+    "BigHuntScoreRewardGroupId": 2031,
+    "StartDatetime": 1692543600000
+  },
+  {
+    "BigHuntWeeklyAttributeScoreRewardGroupScheduleId": 1,
+    "AttributeType": 2,
+    "GroupIndex": 4,
+    "BigHuntScoreRewardGroupId": 2041,
+    "StartDatetime": 1699801200000
+  },
+  {
+    "BigHuntWeeklyAttributeScoreRewardGroupScheduleId": 2,
+    "AttributeType": 5,
+    "GroupIndex": 1,
+    "BigHuntScoreRewardGroupId": 2011,
+    "StartDatetime": 1645408800000
+  },
+  {
+    "BigHuntWeeklyAttributeScoreRewardGroupScheduleId": 2,
+    "AttributeType": 5,
+    "GroupIndex": 2,
+    "BigHuntScoreRewardGroupId": 2021,
+    "StartDatetime": 1676818800000
+  },
+  {
+    "BigHuntWeeklyAttributeScoreRewardGroupScheduleId": 2,
+    "AttributeType": 5,
+    "GroupIndex": 3,
+    "BigHuntScoreRewardGroupId": 2031,
+    "StartDatetime": 1692543600000
+  },
+  {
+    "BigHuntWeeklyAttributeScoreRewardGroupScheduleId": 2,
+    "AttributeType": 5,
+    "GroupIndex": 4,
+    "BigHuntScoreRewardGroupId": 2041,
+    "StartDatetime": 1699801200000
+  },
+  {
+    "BigHuntWeeklyAttributeScoreRewardGroupScheduleId": 3,
+    "AttributeType": 6,
+    "GroupIndex": 1,
+    "BigHuntScoreRewardGroupId": 2011,
+    "StartDatetime": 1645408800000
+  },
+  {
+    "BigHuntWeeklyAttributeScoreRewardGroupScheduleId": 3,
+    "AttributeType": 6,
+    "GroupIndex": 2,
+    "BigHuntScoreRewardGroupId": 2021,
+    "StartDatetime": 1676818800000
+  },
+  {
+    "BigHuntWeeklyAttributeScoreRewardGroupScheduleId": 3,
+    "AttributeType": 6,
+    "GroupIndex": 3,
+    "BigHuntScoreRewardGroupId": 2031,
+    "StartDatetime": 1692543600000
+  },
+  {
+    "BigHuntWeeklyAttributeScoreRewardGroupScheduleId": 3,
+    "AttributeType": 6,
+    "GroupIndex": 4,
+    "BigHuntScoreRewardGroupId": 2041,
+    "StartDatetime": 1699801200000
+  },
+  {
+    "BigHuntWeeklyAttributeScoreRewardGroupScheduleId": 4,
+    "AttributeType": 3,
+    "GroupIndex": 1,
+    "BigHuntScoreRewardGroupId": 2012,
+    "StartDatetime": 1645408800000
+  },
+  {
+    "BigHuntWeeklyAttributeScoreRewardGroupScheduleId": 4,
+    "AttributeType": 3,
+    "GroupIndex": 2,
+    "BigHuntScoreRewardGroupId": 2022,
+    "StartDatetime": 1676818800000
+  },
+  {
+    "BigHuntWeeklyAttributeScoreRewardGroupScheduleId": 4,
+    "AttributeType": 3,
+    "GroupIndex": 3,
+    "BigHuntScoreRewardGroupId": 2032,
+    "StartDatetime": 1692543600000
+  },
+  {
+    "BigHuntWeeklyAttributeScoreRewardGroupScheduleId": 4,
+    "AttributeType": 3,
+    "GroupIndex": 4,
+    "BigHuntScoreRewardGroupId": 2042,
+    "StartDatetime": 1699801200000
+  },
+  {
+    "BigHuntWeeklyAttributeScoreRewardGroupScheduleId": 5,
+    "AttributeType": 1,
+    "GroupIndex": 1,
+    "BigHuntScoreRewardGroupId": 2012,
+    "StartDatetime": 1645408800000
+  },
+  {
+    "BigHuntWeeklyAttributeScoreRewardGroupScheduleId": 5,
+    "AttributeType": 1,
+    "GroupIndex": 2,
+    "BigHuntScoreRewardGroupId": 2022,
+    "StartDatetime": 1676818800000
+  },
+  {
+    "BigHuntWeeklyAttributeScoreRewardGroupScheduleId": 5,
+    "AttributeType": 1,
+    "GroupIndex": 3,
+    "BigHuntScoreRewardGroupId": 2032,
+    "StartDatetime": 1692543600000
+  },
+  {
+    "BigHuntWeeklyAttributeScoreRewardGroupScheduleId": 5,
+    "AttributeType": 1,
+    "GroupIndex": 4,
+    "BigHuntScoreRewardGroupId": 2042,
+    "StartDatetime": 1699801200000
+  }
+]

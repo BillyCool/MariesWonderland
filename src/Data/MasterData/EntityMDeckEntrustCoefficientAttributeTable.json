@@ -1,0 +1,127 @@
+[
+  {
+    "EntrustAttributeType": 1,
+    "AttributeType": 1,
+    "CoefficientPermil": 1000
+  },
+  {
+    "EntrustAttributeType": 1,
+    "AttributeType": 2,
+    "CoefficientPermil": 600
+  },
+  {
+    "EntrustAttributeType": 1,
+    "AttributeType": 3,
+    "CoefficientPermil": 600
+  },
+  {
+    "EntrustAttributeType": 1,
+    "AttributeType": 5,
+    "CoefficientPermil": 600
+  },
+  {
+    "EntrustAttributeType": 1,
+    "AttributeType": 6,
+    "CoefficientPermil": 600
+  },
+  {
+    "EntrustAttributeType": 2,
+    "AttributeType": 1,
+    "CoefficientPermil": 600
+  },
+  {
+    "EntrustAttributeType": 2,
+    "AttributeType": 2,
+    "CoefficientPermil": 1000
+  },
+  {
+    "EntrustAttributeType": 2,
+    "AttributeType": 3,
+    "CoefficientPermil": 600
+  },
+  {
+    "EntrustAttributeType": 2,
+    "AttributeType": 5,
+    "CoefficientPermil": 300
+  },
+  {
+    "EntrustAttributeType": 2,
+    "AttributeType": 6,
+    "CoefficientPermil": 600
+  },
+  {
+    "EntrustAttributeType": 3,
+    "AttributeType": 1,
+    "CoefficientPermil": 600
+  },
+  {
+    "EntrustAttributeType": 3,
+    "AttributeType": 2,
+    "CoefficientPermil": 600
+  },
+  {
+    "EntrustAttributeType": 3,
+    "AttributeType": 3,
+    "CoefficientPermil": 1000
+  },
+  {
+    "EntrustAttributeType": 3,
+    "AttributeType": 5,
+    "CoefficientPermil": 600
+  },
+  {
+    "EntrustAttributeType": 3,
+    "AttributeType": 6,
+    "CoefficientPermil": 600
+  },
+  {
+    "EntrustAttributeType": 5,
+    "AttributeType": 1,
+    "CoefficientPermil": 600
+  },
+  {
+    "EntrustAttributeType": 5,
+    "AttributeType": 2,
+    "CoefficientPermil": 600
+  },
+  {
+    "EntrustAttributeType": 5,
+    "AttributeType": 3,
+    "CoefficientPermil": 600
+  },
+  {
+    "EntrustAttributeType": 5,
+    "AttributeType": 5,
+    "CoefficientPermil": 1000
+  },
+  {
+    "EntrustAttributeType": 5,
+    "AttributeType": 6,
+    "CoefficientPermil": 300
+  },
+  {
+    "EntrustAttributeType": 6,
+    "AttributeType": 1,
+    "CoefficientPermil": 600
+  },
+  {
+    "EntrustAttributeType": 6,
+    "AttributeType": 2,
+    "CoefficientPermil": 300
+  },
+  {
+    "EntrustAttributeType": 6,
+    "AttributeType": 3,
+    "CoefficientPermil": 600
+  },
+  {
+    "EntrustAttributeType": 6,
+    "AttributeType": 5,
+    "CoefficientPermil": 600
+  },
+  {
+    "EntrustAttributeType": 6,
+    "AttributeType": 6,
+    "CoefficientPermil": 1000
+  }
+]

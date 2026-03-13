@@ -1,0 +1,44 @@
+[
+  {
+    "ImportantItemEffectDropCountId": 1,
+    "CountPermil": 500,
+    "ImportantItemEffectTargetQuestGroupId": 101,
+    "ImportantItemEffectTargetItemGroupId": 101
+  },
+  {
+    "ImportantItemEffectDropCountId": 2,
+    "CountPermil": 500,
+    "ImportantItemEffectTargetQuestGroupId": 201,
+    "ImportantItemEffectTargetItemGroupId": 201
+  },
+  {
+    "ImportantItemEffectDropCountId": 3,
+    "CountPermil": 500,
+    "ImportantItemEffectTargetQuestGroupId": 301,
+    "ImportantItemEffectTargetItemGroupId": 301
+  },
+  {
+    "ImportantItemEffectDropCountId": 5,
+    "CountPermil": 500,
+    "ImportantItemEffectTargetQuestGroupId": 501,
+    "ImportantItemEffectTargetItemGroupId": 501
+  },
+  {
+    "ImportantItemEffectDropCountId": 6,
+    "CountPermil": 500,
+    "ImportantItemEffectTargetQuestGroupId": 601,
+    "ImportantItemEffectTargetItemGroupId": 601
+  },
+  {
+    "ImportantItemEffectDropCountId": 13,
+    "CountPermil": 500,
+    "ImportantItemEffectTargetQuestGroupId": 201,
+    "ImportantItemEffectTargetItemGroupId": 0
+  },
+  {
+    "ImportantItemEffectDropCountId": 20,
+    "CountPermil": 1000,
+    "ImportantItemEffectTargetQuestGroupId": 2001,
+    "ImportantItemEffectTargetItemGroupId": 0
+  }
+]

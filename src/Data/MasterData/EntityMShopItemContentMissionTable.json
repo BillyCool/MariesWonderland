@@ -1,0 +1,262 @@
+[
+  {
+    "ShopItemId": 110001,
+    "MissionGroupId": 5,
+    "IsReevaluateOnGrant": true
+  },
+  {
+    "ShopItemId": 110002,
+    "MissionGroupId": 6,
+    "IsReevaluateOnGrant": true
+  },
+  {
+    "ShopItemId": 110003,
+    "MissionGroupId": 8,
+    "IsReevaluateOnGrant": true
+  },
+  {
+    "ShopItemId": 110004,
+    "MissionGroupId": 287,
+    "IsReevaluateOnGrant": true
+  },
+  {
+    "ShopItemId": 140181,
+    "MissionGroupId": 207,
+    "IsReevaluateOnGrant": false
+  },
+  {
+    "ShopItemId": 140189,
+    "MissionGroupId": 215,
+    "IsReevaluateOnGrant": false
+  },
+  {
+    "ShopItemId": 140190,
+    "MissionGroupId": 216,
+    "IsReevaluateOnGrant": true
+  },
+  {
+    "ShopItemId": 140202,
+    "MissionGroupId": 225,
+    "IsReevaluateOnGrant": false
+  },
+  {
+    "ShopItemId": 140203,
+    "MissionGroupId": 226,
+    "IsReevaluateOnGrant": true
+  },
+  {
+    "ShopItemId": 140212,
+    "MissionGroupId": 231,
+    "IsReevaluateOnGrant": false
+  },
+  {
+    "ShopItemId": 140213,
+    "MissionGroupId": 232,
+    "IsReevaluateOnGrant": true
+  },
+  {
+    "ShopItemId": 140223,
+    "MissionGroupId": 244,
+    "IsReevaluateOnGrant": false
+  },
+  {
+    "ShopItemId": 140224,
+    "MissionGroupId": 245,
+    "IsReevaluateOnGrant": true
+  },
+  {
+    "ShopItemId": 140234,
+    "MissionGroupId": 251,
+    "IsReevaluateOnGrant": false
+  },
+  {
+    "ShopItemId": 140235,
+    "MissionGroupId": 252,
+    "IsReevaluateOnGrant": true
+  },
+  {
+    "ShopItemId": 140236,
+    "MissionGroupId": 257,
+    "IsReevaluateOnGrant": false
+  },
+  {
+    "ShopItemId": 140237,
+    "MissionGroupId": 258,
+    "IsReevaluateOnGrant": true
+  },
+  {
+    "ShopItemId": 140256,
+    "MissionGroupId": 266,
+    "IsReevaluateOnGrant": false
+  },
+  {
+    "ShopItemId": 140257,
+    "MissionGroupId": 267,
+    "IsReevaluateOnGrant": true
+  },
+  {
+    "ShopItemId": 140267,
+    "MissionGroupId": 273,
+    "IsReevaluateOnGrant": false
+  },
+  {
+    "ShopItemId": 140268,
+    "MissionGroupId": 274,
+    "IsReevaluateOnGrant": true
+  },
+  {
+    "ShopItemId": 140269,
+    "MissionGroupId": 275,
+    "IsReevaluateOnGrant": false
+  },
+  {
+    "ShopItemId": 140282,
+    "MissionGroupId": 283,
+    "IsReevaluateOnGrant": false
+  },
+  {
+    "ShopItemId": 140283,
+    "MissionGroupId": 284,
+    "IsReevaluateOnGrant": true
+  },
+  {
+    "ShopItemId": 140293,
+    "MissionGroupId": 286,
+    "IsReevaluateOnGrant": false
+  },
+  {
+    "ShopItemId": 140296,
+    "MissionGroupId": 291,
+    "IsReevaluateOnGrant": false
+  },
+  {
+    "ShopItemId": 140297,
+    "MissionGroupId": 292,
+    "IsReevaluateOnGrant": false
+  },
+  {
+    "ShopItemId": 140298,
+    "MissionGroupId": 293,
+    "IsReevaluateOnGrant": true
+  },
+  {
+    "ShopItemId": 140300,
+    "MissionGroupId": 302,
+    "IsReevaluateOnGrant": false
+  },
+  {
+    "ShopItemId": 140301,
+    "MissionGroupId": 303,
+    "IsReevaluateOnGrant": false
+  },
+  {
+    "ShopItemId": 140302,
+    "MissionGroupId": 304,
+    "IsReevaluateOnGrant": true
+  },
+  {
+    "ShopItemId": 140306,
+    "MissionGroupId": 313,
+    "IsReevaluateOnGrant": false
+  },
+  {
+    "ShopItemId": 140307,
+    "MissionGroupId": 314,
+    "IsReevaluateOnGrant": false
+  },
+  {
+    "ShopItemId": 140308,
+    "MissionGroupId": 315,
+    "IsReevaluateOnGrant": true
+  },
+  {
+    "ShopItemId": 140316,
+    "MissionGroupId": 323,
+    "IsReevaluateOnGrant": false
+  },
+  {
+    "ShopItemId": 140317,
+    "MissionGroupId": 324,
+    "IsReevaluateOnGrant": false
+  },
+  {
+    "ShopItemId": 140318,
+    "MissionGroupId": 325,
+    "IsReevaluateOnGrant": true
+  },
+  {
+    "ShopItemId": 140325,
+    "MissionGroupId": 332,
+    "IsReevaluateOnGrant": false
+  },
+  {
+    "ShopItemId": 140326,
+    "MissionGroupId": 333,
+    "IsReevaluateOnGrant": false
+  },
+  {
+    "ShopItemId": 140327,
+    "MissionGroupId": 334,
+    "IsReevaluateOnGrant": true
+  },
+  {
+    "ShopItemId": 140329,
+    "MissionGroupId": 337,
+    "IsReevaluateOnGrant": false
+  },
+  {
+    "ShopItemId": 140330,
+    "MissionGroupId": 338,
+    "IsReevaluateOnGrant": false
+  },
+  {
+    "ShopItemId": 140331,
+    "MissionGroupId": 339,
+    "IsReevaluateOnGrant": true
+  },
+  {
+    "ShopItemId": 140345,
+    "MissionGroupId": 350,
+    "IsReevaluateOnGrant": false
+  },
+  {
+    "ShopItemId": 140346,
+    "MissionGroupId": 351,
+    "IsReevaluateOnGrant": false
+  },
+  {
+    "ShopItemId": 140347,
+    "MissionGroupId": 352,
+    "IsReevaluateOnGrant": true
+  },
+  {
+    "ShopItemId": 140352,
+    "MissionGroupId": 376,
+    "IsReevaluateOnGrant": false
+  },
+  {
+    "ShopItemId": 140353,
+    "MissionGroupId": 377,
+    "IsReevaluateOnGrant": false
+  },
+  {
+    "ShopItemId": 140354,
+    "MissionGroupId": 378,
+    "IsReevaluateOnGrant": true
+  },
+  {
+    "ShopItemId": 140367,
+    "MissionGroupId": 388,
+    "IsReevaluateOnGrant": false
+  },
+  {
+    "ShopItemId": 140368,
+    "MissionGroupId": 389,
+    "IsReevaluateOnGrant": false
+  },
+  {
+    "ShopItemId": 140369,
+    "MissionGroupId": 390,
+    "IsReevaluateOnGrant": true
+  }
+]

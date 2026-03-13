@@ -1,0 +1,107 @@
+[
+  {
+    "BigHuntScheduleId": 1,
+    "NoticeStartDatetime": 946652400000,
+    "ChallengeStartDatetime": 1630288800000,
+    "ChallengeEndDatetime": 1630853999000,
+    "SeasonAssetId": 0
+  },
+  {
+    "BigHuntScheduleId": 2,
+    "NoticeStartDatetime": 1630854000000,
+    "ChallengeStartDatetime": 1632535200000,
+    "ChallengeEndDatetime": 1633100399000,
+    "SeasonAssetId": 0
+  },
+  {
+    "BigHuntScheduleId": 3,
+    "NoticeStartDatetime": 1633100400000,
+    "ChallengeStartDatetime": 1634090400000,
+    "ChallengeEndDatetime": 1634655599000,
+    "SeasonAssetId": 0
+  },
+  {
+    "BigHuntScheduleId": 4,
+    "NoticeStartDatetime": 1634655600000,
+    "ChallengeStartDatetime": 1636682400000,
+    "ChallengeEndDatetime": 1637247599000,
+    "SeasonAssetId": 0
+  },
+  {
+    "BigHuntScheduleId": 5,
+    "NoticeStartDatetime": 1637247600000,
+    "ChallengeStartDatetime": 1639360800000,
+    "ChallengeEndDatetime": 1639925999000,
+    "SeasonAssetId": 0
+  },
+  {
+    "BigHuntScheduleId": 6,
+    "NoticeStartDatetime": 1639926000000,
+    "ChallengeStartDatetime": 1640311200000,
+    "ChallengeEndDatetime": 1641481199000,
+    "SeasonAssetId": 0
+  },
+  {
+    "BigHuntScheduleId": 7,
+    "NoticeStartDatetime": 1641481200000,
+    "ChallengeStartDatetime": 1642644000000,
+    "ChallengeEndDatetime": 1643813999000,
+    "SeasonAssetId": 0
+  },
+  {
+    "BigHuntScheduleId": 11,
+    "NoticeStartDatetime": 1645156800000,
+    "ChallengeStartDatetime": 1645408800000,
+    "ChallengeEndDatetime": 1652626799000,
+    "SeasonAssetId": 1
+  },
+  {
+    "BigHuntScheduleId": 12,
+    "NoticeStartDatetime": 1652626800000,
+    "ChallengeStartDatetime": 1652666400000,
+    "ChallengeEndDatetime": 1661093999000,
+    "SeasonAssetId": 2
+  },
+  {
+    "BigHuntScheduleId": 13,
+    "NoticeStartDatetime": 1661094000000,
+    "ChallengeStartDatetime": 1661133600000,
+    "ChallengeEndDatetime": 1668956399000,
+    "SeasonAssetId": 3
+  },
+  {
+    "BigHuntScheduleId": 14,
+    "NoticeStartDatetime": 1668956400000,
+    "ChallengeStartDatetime": 1668996000000,
+    "ChallengeEndDatetime": 1676645999000,
+    "SeasonAssetId": 4
+  },
+  {
+    "BigHuntScheduleId": 15,
+    "NoticeStartDatetime": 1676646000000,
+    "ChallengeStartDatetime": 1676858400000,
+    "ChallengeEndDatetime": 1684681199000,
+    "SeasonAssetId": 5
+  },
+  {
+    "BigHuntScheduleId": 16,
+    "NoticeStartDatetime": 1684681200000,
+    "ChallengeStartDatetime": 1684720800000,
+    "ChallengeEndDatetime": 1692284399000,
+    "SeasonAssetId": 6
+  },
+  {
+    "BigHuntScheduleId": 17,
+    "NoticeStartDatetime": 1692284400000,
+    "ChallengeStartDatetime": 1692583200000,
+    "ChallengeEndDatetime": 1699801199000,
+    "SeasonAssetId": 7
+  },
+  {
+    "BigHuntScheduleId": 18,
+    "NoticeStartDatetime": 1699801200000,
+    "ChallengeStartDatetime": 1699840800000,
+    "ChallengeEndDatetime": 1714456799000,
+    "SeasonAssetId": 8
+  }
+]

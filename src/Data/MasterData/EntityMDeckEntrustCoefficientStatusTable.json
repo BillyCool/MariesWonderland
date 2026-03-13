@@ -1,0 +1,82 @@
+[
+  {
+    "EntrustDeckStatusType": 1,
+    "DeckStatusType": 1,
+    "CoefficientPermil": 1000
+  },
+  {
+    "EntrustDeckStatusType": 1,
+    "DeckStatusType": 2,
+    "CoefficientPermil": 0
+  },
+  {
+    "EntrustDeckStatusType": 1,
+    "DeckStatusType": 3,
+    "CoefficientPermil": 0
+  },
+  {
+    "EntrustDeckStatusType": 1,
+    "DeckStatusType": 4,
+    "CoefficientPermil": 0
+  },
+  {
+    "EntrustDeckStatusType": 2,
+    "DeckStatusType": 1,
+    "CoefficientPermil": 200
+  },
+  {
+    "EntrustDeckStatusType": 2,
+    "DeckStatusType": 2,
+    "CoefficientPermil": 1000
+  },
+  {
+    "EntrustDeckStatusType": 2,
+    "DeckStatusType": 3,
+    "CoefficientPermil": 0
+  },
+  {
+    "EntrustDeckStatusType": 2,
+    "DeckStatusType": 4,
+    "CoefficientPermil": 0
+  },
+  {
+    "EntrustDeckStatusType": 3,
+    "DeckStatusType": 1,
+    "CoefficientPermil": 500
+  },
+  {
+    "EntrustDeckStatusType": 3,
+    "DeckStatusType": 2,
+    "CoefficientPermil": 0
+  },
+  {
+    "EntrustDeckStatusType": 3,
+    "DeckStatusType": 3,
+    "CoefficientPermil": 1000
+  },
+  {
+    "EntrustDeckStatusType": 3,
+    "DeckStatusType": 4,
+    "CoefficientPermil": 0
+  },
+  {
+    "EntrustDeckStatusType": 4,
+    "DeckStatusType": 1,
+    "CoefficientPermil": 500
+  },
+  {
+    "EntrustDeckStatusType": 4,
+    "DeckStatusType": 2,
+    "CoefficientPermil": 0
+  },
+  {
+    "EntrustDeckStatusType": 4,
+    "DeckStatusType": 3,
+    "CoefficientPermil": 0
+  },
+  {
+    "EntrustDeckStatusType": 4,
+    "DeckStatusType": 4,
+    "CoefficientPermil": 1000
+  }
+]

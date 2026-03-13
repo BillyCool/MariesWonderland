@@ -1,0 +1,30 @@
+[
+  {
+    "ExploreId": 1,
+    "ExploreUnlockConditionId": 1,
+    "StartDatetime": 1577804400000,
+    "ConsumeItemCount": 1,
+    "RewardLotteryCount": 1
+  },
+  {
+    "ExploreId": 2,
+    "ExploreUnlockConditionId": 1,
+    "StartDatetime": 1629252000000,
+    "ConsumeItemCount": 1,
+    "RewardLotteryCount": 1
+  },
+  {
+    "ExploreId": 11,
+    "ExploreUnlockConditionId": 2,
+    "StartDatetime": 1577804400000,
+    "ConsumeItemCount": 10,
+    "RewardLotteryCount": 11
+  },
+  {
+    "ExploreId": 12,
+    "ExploreUnlockConditionId": 2,
+    "StartDatetime": 1629252000000,
+    "ConsumeItemCount": 10,
+    "RewardLotteryCount": 11
+  }
+]

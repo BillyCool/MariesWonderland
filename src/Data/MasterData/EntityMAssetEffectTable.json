@@ -1,0 +1,782 @@
+[
+  {
+    "AssetEffectId": 1,
+    "AssetPath": "prefab)ef_sk_0001_sword"
+  },
+  {
+    "AssetEffectId": 2,
+    "AssetPath": "prefab)ef_sk_9001_sword"
+  },
+  {
+    "AssetEffectId": 3,
+    "AssetPath": "prefab)ef_sk_9002_sword"
+  },
+  {
+    "AssetEffectId": 4,
+    "AssetPath": "prefab)ef_sk_0027_sword_spin"
+  },
+  {
+    "AssetEffectId": 5,
+    "AssetPath": "prefab)ef_sk_0002_sword"
+  },
+  {
+    "AssetEffectId": 6,
+    "AssetPath": "prefab)ef_sk_0003_lance"
+  },
+  {
+    "AssetEffectId": 7,
+    "AssetPath": "prefab)ef_sk_9004_lance"
+  },
+  {
+    "AssetEffectId": 8,
+    "AssetPath": "prefab)ef_sk_9005_lance"
+  },
+  {
+    "AssetEffectId": 9,
+    "AssetPath": "prefab)ef_sk_0004_lance"
+  },
+  {
+    "AssetEffectId": 10,
+    "AssetPath": "prefab)ef_sk_0005_sword_hit"
+  },
+  {
+    "AssetEffectId": 11,
+    "AssetPath": "prefab)ef_sk_0006_lance_hit"
+  },
+  {
+    "AssetEffectId": 12,
+    "AssetPath": "prefab)ef_sk_000003"
+  },
+  {
+    "AssetEffectId": 13,
+    "AssetPath": "prefab)ef_sk_00000006"
+  },
+  {
+    "AssetEffectId": 14,
+    "AssetPath": "prefab)ef_sk_000007"
+  },
+  {
+    "AssetEffectId": 15,
+    "AssetPath": "prefab)ef_sk_000008"
+  },
+  {
+    "AssetEffectId": 16,
+    "AssetPath": "prefab)ef_sk_000009"
+  },
+  {
+    "AssetEffectId": 17,
+    "AssetPath": "prefab)ef_sk_000010"
+  },
+  {
+    "AssetEffectId": 18,
+    "AssetPath": "prefab)ef_sk_000011"
+  },
+  {
+    "AssetEffectId": 19,
+    "AssetPath": "prefab)ef_sk_000012"
+  },
+  {
+    "AssetEffectId": 20,
+    "AssetPath": "prefab)ef_bg_0001_landing_snow"
+  },
+  {
+    "AssetEffectId": 21,
+    "AssetPath": "prefab)ef_bg_0002_landing_snow"
+  },
+  {
+    "AssetEffectId": 22,
+    "AssetPath": "prefab)ef_bg_000034"
+  },
+  {
+    "AssetEffectId": 23,
+    "AssetPath": "prefab)ef_bg_0004_snow"
+  },
+  {
+    "AssetEffectId": 24,
+    "AssetPath": "prefab)ef_pb_000001"
+  },
+  {
+    "AssetEffectId": 25,
+    "AssetPath": "prefab)ef_pb_000002"
+  },
+  {
+    "AssetEffectId": 26,
+    "AssetPath": "prefab)ef_pb_000003"
+  },
+  {
+    "AssetEffectId": 27,
+    "AssetPath": "prefab)ef_pb_000004"
+  },
+  {
+    "AssetEffectId": 28,
+    "AssetPath": "prefab)ef_pb_000005"
+  },
+  {
+    "AssetEffectId": 29,
+    "AssetPath": "prefab)ef_bg_0005_fog"
+  },
+  {
+    "AssetEffectId": 30,
+    "AssetPath": "prefab)ef_bg_0006_dust"
+  },
+  {
+    "AssetEffectId": 31,
+    "AssetPath": "prefab)ef_sk_304004"
+  },
+  {
+    "AssetEffectId": 32,
+    "AssetPath": "prefab)ef_sk_204003"
+  },
+  {
+    "AssetEffectId": 33,
+    "AssetPath": "prefab)ef_sk_304005"
+  },
+  {
+    "AssetEffectId": 34,
+    "AssetPath": "prefab)ef_sk_304006"
+  },
+  {
+    "AssetEffectId": 35,
+    "AssetPath": "prefab)ef_sk_304015"
+  },
+  {
+    "AssetEffectId": 36,
+    "AssetPath": "prefab)ef_sk_304009"
+  },
+  {
+    "AssetEffectId": 37,
+    "AssetPath": "prefab)ef_sk_304008"
+  },
+  {
+    "AssetEffectId": 38,
+    "AssetPath": "prefab)ef_sk_304010"
+  },
+  {
+    "AssetEffectId": 39,
+    "AssetPath": "prefab)ef_sk_105003"
+  },
+  {
+    "AssetEffectId": 40,
+    "AssetPath": "prefab)ef_sk_105002"
+  },
+  {
+    "AssetEffectId": 41,
+    "AssetPath": "prefab)ef_sk_105004"
+  },
+  {
+    "AssetEffectId": 42,
+    "AssetPath": "prefab)ef_sk_105005"
+  },
+  {
+    "AssetEffectId": 43,
+    "AssetPath": "prefab)ef_sk_105006"
+  },
+  {
+    "AssetEffectId": 44,
+    "AssetPath": "prefab)ef_sk_105008"
+  },
+  {
+    "AssetEffectId": 45,
+    "AssetPath": "prefab)ef_sk_105009"
+  },
+  {
+    "AssetEffectId": 46,
+    "AssetPath": "prefab)ef_sk_105010"
+  },
+  {
+    "AssetEffectId": 47,
+    "AssetPath": "prefab)ef_sk_000013"
+  },
+  {
+    "AssetEffectId": 48,
+    "AssetPath": "prefab)ef_sk_000014"
+  },
+  {
+    "AssetEffectId": 49,
+    "AssetPath": "prefab)ef_sk_000015"
+  },
+  {
+    "AssetEffectId": 50,
+    "AssetPath": "prefab)ef_sk_000016"
+  },
+  {
+    "AssetEffectId": 51,
+    "AssetPath": "prefab)ef_sk_508001"
+  },
+  {
+    "AssetEffectId": 52,
+    "AssetPath": "prefab)ef_sk_508002"
+  },
+  {
+    "AssetEffectId": 53,
+    "AssetPath": "prefab)ef_sk_508003"
+  },
+  {
+    "AssetEffectId": 54,
+    "AssetPath": "prefab)ef_sk_0026_witch_frozen_field"
+  },
+  {
+    "AssetEffectId": 55,
+    "AssetPath": "prefab)ef_sk_108001"
+  },
+  {
+    "AssetEffectId": 56,
+    "AssetPath": "prefab)ef_sk_108002"
+  },
+  {
+    "AssetEffectId": 57,
+    "AssetPath": "prefab)ef_sk_508004"
+  },
+  {
+    "AssetEffectId": 58,
+    "AssetPath": "prefab)ef_sk_508005"
+  },
+  {
+    "AssetEffectId": 59,
+    "AssetPath": "prefab)ef_sk_508006"
+  },
+  {
+    "AssetEffectId": 60,
+    "AssetPath": "prefab)ef_sk_0033_witch_break_iceblock"
+  },
+  {
+    "AssetEffectId": 61,
+    "AssetPath": "prefab)ef_sk_000017"
+  },
+  {
+    "AssetEffectId": 62,
+    "AssetPath": "prefab)ef_sk_000018"
+  },
+  {
+    "AssetEffectId": 63,
+    "AssetPath": "prefab)ef_sk_000019"
+  },
+  {
+    "AssetEffectId": 64,
+    "AssetPath": "prefab)ef_tr_000004"
+  },
+  {
+    "AssetEffectId": 65,
+    "AssetPath": "prefab)ef_tr_000005"
+  },
+  {
+    "AssetEffectId": 66,
+    "AssetPath": "prefab)ef_pb_000006"
+  },
+  {
+    "AssetEffectId": 67,
+    "AssetPath": "prefab)ef_sk_201001"
+  },
+  {
+    "AssetEffectId": 68,
+    "AssetPath": "prefab)ef_sk_201002"
+  },
+  {
+    "AssetEffectId": 69,
+    "AssetPath": "prefab)ef_sk_501001"
+  },
+  {
+    "AssetEffectId": 70,
+    "AssetPath": "prefab)ef_sk_501002"
+  },
+  {
+    "AssetEffectId": 71,
+    "AssetPath": "prefab)ef_sk_601001"
+  },
+  {
+    "AssetEffectId": 72,
+    "AssetPath": "prefab)ef_sk_601002"
+  },
+  {
+    "AssetEffectId": 73,
+    "AssetPath": "prefab)ef_sk_301001"
+  },
+  {
+    "AssetEffectId": 74,
+    "AssetPath": "prefab)ef_sk_301002"
+  },
+  {
+    "AssetEffectId": 75,
+    "AssetPath": "prefab)ef_sk_101001"
+  },
+  {
+    "AssetEffectId": 76,
+    "AssetPath": "prefab)ef_sk_101002"
+  },
+  {
+    "AssetEffectId": 77,
+    "AssetPath": "prefab)ef_sk_0044_gun_dark_hit"
+  },
+  {
+    "AssetEffectId": 78,
+    "AssetPath": "prefab)ef_sk_9010_sword_fire"
+  },
+  {
+    "AssetEffectId": 79,
+    "AssetPath": "prefab)ef_sk_9011_sword_fire"
+  },
+  {
+    "AssetEffectId": 80,
+    "AssetPath": "prefab)ef_sk_0045_sword_fire_large"
+  },
+  {
+    "AssetEffectId": 81,
+    "AssetPath": "prefab)ef_sk_9012_sword_fire_large"
+  },
+  {
+    "AssetEffectId": 82,
+    "AssetPath": "prefab)ef_sk_9013_sword_fire_large"
+  },
+  {
+    "AssetEffectId": 83,
+    "AssetPath": "prefab)ef_sk_001000"
+  },
+  {
+    "AssetEffectId": 84,
+    "AssetPath": "prefab)ef_sk_401001"
+  },
+  {
+    "AssetEffectId": 85,
+    "AssetPath": "prefab)ef_sk_401002"
+  },
+  {
+    "AssetEffectId": 86,
+    "AssetPath": "prefab)ef_sk_002000"
+  },
+  {
+    "AssetEffectId": 87,
+    "AssetPath": "prefab)ef_sk_102001"
+  },
+  {
+    "AssetEffectId": 88,
+    "AssetPath": "prefab)ef_sk_102002"
+  },
+  {
+    "AssetEffectId": 89,
+    "AssetPath": "prefab)ef_sk_202001"
+  },
+  {
+    "AssetEffectId": 90,
+    "AssetPath": "prefab)ef_sk_202002"
+  },
+  {
+    "AssetEffectId": 91,
+    "AssetPath": "prefab)ef_sk_302001"
+  },
+  {
+    "AssetEffectId": 92,
+    "AssetPath": "prefab)ef_sk_302002"
+  },
+  {
+    "AssetEffectId": 93,
+    "AssetPath": "prefab)ef_sk_402001"
+  },
+  {
+    "AssetEffectId": 94,
+    "AssetPath": "prefab)ef_sk_402002"
+  },
+  {
+    "AssetEffectId": 95,
+    "AssetPath": "prefab)ef_sk_502001"
+  },
+  {
+    "AssetEffectId": 96,
+    "AssetPath": "prefab)ef_sk_502002"
+  },
+  {
+    "AssetEffectId": 97,
+    "AssetPath": "prefab)ef_sk_602001"
+  },
+  {
+    "AssetEffectId": 98,
+    "AssetPath": "prefab)ef_sk_602002"
+  },
+  {
+    "AssetEffectId": 99,
+    "AssetPath": "prefab)ef_sk_003000"
+  },
+  {
+    "AssetEffectId": 100,
+    "AssetPath": "prefab)ef_sk_004000"
+  },
+  {
+    "AssetEffectId": 101,
+    "AssetPath": "prefab)ef_sk_104001"
+  },
+  {
+    "AssetEffectId": 102,
+    "AssetPath": "prefab)ef_sk_104002"
+  },
+  {
+    "AssetEffectId": 103,
+    "AssetPath": "prefab)ef_sk_01040003"
+  },
+  {
+    "AssetEffectId": 104,
+    "AssetPath": "prefab)ef_sk_204001"
+  },
+  {
+    "AssetEffectId": 105,
+    "AssetPath": "prefab)ef_sk_204002"
+  },
+  {
+    "AssetEffectId": 106,
+    "AssetPath": "prefab)ef_sk_304001"
+  },
+  {
+    "AssetEffectId": 107,
+    "AssetPath": "prefab)ef_sk_304002"
+  },
+  {
+    "AssetEffectId": 108,
+    "AssetPath": "prefab)ef_sk_304003"
+  },
+  {
+    "AssetEffectId": 109,
+    "AssetPath": "prefab)ef_sk_304007"
+  },
+  {
+    "AssetEffectId": 110,
+    "AssetPath": "prefab)ef_sk_03040003"
+  },
+  {
+    "AssetEffectId": 111,
+    "AssetPath": "prefab)ef_sk_304012"
+  },
+  {
+    "AssetEffectId": 112,
+    "AssetPath": "prefab)ef_sk_304013"
+  },
+  {
+    "AssetEffectId": 113,
+    "AssetPath": "prefab)ef_sk_304014"
+  },
+  {
+    "AssetEffectId": 114,
+    "AssetPath": "prefab)ef_sk_304016"
+  },
+  {
+    "AssetEffectId": 115,
+    "AssetPath": "prefab)ef_sk_404001"
+  },
+  {
+    "AssetEffectId": 116,
+    "AssetPath": "prefab)ef_sk_404002"
+  },
+  {
+    "AssetEffectId": 117,
+    "AssetPath": "prefab)ef_sk_404003"
+  },
+  {
+    "AssetEffectId": 118,
+    "AssetPath": "prefab)ef_sk_504001"
+  },
+  {
+    "AssetEffectId": 119,
+    "AssetPath": "prefab)ef_sk_504002"
+  },
+  {
+    "AssetEffectId": 120,
+    "AssetPath": "prefab)ef_sk_504003"
+  },
+  {
+    "AssetEffectId": 121,
+    "AssetPath": "prefab)ef_sk_604001"
+  },
+  {
+    "AssetEffectId": 122,
+    "AssetPath": "prefab)ef_sk_604002"
+  },
+  {
+    "AssetEffectId": 123,
+    "AssetPath": "prefab)ef_sk_604003"
+  },
+  {
+    "AssetEffectId": 124,
+    "AssetPath": "prefab)ef_sk_005000"
+  },
+  {
+    "AssetEffectId": 125,
+    "AssetPath": "prefab)ef_sk_105001"
+  },
+  {
+    "AssetEffectId": 126,
+    "AssetPath": "prefab)ef_sk_105007"
+  },
+  {
+    "AssetEffectId": 127,
+    "AssetPath": "prefab)ef_sk_205001"
+  },
+  {
+    "AssetEffectId": 128,
+    "AssetPath": "prefab)ef_sk_205002"
+  },
+  {
+    "AssetEffectId": 129,
+    "AssetPath": "prefab)ef_sk_305001"
+  },
+  {
+    "AssetEffectId": 130,
+    "AssetPath": "prefab)ef_sk_305002"
+  },
+  {
+    "AssetEffectId": 131,
+    "AssetPath": "prefab)ef_sk_405001"
+  },
+  {
+    "AssetEffectId": 132,
+    "AssetPath": "prefab)ef_sk_405002"
+  },
+  {
+    "AssetEffectId": 133,
+    "AssetPath": "prefab)ef_sk_505001"
+  },
+  {
+    "AssetEffectId": 134,
+    "AssetPath": "prefab)ef_sk_505002"
+  },
+  {
+    "AssetEffectId": 135,
+    "AssetPath": "prefab)ef_sk_605001"
+  },
+  {
+    "AssetEffectId": 136,
+    "AssetPath": "prefab)ef_sk_605002"
+  },
+  {
+    "AssetEffectId": 137,
+    "AssetPath": "prefab)ef_sk_006000"
+  },
+  {
+    "AssetEffectId": 138,
+    "AssetPath": "prefab)ef_sk_007000"
+  },
+  {
+    "AssetEffectId": 139,
+    "AssetPath": "prefab)ef_sk_207001"
+  },
+  {
+    "AssetEffectId": 140,
+    "AssetPath": "prefab)ef_sk_207002"
+  },
+  {
+    "AssetEffectId": 141,
+    "AssetPath": "prefab)ef_sk_207003"
+  },
+  {
+    "AssetEffectId": 142,
+    "AssetPath": "prefab)ef_sk_207004"
+  },
+  {
+    "AssetEffectId": 143,
+    "AssetPath": "prefab)ef_sk_307001"
+  },
+  {
+    "AssetEffectId": 144,
+    "AssetPath": "prefab)ef_sk_307002"
+  },
+  {
+    "AssetEffectId": 145,
+    "AssetPath": "prefab)ef_sk_507001"
+  },
+  {
+    "AssetEffectId": 146,
+    "AssetPath": "prefab)ef_sk_507002"
+  },
+  {
+    "AssetEffectId": 147,
+    "AssetPath": "prefab)ef_sk_607001"
+  },
+  {
+    "AssetEffectId": 148,
+    "AssetPath": "prefab)ef_sk_607002"
+  },
+  {
+    "AssetEffectId": 149,
+    "AssetPath": "prefab)ef_sk_607003"
+  },
+  {
+    "AssetEffectId": 150,
+    "AssetPath": "prefab)ef_sk_008000"
+  },
+  {
+    "AssetEffectId": 151,
+    "AssetPath": "prefab)ef_sk_000000"
+  },
+  {
+    "AssetEffectId": 152,
+    "AssetPath": "prefab)ef_sk_000001"
+  },
+  {
+    "AssetEffectId": 153,
+    "AssetPath": "prefab)ef_sk_000002"
+  },
+  {
+    "AssetEffectId": 154,
+    "AssetPath": "prefab)ef_sk_000004"
+  },
+  {
+    "AssetEffectId": 155,
+    "AssetPath": "prefab)ef_sk_000005"
+  },
+  {
+    "AssetEffectId": 156,
+    "AssetPath": "prefab)ef_bg_000000"
+  },
+  {
+    "AssetEffectId": 157,
+    "AssetPath": "prefab)ef_bg_000001"
+  },
+  {
+    "AssetEffectId": 158,
+    "AssetPath": "prefab)ef_bg_000002"
+  },
+  {
+    "AssetEffectId": 159,
+    "AssetPath": "prefab)ef_bg_000003"
+  },
+  {
+    "AssetEffectId": 160,
+    "AssetPath": "prefab)ef_bg_000004"
+  },
+  {
+    "AssetEffectId": 161,
+    "AssetPath": "prefab)ef_bg_000005"
+  },
+  {
+    "AssetEffectId": 162,
+    "AssetPath": "prefab)ef_bg_000006"
+  },
+  {
+    "AssetEffectId": 163,
+    "AssetPath": "prefab)ef_bg_000007"
+  },
+  {
+    "AssetEffectId": 164,
+    "AssetPath": "prefab)ef_bg_000008"
+  },
+  {
+    "AssetEffectId": 165,
+    "AssetPath": "prefab)ef_bg_000009"
+  },
+  {
+    "AssetEffectId": 166,
+    "AssetPath": "prefab)ef_bg_000010"
+  },
+  {
+    "AssetEffectId": 167,
+    "AssetPath": "prefab)ef_bg_000011"
+  },
+  {
+    "AssetEffectId": 168,
+    "AssetPath": "prefab)ef_bg_000012"
+  },
+  {
+    "AssetEffectId": 169,
+    "AssetPath": "prefab)ef_bg_000013"
+  },
+  {
+    "AssetEffectId": 170,
+    "AssetPath": "prefab)ef_bg_000014"
+  },
+  {
+    "AssetEffectId": 171,
+    "AssetPath": "prefab)ef_bg_000015"
+  },
+  {
+    "AssetEffectId": 172,
+    "AssetPath": "prefab)ef_bg_000016"
+  },
+  {
+    "AssetEffectId": 173,
+    "AssetPath": "prefab)ef_bg_000017"
+  },
+  {
+    "AssetEffectId": 174,
+    "AssetPath": "prefab)ef_bg_000018"
+  },
+  {
+    "AssetEffectId": 175,
+    "AssetPath": "prefab)ef_bg_000019"
+  },
+  {
+    "AssetEffectId": 176,
+    "AssetPath": "prefab)ef_bg_000020"
+  },
+  {
+    "AssetEffectId": 177,
+    "AssetPath": "prefab)ef_bg_000021"
+  },
+  {
+    "AssetEffectId": 178,
+    "AssetPath": "prefab)ef_bg_000022"
+  },
+  {
+    "AssetEffectId": 179,
+    "AssetPath": "prefab)ef_bg_000023"
+  },
+  {
+    "AssetEffectId": 180,
+    "AssetPath": "prefab)ef_bg_000024"
+  },
+  {
+    "AssetEffectId": 181,
+    "AssetPath": "prefab)ef_bg_000025"
+  },
+  {
+    "AssetEffectId": 182,
+    "AssetPath": "prefab)ef_bg_000026"
+  },
+  {
+    "AssetEffectId": 183,
+    "AssetPath": "prefab)ef_bg_000027"
+  },
+  {
+    "AssetEffectId": 184,
+    "AssetPath": "prefab)ef_bg_000028"
+  },
+  {
+    "AssetEffectId": 185,
+    "AssetPath": "prefab)ef_bg_000029"
+  },
+  {
+    "AssetEffectId": 186,
+    "AssetPath": "prefab)ef_bg_000030"
+  },
+  {
+    "AssetEffectId": 187,
+    "AssetPath": "prefab)ef_bg_000031"
+  },
+  {
+    "AssetEffectId": 188,
+    "AssetPath": "prefab)ef_bg_000032"
+  },
+  {
+    "AssetEffectId": 189,
+    "AssetPath": "prefab)ef_bg_000033"
+  },
+  {
+    "AssetEffectId": 190,
+    "AssetPath": "prefab)ef_pb_000000"
+  },
+  {
+    "AssetEffectId": 191,
+    "AssetPath": "prefab)ef_tr_000000"
+  },
+  {
+    "AssetEffectId": 192,
+    "AssetPath": "prefab)ef_tr_000001"
+  },
+  {
+    "AssetEffectId": 193,
+    "AssetPath": "prefab)ef_tr_000002"
+  },
+  {
+    "AssetEffectId": 194,
+    "AssetPath": "prefab)ef_tr_000003"
+  },
+  {
+    "AssetEffectId": 90001,
+    "AssetPath": "prefab)eff_skill01_slash_group"
+  }
+]

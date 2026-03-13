@@ -1,0 +1,778 @@
+[
+  {
+    "QuestSceneId": 1110,
+    "BattleProgressUiTypeId": 5
+  },
+  {
+    "QuestSceneId": 1112,
+    "BattleProgressUiTypeId": 5
+  },
+  {
+    "QuestSceneId": 1710,
+    "BattleProgressUiTypeId": 5
+  },
+  {
+    "QuestSceneId": 1712,
+    "BattleProgressUiTypeId": 5
+  },
+  {
+    "QuestSceneId": 2003,
+    "BattleProgressUiTypeId": 5
+  },
+  {
+    "QuestSceneId": 2008,
+    "BattleProgressUiTypeId": 5
+  },
+  {
+    "QuestSceneId": 2325,
+    "BattleProgressUiTypeId": 5
+  },
+  {
+    "QuestSceneId": 2447,
+    "BattleProgressUiTypeId": 5
+  },
+  {
+    "QuestSceneId": 2464,
+    "BattleProgressUiTypeId": 5
+  },
+  {
+    "QuestSceneId": 2466,
+    "BattleProgressUiTypeId": 5
+  },
+  {
+    "QuestSceneId": 2468,
+    "BattleProgressUiTypeId": 5
+  },
+  {
+    "QuestSceneId": 2472,
+    "BattleProgressUiTypeId": 5
+  },
+  {
+    "QuestSceneId": 30377,
+    "BattleProgressUiTypeId": 5
+  },
+  {
+    "QuestSceneId": 30378,
+    "BattleProgressUiTypeId": 5
+  },
+  {
+    "QuestSceneId": 30477,
+    "BattleProgressUiTypeId": 5
+  },
+  {
+    "QuestSceneId": 30478,
+    "BattleProgressUiTypeId": 5
+  },
+  {
+    "QuestSceneId": 30501,
+    "BattleProgressUiTypeId": 5
+  },
+  {
+    "QuestSceneId": 30502,
+    "BattleProgressUiTypeId": 5
+  },
+  {
+    "QuestSceneId": 30532,
+    "BattleProgressUiTypeId": 5
+  },
+  {
+    "QuestSceneId": 30547,
+    "BattleProgressUiTypeId": 5
+  },
+  {
+    "QuestSceneId": 30549,
+    "BattleProgressUiTypeId": 5
+  },
+  {
+    "QuestSceneId": 30550,
+    "BattleProgressUiTypeId": 5
+  },
+  {
+    "QuestSceneId": 30551,
+    "BattleProgressUiTypeId": 5
+  },
+  {
+    "QuestSceneId": 30552,
+    "BattleProgressUiTypeId": 5
+  },
+  {
+    "QuestSceneId": 40363,
+    "BattleProgressUiTypeId": 5
+  },
+  {
+    "QuestSceneId": 40364,
+    "BattleProgressUiTypeId": 5
+  },
+  {
+    "QuestSceneId": 40463,
+    "BattleProgressUiTypeId": 5
+  },
+  {
+    "QuestSceneId": 40464,
+    "BattleProgressUiTypeId": 5
+  },
+  {
+    "QuestSceneId": 40529,
+    "BattleProgressUiTypeId": 5
+  },
+  {
+    "QuestSceneId": 50363,
+    "BattleProgressUiTypeId": 5
+  },
+  {
+    "QuestSceneId": 50364,
+    "BattleProgressUiTypeId": 5
+  },
+  {
+    "QuestSceneId": 50463,
+    "BattleProgressUiTypeId": 5
+  },
+  {
+    "QuestSceneId": 50464,
+    "BattleProgressUiTypeId": 5
+  },
+  {
+    "QuestSceneId": 50529,
+    "BattleProgressUiTypeId": 5
+  },
+  {
+    "QuestSceneId": 200730,
+    "BattleProgressUiTypeId": 2
+  },
+  {
+    "QuestSceneId": 200731,
+    "BattleProgressUiTypeId": 2
+  },
+  {
+    "QuestSceneId": 200732,
+    "BattleProgressUiTypeId": 2
+  },
+  {
+    "QuestSceneId": 200734,
+    "BattleProgressUiTypeId": 2
+  },
+  {
+    "QuestSceneId": 200735,
+    "BattleProgressUiTypeId": 2
+  },
+  {
+    "QuestSceneId": 200736,
+    "BattleProgressUiTypeId": 2
+  },
+  {
+    "QuestSceneId": 200738,
+    "BattleProgressUiTypeId": 2
+  },
+  {
+    "QuestSceneId": 200739,
+    "BattleProgressUiTypeId": 2
+  },
+  {
+    "QuestSceneId": 200740,
+    "BattleProgressUiTypeId": 2
+  },
+  {
+    "QuestSceneId": 200742,
+    "BattleProgressUiTypeId": 2
+  },
+  {
+    "QuestSceneId": 200743,
+    "BattleProgressUiTypeId": 2
+  },
+  {
+    "QuestSceneId": 200744,
+    "BattleProgressUiTypeId": 2
+  },
+  {
+    "QuestSceneId": 200745,
+    "BattleProgressUiTypeId": 2
+  },
+  {
+    "QuestSceneId": 200746,
+    "BattleProgressUiTypeId": 2
+  },
+  {
+    "QuestSceneId": 200747,
+    "BattleProgressUiTypeId": 2
+  },
+  {
+    "QuestSceneId": 200748,
+    "BattleProgressUiTypeId": 2
+  },
+  {
+    "QuestSceneId": 200749,
+    "BattleProgressUiTypeId": 2
+  },
+  {
+    "QuestSceneId": 200750,
+    "BattleProgressUiTypeId": 2
+  },
+  {
+    "QuestSceneId": 200751,
+    "BattleProgressUiTypeId": 2
+  },
+  {
+    "QuestSceneId": 200752,
+    "BattleProgressUiTypeId": 2
+  },
+  {
+    "QuestSceneId": 200753,
+    "BattleProgressUiTypeId": 2
+  },
+  {
+    "QuestSceneId": 200754,
+    "BattleProgressUiTypeId": 2
+  },
+  {
+    "QuestSceneId": 200755,
+    "BattleProgressUiTypeId": 2
+  },
+  {
+    "QuestSceneId": 200756,
+    "BattleProgressUiTypeId": 2
+  },
+  {
+    "QuestSceneId": 200757,
+    "BattleProgressUiTypeId": 2
+  },
+  {
+    "QuestSceneId": 200758,
+    "BattleProgressUiTypeId": 2
+  },
+  {
+    "QuestSceneId": 200759,
+    "BattleProgressUiTypeId": 2
+  },
+  {
+    "QuestSceneId": 200760,
+    "BattleProgressUiTypeId": 2
+  },
+  {
+    "QuestSceneId": 200761,
+    "BattleProgressUiTypeId": 2
+  },
+  {
+    "QuestSceneId": 200762,
+    "BattleProgressUiTypeId": 2
+  },
+  {
+    "QuestSceneId": 200763,
+    "BattleProgressUiTypeId": 2
+  },
+  {
+    "QuestSceneId": 200764,
+    "BattleProgressUiTypeId": 2
+  },
+  {
+    "QuestSceneId": 200765,
+    "BattleProgressUiTypeId": 2
+  },
+  {
+    "QuestSceneId": 200808,
+    "BattleProgressUiTypeId": 2
+  },
+  {
+    "QuestSceneId": 200955,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 200956,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 200957,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 200959,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 200960,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 200961,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 200963,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 200964,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 200965,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 200967,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 200969,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 200970,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 200971,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 200972,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 200973,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 200974,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 200975,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 200976,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 200977,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 200978,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 200979,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 200980,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 200981,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 200982,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 200983,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 200984,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 200985,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 200986,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 200987,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 200988,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 200989,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 200990,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 200991,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 200992,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 200993,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 200995,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 200996,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 200997,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 200999,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 201000,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 201001,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 201003,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 201004,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 201005,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 201007,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 201008,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 201009,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 201010,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 201011,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 201012,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 201013,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 201014,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 201015,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 201016,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 201017,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 201018,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 201019,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 201020,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 201021,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 201022,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 201023,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 201024,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 201025,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 201026,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 201027,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 201028,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 201029,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 201030,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 201031,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 201032,
+    "BattleProgressUiTypeId": 3
+  },
+  {
+    "QuestSceneId": 201460,
+    "BattleProgressUiTypeId": 2
+  },
+  {
+    "QuestSceneId": 201461,
+    "BattleProgressUiTypeId": 2
+  },
+  {
+    "QuestSceneId": 220181,
+    "BattleProgressUiTypeId": 4
+  },
+  {
+    "QuestSceneId": 220182,
+    "BattleProgressUiTypeId": 4
+  },
+  {
+    "QuestSceneId": 220183,
+    "BattleProgressUiTypeId": 4
+  },
+  {
+    "QuestSceneId": 220184,
+    "BattleProgressUiTypeId": 4
+  },
+  {
+    "QuestSceneId": 220185,
+    "BattleProgressUiTypeId": 4
+  },
+  {
+    "QuestSceneId": 220186,
+    "BattleProgressUiTypeId": 4
+  },
+  {
+    "QuestSceneId": 220187,
+    "BattleProgressUiTypeId": 4
+  },
+  {
+    "QuestSceneId": 220188,
+    "BattleProgressUiTypeId": 4
+  },
+  {
+    "QuestSceneId": 220189,
+    "BattleProgressUiTypeId": 4
+  },
+  {
+    "QuestSceneId": 220190,
+    "BattleProgressUiTypeId": 4
+  },
+  {
+    "QuestSceneId": 220191,
+    "BattleProgressUiTypeId": 4
+  },
+  {
+    "QuestSceneId": 220282,
+    "BattleProgressUiTypeId": 6
+  },
+  {
+    "QuestSceneId": 220283,
+    "BattleProgressUiTypeId": 6
+  },
+  {
+    "QuestSceneId": 220284,
+    "BattleProgressUiTypeId": 6
+  },
+  {
+    "QuestSceneId": 220285,
+    "BattleProgressUiTypeId": 6
+  },
+  {
+    "QuestSceneId": 220286,
+    "BattleProgressUiTypeId": 6
+  },
+  {
+    "QuestSceneId": 220287,
+    "BattleProgressUiTypeId": 6
+  },
+  {
+    "QuestSceneId": 220288,
+    "BattleProgressUiTypeId": 6
+  },
+  {
+    "QuestSceneId": 220289,
+    "BattleProgressUiTypeId": 6
+  },
+  {
+    "QuestSceneId": 220290,
+    "BattleProgressUiTypeId": 6
+  },
+  {
+    "QuestSceneId": 220291,
+    "BattleProgressUiTypeId": 6
+  },
+  {
+    "QuestSceneId": 220292,
+    "BattleProgressUiTypeId": 6
+  },
+  {
+    "QuestSceneId": 400230,
+    "BattleProgressUiTypeId": 4
+  },
+  {
+    "QuestSceneId": 400231,
+    "BattleProgressUiTypeId": 4
+  },
+  {
+    "QuestSceneId": 400232,
+    "BattleProgressUiTypeId": 4
+  },
+  {
+    "QuestSceneId": 400233,
+    "BattleProgressUiTypeId": 4
+  },
+  {
+    "QuestSceneId": 400234,
+    "BattleProgressUiTypeId": 4
+  },
+  {
+    "QuestSceneId": 400235,
+    "BattleProgressUiTypeId": 4
+  },
+  {
+    "QuestSceneId": 400236,
+    "BattleProgressUiTypeId": 4
+  },
+  {
+    "QuestSceneId": 400237,
+    "BattleProgressUiTypeId": 4
+  },
+  {
+    "QuestSceneId": 400238,
+    "BattleProgressUiTypeId": 4
+  },
+  {
+    "QuestSceneId": 400239,
+    "BattleProgressUiTypeId": 4
+  },
+  {
+    "QuestSceneId": 400240,
+    "BattleProgressUiTypeId": 4
+  },
+  {
+    "QuestSceneId": 400241,
+    "BattleProgressUiTypeId": 4
+  },
+  {
+    "QuestSceneId": 400242,
+    "BattleProgressUiTypeId": 4
+  },
+  {
+    "QuestSceneId": 400243,
+    "BattleProgressUiTypeId": 4
+  },
+  {
+    "QuestSceneId": 400244,
+    "BattleProgressUiTypeId": 4
+  },
+  {
+    "QuestSceneId": 400245,
+    "BattleProgressUiTypeId": 4
+  },
+  {
+    "QuestSceneId": 400246,
+    "BattleProgressUiTypeId": 4
+  },
+  {
+    "QuestSceneId": 400247,
+    "BattleProgressUiTypeId": 4
+  },
+  {
+    "QuestSceneId": 400248,
+    "BattleProgressUiTypeId": 4
+  },
+  {
+    "QuestSceneId": 400249,
+    "BattleProgressUiTypeId": 4
+  },
+  {
+    "QuestSceneId": 400250,
+    "BattleProgressUiTypeId": 4
+  },
+  {
+    "QuestSceneId": 400251,
+    "BattleProgressUiTypeId": 4
+  },
+  {
+    "QuestSceneId": 400252,
+    "BattleProgressUiTypeId": 4
+  },
+  {
+    "QuestSceneId": 400253,
+    "BattleProgressUiTypeId": 4
+  },
+  {
+    "QuestSceneId": 400254,
+    "BattleProgressUiTypeId": 4
+  },
+  {
+    "QuestSceneId": 400255,
+    "BattleProgressUiTypeId": 4
+  },
+  {
+    "QuestSceneId": 400256,
+    "BattleProgressUiTypeId": 4
+  },
+  {
+    "QuestSceneId": 400257,
+    "BattleProgressUiTypeId": 4
+  },
+  {
+    "QuestSceneId": 400258,
+    "BattleProgressUiTypeId": 4
+  },
+  {
+    "QuestSceneId": 400259,
+    "BattleProgressUiTypeId": 4
+  },
+  {
+    "QuestSceneId": 400260,
+    "BattleProgressUiTypeId": 4
+  },
+  {
+    "QuestSceneId": 400261,
+    "BattleProgressUiTypeId": 4
+  }
+]

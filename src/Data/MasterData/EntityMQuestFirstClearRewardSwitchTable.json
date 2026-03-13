@@ -1,0 +1,32 @@
+[
+  {
+    "QuestId": 10105,
+    "QuestFirstClearRewardGroupId": 11046,
+    "SwitchConditionClearQuestId": 550
+  },
+  {
+    "QuestId": 40105,
+    "QuestFirstClearRewardGroupId": 11046,
+    "SwitchConditionClearQuestId": 550
+  },
+  {
+    "QuestId": 120101,
+    "QuestFirstClearRewardGroupId": 3,
+    "SwitchConditionClearQuestId": 550
+  },
+  {
+    "QuestId": 120104,
+    "QuestFirstClearRewardGroupId": 3,
+    "SwitchConditionClearQuestId": 550
+  },
+  {
+    "QuestId": 120107,
+    "QuestFirstClearRewardGroupId": 3,
+    "SwitchConditionClearQuestId": 550
+  },
+  {
+    "QuestId": 120110,
+    "QuestFirstClearRewardGroupId": 3,
+    "SwitchConditionClearQuestId": 550
+  }
+]

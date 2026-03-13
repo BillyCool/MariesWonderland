@@ -1,0 +1,98 @@
+[
+  {
+    "MainFlowQuestSceneId": 1113,
+    "QuestFlowType": 1,
+    "ChoiceNumber": 1,
+    "QuestSceneChoiceEffectId": 1
+  },
+  {
+    "MainFlowQuestSceneId": 1113,
+    "QuestFlowType": 1,
+    "ChoiceNumber": 2,
+    "QuestSceneChoiceEffectId": 2
+  },
+  {
+    "MainFlowQuestSceneId": 1113,
+    "QuestFlowType": 3,
+    "ChoiceNumber": 1,
+    "QuestSceneChoiceEffectId": 1
+  },
+  {
+    "MainFlowQuestSceneId": 1113,
+    "QuestFlowType": 3,
+    "ChoiceNumber": 2,
+    "QuestSceneChoiceEffectId": 2
+  },
+  {
+    "MainFlowQuestSceneId": 1113,
+    "QuestFlowType": 3,
+    "ChoiceNumber": 3,
+    "QuestSceneChoiceEffectId": 3
+  },
+  {
+    "MainFlowQuestSceneId": 1113,
+    "QuestFlowType": 4,
+    "ChoiceNumber": 1,
+    "QuestSceneChoiceEffectId": 1
+  },
+  {
+    "MainFlowQuestSceneId": 1113,
+    "QuestFlowType": 4,
+    "ChoiceNumber": 2,
+    "QuestSceneChoiceEffectId": 2
+  },
+  {
+    "MainFlowQuestSceneId": 1113,
+    "QuestFlowType": 4,
+    "ChoiceNumber": 3,
+    "QuestSceneChoiceEffectId": 3
+  },
+  {
+    "MainFlowQuestSceneId": 1713,
+    "QuestFlowType": 1,
+    "ChoiceNumber": 1,
+    "QuestSceneChoiceEffectId": 1
+  },
+  {
+    "MainFlowQuestSceneId": 1713,
+    "QuestFlowType": 1,
+    "ChoiceNumber": 2,
+    "QuestSceneChoiceEffectId": 2
+  },
+  {
+    "MainFlowQuestSceneId": 1713,
+    "QuestFlowType": 3,
+    "ChoiceNumber": 1,
+    "QuestSceneChoiceEffectId": 1
+  },
+  {
+    "MainFlowQuestSceneId": 1713,
+    "QuestFlowType": 3,
+    "ChoiceNumber": 2,
+    "QuestSceneChoiceEffectId": 2
+  },
+  {
+    "MainFlowQuestSceneId": 1713,
+    "QuestFlowType": 3,
+    "ChoiceNumber": 3,
+    "QuestSceneChoiceEffectId": 3
+  },
+  {
+    "MainFlowQuestSceneId": 1713,
+    "QuestFlowType": 4,
+    "ChoiceNumber": 1,
+    "QuestSceneChoiceEffectId": 1
+  },
+  {
+    "MainFlowQuestSceneId": 1713,
+    "QuestFlowType": 4,
+    "ChoiceNumber": 2,
+    "QuestSceneChoiceEffectId": 2
+  },
+  {
+    "MainFlowQuestSceneId": 1713,
+    "QuestFlowType": 4,
+    "ChoiceNumber": 3,
+    "QuestSceneChoiceEffectId": 3
+  }
+]

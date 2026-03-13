@@ -1,0 +1,4290 @@
+[
+  {
+    "SkillBehaviourActionId": 60,
+    "SkillPower": 60
+  },
+  {
+    "SkillBehaviourActionId": 70,
+    "SkillPower": 70
+  },
+  {
+    "SkillBehaviourActionId": 80,
+    "SkillPower": 80
+  },
+  {
+    "SkillBehaviourActionId": 85,
+    "SkillPower": 85
+  },
+  {
+    "SkillBehaviourActionId": 90,
+    "SkillPower": 90
+  },
+  {
+    "SkillBehaviourActionId": 95,
+    "SkillPower": 95
+  },
+  {
+    "SkillBehaviourActionId": 100,
+    "SkillPower": 100
+  },
+  {
+    "SkillBehaviourActionId": 105,
+    "SkillPower": 105
+  },
+  {
+    "SkillBehaviourActionId": 110,
+    "SkillPower": 110
+  },
+  {
+    "SkillBehaviourActionId": 115,
+    "SkillPower": 115
+  },
+  {
+    "SkillBehaviourActionId": 120,
+    "SkillPower": 120
+  },
+  {
+    "SkillBehaviourActionId": 125,
+    "SkillPower": 125
+  },
+  {
+    "SkillBehaviourActionId": 130,
+    "SkillPower": 130
+  },
+  {
+    "SkillBehaviourActionId": 135,
+    "SkillPower": 135
+  },
+  {
+    "SkillBehaviourActionId": 140,
+    "SkillPower": 140
+  },
+  {
+    "SkillBehaviourActionId": 145,
+    "SkillPower": 145
+  },
+  {
+    "SkillBehaviourActionId": 150,
+    "SkillPower": 150
+  },
+  {
+    "SkillBehaviourActionId": 160,
+    "SkillPower": 160
+  },
+  {
+    "SkillBehaviourActionId": 170,
+    "SkillPower": 170
+  },
+  {
+    "SkillBehaviourActionId": 180,
+    "SkillPower": 180
+  },
+  {
+    "SkillBehaviourActionId": 190,
+    "SkillPower": 190
+  },
+  {
+    "SkillBehaviourActionId": 200,
+    "SkillPower": 200
+  },
+  {
+    "SkillBehaviourActionId": 210,
+    "SkillPower": 210
+  },
+  {
+    "SkillBehaviourActionId": 220,
+    "SkillPower": 220
+  },
+  {
+    "SkillBehaviourActionId": 230,
+    "SkillPower": 230
+  },
+  {
+    "SkillBehaviourActionId": 240,
+    "SkillPower": 240
+  },
+  {
+    "SkillBehaviourActionId": 250,
+    "SkillPower": 250
+  },
+  {
+    "SkillBehaviourActionId": 260,
+    "SkillPower": 260
+  },
+  {
+    "SkillBehaviourActionId": 270,
+    "SkillPower": 270
+  },
+  {
+    "SkillBehaviourActionId": 280,
+    "SkillPower": 280
+  },
+  {
+    "SkillBehaviourActionId": 290,
+    "SkillPower": 290
+  },
+  {
+    "SkillBehaviourActionId": 300,
+    "SkillPower": 300
+  },
+  {
+    "SkillBehaviourActionId": 310,
+    "SkillPower": 310
+  },
+  {
+    "SkillBehaviourActionId": 320,
+    "SkillPower": 320
+  },
+  {
+    "SkillBehaviourActionId": 330,
+    "SkillPower": 330
+  },
+  {
+    "SkillBehaviourActionId": 340,
+    "SkillPower": 340
+  },
+  {
+    "SkillBehaviourActionId": 350,
+    "SkillPower": 350
+  },
+  {
+    "SkillBehaviourActionId": 360,
+    "SkillPower": 360
+  },
+  {
+    "SkillBehaviourActionId": 370,
+    "SkillPower": 370
+  },
+  {
+    "SkillBehaviourActionId": 380,
+    "SkillPower": 380
+  },
+  {
+    "SkillBehaviourActionId": 390,
+    "SkillPower": 390
+  },
+  {
+    "SkillBehaviourActionId": 400,
+    "SkillPower": 400
+  },
+  {
+    "SkillBehaviourActionId": 410,
+    "SkillPower": 410
+  },
+  {
+    "SkillBehaviourActionId": 420,
+    "SkillPower": 420
+  },
+  {
+    "SkillBehaviourActionId": 430,
+    "SkillPower": 430
+  },
+  {
+    "SkillBehaviourActionId": 440,
+    "SkillPower": 440
+  },
+  {
+    "SkillBehaviourActionId": 450,
+    "SkillPower": 450
+  },
+  {
+    "SkillBehaviourActionId": 460,
+    "SkillPower": 460
+  },
+  {
+    "SkillBehaviourActionId": 465,
+    "SkillPower": 465
+  },
+  {
+    "SkillBehaviourActionId": 470,
+    "SkillPower": 470
+  },
+  {
+    "SkillBehaviourActionId": 471,
+    "SkillPower": 471
+  },
+  {
+    "SkillBehaviourActionId": 477,
+    "SkillPower": 477
+  },
+  {
+    "SkillBehaviourActionId": 480,
+    "SkillPower": 480
+  },
+  {
+    "SkillBehaviourActionId": 483,
+    "SkillPower": 483
+  },
+  {
+    "SkillBehaviourActionId": 489,
+    "SkillPower": 489
+  },
+  {
+    "SkillBehaviourActionId": 490,
+    "SkillPower": 490
+  },
+  {
+    "SkillBehaviourActionId": 495,
+    "SkillPower": 495
+  },
+  {
+    "SkillBehaviourActionId": 500,
+    "SkillPower": 500
+  },
+  {
+    "SkillBehaviourActionId": 503,
+    "SkillPower": 503
+  },
+  {
+    "SkillBehaviourActionId": 510,
+    "SkillPower": 510
+  },
+  {
+    "SkillBehaviourActionId": 516,
+    "SkillPower": 516
+  },
+  {
+    "SkillBehaviourActionId": 519,
+    "SkillPower": 519
+  },
+  {
+    "SkillBehaviourActionId": 520,
+    "SkillPower": 520
+  },
+  {
+    "SkillBehaviourActionId": 523,
+    "SkillPower": 523
+  },
+  {
+    "SkillBehaviourActionId": 525,
+    "SkillPower": 525
+  },
+  {
+    "SkillBehaviourActionId": 528,
+    "SkillPower": 528
+  },
+  {
+    "SkillBehaviourActionId": 530,
+    "SkillPower": 530
+  },
+  {
+    "SkillBehaviourActionId": 532,
+    "SkillPower": 532
+  },
+  {
+    "SkillBehaviourActionId": 533,
+    "SkillPower": 533
+  },
+  {
+    "SkillBehaviourActionId": 540,
+    "SkillPower": 540
+  },
+  {
+    "SkillBehaviourActionId": 544,
+    "SkillPower": 544
+  },
+  {
+    "SkillBehaviourActionId": 547,
+    "SkillPower": 547
+  },
+  {
+    "SkillBehaviourActionId": 550,
+    "SkillPower": 550
+  },
+  {
+    "SkillBehaviourActionId": 551,
+    "SkillPower": 551
+  },
+  {
+    "SkillBehaviourActionId": 552,
+    "SkillPower": 552
+  },
+  {
+    "SkillBehaviourActionId": 554,
+    "SkillPower": 554
+  },
+  {
+    "SkillBehaviourActionId": 558,
+    "SkillPower": 558
+  },
+  {
+    "SkillBehaviourActionId": 560,
+    "SkillPower": 560
+  },
+  {
+    "SkillBehaviourActionId": 562,
+    "SkillPower": 562
+  },
+  {
+    "SkillBehaviourActionId": 564,
+    "SkillPower": 564
+  },
+  {
+    "SkillBehaviourActionId": 565,
+    "SkillPower": 565
+  },
+  {
+    "SkillBehaviourActionId": 568,
+    "SkillPower": 568
+  },
+  {
+    "SkillBehaviourActionId": 570,
+    "SkillPower": 570
+  },
+  {
+    "SkillBehaviourActionId": 572,
+    "SkillPower": 572
+  },
+  {
+    "SkillBehaviourActionId": 573,
+    "SkillPower": 573
+  },
+  {
+    "SkillBehaviourActionId": 576,
+    "SkillPower": 576
+  },
+  {
+    "SkillBehaviourActionId": 578,
+    "SkillPower": 578
+  },
+  {
+    "SkillBehaviourActionId": 579,
+    "SkillPower": 579
+  },
+  {
+    "SkillBehaviourActionId": 580,
+    "SkillPower": 580
+  },
+  {
+    "SkillBehaviourActionId": 582,
+    "SkillPower": 582
+  },
+  {
+    "SkillBehaviourActionId": 585,
+    "SkillPower": 585
+  },
+  {
+    "SkillBehaviourActionId": 586,
+    "SkillPower": 586
+  },
+  {
+    "SkillBehaviourActionId": 588,
+    "SkillPower": 588
+  },
+  {
+    "SkillBehaviourActionId": 590,
+    "SkillPower": 590
+  },
+  {
+    "SkillBehaviourActionId": 591,
+    "SkillPower": 591
+  },
+  {
+    "SkillBehaviourActionId": 594,
+    "SkillPower": 594
+  },
+  {
+    "SkillBehaviourActionId": 597,
+    "SkillPower": 597
+  },
+  {
+    "SkillBehaviourActionId": 599,
+    "SkillPower": 599
+  },
+  {
+    "SkillBehaviourActionId": 600,
+    "SkillPower": 600
+  },
+  {
+    "SkillBehaviourActionId": 601,
+    "SkillPower": 601
+  },
+  {
+    "SkillBehaviourActionId": 605,
+    "SkillPower": 605
+  },
+  {
+    "SkillBehaviourActionId": 607,
+    "SkillPower": 607
+  },
+  {
+    "SkillBehaviourActionId": 610,
+    "SkillPower": 610
+  },
+  {
+    "SkillBehaviourActionId": 612,
+    "SkillPower": 612
+  },
+  {
+    "SkillBehaviourActionId": 614,
+    "SkillPower": 614
+  },
+  {
+    "SkillBehaviourActionId": 615,
+    "SkillPower": 615
+  },
+  {
+    "SkillBehaviourActionId": 618,
+    "SkillPower": 618
+  },
+  {
+    "SkillBehaviourActionId": 620,
+    "SkillPower": 620
+  },
+  {
+    "SkillBehaviourActionId": 622,
+    "SkillPower": 622
+  },
+  {
+    "SkillBehaviourActionId": 623,
+    "SkillPower": 623
+  },
+  {
+    "SkillBehaviourActionId": 624,
+    "SkillPower": 624
+  },
+  {
+    "SkillBehaviourActionId": 626,
+    "SkillPower": 626
+  },
+  {
+    "SkillBehaviourActionId": 629,
+    "SkillPower": 629
+  },
+  {
+    "SkillBehaviourActionId": 630,
+    "SkillPower": 630
+  },
+  {
+    "SkillBehaviourActionId": 633,
+    "SkillPower": 633
+  },
+  {
+    "SkillBehaviourActionId": 635,
+    "SkillPower": 635
+  },
+  {
+    "SkillBehaviourActionId": 639,
+    "SkillPower": 639
+  },
+  {
+    "SkillBehaviourActionId": 640,
+    "SkillPower": 640
+  },
+  {
+    "SkillBehaviourActionId": 645,
+    "SkillPower": 645
+  },
+  {
+    "SkillBehaviourActionId": 648,
+    "SkillPower": 648
+  },
+  {
+    "SkillBehaviourActionId": 650,
+    "SkillPower": 650
+  },
+  {
+    "SkillBehaviourActionId": 655,
+    "SkillPower": 655
+  },
+  {
+    "SkillBehaviourActionId": 656,
+    "SkillPower": 656
+  },
+  {
+    "SkillBehaviourActionId": 659,
+    "SkillPower": 659
+  },
+  {
+    "SkillBehaviourActionId": 660,
+    "SkillPower": 660
+  },
+  {
+    "SkillBehaviourActionId": 661,
+    "SkillPower": 661
+  },
+  {
+    "SkillBehaviourActionId": 662,
+    "SkillPower": 662
+  },
+  {
+    "SkillBehaviourActionId": 666,
+    "SkillPower": 666
+  },
+  {
+    "SkillBehaviourActionId": 667,
+    "SkillPower": 667
+  },
+  {
+    "SkillBehaviourActionId": 670,
+    "SkillPower": 670
+  },
+  {
+    "SkillBehaviourActionId": 672,
+    "SkillPower": 672
+  },
+  {
+    "SkillBehaviourActionId": 675,
+    "SkillPower": 675
+  },
+  {
+    "SkillBehaviourActionId": 676,
+    "SkillPower": 676
+  },
+  {
+    "SkillBehaviourActionId": 680,
+    "SkillPower": 680
+  },
+  {
+    "SkillBehaviourActionId": 684,
+    "SkillPower": 684
+  },
+  {
+    "SkillBehaviourActionId": 685,
+    "SkillPower": 685
+  },
+  {
+    "SkillBehaviourActionId": 688,
+    "SkillPower": 688
+  },
+  {
+    "SkillBehaviourActionId": 690,
+    "SkillPower": 690
+  },
+  {
+    "SkillBehaviourActionId": 693,
+    "SkillPower": 693
+  },
+  {
+    "SkillBehaviourActionId": 698,
+    "SkillPower": 698
+  },
+  {
+    "SkillBehaviourActionId": 700,
+    "SkillPower": 700
+  },
+  {
+    "SkillBehaviourActionId": 702,
+    "SkillPower": 702
+  },
+  {
+    "SkillBehaviourActionId": 704,
+    "SkillPower": 704
+  },
+  {
+    "SkillBehaviourActionId": 706,
+    "SkillPower": 706
+  },
+  {
+    "SkillBehaviourActionId": 710,
+    "SkillPower": 710
+  },
+  {
+    "SkillBehaviourActionId": 712,
+    "SkillPower": 712
+  },
+  {
+    "SkillBehaviourActionId": 715,
+    "SkillPower": 715
+  },
+  {
+    "SkillBehaviourActionId": 720,
+    "SkillPower": 720
+  },
+  {
+    "SkillBehaviourActionId": 729,
+    "SkillPower": 729
+  },
+  {
+    "SkillBehaviourActionId": 730,
+    "SkillPower": 730
+  },
+  {
+    "SkillBehaviourActionId": 733,
+    "SkillPower": 733
+  },
+  {
+    "SkillBehaviourActionId": 736,
+    "SkillPower": 736
+  },
+  {
+    "SkillBehaviourActionId": 737,
+    "SkillPower": 737
+  },
+  {
+    "SkillBehaviourActionId": 738,
+    "SkillPower": 738
+  },
+  {
+    "SkillBehaviourActionId": 739,
+    "SkillPower": 739
+  },
+  {
+    "SkillBehaviourActionId": 740,
+    "SkillPower": 740
+  },
+  {
+    "SkillBehaviourActionId": 747,
+    "SkillPower": 747
+  },
+  {
+    "SkillBehaviourActionId": 748,
+    "SkillPower": 748
+  },
+  {
+    "SkillBehaviourActionId": 750,
+    "SkillPower": 750
+  },
+  {
+    "SkillBehaviourActionId": 756,
+    "SkillPower": 756
+  },
+  {
+    "SkillBehaviourActionId": 758,
+    "SkillPower": 758
+  },
+  {
+    "SkillBehaviourActionId": 760,
+    "SkillPower": 760
+  },
+  {
+    "SkillBehaviourActionId": 761,
+    "SkillPower": 761
+  },
+  {
+    "SkillBehaviourActionId": 765,
+    "SkillPower": 765
+  },
+  {
+    "SkillBehaviourActionId": 770,
+    "SkillPower": 770
+  },
+  {
+    "SkillBehaviourActionId": 772,
+    "SkillPower": 772
+  },
+  {
+    "SkillBehaviourActionId": 774,
+    "SkillPower": 774
+  },
+  {
+    "SkillBehaviourActionId": 780,
+    "SkillPower": 780
+  },
+  {
+    "SkillBehaviourActionId": 783,
+    "SkillPower": 783
+  },
+  {
+    "SkillBehaviourActionId": 785,
+    "SkillPower": 785
+  },
+  {
+    "SkillBehaviourActionId": 787,
+    "SkillPower": 787
+  },
+  {
+    "SkillBehaviourActionId": 790,
+    "SkillPower": 790
+  },
+  {
+    "SkillBehaviourActionId": 800,
+    "SkillPower": 800
+  },
+  {
+    "SkillBehaviourActionId": 801,
+    "SkillPower": 801
+  },
+  {
+    "SkillBehaviourActionId": 804,
+    "SkillPower": 804
+  },
+  {
+    "SkillBehaviourActionId": 805,
+    "SkillPower": 805
+  },
+  {
+    "SkillBehaviourActionId": 806,
+    "SkillPower": 806
+  },
+  {
+    "SkillBehaviourActionId": 810,
+    "SkillPower": 810
+  },
+  {
+    "SkillBehaviourActionId": 815,
+    "SkillPower": 815
+  },
+  {
+    "SkillBehaviourActionId": 816,
+    "SkillPower": 816
+  },
+  {
+    "SkillBehaviourActionId": 819,
+    "SkillPower": 819
+  },
+  {
+    "SkillBehaviourActionId": 820,
+    "SkillPower": 820
+  },
+  {
+    "SkillBehaviourActionId": 822,
+    "SkillPower": 822
+  },
+  {
+    "SkillBehaviourActionId": 826,
+    "SkillPower": 826
+  },
+  {
+    "SkillBehaviourActionId": 828,
+    "SkillPower": 828
+  },
+  {
+    "SkillBehaviourActionId": 830,
+    "SkillPower": 830
+  },
+  {
+    "SkillBehaviourActionId": 835,
+    "SkillPower": 835
+  },
+  {
+    "SkillBehaviourActionId": 837,
+    "SkillPower": 837
+  },
+  {
+    "SkillBehaviourActionId": 838,
+    "SkillPower": 838
+  },
+  {
+    "SkillBehaviourActionId": 840,
+    "SkillPower": 840
+  },
+  {
+    "SkillBehaviourActionId": 846,
+    "SkillPower": 846
+  },
+  {
+    "SkillBehaviourActionId": 847,
+    "SkillPower": 847
+  },
+  {
+    "SkillBehaviourActionId": 850,
+    "SkillPower": 850
+  },
+  {
+    "SkillBehaviourActionId": 854,
+    "SkillPower": 854
+  },
+  {
+    "SkillBehaviourActionId": 855,
+    "SkillPower": 855
+  },
+  {
+    "SkillBehaviourActionId": 856,
+    "SkillPower": 856
+  },
+  {
+    "SkillBehaviourActionId": 858,
+    "SkillPower": 858
+  },
+  {
+    "SkillBehaviourActionId": 860,
+    "SkillPower": 860
+  },
+  {
+    "SkillBehaviourActionId": 865,
+    "SkillPower": 865
+  },
+  {
+    "SkillBehaviourActionId": 868,
+    "SkillPower": 868
+  },
+  {
+    "SkillBehaviourActionId": 870,
+    "SkillPower": 870
+  },
+  {
+    "SkillBehaviourActionId": 871,
+    "SkillPower": 871
+  },
+  {
+    "SkillBehaviourActionId": 873,
+    "SkillPower": 873
+  },
+  {
+    "SkillBehaviourActionId": 875,
+    "SkillPower": 875
+  },
+  {
+    "SkillBehaviourActionId": 876,
+    "SkillPower": 876
+  },
+  {
+    "SkillBehaviourActionId": 877,
+    "SkillPower": 877
+  },
+  {
+    "SkillBehaviourActionId": 879,
+    "SkillPower": 879
+  },
+  {
+    "SkillBehaviourActionId": 880,
+    "SkillPower": 880
+  },
+  {
+    "SkillBehaviourActionId": 883,
+    "SkillPower": 883
+  },
+  {
+    "SkillBehaviourActionId": 888,
+    "SkillPower": 888
+  },
+  {
+    "SkillBehaviourActionId": 889,
+    "SkillPower": 889
+  },
+  {
+    "SkillBehaviourActionId": 890,
+    "SkillPower": 890
+  },
+  {
+    "SkillBehaviourActionId": 893,
+    "SkillPower": 893
+  },
+  {
+    "SkillBehaviourActionId": 899,
+    "SkillPower": 899
+  },
+  {
+    "SkillBehaviourActionId": 900,
+    "SkillPower": 900
+  },
+  {
+    "SkillBehaviourActionId": 901,
+    "SkillPower": 901
+  },
+  {
+    "SkillBehaviourActionId": 902,
+    "SkillPower": 902
+  },
+  {
+    "SkillBehaviourActionId": 905,
+    "SkillPower": 905
+  },
+  {
+    "SkillBehaviourActionId": 910,
+    "SkillPower": 910
+  },
+  {
+    "SkillBehaviourActionId": 912,
+    "SkillPower": 912
+  },
+  {
+    "SkillBehaviourActionId": 913,
+    "SkillPower": 913
+  },
+  {
+    "SkillBehaviourActionId": 915,
+    "SkillPower": 915
+  },
+  {
+    "SkillBehaviourActionId": 918,
+    "SkillPower": 918
+  },
+  {
+    "SkillBehaviourActionId": 920,
+    "SkillPower": 920
+  },
+  {
+    "SkillBehaviourActionId": 922,
+    "SkillPower": 922
+  },
+  {
+    "SkillBehaviourActionId": 923,
+    "SkillPower": 923
+  },
+  {
+    "SkillBehaviourActionId": 924,
+    "SkillPower": 924
+  },
+  {
+    "SkillBehaviourActionId": 926,
+    "SkillPower": 926
+  },
+  {
+    "SkillBehaviourActionId": 930,
+    "SkillPower": 930
+  },
+  {
+    "SkillBehaviourActionId": 931,
+    "SkillPower": 931
+  },
+  {
+    "SkillBehaviourActionId": 932,
+    "SkillPower": 932
+  },
+  {
+    "SkillBehaviourActionId": 935,
+    "SkillPower": 935
+  },
+  {
+    "SkillBehaviourActionId": 936,
+    "SkillPower": 936
+  },
+  {
+    "SkillBehaviourActionId": 937,
+    "SkillPower": 937
+  },
+  {
+    "SkillBehaviourActionId": 938,
+    "SkillPower": 938
+  },
+  {
+    "SkillBehaviourActionId": 939,
+    "SkillPower": 939
+  },
+  {
+    "SkillBehaviourActionId": 940,
+    "SkillPower": 940
+  },
+  {
+    "SkillBehaviourActionId": 942,
+    "SkillPower": 942
+  },
+  {
+    "SkillBehaviourActionId": 945,
+    "SkillPower": 945
+  },
+  {
+    "SkillBehaviourActionId": 948,
+    "SkillPower": 948
+  },
+  {
+    "SkillBehaviourActionId": 950,
+    "SkillPower": 950
+  },
+  {
+    "SkillBehaviourActionId": 952,
+    "SkillPower": 952
+  },
+  {
+    "SkillBehaviourActionId": 953,
+    "SkillPower": 953
+  },
+  {
+    "SkillBehaviourActionId": 954,
+    "SkillPower": 954
+  },
+  {
+    "SkillBehaviourActionId": 955,
+    "SkillPower": 955
+  },
+  {
+    "SkillBehaviourActionId": 956,
+    "SkillPower": 956
+  },
+  {
+    "SkillBehaviourActionId": 957,
+    "SkillPower": 957
+  },
+  {
+    "SkillBehaviourActionId": 960,
+    "SkillPower": 960
+  },
+  {
+    "SkillBehaviourActionId": 962,
+    "SkillPower": 962
+  },
+  {
+    "SkillBehaviourActionId": 966,
+    "SkillPower": 966
+  },
+  {
+    "SkillBehaviourActionId": 967,
+    "SkillPower": 967
+  },
+  {
+    "SkillBehaviourActionId": 968,
+    "SkillPower": 968
+  },
+  {
+    "SkillBehaviourActionId": 970,
+    "SkillPower": 970
+  },
+  {
+    "SkillBehaviourActionId": 971,
+    "SkillPower": 971
+  },
+  {
+    "SkillBehaviourActionId": 972,
+    "SkillPower": 972
+  },
+  {
+    "SkillBehaviourActionId": 975,
+    "SkillPower": 975
+  },
+  {
+    "SkillBehaviourActionId": 976,
+    "SkillPower": 976
+  },
+  {
+    "SkillBehaviourActionId": 977,
+    "SkillPower": 977
+  },
+  {
+    "SkillBehaviourActionId": 978,
+    "SkillPower": 978
+  },
+  {
+    "SkillBehaviourActionId": 980,
+    "SkillPower": 980
+  },
+  {
+    "SkillBehaviourActionId": 985,
+    "SkillPower": 985
+  },
+  {
+    "SkillBehaviourActionId": 987,
+    "SkillPower": 987
+  },
+  {
+    "SkillBehaviourActionId": 989,
+    "SkillPower": 989
+  },
+  {
+    "SkillBehaviourActionId": 990,
+    "SkillPower": 990
+  },
+  {
+    "SkillBehaviourActionId": 992,
+    "SkillPower": 992
+  },
+  {
+    "SkillBehaviourActionId": 993,
+    "SkillPower": 993
+  },
+  {
+    "SkillBehaviourActionId": 994,
+    "SkillPower": 994
+  },
+  {
+    "SkillBehaviourActionId": 995,
+    "SkillPower": 995
+  },
+  {
+    "SkillBehaviourActionId": 996,
+    "SkillPower": 996
+  },
+  {
+    "SkillBehaviourActionId": 999,
+    "SkillPower": 999
+  },
+  {
+    "SkillBehaviourActionId": 1000,
+    "SkillPower": 1000
+  },
+  {
+    "SkillBehaviourActionId": 1001,
+    "SkillPower": 1001
+  },
+  {
+    "SkillBehaviourActionId": 1005,
+    "SkillPower": 1005
+  },
+  {
+    "SkillBehaviourActionId": 1008,
+    "SkillPower": 1008
+  },
+  {
+    "SkillBehaviourActionId": 1010,
+    "SkillPower": 1010
+  },
+  {
+    "SkillBehaviourActionId": 1012,
+    "SkillPower": 1012
+  },
+  {
+    "SkillBehaviourActionId": 1013,
+    "SkillPower": 1013
+  },
+  {
+    "SkillBehaviourActionId": 1014,
+    "SkillPower": 1014
+  },
+  {
+    "SkillBehaviourActionId": 1017,
+    "SkillPower": 1017
+  },
+  {
+    "SkillBehaviourActionId": 1020,
+    "SkillPower": 1020
+  },
+  {
+    "SkillBehaviourActionId": 1023,
+    "SkillPower": 1023
+  },
+  {
+    "SkillBehaviourActionId": 1026,
+    "SkillPower": 1026
+  },
+  {
+    "SkillBehaviourActionId": 1027,
+    "SkillPower": 1027
+  },
+  {
+    "SkillBehaviourActionId": 1029,
+    "SkillPower": 1029
+  },
+  {
+    "SkillBehaviourActionId": 1030,
+    "SkillPower": 1030
+  },
+  {
+    "SkillBehaviourActionId": 1032,
+    "SkillPower": 1032
+  },
+  {
+    "SkillBehaviourActionId": 1033,
+    "SkillPower": 1033
+  },
+  {
+    "SkillBehaviourActionId": 1037,
+    "SkillPower": 1037
+  },
+  {
+    "SkillBehaviourActionId": 1038,
+    "SkillPower": 1038
+  },
+  {
+    "SkillBehaviourActionId": 1039,
+    "SkillPower": 1039
+  },
+  {
+    "SkillBehaviourActionId": 1040,
+    "SkillPower": 1040
+  },
+  {
+    "SkillBehaviourActionId": 1041,
+    "SkillPower": 1041
+  },
+  {
+    "SkillBehaviourActionId": 1045,
+    "SkillPower": 1045
+  },
+  {
+    "SkillBehaviourActionId": 1046,
+    "SkillPower": 1046
+  },
+  {
+    "SkillBehaviourActionId": 1050,
+    "SkillPower": 1050
+  },
+  {
+    "SkillBehaviourActionId": 1052,
+    "SkillPower": 1052
+  },
+  {
+    "SkillBehaviourActionId": 1053,
+    "SkillPower": 1053
+  },
+  {
+    "SkillBehaviourActionId": 1056,
+    "SkillPower": 1056
+  },
+  {
+    "SkillBehaviourActionId": 1057,
+    "SkillPower": 1057
+  },
+  {
+    "SkillBehaviourActionId": 1058,
+    "SkillPower": 1058
+  },
+  {
+    "SkillBehaviourActionId": 1059,
+    "SkillPower": 1059
+  },
+  {
+    "SkillBehaviourActionId": 1064,
+    "SkillPower": 1064
+  },
+  {
+    "SkillBehaviourActionId": 1065,
+    "SkillPower": 1065
+  },
+  {
+    "SkillBehaviourActionId": 1066,
+    "SkillPower": 1066
+  },
+  {
+    "SkillBehaviourActionId": 1068,
+    "SkillPower": 1068
+  },
+  {
+    "SkillBehaviourActionId": 1070,
+    "SkillPower": 1070
+  },
+  {
+    "SkillBehaviourActionId": 1071,
+    "SkillPower": 1071
+  },
+  {
+    "SkillBehaviourActionId": 1072,
+    "SkillPower": 1072
+  },
+  {
+    "SkillBehaviourActionId": 1073,
+    "SkillPower": 1073
+  },
+  {
+    "SkillBehaviourActionId": 1075,
+    "SkillPower": 1075
+  },
+  {
+    "SkillBehaviourActionId": 1080,
+    "SkillPower": 1080
+  },
+  {
+    "SkillBehaviourActionId": 1083,
+    "SkillPower": 1083
+  },
+  {
+    "SkillBehaviourActionId": 1086,
+    "SkillPower": 1086
+  },
+  {
+    "SkillBehaviourActionId": 1087,
+    "SkillPower": 1087
+  },
+  {
+    "SkillBehaviourActionId": 1090,
+    "SkillPower": 1090
+  },
+  {
+    "SkillBehaviourActionId": 1091,
+    "SkillPower": 1091
+  },
+  {
+    "SkillBehaviourActionId": 1092,
+    "SkillPower": 1092
+  },
+  {
+    "SkillBehaviourActionId": 1093,
+    "SkillPower": 1093
+  },
+  {
+    "SkillBehaviourActionId": 1094,
+    "SkillPower": 1094
+  },
+  {
+    "SkillBehaviourActionId": 1095,
+    "SkillPower": 1095
+  },
+  {
+    "SkillBehaviourActionId": 1096,
+    "SkillPower": 1096
+  },
+  {
+    "SkillBehaviourActionId": 1099,
+    "SkillPower": 1099
+  },
+  {
+    "SkillBehaviourActionId": 1100,
+    "SkillPower": 1100
+  },
+  {
+    "SkillBehaviourActionId": 1102,
+    "SkillPower": 1102
+  },
+  {
+    "SkillBehaviourActionId": 1104,
+    "SkillPower": 1104
+  },
+  {
+    "SkillBehaviourActionId": 1107,
+    "SkillPower": 1107
+  },
+  {
+    "SkillBehaviourActionId": 1108,
+    "SkillPower": 1108
+  },
+  {
+    "SkillBehaviourActionId": 1110,
+    "SkillPower": 1110
+  },
+  {
+    "SkillBehaviourActionId": 1112,
+    "SkillPower": 1112
+  },
+  {
+    "SkillBehaviourActionId": 1113,
+    "SkillPower": 1113
+  },
+  {
+    "SkillBehaviourActionId": 1116,
+    "SkillPower": 1116
+  },
+  {
+    "SkillBehaviourActionId": 1117,
+    "SkillPower": 1117
+  },
+  {
+    "SkillBehaviourActionId": 1118,
+    "SkillPower": 1118
+  },
+  {
+    "SkillBehaviourActionId": 1120,
+    "SkillPower": 1120
+  },
+  {
+    "SkillBehaviourActionId": 1121,
+    "SkillPower": 1121
+  },
+  {
+    "SkillBehaviourActionId": 1125,
+    "SkillPower": 1125
+  },
+  {
+    "SkillBehaviourActionId": 1128,
+    "SkillPower": 1128
+  },
+  {
+    "SkillBehaviourActionId": 1130,
+    "SkillPower": 1130
+  },
+  {
+    "SkillBehaviourActionId": 1132,
+    "SkillPower": 1132
+  },
+  {
+    "SkillBehaviourActionId": 1133,
+    "SkillPower": 1133
+  },
+  {
+    "SkillBehaviourActionId": 1134,
+    "SkillPower": 1134
+  },
+  {
+    "SkillBehaviourActionId": 1136,
+    "SkillPower": 1136
+  },
+  {
+    "SkillBehaviourActionId": 1140,
+    "SkillPower": 1140
+  },
+  {
+    "SkillBehaviourActionId": 1141,
+    "SkillPower": 1141
+  },
+  {
+    "SkillBehaviourActionId": 1146,
+    "SkillPower": 1146
+  },
+  {
+    "SkillBehaviourActionId": 1147,
+    "SkillPower": 1147
+  },
+  {
+    "SkillBehaviourActionId": 1148,
+    "SkillPower": 1148
+  },
+  {
+    "SkillBehaviourActionId": 1150,
+    "SkillPower": 1150
+  },
+  {
+    "SkillBehaviourActionId": 1152,
+    "SkillPower": 1152
+  },
+  {
+    "SkillBehaviourActionId": 1155,
+    "SkillPower": 1155
+  },
+  {
+    "SkillBehaviourActionId": 1157,
+    "SkillPower": 1157
+  },
+  {
+    "SkillBehaviourActionId": 1160,
+    "SkillPower": 1160
+  },
+  {
+    "SkillBehaviourActionId": 1161,
+    "SkillPower": 1161
+  },
+  {
+    "SkillBehaviourActionId": 1162,
+    "SkillPower": 1162
+  },
+  {
+    "SkillBehaviourActionId": 1164,
+    "SkillPower": 1164
+  },
+  {
+    "SkillBehaviourActionId": 1166,
+    "SkillPower": 1166
+  },
+  {
+    "SkillBehaviourActionId": 1170,
+    "SkillPower": 1170
+  },
+  {
+    "SkillBehaviourActionId": 1172,
+    "SkillPower": 1172
+  },
+  {
+    "SkillBehaviourActionId": 1173,
+    "SkillPower": 1173
+  },
+  {
+    "SkillBehaviourActionId": 1174,
+    "SkillPower": 1174
+  },
+  {
+    "SkillBehaviourActionId": 1176,
+    "SkillPower": 1176
+  },
+  {
+    "SkillBehaviourActionId": 1178,
+    "SkillPower": 1178
+  },
+  {
+    "SkillBehaviourActionId": 1180,
+    "SkillPower": 1180
+  },
+  {
+    "SkillBehaviourActionId": 1184,
+    "SkillPower": 1184
+  },
+  {
+    "SkillBehaviourActionId": 1185,
+    "SkillPower": 1185
+  },
+  {
+    "SkillBehaviourActionId": 1186,
+    "SkillPower": 1186
+  },
+  {
+    "SkillBehaviourActionId": 1187,
+    "SkillPower": 1187
+  },
+  {
+    "SkillBehaviourActionId": 1188,
+    "SkillPower": 1188
+  },
+  {
+    "SkillBehaviourActionId": 1189,
+    "SkillPower": 1189
+  },
+  {
+    "SkillBehaviourActionId": 1190,
+    "SkillPower": 1190
+  },
+  {
+    "SkillBehaviourActionId": 1191,
+    "SkillPower": 1191
+  },
+  {
+    "SkillBehaviourActionId": 1195,
+    "SkillPower": 1195
+  },
+  {
+    "SkillBehaviourActionId": 1196,
+    "SkillPower": 1196
+  },
+  {
+    "SkillBehaviourActionId": 1197,
+    "SkillPower": 1197
+  },
+  {
+    "SkillBehaviourActionId": 1198,
+    "SkillPower": 1198
+  },
+  {
+    "SkillBehaviourActionId": 1200,
+    "SkillPower": 1200
+  },
+  {
+    "SkillBehaviourActionId": 1201,
+    "SkillPower": 1201
+  },
+  {
+    "SkillBehaviourActionId": 1204,
+    "SkillPower": 1204
+  },
+  {
+    "SkillBehaviourActionId": 1206,
+    "SkillPower": 1206
+  },
+  {
+    "SkillBehaviourActionId": 1207,
+    "SkillPower": 1207
+  },
+  {
+    "SkillBehaviourActionId": 1210,
+    "SkillPower": 1210
+  },
+  {
+    "SkillBehaviourActionId": 1213,
+    "SkillPower": 1213
+  },
+  {
+    "SkillBehaviourActionId": 1215,
+    "SkillPower": 1215
+  },
+  {
+    "SkillBehaviourActionId": 1216,
+    "SkillPower": 1216
+  },
+  {
+    "SkillBehaviourActionId": 1220,
+    "SkillPower": 1220
+  },
+  {
+    "SkillBehaviourActionId": 1222,
+    "SkillPower": 1222
+  },
+  {
+    "SkillBehaviourActionId": 1224,
+    "SkillPower": 1224
+  },
+  {
+    "SkillBehaviourActionId": 1225,
+    "SkillPower": 1225
+  },
+  {
+    "SkillBehaviourActionId": 1228,
+    "SkillPower": 1228
+  },
+  {
+    "SkillBehaviourActionId": 1229,
+    "SkillPower": 1229
+  },
+  {
+    "SkillBehaviourActionId": 1230,
+    "SkillPower": 1230
+  },
+  {
+    "SkillBehaviourActionId": 1233,
+    "SkillPower": 1233
+  },
+  {
+    "SkillBehaviourActionId": 1235,
+    "SkillPower": 1235
+  },
+  {
+    "SkillBehaviourActionId": 1240,
+    "SkillPower": 1240
+  },
+  {
+    "SkillBehaviourActionId": 1244,
+    "SkillPower": 1244
+  },
+  {
+    "SkillBehaviourActionId": 1245,
+    "SkillPower": 1245
+  },
+  {
+    "SkillBehaviourActionId": 1246,
+    "SkillPower": 1246
+  },
+  {
+    "SkillBehaviourActionId": 1248,
+    "SkillPower": 1248
+  },
+  {
+    "SkillBehaviourActionId": 1249,
+    "SkillPower": 1249
+  },
+  {
+    "SkillBehaviourActionId": 1250,
+    "SkillPower": 1250
+  },
+  {
+    "SkillBehaviourActionId": 1251,
+    "SkillPower": 1251
+  },
+  {
+    "SkillBehaviourActionId": 1252,
+    "SkillPower": 1252
+  },
+  {
+    "SkillBehaviourActionId": 1253,
+    "SkillPower": 1253
+  },
+  {
+    "SkillBehaviourActionId": 1259,
+    "SkillPower": 1259
+  },
+  {
+    "SkillBehaviourActionId": 1260,
+    "SkillPower": 1260
+  },
+  {
+    "SkillBehaviourActionId": 1267,
+    "SkillPower": 1267
+  },
+  {
+    "SkillBehaviourActionId": 1269,
+    "SkillPower": 1269
+  },
+  {
+    "SkillBehaviourActionId": 1270,
+    "SkillPower": 1270
+  },
+  {
+    "SkillBehaviourActionId": 1275,
+    "SkillPower": 1275
+  },
+  {
+    "SkillBehaviourActionId": 1277,
+    "SkillPower": 1277
+  },
+  {
+    "SkillBehaviourActionId": 1278,
+    "SkillPower": 1278
+  },
+  {
+    "SkillBehaviourActionId": 1280,
+    "SkillPower": 1280
+  },
+  {
+    "SkillBehaviourActionId": 1281,
+    "SkillPower": 1281
+  },
+  {
+    "SkillBehaviourActionId": 1283,
+    "SkillPower": 1283
+  },
+  {
+    "SkillBehaviourActionId": 1287,
+    "SkillPower": 1287
+  },
+  {
+    "SkillBehaviourActionId": 1288,
+    "SkillPower": 1288
+  },
+  {
+    "SkillBehaviourActionId": 1290,
+    "SkillPower": 1290
+  },
+  {
+    "SkillBehaviourActionId": 1291,
+    "SkillPower": 1291
+  },
+  {
+    "SkillBehaviourActionId": 1293,
+    "SkillPower": 1293
+  },
+  {
+    "SkillBehaviourActionId": 1296,
+    "SkillPower": 1296
+  },
+  {
+    "SkillBehaviourActionId": 1300,
+    "SkillPower": 1300
+  },
+  {
+    "SkillBehaviourActionId": 1305,
+    "SkillPower": 1305
+  },
+  {
+    "SkillBehaviourActionId": 1309,
+    "SkillPower": 1309
+  },
+  {
+    "SkillBehaviourActionId": 1310,
+    "SkillPower": 1310
+  },
+  {
+    "SkillBehaviourActionId": 1312,
+    "SkillPower": 1312
+  },
+  {
+    "SkillBehaviourActionId": 1314,
+    "SkillPower": 1314
+  },
+  {
+    "SkillBehaviourActionId": 1316,
+    "SkillPower": 1316
+  },
+  {
+    "SkillBehaviourActionId": 1320,
+    "SkillPower": 1320
+  },
+  {
+    "SkillBehaviourActionId": 1322,
+    "SkillPower": 1322
+  },
+  {
+    "SkillBehaviourActionId": 1323,
+    "SkillPower": 1323
+  },
+  {
+    "SkillBehaviourActionId": 1326,
+    "SkillPower": 1326
+  },
+  {
+    "SkillBehaviourActionId": 1330,
+    "SkillPower": 1330
+  },
+  {
+    "SkillBehaviourActionId": 1331,
+    "SkillPower": 1331
+  },
+  {
+    "SkillBehaviourActionId": 1333,
+    "SkillPower": 1333
+  },
+  {
+    "SkillBehaviourActionId": 1335,
+    "SkillPower": 1335
+  },
+  {
+    "SkillBehaviourActionId": 1340,
+    "SkillPower": 1340
+  },
+  {
+    "SkillBehaviourActionId": 1341,
+    "SkillPower": 1341
+  },
+  {
+    "SkillBehaviourActionId": 1344,
+    "SkillPower": 1344
+  },
+  {
+    "SkillBehaviourActionId": 1347,
+    "SkillPower": 1347
+  },
+  {
+    "SkillBehaviourActionId": 1350,
+    "SkillPower": 1350
+  },
+  {
+    "SkillBehaviourActionId": 1353,
+    "SkillPower": 1353
+  },
+  {
+    "SkillBehaviourActionId": 1354,
+    "SkillPower": 1354
+  },
+  {
+    "SkillBehaviourActionId": 1360,
+    "SkillPower": 1360
+  },
+  {
+    "SkillBehaviourActionId": 1361,
+    "SkillPower": 1361
+  },
+  {
+    "SkillBehaviourActionId": 1365,
+    "SkillPower": 1365
+  },
+  {
+    "SkillBehaviourActionId": 1368,
+    "SkillPower": 1368
+  },
+  {
+    "SkillBehaviourActionId": 1370,
+    "SkillPower": 1370
+  },
+  {
+    "SkillBehaviourActionId": 1376,
+    "SkillPower": 1376
+  },
+  {
+    "SkillBehaviourActionId": 1377,
+    "SkillPower": 1377
+  },
+  {
+    "SkillBehaviourActionId": 1380,
+    "SkillPower": 1380
+  },
+  {
+    "SkillBehaviourActionId": 1382,
+    "SkillPower": 1382
+  },
+  {
+    "SkillBehaviourActionId": 1383,
+    "SkillPower": 1383
+  },
+  {
+    "SkillBehaviourActionId": 1386,
+    "SkillPower": 1386
+  },
+  {
+    "SkillBehaviourActionId": 1390,
+    "SkillPower": 1390
+  },
+  {
+    "SkillBehaviourActionId": 1392,
+    "SkillPower": 1392
+  },
+  {
+    "SkillBehaviourActionId": 1394,
+    "SkillPower": 1394
+  },
+  {
+    "SkillBehaviourActionId": 1395,
+    "SkillPower": 1395
+  },
+  {
+    "SkillBehaviourActionId": 1396,
+    "SkillPower": 1396
+  },
+  {
+    "SkillBehaviourActionId": 1400,
+    "SkillPower": 1400
+  },
+  {
+    "SkillBehaviourActionId": 1404,
+    "SkillPower": 1404
+  },
+  {
+    "SkillBehaviourActionId": 1407,
+    "SkillPower": 1407
+  },
+  {
+    "SkillBehaviourActionId": 1410,
+    "SkillPower": 1410
+  },
+  {
+    "SkillBehaviourActionId": 1417,
+    "SkillPower": 1417
+  },
+  {
+    "SkillBehaviourActionId": 1422,
+    "SkillPower": 1422
+  },
+  {
+    "SkillBehaviourActionId": 1424,
+    "SkillPower": 1424
+  },
+  {
+    "SkillBehaviourActionId": 1425,
+    "SkillPower": 1425
+  },
+  {
+    "SkillBehaviourActionId": 1427,
+    "SkillPower": 1427
+  },
+  {
+    "SkillBehaviourActionId": 1430,
+    "SkillPower": 1430
+  },
+  {
+    "SkillBehaviourActionId": 1433,
+    "SkillPower": 1433
+  },
+  {
+    "SkillBehaviourActionId": 1438,
+    "SkillPower": 1438
+  },
+  {
+    "SkillBehaviourActionId": 1440,
+    "SkillPower": 1440
+  },
+  {
+    "SkillBehaviourActionId": 1449,
+    "SkillPower": 1449
+  },
+  {
+    "SkillBehaviourActionId": 1450,
+    "SkillPower": 1450
+  },
+  {
+    "SkillBehaviourActionId": 1452,
+    "SkillPower": 1452
+  },
+  {
+    "SkillBehaviourActionId": 1455,
+    "SkillPower": 1455
+  },
+  {
+    "SkillBehaviourActionId": 1458,
+    "SkillPower": 1458
+  },
+  {
+    "SkillBehaviourActionId": 1460,
+    "SkillPower": 1460
+  },
+  {
+    "SkillBehaviourActionId": 1462,
+    "SkillPower": 1462
+  },
+  {
+    "SkillBehaviourActionId": 1468,
+    "SkillPower": 1468
+  },
+  {
+    "SkillBehaviourActionId": 1470,
+    "SkillPower": 1470
+  },
+  {
+    "SkillBehaviourActionId": 1472,
+    "SkillPower": 1472
+  },
+  {
+    "SkillBehaviourActionId": 1476,
+    "SkillPower": 1476
+  },
+  {
+    "SkillBehaviourActionId": 1480,
+    "SkillPower": 1480
+  },
+  {
+    "SkillBehaviourActionId": 1483,
+    "SkillPower": 1483
+  },
+  {
+    "SkillBehaviourActionId": 1484,
+    "SkillPower": 1484
+  },
+  {
+    "SkillBehaviourActionId": 1488,
+    "SkillPower": 1488
+  },
+  {
+    "SkillBehaviourActionId": 1490,
+    "SkillPower": 1490
+  },
+  {
+    "SkillBehaviourActionId": 1494,
+    "SkillPower": 1494
+  },
+  {
+    "SkillBehaviourActionId": 1500,
+    "SkillPower": 1500
+  },
+  {
+    "SkillBehaviourActionId": 1501,
+    "SkillPower": 1501
+  },
+  {
+    "SkillBehaviourActionId": 1502,
+    "SkillPower": 1502
+  },
+  {
+    "SkillBehaviourActionId": 1505,
+    "SkillPower": 1505
+  },
+  {
+    "SkillBehaviourActionId": 1507,
+    "SkillPower": 1507
+  },
+  {
+    "SkillBehaviourActionId": 1508,
+    "SkillPower": 1508
+  },
+  {
+    "SkillBehaviourActionId": 1512,
+    "SkillPower": 1512
+  },
+  {
+    "SkillBehaviourActionId": 1513,
+    "SkillPower": 1513
+  },
+  {
+    "SkillBehaviourActionId": 1515,
+    "SkillPower": 1515
+  },
+  {
+    "SkillBehaviourActionId": 1520,
+    "SkillPower": 1520
+  },
+  {
+    "SkillBehaviourActionId": 1527,
+    "SkillPower": 1527
+  },
+  {
+    "SkillBehaviourActionId": 1530,
+    "SkillPower": 1530
+  },
+  {
+    "SkillBehaviourActionId": 1532,
+    "SkillPower": 1532
+  },
+  {
+    "SkillBehaviourActionId": 1533,
+    "SkillPower": 1533
+  },
+  {
+    "SkillBehaviourActionId": 1539,
+    "SkillPower": 1539
+  },
+  {
+    "SkillBehaviourActionId": 1540,
+    "SkillPower": 1540
+  },
+  {
+    "SkillBehaviourActionId": 1541,
+    "SkillPower": 1541
+  },
+  {
+    "SkillBehaviourActionId": 1548,
+    "SkillPower": 1548
+  },
+  {
+    "SkillBehaviourActionId": 1550,
+    "SkillPower": 1550
+  },
+  {
+    "SkillBehaviourActionId": 1557,
+    "SkillPower": 1557
+  },
+  {
+    "SkillBehaviourActionId": 1560,
+    "SkillPower": 1560
+  },
+  {
+    "SkillBehaviourActionId": 1562,
+    "SkillPower": 1562
+  },
+  {
+    "SkillBehaviourActionId": 1564,
+    "SkillPower": 1564
+  },
+  {
+    "SkillBehaviourActionId": 1566,
+    "SkillPower": 1566
+  },
+  {
+    "SkillBehaviourActionId": 1569,
+    "SkillPower": 1569
+  },
+  {
+    "SkillBehaviourActionId": 1570,
+    "SkillPower": 1570
+  },
+  {
+    "SkillBehaviourActionId": 1574,
+    "SkillPower": 1574
+  },
+  {
+    "SkillBehaviourActionId": 1575,
+    "SkillPower": 1575
+  },
+  {
+    "SkillBehaviourActionId": 1580,
+    "SkillPower": 1580
+  },
+  {
+    "SkillBehaviourActionId": 1583,
+    "SkillPower": 1583
+  },
+  {
+    "SkillBehaviourActionId": 1584,
+    "SkillPower": 1584
+  },
+  {
+    "SkillBehaviourActionId": 1590,
+    "SkillPower": 1590
+  },
+  {
+    "SkillBehaviourActionId": 1599,
+    "SkillPower": 1599
+  },
+  {
+    "SkillBehaviourActionId": 1600,
+    "SkillPower": 1600
+  },
+  {
+    "SkillBehaviourActionId": 1602,
+    "SkillPower": 1602
+  },
+  {
+    "SkillBehaviourActionId": 1608,
+    "SkillPower": 1608
+  },
+  {
+    "SkillBehaviourActionId": 1610,
+    "SkillPower": 1610
+  },
+  {
+    "SkillBehaviourActionId": 1612,
+    "SkillPower": 1612
+  },
+  {
+    "SkillBehaviourActionId": 1615,
+    "SkillPower": 1615
+  },
+  {
+    "SkillBehaviourActionId": 1617,
+    "SkillPower": 1617
+  },
+  {
+    "SkillBehaviourActionId": 1620,
+    "SkillPower": 1620
+  },
+  {
+    "SkillBehaviourActionId": 1630,
+    "SkillPower": 1630
+  },
+  {
+    "SkillBehaviourActionId": 1631,
+    "SkillPower": 1631
+  },
+  {
+    "SkillBehaviourActionId": 1632,
+    "SkillPower": 1632
+  },
+  {
+    "SkillBehaviourActionId": 1635,
+    "SkillPower": 1635
+  },
+  {
+    "SkillBehaviourActionId": 1637,
+    "SkillPower": 1637
+  },
+  {
+    "SkillBehaviourActionId": 1638,
+    "SkillPower": 1638
+  },
+  {
+    "SkillBehaviourActionId": 1640,
+    "SkillPower": 1640
+  },
+  {
+    "SkillBehaviourActionId": 1642,
+    "SkillPower": 1642
+  },
+  {
+    "SkillBehaviourActionId": 1650,
+    "SkillPower": 1650
+  },
+  {
+    "SkillBehaviourActionId": 1653,
+    "SkillPower": 1653
+  },
+  {
+    "SkillBehaviourActionId": 1656,
+    "SkillPower": 1656
+  },
+  {
+    "SkillBehaviourActionId": 1659,
+    "SkillPower": 1659
+  },
+  {
+    "SkillBehaviourActionId": 1660,
+    "SkillPower": 1660
+  },
+  {
+    "SkillBehaviourActionId": 1662,
+    "SkillPower": 1662
+  },
+  {
+    "SkillBehaviourActionId": 1666,
+    "SkillPower": 1666
+  },
+  {
+    "SkillBehaviourActionId": 1670,
+    "SkillPower": 1670
+  },
+  {
+    "SkillBehaviourActionId": 1674,
+    "SkillPower": 1674
+  },
+  {
+    "SkillBehaviourActionId": 1675,
+    "SkillPower": 1675
+  },
+  {
+    "SkillBehaviourActionId": 1676,
+    "SkillPower": 1676
+  },
+  {
+    "SkillBehaviourActionId": 1680,
+    "SkillPower": 1680
+  },
+  {
+    "SkillBehaviourActionId": 1683,
+    "SkillPower": 1683
+  },
+  {
+    "SkillBehaviourActionId": 1687,
+    "SkillPower": 1687
+  },
+  {
+    "SkillBehaviourActionId": 1692,
+    "SkillPower": 1692
+  },
+  {
+    "SkillBehaviourActionId": 1694,
+    "SkillPower": 1694
+  },
+  {
+    "SkillBehaviourActionId": 1695,
+    "SkillPower": 1695
+  },
+  {
+    "SkillBehaviourActionId": 1700,
+    "SkillPower": 1700
+  },
+  {
+    "SkillBehaviourActionId": 1701,
+    "SkillPower": 1701
+  },
+  {
+    "SkillBehaviourActionId": 1710,
+    "SkillPower": 1710
+  },
+  {
+    "SkillBehaviourActionId": 1712,
+    "SkillPower": 1712
+  },
+  {
+    "SkillBehaviourActionId": 1716,
+    "SkillPower": 1716
+  },
+  {
+    "SkillBehaviourActionId": 1720,
+    "SkillPower": 1720
+  },
+  {
+    "SkillBehaviourActionId": 1730,
+    "SkillPower": 1730
+  },
+  {
+    "SkillBehaviourActionId": 1732,
+    "SkillPower": 1732
+  },
+  {
+    "SkillBehaviourActionId": 1736,
+    "SkillPower": 1736
+  },
+  {
+    "SkillBehaviourActionId": 1740,
+    "SkillPower": 1740
+  },
+  {
+    "SkillBehaviourActionId": 1741,
+    "SkillPower": 1741
+  },
+  {
+    "SkillBehaviourActionId": 1742,
+    "SkillPower": 1742
+  },
+  {
+    "SkillBehaviourActionId": 1743,
+    "SkillPower": 1743
+  },
+  {
+    "SkillBehaviourActionId": 1746,
+    "SkillPower": 1746
+  },
+  {
+    "SkillBehaviourActionId": 1750,
+    "SkillPower": 1750
+  },
+  {
+    "SkillBehaviourActionId": 1755,
+    "SkillPower": 1755
+  },
+  {
+    "SkillBehaviourActionId": 1760,
+    "SkillPower": 1760
+  },
+  {
+    "SkillBehaviourActionId": 1767,
+    "SkillPower": 1767
+  },
+  {
+    "SkillBehaviourActionId": 1770,
+    "SkillPower": 1770
+  },
+  {
+    "SkillBehaviourActionId": 1777,
+    "SkillPower": 1777
+  },
+  {
+    "SkillBehaviourActionId": 1780,
+    "SkillPower": 1780
+  },
+  {
+    "SkillBehaviourActionId": 1782,
+    "SkillPower": 1782
+  },
+  {
+    "SkillBehaviourActionId": 1787,
+    "SkillPower": 1787
+  },
+  {
+    "SkillBehaviourActionId": 1790,
+    "SkillPower": 1790
+  },
+  {
+    "SkillBehaviourActionId": 1794,
+    "SkillPower": 1794
+  },
+  {
+    "SkillBehaviourActionId": 1799,
+    "SkillPower": 1799
+  },
+  {
+    "SkillBehaviourActionId": 1800,
+    "SkillPower": 1800
+  },
+  {
+    "SkillBehaviourActionId": 1803,
+    "SkillPower": 1803
+  },
+  {
+    "SkillBehaviourActionId": 1806,
+    "SkillPower": 1806
+  },
+  {
+    "SkillBehaviourActionId": 1810,
+    "SkillPower": 1810
+  },
+  {
+    "SkillBehaviourActionId": 1811,
+    "SkillPower": 1811
+  },
+  {
+    "SkillBehaviourActionId": 1815,
+    "SkillPower": 1815
+  },
+  {
+    "SkillBehaviourActionId": 1819,
+    "SkillPower": 1819
+  },
+  {
+    "SkillBehaviourActionId": 1820,
+    "SkillPower": 1820
+  },
+  {
+    "SkillBehaviourActionId": 1822,
+    "SkillPower": 1822
+  },
+  {
+    "SkillBehaviourActionId": 1823,
+    "SkillPower": 1823
+  },
+  {
+    "SkillBehaviourActionId": 1825,
+    "SkillPower": 1825
+  },
+  {
+    "SkillBehaviourActionId": 1830,
+    "SkillPower": 1830
+  },
+  {
+    "SkillBehaviourActionId": 1840,
+    "SkillPower": 1840
+  },
+  {
+    "SkillBehaviourActionId": 1842,
+    "SkillPower": 1842
+  },
+  {
+    "SkillBehaviourActionId": 1843,
+    "SkillPower": 1843
+  },
+  {
+    "SkillBehaviourActionId": 1845,
+    "SkillPower": 1845
+  },
+  {
+    "SkillBehaviourActionId": 1847,
+    "SkillPower": 1847
+  },
+  {
+    "SkillBehaviourActionId": 1848,
+    "SkillPower": 1848
+  },
+  {
+    "SkillBehaviourActionId": 1850,
+    "SkillPower": 1850
+  },
+  {
+    "SkillBehaviourActionId": 1860,
+    "SkillPower": 1860
+  },
+  {
+    "SkillBehaviourActionId": 1864,
+    "SkillPower": 1864
+  },
+  {
+    "SkillBehaviourActionId": 1867,
+    "SkillPower": 1867
+  },
+  {
+    "SkillBehaviourActionId": 1869,
+    "SkillPower": 1869
+  },
+  {
+    "SkillBehaviourActionId": 1870,
+    "SkillPower": 1870
+  },
+  {
+    "SkillBehaviourActionId": 1872,
+    "SkillPower": 1872
+  },
+  {
+    "SkillBehaviourActionId": 1875,
+    "SkillPower": 1875
+  },
+  {
+    "SkillBehaviourActionId": 1879,
+    "SkillPower": 1879
+  },
+  {
+    "SkillBehaviourActionId": 1881,
+    "SkillPower": 1881
+  },
+  {
+    "SkillBehaviourActionId": 1890,
+    "SkillPower": 1890
+  },
+  {
+    "SkillBehaviourActionId": 1892,
+    "SkillPower": 1892
+  },
+  {
+    "SkillBehaviourActionId": 1896,
+    "SkillPower": 1896
+  },
+  {
+    "SkillBehaviourActionId": 1900,
+    "SkillPower": 1900
+  },
+  {
+    "SkillBehaviourActionId": 1903,
+    "SkillPower": 1903
+  },
+  {
+    "SkillBehaviourActionId": 1910,
+    "SkillPower": 1910
+  },
+  {
+    "SkillBehaviourActionId": 1912,
+    "SkillPower": 1912
+  },
+  {
+    "SkillBehaviourActionId": 1913,
+    "SkillPower": 1913
+  },
+  {
+    "SkillBehaviourActionId": 1915,
+    "SkillPower": 1915
+  },
+  {
+    "SkillBehaviourActionId": 1918,
+    "SkillPower": 1918
+  },
+  {
+    "SkillBehaviourActionId": 1920,
+    "SkillPower": 1920
+  },
+  {
+    "SkillBehaviourActionId": 1925,
+    "SkillPower": 1925
+  },
+  {
+    "SkillBehaviourActionId": 1930,
+    "SkillPower": 1930
+  },
+  {
+    "SkillBehaviourActionId": 1932,
+    "SkillPower": 1932
+  },
+  {
+    "SkillBehaviourActionId": 1935,
+    "SkillPower": 1935
+  },
+  {
+    "SkillBehaviourActionId": 1940,
+    "SkillPower": 1940
+  },
+  {
+    "SkillBehaviourActionId": 1950,
+    "SkillPower": 1950
+  },
+  {
+    "SkillBehaviourActionId": 1955,
+    "SkillPower": 1955
+  },
+  {
+    "SkillBehaviourActionId": 1957,
+    "SkillPower": 1957
+  },
+  {
+    "SkillBehaviourActionId": 1958,
+    "SkillPower": 1958
+  },
+  {
+    "SkillBehaviourActionId": 1960,
+    "SkillPower": 1960
+  },
+  {
+    "SkillBehaviourActionId": 1964,
+    "SkillPower": 1964
+  },
+  {
+    "SkillBehaviourActionId": 1968,
+    "SkillPower": 1968
+  },
+  {
+    "SkillBehaviourActionId": 1975,
+    "SkillPower": 1975
+  },
+  {
+    "SkillBehaviourActionId": 1978,
+    "SkillPower": 1978
+  },
+  {
+    "SkillBehaviourActionId": 1980,
+    "SkillPower": 1980
+  },
+  {
+    "SkillBehaviourActionId": 1984,
+    "SkillPower": 1984
+  },
+  {
+    "SkillBehaviourActionId": 1990,
+    "SkillPower": 1990
+  },
+  {
+    "SkillBehaviourActionId": 1992,
+    "SkillPower": 1992
+  },
+  {
+    "SkillBehaviourActionId": 1995,
+    "SkillPower": 1995
+  },
+  {
+    "SkillBehaviourActionId": 2000,
+    "SkillPower": 2000
+  },
+  {
+    "SkillBehaviourActionId": 2002,
+    "SkillPower": 2002
+  },
+  {
+    "SkillBehaviourActionId": 2003,
+    "SkillPower": 2003
+  },
+  {
+    "SkillBehaviourActionId": 2010,
+    "SkillPower": 2010
+  },
+  {
+    "SkillBehaviourActionId": 2011,
+    "SkillPower": 2011
+  },
+  {
+    "SkillBehaviourActionId": 2016,
+    "SkillPower": 2016
+  },
+  {
+    "SkillBehaviourActionId": 2017,
+    "SkillPower": 2017
+  },
+  {
+    "SkillBehaviourActionId": 2020,
+    "SkillPower": 2020
+  },
+  {
+    "SkillBehaviourActionId": 2024,
+    "SkillPower": 2024
+  },
+  {
+    "SkillBehaviourActionId": 2025,
+    "SkillPower": 2025
+  },
+  {
+    "SkillBehaviourActionId": 2029,
+    "SkillPower": 2029
+  },
+  {
+    "SkillBehaviourActionId": 2030,
+    "SkillPower": 2030
+  },
+  {
+    "SkillBehaviourActionId": 2040,
+    "SkillPower": 2040
+  },
+  {
+    "SkillBehaviourActionId": 2047,
+    "SkillPower": 2047
+  },
+  {
+    "SkillBehaviourActionId": 2050,
+    "SkillPower": 2050
+  },
+  {
+    "SkillBehaviourActionId": 2052,
+    "SkillPower": 2052
+  },
+  {
+    "SkillBehaviourActionId": 2053,
+    "SkillPower": 2053
+  },
+  {
+    "SkillBehaviourActionId": 2055,
+    "SkillPower": 2055
+  },
+  {
+    "SkillBehaviourActionId": 2070,
+    "SkillPower": 2070
+  },
+  {
+    "SkillBehaviourActionId": 2075,
+    "SkillPower": 2075
+  },
+  {
+    "SkillBehaviourActionId": 2079,
+    "SkillPower": 2079
+  },
+  {
+    "SkillBehaviourActionId": 2080,
+    "SkillPower": 2080
+  },
+  {
+    "SkillBehaviourActionId": 2088,
+    "SkillPower": 2088
+  },
+  {
+    "SkillBehaviourActionId": 2090,
+    "SkillPower": 2090
+  },
+  {
+    "SkillBehaviourActionId": 2091,
+    "SkillPower": 2091
+  },
+  {
+    "SkillBehaviourActionId": 2092,
+    "SkillPower": 2092
+  },
+  {
+    "SkillBehaviourActionId": 2099,
+    "SkillPower": 2099
+  },
+  {
+    "SkillBehaviourActionId": 2100,
+    "SkillPower": 2100
+  },
+  {
+    "SkillBehaviourActionId": 2110,
+    "SkillPower": 2110
+  },
+  {
+    "SkillBehaviourActionId": 2115,
+    "SkillPower": 2115
+  },
+  {
+    "SkillBehaviourActionId": 2120,
+    "SkillPower": 2120
+  },
+  {
+    "SkillBehaviourActionId": 2125,
+    "SkillPower": 2125
+  },
+  {
+    "SkillBehaviourActionId": 2128,
+    "SkillPower": 2128
+  },
+  {
+    "SkillBehaviourActionId": 2130,
+    "SkillPower": 2130
+  },
+  {
+    "SkillBehaviourActionId": 2133,
+    "SkillPower": 2133
+  },
+  {
+    "SkillBehaviourActionId": 2136,
+    "SkillPower": 2136
+  },
+  {
+    "SkillBehaviourActionId": 2137,
+    "SkillPower": 2137
+  },
+  {
+    "SkillBehaviourActionId": 2140,
+    "SkillPower": 2140
+  },
+  {
+    "SkillBehaviourActionId": 2142,
+    "SkillPower": 2142
+  },
+  {
+    "SkillBehaviourActionId": 2145,
+    "SkillPower": 2145
+  },
+  {
+    "SkillBehaviourActionId": 2150,
+    "SkillPower": 2150
+  },
+  {
+    "SkillBehaviourActionId": 2173,
+    "SkillPower": 2173
+  },
+  {
+    "SkillBehaviourActionId": 2178,
+    "SkillPower": 2178
+  },
+  {
+    "SkillBehaviourActionId": 2180,
+    "SkillPower": 2180
+  },
+  {
+    "SkillBehaviourActionId": 2182,
+    "SkillPower": 2182
+  },
+  {
+    "SkillBehaviourActionId": 2184,
+    "SkillPower": 2184
+  },
+  {
+    "SkillBehaviourActionId": 2190,
+    "SkillPower": 2190
+  },
+  {
+    "SkillBehaviourActionId": 2192,
+    "SkillPower": 2192
+  },
+  {
+    "SkillBehaviourActionId": 2200,
+    "SkillPower": 2200
+  },
+  {
+    "SkillBehaviourActionId": 2210,
+    "SkillPower": 2210
+  },
+  {
+    "SkillBehaviourActionId": 2214,
+    "SkillPower": 2214
+  },
+  {
+    "SkillBehaviourActionId": 2220,
+    "SkillPower": 2220
+  },
+  {
+    "SkillBehaviourActionId": 2225,
+    "SkillPower": 2225
+  },
+  {
+    "SkillBehaviourActionId": 2230,
+    "SkillPower": 2230
+  },
+  {
+    "SkillBehaviourActionId": 2235,
+    "SkillPower": 2235
+  },
+  {
+    "SkillBehaviourActionId": 2240,
+    "SkillPower": 2240
+  },
+  {
+    "SkillBehaviourActionId": 2242,
+    "SkillPower": 2242
+  },
+  {
+    "SkillBehaviourActionId": 2250,
+    "SkillPower": 2250
+  },
+  {
+    "SkillBehaviourActionId": 2252,
+    "SkillPower": 2252
+  },
+  {
+    "SkillBehaviourActionId": 2256,
+    "SkillPower": 2256
+  },
+  {
+    "SkillBehaviourActionId": 2259,
+    "SkillPower": 2259
+  },
+  {
+    "SkillBehaviourActionId": 2267,
+    "SkillPower": 2267
+  },
+  {
+    "SkillBehaviourActionId": 2268,
+    "SkillPower": 2268
+  },
+  {
+    "SkillBehaviourActionId": 2272,
+    "SkillPower": 2272
+  },
+  {
+    "SkillBehaviourActionId": 2278,
+    "SkillPower": 2278
+  },
+  {
+    "SkillBehaviourActionId": 2280,
+    "SkillPower": 2280
+  },
+  {
+    "SkillBehaviourActionId": 2290,
+    "SkillPower": 2290
+  },
+  {
+    "SkillBehaviourActionId": 2293,
+    "SkillPower": 2293
+  },
+  {
+    "SkillBehaviourActionId": 2300,
+    "SkillPower": 2300
+  },
+  {
+    "SkillBehaviourActionId": 2309,
+    "SkillPower": 2309
+  },
+  {
+    "SkillBehaviourActionId": 2310,
+    "SkillPower": 2310
+  },
+  {
+    "SkillBehaviourActionId": 2320,
+    "SkillPower": 2320
+  },
+  {
+    "SkillBehaviourActionId": 2322,
+    "SkillPower": 2322
+  },
+  {
+    "SkillBehaviourActionId": 2325,
+    "SkillPower": 2325
+  },
+  {
+    "SkillBehaviourActionId": 2326,
+    "SkillPower": 2326
+  },
+  {
+    "SkillBehaviourActionId": 2328,
+    "SkillPower": 2328
+  },
+  {
+    "SkillBehaviourActionId": 2329,
+    "SkillPower": 2329
+  },
+  {
+    "SkillBehaviourActionId": 2330,
+    "SkillPower": 2330
+  },
+  {
+    "SkillBehaviourActionId": 2340,
+    "SkillPower": 2340
+  },
+  {
+    "SkillBehaviourActionId": 2345,
+    "SkillPower": 2345
+  },
+  {
+    "SkillBehaviourActionId": 2360,
+    "SkillPower": 2360
+  },
+  {
+    "SkillBehaviourActionId": 2362,
+    "SkillPower": 2362
+  },
+  {
+    "SkillBehaviourActionId": 2368,
+    "SkillPower": 2368
+  },
+  {
+    "SkillBehaviourActionId": 2370,
+    "SkillPower": 2370
+  },
+  {
+    "SkillBehaviourActionId": 2375,
+    "SkillPower": 2375
+  },
+  {
+    "SkillBehaviourActionId": 2376,
+    "SkillPower": 2376
+  },
+  {
+    "SkillBehaviourActionId": 2379,
+    "SkillPower": 2379
+  },
+  {
+    "SkillBehaviourActionId": 2397,
+    "SkillPower": 2397
+  },
+  {
+    "SkillBehaviourActionId": 2400,
+    "SkillPower": 2400
+  },
+  {
+    "SkillBehaviourActionId": 2420,
+    "SkillPower": 2420
+  },
+  {
+    "SkillBehaviourActionId": 2425,
+    "SkillPower": 2425
+  },
+  {
+    "SkillBehaviourActionId": 2430,
+    "SkillPower": 2430
+  },
+  {
+    "SkillBehaviourActionId": 2431,
+    "SkillPower": 2431
+  },
+  {
+    "SkillBehaviourActionId": 2440,
+    "SkillPower": 2440
+  },
+  {
+    "SkillBehaviourActionId": 2444,
+    "SkillPower": 2444
+  },
+  {
+    "SkillBehaviourActionId": 2449,
+    "SkillPower": 2449
+  },
+  {
+    "SkillBehaviourActionId": 2450,
+    "SkillPower": 2450
+  },
+  {
+    "SkillBehaviourActionId": 2452,
+    "SkillPower": 2452
+  },
+  {
+    "SkillBehaviourActionId": 2457,
+    "SkillPower": 2457
+  },
+  {
+    "SkillBehaviourActionId": 2459,
+    "SkillPower": 2459
+  },
+  {
+    "SkillBehaviourActionId": 2460,
+    "SkillPower": 2460
+  },
+  {
+    "SkillBehaviourActionId": 2470,
+    "SkillPower": 2470
+  },
+  {
+    "SkillBehaviourActionId": 2475,
+    "SkillPower": 2475
+  },
+  {
+    "SkillBehaviourActionId": 2480,
+    "SkillPower": 2480
+  },
+  {
+    "SkillBehaviourActionId": 2482,
+    "SkillPower": 2482
+  },
+  {
+    "SkillBehaviourActionId": 2490,
+    "SkillPower": 2490
+  },
+  {
+    "SkillBehaviourActionId": 2500,
+    "SkillPower": 2500
+  },
+  {
+    "SkillBehaviourActionId": 2502,
+    "SkillPower": 2502
+  },
+  {
+    "SkillBehaviourActionId": 2520,
+    "SkillPower": 2520
+  },
+  {
+    "SkillBehaviourActionId": 2525,
+    "SkillPower": 2525
+  },
+  {
+    "SkillBehaviourActionId": 2538,
+    "SkillPower": 2538
+  },
+  {
+    "SkillBehaviourActionId": 2542,
+    "SkillPower": 2542
+  },
+  {
+    "SkillBehaviourActionId": 2546,
+    "SkillPower": 2546
+  },
+  {
+    "SkillBehaviourActionId": 2550,
+    "SkillPower": 2550
+  },
+  {
+    "SkillBehaviourActionId": 2555,
+    "SkillPower": 2555
+  },
+  {
+    "SkillBehaviourActionId": 2570,
+    "SkillPower": 2570
+  },
+  {
+    "SkillBehaviourActionId": 2580,
+    "SkillPower": 2580
+  },
+  {
+    "SkillBehaviourActionId": 2590,
+    "SkillPower": 2590
+  },
+  {
+    "SkillBehaviourActionId": 2600,
+    "SkillPower": 2600
+  },
+  {
+    "SkillBehaviourActionId": 2603,
+    "SkillPower": 2603
+  },
+  {
+    "SkillBehaviourActionId": 2618,
+    "SkillPower": 2618
+  },
+  {
+    "SkillBehaviourActionId": 2619,
+    "SkillPower": 2619
+  },
+  {
+    "SkillBehaviourActionId": 2620,
+    "SkillPower": 2620
+  },
+  {
+    "SkillBehaviourActionId": 2625,
+    "SkillPower": 2625
+  },
+  {
+    "SkillBehaviourActionId": 2632,
+    "SkillPower": 2632
+  },
+  {
+    "SkillBehaviourActionId": 2640,
+    "SkillPower": 2640
+  },
+  {
+    "SkillBehaviourActionId": 2650,
+    "SkillPower": 2650
+  },
+  {
+    "SkillBehaviourActionId": 2660,
+    "SkillPower": 2660
+  },
+  {
+    "SkillBehaviourActionId": 2670,
+    "SkillPower": 2670
+  },
+  {
+    "SkillBehaviourActionId": 2680,
+    "SkillPower": 2680
+  },
+  {
+    "SkillBehaviourActionId": 2686,
+    "SkillPower": 2686
+  },
+  {
+    "SkillBehaviourActionId": 2690,
+    "SkillPower": 2690
+  },
+  {
+    "SkillBehaviourActionId": 2695,
+    "SkillPower": 2695
+  },
+  {
+    "SkillBehaviourActionId": 2700,
+    "SkillPower": 2700
+  },
+  {
+    "SkillBehaviourActionId": 2710,
+    "SkillPower": 2710
+  },
+  {
+    "SkillBehaviourActionId": 2717,
+    "SkillPower": 2717
+  },
+  {
+    "SkillBehaviourActionId": 2720,
+    "SkillPower": 2720
+  },
+  {
+    "SkillBehaviourActionId": 2722,
+    "SkillPower": 2722
+  },
+  {
+    "SkillBehaviourActionId": 2725,
+    "SkillPower": 2725
+  },
+  {
+    "SkillBehaviourActionId": 2730,
+    "SkillPower": 2730
+  },
+  {
+    "SkillBehaviourActionId": 2736,
+    "SkillPower": 2736
+  },
+  {
+    "SkillBehaviourActionId": 2740,
+    "SkillPower": 2740
+  },
+  {
+    "SkillBehaviourActionId": 2750,
+    "SkillPower": 2750
+  },
+  {
+    "SkillBehaviourActionId": 2754,
+    "SkillPower": 2754
+  },
+  {
+    "SkillBehaviourActionId": 2760,
+    "SkillPower": 2760
+  },
+  {
+    "SkillBehaviourActionId": 2765,
+    "SkillPower": 2765
+  },
+  {
+    "SkillBehaviourActionId": 2770,
+    "SkillPower": 2770
+  },
+  {
+    "SkillBehaviourActionId": 2772,
+    "SkillPower": 2772
+  },
+  {
+    "SkillBehaviourActionId": 2774,
+    "SkillPower": 2774
+  },
+  {
+    "SkillBehaviourActionId": 2780,
+    "SkillPower": 2780
+  },
+  {
+    "SkillBehaviourActionId": 2800,
+    "SkillPower": 2800
+  },
+  {
+    "SkillBehaviourActionId": 2808,
+    "SkillPower": 2808
+  },
+  {
+    "SkillBehaviourActionId": 2810,
+    "SkillPower": 2810
+  },
+  {
+    "SkillBehaviourActionId": 2812,
+    "SkillPower": 2812
+  },
+  {
+    "SkillBehaviourActionId": 2820,
+    "SkillPower": 2820
+  },
+  {
+    "SkillBehaviourActionId": 2822,
+    "SkillPower": 2822
+  },
+  {
+    "SkillBehaviourActionId": 2825,
+    "SkillPower": 2825
+  },
+  {
+    "SkillBehaviourActionId": 2835,
+    "SkillPower": 2835
+  },
+  {
+    "SkillBehaviourActionId": 2844,
+    "SkillPower": 2844
+  },
+  {
+    "SkillBehaviourActionId": 2850,
+    "SkillPower": 2850
+  },
+  {
+    "SkillBehaviourActionId": 2860,
+    "SkillPower": 2860
+  },
+  {
+    "SkillBehaviourActionId": 2870,
+    "SkillPower": 2870
+  },
+  {
+    "SkillBehaviourActionId": 2887,
+    "SkillPower": 2887
+  },
+  {
+    "SkillBehaviourActionId": 2890,
+    "SkillPower": 2890
+  },
+  {
+    "SkillBehaviourActionId": 2898,
+    "SkillPower": 2898
+  },
+  {
+    "SkillBehaviourActionId": 2900,
+    "SkillPower": 2900
+  },
+  {
+    "SkillBehaviourActionId": 2902,
+    "SkillPower": 2902
+  },
+  {
+    "SkillBehaviourActionId": 2905,
+    "SkillPower": 2905
+  },
+  {
+    "SkillBehaviourActionId": 2920,
+    "SkillPower": 2920
+  },
+  {
+    "SkillBehaviourActionId": 2924,
+    "SkillPower": 2924
+  },
+  {
+    "SkillBehaviourActionId": 2925,
+    "SkillPower": 2925
+  },
+  {
+    "SkillBehaviourActionId": 2926,
+    "SkillPower": 2926
+  },
+  {
+    "SkillBehaviourActionId": 2940,
+    "SkillPower": 2940
+  },
+  {
+    "SkillBehaviourActionId": 2950,
+    "SkillPower": 2950
+  },
+  {
+    "SkillBehaviourActionId": 2952,
+    "SkillPower": 2952
+  },
+  {
+    "SkillBehaviourActionId": 2970,
+    "SkillPower": 2970
+  },
+  {
+    "SkillBehaviourActionId": 2980,
+    "SkillPower": 2980
+  },
+  {
+    "SkillBehaviourActionId": 2990,
+    "SkillPower": 2990
+  },
+  {
+    "SkillBehaviourActionId": 2992,
+    "SkillPower": 2992
+  },
+  {
+    "SkillBehaviourActionId": 3000,
+    "SkillPower": 3000
+  },
+  {
+    "SkillBehaviourActionId": 3002,
+    "SkillPower": 3002
+  },
+  {
+    "SkillBehaviourActionId": 3005,
+    "SkillPower": 3005
+  },
+  {
+    "SkillBehaviourActionId": 3010,
+    "SkillPower": 3010
+  },
+  {
+    "SkillBehaviourActionId": 3015,
+    "SkillPower": 3015
+  },
+  {
+    "SkillBehaviourActionId": 3025,
+    "SkillPower": 3025
+  },
+  {
+    "SkillBehaviourActionId": 3026,
+    "SkillPower": 3026
+  },
+  {
+    "SkillBehaviourActionId": 3037,
+    "SkillPower": 3037
+  },
+  {
+    "SkillBehaviourActionId": 3040,
+    "SkillPower": 3040
+  },
+  {
+    "SkillBehaviourActionId": 3060,
+    "SkillPower": 3060
+  },
+  {
+    "SkillBehaviourActionId": 3078,
+    "SkillPower": 3078
+  },
+  {
+    "SkillBehaviourActionId": 3080,
+    "SkillPower": 3080
+  },
+  {
+    "SkillBehaviourActionId": 3082,
+    "SkillPower": 3082
+  },
+  {
+    "SkillBehaviourActionId": 3100,
+    "SkillPower": 3100
+  },
+  {
+    "SkillBehaviourActionId": 3110,
+    "SkillPower": 3110
+  },
+  {
+    "SkillBehaviourActionId": 3115,
+    "SkillPower": 3115
+  },
+  {
+    "SkillBehaviourActionId": 3120,
+    "SkillPower": 3120
+  },
+  {
+    "SkillBehaviourActionId": 3125,
+    "SkillPower": 3125
+  },
+  {
+    "SkillBehaviourActionId": 3128,
+    "SkillPower": 3128
+  },
+  {
+    "SkillBehaviourActionId": 3130,
+    "SkillPower": 3130
+  },
+  {
+    "SkillBehaviourActionId": 3132,
+    "SkillPower": 3132
+  },
+  {
+    "SkillBehaviourActionId": 3149,
+    "SkillPower": 3149
+  },
+  {
+    "SkillBehaviourActionId": 3150,
+    "SkillPower": 3150
+  },
+  {
+    "SkillBehaviourActionId": 3154,
+    "SkillPower": 3154
+  },
+  {
+    "SkillBehaviourActionId": 3160,
+    "SkillPower": 3160
+  },
+  {
+    "SkillBehaviourActionId": 3187,
+    "SkillPower": 3187
+  },
+  {
+    "SkillBehaviourActionId": 3190,
+    "SkillPower": 3190
+  },
+  {
+    "SkillBehaviourActionId": 3200,
+    "SkillPower": 3200
+  },
+  {
+    "SkillBehaviourActionId": 3204,
+    "SkillPower": 3204
+  },
+  {
+    "SkillBehaviourActionId": 3217,
+    "SkillPower": 3217
+  },
+  {
+    "SkillBehaviourActionId": 3220,
+    "SkillPower": 3220
+  },
+  {
+    "SkillBehaviourActionId": 3225,
+    "SkillPower": 3225
+  },
+  {
+    "SkillBehaviourActionId": 3230,
+    "SkillPower": 3230
+  },
+  {
+    "SkillBehaviourActionId": 3250,
+    "SkillPower": 3250
+  },
+  {
+    "SkillBehaviourActionId": 3268,
+    "SkillPower": 3268
+  },
+  {
+    "SkillBehaviourActionId": 3270,
+    "SkillPower": 3270
+  },
+  {
+    "SkillBehaviourActionId": 3275,
+    "SkillPower": 3275
+  },
+  {
+    "SkillBehaviourActionId": 3280,
+    "SkillPower": 3280
+  },
+  {
+    "SkillBehaviourActionId": 3285,
+    "SkillPower": 3285
+  },
+  {
+    "SkillBehaviourActionId": 3300,
+    "SkillPower": 3300
+  },
+  {
+    "SkillBehaviourActionId": 3310,
+    "SkillPower": 3310
+  },
+  {
+    "SkillBehaviourActionId": 3325,
+    "SkillPower": 3325
+  },
+  {
+    "SkillBehaviourActionId": 3337,
+    "SkillPower": 3337
+  },
+  {
+    "SkillBehaviourActionId": 3340,
+    "SkillPower": 3340
+  },
+  {
+    "SkillBehaviourActionId": 3350,
+    "SkillPower": 3350
+  },
+  {
+    "SkillBehaviourActionId": 3352,
+    "SkillPower": 3352
+  },
+  {
+    "SkillBehaviourActionId": 3360,
+    "SkillPower": 3360
+  },
+  {
+    "SkillBehaviourActionId": 3375,
+    "SkillPower": 3375
+  },
+  {
+    "SkillBehaviourActionId": 3382,
+    "SkillPower": 3382
+  },
+  {
+    "SkillBehaviourActionId": 3384,
+    "SkillPower": 3384
+  },
+  {
+    "SkillBehaviourActionId": 3400,
+    "SkillPower": 3400
+  },
+  {
+    "SkillBehaviourActionId": 3420,
+    "SkillPower": 3420
+  },
+  {
+    "SkillBehaviourActionId": 3425,
+    "SkillPower": 3425
+  },
+  {
+    "SkillBehaviourActionId": 3440,
+    "SkillPower": 3440
+  },
+  {
+    "SkillBehaviourActionId": 3450,
+    "SkillPower": 3450
+  },
+  {
+    "SkillBehaviourActionId": 3465,
+    "SkillPower": 3465
+  },
+  {
+    "SkillBehaviourActionId": 3470,
+    "SkillPower": 3470
+  },
+  {
+    "SkillBehaviourActionId": 3487,
+    "SkillPower": 3487
+  },
+  {
+    "SkillBehaviourActionId": 3490,
+    "SkillPower": 3490
+  },
+  {
+    "SkillBehaviourActionId": 3492,
+    "SkillPower": 3492
+  },
+  {
+    "SkillBehaviourActionId": 3496,
+    "SkillPower": 3496
+  },
+  {
+    "SkillBehaviourActionId": 3500,
+    "SkillPower": 3500
+  },
+  {
+    "SkillBehaviourActionId": 3510,
+    "SkillPower": 3510
+  },
+  {
+    "SkillBehaviourActionId": 3520,
+    "SkillPower": 3520
+  },
+  {
+    "SkillBehaviourActionId": 3555,
+    "SkillPower": 3555
+  },
+  {
+    "SkillBehaviourActionId": 3560,
+    "SkillPower": 3560
+  },
+  {
+    "SkillBehaviourActionId": 3575,
+    "SkillPower": 3575
+  },
+  {
+    "SkillBehaviourActionId": 3600,
+    "SkillPower": 3600
+  },
+  {
+    "SkillBehaviourActionId": 3610,
+    "SkillPower": 3610
+  },
+  {
+    "SkillBehaviourActionId": 3620,
+    "SkillPower": 3620
+  },
+  {
+    "SkillBehaviourActionId": 3637,
+    "SkillPower": 3637
+  },
+  {
+    "SkillBehaviourActionId": 3645,
+    "SkillPower": 3645
+  },
+  {
+    "SkillBehaviourActionId": 3650,
+    "SkillPower": 3650
+  },
+  {
+    "SkillBehaviourActionId": 3680,
+    "SkillPower": 3680
+  },
+  {
+    "SkillBehaviourActionId": 3690,
+    "SkillPower": 3690
+  },
+  {
+    "SkillBehaviourActionId": 3700,
+    "SkillPower": 3700
+  },
+  {
+    "SkillBehaviourActionId": 3725,
+    "SkillPower": 3725
+  },
+  {
+    "SkillBehaviourActionId": 3735,
+    "SkillPower": 3735
+  },
+  {
+    "SkillBehaviourActionId": 3750,
+    "SkillPower": 3750
+  },
+  {
+    "SkillBehaviourActionId": 3780,
+    "SkillPower": 3780
+  },
+  {
+    "SkillBehaviourActionId": 3787,
+    "SkillPower": 3787
+  },
+  {
+    "SkillBehaviourActionId": 3790,
+    "SkillPower": 3790
+  },
+  {
+    "SkillBehaviourActionId": 3796,
+    "SkillPower": 3796
+  },
+  {
+    "SkillBehaviourActionId": 3800,
+    "SkillPower": 3800
+  },
+  {
+    "SkillBehaviourActionId": 3820,
+    "SkillPower": 3820
+  },
+  {
+    "SkillBehaviourActionId": 3850,
+    "SkillPower": 3850
+  },
+  {
+    "SkillBehaviourActionId": 3870,
+    "SkillPower": 3870
+  },
+  {
+    "SkillBehaviourActionId": 3881,
+    "SkillPower": 3881
+  },
+  {
+    "SkillBehaviourActionId": 3900,
+    "SkillPower": 3900
+  },
+  {
+    "SkillBehaviourActionId": 3930,
+    "SkillPower": 3930
+  },
+  {
+    "SkillBehaviourActionId": 3937,
+    "SkillPower": 3937
+  },
+  {
+    "SkillBehaviourActionId": 3950,
+    "SkillPower": 3950
+  },
+  {
+    "SkillBehaviourActionId": 3960,
+    "SkillPower": 3960
+  },
+  {
+    "SkillBehaviourActionId": 3966,
+    "SkillPower": 3966
+  },
+  {
+    "SkillBehaviourActionId": 3990,
+    "SkillPower": 3990
+  },
+  {
+    "SkillBehaviourActionId": 4000,
+    "SkillPower": 4000
+  },
+  {
+    "SkillBehaviourActionId": 4005,
+    "SkillPower": 4005
+  },
+  {
+    "SkillBehaviourActionId": 4050,
+    "SkillPower": 4050
+  },
+  {
+    "SkillBehaviourActionId": 4051,
+    "SkillPower": 4051
+  },
+  {
+    "SkillBehaviourActionId": 4087,
+    "SkillPower": 4087
+  },
+  {
+    "SkillBehaviourActionId": 4100,
+    "SkillPower": 4100
+  },
+  {
+    "SkillBehaviourActionId": 4120,
+    "SkillPower": 4120
+  },
+  {
+    "SkillBehaviourActionId": 4136,
+    "SkillPower": 4136
+  },
+  {
+    "SkillBehaviourActionId": 4140,
+    "SkillPower": 4140
+  },
+  {
+    "SkillBehaviourActionId": 4150,
+    "SkillPower": 4150
+  },
+  {
+    "SkillBehaviourActionId": 4180,
+    "SkillPower": 4180
+  },
+  {
+    "SkillBehaviourActionId": 4200,
+    "SkillPower": 4200
+  },
+  {
+    "SkillBehaviourActionId": 4237,
+    "SkillPower": 4237
+  },
+  {
+    "SkillBehaviourActionId": 4250,
+    "SkillPower": 4250
+  },
+  {
+    "SkillBehaviourActionId": 4275,
+    "SkillPower": 4275
+  },
+  {
+    "SkillBehaviourActionId": 4300,
+    "SkillPower": 4300
+  },
+  {
+    "SkillBehaviourActionId": 4310,
+    "SkillPower": 4310
+  },
+  {
+    "SkillBehaviourActionId": 4350,
+    "SkillPower": 4350
+  },
+  {
+    "SkillBehaviourActionId": 4363,
+    "SkillPower": 4363
+  },
+  {
+    "SkillBehaviourActionId": 4380,
+    "SkillPower": 4380
+  },
+  {
+    "SkillBehaviourActionId": 4387,
+    "SkillPower": 4387
+  },
+  {
+    "SkillBehaviourActionId": 4400,
+    "SkillPower": 4400
+  },
+  {
+    "SkillBehaviourActionId": 4450,
+    "SkillPower": 4450
+  },
+  {
+    "SkillBehaviourActionId": 4476,
+    "SkillPower": 4476
+  },
+  {
+    "SkillBehaviourActionId": 4500,
+    "SkillPower": 4500
+  },
+  {
+    "SkillBehaviourActionId": 4537,
+    "SkillPower": 4537
+  },
+  {
+    "SkillBehaviourActionId": 4580,
+    "SkillPower": 4580
+  },
+  {
+    "SkillBehaviourActionId": 4590,
+    "SkillPower": 4590
+  },
+  {
+    "SkillBehaviourActionId": 4600,
+    "SkillPower": 4600
+  },
+  {
+    "SkillBehaviourActionId": 4680,
+    "SkillPower": 4680
+  },
+  {
+    "SkillBehaviourActionId": 4687,
+    "SkillPower": 4687
+  },
+  {
+    "SkillBehaviourActionId": 4703,
+    "SkillPower": 4703
+  },
+  {
+    "SkillBehaviourActionId": 4750,
+    "SkillPower": 4750
+  },
+  {
+    "SkillBehaviourActionId": 4800,
+    "SkillPower": 4800
+  },
+  {
+    "SkillBehaviourActionId": 4837,
+    "SkillPower": 4837
+  },
+  {
+    "SkillBehaviourActionId": 4873,
+    "SkillPower": 4873
+  },
+  {
+    "SkillBehaviourActionId": 4900,
+    "SkillPower": 4900
+  },
+  {
+    "SkillBehaviourActionId": 4950,
+    "SkillPower": 4950
+  },
+  {
+    "SkillBehaviourActionId": 4987,
+    "SkillPower": 4987
+  },
+  {
+    "SkillBehaviourActionId": 5000,
+    "SkillPower": 5000
+  },
+  {
+    "SkillBehaviourActionId": 5043,
+    "SkillPower": 5043
+  },
+  {
+    "SkillBehaviourActionId": 5137,
+    "SkillPower": 5137
+  },
+  {
+    "SkillBehaviourActionId": 5210,
+    "SkillPower": 5210
+  },
+  {
+    "SkillBehaviourActionId": 5213,
+    "SkillPower": 5213
+  },
+  {
+    "SkillBehaviourActionId": 5250,
+    "SkillPower": 5250
+  },
+  {
+    "SkillBehaviourActionId": 5300,
+    "SkillPower": 5300
+  },
+  {
+    "SkillBehaviourActionId": 5362,
+    "SkillPower": 5362
+  },
+  {
+    "SkillBehaviourActionId": 5383,
+    "SkillPower": 5383
+  },
+  {
+    "SkillBehaviourActionId": 5470,
+    "SkillPower": 5470
+  },
+  {
+    "SkillBehaviourActionId": 5475,
+    "SkillPower": 5475
+  },
+  {
+    "SkillBehaviourActionId": 5500,
+    "SkillPower": 5500
+  },
+  {
+    "SkillBehaviourActionId": 5587,
+    "SkillPower": 5587
+  },
+  {
+    "SkillBehaviourActionId": 5666,
+    "SkillPower": 5666
+  },
+  {
+    "SkillBehaviourActionId": 5695,
+    "SkillPower": 5695
+  },
+  {
+    "SkillBehaviourActionId": 5700,
+    "SkillPower": 5700
+  },
+  {
+    "SkillBehaviourActionId": 5730,
+    "SkillPower": 5730
+  },
+  {
+    "SkillBehaviourActionId": 5822,
+    "SkillPower": 5822
+  },
+  {
+    "SkillBehaviourActionId": 5850,
+    "SkillPower": 5850
+  },
+  {
+    "SkillBehaviourActionId": 5949,
+    "SkillPower": 5949
+  },
+  {
+    "SkillBehaviourActionId": 6000,
+    "SkillPower": 6000
+  },
+  {
+    "SkillBehaviourActionId": 6077,
+    "SkillPower": 6077
+  },
+  {
+    "SkillBehaviourActionId": 6150,
+    "SkillPower": 6150
+  },
+  {
+    "SkillBehaviourActionId": 6205,
+    "SkillPower": 6205
+  },
+  {
+    "SkillBehaviourActionId": 6300,
+    "SkillPower": 6300
+  },
+  {
+    "SkillBehaviourActionId": 6375,
+    "SkillPower": 6375
+  },
+  {
+    "SkillBehaviourActionId": 6450,
+    "SkillPower": 6450
+  },
+  {
+    "SkillBehaviourActionId": 6500,
+    "SkillPower": 6500
+  },
+  {
+    "SkillBehaviourActionId": 6545,
+    "SkillPower": 6545
+  },
+  {
+    "SkillBehaviourActionId": 6600,
+    "SkillPower": 6600
+  },
+  {
+    "SkillBehaviourActionId": 6675,
+    "SkillPower": 6675
+  },
+  {
+    "SkillBehaviourActionId": 6715,
+    "SkillPower": 6715
+  },
+  {
+    "SkillBehaviourActionId": 6885,
+    "SkillPower": 6885
+  },
+  {
+    "SkillBehaviourActionId": 6900,
+    "SkillPower": 6900
+  },
+  {
+    "SkillBehaviourActionId": 7000,
+    "SkillPower": 7000
+  },
+  {
+    "SkillBehaviourActionId": 7055,
+    "SkillPower": 7055
+  },
+  {
+    "SkillBehaviourActionId": 7125,
+    "SkillPower": 7125
+  },
+  {
+    "SkillBehaviourActionId": 7200,
+    "SkillPower": 7200
+  },
+  {
+    "SkillBehaviourActionId": 7310,
+    "SkillPower": 7310
+  },
+  {
+    "SkillBehaviourActionId": 7500,
+    "SkillPower": 7500
+  },
+  {
+    "SkillBehaviourActionId": 7565,
+    "SkillPower": 7565
+  },
+  {
+    "SkillBehaviourActionId": 7820,
+    "SkillPower": 7820
+  },
+  {
+    "SkillBehaviourActionId": 8000,
+    "SkillPower": 8000
+  },
+  {
+    "SkillBehaviourActionId": 8075,
+    "SkillPower": 8075
+  },
+  {
+    "SkillBehaviourActionId": 8500,
+    "SkillPower": 8500
+  },
+  {
+    "SkillBehaviourActionId": 9000,
+    "SkillPower": 9000
+  },
+  {
+    "SkillBehaviourActionId": 10000,
+    "SkillPower": 10000
+  },
+  {
+    "SkillBehaviourActionId": 10400,
+    "SkillPower": 10400
+  },
+  {
+    "SkillBehaviourActionId": 10500,
+    "SkillPower": 10500
+  },
+  {
+    "SkillBehaviourActionId": 12000,
+    "SkillPower": 12000
+  },
+  {
+    "SkillBehaviourActionId": 12800,
+    "SkillPower": 12800
+  },
+  {
+    "SkillBehaviourActionId": 15000,
+    "SkillPower": 15000
+  },
+  {
+    "SkillBehaviourActionId": 15600,
+    "SkillPower": 15600
+  },
+  {
+    "SkillBehaviourActionId": 16000,
+    "SkillPower": 16000
+  },
+  {
+    "SkillBehaviourActionId": 18000,
+    "SkillPower": 18000
+  },
+  {
+    "SkillBehaviourActionId": 19200,
+    "SkillPower": 19200
+  },
+  {
+    "SkillBehaviourActionId": 20000,
+    "SkillPower": 20000
+  },
+  {
+    "SkillBehaviourActionId": 22500,
+    "SkillPower": 22500
+  },
+  {
+    "SkillBehaviourActionId": 24000,
+    "SkillPower": 24000
+  },
+  {
+    "SkillBehaviourActionId": 25000,
+    "SkillPower": 25000
+  },
+  {
+    "SkillBehaviourActionId": 30000,
+    "SkillPower": 30000
+  },
+  {
+    "SkillBehaviourActionId": 35000,
+    "SkillPower": 35000
+  },
+  {
+    "SkillBehaviourActionId": 40000,
+    "SkillPower": 40000
+  },
+  {
+    "SkillBehaviourActionId": 45000,
+    "SkillPower": 45000
+  },
+  {
+    "SkillBehaviourActionId": 50000,
+    "SkillPower": 50000
+  },
+  {
+    "SkillBehaviourActionId": 60000,
+    "SkillPower": 60000
+  },
+  {
+    "SkillBehaviourActionId": 75000,
+    "SkillPower": 75000
+  },
+  {
+    "SkillBehaviourActionId": 100000,
+    "SkillPower": 100000
+  },
+  {
+    "SkillBehaviourActionId": 900001,
+    "SkillPower": 1000
+  },
+  {
+    "SkillBehaviourActionId": 900002,
+    "SkillPower": 1000
+  },
+  {
+    "SkillBehaviourActionId": 900003,
+    "SkillPower": 1000
+  },
+  {
+    "SkillBehaviourActionId": 900004,
+    "SkillPower": 1000
+  },
+  {
+    "SkillBehaviourActionId": 900005,
+    "SkillPower": 1000
+  },
+  {
+    "SkillBehaviourActionId": 900006,
+    "SkillPower": 1000
+  },
+  {
+    "SkillBehaviourActionId": 910001,
+    "SkillPower": 2000
+  },
+  {
+    "SkillBehaviourActionId": 910002,
+    "SkillPower": 1500
+  },
+  {
+    "SkillBehaviourActionId": 910003,
+    "SkillPower": 1000
+  },
+  {
+    "SkillBehaviourActionId": 910005,
+    "SkillPower": 600
+  },
+  {
+    "SkillBehaviourActionId": 920001,
+    "SkillPower": 1000
+  },
+  {
+    "SkillBehaviourActionId": 920002,
+    "SkillPower": 1000
+  },
+  {
+    "SkillBehaviourActionId": 999999,
+    "SkillPower": 1000
+  },
+  {
+    "SkillBehaviourActionId": 8000001,
+    "SkillPower": 2000
+  },
+  {
+    "SkillBehaviourActionId": 8000002,
+    "SkillPower": 1000
+  },
+  {
+    "SkillBehaviourActionId": 8000003,
+    "SkillPower": 1000
+  },
+  {
+    "SkillBehaviourActionId": 8000004,
+    "SkillPower": 330
+  },
+  {
+    "SkillBehaviourActionId": 8000005,
+    "SkillPower": 330
+  },
+  {
+    "SkillBehaviourActionId": 8000006,
+    "SkillPower": 330
+  },
+  {
+    "SkillBehaviourActionId": 8000007,
+    "SkillPower": 330
+  },
+  {
+    "SkillBehaviourActionId": 8000008,
+    "SkillPower": 330
+  },
+  {
+    "SkillBehaviourActionId": 8000009,
+    "SkillPower": 330
+  },
+  {
+    "SkillBehaviourActionId": 8000010,
+    "SkillPower": 330
+  },
+  {
+    "SkillBehaviourActionId": 8000011,
+    "SkillPower": 330
+  },
+  {
+    "SkillBehaviourActionId": 8000012,
+    "SkillPower": 300
+  },
+  {
+    "SkillBehaviourActionId": 8000013,
+    "SkillPower": 300
+  },
+  {
+    "SkillBehaviourActionId": 8000014,
+    "SkillPower": 300
+  },
+  {
+    "SkillBehaviourActionId": 8000015,
+    "SkillPower": 300
+  },
+  {
+    "SkillBehaviourActionId": 8000016,
+    "SkillPower": 500
+  },
+  {
+    "SkillBehaviourActionId": 8000017,
+    "SkillPower": 250
+  },
+  {
+    "SkillBehaviourActionId": 8000018,
+    "SkillPower": 500
+  },
+  {
+    "SkillBehaviourActionId": 8000019,
+    "SkillPower": 250
+  },
+  {
+    "SkillBehaviourActionId": 8000020,
+    "SkillPower": 500
+  },
+  {
+    "SkillBehaviourActionId": 8000021,
+    "SkillPower": 250
+  },
+  {
+    "SkillBehaviourActionId": 8000022,
+    "SkillPower": 100000
+  },
+  {
+    "SkillBehaviourActionId": 8000023,
+    "SkillPower": 100000
+  },
+  {
+    "SkillBehaviourActionId": 8000024,
+    "SkillPower": 100000
+  },
+  {
+    "SkillBehaviourActionId": 8000025,
+    "SkillPower": 100000
+  },
+  {
+    "SkillBehaviourActionId": 8000026,
+    "SkillPower": 100000
+  },
+  {
+    "SkillBehaviourActionId": 8000027,
+    "SkillPower": 100000
+  },
+  {
+    "SkillBehaviourActionId": 8000028,
+    "SkillPower": 100000
+  },
+  {
+    "SkillBehaviourActionId": 8000029,
+    "SkillPower": 100000
+  },
+  {
+    "SkillBehaviourActionId": 8000030,
+    "SkillPower": 100000
+  },
+  {
+    "SkillBehaviourActionId": 8000031,
+    "SkillPower": 1000
+  },
+  {
+    "SkillBehaviourActionId": 8000032,
+    "SkillPower": 500
+  },
+  {
+    "SkillBehaviourActionId": 8000033,
+    "SkillPower": 500
+  },
+  {
+    "SkillBehaviourActionId": 8000034,
+    "SkillPower": 500
+  },
+  {
+    "SkillBehaviourActionId": 8000035,
+    "SkillPower": 500
+  },
+  {
+    "SkillBehaviourActionId": 8000036,
+    "SkillPower": 500
+  },
+  {
+    "SkillBehaviourActionId": 8000037,
+    "SkillPower": 500
+  },
+  {
+    "SkillBehaviourActionId": 8000038,
+    "SkillPower": 500
+  },
+  {
+    "SkillBehaviourActionId": 8000039,
+    "SkillPower": 500
+  },
+  {
+    "SkillBehaviourActionId": 8000040,
+    "SkillPower": 500
+  }
+]

@@ -1,0 +1,650 @@
+[
+  {
+    "QuestSceneId": 528,
+    "WaveNumber": 1,
+    "IsDisableBattleStartVoice": true,
+    "IsEnableWhiteFadeout": true,
+    "EnvSeId": 0,
+    "WaveWinSeId": 0,
+    "IsDisablePlayWinTimeline": false
+  },
+  {
+    "QuestSceneId": 531,
+    "WaveNumber": 1,
+    "IsDisableBattleStartVoice": true,
+    "IsEnableWhiteFadeout": true,
+    "EnvSeId": 0,
+    "WaveWinSeId": 0,
+    "IsDisablePlayWinTimeline": false
+  },
+  {
+    "QuestSceneId": 1110,
+    "WaveNumber": 1,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 0,
+    "IsDisablePlayWinTimeline": true
+  },
+  {
+    "QuestSceneId": 1112,
+    "WaveNumber": 1,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 0,
+    "IsDisablePlayWinTimeline": true
+  },
+  {
+    "QuestSceneId": 1710,
+    "WaveNumber": 1,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 0,
+    "IsDisablePlayWinTimeline": true
+  },
+  {
+    "QuestSceneId": 1712,
+    "WaveNumber": 1,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 0,
+    "IsDisablePlayWinTimeline": true
+  },
+  {
+    "QuestSceneId": 2003,
+    "WaveNumber": 1,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 0,
+    "IsDisablePlayWinTimeline": true
+  },
+  {
+    "QuestSceneId": 2008,
+    "WaveNumber": 1,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 0,
+    "IsDisablePlayWinTimeline": true
+  },
+  {
+    "QuestSceneId": 2325,
+    "WaveNumber": 1,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 0,
+    "IsDisablePlayWinTimeline": true
+  },
+  {
+    "QuestSceneId": 2447,
+    "WaveNumber": 1,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 0,
+    "IsDisablePlayWinTimeline": true
+  },
+  {
+    "QuestSceneId": 2464,
+    "WaveNumber": 3,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 0,
+    "IsDisablePlayWinTimeline": true
+  },
+  {
+    "QuestSceneId": 2466,
+    "WaveNumber": 3,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 0,
+    "IsDisablePlayWinTimeline": true
+  },
+  {
+    "QuestSceneId": 2468,
+    "WaveNumber": 1,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 0,
+    "IsDisablePlayWinTimeline": true
+  },
+  {
+    "QuestSceneId": 2472,
+    "WaveNumber": 1,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 0,
+    "IsDisablePlayWinTimeline": true
+  },
+  {
+    "QuestSceneId": 30377,
+    "WaveNumber": 1,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 0,
+    "IsDisablePlayWinTimeline": true
+  },
+  {
+    "QuestSceneId": 30378,
+    "WaveNumber": 1,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 0,
+    "IsDisablePlayWinTimeline": true
+  },
+  {
+    "QuestSceneId": 30477,
+    "WaveNumber": 1,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 0,
+    "IsDisablePlayWinTimeline": true
+  },
+  {
+    "QuestSceneId": 30478,
+    "WaveNumber": 1,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 0,
+    "IsDisablePlayWinTimeline": true
+  },
+  {
+    "QuestSceneId": 30501,
+    "WaveNumber": 1,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 0,
+    "IsDisablePlayWinTimeline": true
+  },
+  {
+    "QuestSceneId": 30502,
+    "WaveNumber": 1,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 0,
+    "IsDisablePlayWinTimeline": true
+  },
+  {
+    "QuestSceneId": 30532,
+    "WaveNumber": 1,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 0,
+    "IsDisablePlayWinTimeline": true
+  },
+  {
+    "QuestSceneId": 30547,
+    "WaveNumber": 1,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 0,
+    "IsDisablePlayWinTimeline": true
+  },
+  {
+    "QuestSceneId": 30549,
+    "WaveNumber": 3,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 0,
+    "IsDisablePlayWinTimeline": true
+  },
+  {
+    "QuestSceneId": 30550,
+    "WaveNumber": 3,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 0,
+    "IsDisablePlayWinTimeline": true
+  },
+  {
+    "QuestSceneId": 30551,
+    "WaveNumber": 1,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 0,
+    "IsDisablePlayWinTimeline": true
+  },
+  {
+    "QuestSceneId": 30552,
+    "WaveNumber": 1,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 0,
+    "IsDisablePlayWinTimeline": true
+  },
+  {
+    "QuestSceneId": 40363,
+    "WaveNumber": 1,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 0,
+    "IsDisablePlayWinTimeline": true
+  },
+  {
+    "QuestSceneId": 40364,
+    "WaveNumber": 1,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 0,
+    "IsDisablePlayWinTimeline": true
+  },
+  {
+    "QuestSceneId": 40463,
+    "WaveNumber": 1,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 0,
+    "IsDisablePlayWinTimeline": true
+  },
+  {
+    "QuestSceneId": 40464,
+    "WaveNumber": 1,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 0,
+    "IsDisablePlayWinTimeline": true
+  },
+  {
+    "QuestSceneId": 40529,
+    "WaveNumber": 1,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 0,
+    "IsDisablePlayWinTimeline": true
+  },
+  {
+    "QuestSceneId": 50363,
+    "WaveNumber": 1,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 0,
+    "IsDisablePlayWinTimeline": true
+  },
+  {
+    "QuestSceneId": 50364,
+    "WaveNumber": 1,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 0,
+    "IsDisablePlayWinTimeline": true
+  },
+  {
+    "QuestSceneId": 50463,
+    "WaveNumber": 1,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 0,
+    "IsDisablePlayWinTimeline": true
+  },
+  {
+    "QuestSceneId": 50464,
+    "WaveNumber": 1,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 0,
+    "IsDisablePlayWinTimeline": true
+  },
+  {
+    "QuestSceneId": 50529,
+    "WaveNumber": 1,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 0,
+    "IsDisablePlayWinTimeline": true
+  },
+  {
+    "QuestSceneId": 200730,
+    "WaveNumber": 3,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 2,
+    "IsDisablePlayWinTimeline": false
+  },
+  {
+    "QuestSceneId": 200731,
+    "WaveNumber": 3,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 2,
+    "IsDisablePlayWinTimeline": false
+  },
+  {
+    "QuestSceneId": 200732,
+    "WaveNumber": 3,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 2,
+    "IsDisablePlayWinTimeline": false
+  },
+  {
+    "QuestSceneId": 200734,
+    "WaveNumber": 3,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 2,
+    "IsDisablePlayWinTimeline": false
+  },
+  {
+    "QuestSceneId": 200735,
+    "WaveNumber": 3,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 2,
+    "IsDisablePlayWinTimeline": false
+  },
+  {
+    "QuestSceneId": 200736,
+    "WaveNumber": 3,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 2,
+    "IsDisablePlayWinTimeline": false
+  },
+  {
+    "QuestSceneId": 200738,
+    "WaveNumber": 3,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 2,
+    "IsDisablePlayWinTimeline": false
+  },
+  {
+    "QuestSceneId": 200739,
+    "WaveNumber": 3,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 2,
+    "IsDisablePlayWinTimeline": false
+  },
+  {
+    "QuestSceneId": 200740,
+    "WaveNumber": 3,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 2,
+    "IsDisablePlayWinTimeline": false
+  },
+  {
+    "QuestSceneId": 200742,
+    "WaveNumber": 1,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 1,
+    "IsDisablePlayWinTimeline": false
+  },
+  {
+    "QuestSceneId": 200743,
+    "WaveNumber": 3,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 2,
+    "IsDisablePlayWinTimeline": false
+  },
+  {
+    "QuestSceneId": 200744,
+    "WaveNumber": 3,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 2,
+    "IsDisablePlayWinTimeline": false
+  },
+  {
+    "QuestSceneId": 200745,
+    "WaveNumber": 3,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 2,
+    "IsDisablePlayWinTimeline": false
+  },
+  {
+    "QuestSceneId": 200746,
+    "WaveNumber": 3,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 2,
+    "IsDisablePlayWinTimeline": false
+  },
+  {
+    "QuestSceneId": 200747,
+    "WaveNumber": 3,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 2,
+    "IsDisablePlayWinTimeline": false
+  },
+  {
+    "QuestSceneId": 200748,
+    "WaveNumber": 3,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 2,
+    "IsDisablePlayWinTimeline": false
+  },
+  {
+    "QuestSceneId": 200749,
+    "WaveNumber": 3,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 2,
+    "IsDisablePlayWinTimeline": false
+  },
+  {
+    "QuestSceneId": 200750,
+    "WaveNumber": 3,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 2,
+    "IsDisablePlayWinTimeline": false
+  },
+  {
+    "QuestSceneId": 200751,
+    "WaveNumber": 3,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 2,
+    "IsDisablePlayWinTimeline": false
+  },
+  {
+    "QuestSceneId": 200752,
+    "WaveNumber": 1,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 1,
+    "IsDisablePlayWinTimeline": false
+  },
+  {
+    "QuestSceneId": 200753,
+    "WaveNumber": 3,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 2,
+    "IsDisablePlayWinTimeline": false
+  },
+  {
+    "QuestSceneId": 200754,
+    "WaveNumber": 3,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 2,
+    "IsDisablePlayWinTimeline": false
+  },
+  {
+    "QuestSceneId": 200755,
+    "WaveNumber": 3,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 2,
+    "IsDisablePlayWinTimeline": false
+  },
+  {
+    "QuestSceneId": 200756,
+    "WaveNumber": 3,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 2,
+    "IsDisablePlayWinTimeline": false
+  },
+  {
+    "QuestSceneId": 200757,
+    "WaveNumber": 3,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 2,
+    "IsDisablePlayWinTimeline": false
+  },
+  {
+    "QuestSceneId": 200758,
+    "WaveNumber": 3,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 2,
+    "IsDisablePlayWinTimeline": false
+  },
+  {
+    "QuestSceneId": 200759,
+    "WaveNumber": 3,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 2,
+    "IsDisablePlayWinTimeline": false
+  },
+  {
+    "QuestSceneId": 200760,
+    "WaveNumber": 3,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 2,
+    "IsDisablePlayWinTimeline": false
+  },
+  {
+    "QuestSceneId": 200761,
+    "WaveNumber": 3,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 2,
+    "IsDisablePlayWinTimeline": false
+  },
+  {
+    "QuestSceneId": 200762,
+    "WaveNumber": 1,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 1,
+    "IsDisablePlayWinTimeline": false
+  },
+  {
+    "QuestSceneId": 200763,
+    "WaveNumber": 1,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 1,
+    "IsDisablePlayWinTimeline": false
+  },
+  {
+    "QuestSceneId": 200764,
+    "WaveNumber": 1,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 1,
+    "IsDisablePlayWinTimeline": false
+  },
+  {
+    "QuestSceneId": 200765,
+    "WaveNumber": 1,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 1,
+    "IsDisablePlayWinTimeline": false
+  },
+  {
+    "QuestSceneId": 200808,
+    "WaveNumber": 1,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 1,
+    "IsDisablePlayWinTimeline": false
+  },
+  {
+    "QuestSceneId": 201460,
+    "WaveNumber": 1,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 1,
+    "IsDisablePlayWinTimeline": false
+  },
+  {
+    "QuestSceneId": 201461,
+    "WaveNumber": 1,
+    "IsDisableBattleStartVoice": false,
+    "IsEnableWhiteFadeout": false,
+    "EnvSeId": 0,
+    "WaveWinSeId": 1,
+    "IsDisablePlayWinTimeline": false
+  }
+]

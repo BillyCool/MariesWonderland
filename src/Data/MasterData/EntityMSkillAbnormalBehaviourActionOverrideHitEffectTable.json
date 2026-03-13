@@ -1,0 +1,79 @@
+[
+  {
+    "SkillAbnormalBehaviourActionId": 900001,
+    "OverrideEffectId": 1080042,
+    "OverrideSeId": 1,
+    "Priority": 1,
+    "DisablePlayHitVoice": true,
+    "PlayOnMiss": true,
+    "ForceRotateOnHit": true,
+    "OverrideHitEffectConditionGroupId": 0,
+    "OverrideHitEffectConditionOperationType": 1
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 900002,
+    "OverrideEffectId": 60,
+    "OverrideSeId": 2,
+    "Priority": 1,
+    "DisablePlayHitVoice": false,
+    "PlayOnMiss": true,
+    "ForceRotateOnHit": false,
+    "OverrideHitEffectConditionGroupId": 1,
+    "OverrideHitEffectConditionOperationType": 1
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 900003,
+    "OverrideEffectId": 60,
+    "OverrideSeId": 2,
+    "Priority": 1,
+    "DisablePlayHitVoice": false,
+    "PlayOnMiss": true,
+    "ForceRotateOnHit": false,
+    "OverrideHitEffectConditionGroupId": 2,
+    "OverrideHitEffectConditionOperationType": 1
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 900004,
+    "OverrideEffectId": 60,
+    "OverrideSeId": 2,
+    "Priority": 1,
+    "DisablePlayHitVoice": false,
+    "PlayOnMiss": true,
+    "ForceRotateOnHit": false,
+    "OverrideHitEffectConditionGroupId": 3,
+    "OverrideHitEffectConditionOperationType": 1
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 900005,
+    "OverrideEffectId": 60,
+    "OverrideSeId": 2,
+    "Priority": 1,
+    "DisablePlayHitVoice": false,
+    "PlayOnMiss": true,
+    "ForceRotateOnHit": false,
+    "OverrideHitEffectConditionGroupId": 4,
+    "OverrideHitEffectConditionOperationType": 1
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 900006,
+    "OverrideEffectId": 60,
+    "OverrideSeId": 2,
+    "Priority": 1,
+    "DisablePlayHitVoice": false,
+    "PlayOnMiss": true,
+    "ForceRotateOnHit": false,
+    "OverrideHitEffectConditionGroupId": 5,
+    "OverrideHitEffectConditionOperationType": 1
+  },
+  {
+    "SkillAbnormalBehaviourActionId": 900007,
+    "OverrideEffectId": 1080122,
+    "OverrideSeId": 1,
+    "Priority": 1,
+    "DisablePlayHitVoice": true,
+    "PlayOnMiss": true,
+    "ForceRotateOnHit": true,
+    "OverrideHitEffectConditionGroupId": 0,
+    "OverrideHitEffectConditionOperationType": 1
+  }
+]

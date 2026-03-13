@@ -1,0 +1,44 @@
+[
+  {
+    "OmikujiId": 1,
+    "StartDatetime": 1640962800000,
+    "EndDatetime": 1641913199000,
+    "OmikujiAssetId": 100
+  },
+  {
+    "OmikujiId": 2,
+    "StartDatetime": 1660834800000,
+    "EndDatetime": 1662649199000,
+    "OmikujiAssetId": 200
+  },
+  {
+    "OmikujiId": 3,
+    "StartDatetime": 1672498800000,
+    "EndDatetime": 1673103599000,
+    "OmikujiAssetId": 300
+  },
+  {
+    "OmikujiId": 4,
+    "StartDatetime": 1676732400000,
+    "EndDatetime": 1677596399000,
+    "OmikujiAssetId": 400
+  },
+  {
+    "OmikujiId": 5,
+    "StartDatetime": 1692370800000,
+    "EndDatetime": 1694444399000,
+    "OmikujiAssetId": 500
+  },
+  {
+    "OmikujiId": 6,
+    "StartDatetime": 1704034800000,
+    "EndDatetime": 1705330799000,
+    "OmikujiAssetId": 600
+  },
+  {
+    "OmikujiId": 7,
+    "StartDatetime": 1708268400000,
+    "EndDatetime": 1709909999000,
+    "OmikujiAssetId": 700
+  }
+]

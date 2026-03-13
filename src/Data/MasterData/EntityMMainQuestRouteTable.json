@@ -1,0 +1,26 @@
+[
+  {
+    "MainQuestRouteId": 1,
+    "MainQuestSeasonId": 1,
+    "SortOrder": 1,
+    "CharacterId": 1004001
+  },
+  {
+    "MainQuestRouteId": 2,
+    "MainQuestSeasonId": 2,
+    "SortOrder": 1,
+    "CharacterId": 1020
+  },
+  {
+    "MainQuestRouteId": 3,
+    "MainQuestSeasonId": 2,
+    "SortOrder": 2,
+    "CharacterId": 1021
+  },
+  {
+    "MainQuestRouteId": 4,
+    "MainQuestSeasonId": 3,
+    "SortOrder": 1,
+    "CharacterId": 1004001
+  }
+]

@@ -1,0 +1,947 @@
+[
+  {
+    "QuestReleaseConditionId": 120001,
+    "CharacterId": 1008,
+    "CharacterLevel": 2
+  },
+  {
+    "QuestReleaseConditionId": 120002,
+    "CharacterId": 1008,
+    "CharacterLevel": 3
+  },
+  {
+    "QuestReleaseConditionId": 120003,
+    "CharacterId": 1008,
+    "CharacterLevel": 4
+  },
+  {
+    "QuestReleaseConditionId": 120004,
+    "CharacterId": 1008,
+    "CharacterLevel": 5
+  },
+  {
+    "QuestReleaseConditionId": 120005,
+    "CharacterId": 1008,
+    "CharacterLevel": 6
+  },
+  {
+    "QuestReleaseConditionId": 120006,
+    "CharacterId": 1008,
+    "CharacterLevel": 7
+  },
+  {
+    "QuestReleaseConditionId": 120007,
+    "CharacterId": 1008,
+    "CharacterLevel": 8
+  },
+  {
+    "QuestReleaseConditionId": 120008,
+    "CharacterId": 1008,
+    "CharacterLevel": 9
+  },
+  {
+    "QuestReleaseConditionId": 120009,
+    "CharacterId": 1008,
+    "CharacterLevel": 10
+  },
+  {
+    "QuestReleaseConditionId": 120011,
+    "CharacterId": 1009,
+    "CharacterLevel": 2
+  },
+  {
+    "QuestReleaseConditionId": 120012,
+    "CharacterId": 1009,
+    "CharacterLevel": 3
+  },
+  {
+    "QuestReleaseConditionId": 120013,
+    "CharacterId": 1009,
+    "CharacterLevel": 4
+  },
+  {
+    "QuestReleaseConditionId": 120014,
+    "CharacterId": 1009,
+    "CharacterLevel": 5
+  },
+  {
+    "QuestReleaseConditionId": 120015,
+    "CharacterId": 1009,
+    "CharacterLevel": 6
+  },
+  {
+    "QuestReleaseConditionId": 120016,
+    "CharacterId": 1009,
+    "CharacterLevel": 7
+  },
+  {
+    "QuestReleaseConditionId": 120017,
+    "CharacterId": 1009,
+    "CharacterLevel": 8
+  },
+  {
+    "QuestReleaseConditionId": 120018,
+    "CharacterId": 1009,
+    "CharacterLevel": 9
+  },
+  {
+    "QuestReleaseConditionId": 120019,
+    "CharacterId": 1009,
+    "CharacterLevel": 10
+  },
+  {
+    "QuestReleaseConditionId": 120021,
+    "CharacterId": 1007,
+    "CharacterLevel": 2
+  },
+  {
+    "QuestReleaseConditionId": 120022,
+    "CharacterId": 1007,
+    "CharacterLevel": 3
+  },
+  {
+    "QuestReleaseConditionId": 120023,
+    "CharacterId": 1007,
+    "CharacterLevel": 4
+  },
+  {
+    "QuestReleaseConditionId": 120024,
+    "CharacterId": 1007,
+    "CharacterLevel": 5
+  },
+  {
+    "QuestReleaseConditionId": 120025,
+    "CharacterId": 1007,
+    "CharacterLevel": 6
+  },
+  {
+    "QuestReleaseConditionId": 120026,
+    "CharacterId": 1007,
+    "CharacterLevel": 7
+  },
+  {
+    "QuestReleaseConditionId": 120027,
+    "CharacterId": 1007,
+    "CharacterLevel": 8
+  },
+  {
+    "QuestReleaseConditionId": 120028,
+    "CharacterId": 1007,
+    "CharacterLevel": 9
+  },
+  {
+    "QuestReleaseConditionId": 120029,
+    "CharacterId": 1007,
+    "CharacterLevel": 10
+  },
+  {
+    "QuestReleaseConditionId": 120031,
+    "CharacterId": 1015,
+    "CharacterLevel": 2
+  },
+  {
+    "QuestReleaseConditionId": 120032,
+    "CharacterId": 1015,
+    "CharacterLevel": 3
+  },
+  {
+    "QuestReleaseConditionId": 120033,
+    "CharacterId": 1015,
+    "CharacterLevel": 4
+  },
+  {
+    "QuestReleaseConditionId": 120034,
+    "CharacterId": 1015,
+    "CharacterLevel": 5
+  },
+  {
+    "QuestReleaseConditionId": 120035,
+    "CharacterId": 1015,
+    "CharacterLevel": 6
+  },
+  {
+    "QuestReleaseConditionId": 120036,
+    "CharacterId": 1015,
+    "CharacterLevel": 7
+  },
+  {
+    "QuestReleaseConditionId": 120037,
+    "CharacterId": 1015,
+    "CharacterLevel": 8
+  },
+  {
+    "QuestReleaseConditionId": 120038,
+    "CharacterId": 1015,
+    "CharacterLevel": 9
+  },
+  {
+    "QuestReleaseConditionId": 120039,
+    "CharacterId": 1015,
+    "CharacterLevel": 10
+  },
+  {
+    "QuestReleaseConditionId": 120041,
+    "CharacterId": 1006,
+    "CharacterLevel": 2
+  },
+  {
+    "QuestReleaseConditionId": 120042,
+    "CharacterId": 1006,
+    "CharacterLevel": 3
+  },
+  {
+    "QuestReleaseConditionId": 120043,
+    "CharacterId": 1006,
+    "CharacterLevel": 4
+  },
+  {
+    "QuestReleaseConditionId": 120044,
+    "CharacterId": 1006,
+    "CharacterLevel": 5
+  },
+  {
+    "QuestReleaseConditionId": 120045,
+    "CharacterId": 1006,
+    "CharacterLevel": 6
+  },
+  {
+    "QuestReleaseConditionId": 120046,
+    "CharacterId": 1006,
+    "CharacterLevel": 7
+  },
+  {
+    "QuestReleaseConditionId": 120047,
+    "CharacterId": 1006,
+    "CharacterLevel": 8
+  },
+  {
+    "QuestReleaseConditionId": 120048,
+    "CharacterId": 1006,
+    "CharacterLevel": 9
+  },
+  {
+    "QuestReleaseConditionId": 120049,
+    "CharacterId": 1006,
+    "CharacterLevel": 10
+  },
+  {
+    "QuestReleaseConditionId": 120051,
+    "CharacterId": 1011,
+    "CharacterLevel": 2
+  },
+  {
+    "QuestReleaseConditionId": 120052,
+    "CharacterId": 1011,
+    "CharacterLevel": 3
+  },
+  {
+    "QuestReleaseConditionId": 120053,
+    "CharacterId": 1011,
+    "CharacterLevel": 4
+  },
+  {
+    "QuestReleaseConditionId": 120054,
+    "CharacterId": 1011,
+    "CharacterLevel": 5
+  },
+  {
+    "QuestReleaseConditionId": 120055,
+    "CharacterId": 1011,
+    "CharacterLevel": 6
+  },
+  {
+    "QuestReleaseConditionId": 120056,
+    "CharacterId": 1011,
+    "CharacterLevel": 7
+  },
+  {
+    "QuestReleaseConditionId": 120057,
+    "CharacterId": 1011,
+    "CharacterLevel": 8
+  },
+  {
+    "QuestReleaseConditionId": 120058,
+    "CharacterId": 1011,
+    "CharacterLevel": 9
+  },
+  {
+    "QuestReleaseConditionId": 120059,
+    "CharacterId": 1011,
+    "CharacterLevel": 10
+  },
+  {
+    "QuestReleaseConditionId": 120061,
+    "CharacterId": 1012,
+    "CharacterLevel": 2
+  },
+  {
+    "QuestReleaseConditionId": 120062,
+    "CharacterId": 1012,
+    "CharacterLevel": 3
+  },
+  {
+    "QuestReleaseConditionId": 120063,
+    "CharacterId": 1012,
+    "CharacterLevel": 4
+  },
+  {
+    "QuestReleaseConditionId": 120064,
+    "CharacterId": 1012,
+    "CharacterLevel": 5
+  },
+  {
+    "QuestReleaseConditionId": 120065,
+    "CharacterId": 1012,
+    "CharacterLevel": 6
+  },
+  {
+    "QuestReleaseConditionId": 120066,
+    "CharacterId": 1012,
+    "CharacterLevel": 7
+  },
+  {
+    "QuestReleaseConditionId": 120067,
+    "CharacterId": 1012,
+    "CharacterLevel": 8
+  },
+  {
+    "QuestReleaseConditionId": 120068,
+    "CharacterId": 1012,
+    "CharacterLevel": 9
+  },
+  {
+    "QuestReleaseConditionId": 120069,
+    "CharacterId": 1012,
+    "CharacterLevel": 10
+  },
+  {
+    "QuestReleaseConditionId": 120071,
+    "CharacterId": 1013,
+    "CharacterLevel": 2
+  },
+  {
+    "QuestReleaseConditionId": 120072,
+    "CharacterId": 1013,
+    "CharacterLevel": 3
+  },
+  {
+    "QuestReleaseConditionId": 120073,
+    "CharacterId": 1013,
+    "CharacterLevel": 4
+  },
+  {
+    "QuestReleaseConditionId": 120074,
+    "CharacterId": 1013,
+    "CharacterLevel": 5
+  },
+  {
+    "QuestReleaseConditionId": 120075,
+    "CharacterId": 1013,
+    "CharacterLevel": 6
+  },
+  {
+    "QuestReleaseConditionId": 120076,
+    "CharacterId": 1013,
+    "CharacterLevel": 7
+  },
+  {
+    "QuestReleaseConditionId": 120077,
+    "CharacterId": 1013,
+    "CharacterLevel": 8
+  },
+  {
+    "QuestReleaseConditionId": 120078,
+    "CharacterId": 1013,
+    "CharacterLevel": 9
+  },
+  {
+    "QuestReleaseConditionId": 120079,
+    "CharacterId": 1013,
+    "CharacterLevel": 10
+  },
+  {
+    "QuestReleaseConditionId": 120081,
+    "CharacterId": 1014,
+    "CharacterLevel": 2
+  },
+  {
+    "QuestReleaseConditionId": 120082,
+    "CharacterId": 1014,
+    "CharacterLevel": 3
+  },
+  {
+    "QuestReleaseConditionId": 120083,
+    "CharacterId": 1014,
+    "CharacterLevel": 4
+  },
+  {
+    "QuestReleaseConditionId": 120084,
+    "CharacterId": 1014,
+    "CharacterLevel": 5
+  },
+  {
+    "QuestReleaseConditionId": 120085,
+    "CharacterId": 1014,
+    "CharacterLevel": 6
+  },
+  {
+    "QuestReleaseConditionId": 120086,
+    "CharacterId": 1014,
+    "CharacterLevel": 7
+  },
+  {
+    "QuestReleaseConditionId": 120087,
+    "CharacterId": 1014,
+    "CharacterLevel": 8
+  },
+  {
+    "QuestReleaseConditionId": 120088,
+    "CharacterId": 1014,
+    "CharacterLevel": 9
+  },
+  {
+    "QuestReleaseConditionId": 120089,
+    "CharacterId": 1014,
+    "CharacterLevel": 10
+  },
+  {
+    "QuestReleaseConditionId": 120091,
+    "CharacterId": 1010,
+    "CharacterLevel": 2
+  },
+  {
+    "QuestReleaseConditionId": 120092,
+    "CharacterId": 1010,
+    "CharacterLevel": 3
+  },
+  {
+    "QuestReleaseConditionId": 120093,
+    "CharacterId": 1010,
+    "CharacterLevel": 4
+  },
+  {
+    "QuestReleaseConditionId": 120094,
+    "CharacterId": 1010,
+    "CharacterLevel": 5
+  },
+  {
+    "QuestReleaseConditionId": 120095,
+    "CharacterId": 1010,
+    "CharacterLevel": 6
+  },
+  {
+    "QuestReleaseConditionId": 120096,
+    "CharacterId": 1010,
+    "CharacterLevel": 7
+  },
+  {
+    "QuestReleaseConditionId": 120097,
+    "CharacterId": 1010,
+    "CharacterLevel": 8
+  },
+  {
+    "QuestReleaseConditionId": 120098,
+    "CharacterId": 1010,
+    "CharacterLevel": 9
+  },
+  {
+    "QuestReleaseConditionId": 120099,
+    "CharacterId": 1010,
+    "CharacterLevel": 10
+  },
+  {
+    "QuestReleaseConditionId": 120101,
+    "CharacterId": 1019,
+    "CharacterLevel": 2
+  },
+  {
+    "QuestReleaseConditionId": 120102,
+    "CharacterId": 1019,
+    "CharacterLevel": 3
+  },
+  {
+    "QuestReleaseConditionId": 120103,
+    "CharacterId": 1019,
+    "CharacterLevel": 4
+  },
+  {
+    "QuestReleaseConditionId": 120104,
+    "CharacterId": 1019,
+    "CharacterLevel": 5
+  },
+  {
+    "QuestReleaseConditionId": 120105,
+    "CharacterId": 1019,
+    "CharacterLevel": 6
+  },
+  {
+    "QuestReleaseConditionId": 120106,
+    "CharacterId": 1019,
+    "CharacterLevel": 7
+  },
+  {
+    "QuestReleaseConditionId": 120107,
+    "CharacterId": 1019,
+    "CharacterLevel": 8
+  },
+  {
+    "QuestReleaseConditionId": 120108,
+    "CharacterId": 1019,
+    "CharacterLevel": 9
+  },
+  {
+    "QuestReleaseConditionId": 120109,
+    "CharacterId": 1019,
+    "CharacterLevel": 10
+  },
+  {
+    "QuestReleaseConditionId": 120111,
+    "CharacterId": 1004,
+    "CharacterLevel": 2
+  },
+  {
+    "QuestReleaseConditionId": 120112,
+    "CharacterId": 1004,
+    "CharacterLevel": 3
+  },
+  {
+    "QuestReleaseConditionId": 120113,
+    "CharacterId": 1004,
+    "CharacterLevel": 4
+  },
+  {
+    "QuestReleaseConditionId": 120114,
+    "CharacterId": 1004,
+    "CharacterLevel": 5
+  },
+  {
+    "QuestReleaseConditionId": 120115,
+    "CharacterId": 1004,
+    "CharacterLevel": 6
+  },
+  {
+    "QuestReleaseConditionId": 120116,
+    "CharacterId": 1004,
+    "CharacterLevel": 7
+  },
+  {
+    "QuestReleaseConditionId": 120117,
+    "CharacterId": 1004,
+    "CharacterLevel": 8
+  },
+  {
+    "QuestReleaseConditionId": 120118,
+    "CharacterId": 1004,
+    "CharacterLevel": 9
+  },
+  {
+    "QuestReleaseConditionId": 120119,
+    "CharacterId": 1004,
+    "CharacterLevel": 10
+  },
+  {
+    "QuestReleaseConditionId": 120121,
+    "CharacterId": 1022,
+    "CharacterLevel": 2
+  },
+  {
+    "QuestReleaseConditionId": 120122,
+    "CharacterId": 1022,
+    "CharacterLevel": 3
+  },
+  {
+    "QuestReleaseConditionId": 120123,
+    "CharacterId": 1022,
+    "CharacterLevel": 4
+  },
+  {
+    "QuestReleaseConditionId": 120124,
+    "CharacterId": 1022,
+    "CharacterLevel": 5
+  },
+  {
+    "QuestReleaseConditionId": 120125,
+    "CharacterId": 1022,
+    "CharacterLevel": 6
+  },
+  {
+    "QuestReleaseConditionId": 120126,
+    "CharacterId": 1022,
+    "CharacterLevel": 7
+  },
+  {
+    "QuestReleaseConditionId": 120127,
+    "CharacterId": 1022,
+    "CharacterLevel": 8
+  },
+  {
+    "QuestReleaseConditionId": 120128,
+    "CharacterId": 1022,
+    "CharacterLevel": 9
+  },
+  {
+    "QuestReleaseConditionId": 120129,
+    "CharacterId": 1022,
+    "CharacterLevel": 10
+  },
+  {
+    "QuestReleaseConditionId": 120131,
+    "CharacterId": 1023,
+    "CharacterLevel": 2
+  },
+  {
+    "QuestReleaseConditionId": 120132,
+    "CharacterId": 1023,
+    "CharacterLevel": 3
+  },
+  {
+    "QuestReleaseConditionId": 120133,
+    "CharacterId": 1023,
+    "CharacterLevel": 4
+  },
+  {
+    "QuestReleaseConditionId": 120134,
+    "CharacterId": 1023,
+    "CharacterLevel": 5
+  },
+  {
+    "QuestReleaseConditionId": 120135,
+    "CharacterId": 1023,
+    "CharacterLevel": 6
+  },
+  {
+    "QuestReleaseConditionId": 120136,
+    "CharacterId": 1023,
+    "CharacterLevel": 7
+  },
+  {
+    "QuestReleaseConditionId": 120137,
+    "CharacterId": 1023,
+    "CharacterLevel": 8
+  },
+  {
+    "QuestReleaseConditionId": 120138,
+    "CharacterId": 1023,
+    "CharacterLevel": 9
+  },
+  {
+    "QuestReleaseConditionId": 120139,
+    "CharacterId": 1023,
+    "CharacterLevel": 10
+  },
+  {
+    "QuestReleaseConditionId": 120141,
+    "CharacterId": 1024,
+    "CharacterLevel": 2
+  },
+  {
+    "QuestReleaseConditionId": 120142,
+    "CharacterId": 1024,
+    "CharacterLevel": 3
+  },
+  {
+    "QuestReleaseConditionId": 120143,
+    "CharacterId": 1024,
+    "CharacterLevel": 4
+  },
+  {
+    "QuestReleaseConditionId": 120144,
+    "CharacterId": 1024,
+    "CharacterLevel": 5
+  },
+  {
+    "QuestReleaseConditionId": 120145,
+    "CharacterId": 1024,
+    "CharacterLevel": 6
+  },
+  {
+    "QuestReleaseConditionId": 120146,
+    "CharacterId": 1024,
+    "CharacterLevel": 7
+  },
+  {
+    "QuestReleaseConditionId": 120147,
+    "CharacterId": 1024,
+    "CharacterLevel": 8
+  },
+  {
+    "QuestReleaseConditionId": 120148,
+    "CharacterId": 1024,
+    "CharacterLevel": 9
+  },
+  {
+    "QuestReleaseConditionId": 120149,
+    "CharacterId": 1024,
+    "CharacterLevel": 10
+  },
+  {
+    "QuestReleaseConditionId": 120151,
+    "CharacterId": 1025,
+    "CharacterLevel": 2
+  },
+  {
+    "QuestReleaseConditionId": 120152,
+    "CharacterId": 1025,
+    "CharacterLevel": 3
+  },
+  {
+    "QuestReleaseConditionId": 120153,
+    "CharacterId": 1025,
+    "CharacterLevel": 4
+  },
+  {
+    "QuestReleaseConditionId": 120154,
+    "CharacterId": 1025,
+    "CharacterLevel": 5
+  },
+  {
+    "QuestReleaseConditionId": 120155,
+    "CharacterId": 1025,
+    "CharacterLevel": 6
+  },
+  {
+    "QuestReleaseConditionId": 120156,
+    "CharacterId": 1025,
+    "CharacterLevel": 7
+  },
+  {
+    "QuestReleaseConditionId": 120157,
+    "CharacterId": 1025,
+    "CharacterLevel": 8
+  },
+  {
+    "QuestReleaseConditionId": 120158,
+    "CharacterId": 1025,
+    "CharacterLevel": 9
+  },
+  {
+    "QuestReleaseConditionId": 120159,
+    "CharacterId": 1025,
+    "CharacterLevel": 10
+  },
+  {
+    "QuestReleaseConditionId": 120161,
+    "CharacterId": 1027,
+    "CharacterLevel": 2
+  },
+  {
+    "QuestReleaseConditionId": 120162,
+    "CharacterId": 1027,
+    "CharacterLevel": 3
+  },
+  {
+    "QuestReleaseConditionId": 120163,
+    "CharacterId": 1027,
+    "CharacterLevel": 4
+  },
+  {
+    "QuestReleaseConditionId": 120164,
+    "CharacterId": 1027,
+    "CharacterLevel": 5
+  },
+  {
+    "QuestReleaseConditionId": 120165,
+    "CharacterId": 1027,
+    "CharacterLevel": 6
+  },
+  {
+    "QuestReleaseConditionId": 120166,
+    "CharacterId": 1027,
+    "CharacterLevel": 7
+  },
+  {
+    "QuestReleaseConditionId": 120167,
+    "CharacterId": 1027,
+    "CharacterLevel": 8
+  },
+  {
+    "QuestReleaseConditionId": 120168,
+    "CharacterId": 1027,
+    "CharacterLevel": 9
+  },
+  {
+    "QuestReleaseConditionId": 120169,
+    "CharacterId": 1027,
+    "CharacterLevel": 10
+  },
+  {
+    "QuestReleaseConditionId": 120171,
+    "CharacterId": 1026,
+    "CharacterLevel": 2
+  },
+  {
+    "QuestReleaseConditionId": 120172,
+    "CharacterId": 1026,
+    "CharacterLevel": 3
+  },
+  {
+    "QuestReleaseConditionId": 120173,
+    "CharacterId": 1026,
+    "CharacterLevel": 4
+  },
+  {
+    "QuestReleaseConditionId": 120174,
+    "CharacterId": 1026,
+    "CharacterLevel": 5
+  },
+  {
+    "QuestReleaseConditionId": 120175,
+    "CharacterId": 1026,
+    "CharacterLevel": 6
+  },
+  {
+    "QuestReleaseConditionId": 120176,
+    "CharacterId": 1026,
+    "CharacterLevel": 7
+  },
+  {
+    "QuestReleaseConditionId": 120177,
+    "CharacterId": 1026,
+    "CharacterLevel": 8
+  },
+  {
+    "QuestReleaseConditionId": 120178,
+    "CharacterId": 1026,
+    "CharacterLevel": 9
+  },
+  {
+    "QuestReleaseConditionId": 120179,
+    "CharacterId": 1026,
+    "CharacterLevel": 10
+  },
+  {
+    "QuestReleaseConditionId": 120181,
+    "CharacterId": 1020,
+    "CharacterLevel": 2
+  },
+  {
+    "QuestReleaseConditionId": 120182,
+    "CharacterId": 1020,
+    "CharacterLevel": 3
+  },
+  {
+    "QuestReleaseConditionId": 120183,
+    "CharacterId": 1020,
+    "CharacterLevel": 4
+  },
+  {
+    "QuestReleaseConditionId": 120184,
+    "CharacterId": 1020,
+    "CharacterLevel": 5
+  },
+  {
+    "QuestReleaseConditionId": 120185,
+    "CharacterId": 1020,
+    "CharacterLevel": 6
+  },
+  {
+    "QuestReleaseConditionId": 120186,
+    "CharacterId": 1020,
+    "CharacterLevel": 7
+  },
+  {
+    "QuestReleaseConditionId": 120187,
+    "CharacterId": 1020,
+    "CharacterLevel": 8
+  },
+  {
+    "QuestReleaseConditionId": 120188,
+    "CharacterId": 1020,
+    "CharacterLevel": 9
+  },
+  {
+    "QuestReleaseConditionId": 120189,
+    "CharacterId": 1020,
+    "CharacterLevel": 10
+  },
+  {
+    "QuestReleaseConditionId": 120191,
+    "CharacterId": 1021,
+    "CharacterLevel": 2
+  },
+  {
+    "QuestReleaseConditionId": 120192,
+    "CharacterId": 1021,
+    "CharacterLevel": 3
+  },
+  {
+    "QuestReleaseConditionId": 120193,
+    "CharacterId": 1021,
+    "CharacterLevel": 4
+  },
+  {
+    "QuestReleaseConditionId": 120194,
+    "CharacterId": 1021,
+    "CharacterLevel": 5
+  },
+  {
+    "QuestReleaseConditionId": 120195,
+    "CharacterId": 1021,
+    "CharacterLevel": 6
+  },
+  {
+    "QuestReleaseConditionId": 120196,
+    "CharacterId": 1021,
+    "CharacterLevel": 7
+  },
+  {
+    "QuestReleaseConditionId": 120197,
+    "CharacterId": 1021,
+    "CharacterLevel": 8
+  },
+  {
+    "QuestReleaseConditionId": 120198,
+    "CharacterId": 1021,
+    "CharacterLevel": 9
+  },
+  {
+    "QuestReleaseConditionId": 120199,
+    "CharacterId": 1021,
+    "CharacterLevel": 10
+  },
+  {
+    "QuestReleaseConditionId": 120201,
+    "CharacterId": 1048,
+    "CharacterLevel": 2
+  },
+  {
+    "QuestReleaseConditionId": 120202,
+    "CharacterId": 1048,
+    "CharacterLevel": 3
+  },
+  {
+    "QuestReleaseConditionId": 120203,
+    "CharacterId": 1048,
+    "CharacterLevel": 4
+  },
+  {
+    "QuestReleaseConditionId": 120204,
+    "CharacterId": 1048,
+    "CharacterLevel": 5
+  },
+  {
+    "QuestReleaseConditionId": 120205,
+    "CharacterId": 1048,
+    "CharacterLevel": 6
+  },
+  {
+    "QuestReleaseConditionId": 120206,
+    "CharacterId": 1048,
+    "CharacterLevel": 7
+  },
+  {
+    "QuestReleaseConditionId": 120207,
+    "CharacterId": 1048,
+    "CharacterLevel": 8
+  },
+  {
+    "QuestReleaseConditionId": 120208,
+    "CharacterId": 1048,
+    "CharacterLevel": 9
+  },
+  {
+    "QuestReleaseConditionId": 120209,
+    "CharacterId": 1048,
+    "CharacterLevel": 10
+  }
+]

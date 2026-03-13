@@ -1,0 +1,296 @@
+[
+  {
+    "SkillDamageMultiplyDetailId": 900001,
+    "BuffAttachedTargetType": 1,
+    "TargetBuffType": 1,
+    "TargetStatusKindType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1100
+  },
+  {
+    "SkillDamageMultiplyDetailId": 900002,
+    "BuffAttachedTargetType": 1,
+    "TargetBuffType": 1,
+    "TargetStatusKindType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1200
+  },
+  {
+    "SkillDamageMultiplyDetailId": 900003,
+    "BuffAttachedTargetType": 1,
+    "TargetBuffType": 1,
+    "TargetStatusKindType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1300
+  },
+  {
+    "SkillDamageMultiplyDetailId": 900004,
+    "BuffAttachedTargetType": 1,
+    "TargetBuffType": 1,
+    "TargetStatusKindType": 7,
+    "DamageMultiplyCoefficientValuePermil": 1100
+  },
+  {
+    "SkillDamageMultiplyDetailId": 900005,
+    "BuffAttachedTargetType": 1,
+    "TargetBuffType": 1,
+    "TargetStatusKindType": 7,
+    "DamageMultiplyCoefficientValuePermil": 1200
+  },
+  {
+    "SkillDamageMultiplyDetailId": 900006,
+    "BuffAttachedTargetType": 1,
+    "TargetBuffType": 1,
+    "TargetStatusKindType": 7,
+    "DamageMultiplyCoefficientValuePermil": 1300
+  },
+  {
+    "SkillDamageMultiplyDetailId": 900007,
+    "BuffAttachedTargetType": 2,
+    "TargetBuffType": 2,
+    "TargetStatusKindType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1100
+  },
+  {
+    "SkillDamageMultiplyDetailId": 900008,
+    "BuffAttachedTargetType": 2,
+    "TargetBuffType": 2,
+    "TargetStatusKindType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1200
+  },
+  {
+    "SkillDamageMultiplyDetailId": 900009,
+    "BuffAttachedTargetType": 2,
+    "TargetBuffType": 2,
+    "TargetStatusKindType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1300
+  },
+  {
+    "SkillDamageMultiplyDetailId": 900010,
+    "BuffAttachedTargetType": 2,
+    "TargetBuffType": 2,
+    "TargetStatusKindType": 7,
+    "DamageMultiplyCoefficientValuePermil": 1100
+  },
+  {
+    "SkillDamageMultiplyDetailId": 900011,
+    "BuffAttachedTargetType": 2,
+    "TargetBuffType": 2,
+    "TargetStatusKindType": 7,
+    "DamageMultiplyCoefficientValuePermil": 1200
+  },
+  {
+    "SkillDamageMultiplyDetailId": 900012,
+    "BuffAttachedTargetType": 2,
+    "TargetBuffType": 2,
+    "TargetStatusKindType": 7,
+    "DamageMultiplyCoefficientValuePermil": 1300
+  },
+  {
+    "SkillDamageMultiplyDetailId": 1000001,
+    "BuffAttachedTargetType": 1,
+    "TargetBuffType": 1,
+    "TargetStatusKindType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1500
+  },
+  {
+    "SkillDamageMultiplyDetailId": 1000002,
+    "BuffAttachedTargetType": 1,
+    "TargetBuffType": 1,
+    "TargetStatusKindType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1520
+  },
+  {
+    "SkillDamageMultiplyDetailId": 1000003,
+    "BuffAttachedTargetType": 1,
+    "TargetBuffType": 1,
+    "TargetStatusKindType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1550
+  },
+  {
+    "SkillDamageMultiplyDetailId": 1000004,
+    "BuffAttachedTargetType": 1,
+    "TargetBuffType": 1,
+    "TargetStatusKindType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1570
+  },
+  {
+    "SkillDamageMultiplyDetailId": 1000005,
+    "BuffAttachedTargetType": 1,
+    "TargetBuffType": 1,
+    "TargetStatusKindType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1600
+  },
+  {
+    "SkillDamageMultiplyDetailId": 1000006,
+    "BuffAttachedTargetType": 1,
+    "TargetBuffType": 1,
+    "TargetStatusKindType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1630
+  },
+  {
+    "SkillDamageMultiplyDetailId": 1000007,
+    "BuffAttachedTargetType": 1,
+    "TargetBuffType": 1,
+    "TargetStatusKindType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1670
+  },
+  {
+    "SkillDamageMultiplyDetailId": 1000008,
+    "BuffAttachedTargetType": 1,
+    "TargetBuffType": 1,
+    "TargetStatusKindType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1700
+  },
+  {
+    "SkillDamageMultiplyDetailId": 1000009,
+    "BuffAttachedTargetType": 1,
+    "TargetBuffType": 1,
+    "TargetStatusKindType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1740
+  },
+  {
+    "SkillDamageMultiplyDetailId": 1000010,
+    "BuffAttachedTargetType": 1,
+    "TargetBuffType": 1,
+    "TargetStatusKindType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1770
+  },
+  {
+    "SkillDamageMultiplyDetailId": 1000011,
+    "BuffAttachedTargetType": 1,
+    "TargetBuffType": 1,
+    "TargetStatusKindType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1810
+  },
+  {
+    "SkillDamageMultiplyDetailId": 1000012,
+    "BuffAttachedTargetType": 1,
+    "TargetBuffType": 1,
+    "TargetStatusKindType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1850
+  },
+  {
+    "SkillDamageMultiplyDetailId": 1000013,
+    "BuffAttachedTargetType": 1,
+    "TargetBuffType": 1,
+    "TargetStatusKindType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1890
+  },
+  {
+    "SkillDamageMultiplyDetailId": 1000014,
+    "BuffAttachedTargetType": 1,
+    "TargetBuffType": 1,
+    "TargetStatusKindType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1930
+  },
+  {
+    "SkillDamageMultiplyDetailId": 1000015,
+    "BuffAttachedTargetType": 1,
+    "TargetBuffType": 1,
+    "TargetStatusKindType": 2,
+    "DamageMultiplyCoefficientValuePermil": 2000
+  },
+  {
+    "SkillDamageMultiplyDetailId": 1000016,
+    "BuffAttachedTargetType": 1,
+    "TargetBuffType": 1,
+    "TargetStatusKindType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1500
+  },
+  {
+    "SkillDamageMultiplyDetailId": 1000017,
+    "BuffAttachedTargetType": 1,
+    "TargetBuffType": 1,
+    "TargetStatusKindType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1520
+  },
+  {
+    "SkillDamageMultiplyDetailId": 1000018,
+    "BuffAttachedTargetType": 1,
+    "TargetBuffType": 1,
+    "TargetStatusKindType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1550
+  },
+  {
+    "SkillDamageMultiplyDetailId": 1000019,
+    "BuffAttachedTargetType": 1,
+    "TargetBuffType": 1,
+    "TargetStatusKindType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1570
+  },
+  {
+    "SkillDamageMultiplyDetailId": 1000020,
+    "BuffAttachedTargetType": 1,
+    "TargetBuffType": 1,
+    "TargetStatusKindType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1600
+  },
+  {
+    "SkillDamageMultiplyDetailId": 1000021,
+    "BuffAttachedTargetType": 1,
+    "TargetBuffType": 1,
+    "TargetStatusKindType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1630
+  },
+  {
+    "SkillDamageMultiplyDetailId": 1000022,
+    "BuffAttachedTargetType": 1,
+    "TargetBuffType": 1,
+    "TargetStatusKindType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1670
+  },
+  {
+    "SkillDamageMultiplyDetailId": 1000023,
+    "BuffAttachedTargetType": 1,
+    "TargetBuffType": 1,
+    "TargetStatusKindType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1700
+  },
+  {
+    "SkillDamageMultiplyDetailId": 1000024,
+    "BuffAttachedTargetType": 1,
+    "TargetBuffType": 1,
+    "TargetStatusKindType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1740
+  },
+  {
+    "SkillDamageMultiplyDetailId": 1000025,
+    "BuffAttachedTargetType": 1,
+    "TargetBuffType": 1,
+    "TargetStatusKindType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1770
+  },
+  {
+    "SkillDamageMultiplyDetailId": 1000026,
+    "BuffAttachedTargetType": 1,
+    "TargetBuffType": 1,
+    "TargetStatusKindType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1810
+  },
+  {
+    "SkillDamageMultiplyDetailId": 1000027,
+    "BuffAttachedTargetType": 1,
+    "TargetBuffType": 1,
+    "TargetStatusKindType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1850
+  },
+  {
+    "SkillDamageMultiplyDetailId": 1000028,
+    "BuffAttachedTargetType": 1,
+    "TargetBuffType": 1,
+    "TargetStatusKindType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1890
+  },
+  {
+    "SkillDamageMultiplyDetailId": 1000029,
+    "BuffAttachedTargetType": 1,
+    "TargetBuffType": 1,
+    "TargetStatusKindType": 2,
+    "DamageMultiplyCoefficientValuePermil": 1930
+  },
+  {
+    "SkillDamageMultiplyDetailId": 1000030,
+    "BuffAttachedTargetType": 1,
+    "TargetBuffType": 1,
+    "TargetStatusKindType": 2,
+    "DamageMultiplyCoefficientValuePermil": 2000
+  }
+]

@@ -1,0 +1,492 @@
+[
+  {
+    "MainQuestSequenceGroupId": 1,
+    "DifficultyType": 1,
+    "MainQuestSequenceId": 1
+  },
+  {
+    "MainQuestSequenceGroupId": 2,
+    "DifficultyType": 1,
+    "MainQuestSequenceId": 2
+  },
+  {
+    "MainQuestSequenceGroupId": 2,
+    "DifficultyType": 2,
+    "MainQuestSequenceId": 1001
+  },
+  {
+    "MainQuestSequenceGroupId": 2,
+    "DifficultyType": 3,
+    "MainQuestSequenceId": 2001
+  },
+  {
+    "MainQuestSequenceGroupId": 3,
+    "DifficultyType": 1,
+    "MainQuestSequenceId": 3
+  },
+  {
+    "MainQuestSequenceGroupId": 3,
+    "DifficultyType": 2,
+    "MainQuestSequenceId": 1002
+  },
+  {
+    "MainQuestSequenceGroupId": 3,
+    "DifficultyType": 3,
+    "MainQuestSequenceId": 2002
+  },
+  {
+    "MainQuestSequenceGroupId": 4,
+    "DifficultyType": 1,
+    "MainQuestSequenceId": 4
+  },
+  {
+    "MainQuestSequenceGroupId": 4,
+    "DifficultyType": 2,
+    "MainQuestSequenceId": 1003
+  },
+  {
+    "MainQuestSequenceGroupId": 4,
+    "DifficultyType": 3,
+    "MainQuestSequenceId": 2003
+  },
+  {
+    "MainQuestSequenceGroupId": 5,
+    "DifficultyType": 1,
+    "MainQuestSequenceId": 5
+  },
+  {
+    "MainQuestSequenceGroupId": 5,
+    "DifficultyType": 2,
+    "MainQuestSequenceId": 1004
+  },
+  {
+    "MainQuestSequenceGroupId": 5,
+    "DifficultyType": 3,
+    "MainQuestSequenceId": 2004
+  },
+  {
+    "MainQuestSequenceGroupId": 6,
+    "DifficultyType": 1,
+    "MainQuestSequenceId": 6
+  },
+  {
+    "MainQuestSequenceGroupId": 6,
+    "DifficultyType": 2,
+    "MainQuestSequenceId": 1005
+  },
+  {
+    "MainQuestSequenceGroupId": 6,
+    "DifficultyType": 3,
+    "MainQuestSequenceId": 2005
+  },
+  {
+    "MainQuestSequenceGroupId": 7,
+    "DifficultyType": 1,
+    "MainQuestSequenceId": 7
+  },
+  {
+    "MainQuestSequenceGroupId": 7,
+    "DifficultyType": 2,
+    "MainQuestSequenceId": 1006
+  },
+  {
+    "MainQuestSequenceGroupId": 7,
+    "DifficultyType": 3,
+    "MainQuestSequenceId": 2006
+  },
+  {
+    "MainQuestSequenceGroupId": 8,
+    "DifficultyType": 1,
+    "MainQuestSequenceId": 8
+  },
+  {
+    "MainQuestSequenceGroupId": 9,
+    "DifficultyType": 1,
+    "MainQuestSequenceId": 9
+  },
+  {
+    "MainQuestSequenceGroupId": 9,
+    "DifficultyType": 2,
+    "MainQuestSequenceId": 1007
+  },
+  {
+    "MainQuestSequenceGroupId": 9,
+    "DifficultyType": 3,
+    "MainQuestSequenceId": 2007
+  },
+  {
+    "MainQuestSequenceGroupId": 10,
+    "DifficultyType": 1,
+    "MainQuestSequenceId": 10
+  },
+  {
+    "MainQuestSequenceGroupId": 10,
+    "DifficultyType": 2,
+    "MainQuestSequenceId": 1008
+  },
+  {
+    "MainQuestSequenceGroupId": 10,
+    "DifficultyType": 3,
+    "MainQuestSequenceId": 2008
+  },
+  {
+    "MainQuestSequenceGroupId": 11,
+    "DifficultyType": 1,
+    "MainQuestSequenceId": 11
+  },
+  {
+    "MainQuestSequenceGroupId": 11,
+    "DifficultyType": 2,
+    "MainQuestSequenceId": 1009
+  },
+  {
+    "MainQuestSequenceGroupId": 11,
+    "DifficultyType": 3,
+    "MainQuestSequenceId": 2009
+  },
+  {
+    "MainQuestSequenceGroupId": 12,
+    "DifficultyType": 1,
+    "MainQuestSequenceId": 12
+  },
+  {
+    "MainQuestSequenceGroupId": 12,
+    "DifficultyType": 2,
+    "MainQuestSequenceId": 1010
+  },
+  {
+    "MainQuestSequenceGroupId": 12,
+    "DifficultyType": 3,
+    "MainQuestSequenceId": 2010
+  },
+  {
+    "MainQuestSequenceGroupId": 13,
+    "DifficultyType": 1,
+    "MainQuestSequenceId": 13
+  },
+  {
+    "MainQuestSequenceGroupId": 13,
+    "DifficultyType": 2,
+    "MainQuestSequenceId": 1011
+  },
+  {
+    "MainQuestSequenceGroupId": 13,
+    "DifficultyType": 3,
+    "MainQuestSequenceId": 2011
+  },
+  {
+    "MainQuestSequenceGroupId": 14,
+    "DifficultyType": 1,
+    "MainQuestSequenceId": 14
+  },
+  {
+    "MainQuestSequenceGroupId": 14,
+    "DifficultyType": 2,
+    "MainQuestSequenceId": 1012
+  },
+  {
+    "MainQuestSequenceGroupId": 14,
+    "DifficultyType": 3,
+    "MainQuestSequenceId": 2012
+  },
+  {
+    "MainQuestSequenceGroupId": 15,
+    "DifficultyType": 1,
+    "MainQuestSequenceId": 15
+  },
+  {
+    "MainQuestSequenceGroupId": 16,
+    "DifficultyType": 1,
+    "MainQuestSequenceId": 16
+  },
+  {
+    "MainQuestSequenceGroupId": 16,
+    "DifficultyType": 2,
+    "MainQuestSequenceId": 1013
+  },
+  {
+    "MainQuestSequenceGroupId": 16,
+    "DifficultyType": 3,
+    "MainQuestSequenceId": 2013
+  },
+  {
+    "MainQuestSequenceGroupId": 17,
+    "DifficultyType": 1,
+    "MainQuestSequenceId": 17
+  },
+  {
+    "MainQuestSequenceGroupId": 17,
+    "DifficultyType": 2,
+    "MainQuestSequenceId": 1014
+  },
+  {
+    "MainQuestSequenceGroupId": 17,
+    "DifficultyType": 3,
+    "MainQuestSequenceId": 2014
+  },
+  {
+    "MainQuestSequenceGroupId": 18,
+    "DifficultyType": 1,
+    "MainQuestSequenceId": 18
+  },
+  {
+    "MainQuestSequenceGroupId": 18,
+    "DifficultyType": 2,
+    "MainQuestSequenceId": 1015
+  },
+  {
+    "MainQuestSequenceGroupId": 18,
+    "DifficultyType": 3,
+    "MainQuestSequenceId": 2015
+  },
+  {
+    "MainQuestSequenceGroupId": 19,
+    "DifficultyType": 1,
+    "MainQuestSequenceId": 19
+  },
+  {
+    "MainQuestSequenceGroupId": 20,
+    "DifficultyType": 1,
+    "MainQuestSequenceId": 20
+  },
+  {
+    "MainQuestSequenceGroupId": 20,
+    "DifficultyType": 2,
+    "MainQuestSequenceId": 1016
+  },
+  {
+    "MainQuestSequenceGroupId": 20,
+    "DifficultyType": 3,
+    "MainQuestSequenceId": 2016
+  },
+  {
+    "MainQuestSequenceGroupId": 21,
+    "DifficultyType": 1,
+    "MainQuestSequenceId": 21
+  },
+  {
+    "MainQuestSequenceGroupId": 21,
+    "DifficultyType": 2,
+    "MainQuestSequenceId": 1017
+  },
+  {
+    "MainQuestSequenceGroupId": 21,
+    "DifficultyType": 3,
+    "MainQuestSequenceId": 2017
+  },
+  {
+    "MainQuestSequenceGroupId": 22,
+    "DifficultyType": 1,
+    "MainQuestSequenceId": 22
+  },
+  {
+    "MainQuestSequenceGroupId": 22,
+    "DifficultyType": 2,
+    "MainQuestSequenceId": 1018
+  },
+  {
+    "MainQuestSequenceGroupId": 22,
+    "DifficultyType": 3,
+    "MainQuestSequenceId": 2018
+  },
+  {
+    "MainQuestSequenceGroupId": 23,
+    "DifficultyType": 1,
+    "MainQuestSequenceId": 23
+  },
+  {
+    "MainQuestSequenceGroupId": 24,
+    "DifficultyType": 1,
+    "MainQuestSequenceId": 24
+  },
+  {
+    "MainQuestSequenceGroupId": 24,
+    "DifficultyType": 2,
+    "MainQuestSequenceId": 1020
+  },
+  {
+    "MainQuestSequenceGroupId": 24,
+    "DifficultyType": 3,
+    "MainQuestSequenceId": 2020
+  },
+  {
+    "MainQuestSequenceGroupId": 25,
+    "DifficultyType": 1,
+    "MainQuestSequenceId": 25
+  },
+  {
+    "MainQuestSequenceGroupId": 25,
+    "DifficultyType": 2,
+    "MainQuestSequenceId": 1021
+  },
+  {
+    "MainQuestSequenceGroupId": 25,
+    "DifficultyType": 3,
+    "MainQuestSequenceId": 2021
+  },
+  {
+    "MainQuestSequenceGroupId": 26,
+    "DifficultyType": 1,
+    "MainQuestSequenceId": 26
+  },
+  {
+    "MainQuestSequenceGroupId": 26,
+    "DifficultyType": 2,
+    "MainQuestSequenceId": 1022
+  },
+  {
+    "MainQuestSequenceGroupId": 26,
+    "DifficultyType": 3,
+    "MainQuestSequenceId": 2022
+  },
+  {
+    "MainQuestSequenceGroupId": 27,
+    "DifficultyType": 1,
+    "MainQuestSequenceId": 27
+  },
+  {
+    "MainQuestSequenceGroupId": 28,
+    "DifficultyType": 1,
+    "MainQuestSequenceId": 28
+  },
+  {
+    "MainQuestSequenceGroupId": 28,
+    "DifficultyType": 2,
+    "MainQuestSequenceId": 1023
+  },
+  {
+    "MainQuestSequenceGroupId": 28,
+    "DifficultyType": 3,
+    "MainQuestSequenceId": 2023
+  },
+  {
+    "MainQuestSequenceGroupId": 29,
+    "DifficultyType": 1,
+    "MainQuestSequenceId": 29
+  },
+  {
+    "MainQuestSequenceGroupId": 29,
+    "DifficultyType": 2,
+    "MainQuestSequenceId": 1024
+  },
+  {
+    "MainQuestSequenceGroupId": 29,
+    "DifficultyType": 3,
+    "MainQuestSequenceId": 2024
+  },
+  {
+    "MainQuestSequenceGroupId": 30,
+    "DifficultyType": 1,
+    "MainQuestSequenceId": 30
+  },
+  {
+    "MainQuestSequenceGroupId": 30,
+    "DifficultyType": 2,
+    "MainQuestSequenceId": 1025
+  },
+  {
+    "MainQuestSequenceGroupId": 30,
+    "DifficultyType": 3,
+    "MainQuestSequenceId": 2025
+  },
+  {
+    "MainQuestSequenceGroupId": 31,
+    "DifficultyType": 1,
+    "MainQuestSequenceId": 31
+  },
+  {
+    "MainQuestSequenceGroupId": 32,
+    "DifficultyType": 1,
+    "MainQuestSequenceId": 32
+  },
+  {
+    "MainQuestSequenceGroupId": 32,
+    "DifficultyType": 2,
+    "MainQuestSequenceId": 1026
+  },
+  {
+    "MainQuestSequenceGroupId": 32,
+    "DifficultyType": 3,
+    "MainQuestSequenceId": 2026
+  },
+  {
+    "MainQuestSequenceGroupId": 33,
+    "DifficultyType": 1,
+    "MainQuestSequenceId": 33
+  },
+  {
+    "MainQuestSequenceGroupId": 33,
+    "DifficultyType": 2,
+    "MainQuestSequenceId": 1027
+  },
+  {
+    "MainQuestSequenceGroupId": 33,
+    "DifficultyType": 3,
+    "MainQuestSequenceId": 2027
+  },
+  {
+    "MainQuestSequenceGroupId": 34,
+    "DifficultyType": 1,
+    "MainQuestSequenceId": 34
+  },
+  {
+    "MainQuestSequenceGroupId": 34,
+    "DifficultyType": 2,
+    "MainQuestSequenceId": 1028
+  },
+  {
+    "MainQuestSequenceGroupId": 34,
+    "DifficultyType": 3,
+    "MainQuestSequenceId": 2028
+  },
+  {
+    "MainQuestSequenceGroupId": 35,
+    "DifficultyType": 1,
+    "MainQuestSequenceId": 35
+  },
+  {
+    "MainQuestSequenceGroupId": 35,
+    "DifficultyType": 2,
+    "MainQuestSequenceId": 1029
+  },
+  {
+    "MainQuestSequenceGroupId": 35,
+    "DifficultyType": 3,
+    "MainQuestSequenceId": 2029
+  },
+  {
+    "MainQuestSequenceGroupId": 36,
+    "DifficultyType": 1,
+    "MainQuestSequenceId": 36
+  },
+  {
+    "MainQuestSequenceGroupId": 36,
+    "DifficultyType": 2,
+    "MainQuestSequenceId": 1030
+  },
+  {
+    "MainQuestSequenceGroupId": 36,
+    "DifficultyType": 3,
+    "MainQuestSequenceId": 2030
+  },
+  {
+    "MainQuestSequenceGroupId": 37,
+    "DifficultyType": 1,
+    "MainQuestSequenceId": 37
+  },
+  {
+    "MainQuestSequenceGroupId": 37,
+    "DifficultyType": 2,
+    "MainQuestSequenceId": 1031
+  },
+  {
+    "MainQuestSequenceGroupId": 37,
+    "DifficultyType": 3,
+    "MainQuestSequenceId": 2031
+  },
+  {
+    "MainQuestSequenceGroupId": 38,
+    "DifficultyType": 1,
+    "MainQuestSequenceId": 38
+  }
+]

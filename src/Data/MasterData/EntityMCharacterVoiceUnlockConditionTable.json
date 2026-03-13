@@ -1,0 +1,695 @@
+[
+  {
+    "CharacterId": 1001,
+    "SortOrder": 100,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 4010
+  },
+  {
+    "CharacterId": 1001,
+    "SortOrder": 200,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 4010
+  },
+  {
+    "CharacterId": 1001,
+    "SortOrder": 300,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 4010
+  },
+  {
+    "CharacterId": 1002,
+    "SortOrder": 100,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 4020
+  },
+  {
+    "CharacterId": 1002,
+    "SortOrder": 200,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 4020
+  },
+  {
+    "CharacterId": 1002,
+    "SortOrder": 300,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 4020
+  },
+  {
+    "CharacterId": 1003,
+    "SortOrder": 100,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 4030
+  },
+  {
+    "CharacterId": 1003,
+    "SortOrder": 200,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 4030
+  },
+  {
+    "CharacterId": 1003,
+    "SortOrder": 300,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 4030
+  },
+  {
+    "CharacterId": 1004,
+    "SortOrder": 100,
+    "CharacterVoiceUnlockConditionType": 2,
+    "ConditionValue": 121,
+    "VoiceAssetId": 1040
+  },
+  {
+    "CharacterId": 1004,
+    "SortOrder": 200,
+    "CharacterVoiceUnlockConditionType": 2,
+    "ConditionValue": 121,
+    "VoiceAssetId": 1040
+  },
+  {
+    "CharacterId": 1004,
+    "SortOrder": 300,
+    "CharacterVoiceUnlockConditionType": 2,
+    "ConditionValue": 121,
+    "VoiceAssetId": 1040
+  },
+  {
+    "CharacterId": 1006,
+    "SortOrder": 100,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2060
+  },
+  {
+    "CharacterId": 1006,
+    "SortOrder": 200,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2060
+  },
+  {
+    "CharacterId": 1006,
+    "SortOrder": 300,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2060
+  },
+  {
+    "CharacterId": 1007,
+    "SortOrder": 100,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2040
+  },
+  {
+    "CharacterId": 1007,
+    "SortOrder": 200,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2040
+  },
+  {
+    "CharacterId": 1007,
+    "SortOrder": 300,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2040
+  },
+  {
+    "CharacterId": 1008,
+    "SortOrder": 100,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2020
+  },
+  {
+    "CharacterId": 1008,
+    "SortOrder": 200,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2020
+  },
+  {
+    "CharacterId": 1008,
+    "SortOrder": 300,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2020
+  },
+  {
+    "CharacterId": 1009,
+    "SortOrder": 100,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2030
+  },
+  {
+    "CharacterId": 1009,
+    "SortOrder": 200,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2030
+  },
+  {
+    "CharacterId": 1009,
+    "SortOrder": 300,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2030
+  },
+  {
+    "CharacterId": 1010,
+    "SortOrder": 100,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2110
+  },
+  {
+    "CharacterId": 1010,
+    "SortOrder": 200,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2110
+  },
+  {
+    "CharacterId": 1010,
+    "SortOrder": 300,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2110
+  },
+  {
+    "CharacterId": 1011,
+    "SortOrder": 100,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2070
+  },
+  {
+    "CharacterId": 1011,
+    "SortOrder": 200,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2070
+  },
+  {
+    "CharacterId": 1011,
+    "SortOrder": 300,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2070
+  },
+  {
+    "CharacterId": 1012,
+    "SortOrder": 100,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2080
+  },
+  {
+    "CharacterId": 1012,
+    "SortOrder": 200,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2080
+  },
+  {
+    "CharacterId": 1012,
+    "SortOrder": 300,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2080
+  },
+  {
+    "CharacterId": 1013,
+    "SortOrder": 100,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2090
+  },
+  {
+    "CharacterId": 1013,
+    "SortOrder": 200,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2090
+  },
+  {
+    "CharacterId": 1013,
+    "SortOrder": 300,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2090
+  },
+  {
+    "CharacterId": 1014,
+    "SortOrder": 100,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2100
+  },
+  {
+    "CharacterId": 1014,
+    "SortOrder": 200,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2100
+  },
+  {
+    "CharacterId": 1014,
+    "SortOrder": 300,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2100
+  },
+  {
+    "CharacterId": 1015,
+    "SortOrder": 100,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2050
+  },
+  {
+    "CharacterId": 1015,
+    "SortOrder": 200,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2050
+  },
+  {
+    "CharacterId": 1015,
+    "SortOrder": 300,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2050
+  },
+  {
+    "CharacterId": 1016,
+    "SortOrder": 100,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 4040
+  },
+  {
+    "CharacterId": 1016,
+    "SortOrder": 200,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 4040
+  },
+  {
+    "CharacterId": 1016,
+    "SortOrder": 300,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 4040
+  },
+  {
+    "CharacterId": 1017,
+    "SortOrder": 100,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 4060
+  },
+  {
+    "CharacterId": 1017,
+    "SortOrder": 200,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 4060
+  },
+  {
+    "CharacterId": 1017,
+    "SortOrder": 300,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 4060
+  },
+  {
+    "CharacterId": 1018,
+    "SortOrder": 100,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 4050
+  },
+  {
+    "CharacterId": 1018,
+    "SortOrder": 200,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 4050
+  },
+  {
+    "CharacterId": 1018,
+    "SortOrder": 300,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 4050
+  },
+  {
+    "CharacterId": 1019,
+    "SortOrder": 100,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 1050
+  },
+  {
+    "CharacterId": 1019,
+    "SortOrder": 200,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 1050
+  },
+  {
+    "CharacterId": 1019,
+    "SortOrder": 300,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 1050
+  },
+  {
+    "CharacterId": 1020,
+    "SortOrder": 100,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 1060
+  },
+  {
+    "CharacterId": 1020,
+    "SortOrder": 200,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 1060
+  },
+  {
+    "CharacterId": 1020,
+    "SortOrder": 300,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 1060
+  },
+  {
+    "CharacterId": 1021,
+    "SortOrder": 100,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 1070
+  },
+  {
+    "CharacterId": 1021,
+    "SortOrder": 200,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 1070
+  },
+  {
+    "CharacterId": 1021,
+    "SortOrder": 300,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 1070
+  },
+  {
+    "CharacterId": 1022,
+    "SortOrder": 100,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2120
+  },
+  {
+    "CharacterId": 1022,
+    "SortOrder": 200,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2120
+  },
+  {
+    "CharacterId": 1022,
+    "SortOrder": 300,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2120
+  },
+  {
+    "CharacterId": 1023,
+    "SortOrder": 100,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2130
+  },
+  {
+    "CharacterId": 1023,
+    "SortOrder": 200,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2130
+  },
+  {
+    "CharacterId": 1023,
+    "SortOrder": 300,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2130
+  },
+  {
+    "CharacterId": 1024,
+    "SortOrder": 100,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2140
+  },
+  {
+    "CharacterId": 1024,
+    "SortOrder": 200,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2140
+  },
+  {
+    "CharacterId": 1024,
+    "SortOrder": 300,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2140
+  },
+  {
+    "CharacterId": 1025,
+    "SortOrder": 100,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2150
+  },
+  {
+    "CharacterId": 1025,
+    "SortOrder": 200,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2150
+  },
+  {
+    "CharacterId": 1025,
+    "SortOrder": 300,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2150
+  },
+  {
+    "CharacterId": 1026,
+    "SortOrder": 100,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2160
+  },
+  {
+    "CharacterId": 1026,
+    "SortOrder": 200,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2160
+  },
+  {
+    "CharacterId": 1026,
+    "SortOrder": 300,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2160
+  },
+  {
+    "CharacterId": 1027,
+    "SortOrder": 100,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2170
+  },
+  {
+    "CharacterId": 1027,
+    "SortOrder": 200,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2170
+  },
+  {
+    "CharacterId": 1027,
+    "SortOrder": 300,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2170
+  },
+  {
+    "CharacterId": 1031,
+    "SortOrder": 100,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 4070
+  },
+  {
+    "CharacterId": 1031,
+    "SortOrder": 200,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 4070
+  },
+  {
+    "CharacterId": 1031,
+    "SortOrder": 300,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 4070
+  },
+  {
+    "CharacterId": 1044,
+    "SortOrder": 100,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 4090
+  },
+  {
+    "CharacterId": 1044,
+    "SortOrder": 200,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 4090
+  },
+  {
+    "CharacterId": 1044,
+    "SortOrder": 300,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 4090
+  },
+  {
+    "CharacterId": 1045,
+    "SortOrder": 100,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 4100
+  },
+  {
+    "CharacterId": 1045,
+    "SortOrder": 200,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 4100
+  },
+  {
+    "CharacterId": 1045,
+    "SortOrder": 300,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 4100
+  },
+  {
+    "CharacterId": 1046,
+    "SortOrder": 100,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 4110
+  },
+  {
+    "CharacterId": 1046,
+    "SortOrder": 200,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 4110
+  },
+  {
+    "CharacterId": 1046,
+    "SortOrder": 300,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 4110
+  },
+  {
+    "CharacterId": 1047,
+    "SortOrder": 100,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 4120
+  },
+  {
+    "CharacterId": 1047,
+    "SortOrder": 200,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 4120
+  },
+  {
+    "CharacterId": 1047,
+    "SortOrder": 300,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 4120
+  },
+  {
+    "CharacterId": 1048,
+    "SortOrder": 100,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2180
+  },
+  {
+    "CharacterId": 1048,
+    "SortOrder": 200,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2180
+  },
+  {
+    "CharacterId": 1048,
+    "SortOrder": 300,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 2180
+  },
+  {
+    "CharacterId": 100001,
+    "SortOrder": 100,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 4080
+  },
+  {
+    "CharacterId": 100001,
+    "SortOrder": 200,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 4080
+  },
+  {
+    "CharacterId": 100001,
+    "SortOrder": 300,
+    "CharacterVoiceUnlockConditionType": 1,
+    "ConditionValue": 0,
+    "VoiceAssetId": 4080
+  }
+]

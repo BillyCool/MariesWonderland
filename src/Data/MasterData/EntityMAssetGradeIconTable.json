@@ -1,0 +1,740 @@
+[
+  {
+    "AssetGradeIconId": 11000,
+    "AssetId": 110,
+    "Level": 0,
+    "SeAssetId": 0
+  },
+  {
+    "AssetGradeIconId": 11001,
+    "AssetId": 110,
+    "Level": 1,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 11002,
+    "AssetId": 110,
+    "Level": 2,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 11003,
+    "AssetId": 110,
+    "Level": 3,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 11004,
+    "AssetId": 110,
+    "Level": 4,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 11005,
+    "AssetId": 110,
+    "Level": 5,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 11006,
+    "AssetId": 110,
+    "Level": 6,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 11007,
+    "AssetId": 110,
+    "Level": 7,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 11008,
+    "AssetId": 110,
+    "Level": 8,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 11009,
+    "AssetId": 110,
+    "Level": 9,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 11010,
+    "AssetId": 110,
+    "Level": 10,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 12000,
+    "AssetId": 120,
+    "Level": 0,
+    "SeAssetId": 0
+  },
+  {
+    "AssetGradeIconId": 12001,
+    "AssetId": 120,
+    "Level": 1,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 12002,
+    "AssetId": 120,
+    "Level": 2,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 12003,
+    "AssetId": 120,
+    "Level": 3,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 12004,
+    "AssetId": 120,
+    "Level": 4,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 12005,
+    "AssetId": 120,
+    "Level": 5,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 12006,
+    "AssetId": 120,
+    "Level": 6,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 12007,
+    "AssetId": 120,
+    "Level": 7,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 12008,
+    "AssetId": 120,
+    "Level": 8,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 12009,
+    "AssetId": 120,
+    "Level": 9,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 12010,
+    "AssetId": 120,
+    "Level": 10,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 13000,
+    "AssetId": 130,
+    "Level": 0,
+    "SeAssetId": 0
+  },
+  {
+    "AssetGradeIconId": 13001,
+    "AssetId": 130,
+    "Level": 1,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 13002,
+    "AssetId": 130,
+    "Level": 2,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 13003,
+    "AssetId": 130,
+    "Level": 3,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 13004,
+    "AssetId": 130,
+    "Level": 4,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 13005,
+    "AssetId": 130,
+    "Level": 5,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 13006,
+    "AssetId": 130,
+    "Level": 6,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 13007,
+    "AssetId": 130,
+    "Level": 7,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 13008,
+    "AssetId": 130,
+    "Level": 8,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 13009,
+    "AssetId": 130,
+    "Level": 9,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 13010,
+    "AssetId": 130,
+    "Level": 10,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 14000,
+    "AssetId": 140,
+    "Level": 0,
+    "SeAssetId": 0
+  },
+  {
+    "AssetGradeIconId": 14001,
+    "AssetId": 140,
+    "Level": 1,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 14002,
+    "AssetId": 140,
+    "Level": 2,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 14003,
+    "AssetId": 140,
+    "Level": 3,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 14004,
+    "AssetId": 140,
+    "Level": 4,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 14005,
+    "AssetId": 140,
+    "Level": 5,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 14006,
+    "AssetId": 140,
+    "Level": 6,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 14007,
+    "AssetId": 140,
+    "Level": 7,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 14008,
+    "AssetId": 140,
+    "Level": 8,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 14009,
+    "AssetId": 140,
+    "Level": 9,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 14010,
+    "AssetId": 140,
+    "Level": 10,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 15000,
+    "AssetId": 150,
+    "Level": 0,
+    "SeAssetId": 0
+  },
+  {
+    "AssetGradeIconId": 15001,
+    "AssetId": 150,
+    "Level": 1,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 15002,
+    "AssetId": 150,
+    "Level": 2,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 15003,
+    "AssetId": 150,
+    "Level": 3,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 15004,
+    "AssetId": 150,
+    "Level": 4,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 15005,
+    "AssetId": 150,
+    "Level": 5,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 15006,
+    "AssetId": 150,
+    "Level": 6,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 15007,
+    "AssetId": 150,
+    "Level": 7,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 15008,
+    "AssetId": 150,
+    "Level": 8,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 15009,
+    "AssetId": 150,
+    "Level": 9,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 15010,
+    "AssetId": 150,
+    "Level": 10,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 16000,
+    "AssetId": 160,
+    "Level": 0,
+    "SeAssetId": 0
+  },
+  {
+    "AssetGradeIconId": 16001,
+    "AssetId": 160,
+    "Level": 1,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 16002,
+    "AssetId": 160,
+    "Level": 2,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 16003,
+    "AssetId": 160,
+    "Level": 3,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 16004,
+    "AssetId": 160,
+    "Level": 4,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 16005,
+    "AssetId": 160,
+    "Level": 5,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 16006,
+    "AssetId": 160,
+    "Level": 6,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 16007,
+    "AssetId": 160,
+    "Level": 7,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 16008,
+    "AssetId": 160,
+    "Level": 8,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 16009,
+    "AssetId": 160,
+    "Level": 9,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 16010,
+    "AssetId": 160,
+    "Level": 10,
+    "SeAssetId": 10
+  },
+  {
+    "AssetGradeIconId": 17000,
+    "AssetId": 170,
+    "Level": 0,
+    "SeAssetId": 0
+  },
+  {
+    "AssetGradeIconId": 17001,
+    "AssetId": 170,
+    "Level": 1,
+    "SeAssetId": 20
+  },
+  {
+    "AssetGradeIconId": 17002,
+    "AssetId": 170,
+    "Level": 2,
+    "SeAssetId": 20
+  },
+  {
+    "AssetGradeIconId": 17003,
+    "AssetId": 170,
+    "Level": 3,
+    "SeAssetId": 20
+  },
+  {
+    "AssetGradeIconId": 17004,
+    "AssetId": 170,
+    "Level": 4,
+    "SeAssetId": 20
+  },
+  {
+    "AssetGradeIconId": 17005,
+    "AssetId": 170,
+    "Level": 5,
+    "SeAssetId": 20
+  },
+  {
+    "AssetGradeIconId": 17006,
+    "AssetId": 170,
+    "Level": 6,
+    "SeAssetId": 20
+  },
+  {
+    "AssetGradeIconId": 17007,
+    "AssetId": 170,
+    "Level": 7,
+    "SeAssetId": 20
+  },
+  {
+    "AssetGradeIconId": 17008,
+    "AssetId": 170,
+    "Level": 8,
+    "SeAssetId": 20
+  },
+  {
+    "AssetGradeIconId": 17009,
+    "AssetId": 170,
+    "Level": 9,
+    "SeAssetId": 20
+  },
+  {
+    "AssetGradeIconId": 17010,
+    "AssetId": 170,
+    "Level": 10,
+    "SeAssetId": 20
+  },
+  {
+    "AssetGradeIconId": 18000,
+    "AssetId": 180,
+    "Level": 0,
+    "SeAssetId": 0
+  },
+  {
+    "AssetGradeIconId": 18001,
+    "AssetId": 180,
+    "Level": 1,
+    "SeAssetId": 30
+  },
+  {
+    "AssetGradeIconId": 18002,
+    "AssetId": 180,
+    "Level": 2,
+    "SeAssetId": 30
+  },
+  {
+    "AssetGradeIconId": 18003,
+    "AssetId": 180,
+    "Level": 3,
+    "SeAssetId": 30
+  },
+  {
+    "AssetGradeIconId": 18004,
+    "AssetId": 180,
+    "Level": 4,
+    "SeAssetId": 30
+  },
+  {
+    "AssetGradeIconId": 18005,
+    "AssetId": 180,
+    "Level": 5,
+    "SeAssetId": 30
+  },
+  {
+    "AssetGradeIconId": 18006,
+    "AssetId": 180,
+    "Level": 6,
+    "SeAssetId": 30
+  },
+  {
+    "AssetGradeIconId": 18007,
+    "AssetId": 180,
+    "Level": 7,
+    "SeAssetId": 30
+  },
+  {
+    "AssetGradeIconId": 18008,
+    "AssetId": 180,
+    "Level": 8,
+    "SeAssetId": 30
+  },
+  {
+    "AssetGradeIconId": 18009,
+    "AssetId": 180,
+    "Level": 9,
+    "SeAssetId": 30
+  },
+  {
+    "AssetGradeIconId": 18010,
+    "AssetId": 180,
+    "Level": 10,
+    "SeAssetId": 30
+  },
+  {
+    "AssetGradeIconId": 19000,
+    "AssetId": 190,
+    "Level": 0,
+    "SeAssetId": 0
+  },
+  {
+    "AssetGradeIconId": 19001,
+    "AssetId": 190,
+    "Level": 1,
+    "SeAssetId": 30
+  },
+  {
+    "AssetGradeIconId": 19002,
+    "AssetId": 190,
+    "Level": 2,
+    "SeAssetId": 30
+  },
+  {
+    "AssetGradeIconId": 19003,
+    "AssetId": 190,
+    "Level": 3,
+    "SeAssetId": 30
+  },
+  {
+    "AssetGradeIconId": 19004,
+    "AssetId": 190,
+    "Level": 4,
+    "SeAssetId": 30
+  },
+  {
+    "AssetGradeIconId": 19005,
+    "AssetId": 190,
+    "Level": 5,
+    "SeAssetId": 30
+  },
+  {
+    "AssetGradeIconId": 19006,
+    "AssetId": 190,
+    "Level": 6,
+    "SeAssetId": 30
+  },
+  {
+    "AssetGradeIconId": 19007,
+    "AssetId": 190,
+    "Level": 7,
+    "SeAssetId": 30
+  },
+  {
+    "AssetGradeIconId": 19008,
+    "AssetId": 190,
+    "Level": 8,
+    "SeAssetId": 30
+  },
+  {
+    "AssetGradeIconId": 19009,
+    "AssetId": 190,
+    "Level": 9,
+    "SeAssetId": 30
+  },
+  {
+    "AssetGradeIconId": 19010,
+    "AssetId": 190,
+    "Level": 10,
+    "SeAssetId": 30
+  },
+  {
+    "AssetGradeIconId": 20000,
+    "AssetId": 200,
+    "Level": 0,
+    "SeAssetId": 0
+  },
+  {
+    "AssetGradeIconId": 20001,
+    "AssetId": 200,
+    "Level": 1,
+    "SeAssetId": 30
+  },
+  {
+    "AssetGradeIconId": 20002,
+    "AssetId": 200,
+    "Level": 2,
+    "SeAssetId": 30
+  },
+  {
+    "AssetGradeIconId": 20003,
+    "AssetId": 200,
+    "Level": 3,
+    "SeAssetId": 30
+  },
+  {
+    "AssetGradeIconId": 20004,
+    "AssetId": 200,
+    "Level": 4,
+    "SeAssetId": 30
+  },
+  {
+    "AssetGradeIconId": 20005,
+    "AssetId": 200,
+    "Level": 5,
+    "SeAssetId": 30
+  },
+  {
+    "AssetGradeIconId": 20006,
+    "AssetId": 200,
+    "Level": 6,
+    "SeAssetId": 30
+  },
+  {
+    "AssetGradeIconId": 20007,
+    "AssetId": 200,
+    "Level": 7,
+    "SeAssetId": 30
+  },
+  {
+    "AssetGradeIconId": 20008,
+    "AssetId": 200,
+    "Level": 8,
+    "SeAssetId": 30
+  },
+  {
+    "AssetGradeIconId": 20009,
+    "AssetId": 200,
+    "Level": 9,
+    "SeAssetId": 30
+  },
+  {
+    "AssetGradeIconId": 20010,
+    "AssetId": 200,
+    "Level": 10,
+    "SeAssetId": 30
+  },
+  {
+    "AssetGradeIconId": 21000,
+    "AssetId": 210,
+    "Level": 0,
+    "SeAssetId": 0
+  },
+  {
+    "AssetGradeIconId": 21001,
+    "AssetId": 210,
+    "Level": 1,
+    "SeAssetId": 30
+  },
+  {
+    "AssetGradeIconId": 21002,
+    "AssetId": 210,
+    "Level": 2,
+    "SeAssetId": 30
+  },
+  {
+    "AssetGradeIconId": 21003,
+    "AssetId": 210,
+    "Level": 3,
+    "SeAssetId": 30
+  },
+  {
+    "AssetGradeIconId": 21004,
+    "AssetId": 210,
+    "Level": 4,
+    "SeAssetId": 30
+  },
+  {
+    "AssetGradeIconId": 21005,
+    "AssetId": 210,
+    "Level": 5,
+    "SeAssetId": 30
+  },
+  {
+    "AssetGradeIconId": 21006,
+    "AssetId": 210,
+    "Level": 6,
+    "SeAssetId": 30
+  },
+  {
+    "AssetGradeIconId": 21007,
+    "AssetId": 210,
+    "Level": 7,
+    "SeAssetId": 30
+  },
+  {
+    "AssetGradeIconId": 21008,
+    "AssetId": 210,
+    "Level": 8,
+    "SeAssetId": 30
+  },
+  {
+    "AssetGradeIconId": 21009,
+    "AssetId": 210,
+    "Level": 9,
+    "SeAssetId": 30
+  },
+  {
+    "AssetGradeIconId": 21010,
+    "AssetId": 210,
+    "Level": 10,
+    "SeAssetId": 30
+  },
+  {
+    "AssetGradeIconId": 22000,
+    "AssetId": 220,
+    "Level": 0,
+    "SeAssetId": 0
+  },
+  {
+    "AssetGradeIconId": 22001,
+    "AssetId": 220,
+    "Level": 1,
+    "SeAssetId": 30
+  }
+]

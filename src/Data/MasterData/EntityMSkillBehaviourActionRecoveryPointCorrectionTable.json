@@ -1,0 +1,17 @@
+[
+  {
+    "SkillBehaviourActionId": 18000001,
+    "RecoveryPointCorrectionTargetSkillType": 3,
+    "RecoveryPointCorrectionCoefficientValue": 1060
+  },
+  {
+    "SkillBehaviourActionId": 18000002,
+    "RecoveryPointCorrectionTargetSkillType": 3,
+    "RecoveryPointCorrectionCoefficientValue": 1080
+  },
+  {
+    "SkillBehaviourActionId": 18000003,
+    "RecoveryPointCorrectionTargetSkillType": 3,
+    "RecoveryPointCorrectionCoefficientValue": 1100
+  }
+]

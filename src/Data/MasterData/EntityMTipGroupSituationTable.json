@@ -1,0 +1,74 @@
+[
+  {
+    "TipSituationType": 1,
+    "TipGroupId": 10001,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 1,
+    "TipGroupId": 10002,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 1,
+    "TipGroupId": 10007,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 2,
+    "TipGroupId": 10001,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 2,
+    "TipGroupId": 10003,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 2,
+    "TipGroupId": 10004,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 2,
+    "TipGroupId": 10005,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 2,
+    "TipGroupId": 10006,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 2,
+    "TipGroupId": 10007,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 3,
+    "TipGroupId": 10003,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 4,
+    "TipGroupId": 10001,
+    "Weight": 100,
+    "TargetId": 0
+  },
+  {
+    "TipSituationType": 4,
+    "TipGroupId": 10002,
+    "Weight": 100,
+    "TargetId": 0
+  }
+]

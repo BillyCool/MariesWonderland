@@ -1,0 +1,56 @@
+[
+  {
+    "PremiumItemId": 10001,
+    "PremiumItemType": 1,
+    "StartDatetime": 1682866800000,
+    "EndDatetime": 1685545199000
+  },
+  {
+    "PremiumItemId": 10002,
+    "PremiumItemType": 1,
+    "StartDatetime": 1685545200000,
+    "EndDatetime": 1688137199000
+  },
+  {
+    "PremiumItemId": 10003,
+    "PremiumItemType": 1,
+    "StartDatetime": 1688137200000,
+    "EndDatetime": 1690815599000
+  },
+  {
+    "PremiumItemId": 10004,
+    "PremiumItemType": 1,
+    "StartDatetime": 1690815600000,
+    "EndDatetime": 1693493999000
+  },
+  {
+    "PremiumItemId": 10005,
+    "PremiumItemType": 1,
+    "StartDatetime": 1693494000000,
+    "EndDatetime": 1696085999000
+  },
+  {
+    "PremiumItemId": 10006,
+    "PremiumItemType": 1,
+    "StartDatetime": 1696086000000,
+    "EndDatetime": 1698764399000
+  },
+  {
+    "PremiumItemId": 10007,
+    "PremiumItemType": 1,
+    "StartDatetime": 1698764400000,
+    "EndDatetime": 1701356399000
+  },
+  {
+    "PremiumItemId": 10008,
+    "PremiumItemType": 1,
+    "StartDatetime": 1701356400000,
+    "EndDatetime": 1704034799000
+  },
+  {
+    "PremiumItemId": 10009,
+    "PremiumItemType": 1,
+    "StartDatetime": 1704034800000,
+    "EndDatetime": 1706713199000
+  }
+]

@@ -1,0 +1,5366 @@
+[
+  {
+    "PlatformPaymentId": 1,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 120.00
+  },
+  {
+    "PlatformPaymentId": 1,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 120.00
+  },
+  {
+    "PlatformPaymentId": 1,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 120.00
+  },
+  {
+    "PlatformPaymentId": 2,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 370.00
+  },
+  {
+    "PlatformPaymentId": 2,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 370.00
+  },
+  {
+    "PlatformPaymentId": 2,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 370.00
+  },
+  {
+    "PlatformPaymentId": 3,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 730.00
+  },
+  {
+    "PlatformPaymentId": 3,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 730.00
+  },
+  {
+    "PlatformPaymentId": 3,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 730.00
+  },
+  {
+    "PlatformPaymentId": 4,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 1480.00
+  },
+  {
+    "PlatformPaymentId": 4,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 1480.00
+  },
+  {
+    "PlatformPaymentId": 4,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 1480.00
+  },
+  {
+    "PlatformPaymentId": 5,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 2940.00
+  },
+  {
+    "PlatformPaymentId": 5,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 2940.00
+  },
+  {
+    "PlatformPaymentId": 5,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 2940.00
+  },
+  {
+    "PlatformPaymentId": 6,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 4900.00
+  },
+  {
+    "PlatformPaymentId": 6,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 4900.00
+  },
+  {
+    "PlatformPaymentId": 6,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 4900.00
+  },
+  {
+    "PlatformPaymentId": 7,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 7,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 7,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 8,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 250.00
+  },
+  {
+    "PlatformPaymentId": 8,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 250.00
+  },
+  {
+    "PlatformPaymentId": 8,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 250.00
+  },
+  {
+    "PlatformPaymentId": 9,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 2940.00
+  },
+  {
+    "PlatformPaymentId": 9,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 2940.00
+  },
+  {
+    "PlatformPaymentId": 9,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 2940.00
+  },
+  {
+    "PlatformPaymentId": 10,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 2940.00
+  },
+  {
+    "PlatformPaymentId": 10,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 2940.00
+  },
+  {
+    "PlatformPaymentId": 10,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 2940.00
+  },
+  {
+    "PlatformPaymentId": 11,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 250.00
+  },
+  {
+    "PlatformPaymentId": 11,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 250.00
+  },
+  {
+    "PlatformPaymentId": 11,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 250.00
+  },
+  {
+    "PlatformPaymentId": 12,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 1480.00
+  },
+  {
+    "PlatformPaymentId": 12,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 1480.00
+  },
+  {
+    "PlatformPaymentId": 12,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 1480.00
+  },
+  {
+    "PlatformPaymentId": 13,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 2440.00
+  },
+  {
+    "PlatformPaymentId": 13,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 2440.00
+  },
+  {
+    "PlatformPaymentId": 13,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 2440.00
+  },
+  {
+    "PlatformPaymentId": 14,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 4900.00
+  },
+  {
+    "PlatformPaymentId": 14,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 4900.00
+  },
+  {
+    "PlatformPaymentId": 14,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 4900.00
+  },
+  {
+    "PlatformPaymentId": 15,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 15,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 15,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 16,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 250.00
+  },
+  {
+    "PlatformPaymentId": 16,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 250.00
+  },
+  {
+    "PlatformPaymentId": 16,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 250.00
+  },
+  {
+    "PlatformPaymentId": 17,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 1480.00
+  },
+  {
+    "PlatformPaymentId": 17,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 1480.00
+  },
+  {
+    "PlatformPaymentId": 17,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 1480.00
+  },
+  {
+    "PlatformPaymentId": 18,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 2440.00
+  },
+  {
+    "PlatformPaymentId": 18,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 2440.00
+  },
+  {
+    "PlatformPaymentId": 18,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 2440.00
+  },
+  {
+    "PlatformPaymentId": 19,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 4900.00
+  },
+  {
+    "PlatformPaymentId": 19,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 4900.00
+  },
+  {
+    "PlatformPaymentId": 19,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 4900.00
+  },
+  {
+    "PlatformPaymentId": 20,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 20,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 20,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 21,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 2940.00
+  },
+  {
+    "PlatformPaymentId": 21,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 2940.00
+  },
+  {
+    "PlatformPaymentId": 21,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 2940.00
+  },
+  {
+    "PlatformPaymentId": 22,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 250.00
+  },
+  {
+    "PlatformPaymentId": 22,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 250.00
+  },
+  {
+    "PlatformPaymentId": 22,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 250.00
+  },
+  {
+    "PlatformPaymentId": 23,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 250.00
+  },
+  {
+    "PlatformPaymentId": 23,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 250.00
+  },
+  {
+    "PlatformPaymentId": 23,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 250.00
+  },
+  {
+    "PlatformPaymentId": 24,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 1220.00
+  },
+  {
+    "PlatformPaymentId": 24,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 1220.00
+  },
+  {
+    "PlatformPaymentId": 24,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 1220.00
+  },
+  {
+    "PlatformPaymentId": 25,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 250.00
+  },
+  {
+    "PlatformPaymentId": 25,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 250.00
+  },
+  {
+    "PlatformPaymentId": 25,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 250.00
+  },
+  {
+    "PlatformPaymentId": 26,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 980.00
+  },
+  {
+    "PlatformPaymentId": 26,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 980.00
+  },
+  {
+    "PlatformPaymentId": 26,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 980.00
+  },
+  {
+    "PlatformPaymentId": 27,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 4900.00
+  },
+  {
+    "PlatformPaymentId": 27,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 4900.00
+  },
+  {
+    "PlatformPaymentId": 27,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 4900.00
+  },
+  {
+    "PlatformPaymentId": 28,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 9000.00
+  },
+  {
+    "PlatformPaymentId": 28,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 9000.00
+  },
+  {
+    "PlatformPaymentId": 28,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 9000.00
+  },
+  {
+    "PlatformPaymentId": 29,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 250.00
+  },
+  {
+    "PlatformPaymentId": 29,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 250.00
+  },
+  {
+    "PlatformPaymentId": 29,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 250.00
+  },
+  {
+    "PlatformPaymentId": 30,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 250.00
+  },
+  {
+    "PlatformPaymentId": 30,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 250.00
+  },
+  {
+    "PlatformPaymentId": 30,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 250.00
+  },
+  {
+    "PlatformPaymentId": 31,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 250.00
+  },
+  {
+    "PlatformPaymentId": 31,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 250.00
+  },
+  {
+    "PlatformPaymentId": 31,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 250.00
+  },
+  {
+    "PlatformPaymentId": 32,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 32,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 32,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 33,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 33,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 33,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 34,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 34,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 34,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 35,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 250.00
+  },
+  {
+    "PlatformPaymentId": 35,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 250.00
+  },
+  {
+    "PlatformPaymentId": 35,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 250.00
+  },
+  {
+    "PlatformPaymentId": 36,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 36,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 36,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 37,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 250.00
+  },
+  {
+    "PlatformPaymentId": 37,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 250.00
+  },
+  {
+    "PlatformPaymentId": 37,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 250.00
+  },
+  {
+    "PlatformPaymentId": 38,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 1600.00
+  },
+  {
+    "PlatformPaymentId": 38,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 1600.00
+  },
+  {
+    "PlatformPaymentId": 38,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 1600.00
+  },
+  {
+    "PlatformPaymentId": 39,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 39,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 39,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 40,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 40,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 40,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 41,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 41,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 41,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 45,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 1600.00
+  },
+  {
+    "PlatformPaymentId": 45,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 1600.00
+  },
+  {
+    "PlatformPaymentId": 45,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 1600.00
+  },
+  {
+    "PlatformPaymentId": 47,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 47,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 47,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 48,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 48,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 48,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 49,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 250.00
+  },
+  {
+    "PlatformPaymentId": 49,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 250.00
+  },
+  {
+    "PlatformPaymentId": 49,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 250.00
+  },
+  {
+    "PlatformPaymentId": 50,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 50,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 50,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 51,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 9000.00
+  },
+  {
+    "PlatformPaymentId": 51,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 9000.00
+  },
+  {
+    "PlatformPaymentId": 51,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 9000.00
+  },
+  {
+    "PlatformPaymentId": 52,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 370.00
+  },
+  {
+    "PlatformPaymentId": 52,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 370.00
+  },
+  {
+    "PlatformPaymentId": 52,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 370.00
+  },
+  {
+    "PlatformPaymentId": 53,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 53,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 53,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 54,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 54,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 54,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 55,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 55,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 55,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 56,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 56,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 56,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 57,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 57,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 57,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 58,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 4900.00
+  },
+  {
+    "PlatformPaymentId": 58,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 4900.00
+  },
+  {
+    "PlatformPaymentId": 58,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 4900.00
+  },
+  {
+    "PlatformPaymentId": 59,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 1600.00
+  },
+  {
+    "PlatformPaymentId": 59,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 1600.00
+  },
+  {
+    "PlatformPaymentId": 59,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 1600.00
+  },
+  {
+    "PlatformPaymentId": 60,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 1600.00
+  },
+  {
+    "PlatformPaymentId": 60,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 1600.00
+  },
+  {
+    "PlatformPaymentId": 60,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 1600.00
+  },
+  {
+    "PlatformPaymentId": 61,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 1600.00
+  },
+  {
+    "PlatformPaymentId": 61,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 1600.00
+  },
+  {
+    "PlatformPaymentId": 61,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 1600.00
+  },
+  {
+    "PlatformPaymentId": 62,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 1600.00
+  },
+  {
+    "PlatformPaymentId": 62,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 1600.00
+  },
+  {
+    "PlatformPaymentId": 62,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 1600.00
+  },
+  {
+    "PlatformPaymentId": 63,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 1600.00
+  },
+  {
+    "PlatformPaymentId": 63,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 1600.00
+  },
+  {
+    "PlatformPaymentId": 63,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 1600.00
+  },
+  {
+    "PlatformPaymentId": 64,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 490.00
+  },
+  {
+    "PlatformPaymentId": 64,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 490.00
+  },
+  {
+    "PlatformPaymentId": 64,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 490.00
+  },
+  {
+    "PlatformPaymentId": 65,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 65,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 65,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 66,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 66,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 66,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 67,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 67,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 67,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 68,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 1600.00
+  },
+  {
+    "PlatformPaymentId": 68,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 1600.00
+  },
+  {
+    "PlatformPaymentId": 68,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 1600.00
+  },
+  {
+    "PlatformPaymentId": 69,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 1600.00
+  },
+  {
+    "PlatformPaymentId": 69,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 1600.00
+  },
+  {
+    "PlatformPaymentId": 69,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 1600.00
+  },
+  {
+    "PlatformPaymentId": 70,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 250.00
+  },
+  {
+    "PlatformPaymentId": 70,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 250.00
+  },
+  {
+    "PlatformPaymentId": 70,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 250.00
+  },
+  {
+    "PlatformPaymentId": 71,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 71,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 71,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 72,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 72,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 72,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 73,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 73,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 73,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 74,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 74,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 74,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 75,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 75,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 75,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 76,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 76,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 76,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 79,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 7500.00
+  },
+  {
+    "PlatformPaymentId": 79,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 7500.00
+  },
+  {
+    "PlatformPaymentId": 79,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 7500.00
+  },
+  {
+    "PlatformPaymentId": 80,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 80,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 80,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 81,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 81,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 81,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 84,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 84,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 84,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 85,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 980.00
+  },
+  {
+    "PlatformPaymentId": 85,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 980.00
+  },
+  {
+    "PlatformPaymentId": 85,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 980.00
+  },
+  {
+    "PlatformPaymentId": 86,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 86,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 86,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 87,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 87,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 87,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 88,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 88,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 88,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 89,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 89,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 89,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 90,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 90,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 90,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 91,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 91,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 91,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 92,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 92,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 92,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 93,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 93,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 93,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 94,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 94,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 94,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 95,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 95,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 95,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 96,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 96,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 96,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 97,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 370.00
+  },
+  {
+    "PlatformPaymentId": 97,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 370.00
+  },
+  {
+    "PlatformPaymentId": 97,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 370.00
+  },
+  {
+    "PlatformPaymentId": 98,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 98,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 98,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 99,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 99,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 99,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 100,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 100,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 100,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 101,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 101,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 101,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 102,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 980.00
+  },
+  {
+    "PlatformPaymentId": 102,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 980.00
+  },
+  {
+    "PlatformPaymentId": 102,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 980.00
+  },
+  {
+    "PlatformPaymentId": 107,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 107,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 107,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 108,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 108,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 108,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 109,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 980.00
+  },
+  {
+    "PlatformPaymentId": 109,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 980.00
+  },
+  {
+    "PlatformPaymentId": 109,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 980.00
+  },
+  {
+    "PlatformPaymentId": 110,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 110,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 110,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 111,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 111,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 111,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 112,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 980.00
+  },
+  {
+    "PlatformPaymentId": 112,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 980.00
+  },
+  {
+    "PlatformPaymentId": 112,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 980.00
+  },
+  {
+    "PlatformPaymentId": 114,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 114,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 114,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 115,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 115,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 115,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 116,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 980.00
+  },
+  {
+    "PlatformPaymentId": 116,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 980.00
+  },
+  {
+    "PlatformPaymentId": 116,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 980.00
+  },
+  {
+    "PlatformPaymentId": 117,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 117,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 117,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 118,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 7500.00
+  },
+  {
+    "PlatformPaymentId": 118,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 7500.00
+  },
+  {
+    "PlatformPaymentId": 118,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 7500.00
+  },
+  {
+    "PlatformPaymentId": 119,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 980.00
+  },
+  {
+    "PlatformPaymentId": 119,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 980.00
+  },
+  {
+    "PlatformPaymentId": 119,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 980.00
+  },
+  {
+    "PlatformPaymentId": 120,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 120,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 120,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 121,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 121,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 121,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 122,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 122,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 122,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 123,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 980.00
+  },
+  {
+    "PlatformPaymentId": 123,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 980.00
+  },
+  {
+    "PlatformPaymentId": 123,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 980.00
+  },
+  {
+    "PlatformPaymentId": 124,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 124,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 124,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 125,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 125,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 125,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 126,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 126,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 126,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 127,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 127,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 127,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 128,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 128,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 128,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 129,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 129,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 129,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 130,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 130,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 130,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 131,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 131,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 131,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 132,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 132,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 132,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 133,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 133,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 133,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 138,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 138,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 138,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 139,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 139,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 139,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 140,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 140,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 140,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 141,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 141,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 141,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 142,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 142,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 142,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 143,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 143,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 143,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 144,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 144,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 144,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 145,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 145,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 145,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 146,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 146,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 146,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 147,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 147,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 147,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 148,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 148,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 148,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 149,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 149,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 149,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 150,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 150,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 150,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 155,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 155,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 155,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 156,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 156,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 156,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 157,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 157,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 157,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 158,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 158,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 158,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 159,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 159,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 159,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 160,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 160,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 160,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 161,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 161,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 161,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 166,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 166,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 166,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 167,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 167,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 167,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 168,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 168,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 168,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 169,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 169,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 169,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 170,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 170,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 170,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 171,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 171,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 171,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 173,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 173,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 173,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 174,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 174,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 174,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 176,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 176,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 176,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 177,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 177,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 177,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 178,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 178,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 178,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 179,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 179,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 179,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 180,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 180,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 180,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 181,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 181,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 181,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 182,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 182,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 182,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 183,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 183,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 183,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 184,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 184,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 184,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 185,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 185,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 185,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 186,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 186,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 186,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 187,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 187,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 187,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 188,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 188,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 188,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 190,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 190,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 190,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 191,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 191,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 191,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 193,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 193,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 193,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 194,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 194,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 194,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 195,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 195,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 195,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 196,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 196,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 196,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 197,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 197,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 197,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6100.00
+  },
+  {
+    "PlatformPaymentId": 198,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 198,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 198,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3060.00
+  },
+  {
+    "PlatformPaymentId": 199,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 199,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 199,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 200,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 200,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 200,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 201,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 201,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 201,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 202,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 202,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 202,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 203,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 203,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 203,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 204,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 204,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 204,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 205,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 205,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 205,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 206,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 206,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 206,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 207,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 207,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 207,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 208,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 208,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 208,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 209,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 209,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 209,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 210,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 210,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 210,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 211,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 211,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 211,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 212,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 212,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 212,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 213,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 213,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 213,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 214,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 214,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 214,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 215,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 215,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 215,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 216,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 216,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 216,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 217,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 217,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 217,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 218,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 218,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 218,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 219,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 219,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 219,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 220,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 220,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 220,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 221,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 221,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 221,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 222,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 222,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 222,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 223,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 223,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 223,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 224,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 160.00
+  },
+  {
+    "PlatformPaymentId": 224,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 160.00
+  },
+  {
+    "PlatformPaymentId": 224,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 160.00
+  },
+  {
+    "PlatformPaymentId": 225,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 320.00
+  },
+  {
+    "PlatformPaymentId": 225,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 320.00
+  },
+  {
+    "PlatformPaymentId": 225,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 320.00
+  },
+  {
+    "PlatformPaymentId": 226,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 650.00
+  },
+  {
+    "PlatformPaymentId": 226,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 650.00
+  },
+  {
+    "PlatformPaymentId": 226,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 650.00
+  },
+  {
+    "PlatformPaymentId": 227,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 1200.00
+  },
+  {
+    "PlatformPaymentId": 227,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 1200.00
+  },
+  {
+    "PlatformPaymentId": 227,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 1200.00
+  },
+  {
+    "PlatformPaymentId": 228,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 2900.00
+  },
+  {
+    "PlatformPaymentId": 228,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 2900.00
+  },
+  {
+    "PlatformPaymentId": 228,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 2900.00
+  },
+  {
+    "PlatformPaymentId": 229,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 4900.00
+  },
+  {
+    "PlatformPaymentId": 229,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 4900.00
+  },
+  {
+    "PlatformPaymentId": 229,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 4900.00
+  },
+  {
+    "PlatformPaymentId": 230,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 230,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 230,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 231,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 231,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 231,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 232,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 232,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 232,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 233,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 2900.00
+  },
+  {
+    "PlatformPaymentId": 233,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 2900.00
+  },
+  {
+    "PlatformPaymentId": 233,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 2900.00
+  },
+  {
+    "PlatformPaymentId": 234,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 2900.00
+  },
+  {
+    "PlatformPaymentId": 234,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 2900.00
+  },
+  {
+    "PlatformPaymentId": 234,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 2900.00
+  },
+  {
+    "PlatformPaymentId": 235,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 2900.00
+  },
+  {
+    "PlatformPaymentId": 235,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 2900.00
+  },
+  {
+    "PlatformPaymentId": 235,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 2900.00
+  },
+  {
+    "PlatformPaymentId": 236,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 236,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 236,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 237,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 237,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 237,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 238,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 238,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 238,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 239,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 239,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 239,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 240,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 240,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 240,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 241,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 241,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 241,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 242,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 242,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 242,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 243,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 243,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 243,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 244,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 244,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 244,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 245,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 245,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 245,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 246,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 246,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 246,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 247,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 247,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 247,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 248,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 248,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 248,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 249,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 249,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 249,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 250,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 250,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 250,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 251,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 251,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 251,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 252,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 252,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 252,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 253,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 253,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 253,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 254,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 254,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 254,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 255,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 255,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 255,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 256,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 256,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 256,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 257,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 257,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 257,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 258,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 258,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 258,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 259,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 259,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 259,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 260,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 260,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 260,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 261,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 261,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 261,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 262,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 262,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 262,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 263,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 263,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 263,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 264,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 264,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 264,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 265,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 265,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 265,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 266,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 266,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 266,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 267,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 267,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 267,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 268,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 268,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 268,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 269,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 269,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 269,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 270,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 270,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 270,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 271,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 271,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 271,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 272,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 272,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 272,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 273,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 273,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 273,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 274,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 274,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 274,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 275,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 275,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 275,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 276,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 276,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 276,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 277,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 277,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 277,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 278,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 278,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 278,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 279,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 1000.00
+  },
+  {
+    "PlatformPaymentId": 279,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 1000.00
+  },
+  {
+    "PlatformPaymentId": 279,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 1000.00
+  },
+  {
+    "PlatformPaymentId": 280,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 280,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 280,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 281,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 281,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 281,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 282,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 282,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 282,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 284,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 284,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 284,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 285,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 285,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 285,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 286,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 286,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 286,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 287,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 287,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 287,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 288,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 288,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 288,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 289,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 289,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 289,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 290,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 290,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 290,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 291,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 320.00
+  },
+  {
+    "PlatformPaymentId": 291,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 320.00
+  },
+  {
+    "PlatformPaymentId": 291,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 320.00
+  },
+  {
+    "PlatformPaymentId": 292,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 292,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 292,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 293,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 293,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 293,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 294,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 294,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 294,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 295,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 295,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 295,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 296,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 1000.00
+  },
+  {
+    "PlatformPaymentId": 296,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 1000.00
+  },
+  {
+    "PlatformPaymentId": 296,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 1000.00
+  },
+  {
+    "PlatformPaymentId": 297,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 2000.00
+  },
+  {
+    "PlatformPaymentId": 297,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 2000.00
+  },
+  {
+    "PlatformPaymentId": 297,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 2000.00
+  },
+  {
+    "PlatformPaymentId": 298,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 2000.00
+  },
+  {
+    "PlatformPaymentId": 298,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 2000.00
+  },
+  {
+    "PlatformPaymentId": 298,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 2000.00
+  },
+  {
+    "PlatformPaymentId": 299,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 299,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 299,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 300,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 300,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 300,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 301,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 301,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 301,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 302,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 302,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 302,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 303,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 500.00
+  },
+  {
+    "PlatformPaymentId": 303,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 500.00
+  },
+  {
+    "PlatformPaymentId": 303,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 500.00
+  },
+  {
+    "PlatformPaymentId": 304,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 304,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 304,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 305,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 305,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 305,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 6000.00
+  },
+  {
+    "PlatformPaymentId": 306,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 306,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 306,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 307,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 307,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 307,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 308,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 320.00
+  },
+  {
+    "PlatformPaymentId": 308,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 320.00
+  },
+  {
+    "PlatformPaymentId": 308,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 320.00
+  },
+  {
+    "PlatformPaymentId": 310,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 310,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 310,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 311,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 311,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 311,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 312,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 312,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 312,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 313,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 313,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 313,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 314,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 314,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 314,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 315,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 315,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 315,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 316,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 1000.00
+  },
+  {
+    "PlatformPaymentId": 316,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 1000.00
+  },
+  {
+    "PlatformPaymentId": 316,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 1000.00
+  },
+  {
+    "PlatformPaymentId": 317,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 317,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 317,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 318,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 318,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 318,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 320,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 320,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 320,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 321,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 321,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 321,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 322,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 322,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 322,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 323,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 323,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 323,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 324,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 324,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 324,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 325,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 325,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 325,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 326,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 326,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 326,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 327,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 500.00
+  },
+  {
+    "PlatformPaymentId": 327,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 500.00
+  },
+  {
+    "PlatformPaymentId": 327,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 500.00
+  },
+  {
+    "PlatformPaymentId": 328,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 328,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 328,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 329,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 329,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 329,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 10000.00
+  },
+  {
+    "PlatformPaymentId": 330,
+    "PlatformType": 1,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 330,
+    "PlatformType": 2,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  },
+  {
+    "PlatformPaymentId": 330,
+    "PlatformType": 8,
+    "CurrencyType": 1,
+    "Price": 3000.00
+  }
+]

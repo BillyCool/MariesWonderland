@@ -1,0 +1,16 @@
+[
+  {
+    "EventQuestLimitContentDeckRestrictionId": 1,
+    "GroupIndex": 1,
+    "EventQuestLimitContentDeckRestrictionTargetId": 1,
+    "StartDatetime": 946652400000,
+    "EndDatetime": 4070876400000
+  },
+  {
+    "EventQuestLimitContentDeckRestrictionId": 2,
+    "GroupIndex": 1,
+    "EventQuestLimitContentDeckRestrictionTargetId": 2,
+    "StartDatetime": 946652400000,
+    "EndDatetime": 4070876400000
+  }
+]

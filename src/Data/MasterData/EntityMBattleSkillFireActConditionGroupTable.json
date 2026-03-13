@@ -1,0 +1,74 @@
+[
+  {
+    "BattleSkillFireActConditionGroupId": 31020,
+    "BattleSkillFireActConditionGroupOrder": 0,
+    "BattleSkillFireActConditionType": 1,
+    "BattleSkillFireActConditionId": 4
+  },
+  {
+    "BattleSkillFireActConditionGroupId": 31020,
+    "BattleSkillFireActConditionGroupOrder": 1,
+    "BattleSkillFireActConditionType": 2,
+    "BattleSkillFireActConditionId": 2
+  },
+  {
+    "BattleSkillFireActConditionGroupId": 31020,
+    "BattleSkillFireActConditionGroupOrder": 2,
+    "BattleSkillFireActConditionType": 3,
+    "BattleSkillFireActConditionId": 5
+  },
+  {
+    "BattleSkillFireActConditionGroupId": 32018,
+    "BattleSkillFireActConditionGroupOrder": 0,
+    "BattleSkillFireActConditionType": 1,
+    "BattleSkillFireActConditionId": 1
+  },
+  {
+    "BattleSkillFireActConditionGroupId": 32018,
+    "BattleSkillFireActConditionGroupOrder": 1,
+    "BattleSkillFireActConditionType": 2,
+    "BattleSkillFireActConditionId": 5
+  },
+  {
+    "BattleSkillFireActConditionGroupId": 32018,
+    "BattleSkillFireActConditionGroupOrder": 2,
+    "BattleSkillFireActConditionType": 3,
+    "BattleSkillFireActConditionId": 5
+  },
+  {
+    "BattleSkillFireActConditionGroupId": 34030,
+    "BattleSkillFireActConditionGroupOrder": 0,
+    "BattleSkillFireActConditionType": 1,
+    "BattleSkillFireActConditionId": 1
+  },
+  {
+    "BattleSkillFireActConditionGroupId": 34030,
+    "BattleSkillFireActConditionGroupOrder": 1,
+    "BattleSkillFireActConditionType": 2,
+    "BattleSkillFireActConditionId": 3
+  },
+  {
+    "BattleSkillFireActConditionGroupId": 34030,
+    "BattleSkillFireActConditionGroupOrder": 2,
+    "BattleSkillFireActConditionType": 3,
+    "BattleSkillFireActConditionId": 5
+  },
+  {
+    "BattleSkillFireActConditionGroupId": 35019,
+    "BattleSkillFireActConditionGroupOrder": 0,
+    "BattleSkillFireActConditionType": 1,
+    "BattleSkillFireActConditionId": 1
+  },
+  {
+    "BattleSkillFireActConditionGroupId": 35019,
+    "BattleSkillFireActConditionGroupOrder": 1,
+    "BattleSkillFireActConditionType": 2,
+    "BattleSkillFireActConditionId": 1
+  },
+  {
+    "BattleSkillFireActConditionGroupId": 35019,
+    "BattleSkillFireActConditionGroupOrder": 2,
+    "BattleSkillFireActConditionType": 3,
+    "BattleSkillFireActConditionId": 5
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "SkillCategoryType": 3,
+    "HitCount": 1,
+    "HitIndexLowerLimit": 1,
+    "DamageCoefficientValuePermil": 1000
+  },
+  {
+    "SkillCategoryType": 3,
+    "HitCount": 2,
+    "HitIndexLowerLimit": 1,
+    "DamageCoefficientValuePermil": 600
+  },
+  {
+    "SkillCategoryType": 3,
+    "HitCount": 2,
+    "HitIndexLowerLimit": 2,
+    "DamageCoefficientValuePermil": 1000
+  },
+  {
+    "SkillCategoryType": 3,
+    "HitCount": 3,
+    "HitIndexLowerLimit": 1,
+    "DamageCoefficientValuePermil": 400
+  },
+  {
+    "SkillCategoryType": 3,
+    "HitCount": 3,
+    "HitIndexLowerLimit": 2,
+    "DamageCoefficientValuePermil": 700
+  },
+  {
+    "SkillCategoryType": 3,
+    "HitCount": 3,
+    "HitIndexLowerLimit": 3,
+    "DamageCoefficientValuePermil": 1000
+  },
+  {
+    "SkillCategoryType": 3,
+    "HitCount": 4,
+    "HitIndexLowerLimit": 1,
+    "DamageCoefficientValuePermil": 300
+  },
+  {
+    "SkillCategoryType": 3,
+    "HitCount": 4,
+    "HitIndexLowerLimit": 2,
+    "DamageCoefficientValuePermil": 500
+  },
+  {
+    "SkillCategoryType": 3,
+    "HitCount": 4,
+    "HitIndexLowerLimit": 3,
+    "DamageCoefficientValuePermil": 700
+  },
+  {
+    "SkillCategoryType": 3,
+    "HitCount": 4,
+    "HitIndexLowerLimit": 4,
+    "DamageCoefficientValuePermil": 1000
+  },
+  {
+    "SkillCategoryType": 3,
+    "HitCount": 5,
+    "HitIndexLowerLimit": 1,
+    "DamageCoefficientValuePermil": 300
+  },
+  {
+    "SkillCategoryType": 3,
+    "HitCount": 5,
+    "HitIndexLowerLimit": 2,
+    "DamageCoefficientValuePermil": 400
+  },
+  {
+    "SkillCategoryType": 3,
+    "HitCount": 5,
+    "HitIndexLowerLimit": 3,
+    "DamageCoefficientValuePermil": 500
+  },
+  {
+    "SkillCategoryType": 3,
+    "HitCount": 5,
+    "HitIndexLowerLimit": 4,
+    "DamageCoefficientValuePermil": 700
+  },
+  {
+    "SkillCategoryType": 3,
+    "HitCount": 5,
+    "HitIndexLowerLimit": 5,
+    "DamageCoefficientValuePermil": 1000
+  }
+]

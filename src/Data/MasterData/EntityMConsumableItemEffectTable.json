@@ -1,0 +1,710 @@
+[
+  {
+    "ConsumableItemId": 3001,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3002,
+    "EffectTargetType": 1,
+    "EffectValueType": 2,
+    "EffectValue": 500
+  },
+  {
+    "ConsumableItemId": 3003,
+    "EffectTargetType": 1,
+    "EffectValueType": 2,
+    "EffectValue": 1000
+  },
+  {
+    "ConsumableItemId": 3007,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3008,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3009,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3010,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3011,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3012,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3013,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3014,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3015,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3016,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3017,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3018,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3019,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3020,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3021,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3022,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3023,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3024,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3025,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3026,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3027,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3028,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3029,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3030,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3031,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3032,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3033,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3034,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3035,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3036,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3037,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3038,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3039,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3040,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3041,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3042,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3043,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3044,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3045,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3046,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3047,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3048,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3049,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3050,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3051,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3052,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3053,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3054,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3055,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3056,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3057,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3058,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3059,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3060,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3061,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3062,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3063,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3064,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3065,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3066,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3067,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3068,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3069,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3070,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3071,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3072,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3073,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3074,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3075,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3076,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3077,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3078,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3079,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3080,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3081,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3082,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3083,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3084,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3085,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3086,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3087,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3088,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3089,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3090,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3091,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3092,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3093,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3094,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3095,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3096,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3097,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3098,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3099,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3100,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3101,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3102,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3103,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3104,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3105,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3106,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3107,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3108,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3109,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3110,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3111,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3112,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3113,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3114,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3115,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 3116,
+    "EffectTargetType": 1,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 4001,
+    "EffectTargetType": 2,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 4002,
+    "EffectTargetType": 2,
+    "EffectValueType": 2,
+    "EffectValue": 500
+  },
+  {
+    "ConsumableItemId": 4003,
+    "EffectTargetType": 2,
+    "EffectValueType": 2,
+    "EffectValue": 1000
+  },
+  {
+    "ConsumableItemId": 4004,
+    "EffectTargetType": 2,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  },
+  {
+    "ConsumableItemId": 4005,
+    "EffectTargetType": 2,
+    "EffectValueType": 1,
+    "EffectValue": 10
+  }
+]

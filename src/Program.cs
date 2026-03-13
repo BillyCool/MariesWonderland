@@ -22,6 +22,7 @@ public static class Program
 
         builder.Services.AddGrpc();
         builder.Services.AddServerOptions(builder.Configuration);
+        builder.Services.AddDataStores(builder.Configuration);
 
         var app = builder.Build();
 

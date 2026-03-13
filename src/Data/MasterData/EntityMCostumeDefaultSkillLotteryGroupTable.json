@@ -1,0 +1,122 @@
+[
+  {
+    "CostumeDefaultSkillLotteryGroupId": 1,
+    "SkillDetailId": 900001,
+    "ProbabilityWeight": 1000
+  },
+  {
+    "CostumeDefaultSkillLotteryGroupId": 1,
+    "SkillDetailId": 900002,
+    "ProbabilityWeight": 400
+  },
+  {
+    "CostumeDefaultSkillLotteryGroupId": 1,
+    "SkillDetailId": 900003,
+    "ProbabilityWeight": 300
+  },
+  {
+    "CostumeDefaultSkillLotteryGroupId": 1,
+    "SkillDetailId": 900004,
+    "ProbabilityWeight": 200
+  },
+  {
+    "CostumeDefaultSkillLotteryGroupId": 1,
+    "SkillDetailId": 900005,
+    "ProbabilityWeight": 100
+  },
+  {
+    "CostumeDefaultSkillLotteryGroupId": 10001,
+    "SkillDetailId": 910001,
+    "ProbabilityWeight": 1000
+  },
+  {
+    "CostumeDefaultSkillLotteryGroupId": 10002,
+    "SkillDetailId": 910002,
+    "ProbabilityWeight": 1000
+  },
+  {
+    "CostumeDefaultSkillLotteryGroupId": 10003,
+    "SkillDetailId": 910003,
+    "ProbabilityWeight": 1000
+  },
+  {
+    "CostumeDefaultSkillLotteryGroupId": 10005,
+    "SkillDetailId": 910005,
+    "ProbabilityWeight": 1000
+  },
+  {
+    "CostumeDefaultSkillLotteryGroupId": 10011,
+    "SkillDetailId": 900001,
+    "ProbabilityWeight": 1000
+  },
+  {
+    "CostumeDefaultSkillLotteryGroupId": 10011,
+    "SkillDetailId": 900002,
+    "ProbabilityWeight": 500
+  },
+  {
+    "CostumeDefaultSkillLotteryGroupId": 10011,
+    "SkillDetailId": 900003,
+    "ProbabilityWeight": 200
+  },
+  {
+    "CostumeDefaultSkillLotteryGroupId": 10011,
+    "SkillDetailId": 900004,
+    "ProbabilityWeight": 0
+  },
+  {
+    "CostumeDefaultSkillLotteryGroupId": 10011,
+    "SkillDetailId": 900005,
+    "ProbabilityWeight": 0
+  },
+  {
+    "CostumeDefaultSkillLotteryGroupId": 10021,
+    "SkillDetailId": 910021,
+    "ProbabilityWeight": 1000
+  },
+  {
+    "CostumeDefaultSkillLotteryGroupId": 920001,
+    "SkillDetailId": 920001,
+    "ProbabilityWeight": 1000
+  },
+  {
+    "CostumeDefaultSkillLotteryGroupId": 920002,
+    "SkillDetailId": 920002,
+    "ProbabilityWeight": 1000
+  },
+  {
+    "CostumeDefaultSkillLotteryGroupId": 920003,
+    "SkillDetailId": 920003,
+    "ProbabilityWeight": 1000
+  },
+  {
+    "CostumeDefaultSkillLotteryGroupId": 920003,
+    "SkillDetailId": 920004,
+    "ProbabilityWeight": 400
+  },
+  {
+    "CostumeDefaultSkillLotteryGroupId": 920003,
+    "SkillDetailId": 920005,
+    "ProbabilityWeight": 300
+  },
+  {
+    "CostumeDefaultSkillLotteryGroupId": 920003,
+    "SkillDetailId": 920006,
+    "ProbabilityWeight": 200
+  },
+  {
+    "CostumeDefaultSkillLotteryGroupId": 920003,
+    "SkillDetailId": 920007,
+    "ProbabilityWeight": 100
+  },
+  {
+    "CostumeDefaultSkillLotteryGroupId": 920004,
+    "SkillDetailId": 920003,
+    "ProbabilityWeight": 1000
+  },
+  {
+    "CostumeDefaultSkillLotteryGroupId": 999999,
+    "SkillDetailId": 999999,
+    "ProbabilityWeight": 1000
+  }
+]

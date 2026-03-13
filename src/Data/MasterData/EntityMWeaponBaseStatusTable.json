@@ -1,0 +1,26 @@
+[
+  {
+    "WeaponBaseStatusId": 1,
+    "Hp": 0,
+    "Attack": 0,
+    "Vitality": 0
+  },
+  {
+    "WeaponBaseStatusId": 2,
+    "Hp": 200,
+    "Attack": 20,
+    "Vitality": 20
+  },
+  {
+    "WeaponBaseStatusId": 3,
+    "Hp": 400,
+    "Attack": 40,
+    "Vitality": 40
+  },
+  {
+    "WeaponBaseStatusId": 4,
+    "Hp": 600,
+    "Attack": 60,
+    "Vitality": 60
+  }
+]

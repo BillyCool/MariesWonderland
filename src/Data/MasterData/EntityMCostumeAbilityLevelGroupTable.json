@@ -1,0 +1,47 @@
+[
+  {
+    "CostumeAbilityLevelGroupId": 1,
+    "CostumeLimitBreakCountLowerLimit": 0,
+    "AbilityLevel": 1
+  },
+  {
+    "CostumeAbilityLevelGroupId": 1,
+    "CostumeLimitBreakCountLowerLimit": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "CostumeAbilityLevelGroupId": 1,
+    "CostumeLimitBreakCountLowerLimit": 3,
+    "AbilityLevel": 3
+  },
+  {
+    "CostumeAbilityLevelGroupId": 1,
+    "CostumeLimitBreakCountLowerLimit": 4,
+    "AbilityLevel": 4
+  },
+  {
+    "CostumeAbilityLevelGroupId": 2,
+    "CostumeLimitBreakCountLowerLimit": 0,
+    "AbilityLevel": 0
+  },
+  {
+    "CostumeAbilityLevelGroupId": 2,
+    "CostumeLimitBreakCountLowerLimit": 1,
+    "AbilityLevel": 1
+  },
+  {
+    "CostumeAbilityLevelGroupId": 2,
+    "CostumeLimitBreakCountLowerLimit": 2,
+    "AbilityLevel": 2
+  },
+  {
+    "CostumeAbilityLevelGroupId": 2,
+    "CostumeLimitBreakCountLowerLimit": 3,
+    "AbilityLevel": 3
+  },
+  {
+    "CostumeAbilityLevelGroupId": 2,
+    "CostumeLimitBreakCountLowerLimit": 4,
+    "AbilityLevel": 4
+  }
+]

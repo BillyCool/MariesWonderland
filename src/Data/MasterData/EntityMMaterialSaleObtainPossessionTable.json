@@ -1,0 +1,37 @@
+[
+  {
+    "MaterialSaleObtainPossessionId": 10001,
+    "SortOrder": 1,
+    "PossessionType": 6,
+    "PossessionId": 24,
+    "Count": 4
+  },
+  {
+    "MaterialSaleObtainPossessionId": 10002,
+    "SortOrder": 1,
+    "PossessionType": 6,
+    "PossessionId": 24,
+    "Count": 10
+  },
+  {
+    "MaterialSaleObtainPossessionId": 20001,
+    "SortOrder": 1,
+    "PossessionType": 6,
+    "PossessionId": 66,
+    "Count": 1
+  },
+  {
+    "MaterialSaleObtainPossessionId": 20010,
+    "SortOrder": 1,
+    "PossessionType": 6,
+    "PossessionId": 66,
+    "Count": 10
+  },
+  {
+    "MaterialSaleObtainPossessionId": 20100,
+    "SortOrder": 1,
+    "PossessionType": 6,
+    "PossessionId": 66,
+    "Count": 100
+  }
+]

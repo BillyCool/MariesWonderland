@@ -1,0 +1,2298 @@
+[
+  {
+    "EventQuestDailyGroupId": 1,
+    "StartDatetime": 1666058400000,
+    "EndDatetime": 1666105199000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 2,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 2,
+    "StartDatetime": 1666105200000,
+    "EndDatetime": 1666191599000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 3,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 3,
+    "StartDatetime": 1666191600000,
+    "EndDatetime": 1666277999000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 4,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 4,
+    "StartDatetime": 1666278000000,
+    "EndDatetime": 1666364399000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 5,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 5,
+    "StartDatetime": 1666364400000,
+    "EndDatetime": 1666450799000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 6,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 6,
+    "StartDatetime": 1666450800000,
+    "EndDatetime": 1666537199000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 7,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 7,
+    "StartDatetime": 1666537200000,
+    "EndDatetime": 1666623599000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 1,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 8,
+    "StartDatetime": 1666623600000,
+    "EndDatetime": 1666709999000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 2,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 9,
+    "StartDatetime": 1666710000000,
+    "EndDatetime": 1666796399000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 3,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 10,
+    "StartDatetime": 1666796400000,
+    "EndDatetime": 1666882799000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 4,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 11,
+    "StartDatetime": 1666882800000,
+    "EndDatetime": 1666969199000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 5,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 12,
+    "StartDatetime": 1666969200000,
+    "EndDatetime": 1667055599000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 6,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 13,
+    "StartDatetime": 1667055600000,
+    "EndDatetime": 1667141999000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 7,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 14,
+    "StartDatetime": 1667142000000,
+    "EndDatetime": 1667228399000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 1,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 15,
+    "StartDatetime": 1667228400000,
+    "EndDatetime": 1667314799000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 2,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 16,
+    "StartDatetime": 1667314800000,
+    "EndDatetime": 1667401199000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 3,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 17,
+    "StartDatetime": 1667401200000,
+    "EndDatetime": 1667487599000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 4,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 18,
+    "StartDatetime": 1667487600000,
+    "EndDatetime": 1667573999000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 5,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 19,
+    "StartDatetime": 1667574000000,
+    "EndDatetime": 1667660399000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 6,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 20,
+    "StartDatetime": 1667660400000,
+    "EndDatetime": 1667746799000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 7,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 21,
+    "StartDatetime": 1667746800000,
+    "EndDatetime": 1667833199000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 1,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 22,
+    "StartDatetime": 1667833200000,
+    "EndDatetime": 1667919599000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 2,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 23,
+    "StartDatetime": 1667919600000,
+    "EndDatetime": 1668005999000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 3,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 24,
+    "StartDatetime": 1668006000000,
+    "EndDatetime": 1668092399000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 4,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 25,
+    "StartDatetime": 1668132000000,
+    "EndDatetime": 1668178799000,
+    "EventQuestDailyGroupTargetChapterId": 101,
+    "EventQuestDailyGroupCompleteRewardId": 5,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 26,
+    "StartDatetime": 1668178800000,
+    "EndDatetime": 1668265199000,
+    "EventQuestDailyGroupTargetChapterId": 101,
+    "EventQuestDailyGroupCompleteRewardId": 6,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 27,
+    "StartDatetime": 1668265200000,
+    "EndDatetime": 1668351599000,
+    "EventQuestDailyGroupTargetChapterId": 101,
+    "EventQuestDailyGroupCompleteRewardId": 7,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 28,
+    "StartDatetime": 1668351600000,
+    "EndDatetime": 1668437999000,
+    "EventQuestDailyGroupTargetChapterId": 101,
+    "EventQuestDailyGroupCompleteRewardId": 1,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 29,
+    "StartDatetime": 1668438000000,
+    "EndDatetime": 1668524399000,
+    "EventQuestDailyGroupTargetChapterId": 101,
+    "EventQuestDailyGroupCompleteRewardId": 2,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 30,
+    "StartDatetime": 1668524400000,
+    "EndDatetime": 1668610799000,
+    "EventQuestDailyGroupTargetChapterId": 101,
+    "EventQuestDailyGroupCompleteRewardId": 3,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 31,
+    "StartDatetime": 1668610800000,
+    "EndDatetime": 1668697199000,
+    "EventQuestDailyGroupTargetChapterId": 101,
+    "EventQuestDailyGroupCompleteRewardId": 4,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 32,
+    "StartDatetime": 1668697200000,
+    "EndDatetime": 1668783599000,
+    "EventQuestDailyGroupTargetChapterId": 101,
+    "EventQuestDailyGroupCompleteRewardId": 5,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 33,
+    "StartDatetime": 1668783600000,
+    "EndDatetime": 1668869999000,
+    "EventQuestDailyGroupTargetChapterId": 101,
+    "EventQuestDailyGroupCompleteRewardId": 6,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 34,
+    "StartDatetime": 1668870000000,
+    "EndDatetime": 1668956399000,
+    "EventQuestDailyGroupTargetChapterId": 101,
+    "EventQuestDailyGroupCompleteRewardId": 7,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 35,
+    "StartDatetime": 1668956400000,
+    "EndDatetime": 1669042799000,
+    "EventQuestDailyGroupTargetChapterId": 102,
+    "EventQuestDailyGroupCompleteRewardId": 1,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 36,
+    "StartDatetime": 1669042800000,
+    "EndDatetime": 1669129199000,
+    "EventQuestDailyGroupTargetChapterId": 102,
+    "EventQuestDailyGroupCompleteRewardId": 2,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 37,
+    "StartDatetime": 1669129200000,
+    "EndDatetime": 1669215599000,
+    "EventQuestDailyGroupTargetChapterId": 102,
+    "EventQuestDailyGroupCompleteRewardId": 3,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 38,
+    "StartDatetime": 1669215600000,
+    "EndDatetime": 1669301999000,
+    "EventQuestDailyGroupTargetChapterId": 102,
+    "EventQuestDailyGroupCompleteRewardId": 4,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 39,
+    "StartDatetime": 1669302000000,
+    "EndDatetime": 1669388399000,
+    "EventQuestDailyGroupTargetChapterId": 102,
+    "EventQuestDailyGroupCompleteRewardId": 5,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 40,
+    "StartDatetime": 1669388400000,
+    "EndDatetime": 1669474799000,
+    "EventQuestDailyGroupTargetChapterId": 102,
+    "EventQuestDailyGroupCompleteRewardId": 6,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 41,
+    "StartDatetime": 1669474800000,
+    "EndDatetime": 1669561199000,
+    "EventQuestDailyGroupTargetChapterId": 102,
+    "EventQuestDailyGroupCompleteRewardId": 7,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 42,
+    "StartDatetime": 1669561200000,
+    "EndDatetime": 1669647599000,
+    "EventQuestDailyGroupTargetChapterId": 102,
+    "EventQuestDailyGroupCompleteRewardId": 1,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 43,
+    "StartDatetime": 1669647600000,
+    "EndDatetime": 1669733999000,
+    "EventQuestDailyGroupTargetChapterId": 102,
+    "EventQuestDailyGroupCompleteRewardId": 2,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 44,
+    "StartDatetime": 1669734000000,
+    "EndDatetime": 1669820399000,
+    "EventQuestDailyGroupTargetChapterId": 102,
+    "EventQuestDailyGroupCompleteRewardId": 3,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 45,
+    "StartDatetime": 1669820400000,
+    "EndDatetime": 1669906799000,
+    "EventQuestDailyGroupTargetChapterId": 103,
+    "EventQuestDailyGroupCompleteRewardId": 4,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 46,
+    "StartDatetime": 1669906800000,
+    "EndDatetime": 1669993199000,
+    "EventQuestDailyGroupTargetChapterId": 103,
+    "EventQuestDailyGroupCompleteRewardId": 5,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 47,
+    "StartDatetime": 1669993200000,
+    "EndDatetime": 1670079599000,
+    "EventQuestDailyGroupTargetChapterId": 103,
+    "EventQuestDailyGroupCompleteRewardId": 6,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 48,
+    "StartDatetime": 1670079600000,
+    "EndDatetime": 1670165999000,
+    "EventQuestDailyGroupTargetChapterId": 103,
+    "EventQuestDailyGroupCompleteRewardId": 7,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 49,
+    "StartDatetime": 1670166000000,
+    "EndDatetime": 1670252399000,
+    "EventQuestDailyGroupTargetChapterId": 103,
+    "EventQuestDailyGroupCompleteRewardId": 1,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 50,
+    "StartDatetime": 1670252400000,
+    "EndDatetime": 1670338799000,
+    "EventQuestDailyGroupTargetChapterId": 103,
+    "EventQuestDailyGroupCompleteRewardId": 2,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 51,
+    "StartDatetime": 1670338800000,
+    "EndDatetime": 1670425199000,
+    "EventQuestDailyGroupTargetChapterId": 103,
+    "EventQuestDailyGroupCompleteRewardId": 3,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 52,
+    "StartDatetime": 1670425200000,
+    "EndDatetime": 1670511599000,
+    "EventQuestDailyGroupTargetChapterId": 103,
+    "EventQuestDailyGroupCompleteRewardId": 4,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 53,
+    "StartDatetime": 1670511600000,
+    "EndDatetime": 1670597999000,
+    "EventQuestDailyGroupTargetChapterId": 103,
+    "EventQuestDailyGroupCompleteRewardId": 5,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 54,
+    "StartDatetime": 1670598000000,
+    "EndDatetime": 1670684399000,
+    "EventQuestDailyGroupTargetChapterId": 103,
+    "EventQuestDailyGroupCompleteRewardId": 6,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 55,
+    "StartDatetime": 1670684400000,
+    "EndDatetime": 1670770799000,
+    "EventQuestDailyGroupTargetChapterId": 103,
+    "EventQuestDailyGroupCompleteRewardId": 7,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 56,
+    "StartDatetime": 1670770800000,
+    "EndDatetime": 1670857199000,
+    "EventQuestDailyGroupTargetChapterId": 103,
+    "EventQuestDailyGroupCompleteRewardId": 1,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 57,
+    "StartDatetime": 1670857200000,
+    "EndDatetime": 1670943599000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 2,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 58,
+    "StartDatetime": 1670943600000,
+    "EndDatetime": 1671029999000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 3,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 59,
+    "StartDatetime": 1671030000000,
+    "EndDatetime": 1671116399000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 4,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 60,
+    "StartDatetime": 1671116400000,
+    "EndDatetime": 1671202799000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 5,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 61,
+    "StartDatetime": 1671202800000,
+    "EndDatetime": 1671289199000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 6,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 62,
+    "StartDatetime": 1671289200000,
+    "EndDatetime": 1671375599000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 7,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 63,
+    "StartDatetime": 1671375600000,
+    "EndDatetime": 1671461999000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 1,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 64,
+    "StartDatetime": 1671462000000,
+    "EndDatetime": 1671548399000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 2,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 65,
+    "StartDatetime": 1671548400000,
+    "EndDatetime": 1671634799000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 3,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 66,
+    "StartDatetime": 1671634800000,
+    "EndDatetime": 1671721199000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 4,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 67,
+    "StartDatetime": 1671721200000,
+    "EndDatetime": 1671807599000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 5,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 68,
+    "StartDatetime": 1671807600000,
+    "EndDatetime": 1671893999000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 6,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 69,
+    "StartDatetime": 1671894000000,
+    "EndDatetime": 1671980399000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 7,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 70,
+    "StartDatetime": 1671980400000,
+    "EndDatetime": 1672066799000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 1,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 71,
+    "StartDatetime": 1672066800000,
+    "EndDatetime": 1672153199000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 2,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 72,
+    "StartDatetime": 1672153200000,
+    "EndDatetime": 1672239599000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 3,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 73,
+    "StartDatetime": 1672239600000,
+    "EndDatetime": 1672325999000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 4,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 74,
+    "StartDatetime": 1672326000000,
+    "EndDatetime": 1672412399000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 5,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 75,
+    "StartDatetime": 1672412400000,
+    "EndDatetime": 1672498799000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 6,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 76,
+    "StartDatetime": 1672498800000,
+    "EndDatetime": 1672585199000,
+    "EventQuestDailyGroupTargetChapterId": 104,
+    "EventQuestDailyGroupCompleteRewardId": 7,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 77,
+    "StartDatetime": 1672585200000,
+    "EndDatetime": 1672671599000,
+    "EventQuestDailyGroupTargetChapterId": 104,
+    "EventQuestDailyGroupCompleteRewardId": 1,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 78,
+    "StartDatetime": 1672671600000,
+    "EndDatetime": 1672757999000,
+    "EventQuestDailyGroupTargetChapterId": 104,
+    "EventQuestDailyGroupCompleteRewardId": 2,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 79,
+    "StartDatetime": 1672758000000,
+    "EndDatetime": 1672844399000,
+    "EventQuestDailyGroupTargetChapterId": 104,
+    "EventQuestDailyGroupCompleteRewardId": 3,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 80,
+    "StartDatetime": 1672844400000,
+    "EndDatetime": 1672930799000,
+    "EventQuestDailyGroupTargetChapterId": 104,
+    "EventQuestDailyGroupCompleteRewardId": 4,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 81,
+    "StartDatetime": 1672930800000,
+    "EndDatetime": 1673017199000,
+    "EventQuestDailyGroupTargetChapterId": 104,
+    "EventQuestDailyGroupCompleteRewardId": 5,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 82,
+    "StartDatetime": 1673017200000,
+    "EndDatetime": 1673103599000,
+    "EventQuestDailyGroupTargetChapterId": 104,
+    "EventQuestDailyGroupCompleteRewardId": 6,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 83,
+    "StartDatetime": 1673103600000,
+    "EndDatetime": 1673189999000,
+    "EventQuestDailyGroupTargetChapterId": 104,
+    "EventQuestDailyGroupCompleteRewardId": 7,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 84,
+    "StartDatetime": 1673190000000,
+    "EndDatetime": 1673276399000,
+    "EventQuestDailyGroupTargetChapterId": 104,
+    "EventQuestDailyGroupCompleteRewardId": 1,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 85,
+    "StartDatetime": 1673276400000,
+    "EndDatetime": 1673362799000,
+    "EventQuestDailyGroupTargetChapterId": 104,
+    "EventQuestDailyGroupCompleteRewardId": 2,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 86,
+    "StartDatetime": 1673362800000,
+    "EndDatetime": 1673449199000,
+    "EventQuestDailyGroupTargetChapterId": 104,
+    "EventQuestDailyGroupCompleteRewardId": 3,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 87,
+    "StartDatetime": 1673449200000,
+    "EndDatetime": 1673535599000,
+    "EventQuestDailyGroupTargetChapterId": 104,
+    "EventQuestDailyGroupCompleteRewardId": 4,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 88,
+    "StartDatetime": 1673535600000,
+    "EndDatetime": 1673621999000,
+    "EventQuestDailyGroupTargetChapterId": 104,
+    "EventQuestDailyGroupCompleteRewardId": 5,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 89,
+    "StartDatetime": 1673622000000,
+    "EndDatetime": 1673708399000,
+    "EventQuestDailyGroupTargetChapterId": 104,
+    "EventQuestDailyGroupCompleteRewardId": 6,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 90,
+    "StartDatetime": 1673708400000,
+    "EndDatetime": 1673794799000,
+    "EventQuestDailyGroupTargetChapterId": 104,
+    "EventQuestDailyGroupCompleteRewardId": 7,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 91,
+    "StartDatetime": 1673794800000,
+    "EndDatetime": 1673881199000,
+    "EventQuestDailyGroupTargetChapterId": 104,
+    "EventQuestDailyGroupCompleteRewardId": 1,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 92,
+    "StartDatetime": 1673881200000,
+    "EndDatetime": 1673967599000,
+    "EventQuestDailyGroupTargetChapterId": 104,
+    "EventQuestDailyGroupCompleteRewardId": 2,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 93,
+    "StartDatetime": 1673967600000,
+    "EndDatetime": 1674053999000,
+    "EventQuestDailyGroupTargetChapterId": 104,
+    "EventQuestDailyGroupCompleteRewardId": 3,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 94,
+    "StartDatetime": 1674054000000,
+    "EndDatetime": 1674140399000,
+    "EventQuestDailyGroupTargetChapterId": 104,
+    "EventQuestDailyGroupCompleteRewardId": 4,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 95,
+    "StartDatetime": 1674140400000,
+    "EndDatetime": 1674226799000,
+    "EventQuestDailyGroupTargetChapterId": 104,
+    "EventQuestDailyGroupCompleteRewardId": 5,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 96,
+    "StartDatetime": 1674226800000,
+    "EndDatetime": 1674313199000,
+    "EventQuestDailyGroupTargetChapterId": 104,
+    "EventQuestDailyGroupCompleteRewardId": 6,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 97,
+    "StartDatetime": 1674313200000,
+    "EndDatetime": 1674399599000,
+    "EventQuestDailyGroupTargetChapterId": 104,
+    "EventQuestDailyGroupCompleteRewardId": 7,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 98,
+    "StartDatetime": 1674399600000,
+    "EndDatetime": 1674485999000,
+    "EventQuestDailyGroupTargetChapterId": 104,
+    "EventQuestDailyGroupCompleteRewardId": 1,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 99,
+    "StartDatetime": 1674486000000,
+    "EndDatetime": 1674572399000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 2,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 100,
+    "StartDatetime": 1674572400000,
+    "EndDatetime": 1674658799000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 3,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 101,
+    "StartDatetime": 1674658800000,
+    "EndDatetime": 1674745199000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 4,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 102,
+    "StartDatetime": 1674745200000,
+    "EndDatetime": 1674831599000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 5,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 103,
+    "StartDatetime": 1674831600000,
+    "EndDatetime": 1674917999000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 6,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 104,
+    "StartDatetime": 1674918000000,
+    "EndDatetime": 1675004399000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 7,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 105,
+    "StartDatetime": 1675004400000,
+    "EndDatetime": 1675090799000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 1,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 106,
+    "StartDatetime": 1675090800000,
+    "EndDatetime": 1675177199000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 2,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 107,
+    "StartDatetime": 1675177200000,
+    "EndDatetime": 1675263599000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 3,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 108,
+    "StartDatetime": 1675263600000,
+    "EndDatetime": 1675349999000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 4,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 109,
+    "StartDatetime": 1675350000000,
+    "EndDatetime": 1675436399000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 5,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 110,
+    "StartDatetime": 1675436400000,
+    "EndDatetime": 1675522799000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 6,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 111,
+    "StartDatetime": 1675522800000,
+    "EndDatetime": 1675609199000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 7,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 112,
+    "StartDatetime": 1675648800000,
+    "EndDatetime": 1675695599000,
+    "EventQuestDailyGroupTargetChapterId": 105,
+    "EventQuestDailyGroupCompleteRewardId": 1,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 113,
+    "StartDatetime": 1675695600000,
+    "EndDatetime": 1675781999000,
+    "EventQuestDailyGroupTargetChapterId": 105,
+    "EventQuestDailyGroupCompleteRewardId": 2,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 114,
+    "StartDatetime": 1675782000000,
+    "EndDatetime": 1675868399000,
+    "EventQuestDailyGroupTargetChapterId": 105,
+    "EventQuestDailyGroupCompleteRewardId": 3,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 115,
+    "StartDatetime": 1675868400000,
+    "EndDatetime": 1675954799000,
+    "EventQuestDailyGroupTargetChapterId": 105,
+    "EventQuestDailyGroupCompleteRewardId": 4,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 116,
+    "StartDatetime": 1675954800000,
+    "EndDatetime": 1676041199000,
+    "EventQuestDailyGroupTargetChapterId": 105,
+    "EventQuestDailyGroupCompleteRewardId": 5,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 117,
+    "StartDatetime": 1676041200000,
+    "EndDatetime": 1676127599000,
+    "EventQuestDailyGroupTargetChapterId": 105,
+    "EventQuestDailyGroupCompleteRewardId": 6,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 118,
+    "StartDatetime": 1676127600000,
+    "EndDatetime": 1676213999000,
+    "EventQuestDailyGroupTargetChapterId": 105,
+    "EventQuestDailyGroupCompleteRewardId": 7,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 119,
+    "StartDatetime": 1676214000000,
+    "EndDatetime": 1676300399000,
+    "EventQuestDailyGroupTargetChapterId": 105,
+    "EventQuestDailyGroupCompleteRewardId": 1,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 120,
+    "StartDatetime": 1676300400000,
+    "EndDatetime": 1676386799000,
+    "EventQuestDailyGroupTargetChapterId": 105,
+    "EventQuestDailyGroupCompleteRewardId": 2,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 121,
+    "StartDatetime": 1676386800000,
+    "EndDatetime": 1676473199000,
+    "EventQuestDailyGroupTargetChapterId": 105,
+    "EventQuestDailyGroupCompleteRewardId": 3,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 122,
+    "StartDatetime": 1676473200000,
+    "EndDatetime": 1676559599000,
+    "EventQuestDailyGroupTargetChapterId": 105,
+    "EventQuestDailyGroupCompleteRewardId": 4,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 123,
+    "StartDatetime": 1676559600000,
+    "EndDatetime": 1676645999000,
+    "EventQuestDailyGroupTargetChapterId": 105,
+    "EventQuestDailyGroupCompleteRewardId": 5,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 124,
+    "StartDatetime": 1676646000000,
+    "EndDatetime": 1676732399000,
+    "EventQuestDailyGroupTargetChapterId": 105,
+    "EventQuestDailyGroupCompleteRewardId": 6,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 125,
+    "StartDatetime": 1676732400000,
+    "EndDatetime": 1676818799000,
+    "EventQuestDailyGroupTargetChapterId": 106,
+    "EventQuestDailyGroupCompleteRewardId": 7,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 126,
+    "StartDatetime": 1676818800000,
+    "EndDatetime": 1676905199000,
+    "EventQuestDailyGroupTargetChapterId": 106,
+    "EventQuestDailyGroupCompleteRewardId": 1,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 127,
+    "StartDatetime": 1676905200000,
+    "EndDatetime": 1676991599000,
+    "EventQuestDailyGroupTargetChapterId": 106,
+    "EventQuestDailyGroupCompleteRewardId": 2,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 128,
+    "StartDatetime": 1676991600000,
+    "EndDatetime": 1677077999000,
+    "EventQuestDailyGroupTargetChapterId": 106,
+    "EventQuestDailyGroupCompleteRewardId": 3,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 129,
+    "StartDatetime": 1677078000000,
+    "EndDatetime": 1677164399000,
+    "EventQuestDailyGroupTargetChapterId": 106,
+    "EventQuestDailyGroupCompleteRewardId": 4,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 130,
+    "StartDatetime": 1677164400000,
+    "EndDatetime": 1677250799000,
+    "EventQuestDailyGroupTargetChapterId": 106,
+    "EventQuestDailyGroupCompleteRewardId": 5,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 131,
+    "StartDatetime": 1677250800000,
+    "EndDatetime": 1677337199000,
+    "EventQuestDailyGroupTargetChapterId": 106,
+    "EventQuestDailyGroupCompleteRewardId": 6,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 132,
+    "StartDatetime": 1677337200000,
+    "EndDatetime": 1677423599000,
+    "EventQuestDailyGroupTargetChapterId": 106,
+    "EventQuestDailyGroupCompleteRewardId": 7,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 133,
+    "StartDatetime": 1677423600000,
+    "EndDatetime": 1677509999000,
+    "EventQuestDailyGroupTargetChapterId": 106,
+    "EventQuestDailyGroupCompleteRewardId": 1,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 134,
+    "StartDatetime": 1677510000000,
+    "EndDatetime": 1677596399000,
+    "EventQuestDailyGroupTargetChapterId": 106,
+    "EventQuestDailyGroupCompleteRewardId": 2,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 135,
+    "StartDatetime": 1677596400000,
+    "EndDatetime": 1677682799000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 3,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 136,
+    "StartDatetime": 1677682800000,
+    "EndDatetime": 1677769199000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 4,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 137,
+    "StartDatetime": 1677769200000,
+    "EndDatetime": 1677855599000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 5,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 138,
+    "StartDatetime": 1677855600000,
+    "EndDatetime": 1677941999000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 6,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 139,
+    "StartDatetime": 1677942000000,
+    "EndDatetime": 1678028399000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 7,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 140,
+    "StartDatetime": 1678028400000,
+    "EndDatetime": 1678114799000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 1,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 141,
+    "StartDatetime": 1678114800000,
+    "EndDatetime": 1678201199000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 2,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 142,
+    "StartDatetime": 1678201200000,
+    "EndDatetime": 1678287599000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 3,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 143,
+    "StartDatetime": 1678287600000,
+    "EndDatetime": 1678373999000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 4,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 144,
+    "StartDatetime": 1678374000000,
+    "EndDatetime": 1678460399000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 5,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 145,
+    "StartDatetime": 1678460400000,
+    "EndDatetime": 1678546799000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 6,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 146,
+    "StartDatetime": 1678546800000,
+    "EndDatetime": 1678633199000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 7,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 147,
+    "StartDatetime": 1678633200000,
+    "EndDatetime": 1678719599000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 1,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 148,
+    "StartDatetime": 1678719600000,
+    "EndDatetime": 1678805999000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 2,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 149,
+    "StartDatetime": 1678806000000,
+    "EndDatetime": 1678892399000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 3,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 150,
+    "StartDatetime": 1678892400000,
+    "EndDatetime": 1678978799000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 4,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 151,
+    "StartDatetime": 1678978800000,
+    "EndDatetime": 1679065199000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 5,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 152,
+    "StartDatetime": 1679065200000,
+    "EndDatetime": 1679151599000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 6,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 153,
+    "StartDatetime": 1679151600000,
+    "EndDatetime": 1679237999000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 7,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 154,
+    "StartDatetime": 1679238000000,
+    "EndDatetime": 1679324399000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 1,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 155,
+    "StartDatetime": 1679324400000,
+    "EndDatetime": 1679410799000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 2,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 156,
+    "StartDatetime": 1679410800000,
+    "EndDatetime": 1679497199000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 3,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 157,
+    "StartDatetime": 1679497200000,
+    "EndDatetime": 1679583599000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 4,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 158,
+    "StartDatetime": 1679583600000,
+    "EndDatetime": 1679669999000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 5,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 159,
+    "StartDatetime": 1679670000000,
+    "EndDatetime": 1679756399000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 6,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 160,
+    "StartDatetime": 1679756400000,
+    "EndDatetime": 1679842799000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 7,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 161,
+    "StartDatetime": 1679842800000,
+    "EndDatetime": 1679929199000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 1,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 162,
+    "StartDatetime": 1679929200000,
+    "EndDatetime": 1680015599000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 2,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 163,
+    "StartDatetime": 1680015600000,
+    "EndDatetime": 1680101999000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 3,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 164,
+    "StartDatetime": 1680102000000,
+    "EndDatetime": 1680188399000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 4,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 165,
+    "StartDatetime": 1680188400000,
+    "EndDatetime": 1680274799000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 5,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 166,
+    "StartDatetime": 1680274800000,
+    "EndDatetime": 1680361199000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 6,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 167,
+    "StartDatetime": 1680361200000,
+    "EndDatetime": 1680447599000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 7,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 168,
+    "StartDatetime": 1680447600000,
+    "EndDatetime": 1680533999000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 1,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 169,
+    "StartDatetime": 1680534000000,
+    "EndDatetime": 1680620399000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 2,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 170,
+    "StartDatetime": 1680620400000,
+    "EndDatetime": 1680706799000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 3,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 171,
+    "StartDatetime": 1680706800000,
+    "EndDatetime": 1680793199000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 4,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 172,
+    "StartDatetime": 1680793200000,
+    "EndDatetime": 1680879599000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 5,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 173,
+    "StartDatetime": 1680879600000,
+    "EndDatetime": 1680965999000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 6,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 174,
+    "StartDatetime": 1680966000000,
+    "EndDatetime": 1681052399000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 7,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 175,
+    "StartDatetime": 1681052400000,
+    "EndDatetime": 1681138799000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 1,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 176,
+    "StartDatetime": 1681138800000,
+    "EndDatetime": 1681225199000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 2,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 177,
+    "StartDatetime": 1681225200000,
+    "EndDatetime": 1681311599000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 3,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 178,
+    "StartDatetime": 1681311600000,
+    "EndDatetime": 1681397999000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 4,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 179,
+    "StartDatetime": 1681398000000,
+    "EndDatetime": 1681484399000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 5,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 180,
+    "StartDatetime": 1681484400000,
+    "EndDatetime": 1681570799000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 6,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 181,
+    "StartDatetime": 1681570800000,
+    "EndDatetime": 1681657199000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 7,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 182,
+    "StartDatetime": 1681657200000,
+    "EndDatetime": 1681743599000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 1,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 183,
+    "StartDatetime": 1681743600000,
+    "EndDatetime": 1681829999000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 2,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 184,
+    "StartDatetime": 1681830000000,
+    "EndDatetime": 1681916399000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 3,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 185,
+    "StartDatetime": 1681916400000,
+    "EndDatetime": 1682002799000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 4,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 186,
+    "StartDatetime": 1682002800000,
+    "EndDatetime": 1682089199000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 5,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 187,
+    "StartDatetime": 1682089200000,
+    "EndDatetime": 1682175599000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 6,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 188,
+    "StartDatetime": 1682175600000,
+    "EndDatetime": 1682261999000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 7,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 189,
+    "StartDatetime": 1682262000000,
+    "EndDatetime": 1682348399000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 1,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 190,
+    "StartDatetime": 1682348400000,
+    "EndDatetime": 1682434799000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 2,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 191,
+    "StartDatetime": 1682434800000,
+    "EndDatetime": 1682521199000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 3,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 192,
+    "StartDatetime": 1682521200000,
+    "EndDatetime": 1682607599000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 4,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 193,
+    "StartDatetime": 1682607600000,
+    "EndDatetime": 1682693999000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 5,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 194,
+    "StartDatetime": 1682694000000,
+    "EndDatetime": 1682780399000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 6,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 195,
+    "StartDatetime": 1682780400000,
+    "EndDatetime": 1682866799000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 7,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 196,
+    "StartDatetime": 1682866800000,
+    "EndDatetime": 1682953199000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 1,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 197,
+    "StartDatetime": 1682953200000,
+    "EndDatetime": 1683039599000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 2,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 198,
+    "StartDatetime": 1683039600000,
+    "EndDatetime": 1683125999000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 3,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 199,
+    "StartDatetime": 1683126000000,
+    "EndDatetime": 1683212399000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 4,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 200,
+    "StartDatetime": 1683212400000,
+    "EndDatetime": 1683298799000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 5,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 201,
+    "StartDatetime": 1683298800000,
+    "EndDatetime": 1683385199000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 6,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 202,
+    "StartDatetime": 1683385200000,
+    "EndDatetime": 1683471599000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 7,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 203,
+    "StartDatetime": 1683511200000,
+    "EndDatetime": 1683557999000,
+    "EventQuestDailyGroupTargetChapterId": 107,
+    "EventQuestDailyGroupCompleteRewardId": 1,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 204,
+    "StartDatetime": 1683558000000,
+    "EndDatetime": 1683644399000,
+    "EventQuestDailyGroupTargetChapterId": 107,
+    "EventQuestDailyGroupCompleteRewardId": 2,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 205,
+    "StartDatetime": 1683644400000,
+    "EndDatetime": 1683730799000,
+    "EventQuestDailyGroupTargetChapterId": 107,
+    "EventQuestDailyGroupCompleteRewardId": 3,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 206,
+    "StartDatetime": 1683730800000,
+    "EndDatetime": 1683817199000,
+    "EventQuestDailyGroupTargetChapterId": 107,
+    "EventQuestDailyGroupCompleteRewardId": 4,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 207,
+    "StartDatetime": 1683817200000,
+    "EndDatetime": 1683903599000,
+    "EventQuestDailyGroupTargetChapterId": 107,
+    "EventQuestDailyGroupCompleteRewardId": 5,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 208,
+    "StartDatetime": 1683903600000,
+    "EndDatetime": 1683989999000,
+    "EventQuestDailyGroupTargetChapterId": 107,
+    "EventQuestDailyGroupCompleteRewardId": 6,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 209,
+    "StartDatetime": 1683990000000,
+    "EndDatetime": 1684076399000,
+    "EventQuestDailyGroupTargetChapterId": 107,
+    "EventQuestDailyGroupCompleteRewardId": 7,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 210,
+    "StartDatetime": 1684076400000,
+    "EndDatetime": 1684162799000,
+    "EventQuestDailyGroupTargetChapterId": 107,
+    "EventQuestDailyGroupCompleteRewardId": 1,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 211,
+    "StartDatetime": 1684162800000,
+    "EndDatetime": 1684249199000,
+    "EventQuestDailyGroupTargetChapterId": 107,
+    "EventQuestDailyGroupCompleteRewardId": 2,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 212,
+    "StartDatetime": 1684249200000,
+    "EndDatetime": 1684335599000,
+    "EventQuestDailyGroupTargetChapterId": 107,
+    "EventQuestDailyGroupCompleteRewardId": 3,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 213,
+    "StartDatetime": 1684335600000,
+    "EndDatetime": 1684421999000,
+    "EventQuestDailyGroupTargetChapterId": 108,
+    "EventQuestDailyGroupCompleteRewardId": 4,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 214,
+    "StartDatetime": 1684422000000,
+    "EndDatetime": 1684508399000,
+    "EventQuestDailyGroupTargetChapterId": 108,
+    "EventQuestDailyGroupCompleteRewardId": 5,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 215,
+    "StartDatetime": 1684508400000,
+    "EndDatetime": 1684594799000,
+    "EventQuestDailyGroupTargetChapterId": 108,
+    "EventQuestDailyGroupCompleteRewardId": 6,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 216,
+    "StartDatetime": 1684594800000,
+    "EndDatetime": 1684681199000,
+    "EventQuestDailyGroupTargetChapterId": 108,
+    "EventQuestDailyGroupCompleteRewardId": 7,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 217,
+    "StartDatetime": 1684681200000,
+    "EndDatetime": 1684767599000,
+    "EventQuestDailyGroupTargetChapterId": 108,
+    "EventQuestDailyGroupCompleteRewardId": 1,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 218,
+    "StartDatetime": 1684767600000,
+    "EndDatetime": 1684853999000,
+    "EventQuestDailyGroupTargetChapterId": 108,
+    "EventQuestDailyGroupCompleteRewardId": 2,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 219,
+    "StartDatetime": 1684854000000,
+    "EndDatetime": 1684940399000,
+    "EventQuestDailyGroupTargetChapterId": 108,
+    "EventQuestDailyGroupCompleteRewardId": 3,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 220,
+    "StartDatetime": 1684940400000,
+    "EndDatetime": 1685026799000,
+    "EventQuestDailyGroupTargetChapterId": 108,
+    "EventQuestDailyGroupCompleteRewardId": 4,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 221,
+    "StartDatetime": 1685026800000,
+    "EndDatetime": 1685113199000,
+    "EventQuestDailyGroupTargetChapterId": 108,
+    "EventQuestDailyGroupCompleteRewardId": 5,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 222,
+    "StartDatetime": 1685113200000,
+    "EndDatetime": 1685199599000,
+    "EventQuestDailyGroupTargetChapterId": 108,
+    "EventQuestDailyGroupCompleteRewardId": 6,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 223,
+    "StartDatetime": 1685199600000,
+    "EndDatetime": 1685285999000,
+    "EventQuestDailyGroupTargetChapterId": 109,
+    "EventQuestDailyGroupCompleteRewardId": 7,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 224,
+    "StartDatetime": 1685286000000,
+    "EndDatetime": 1685372399000,
+    "EventQuestDailyGroupTargetChapterId": 109,
+    "EventQuestDailyGroupCompleteRewardId": 1,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 225,
+    "StartDatetime": 1685372400000,
+    "EndDatetime": 1685458799000,
+    "EventQuestDailyGroupTargetChapterId": 109,
+    "EventQuestDailyGroupCompleteRewardId": 2,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 226,
+    "StartDatetime": 1685458800000,
+    "EndDatetime": 1685545199000,
+    "EventQuestDailyGroupTargetChapterId": 109,
+    "EventQuestDailyGroupCompleteRewardId": 3,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 227,
+    "StartDatetime": 1685545200000,
+    "EndDatetime": 1685631599000,
+    "EventQuestDailyGroupTargetChapterId": 109,
+    "EventQuestDailyGroupCompleteRewardId": 4,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 228,
+    "StartDatetime": 1685631600000,
+    "EndDatetime": 1685717999000,
+    "EventQuestDailyGroupTargetChapterId": 109,
+    "EventQuestDailyGroupCompleteRewardId": 5,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 229,
+    "StartDatetime": 1685718000000,
+    "EndDatetime": 1685804399000,
+    "EventQuestDailyGroupTargetChapterId": 109,
+    "EventQuestDailyGroupCompleteRewardId": 6,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 230,
+    "StartDatetime": 1685804400000,
+    "EndDatetime": 1685890799000,
+    "EventQuestDailyGroupTargetChapterId": 109,
+    "EventQuestDailyGroupCompleteRewardId": 7,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 231,
+    "StartDatetime": 1685890800000,
+    "EndDatetime": 1685977199000,
+    "EventQuestDailyGroupTargetChapterId": 109,
+    "EventQuestDailyGroupCompleteRewardId": 1,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 232,
+    "StartDatetime": 1685977200000,
+    "EndDatetime": 1686063599000,
+    "EventQuestDailyGroupTargetChapterId": 109,
+    "EventQuestDailyGroupCompleteRewardId": 2,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 233,
+    "StartDatetime": 1686063600000,
+    "EndDatetime": 1686149999000,
+    "EventQuestDailyGroupTargetChapterId": 109,
+    "EventQuestDailyGroupCompleteRewardId": 3,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 234,
+    "StartDatetime": 1686150000000,
+    "EndDatetime": 1686236399000,
+    "EventQuestDailyGroupTargetChapterId": 109,
+    "EventQuestDailyGroupCompleteRewardId": 4,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 235,
+    "StartDatetime": 1686236400000,
+    "EndDatetime": 1686322799000,
+    "EventQuestDailyGroupTargetChapterId": 109,
+    "EventQuestDailyGroupCompleteRewardId": 5,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 236,
+    "StartDatetime": 1686322800000,
+    "EndDatetime": 1686409199000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 6,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 237,
+    "StartDatetime": 1686409200000,
+    "EndDatetime": 1686495599000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 7,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 238,
+    "StartDatetime": 1686495600000,
+    "EndDatetime": 1686581999000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 1,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 239,
+    "StartDatetime": 1686582000000,
+    "EndDatetime": 1686668399000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 2,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 240,
+    "StartDatetime": 1686668400000,
+    "EndDatetime": 1686754799000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 3,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 241,
+    "StartDatetime": 1686754800000,
+    "EndDatetime": 1686841199000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 4,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 242,
+    "StartDatetime": 1686841200000,
+    "EndDatetime": 1686927599000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 5,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 243,
+    "StartDatetime": 1686927600000,
+    "EndDatetime": 1687013999000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 6,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 244,
+    "StartDatetime": 1687014000000,
+    "EndDatetime": 1687100399000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 7,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 245,
+    "StartDatetime": 1687100400000,
+    "EndDatetime": 1687186799000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 1,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 246,
+    "StartDatetime": 1687186800000,
+    "EndDatetime": 1687273199000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 2,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 247,
+    "StartDatetime": 1687273200000,
+    "EndDatetime": 1687359599000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 3,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 248,
+    "StartDatetime": 1687359600000,
+    "EndDatetime": 1687445999000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 4,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 249,
+    "StartDatetime": 1687446000000,
+    "EndDatetime": 1687532399000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 5,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 250,
+    "StartDatetime": 1687532400000,
+    "EndDatetime": 1687618799000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 6,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 251,
+    "StartDatetime": 1687618800000,
+    "EndDatetime": 1687705199000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 7,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 252,
+    "StartDatetime": 1687705200000,
+    "EndDatetime": 1687791599000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 1,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 253,
+    "StartDatetime": 1687791600000,
+    "EndDatetime": 1687877999000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 2,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 254,
+    "StartDatetime": 1687878000000,
+    "EndDatetime": 1687964399000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 3,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 255,
+    "StartDatetime": 1687964400000,
+    "EndDatetime": 1688050799000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 4,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 256,
+    "StartDatetime": 1688050800000,
+    "EndDatetime": 1688137199000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 5,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 257,
+    "StartDatetime": 1688137200000,
+    "EndDatetime": 1688223599000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 6,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 258,
+    "StartDatetime": 1688223600000,
+    "EndDatetime": 1688309999000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 7,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 259,
+    "StartDatetime": 1688310000000,
+    "EndDatetime": 1688396399000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 1,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 260,
+    "StartDatetime": 1688396400000,
+    "EndDatetime": 1688482799000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 2,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 261,
+    "StartDatetime": 1688482800000,
+    "EndDatetime": 1688569199000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 3,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 262,
+    "StartDatetime": 1688569200000,
+    "EndDatetime": 1688655599000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 4,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 263,
+    "StartDatetime": 1688655600000,
+    "EndDatetime": 1688741999000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 5,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 264,
+    "StartDatetime": 1688742000000,
+    "EndDatetime": 1688828399000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 6,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 265,
+    "StartDatetime": 1688828400000,
+    "EndDatetime": 1688914799000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 7,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 266,
+    "StartDatetime": 1688914800000,
+    "EndDatetime": 1689001199000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 1,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 267,
+    "StartDatetime": 1689001200000,
+    "EndDatetime": 1689087599000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 2,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 268,
+    "StartDatetime": 1689087600000,
+    "EndDatetime": 1689173999000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 3,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 269,
+    "StartDatetime": 1689174000000,
+    "EndDatetime": 1689260399000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 4,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 270,
+    "StartDatetime": 1689260400000,
+    "EndDatetime": 1689346799000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 5,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 271,
+    "StartDatetime": 1689346800000,
+    "EndDatetime": 1689433199000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 6,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 272,
+    "StartDatetime": 1689433200000,
+    "EndDatetime": 1689519599000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 7,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 273,
+    "StartDatetime": 1689519600000,
+    "EndDatetime": 1689605999000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 1,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 274,
+    "StartDatetime": 1689606000000,
+    "EndDatetime": 1689692399000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 2,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 275,
+    "StartDatetime": 1689692400000,
+    "EndDatetime": 1689778799000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 3,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 276,
+    "StartDatetime": 1689778800000,
+    "EndDatetime": 1689865199000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 4,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 277,
+    "StartDatetime": 1689865200000,
+    "EndDatetime": 1689951599000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 5,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 278,
+    "StartDatetime": 1689951600000,
+    "EndDatetime": 1690037999000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 6,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 279,
+    "StartDatetime": 1690038000000,
+    "EndDatetime": 1690124399000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 7,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 280,
+    "StartDatetime": 1690124400000,
+    "EndDatetime": 1690210799000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 1,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 281,
+    "StartDatetime": 1690210800000,
+    "EndDatetime": 1690297199000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 2,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 282,
+    "StartDatetime": 1690297200000,
+    "EndDatetime": 1690383599000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 3,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 283,
+    "StartDatetime": 1690383600000,
+    "EndDatetime": 1690469999000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 4,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 284,
+    "StartDatetime": 1690470000000,
+    "EndDatetime": 1690556399000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 5,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 285,
+    "StartDatetime": 1690556400000,
+    "EndDatetime": 1690642799000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 6,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 286,
+    "StartDatetime": 1690642800000,
+    "EndDatetime": 1690729199000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 7,
+    "EventQuestDailyGroupMessageId": 1
+  },
+  {
+    "EventQuestDailyGroupId": 287,
+    "StartDatetime": 1690729200000,
+    "EndDatetime": 1690815599000,
+    "EventQuestDailyGroupTargetChapterId": 1,
+    "EventQuestDailyGroupCompleteRewardId": 1,
+    "EventQuestDailyGroupMessageId": 1
+  }
+]

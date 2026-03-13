@@ -1,0 +1,754 @@
+[
+  {
+    "MaintenanceGroupId": 1,
+    "ApiPath": "apb.api.pvp.PvpService/FinishBattle",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 9,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 1,
+    "ApiPath": "apb.api.pvp.PvpService/GetAttackLogList",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 9,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 1,
+    "ApiPath": "apb.api.pvp.PvpService/GetDefenseLogList",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 9,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 1,
+    "ApiPath": "apb.api.pvp.PvpService/GetRanking",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 9,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 1,
+    "ApiPath": "apb.api.pvp.PvpService/GetSeasonResult",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 9,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 1,
+    "ApiPath": "apb.api.pvp.PvpService/GetTopData",
+    "Priority": 1,
+    "ScreenTransitionType": 1,
+    "BlockFunctionType": 9,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 1,
+    "ApiPath": "apb.api.pvp.PvpService/StartBattle",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 9,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 1,
+    "ApiPath": "apb.api.pvp.PvpService/UpdateMatchingList",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 9,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 2,
+    "ApiPath": "apb.api.pvp.PvpService/FinishBattle",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 9,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 2,
+    "ApiPath": "apb.api.pvp.PvpService/GetAttackLogList",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 9,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 2,
+    "ApiPath": "apb.api.pvp.PvpService/GetDefenseLogList",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 9,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 2,
+    "ApiPath": "apb.api.pvp.PvpService/GetMatchingList",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 9,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 2,
+    "ApiPath": "apb.api.pvp.PvpService/GetRanking",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 9,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 2,
+    "ApiPath": "apb.api.pvp.PvpService/GetSeasonResult",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 9,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 2,
+    "ApiPath": "apb.api.pvp.PvpService/GetTopData",
+    "Priority": 1,
+    "ScreenTransitionType": 1,
+    "BlockFunctionType": 9,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 2,
+    "ApiPath": "apb.api.pvp.PvpService/StartBattle",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 9,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 2,
+    "ApiPath": "apb.api.pvp.PvpService/UpdateMatchingList",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 9,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 3,
+    "ApiPath": "apb.api.quest.QuestService/RestartEventQuest",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 21,
+    "BlockFunctionValue": "6"
+  },
+  {
+    "MaintenanceGroupId": 3,
+    "ApiPath": "apb.api.quest.QuestService/StartEventQuest",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 21,
+    "BlockFunctionValue": "6"
+  },
+  {
+    "MaintenanceGroupId": 4,
+    "ApiPath": "apb.api.pvp.PvpService/FinishBattle",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 9,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 4,
+    "ApiPath": "apb.api.pvp.PvpService/GetAttackLogList",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 9,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 4,
+    "ApiPath": "apb.api.pvp.PvpService/GetDefenseLogList",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 9,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 4,
+    "ApiPath": "apb.api.pvp.PvpService/GetMatchingList",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 9,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 4,
+    "ApiPath": "apb.api.pvp.PvpService/GetRanking",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 9,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 4,
+    "ApiPath": "apb.api.pvp.PvpService/GetSeasonResult",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 9,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 4,
+    "ApiPath": "apb.api.pvp.PvpService/GetTopData",
+    "Priority": 1,
+    "ScreenTransitionType": 1,
+    "BlockFunctionType": 9,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 4,
+    "ApiPath": "apb.api.pvp.PvpService/StartBattle",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 9,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 4,
+    "ApiPath": "apb.api.pvp.PvpService/UpdateMatchingList",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 9,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 5,
+    "ApiPath": "apb.api.pvp.PvpService/FinishBattle",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 9,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 5,
+    "ApiPath": "apb.api.pvp.PvpService/GetAttackLogList",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 9,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 5,
+    "ApiPath": "apb.api.pvp.PvpService/GetDefenseLogList",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 9,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 5,
+    "ApiPath": "apb.api.pvp.PvpService/GetMatchingList",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 9,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 5,
+    "ApiPath": "apb.api.pvp.PvpService/GetRanking",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 9,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 5,
+    "ApiPath": "apb.api.pvp.PvpService/GetSeasonResult",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 9,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 5,
+    "ApiPath": "apb.api.pvp.PvpService/GetTopData",
+    "Priority": 1,
+    "ScreenTransitionType": 1,
+    "BlockFunctionType": 9,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 5,
+    "ApiPath": "apb.api.pvp.PvpService/StartBattle",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 9,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 5,
+    "ApiPath": "apb.api.pvp.PvpService/UpdateMatchingList",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 9,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 6,
+    "ApiPath": "apb.api.quest.QuestService/RestartEventQuest",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 19,
+    "BlockFunctionValue": "220004"
+  },
+  {
+    "MaintenanceGroupId": 6,
+    "ApiPath": "apb.api.quest.QuestService/StartEventQuest",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 19,
+    "BlockFunctionValue": "220004"
+  },
+  {
+    "MaintenanceGroupId": 7,
+    "ApiPath": "apb.api.pvp.PvpService/FinishBattle",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 9,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 7,
+    "ApiPath": "apb.api.pvp.PvpService/GetAttackLogList",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 9,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 7,
+    "ApiPath": "apb.api.pvp.PvpService/GetDefenseLogList",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 9,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 7,
+    "ApiPath": "apb.api.pvp.PvpService/GetMatchingList",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 9,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 7,
+    "ApiPath": "apb.api.pvp.PvpService/GetRanking",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 9,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 7,
+    "ApiPath": "apb.api.pvp.PvpService/GetSeasonResult",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 9,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 7,
+    "ApiPath": "apb.api.pvp.PvpService/GetTopData",
+    "Priority": 1,
+    "ScreenTransitionType": 1,
+    "BlockFunctionType": 9,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 7,
+    "ApiPath": "apb.api.pvp.PvpService/StartBattle",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 9,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 7,
+    "ApiPath": "apb.api.pvp.PvpService/UpdateMatchingList",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 9,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 8,
+    "ApiPath": "apb.api.quest.QuestService/RestartEventQuest",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 21,
+    "BlockFunctionValue": "4"
+  },
+  {
+    "MaintenanceGroupId": 8,
+    "ApiPath": "apb.api.quest.QuestService/StartEventQuest",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 21,
+    "BlockFunctionValue": "4"
+  },
+  {
+    "MaintenanceGroupId": 12,
+    "ApiPath": "apb.api.characterboard.CharacterBoardService/ReleasePanel",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 24,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 14,
+    "ApiPath": "apb.api.quest.QuestService/FinishEventQuest",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 8,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 14,
+    "ApiPath": "apb.api.quest.QuestService/ReceiveTowerAccumulationReward",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 8,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 14,
+    "ApiPath": "apb.api.quest.QuestService/RestartEventQuest",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 8,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 14,
+    "ApiPath": "apb.api.quest.QuestService/StartEventQuest",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 8,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 14,
+    "ApiPath": "apb.api.quest.QuestService/UpdateEventQuestSceneProgressRequest",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 8,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 21,
+    "ApiPath": "apb.api.bighunt.BigHuntService/GetBigHuntTopData",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 23,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 21,
+    "ApiPath": "apb.api.bighunt.BigHuntService/RestartBigHuntQuest",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 23,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 21,
+    "ApiPath": "apb.api.bighunt.BigHuntService/SkipBigHuntQuest",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 23,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 21,
+    "ApiPath": "apb.api.bighunt.BigHuntService/StartBigHuntQuest",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 23,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 21,
+    "ApiPath": "apb.api.bighunt.BigHuntService/UpdateBigHuntQuestSceneProgress",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 23,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 22,
+    "ApiPath": "apb.api.gacha.GachaService/Draw",
+    "Priority": 1,
+    "ScreenTransitionType": 2,
+    "BlockFunctionType": 11,
+    "BlockFunctionValue": "311011,311012,311013,311014,311015,311016"
+  },
+  {
+    "MaintenanceGroupId": 25,
+    "ApiPath": "apb.api.explore.ExploreService/StartExplore",
+    "Priority": 1,
+    "ScreenTransitionType": 2,
+    "BlockFunctionType": 10,
+    "BlockFunctionValue": "2,12"
+  },
+  {
+    "MaintenanceGroupId": 28,
+    "ApiPath": "apb.api.gacha.GachaService",
+    "Priority": 1,
+    "ScreenTransitionType": 2,
+    "BlockFunctionType": 11,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 32,
+    "ApiPath": "apb.api.quest.QuestService/RestartEventQuest",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 21,
+    "BlockFunctionValue": "7"
+  },
+  {
+    "MaintenanceGroupId": 32,
+    "ApiPath": "apb.api.quest.QuestService/StartEventQuest",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 21,
+    "BlockFunctionValue": "7"
+  },
+  {
+    "MaintenanceGroupId": 34,
+    "ApiPath": "apb.api.gacha.GachaService/Draw",
+    "Priority": 1,
+    "ScreenTransitionType": 1,
+    "BlockFunctionType": 11,
+    "BlockFunctionValue": "194"
+  },
+  {
+    "MaintenanceGroupId": 35,
+    "ApiPath": "apb.api. characterviewer.CharacterViewerService/CharacterViewerTop",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 28,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 36,
+    "ApiPath": "apb.api.quest.QuestService/StartEventQuest",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 21,
+    "BlockFunctionValue": "11"
+  },
+  {
+    "MaintenanceGroupId": 39,
+    "ApiPath": "apb.api.shop.ShopService/CreatePurchaseTransaction",
+    "Priority": 1,
+    "ScreenTransitionType": 1,
+    "BlockFunctionType": 12,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 43,
+    "ApiPath": "apb.api.gacha.GachaService/Draw",
+    "Priority": 1,
+    "ScreenTransitionType": 1,
+    "BlockFunctionType": 11,
+    "BlockFunctionValue": "539001,539002,539003,539004,539005"
+  },
+  {
+    "MaintenanceGroupId": 45,
+    "ApiPath": "apb.api.explore.ExploreService/StartExplore",
+    "Priority": 1,
+    "ScreenTransitionType": 2,
+    "BlockFunctionType": 10,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 47,
+    "ApiPath": "apb.api.character.CharacterService/Rebirth",
+    "Priority": 1,
+    "ScreenTransitionType": 1,
+    "BlockFunctionType": 30,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 54,
+    "ApiPath": "apb.api.quest.QuestService/RestartEventQuest",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 21,
+    "BlockFunctionValue": "11"
+  },
+  {
+    "MaintenanceGroupId": 54,
+    "ApiPath": "apb.api.quest.QuestService/StartEventQuest",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 21,
+    "BlockFunctionValue": "11"
+  },
+  {
+    "MaintenanceGroupId": 54,
+    "ApiPath": "apb.api.sidestoryquest.SideStoryQuestService/MoveSideStoryQuestProgress",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 26,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 57,
+    "ApiPath": "apb.api.deck.DeckService/CopyDeck",
+    "Priority": 1,
+    "ScreenTransitionType": 1,
+    "BlockFunctionType": 26,
+    "BlockFunctionValue": "6"
+  },
+  {
+    "MaintenanceGroupId": 57,
+    "ApiPath": "apb.api.deck.DeckService/RefreshDeckPower",
+    "Priority": 1,
+    "ScreenTransitionType": 1,
+    "BlockFunctionType": 26,
+    "BlockFunctionValue": "6"
+  },
+  {
+    "MaintenanceGroupId": 57,
+    "ApiPath": "apb.api.deck.DeckService/RefreshMultiDeckPower",
+    "Priority": 1,
+    "ScreenTransitionType": 1,
+    "BlockFunctionType": 26,
+    "BlockFunctionValue": "6"
+  },
+  {
+    "MaintenanceGroupId": 57,
+    "ApiPath": "apb.api.deck.DeckService/RemoveDeck",
+    "Priority": 1,
+    "ScreenTransitionType": 1,
+    "BlockFunctionType": 26,
+    "BlockFunctionValue": "6"
+  },
+  {
+    "MaintenanceGroupId": 57,
+    "ApiPath": "apb.api.deck.DeckService/ReplaceDeck",
+    "Priority": 1,
+    "ScreenTransitionType": 1,
+    "BlockFunctionType": 26,
+    "BlockFunctionValue": "6"
+  },
+  {
+    "MaintenanceGroupId": 57,
+    "ApiPath": "apb.api.deck.DeckService/ReplaceMultiDeck",
+    "Priority": 1,
+    "ScreenTransitionType": 1,
+    "BlockFunctionType": 26,
+    "BlockFunctionValue": "6"
+  },
+  {
+    "MaintenanceGroupId": 57,
+    "ApiPath": "apb.api.deck.DeckService/UpdateName",
+    "Priority": 1,
+    "ScreenTransitionType": 1,
+    "BlockFunctionType": 26,
+    "BlockFunctionValue": "6"
+  },
+  {
+    "MaintenanceGroupId": 57,
+    "ApiPath": "apb.api.quest.QuestService/RestartEventQuest",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 21,
+    "BlockFunctionValue": "11"
+  },
+  {
+    "MaintenanceGroupId": 57,
+    "ApiPath": "apb.api.quest.QuestService/StartEventQuest",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 21,
+    "BlockFunctionValue": "11"
+  },
+  {
+    "MaintenanceGroupId": 57,
+    "ApiPath": "apb.api.sidestoryquest.SideStoryQuestService/MoveSideStoryQuestProgress",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 26,
+    "BlockFunctionValue": ""
+  },
+  {
+    "MaintenanceGroupId": 62,
+    "ApiPath": "apb.api.gacha.GachaService/Draw",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 11,
+    "BlockFunctionValue": "552,584001,584002,584003,584004"
+  },
+  {
+    "MaintenanceGroupId": 63,
+    "ApiPath": "apb.api.quest.QuestService/RestartEventQuest",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 19,
+    "BlockFunctionValue": "500021,500022,500023,500024"
+  },
+  {
+    "MaintenanceGroupId": 63,
+    "ApiPath": "apb.api.quest.QuestService/StartEventQuest",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 19,
+    "BlockFunctionValue": "500021,500022,500023,500024"
+  },
+  {
+    "MaintenanceGroupId": 63,
+    "ApiPath": "apb.api.sidestoryquest.SideStoryQuestService/MoveSideStoryQuestProgress",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 27,
+    "BlockFunctionValue": "3"
+  },
+  {
+    "MaintenanceGroupId": 67,
+    "ApiPath": "apb.api.gacha.GachaService/Draw",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 11,
+    "BlockFunctionValue": "569,601001,601002,601003,601004"
+  },
+  {
+    "MaintenanceGroupId": 68,
+    "ApiPath": "apb.api.quest.QuestService/RestartEventQuest",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 19,
+    "BlockFunctionValue": "500031,500032,500033,500034"
+  },
+  {
+    "MaintenanceGroupId": 68,
+    "ApiPath": "apb.api.quest.QuestService/StartEventQuest",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 19,
+    "BlockFunctionValue": "500031,500032,500033,500034"
+  },
+  {
+    "MaintenanceGroupId": 68,
+    "ApiPath": "apb.api.sidestoryquest.SideStoryQuestService/MoveSideStoryQuestProgress",
+    "Priority": 1,
+    "ScreenTransitionType": 3,
+    "BlockFunctionType": 27,
+    "BlockFunctionValue": "4"
+  }
+]

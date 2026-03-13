@@ -1,0 +1,26 @@
+[
+  {
+    "RarityType": 10,
+    "PartsLevelUpRateGroupId": 1,
+    "PartsLevelUpPriceGroupId": 1,
+    "SellPriceNumericalFunctionId": 81
+  },
+  {
+    "RarityType": 20,
+    "PartsLevelUpRateGroupId": 2,
+    "PartsLevelUpPriceGroupId": 2,
+    "SellPriceNumericalFunctionId": 80
+  },
+  {
+    "RarityType": 30,
+    "PartsLevelUpRateGroupId": 3,
+    "PartsLevelUpPriceGroupId": 3,
+    "SellPriceNumericalFunctionId": 79
+  },
+  {
+    "RarityType": 40,
+    "PartsLevelUpRateGroupId": 4,
+    "PartsLevelUpPriceGroupId": 4,
+    "SellPriceNumericalFunctionId": 78
+  }
+]

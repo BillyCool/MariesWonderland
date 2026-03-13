@@ -1,0 +1,630 @@
+[
+  {
+    "CatalogTermId": 1,
+    "StartDatetime": 1613617200000
+  },
+  {
+    "CatalogTermId": 1020,
+    "StartDatetime": 1614481200000
+  },
+  {
+    "CatalogTermId": 2020,
+    "StartDatetime": 1615215600000
+  },
+  {
+    "CatalogTermId": 2030,
+    "StartDatetime": 1615604400000
+  },
+  {
+    "CatalogTermId": 3010,
+    "StartDatetime": 1617159600000
+  },
+  {
+    "CatalogTermId": 3020,
+    "StartDatetime": 1618020000000
+  },
+  {
+    "CatalogTermId": 3040,
+    "StartDatetime": 1618326000000
+  },
+  {
+    "CatalogTermId": 3050,
+    "StartDatetime": 1618884000000
+  },
+  {
+    "CatalogTermId": 3060,
+    "StartDatetime": 1619056800000
+  },
+  {
+    "CatalogTermId": 3070,
+    "StartDatetime": 1619748000000
+  },
+  {
+    "CatalogTermId": 4020,
+    "StartDatetime": 1620439200000
+  },
+  {
+    "CatalogTermId": 4040,
+    "StartDatetime": 1620957600000
+  },
+  {
+    "CatalogTermId": 4050,
+    "StartDatetime": 1621476000000
+  },
+  {
+    "CatalogTermId": 5010,
+    "StartDatetime": 1622426400000
+  },
+  {
+    "CatalogTermId": 5025,
+    "StartDatetime": 1623376800000
+  },
+  {
+    "CatalogTermId": 5030,
+    "StartDatetime": 1624327200000
+  },
+  {
+    "CatalogTermId": 6010,
+    "StartDatetime": 1625018400000
+  },
+  {
+    "CatalogTermId": 6020,
+    "StartDatetime": 1625796000000
+  },
+  {
+    "CatalogTermId": 6021,
+    "StartDatetime": 1625796000000
+  },
+  {
+    "CatalogTermId": 6040,
+    "StartDatetime": 1626832800000
+  },
+  {
+    "CatalogTermId": 7010,
+    "StartDatetime": 1627696800000
+  },
+  {
+    "CatalogTermId": 7020,
+    "StartDatetime": 1628474400000
+  },
+  {
+    "CatalogTermId": 7030,
+    "StartDatetime": 1629252000000
+  },
+  {
+    "CatalogTermId": 8010,
+    "StartDatetime": 1630375200000
+  },
+  {
+    "CatalogTermId": 8030,
+    "StartDatetime": 1631239200000
+  },
+  {
+    "CatalogTermId": 8040,
+    "StartDatetime": 1631844000000
+  },
+  {
+    "CatalogTermId": 9010,
+    "StartDatetime": 1632794400000
+  },
+  {
+    "CatalogTermId": 9020,
+    "StartDatetime": 1633917600000
+  },
+  {
+    "CatalogTermId": 9030,
+    "StartDatetime": 1634680800000
+  },
+  {
+    "CatalogTermId": 9031,
+    "StartDatetime": 1634868000000
+  },
+  {
+    "CatalogTermId": 10010,
+    "StartDatetime": 1635645600000
+  },
+  {
+    "CatalogTermId": 10020,
+    "StartDatetime": 1636509600000
+  },
+  {
+    "CatalogTermId": 10030,
+    "StartDatetime": 1637373600000
+  },
+  {
+    "CatalogTermId": 11010,
+    "StartDatetime": 1638237600000
+  },
+  {
+    "CatalogTermId": 11020,
+    "StartDatetime": 1639101600000
+  },
+  {
+    "CatalogTermId": 11040,
+    "StartDatetime": 1639965600000
+  },
+  {
+    "CatalogTermId": 11041,
+    "StartDatetime": 1640224800000
+  },
+  {
+    "CatalogTermId": 12010,
+    "StartDatetime": 1640962800000
+  },
+  {
+    "CatalogTermId": 12020,
+    "StartDatetime": 1641866400000
+  },
+  {
+    "CatalogTermId": 12023,
+    "StartDatetime": 1642550400000
+  },
+  {
+    "CatalogTermId": 12040,
+    "StartDatetime": 1642730400000
+  },
+  {
+    "CatalogTermId": 13010,
+    "StartDatetime": 1643594400000
+  },
+  {
+    "CatalogTermId": 13020,
+    "StartDatetime": 1643900400000
+  },
+  {
+    "CatalogTermId": 13021,
+    "StartDatetime": 1643940000000
+  },
+  {
+    "CatalogTermId": 13030,
+    "StartDatetime": 1644458400000
+  },
+  {
+    "CatalogTermId": 13040,
+    "StartDatetime": 1645156800000
+  },
+  {
+    "CatalogTermId": 13041,
+    "StartDatetime": 1645156800000
+  },
+  {
+    "CatalogTermId": 14010,
+    "StartDatetime": 1646013600000
+  },
+  {
+    "CatalogTermId": 14020,
+    "StartDatetime": 1646877600000
+  },
+  {
+    "CatalogTermId": 14050,
+    "StartDatetime": 1647914400000
+  },
+  {
+    "CatalogTermId": 15010,
+    "StartDatetime": 1648692000000
+  },
+  {
+    "CatalogTermId": 15020,
+    "StartDatetime": 1649642400000
+  },
+  {
+    "CatalogTermId": 15040,
+    "StartDatetime": 1650578400000
+  },
+  {
+    "CatalogTermId": 16010,
+    "StartDatetime": 1650938400000
+  },
+  {
+    "CatalogTermId": 16011,
+    "StartDatetime": 1651284000000
+  },
+  {
+    "CatalogTermId": 16020,
+    "StartDatetime": 1652148000000
+  },
+  {
+    "CatalogTermId": 16040,
+    "StartDatetime": 1653012000000
+  },
+  {
+    "CatalogTermId": 17010,
+    "StartDatetime": 1653962400000
+  },
+  {
+    "CatalogTermId": 17020,
+    "StartDatetime": 1654826400000
+  },
+  {
+    "CatalogTermId": 17040,
+    "StartDatetime": 1655690400000
+  },
+  {
+    "CatalogTermId": 18015,
+    "StartDatetime": 1656468000000
+  },
+  {
+    "CatalogTermId": 18020,
+    "StartDatetime": 1657504800000
+  },
+  {
+    "CatalogTermId": 18030,
+    "StartDatetime": 1657836000000
+  },
+  {
+    "CatalogTermId": 18040,
+    "StartDatetime": 1658368800000
+  },
+  {
+    "CatalogTermId": 18150,
+    "StartDatetime": 1656554400000
+  },
+  {
+    "CatalogTermId": 18151,
+    "StartDatetime": 1656900000000
+  },
+  {
+    "CatalogTermId": 19010,
+    "StartDatetime": 1659060000000
+  },
+  {
+    "CatalogTermId": 19025,
+    "StartDatetime": 1660777200000
+  },
+  {
+    "CatalogTermId": 19026,
+    "StartDatetime": 1660788000000
+  },
+  {
+    "CatalogTermId": 19030,
+    "StartDatetime": 1661479200000
+  },
+  {
+    "CatalogTermId": 20010,
+    "StartDatetime": 1661911200000
+  },
+  {
+    "CatalogTermId": 20020,
+    "StartDatetime": 1662688800000
+  },
+  {
+    "CatalogTermId": 20030,
+    "StartDatetime": 1663293600000
+  },
+  {
+    "CatalogTermId": 20031,
+    "StartDatetime": 1663812000000
+  },
+  {
+    "CatalogTermId": 20032,
+    "StartDatetime": 1664157600000
+  },
+  {
+    "CatalogTermId": 21010,
+    "StartDatetime": 1664503200000
+  },
+  {
+    "CatalogTermId": 21011,
+    "StartDatetime": 1666922400000
+  },
+  {
+    "CatalogTermId": 21012,
+    "StartDatetime": 1665021600000
+  },
+  {
+    "CatalogTermId": 21020,
+    "StartDatetime": 1665626400000
+  },
+  {
+    "CatalogTermId": 21030,
+    "StartDatetime": 1666044000000
+  },
+  {
+    "CatalogTermId": 21040,
+    "StartDatetime": 1666317600000
+  },
+  {
+    "CatalogTermId": 22010,
+    "StartDatetime": 1667181600000
+  },
+  {
+    "CatalogTermId": 22020,
+    "StartDatetime": 1668132000000
+  },
+  {
+    "CatalogTermId": 22030,
+    "StartDatetime": 1669082400000
+  },
+  {
+    "CatalogTermId": 23010,
+    "StartDatetime": 1669773600000
+  },
+  {
+    "CatalogTermId": 23020,
+    "StartDatetime": 1670551200000
+  },
+  {
+    "CatalogTermId": 23021,
+    "StartDatetime": 1670551200000
+  },
+  {
+    "CatalogTermId": 23030,
+    "StartDatetime": 1672020000000
+  },
+  {
+    "CatalogTermId": 24011,
+    "StartDatetime": 1672498800000
+  },
+  {
+    "CatalogTermId": 24020,
+    "StartDatetime": 1673575200000
+  },
+  {
+    "CatalogTermId": 24030,
+    "StartDatetime": 1673985600000
+  },
+  {
+    "CatalogTermId": 24031,
+    "StartDatetime": 1674439200000
+  },
+  {
+    "CatalogTermId": 25010,
+    "StartDatetime": 1675130400000
+  },
+  {
+    "CatalogTermId": 25020,
+    "StartDatetime": 1675994400000
+  },
+  {
+    "CatalogTermId": 25030,
+    "StartDatetime": 1676685600000
+  },
+  {
+    "CatalogTermId": 25031,
+    "StartDatetime": 1676685600000
+  },
+  {
+    "CatalogTermId": 25032,
+    "StartDatetime": 1613617200000
+  },
+  {
+    "CatalogTermId": 26010,
+    "StartDatetime": 1677549600000
+  },
+  {
+    "CatalogTermId": 26020,
+    "StartDatetime": 1678413600000
+  },
+  {
+    "CatalogTermId": 26030,
+    "StartDatetime": 1679454000000
+  },
+  {
+    "CatalogTermId": 26031,
+    "StartDatetime": 1679454000000
+  },
+  {
+    "CatalogTermId": 27010,
+    "StartDatetime": 1680228000000
+  },
+  {
+    "CatalogTermId": 27020,
+    "StartDatetime": 1680832800000
+  },
+  {
+    "CatalogTermId": 27030,
+    "StartDatetime": 1682042400000
+  },
+  {
+    "CatalogTermId": 27031,
+    "StartDatetime": 1682042400000
+  },
+  {
+    "CatalogTermId": 28010,
+    "StartDatetime": 1683856800000
+  },
+  {
+    "CatalogTermId": 28011,
+    "StartDatetime": 1682647200000
+  },
+  {
+    "CatalogTermId": 28012,
+    "StartDatetime": 1683511200000
+  },
+  {
+    "CatalogTermId": 28030,
+    "StartDatetime": 1685066400000
+  },
+  {
+    "CatalogTermId": 29010,
+    "StartDatetime": 1685498400000
+  },
+  {
+    "CatalogTermId": 29020,
+    "StartDatetime": 1686276000000
+  },
+  {
+    "CatalogTermId": 29021,
+    "StartDatetime": 1687485600000
+  },
+  {
+    "CatalogTermId": 29022,
+    "StartDatetime": 1686880800000
+  },
+  {
+    "CatalogTermId": 29030,
+    "StartDatetime": 1687485600000
+  },
+  {
+    "CatalogTermId": 29031,
+    "StartDatetime": 1687485600000
+  },
+  {
+    "CatalogTermId": 29032,
+    "StartDatetime": 1688090400000
+  },
+  {
+    "CatalogTermId": 30010,
+    "StartDatetime": 1688090400000
+  },
+  {
+    "CatalogTermId": 30020,
+    "StartDatetime": 1689300000000
+  },
+  {
+    "CatalogTermId": 30021,
+    "StartDatetime": 1688695200000
+  },
+  {
+    "CatalogTermId": 30030,
+    "StartDatetime": 1690164000000
+  },
+  {
+    "CatalogTermId": 31010,
+    "StartDatetime": 1690768800000
+  },
+  {
+    "CatalogTermId": 31011,
+    "StartDatetime": 1691114400000
+  },
+  {
+    "CatalogTermId": 31012,
+    "StartDatetime": 1691114400000
+  },
+  {
+    "CatalogTermId": 31013,
+    "StartDatetime": 1691719200000
+  },
+  {
+    "CatalogTermId": 31030,
+    "StartDatetime": 1692324000000
+  },
+  {
+    "CatalogTermId": 31031,
+    "StartDatetime": 1692324000000
+  },
+  {
+    "CatalogTermId": 31032,
+    "StartDatetime": 1692928800000
+  },
+  {
+    "CatalogTermId": 32010,
+    "StartDatetime": 1693447200000
+  },
+  {
+    "CatalogTermId": 32020,
+    "StartDatetime": 1694138400000
+  },
+  {
+    "CatalogTermId": 32021,
+    "StartDatetime": 1694743200000
+  },
+  {
+    "CatalogTermId": 32022,
+    "StartDatetime": 1695348000000
+  },
+  {
+    "CatalogTermId": 32025,
+    "StartDatetime": 1695607200000
+  },
+  {
+    "CatalogTermId": 32030,
+    "StartDatetime": 1695866400000
+  },
+  {
+    "CatalogTermId": 33020,
+    "StartDatetime": 1696557600000
+  },
+  {
+    "CatalogTermId": 33021,
+    "StartDatetime": 1696816800000
+  },
+  {
+    "CatalogTermId": 33022,
+    "StartDatetime": 1697162400000
+  },
+  {
+    "CatalogTermId": 33023,
+    "StartDatetime": 1697767200000
+  },
+  {
+    "CatalogTermId": 33030,
+    "StartDatetime": 1698026400000
+  },
+  {
+    "CatalogTermId": 34010,
+    "StartDatetime": 1698717600000
+  },
+  {
+    "CatalogTermId": 34011,
+    "StartDatetime": 1699581600000
+  },
+  {
+    "CatalogTermId": 34020,
+    "StartDatetime": 1700186400000
+  },
+  {
+    "CatalogTermId": 34021,
+    "StartDatetime": 1700445600000
+  },
+  {
+    "CatalogTermId": 34022,
+    "StartDatetime": 1700791200000
+  },
+  {
+    "CatalogTermId": 34030,
+    "StartDatetime": 1701309600000
+  },
+  {
+    "CatalogTermId": 35020,
+    "StartDatetime": 1702000800000
+  },
+  {
+    "CatalogTermId": 35022,
+    "StartDatetime": 1702605600000
+  },
+  {
+    "CatalogTermId": 35023,
+    "StartDatetime": 1703210400000
+  },
+  {
+    "CatalogTermId": 36010,
+    "StartDatetime": 1703815200000
+  },
+  {
+    "CatalogTermId": 36011,
+    "StartDatetime": 1704034800000
+  },
+  {
+    "CatalogTermId": 36012,
+    "StartDatetime": 1704420000000
+  },
+  {
+    "CatalogTermId": 36013,
+    "StartDatetime": 1705024800000
+  },
+  {
+    "CatalogTermId": 36030,
+    "StartDatetime": 1705957200000
+  },
+  {
+    "CatalogTermId": 36031,
+    "StartDatetime": 1706493600000
+  },
+  {
+    "CatalogTermId": 37010,
+    "StartDatetime": 1706666400000
+  },
+  {
+    "CatalogTermId": 37015,
+    "StartDatetime": 1707444000000
+  },
+  {
+    "CatalogTermId": 37020,
+    "StartDatetime": 1708221600000
+  },
+  {
+    "CatalogTermId": 38010,
+    "StartDatetime": 1709863200000
+  }
+]

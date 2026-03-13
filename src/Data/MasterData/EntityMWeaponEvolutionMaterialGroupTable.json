@@ -1,0 +1,4862 @@
+[
+  {
+    "WeaponEvolutionMaterialGroupId": 1,
+    "MaterialId": 321007,
+    "Count": 50,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 2,
+    "MaterialId": 321008,
+    "Count": 50,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 3,
+    "MaterialId": 321009,
+    "Count": 50,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 4,
+    "MaterialId": 321010,
+    "Count": 50,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 5,
+    "MaterialId": 321011,
+    "Count": 50,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 6,
+    "MaterialId": 321007,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 7,
+    "MaterialId": 321008,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 8,
+    "MaterialId": 321009,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 9,
+    "MaterialId": 321010,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 10,
+    "MaterialId": 321011,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 11,
+    "MaterialId": 321007,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 12,
+    "MaterialId": 321008,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 13,
+    "MaterialId": 321009,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 14,
+    "MaterialId": 321010,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 15,
+    "MaterialId": 321011,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 51001,
+    "MaterialId": 324003,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 51002,
+    "MaterialId": 324007,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 51003,
+    "MaterialId": 324011,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 52001,
+    "MaterialId": 324005,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 52002,
+    "MaterialId": 324010,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 53001,
+    "MaterialId": 324001,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 53002,
+    "MaterialId": 324008,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 54001,
+    "MaterialId": 324004,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 54002,
+    "MaterialId": 324009,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 55001,
+    "MaterialId": 324002,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 55002,
+    "MaterialId": 324006,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 55003,
+    "MaterialId": 324012,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 340401,
+    "MaterialId": 323004,
+    "Count": 1,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410001,
+    "MaterialId": 321007,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410001,
+    "MaterialId": 321104,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410001,
+    "MaterialId": 322001,
+    "Count": 10,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410002,
+    "MaterialId": 321007,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410002,
+    "MaterialId": 321104,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410002,
+    "MaterialId": 322001,
+    "Count": 15,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410003,
+    "MaterialId": 321007,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410003,
+    "MaterialId": 321104,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410003,
+    "MaterialId": 322001,
+    "Count": 23,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410004,
+    "MaterialId": 321007,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410004,
+    "MaterialId": 321104,
+    "Count": 15,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410004,
+    "MaterialId": 322001,
+    "Count": 35,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410004,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410011,
+    "MaterialId": 321007,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410011,
+    "MaterialId": 321104,
+    "Count": 22,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410011,
+    "MaterialId": 322001,
+    "Count": 50,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410011,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410012,
+    "MaterialId": 321007,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410012,
+    "MaterialId": 321104,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410012,
+    "MaterialId": 322001,
+    "Count": 70,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410012,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410013,
+    "MaterialId": 321007,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410013,
+    "MaterialId": 321104,
+    "Count": 40,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410013,
+    "MaterialId": 322001,
+    "Count": 100,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410013,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410021,
+    "MaterialId": 321007,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410021,
+    "MaterialId": 321104,
+    "Count": 55,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410021,
+    "MaterialId": 322001,
+    "Count": 150,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410021,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410022,
+    "MaterialId": 321007,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410022,
+    "MaterialId": 321104,
+    "Count": 70,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410022,
+    "MaterialId": 322001,
+    "Count": 200,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410022,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410023,
+    "MaterialId": 321007,
+    "Count": 30,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410023,
+    "MaterialId": 321104,
+    "Count": 100,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410023,
+    "MaterialId": 322001,
+    "Count": 300,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410023,
+    "MaterialId": 322002,
+    "Count": 3,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410041,
+    "MaterialId": 321007,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410041,
+    "MaterialId": 321108,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410041,
+    "MaterialId": 322001,
+    "Count": 10,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410042,
+    "MaterialId": 321007,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410042,
+    "MaterialId": 321108,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410042,
+    "MaterialId": 322001,
+    "Count": 15,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410043,
+    "MaterialId": 321007,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410043,
+    "MaterialId": 321108,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410043,
+    "MaterialId": 322001,
+    "Count": 23,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410044,
+    "MaterialId": 321007,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410044,
+    "MaterialId": 321108,
+    "Count": 15,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410044,
+    "MaterialId": 322001,
+    "Count": 35,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410044,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410051,
+    "MaterialId": 321007,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410051,
+    "MaterialId": 321108,
+    "Count": 22,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410051,
+    "MaterialId": 322001,
+    "Count": 50,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410051,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410052,
+    "MaterialId": 321007,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410052,
+    "MaterialId": 321108,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410052,
+    "MaterialId": 322001,
+    "Count": 70,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410052,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410053,
+    "MaterialId": 321007,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410053,
+    "MaterialId": 321108,
+    "Count": 40,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410053,
+    "MaterialId": 322001,
+    "Count": 100,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410053,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410061,
+    "MaterialId": 321007,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410061,
+    "MaterialId": 321108,
+    "Count": 55,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410061,
+    "MaterialId": 322001,
+    "Count": 150,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410061,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410062,
+    "MaterialId": 321007,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410062,
+    "MaterialId": 321108,
+    "Count": 70,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410062,
+    "MaterialId": 322001,
+    "Count": 200,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410062,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410063,
+    "MaterialId": 321007,
+    "Count": 30,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410063,
+    "MaterialId": 321108,
+    "Count": 100,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410063,
+    "MaterialId": 322001,
+    "Count": 300,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410063,
+    "MaterialId": 322002,
+    "Count": 3,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410081,
+    "MaterialId": 321007,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410081,
+    "MaterialId": 321115,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410081,
+    "MaterialId": 322001,
+    "Count": 10,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410082,
+    "MaterialId": 321007,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410082,
+    "MaterialId": 321115,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410082,
+    "MaterialId": 322001,
+    "Count": 15,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410083,
+    "MaterialId": 321007,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410083,
+    "MaterialId": 321115,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410083,
+    "MaterialId": 322001,
+    "Count": 23,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410084,
+    "MaterialId": 321007,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410084,
+    "MaterialId": 321115,
+    "Count": 15,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410084,
+    "MaterialId": 322001,
+    "Count": 35,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410084,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410091,
+    "MaterialId": 321007,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410091,
+    "MaterialId": 321115,
+    "Count": 22,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410091,
+    "MaterialId": 322001,
+    "Count": 50,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410091,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410092,
+    "MaterialId": 321007,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410092,
+    "MaterialId": 321115,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410092,
+    "MaterialId": 322001,
+    "Count": 70,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410092,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410093,
+    "MaterialId": 321007,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410093,
+    "MaterialId": 321115,
+    "Count": 40,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410093,
+    "MaterialId": 322001,
+    "Count": 100,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410093,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410101,
+    "MaterialId": 321007,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410101,
+    "MaterialId": 321115,
+    "Count": 55,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410101,
+    "MaterialId": 322001,
+    "Count": 150,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410101,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410102,
+    "MaterialId": 321007,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410102,
+    "MaterialId": 321115,
+    "Count": 70,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410102,
+    "MaterialId": 322001,
+    "Count": 200,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410102,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410103,
+    "MaterialId": 321007,
+    "Count": 30,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410103,
+    "MaterialId": 321115,
+    "Count": 100,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410103,
+    "MaterialId": 322001,
+    "Count": 300,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410103,
+    "MaterialId": 322002,
+    "Count": 3,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410121,
+    "MaterialId": 321007,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410121,
+    "MaterialId": 321118,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410121,
+    "MaterialId": 322001,
+    "Count": 10,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410122,
+    "MaterialId": 321007,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410122,
+    "MaterialId": 321118,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410122,
+    "MaterialId": 322001,
+    "Count": 15,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410123,
+    "MaterialId": 321007,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410123,
+    "MaterialId": 321118,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410123,
+    "MaterialId": 322001,
+    "Count": 23,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410124,
+    "MaterialId": 321007,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410124,
+    "MaterialId": 321118,
+    "Count": 15,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410124,
+    "MaterialId": 322001,
+    "Count": 35,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410124,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410131,
+    "MaterialId": 321007,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410131,
+    "MaterialId": 321118,
+    "Count": 22,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410131,
+    "MaterialId": 322001,
+    "Count": 50,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410131,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410132,
+    "MaterialId": 321007,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410132,
+    "MaterialId": 321118,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410132,
+    "MaterialId": 322001,
+    "Count": 70,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410132,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410133,
+    "MaterialId": 321007,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410133,
+    "MaterialId": 321118,
+    "Count": 40,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410133,
+    "MaterialId": 322001,
+    "Count": 100,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410133,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410141,
+    "MaterialId": 321007,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410141,
+    "MaterialId": 321118,
+    "Count": 55,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410141,
+    "MaterialId": 322001,
+    "Count": 150,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410141,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410142,
+    "MaterialId": 321007,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410142,
+    "MaterialId": 321118,
+    "Count": 70,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410142,
+    "MaterialId": 322001,
+    "Count": 200,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410142,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410143,
+    "MaterialId": 321007,
+    "Count": 30,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410143,
+    "MaterialId": 321118,
+    "Count": 100,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410143,
+    "MaterialId": 322001,
+    "Count": 300,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 410143,
+    "MaterialId": 322002,
+    "Count": 3,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420001,
+    "MaterialId": 321008,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420001,
+    "MaterialId": 321105,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420001,
+    "MaterialId": 322001,
+    "Count": 10,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420002,
+    "MaterialId": 321008,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420002,
+    "MaterialId": 321105,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420002,
+    "MaterialId": 322001,
+    "Count": 15,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420003,
+    "MaterialId": 321008,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420003,
+    "MaterialId": 321105,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420003,
+    "MaterialId": 322001,
+    "Count": 23,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420004,
+    "MaterialId": 321008,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420004,
+    "MaterialId": 321105,
+    "Count": 15,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420004,
+    "MaterialId": 322001,
+    "Count": 35,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420004,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420011,
+    "MaterialId": 321008,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420011,
+    "MaterialId": 321105,
+    "Count": 22,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420011,
+    "MaterialId": 322001,
+    "Count": 50,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420011,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420012,
+    "MaterialId": 321008,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420012,
+    "MaterialId": 321105,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420012,
+    "MaterialId": 322001,
+    "Count": 70,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420012,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420013,
+    "MaterialId": 321008,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420013,
+    "MaterialId": 321105,
+    "Count": 40,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420013,
+    "MaterialId": 322001,
+    "Count": 100,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420013,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420021,
+    "MaterialId": 321008,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420021,
+    "MaterialId": 321105,
+    "Count": 55,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420021,
+    "MaterialId": 322001,
+    "Count": 150,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420021,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420022,
+    "MaterialId": 321008,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420022,
+    "MaterialId": 321105,
+    "Count": 70,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420022,
+    "MaterialId": 322001,
+    "Count": 200,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420022,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420023,
+    "MaterialId": 321008,
+    "Count": 30,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420023,
+    "MaterialId": 321105,
+    "Count": 100,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420023,
+    "MaterialId": 322001,
+    "Count": 300,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420023,
+    "MaterialId": 322002,
+    "Count": 3,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420041,
+    "MaterialId": 321008,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420041,
+    "MaterialId": 321110,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420041,
+    "MaterialId": 322001,
+    "Count": 10,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420042,
+    "MaterialId": 321008,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420042,
+    "MaterialId": 321110,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420042,
+    "MaterialId": 322001,
+    "Count": 15,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420043,
+    "MaterialId": 321008,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420043,
+    "MaterialId": 321110,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420043,
+    "MaterialId": 322001,
+    "Count": 23,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420044,
+    "MaterialId": 321008,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420044,
+    "MaterialId": 321110,
+    "Count": 15,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420044,
+    "MaterialId": 322001,
+    "Count": 35,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420044,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420051,
+    "MaterialId": 321008,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420051,
+    "MaterialId": 321110,
+    "Count": 22,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420051,
+    "MaterialId": 322001,
+    "Count": 50,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420051,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420052,
+    "MaterialId": 321008,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420052,
+    "MaterialId": 321110,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420052,
+    "MaterialId": 322001,
+    "Count": 70,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420052,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420053,
+    "MaterialId": 321008,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420053,
+    "MaterialId": 321110,
+    "Count": 40,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420053,
+    "MaterialId": 322001,
+    "Count": 100,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420053,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420061,
+    "MaterialId": 321008,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420061,
+    "MaterialId": 321110,
+    "Count": 55,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420061,
+    "MaterialId": 322001,
+    "Count": 150,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420061,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420062,
+    "MaterialId": 321008,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420062,
+    "MaterialId": 321110,
+    "Count": 70,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420062,
+    "MaterialId": 322001,
+    "Count": 200,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420062,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420063,
+    "MaterialId": 321008,
+    "Count": 30,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420063,
+    "MaterialId": 321110,
+    "Count": 100,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420063,
+    "MaterialId": 322001,
+    "Count": 300,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420063,
+    "MaterialId": 322002,
+    "Count": 3,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420081,
+    "MaterialId": 321008,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420081,
+    "MaterialId": 321113,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420081,
+    "MaterialId": 322001,
+    "Count": 10,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420082,
+    "MaterialId": 321008,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420082,
+    "MaterialId": 321113,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420082,
+    "MaterialId": 322001,
+    "Count": 15,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420083,
+    "MaterialId": 321008,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420083,
+    "MaterialId": 321113,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420083,
+    "MaterialId": 322001,
+    "Count": 23,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420084,
+    "MaterialId": 321008,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420084,
+    "MaterialId": 321113,
+    "Count": 15,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420084,
+    "MaterialId": 322001,
+    "Count": 35,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420084,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420091,
+    "MaterialId": 321008,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420091,
+    "MaterialId": 321113,
+    "Count": 22,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420091,
+    "MaterialId": 322001,
+    "Count": 50,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420091,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420092,
+    "MaterialId": 321008,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420092,
+    "MaterialId": 321113,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420092,
+    "MaterialId": 322001,
+    "Count": 70,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420092,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420093,
+    "MaterialId": 321008,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420093,
+    "MaterialId": 321113,
+    "Count": 40,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420093,
+    "MaterialId": 322001,
+    "Count": 100,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420093,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420101,
+    "MaterialId": 321008,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420101,
+    "MaterialId": 321113,
+    "Count": 55,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420101,
+    "MaterialId": 322001,
+    "Count": 150,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420101,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420102,
+    "MaterialId": 321008,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420102,
+    "MaterialId": 321113,
+    "Count": 70,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420102,
+    "MaterialId": 322001,
+    "Count": 200,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420102,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420103,
+    "MaterialId": 321008,
+    "Count": 30,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420103,
+    "MaterialId": 321113,
+    "Count": 100,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420103,
+    "MaterialId": 322001,
+    "Count": 300,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420103,
+    "MaterialId": 322002,
+    "Count": 3,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420121,
+    "MaterialId": 321008,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420121,
+    "MaterialId": 321116,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420121,
+    "MaterialId": 322001,
+    "Count": 10,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420122,
+    "MaterialId": 321008,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420122,
+    "MaterialId": 321116,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420122,
+    "MaterialId": 322001,
+    "Count": 15,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420123,
+    "MaterialId": 321008,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420123,
+    "MaterialId": 321116,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420123,
+    "MaterialId": 322001,
+    "Count": 23,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420124,
+    "MaterialId": 321008,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420124,
+    "MaterialId": 321116,
+    "Count": 15,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420124,
+    "MaterialId": 322001,
+    "Count": 35,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420124,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420131,
+    "MaterialId": 321008,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420131,
+    "MaterialId": 321116,
+    "Count": 22,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420131,
+    "MaterialId": 322001,
+    "Count": 50,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420131,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420132,
+    "MaterialId": 321008,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420132,
+    "MaterialId": 321116,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420132,
+    "MaterialId": 322001,
+    "Count": 70,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420132,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420133,
+    "MaterialId": 321008,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420133,
+    "MaterialId": 321116,
+    "Count": 40,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420133,
+    "MaterialId": 322001,
+    "Count": 100,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420133,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420141,
+    "MaterialId": 321008,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420141,
+    "MaterialId": 321116,
+    "Count": 55,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420141,
+    "MaterialId": 322001,
+    "Count": 150,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420141,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420142,
+    "MaterialId": 321008,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420142,
+    "MaterialId": 321116,
+    "Count": 70,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420142,
+    "MaterialId": 322001,
+    "Count": 200,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420142,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420143,
+    "MaterialId": 321008,
+    "Count": 30,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420143,
+    "MaterialId": 321116,
+    "Count": 100,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420143,
+    "MaterialId": 322001,
+    "Count": 300,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 420143,
+    "MaterialId": 322002,
+    "Count": 3,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430001,
+    "MaterialId": 321009,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430001,
+    "MaterialId": 321103,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430001,
+    "MaterialId": 322001,
+    "Count": 10,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430002,
+    "MaterialId": 321009,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430002,
+    "MaterialId": 321103,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430002,
+    "MaterialId": 322001,
+    "Count": 15,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430003,
+    "MaterialId": 321009,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430003,
+    "MaterialId": 321103,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430003,
+    "MaterialId": 322001,
+    "Count": 23,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430004,
+    "MaterialId": 321009,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430004,
+    "MaterialId": 321103,
+    "Count": 15,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430004,
+    "MaterialId": 322001,
+    "Count": 35,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430004,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430011,
+    "MaterialId": 321009,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430011,
+    "MaterialId": 321103,
+    "Count": 22,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430011,
+    "MaterialId": 322001,
+    "Count": 50,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430011,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430012,
+    "MaterialId": 321009,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430012,
+    "MaterialId": 321103,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430012,
+    "MaterialId": 322001,
+    "Count": 70,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430012,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430013,
+    "MaterialId": 321009,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430013,
+    "MaterialId": 321103,
+    "Count": 40,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430013,
+    "MaterialId": 322001,
+    "Count": 100,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430013,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430021,
+    "MaterialId": 321009,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430021,
+    "MaterialId": 321103,
+    "Count": 55,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430021,
+    "MaterialId": 322001,
+    "Count": 150,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430021,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430022,
+    "MaterialId": 321009,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430022,
+    "MaterialId": 321103,
+    "Count": 70,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430022,
+    "MaterialId": 322001,
+    "Count": 200,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430022,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430023,
+    "MaterialId": 321009,
+    "Count": 30,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430023,
+    "MaterialId": 321103,
+    "Count": 100,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430023,
+    "MaterialId": 322001,
+    "Count": 300,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430023,
+    "MaterialId": 322002,
+    "Count": 3,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430041,
+    "MaterialId": 321009,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430041,
+    "MaterialId": 321109,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430041,
+    "MaterialId": 322001,
+    "Count": 10,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430042,
+    "MaterialId": 321009,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430042,
+    "MaterialId": 321109,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430042,
+    "MaterialId": 322001,
+    "Count": 15,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430043,
+    "MaterialId": 321009,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430043,
+    "MaterialId": 321109,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430043,
+    "MaterialId": 322001,
+    "Count": 23,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430044,
+    "MaterialId": 321009,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430044,
+    "MaterialId": 321109,
+    "Count": 15,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430044,
+    "MaterialId": 322001,
+    "Count": 35,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430044,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430051,
+    "MaterialId": 321009,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430051,
+    "MaterialId": 321109,
+    "Count": 22,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430051,
+    "MaterialId": 322001,
+    "Count": 50,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430051,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430052,
+    "MaterialId": 321009,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430052,
+    "MaterialId": 321109,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430052,
+    "MaterialId": 322001,
+    "Count": 70,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430052,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430053,
+    "MaterialId": 321009,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430053,
+    "MaterialId": 321109,
+    "Count": 40,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430053,
+    "MaterialId": 322001,
+    "Count": 100,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430053,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430061,
+    "MaterialId": 321009,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430061,
+    "MaterialId": 321109,
+    "Count": 55,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430061,
+    "MaterialId": 322001,
+    "Count": 150,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430061,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430062,
+    "MaterialId": 321009,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430062,
+    "MaterialId": 321109,
+    "Count": 70,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430062,
+    "MaterialId": 322001,
+    "Count": 200,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430062,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430063,
+    "MaterialId": 321009,
+    "Count": 30,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430063,
+    "MaterialId": 321109,
+    "Count": 100,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430063,
+    "MaterialId": 322001,
+    "Count": 300,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430063,
+    "MaterialId": 322002,
+    "Count": 3,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430081,
+    "MaterialId": 321009,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430081,
+    "MaterialId": 321114,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430081,
+    "MaterialId": 322001,
+    "Count": 10,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430082,
+    "MaterialId": 321009,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430082,
+    "MaterialId": 321114,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430082,
+    "MaterialId": 322001,
+    "Count": 15,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430083,
+    "MaterialId": 321009,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430083,
+    "MaterialId": 321114,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430083,
+    "MaterialId": 322001,
+    "Count": 23,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430084,
+    "MaterialId": 321009,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430084,
+    "MaterialId": 321114,
+    "Count": 15,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430084,
+    "MaterialId": 322001,
+    "Count": 35,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430084,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430091,
+    "MaterialId": 321009,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430091,
+    "MaterialId": 321114,
+    "Count": 22,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430091,
+    "MaterialId": 322001,
+    "Count": 50,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430091,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430092,
+    "MaterialId": 321009,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430092,
+    "MaterialId": 321114,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430092,
+    "MaterialId": 322001,
+    "Count": 70,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430092,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430093,
+    "MaterialId": 321009,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430093,
+    "MaterialId": 321114,
+    "Count": 40,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430093,
+    "MaterialId": 322001,
+    "Count": 100,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430093,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430101,
+    "MaterialId": 321009,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430101,
+    "MaterialId": 321114,
+    "Count": 55,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430101,
+    "MaterialId": 322001,
+    "Count": 150,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430101,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430102,
+    "MaterialId": 321009,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430102,
+    "MaterialId": 321114,
+    "Count": 70,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430102,
+    "MaterialId": 322001,
+    "Count": 200,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430102,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430103,
+    "MaterialId": 321009,
+    "Count": 30,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430103,
+    "MaterialId": 321114,
+    "Count": 100,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430103,
+    "MaterialId": 322001,
+    "Count": 300,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430103,
+    "MaterialId": 322002,
+    "Count": 3,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430121,
+    "MaterialId": 321009,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430121,
+    "MaterialId": 321117,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430121,
+    "MaterialId": 322001,
+    "Count": 10,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430122,
+    "MaterialId": 321009,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430122,
+    "MaterialId": 321117,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430122,
+    "MaterialId": 322001,
+    "Count": 15,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430123,
+    "MaterialId": 321009,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430123,
+    "MaterialId": 321117,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430123,
+    "MaterialId": 322001,
+    "Count": 23,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430124,
+    "MaterialId": 321009,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430124,
+    "MaterialId": 321117,
+    "Count": 15,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430124,
+    "MaterialId": 322001,
+    "Count": 35,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430124,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430131,
+    "MaterialId": 321009,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430131,
+    "MaterialId": 321117,
+    "Count": 22,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430131,
+    "MaterialId": 322001,
+    "Count": 50,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430131,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430132,
+    "MaterialId": 321009,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430132,
+    "MaterialId": 321117,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430132,
+    "MaterialId": 322001,
+    "Count": 70,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430132,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430133,
+    "MaterialId": 321009,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430133,
+    "MaterialId": 321117,
+    "Count": 40,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430133,
+    "MaterialId": 322001,
+    "Count": 100,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430133,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430141,
+    "MaterialId": 321009,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430141,
+    "MaterialId": 321117,
+    "Count": 55,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430141,
+    "MaterialId": 322001,
+    "Count": 150,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430141,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430142,
+    "MaterialId": 321009,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430142,
+    "MaterialId": 321117,
+    "Count": 70,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430142,
+    "MaterialId": 322001,
+    "Count": 200,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430142,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430143,
+    "MaterialId": 321009,
+    "Count": 30,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430143,
+    "MaterialId": 321117,
+    "Count": 100,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430143,
+    "MaterialId": 322001,
+    "Count": 300,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 430143,
+    "MaterialId": 322002,
+    "Count": 3,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440001,
+    "MaterialId": 321010,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440001,
+    "MaterialId": 321101,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440001,
+    "MaterialId": 322001,
+    "Count": 10,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440002,
+    "MaterialId": 321010,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440002,
+    "MaterialId": 321101,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440002,
+    "MaterialId": 322001,
+    "Count": 15,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440003,
+    "MaterialId": 321010,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440003,
+    "MaterialId": 321101,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440003,
+    "MaterialId": 322001,
+    "Count": 23,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440004,
+    "MaterialId": 321010,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440004,
+    "MaterialId": 321101,
+    "Count": 15,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440004,
+    "MaterialId": 322001,
+    "Count": 35,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440004,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440011,
+    "MaterialId": 321010,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440011,
+    "MaterialId": 321101,
+    "Count": 22,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440011,
+    "MaterialId": 322001,
+    "Count": 50,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440011,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440012,
+    "MaterialId": 321010,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440012,
+    "MaterialId": 321101,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440012,
+    "MaterialId": 322001,
+    "Count": 70,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440012,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440013,
+    "MaterialId": 321010,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440013,
+    "MaterialId": 321101,
+    "Count": 40,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440013,
+    "MaterialId": 322001,
+    "Count": 100,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440013,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440021,
+    "MaterialId": 321010,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440021,
+    "MaterialId": 321101,
+    "Count": 55,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440021,
+    "MaterialId": 322001,
+    "Count": 150,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440021,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440022,
+    "MaterialId": 321010,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440022,
+    "MaterialId": 321101,
+    "Count": 70,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440022,
+    "MaterialId": 322001,
+    "Count": 200,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440022,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440023,
+    "MaterialId": 321010,
+    "Count": 30,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440023,
+    "MaterialId": 321101,
+    "Count": 100,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440023,
+    "MaterialId": 322001,
+    "Count": 300,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440023,
+    "MaterialId": 322002,
+    "Count": 3,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440041,
+    "MaterialId": 321010,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440041,
+    "MaterialId": 321107,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440041,
+    "MaterialId": 322001,
+    "Count": 10,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440042,
+    "MaterialId": 321010,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440042,
+    "MaterialId": 321107,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440042,
+    "MaterialId": 322001,
+    "Count": 15,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440043,
+    "MaterialId": 321010,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440043,
+    "MaterialId": 321107,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440043,
+    "MaterialId": 322001,
+    "Count": 23,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440044,
+    "MaterialId": 321010,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440044,
+    "MaterialId": 321107,
+    "Count": 15,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440044,
+    "MaterialId": 322001,
+    "Count": 35,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440044,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440051,
+    "MaterialId": 321010,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440051,
+    "MaterialId": 321107,
+    "Count": 22,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440051,
+    "MaterialId": 322001,
+    "Count": 50,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440051,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440052,
+    "MaterialId": 321010,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440052,
+    "MaterialId": 321107,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440052,
+    "MaterialId": 322001,
+    "Count": 70,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440052,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440053,
+    "MaterialId": 321010,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440053,
+    "MaterialId": 321107,
+    "Count": 40,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440053,
+    "MaterialId": 322001,
+    "Count": 100,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440053,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440061,
+    "MaterialId": 321010,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440061,
+    "MaterialId": 321107,
+    "Count": 55,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440061,
+    "MaterialId": 322001,
+    "Count": 150,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440061,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440062,
+    "MaterialId": 321010,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440062,
+    "MaterialId": 321107,
+    "Count": 70,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440062,
+    "MaterialId": 322001,
+    "Count": 200,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440062,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440063,
+    "MaterialId": 321010,
+    "Count": 30,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440063,
+    "MaterialId": 321107,
+    "Count": 100,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440063,
+    "MaterialId": 322001,
+    "Count": 300,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440063,
+    "MaterialId": 322002,
+    "Count": 3,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440081,
+    "MaterialId": 321010,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440081,
+    "MaterialId": 321111,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440081,
+    "MaterialId": 322001,
+    "Count": 10,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440082,
+    "MaterialId": 321010,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440082,
+    "MaterialId": 321111,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440082,
+    "MaterialId": 322001,
+    "Count": 15,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440083,
+    "MaterialId": 321010,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440083,
+    "MaterialId": 321111,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440083,
+    "MaterialId": 322001,
+    "Count": 23,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440084,
+    "MaterialId": 321010,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440084,
+    "MaterialId": 321111,
+    "Count": 15,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440084,
+    "MaterialId": 322001,
+    "Count": 35,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440084,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440091,
+    "MaterialId": 321010,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440091,
+    "MaterialId": 321111,
+    "Count": 22,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440091,
+    "MaterialId": 322001,
+    "Count": 50,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440091,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440092,
+    "MaterialId": 321010,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440092,
+    "MaterialId": 321111,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440092,
+    "MaterialId": 322001,
+    "Count": 70,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440092,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440093,
+    "MaterialId": 321010,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440093,
+    "MaterialId": 321111,
+    "Count": 40,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440093,
+    "MaterialId": 322001,
+    "Count": 100,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440093,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440101,
+    "MaterialId": 321010,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440101,
+    "MaterialId": 321111,
+    "Count": 55,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440101,
+    "MaterialId": 322001,
+    "Count": 150,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440101,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440102,
+    "MaterialId": 321010,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440102,
+    "MaterialId": 321111,
+    "Count": 70,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440102,
+    "MaterialId": 322001,
+    "Count": 200,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440102,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440103,
+    "MaterialId": 321010,
+    "Count": 30,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440103,
+    "MaterialId": 321111,
+    "Count": 100,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440103,
+    "MaterialId": 322001,
+    "Count": 300,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440103,
+    "MaterialId": 322002,
+    "Count": 3,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440121,
+    "MaterialId": 321010,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440121,
+    "MaterialId": 321119,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440121,
+    "MaterialId": 322001,
+    "Count": 10,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440122,
+    "MaterialId": 321010,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440122,
+    "MaterialId": 321119,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440122,
+    "MaterialId": 322001,
+    "Count": 15,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440123,
+    "MaterialId": 321010,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440123,
+    "MaterialId": 321119,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440123,
+    "MaterialId": 322001,
+    "Count": 23,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440124,
+    "MaterialId": 321010,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440124,
+    "MaterialId": 321119,
+    "Count": 15,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440124,
+    "MaterialId": 322001,
+    "Count": 35,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440124,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440131,
+    "MaterialId": 321010,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440131,
+    "MaterialId": 321119,
+    "Count": 22,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440131,
+    "MaterialId": 322001,
+    "Count": 50,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440131,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440132,
+    "MaterialId": 321010,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440132,
+    "MaterialId": 321119,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440132,
+    "MaterialId": 322001,
+    "Count": 70,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440132,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440133,
+    "MaterialId": 321010,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440133,
+    "MaterialId": 321119,
+    "Count": 40,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440133,
+    "MaterialId": 322001,
+    "Count": 100,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440133,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440141,
+    "MaterialId": 321010,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440141,
+    "MaterialId": 321119,
+    "Count": 55,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440141,
+    "MaterialId": 322001,
+    "Count": 150,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440141,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440142,
+    "MaterialId": 321010,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440142,
+    "MaterialId": 321119,
+    "Count": 70,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440142,
+    "MaterialId": 322001,
+    "Count": 200,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440142,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440143,
+    "MaterialId": 321010,
+    "Count": 30,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440143,
+    "MaterialId": 321119,
+    "Count": 100,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440143,
+    "MaterialId": 322001,
+    "Count": 300,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440143,
+    "MaterialId": 322002,
+    "Count": 3,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440161,
+    "MaterialId": 321010,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440161,
+    "MaterialId": 321121,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440161,
+    "MaterialId": 322001,
+    "Count": 10,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440162,
+    "MaterialId": 321010,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440162,
+    "MaterialId": 321121,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440162,
+    "MaterialId": 322001,
+    "Count": 15,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440163,
+    "MaterialId": 321010,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440163,
+    "MaterialId": 321121,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440163,
+    "MaterialId": 322001,
+    "Count": 23,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440164,
+    "MaterialId": 321010,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440164,
+    "MaterialId": 321121,
+    "Count": 15,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440164,
+    "MaterialId": 322001,
+    "Count": 35,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440164,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440171,
+    "MaterialId": 321010,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440171,
+    "MaterialId": 321121,
+    "Count": 22,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440171,
+    "MaterialId": 322001,
+    "Count": 50,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440171,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440172,
+    "MaterialId": 321010,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440172,
+    "MaterialId": 321121,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440172,
+    "MaterialId": 322001,
+    "Count": 70,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440172,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440173,
+    "MaterialId": 321010,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440173,
+    "MaterialId": 321121,
+    "Count": 40,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440173,
+    "MaterialId": 322001,
+    "Count": 100,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440173,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440181,
+    "MaterialId": 321010,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440181,
+    "MaterialId": 321121,
+    "Count": 55,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440181,
+    "MaterialId": 322001,
+    "Count": 150,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440181,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440182,
+    "MaterialId": 321010,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440182,
+    "MaterialId": 321121,
+    "Count": 70,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440182,
+    "MaterialId": 322001,
+    "Count": 200,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440182,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440183,
+    "MaterialId": 321010,
+    "Count": 30,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440183,
+    "MaterialId": 321121,
+    "Count": 100,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440183,
+    "MaterialId": 322001,
+    "Count": 300,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 440183,
+    "MaterialId": 322002,
+    "Count": 3,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450001,
+    "MaterialId": 321011,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450001,
+    "MaterialId": 321102,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450001,
+    "MaterialId": 322001,
+    "Count": 10,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450002,
+    "MaterialId": 321011,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450002,
+    "MaterialId": 321102,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450002,
+    "MaterialId": 322001,
+    "Count": 15,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450003,
+    "MaterialId": 321011,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450003,
+    "MaterialId": 321102,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450003,
+    "MaterialId": 322001,
+    "Count": 23,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450004,
+    "MaterialId": 321011,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450004,
+    "MaterialId": 321102,
+    "Count": 15,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450004,
+    "MaterialId": 322001,
+    "Count": 35,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450004,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450011,
+    "MaterialId": 321011,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450011,
+    "MaterialId": 321102,
+    "Count": 22,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450011,
+    "MaterialId": 322001,
+    "Count": 50,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450011,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450012,
+    "MaterialId": 321011,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450012,
+    "MaterialId": 321102,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450012,
+    "MaterialId": 322001,
+    "Count": 70,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450012,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450013,
+    "MaterialId": 321011,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450013,
+    "MaterialId": 321102,
+    "Count": 40,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450013,
+    "MaterialId": 322001,
+    "Count": 100,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450013,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450021,
+    "MaterialId": 321011,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450021,
+    "MaterialId": 321102,
+    "Count": 55,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450021,
+    "MaterialId": 322001,
+    "Count": 150,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450021,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450022,
+    "MaterialId": 321011,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450022,
+    "MaterialId": 321102,
+    "Count": 70,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450022,
+    "MaterialId": 322001,
+    "Count": 200,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450022,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450023,
+    "MaterialId": 321011,
+    "Count": 30,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450023,
+    "MaterialId": 321102,
+    "Count": 100,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450023,
+    "MaterialId": 322001,
+    "Count": 300,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450023,
+    "MaterialId": 322002,
+    "Count": 3,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450041,
+    "MaterialId": 321011,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450041,
+    "MaterialId": 321106,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450041,
+    "MaterialId": 322001,
+    "Count": 10,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450042,
+    "MaterialId": 321011,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450042,
+    "MaterialId": 321106,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450042,
+    "MaterialId": 322001,
+    "Count": 15,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450043,
+    "MaterialId": 321011,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450043,
+    "MaterialId": 321106,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450043,
+    "MaterialId": 322001,
+    "Count": 23,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450044,
+    "MaterialId": 321011,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450044,
+    "MaterialId": 321106,
+    "Count": 15,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450044,
+    "MaterialId": 322001,
+    "Count": 35,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450044,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450051,
+    "MaterialId": 321011,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450051,
+    "MaterialId": 321106,
+    "Count": 22,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450051,
+    "MaterialId": 322001,
+    "Count": 50,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450051,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450052,
+    "MaterialId": 321011,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450052,
+    "MaterialId": 321106,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450052,
+    "MaterialId": 322001,
+    "Count": 70,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450052,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450053,
+    "MaterialId": 321011,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450053,
+    "MaterialId": 321106,
+    "Count": 40,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450053,
+    "MaterialId": 322001,
+    "Count": 100,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450053,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450061,
+    "MaterialId": 321011,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450061,
+    "MaterialId": 321106,
+    "Count": 55,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450061,
+    "MaterialId": 322001,
+    "Count": 150,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450061,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450062,
+    "MaterialId": 321011,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450062,
+    "MaterialId": 321106,
+    "Count": 70,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450062,
+    "MaterialId": 322001,
+    "Count": 200,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450062,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450063,
+    "MaterialId": 321011,
+    "Count": 30,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450063,
+    "MaterialId": 321106,
+    "Count": 100,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450063,
+    "MaterialId": 322001,
+    "Count": 300,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450063,
+    "MaterialId": 322002,
+    "Count": 3,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450081,
+    "MaterialId": 321011,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450081,
+    "MaterialId": 321112,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450081,
+    "MaterialId": 322001,
+    "Count": 10,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450082,
+    "MaterialId": 321011,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450082,
+    "MaterialId": 321112,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450082,
+    "MaterialId": 322001,
+    "Count": 15,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450083,
+    "MaterialId": 321011,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450083,
+    "MaterialId": 321112,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450083,
+    "MaterialId": 322001,
+    "Count": 23,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450084,
+    "MaterialId": 321011,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450084,
+    "MaterialId": 321112,
+    "Count": 15,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450084,
+    "MaterialId": 322001,
+    "Count": 35,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450084,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450091,
+    "MaterialId": 321011,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450091,
+    "MaterialId": 321112,
+    "Count": 22,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450091,
+    "MaterialId": 322001,
+    "Count": 50,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450091,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450092,
+    "MaterialId": 321011,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450092,
+    "MaterialId": 321112,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450092,
+    "MaterialId": 322001,
+    "Count": 70,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450092,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450093,
+    "MaterialId": 321011,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450093,
+    "MaterialId": 321112,
+    "Count": 40,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450093,
+    "MaterialId": 322001,
+    "Count": 100,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450093,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450101,
+    "MaterialId": 321011,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450101,
+    "MaterialId": 321112,
+    "Count": 55,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450101,
+    "MaterialId": 322001,
+    "Count": 150,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450101,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450102,
+    "MaterialId": 321011,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450102,
+    "MaterialId": 321112,
+    "Count": 70,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450102,
+    "MaterialId": 322001,
+    "Count": 200,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450102,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450103,
+    "MaterialId": 321011,
+    "Count": 30,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450103,
+    "MaterialId": 321112,
+    "Count": 100,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450103,
+    "MaterialId": 322001,
+    "Count": 300,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450103,
+    "MaterialId": 322002,
+    "Count": 3,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450121,
+    "MaterialId": 321011,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450121,
+    "MaterialId": 321120,
+    "Count": 5,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450121,
+    "MaterialId": 322001,
+    "Count": 10,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450122,
+    "MaterialId": 321011,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450122,
+    "MaterialId": 321120,
+    "Count": 7,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450122,
+    "MaterialId": 322001,
+    "Count": 15,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450123,
+    "MaterialId": 321011,
+    "Count": 5,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450123,
+    "MaterialId": 321120,
+    "Count": 10,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450123,
+    "MaterialId": 322001,
+    "Count": 23,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450124,
+    "MaterialId": 321011,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450124,
+    "MaterialId": 321120,
+    "Count": 15,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450124,
+    "MaterialId": 322001,
+    "Count": 35,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450124,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450131,
+    "MaterialId": 321011,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450131,
+    "MaterialId": 321120,
+    "Count": 22,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450131,
+    "MaterialId": 322001,
+    "Count": 50,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450131,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450132,
+    "MaterialId": 321011,
+    "Count": 10,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450132,
+    "MaterialId": 321120,
+    "Count": 30,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450132,
+    "MaterialId": 322001,
+    "Count": 70,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450132,
+    "MaterialId": 322002,
+    "Count": 1,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450133,
+    "MaterialId": 321011,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450133,
+    "MaterialId": 321120,
+    "Count": 40,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450133,
+    "MaterialId": 322001,
+    "Count": 100,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450133,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450141,
+    "MaterialId": 321011,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450141,
+    "MaterialId": 321120,
+    "Count": 55,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450141,
+    "MaterialId": 322001,
+    "Count": 150,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450141,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450142,
+    "MaterialId": 321011,
+    "Count": 20,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450142,
+    "MaterialId": 321120,
+    "Count": 70,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450142,
+    "MaterialId": 322001,
+    "Count": 200,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450142,
+    "MaterialId": 322002,
+    "Count": 2,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450143,
+    "MaterialId": 321011,
+    "Count": 30,
+    "SortOrder": 3
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450143,
+    "MaterialId": 321120,
+    "Count": 100,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450143,
+    "MaterialId": 322001,
+    "Count": 300,
+    "SortOrder": 2
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 450143,
+    "MaterialId": 322002,
+    "Count": 3,
+    "SortOrder": 4
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 500011,
+    "MaterialId": 323001,
+    "Count": 50,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 500021,
+    "MaterialId": 323002,
+    "Count": 50,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 500031,
+    "MaterialId": 323003,
+    "Count": 50,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 500041,
+    "MaterialId": 323004,
+    "Count": 50,
+    "SortOrder": 1
+  },
+  {
+    "WeaponEvolutionMaterialGroupId": 500051,
+    "MaterialId": 323005,
+    "Count": 50,
+    "SortOrder": 1
+  }
+]

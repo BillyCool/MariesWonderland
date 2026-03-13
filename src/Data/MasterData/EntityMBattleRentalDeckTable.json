@@ -1,0 +1,338 @@
+[
+  {
+    "BattleGroupId": 1,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 1
+  },
+  {
+    "BattleGroupId": 2,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 2
+  },
+  {
+    "BattleGroupId": 3,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 3
+  },
+  {
+    "BattleGroupId": 4,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 4
+  },
+  {
+    "BattleGroupId": 13,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 5
+  },
+  {
+    "BattleGroupId": 44,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 6
+  },
+  {
+    "BattleGroupId": 75,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 7
+  },
+  {
+    "BattleGroupId": 105,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 8
+  },
+  {
+    "BattleGroupId": 165,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 10
+  },
+  {
+    "BattleGroupId": 195,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 11
+  },
+  {
+    "BattleGroupId": 226,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 12
+  },
+  {
+    "BattleGroupId": 256,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 13
+  },
+  {
+    "BattleGroupId": 287,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 14
+  },
+  {
+    "BattleGroupId": 317,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 15
+  },
+  {
+    "BattleGroupId": 723,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 16
+  },
+  {
+    "BattleGroupId": 995,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 17
+  },
+  {
+    "BattleGroupId": 1266,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 20
+  },
+  {
+    "BattleGroupId": 1466,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 21
+  },
+  {
+    "BattleGroupId": 1475,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 22
+  },
+  {
+    "BattleGroupId": 1690,
+    "BattleNpcId": 3,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 1
+  },
+  {
+    "BattleGroupId": 1691,
+    "BattleNpcId": 3,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 2
+  },
+  {
+    "BattleGroupId": 1692,
+    "BattleNpcId": 3,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 3
+  },
+  {
+    "BattleGroupId": 1734,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 23
+  },
+  {
+    "BattleGroupId": 1962,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 24
+  },
+  {
+    "BattleGroupId": 1971,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 25
+  },
+  {
+    "BattleGroupId": 2375,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 26
+  },
+  {
+    "BattleGroupId": 2694,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 27
+  },
+  {
+    "BattleGroupId": 2715,
+    "BattleNpcId": 3,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 9
+  },
+  {
+    "BattleGroupId": 2716,
+    "BattleNpcId": 3,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 7
+  },
+  {
+    "BattleGroupId": 2717,
+    "BattleNpcId": 3,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 10
+  },
+  {
+    "BattleGroupId": 2718,
+    "BattleNpcId": 3,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 8
+  },
+  {
+    "BattleGroupId": 3179,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 28
+  },
+  {
+    "BattleGroupId": 3180,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 29
+  },
+  {
+    "BattleGroupId": 3370,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 32
+  },
+  {
+    "BattleGroupId": 3554,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 35
+  },
+  {
+    "BattleGroupId": 3562,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 36
+  },
+  {
+    "BattleGroupId": 3787,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 37
+  },
+  {
+    "BattleGroupId": 3789,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 38
+  },
+  {
+    "BattleGroupId": 3790,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 39
+  },
+  {
+    "BattleGroupId": 3791,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 40
+  },
+  {
+    "BattleGroupId": 3957,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 41
+  },
+  {
+    "BattleGroupId": 3958,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 42
+  },
+  {
+    "BattleGroupId": 3962,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 43
+  },
+  {
+    "BattleGroupId": 3963,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 44
+  },
+  {
+    "BattleGroupId": 4123,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 45
+  },
+  {
+    "BattleGroupId": 4124,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 46
+  },
+  {
+    "BattleGroupId": 4125,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 47
+  },
+  {
+    "BattleGroupId": 4126,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 48
+  },
+  {
+    "BattleGroupId": 4127,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 49
+  },
+  {
+    "BattleGroupId": 4128,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 50
+  },
+  {
+    "BattleGroupId": 4129,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 51
+  },
+  {
+    "BattleGroupId": 4130,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 52
+  },
+  {
+    "BattleGroupId": 4131,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 53
+  },
+  {
+    "BattleGroupId": 4132,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 54
+  },
+  {
+    "BattleGroupId": 4133,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 55
+  },
+  {
+    "BattleGroupId": 4134,
+    "BattleNpcId": 2,
+    "DeckType": 1,
+    "BattleNpcDeckNumber": 56
+  }
+]

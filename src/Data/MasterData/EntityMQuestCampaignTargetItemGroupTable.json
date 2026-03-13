@@ -1,0 +1,1031 @@
+[
+  {
+    "QuestCampaignTargetItemGroupId": 1,
+    "TargetIndex": 1,
+    "PossessionType": 6,
+    "PossessionId": 1,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 2,
+    "TargetIndex": 1,
+    "PossessionType": 5,
+    "PossessionId": 321007,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 2,
+    "TargetIndex": 2,
+    "PossessionType": 5,
+    "PossessionId": 321008,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 2,
+    "TargetIndex": 3,
+    "PossessionType": 5,
+    "PossessionId": 321009,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 2,
+    "TargetIndex": 4,
+    "PossessionType": 5,
+    "PossessionId": 321010,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 2,
+    "TargetIndex": 5,
+    "PossessionType": 5,
+    "PossessionId": 321011,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 1,
+    "PossessionType": 4,
+    "PossessionId": 19,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 2,
+    "PossessionType": 4,
+    "PossessionId": 20,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 3,
+    "PossessionType": 4,
+    "PossessionId": 39,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 4,
+    "PossessionType": 4,
+    "PossessionId": 40,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 5,
+    "PossessionType": 4,
+    "PossessionId": 59,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 6,
+    "PossessionType": 4,
+    "PossessionId": 60,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 7,
+    "PossessionType": 4,
+    "PossessionId": 79,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 8,
+    "PossessionType": 4,
+    "PossessionId": 80,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 9,
+    "PossessionType": 4,
+    "PossessionId": 99,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 10,
+    "PossessionType": 4,
+    "PossessionId": 100,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 11,
+    "PossessionType": 4,
+    "PossessionId": 119,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 12,
+    "PossessionType": 4,
+    "PossessionId": 120,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 13,
+    "PossessionType": 4,
+    "PossessionId": 139,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 14,
+    "PossessionType": 4,
+    "PossessionId": 140,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 15,
+    "PossessionType": 4,
+    "PossessionId": 159,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 16,
+    "PossessionType": 4,
+    "PossessionId": 160,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 17,
+    "PossessionType": 4,
+    "PossessionId": 179,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 18,
+    "PossessionType": 4,
+    "PossessionId": 180,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 19,
+    "PossessionType": 4,
+    "PossessionId": 199,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 20,
+    "PossessionType": 4,
+    "PossessionId": 200,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 21,
+    "PossessionType": 4,
+    "PossessionId": 219,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 22,
+    "PossessionType": 4,
+    "PossessionId": 220,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 23,
+    "PossessionType": 4,
+    "PossessionId": 239,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 24,
+    "PossessionType": 4,
+    "PossessionId": 240,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 25,
+    "PossessionType": 4,
+    "PossessionId": 259,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 26,
+    "PossessionType": 4,
+    "PossessionId": 260,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 27,
+    "PossessionType": 4,
+    "PossessionId": 279,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 28,
+    "PossessionType": 4,
+    "PossessionId": 280,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 29,
+    "PossessionType": 4,
+    "PossessionId": 299,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 30,
+    "PossessionType": 4,
+    "PossessionId": 300,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 31,
+    "PossessionType": 4,
+    "PossessionId": 319,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 32,
+    "PossessionType": 4,
+    "PossessionId": 320,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 33,
+    "PossessionType": 4,
+    "PossessionId": 339,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 34,
+    "PossessionType": 4,
+    "PossessionId": 340,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 35,
+    "PossessionType": 4,
+    "PossessionId": 359,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 36,
+    "PossessionType": 4,
+    "PossessionId": 360,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 37,
+    "PossessionType": 4,
+    "PossessionId": 379,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 38,
+    "PossessionType": 4,
+    "PossessionId": 380,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 39,
+    "PossessionType": 4,
+    "PossessionId": 399,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 40,
+    "PossessionType": 4,
+    "PossessionId": 400,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 41,
+    "PossessionType": 4,
+    "PossessionId": 419,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 42,
+    "PossessionType": 4,
+    "PossessionId": 420,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 43,
+    "PossessionType": 4,
+    "PossessionId": 439,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 44,
+    "PossessionType": 4,
+    "PossessionId": 440,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 45,
+    "PossessionType": 4,
+    "PossessionId": 459,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 46,
+    "PossessionType": 4,
+    "PossessionId": 460,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 47,
+    "PossessionType": 4,
+    "PossessionId": 479,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 48,
+    "PossessionType": 4,
+    "PossessionId": 480,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 49,
+    "PossessionType": 4,
+    "PossessionId": 499,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 50,
+    "PossessionType": 4,
+    "PossessionId": 500,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 51,
+    "PossessionType": 4,
+    "PossessionId": 519,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 52,
+    "PossessionType": 4,
+    "PossessionId": 520,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 53,
+    "PossessionType": 4,
+    "PossessionId": 539,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 54,
+    "PossessionType": 4,
+    "PossessionId": 540,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 55,
+    "PossessionType": 4,
+    "PossessionId": 559,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 56,
+    "PossessionType": 4,
+    "PossessionId": 560,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 57,
+    "PossessionType": 4,
+    "PossessionId": 579,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 58,
+    "PossessionType": 4,
+    "PossessionId": 580,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 59,
+    "PossessionType": 4,
+    "PossessionId": 599,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 60,
+    "PossessionType": 4,
+    "PossessionId": 600,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 61,
+    "PossessionType": 4,
+    "PossessionId": 619,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 62,
+    "PossessionType": 4,
+    "PossessionId": 620,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 63,
+    "PossessionType": 4,
+    "PossessionId": 639,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 64,
+    "PossessionType": 4,
+    "PossessionId": 640,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 65,
+    "PossessionType": 4,
+    "PossessionId": 659,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 66,
+    "PossessionType": 4,
+    "PossessionId": 660,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 67,
+    "PossessionType": 4,
+    "PossessionId": 679,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 68,
+    "PossessionType": 4,
+    "PossessionId": 680,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 69,
+    "PossessionType": 4,
+    "PossessionId": 699,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 70,
+    "PossessionType": 4,
+    "PossessionId": 700,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 71,
+    "PossessionType": 4,
+    "PossessionId": 719,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 38,
+    "TargetIndex": 72,
+    "PossessionType": 4,
+    "PossessionId": 720,
+    "Count": 0
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 107,
+    "TargetIndex": 1,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 1
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 107,
+    "TargetIndex": 2,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 1
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 109,
+    "TargetIndex": 1,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 1
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 216,
+    "TargetIndex": 1,
+    "PossessionType": 5,
+    "PossessionId": 321101,
+    "Count": 1
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 217,
+    "TargetIndex": 1,
+    "PossessionType": 5,
+    "PossessionId": 321103,
+    "Count": 1
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 218,
+    "TargetIndex": 1,
+    "PossessionType": 5,
+    "PossessionId": 321102,
+    "Count": 1
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 219,
+    "TargetIndex": 1,
+    "PossessionType": 5,
+    "PossessionId": 321104,
+    "Count": 1
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 220,
+    "TargetIndex": 1,
+    "PossessionType": 5,
+    "PossessionId": 321105,
+    "Count": 1
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 221,
+    "TargetIndex": 1,
+    "PossessionType": 5,
+    "PossessionId": 321106,
+    "Count": 1
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 222,
+    "TargetIndex": 1,
+    "PossessionType": 5,
+    "PossessionId": 321107,
+    "Count": 1
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 223,
+    "TargetIndex": 1,
+    "PossessionType": 5,
+    "PossessionId": 321108,
+    "Count": 1
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 224,
+    "TargetIndex": 1,
+    "PossessionType": 5,
+    "PossessionId": 321109,
+    "Count": 1
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 225,
+    "TargetIndex": 1,
+    "PossessionType": 5,
+    "PossessionId": 321110,
+    "Count": 1
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 226,
+    "TargetIndex": 1,
+    "PossessionType": 5,
+    "PossessionId": 321111,
+    "Count": 1
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 227,
+    "TargetIndex": 1,
+    "PossessionType": 5,
+    "PossessionId": 321112,
+    "Count": 1
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 228,
+    "TargetIndex": 1,
+    "PossessionType": 5,
+    "PossessionId": 321113,
+    "Count": 1
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 229,
+    "TargetIndex": 1,
+    "PossessionType": 5,
+    "PossessionId": 321114,
+    "Count": 1
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 230,
+    "TargetIndex": 1,
+    "PossessionType": 5,
+    "PossessionId": 321115,
+    "Count": 1
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 231,
+    "TargetIndex": 1,
+    "PossessionType": 5,
+    "PossessionId": 321116,
+    "Count": 1
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 232,
+    "TargetIndex": 1,
+    "PossessionType": 5,
+    "PossessionId": 321117,
+    "Count": 1
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 233,
+    "TargetIndex": 1,
+    "PossessionType": 5,
+    "PossessionId": 321118,
+    "Count": 1
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 305,
+    "TargetIndex": 1,
+    "PossessionType": 5,
+    "PossessionId": 321119,
+    "Count": 1
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 306,
+    "TargetIndex": 1,
+    "PossessionType": 5,
+    "PossessionId": 321120,
+    "Count": 1
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 381,
+    "TargetIndex": 1,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 1
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 381,
+    "TargetIndex": 2,
+    "PossessionType": 5,
+    "PossessionId": 402002,
+    "Count": 1
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 464,
+    "TargetIndex": 1,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 2
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 464,
+    "TargetIndex": 2,
+    "PossessionType": 5,
+    "PossessionId": 402002,
+    "Count": 1
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 496,
+    "TargetIndex": 1,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 1
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 497,
+    "TargetIndex": 1,
+    "PossessionType": 6,
+    "PossessionId": 6064,
+    "Count": 1
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 561,
+    "TargetIndex": 1,
+    "PossessionType": 5,
+    "PossessionId": 315001,
+    "Count": 1
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 625,
+    "TargetIndex": 1,
+    "PossessionType": 5,
+    "PossessionId": 402003,
+    "Count": 1
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 626,
+    "TargetIndex": 1,
+    "PossessionType": 5,
+    "PossessionId": 402003,
+    "Count": 1
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 658,
+    "TargetIndex": 1,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 1
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 658,
+    "TargetIndex": 2,
+    "PossessionType": 5,
+    "PossessionId": 401002,
+    "Count": 1
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 658,
+    "TargetIndex": 3,
+    "PossessionType": 5,
+    "PossessionId": 401001,
+    "Count": 2
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 659,
+    "TargetIndex": 1,
+    "PossessionType": 5,
+    "PossessionId": 402003,
+    "Count": 1
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 659,
+    "TargetIndex": 2,
+    "PossessionType": 5,
+    "PossessionId": 402002,
+    "Count": 1
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 659,
+    "TargetIndex": 3,
+    "PossessionType": 5,
+    "PossessionId": 402001,
+    "Count": 2
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 660,
+    "TargetIndex": 1,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 1
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 660,
+    "TargetIndex": 2,
+    "PossessionType": 5,
+    "PossessionId": 402003,
+    "Count": 1
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 663,
+    "TargetIndex": 1,
+    "PossessionType": 5,
+    "PossessionId": 321121,
+    "Count": 1
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 698,
+    "TargetIndex": 1,
+    "PossessionType": 6,
+    "PossessionId": 242,
+    "Count": 5
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 699,
+    "TargetIndex": 1,
+    "PossessionType": 6,
+    "PossessionId": 242,
+    "Count": 7
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 700,
+    "TargetIndex": 1,
+    "PossessionType": 6,
+    "PossessionId": 242,
+    "Count": 10
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 767,
+    "TargetIndex": 1,
+    "PossessionType": 5,
+    "PossessionId": 401003,
+    "Count": 2
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 767,
+    "TargetIndex": 2,
+    "PossessionType": 5,
+    "PossessionId": 402003,
+    "Count": 2
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 775,
+    "TargetIndex": 1,
+    "PossessionType": 6,
+    "PossessionId": 242,
+    "Count": 1
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 776,
+    "TargetIndex": 1,
+    "PossessionType": 6,
+    "PossessionId": 242,
+    "Count": 3
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 777,
+    "TargetIndex": 1,
+    "PossessionType": 6,
+    "PossessionId": 242,
+    "Count": 5
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 778,
+    "TargetIndex": 1,
+    "PossessionType": 6,
+    "PossessionId": 242,
+    "Count": 7
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 779,
+    "TargetIndex": 1,
+    "PossessionType": 6,
+    "PossessionId": 242,
+    "Count": 10
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 780,
+    "TargetIndex": 1,
+    "PossessionType": 6,
+    "PossessionId": 242,
+    "Count": 1
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 781,
+    "TargetIndex": 1,
+    "PossessionType": 6,
+    "PossessionId": 242,
+    "Count": 3
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 782,
+    "TargetIndex": 1,
+    "PossessionType": 6,
+    "PossessionId": 242,
+    "Count": 5
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 783,
+    "TargetIndex": 1,
+    "PossessionType": 6,
+    "PossessionId": 242,
+    "Count": 7
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 784,
+    "TargetIndex": 1,
+    "PossessionType": 6,
+    "PossessionId": 242,
+    "Count": 10
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 785,
+    "TargetIndex": 1,
+    "PossessionType": 6,
+    "PossessionId": 242,
+    "Count": 1
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 786,
+    "TargetIndex": 1,
+    "PossessionType": 6,
+    "PossessionId": 242,
+    "Count": 3
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 787,
+    "TargetIndex": 1,
+    "PossessionType": 6,
+    "PossessionId": 242,
+    "Count": 5
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 788,
+    "TargetIndex": 1,
+    "PossessionType": 6,
+    "PossessionId": 242,
+    "Count": 7
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 789,
+    "TargetIndex": 1,
+    "PossessionType": 6,
+    "PossessionId": 242,
+    "Count": 10
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 10002,
+    "TargetIndex": 1,
+    "PossessionType": 5,
+    "PossessionId": 100004,
+    "Count": 5
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 10002,
+    "TargetIndex": 2,
+    "PossessionType": 5,
+    "PossessionId": 200004,
+    "Count": 5
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 10003,
+    "TargetIndex": 1,
+    "PossessionType": 5,
+    "PossessionId": 100004,
+    "Count": 10
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 10003,
+    "TargetIndex": 2,
+    "PossessionType": 5,
+    "PossessionId": 200004,
+    "Count": 10
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 20002,
+    "TargetIndex": 1,
+    "PossessionType": 5,
+    "PossessionId": 100004,
+    "Count": 10
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 20002,
+    "TargetIndex": 2,
+    "PossessionType": 5,
+    "PossessionId": 200004,
+    "Count": 10
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 20003,
+    "TargetIndex": 1,
+    "PossessionType": 5,
+    "PossessionId": 100004,
+    "Count": 15
+  },
+  {
+    "QuestCampaignTargetItemGroupId": 20003,
+    "TargetIndex": 2,
+    "PossessionType": 5,
+    "PossessionId": 200004,
+    "Count": 15
+  }
+]

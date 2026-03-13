@@ -1,0 +1,26 @@
+[
+  {
+    "SkillBehaviourActionId": 18000001,
+    "ExtendBuffCooltimeBuffType": 1,
+    "ExtendBuffCooltimeStatusType": 8,
+    "ExtendBuffCooltimeTargetSkillType": 3,
+    "ExtendBuffCooltimeExtendType": 1,
+    "ExtendValue": 240
+  },
+  {
+    "SkillBehaviourActionId": 18000002,
+    "ExtendBuffCooltimeBuffType": 1,
+    "ExtendBuffCooltimeStatusType": 8,
+    "ExtendBuffCooltimeTargetSkillType": 3,
+    "ExtendBuffCooltimeExtendType": 1,
+    "ExtendValue": 300
+  },
+  {
+    "SkillBehaviourActionId": 18000003,
+    "ExtendBuffCooltimeBuffType": 1,
+    "ExtendBuffCooltimeStatusType": 8,
+    "ExtendBuffCooltimeTargetSkillType": 3,
+    "ExtendBuffCooltimeExtendType": 1,
+    "ExtendValue": 450
+  }
+]

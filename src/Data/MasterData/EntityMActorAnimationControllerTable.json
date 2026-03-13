@@ -1,0 +1,614 @@
+[
+  {
+    "ActorAnimationControllerId": 1,
+    "ActorId": 1004001,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)sd01_ch004_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 2,
+    "ActorId": 1004001,
+    "ActorAnimationControllerType": 2,
+    "AssetPath": "general)pb01_ch004_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 3,
+    "ActorId": 4001001,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)sd01_ma001_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 4,
+    "ActorId": 4001001,
+    "ActorAnimationControllerType": 2,
+    "AssetPath": "general)pb01_ma001_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 5,
+    "ActorId": 1006001,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)sd01_ch006_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 6,
+    "ActorId": 1006001,
+    "ActorAnimationControllerType": 2,
+    "AssetPath": "general)pb01_ch006_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 7,
+    "ActorId": 1001001,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)sd01_ch001_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 8,
+    "ActorId": 1001001,
+    "ActorAnimationControllerType": 2,
+    "AssetPath": "general)pb01_ch001_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 9,
+    "ActorId": 1007001,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)sd01_ch007_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 10,
+    "ActorId": 1007001,
+    "ActorAnimationControllerType": 2,
+    "AssetPath": "general)pb01_ch007_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 11,
+    "ActorId": 5002001,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)sd01_mt002_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 12,
+    "ActorId": 5002001,
+    "ActorAnimationControllerType": 2,
+    "AssetPath": "general)pb01_mt002_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 13,
+    "ActorId": 5003001,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)sd01_mt003_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 14,
+    "ActorId": 5003001,
+    "ActorAnimationControllerType": 2,
+    "AssetPath": "general)pb01_mt003_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 15,
+    "ActorId": 2001001,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)sd01_cm001_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 16,
+    "ActorId": 2001001,
+    "ActorAnimationControllerType": 2,
+    "AssetPath": "general)pb01_cm001_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 17,
+    "ActorId": 2006001,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)sd01_cm006_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 18,
+    "ActorId": 2006001,
+    "ActorAnimationControllerType": 2,
+    "AssetPath": "general)pb01_cm006_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 19,
+    "ActorId": 3001001,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)sd01_wp001_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 20,
+    "ActorId": 3001001,
+    "ActorAnimationControllerType": 2,
+    "AssetPath": "general)pb01_wp001_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 21,
+    "ActorId": 3004001,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)sd01_wp004_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 22,
+    "ActorId": 3004001,
+    "ActorAnimationControllerType": 2,
+    "AssetPath": "general)pb01_wp004_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 23,
+    "ActorId": 3006001,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)sd01_wp006_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 24,
+    "ActorId": 3006001,
+    "ActorAnimationControllerType": 2,
+    "AssetPath": "general)pb01_wp006_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 25,
+    "ActorId": 3901001,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)sd01_wp901_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 26,
+    "ActorId": 3901001,
+    "ActorAnimationControllerType": 2,
+    "AssetPath": "general)pb01_wp901_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 27,
+    "ActorId": 1004002,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)sd01_ch004_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 28,
+    "ActorId": 1004002,
+    "ActorAnimationControllerType": 2,
+    "AssetPath": "general)pb01_ch004_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 32,
+    "ActorId": 1907001,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)sd01_pc007_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 33,
+    "ActorId": 1907001,
+    "ActorAnimationControllerType": 2,
+    "AssetPath": "general)pb01_pc007_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 34,
+    "ActorId": 1908001,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)sd01_pc008_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 35,
+    "ActorId": 1908001,
+    "ActorAnimationControllerType": 2,
+    "AssetPath": "general)pb01_pc008_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 36,
+    "ActorId": 1909001,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)sd01_pc009_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 37,
+    "ActorId": 1909001,
+    "ActorAnimationControllerType": 2,
+    "AssetPath": "general)pb01_pc009_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 38,
+    "ActorId": 8003001,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)sd01_np003_ac"
+  },
+  {
+    "ActorAnimationControllerId": 39,
+    "ActorId": 8003002,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)sd01_np003_ac"
+  },
+  {
+    "ActorAnimationControllerId": 40,
+    "ActorId": 8003003,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)sd01_np003_ac"
+  },
+  {
+    "ActorAnimationControllerId": 41,
+    "ActorId": 11908005,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)pb01_pc009_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 42,
+    "ActorId": 11908005,
+    "ActorAnimationControllerType": 2,
+    "AssetPath": "general)pb01_pc009_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 43,
+    "ActorId": 11908006,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)pb01_pc004_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 44,
+    "ActorId": 11908006,
+    "ActorAnimationControllerType": 2,
+    "AssetPath": "general)pb01_pc004_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 45,
+    "ActorId": 11908008,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)pb01_pc004_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 46,
+    "ActorId": 11908008,
+    "ActorAnimationControllerType": 2,
+    "AssetPath": "general)pb01_pc004_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 47,
+    "ActorId": 11908011,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)pb01_pc015_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 48,
+    "ActorId": 11908011,
+    "ActorAnimationControllerType": 2,
+    "AssetPath": "general)pb01_pc015_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 49,
+    "ActorId": 11908029,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)pb01_pc006_ac"
+  },
+  {
+    "ActorAnimationControllerId": 50,
+    "ActorId": 11908029,
+    "ActorAnimationControllerType": 2,
+    "AssetPath": "general)pb01_pc006_ac"
+  },
+  {
+    "ActorAnimationControllerId": 53,
+    "ActorId": 8015001,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)pb01_pc020_ac"
+  },
+  {
+    "ActorAnimationControllerId": 54,
+    "ActorId": 8015001,
+    "ActorAnimationControllerType": 2,
+    "AssetPath": "general)pb01_pc020_ac"
+  },
+  {
+    "ActorAnimationControllerId": 55,
+    "ActorId": 11908054,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)pb01_pc021_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 56,
+    "ActorId": 11908054,
+    "ActorAnimationControllerType": 2,
+    "AssetPath": "general)pb01_pc021_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 57,
+    "ActorId": 11908067,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)pb01_pc005_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 58,
+    "ActorId": 11908067,
+    "ActorAnimationControllerType": 2,
+    "AssetPath": "general)pb01_pc005_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 59,
+    "ActorId": 11908089,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)pb01_pc021_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 60,
+    "ActorId": 11908089,
+    "ActorAnimationControllerType": 2,
+    "AssetPath": "general)pb01_pc021_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 61,
+    "ActorId": 11908098,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)pb01_pc005_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 62,
+    "ActorId": 11908098,
+    "ActorAnimationControllerType": 2,
+    "AssetPath": "general)pb01_pc005_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 63,
+    "ActorId": 11908104,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)pb01_pc004_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 64,
+    "ActorId": 11908104,
+    "ActorAnimationControllerType": 2,
+    "AssetPath": "general)pb01_pc004_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 65,
+    "ActorId": 11908108,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)pb01_pc011_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 66,
+    "ActorId": 11908108,
+    "ActorAnimationControllerType": 2,
+    "AssetPath": "general)pb01_pc011_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 67,
+    "ActorId": 11908109,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)pb01_pc012_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 68,
+    "ActorId": 11908109,
+    "ActorAnimationControllerType": 2,
+    "AssetPath": "general)pb01_pc012_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 69,
+    "ActorId": 11908110,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)pb01_pc011_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 70,
+    "ActorId": 11908110,
+    "ActorAnimationControllerType": 2,
+    "AssetPath": "general)pb01_pc011_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 71,
+    "ActorId": 11908111,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)pb01_pc012_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 72,
+    "ActorId": 11908111,
+    "ActorAnimationControllerType": 2,
+    "AssetPath": "general)pb01_pc012_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 73,
+    "ActorId": 11908112,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)pb01_pc012_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 74,
+    "ActorId": 11908112,
+    "ActorAnimationControllerType": 2,
+    "AssetPath": "general)pb01_pc012_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 75,
+    "ActorId": 11908113,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)pb01_pc004_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 76,
+    "ActorId": 11908113,
+    "ActorAnimationControllerType": 2,
+    "AssetPath": "general)pb01_pc004_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 77,
+    "ActorId": 11908115,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)pb01_pc004_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 78,
+    "ActorId": 11908115,
+    "ActorAnimationControllerType": 2,
+    "AssetPath": "general)pb01_pc004_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 79,
+    "ActorId": 11908114,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)pb01_pc004_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 80,
+    "ActorId": 11908114,
+    "ActorAnimationControllerType": 2,
+    "AssetPath": "general)pb01_pc004_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 81,
+    "ActorId": 11908119,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)pb01_pc010_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 82,
+    "ActorId": 11908119,
+    "ActorAnimationControllerType": 2,
+    "AssetPath": "general)pb01_pc010_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 83,
+    "ActorId": 11908122,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)pb01_pc013_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 84,
+    "ActorId": 11908122,
+    "ActorAnimationControllerType": 2,
+    "AssetPath": "general)pb01_pc013_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 85,
+    "ActorId": 11908123,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)pb01_pc014_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 86,
+    "ActorId": 11908123,
+    "ActorAnimationControllerType": 2,
+    "AssetPath": "general)pb01_pc014_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 87,
+    "ActorId": 11908127,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)pb01_pc011_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 88,
+    "ActorId": 11908127,
+    "ActorAnimationControllerType": 2,
+    "AssetPath": "general)pb01_pc011_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 89,
+    "ActorId": 11908128,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)pb01_sp003_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 90,
+    "ActorId": 11908128,
+    "ActorAnimationControllerType": 2,
+    "AssetPath": "general)pb01_sp003_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 91,
+    "ActorId": 13011001,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)pb01_sp011_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 92,
+    "ActorId": 13012001,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)pb01_sp012_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 93,
+    "ActorId": 13004005,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)pb01_sp004_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 94,
+    "ActorId": 13004006,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)pb01_sp004_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 96,
+    "ActorId": 13002015,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)pb01_sp002_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 98,
+    "ActorId": 13011002,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)pb01_sp011_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 99,
+    "ActorId": 13012002,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)pb01_sp012_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 100,
+    "ActorId": 14029001,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)pb01_pc029_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 101,
+    "ActorId": 14029001,
+    "ActorAnimationControllerType": 2,
+    "AssetPath": "general)pb01_pc029_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 102,
+    "ActorId": 14022001,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)pb01_pc022_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 103,
+    "ActorId": 14022001,
+    "ActorAnimationControllerType": 2,
+    "AssetPath": "general)pb01_pc022_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 104,
+    "ActorId": 14023001,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)pb01_pc023_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 105,
+    "ActorId": 14023001,
+    "ActorAnimationControllerType": 2,
+    "AssetPath": "general)pb01_pc023_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 112,
+    "ActorId": 14031001,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)pb01_pc031_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 113,
+    "ActorId": 14031001,
+    "ActorAnimationControllerType": 2,
+    "AssetPath": "general)pb01_pc031_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 114,
+    "ActorId": 13012003,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)pb01_sp012_aoc"
+  },
+  {
+    "ActorAnimationControllerId": 119,
+    "ActorId": 13014006,
+    "ActorAnimationControllerType": 1,
+    "AssetPath": "general)pb01_sp014_aoc"
+  }
+]

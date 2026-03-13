@@ -1,0 +1,102 @@
+[
+  {
+    "QuestReleaseConditionId": 500002,
+    "BigHuntBossId": 1,
+    "NecessaryScore": 250000
+  },
+  {
+    "QuestReleaseConditionId": 500003,
+    "BigHuntBossId": 1,
+    "NecessaryScore": 800000
+  },
+  {
+    "QuestReleaseConditionId": 500004,
+    "BigHuntBossId": 1,
+    "NecessaryScore": 1500000
+  },
+  {
+    "QuestReleaseConditionId": 500005,
+    "BigHuntBossId": 1,
+    "NecessaryScore": 9500000
+  },
+  {
+    "QuestReleaseConditionId": 500012,
+    "BigHuntBossId": 2,
+    "NecessaryScore": 250000
+  },
+  {
+    "QuestReleaseConditionId": 500013,
+    "BigHuntBossId": 2,
+    "NecessaryScore": 800000
+  },
+  {
+    "QuestReleaseConditionId": 500014,
+    "BigHuntBossId": 2,
+    "NecessaryScore": 1500000
+  },
+  {
+    "QuestReleaseConditionId": 500015,
+    "BigHuntBossId": 2,
+    "NecessaryScore": 9500000
+  },
+  {
+    "QuestReleaseConditionId": 500022,
+    "BigHuntBossId": 3,
+    "NecessaryScore": 250000
+  },
+  {
+    "QuestReleaseConditionId": 500023,
+    "BigHuntBossId": 3,
+    "NecessaryScore": 800000
+  },
+  {
+    "QuestReleaseConditionId": 500024,
+    "BigHuntBossId": 3,
+    "NecessaryScore": 1500000
+  },
+  {
+    "QuestReleaseConditionId": 500025,
+    "BigHuntBossId": 3,
+    "NecessaryScore": 9500000
+  },
+  {
+    "QuestReleaseConditionId": 500032,
+    "BigHuntBossId": 4,
+    "NecessaryScore": 250000
+  },
+  {
+    "QuestReleaseConditionId": 500033,
+    "BigHuntBossId": 4,
+    "NecessaryScore": 800000
+  },
+  {
+    "QuestReleaseConditionId": 500034,
+    "BigHuntBossId": 4,
+    "NecessaryScore": 1500000
+  },
+  {
+    "QuestReleaseConditionId": 500035,
+    "BigHuntBossId": 4,
+    "NecessaryScore": 9500000
+  },
+  {
+    "QuestReleaseConditionId": 500042,
+    "BigHuntBossId": 5,
+    "NecessaryScore": 250000
+  },
+  {
+    "QuestReleaseConditionId": 500043,
+    "BigHuntBossId": 5,
+    "NecessaryScore": 800000
+  },
+  {
+    "QuestReleaseConditionId": 500044,
+    "BigHuntBossId": 5,
+    "NecessaryScore": 1500000
+  },
+  {
+    "QuestReleaseConditionId": 500045,
+    "BigHuntBossId": 5,
+    "NecessaryScore": 9500000
+  }
+]

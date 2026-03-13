@@ -1,0 +1,22 @@
+[
+  {
+    "LibraryRecordType": 1,
+    "SortOrder": 1,
+    "LibraryRecordAssetId": 100
+  },
+  {
+    "LibraryRecordType": 2,
+    "SortOrder": 2,
+    "LibraryRecordAssetId": 200
+  },
+  {
+    "LibraryRecordType": 3,
+    "SortOrder": 3,
+    "LibraryRecordAssetId": 300
+  },
+  {
+    "LibraryRecordType": 5,
+    "SortOrder": 5,
+    "LibraryRecordAssetId": 500
+  }
+]

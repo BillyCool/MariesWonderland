@@ -1,0 +1,114 @@
+[
+  {
+    "LibraryMainQuestGroupId": 1,
+    "SortOrder": 1,
+    "RecollectionSceneId": 681,
+    "LibraryMainQuestStoryUnlockEvaluateConditionId": 4202,
+    "TextAssetId": 1
+  },
+  {
+    "LibraryMainQuestGroupId": 1,
+    "SortOrder": 2,
+    "RecollectionSceneId": 761,
+    "LibraryMainQuestStoryUnlockEvaluateConditionId": 4203,
+    "TextAssetId": 2
+  },
+  {
+    "LibraryMainQuestGroupId": 1,
+    "SortOrder": 3,
+    "RecollectionSceneId": 841,
+    "LibraryMainQuestStoryUnlockEvaluateConditionId": 4204,
+    "TextAssetId": 3
+  },
+  {
+    "LibraryMainQuestGroupId": 1,
+    "SortOrder": 4,
+    "RecollectionSceneId": 1102,
+    "LibraryMainQuestStoryUnlockEvaluateConditionId": 4207,
+    "TextAssetId": 4
+  },
+  {
+    "LibraryMainQuestGroupId": 2,
+    "SortOrder": 1,
+    "RecollectionSceneId": 931,
+    "LibraryMainQuestStoryUnlockEvaluateConditionId": 4205,
+    "TextAssetId": 1
+  },
+  {
+    "LibraryMainQuestGroupId": 2,
+    "SortOrder": 2,
+    "RecollectionSceneId": 1011,
+    "LibraryMainQuestStoryUnlockEvaluateConditionId": 4206,
+    "TextAssetId": 2
+  },
+  {
+    "LibraryMainQuestGroupId": 2,
+    "SortOrder": 3,
+    "RecollectionSceneId": 1091,
+    "LibraryMainQuestStoryUnlockEvaluateConditionId": 4207,
+    "TextAssetId": 3
+  },
+  {
+    "LibraryMainQuestGroupId": 2,
+    "SortOrder": 4,
+    "RecollectionSceneId": 1702,
+    "LibraryMainQuestStoryUnlockEvaluateConditionId": 4207,
+    "TextAssetId": 4
+  },
+  {
+    "LibraryMainQuestGroupId": 3,
+    "SortOrder": 1,
+    "RecollectionSceneId": 1531,
+    "LibraryMainQuestStoryUnlockEvaluateConditionId": 4305,
+    "TextAssetId": 1
+  },
+  {
+    "LibraryMainQuestGroupId": 3,
+    "SortOrder": 2,
+    "RecollectionSceneId": 1611,
+    "LibraryMainQuestStoryUnlockEvaluateConditionId": 4306,
+    "TextAssetId": 2
+  },
+  {
+    "LibraryMainQuestGroupId": 3,
+    "SortOrder": 3,
+    "RecollectionSceneId": 1691,
+    "LibraryMainQuestStoryUnlockEvaluateConditionId": 4307,
+    "TextAssetId": 3
+  },
+  {
+    "LibraryMainQuestGroupId": 3,
+    "SortOrder": 4,
+    "RecollectionSceneId": 1102,
+    "LibraryMainQuestStoryUnlockEvaluateConditionId": 4307,
+    "TextAssetId": 4
+  },
+  {
+    "LibraryMainQuestGroupId": 4,
+    "SortOrder": 1,
+    "RecollectionSceneId": 1281,
+    "LibraryMainQuestStoryUnlockEvaluateConditionId": 4302,
+    "TextAssetId": 1
+  },
+  {
+    "LibraryMainQuestGroupId": 4,
+    "SortOrder": 2,
+    "RecollectionSceneId": 1361,
+    "LibraryMainQuestStoryUnlockEvaluateConditionId": 4303,
+    "TextAssetId": 2
+  },
+  {
+    "LibraryMainQuestGroupId": 4,
+    "SortOrder": 3,
+    "RecollectionSceneId": 1441,
+    "LibraryMainQuestStoryUnlockEvaluateConditionId": 4304,
+    "TextAssetId": 3
+  },
+  {
+    "LibraryMainQuestGroupId": 4,
+    "SortOrder": 4,
+    "RecollectionSceneId": 1702,
+    "LibraryMainQuestStoryUnlockEvaluateConditionId": 4307,
+    "TextAssetId": 4
+  }
+]

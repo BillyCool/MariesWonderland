@@ -1,0 +1,2802 @@
+[
+  {
+    "PvpGradeId": 1,
+    "PvpSeasonId": 202001,
+    "NecessaryPvpPoint": 0,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 1,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 1,
+    "PvpSeasonId": 202002,
+    "NecessaryPvpPoint": 0,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 1,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 1,
+    "PvpSeasonId": 202003,
+    "NecessaryPvpPoint": 0,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 1,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 1,
+    "PvpSeasonId": 202004,
+    "NecessaryPvpPoint": 0,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 1,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 1,
+    "PvpSeasonId": 202005,
+    "NecessaryPvpPoint": 0,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 1,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 1,
+    "PvpSeasonId": 202006,
+    "NecessaryPvpPoint": 0,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 0,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 1,
+    "PvpSeasonId": 202007,
+    "NecessaryPvpPoint": 0,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 0,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 1,
+    "PvpSeasonId": 202008,
+    "NecessaryPvpPoint": 0,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 0,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 1,
+    "PvpSeasonId": 202009,
+    "NecessaryPvpPoint": 0,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 0,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 1,
+    "PvpSeasonId": 202010,
+    "NecessaryPvpPoint": 0,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 0,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 1,
+    "PvpSeasonId": 202011,
+    "NecessaryPvpPoint": 0,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 0,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 1,
+    "PvpSeasonId": 202012,
+    "NecessaryPvpPoint": 0,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 0,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 1,
+    "PvpSeasonId": 202013,
+    "NecessaryPvpPoint": 0,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 0,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 1,
+    "PvpSeasonId": 202014,
+    "NecessaryPvpPoint": 0,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 0,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 2,
+    "PvpSeasonId": 202001,
+    "NecessaryPvpPoint": 1000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 2,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 2,
+    "PvpSeasonId": 202002,
+    "NecessaryPvpPoint": 1000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 2,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 2,
+    "PvpSeasonId": 202003,
+    "NecessaryPvpPoint": 1000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 2,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 2,
+    "PvpSeasonId": 202004,
+    "NecessaryPvpPoint": 1000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 2,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 2,
+    "PvpSeasonId": 202005,
+    "NecessaryPvpPoint": 1000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 2,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 2,
+    "PvpSeasonId": 202006,
+    "NecessaryPvpPoint": 1000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 0,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 2,
+    "PvpSeasonId": 202007,
+    "NecessaryPvpPoint": 1000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 27,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 2,
+    "PvpSeasonId": 202008,
+    "NecessaryPvpPoint": 1000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 27,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 2,
+    "PvpSeasonId": 202009,
+    "NecessaryPvpPoint": 1000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 27,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 2,
+    "PvpSeasonId": 202010,
+    "NecessaryPvpPoint": 1000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 27,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 2,
+    "PvpSeasonId": 202011,
+    "NecessaryPvpPoint": 1000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 27,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 2,
+    "PvpSeasonId": 202012,
+    "NecessaryPvpPoint": 1000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 27,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 2,
+    "PvpSeasonId": 202013,
+    "NecessaryPvpPoint": 1000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 27,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 2,
+    "PvpSeasonId": 202014,
+    "NecessaryPvpPoint": 1000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 27,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 3,
+    "PvpSeasonId": 202001,
+    "NecessaryPvpPoint": 2000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 3,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 3,
+    "PvpSeasonId": 202002,
+    "NecessaryPvpPoint": 2000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 3,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 3,
+    "PvpSeasonId": 202003,
+    "NecessaryPvpPoint": 2000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 3,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 3,
+    "PvpSeasonId": 202004,
+    "NecessaryPvpPoint": 2000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 3,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 3,
+    "PvpSeasonId": 202005,
+    "NecessaryPvpPoint": 2000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 3,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 3,
+    "PvpSeasonId": 202006,
+    "NecessaryPvpPoint": 2000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 0,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 3,
+    "PvpSeasonId": 202007,
+    "NecessaryPvpPoint": 2000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 28,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 3,
+    "PvpSeasonId": 202008,
+    "NecessaryPvpPoint": 2000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 28,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 3,
+    "PvpSeasonId": 202009,
+    "NecessaryPvpPoint": 2000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 28,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 3,
+    "PvpSeasonId": 202010,
+    "NecessaryPvpPoint": 2000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 28,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 3,
+    "PvpSeasonId": 202011,
+    "NecessaryPvpPoint": 2000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 28,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 3,
+    "PvpSeasonId": 202012,
+    "NecessaryPvpPoint": 2000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 28,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 3,
+    "PvpSeasonId": 202013,
+    "NecessaryPvpPoint": 2000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 28,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 3,
+    "PvpSeasonId": 202014,
+    "NecessaryPvpPoint": 2000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 28,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 4,
+    "PvpSeasonId": 202001,
+    "NecessaryPvpPoint": 3000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 4,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 4,
+    "PvpSeasonId": 202002,
+    "NecessaryPvpPoint": 3000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 4,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 4,
+    "PvpSeasonId": 202003,
+    "NecessaryPvpPoint": 3000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 4,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 4,
+    "PvpSeasonId": 202004,
+    "NecessaryPvpPoint": 3000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 4,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 4,
+    "PvpSeasonId": 202005,
+    "NecessaryPvpPoint": 3000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 4,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 4,
+    "PvpSeasonId": 202006,
+    "NecessaryPvpPoint": 3000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 0,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 4,
+    "PvpSeasonId": 202007,
+    "NecessaryPvpPoint": 3000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 29,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 4,
+    "PvpSeasonId": 202008,
+    "NecessaryPvpPoint": 3000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 29,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 4,
+    "PvpSeasonId": 202009,
+    "NecessaryPvpPoint": 3000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 29,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 4,
+    "PvpSeasonId": 202010,
+    "NecessaryPvpPoint": 3000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 29,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 4,
+    "PvpSeasonId": 202011,
+    "NecessaryPvpPoint": 3000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 29,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 4,
+    "PvpSeasonId": 202012,
+    "NecessaryPvpPoint": 3000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 29,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 4,
+    "PvpSeasonId": 202013,
+    "NecessaryPvpPoint": 3000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 29,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 4,
+    "PvpSeasonId": 202014,
+    "NecessaryPvpPoint": 3000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 29,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 5,
+    "PvpSeasonId": 202001,
+    "NecessaryPvpPoint": 4000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 5,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 5,
+    "PvpSeasonId": 202002,
+    "NecessaryPvpPoint": 4000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 5,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 5,
+    "PvpSeasonId": 202003,
+    "NecessaryPvpPoint": 4000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 5,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 5,
+    "PvpSeasonId": 202004,
+    "NecessaryPvpPoint": 4000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 5,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 5,
+    "PvpSeasonId": 202005,
+    "NecessaryPvpPoint": 4000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 5,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 5,
+    "PvpSeasonId": 202006,
+    "NecessaryPvpPoint": 4000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 0,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 5,
+    "PvpSeasonId": 202007,
+    "NecessaryPvpPoint": 4000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 30,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 5,
+    "PvpSeasonId": 202008,
+    "NecessaryPvpPoint": 4000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 30,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 5,
+    "PvpSeasonId": 202009,
+    "NecessaryPvpPoint": 4000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 30,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 5,
+    "PvpSeasonId": 202010,
+    "NecessaryPvpPoint": 4000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 30,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 5,
+    "PvpSeasonId": 202011,
+    "NecessaryPvpPoint": 4000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 30,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 5,
+    "PvpSeasonId": 202012,
+    "NecessaryPvpPoint": 4000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 30,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 5,
+    "PvpSeasonId": 202013,
+    "NecessaryPvpPoint": 4000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 30,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 5,
+    "PvpSeasonId": 202014,
+    "NecessaryPvpPoint": 4000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 30,
+    "PvpGradeOneMatchRewardGroupId": 1
+  },
+  {
+    "PvpGradeId": 6,
+    "PvpSeasonId": 202001,
+    "NecessaryPvpPoint": 5200,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 6,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 6,
+    "PvpSeasonId": 202002,
+    "NecessaryPvpPoint": 5200,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 6,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 6,
+    "PvpSeasonId": 202003,
+    "NecessaryPvpPoint": 5200,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 6,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 6,
+    "PvpSeasonId": 202004,
+    "NecessaryPvpPoint": 5200,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 6,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 6,
+    "PvpSeasonId": 202005,
+    "NecessaryPvpPoint": 5200,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 6,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 6,
+    "PvpSeasonId": 202006,
+    "NecessaryPvpPoint": 5200,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 0,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 6,
+    "PvpSeasonId": 202007,
+    "NecessaryPvpPoint": 5200,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 31,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 6,
+    "PvpSeasonId": 202008,
+    "NecessaryPvpPoint": 5200,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 31,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 6,
+    "PvpSeasonId": 202009,
+    "NecessaryPvpPoint": 5200,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 31,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 6,
+    "PvpSeasonId": 202010,
+    "NecessaryPvpPoint": 5200,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 31,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 6,
+    "PvpSeasonId": 202011,
+    "NecessaryPvpPoint": 5200,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 31,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 6,
+    "PvpSeasonId": 202012,
+    "NecessaryPvpPoint": 5200,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 31,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 6,
+    "PvpSeasonId": 202013,
+    "NecessaryPvpPoint": 5200,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 31,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 6,
+    "PvpSeasonId": 202014,
+    "NecessaryPvpPoint": 5200,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 31,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 7,
+    "PvpSeasonId": 202001,
+    "NecessaryPvpPoint": 6400,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 7,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 7,
+    "PvpSeasonId": 202002,
+    "NecessaryPvpPoint": 6400,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 7,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 7,
+    "PvpSeasonId": 202003,
+    "NecessaryPvpPoint": 6400,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 7,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 7,
+    "PvpSeasonId": 202004,
+    "NecessaryPvpPoint": 6400,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 7,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 7,
+    "PvpSeasonId": 202005,
+    "NecessaryPvpPoint": 6400,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 7,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 7,
+    "PvpSeasonId": 202006,
+    "NecessaryPvpPoint": 6400,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 0,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 7,
+    "PvpSeasonId": 202007,
+    "NecessaryPvpPoint": 6400,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 32,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 7,
+    "PvpSeasonId": 202008,
+    "NecessaryPvpPoint": 6400,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 32,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 7,
+    "PvpSeasonId": 202009,
+    "NecessaryPvpPoint": 6400,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 32,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 7,
+    "PvpSeasonId": 202010,
+    "NecessaryPvpPoint": 6400,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 32,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 7,
+    "PvpSeasonId": 202011,
+    "NecessaryPvpPoint": 6400,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 32,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 7,
+    "PvpSeasonId": 202012,
+    "NecessaryPvpPoint": 6400,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 32,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 7,
+    "PvpSeasonId": 202013,
+    "NecessaryPvpPoint": 6400,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 32,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 7,
+    "PvpSeasonId": 202014,
+    "NecessaryPvpPoint": 6400,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 32,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 8,
+    "PvpSeasonId": 202001,
+    "NecessaryPvpPoint": 7600,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 8,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 8,
+    "PvpSeasonId": 202002,
+    "NecessaryPvpPoint": 7600,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 8,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 8,
+    "PvpSeasonId": 202003,
+    "NecessaryPvpPoint": 7600,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 8,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 8,
+    "PvpSeasonId": 202004,
+    "NecessaryPvpPoint": 7600,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 8,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 8,
+    "PvpSeasonId": 202005,
+    "NecessaryPvpPoint": 7600,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 8,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 8,
+    "PvpSeasonId": 202006,
+    "NecessaryPvpPoint": 7600,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 0,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 8,
+    "PvpSeasonId": 202007,
+    "NecessaryPvpPoint": 7600,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 33,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 8,
+    "PvpSeasonId": 202008,
+    "NecessaryPvpPoint": 7600,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 33,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 8,
+    "PvpSeasonId": 202009,
+    "NecessaryPvpPoint": 7600,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 33,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 8,
+    "PvpSeasonId": 202010,
+    "NecessaryPvpPoint": 7600,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 33,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 8,
+    "PvpSeasonId": 202011,
+    "NecessaryPvpPoint": 7600,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 33,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 8,
+    "PvpSeasonId": 202012,
+    "NecessaryPvpPoint": 7600,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 33,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 8,
+    "PvpSeasonId": 202013,
+    "NecessaryPvpPoint": 7600,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 33,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 8,
+    "PvpSeasonId": 202014,
+    "NecessaryPvpPoint": 7600,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 33,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 9,
+    "PvpSeasonId": 202001,
+    "NecessaryPvpPoint": 8800,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 9,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 9,
+    "PvpSeasonId": 202002,
+    "NecessaryPvpPoint": 8800,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 9,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 9,
+    "PvpSeasonId": 202003,
+    "NecessaryPvpPoint": 8800,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 9,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 9,
+    "PvpSeasonId": 202004,
+    "NecessaryPvpPoint": 8800,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 9,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 9,
+    "PvpSeasonId": 202005,
+    "NecessaryPvpPoint": 8800,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 9,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 9,
+    "PvpSeasonId": 202006,
+    "NecessaryPvpPoint": 8800,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 0,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 9,
+    "PvpSeasonId": 202007,
+    "NecessaryPvpPoint": 8800,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 34,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 9,
+    "PvpSeasonId": 202008,
+    "NecessaryPvpPoint": 8800,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 34,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 9,
+    "PvpSeasonId": 202009,
+    "NecessaryPvpPoint": 8800,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 34,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 9,
+    "PvpSeasonId": 202010,
+    "NecessaryPvpPoint": 8800,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 34,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 9,
+    "PvpSeasonId": 202011,
+    "NecessaryPvpPoint": 8800,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 34,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 9,
+    "PvpSeasonId": 202012,
+    "NecessaryPvpPoint": 8800,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 34,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 9,
+    "PvpSeasonId": 202013,
+    "NecessaryPvpPoint": 8800,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 34,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 9,
+    "PvpSeasonId": 202014,
+    "NecessaryPvpPoint": 8800,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 34,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 10,
+    "PvpSeasonId": 202001,
+    "NecessaryPvpPoint": 10000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 10,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 10,
+    "PvpSeasonId": 202002,
+    "NecessaryPvpPoint": 10000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 10,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 10,
+    "PvpSeasonId": 202003,
+    "NecessaryPvpPoint": 10000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 10,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 10,
+    "PvpSeasonId": 202004,
+    "NecessaryPvpPoint": 10000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 10,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 10,
+    "PvpSeasonId": 202005,
+    "NecessaryPvpPoint": 10000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 10,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 10,
+    "PvpSeasonId": 202006,
+    "NecessaryPvpPoint": 10000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 0,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 10,
+    "PvpSeasonId": 202007,
+    "NecessaryPvpPoint": 10000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 35,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 10,
+    "PvpSeasonId": 202008,
+    "NecessaryPvpPoint": 10000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 35,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 10,
+    "PvpSeasonId": 202009,
+    "NecessaryPvpPoint": 10000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 35,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 10,
+    "PvpSeasonId": 202010,
+    "NecessaryPvpPoint": 10000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 35,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 10,
+    "PvpSeasonId": 202011,
+    "NecessaryPvpPoint": 10000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 35,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 10,
+    "PvpSeasonId": 202012,
+    "NecessaryPvpPoint": 10000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 35,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 10,
+    "PvpSeasonId": 202013,
+    "NecessaryPvpPoint": 10000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 35,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 10,
+    "PvpSeasonId": 202014,
+    "NecessaryPvpPoint": 10000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 35,
+    "PvpGradeOneMatchRewardGroupId": 2
+  },
+  {
+    "PvpGradeId": 11,
+    "PvpSeasonId": 202001,
+    "NecessaryPvpPoint": 11600,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 11,
+    "PvpGradeOneMatchRewardGroupId": 3
+  },
+  {
+    "PvpGradeId": 11,
+    "PvpSeasonId": 202002,
+    "NecessaryPvpPoint": 11600,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 11,
+    "PvpGradeOneMatchRewardGroupId": 3
+  },
+  {
+    "PvpGradeId": 11,
+    "PvpSeasonId": 202003,
+    "NecessaryPvpPoint": 11600,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 11,
+    "PvpGradeOneMatchRewardGroupId": 3
+  },
+  {
+    "PvpGradeId": 11,
+    "PvpSeasonId": 202004,
+    "NecessaryPvpPoint": 11600,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 11,
+    "PvpGradeOneMatchRewardGroupId": 3
+  },
+  {
+    "PvpGradeId": 11,
+    "PvpSeasonId": 202005,
+    "NecessaryPvpPoint": 11600,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 11,
+    "PvpGradeOneMatchRewardGroupId": 3
+  },
+  {
+    "PvpGradeId": 11,
+    "PvpSeasonId": 202006,
+    "NecessaryPvpPoint": 11600,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 0,
+    "PvpGradeOneMatchRewardGroupId": 3
+  },
+  {
+    "PvpGradeId": 11,
+    "PvpSeasonId": 202007,
+    "NecessaryPvpPoint": 11600,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 36,
+    "PvpGradeOneMatchRewardGroupId": 3
+  },
+  {
+    "PvpGradeId": 11,
+    "PvpSeasonId": 202008,
+    "NecessaryPvpPoint": 11600,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 36,
+    "PvpGradeOneMatchRewardGroupId": 3
+  },
+  {
+    "PvpGradeId": 11,
+    "PvpSeasonId": 202009,
+    "NecessaryPvpPoint": 11600,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 36,
+    "PvpGradeOneMatchRewardGroupId": 3
+  },
+  {
+    "PvpGradeId": 11,
+    "PvpSeasonId": 202010,
+    "NecessaryPvpPoint": 11600,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 36,
+    "PvpGradeOneMatchRewardGroupId": 3
+  },
+  {
+    "PvpGradeId": 11,
+    "PvpSeasonId": 202011,
+    "NecessaryPvpPoint": 11600,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 36,
+    "PvpGradeOneMatchRewardGroupId": 3
+  },
+  {
+    "PvpGradeId": 11,
+    "PvpSeasonId": 202012,
+    "NecessaryPvpPoint": 11600,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 36,
+    "PvpGradeOneMatchRewardGroupId": 3
+  },
+  {
+    "PvpGradeId": 11,
+    "PvpSeasonId": 202013,
+    "NecessaryPvpPoint": 11600,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 36,
+    "PvpGradeOneMatchRewardGroupId": 3
+  },
+  {
+    "PvpGradeId": 11,
+    "PvpSeasonId": 202014,
+    "NecessaryPvpPoint": 11600,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 36,
+    "PvpGradeOneMatchRewardGroupId": 3
+  },
+  {
+    "PvpGradeId": 12,
+    "PvpSeasonId": 202001,
+    "NecessaryPvpPoint": 13200,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 12,
+    "PvpGradeOneMatchRewardGroupId": 4
+  },
+  {
+    "PvpGradeId": 12,
+    "PvpSeasonId": 202002,
+    "NecessaryPvpPoint": 13200,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 12,
+    "PvpGradeOneMatchRewardGroupId": 4
+  },
+  {
+    "PvpGradeId": 12,
+    "PvpSeasonId": 202003,
+    "NecessaryPvpPoint": 13200,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 12,
+    "PvpGradeOneMatchRewardGroupId": 4
+  },
+  {
+    "PvpGradeId": 12,
+    "PvpSeasonId": 202004,
+    "NecessaryPvpPoint": 13200,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 12,
+    "PvpGradeOneMatchRewardGroupId": 4
+  },
+  {
+    "PvpGradeId": 12,
+    "PvpSeasonId": 202005,
+    "NecessaryPvpPoint": 13200,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 12,
+    "PvpGradeOneMatchRewardGroupId": 4
+  },
+  {
+    "PvpGradeId": 12,
+    "PvpSeasonId": 202006,
+    "NecessaryPvpPoint": 13200,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 0,
+    "PvpGradeOneMatchRewardGroupId": 4
+  },
+  {
+    "PvpGradeId": 12,
+    "PvpSeasonId": 202007,
+    "NecessaryPvpPoint": 13200,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 37,
+    "PvpGradeOneMatchRewardGroupId": 4
+  },
+  {
+    "PvpGradeId": 12,
+    "PvpSeasonId": 202008,
+    "NecessaryPvpPoint": 13200,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 37,
+    "PvpGradeOneMatchRewardGroupId": 4
+  },
+  {
+    "PvpGradeId": 12,
+    "PvpSeasonId": 202009,
+    "NecessaryPvpPoint": 13200,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 37,
+    "PvpGradeOneMatchRewardGroupId": 4
+  },
+  {
+    "PvpGradeId": 12,
+    "PvpSeasonId": 202010,
+    "NecessaryPvpPoint": 13200,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 37,
+    "PvpGradeOneMatchRewardGroupId": 4
+  },
+  {
+    "PvpGradeId": 12,
+    "PvpSeasonId": 202011,
+    "NecessaryPvpPoint": 13200,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 37,
+    "PvpGradeOneMatchRewardGroupId": 4
+  },
+  {
+    "PvpGradeId": 12,
+    "PvpSeasonId": 202012,
+    "NecessaryPvpPoint": 13200,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 37,
+    "PvpGradeOneMatchRewardGroupId": 4
+  },
+  {
+    "PvpGradeId": 12,
+    "PvpSeasonId": 202013,
+    "NecessaryPvpPoint": 13200,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 37,
+    "PvpGradeOneMatchRewardGroupId": 4
+  },
+  {
+    "PvpGradeId": 12,
+    "PvpSeasonId": 202014,
+    "NecessaryPvpPoint": 13200,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 37,
+    "PvpGradeOneMatchRewardGroupId": 4
+  },
+  {
+    "PvpGradeId": 13,
+    "PvpSeasonId": 202001,
+    "NecessaryPvpPoint": 14800,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 13,
+    "PvpGradeOneMatchRewardGroupId": 5
+  },
+  {
+    "PvpGradeId": 13,
+    "PvpSeasonId": 202002,
+    "NecessaryPvpPoint": 14800,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 13,
+    "PvpGradeOneMatchRewardGroupId": 5
+  },
+  {
+    "PvpGradeId": 13,
+    "PvpSeasonId": 202003,
+    "NecessaryPvpPoint": 14800,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 13,
+    "PvpGradeOneMatchRewardGroupId": 5
+  },
+  {
+    "PvpGradeId": 13,
+    "PvpSeasonId": 202004,
+    "NecessaryPvpPoint": 14800,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 13,
+    "PvpGradeOneMatchRewardGroupId": 5
+  },
+  {
+    "PvpGradeId": 13,
+    "PvpSeasonId": 202005,
+    "NecessaryPvpPoint": 14800,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 13,
+    "PvpGradeOneMatchRewardGroupId": 5
+  },
+  {
+    "PvpGradeId": 13,
+    "PvpSeasonId": 202006,
+    "NecessaryPvpPoint": 14800,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 0,
+    "PvpGradeOneMatchRewardGroupId": 5
+  },
+  {
+    "PvpGradeId": 13,
+    "PvpSeasonId": 202007,
+    "NecessaryPvpPoint": 14800,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 38,
+    "PvpGradeOneMatchRewardGroupId": 5
+  },
+  {
+    "PvpGradeId": 13,
+    "PvpSeasonId": 202008,
+    "NecessaryPvpPoint": 14800,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 38,
+    "PvpGradeOneMatchRewardGroupId": 5
+  },
+  {
+    "PvpGradeId": 13,
+    "PvpSeasonId": 202009,
+    "NecessaryPvpPoint": 14800,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 38,
+    "PvpGradeOneMatchRewardGroupId": 5
+  },
+  {
+    "PvpGradeId": 13,
+    "PvpSeasonId": 202010,
+    "NecessaryPvpPoint": 14800,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 38,
+    "PvpGradeOneMatchRewardGroupId": 5
+  },
+  {
+    "PvpGradeId": 13,
+    "PvpSeasonId": 202011,
+    "NecessaryPvpPoint": 14800,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 38,
+    "PvpGradeOneMatchRewardGroupId": 5
+  },
+  {
+    "PvpGradeId": 13,
+    "PvpSeasonId": 202012,
+    "NecessaryPvpPoint": 14800,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 38,
+    "PvpGradeOneMatchRewardGroupId": 5
+  },
+  {
+    "PvpGradeId": 13,
+    "PvpSeasonId": 202013,
+    "NecessaryPvpPoint": 14800,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 38,
+    "PvpGradeOneMatchRewardGroupId": 5
+  },
+  {
+    "PvpGradeId": 13,
+    "PvpSeasonId": 202014,
+    "NecessaryPvpPoint": 14800,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 38,
+    "PvpGradeOneMatchRewardGroupId": 5
+  },
+  {
+    "PvpGradeId": 14,
+    "PvpSeasonId": 202001,
+    "NecessaryPvpPoint": 16400,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 14,
+    "PvpGradeOneMatchRewardGroupId": 6
+  },
+  {
+    "PvpGradeId": 14,
+    "PvpSeasonId": 202002,
+    "NecessaryPvpPoint": 16400,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 14,
+    "PvpGradeOneMatchRewardGroupId": 6
+  },
+  {
+    "PvpGradeId": 14,
+    "PvpSeasonId": 202003,
+    "NecessaryPvpPoint": 16400,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 14,
+    "PvpGradeOneMatchRewardGroupId": 6
+  },
+  {
+    "PvpGradeId": 14,
+    "PvpSeasonId": 202004,
+    "NecessaryPvpPoint": 16400,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 14,
+    "PvpGradeOneMatchRewardGroupId": 6
+  },
+  {
+    "PvpGradeId": 14,
+    "PvpSeasonId": 202005,
+    "NecessaryPvpPoint": 16400,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 14,
+    "PvpGradeOneMatchRewardGroupId": 6
+  },
+  {
+    "PvpGradeId": 14,
+    "PvpSeasonId": 202006,
+    "NecessaryPvpPoint": 16400,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 0,
+    "PvpGradeOneMatchRewardGroupId": 6
+  },
+  {
+    "PvpGradeId": 14,
+    "PvpSeasonId": 202007,
+    "NecessaryPvpPoint": 16400,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 39,
+    "PvpGradeOneMatchRewardGroupId": 6
+  },
+  {
+    "PvpGradeId": 14,
+    "PvpSeasonId": 202008,
+    "NecessaryPvpPoint": 16400,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 39,
+    "PvpGradeOneMatchRewardGroupId": 6
+  },
+  {
+    "PvpGradeId": 14,
+    "PvpSeasonId": 202009,
+    "NecessaryPvpPoint": 16400,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 39,
+    "PvpGradeOneMatchRewardGroupId": 6
+  },
+  {
+    "PvpGradeId": 14,
+    "PvpSeasonId": 202010,
+    "NecessaryPvpPoint": 16400,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 39,
+    "PvpGradeOneMatchRewardGroupId": 6
+  },
+  {
+    "PvpGradeId": 14,
+    "PvpSeasonId": 202011,
+    "NecessaryPvpPoint": 16400,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 39,
+    "PvpGradeOneMatchRewardGroupId": 6
+  },
+  {
+    "PvpGradeId": 14,
+    "PvpSeasonId": 202012,
+    "NecessaryPvpPoint": 16400,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 39,
+    "PvpGradeOneMatchRewardGroupId": 6
+  },
+  {
+    "PvpGradeId": 14,
+    "PvpSeasonId": 202013,
+    "NecessaryPvpPoint": 16400,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 39,
+    "PvpGradeOneMatchRewardGroupId": 6
+  },
+  {
+    "PvpGradeId": 14,
+    "PvpSeasonId": 202014,
+    "NecessaryPvpPoint": 16400,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 39,
+    "PvpGradeOneMatchRewardGroupId": 6
+  },
+  {
+    "PvpGradeId": 15,
+    "PvpSeasonId": 202001,
+    "NecessaryPvpPoint": 18000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 15,
+    "PvpGradeOneMatchRewardGroupId": 7
+  },
+  {
+    "PvpGradeId": 15,
+    "PvpSeasonId": 202002,
+    "NecessaryPvpPoint": 18000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 15,
+    "PvpGradeOneMatchRewardGroupId": 7
+  },
+  {
+    "PvpGradeId": 15,
+    "PvpSeasonId": 202003,
+    "NecessaryPvpPoint": 18000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 15,
+    "PvpGradeOneMatchRewardGroupId": 7
+  },
+  {
+    "PvpGradeId": 15,
+    "PvpSeasonId": 202004,
+    "NecessaryPvpPoint": 18000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 15,
+    "PvpGradeOneMatchRewardGroupId": 7
+  },
+  {
+    "PvpGradeId": 15,
+    "PvpSeasonId": 202005,
+    "NecessaryPvpPoint": 18000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 15,
+    "PvpGradeOneMatchRewardGroupId": 7
+  },
+  {
+    "PvpGradeId": 15,
+    "PvpSeasonId": 202006,
+    "NecessaryPvpPoint": 18000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 0,
+    "PvpGradeOneMatchRewardGroupId": 7
+  },
+  {
+    "PvpGradeId": 15,
+    "PvpSeasonId": 202007,
+    "NecessaryPvpPoint": 18000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 40,
+    "PvpGradeOneMatchRewardGroupId": 7
+  },
+  {
+    "PvpGradeId": 15,
+    "PvpSeasonId": 202008,
+    "NecessaryPvpPoint": 18000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 40,
+    "PvpGradeOneMatchRewardGroupId": 7
+  },
+  {
+    "PvpGradeId": 15,
+    "PvpSeasonId": 202009,
+    "NecessaryPvpPoint": 18000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 40,
+    "PvpGradeOneMatchRewardGroupId": 7
+  },
+  {
+    "PvpGradeId": 15,
+    "PvpSeasonId": 202010,
+    "NecessaryPvpPoint": 18000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 40,
+    "PvpGradeOneMatchRewardGroupId": 7
+  },
+  {
+    "PvpGradeId": 15,
+    "PvpSeasonId": 202011,
+    "NecessaryPvpPoint": 18000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 40,
+    "PvpGradeOneMatchRewardGroupId": 7
+  },
+  {
+    "PvpGradeId": 15,
+    "PvpSeasonId": 202012,
+    "NecessaryPvpPoint": 18000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 40,
+    "PvpGradeOneMatchRewardGroupId": 7
+  },
+  {
+    "PvpGradeId": 15,
+    "PvpSeasonId": 202013,
+    "NecessaryPvpPoint": 18000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 40,
+    "PvpGradeOneMatchRewardGroupId": 7
+  },
+  {
+    "PvpGradeId": 15,
+    "PvpSeasonId": 202014,
+    "NecessaryPvpPoint": 18000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 40,
+    "PvpGradeOneMatchRewardGroupId": 7
+  },
+  {
+    "PvpGradeId": 16,
+    "PvpSeasonId": 202001,
+    "NecessaryPvpPoint": 20600,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 16,
+    "PvpGradeOneMatchRewardGroupId": 8
+  },
+  {
+    "PvpGradeId": 16,
+    "PvpSeasonId": 202002,
+    "NecessaryPvpPoint": 20600,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 16,
+    "PvpGradeOneMatchRewardGroupId": 8
+  },
+  {
+    "PvpGradeId": 16,
+    "PvpSeasonId": 202003,
+    "NecessaryPvpPoint": 20600,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 16,
+    "PvpGradeOneMatchRewardGroupId": 8
+  },
+  {
+    "PvpGradeId": 16,
+    "PvpSeasonId": 202004,
+    "NecessaryPvpPoint": 20600,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 16,
+    "PvpGradeOneMatchRewardGroupId": 8
+  },
+  {
+    "PvpGradeId": 16,
+    "PvpSeasonId": 202005,
+    "NecessaryPvpPoint": 20600,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 16,
+    "PvpGradeOneMatchRewardGroupId": 8
+  },
+  {
+    "PvpGradeId": 16,
+    "PvpSeasonId": 202006,
+    "NecessaryPvpPoint": 20600,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 0,
+    "PvpGradeOneMatchRewardGroupId": 8
+  },
+  {
+    "PvpGradeId": 16,
+    "PvpSeasonId": 202007,
+    "NecessaryPvpPoint": 20600,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 41,
+    "PvpGradeOneMatchRewardGroupId": 8
+  },
+  {
+    "PvpGradeId": 16,
+    "PvpSeasonId": 202008,
+    "NecessaryPvpPoint": 20600,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 41,
+    "PvpGradeOneMatchRewardGroupId": 8
+  },
+  {
+    "PvpGradeId": 16,
+    "PvpSeasonId": 202009,
+    "NecessaryPvpPoint": 20600,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 41,
+    "PvpGradeOneMatchRewardGroupId": 8
+  },
+  {
+    "PvpGradeId": 16,
+    "PvpSeasonId": 202010,
+    "NecessaryPvpPoint": 20600,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 41,
+    "PvpGradeOneMatchRewardGroupId": 8
+  },
+  {
+    "PvpGradeId": 16,
+    "PvpSeasonId": 202011,
+    "NecessaryPvpPoint": 20600,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 41,
+    "PvpGradeOneMatchRewardGroupId": 8
+  },
+  {
+    "PvpGradeId": 16,
+    "PvpSeasonId": 202012,
+    "NecessaryPvpPoint": 20600,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 41,
+    "PvpGradeOneMatchRewardGroupId": 8
+  },
+  {
+    "PvpGradeId": 16,
+    "PvpSeasonId": 202013,
+    "NecessaryPvpPoint": 20600,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 41,
+    "PvpGradeOneMatchRewardGroupId": 8
+  },
+  {
+    "PvpGradeId": 16,
+    "PvpSeasonId": 202014,
+    "NecessaryPvpPoint": 20600,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 41,
+    "PvpGradeOneMatchRewardGroupId": 8
+  },
+  {
+    "PvpGradeId": 17,
+    "PvpSeasonId": 202001,
+    "NecessaryPvpPoint": 23200,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 17,
+    "PvpGradeOneMatchRewardGroupId": 9
+  },
+  {
+    "PvpGradeId": 17,
+    "PvpSeasonId": 202002,
+    "NecessaryPvpPoint": 23200,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 17,
+    "PvpGradeOneMatchRewardGroupId": 9
+  },
+  {
+    "PvpGradeId": 17,
+    "PvpSeasonId": 202003,
+    "NecessaryPvpPoint": 23200,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 17,
+    "PvpGradeOneMatchRewardGroupId": 9
+  },
+  {
+    "PvpGradeId": 17,
+    "PvpSeasonId": 202004,
+    "NecessaryPvpPoint": 23200,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 17,
+    "PvpGradeOneMatchRewardGroupId": 9
+  },
+  {
+    "PvpGradeId": 17,
+    "PvpSeasonId": 202005,
+    "NecessaryPvpPoint": 23200,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 17,
+    "PvpGradeOneMatchRewardGroupId": 9
+  },
+  {
+    "PvpGradeId": 17,
+    "PvpSeasonId": 202006,
+    "NecessaryPvpPoint": 23200,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 0,
+    "PvpGradeOneMatchRewardGroupId": 9
+  },
+  {
+    "PvpGradeId": 17,
+    "PvpSeasonId": 202007,
+    "NecessaryPvpPoint": 23200,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 42,
+    "PvpGradeOneMatchRewardGroupId": 9
+  },
+  {
+    "PvpGradeId": 17,
+    "PvpSeasonId": 202008,
+    "NecessaryPvpPoint": 23200,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 42,
+    "PvpGradeOneMatchRewardGroupId": 9
+  },
+  {
+    "PvpGradeId": 17,
+    "PvpSeasonId": 202009,
+    "NecessaryPvpPoint": 23200,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 42,
+    "PvpGradeOneMatchRewardGroupId": 9
+  },
+  {
+    "PvpGradeId": 17,
+    "PvpSeasonId": 202010,
+    "NecessaryPvpPoint": 23200,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 42,
+    "PvpGradeOneMatchRewardGroupId": 9
+  },
+  {
+    "PvpGradeId": 17,
+    "PvpSeasonId": 202011,
+    "NecessaryPvpPoint": 23200,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 42,
+    "PvpGradeOneMatchRewardGroupId": 9
+  },
+  {
+    "PvpGradeId": 17,
+    "PvpSeasonId": 202012,
+    "NecessaryPvpPoint": 23200,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 42,
+    "PvpGradeOneMatchRewardGroupId": 9
+  },
+  {
+    "PvpGradeId": 17,
+    "PvpSeasonId": 202013,
+    "NecessaryPvpPoint": 23200,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 42,
+    "PvpGradeOneMatchRewardGroupId": 9
+  },
+  {
+    "PvpGradeId": 17,
+    "PvpSeasonId": 202014,
+    "NecessaryPvpPoint": 23200,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 42,
+    "PvpGradeOneMatchRewardGroupId": 9
+  },
+  {
+    "PvpGradeId": 18,
+    "PvpSeasonId": 202001,
+    "NecessaryPvpPoint": 25800,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 18,
+    "PvpGradeOneMatchRewardGroupId": 10
+  },
+  {
+    "PvpGradeId": 18,
+    "PvpSeasonId": 202002,
+    "NecessaryPvpPoint": 25800,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 18,
+    "PvpGradeOneMatchRewardGroupId": 10
+  },
+  {
+    "PvpGradeId": 18,
+    "PvpSeasonId": 202003,
+    "NecessaryPvpPoint": 25800,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 18,
+    "PvpGradeOneMatchRewardGroupId": 10
+  },
+  {
+    "PvpGradeId": 18,
+    "PvpSeasonId": 202004,
+    "NecessaryPvpPoint": 25800,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 18,
+    "PvpGradeOneMatchRewardGroupId": 10
+  },
+  {
+    "PvpGradeId": 18,
+    "PvpSeasonId": 202005,
+    "NecessaryPvpPoint": 25800,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 18,
+    "PvpGradeOneMatchRewardGroupId": 10
+  },
+  {
+    "PvpGradeId": 18,
+    "PvpSeasonId": 202006,
+    "NecessaryPvpPoint": 25800,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 0,
+    "PvpGradeOneMatchRewardGroupId": 10
+  },
+  {
+    "PvpGradeId": 18,
+    "PvpSeasonId": 202007,
+    "NecessaryPvpPoint": 25800,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 43,
+    "PvpGradeOneMatchRewardGroupId": 10
+  },
+  {
+    "PvpGradeId": 18,
+    "PvpSeasonId": 202008,
+    "NecessaryPvpPoint": 25800,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 43,
+    "PvpGradeOneMatchRewardGroupId": 10
+  },
+  {
+    "PvpGradeId": 18,
+    "PvpSeasonId": 202009,
+    "NecessaryPvpPoint": 25800,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 43,
+    "PvpGradeOneMatchRewardGroupId": 10
+  },
+  {
+    "PvpGradeId": 18,
+    "PvpSeasonId": 202010,
+    "NecessaryPvpPoint": 25800,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 43,
+    "PvpGradeOneMatchRewardGroupId": 10
+  },
+  {
+    "PvpGradeId": 18,
+    "PvpSeasonId": 202011,
+    "NecessaryPvpPoint": 25800,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 43,
+    "PvpGradeOneMatchRewardGroupId": 10
+  },
+  {
+    "PvpGradeId": 18,
+    "PvpSeasonId": 202012,
+    "NecessaryPvpPoint": 25800,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 43,
+    "PvpGradeOneMatchRewardGroupId": 10
+  },
+  {
+    "PvpGradeId": 18,
+    "PvpSeasonId": 202013,
+    "NecessaryPvpPoint": 25800,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 43,
+    "PvpGradeOneMatchRewardGroupId": 10
+  },
+  {
+    "PvpGradeId": 18,
+    "PvpSeasonId": 202014,
+    "NecessaryPvpPoint": 25800,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 43,
+    "PvpGradeOneMatchRewardGroupId": 10
+  },
+  {
+    "PvpGradeId": 19,
+    "PvpSeasonId": 202001,
+    "NecessaryPvpPoint": 28400,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 19,
+    "PvpGradeOneMatchRewardGroupId": 11
+  },
+  {
+    "PvpGradeId": 19,
+    "PvpSeasonId": 202002,
+    "NecessaryPvpPoint": 28400,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 19,
+    "PvpGradeOneMatchRewardGroupId": 11
+  },
+  {
+    "PvpGradeId": 19,
+    "PvpSeasonId": 202003,
+    "NecessaryPvpPoint": 28400,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 19,
+    "PvpGradeOneMatchRewardGroupId": 11
+  },
+  {
+    "PvpGradeId": 19,
+    "PvpSeasonId": 202004,
+    "NecessaryPvpPoint": 28400,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 19,
+    "PvpGradeOneMatchRewardGroupId": 11
+  },
+  {
+    "PvpGradeId": 19,
+    "PvpSeasonId": 202005,
+    "NecessaryPvpPoint": 28400,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 19,
+    "PvpGradeOneMatchRewardGroupId": 11
+  },
+  {
+    "PvpGradeId": 19,
+    "PvpSeasonId": 202006,
+    "NecessaryPvpPoint": 28400,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 0,
+    "PvpGradeOneMatchRewardGroupId": 11
+  },
+  {
+    "PvpGradeId": 19,
+    "PvpSeasonId": 202007,
+    "NecessaryPvpPoint": 28400,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 44,
+    "PvpGradeOneMatchRewardGroupId": 11
+  },
+  {
+    "PvpGradeId": 19,
+    "PvpSeasonId": 202008,
+    "NecessaryPvpPoint": 28400,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 44,
+    "PvpGradeOneMatchRewardGroupId": 11
+  },
+  {
+    "PvpGradeId": 19,
+    "PvpSeasonId": 202009,
+    "NecessaryPvpPoint": 28400,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 44,
+    "PvpGradeOneMatchRewardGroupId": 11
+  },
+  {
+    "PvpGradeId": 19,
+    "PvpSeasonId": 202010,
+    "NecessaryPvpPoint": 28400,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 44,
+    "PvpGradeOneMatchRewardGroupId": 11
+  },
+  {
+    "PvpGradeId": 19,
+    "PvpSeasonId": 202011,
+    "NecessaryPvpPoint": 28400,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 44,
+    "PvpGradeOneMatchRewardGroupId": 11
+  },
+  {
+    "PvpGradeId": 19,
+    "PvpSeasonId": 202012,
+    "NecessaryPvpPoint": 28400,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 44,
+    "PvpGradeOneMatchRewardGroupId": 11
+  },
+  {
+    "PvpGradeId": 19,
+    "PvpSeasonId": 202013,
+    "NecessaryPvpPoint": 28400,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 44,
+    "PvpGradeOneMatchRewardGroupId": 11
+  },
+  {
+    "PvpGradeId": 19,
+    "PvpSeasonId": 202014,
+    "NecessaryPvpPoint": 28400,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 44,
+    "PvpGradeOneMatchRewardGroupId": 11
+  },
+  {
+    "PvpGradeId": 20,
+    "PvpSeasonId": 202001,
+    "NecessaryPvpPoint": 31000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 20,
+    "PvpGradeOneMatchRewardGroupId": 12
+  },
+  {
+    "PvpGradeId": 20,
+    "PvpSeasonId": 202002,
+    "NecessaryPvpPoint": 31000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 20,
+    "PvpGradeOneMatchRewardGroupId": 12
+  },
+  {
+    "PvpGradeId": 20,
+    "PvpSeasonId": 202003,
+    "NecessaryPvpPoint": 31000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 20,
+    "PvpGradeOneMatchRewardGroupId": 12
+  },
+  {
+    "PvpGradeId": 20,
+    "PvpSeasonId": 202004,
+    "NecessaryPvpPoint": 31000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 20,
+    "PvpGradeOneMatchRewardGroupId": 12
+  },
+  {
+    "PvpGradeId": 20,
+    "PvpSeasonId": 202005,
+    "NecessaryPvpPoint": 31000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 20,
+    "PvpGradeOneMatchRewardGroupId": 12
+  },
+  {
+    "PvpGradeId": 20,
+    "PvpSeasonId": 202006,
+    "NecessaryPvpPoint": 31000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 0,
+    "PvpGradeOneMatchRewardGroupId": 12
+  },
+  {
+    "PvpGradeId": 20,
+    "PvpSeasonId": 202007,
+    "NecessaryPvpPoint": 31000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 45,
+    "PvpGradeOneMatchRewardGroupId": 12
+  },
+  {
+    "PvpGradeId": 20,
+    "PvpSeasonId": 202008,
+    "NecessaryPvpPoint": 31000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 45,
+    "PvpGradeOneMatchRewardGroupId": 12
+  },
+  {
+    "PvpGradeId": 20,
+    "PvpSeasonId": 202009,
+    "NecessaryPvpPoint": 31000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 45,
+    "PvpGradeOneMatchRewardGroupId": 12
+  },
+  {
+    "PvpGradeId": 20,
+    "PvpSeasonId": 202010,
+    "NecessaryPvpPoint": 31000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 45,
+    "PvpGradeOneMatchRewardGroupId": 12
+  },
+  {
+    "PvpGradeId": 20,
+    "PvpSeasonId": 202011,
+    "NecessaryPvpPoint": 31000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 45,
+    "PvpGradeOneMatchRewardGroupId": 12
+  },
+  {
+    "PvpGradeId": 20,
+    "PvpSeasonId": 202012,
+    "NecessaryPvpPoint": 31000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 45,
+    "PvpGradeOneMatchRewardGroupId": 12
+  },
+  {
+    "PvpGradeId": 20,
+    "PvpSeasonId": 202013,
+    "NecessaryPvpPoint": 31000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 45,
+    "PvpGradeOneMatchRewardGroupId": 12
+  },
+  {
+    "PvpGradeId": 20,
+    "PvpSeasonId": 202014,
+    "NecessaryPvpPoint": 31000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 45,
+    "PvpGradeOneMatchRewardGroupId": 12
+  },
+  {
+    "PvpGradeId": 21,
+    "PvpSeasonId": 202001,
+    "NecessaryPvpPoint": 34000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 21,
+    "PvpGradeOneMatchRewardGroupId": 13
+  },
+  {
+    "PvpGradeId": 21,
+    "PvpSeasonId": 202002,
+    "NecessaryPvpPoint": 34000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 21,
+    "PvpGradeOneMatchRewardGroupId": 13
+  },
+  {
+    "PvpGradeId": 21,
+    "PvpSeasonId": 202003,
+    "NecessaryPvpPoint": 34000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 21,
+    "PvpGradeOneMatchRewardGroupId": 13
+  },
+  {
+    "PvpGradeId": 21,
+    "PvpSeasonId": 202004,
+    "NecessaryPvpPoint": 34000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 21,
+    "PvpGradeOneMatchRewardGroupId": 13
+  },
+  {
+    "PvpGradeId": 21,
+    "PvpSeasonId": 202005,
+    "NecessaryPvpPoint": 34000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 21,
+    "PvpGradeOneMatchRewardGroupId": 13
+  },
+  {
+    "PvpGradeId": 21,
+    "PvpSeasonId": 202006,
+    "NecessaryPvpPoint": 34000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 0,
+    "PvpGradeOneMatchRewardGroupId": 13
+  },
+  {
+    "PvpGradeId": 21,
+    "PvpSeasonId": 202007,
+    "NecessaryPvpPoint": 34000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 46,
+    "PvpGradeOneMatchRewardGroupId": 13
+  },
+  {
+    "PvpGradeId": 21,
+    "PvpSeasonId": 202008,
+    "NecessaryPvpPoint": 34000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 46,
+    "PvpGradeOneMatchRewardGroupId": 13
+  },
+  {
+    "PvpGradeId": 21,
+    "PvpSeasonId": 202009,
+    "NecessaryPvpPoint": 34000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 46,
+    "PvpGradeOneMatchRewardGroupId": 13
+  },
+  {
+    "PvpGradeId": 21,
+    "PvpSeasonId": 202010,
+    "NecessaryPvpPoint": 34000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 46,
+    "PvpGradeOneMatchRewardGroupId": 13
+  },
+  {
+    "PvpGradeId": 21,
+    "PvpSeasonId": 202011,
+    "NecessaryPvpPoint": 34000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 46,
+    "PvpGradeOneMatchRewardGroupId": 13
+  },
+  {
+    "PvpGradeId": 21,
+    "PvpSeasonId": 202012,
+    "NecessaryPvpPoint": 34000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 46,
+    "PvpGradeOneMatchRewardGroupId": 13
+  },
+  {
+    "PvpGradeId": 21,
+    "PvpSeasonId": 202013,
+    "NecessaryPvpPoint": 34000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 46,
+    "PvpGradeOneMatchRewardGroupId": 13
+  },
+  {
+    "PvpGradeId": 21,
+    "PvpSeasonId": 202014,
+    "NecessaryPvpPoint": 34000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 46,
+    "PvpGradeOneMatchRewardGroupId": 13
+  },
+  {
+    "PvpGradeId": 22,
+    "PvpSeasonId": 202001,
+    "NecessaryPvpPoint": 37000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 22,
+    "PvpGradeOneMatchRewardGroupId": 14
+  },
+  {
+    "PvpGradeId": 22,
+    "PvpSeasonId": 202002,
+    "NecessaryPvpPoint": 37000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 22,
+    "PvpGradeOneMatchRewardGroupId": 14
+  },
+  {
+    "PvpGradeId": 22,
+    "PvpSeasonId": 202003,
+    "NecessaryPvpPoint": 37000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 22,
+    "PvpGradeOneMatchRewardGroupId": 14
+  },
+  {
+    "PvpGradeId": 22,
+    "PvpSeasonId": 202004,
+    "NecessaryPvpPoint": 37000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 22,
+    "PvpGradeOneMatchRewardGroupId": 14
+  },
+  {
+    "PvpGradeId": 22,
+    "PvpSeasonId": 202005,
+    "NecessaryPvpPoint": 37000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 22,
+    "PvpGradeOneMatchRewardGroupId": 14
+  },
+  {
+    "PvpGradeId": 22,
+    "PvpSeasonId": 202006,
+    "NecessaryPvpPoint": 37000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 0,
+    "PvpGradeOneMatchRewardGroupId": 14
+  },
+  {
+    "PvpGradeId": 22,
+    "PvpSeasonId": 202007,
+    "NecessaryPvpPoint": 37000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 47,
+    "PvpGradeOneMatchRewardGroupId": 14
+  },
+  {
+    "PvpGradeId": 22,
+    "PvpSeasonId": 202008,
+    "NecessaryPvpPoint": 37000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 47,
+    "PvpGradeOneMatchRewardGroupId": 14
+  },
+  {
+    "PvpGradeId": 22,
+    "PvpSeasonId": 202009,
+    "NecessaryPvpPoint": 37000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 47,
+    "PvpGradeOneMatchRewardGroupId": 14
+  },
+  {
+    "PvpGradeId": 22,
+    "PvpSeasonId": 202010,
+    "NecessaryPvpPoint": 37000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 47,
+    "PvpGradeOneMatchRewardGroupId": 14
+  },
+  {
+    "PvpGradeId": 22,
+    "PvpSeasonId": 202011,
+    "NecessaryPvpPoint": 37000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 47,
+    "PvpGradeOneMatchRewardGroupId": 14
+  },
+  {
+    "PvpGradeId": 22,
+    "PvpSeasonId": 202012,
+    "NecessaryPvpPoint": 37000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 47,
+    "PvpGradeOneMatchRewardGroupId": 14
+  },
+  {
+    "PvpGradeId": 22,
+    "PvpSeasonId": 202013,
+    "NecessaryPvpPoint": 37000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 47,
+    "PvpGradeOneMatchRewardGroupId": 14
+  },
+  {
+    "PvpGradeId": 22,
+    "PvpSeasonId": 202014,
+    "NecessaryPvpPoint": 37000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 47,
+    "PvpGradeOneMatchRewardGroupId": 14
+  },
+  {
+    "PvpGradeId": 23,
+    "PvpSeasonId": 202001,
+    "NecessaryPvpPoint": 40000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 23,
+    "PvpGradeOneMatchRewardGroupId": 15
+  },
+  {
+    "PvpGradeId": 23,
+    "PvpSeasonId": 202002,
+    "NecessaryPvpPoint": 40000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 23,
+    "PvpGradeOneMatchRewardGroupId": 15
+  },
+  {
+    "PvpGradeId": 23,
+    "PvpSeasonId": 202003,
+    "NecessaryPvpPoint": 40000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 23,
+    "PvpGradeOneMatchRewardGroupId": 15
+  },
+  {
+    "PvpGradeId": 23,
+    "PvpSeasonId": 202004,
+    "NecessaryPvpPoint": 40000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 23,
+    "PvpGradeOneMatchRewardGroupId": 15
+  },
+  {
+    "PvpGradeId": 23,
+    "PvpSeasonId": 202005,
+    "NecessaryPvpPoint": 40000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 23,
+    "PvpGradeOneMatchRewardGroupId": 15
+  },
+  {
+    "PvpGradeId": 23,
+    "PvpSeasonId": 202006,
+    "NecessaryPvpPoint": 40000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 0,
+    "PvpGradeOneMatchRewardGroupId": 15
+  },
+  {
+    "PvpGradeId": 23,
+    "PvpSeasonId": 202007,
+    "NecessaryPvpPoint": 40000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 48,
+    "PvpGradeOneMatchRewardGroupId": 15
+  },
+  {
+    "PvpGradeId": 23,
+    "PvpSeasonId": 202008,
+    "NecessaryPvpPoint": 40000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 48,
+    "PvpGradeOneMatchRewardGroupId": 15
+  },
+  {
+    "PvpGradeId": 23,
+    "PvpSeasonId": 202009,
+    "NecessaryPvpPoint": 40000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 48,
+    "PvpGradeOneMatchRewardGroupId": 15
+  },
+  {
+    "PvpGradeId": 23,
+    "PvpSeasonId": 202010,
+    "NecessaryPvpPoint": 40000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 48,
+    "PvpGradeOneMatchRewardGroupId": 15
+  },
+  {
+    "PvpGradeId": 23,
+    "PvpSeasonId": 202011,
+    "NecessaryPvpPoint": 40000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 48,
+    "PvpGradeOneMatchRewardGroupId": 15
+  },
+  {
+    "PvpGradeId": 23,
+    "PvpSeasonId": 202012,
+    "NecessaryPvpPoint": 40000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 48,
+    "PvpGradeOneMatchRewardGroupId": 15
+  },
+  {
+    "PvpGradeId": 23,
+    "PvpSeasonId": 202013,
+    "NecessaryPvpPoint": 40000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 48,
+    "PvpGradeOneMatchRewardGroupId": 15
+  },
+  {
+    "PvpGradeId": 23,
+    "PvpSeasonId": 202014,
+    "NecessaryPvpPoint": 40000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 48,
+    "PvpGradeOneMatchRewardGroupId": 15
+  },
+  {
+    "PvpGradeId": 24,
+    "PvpSeasonId": 202001,
+    "NecessaryPvpPoint": 43000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 24,
+    "PvpGradeOneMatchRewardGroupId": 16
+  },
+  {
+    "PvpGradeId": 24,
+    "PvpSeasonId": 202002,
+    "NecessaryPvpPoint": 43000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 24,
+    "PvpGradeOneMatchRewardGroupId": 16
+  },
+  {
+    "PvpGradeId": 24,
+    "PvpSeasonId": 202003,
+    "NecessaryPvpPoint": 43000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 24,
+    "PvpGradeOneMatchRewardGroupId": 16
+  },
+  {
+    "PvpGradeId": 24,
+    "PvpSeasonId": 202004,
+    "NecessaryPvpPoint": 43000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 24,
+    "PvpGradeOneMatchRewardGroupId": 16
+  },
+  {
+    "PvpGradeId": 24,
+    "PvpSeasonId": 202005,
+    "NecessaryPvpPoint": 43000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 24,
+    "PvpGradeOneMatchRewardGroupId": 16
+  },
+  {
+    "PvpGradeId": 24,
+    "PvpSeasonId": 202006,
+    "NecessaryPvpPoint": 43000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 0,
+    "PvpGradeOneMatchRewardGroupId": 16
+  },
+  {
+    "PvpGradeId": 24,
+    "PvpSeasonId": 202007,
+    "NecessaryPvpPoint": 43000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 49,
+    "PvpGradeOneMatchRewardGroupId": 16
+  },
+  {
+    "PvpGradeId": 24,
+    "PvpSeasonId": 202008,
+    "NecessaryPvpPoint": 43000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 49,
+    "PvpGradeOneMatchRewardGroupId": 16
+  },
+  {
+    "PvpGradeId": 24,
+    "PvpSeasonId": 202009,
+    "NecessaryPvpPoint": 43000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 49,
+    "PvpGradeOneMatchRewardGroupId": 16
+  },
+  {
+    "PvpGradeId": 24,
+    "PvpSeasonId": 202010,
+    "NecessaryPvpPoint": 43000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 49,
+    "PvpGradeOneMatchRewardGroupId": 16
+  },
+  {
+    "PvpGradeId": 24,
+    "PvpSeasonId": 202011,
+    "NecessaryPvpPoint": 43000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 49,
+    "PvpGradeOneMatchRewardGroupId": 16
+  },
+  {
+    "PvpGradeId": 24,
+    "PvpSeasonId": 202012,
+    "NecessaryPvpPoint": 43000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 49,
+    "PvpGradeOneMatchRewardGroupId": 16
+  },
+  {
+    "PvpGradeId": 24,
+    "PvpSeasonId": 202013,
+    "NecessaryPvpPoint": 43000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 49,
+    "PvpGradeOneMatchRewardGroupId": 16
+  },
+  {
+    "PvpGradeId": 24,
+    "PvpSeasonId": 202014,
+    "NecessaryPvpPoint": 43000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 49,
+    "PvpGradeOneMatchRewardGroupId": 16
+  },
+  {
+    "PvpGradeId": 25,
+    "PvpSeasonId": 202001,
+    "NecessaryPvpPoint": 46000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 25,
+    "PvpGradeOneMatchRewardGroupId": 17
+  },
+  {
+    "PvpGradeId": 25,
+    "PvpSeasonId": 202002,
+    "NecessaryPvpPoint": 46000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 25,
+    "PvpGradeOneMatchRewardGroupId": 17
+  },
+  {
+    "PvpGradeId": 25,
+    "PvpSeasonId": 202003,
+    "NecessaryPvpPoint": 46000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 25,
+    "PvpGradeOneMatchRewardGroupId": 17
+  },
+  {
+    "PvpGradeId": 25,
+    "PvpSeasonId": 202004,
+    "NecessaryPvpPoint": 46000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 25,
+    "PvpGradeOneMatchRewardGroupId": 17
+  },
+  {
+    "PvpGradeId": 25,
+    "PvpSeasonId": 202005,
+    "NecessaryPvpPoint": 46000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 25,
+    "PvpGradeOneMatchRewardGroupId": 17
+  },
+  {
+    "PvpGradeId": 25,
+    "PvpSeasonId": 202006,
+    "NecessaryPvpPoint": 46000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 0,
+    "PvpGradeOneMatchRewardGroupId": 17
+  },
+  {
+    "PvpGradeId": 25,
+    "PvpSeasonId": 202007,
+    "NecessaryPvpPoint": 46000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 50,
+    "PvpGradeOneMatchRewardGroupId": 17
+  },
+  {
+    "PvpGradeId": 25,
+    "PvpSeasonId": 202008,
+    "NecessaryPvpPoint": 46000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 50,
+    "PvpGradeOneMatchRewardGroupId": 17
+  },
+  {
+    "PvpGradeId": 25,
+    "PvpSeasonId": 202009,
+    "NecessaryPvpPoint": 46000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 50,
+    "PvpGradeOneMatchRewardGroupId": 17
+  },
+  {
+    "PvpGradeId": 25,
+    "PvpSeasonId": 202010,
+    "NecessaryPvpPoint": 46000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 50,
+    "PvpGradeOneMatchRewardGroupId": 17
+  },
+  {
+    "PvpGradeId": 25,
+    "PvpSeasonId": 202011,
+    "NecessaryPvpPoint": 46000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 50,
+    "PvpGradeOneMatchRewardGroupId": 17
+  },
+  {
+    "PvpGradeId": 25,
+    "PvpSeasonId": 202012,
+    "NecessaryPvpPoint": 46000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 50,
+    "PvpGradeOneMatchRewardGroupId": 17
+  },
+  {
+    "PvpGradeId": 25,
+    "PvpSeasonId": 202013,
+    "NecessaryPvpPoint": 46000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 50,
+    "PvpGradeOneMatchRewardGroupId": 17
+  },
+  {
+    "PvpGradeId": 25,
+    "PvpSeasonId": 202014,
+    "NecessaryPvpPoint": 46000,
+    "IconAssetId": 1,
+    "PvpGradeWeeklyRewardGroupId": 50,
+    "PvpGradeOneMatchRewardGroupId": 17
+  }
+]

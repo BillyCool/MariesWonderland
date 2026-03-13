@@ -1,0 +1,282 @@
+[
+  {
+    "PartsLevelUpRateGroupId": 1,
+    "LevelLowerLimit": 1,
+    "SuccessRatePermil": 1000
+  },
+  {
+    "PartsLevelUpRateGroupId": 1,
+    "LevelLowerLimit": 2,
+    "SuccessRatePermil": 1000
+  },
+  {
+    "PartsLevelUpRateGroupId": 1,
+    "LevelLowerLimit": 3,
+    "SuccessRatePermil": 1000
+  },
+  {
+    "PartsLevelUpRateGroupId": 1,
+    "LevelLowerLimit": 4,
+    "SuccessRatePermil": 980
+  },
+  {
+    "PartsLevelUpRateGroupId": 1,
+    "LevelLowerLimit": 5,
+    "SuccessRatePermil": 960
+  },
+  {
+    "PartsLevelUpRateGroupId": 1,
+    "LevelLowerLimit": 6,
+    "SuccessRatePermil": 940
+  },
+  {
+    "PartsLevelUpRateGroupId": 1,
+    "LevelLowerLimit": 7,
+    "SuccessRatePermil": 920
+  },
+  {
+    "PartsLevelUpRateGroupId": 1,
+    "LevelLowerLimit": 8,
+    "SuccessRatePermil": 900
+  },
+  {
+    "PartsLevelUpRateGroupId": 1,
+    "LevelLowerLimit": 9,
+    "SuccessRatePermil": 850
+  },
+  {
+    "PartsLevelUpRateGroupId": 1,
+    "LevelLowerLimit": 10,
+    "SuccessRatePermil": 800
+  },
+  {
+    "PartsLevelUpRateGroupId": 1,
+    "LevelLowerLimit": 11,
+    "SuccessRatePermil": 750
+  },
+  {
+    "PartsLevelUpRateGroupId": 1,
+    "LevelLowerLimit": 12,
+    "SuccessRatePermil": 700
+  },
+  {
+    "PartsLevelUpRateGroupId": 1,
+    "LevelLowerLimit": 13,
+    "SuccessRatePermil": 650
+  },
+  {
+    "PartsLevelUpRateGroupId": 1,
+    "LevelLowerLimit": 14,
+    "SuccessRatePermil": 600
+  },
+  {
+    "PartsLevelUpRateGroupId": 2,
+    "LevelLowerLimit": 1,
+    "SuccessRatePermil": 1000
+  },
+  {
+    "PartsLevelUpRateGroupId": 2,
+    "LevelLowerLimit": 2,
+    "SuccessRatePermil": 980
+  },
+  {
+    "PartsLevelUpRateGroupId": 2,
+    "LevelLowerLimit": 3,
+    "SuccessRatePermil": 960
+  },
+  {
+    "PartsLevelUpRateGroupId": 2,
+    "LevelLowerLimit": 4,
+    "SuccessRatePermil": 940
+  },
+  {
+    "PartsLevelUpRateGroupId": 2,
+    "LevelLowerLimit": 5,
+    "SuccessRatePermil": 920
+  },
+  {
+    "PartsLevelUpRateGroupId": 2,
+    "LevelLowerLimit": 6,
+    "SuccessRatePermil": 900
+  },
+  {
+    "PartsLevelUpRateGroupId": 2,
+    "LevelLowerLimit": 7,
+    "SuccessRatePermil": 850
+  },
+  {
+    "PartsLevelUpRateGroupId": 2,
+    "LevelLowerLimit": 8,
+    "SuccessRatePermil": 800
+  },
+  {
+    "PartsLevelUpRateGroupId": 2,
+    "LevelLowerLimit": 9,
+    "SuccessRatePermil": 750
+  },
+  {
+    "PartsLevelUpRateGroupId": 2,
+    "LevelLowerLimit": 10,
+    "SuccessRatePermil": 700
+  },
+  {
+    "PartsLevelUpRateGroupId": 2,
+    "LevelLowerLimit": 11,
+    "SuccessRatePermil": 650
+  },
+  {
+    "PartsLevelUpRateGroupId": 2,
+    "LevelLowerLimit": 12,
+    "SuccessRatePermil": 600
+  },
+  {
+    "PartsLevelUpRateGroupId": 2,
+    "LevelLowerLimit": 13,
+    "SuccessRatePermil": 550
+  },
+  {
+    "PartsLevelUpRateGroupId": 2,
+    "LevelLowerLimit": 14,
+    "SuccessRatePermil": 500
+  },
+  {
+    "PartsLevelUpRateGroupId": 3,
+    "LevelLowerLimit": 1,
+    "SuccessRatePermil": 950
+  },
+  {
+    "PartsLevelUpRateGroupId": 3,
+    "LevelLowerLimit": 2,
+    "SuccessRatePermil": 925
+  },
+  {
+    "PartsLevelUpRateGroupId": 3,
+    "LevelLowerLimit": 3,
+    "SuccessRatePermil": 900
+  },
+  {
+    "PartsLevelUpRateGroupId": 3,
+    "LevelLowerLimit": 4,
+    "SuccessRatePermil": 875
+  },
+  {
+    "PartsLevelUpRateGroupId": 3,
+    "LevelLowerLimit": 5,
+    "SuccessRatePermil": 850
+  },
+  {
+    "PartsLevelUpRateGroupId": 3,
+    "LevelLowerLimit": 6,
+    "SuccessRatePermil": 800
+  },
+  {
+    "PartsLevelUpRateGroupId": 3,
+    "LevelLowerLimit": 7,
+    "SuccessRatePermil": 750
+  },
+  {
+    "PartsLevelUpRateGroupId": 3,
+    "LevelLowerLimit": 8,
+    "SuccessRatePermil": 700
+  },
+  {
+    "PartsLevelUpRateGroupId": 3,
+    "LevelLowerLimit": 9,
+    "SuccessRatePermil": 650
+  },
+  {
+    "PartsLevelUpRateGroupId": 3,
+    "LevelLowerLimit": 10,
+    "SuccessRatePermil": 600
+  },
+  {
+    "PartsLevelUpRateGroupId": 3,
+    "LevelLowerLimit": 11,
+    "SuccessRatePermil": 550
+  },
+  {
+    "PartsLevelUpRateGroupId": 3,
+    "LevelLowerLimit": 12,
+    "SuccessRatePermil": 500
+  },
+  {
+    "PartsLevelUpRateGroupId": 3,
+    "LevelLowerLimit": 13,
+    "SuccessRatePermil": 450
+  },
+  {
+    "PartsLevelUpRateGroupId": 3,
+    "LevelLowerLimit": 14,
+    "SuccessRatePermil": 400
+  },
+  {
+    "PartsLevelUpRateGroupId": 4,
+    "LevelLowerLimit": 1,
+    "SuccessRatePermil": 950
+  },
+  {
+    "PartsLevelUpRateGroupId": 4,
+    "LevelLowerLimit": 2,
+    "SuccessRatePermil": 900
+  },
+  {
+    "PartsLevelUpRateGroupId": 4,
+    "LevelLowerLimit": 3,
+    "SuccessRatePermil": 850
+  },
+  {
+    "PartsLevelUpRateGroupId": 4,
+    "LevelLowerLimit": 4,
+    "SuccessRatePermil": 800
+  },
+  {
+    "PartsLevelUpRateGroupId": 4,
+    "LevelLowerLimit": 5,
+    "SuccessRatePermil": 750
+  },
+  {
+    "PartsLevelUpRateGroupId": 4,
+    "LevelLowerLimit": 6,
+    "SuccessRatePermil": 700
+  },
+  {
+    "PartsLevelUpRateGroupId": 4,
+    "LevelLowerLimit": 7,
+    "SuccessRatePermil": 650
+  },
+  {
+    "PartsLevelUpRateGroupId": 4,
+    "LevelLowerLimit": 8,
+    "SuccessRatePermil": 600
+  },
+  {
+    "PartsLevelUpRateGroupId": 4,
+    "LevelLowerLimit": 9,
+    "SuccessRatePermil": 550
+  },
+  {
+    "PartsLevelUpRateGroupId": 4,
+    "LevelLowerLimit": 10,
+    "SuccessRatePermil": 500
+  },
+  {
+    "PartsLevelUpRateGroupId": 4,
+    "LevelLowerLimit": 11,
+    "SuccessRatePermil": 450
+  },
+  {
+    "PartsLevelUpRateGroupId": 4,
+    "LevelLowerLimit": 12,
+    "SuccessRatePermil": 400
+  },
+  {
+    "PartsLevelUpRateGroupId": 4,
+    "LevelLowerLimit": 13,
+    "SuccessRatePermil": 350
+  },
+  {
+    "PartsLevelUpRateGroupId": 4,
+    "LevelLowerLimit": 14,
+    "SuccessRatePermil": 300
+  }
+]

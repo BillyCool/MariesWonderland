@@ -1,0 +1,1568 @@
+[
+  {
+    "NaviCutInId": 1,
+    "RelatedCutInFunctionType": 1,
+    "SortOrder": 4,
+    "StartDatetime": 1605106800000,
+    "EndDatetime": 253397948400000,
+    "NaviCutInContentGroupId": 1001,
+    "RelatedCutInFunctionValue": 0
+  },
+  {
+    "NaviCutInId": 2,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 1,
+    "StartDatetime": 1613617200000,
+    "EndDatetime": 1617159599000,
+    "NaviCutInContentGroupId": 1002,
+    "RelatedCutInFunctionValue": 200001
+  },
+  {
+    "NaviCutInId": 3,
+    "RelatedCutInFunctionType": 3,
+    "SortOrder": 2,
+    "StartDatetime": 1605106800000,
+    "EndDatetime": 253397948400000,
+    "NaviCutInContentGroupId": 1003,
+    "RelatedCutInFunctionValue": 0
+  },
+  {
+    "NaviCutInId": 4,
+    "RelatedCutInFunctionType": 4,
+    "SortOrder": 3,
+    "StartDatetime": 1605106800000,
+    "EndDatetime": 253397948400000,
+    "NaviCutInContentGroupId": 1004,
+    "RelatedCutInFunctionValue": 0
+  },
+  {
+    "NaviCutInId": 6,
+    "RelatedCutInFunctionType": 5,
+    "SortOrder": 1,
+    "StartDatetime": 1605106800000,
+    "EndDatetime": 253397948400000,
+    "NaviCutInContentGroupId": 1006,
+    "RelatedCutInFunctionValue": 0
+  },
+  {
+    "NaviCutInId": 7,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1614481200000,
+    "EndDatetime": 1615604399000,
+    "NaviCutInContentGroupId": 1007,
+    "RelatedCutInFunctionValue": 200002
+  },
+  {
+    "NaviCutInId": 8,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1615604400000,
+    "EndDatetime": 1617159599000,
+    "NaviCutInContentGroupId": 1005,
+    "RelatedCutInFunctionValue": 300
+  },
+  {
+    "NaviCutInId": 9,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1617159600000,
+    "EndDatetime": 1620439199000,
+    "NaviCutInContentGroupId": 1008,
+    "RelatedCutInFunctionValue": 502
+  },
+  {
+    "NaviCutInId": 10,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1618020000000,
+    "EndDatetime": 1619143199000,
+    "NaviCutInContentGroupId": 1009,
+    "RelatedCutInFunctionValue": 503
+  },
+  {
+    "NaviCutInId": 11,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1618884000000,
+    "EndDatetime": 1619747999000,
+    "NaviCutInContentGroupId": 1010,
+    "RelatedCutInFunctionValue": 301
+  },
+  {
+    "NaviCutInId": 12,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1619748000000,
+    "EndDatetime": 1621043999000,
+    "NaviCutInContentGroupId": 1011,
+    "RelatedCutInFunctionValue": 505
+  },
+  {
+    "NaviCutInId": 13,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 6,
+    "StartDatetime": 1620439200000,
+    "EndDatetime": 1622512799000,
+    "NaviCutInContentGroupId": 1012,
+    "RelatedCutInFunctionValue": 506
+  },
+  {
+    "NaviCutInId": 14,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1621476000000,
+    "EndDatetime": 1622512799000,
+    "NaviCutInContentGroupId": 1013,
+    "RelatedCutInFunctionValue": 302
+  },
+  {
+    "NaviCutInId": 15,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1623376800000,
+    "EndDatetime": 1624327199000,
+    "NaviCutInContentGroupId": 1015,
+    "RelatedCutInFunctionValue": 508
+  },
+  {
+    "NaviCutInId": 16,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1622426400000,
+    "EndDatetime": 1623376799000,
+    "NaviCutInContentGroupId": 1014,
+    "RelatedCutInFunctionValue": 507
+  },
+  {
+    "NaviCutInId": 17,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1624586400000,
+    "EndDatetime": 1625450399000,
+    "NaviCutInContentGroupId": 1018,
+    "RelatedCutInFunctionValue": 701
+  },
+  {
+    "NaviCutInId": 18,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1624327200000,
+    "EndDatetime": 1625018399000,
+    "NaviCutInContentGroupId": 1017,
+    "RelatedCutInFunctionValue": 303
+  },
+  {
+    "NaviCutInId": 19,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1625796000000,
+    "EndDatetime": 1626832800000,
+    "NaviCutInContentGroupId": 1019,
+    "RelatedCutInFunctionValue": 511
+  },
+  {
+    "NaviCutInId": 20,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1625018400000,
+    "EndDatetime": 1627696799000,
+    "NaviCutInContentGroupId": 1020,
+    "RelatedCutInFunctionValue": 509
+  },
+  {
+    "NaviCutInId": 21,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1626832800000,
+    "EndDatetime": 1627696799000,
+    "NaviCutInContentGroupId": 1021,
+    "RelatedCutInFunctionValue": 304
+  },
+  {
+    "NaviCutInId": 22,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 6,
+    "StartDatetime": 1627696800000,
+    "EndDatetime": 1629251999000,
+    "NaviCutInContentGroupId": 1002,
+    "RelatedCutInFunctionValue": 510
+  },
+  {
+    "NaviCutInId": 23,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1627092000000,
+    "EndDatetime": 1627955999000,
+    "NaviCutInContentGroupId": 1018,
+    "RelatedCutInFunctionValue": 702
+  },
+  {
+    "NaviCutInId": 24,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1628474400000,
+    "EndDatetime": 1629251999000,
+    "NaviCutInContentGroupId": 1024,
+    "RelatedCutInFunctionValue": 305
+  },
+  {
+    "NaviCutInId": 25,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1629770400000,
+    "EndDatetime": 1630634399000,
+    "NaviCutInContentGroupId": 1018,
+    "RelatedCutInFunctionValue": 703
+  },
+  {
+    "NaviCutInId": 26,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1630375200000,
+    "EndDatetime": 1631239199000,
+    "NaviCutInContentGroupId": 1027,
+    "RelatedCutInFunctionValue": 513
+  },
+  {
+    "NaviCutInId": 27,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1629252000000,
+    "EndDatetime": 1630893599000,
+    "NaviCutInContentGroupId": 1026,
+    "RelatedCutInFunctionValue": 512
+  },
+  {
+    "NaviCutInId": 28,
+    "RelatedCutInFunctionType": 6,
+    "SortOrder": 1,
+    "StartDatetime": 1630288800000,
+    "EndDatetime": 253370732400000,
+    "NaviCutInContentGroupId": 2001,
+    "RelatedCutInFunctionValue": 0
+  },
+  {
+    "NaviCutInId": 29,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1632794400000,
+    "EndDatetime": 1633917599000,
+    "NaviCutInContentGroupId": 1029,
+    "RelatedCutInFunctionValue": 514
+  },
+  {
+    "NaviCutInId": 30,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1631844000000,
+    "EndDatetime": 1632794399000,
+    "NaviCutInContentGroupId": 1030,
+    "RelatedCutInFunctionValue": 704
+  },
+  {
+    "NaviCutInId": 31,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1633917600000,
+    "EndDatetime": 1635127199000,
+    "NaviCutInContentGroupId": 1031,
+    "RelatedCutInFunctionValue": 306
+  },
+  {
+    "NaviCutInId": 32,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1634868000000,
+    "EndDatetime": 1635731999000,
+    "NaviCutInContentGroupId": 1018,
+    "RelatedCutInFunctionValue": 705
+  },
+  {
+    "NaviCutInId": 33,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1635645600000,
+    "EndDatetime": 1636509599000,
+    "NaviCutInContentGroupId": 1033,
+    "RelatedCutInFunctionValue": 515
+  },
+  {
+    "NaviCutInId": 34,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1637373600000,
+    "EndDatetime": 1638323999000,
+    "NaviCutInContentGroupId": 1018,
+    "RelatedCutInFunctionValue": 701
+  },
+  {
+    "NaviCutInId": 35,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1636509600000,
+    "EndDatetime": 1637287199000,
+    "NaviCutInContentGroupId": 1035,
+    "RelatedCutInFunctionValue": 307
+  },
+  {
+    "NaviCutInId": 36,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1637373600000,
+    "EndDatetime": 1638323999000,
+    "NaviCutInContentGroupId": 1007,
+    "RelatedCutInFunctionValue": 501
+  },
+  {
+    "NaviCutInId": 37,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1638237600000,
+    "EndDatetime": 1640483999000,
+    "NaviCutInContentGroupId": 1037,
+    "RelatedCutInFunctionValue": 517
+  },
+  {
+    "NaviCutInId": 38,
+    "RelatedCutInFunctionType": 7,
+    "SortOrder": 1,
+    "StartDatetime": 1638802800000,
+    "EndDatetime": 253370732400000,
+    "NaviCutInContentGroupId": 1038,
+    "RelatedCutInFunctionValue": 0
+  },
+  {
+    "NaviCutInId": 39,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1639101600000,
+    "EndDatetime": 1639965599000,
+    "NaviCutInContentGroupId": 1039,
+    "RelatedCutInFunctionValue": 308
+  },
+  {
+    "NaviCutInId": 40,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1639965600000,
+    "EndDatetime": 1640962799000,
+    "NaviCutInContentGroupId": 1009,
+    "RelatedCutInFunctionValue": 503
+  },
+  {
+    "NaviCutInId": 41,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1639965600000,
+    "EndDatetime": 1640962799000,
+    "NaviCutInContentGroupId": 1018,
+    "RelatedCutInFunctionValue": 702
+  },
+  {
+    "NaviCutInId": 43,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1640962800000,
+    "EndDatetime": 1642384799000,
+    "NaviCutInContentGroupId": 1043,
+    "RelatedCutInFunctionValue": 519
+  },
+  {
+    "NaviCutInId": 44,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1641866400000,
+    "EndDatetime": 1642816799000,
+    "NaviCutInContentGroupId": 1024,
+    "RelatedCutInFunctionValue": 309
+  },
+  {
+    "NaviCutInId": 45,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1642730400000,
+    "EndDatetime": 1643594399000,
+    "NaviCutInContentGroupId": 1018,
+    "RelatedCutInFunctionValue": 703
+  },
+  {
+    "NaviCutInId": 46,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1642730400000,
+    "EndDatetime": 1643594399000,
+    "NaviCutInContentGroupId": 1011,
+    "RelatedCutInFunctionValue": 505
+  },
+  {
+    "NaviCutInId": 47,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1643594400000,
+    "EndDatetime": 1644458399000,
+    "NaviCutInContentGroupId": 1047,
+    "RelatedCutInFunctionValue": 521
+  },
+  {
+    "NaviCutInId": 48,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1644458400000,
+    "EndDatetime": 1645149599000,
+    "NaviCutInContentGroupId": 1005,
+    "RelatedCutInFunctionValue": 310
+  },
+  {
+    "NaviCutInId": 49,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1645495200000,
+    "EndDatetime": 1646272799000,
+    "NaviCutInContentGroupId": 1018,
+    "RelatedCutInFunctionValue": 704
+  },
+  {
+    "NaviCutInId": 50,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1645156800000,
+    "EndDatetime": 1646877599000,
+    "NaviCutInContentGroupId": 1050,
+    "RelatedCutInFunctionValue": 522
+  },
+  {
+    "NaviCutInId": 52,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1646013600000,
+    "EndDatetime": 1646877599000,
+    "NaviCutInContentGroupId": 1013,
+    "RelatedCutInFunctionValue": 311
+  },
+  {
+    "NaviCutInId": 53,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1646877600000,
+    "EndDatetime": 1647914399000,
+    "NaviCutInContentGroupId": 1053,
+    "RelatedCutInFunctionValue": 524
+  },
+  {
+    "NaviCutInId": 54,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1647914400000,
+    "EndDatetime": 1648691999000,
+    "NaviCutInContentGroupId": 1018,
+    "RelatedCutInFunctionValue": 705
+  },
+  {
+    "NaviCutInId": 55,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1647914400000,
+    "EndDatetime": 1648691999000,
+    "NaviCutInContentGroupId": 1014,
+    "RelatedCutInFunctionValue": 507
+  },
+  {
+    "NaviCutInId": 56,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1648692000000,
+    "EndDatetime": 1649642399000,
+    "NaviCutInContentGroupId": 1056,
+    "RelatedCutInFunctionValue": 527
+  },
+  {
+    "NaviCutInId": 57,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1649988000000,
+    "EndDatetime": 1652147999000,
+    "NaviCutInContentGroupId": 1008,
+    "RelatedCutInFunctionValue": 502
+  },
+  {
+    "NaviCutInId": 58,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1649642400000,
+    "EndDatetime": 1650419999000,
+    "NaviCutInContentGroupId": 1039,
+    "RelatedCutInFunctionValue": 312
+  },
+  {
+    "NaviCutInId": 59,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1650938400000,
+    "EndDatetime": 1652061599000,
+    "NaviCutInContentGroupId": 1015,
+    "RelatedCutInFunctionValue": 508
+  },
+  {
+    "NaviCutInId": 60,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1651284000000,
+    "EndDatetime": 1652147999000,
+    "NaviCutInContentGroupId": 1031,
+    "RelatedCutInFunctionValue": 313
+  },
+  {
+    "NaviCutInId": 61,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1652148000000,
+    "EndDatetime": 1655085599000,
+    "NaviCutInContentGroupId": 1061,
+    "RelatedCutInFunctionValue": 526
+  },
+  {
+    "NaviCutInId": 62,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1653012000000,
+    "EndDatetime": 1654480799000,
+    "NaviCutInContentGroupId": 1019,
+    "RelatedCutInFunctionValue": 511
+  },
+  {
+    "NaviCutInId": 63,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1653012000000,
+    "EndDatetime": 1654480799000,
+    "NaviCutInContentGroupId": 1018,
+    "RelatedCutInFunctionValue": 703
+  },
+  {
+    "NaviCutInId": 64,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1653962400000,
+    "EndDatetime": 1654826399000,
+    "NaviCutInContentGroupId": 1064,
+    "RelatedCutInFunctionValue": 531
+  },
+  {
+    "NaviCutInId": 65,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1655085600000,
+    "EndDatetime": 1657504799000,
+    "NaviCutInContentGroupId": 1012,
+    "RelatedCutInFunctionValue": 506
+  },
+  {
+    "NaviCutInId": 66,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1655690400000,
+    "EndDatetime": 1656899999000,
+    "NaviCutInContentGroupId": 1018,
+    "RelatedCutInFunctionValue": 704
+  },
+  {
+    "NaviCutInId": 67,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1654826400000,
+    "EndDatetime": 1655690399000,
+    "NaviCutInContentGroupId": 1024,
+    "RelatedCutInFunctionValue": 314
+  },
+  {
+    "NaviCutInId": 68,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1655690400000,
+    "EndDatetime": 1656899999000,
+    "NaviCutInContentGroupId": 1027,
+    "RelatedCutInFunctionValue": 513
+  },
+  {
+    "NaviCutInId": 69,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1656554400000,
+    "EndDatetime": 1659319199000,
+    "NaviCutInContentGroupId": 1069,
+    "RelatedCutInFunctionValue": 534
+  },
+  {
+    "NaviCutInId": 70,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1656900000000,
+    "EndDatetime": 1658368799000,
+    "NaviCutInContentGroupId": 1020,
+    "RelatedCutInFunctionValue": 509
+  },
+  {
+    "NaviCutInId": 71,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1657504800000,
+    "EndDatetime": 1658368799000,
+    "NaviCutInContentGroupId": 1035,
+    "RelatedCutInFunctionValue": 315
+  },
+  {
+    "NaviCutInId": 72,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1658368800000,
+    "EndDatetime": 1659664799000,
+    "NaviCutInContentGroupId": 1018,
+    "RelatedCutInFunctionValue": 702
+  },
+  {
+    "NaviCutInId": 73,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1658368800000,
+    "EndDatetime": 1659664799000,
+    "NaviCutInContentGroupId": 1033,
+    "RelatedCutInFunctionValue": 515
+  },
+  {
+    "NaviCutInId": 74,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1659060000000,
+    "EndDatetime": 1659923999000,
+    "NaviCutInContentGroupId": 1074,
+    "RelatedCutInFunctionValue": 539
+  },
+  {
+    "NaviCutInId": 75,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1659924000000,
+    "EndDatetime": 1661133599000,
+    "NaviCutInContentGroupId": 1026,
+    "RelatedCutInFunctionValue": 512
+  },
+  {
+    "NaviCutInId": 76,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1659924000000,
+    "EndDatetime": 1661133599000,
+    "NaviCutInContentGroupId": 1050,
+    "RelatedCutInFunctionValue": 522
+  },
+  {
+    "NaviCutInId": 77,
+    "RelatedCutInFunctionType": 8,
+    "SortOrder": 5,
+    "StartDatetime": 1660777200000,
+    "EndDatetime": 253370732400000,
+    "NaviCutInContentGroupId": 1077,
+    "RelatedCutInFunctionValue": 0
+  },
+  {
+    "NaviCutInId": 78,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1660788000000,
+    "EndDatetime": 1662688799000,
+    "NaviCutInContentGroupId": 1078,
+    "RelatedCutInFunctionValue": 542
+  },
+  {
+    "NaviCutInId": 79,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1661479200000,
+    "EndDatetime": 1662688799000,
+    "NaviCutInContentGroupId": 1018,
+    "RelatedCutInFunctionValue": 705
+  },
+  {
+    "NaviCutInId": 81,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1663812000000,
+    "EndDatetime": 1665453599000,
+    "NaviCutInContentGroupId": 1018,
+    "RelatedCutInFunctionValue": 701
+  },
+  {
+    "NaviCutInId": 82,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1662688800000,
+    "EndDatetime": 1665626399000,
+    "NaviCutInContentGroupId": 1082,
+    "RelatedCutInFunctionValue": 536
+  },
+  {
+    "NaviCutInId": 83,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1663293600000,
+    "EndDatetime": 1665626399000,
+    "NaviCutInContentGroupId": 1083,
+    "RelatedCutInFunctionValue": 537
+  },
+  {
+    "NaviCutInId": 84,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1663812000000,
+    "EndDatetime": 1665453599000,
+    "NaviCutInContentGroupId": 1029,
+    "RelatedCutInFunctionValue": 514
+  },
+  {
+    "NaviCutInId": 85,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1664503200000,
+    "EndDatetime": 1665626399000,
+    "NaviCutInContentGroupId": 1085,
+    "RelatedCutInFunctionValue": 544
+  },
+  {
+    "NaviCutInId": 86,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1665626400000,
+    "EndDatetime": 1666576799000,
+    "NaviCutInContentGroupId": 1086,
+    "RelatedCutInFunctionValue": 318
+  },
+  {
+    "NaviCutInId": 87,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1666317600000,
+    "EndDatetime": 1667786399000,
+    "NaviCutInContentGroupId": 1018,
+    "RelatedCutInFunctionValue": 703
+  },
+  {
+    "NaviCutInId": 88,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1666317600000,
+    "EndDatetime": 1667786399000,
+    "NaviCutInContentGroupId": 1047,
+    "RelatedCutInFunctionValue": 521
+  },
+  {
+    "NaviCutInId": 89,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1667181600000,
+    "EndDatetime": 1668391199000,
+    "NaviCutInContentGroupId": 1089,
+    "RelatedCutInFunctionValue": 546
+  },
+  {
+    "NaviCutInId": 90,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1668132000000,
+    "EndDatetime": 1670810399000,
+    "NaviCutInContentGroupId": 1090,
+    "RelatedCutInFunctionValue": 317
+  },
+  {
+    "NaviCutInId": 91,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1669082400000,
+    "EndDatetime": 1670205599000,
+    "NaviCutInContentGroupId": 1018,
+    "RelatedCutInFunctionValue": 704
+  },
+  {
+    "NaviCutInId": 92,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1669082400000,
+    "EndDatetime": 1670205599000,
+    "NaviCutInContentGroupId": 1053,
+    "RelatedCutInFunctionValue": 524
+  },
+  {
+    "NaviCutInId": 93,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1669773600000,
+    "EndDatetime": 1672019999000,
+    "NaviCutInContentGroupId": 1093,
+    "RelatedCutInFunctionValue": 549
+  },
+  {
+    "NaviCutInId": 94,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1672020000000,
+    "EndDatetime": 1673315999000,
+    "NaviCutInContentGroupId": 1018,
+    "RelatedCutInFunctionValue": 701
+  },
+  {
+    "NaviCutInId": 95,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1671156000000,
+    "EndDatetime": 1672019999000,
+    "NaviCutInContentGroupId": 1037,
+    "RelatedCutInFunctionValue": 517
+  },
+  {
+    "NaviCutInId": 96,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1670551200000,
+    "EndDatetime": 1672019999000,
+    "NaviCutInContentGroupId": 1005,
+    "RelatedCutInFunctionValue": 321
+  },
+  {
+    "NaviCutInId": 97,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1672020000000,
+    "EndDatetime": 1673315999000,
+    "NaviCutInContentGroupId": 1056,
+    "RelatedCutInFunctionValue": 527
+  },
+  {
+    "NaviCutInId": 98,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1672498800000,
+    "EndDatetime": 1673834399000,
+    "NaviCutInContentGroupId": 1043,
+    "RelatedCutInFunctionValue": 519
+  },
+  {
+    "NaviCutInId": 99,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1672498800000,
+    "EndDatetime": 1673834399000,
+    "NaviCutInContentGroupId": 1094,
+    "RelatedCutInFunctionValue": 551
+  },
+  {
+    "NaviCutInId": 100,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1673575200000,
+    "EndDatetime": 1675043999000,
+    "NaviCutInContentGroupId": 1021,
+    "RelatedCutInFunctionValue": 322
+  },
+  {
+    "NaviCutInId": 101,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1674439200000,
+    "EndDatetime": 1676253599000,
+    "NaviCutInContentGroupId": 1064,
+    "RelatedCutInFunctionValue": 531
+  },
+  {
+    "NaviCutInId": 102,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1674439200000,
+    "EndDatetime": 1676253599000,
+    "NaviCutInContentGroupId": 1018,
+    "RelatedCutInFunctionValue": 702
+  },
+  {
+    "NaviCutInId": 103,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1675130400000,
+    "EndDatetime": 1676253599000,
+    "NaviCutInContentGroupId": 1103,
+    "RelatedCutInFunctionValue": 554
+  },
+  {
+    "NaviCutInId": 104,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1675648800000,
+    "EndDatetime": 1676858399000,
+    "NaviCutInContentGroupId": 1078,
+    "RelatedCutInFunctionValue": 542
+  },
+  {
+    "NaviCutInId": 105,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1677204000000,
+    "EndDatetime": 1678067999000,
+    "NaviCutInContentGroupId": 1018,
+    "RelatedCutInFunctionValue": 705
+  },
+  {
+    "NaviCutInId": 106,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1677204000000,
+    "EndDatetime": 1678067999000,
+    "NaviCutInContentGroupId": 1074,
+    "RelatedCutInFunctionValue": 539
+  },
+  {
+    "NaviCutInId": 107,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1676685600000,
+    "EndDatetime": 1679450399000,
+    "NaviCutInContentGroupId": 1107,
+    "RelatedCutInFunctionValue": 556
+  },
+  {
+    "NaviCutInId": 108,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1676674800000,
+    "EndDatetime": 1677549599000,
+    "NaviCutInContentGroupId": 1108,
+    "RelatedCutInFunctionValue": 801
+  },
+  {
+    "NaviCutInId": 109,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1677549600000,
+    "EndDatetime": 1679450399000,
+    "NaviCutInContentGroupId": 1109,
+    "RelatedCutInFunctionValue": 558
+  },
+  {
+    "NaviCutInId": 110,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1677549600000,
+    "EndDatetime": 1679018399000,
+    "NaviCutInContentGroupId": 1108,
+    "RelatedCutInFunctionValue": 802
+  },
+  {
+    "NaviCutInId": 111,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1679018400000,
+    "EndDatetime": 1680227999000,
+    "NaviCutInContentGroupId": 1108,
+    "RelatedCutInFunctionValue": 801
+  },
+  {
+    "NaviCutInId": 112,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1678413600000,
+    "EndDatetime": 1679882399000,
+    "NaviCutInContentGroupId": 1013,
+    "RelatedCutInFunctionValue": 323
+  },
+  {
+    "NaviCutInId": 113,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1679454000000,
+    "EndDatetime": 1681091999000,
+    "NaviCutInContentGroupId": 1085,
+    "RelatedCutInFunctionValue": 544
+  },
+  {
+    "NaviCutInId": 114,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1680228000000,
+    "EndDatetime": 1683511199000,
+    "NaviCutInContentGroupId": 1002,
+    "RelatedCutInFunctionValue": 510
+  },
+  {
+    "NaviCutInId": 115,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1680228000000,
+    "EndDatetime": 1683511199000,
+    "NaviCutInContentGroupId": 1008,
+    "RelatedCutInFunctionValue": 502
+  },
+  {
+    "NaviCutInId": 116,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1680228000000,
+    "EndDatetime": 1681437599000,
+    "NaviCutInContentGroupId": 1108,
+    "RelatedCutInFunctionValue": 802
+  },
+  {
+    "NaviCutInId": 117,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1680832800000,
+    "EndDatetime": 1682301599000,
+    "NaviCutInContentGroupId": 1117,
+    "RelatedCutInFunctionValue": 562
+  },
+  {
+    "NaviCutInId": 118,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1681437600000,
+    "EndDatetime": 1682647199000,
+    "NaviCutInContentGroupId": 1108,
+    "RelatedCutInFunctionValue": 801
+  },
+  {
+    "NaviCutInId": 119,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1682042400000,
+    "EndDatetime": 1683511199000,
+    "NaviCutInContentGroupId": 1089,
+    "RelatedCutInFunctionValue": 546
+  },
+  {
+    "NaviCutInId": 120,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1683511200000,
+    "EndDatetime": 1686275999000,
+    "NaviCutInContentGroupId": 1090,
+    "RelatedCutInFunctionValue": 317
+  },
+  {
+    "NaviCutInId": 121,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1682647200000,
+    "EndDatetime": 1684115999000,
+    "NaviCutInContentGroupId": 1121,
+    "RelatedCutInFunctionValue": 564
+  },
+  {
+    "NaviCutInId": 122,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1682647200000,
+    "EndDatetime": 1684461599000,
+    "NaviCutInContentGroupId": 1108,
+    "RelatedCutInFunctionValue": 802
+  },
+  {
+    "NaviCutInId": 124,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1683856800000,
+    "EndDatetime": 1685325599000,
+    "NaviCutInContentGroupId": 1005,
+    "RelatedCutInFunctionValue": 325
+  },
+  {
+    "NaviCutInId": 125,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1684461600000,
+    "EndDatetime": 1685498399000,
+    "NaviCutInContentGroupId": 1108,
+    "RelatedCutInFunctionValue": 801
+  },
+  {
+    "NaviCutInId": 126,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1685066400000,
+    "EndDatetime": 1686535199000,
+    "NaviCutInContentGroupId": 1103,
+    "RelatedCutInFunctionValue": 554
+  },
+  {
+    "NaviCutInId": 127,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1685498400000,
+    "EndDatetime": 1687139999000,
+    "NaviCutInContentGroupId": 1127,
+    "RelatedCutInFunctionValue": 566
+  },
+  {
+    "NaviCutInId": 128,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1685498400000,
+    "EndDatetime": 1686880799000,
+    "NaviCutInContentGroupId": 1108,
+    "RelatedCutInFunctionValue": 802
+  },
+  {
+    "NaviCutInId": 129,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1686880800000,
+    "EndDatetime": 1688090399000,
+    "NaviCutInContentGroupId": 1108,
+    "RelatedCutInFunctionValue": 801
+  },
+  {
+    "NaviCutInId": 130,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1686276000000,
+    "EndDatetime": 1689645599000,
+    "NaviCutInContentGroupId": 1061,
+    "RelatedCutInFunctionValue": 526
+  },
+  {
+    "NaviCutInId": 131,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1686880800000,
+    "EndDatetime": 1688349599000,
+    "NaviCutInContentGroupId": 1010,
+    "RelatedCutInFunctionValue": 327
+  },
+  {
+    "NaviCutInId": 132,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1687485600000,
+    "EndDatetime": 1688954399000,
+    "NaviCutInContentGroupId": 1007,
+    "RelatedCutInFunctionValue": 501
+  },
+  {
+    "NaviCutInId": 133,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1688090400000,
+    "EndDatetime": 1691373599000,
+    "NaviCutInContentGroupId": 1133,
+    "RelatedCutInFunctionValue": 569
+  },
+  {
+    "NaviCutInId": 134,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1688090400000,
+    "EndDatetime": 1689299999000,
+    "NaviCutInContentGroupId": 1108,
+    "RelatedCutInFunctionValue": 802
+  },
+  {
+    "NaviCutInId": 135,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1688090400000,
+    "EndDatetime": 1691373599000,
+    "NaviCutInContentGroupId": 1020,
+    "RelatedCutInFunctionValue": 509
+  },
+  {
+    "NaviCutInId": 136,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1689300000000,
+    "EndDatetime": 1691373599000,
+    "NaviCutInContentGroupId": 1069,
+    "RelatedCutInFunctionValue": 534
+  },
+  {
+    "NaviCutInId": 137,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1688695200000,
+    "EndDatetime": 1690163999000,
+    "NaviCutInContentGroupId": 1137,
+    "RelatedCutInFunctionValue": 328
+  },
+  {
+    "NaviCutInId": 138,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1689300000000,
+    "EndDatetime": 1690509599000,
+    "NaviCutInContentGroupId": 1108,
+    "RelatedCutInFunctionValue": 801
+  },
+  {
+    "NaviCutInId": 139,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1690164000000,
+    "EndDatetime": 1691373599000,
+    "NaviCutInContentGroupId": 1005,
+    "RelatedCutInFunctionValue": 300
+  },
+  {
+    "NaviCutInId": 140,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1690509600000,
+    "EndDatetime": 1691719199000,
+    "NaviCutInContentGroupId": 1108,
+    "RelatedCutInFunctionValue": 802
+  },
+  {
+    "NaviCutInId": 141,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1690768800000,
+    "EndDatetime": 1691978399000,
+    "NaviCutInContentGroupId": 1141,
+    "RelatedCutInFunctionValue": 330
+  },
+  {
+    "NaviCutInId": 142,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1691114400000,
+    "EndDatetime": 1692313199000,
+    "NaviCutInContentGroupId": 1078,
+    "RelatedCutInFunctionValue": 572
+  },
+  {
+    "NaviCutInId": 143,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1691719200000,
+    "EndDatetime": 1693187999000,
+    "NaviCutInContentGroupId": 1108,
+    "RelatedCutInFunctionValue": 801
+  },
+  {
+    "NaviCutInId": 144,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1693188000000,
+    "EndDatetime": 1694138399000,
+    "NaviCutInContentGroupId": 1108,
+    "RelatedCutInFunctionValue": 802
+  },
+  {
+    "NaviCutInId": 145,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1692324000000,
+    "EndDatetime": 1694397599000,
+    "NaviCutInContentGroupId": 1145,
+    "RelatedCutInFunctionValue": 573
+  },
+  {
+    "NaviCutInId": 146,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1692928800000,
+    "EndDatetime": 1694397599000,
+    "NaviCutInContentGroupId": 1010,
+    "RelatedCutInFunctionValue": 301
+  },
+  {
+    "NaviCutInId": 147,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1693447200000,
+    "EndDatetime": 1695088799000,
+    "NaviCutInContentGroupId": 1147,
+    "RelatedCutInFunctionValue": 332
+  },
+  {
+    "NaviCutInId": 148,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1694138400000,
+    "EndDatetime": 1695347999000,
+    "NaviCutInContentGroupId": 1108,
+    "RelatedCutInFunctionValue": 801
+  },
+  {
+    "NaviCutInId": 149,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1694138400000,
+    "EndDatetime": 1696557599000,
+    "NaviCutInContentGroupId": 1149,
+    "RelatedCutInFunctionValue": 574
+  },
+  {
+    "NaviCutInId": 150,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1695348000000,
+    "EndDatetime": 1697162399000,
+    "NaviCutInContentGroupId": 1108,
+    "RelatedCutInFunctionValue": 802
+  },
+  {
+    "NaviCutInId": 151,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1695607200000,
+    "EndDatetime": 1696903199000,
+    "NaviCutInContentGroupId": 1009,
+    "RelatedCutInFunctionValue": 503
+  },
+  {
+    "NaviCutInId": 152,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1695866400000,
+    "EndDatetime": 1697421599000,
+    "NaviCutInContentGroupId": 1150,
+    "RelatedCutInFunctionValue": 576
+  },
+  {
+    "NaviCutInId": 153,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1697162400000,
+    "EndDatetime": 1698371999000,
+    "NaviCutInContentGroupId": 1108,
+    "RelatedCutInFunctionValue": 801
+  },
+  {
+    "NaviCutInId": 154,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1696557600000,
+    "EndDatetime": 1699235999000,
+    "NaviCutInContentGroupId": 1154,
+    "RelatedCutInFunctionValue": 333
+  },
+  {
+    "NaviCutInId": 155,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1698372000000,
+    "EndDatetime": 1699581599000,
+    "NaviCutInContentGroupId": 1108,
+    "RelatedCutInFunctionValue": 802
+  },
+  {
+    "NaviCutInId": 156,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1698026400000,
+    "EndDatetime": 1699235999000,
+    "NaviCutInContentGroupId": 1011,
+    "RelatedCutInFunctionValue": 505
+  },
+  {
+    "NaviCutInId": 157,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1699581600000,
+    "EndDatetime": 1700791199000,
+    "NaviCutInContentGroupId": 1157,
+    "RelatedCutInFunctionValue": 336
+  },
+  {
+    "NaviCutInId": 158,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1699581600000,
+    "EndDatetime": 1700791199000,
+    "NaviCutInContentGroupId": 1108,
+    "RelatedCutInFunctionValue": 801
+  },
+  {
+    "NaviCutInId": 159,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1698717600000,
+    "EndDatetime": 1700445599000,
+    "NaviCutInContentGroupId": 1159,
+    "RelatedCutInFunctionValue": 578
+  },
+  {
+    "NaviCutInId": 160,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1700186400000,
+    "EndDatetime": 1701655199000,
+    "NaviCutInContentGroupId": 1014,
+    "RelatedCutInFunctionValue": 507
+  },
+  {
+    "NaviCutInId": 161,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1700791200000,
+    "EndDatetime": 1702000799000,
+    "NaviCutInContentGroupId": 1108,
+    "RelatedCutInFunctionValue": 802
+  },
+  {
+    "NaviCutInId": 162,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1701309600000,
+    "EndDatetime": 1704034799000,
+    "NaviCutInContentGroupId": 1162,
+    "RelatedCutInFunctionValue": 580
+  },
+  {
+    "NaviCutInId": 163,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1702000800000,
+    "EndDatetime": 1704034799000,
+    "NaviCutInContentGroupId": 1163,
+    "RelatedCutInFunctionValue": 337
+  },
+  {
+    "NaviCutInId": 164,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1702000800000,
+    "EndDatetime": 1703210399000,
+    "NaviCutInContentGroupId": 1108,
+    "RelatedCutInFunctionValue": 801
+  },
+  {
+    "NaviCutInId": 165,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1703210400000,
+    "EndDatetime": 1704034799000,
+    "NaviCutInContentGroupId": 1093,
+    "RelatedCutInFunctionValue": 581
+  },
+  {
+    "NaviCutInId": 166,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1703210400000,
+    "EndDatetime": 1704419999000,
+    "NaviCutInContentGroupId": 1108,
+    "RelatedCutInFunctionValue": 802
+  },
+  {
+    "NaviCutInId": 167,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1704034800000,
+    "EndDatetime": 1706666399000,
+    "NaviCutInContentGroupId": 1167,
+    "RelatedCutInFunctionValue": 582
+  },
+  {
+    "NaviCutInId": 168,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1704420000000,
+    "EndDatetime": 1705888799000,
+    "NaviCutInContentGroupId": 1168,
+    "RelatedCutInFunctionValue": 339
+  },
+  {
+    "NaviCutInId": 169,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1705024800000,
+    "EndDatetime": 1706493599000,
+    "NaviCutInContentGroupId": 1094,
+    "RelatedCutInFunctionValue": 551
+  },
+  {
+    "NaviCutInId": 170,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1704420000000,
+    "EndDatetime": 1705629599000,
+    "NaviCutInContentGroupId": 1108,
+    "RelatedCutInFunctionValue": 801
+  },
+  {
+    "NaviCutInId": 171,
+    "RelatedCutInFunctionType": 9,
+    "SortOrder": 5,
+    "StartDatetime": 1705957200000,
+    "EndDatetime": 253370732400000,
+    "NaviCutInContentGroupId": 1171,
+    "RelatedCutInFunctionValue": 0
+  },
+  {
+    "NaviCutInId": 172,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1705629600000,
+    "EndDatetime": 1706839199000,
+    "NaviCutInContentGroupId": 1108,
+    "RelatedCutInFunctionValue": 802
+  },
+  {
+    "NaviCutInId": 173,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1707444000000,
+    "EndDatetime": 1708912799000,
+    "NaviCutInContentGroupId": 1026,
+    "RelatedCutInFunctionValue": 584
+  },
+  {
+    "NaviCutInId": 174,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1706666400000,
+    "EndDatetime": 1708221599000,
+    "NaviCutInContentGroupId": 1174,
+    "RelatedCutInFunctionValue": 340
+  },
+  {
+    "NaviCutInId": 175,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1708653600000,
+    "EndDatetime": 1710122399000,
+    "NaviCutInContentGroupId": 1050,
+    "RelatedCutInFunctionValue": 585
+  },
+  {
+    "NaviCutInId": 177,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1708221600000,
+    "EndDatetime": 1714456799000,
+    "NaviCutInContentGroupId": 1177,
+    "RelatedCutInFunctionValue": 586
+  },
+  {
+    "NaviCutInId": 178,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1709172000000,
+    "EndDatetime": 1710727199000,
+    "NaviCutInContentGroupId": 1078,
+    "RelatedCutInFunctionValue": 587
+  },
+  {
+    "NaviCutInId": 179,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1709863200000,
+    "EndDatetime": 1714456799000,
+    "NaviCutInContentGroupId": 1107,
+    "RelatedCutInFunctionValue": 588
+  },
+  {
+    "NaviCutInId": 180,
+    "RelatedCutInFunctionType": 2,
+    "SortOrder": 5,
+    "StartDatetime": 1710468000000,
+    "EndDatetime": 1714456799000,
+    "NaviCutInContentGroupId": 1145,
+    "RelatedCutInFunctionValue": 589
+  }
+]

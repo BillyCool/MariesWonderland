@@ -1,0 +1,122 @@
+[
+  {
+    "EventQuestLimitContentId": 1,
+    "CostumeId": 53001,
+    "UnlockEvaluateConditionId": 10001,
+    "SortOrder": 1,
+    "DeckGroupNumber": 1,
+    "StartDatetime": 1660777200000,
+    "EndDatetime": 253390345140000,
+    "EventQuestLimitContentDeckRestrictionId": 2
+  },
+  {
+    "EventQuestLimitContentId": 2,
+    "CostumeId": 55001,
+    "UnlockEvaluateConditionId": 10013,
+    "SortOrder": 2,
+    "DeckGroupNumber": 2,
+    "StartDatetime": 1666922400000,
+    "EndDatetime": 253390345140000,
+    "EventQuestLimitContentDeckRestrictionId": 2
+  },
+  {
+    "EventQuestLimitContentId": 3,
+    "CostumeId": 51001,
+    "UnlockEvaluateConditionId": 10025,
+    "SortOrder": 3,
+    "DeckGroupNumber": 3,
+    "StartDatetime": 1670551200000,
+    "EndDatetime": 253390345140000,
+    "EventQuestLimitContentDeckRestrictionId": 2
+  },
+  {
+    "EventQuestLimitContentId": 4,
+    "CostumeId": 54001,
+    "UnlockEvaluateConditionId": 10037,
+    "SortOrder": 4,
+    "DeckGroupNumber": 4,
+    "StartDatetime": 1675994400000,
+    "EndDatetime": 253390345140000,
+    "EventQuestLimitContentDeckRestrictionId": 2
+  },
+  {
+    "EventQuestLimitContentId": 5,
+    "CostumeId": 52001,
+    "UnlockEvaluateConditionId": 10049,
+    "SortOrder": 5,
+    "DeckGroupNumber": 5,
+    "StartDatetime": 1682042400000,
+    "EndDatetime": 253390345140000,
+    "EventQuestLimitContentDeckRestrictionId": 2
+  },
+  {
+    "EventQuestLimitContentId": 6,
+    "CostumeId": 55002,
+    "UnlockEvaluateConditionId": 10061,
+    "SortOrder": 6,
+    "DeckGroupNumber": 6,
+    "StartDatetime": 1688090400000,
+    "EndDatetime": 253390345140000,
+    "EventQuestLimitContentDeckRestrictionId": 2
+  },
+  {
+    "EventQuestLimitContentId": 7,
+    "CostumeId": 51002,
+    "UnlockEvaluateConditionId": 10073,
+    "SortOrder": 7,
+    "DeckGroupNumber": 7,
+    "StartDatetime": 1691114400000,
+    "EndDatetime": 253390345140000,
+    "EventQuestLimitContentDeckRestrictionId": 2
+  },
+  {
+    "EventQuestLimitContentId": 8,
+    "CostumeId": 53002,
+    "UnlockEvaluateConditionId": 10085,
+    "SortOrder": 8,
+    "DeckGroupNumber": 8,
+    "StartDatetime": 1696816800000,
+    "EndDatetime": 253390345140000,
+    "EventQuestLimitContentDeckRestrictionId": 2
+  },
+  {
+    "EventQuestLimitContentId": 9,
+    "CostumeId": 54002,
+    "UnlockEvaluateConditionId": 10097,
+    "SortOrder": 9,
+    "DeckGroupNumber": 9,
+    "StartDatetime": 1700445600000,
+    "EndDatetime": 253390345140000,
+    "EventQuestLimitContentDeckRestrictionId": 2
+  },
+  {
+    "EventQuestLimitContentId": 10,
+    "CostumeId": 52002,
+    "UnlockEvaluateConditionId": 10109,
+    "SortOrder": 10,
+    "DeckGroupNumber": 10,
+    "StartDatetime": 1703815200000,
+    "EndDatetime": 253390345140000,
+    "EventQuestLimitContentDeckRestrictionId": 2
+  },
+  {
+    "EventQuestLimitContentId": 11,
+    "CostumeId": 51003,
+    "UnlockEvaluateConditionId": 10121,
+    "SortOrder": 11,
+    "DeckGroupNumber": 11,
+    "StartDatetime": 1706493600000,
+    "EndDatetime": 253390345140000,
+    "EventQuestLimitContentDeckRestrictionId": 2
+  },
+  {
+    "EventQuestLimitContentId": 12,
+    "CostumeId": 55003,
+    "UnlockEvaluateConditionId": 10133,
+    "SortOrder": 12,
+    "DeckGroupNumber": 12,
+    "StartDatetime": 1707444000000,
+    "EndDatetime": 253390345140000,
+    "EventQuestLimitContentDeckRestrictionId": 2
+  }
+]

@@ -1,0 +1,686 @@
+[
+  {
+    "CostumeLevelBonusId": 101,
+    "Level": 1,
+    "CostumeLevelBonusType": 9,
+    "EffectValue": 40
+  },
+  {
+    "CostumeLevelBonusId": 101,
+    "Level": 50,
+    "CostumeLevelBonusType": 7,
+    "EffectValue": 700
+  },
+  {
+    "CostumeLevelBonusId": 101,
+    "Level": 55,
+    "CostumeLevelBonusType": 3,
+    "EffectValue": 40
+  },
+  {
+    "CostumeLevelBonusId": 101,
+    "Level": 60,
+    "CostumeLevelBonusType": 9,
+    "EffectValue": 40
+  },
+  {
+    "CostumeLevelBonusId": 101,
+    "Level": 65,
+    "CostumeLevelBonusType": 7,
+    "EffectValue": 700
+  },
+  {
+    "CostumeLevelBonusId": 101,
+    "Level": 70,
+    "CostumeLevelBonusType": 3,
+    "EffectValue": 40
+  },
+  {
+    "CostumeLevelBonusId": 102,
+    "Level": 1,
+    "CostumeLevelBonusType": 9,
+    "EffectValue": 75
+  },
+  {
+    "CostumeLevelBonusId": 102,
+    "Level": 50,
+    "CostumeLevelBonusType": 7,
+    "EffectValue": 1300
+  },
+  {
+    "CostumeLevelBonusId": 102,
+    "Level": 55,
+    "CostumeLevelBonusType": 3,
+    "EffectValue": 75
+  },
+  {
+    "CostumeLevelBonusId": 102,
+    "Level": 60,
+    "CostumeLevelBonusType": 9,
+    "EffectValue": 75
+  },
+  {
+    "CostumeLevelBonusId": 102,
+    "Level": 65,
+    "CostumeLevelBonusType": 7,
+    "EffectValue": 1300
+  },
+  {
+    "CostumeLevelBonusId": 102,
+    "Level": 70,
+    "CostumeLevelBonusType": 3,
+    "EffectValue": 75
+  },
+  {
+    "CostumeLevelBonusId": 103,
+    "Level": 1,
+    "CostumeLevelBonusType": 9,
+    "EffectValue": 35
+  },
+  {
+    "CostumeLevelBonusId": 103,
+    "Level": 50,
+    "CostumeLevelBonusType": 7,
+    "EffectValue": 600
+  },
+  {
+    "CostumeLevelBonusId": 103,
+    "Level": 55,
+    "CostumeLevelBonusType": 3,
+    "EffectValue": 35
+  },
+  {
+    "CostumeLevelBonusId": 103,
+    "Level": 60,
+    "CostumeLevelBonusType": 9,
+    "EffectValue": 35
+  },
+  {
+    "CostumeLevelBonusId": 103,
+    "Level": 65,
+    "CostumeLevelBonusType": 7,
+    "EffectValue": 600
+  },
+  {
+    "CostumeLevelBonusId": 103,
+    "Level": 70,
+    "CostumeLevelBonusType": 3,
+    "EffectValue": 35
+  },
+  {
+    "CostumeLevelBonusId": 104,
+    "Level": 1,
+    "CostumeLevelBonusType": 9,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLevelBonusId": 104,
+    "Level": 50,
+    "CostumeLevelBonusType": 7,
+    "EffectValue": 1800
+  },
+  {
+    "CostumeLevelBonusId": 104,
+    "Level": 55,
+    "CostumeLevelBonusType": 3,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLevelBonusId": 104,
+    "Level": 60,
+    "CostumeLevelBonusType": 9,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLevelBonusId": 104,
+    "Level": 65,
+    "CostumeLevelBonusType": 7,
+    "EffectValue": 1800
+  },
+  {
+    "CostumeLevelBonusId": 104,
+    "Level": 70,
+    "CostumeLevelBonusType": 3,
+    "EffectValue": 100
+  },
+  {
+    "CostumeLevelBonusId": 105,
+    "Level": 1,
+    "CostumeLevelBonusType": 9,
+    "EffectValue": 140
+  },
+  {
+    "CostumeLevelBonusId": 105,
+    "Level": 50,
+    "CostumeLevelBonusType": 7,
+    "EffectValue": 2400
+  },
+  {
+    "CostumeLevelBonusId": 105,
+    "Level": 55,
+    "CostumeLevelBonusType": 3,
+    "EffectValue": 140
+  },
+  {
+    "CostumeLevelBonusId": 105,
+    "Level": 60,
+    "CostumeLevelBonusType": 9,
+    "EffectValue": 140
+  },
+  {
+    "CostumeLevelBonusId": 105,
+    "Level": 65,
+    "CostumeLevelBonusType": 7,
+    "EffectValue": 2400
+  },
+  {
+    "CostumeLevelBonusId": 105,
+    "Level": 70,
+    "CostumeLevelBonusType": 3,
+    "EffectValue": 140
+  },
+  {
+    "CostumeLevelBonusId": 106,
+    "Level": 1,
+    "CostumeLevelBonusType": 9,
+    "EffectValue": 85
+  },
+  {
+    "CostumeLevelBonusId": 106,
+    "Level": 50,
+    "CostumeLevelBonusType": 7,
+    "EffectValue": 1400
+  },
+  {
+    "CostumeLevelBonusId": 106,
+    "Level": 55,
+    "CostumeLevelBonusType": 3,
+    "EffectValue": 85
+  },
+  {
+    "CostumeLevelBonusId": 106,
+    "Level": 60,
+    "CostumeLevelBonusType": 9,
+    "EffectValue": 85
+  },
+  {
+    "CostumeLevelBonusId": 106,
+    "Level": 65,
+    "CostumeLevelBonusType": 7,
+    "EffectValue": 1400
+  },
+  {
+    "CostumeLevelBonusId": 106,
+    "Level": 70,
+    "CostumeLevelBonusType": 3,
+    "EffectValue": 85
+  },
+  {
+    "CostumeLevelBonusId": 107,
+    "Level": 1,
+    "CostumeLevelBonusType": 9,
+    "EffectValue": 20
+  },
+  {
+    "CostumeLevelBonusId": 107,
+    "Level": 50,
+    "CostumeLevelBonusType": 7,
+    "EffectValue": 300
+  },
+  {
+    "CostumeLevelBonusId": 107,
+    "Level": 55,
+    "CostumeLevelBonusType": 3,
+    "EffectValue": 20
+  },
+  {
+    "CostumeLevelBonusId": 107,
+    "Level": 60,
+    "CostumeLevelBonusType": 9,
+    "EffectValue": 20
+  },
+  {
+    "CostumeLevelBonusId": 107,
+    "Level": 65,
+    "CostumeLevelBonusType": 7,
+    "EffectValue": 300
+  },
+  {
+    "CostumeLevelBonusId": 107,
+    "Level": 70,
+    "CostumeLevelBonusType": 3,
+    "EffectValue": 20
+  },
+  {
+    "CostumeLevelBonusId": 108,
+    "Level": 1,
+    "CostumeLevelBonusType": 9,
+    "EffectValue": 200
+  },
+  {
+    "CostumeLevelBonusId": 108,
+    "Level": 50,
+    "CostumeLevelBonusType": 7,
+    "EffectValue": 3500
+  },
+  {
+    "CostumeLevelBonusId": 108,
+    "Level": 55,
+    "CostumeLevelBonusType": 3,
+    "EffectValue": 200
+  },
+  {
+    "CostumeLevelBonusId": 108,
+    "Level": 60,
+    "CostumeLevelBonusType": 9,
+    "EffectValue": 200
+  },
+  {
+    "CostumeLevelBonusId": 108,
+    "Level": 65,
+    "CostumeLevelBonusType": 7,
+    "EffectValue": 3500
+  },
+  {
+    "CostumeLevelBonusId": 108,
+    "Level": 70,
+    "CostumeLevelBonusType": 3,
+    "EffectValue": 200
+  },
+  {
+    "CostumeLevelBonusId": 109,
+    "Level": 1,
+    "CostumeLevelBonusType": 9,
+    "EffectValue": 240
+  },
+  {
+    "CostumeLevelBonusId": 109,
+    "Level": 50,
+    "CostumeLevelBonusType": 7,
+    "EffectValue": 4000
+  },
+  {
+    "CostumeLevelBonusId": 109,
+    "Level": 55,
+    "CostumeLevelBonusType": 3,
+    "EffectValue": 240
+  },
+  {
+    "CostumeLevelBonusId": 109,
+    "Level": 60,
+    "CostumeLevelBonusType": 9,
+    "EffectValue": 240
+  },
+  {
+    "CostumeLevelBonusId": 109,
+    "Level": 65,
+    "CostumeLevelBonusType": 7,
+    "EffectValue": 4000
+  },
+  {
+    "CostumeLevelBonusId": 109,
+    "Level": 70,
+    "CostumeLevelBonusType": 3,
+    "EffectValue": 240
+  },
+  {
+    "CostumeLevelBonusId": 110,
+    "Level": 1,
+    "CostumeLevelBonusType": 9,
+    "EffectValue": 300
+  },
+  {
+    "CostumeLevelBonusId": 110,
+    "Level": 50,
+    "CostumeLevelBonusType": 7,
+    "EffectValue": 4500
+  },
+  {
+    "CostumeLevelBonusId": 110,
+    "Level": 55,
+    "CostumeLevelBonusType": 3,
+    "EffectValue": 300
+  },
+  {
+    "CostumeLevelBonusId": 110,
+    "Level": 60,
+    "CostumeLevelBonusType": 9,
+    "EffectValue": 300
+  },
+  {
+    "CostumeLevelBonusId": 110,
+    "Level": 65,
+    "CostumeLevelBonusType": 7,
+    "EffectValue": 4500
+  },
+  {
+    "CostumeLevelBonusId": 110,
+    "Level": 70,
+    "CostumeLevelBonusType": 3,
+    "EffectValue": 300
+  },
+  {
+    "CostumeLevelBonusId": 111,
+    "Level": 1,
+    "CostumeLevelBonusType": 9,
+    "EffectValue": 360
+  },
+  {
+    "CostumeLevelBonusId": 111,
+    "Level": 50,
+    "CostumeLevelBonusType": 7,
+    "EffectValue": 5400
+  },
+  {
+    "CostumeLevelBonusId": 111,
+    "Level": 55,
+    "CostumeLevelBonusType": 3,
+    "EffectValue": 360
+  },
+  {
+    "CostumeLevelBonusId": 111,
+    "Level": 60,
+    "CostumeLevelBonusType": 9,
+    "EffectValue": 360
+  },
+  {
+    "CostumeLevelBonusId": 111,
+    "Level": 65,
+    "CostumeLevelBonusType": 7,
+    "EffectValue": 5400
+  },
+  {
+    "CostumeLevelBonusId": 111,
+    "Level": 70,
+    "CostumeLevelBonusType": 3,
+    "EffectValue": 360
+  },
+  {
+    "CostumeLevelBonusId": 112,
+    "Level": 1,
+    "CostumeLevelBonusType": 9,
+    "EffectValue": 400
+  },
+  {
+    "CostumeLevelBonusId": 112,
+    "Level": 50,
+    "CostumeLevelBonusType": 7,
+    "EffectValue": 6300
+  },
+  {
+    "CostumeLevelBonusId": 112,
+    "Level": 55,
+    "CostumeLevelBonusType": 3,
+    "EffectValue": 400
+  },
+  {
+    "CostumeLevelBonusId": 112,
+    "Level": 60,
+    "CostumeLevelBonusType": 9,
+    "EffectValue": 400
+  },
+  {
+    "CostumeLevelBonusId": 112,
+    "Level": 65,
+    "CostumeLevelBonusType": 7,
+    "EffectValue": 6300
+  },
+  {
+    "CostumeLevelBonusId": 112,
+    "Level": 70,
+    "CostumeLevelBonusType": 3,
+    "EffectValue": 400
+  },
+  {
+    "CostumeLevelBonusId": 113,
+    "Level": 1,
+    "CostumeLevelBonusType": 9,
+    "EffectValue": 450
+  },
+  {
+    "CostumeLevelBonusId": 113,
+    "Level": 50,
+    "CostumeLevelBonusType": 7,
+    "EffectValue": 7000
+  },
+  {
+    "CostumeLevelBonusId": 113,
+    "Level": 55,
+    "CostumeLevelBonusType": 3,
+    "EffectValue": 450
+  },
+  {
+    "CostumeLevelBonusId": 113,
+    "Level": 60,
+    "CostumeLevelBonusType": 9,
+    "EffectValue": 450
+  },
+  {
+    "CostumeLevelBonusId": 113,
+    "Level": 65,
+    "CostumeLevelBonusType": 7,
+    "EffectValue": 7000
+  },
+  {
+    "CostumeLevelBonusId": 113,
+    "Level": 70,
+    "CostumeLevelBonusType": 3,
+    "EffectValue": 450
+  },
+  {
+    "CostumeLevelBonusId": 114,
+    "Level": 1,
+    "CostumeLevelBonusType": 9,
+    "EffectValue": 780
+  },
+  {
+    "CostumeLevelBonusId": 114,
+    "Level": 50,
+    "CostumeLevelBonusType": 7,
+    "EffectValue": 11300
+  },
+  {
+    "CostumeLevelBonusId": 114,
+    "Level": 55,
+    "CostumeLevelBonusType": 3,
+    "EffectValue": 780
+  },
+  {
+    "CostumeLevelBonusId": 114,
+    "Level": 60,
+    "CostumeLevelBonusType": 9,
+    "EffectValue": 780
+  },
+  {
+    "CostumeLevelBonusId": 114,
+    "Level": 65,
+    "CostumeLevelBonusType": 7,
+    "EffectValue": 11300
+  },
+  {
+    "CostumeLevelBonusId": 114,
+    "Level": 70,
+    "CostumeLevelBonusType": 3,
+    "EffectValue": 780
+  },
+  {
+    "CostumeLevelBonusId": 201,
+    "Level": 1,
+    "CostumeLevelBonusType": 9,
+    "EffectValue": 30
+  },
+  {
+    "CostumeLevelBonusId": 201,
+    "Level": 60,
+    "CostumeLevelBonusType": 7,
+    "EffectValue": 500
+  },
+  {
+    "CostumeLevelBonusId": 201,
+    "Level": 65,
+    "CostumeLevelBonusType": 3,
+    "EffectValue": 30
+  },
+  {
+    "CostumeLevelBonusId": 201,
+    "Level": 70,
+    "CostumeLevelBonusType": 9,
+    "EffectValue": 30
+  },
+  {
+    "CostumeLevelBonusId": 201,
+    "Level": 75,
+    "CostumeLevelBonusType": 7,
+    "EffectValue": 500
+  },
+  {
+    "CostumeLevelBonusId": 201,
+    "Level": 80,
+    "CostumeLevelBonusType": 3,
+    "EffectValue": 30
+  },
+  {
+    "CostumeLevelBonusId": 301,
+    "Level": 1,
+    "CostumeLevelBonusType": 9,
+    "EffectValue": 50
+  },
+  {
+    "CostumeLevelBonusId": 301,
+    "Level": 70,
+    "CostumeLevelBonusType": 7,
+    "EffectValue": 700
+  },
+  {
+    "CostumeLevelBonusId": 301,
+    "Level": 75,
+    "CostumeLevelBonusType": 3,
+    "EffectValue": 50
+  },
+  {
+    "CostumeLevelBonusId": 301,
+    "Level": 80,
+    "CostumeLevelBonusType": 9,
+    "EffectValue": 50
+  },
+  {
+    "CostumeLevelBonusId": 301,
+    "Level": 85,
+    "CostumeLevelBonusType": 7,
+    "EffectValue": 700
+  },
+  {
+    "CostumeLevelBonusId": 301,
+    "Level": 90,
+    "CostumeLevelBonusType": 3,
+    "EffectValue": 50
+  },
+  {
+    "CostumeLevelBonusId": 1201,
+    "Level": 1,
+    "CostumeLevelBonusType": 9,
+    "EffectValue": 500
+  },
+  {
+    "CostumeLevelBonusId": 1201,
+    "Level": 60,
+    "CostumeLevelBonusType": 7,
+    "EffectValue": 7300
+  },
+  {
+    "CostumeLevelBonusId": 1201,
+    "Level": 65,
+    "CostumeLevelBonusType": 3,
+    "EffectValue": 500
+  },
+  {
+    "CostumeLevelBonusId": 1201,
+    "Level": 70,
+    "CostumeLevelBonusType": 9,
+    "EffectValue": 500
+  },
+  {
+    "CostumeLevelBonusId": 1201,
+    "Level": 75,
+    "CostumeLevelBonusType": 7,
+    "EffectValue": 7300
+  },
+  {
+    "CostumeLevelBonusId": 1201,
+    "Level": 80,
+    "CostumeLevelBonusType": 3,
+    "EffectValue": 500
+  },
+  {
+    "CostumeLevelBonusId": 1301,
+    "Level": 1,
+    "CostumeLevelBonusType": 9,
+    "EffectValue": 50
+  },
+  {
+    "CostumeLevelBonusId": 1301,
+    "Level": 70,
+    "CostumeLevelBonusType": 7,
+    "EffectValue": 700
+  },
+  {
+    "CostumeLevelBonusId": 1301,
+    "Level": 75,
+    "CostumeLevelBonusType": 3,
+    "EffectValue": 50
+  },
+  {
+    "CostumeLevelBonusId": 1301,
+    "Level": 80,
+    "CostumeLevelBonusType": 9,
+    "EffectValue": 50
+  },
+  {
+    "CostumeLevelBonusId": 1301,
+    "Level": 85,
+    "CostumeLevelBonusType": 7,
+    "EffectValue": 700
+  },
+  {
+    "CostumeLevelBonusId": 1301,
+    "Level": 90,
+    "CostumeLevelBonusType": 3,
+    "EffectValue": 50
+  },
+  {
+    "CostumeLevelBonusId": 1302,
+    "Level": 1,
+    "CostumeLevelBonusType": 9,
+    "EffectValue": 550
+  },
+  {
+    "CostumeLevelBonusId": 1302,
+    "Level": 70,
+    "CostumeLevelBonusType": 7,
+    "EffectValue": 8000
+  },
+  {
+    "CostumeLevelBonusId": 1302,
+    "Level": 75,
+    "CostumeLevelBonusType": 3,
+    "EffectValue": 550
+  },
+  {
+    "CostumeLevelBonusId": 1302,
+    "Level": 80,
+    "CostumeLevelBonusType": 9,
+    "EffectValue": 550
+  },
+  {
+    "CostumeLevelBonusId": 1302,
+    "Level": 85,
+    "CostumeLevelBonusType": 7,
+    "EffectValue": 8000
+  },
+  {
+    "CostumeLevelBonusId": 1302,
+    "Level": 90,
+    "CostumeLevelBonusType": 3,
+    "EffectValue": 550
+  }
+]

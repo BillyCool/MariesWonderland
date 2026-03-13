@@ -1,0 +1,42 @@
+[
+  {
+    "SkillBehaviourActionId": 1,
+    "RemoveCount": 6,
+    "BuffType": 1,
+    "SkillRemoveBuffFilteringType": 1,
+    "SkillRemoveBuffFilteringId": 0,
+    "SkillRemoveBuffChoosingType": 1
+  },
+  {
+    "SkillBehaviourActionId": 2,
+    "RemoveCount": 6,
+    "BuffType": 2,
+    "SkillRemoveBuffFilteringType": 1,
+    "SkillRemoveBuffFilteringId": 0,
+    "SkillRemoveBuffChoosingType": 1
+  },
+  {
+    "SkillBehaviourActionId": 4,
+    "RemoveCount": 1,
+    "BuffType": 2,
+    "SkillRemoveBuffFilteringType": 1,
+    "SkillRemoveBuffFilteringId": 0,
+    "SkillRemoveBuffChoosingType": 1
+  },
+  {
+    "SkillBehaviourActionId": 11,
+    "RemoveCount": 1,
+    "BuffType": 1,
+    "SkillRemoveBuffFilteringType": 1,
+    "SkillRemoveBuffFilteringId": 0,
+    "SkillRemoveBuffChoosingType": 1
+  },
+  {
+    "SkillBehaviourActionId": 21,
+    "RemoveCount": 2,
+    "BuffType": 1,
+    "SkillRemoveBuffFilteringType": 1,
+    "SkillRemoveBuffFilteringId": 0,
+    "SkillRemoveBuffChoosingType": 1
+  }
+]

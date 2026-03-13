@@ -1,0 +1,42 @@
+[
+  {
+    "AppealDialogId": 1,
+    "SortOrder": 1,
+    "AppealTargetType": 1,
+    "AppealTargetId": 1073,
+    "StartDatetime": 1672498800000,
+    "EndDatetime": 1675177199000,
+    "TitleTextId": 1,
+    "AssetId": 100001
+  },
+  {
+    "AppealDialogId": 2,
+    "SortOrder": 2,
+    "AppealTargetType": 1,
+    "AppealTargetId": 1078,
+    "StartDatetime": 1676685600000,
+    "EndDatetime": 1679450399000,
+    "TitleTextId": 1,
+    "AssetId": 100002
+  },
+  {
+    "AppealDialogId": 3,
+    "SortOrder": 3,
+    "AppealTargetType": 1,
+    "AppealTargetId": 1096,
+    "StartDatetime": 1692324000000,
+    "EndDatetime": 1694397599000,
+    "TitleTextId": 1,
+    "AssetId": 100003
+  },
+  {
+    "AppealDialogId": 4,
+    "SortOrder": 4,
+    "AppealTargetType": 1,
+    "AppealTargetId": 1112,
+    "StartDatetime": 1704034800000,
+    "EndDatetime": 1705888799000,
+    "TitleTextId": 1,
+    "AssetId": 100004
+  }
+]

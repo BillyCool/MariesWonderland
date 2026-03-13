@@ -1,0 +1,12 @@
+[
+  {
+    "SkillBehaviourActionId": 1,
+    "TurnRestrictionProbabilityPermil": 1000,
+    "AbnormalBehaviourTurnRestrictionSkillType": 1
+  },
+  {
+    "SkillBehaviourActionId": 2,
+    "TurnRestrictionProbabilityPermil": 1000,
+    "AbnormalBehaviourTurnRestrictionSkillType": 2
+  }
+]

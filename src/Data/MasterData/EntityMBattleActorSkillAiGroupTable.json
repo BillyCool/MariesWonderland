@@ -1,0 +1,74 @@
+[
+  {
+    "BattleActorSkillAiGroupId": 1000,
+    "Priority": 1000,
+    "BattleSchemeType": 1,
+    "IsPlayerSide": true,
+    "SkillAiUnlockConditionValueType": 1,
+    "SkillAiUnlockConditionValue": 0,
+    "BattleActorSkillAiId": 1
+  },
+  {
+    "BattleActorSkillAiGroupId": 1000,
+    "Priority": 1001,
+    "BattleSchemeType": 2,
+    "IsPlayerSide": true,
+    "SkillAiUnlockConditionValueType": 1,
+    "SkillAiUnlockConditionValue": 0,
+    "BattleActorSkillAiId": 1
+  },
+  {
+    "BattleActorSkillAiGroupId": 1000,
+    "Priority": 1002,
+    "BattleSchemeType": 1,
+    "IsPlayerSide": true,
+    "SkillAiUnlockConditionValueType": 2,
+    "SkillAiUnlockConditionValue": 1,
+    "BattleActorSkillAiId": 2
+  },
+  {
+    "BattleActorSkillAiGroupId": 1000,
+    "Priority": 1003,
+    "BattleSchemeType": 2,
+    "IsPlayerSide": true,
+    "SkillAiUnlockConditionValueType": 2,
+    "SkillAiUnlockConditionValue": 1,
+    "BattleActorSkillAiId": 2
+  },
+  {
+    "BattleActorSkillAiGroupId": 1000,
+    "Priority": 1004,
+    "BattleSchemeType": 2,
+    "IsPlayerSide": false,
+    "SkillAiUnlockConditionValueType": 1,
+    "SkillAiUnlockConditionValue": 0,
+    "BattleActorSkillAiId": 3
+  },
+  {
+    "BattleActorSkillAiGroupId": 1000,
+    "Priority": 1005,
+    "BattleSchemeType": 2,
+    "IsPlayerSide": false,
+    "SkillAiUnlockConditionValueType": 3,
+    "SkillAiUnlockConditionValue": 20000,
+    "BattleActorSkillAiId": 2
+  },
+  {
+    "BattleActorSkillAiGroupId": 9001,
+    "Priority": 1000,
+    "BattleSchemeType": 1,
+    "IsPlayerSide": true,
+    "SkillAiUnlockConditionValueType": 1,
+    "SkillAiUnlockConditionValue": 0,
+    "BattleActorSkillAiId": 4
+  },
+  {
+    "BattleActorSkillAiGroupId": 9001,
+    "Priority": 1002,
+    "BattleSchemeType": 1,
+    "IsPlayerSide": true,
+    "SkillAiUnlockConditionValueType": 2,
+    "SkillAiUnlockConditionValue": 1,
+    "BattleActorSkillAiId": 2
+  }
+]

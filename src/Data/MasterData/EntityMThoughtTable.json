@@ -1,0 +1,1633 @@
+[
+  {
+    "ThoughtId": 10100834,
+    "RarityType": 40,
+    "AbilityId": 7200049,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 100008
+  },
+  {
+    "ThoughtId": 20100112,
+    "RarityType": 40,
+    "AbilityId": 7200002,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 105001
+  },
+  {
+    "ThoughtId": 20100214,
+    "RarityType": 40,
+    "AbilityId": 7200009,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 105002
+  },
+  {
+    "ThoughtId": 20100215,
+    "RarityType": 40,
+    "AbilityId": 7200010,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 105002
+  },
+  {
+    "ThoughtId": 20100313,
+    "RarityType": 40,
+    "AbilityId": 7200013,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 105003
+  },
+  {
+    "ThoughtId": 20100314,
+    "RarityType": 40,
+    "AbilityId": 7200014,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 105003
+  },
+  {
+    "ThoughtId": 20100315,
+    "RarityType": 40,
+    "AbilityId": 7200015,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 105003
+  },
+  {
+    "ThoughtId": 20100413,
+    "RarityType": 40,
+    "AbilityId": 7200018,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 105004
+  },
+  {
+    "ThoughtId": 20100831,
+    "RarityType": 40,
+    "AbilityId": 7200046,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 105008
+  },
+  {
+    "ThoughtId": 20100832,
+    "RarityType": 40,
+    "AbilityId": 7200047,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 105008
+  },
+  {
+    "ThoughtId": 20100923,
+    "RarityType": 40,
+    "AbilityId": 7200058,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 105009
+  },
+  {
+    "ThoughtId": 20100924,
+    "RarityType": 40,
+    "AbilityId": 7200059,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 105009
+  },
+  {
+    "ThoughtId": 20100925,
+    "RarityType": 40,
+    "AbilityId": 7200060,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 105009
+  },
+  {
+    "ThoughtId": 20101023,
+    "RarityType": 40,
+    "AbilityId": 7200068,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 105010
+  },
+  {
+    "ThoughtId": 20101024,
+    "RarityType": 40,
+    "AbilityId": 7200069,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 105010
+  },
+  {
+    "ThoughtId": 20101025,
+    "RarityType": 40,
+    "AbilityId": 7200070,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 105010
+  },
+  {
+    "ThoughtId": 20101332,
+    "RarityType": 40,
+    "AbilityId": 7200102,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 105013
+  },
+  {
+    "ThoughtId": 20101424,
+    "RarityType": 40,
+    "AbilityId": 7200114,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 105014
+  },
+  {
+    "ThoughtId": 20101425,
+    "RarityType": 40,
+    "AbilityId": 7200115,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 105014
+  },
+  {
+    "ThoughtId": 20101732,
+    "RarityType": 40,
+    "AbilityId": 7200147,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 105017
+  },
+  {
+    "ThoughtId": 20102013,
+    "RarityType": 40,
+    "AbilityId": 7200173,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 105020
+  },
+  {
+    "ThoughtId": 20102032,
+    "RarityType": 40,
+    "AbilityId": 7200182,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 105020
+  },
+  {
+    "ThoughtId": 20200512,
+    "RarityType": 40,
+    "AbilityId": 7200022,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 102005
+  },
+  {
+    "ThoughtId": 20201112,
+    "RarityType": 40,
+    "AbilityId": 7200072,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 102011
+  },
+  {
+    "ThoughtId": 20201122,
+    "RarityType": 40,
+    "AbilityId": 7200077,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 102011
+  },
+  {
+    "ThoughtId": 20201132,
+    "RarityType": 40,
+    "AbilityId": 7200082,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 102011
+  },
+  {
+    "ThoughtId": 20201142,
+    "RarityType": 40,
+    "AbilityId": 7200087,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 102011
+  },
+  {
+    "ThoughtId": 20201512,
+    "RarityType": 40,
+    "AbilityId": 7200117,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 102015
+  },
+  {
+    "ThoughtId": 20201812,
+    "RarityType": 40,
+    "AbilityId": 7200152,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 102018
+  },
+  {
+    "ThoughtId": 20201832,
+    "RarityType": 40,
+    "AbilityId": 7200162,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 102018
+  },
+  {
+    "ThoughtId": 20201842,
+    "RarityType": 40,
+    "AbilityId": 7200167,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 102018
+  },
+  {
+    "ThoughtId": 20310212,
+    "RarityType": 40,
+    "AbilityId": 7200217,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 101102
+  },
+  {
+    "ThoughtId": 20310232,
+    "RarityType": 40,
+    "AbilityId": 7200227,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 101102
+  },
+  {
+    "ThoughtId": 20310242,
+    "RarityType": 40,
+    "AbilityId": 7200232,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 101102
+  },
+  {
+    "ThoughtId": 20310312,
+    "RarityType": 40,
+    "AbilityId": 7200237,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 101103
+  },
+  {
+    "ThoughtId": 20310332,
+    "RarityType": 40,
+    "AbilityId": 7200247,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 101103
+  },
+  {
+    "ThoughtId": 20310342,
+    "RarityType": 40,
+    "AbilityId": 7200252,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 101103
+  },
+  {
+    "ThoughtId": 20310412,
+    "RarityType": 40,
+    "AbilityId": 7200257,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 101104
+  },
+  {
+    "ThoughtId": 20310442,
+    "RarityType": 40,
+    "AbilityId": 7200272,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 101104
+  },
+  {
+    "ThoughtId": 20310512,
+    "RarityType": 40,
+    "AbilityId": 7200277,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 101105
+  },
+  {
+    "ThoughtId": 20310542,
+    "RarityType": 40,
+    "AbilityId": 7200292,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 101105
+  },
+  {
+    "ThoughtId": 20400812,
+    "RarityType": 40,
+    "AbilityId": 7200037,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 103008
+  },
+  {
+    "ThoughtId": 20400822,
+    "RarityType": 40,
+    "AbilityId": 7200042,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 103008
+  },
+  {
+    "ThoughtId": 20401014,
+    "RarityType": 40,
+    "AbilityId": 7200064,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 103010
+  },
+  {
+    "ThoughtId": 20401322,
+    "RarityType": 40,
+    "AbilityId": 7200097,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 103013
+  },
+  {
+    "ThoughtId": 20500913,
+    "RarityType": 40,
+    "AbilityId": 7200053,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 104009
+  },
+  {
+    "ThoughtId": 20501013,
+    "RarityType": 40,
+    "AbilityId": 7200063,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 104010
+  },
+  {
+    "ThoughtId": 20501413,
+    "RarityType": 40,
+    "AbilityId": 7200108,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 104014
+  },
+  {
+    "ThoughtId": 20501712,
+    "RarityType": 40,
+    "AbilityId": 7200137,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 104017
+  },
+  {
+    "ThoughtId": 20501722,
+    "RarityType": 40,
+    "AbilityId": 7200142,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 104017
+  },
+  {
+    "ThoughtId": 20502022,
+    "RarityType": 40,
+    "AbilityId": 7200177,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 104020
+  },
+  {
+    "ThoughtId": 20602113,
+    "RarityType": 40,
+    "AbilityId": 7200188,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 116021
+  },
+  {
+    "ThoughtId": 20602123,
+    "RarityType": 40,
+    "AbilityId": 7200193,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 116021
+  },
+  {
+    "ThoughtId": 20640311,
+    "RarityType": 40,
+    "AbilityId": 7200421,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 116403
+  },
+  {
+    "ThoughtId": 20640413,
+    "RarityType": 40,
+    "AbilityId": 7200468,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 116404
+  },
+  {
+    "ThoughtId": 30110141,
+    "RarityType": 40,
+    "AbilityId": 7200211,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 106101
+  },
+  {
+    "ThoughtId": 30110213,
+    "RarityType": 40,
+    "AbilityId": 7200218,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 106102
+  },
+  {
+    "ThoughtId": 30110221,
+    "RarityType": 40,
+    "AbilityId": 7200221,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 106102
+  },
+  {
+    "ThoughtId": 30110441,
+    "RarityType": 40,
+    "AbilityId": 7200271,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 106104
+  },
+  {
+    "ThoughtId": 30120512,
+    "RarityType": 40,
+    "AbilityId": 7200342,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 106205
+  },
+  {
+    "ThoughtId": 30130312,
+    "RarityType": 40,
+    "AbilityId": 7200362,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 106303
+  },
+  {
+    "ThoughtId": 30131112,
+    "RarityType": 40,
+    "AbilityId": 7200382,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 106311
+  },
+  {
+    "ThoughtId": 30131312,
+    "RarityType": 40,
+    "AbilityId": 7200392,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 106313
+  },
+  {
+    "ThoughtId": 30131612,
+    "RarityType": 40,
+    "AbilityId": 7200407,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 106316
+  },
+  {
+    "ThoughtId": 30131613,
+    "RarityType": 40,
+    "AbilityId": 7200408,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 106316
+  },
+  {
+    "ThoughtId": 30150211,
+    "RarityType": 40,
+    "AbilityId": 7200431,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 106502
+  },
+  {
+    "ThoughtId": 30200111,
+    "RarityType": 40,
+    "AbilityId": 7200001,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 107001
+  },
+  {
+    "ThoughtId": 30200114,
+    "RarityType": 40,
+    "AbilityId": 7200004,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 107001
+  },
+  {
+    "ThoughtId": 30200831,
+    "RarityType": 40,
+    "AbilityId": 7200046,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 107008
+  },
+  {
+    "ThoughtId": 30200834,
+    "RarityType": 40,
+    "AbilityId": 7200049,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 107008
+  },
+  {
+    "ThoughtId": 30201334,
+    "RarityType": 40,
+    "AbilityId": 7200104,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 107013
+  },
+  {
+    "ThoughtId": 30201721,
+    "RarityType": 40,
+    "AbilityId": 7200141,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 107017
+  },
+  {
+    "ThoughtId": 30201731,
+    "RarityType": 40,
+    "AbilityId": 7200146,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 107017
+  },
+  {
+    "ThoughtId": 30210211,
+    "RarityType": 40,
+    "AbilityId": 7200216,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 107102
+  },
+  {
+    "ThoughtId": 30210231,
+    "RarityType": 40,
+    "AbilityId": 7200226,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 107102
+  },
+  {
+    "ThoughtId": 30210241,
+    "RarityType": 40,
+    "AbilityId": 7200231,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 107102
+  },
+  {
+    "ThoughtId": 30210431,
+    "RarityType": 40,
+    "AbilityId": 7200266,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 107104
+  },
+  {
+    "ThoughtId": 30210511,
+    "RarityType": 40,
+    "AbilityId": 7200276,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 107105
+  },
+  {
+    "ThoughtId": 30220112,
+    "RarityType": 40,
+    "AbilityId": 7200322,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 107201
+  },
+  {
+    "ThoughtId": 30220312,
+    "RarityType": 40,
+    "AbilityId": 7200332,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 107203
+  },
+  {
+    "ThoughtId": 30220412,
+    "RarityType": 40,
+    "AbilityId": 7200337,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 107204
+  },
+  {
+    "ThoughtId": 30230112,
+    "RarityType": 40,
+    "AbilityId": 7200352,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 107301
+  },
+  {
+    "ThoughtId": 30230612,
+    "RarityType": 40,
+    "AbilityId": 7200377,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 107306
+  },
+  {
+    "ThoughtId": 30231412,
+    "RarityType": 40,
+    "AbilityId": 7200397,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 107314
+  },
+  {
+    "ThoughtId": 30231512,
+    "RarityType": 40,
+    "AbilityId": 7200402,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 107315
+  },
+  {
+    "ThoughtId": 30300114,
+    "RarityType": 40,
+    "AbilityId": 7200004,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 111001
+  },
+  {
+    "ThoughtId": 30300834,
+    "RarityType": 40,
+    "AbilityId": 7200049,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 111008
+  },
+  {
+    "ThoughtId": 30310411,
+    "RarityType": 40,
+    "AbilityId": 7200256,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 111104
+  },
+  {
+    "ThoughtId": 30310421,
+    "RarityType": 40,
+    "AbilityId": 7200261,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 111104
+  },
+  {
+    "ThoughtId": 30310541,
+    "RarityType": 40,
+    "AbilityId": 7200291,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 111105
+  },
+  {
+    "ThoughtId": 30312711,
+    "RarityType": 40,
+    "AbilityId": 7200496,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 111127
+  },
+  {
+    "ThoughtId": 30312811,
+    "RarityType": 40,
+    "AbilityId": 7200501,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 111128
+  },
+  {
+    "ThoughtId": 30320212,
+    "RarityType": 40,
+    "AbilityId": 7200327,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 111202
+  },
+  {
+    "ThoughtId": 30330512,
+    "RarityType": 40,
+    "AbilityId": 7200372,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 111305
+  },
+  {
+    "ThoughtId": 30331211,
+    "RarityType": 40,
+    "AbilityId": 7200386,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 111312
+  },
+  {
+    "ThoughtId": 30340213,
+    "RarityType": 40,
+    "AbilityId": 7200418,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 111402
+  },
+  {
+    "ThoughtId": 30340511,
+    "RarityType": 40,
+    "AbilityId": 7200471,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 111405
+  },
+  {
+    "ThoughtId": 30340811,
+    "RarityType": 40,
+    "AbilityId": 7200491,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 111408
+  },
+  {
+    "ThoughtId": 30400821,
+    "RarityType": 40,
+    "AbilityId": 7200041,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 112008
+  },
+  {
+    "ThoughtId": 30400834,
+    "RarityType": 40,
+    "AbilityId": 7200049,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 112008
+  },
+  {
+    "ThoughtId": 30401721,
+    "RarityType": 40,
+    "AbilityId": 7200141,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 112017
+  },
+  {
+    "ThoughtId": 30410111,
+    "RarityType": 40,
+    "AbilityId": 7200196,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 112101
+  },
+  {
+    "ThoughtId": 30410341,
+    "RarityType": 40,
+    "AbilityId": 7200251,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 112103
+  },
+  {
+    "ThoughtId": 30412911,
+    "RarityType": 40,
+    "AbilityId": 7200511,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 112129
+  },
+  {
+    "ThoughtId": 30430212,
+    "RarityType": 40,
+    "AbilityId": 7200357,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 112302
+  },
+  {
+    "ThoughtId": 30430213,
+    "RarityType": 40,
+    "AbilityId": 7200358,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 112302
+  },
+  {
+    "ThoughtId": 30430412,
+    "RarityType": 40,
+    "AbilityId": 7200367,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 112304
+  },
+  {
+    "ThoughtId": 30440911,
+    "RarityType": 40,
+    "AbilityId": 7200506,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 112409
+  },
+  {
+    "ThoughtId": 30501334,
+    "RarityType": 40,
+    "AbilityId": 7200104,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 121013
+  },
+  {
+    "ThoughtId": 30510113,
+    "RarityType": 40,
+    "AbilityId": 7200198,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 121101
+  },
+  {
+    "ThoughtId": 30510131,
+    "RarityType": 40,
+    "AbilityId": 7200206,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 121101
+  },
+  {
+    "ThoughtId": 30510331,
+    "RarityType": 40,
+    "AbilityId": 7200246,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 121103
+  },
+  {
+    "ThoughtId": 30512611,
+    "RarityType": 40,
+    "AbilityId": 7200476,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 121126
+  },
+  {
+    "ThoughtId": 30540313,
+    "RarityType": 40,
+    "AbilityId": 7200423,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 121403
+  },
+  {
+    "ThoughtId": 30540611,
+    "RarityType": 40,
+    "AbilityId": 7200481,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 121406
+  },
+  {
+    "ThoughtId": 30550311,
+    "RarityType": 40,
+    "AbilityId": 7200436,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 121503
+  },
+  {
+    "ThoughtId": 40100511,
+    "RarityType": 40,
+    "AbilityId": 7200021,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 114005
+  },
+  {
+    "ThoughtId": 40100521,
+    "RarityType": 40,
+    "AbilityId": 7200026,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 114005
+  },
+  {
+    "ThoughtId": 40100524,
+    "RarityType": 40,
+    "AbilityId": 7200029,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 114005
+  },
+  {
+    "ThoughtId": 40100531,
+    "RarityType": 40,
+    "AbilityId": 7200031,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 114005
+  },
+  {
+    "ThoughtId": 40101111,
+    "RarityType": 40,
+    "AbilityId": 7200071,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 114011
+  },
+  {
+    "ThoughtId": 40101121,
+    "RarityType": 40,
+    "AbilityId": 7200076,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 114011
+  },
+  {
+    "ThoughtId": 40101131,
+    "RarityType": 40,
+    "AbilityId": 7200081,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 114011
+  },
+  {
+    "ThoughtId": 40101141,
+    "RarityType": 40,
+    "AbilityId": 7200086,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 114011
+  },
+  {
+    "ThoughtId": 40101511,
+    "RarityType": 40,
+    "AbilityId": 7200116,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 114015
+  },
+  {
+    "ThoughtId": 40101531,
+    "RarityType": 40,
+    "AbilityId": 7200126,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 114015
+  },
+  {
+    "ThoughtId": 40101541,
+    "RarityType": 40,
+    "AbilityId": 7200131,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 114015
+  },
+  {
+    "ThoughtId": 40101713,
+    "RarityType": 40,
+    "AbilityId": 7200138,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 114017
+  },
+  {
+    "ThoughtId": 40101821,
+    "RarityType": 40,
+    "AbilityId": 7200156,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 114018
+  },
+  {
+    "ThoughtId": 40101831,
+    "RarityType": 40,
+    "AbilityId": 7200161,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 114018
+  },
+  {
+    "ThoughtId": 40101841,
+    "RarityType": 40,
+    "AbilityId": 7200166,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 114018
+  },
+  {
+    "ThoughtId": 40113011,
+    "RarityType": 40,
+    "AbilityId": 7200516,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 114130
+  },
+  {
+    "ThoughtId": 40140611,
+    "RarityType": 40,
+    "AbilityId": 7200481,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 114406
+  },
+  {
+    "ThoughtId": 40140711,
+    "RarityType": 40,
+    "AbilityId": 7200486,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 114407
+  },
+  {
+    "ThoughtId": 40201713,
+    "RarityType": 40,
+    "AbilityId": 7200138,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 119017
+  },
+  {
+    "ThoughtId": 40202013,
+    "RarityType": 40,
+    "AbilityId": 7200173,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 119020
+  },
+  {
+    "ThoughtId": 40210113,
+    "RarityType": 40,
+    "AbilityId": 7200198,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 119101
+  },
+  {
+    "ThoughtId": 40212211,
+    "RarityType": 40,
+    "AbilityId": 7200446,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 119122
+  },
+  {
+    "ThoughtId": 40212411,
+    "RarityType": 40,
+    "AbilityId": 7200456,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 119124
+  },
+  {
+    "ThoughtId": 50111112,
+    "RarityType": 40,
+    "AbilityId": 7200297,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 200111
+  },
+  {
+    "ThoughtId": 50111212,
+    "RarityType": 40,
+    "AbilityId": 7200302,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 200112
+  },
+  {
+    "ThoughtId": 50111312,
+    "RarityType": 40,
+    "AbilityId": 7200307,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 200113
+  },
+  {
+    "ThoughtId": 50111412,
+    "RarityType": 40,
+    "AbilityId": 7200312,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 200114
+  },
+  {
+    "ThoughtId": 50111512,
+    "RarityType": 40,
+    "AbilityId": 7200317,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 200115
+  },
+  {
+    "ThoughtId": 50211111,
+    "RarityType": 40,
+    "AbilityId": 7200296,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 118111
+  },
+  {
+    "ThoughtId": 50211211,
+    "RarityType": 40,
+    "AbilityId": 7200301,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 118112
+  },
+  {
+    "ThoughtId": 50211311,
+    "RarityType": 40,
+    "AbilityId": 7200306,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 118113
+  },
+  {
+    "ThoughtId": 50211411,
+    "RarityType": 40,
+    "AbilityId": 7200311,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 118114
+  },
+  {
+    "ThoughtId": 50211511,
+    "RarityType": 40,
+    "AbilityId": 7200316,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 118115
+  },
+  {
+    "ThoughtId": 60100112,
+    "RarityType": 40,
+    "AbilityId": 7200002,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 199001
+  },
+  {
+    "ThoughtId": 60100831,
+    "RarityType": 40,
+    "AbilityId": 7200046,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 199008
+  },
+  {
+    "ThoughtId": 60100832,
+    "RarityType": 40,
+    "AbilityId": 7200047,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 199008
+  },
+  {
+    "ThoughtId": 60101332,
+    "RarityType": 40,
+    "AbilityId": 7200102,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 199013
+  },
+  {
+    "ThoughtId": 60101334,
+    "RarityType": 40,
+    "AbilityId": 7200104,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 199013
+  },
+  {
+    "ThoughtId": 60101731,
+    "RarityType": 40,
+    "AbilityId": 7200146,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 199017
+  },
+  {
+    "ThoughtId": 60101732,
+    "RarityType": 40,
+    "AbilityId": 7200147,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 199017
+  },
+  {
+    "ThoughtId": 60102032,
+    "RarityType": 40,
+    "AbilityId": 7200182,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 199020
+  },
+  {
+    "ThoughtId": 60200112,
+    "RarityType": 40,
+    "AbilityId": 7200002,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 108001
+  },
+  {
+    "ThoughtId": 60201732,
+    "RarityType": 40,
+    "AbilityId": 7200147,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 108017
+  },
+  {
+    "ThoughtId": 60210311,
+    "RarityType": 40,
+    "AbilityId": 7200236,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 108103
+  },
+  {
+    "ThoughtId": 60210413,
+    "RarityType": 40,
+    "AbilityId": 7200258,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 108104
+  },
+  {
+    "ThoughtId": 60210531,
+    "RarityType": 40,
+    "AbilityId": 7200286,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 108105
+  },
+  {
+    "ThoughtId": 60220513,
+    "RarityType": 40,
+    "AbilityId": 7200343,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 108205
+  },
+  {
+    "ThoughtId": 60231513,
+    "RarityType": 40,
+    "AbilityId": 7200403,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 108315
+  },
+  {
+    "ThoughtId": 60301332,
+    "RarityType": 40,
+    "AbilityId": 7200102,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 110013
+  },
+  {
+    "ThoughtId": 60401332,
+    "RarityType": 40,
+    "AbilityId": 7200102,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 109013
+  },
+  {
+    "ThoughtId": 60401732,
+    "RarityType": 40,
+    "AbilityId": 7200147,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 109017
+  },
+  {
+    "ThoughtId": 60500112,
+    "RarityType": 40,
+    "AbilityId": 7200002,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 113001
+  },
+  {
+    "ThoughtId": 60500831,
+    "RarityType": 40,
+    "AbilityId": 7200046,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 113008
+  },
+  {
+    "ThoughtId": 60500832,
+    "RarityType": 40,
+    "AbilityId": 7200047,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 113008
+  },
+  {
+    "ThoughtId": 60510321,
+    "RarityType": 40,
+    "AbilityId": 7200241,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 113103
+  },
+  {
+    "ThoughtId": 60531112,
+    "RarityType": 40,
+    "AbilityId": 7200382,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 113311
+  },
+  {
+    "ThoughtId": 60600832,
+    "RarityType": 40,
+    "AbilityId": 7200047,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 117008
+  },
+  {
+    "ThoughtId": 60601732,
+    "RarityType": 40,
+    "AbilityId": 7200147,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 117017
+  },
+  {
+    "ThoughtId": 60602032,
+    "RarityType": 40,
+    "AbilityId": 7200182,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 117020
+  },
+  {
+    "ThoughtId": 60712611,
+    "RarityType": 40,
+    "AbilityId": 7200476,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 123126
+  },
+  {
+    "ThoughtId": 60731313,
+    "RarityType": 40,
+    "AbilityId": 7200393,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 123313
+  },
+  {
+    "ThoughtId": 60740511,
+    "RarityType": 40,
+    "AbilityId": 7200471,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 123405
+  },
+  {
+    "ThoughtId": 70112413,
+    "RarityType": 40,
+    "AbilityId": 7200458,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 301124
+  },
+  {
+    "ThoughtId": 70212313,
+    "RarityType": 40,
+    "AbilityId": 7200453,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 302123
+  },
+  {
+    "ThoughtId": 70312513,
+    "RarityType": 40,
+    "AbilityId": 7200463,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 303125
+  },
+  {
+    "ThoughtId": 70412113,
+    "RarityType": 40,
+    "AbilityId": 7200443,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 304121
+  },
+  {
+    "ThoughtId": 70512213,
+    "RarityType": 40,
+    "AbilityId": 7200448,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 305122
+  },
+  {
+    "ThoughtId": 70612513,
+    "RarityType": 40,
+    "AbilityId": 7200463,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 306125
+  },
+  {
+    "ThoughtId": 70712513,
+    "RarityType": 40,
+    "AbilityId": 7200463,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 307125
+  },
+  {
+    "ThoughtId": 70812413,
+    "RarityType": 40,
+    "AbilityId": 7200458,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 308124
+  },
+  {
+    "ThoughtId": 70912313,
+    "RarityType": 40,
+    "AbilityId": 7200453,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 309123
+  },
+  {
+    "ThoughtId": 71012113,
+    "RarityType": 40,
+    "AbilityId": 7200443,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 310121
+  },
+  {
+    "ThoughtId": 71112213,
+    "RarityType": 40,
+    "AbilityId": 7200448,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 311122
+  },
+  {
+    "ThoughtId": 71212413,
+    "RarityType": 40,
+    "AbilityId": 7200458,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 312124
+  },
+  {
+    "ThoughtId": 71312213,
+    "RarityType": 40,
+    "AbilityId": 7200448,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 313122
+  },
+  {
+    "ThoughtId": 71412313,
+    "RarityType": 40,
+    "AbilityId": 7200453,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 314123
+  },
+  {
+    "ThoughtId": 71512113,
+    "RarityType": 40,
+    "AbilityId": 7200443,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 315121
+  },
+  {
+    "ThoughtId": 71612213,
+    "RarityType": 40,
+    "AbilityId": 7200448,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 316122
+  },
+  {
+    "ThoughtId": 71712313,
+    "RarityType": 40,
+    "AbilityId": 7200453,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 317123
+  },
+  {
+    "ThoughtId": 71812113,
+    "RarityType": 40,
+    "AbilityId": 7200443,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 318121
+  },
+  {
+    "ThoughtId": 71912413,
+    "RarityType": 40,
+    "AbilityId": 7200458,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 319124
+  },
+  {
+    "ThoughtId": 72012513,
+    "RarityType": 40,
+    "AbilityId": 7200463,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 320125
+  },
+  {
+    "ThoughtId": 72112413,
+    "RarityType": 40,
+    "AbilityId": 7200458,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 321124
+  },
+  {
+    "ThoughtId": 75112413,
+    "RarityType": 40,
+    "AbilityId": 7200458,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 351124
+  },
+  {
+    "ThoughtId": 75212513,
+    "RarityType": 40,
+    "AbilityId": 7200463,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 352125
+  },
+  {
+    "ThoughtId": 75312413,
+    "RarityType": 40,
+    "AbilityId": 7200458,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 353124
+  },
+  {
+    "ThoughtId": 75412313,
+    "RarityType": 40,
+    "AbilityId": 7200453,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 354123
+  },
+  {
+    "ThoughtId": 75512113,
+    "RarityType": 40,
+    "AbilityId": 7200443,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 355121
+  },
+  {
+    "ThoughtId": 75612213,
+    "RarityType": 40,
+    "AbilityId": 7200448,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 356122
+  },
+  {
+    "ThoughtId": 75712113,
+    "RarityType": 40,
+    "AbilityId": 7200443,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 357121
+  },
+  {
+    "ThoughtId": 75812413,
+    "RarityType": 40,
+    "AbilityId": 7200458,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 358124
+  },
+  {
+    "ThoughtId": 75912513,
+    "RarityType": 40,
+    "AbilityId": 7200463,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 359125
+  },
+  {
+    "ThoughtId": 76012113,
+    "RarityType": 40,
+    "AbilityId": 7200443,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 360121
+  },
+  {
+    "ThoughtId": 76112213,
+    "RarityType": 40,
+    "AbilityId": 7200448,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 361122
+  },
+  {
+    "ThoughtId": 76212413,
+    "RarityType": 40,
+    "AbilityId": 7200458,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 362124
+  },
+  {
+    "ThoughtId": 79100832,
+    "RarityType": 40,
+    "AbilityId": 7200047,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 999008
+  },
+  {
+    "ThoughtId": 79101123,
+    "RarityType": 40,
+    "AbilityId": 7200078,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 999011
+  },
+  {
+    "ThoughtId": 79101143,
+    "RarityType": 40,
+    "AbilityId": 7200088,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 999011
+  },
+  {
+    "ThoughtId": 79101144,
+    "RarityType": 40,
+    "AbilityId": 7200089,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 999011
+  },
+  {
+    "ThoughtId": 80100113,
+    "RarityType": 30,
+    "AbilityId": 7200003,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 51001
+  },
+  {
+    "ThoughtId": 80100833,
+    "RarityType": 30,
+    "AbilityId": 7200048,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 51008
+  },
+  {
+    "ThoughtId": 80101333,
+    "RarityType": 30,
+    "AbilityId": 7200103,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 51013
+  },
+  {
+    "ThoughtId": 81100114,
+    "RarityType": 30,
+    "AbilityId": 7200004,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 52001
+  },
+  {
+    "ThoughtId": 81100834,
+    "RarityType": 30,
+    "AbilityId": 7200049,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 52008
+  },
+  {
+    "ThoughtId": 81101334,
+    "RarityType": 30,
+    "AbilityId": 7200104,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 52013
+  },
+  {
+    "ThoughtId": 81101734,
+    "RarityType": 30,
+    "AbilityId": 7200149,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 52017
+  },
+  {
+    "ThoughtId": 81200513,
+    "RarityType": 30,
+    "AbilityId": 7200023,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 53005
+  },
+  {
+    "ThoughtId": 81200533,
+    "RarityType": 30,
+    "AbilityId": 7200033,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 53005
+  },
+  {
+    "ThoughtId": 83100114,
+    "RarityType": 30,
+    "AbilityId": 7200004,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 54001
+  },
+  {
+    "ThoughtId": 85100114,
+    "RarityType": 30,
+    "AbilityId": 7200004,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 99001
+  },
+  {
+    "ThoughtId": 85100834,
+    "RarityType": 30,
+    "AbilityId": 7200049,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 99008
+  },
+  {
+    "ThoughtId": 85101334,
+    "RarityType": 30,
+    "AbilityId": 7200104,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 99013
+  },
+  {
+    "ThoughtId": 85101734,
+    "RarityType": 30,
+    "AbilityId": 7200149,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 99017
+  },
+  {
+    "ThoughtId": 90100115,
+    "RarityType": 20,
+    "AbilityId": 7200005,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 1001
+  },
+  {
+    "ThoughtId": 90100835,
+    "RarityType": 20,
+    "AbilityId": 7200050,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 1008
+  },
+  {
+    "ThoughtId": 90101335,
+    "RarityType": 20,
+    "AbilityId": 7200105,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 1013
+  },
+  {
+    "ThoughtId": 90101735,
+    "RarityType": 20,
+    "AbilityId": 7200150,
+    "AbilityLevel": 1,
+    "ThoughtAssetId": 1017
+  }
+]

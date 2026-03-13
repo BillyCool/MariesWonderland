@@ -1,0 +1,140 @@
+[
+  {
+    "SkillBehaviourActionId": 900001,
+    "SkillCooltimeAdvanceType": 1,
+    "ActiveSkillType": 2,
+    "AdvanceValue": 900
+  },
+  {
+    "SkillBehaviourActionId": 900002,
+    "SkillCooltimeAdvanceType": 1,
+    "ActiveSkillType": 2,
+    "AdvanceValue": 300
+  },
+  {
+    "SkillBehaviourActionId": 9000001,
+    "SkillCooltimeAdvanceType": 2,
+    "ActiveSkillType": 3,
+    "AdvanceValue": 1000
+  },
+  {
+    "SkillBehaviourActionId": 9000008,
+    "SkillCooltimeAdvanceType": 2,
+    "ActiveSkillType": 3,
+    "AdvanceValue": 1000
+  },
+  {
+    "SkillBehaviourActionId": 9000012,
+    "SkillCooltimeAdvanceType": 2,
+    "ActiveSkillType": 3,
+    "AdvanceValue": 1000
+  },
+  {
+    "SkillBehaviourActionId": 9000019,
+    "SkillCooltimeAdvanceType": 2,
+    "ActiveSkillType": 3,
+    "AdvanceValue": 1000
+  },
+  {
+    "SkillBehaviourActionId": 9000025,
+    "SkillCooltimeAdvanceType": 2,
+    "ActiveSkillType": 3,
+    "AdvanceValue": 1000
+  },
+  {
+    "SkillBehaviourActionId": 11000001,
+    "SkillCooltimeAdvanceType": 2,
+    "ActiveSkillType": 3,
+    "AdvanceValue": 330
+  },
+  {
+    "SkillBehaviourActionId": 11000002,
+    "SkillCooltimeAdvanceType": 2,
+    "ActiveSkillType": 3,
+    "AdvanceValue": 420
+  },
+  {
+    "SkillBehaviourActionId": 11000003,
+    "SkillCooltimeAdvanceType": 2,
+    "ActiveSkillType": 3,
+    "AdvanceValue": 510
+  },
+  {
+    "SkillBehaviourActionId": 11000004,
+    "SkillCooltimeAdvanceType": 2,
+    "ActiveSkillType": 3,
+    "AdvanceValue": 600
+  },
+  {
+    "SkillBehaviourActionId": 11000005,
+    "SkillCooltimeAdvanceType": 2,
+    "ActiveSkillType": 3,
+    "AdvanceValue": 440
+  },
+  {
+    "SkillBehaviourActionId": 11000006,
+    "SkillCooltimeAdvanceType": 2,
+    "ActiveSkillType": 3,
+    "AdvanceValue": 560
+  },
+  {
+    "SkillBehaviourActionId": 11000007,
+    "SkillCooltimeAdvanceType": 2,
+    "ActiveSkillType": 3,
+    "AdvanceValue": 680
+  },
+  {
+    "SkillBehaviourActionId": 11000008,
+    "SkillCooltimeAdvanceType": 2,
+    "ActiveSkillType": 3,
+    "AdvanceValue": 800
+  },
+  {
+    "SkillBehaviourActionId": 11000009,
+    "SkillCooltimeAdvanceType": 2,
+    "ActiveSkillType": 3,
+    "AdvanceValue": 550
+  },
+  {
+    "SkillBehaviourActionId": 11000010,
+    "SkillCooltimeAdvanceType": 2,
+    "ActiveSkillType": 3,
+    "AdvanceValue": 700
+  },
+  {
+    "SkillBehaviourActionId": 11000011,
+    "SkillCooltimeAdvanceType": 2,
+    "ActiveSkillType": 3,
+    "AdvanceValue": 850
+  },
+  {
+    "SkillBehaviourActionId": 11000012,
+    "SkillCooltimeAdvanceType": 2,
+    "ActiveSkillType": 3,
+    "AdvanceValue": 1000
+  },
+  {
+    "SkillBehaviourActionId": 19900001,
+    "SkillCooltimeAdvanceType": 2,
+    "ActiveSkillType": 3,
+    "AdvanceValue": 1000
+  },
+  {
+    "SkillBehaviourActionId": 19900002,
+    "SkillCooltimeAdvanceType": 2,
+    "ActiveSkillType": 3,
+    "AdvanceValue": 500
+  },
+  {
+    "SkillBehaviourActionId": 19900003,
+    "SkillCooltimeAdvanceType": 2,
+    "ActiveSkillType": 3,
+    "AdvanceValue": 250
+  },
+  {
+    "SkillBehaviourActionId": 19900004,
+    "SkillCooltimeAdvanceType": 2,
+    "ActiveSkillType": 3,
+    "AdvanceValue": 150
+  }
+]

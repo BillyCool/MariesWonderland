@@ -1,0 +1,3187 @@
+[
+  {
+    "WeaponId": 100001,
+    "SortOrder": 114000011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 100011,
+    "SortOrder": 614000011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 100021,
+    "SortOrder": 514000011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 101001,
+    "SortOrder": 514000012,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 101011,
+    "SortOrder": 113000011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 101021,
+    "SortOrder": 615000011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 101031,
+    "SortOrder": 311000011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 101041,
+    "SortOrder": 212000011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 101051,
+    "SortOrder": 415000011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 101061,
+    "SortOrder": 315000011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 101071,
+    "SortOrder": 514000013,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 101081,
+    "SortOrder": 113002201,
+    "CatalogTermId": 2020
+  },
+  {
+    "WeaponId": 101091,
+    "SortOrder": 611003401,
+    "CatalogTermId": 3040
+  },
+  {
+    "WeaponId": 101101,
+    "SortOrder": 212004401,
+    "CatalogTermId": 4040
+  },
+  {
+    "WeaponId": 101111,
+    "SortOrder": 414006201,
+    "CatalogTermId": 6020
+  },
+  {
+    "WeaponId": 101121,
+    "SortOrder": 415006201,
+    "CatalogTermId": 6020
+  },
+  {
+    "WeaponId": 101131,
+    "SortOrder": 114024301,
+    "CatalogTermId": 24030
+  },
+  {
+    "WeaponId": 101141,
+    "SortOrder": 115024301,
+    "CatalogTermId": 24030
+  },
+  {
+    "WeaponId": 101151,
+    "SortOrder": 512009301,
+    "CatalogTermId": 9030
+  },
+  {
+    "WeaponId": 101161,
+    "SortOrder": 413012231,
+    "CatalogTermId": 12023
+  },
+  {
+    "WeaponId": 101171,
+    "SortOrder": 111015401,
+    "CatalogTermId": 15040
+  },
+  {
+    "WeaponId": 101181,
+    "SortOrder": 612018301,
+    "CatalogTermId": 18030
+  },
+  {
+    "WeaponId": 101191,
+    "SortOrder": 211024301,
+    "CatalogTermId": 24030
+  },
+  {
+    "WeaponId": 101201,
+    "SortOrder": 313021301,
+    "CatalogTermId": 21030
+  },
+  {
+    "WeaponId": 101211,
+    "SortOrder": 114036301,
+    "CatalogTermId": 36030
+  },
+  {
+    "WeaponId": 110001,
+    "SortOrder": 111100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 110011,
+    "SortOrder": 211100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 110021,
+    "SortOrder": 311100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 110031,
+    "SortOrder": 411100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 110041,
+    "SortOrder": 511100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 110051,
+    "SortOrder": 611100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 120001,
+    "SortOrder": 112100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 120011,
+    "SortOrder": 212100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 120021,
+    "SortOrder": 312100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 120031,
+    "SortOrder": 412100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 120041,
+    "SortOrder": 512100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 120051,
+    "SortOrder": 612100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 130001,
+    "SortOrder": 113100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 130011,
+    "SortOrder": 213100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 130021,
+    "SortOrder": 313100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 130031,
+    "SortOrder": 413100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 130041,
+    "SortOrder": 513100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 130051,
+    "SortOrder": 613100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 140001,
+    "SortOrder": 114100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 140011,
+    "SortOrder": 214100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 140021,
+    "SortOrder": 314100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 140031,
+    "SortOrder": 414100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 140041,
+    "SortOrder": 514100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 140051,
+    "SortOrder": 614100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 150001,
+    "SortOrder": 115100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 150011,
+    "SortOrder": 215100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 150021,
+    "SortOrder": 315100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 150031,
+    "SortOrder": 415100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 150041,
+    "SortOrder": 515100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 150051,
+    "SortOrder": 615100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 210001,
+    "SortOrder": 121100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 210021,
+    "SortOrder": 121104501,
+    "CatalogTermId": 4050
+  },
+  {
+    "WeaponId": 210031,
+    "SortOrder": 121103101,
+    "CatalogTermId": 3010
+  },
+  {
+    "WeaponId": 210041,
+    "SortOrder": 221100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 210061,
+    "SortOrder": 321100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 210071,
+    "SortOrder": 321100012,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 210091,
+    "SortOrder": 421100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 210101,
+    "SortOrder": 421105251,
+    "CatalogTermId": 5025
+  },
+  {
+    "WeaponId": 210131,
+    "SortOrder": 521100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 210141,
+    "SortOrder": 621100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 210151,
+    "SortOrder": 621100012,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 210161,
+    "SortOrder": 621104501,
+    "CatalogTermId": 4050
+  },
+  {
+    "WeaponId": 210171,
+    "SortOrder": 121104201,
+    "CatalogTermId": 4020
+  },
+  {
+    "WeaponId": 210181,
+    "SortOrder": 521105101,
+    "CatalogTermId": 5010
+  },
+  {
+    "WeaponId": 210191,
+    "SortOrder": 221106211,
+    "CatalogTermId": 6021
+  },
+  {
+    "WeaponId": 210201,
+    "SortOrder": 521108301,
+    "CatalogTermId": 8030
+  },
+  {
+    "WeaponId": 210211,
+    "SortOrder": 321109311,
+    "CatalogTermId": 9031
+  },
+  {
+    "WeaponId": 210221,
+    "SortOrder": 621110101,
+    "CatalogTermId": 10010
+  },
+  {
+    "WeaponId": 210241,
+    "SortOrder": 621116111,
+    "CatalogTermId": 16011
+  },
+  {
+    "WeaponId": 210251,
+    "SortOrder": 621124201,
+    "CatalogTermId": 24020
+  },
+  {
+    "WeaponId": 210261,
+    "SortOrder": 421127201,
+    "CatalogTermId": 27020
+  },
+  {
+    "WeaponId": 210271,
+    "SortOrder": 321128112,
+    "CatalogTermId": 28011
+  },
+  {
+    "WeaponId": 210281,
+    "SortOrder": 521132301,
+    "CatalogTermId": 32030
+  },
+  {
+    "WeaponId": 220001,
+    "SortOrder": 122100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 220011,
+    "SortOrder": 122100012,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 220021,
+    "SortOrder": 222100012,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 220031,
+    "SortOrder": 222100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 220041,
+    "SortOrder": 222103502,
+    "CatalogTermId": 3050
+  },
+  {
+    "WeaponId": 220051,
+    "SortOrder": 222105101,
+    "CatalogTermId": 5010
+  },
+  {
+    "WeaponId": 220061,
+    "SortOrder": 222103201,
+    "CatalogTermId": 3020
+  },
+  {
+    "WeaponId": 220071,
+    "SortOrder": 222103501,
+    "CatalogTermId": 3050
+  },
+  {
+    "WeaponId": 220081,
+    "SortOrder": 322100012,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 220091,
+    "SortOrder": 322100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 220101,
+    "SortOrder": 422100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 220111,
+    "SortOrder": 522100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 220121,
+    "SortOrder": 522106211,
+    "CatalogTermId": 6021
+  },
+  {
+    "WeaponId": 220141,
+    "SortOrder": 522103101,
+    "CatalogTermId": 3010
+  },
+  {
+    "WeaponId": 220151,
+    "SortOrder": 622100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 220161,
+    "SortOrder": 322108101,
+    "CatalogTermId": 8010
+  },
+  {
+    "WeaponId": 220171,
+    "SortOrder": 422110201,
+    "CatalogTermId": 10020
+  },
+  {
+    "WeaponId": 220181,
+    "SortOrder": 322113101,
+    "CatalogTermId": 13010
+  },
+  {
+    "WeaponId": 220191,
+    "SortOrder": 322115101,
+    "CatalogTermId": 15010
+  },
+  {
+    "WeaponId": 220201,
+    "SortOrder": 222115201,
+    "CatalogTermId": 15020
+  },
+  {
+    "WeaponId": 220211,
+    "SortOrder": 422117101,
+    "CatalogTermId": 17010
+  },
+  {
+    "WeaponId": 220221,
+    "SortOrder": 622117201,
+    "CatalogTermId": 17020
+  },
+  {
+    "WeaponId": 220231,
+    "SortOrder": 622122101,
+    "CatalogTermId": 22010
+  },
+  {
+    "WeaponId": 220241,
+    "SortOrder": 422125101,
+    "CatalogTermId": 25010
+  },
+  {
+    "WeaponId": 220251,
+    "SortOrder": 122128112,
+    "CatalogTermId": 28011
+  },
+  {
+    "WeaponId": 220261,
+    "SortOrder": 322132101,
+    "CatalogTermId": 32010
+  },
+  {
+    "WeaponId": 230001,
+    "SortOrder": 123100012,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 230011,
+    "SortOrder": 123100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 230021,
+    "SortOrder": 123103201,
+    "CatalogTermId": 3020
+  },
+  {
+    "WeaponId": 230031,
+    "SortOrder": 223100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 230051,
+    "SortOrder": 223103101,
+    "CatalogTermId": 3010
+  },
+  {
+    "WeaponId": 230061,
+    "SortOrder": 323100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 230071,
+    "SortOrder": 423100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 230091,
+    "SortOrder": 523100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 230101,
+    "SortOrder": 523100012,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 230111,
+    "SortOrder": 523105302,
+    "CatalogTermId": 5030
+  },
+  {
+    "WeaponId": 230121,
+    "SortOrder": 523105301,
+    "CatalogTermId": 5030
+  },
+  {
+    "WeaponId": 230131,
+    "SortOrder": 623100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 230151,
+    "SortOrder": 523105251,
+    "CatalogTermId": 5025
+  },
+  {
+    "WeaponId": 230161,
+    "SortOrder": 123107201,
+    "CatalogTermId": 7020
+  },
+  {
+    "WeaponId": 230171,
+    "SortOrder": 323107201,
+    "CatalogTermId": 7020
+  },
+  {
+    "WeaponId": 230181,
+    "SortOrder": 523108101,
+    "CatalogTermId": 8010
+  },
+  {
+    "WeaponId": 230191,
+    "SortOrder": 223111201,
+    "CatalogTermId": 11020
+  },
+  {
+    "WeaponId": 230201,
+    "SortOrder": 523113101,
+    "CatalogTermId": 13010
+  },
+  {
+    "WeaponId": 230211,
+    "SortOrder": 423115101,
+    "CatalogTermId": 15010
+  },
+  {
+    "WeaponId": 230221,
+    "SortOrder": 423117101,
+    "CatalogTermId": 17010
+  },
+  {
+    "WeaponId": 230231,
+    "SortOrder": 523120101,
+    "CatalogTermId": 20010
+  },
+  {
+    "WeaponId": 230241,
+    "SortOrder": 123122101,
+    "CatalogTermId": 22010
+  },
+  {
+    "WeaponId": 230251,
+    "SortOrder": 523125101,
+    "CatalogTermId": 25010
+  },
+  {
+    "WeaponId": 230261,
+    "SortOrder": 223126101,
+    "CatalogTermId": 26010
+  },
+  {
+    "WeaponId": 230271,
+    "SortOrder": 123127201,
+    "CatalogTermId": 27020
+  },
+  {
+    "WeaponId": 230281,
+    "SortOrder": 123132301,
+    "CatalogTermId": 32030
+  },
+  {
+    "WeaponId": 240001,
+    "SortOrder": 124100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 240011,
+    "SortOrder": 124100012,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 240021,
+    "SortOrder": 224100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 240031,
+    "SortOrder": 324100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 240041,
+    "SortOrder": 324103701,
+    "CatalogTermId": 3070
+  },
+  {
+    "WeaponId": 240051,
+    "SortOrder": 324104201,
+    "CatalogTermId": 4020
+  },
+  {
+    "WeaponId": 240081,
+    "SortOrder": 324100012,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 240091,
+    "SortOrder": 424100012,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 240101,
+    "SortOrder": 424100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 240121,
+    "SortOrder": 524100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 240131,
+    "SortOrder": 524101201,
+    "CatalogTermId": 1020
+  },
+  {
+    "WeaponId": 240141,
+    "SortOrder": 624100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 240151,
+    "SortOrder": 624100012,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 240171,
+    "SortOrder": 124103101,
+    "CatalogTermId": 3010
+  },
+  {
+    "WeaponId": 240191,
+    "SortOrder": 124108401,
+    "CatalogTermId": 8040
+  },
+  {
+    "WeaponId": 240201,
+    "SortOrder": 624109101,
+    "CatalogTermId": 9010
+  },
+  {
+    "WeaponId": 240211,
+    "SortOrder": 224109201,
+    "CatalogTermId": 9020
+  },
+  {
+    "WeaponId": 240221,
+    "SortOrder": 424110101,
+    "CatalogTermId": 10010
+  },
+  {
+    "WeaponId": 240231,
+    "SortOrder": 524114101,
+    "CatalogTermId": 14010
+  },
+  {
+    "WeaponId": 240241,
+    "SortOrder": 624114201,
+    "CatalogTermId": 14020
+  },
+  {
+    "WeaponId": 240251,
+    "SortOrder": 424119101,
+    "CatalogTermId": 19010
+  },
+  {
+    "WeaponId": 240261,
+    "SortOrder": 224121101,
+    "CatalogTermId": 21010
+  },
+  {
+    "WeaponId": 240271,
+    "SortOrder": 124125311,
+    "CatalogTermId": 25031
+  },
+  {
+    "WeaponId": 240281,
+    "SortOrder": 624128102,
+    "CatalogTermId": 28010
+  },
+  {
+    "WeaponId": 240291,
+    "SortOrder": 224129101,
+    "CatalogTermId": 29010
+  },
+  {
+    "WeaponId": 240301,
+    "SortOrder": 524131101,
+    "CatalogTermId": 31010
+  },
+  {
+    "WeaponId": 240311,
+    "SortOrder": 124134101,
+    "CatalogTermId": 34010
+  },
+  {
+    "WeaponId": 250001,
+    "SortOrder": 125100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 250011,
+    "SortOrder": 125101201,
+    "CatalogTermId": 1020
+  },
+  {
+    "WeaponId": 250021,
+    "SortOrder": 125100012,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 250031,
+    "SortOrder": 225100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 250041,
+    "SortOrder": 225100012,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 250051,
+    "SortOrder": 225106401,
+    "CatalogTermId": 6040
+  },
+  {
+    "WeaponId": 250061,
+    "SortOrder": 325100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 250071,
+    "SortOrder": 325102301,
+    "CatalogTermId": 2030
+  },
+  {
+    "WeaponId": 250081,
+    "SortOrder": 425100012,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 250091,
+    "SortOrder": 425100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 250101,
+    "SortOrder": 525100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 250111,
+    "SortOrder": 525100012,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 250121,
+    "SortOrder": 625100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 250141,
+    "SortOrder": 625102301,
+    "CatalogTermId": 2030
+  },
+  {
+    "WeaponId": 250151,
+    "SortOrder": 625103701,
+    "CatalogTermId": 3070
+  },
+  {
+    "WeaponId": 250171,
+    "SortOrder": 225106101,
+    "CatalogTermId": 6010
+  },
+  {
+    "WeaponId": 250181,
+    "SortOrder": 425106401,
+    "CatalogTermId": 6040
+  },
+  {
+    "WeaponId": 250191,
+    "SortOrder": 625109101,
+    "CatalogTermId": 9010
+  },
+  {
+    "WeaponId": 250201,
+    "SortOrder": 125112201,
+    "CatalogTermId": 12020
+  },
+  {
+    "WeaponId": 250211,
+    "SortOrder": 225114201,
+    "CatalogTermId": 14020
+  },
+  {
+    "WeaponId": 250221,
+    "SortOrder": 125119101,
+    "CatalogTermId": 19010
+  },
+  {
+    "WeaponId": 250231,
+    "SortOrder": 525121101,
+    "CatalogTermId": 21010
+  },
+  {
+    "WeaponId": 250241,
+    "SortOrder": 325121201,
+    "CatalogTermId": 21020
+  },
+  {
+    "WeaponId": 250251,
+    "SortOrder": 625126201,
+    "CatalogTermId": 26020
+  },
+  {
+    "WeaponId": 250261,
+    "SortOrder": 625129101,
+    "CatalogTermId": 29010
+  },
+  {
+    "WeaponId": 250271,
+    "SortOrder": 425134101,
+    "CatalogTermId": 34010
+  },
+  {
+    "WeaponId": 310001,
+    "SortOrder": 131100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 310011,
+    "SortOrder": 131105251,
+    "CatalogTermId": 5025
+  },
+  {
+    "WeaponId": 310021,
+    "SortOrder": 131104201,
+    "CatalogTermId": 4020
+  },
+  {
+    "WeaponId": 310051,
+    "SortOrder": 231100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 310061,
+    "SortOrder": 231103101,
+    "CatalogTermId": 3010
+  },
+  {
+    "WeaponId": 310071,
+    "SortOrder": 231104501,
+    "CatalogTermId": 4050
+  },
+  {
+    "WeaponId": 310081,
+    "SortOrder": 331100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 310111,
+    "SortOrder": 431100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 310131,
+    "SortOrder": 431103501,
+    "CatalogTermId": 3050
+  },
+  {
+    "WeaponId": 310141,
+    "SortOrder": 531100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 310171,
+    "SortOrder": 631100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 310181,
+    "SortOrder": 631100012,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 310191,
+    "SortOrder": 631104501,
+    "CatalogTermId": 4050
+  },
+  {
+    "WeaponId": 310211,
+    "SortOrder": 331105251,
+    "CatalogTermId": 5025
+  },
+  {
+    "WeaponId": 310221,
+    "SortOrder": 431108301,
+    "CatalogTermId": 8030
+  },
+  {
+    "WeaponId": 310231,
+    "SortOrder": 231108301,
+    "CatalogTermId": 8030
+  },
+  {
+    "WeaponId": 310241,
+    "SortOrder": 631109311,
+    "CatalogTermId": 9031
+  },
+  {
+    "WeaponId": 310251,
+    "SortOrder": 531109311,
+    "CatalogTermId": 9031
+  },
+  {
+    "WeaponId": 310261,
+    "SortOrder": 531110101,
+    "CatalogTermId": 10010
+  },
+  {
+    "WeaponId": 310271,
+    "SortOrder": 331110101,
+    "CatalogTermId": 10010
+  },
+  {
+    "WeaponId": 310281,
+    "SortOrder": 331110201,
+    "CatalogTermId": 10020
+  },
+  {
+    "WeaponId": 310291,
+    "SortOrder": 231112101,
+    "CatalogTermId": 12010
+  },
+  {
+    "WeaponId": 310321,
+    "SortOrder": 131113411,
+    "CatalogTermId": 13041
+  },
+  {
+    "WeaponId": 310331,
+    "SortOrder": 531114501,
+    "CatalogTermId": 14050
+  },
+  {
+    "WeaponId": 310341,
+    "SortOrder": 231114501,
+    "CatalogTermId": 14050
+  },
+  {
+    "WeaponId": 310351,
+    "SortOrder": 131114501,
+    "CatalogTermId": 14050
+  },
+  {
+    "WeaponId": 310361,
+    "SortOrder": 431115201,
+    "CatalogTermId": 15020
+  },
+  {
+    "WeaponId": 310371,
+    "SortOrder": 331116111,
+    "CatalogTermId": 16011
+  },
+  {
+    "WeaponId": 310381,
+    "SortOrder": 431116111,
+    "CatalogTermId": 16011
+  },
+  {
+    "WeaponId": 310391,
+    "SortOrder": 231117201,
+    "CatalogTermId": 17020
+  },
+  {
+    "WeaponId": 310401,
+    "SortOrder": 131118501,
+    "CatalogTermId": 18150
+  },
+  {
+    "WeaponId": 310411,
+    "SortOrder": 331118201,
+    "CatalogTermId": 18020
+  },
+  {
+    "WeaponId": 310421,
+    "SortOrder": 631119261,
+    "CatalogTermId": 19026
+  },
+  {
+    "WeaponId": 310431,
+    "SortOrder": 531119301,
+    "CatalogTermId": 19030
+  },
+  {
+    "WeaponId": 310441,
+    "SortOrder": 431119301,
+    "CatalogTermId": 19030
+  },
+  {
+    "WeaponId": 310451,
+    "SortOrder": 331119301,
+    "CatalogTermId": 19030
+  },
+  {
+    "WeaponId": 310461,
+    "SortOrder": 431120201,
+    "CatalogTermId": 20020
+  },
+  {
+    "WeaponId": 310471,
+    "SortOrder": 331122201,
+    "CatalogTermId": 22020
+  },
+  {
+    "WeaponId": 310481,
+    "SortOrder": 231122201,
+    "CatalogTermId": 22020
+  },
+  {
+    "WeaponId": 310491,
+    "SortOrder": 631122201,
+    "CatalogTermId": 22020
+  },
+  {
+    "WeaponId": 310501,
+    "SortOrder": 231123211,
+    "CatalogTermId": 23021
+  },
+  {
+    "WeaponId": 310511,
+    "SortOrder": 231124201,
+    "CatalogTermId": 24020
+  },
+  {
+    "WeaponId": 310521,
+    "SortOrder": 531124201,
+    "CatalogTermId": 24020
+  },
+  {
+    "WeaponId": 310531,
+    "SortOrder": 431125301,
+    "CatalogTermId": 25030
+  },
+  {
+    "WeaponId": 310541,
+    "SortOrder": 531126101,
+    "CatalogTermId": 26010
+  },
+  {
+    "WeaponId": 310551,
+    "SortOrder": 231127201,
+    "CatalogTermId": 27020
+  },
+  {
+    "WeaponId": 310561,
+    "SortOrder": 631127201,
+    "CatalogTermId": 27020
+  },
+  {
+    "WeaponId": 310571,
+    "SortOrder": 531129201,
+    "CatalogTermId": 29020
+  },
+  {
+    "WeaponId": 310581,
+    "SortOrder": 531130211,
+    "CatalogTermId": 30021
+  },
+  {
+    "WeaponId": 310591,
+    "SortOrder": 331130301,
+    "CatalogTermId": 30030
+  },
+  {
+    "WeaponId": 310601,
+    "SortOrder": 131130301,
+    "CatalogTermId": 30030
+  },
+  {
+    "WeaponId": 310611,
+    "SortOrder": 431130301,
+    "CatalogTermId": 30030
+  },
+  {
+    "WeaponId": 310621,
+    "SortOrder": 431131112,
+    "CatalogTermId": 31011
+  },
+  {
+    "WeaponId": 310631,
+    "SortOrder": 631132101,
+    "CatalogTermId": 32010
+  },
+  {
+    "WeaponId": 310641,
+    "SortOrder": 631132301,
+    "CatalogTermId": 32030
+  },
+  {
+    "WeaponId": 310651,
+    "SortOrder": 231132301,
+    "CatalogTermId": 32030
+  },
+  {
+    "WeaponId": 310661,
+    "SortOrder": 131134201,
+    "CatalogTermId": 34020
+  },
+  {
+    "WeaponId": 310671,
+    "SortOrder": 631134201,
+    "CatalogTermId": 34020
+  },
+  {
+    "WeaponId": 310681,
+    "SortOrder": 531134201,
+    "CatalogTermId": 34020
+  },
+  {
+    "WeaponId": 310691,
+    "SortOrder": 131135221,
+    "CatalogTermId": 35022
+  },
+  {
+    "WeaponId": 310701,
+    "SortOrder": 631136111,
+    "CatalogTermId": 36011
+  },
+  {
+    "WeaponId": 310711,
+    "SortOrder": 331137201,
+    "CatalogTermId": 37020
+  },
+  {
+    "WeaponId": 320001,
+    "SortOrder": 132100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 320011,
+    "SortOrder": 132103101,
+    "CatalogTermId": 3010
+  },
+  {
+    "WeaponId": 320021,
+    "SortOrder": 132103701,
+    "CatalogTermId": 3070
+  },
+  {
+    "WeaponId": 320031,
+    "SortOrder": 232100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 320041,
+    "SortOrder": 232103601,
+    "CatalogTermId": 3060
+  },
+  {
+    "WeaponId": 320051,
+    "SortOrder": 232105101,
+    "CatalogTermId": 5010
+  },
+  {
+    "WeaponId": 320061,
+    "SortOrder": 232106211,
+    "CatalogTermId": 6021
+  },
+  {
+    "WeaponId": 320071,
+    "SortOrder": 232105301,
+    "CatalogTermId": 5030
+  },
+  {
+    "WeaponId": 320081,
+    "SortOrder": 332100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 320091,
+    "SortOrder": 332105101,
+    "CatalogTermId": 5010
+  },
+  {
+    "WeaponId": 320101,
+    "SortOrder": 432100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 320111,
+    "SortOrder": 432103501,
+    "CatalogTermId": 3050
+  },
+  {
+    "WeaponId": 320121,
+    "SortOrder": 532103501,
+    "CatalogTermId": 3050
+  },
+  {
+    "WeaponId": 320131,
+    "SortOrder": 632100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 320141,
+    "SortOrder": 632106211,
+    "CatalogTermId": 6021
+  },
+  {
+    "WeaponId": 320151,
+    "SortOrder": 332106101,
+    "CatalogTermId": 6010
+  },
+  {
+    "WeaponId": 320161,
+    "SortOrder": 632107201,
+    "CatalogTermId": 7020
+  },
+  {
+    "WeaponId": 320171,
+    "SortOrder": 632107301,
+    "CatalogTermId": 7030
+  },
+  {
+    "WeaponId": 320181,
+    "SortOrder": 232110201,
+    "CatalogTermId": 10020
+  },
+  {
+    "WeaponId": 320191,
+    "SortOrder": 532110201,
+    "CatalogTermId": 10020
+  },
+  {
+    "WeaponId": 320201,
+    "SortOrder": 432111101,
+    "CatalogTermId": 11010
+  },
+  {
+    "WeaponId": 320221,
+    "SortOrder": 532111201,
+    "CatalogTermId": 11020
+  },
+  {
+    "WeaponId": 320231,
+    "SortOrder": 332112101,
+    "CatalogTermId": 12010
+  },
+  {
+    "WeaponId": 320241,
+    "SortOrder": 432112401,
+    "CatalogTermId": 12040
+  },
+  {
+    "WeaponId": 320251,
+    "SortOrder": 532112401,
+    "CatalogTermId": 12040
+  },
+  {
+    "WeaponId": 320261,
+    "SortOrder": 132112401,
+    "CatalogTermId": 12040
+  },
+  {
+    "WeaponId": 320271,
+    "SortOrder": 532113411,
+    "CatalogTermId": 13041
+  },
+  {
+    "WeaponId": 320281,
+    "SortOrder": 532115201,
+    "CatalogTermId": 15020
+  },
+  {
+    "WeaponId": 320291,
+    "SortOrder": 132115201,
+    "CatalogTermId": 15020
+  },
+  {
+    "WeaponId": 320301,
+    "SortOrder": 632116401,
+    "CatalogTermId": 16040
+  },
+  {
+    "WeaponId": 320311,
+    "SortOrder": 232116401,
+    "CatalogTermId": 16040
+  },
+  {
+    "WeaponId": 320321,
+    "SortOrder": 432116401,
+    "CatalogTermId": 16040
+  },
+  {
+    "WeaponId": 320331,
+    "SortOrder": 132117201,
+    "CatalogTermId": 17020
+  },
+  {
+    "WeaponId": 320341,
+    "SortOrder": 332117201,
+    "CatalogTermId": 17020
+  },
+  {
+    "WeaponId": 320351,
+    "SortOrder": 132119261,
+    "CatalogTermId": 19026
+  },
+  {
+    "WeaponId": 320361,
+    "SortOrder": 132120101,
+    "CatalogTermId": 20010
+  },
+  {
+    "WeaponId": 320371,
+    "SortOrder": 132120201,
+    "CatalogTermId": 20020
+  },
+  {
+    "WeaponId": 320381,
+    "SortOrder": 332121401,
+    "CatalogTermId": 21040
+  },
+  {
+    "WeaponId": 320391,
+    "SortOrder": 232121401,
+    "CatalogTermId": 21040
+  },
+  {
+    "WeaponId": 320401,
+    "SortOrder": 632121401,
+    "CatalogTermId": 21040
+  },
+  {
+    "WeaponId": 320411,
+    "SortOrder": 432121401,
+    "CatalogTermId": 21040
+  },
+  {
+    "WeaponId": 320421,
+    "SortOrder": 532122201,
+    "CatalogTermId": 22020
+  },
+  {
+    "WeaponId": 320431,
+    "SortOrder": 132123211,
+    "CatalogTermId": 23021
+  },
+  {
+    "WeaponId": 320441,
+    "SortOrder": 632123211,
+    "CatalogTermId": 23021
+  },
+  {
+    "WeaponId": 320451,
+    "SortOrder": 432124111,
+    "CatalogTermId": 24011
+  },
+  {
+    "WeaponId": 320461,
+    "SortOrder": 132127101,
+    "CatalogTermId": 27010
+  },
+  {
+    "WeaponId": 320471,
+    "SortOrder": 332128112,
+    "CatalogTermId": 28011
+  },
+  {
+    "WeaponId": 320481,
+    "SortOrder": 432128112,
+    "CatalogTermId": 28011
+  },
+  {
+    "WeaponId": 320491,
+    "SortOrder": 232129221,
+    "CatalogTermId": 29022
+  },
+  {
+    "WeaponId": 320501,
+    "SortOrder": 232129301,
+    "CatalogTermId": 29030
+  },
+  {
+    "WeaponId": 320511,
+    "SortOrder": 332129301,
+    "CatalogTermId": 29030
+  },
+  {
+    "WeaponId": 320521,
+    "SortOrder": 532129301,
+    "CatalogTermId": 29030
+  },
+  {
+    "WeaponId": 320531,
+    "SortOrder": 632130101,
+    "CatalogTermId": 30010
+  },
+  {
+    "WeaponId": 320541,
+    "SortOrder": 232130201,
+    "CatalogTermId": 30020
+  },
+  {
+    "WeaponId": 320551,
+    "SortOrder": 432131324,
+    "CatalogTermId": 31032
+  },
+  {
+    "WeaponId": 320561,
+    "SortOrder": 132132101,
+    "CatalogTermId": 32010
+  },
+  {
+    "WeaponId": 320571,
+    "SortOrder": 532132101,
+    "CatalogTermId": 32010
+  },
+  {
+    "WeaponId": 320581,
+    "SortOrder": 232133231,
+    "CatalogTermId": 33023
+  },
+  {
+    "WeaponId": 320591,
+    "SortOrder": 332134111,
+    "CatalogTermId": 34011
+  },
+  {
+    "WeaponId": 320601,
+    "SortOrder": 332134301,
+    "CatalogTermId": 34030
+  },
+  {
+    "WeaponId": 320611,
+    "SortOrder": 632135231,
+    "CatalogTermId": 35023
+  },
+  {
+    "WeaponId": 320621,
+    "SortOrder": 332136111,
+    "CatalogTermId": 36011
+  },
+  {
+    "WeaponId": 320631,
+    "SortOrder": 532136121,
+    "CatalogTermId": 36012
+  },
+  {
+    "WeaponId": 320641,
+    "SortOrder": 132136131,
+    "CatalogTermId": 36013
+  },
+  {
+    "WeaponId": 320651,
+    "SortOrder": 232136131,
+    "CatalogTermId": 36013
+  },
+  {
+    "WeaponId": 320661,
+    "SortOrder": 432136131,
+    "CatalogTermId": 36013
+  },
+  {
+    "WeaponId": 330001,
+    "SortOrder": 133100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 330011,
+    "SortOrder": 133103201,
+    "CatalogTermId": 3020
+  },
+  {
+    "WeaponId": 330021,
+    "SortOrder": 133105301,
+    "CatalogTermId": 5030
+  },
+  {
+    "WeaponId": 330031,
+    "SortOrder": 333100012,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 330041,
+    "SortOrder": 333100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 330051,
+    "SortOrder": 333103201,
+    "CatalogTermId": 3020
+  },
+  {
+    "WeaponId": 330061,
+    "SortOrder": 333104501,
+    "CatalogTermId": 4050
+  },
+  {
+    "WeaponId": 330071,
+    "SortOrder": 433100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 330081,
+    "SortOrder": 433105301,
+    "CatalogTermId": 5030
+  },
+  {
+    "WeaponId": 330101,
+    "SortOrder": 533100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 330111,
+    "SortOrder": 533100012,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 330121,
+    "SortOrder": 533103101,
+    "CatalogTermId": 3010
+  },
+  {
+    "WeaponId": 330151,
+    "SortOrder": 633100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 330161,
+    "SortOrder": 433106101,
+    "CatalogTermId": 6010
+  },
+  {
+    "WeaponId": 330171,
+    "SortOrder": 533107201,
+    "CatalogTermId": 7020
+  },
+  {
+    "WeaponId": 330181,
+    "SortOrder": 433107201,
+    "CatalogTermId": 7020
+  },
+  {
+    "WeaponId": 330191,
+    "SortOrder": 233107301,
+    "CatalogTermId": 7030
+  },
+  {
+    "WeaponId": 330211,
+    "SortOrder": 133108101,
+    "CatalogTermId": 8010
+  },
+  {
+    "WeaponId": 330221,
+    "SortOrder": 633108101,
+    "CatalogTermId": 8010
+  },
+  {
+    "WeaponId": 330231,
+    "SortOrder": 533110301,
+    "CatalogTermId": 10030
+  },
+  {
+    "WeaponId": 330241,
+    "SortOrder": 233110301,
+    "CatalogTermId": 10030
+  },
+  {
+    "WeaponId": 330251,
+    "SortOrder": 633110301,
+    "CatalogTermId": 10030
+  },
+  {
+    "WeaponId": 330261,
+    "SortOrder": 633111201,
+    "CatalogTermId": 11020
+  },
+  {
+    "WeaponId": 330271,
+    "SortOrder": 333111201,
+    "CatalogTermId": 11020
+  },
+  {
+    "WeaponId": 330281,
+    "SortOrder": 333113101,
+    "CatalogTermId": 13010
+  },
+  {
+    "WeaponId": 330291,
+    "SortOrder": 433113101,
+    "CatalogTermId": 13010
+  },
+  {
+    "WeaponId": 330301,
+    "SortOrder": 433113301,
+    "CatalogTermId": 13030
+  },
+  {
+    "WeaponId": 330311,
+    "SortOrder": 233113211,
+    "CatalogTermId": 13021
+  },
+  {
+    "WeaponId": 330321,
+    "SortOrder": 233115101,
+    "CatalogTermId": 15010
+  },
+  {
+    "WeaponId": 330331,
+    "SortOrder": 333115101,
+    "CatalogTermId": 15010
+  },
+  {
+    "WeaponId": 330341,
+    "SortOrder": 133116101,
+    "CatalogTermId": 16010
+  },
+  {
+    "WeaponId": 330351,
+    "SortOrder": 233116101,
+    "CatalogTermId": 16010
+  },
+  {
+    "WeaponId": 330361,
+    "SortOrder": 633116101,
+    "CatalogTermId": 16010
+  },
+  {
+    "WeaponId": 330371,
+    "SortOrder": 533116111,
+    "CatalogTermId": 16011
+  },
+  {
+    "WeaponId": 330381,
+    "SortOrder": 233117101,
+    "CatalogTermId": 17010
+  },
+  {
+    "WeaponId": 330391,
+    "SortOrder": 533117101,
+    "CatalogTermId": 17010
+  },
+  {
+    "WeaponId": 330401,
+    "SortOrder": 433120101,
+    "CatalogTermId": 20010
+  },
+  {
+    "WeaponId": 330411,
+    "SortOrder": 133120101,
+    "CatalogTermId": 20010
+  },
+  {
+    "WeaponId": 330421,
+    "SortOrder": 333120311,
+    "CatalogTermId": 20031
+  },
+  {
+    "WeaponId": 330431,
+    "SortOrder": 233120311,
+    "CatalogTermId": 20031
+  },
+  {
+    "WeaponId": 330441,
+    "SortOrder": 633120311,
+    "CatalogTermId": 20031
+  },
+  {
+    "WeaponId": 330451,
+    "SortOrder": 333122101,
+    "CatalogTermId": 22010
+  },
+  {
+    "WeaponId": 330461,
+    "SortOrder": 533122101,
+    "CatalogTermId": 22010
+  },
+  {
+    "WeaponId": 330471,
+    "SortOrder": 533123301,
+    "CatalogTermId": 23030
+  },
+  {
+    "WeaponId": 330481,
+    "SortOrder": 333123301,
+    "CatalogTermId": 23030
+  },
+  {
+    "WeaponId": 330491,
+    "SortOrder": 433123301,
+    "CatalogTermId": 23030
+  },
+  {
+    "WeaponId": 330501,
+    "SortOrder": 633124111,
+    "CatalogTermId": 24011
+  },
+  {
+    "WeaponId": 330511,
+    "SortOrder": 533124201,
+    "CatalogTermId": 24020
+  },
+  {
+    "WeaponId": 330521,
+    "SortOrder": 633125101,
+    "CatalogTermId": 25010
+  },
+  {
+    "WeaponId": 330531,
+    "SortOrder": 333125101,
+    "CatalogTermId": 25010
+  },
+  {
+    "WeaponId": 330541,
+    "SortOrder": 133126101,
+    "CatalogTermId": 26010
+  },
+  {
+    "WeaponId": 330551,
+    "SortOrder": 233127101,
+    "CatalogTermId": 27010
+  },
+  {
+    "WeaponId": 330561,
+    "SortOrder": 133127301,
+    "CatalogTermId": 27030
+  },
+  {
+    "WeaponId": 330571,
+    "SortOrder": 133129201,
+    "CatalogTermId": 29020
+  },
+  {
+    "WeaponId": 330581,
+    "SortOrder": 133130101,
+    "CatalogTermId": 30010
+  },
+  {
+    "WeaponId": 330591,
+    "SortOrder": 133131133,
+    "CatalogTermId": 31013
+  },
+  {
+    "WeaponId": 330601,
+    "SortOrder": 533132251,
+    "CatalogTermId": 32025
+  },
+  {
+    "WeaponId": 330611,
+    "SortOrder": 333132251,
+    "CatalogTermId": 32025
+  },
+  {
+    "WeaponId": 330621,
+    "SortOrder": 633132251,
+    "CatalogTermId": 32025
+  },
+  {
+    "WeaponId": 330631,
+    "SortOrder": 533133221,
+    "CatalogTermId": 33022
+  },
+  {
+    "WeaponId": 330641,
+    "SortOrder": 233134111,
+    "CatalogTermId": 34011
+  },
+  {
+    "WeaponId": 330651,
+    "SortOrder": 633134111,
+    "CatalogTermId": 34011
+  },
+  {
+    "WeaponId": 330661,
+    "SortOrder": 333134111,
+    "CatalogTermId": 34011
+  },
+  {
+    "WeaponId": 330671,
+    "SortOrder": 233134301,
+    "CatalogTermId": 34030
+  },
+  {
+    "WeaponId": 330681,
+    "SortOrder": 133135201,
+    "CatalogTermId": 35020
+  },
+  {
+    "WeaponId": 330691,
+    "SortOrder": 633136111,
+    "CatalogTermId": 36011
+  },
+  {
+    "WeaponId": 330701,
+    "SortOrder": 433136121,
+    "CatalogTermId": 36012
+  },
+  {
+    "WeaponId": 330711,
+    "SortOrder": 533136121,
+    "CatalogTermId": 36012
+  },
+  {
+    "WeaponId": 330721,
+    "SortOrder": 333136121,
+    "CatalogTermId": 36012
+  },
+  {
+    "WeaponId": 330731,
+    "SortOrder": 433137101,
+    "CatalogTermId": 37010
+  },
+  {
+    "WeaponId": 340001,
+    "SortOrder": 134100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 340011,
+    "SortOrder": 134100012,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 340031,
+    "SortOrder": 134102301,
+    "CatalogTermId": 2030
+  },
+  {
+    "WeaponId": 340051,
+    "SortOrder": 234100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 340061,
+    "SortOrder": 234103701,
+    "CatalogTermId": 3070
+  },
+  {
+    "WeaponId": 340071,
+    "SortOrder": 234100012,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 340081,
+    "SortOrder": 334100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 340101,
+    "SortOrder": 334100012,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 340111,
+    "SortOrder": 434100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 340121,
+    "SortOrder": 434100012,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 340131,
+    "SortOrder": 434104201,
+    "CatalogTermId": 4020
+  },
+  {
+    "WeaponId": 340141,
+    "SortOrder": 534100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 340151,
+    "SortOrder": 534101201,
+    "CatalogTermId": 1020
+  },
+  {
+    "WeaponId": 340161,
+    "SortOrder": 534103701,
+    "CatalogTermId": 3070
+  },
+  {
+    "WeaponId": 340201,
+    "SortOrder": 634100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 340211,
+    "SortOrder": 634101201,
+    "CatalogTermId": 1020
+  },
+  {
+    "WeaponId": 340231,
+    "SortOrder": 534106101,
+    "CatalogTermId": 6010
+  },
+  {
+    "WeaponId": 340241,
+    "SortOrder": 134107101,
+    "CatalogTermId": 7010
+  },
+  {
+    "WeaponId": 340251,
+    "SortOrder": 434107101,
+    "CatalogTermId": 7010
+  },
+  {
+    "WeaponId": 340261,
+    "SortOrder": 334107101,
+    "CatalogTermId": 7010
+  },
+  {
+    "WeaponId": 340271,
+    "SortOrder": 534106401,
+    "CatalogTermId": 6040
+  },
+  {
+    "WeaponId": 340281,
+    "SortOrder": 234107301,
+    "CatalogTermId": 7030
+  },
+  {
+    "WeaponId": 340291,
+    "SortOrder": 134107301,
+    "CatalogTermId": 7030
+  },
+  {
+    "WeaponId": 340301,
+    "SortOrder": 334108401,
+    "CatalogTermId": 8040
+  },
+  {
+    "WeaponId": 340311,
+    "SortOrder": 234108401,
+    "CatalogTermId": 8040
+  },
+  {
+    "WeaponId": 340321,
+    "SortOrder": 134109201,
+    "CatalogTermId": 9020
+  },
+  {
+    "WeaponId": 340331,
+    "SortOrder": 334109201,
+    "CatalogTermId": 9020
+  },
+  {
+    "WeaponId": 340341,
+    "SortOrder": 434111101,
+    "CatalogTermId": 11010
+  },
+  {
+    "WeaponId": 340351,
+    "SortOrder": 334111411,
+    "CatalogTermId": 11041
+  },
+  {
+    "WeaponId": 340361,
+    "SortOrder": 534112101,
+    "CatalogTermId": 12010
+  },
+  {
+    "WeaponId": 340371,
+    "SortOrder": 634112201,
+    "CatalogTermId": 12020
+  },
+  {
+    "WeaponId": 340381,
+    "SortOrder": 634113411,
+    "CatalogTermId": 13041
+  },
+  {
+    "WeaponId": 340391,
+    "SortOrder": 534113411,
+    "CatalogTermId": 13041
+  },
+  {
+    "WeaponId": 340401,
+    "SortOrder": 134213401,
+    "CatalogTermId": 13040
+  },
+  {
+    "WeaponId": 340411,
+    "SortOrder": 134114101,
+    "CatalogTermId": 14010
+  },
+  {
+    "WeaponId": 340421,
+    "SortOrder": 634114101,
+    "CatalogTermId": 14010
+  },
+  {
+    "WeaponId": 340431,
+    "SortOrder": 334114101,
+    "CatalogTermId": 14010
+  },
+  {
+    "WeaponId": 340441,
+    "SortOrder": 534116201,
+    "CatalogTermId": 16020
+  },
+  {
+    "WeaponId": 340451,
+    "SortOrder": 234116201,
+    "CatalogTermId": 16020
+  },
+  {
+    "WeaponId": 340461,
+    "SortOrder": 434117401,
+    "CatalogTermId": 17040
+  },
+  {
+    "WeaponId": 340471,
+    "SortOrder": 234117401,
+    "CatalogTermId": 17040
+  },
+  {
+    "WeaponId": 340481,
+    "SortOrder": 134117401,
+    "CatalogTermId": 17040
+  },
+  {
+    "WeaponId": 340491,
+    "SortOrder": 534118201,
+    "CatalogTermId": 18020
+  },
+  {
+    "WeaponId": 340501,
+    "SortOrder": 634119101,
+    "CatalogTermId": 19010
+  },
+  {
+    "WeaponId": 340511,
+    "SortOrder": 334119101,
+    "CatalogTermId": 19010
+  },
+  {
+    "WeaponId": 340521,
+    "SortOrder": 434119261,
+    "CatalogTermId": 19026
+  },
+  {
+    "WeaponId": 340531,
+    "SortOrder": 134120301,
+    "CatalogTermId": 20030
+  },
+  {
+    "WeaponId": 340541,
+    "SortOrder": 634121101,
+    "CatalogTermId": 21010
+  },
+  {
+    "WeaponId": 340551,
+    "SortOrder": 434121101,
+    "CatalogTermId": 21010
+  },
+  {
+    "WeaponId": 340561,
+    "SortOrder": 334121201,
+    "CatalogTermId": 21020
+  },
+  {
+    "WeaponId": 340571,
+    "SortOrder": 134122301,
+    "CatalogTermId": 22030
+  },
+  {
+    "WeaponId": 340581,
+    "SortOrder": 634122301,
+    "CatalogTermId": 22030
+  },
+  {
+    "WeaponId": 340591,
+    "SortOrder": 434122301,
+    "CatalogTermId": 22030
+  },
+  {
+    "WeaponId": 340601,
+    "SortOrder": 234123101,
+    "CatalogTermId": 23010
+  },
+  {
+    "WeaponId": 340611,
+    "SortOrder": 134124111,
+    "CatalogTermId": 24011
+  },
+  {
+    "WeaponId": 340621,
+    "SortOrder": 334125301,
+    "CatalogTermId": 25030
+  },
+  {
+    "WeaponId": 340631,
+    "SortOrder": 234125301,
+    "CatalogTermId": 25030
+  },
+  {
+    "WeaponId": 340641,
+    "SortOrder": 234126201,
+    "CatalogTermId": 26020
+  },
+  {
+    "WeaponId": 340651,
+    "SortOrder": 634126301,
+    "CatalogTermId": 26030
+  },
+  {
+    "WeaponId": 340661,
+    "SortOrder": 434126301,
+    "CatalogTermId": 26030
+  },
+  {
+    "WeaponId": 340671,
+    "SortOrder": 534126301,
+    "CatalogTermId": 26030
+  },
+  {
+    "WeaponId": 340681,
+    "SortOrder": 134128102,
+    "CatalogTermId": 28010
+  },
+  {
+    "WeaponId": 340691,
+    "SortOrder": 334128102,
+    "CatalogTermId": 28010
+  },
+  {
+    "WeaponId": 340701,
+    "SortOrder": 434129101,
+    "CatalogTermId": 29010
+  },
+  {
+    "WeaponId": 340711,
+    "SortOrder": 634129101,
+    "CatalogTermId": 29010
+  },
+  {
+    "WeaponId": 340721,
+    "SortOrder": 334129201,
+    "CatalogTermId": 29020
+  },
+  {
+    "WeaponId": 340731,
+    "SortOrder": 334131101,
+    "CatalogTermId": 31010
+  },
+  {
+    "WeaponId": 340741,
+    "SortOrder": 234131101,
+    "CatalogTermId": 31010
+  },
+  {
+    "WeaponId": 340751,
+    "SortOrder": 634131304,
+    "CatalogTermId": 31030
+  },
+  {
+    "WeaponId": 340761,
+    "SortOrder": 234132221,
+    "CatalogTermId": 32022
+  },
+  {
+    "WeaponId": 340771,
+    "SortOrder": 434132201,
+    "CatalogTermId": 32020
+  },
+  {
+    "WeaponId": 340781,
+    "SortOrder": 134133201,
+    "CatalogTermId": 33020
+  },
+  {
+    "WeaponId": 340791,
+    "SortOrder": 334133201,
+    "CatalogTermId": 33020
+  },
+  {
+    "WeaponId": 340801,
+    "SortOrder": 134133301,
+    "CatalogTermId": 33030
+  },
+  {
+    "WeaponId": 340811,
+    "SortOrder": 434133301,
+    "CatalogTermId": 33030
+  },
+  {
+    "WeaponId": 340821,
+    "SortOrder": 634133301,
+    "CatalogTermId": 33030
+  },
+  {
+    "WeaponId": 340831,
+    "SortOrder": 434134221,
+    "CatalogTermId": 34022
+  },
+  {
+    "WeaponId": 340841,
+    "SortOrder": 534134221,
+    "CatalogTermId": 34022
+  },
+  {
+    "WeaponId": 340851,
+    "SortOrder": 234134221,
+    "CatalogTermId": 34022
+  },
+  {
+    "WeaponId": 340861,
+    "SortOrder": 634137201,
+    "CatalogTermId": 37020
+  },
+  {
+    "WeaponId": 340871,
+    "SortOrder": 534137201,
+    "CatalogTermId": 37020
+  },
+  {
+    "WeaponId": 350001,
+    "SortOrder": 135100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 350011,
+    "SortOrder": 135100012,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 350021,
+    "SortOrder": 135106401,
+    "CatalogTermId": 6040
+  },
+  {
+    "WeaponId": 350031,
+    "SortOrder": 235100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 350041,
+    "SortOrder": 235102301,
+    "CatalogTermId": 2030
+  },
+  {
+    "WeaponId": 350051,
+    "SortOrder": 335100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 350061,
+    "SortOrder": 335102301,
+    "CatalogTermId": 2030
+  },
+  {
+    "WeaponId": 350081,
+    "SortOrder": 335104201,
+    "CatalogTermId": 4020
+  },
+  {
+    "WeaponId": 350101,
+    "SortOrder": 435100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 350121,
+    "SortOrder": 435106401,
+    "CatalogTermId": 6040
+  },
+  {
+    "WeaponId": 350131,
+    "SortOrder": 535100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 350141,
+    "SortOrder": 535100012,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 350151,
+    "SortOrder": 635100012,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 350161,
+    "SortOrder": 635100011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 350181,
+    "SortOrder": 435107301,
+    "CatalogTermId": 7030
+  },
+  {
+    "WeaponId": 350191,
+    "SortOrder": 235109101,
+    "CatalogTermId": 9010
+  },
+  {
+    "WeaponId": 350201,
+    "SortOrder": 535109101,
+    "CatalogTermId": 9010
+  },
+  {
+    "WeaponId": 350211,
+    "SortOrder": 135109201,
+    "CatalogTermId": 9020
+  },
+  {
+    "WeaponId": 350221,
+    "SortOrder": 535111101,
+    "CatalogTermId": 11010
+  },
+  {
+    "WeaponId": 350231,
+    "SortOrder": 235111401,
+    "CatalogTermId": 11040
+  },
+  {
+    "WeaponId": 350241,
+    "SortOrder": 435111401,
+    "CatalogTermId": 11040
+  },
+  {
+    "WeaponId": 350251,
+    "SortOrder": 335111401,
+    "CatalogTermId": 11040
+  },
+  {
+    "WeaponId": 350261,
+    "SortOrder": 135112101,
+    "CatalogTermId": 12010
+  },
+  {
+    "WeaponId": 350271,
+    "SortOrder": 435112201,
+    "CatalogTermId": 12020
+  },
+  {
+    "WeaponId": 350281,
+    "SortOrder": 535112201,
+    "CatalogTermId": 12020
+  },
+  {
+    "WeaponId": 350291,
+    "SortOrder": 235114101,
+    "CatalogTermId": 14010
+  },
+  {
+    "WeaponId": 350301,
+    "SortOrder": 435114201,
+    "CatalogTermId": 14020
+  },
+  {
+    "WeaponId": 350311,
+    "SortOrder": 135114201,
+    "CatalogTermId": 14020
+  },
+  {
+    "WeaponId": 350321,
+    "SortOrder": 335116201,
+    "CatalogTermId": 16020
+  },
+  {
+    "WeaponId": 350331,
+    "SortOrder": 135116201,
+    "CatalogTermId": 16020
+  },
+  {
+    "WeaponId": 350341,
+    "SortOrder": 535118501,
+    "CatalogTermId": 18150
+  },
+  {
+    "WeaponId": 350351,
+    "SortOrder": 635118201,
+    "CatalogTermId": 18020
+  },
+  {
+    "WeaponId": 350361,
+    "SortOrder": 435118401,
+    "CatalogTermId": 18040
+  },
+  {
+    "WeaponId": 350371,
+    "SortOrder": 635118401,
+    "CatalogTermId": 18040
+  },
+  {
+    "WeaponId": 350381,
+    "SortOrder": 135118401,
+    "CatalogTermId": 18040
+  },
+  {
+    "WeaponId": 350391,
+    "SortOrder": 335119261,
+    "CatalogTermId": 19026
+  },
+  {
+    "WeaponId": 350401,
+    "SortOrder": 135120201,
+    "CatalogTermId": 20020
+  },
+  {
+    "WeaponId": 350411,
+    "SortOrder": 535121201,
+    "CatalogTermId": 21020
+  },
+  {
+    "WeaponId": 350421,
+    "SortOrder": 435121201,
+    "CatalogTermId": 21020
+  },
+  {
+    "WeaponId": 350431,
+    "SortOrder": 535123101,
+    "CatalogTermId": 23010
+  },
+  {
+    "WeaponId": 350441,
+    "SortOrder": 435123101,
+    "CatalogTermId": 23010
+  },
+  {
+    "WeaponId": 350451,
+    "SortOrder": 335124111,
+    "CatalogTermId": 24011
+  },
+  {
+    "WeaponId": 350461,
+    "SortOrder": 135124311,
+    "CatalogTermId": 24031
+  },
+  {
+    "WeaponId": 350471,
+    "SortOrder": 235124311,
+    "CatalogTermId": 24031
+  },
+  {
+    "WeaponId": 350481,
+    "SortOrder": 635124311,
+    "CatalogTermId": 24031
+  },
+  {
+    "WeaponId": 350491,
+    "SortOrder": 335125301,
+    "CatalogTermId": 25030
+  },
+  {
+    "WeaponId": 350501,
+    "SortOrder": 135126101,
+    "CatalogTermId": 26010
+  },
+  {
+    "WeaponId": 350511,
+    "SortOrder": 135126201,
+    "CatalogTermId": 26020
+  },
+  {
+    "WeaponId": 350521,
+    "SortOrder": 235126201,
+    "CatalogTermId": 26020
+  },
+  {
+    "WeaponId": 350531,
+    "SortOrder": 135127301,
+    "CatalogTermId": 27030
+  },
+  {
+    "WeaponId": 350541,
+    "SortOrder": 435128102,
+    "CatalogTermId": 28010
+  },
+  {
+    "WeaponId": 350551,
+    "SortOrder": 635128301,
+    "CatalogTermId": 28030
+  },
+  {
+    "WeaponId": 350561,
+    "SortOrder": 235128301,
+    "CatalogTermId": 28030
+  },
+  {
+    "WeaponId": 350571,
+    "SortOrder": 535128301,
+    "CatalogTermId": 28030
+  },
+  {
+    "WeaponId": 350581,
+    "SortOrder": 435129201,
+    "CatalogTermId": 29020
+  },
+  {
+    "WeaponId": 350591,
+    "SortOrder": 635129211,
+    "CatalogTermId": 29021
+  },
+  {
+    "WeaponId": 350601,
+    "SortOrder": 635130201,
+    "CatalogTermId": 30020
+  },
+  {
+    "WeaponId": 350611,
+    "SortOrder": 135131101,
+    "CatalogTermId": 31010
+  },
+  {
+    "WeaponId": 350621,
+    "SortOrder": 235131304,
+    "CatalogTermId": 31030
+  },
+  {
+    "WeaponId": 350631,
+    "SortOrder": 635132201,
+    "CatalogTermId": 32020
+  },
+  {
+    "WeaponId": 350641,
+    "SortOrder": 135132211,
+    "CatalogTermId": 32021
+  },
+  {
+    "WeaponId": 350651,
+    "SortOrder": 335133201,
+    "CatalogTermId": 33020
+  },
+  {
+    "WeaponId": 350661,
+    "SortOrder": 335134101,
+    "CatalogTermId": 34010
+  },
+  {
+    "WeaponId": 350671,
+    "SortOrder": 535134101,
+    "CatalogTermId": 34010
+  },
+  {
+    "WeaponId": 350681,
+    "SortOrder": 135135201,
+    "CatalogTermId": 35020
+  },
+  {
+    "WeaponId": 350691,
+    "SortOrder": 235136111,
+    "CatalogTermId": 36011
+  },
+  {
+    "WeaponId": 350701,
+    "SortOrder": 535137201,
+    "CatalogTermId": 37020
+  },
+  {
+    "WeaponId": 350711,
+    "SortOrder": 135138101,
+    "CatalogTermId": 38010
+  },
+  {
+    "WeaponId": 400001,
+    "SortOrder": 131531311,
+    "CatalogTermId": 31031
+  },
+  {
+    "WeaponId": 400011,
+    "SortOrder": 235531311,
+    "CatalogTermId": 31031
+  },
+  {
+    "WeaponId": 400021,
+    "SortOrder": 333531311,
+    "CatalogTermId": 31031
+  },
+  {
+    "WeaponId": 400031,
+    "SortOrder": 432531311,
+    "CatalogTermId": 31031
+  },
+  {
+    "WeaponId": 400041,
+    "SortOrder": 531531311,
+    "CatalogTermId": 31031
+  },
+  {
+    "WeaponId": 400051,
+    "SortOrder": 634531311,
+    "CatalogTermId": 31031
+  },
+  {
+    "WeaponId": 410001,
+    "SortOrder": 331300011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 410011,
+    "SortOrder": 331300012,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 410021,
+    "SortOrder": 331300013,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 410031,
+    "SortOrder": 331300014,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 410041,
+    "SortOrder": 131302201,
+    "CatalogTermId": 2020
+  },
+  {
+    "WeaponId": 410051,
+    "SortOrder": 131302202,
+    "CatalogTermId": 2020
+  },
+  {
+    "WeaponId": 410061,
+    "SortOrder": 131302203,
+    "CatalogTermId": 2020
+  },
+  {
+    "WeaponId": 410071,
+    "SortOrder": 131302204,
+    "CatalogTermId": 2020
+  },
+  {
+    "WeaponId": 410081,
+    "SortOrder": 131318301,
+    "CatalogTermId": 18030
+  },
+  {
+    "WeaponId": 410091,
+    "SortOrder": 131318302,
+    "CatalogTermId": 18030
+  },
+  {
+    "WeaponId": 410101,
+    "SortOrder": 131318303,
+    "CatalogTermId": 18030
+  },
+  {
+    "WeaponId": 410111,
+    "SortOrder": 131318304,
+    "CatalogTermId": 18030
+  },
+  {
+    "WeaponId": 410121,
+    "SortOrder": 231324301,
+    "CatalogTermId": 24030
+  },
+  {
+    "WeaponId": 410131,
+    "SortOrder": 231324302,
+    "CatalogTermId": 24030
+  },
+  {
+    "WeaponId": 410141,
+    "SortOrder": 231324303,
+    "CatalogTermId": 24030
+  },
+  {
+    "WeaponId": 410151,
+    "SortOrder": 231324304,
+    "CatalogTermId": 24030
+  },
+  {
+    "WeaponId": 420001,
+    "SortOrder": 232300011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 420011,
+    "SortOrder": 232300012,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 420021,
+    "SortOrder": 232300013,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 420031,
+    "SortOrder": 232300014,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 420041,
+    "SortOrder": 232304401,
+    "CatalogTermId": 4040
+  },
+  {
+    "WeaponId": 420051,
+    "SortOrder": 232304402,
+    "CatalogTermId": 4040
+  },
+  {
+    "WeaponId": 420061,
+    "SortOrder": 232304403,
+    "CatalogTermId": 4040
+  },
+  {
+    "WeaponId": 420071,
+    "SortOrder": 232304404,
+    "CatalogTermId": 4040
+  },
+  {
+    "WeaponId": 420081,
+    "SortOrder": 532312231,
+    "CatalogTermId": 12023
+  },
+  {
+    "WeaponId": 420091,
+    "SortOrder": 532312232,
+    "CatalogTermId": 12023
+  },
+  {
+    "WeaponId": 420101,
+    "SortOrder": 532312233,
+    "CatalogTermId": 12023
+  },
+  {
+    "WeaponId": 420111,
+    "SortOrder": 532312234,
+    "CatalogTermId": 12023
+  },
+  {
+    "WeaponId": 420121,
+    "SortOrder": 632318301,
+    "CatalogTermId": 18030
+  },
+  {
+    "WeaponId": 420131,
+    "SortOrder": 632318302,
+    "CatalogTermId": 18030
+  },
+  {
+    "WeaponId": 420141,
+    "SortOrder": 632318303,
+    "CatalogTermId": 18030
+  },
+  {
+    "WeaponId": 420151,
+    "SortOrder": 632318304,
+    "CatalogTermId": 18030
+  },
+  {
+    "WeaponId": 430001,
+    "SortOrder": 133300011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 430011,
+    "SortOrder": 133300012,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 430021,
+    "SortOrder": 133300013,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 430031,
+    "SortOrder": 133300014,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 430041,
+    "SortOrder": 633303401,
+    "CatalogTermId": 3040
+  },
+  {
+    "WeaponId": 430051,
+    "SortOrder": 633303402,
+    "CatalogTermId": 3040
+  },
+  {
+    "WeaponId": 430061,
+    "SortOrder": 633303403,
+    "CatalogTermId": 3040
+  },
+  {
+    "WeaponId": 430071,
+    "SortOrder": 633303404,
+    "CatalogTermId": 3040
+  },
+  {
+    "WeaponId": 430081,
+    "SortOrder": 433312231,
+    "CatalogTermId": 12023
+  },
+  {
+    "WeaponId": 430091,
+    "SortOrder": 433312232,
+    "CatalogTermId": 12023
+  },
+  {
+    "WeaponId": 430101,
+    "SortOrder": 433312233,
+    "CatalogTermId": 12023
+  },
+  {
+    "WeaponId": 430111,
+    "SortOrder": 433312234,
+    "CatalogTermId": 12023
+  },
+  {
+    "WeaponId": 430121,
+    "SortOrder": 333324301,
+    "CatalogTermId": 24030
+  },
+  {
+    "WeaponId": 430131,
+    "SortOrder": 333324302,
+    "CatalogTermId": 24030
+  },
+  {
+    "WeaponId": 430141,
+    "SortOrder": 333324303,
+    "CatalogTermId": 24030
+  },
+  {
+    "WeaponId": 430151,
+    "SortOrder": 333324304,
+    "CatalogTermId": 24030
+  },
+  {
+    "WeaponId": 440001,
+    "SortOrder": 534300011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 440011,
+    "SortOrder": 534300012,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 440021,
+    "SortOrder": 534300013,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 440031,
+    "SortOrder": 534300014,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 440041,
+    "SortOrder": 534300015,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 440051,
+    "SortOrder": 534300016,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 440061,
+    "SortOrder": 534300017,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 440071,
+    "SortOrder": 534300018,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 440081,
+    "SortOrder": 434306201,
+    "CatalogTermId": 6020
+  },
+  {
+    "WeaponId": 440091,
+    "SortOrder": 434306202,
+    "CatalogTermId": 6020
+  },
+  {
+    "WeaponId": 440101,
+    "SortOrder": 434306203,
+    "CatalogTermId": 6020
+  },
+  {
+    "WeaponId": 440111,
+    "SortOrder": 434306204,
+    "CatalogTermId": 6020
+  },
+  {
+    "WeaponId": 440121,
+    "SortOrder": 134326311,
+    "CatalogTermId": 26031
+  },
+  {
+    "WeaponId": 440131,
+    "SortOrder": 134326312,
+    "CatalogTermId": 26031
+  },
+  {
+    "WeaponId": 440141,
+    "SortOrder": 134326313,
+    "CatalogTermId": 26031
+  },
+  {
+    "WeaponId": 440151,
+    "SortOrder": 134326314,
+    "CatalogTermId": 26031
+  },
+  {
+    "WeaponId": 440161,
+    "SortOrder": 134336301,
+    "CatalogTermId": 36030
+  },
+  {
+    "WeaponId": 440171,
+    "SortOrder": 134336302,
+    "CatalogTermId": 36030
+  },
+  {
+    "WeaponId": 440181,
+    "SortOrder": 134336303,
+    "CatalogTermId": 36030
+  },
+  {
+    "WeaponId": 440191,
+    "SortOrder": 134336304,
+    "CatalogTermId": 36030
+  },
+  {
+    "WeaponId": 450001,
+    "SortOrder": 635300011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 450011,
+    "SortOrder": 635300012,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 450021,
+    "SortOrder": 635300013,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 450031,
+    "SortOrder": 635300014,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 450041,
+    "SortOrder": 335300011,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 450051,
+    "SortOrder": 335300012,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 450061,
+    "SortOrder": 335300013,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 450071,
+    "SortOrder": 335300014,
+    "CatalogTermId": 1
+  },
+  {
+    "WeaponId": 450081,
+    "SortOrder": 435306201,
+    "CatalogTermId": 6020
+  },
+  {
+    "WeaponId": 450091,
+    "SortOrder": 435306202,
+    "CatalogTermId": 6020
+  },
+  {
+    "WeaponId": 450101,
+    "SortOrder": 435306203,
+    "CatalogTermId": 6020
+  },
+  {
+    "WeaponId": 450111,
+    "SortOrder": 435306204,
+    "CatalogTermId": 6020
+  },
+  {
+    "WeaponId": 450121,
+    "SortOrder": 135326311,
+    "CatalogTermId": 26031
+  },
+  {
+    "WeaponId": 450131,
+    "SortOrder": 135326312,
+    "CatalogTermId": 26031
+  },
+  {
+    "WeaponId": 450141,
+    "SortOrder": 135326313,
+    "CatalogTermId": 26031
+  },
+  {
+    "WeaponId": 450151,
+    "SortOrder": 135326314,
+    "CatalogTermId": 26031
+  },
+  {
+    "WeaponId": 500011,
+    "SortOrder": 331213401,
+    "CatalogTermId": 13040
+  },
+  {
+    "WeaponId": 500021,
+    "SortOrder": 232213401,
+    "CatalogTermId": 13040
+  },
+  {
+    "WeaponId": 500031,
+    "SortOrder": 633213401,
+    "CatalogTermId": 13040
+  },
+  {
+    "WeaponId": 500041,
+    "SortOrder": 534213401,
+    "CatalogTermId": 13040
+  },
+  {
+    "WeaponId": 500051,
+    "SortOrder": 435213401,
+    "CatalogTermId": 13040
+  },
+  {
+    "WeaponId": 510011,
+    "SortOrder": 631423201,
+    "CatalogTermId": 23020
+  },
+  {
+    "WeaponId": 510021,
+    "SortOrder": 231431121,
+    "CatalogTermId": 31012
+  },
+  {
+    "WeaponId": 510031,
+    "SortOrder": 531436311,
+    "CatalogTermId": 36031
+  },
+  {
+    "WeaponId": 520011,
+    "SortOrder": 432427311,
+    "CatalogTermId": 27031
+  },
+  {
+    "WeaponId": 520021,
+    "SortOrder": 632436101,
+    "CatalogTermId": 36010
+  },
+  {
+    "WeaponId": 530011,
+    "SortOrder": 433419251,
+    "CatalogTermId": 19025
+  },
+  {
+    "WeaponId": 530021,
+    "SortOrder": 333433211,
+    "CatalogTermId": 33021
+  },
+  {
+    "WeaponId": 540011,
+    "SortOrder": 134425201,
+    "CatalogTermId": 25020
+  },
+  {
+    "WeaponId": 540021,
+    "SortOrder": 334134211,
+    "CatalogTermId": 34021
+  },
+  {
+    "WeaponId": 550011,
+    "SortOrder": 535421111,
+    "CatalogTermId": 21011
+  },
+  {
+    "WeaponId": 550021,
+    "SortOrder": 135429321,
+    "CatalogTermId": 29032
+  },
+  {
+    "WeaponId": 550031,
+    "SortOrder": 235437151,
+    "CatalogTermId": 37015
+  }
+]

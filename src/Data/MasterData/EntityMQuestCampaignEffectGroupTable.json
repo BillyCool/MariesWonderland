@@ -1,0 +1,800 @@
+[
+  {
+    "QuestCampaignEffectGroupId": 1,
+    "QuestCampaignEffectType": 2,
+    "QuestCampaignEffectValue": 200,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 2,
+    "QuestCampaignEffectType": 3,
+    "QuestCampaignEffectValue": 500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 3,
+    "QuestCampaignEffectType": 4,
+    "QuestCampaignEffectValue": 2000,
+    "QuestCampaignTargetItemGroupId": 1
+  },
+  {
+    "QuestCampaignEffectGroupId": 4,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 2
+  },
+  {
+    "QuestCampaignEffectGroupId": 5,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 200,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 6,
+    "QuestCampaignEffectType": 2,
+    "QuestCampaignEffectValue": 500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 7,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 200,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 8,
+    "QuestCampaignEffectType": 3,
+    "QuestCampaignEffectValue": 500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 9,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 10,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 11,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 12,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 13,
+    "QuestCampaignEffectType": 3,
+    "QuestCampaignEffectValue": 500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 14,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 15,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 16,
+    "QuestCampaignEffectType": 3,
+    "QuestCampaignEffectValue": 500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 18,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 19,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 20,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 22,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 23,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 24,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 25,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 26,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 27,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 28,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 29,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 30,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 31,
+    "QuestCampaignEffectType": 3,
+    "QuestCampaignEffectValue": 500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 32,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 33,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 34,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 35,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 36,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 38,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 500,
+    "QuestCampaignTargetItemGroupId": 38
+  },
+  {
+    "QuestCampaignEffectGroupId": 39,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 40,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 41,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 42,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 61,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 64,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 1500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 66,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 1500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 67,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 1500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 68,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 1500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 69,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 74,
+    "QuestCampaignEffectType": 3,
+    "QuestCampaignEffectValue": 500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 75,
+    "QuestCampaignEffectType": 3,
+    "QuestCampaignEffectValue": 500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 76,
+    "QuestCampaignEffectType": 3,
+    "QuestCampaignEffectValue": 500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 77,
+    "QuestCampaignEffectType": 3,
+    "QuestCampaignEffectValue": 500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 90,
+    "QuestCampaignEffectType": 3,
+    "QuestCampaignEffectValue": 500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 91,
+    "QuestCampaignEffectType": 3,
+    "QuestCampaignEffectValue": 500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 107,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 107
+  },
+  {
+    "QuestCampaignEffectGroupId": 109,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 109
+  },
+  {
+    "QuestCampaignEffectGroupId": 118,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 121,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 134,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 1500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 136,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 2000,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 167,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 1500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 209,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 215,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 107
+  },
+  {
+    "QuestCampaignEffectGroupId": 216,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 216
+  },
+  {
+    "QuestCampaignEffectGroupId": 217,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 217
+  },
+  {
+    "QuestCampaignEffectGroupId": 218,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 218
+  },
+  {
+    "QuestCampaignEffectGroupId": 219,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 219
+  },
+  {
+    "QuestCampaignEffectGroupId": 220,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 220
+  },
+  {
+    "QuestCampaignEffectGroupId": 221,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 221
+  },
+  {
+    "QuestCampaignEffectGroupId": 222,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 222
+  },
+  {
+    "QuestCampaignEffectGroupId": 223,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 223
+  },
+  {
+    "QuestCampaignEffectGroupId": 224,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 224
+  },
+  {
+    "QuestCampaignEffectGroupId": 225,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 225
+  },
+  {
+    "QuestCampaignEffectGroupId": 226,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 226
+  },
+  {
+    "QuestCampaignEffectGroupId": 227,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 227
+  },
+  {
+    "QuestCampaignEffectGroupId": 228,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 228
+  },
+  {
+    "QuestCampaignEffectGroupId": 229,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 229
+  },
+  {
+    "QuestCampaignEffectGroupId": 230,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 230
+  },
+  {
+    "QuestCampaignEffectGroupId": 231,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 231
+  },
+  {
+    "QuestCampaignEffectGroupId": 232,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 232
+  },
+  {
+    "QuestCampaignEffectGroupId": 233,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 233
+  },
+  {
+    "QuestCampaignEffectGroupId": 285,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 305,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 305
+  },
+  {
+    "QuestCampaignEffectGroupId": 306,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 306
+  },
+  {
+    "QuestCampaignEffectGroupId": 344,
+    "QuestCampaignEffectType": 3,
+    "QuestCampaignEffectValue": 500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 345,
+    "QuestCampaignEffectType": 3,
+    "QuestCampaignEffectValue": 500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 346,
+    "QuestCampaignEffectType": 3,
+    "QuestCampaignEffectValue": 500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 348,
+    "QuestCampaignEffectType": 3,
+    "QuestCampaignEffectValue": 500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 349,
+    "QuestCampaignEffectType": 3,
+    "QuestCampaignEffectValue": 500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 381,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 381
+  },
+  {
+    "QuestCampaignEffectGroupId": 464,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 464
+  },
+  {
+    "QuestCampaignEffectGroupId": 465,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 2000,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 468,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 2000,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 470,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 2000,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 472,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 2000,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 474,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 2000,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 496,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 496
+  },
+  {
+    "QuestCampaignEffectGroupId": 497,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 497
+  },
+  {
+    "QuestCampaignEffectGroupId": 561,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 561
+  },
+  {
+    "QuestCampaignEffectGroupId": 625,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 625
+  },
+  {
+    "QuestCampaignEffectGroupId": 626,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 626
+  },
+  {
+    "QuestCampaignEffectGroupId": 636,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 2000,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 658,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 658
+  },
+  {
+    "QuestCampaignEffectGroupId": 659,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 659
+  },
+  {
+    "QuestCampaignEffectGroupId": 660,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 660
+  },
+  {
+    "QuestCampaignEffectGroupId": 662,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 9000,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 663,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 663
+  },
+  {
+    "QuestCampaignEffectGroupId": 664,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 9000,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 698,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 698
+  },
+  {
+    "QuestCampaignEffectGroupId": 699,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 699
+  },
+  {
+    "QuestCampaignEffectGroupId": 700,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 700
+  },
+  {
+    "QuestCampaignEffectGroupId": 765,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 9000,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 767,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 767
+  },
+  {
+    "QuestCampaignEffectGroupId": 768,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 9000,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 770,
+    "QuestCampaignEffectType": 1,
+    "QuestCampaignEffectValue": 9000,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 775,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 775
+  },
+  {
+    "QuestCampaignEffectGroupId": 776,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 776
+  },
+  {
+    "QuestCampaignEffectGroupId": 777,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 777
+  },
+  {
+    "QuestCampaignEffectGroupId": 778,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 778
+  },
+  {
+    "QuestCampaignEffectGroupId": 779,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 779
+  },
+  {
+    "QuestCampaignEffectGroupId": 780,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 780
+  },
+  {
+    "QuestCampaignEffectGroupId": 781,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 781
+  },
+  {
+    "QuestCampaignEffectGroupId": 782,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 782
+  },
+  {
+    "QuestCampaignEffectGroupId": 783,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 783
+  },
+  {
+    "QuestCampaignEffectGroupId": 784,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 784
+  },
+  {
+    "QuestCampaignEffectGroupId": 785,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 785
+  },
+  {
+    "QuestCampaignEffectGroupId": 786,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 786
+  },
+  {
+    "QuestCampaignEffectGroupId": 787,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 787
+  },
+  {
+    "QuestCampaignEffectGroupId": 788,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 788
+  },
+  {
+    "QuestCampaignEffectGroupId": 789,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 789
+  },
+  {
+    "QuestCampaignEffectGroupId": 10001,
+    "QuestCampaignEffectType": 3,
+    "QuestCampaignEffectValue": 500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 10002,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 10002
+  },
+  {
+    "QuestCampaignEffectGroupId": 10003,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 10003
+  },
+  {
+    "QuestCampaignEffectGroupId": 20001,
+    "QuestCampaignEffectType": 3,
+    "QuestCampaignEffectValue": 500,
+    "QuestCampaignTargetItemGroupId": 0
+  },
+  {
+    "QuestCampaignEffectGroupId": 20002,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 20002
+  },
+  {
+    "QuestCampaignEffectGroupId": 20003,
+    "QuestCampaignEffectType": 5,
+    "QuestCampaignEffectValue": 1000,
+    "QuestCampaignTargetItemGroupId": 20003
+  }
+]

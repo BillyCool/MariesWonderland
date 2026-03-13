@@ -1,0 +1,34 @@
+[
+  {
+    "FieldEffectGroupId": 1,
+    "FieldEffectGroupIndex": 0,
+    "AbilityId": 9100001,
+    "DefaultAbilityLevel": 10,
+    "FieldEffectApplyScopeType": 1,
+    "FieldEffectAssetId": 400001
+  },
+  {
+    "FieldEffectGroupId": 2,
+    "FieldEffectGroupIndex": 0,
+    "AbilityId": 9100021,
+    "DefaultAbilityLevel": 10,
+    "FieldEffectApplyScopeType": 1,
+    "FieldEffectAssetId": 400002
+  },
+  {
+    "FieldEffectGroupId": 3,
+    "FieldEffectGroupIndex": 0,
+    "AbilityId": 9100041,
+    "DefaultAbilityLevel": 10,
+    "FieldEffectApplyScopeType": 1,
+    "FieldEffectAssetId": 400003
+  },
+  {
+    "FieldEffectGroupId": 4,
+    "FieldEffectGroupIndex": 0,
+    "AbilityId": 9100061,
+    "DefaultAbilityLevel": 10,
+    "FieldEffectApplyScopeType": 1,
+    "FieldEffectAssetId": 400004
+  }
+]

@@ -1,0 +1,402 @@
+[
+  {
+    "BattleEventId": 1,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 1
+  },
+  {
+    "BattleEventId": 2,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 2
+  },
+  {
+    "BattleEventId": 3,
+    "BattleEventTriggerBehaviourGroupId": 2,
+    "BattleEventReceiverBehaviourGroupId": 3
+  },
+  {
+    "BattleEventId": 4,
+    "BattleEventTriggerBehaviourGroupId": 3,
+    "BattleEventReceiverBehaviourGroupId": 4
+  },
+  {
+    "BattleEventId": 5,
+    "BattleEventTriggerBehaviourGroupId": 3,
+    "BattleEventReceiverBehaviourGroupId": 5
+  },
+  {
+    "BattleEventId": 6,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 6
+  },
+  {
+    "BattleEventId": 7,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 7
+  },
+  {
+    "BattleEventId": 8,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 8
+  },
+  {
+    "BattleEventId": 9,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 9
+  },
+  {
+    "BattleEventId": 10,
+    "BattleEventTriggerBehaviourGroupId": 11,
+    "BattleEventReceiverBehaviourGroupId": 10
+  },
+  {
+    "BattleEventId": 11,
+    "BattleEventTriggerBehaviourGroupId": 11,
+    "BattleEventReceiverBehaviourGroupId": 11
+  },
+  {
+    "BattleEventId": 12,
+    "BattleEventTriggerBehaviourGroupId": 11,
+    "BattleEventReceiverBehaviourGroupId": 12
+  },
+  {
+    "BattleEventId": 13,
+    "BattleEventTriggerBehaviourGroupId": 11,
+    "BattleEventReceiverBehaviourGroupId": 13
+  },
+  {
+    "BattleEventId": 14,
+    "BattleEventTriggerBehaviourGroupId": 11,
+    "BattleEventReceiverBehaviourGroupId": 14
+  },
+  {
+    "BattleEventId": 15,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 15
+  },
+  {
+    "BattleEventId": 16,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 16
+  },
+  {
+    "BattleEventId": 17,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 17
+  },
+  {
+    "BattleEventId": 18,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 18
+  },
+  {
+    "BattleEventId": 19,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 19
+  },
+  {
+    "BattleEventId": 20,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 20
+  },
+  {
+    "BattleEventId": 21,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 21
+  },
+  {
+    "BattleEventId": 22,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 22
+  },
+  {
+    "BattleEventId": 23,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 23
+  },
+  {
+    "BattleEventId": 24,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 24
+  },
+  {
+    "BattleEventId": 25,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 25
+  },
+  {
+    "BattleEventId": 26,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 26
+  },
+  {
+    "BattleEventId": 27,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 27
+  },
+  {
+    "BattleEventId": 28,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 28
+  },
+  {
+    "BattleEventId": 29,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 29
+  },
+  {
+    "BattleEventId": 30,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 30
+  },
+  {
+    "BattleEventId": 31,
+    "BattleEventTriggerBehaviourGroupId": 2,
+    "BattleEventReceiverBehaviourGroupId": 31
+  },
+  {
+    "BattleEventId": 32,
+    "BattleEventTriggerBehaviourGroupId": 3,
+    "BattleEventReceiverBehaviourGroupId": 32
+  },
+  {
+    "BattleEventId": 33,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 33
+  },
+  {
+    "BattleEventId": 34,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 34
+  },
+  {
+    "BattleEventId": 35,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 35
+  },
+  {
+    "BattleEventId": 36,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 36
+  },
+  {
+    "BattleEventId": 37,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 37
+  },
+  {
+    "BattleEventId": 38,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 38
+  },
+  {
+    "BattleEventId": 39,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 39
+  },
+  {
+    "BattleEventId": 40,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 40
+  },
+  {
+    "BattleEventId": 41,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 41
+  },
+  {
+    "BattleEventId": 42,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 42
+  },
+  {
+    "BattleEventId": 43,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 43
+  },
+  {
+    "BattleEventId": 44,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 44
+  },
+  {
+    "BattleEventId": 45,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 45
+  },
+  {
+    "BattleEventId": 46,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 46
+  },
+  {
+    "BattleEventId": 47,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 47
+  },
+  {
+    "BattleEventId": 48,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 48
+  },
+  {
+    "BattleEventId": 49,
+    "BattleEventTriggerBehaviourGroupId": 3,
+    "BattleEventReceiverBehaviourGroupId": 49
+  },
+  {
+    "BattleEventId": 50,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 50
+  },
+  {
+    "BattleEventId": 51,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 51
+  },
+  {
+    "BattleEventId": 52,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 52
+  },
+  {
+    "BattleEventId": 53,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 53
+  },
+  {
+    "BattleEventId": 54,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 54
+  },
+  {
+    "BattleEventId": 55,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 55
+  },
+  {
+    "BattleEventId": 56,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 56
+  },
+  {
+    "BattleEventId": 57,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 57
+  },
+  {
+    "BattleEventId": 58,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 58
+  },
+  {
+    "BattleEventId": 59,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 59
+  },
+  {
+    "BattleEventId": 60,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 60
+  },
+  {
+    "BattleEventId": 61,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 61
+  },
+  {
+    "BattleEventId": 62,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 62
+  },
+  {
+    "BattleEventId": 63,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 63
+  },
+  {
+    "BattleEventId": 64,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 64
+  },
+  {
+    "BattleEventId": 65,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 65
+  },
+  {
+    "BattleEventId": 66,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 66
+  },
+  {
+    "BattleEventId": 67,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 67
+  },
+  {
+    "BattleEventId": 68,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 68
+  },
+  {
+    "BattleEventId": 69,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 69
+  },
+  {
+    "BattleEventId": 70,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 70
+  },
+  {
+    "BattleEventId": 71,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 71
+  },
+  {
+    "BattleEventId": 72,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 72
+  },
+  {
+    "BattleEventId": 73,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 73
+  },
+  {
+    "BattleEventId": 74,
+    "BattleEventTriggerBehaviourGroupId": 2,
+    "BattleEventReceiverBehaviourGroupId": 74
+  },
+  {
+    "BattleEventId": 75,
+    "BattleEventTriggerBehaviourGroupId": 3,
+    "BattleEventReceiverBehaviourGroupId": 75
+  },
+  {
+    "BattleEventId": 76,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 76
+  },
+  {
+    "BattleEventId": 77,
+    "BattleEventTriggerBehaviourGroupId": 2,
+    "BattleEventReceiverBehaviourGroupId": 77
+  },
+  {
+    "BattleEventId": 78,
+    "BattleEventTriggerBehaviourGroupId": 3,
+    "BattleEventReceiverBehaviourGroupId": 78
+  },
+  {
+    "BattleEventId": 79,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 79
+  },
+  {
+    "BattleEventId": 80,
+    "BattleEventTriggerBehaviourGroupId": 1,
+    "BattleEventReceiverBehaviourGroupId": 80
+  }
+]

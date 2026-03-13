@@ -1,0 +1,1432 @@
+[
+  {
+    "MissionTermId": 1,
+    "StartDatetime": 946652400000,
+    "EndDatetime": 253392418800000
+  },
+  {
+    "MissionTermId": 2,
+    "StartDatetime": 1613617200000,
+    "EndDatetime": 1617159599000
+  },
+  {
+    "MissionTermId": 3,
+    "StartDatetime": 1614481200000,
+    "EndDatetime": 1615604399000
+  },
+  {
+    "MissionTermId": 4,
+    "StartDatetime": 1615604400000,
+    "EndDatetime": 1617159599000
+  },
+  {
+    "MissionTermId": 5,
+    "StartDatetime": 1616857200000,
+    "EndDatetime": 1617289199000
+  },
+  {
+    "MissionTermId": 6,
+    "StartDatetime": 1617159600000,
+    "EndDatetime": 1620439199000
+  },
+  {
+    "MissionTermId": 7,
+    "StartDatetime": 1617242400000,
+    "EndDatetime": 1617289199000
+  },
+  {
+    "MissionTermId": 8,
+    "StartDatetime": 1618020000000,
+    "EndDatetime": 1619143199000
+  },
+  {
+    "MissionTermId": 9,
+    "StartDatetime": 1618884000000,
+    "EndDatetime": 1619747999000
+  },
+  {
+    "MissionTermId": 10,
+    "StartDatetime": 1619748000000,
+    "EndDatetime": 1621043999000
+  },
+  {
+    "MissionTermId": 11,
+    "StartDatetime": 1620439200000,
+    "EndDatetime": 1622512799000
+  },
+  {
+    "MissionTermId": 12,
+    "StartDatetime": 1620957600000,
+    "EndDatetime": 253392418800000
+  },
+  {
+    "MissionTermId": 13,
+    "StartDatetime": 1621476000000,
+    "EndDatetime": 1622512799000
+  },
+  {
+    "MissionTermId": 14,
+    "StartDatetime": 1622426400000,
+    "EndDatetime": 1623376799000
+  },
+  {
+    "MissionTermId": 15,
+    "StartDatetime": 1623376800000,
+    "EndDatetime": 1624327199000
+  },
+  {
+    "MissionTermId": 17,
+    "StartDatetime": 1618365600000,
+    "EndDatetime": 1618970399000
+  },
+  {
+    "MissionTermId": 20,
+    "StartDatetime": 1620957600000,
+    "EndDatetime": 1621562399000
+  },
+  {
+    "MissionTermId": 21,
+    "StartDatetime": 1622127600000,
+    "EndDatetime": 1622645999000
+  },
+  {
+    "MissionTermId": 24,
+    "StartDatetime": 1623549600000,
+    "EndDatetime": 1625450399000
+  },
+  {
+    "MissionTermId": 25,
+    "StartDatetime": 1624327200000,
+    "EndDatetime": 1625018399000
+  },
+  {
+    "MissionTermId": 26,
+    "StartDatetime": 1624806000000,
+    "EndDatetime": 1625237999000
+  },
+  {
+    "MissionTermId": 27,
+    "StartDatetime": 1627696800000,
+    "EndDatetime": 1629251999000
+  },
+  {
+    "MissionTermId": 28,
+    "StartDatetime": 1625796000000,
+    "EndDatetime": 1626832799000
+  },
+  {
+    "MissionTermId": 29,
+    "StartDatetime": 1625018400000,
+    "EndDatetime": 1627696799000
+  },
+  {
+    "MissionTermId": 30,
+    "StartDatetime": 1625018400000,
+    "EndDatetime": 1627696799000
+  },
+  {
+    "MissionTermId": 31,
+    "StartDatetime": 1627398000000,
+    "EndDatetime": 1628261999000
+  },
+  {
+    "MissionTermId": 32,
+    "StartDatetime": 1625796000000,
+    "EndDatetime": 1626400799000
+  },
+  {
+    "MissionTermId": 33,
+    "StartDatetime": 1626832800000,
+    "EndDatetime": 1627696799000
+  },
+  {
+    "MissionTermId": 34,
+    "StartDatetime": 1628474400000,
+    "EndDatetime": 1629251999000
+  },
+  {
+    "MissionTermId": 35,
+    "StartDatetime": 1627696800000,
+    "EndDatetime": 1630375199000
+  },
+  {
+    "MissionTermId": 38,
+    "StartDatetime": 1630375200000,
+    "EndDatetime": 1631239199000
+  },
+  {
+    "MissionTermId": 39,
+    "StartDatetime": 1629252000000,
+    "EndDatetime": 1630893599000
+  },
+  {
+    "MissionTermId": 40,
+    "StartDatetime": 1630076400000,
+    "EndDatetime": 1630508399000
+  },
+  {
+    "MissionTermId": 42,
+    "StartDatetime": 1630940400000,
+    "EndDatetime": 1631804399000
+  },
+  {
+    "MissionTermId": 44,
+    "StartDatetime": 1632794400000,
+    "EndDatetime": 1633917599000
+  },
+  {
+    "MissionTermId": 45,
+    "StartDatetime": 1632754800000,
+    "EndDatetime": 1633186799000
+  },
+  {
+    "MissionTermId": 46,
+    "StartDatetime": 1632794400000,
+    "EndDatetime": 1635645599000
+  },
+  {
+    "MissionTermId": 47,
+    "StartDatetime": 1633917600000,
+    "EndDatetime": 1635127199000
+  },
+  {
+    "MissionTermId": 48,
+    "StartDatetime": 1635645600000,
+    "EndDatetime": 1636124399000
+  },
+  {
+    "MissionTermId": 49,
+    "StartDatetime": 1635645600000,
+    "EndDatetime": 1636509599000
+  },
+  {
+    "MissionTermId": 50,
+    "StartDatetime": 1635346800000,
+    "EndDatetime": 1635778799000
+  },
+  {
+    "MissionTermId": 51,
+    "StartDatetime": 1635645600000,
+    "EndDatetime": 1638237599000
+  },
+  {
+    "MissionTermId": 52,
+    "StartDatetime": 1635645600000,
+    "EndDatetime": 1636509599000
+  },
+  {
+    "MissionTermId": 53,
+    "StartDatetime": 1636509600000,
+    "EndDatetime": 1637287199000
+  },
+  {
+    "MissionTermId": 54,
+    "StartDatetime": 1636682400000,
+    "EndDatetime": 1637247599000
+  },
+  {
+    "MissionTermId": 56,
+    "StartDatetime": 1638025200000,
+    "EndDatetime": 1638457199000
+  },
+  {
+    "MissionTermId": 57,
+    "StartDatetime": 1638237600000,
+    "EndDatetime": 1640483999000
+  },
+  {
+    "MissionTermId": 58,
+    "StartDatetime": 1638237600000,
+    "EndDatetime": 1640915999000
+  },
+  {
+    "MissionTermId": 59,
+    "StartDatetime": 1639101600000,
+    "EndDatetime": 1639965599000
+  },
+  {
+    "MissionTermId": 60,
+    "StartDatetime": 1640484000000,
+    "EndDatetime": 1640962799000
+  },
+  {
+    "MissionTermId": 61,
+    "StartDatetime": 1640570400000,
+    "EndDatetime": 1640962799000
+  },
+  {
+    "MissionTermId": 62,
+    "StartDatetime": 1640656800000,
+    "EndDatetime": 1640962799000
+  },
+  {
+    "MissionTermId": 63,
+    "StartDatetime": 1640743200000,
+    "EndDatetime": 1640962799000
+  },
+  {
+    "MissionTermId": 64,
+    "StartDatetime": 1640829600000,
+    "EndDatetime": 1640962799000
+  },
+  {
+    "MissionTermId": 65,
+    "StartDatetime": 1640916000000,
+    "EndDatetime": 1640962799000
+  },
+  {
+    "MissionTermId": 67,
+    "StartDatetime": 1640962800000,
+    "EndDatetime": 1642384799000
+  },
+  {
+    "MissionTermId": 68,
+    "StartDatetime": 1640617200000,
+    "EndDatetime": 1640962799000
+  },
+  {
+    "MissionTermId": 69,
+    "StartDatetime": 1640962800000,
+    "EndDatetime": 1643594399000
+  },
+  {
+    "MissionTermId": 70,
+    "StartDatetime": 1641002400000,
+    "EndDatetime": 1641913199000
+  },
+  {
+    "MissionTermId": 71,
+    "StartDatetime": 1641866400000,
+    "EndDatetime": 1642816799000
+  },
+  {
+    "MissionTermId": 72,
+    "StartDatetime": 1642597200000,
+    "EndDatetime": 1643335199000
+  },
+  {
+    "MissionTermId": 73,
+    "StartDatetime": 1643594400000,
+    "EndDatetime": 1644458399000
+  },
+  {
+    "MissionTermId": 74,
+    "StartDatetime": 1643594400000,
+    "EndDatetime": 1646013599000
+  },
+  {
+    "MissionTermId": 75,
+    "StartDatetime": 1674784800000,
+    "EndDatetime": 1675648799000
+  },
+  {
+    "MissionTermId": 76,
+    "StartDatetime": 1643295600000,
+    "EndDatetime": 1643727599000
+  },
+  {
+    "MissionTermId": 77,
+    "StartDatetime": 1644458400000,
+    "EndDatetime": 1645149599000
+  },
+  {
+    "MissionTermId": 78,
+    "StartDatetime": 1645156800000,
+    "EndDatetime": 1646877599000
+  },
+  {
+    "MissionTermId": 79,
+    "StartDatetime": 1645156800000,
+    "EndDatetime": 1645243199000
+  },
+  {
+    "MissionTermId": 80,
+    "StartDatetime": 1645581600000,
+    "EndDatetime": 1647309599000
+  },
+  {
+    "MissionTermId": 81,
+    "StartDatetime": 1646013600000,
+    "EndDatetime": 1648691999000
+  },
+  {
+    "MissionTermId": 82,
+    "StartDatetime": 1646013600000,
+    "EndDatetime": 1646877599000
+  },
+  {
+    "MissionTermId": 83,
+    "StartDatetime": 1648393200000,
+    "EndDatetime": 1648738799000
+  },
+  {
+    "MissionTermId": 84,
+    "StartDatetime": 1647914400000,
+    "EndDatetime": 1648691999000
+  },
+  {
+    "MissionTermId": 85,
+    "StartDatetime": 1646877600000,
+    "EndDatetime": 1647914399000
+  },
+  {
+    "MissionTermId": 86,
+    "StartDatetime": 1648692000000,
+    "EndDatetime": 1651283999000
+  },
+  {
+    "MissionTermId": 87,
+    "StartDatetime": 1648778400000,
+    "EndDatetime": 1648864799000
+  },
+  {
+    "MissionTermId": 88,
+    "StartDatetime": 1648692000000,
+    "EndDatetime": 1649642399000
+  },
+  {
+    "MissionTermId": 89,
+    "StartDatetime": 1649988000000,
+    "EndDatetime": 1652147999000
+  },
+  {
+    "MissionTermId": 90,
+    "StartDatetime": 1649642400000,
+    "EndDatetime": 1650419999000
+  },
+  {
+    "MissionTermId": 91,
+    "StartDatetime": 1650592800000,
+    "EndDatetime": 1651456799000
+  },
+  {
+    "MissionTermId": 92,
+    "StartDatetime": 1651284000000,
+    "EndDatetime": 1653962399000
+  },
+  {
+    "MissionTermId": 93,
+    "StartDatetime": 1650938400000,
+    "EndDatetime": 1652061599000
+  },
+  {
+    "MissionTermId": 94,
+    "StartDatetime": 1651071600000,
+    "EndDatetime": 1651417199000
+  },
+  {
+    "MissionTermId": 95,
+    "StartDatetime": 1651284000000,
+    "EndDatetime": 1652147999000
+  },
+  {
+    "MissionTermId": 96,
+    "StartDatetime": 1652148000000,
+    "EndDatetime": 1655085599000
+  },
+  {
+    "MissionTermId": 97,
+    "StartDatetime": 1653012000000,
+    "EndDatetime": 1654480799000
+  },
+  {
+    "MissionTermId": 98,
+    "StartDatetime": 1653663600000,
+    "EndDatetime": 1654009199000
+  },
+  {
+    "MissionTermId": 99,
+    "StartDatetime": 1653962400000,
+    "EndDatetime": 1654826399000
+  },
+  {
+    "MissionTermId": 100,
+    "StartDatetime": 1653962400000,
+    "EndDatetime": 1656554399000
+  },
+  {
+    "MissionTermId": 102,
+    "StartDatetime": 1629252000000,
+    "EndDatetime": 1630893599000
+  },
+  {
+    "MissionTermId": 103,
+    "StartDatetime": 1635127200000,
+    "EndDatetime": 1635692399000
+  },
+  {
+    "MissionTermId": 104,
+    "StartDatetime": 1672020000000,
+    "EndDatetime": 1672711199000
+  },
+  {
+    "MissionTermId": 105,
+    "StartDatetime": 1643940000000,
+    "EndDatetime": 1645149599000
+  },
+  {
+    "MissionTermId": 106,
+    "StartDatetime": 1648864800000,
+    "EndDatetime": 1649987999000
+  },
+  {
+    "MissionTermId": 107,
+    "StartDatetime": 1672711200000,
+    "EndDatetime": 1673103599000
+  },
+  {
+    "MissionTermId": 108,
+    "StartDatetime": 1658714400000,
+    "EndDatetime": 1659923999000
+  },
+  {
+    "MissionTermId": 109,
+    "StartDatetime": 1659924000000,
+    "EndDatetime": 1661479199000
+  },
+  {
+    "MissionTermId": 110,
+    "StartDatetime": 1673103600000,
+    "EndDatetime": 1675177199000
+  },
+  {
+    "MissionTermId": 111,
+    "StartDatetime": 1680228000000,
+    "EndDatetime": 1683511199000
+  },
+  {
+    "MissionTermId": 201,
+    "StartDatetime": 1654826400000,
+    "EndDatetime": 1655690399000
+  },
+  {
+    "MissionTermId": 202,
+    "StartDatetime": 1656342000000,
+    "EndDatetime": 1656687599000
+  },
+  {
+    "MissionTermId": 203,
+    "StartDatetime": 1655690400000,
+    "EndDatetime": 1656899999000
+  },
+  {
+    "MissionTermId": 204,
+    "StartDatetime": 1656036000000,
+    "EndDatetime": 1656554399000
+  },
+  {
+    "MissionTermId": 205,
+    "StartDatetime": 1656554400000,
+    "EndDatetime": 1659232799000
+  },
+  {
+    "MissionTermId": 206,
+    "StartDatetime": 1656554400000,
+    "EndDatetime": 1659319199000
+  },
+  {
+    "MissionTermId": 208,
+    "StartDatetime": 1656900000000,
+    "EndDatetime": 1658368799000
+  },
+  {
+    "MissionTermId": 209,
+    "StartDatetime": 1657504800000,
+    "EndDatetime": 1658368799000
+  },
+  {
+    "MissionTermId": 210,
+    "StartDatetime": 1657850400000,
+    "EndDatetime": 1658714399000
+  },
+  {
+    "MissionTermId": 211,
+    "StartDatetime": 1658368800000,
+    "EndDatetime": 1659664799000
+  },
+  {
+    "MissionTermId": 212,
+    "StartDatetime": 1658934000000,
+    "EndDatetime": 1659279599000
+  },
+  {
+    "MissionTermId": 213,
+    "StartDatetime": 1658714400000,
+    "EndDatetime": 1659923999000
+  },
+  {
+    "MissionTermId": 214,
+    "StartDatetime": 1659060000000,
+    "EndDatetime": 1659923999000
+  },
+  {
+    "MissionTermId": 217,
+    "StartDatetime": 1659924000000,
+    "EndDatetime": 1661133599000
+  },
+  {
+    "MissionTermId": 218,
+    "StartDatetime": 1659924000000,
+    "EndDatetime": 1661133599000
+  },
+  {
+    "MissionTermId": 219,
+    "StartDatetime": 1659924000000,
+    "EndDatetime": 1660777199000
+  },
+  {
+    "MissionTermId": 220,
+    "StartDatetime": 1660788000000,
+    "EndDatetime": 1662688799000
+  },
+  {
+    "MissionTermId": 221,
+    "StartDatetime": 1661612400000,
+    "EndDatetime": 1662303599000
+  },
+  {
+    "MissionTermId": 222,
+    "StartDatetime": 1661133600000,
+    "EndDatetime": 1662688799000
+  },
+  {
+    "MissionTermId": 223,
+    "StartDatetime": 1661479200000,
+    "EndDatetime": 1662688799000
+  },
+  {
+    "MissionTermId": 224,
+    "StartDatetime": 1661911200000,
+    "EndDatetime": 1664503199000
+  },
+  {
+    "MissionTermId": 227,
+    "StartDatetime": 1661911200000,
+    "EndDatetime": 1662947999000
+  },
+  {
+    "MissionTermId": 228,
+    "StartDatetime": 1662379200000,
+    "EndDatetime": 1662688799000
+  },
+  {
+    "MissionTermId": 229,
+    "StartDatetime": 1662688800000,
+    "EndDatetime": 1665626399000
+  },
+  {
+    "MissionTermId": 230,
+    "StartDatetime": 1663293600000,
+    "EndDatetime": 1665626399000
+  },
+  {
+    "MissionTermId": 233,
+    "StartDatetime": 1663812000000,
+    "EndDatetime": 1665453599000
+  },
+  {
+    "MissionTermId": 234,
+    "StartDatetime": 1664503200000,
+    "EndDatetime": 1667181599000
+  },
+  {
+    "MissionTermId": 235,
+    "StartDatetime": 1664503200000,
+    "EndDatetime": 1665626399000
+  },
+  {
+    "MissionTermId": 236,
+    "StartDatetime": 1665453600000,
+    "EndDatetime": 1666061999000
+  },
+  {
+    "MissionTermId": 237,
+    "StartDatetime": 1666058400000,
+    "EndDatetime": 1667181599000
+  },
+  {
+    "MissionTermId": 238,
+    "StartDatetime": 1665626400000,
+    "EndDatetime": 1666576799000
+  },
+  {
+    "MissionTermId": 239,
+    "StartDatetime": 1666058400000,
+    "EndDatetime": 1666663199000
+  },
+  {
+    "MissionTermId": 241,
+    "StartDatetime": 1666317600000,
+    "EndDatetime": 1667786399000
+  },
+  {
+    "MissionTermId": 243,
+    "StartDatetime": 1667181600000,
+    "EndDatetime": 1669773599000
+  },
+  {
+    "MissionTermId": 246,
+    "StartDatetime": 1667181600000,
+    "EndDatetime": 1668391199000
+  },
+  {
+    "MissionTermId": 247,
+    "StartDatetime": 1667824200000,
+    "EndDatetime": 1668131999000
+  },
+  {
+    "MissionTermId": 248,
+    "StartDatetime": 1668132000000,
+    "EndDatetime": 1670810399000
+  },
+  {
+    "MissionTermId": 249,
+    "StartDatetime": 1669082400000,
+    "EndDatetime": 1670205599000
+  },
+  {
+    "MissionTermId": 250,
+    "StartDatetime": 1669773600000,
+    "EndDatetime": 1672019999000
+  },
+  {
+    "MissionTermId": 253,
+    "StartDatetime": 1669773600000,
+    "EndDatetime": 1672498799000
+  },
+  {
+    "MissionTermId": 254,
+    "StartDatetime": 1671156000000,
+    "EndDatetime": 1672019999000
+  },
+  {
+    "MissionTermId": 255,
+    "StartDatetime": 1670551200000,
+    "EndDatetime": 1672019999000
+  },
+  {
+    "MissionTermId": 256,
+    "StartDatetime": 1672020000000,
+    "EndDatetime": 1673315999000
+  },
+  {
+    "MissionTermId": 259,
+    "StartDatetime": 1672020000000,
+    "EndDatetime": 1672451999000
+  },
+  {
+    "MissionTermId": 260,
+    "StartDatetime": 1672498800000,
+    "EndDatetime": 1675177199000
+  },
+  {
+    "MissionTermId": 261,
+    "StartDatetime": 1672498800000,
+    "EndDatetime": 1673834399000
+  },
+  {
+    "MissionTermId": 262,
+    "StartDatetime": 1673575200000,
+    "EndDatetime": 1675043999000
+  },
+  {
+    "MissionTermId": 263,
+    "StartDatetime": 1674007200000,
+    "EndDatetime": 1675130399000
+  },
+  {
+    "MissionTermId": 264,
+    "StartDatetime": 1674439200000,
+    "EndDatetime": 1676253599000
+  },
+  {
+    "MissionTermId": 265,
+    "StartDatetime": 1675177200000,
+    "EndDatetime": 1677596399000
+  },
+  {
+    "MissionTermId": 268,
+    "StartDatetime": 1675130400000,
+    "EndDatetime": 1676253599000
+  },
+  {
+    "MissionTermId": 269,
+    "StartDatetime": 1674784800000,
+    "EndDatetime": 1675648799000
+  },
+  {
+    "MissionTermId": 270,
+    "StartDatetime": 1675648800000,
+    "EndDatetime": 1676858399000
+  },
+  {
+    "MissionTermId": 271,
+    "StartDatetime": 1675648800000,
+    "EndDatetime": 1676674799000
+  },
+  {
+    "MissionTermId": 272,
+    "StartDatetime": 1676685600000,
+    "EndDatetime": 1679450399000
+  },
+  {
+    "MissionTermId": 276,
+    "StartDatetime": 1677549600000,
+    "EndDatetime": 1679450399000
+  },
+  {
+    "MissionTermId": 277,
+    "StartDatetime": 1676685600000,
+    "EndDatetime": 1677549599000
+  },
+  {
+    "MissionTermId": 278,
+    "StartDatetime": 1677596400000,
+    "EndDatetime": 1680274799000
+  },
+  {
+    "MissionTermId": 279,
+    "StartDatetime": 1678413600000,
+    "EndDatetime": 1679882399000
+  },
+  {
+    "MissionTermId": 280,
+    "StartDatetime": 1679454000000,
+    "EndDatetime": 1681091999000
+  },
+  {
+    "MissionTermId": 281,
+    "StartDatetime": 1680008400000,
+    "EndDatetime": 1680227999000
+  },
+  {
+    "MissionTermId": 282,
+    "StartDatetime": 1680274800000,
+    "EndDatetime": 1682866799000
+  },
+  {
+    "MissionTermId": 285,
+    "StartDatetime": 1680228000000,
+    "EndDatetime": 1683511199000
+  },
+  {
+    "MissionTermId": 288,
+    "StartDatetime": 1680832800000,
+    "EndDatetime": 1682301599000
+  },
+  {
+    "MissionTermId": 290,
+    "StartDatetime": 1682042400000,
+    "EndDatetime": 1683511199000
+  },
+  {
+    "MissionTermId": 294,
+    "StartDatetime": 1682866800000,
+    "EndDatetime": 1685545199000
+  },
+  {
+    "MissionTermId": 295,
+    "StartDatetime": 1683511200000,
+    "EndDatetime": 1686275999000
+  },
+  {
+    "MissionTermId": 296,
+    "StartDatetime": 1682647200000,
+    "EndDatetime": 1684115999000
+  },
+  {
+    "MissionTermId": 297,
+    "StartDatetime": 1683684000000,
+    "EndDatetime": 1684421999000
+  },
+  {
+    "MissionTermId": 298,
+    "StartDatetime": 1683856800000,
+    "EndDatetime": 1685325599000
+  },
+  {
+    "MissionTermId": 299,
+    "StartDatetime": 1682647200000,
+    "EndDatetime": 1683511199000
+  },
+  {
+    "MissionTermId": 300,
+    "StartDatetime": 1685498400000,
+    "EndDatetime": 1687139999000
+  },
+  {
+    "MissionTermId": 301,
+    "StartDatetime": 1687140000000,
+    "EndDatetime": 1689645599000
+  },
+  {
+    "MissionTermId": 305,
+    "StartDatetime": 1685545200000,
+    "EndDatetime": 1688137199000
+  },
+  {
+    "MissionTermId": 306,
+    "StartDatetime": 1685966400000,
+    "EndDatetime": 1686275999000
+  },
+  {
+    "MissionTermId": 307,
+    "StartDatetime": 1686276000000,
+    "EndDatetime": 1689645599000
+  },
+  {
+    "MissionTermId": 308,
+    "StartDatetime": 1686880800000,
+    "EndDatetime": 1688349599000
+  },
+  {
+    "MissionTermId": 309,
+    "StartDatetime": 1687485600000,
+    "EndDatetime": 1688954399000
+  },
+  {
+    "MissionTermId": 310,
+    "StartDatetime": 1688090400000,
+    "EndDatetime": 1691373599000
+  },
+  {
+    "MissionTermId": 311,
+    "StartDatetime": 1689300000000,
+    "EndDatetime": 1691373599000
+  },
+  {
+    "MissionTermId": 312,
+    "StartDatetime": 1688090400000,
+    "EndDatetime": 1691373599000
+  },
+  {
+    "MissionTermId": 316,
+    "StartDatetime": 1688137200000,
+    "EndDatetime": 1690815599000
+  },
+  {
+    "MissionTermId": 317,
+    "StartDatetime": 1689300000000,
+    "EndDatetime": 1691373599000
+  },
+  {
+    "MissionTermId": 318,
+    "StartDatetime": 1688695200000,
+    "EndDatetime": 1690163999000
+  },
+  {
+    "MissionTermId": 319,
+    "StartDatetime": 1690164000000,
+    "EndDatetime": 1691373599000
+  },
+  {
+    "MissionTermId": 320,
+    "StartDatetime": 1690768800000,
+    "EndDatetime": 1691978399000
+  },
+  {
+    "MissionTermId": 321,
+    "StartDatetime": 1691373600000,
+    "EndDatetime": 1694397599000
+  },
+  {
+    "MissionTermId": 322,
+    "StartDatetime": 1691114400000,
+    "EndDatetime": 1692313199000
+  },
+  {
+    "MissionTermId": 326,
+    "StartDatetime": 1690815600000,
+    "EndDatetime": 1693493999000
+  },
+  {
+    "MissionTermId": 327,
+    "StartDatetime": 1691978400000,
+    "EndDatetime": 1692583199000
+  },
+  {
+    "MissionTermId": 328,
+    "StartDatetime": 1691373600000,
+    "EndDatetime": 1693148399000
+  },
+  {
+    "MissionTermId": 329,
+    "StartDatetime": 1692324000000,
+    "EndDatetime": 1694397599000
+  },
+  {
+    "MissionTermId": 330,
+    "StartDatetime": 1692928800000,
+    "EndDatetime": 1694397599000
+  },
+  {
+    "MissionTermId": 331,
+    "StartDatetime": 1693447200000,
+    "EndDatetime": 1695088799000
+  },
+  {
+    "MissionTermId": 335,
+    "StartDatetime": 1693494000000,
+    "EndDatetime": 1696085999000
+  },
+  {
+    "MissionTermId": 336,
+    "StartDatetime": 1694138400000,
+    "EndDatetime": 1696557599000
+  },
+  {
+    "MissionTermId": 340,
+    "StartDatetime": 1696086000000,
+    "EndDatetime": 1698764399000
+  },
+  {
+    "MissionTermId": 341,
+    "StartDatetime": 1695607200000,
+    "EndDatetime": 1696903199000
+  },
+  {
+    "MissionTermId": 342,
+    "StartDatetime": 1695866400000,
+    "EndDatetime": 1697421599000
+  },
+  {
+    "MissionTermId": 343,
+    "StartDatetime": 1696816800000,
+    "EndDatetime": 1697421599000
+  },
+  {
+    "MissionTermId": 344,
+    "StartDatetime": 1697421600000,
+    "EndDatetime": 1698026399000
+  },
+  {
+    "MissionTermId": 345,
+    "StartDatetime": 1698026400000,
+    "EndDatetime": 1698631199000
+  },
+  {
+    "MissionTermId": 346,
+    "StartDatetime": 1698631200000,
+    "EndDatetime": 1699235999000
+  },
+  {
+    "MissionTermId": 347,
+    "StartDatetime": 1696557600000,
+    "EndDatetime": 1699235999000
+  },
+  {
+    "MissionTermId": 348,
+    "StartDatetime": 1696816800000,
+    "EndDatetime": 1699408799000
+  },
+  {
+    "MissionTermId": 349,
+    "StartDatetime": 1698026400000,
+    "EndDatetime": 1699235999000
+  },
+  {
+    "MissionTermId": 353,
+    "StartDatetime": 1698764400000,
+    "EndDatetime": 1701356399000
+  },
+  {
+    "MissionTermId": 354,
+    "StartDatetime": 1699236000000,
+    "EndDatetime": 1700405999000
+  },
+  {
+    "MissionTermId": 355,
+    "StartDatetime": 1699236000000,
+    "EndDatetime": 1699282799000
+  },
+  {
+    "MissionTermId": 356,
+    "StartDatetime": 1699282800000,
+    "EndDatetime": 1699369199000
+  },
+  {
+    "MissionTermId": 357,
+    "StartDatetime": 1699369200000,
+    "EndDatetime": 1699455599000
+  },
+  {
+    "MissionTermId": 358,
+    "StartDatetime": 1699455600000,
+    "EndDatetime": 1699541999000
+  },
+  {
+    "MissionTermId": 359,
+    "StartDatetime": 1699542000000,
+    "EndDatetime": 1699628399000
+  },
+  {
+    "MissionTermId": 360,
+    "StartDatetime": 1699628400000,
+    "EndDatetime": 1699714799000
+  },
+  {
+    "MissionTermId": 361,
+    "StartDatetime": 1699714800000,
+    "EndDatetime": 1699801199000
+  },
+  {
+    "MissionTermId": 362,
+    "StartDatetime": 1699801200000,
+    "EndDatetime": 1699887599000
+  },
+  {
+    "MissionTermId": 363,
+    "StartDatetime": 1699887600000,
+    "EndDatetime": 1699973999000
+  },
+  {
+    "MissionTermId": 364,
+    "StartDatetime": 1699974000000,
+    "EndDatetime": 1700060399000
+  },
+  {
+    "MissionTermId": 365,
+    "StartDatetime": 1700060400000,
+    "EndDatetime": 1700146799000
+  },
+  {
+    "MissionTermId": 366,
+    "StartDatetime": 1700146800000,
+    "EndDatetime": 1700233199000
+  },
+  {
+    "MissionTermId": 367,
+    "StartDatetime": 1700233200000,
+    "EndDatetime": 1700319599000
+  },
+  {
+    "MissionTermId": 368,
+    "StartDatetime": 1700319600000,
+    "EndDatetime": 1700405999000
+  },
+  {
+    "MissionTermId": 369,
+    "StartDatetime": 1699581600000,
+    "EndDatetime": 1700791199000
+  },
+  {
+    "MissionTermId": 371,
+    "StartDatetime": 1700186400000,
+    "EndDatetime": 1701120599000
+  },
+  {
+    "MissionTermId": 373,
+    "StartDatetime": 1700445600000,
+    "EndDatetime": 1703037599000
+  },
+  {
+    "MissionTermId": 374,
+    "StartDatetime": 1698717600000,
+    "EndDatetime": 1700445599000
+  },
+  {
+    "MissionTermId": 375,
+    "StartDatetime": 1700186400000,
+    "EndDatetime": 1701655199000
+  },
+  {
+    "MissionTermId": 379,
+    "StartDatetime": 1701356400000,
+    "EndDatetime": 1704034799000
+  },
+  {
+    "MissionTermId": 380,
+    "StartDatetime": 1701655200000,
+    "EndDatetime": 1702259999000
+  },
+  {
+    "MissionTermId": 381,
+    "StartDatetime": 1702260000000,
+    "EndDatetime": 1702864799000
+  },
+  {
+    "MissionTermId": 382,
+    "StartDatetime": 1702864800000,
+    "EndDatetime": 1703469599000
+  },
+  {
+    "MissionTermId": 383,
+    "StartDatetime": 1703469600000,
+    "EndDatetime": 1704034799000
+  },
+  {
+    "MissionTermId": 384,
+    "StartDatetime": 1701309600000,
+    "EndDatetime": 1704034799000
+  },
+  {
+    "MissionTermId": 385,
+    "StartDatetime": 1703815200000,
+    "EndDatetime": 1706407199000
+  },
+  {
+    "MissionTermId": 386,
+    "StartDatetime": 1702000800000,
+    "EndDatetime": 1704034799000
+  },
+  {
+    "MissionTermId": 387,
+    "StartDatetime": 1703728800000,
+    "EndDatetime": 1704034799000
+  },
+  {
+    "MissionTermId": 391,
+    "StartDatetime": 1704034800000,
+    "EndDatetime": 1706713199000
+  },
+  {
+    "MissionTermId": 392,
+    "StartDatetime": 1703210400000,
+    "EndDatetime": 1704034799000
+  },
+  {
+    "MissionTermId": 393,
+    "StartDatetime": 1703037600000,
+    "EndDatetime": 1704034799000
+  },
+  {
+    "MissionTermId": 394,
+    "StartDatetime": 1704034800000,
+    "EndDatetime": 1706666399000
+  },
+  {
+    "MissionTermId": 395,
+    "StartDatetime": 1704420000000,
+    "EndDatetime": 1705888799000
+  },
+  {
+    "MissionTermId": 396,
+    "StartDatetime": 1705024800000,
+    "EndDatetime": 1706493599000
+  },
+  {
+    "MissionTermId": 397,
+    "StartDatetime": 1705197600000,
+    "EndDatetime": 1705957199000
+  },
+  {
+    "MissionTermId": 398,
+    "StartDatetime": 1706493600000,
+    "EndDatetime": 1709085599000
+  },
+  {
+    "MissionTermId": 399,
+    "StartDatetime": 1705975200000,
+    "EndDatetime": 1706799599000
+  },
+  {
+    "MissionTermId": 400,
+    "StartDatetime": 1706799600000,
+    "EndDatetime": 1707404399000
+  },
+  {
+    "MissionTermId": 401,
+    "StartDatetime": 1707404400000,
+    "EndDatetime": 1708009199000
+  },
+  {
+    "MissionTermId": 402,
+    "StartDatetime": 1708009200000,
+    "EndDatetime": 1708613999000
+  },
+  {
+    "MissionTermId": 403,
+    "StartDatetime": 1708614000000,
+    "EndDatetime": 1709218799000
+  },
+  {
+    "MissionTermId": 404,
+    "StartDatetime": 1709218800000,
+    "EndDatetime": 1709823599000
+  },
+  {
+    "MissionTermId": 405,
+    "StartDatetime": 1709823600000,
+    "EndDatetime": 1710428399000
+  },
+  {
+    "MissionTermId": 406,
+    "StartDatetime": 1710428400000,
+    "EndDatetime": 1711724399000
+  },
+  {
+    "MissionTermId": 407,
+    "StartDatetime": 1707444000000,
+    "EndDatetime": 1708912799000
+  },
+  {
+    "MissionTermId": 408,
+    "StartDatetime": 1706839200000,
+    "EndDatetime": 1708221599000
+  },
+  {
+    "MissionTermId": 409,
+    "StartDatetime": 1706713200000,
+    "EndDatetime": 1709218799000
+  },
+  {
+    "MissionTermId": 410,
+    "StartDatetime": 1709218800000,
+    "EndDatetime": 1711897199000
+  },
+  {
+    "MissionTermId": 411,
+    "StartDatetime": 1707444000000,
+    "EndDatetime": 1710035999000
+  },
+  {
+    "MissionTermId": 412,
+    "StartDatetime": 1706666400000,
+    "EndDatetime": 1708221599000
+  },
+  {
+    "MissionTermId": 414,
+    "StartDatetime": 1708221600000,
+    "EndDatetime": 1714456799000
+  },
+  {
+    "MissionTermId": 415,
+    "StartDatetime": 1709172000000,
+    "EndDatetime": 1710727199000
+  },
+  {
+    "MissionTermId": 416,
+    "StartDatetime": 1709863200000,
+    "EndDatetime": 1711724399000
+  },
+  {
+    "MissionTermId": 417,
+    "StartDatetime": 1709863200000,
+    "EndDatetime": 1714456799000
+  },
+  {
+    "MissionTermId": 418,
+    "StartDatetime": 1711897200000,
+    "EndDatetime": 1714456799000
+  },
+  {
+    "MissionTermId": 419,
+    "StartDatetime": 1710468000000,
+    "EndDatetime": 1714456799000
+  },
+  {
+    "MissionTermId": 1001,
+    "StartDatetime": 946652400000,
+    "EndDatetime": 1625756399000
+  },
+  {
+    "MissionTermId": 1002,
+    "StartDatetime": 1631804400000,
+    "EndDatetime": 1637247599000
+  },
+  {
+    "MissionTermId": 1003,
+    "StartDatetime": 946652400000,
+    "EndDatetime": 1628089199000
+  },
+  {
+    "MissionTermId": 1004,
+    "StartDatetime": 1637247600000,
+    "EndDatetime": 1690815599000
+  },
+  {
+    "MissionTermId": 1005,
+    "StartDatetime": 1666105200000,
+    "EndDatetime": 1690815599000
+  },
+  {
+    "MissionTermId": 1006,
+    "StartDatetime": 1690815600000,
+    "EndDatetime": 1706021999000
+  },
+  {
+    "MissionTermId": 1007,
+    "StartDatetime": 1706022000000,
+    "EndDatetime": 253392418800000
+  },
+  {
+    "MissionTermId": 4301,
+    "StartDatetime": 1631584800000,
+    "EndDatetime": 1632448799000
+  },
+  {
+    "MissionTermId": 4302,
+    "StartDatetime": 1631671200000,
+    "EndDatetime": 1632448799000
+  },
+  {
+    "MissionTermId": 4303,
+    "StartDatetime": 1631757600000,
+    "EndDatetime": 1632448799000
+  },
+  {
+    "MissionTermId": 20001,
+    "StartDatetime": 1682866800000,
+    "EndDatetime": 1685545199000
+  },
+  {
+    "MissionTermId": 20003,
+    "StartDatetime": 1685545200000,
+    "EndDatetime": 1688137199000
+  },
+  {
+    "MissionTermId": 20005,
+    "StartDatetime": 1688137200000,
+    "EndDatetime": 1690815599000
+  },
+  {
+    "MissionTermId": 20007,
+    "StartDatetime": 1690815600000,
+    "EndDatetime": 1693493999000
+  },
+  {
+    "MissionTermId": 20009,
+    "StartDatetime": 1693494000000,
+    "EndDatetime": 1696085999000
+  },
+  {
+    "MissionTermId": 20011,
+    "StartDatetime": 1696086000000,
+    "EndDatetime": 1698764399000
+  },
+  {
+    "MissionTermId": 20013,
+    "StartDatetime": 1698764400000,
+    "EndDatetime": 1701356399000
+  },
+  {
+    "MissionTermId": 20015,
+    "StartDatetime": 1701356400000,
+    "EndDatetime": 1704034799000
+  },
+  {
+    "MissionTermId": 20017,
+    "StartDatetime": 1704034800000,
+    "EndDatetime": 1706713199000
+  },
+  {
+    "MissionTermId": 20019,
+    "StartDatetime": 1706713200000,
+    "EndDatetime": 1709218799000
+  },
+  {
+    "MissionTermId": 20021,
+    "StartDatetime": 1709218800000,
+    "EndDatetime": 1711897199000
+  },
+  {
+    "MissionTermId": 20023,
+    "StartDatetime": 1711897200000,
+    "EndDatetime": 1714456799000
+  },
+  {
+    "MissionTermId": 100001,
+    "StartDatetime": 946652400000,
+    "EndDatetime": 946652401000
+  }
+]

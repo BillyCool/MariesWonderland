@@ -1,0 +1,82 @@
+[
+  {
+    "BattleActorAiId": 1,
+    "AssetPath": "Prefab/battle/skill_ai/skill_ai_skip_stub",
+    "Description": "skip(dummy)"
+  },
+  {
+    "BattleActorAiId": 2,
+    "AssetPath": "Prefab/battle/skill_ai/skill_ai_standard_stub",
+    "Description": "standard(dummy)"
+  },
+  {
+    "BattleActorAiId": 3,
+    "AssetPath": "Prefab/battle/skill_ai/default_skill_selector_ch001001",
+    "Description": "ch001001 default skill selector"
+  },
+  {
+    "BattleActorAiId": 4,
+    "AssetPath": "Prefab/battle/skill_ai/default_skill_selector_ch004001",
+    "Description": "ch004001 default skill selector"
+  },
+  {
+    "BattleActorAiId": 5,
+    "AssetPath": "Prefab/battle/skill_ai/default_skill_selector_ch007001",
+    "Description": "ch007001 default skill selector"
+  },
+  {
+    "BattleActorAiId": 6,
+    "AssetPath": "Prefab/battle/skill_ai/default_skill_selector_mt003001",
+    "Description": "mt003001 default skill selector"
+  },
+  {
+    "BattleActorAiId": 7,
+    "AssetPath": "Prefab/battle/skill_ai/skill_ai_mt003001_stub",
+    "Description": "mt003001 active skill ai"
+  },
+  {
+    "BattleActorAiId": 8,
+    "AssetPath": "Prefab/battle/skill_ai/default_skill_selector_mt904001",
+    "Description": "mt904001 default_skill_selector"
+  },
+  {
+    "BattleActorAiId": 9,
+    "AssetPath": "Prefab/battle/skill_ai/default_skill_selector_mt001001",
+    "Description": "mt001001 default_skill_selector"
+  },
+  {
+    "BattleActorAiId": 10,
+    "AssetPath": "Prefab/battle/skill_ai/skill_ai_standard_count_limited_stub",
+    "Description": "standard/count limited(dummy)"
+  },
+  {
+    "BattleActorAiId": 11,
+    "AssetPath": "Prefab/battle/skill_ai/skill_ai_mt008001_dark_stub",
+    "Description": "mt008001 active skill ai"
+  },
+  {
+    "BattleActorAiId": 97,
+    "AssetPath": "Prefab/battle/actor_mover/actor_mover_viewer",
+    "Description": "actor mover (character viewer)"
+  },
+  {
+    "BattleActorAiId": 98,
+    "AssetPath": "Prefab/battle/actor_mover/actor_mover_empty",
+    "Description": "actor mover(not move)"
+  },
+  {
+    "BattleActorAiId": 99,
+    "AssetPath": "Prefab/battle/actor_mover/actor_mover_stub",
+    "Description": "actor mover stub"
+  },
+  {
+    "BattleActorAiId": 998,
+    "AssetPath": "Prefab/battle/skill_ai/default_skill_selector_empty",
+    "Description": "empty default skill selector"
+  },
+  {
+    "BattleActorAiId": 999,
+    "AssetPath": "Prefab/battle/skill_ai/skill_ai_skip_stub",
+    "Description": "dummy"
+  }
+]

@@ -1,0 +1,254 @@
+[
+  {
+    "PartsStatusMainId": 1,
+    "StatusKindType": 2,
+    "StatusCalculationType": 1,
+    "StatusChangeInitialValue": 50,
+    "StatusNumericalFunctionId": 101
+  },
+  {
+    "PartsStatusMainId": 2,
+    "StatusKindType": 2,
+    "StatusCalculationType": 1,
+    "StatusChangeInitialValue": 100,
+    "StatusNumericalFunctionId": 102
+  },
+  {
+    "PartsStatusMainId": 3,
+    "StatusKindType": 2,
+    "StatusCalculationType": 1,
+    "StatusChangeInitialValue": 150,
+    "StatusNumericalFunctionId": 103
+  },
+  {
+    "PartsStatusMainId": 4,
+    "StatusKindType": 2,
+    "StatusCalculationType": 1,
+    "StatusChangeInitialValue": 250,
+    "StatusNumericalFunctionId": 104
+  },
+  {
+    "PartsStatusMainId": 5,
+    "StatusKindType": 7,
+    "StatusCalculationType": 1,
+    "StatusChangeInitialValue": 50,
+    "StatusNumericalFunctionId": 101
+  },
+  {
+    "PartsStatusMainId": 6,
+    "StatusKindType": 7,
+    "StatusCalculationType": 1,
+    "StatusChangeInitialValue": 100,
+    "StatusNumericalFunctionId": 102
+  },
+  {
+    "PartsStatusMainId": 7,
+    "StatusKindType": 7,
+    "StatusCalculationType": 1,
+    "StatusChangeInitialValue": 150,
+    "StatusNumericalFunctionId": 103
+  },
+  {
+    "PartsStatusMainId": 8,
+    "StatusKindType": 7,
+    "StatusCalculationType": 1,
+    "StatusChangeInitialValue": 250,
+    "StatusNumericalFunctionId": 104
+  },
+  {
+    "PartsStatusMainId": 9,
+    "StatusKindType": 2,
+    "StatusCalculationType": 2,
+    "StatusChangeInitialValue": 10,
+    "StatusNumericalFunctionId": 105
+  },
+  {
+    "PartsStatusMainId": 10,
+    "StatusKindType": 2,
+    "StatusCalculationType": 2,
+    "StatusChangeInitialValue": 30,
+    "StatusNumericalFunctionId": 106
+  },
+  {
+    "PartsStatusMainId": 11,
+    "StatusKindType": 2,
+    "StatusCalculationType": 2,
+    "StatusChangeInitialValue": 70,
+    "StatusNumericalFunctionId": 107
+  },
+  {
+    "PartsStatusMainId": 12,
+    "StatusKindType": 2,
+    "StatusCalculationType": 2,
+    "StatusChangeInitialValue": 120,
+    "StatusNumericalFunctionId": 108
+  },
+  {
+    "PartsStatusMainId": 13,
+    "StatusKindType": 7,
+    "StatusCalculationType": 2,
+    "StatusChangeInitialValue": 10,
+    "StatusNumericalFunctionId": 105
+  },
+  {
+    "PartsStatusMainId": 14,
+    "StatusKindType": 7,
+    "StatusCalculationType": 2,
+    "StatusChangeInitialValue": 30,
+    "StatusNumericalFunctionId": 106
+  },
+  {
+    "PartsStatusMainId": 15,
+    "StatusKindType": 7,
+    "StatusCalculationType": 2,
+    "StatusChangeInitialValue": 70,
+    "StatusNumericalFunctionId": 107
+  },
+  {
+    "PartsStatusMainId": 16,
+    "StatusKindType": 7,
+    "StatusCalculationType": 2,
+    "StatusChangeInitialValue": 120,
+    "StatusNumericalFunctionId": 108
+  },
+  {
+    "PartsStatusMainId": 17,
+    "StatusKindType": 6,
+    "StatusCalculationType": 2,
+    "StatusChangeInitialValue": 10,
+    "StatusNumericalFunctionId": 105
+  },
+  {
+    "PartsStatusMainId": 18,
+    "StatusKindType": 6,
+    "StatusCalculationType": 2,
+    "StatusChangeInitialValue": 30,
+    "StatusNumericalFunctionId": 106
+  },
+  {
+    "PartsStatusMainId": 19,
+    "StatusKindType": 6,
+    "StatusCalculationType": 2,
+    "StatusChangeInitialValue": 70,
+    "StatusNumericalFunctionId": 107
+  },
+  {
+    "PartsStatusMainId": 20,
+    "StatusKindType": 6,
+    "StatusCalculationType": 2,
+    "StatusChangeInitialValue": 120,
+    "StatusNumericalFunctionId": 108
+  },
+  {
+    "PartsStatusMainId": 21,
+    "StatusKindType": 6,
+    "StatusCalculationType": 1,
+    "StatusChangeInitialValue": 600,
+    "StatusNumericalFunctionId": 109
+  },
+  {
+    "PartsStatusMainId": 22,
+    "StatusKindType": 6,
+    "StatusCalculationType": 1,
+    "StatusChangeInitialValue": 1200,
+    "StatusNumericalFunctionId": 110
+  },
+  {
+    "PartsStatusMainId": 23,
+    "StatusKindType": 6,
+    "StatusCalculationType": 1,
+    "StatusChangeInitialValue": 1800,
+    "StatusNumericalFunctionId": 111
+  },
+  {
+    "PartsStatusMainId": 24,
+    "StatusKindType": 6,
+    "StatusCalculationType": 1,
+    "StatusChangeInitialValue": 3000,
+    "StatusNumericalFunctionId": 112
+  },
+  {
+    "PartsStatusMainId": 25,
+    "StatusKindType": 4,
+    "StatusCalculationType": 1,
+    "StatusChangeInitialValue": 10,
+    "StatusNumericalFunctionId": 113
+  },
+  {
+    "PartsStatusMainId": 26,
+    "StatusKindType": 4,
+    "StatusCalculationType": 1,
+    "StatusChangeInitialValue": 30,
+    "StatusNumericalFunctionId": 114
+  },
+  {
+    "PartsStatusMainId": 27,
+    "StatusKindType": 4,
+    "StatusCalculationType": 1,
+    "StatusChangeInitialValue": 70,
+    "StatusNumericalFunctionId": 115
+  },
+  {
+    "PartsStatusMainId": 28,
+    "StatusKindType": 4,
+    "StatusCalculationType": 1,
+    "StatusChangeInitialValue": 120,
+    "StatusNumericalFunctionId": 116
+  },
+  {
+    "PartsStatusMainId": 29,
+    "StatusKindType": 3,
+    "StatusCalculationType": 1,
+    "StatusChangeInitialValue": 20,
+    "StatusNumericalFunctionId": 117
+  },
+  {
+    "PartsStatusMainId": 30,
+    "StatusKindType": 3,
+    "StatusCalculationType": 1,
+    "StatusChangeInitialValue": 50,
+    "StatusNumericalFunctionId": 118
+  },
+  {
+    "PartsStatusMainId": 31,
+    "StatusKindType": 3,
+    "StatusCalculationType": 1,
+    "StatusChangeInitialValue": 80,
+    "StatusNumericalFunctionId": 119
+  },
+  {
+    "PartsStatusMainId": 32,
+    "StatusKindType": 3,
+    "StatusCalculationType": 1,
+    "StatusChangeInitialValue": 100,
+    "StatusNumericalFunctionId": 120
+  },
+  {
+    "PartsStatusMainId": 33,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "StatusChangeInitialValue": 10,
+    "StatusNumericalFunctionId": 121
+  },
+  {
+    "PartsStatusMainId": 34,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "StatusChangeInitialValue": 20,
+    "StatusNumericalFunctionId": 122
+  },
+  {
+    "PartsStatusMainId": 35,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "StatusChangeInitialValue": 30,
+    "StatusNumericalFunctionId": 123
+  },
+  {
+    "PartsStatusMainId": 36,
+    "StatusKindType": 1,
+    "StatusCalculationType": 1,
+    "StatusChangeInitialValue": 40,
+    "StatusNumericalFunctionId": 124
+  }
+]

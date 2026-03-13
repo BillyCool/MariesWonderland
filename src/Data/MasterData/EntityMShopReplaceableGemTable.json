@@ -1,0 +1,50 @@
+[
+  {
+    "LineupUpdateCountLowerLimit": 1,
+    "NecessaryGem": 10
+  },
+  {
+    "LineupUpdateCountLowerLimit": 2,
+    "NecessaryGem": 30
+  },
+  {
+    "LineupUpdateCountLowerLimit": 3,
+    "NecessaryGem": 50
+  },
+  {
+    "LineupUpdateCountLowerLimit": 4,
+    "NecessaryGem": 100
+  },
+  {
+    "LineupUpdateCountLowerLimit": 5,
+    "NecessaryGem": 150
+  },
+  {
+    "LineupUpdateCountLowerLimit": 6,
+    "NecessaryGem": 200
+  },
+  {
+    "LineupUpdateCountLowerLimit": 7,
+    "NecessaryGem": 250
+  },
+  {
+    "LineupUpdateCountLowerLimit": 8,
+    "NecessaryGem": 300
+  },
+  {
+    "LineupUpdateCountLowerLimit": 9,
+    "NecessaryGem": 350
+  },
+  {
+    "LineupUpdateCountLowerLimit": 10,
+    "NecessaryGem": 400
+  },
+  {
+    "LineupUpdateCountLowerLimit": 11,
+    "NecessaryGem": 450
+  },
+  {
+    "LineupUpdateCountLowerLimit": 12,
+    "NecessaryGem": 500
+  }
+]

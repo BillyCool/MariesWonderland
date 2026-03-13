@@ -1,0 +1,710 @@
+[
+  {
+    "GimmickId": 21011001,
+    "InitialValue": 5,
+    "MaxValue": 5,
+    "IntervalValue": 1440
+  },
+  {
+    "GimmickId": 21012002,
+    "InitialValue": 2,
+    "MaxValue": 5,
+    "IntervalValue": 1680
+  },
+  {
+    "GimmickId": 21013003,
+    "InitialValue": 5,
+    "MaxValue": 5,
+    "IntervalValue": 1920
+  },
+  {
+    "GimmickId": 21014004,
+    "InitialValue": 4,
+    "MaxValue": 5,
+    "IntervalValue": 2160
+  },
+  {
+    "GimmickId": 21021005,
+    "InitialValue": 1,
+    "MaxValue": 5,
+    "IntervalValue": 1920
+  },
+  {
+    "GimmickId": 21022006,
+    "InitialValue": 5,
+    "MaxValue": 5,
+    "IntervalValue": 1680
+  },
+  {
+    "GimmickId": 21023007,
+    "InitialValue": 3,
+    "MaxValue": 5,
+    "IntervalValue": 2160
+  },
+  {
+    "GimmickId": 21024008,
+    "InitialValue": 5,
+    "MaxValue": 5,
+    "IntervalValue": 2400
+  },
+  {
+    "GimmickId": 21031009,
+    "InitialValue": 0,
+    "MaxValue": 5,
+    "IntervalValue": 2640
+  },
+  {
+    "GimmickId": 21032010,
+    "InitialValue": 0,
+    "MaxValue": 5,
+    "IntervalValue": 2160
+  },
+  {
+    "GimmickId": 21033011,
+    "InitialValue": 0,
+    "MaxValue": 5,
+    "IntervalValue": 1920
+  },
+  {
+    "GimmickId": 21034012,
+    "InitialValue": 0,
+    "MaxValue": 5,
+    "IntervalValue": 2400
+  },
+  {
+    "GimmickId": 21041013,
+    "InitialValue": 0,
+    "MaxValue": 6,
+    "IntervalValue": 1920
+  },
+  {
+    "GimmickId": 21042014,
+    "InitialValue": 0,
+    "MaxValue": 6,
+    "IntervalValue": 1440
+  },
+  {
+    "GimmickId": 21043015,
+    "InitialValue": 0,
+    "MaxValue": 6,
+    "IntervalValue": 2160
+  },
+  {
+    "GimmickId": 21044016,
+    "InitialValue": 0,
+    "MaxValue": 6,
+    "IntervalValue": 1680
+  },
+  {
+    "GimmickId": 21051017,
+    "InitialValue": 0,
+    "MaxValue": 6,
+    "IntervalValue": 1680
+  },
+  {
+    "GimmickId": 21052018,
+    "InitialValue": 0,
+    "MaxValue": 6,
+    "IntervalValue": 2400
+  },
+  {
+    "GimmickId": 21053019,
+    "InitialValue": 0,
+    "MaxValue": 6,
+    "IntervalValue": 1920
+  },
+  {
+    "GimmickId": 21054020,
+    "InitialValue": 0,
+    "MaxValue": 6,
+    "IntervalValue": 2160
+  },
+  {
+    "GimmickId": 21061021,
+    "InitialValue": 0,
+    "MaxValue": 6,
+    "IntervalValue": 1920
+  },
+  {
+    "GimmickId": 21062022,
+    "InitialValue": 0,
+    "MaxValue": 6,
+    "IntervalValue": 2160
+  },
+  {
+    "GimmickId": 21063023,
+    "InitialValue": 0,
+    "MaxValue": 6,
+    "IntervalValue": 2400
+  },
+  {
+    "GimmickId": 21064024,
+    "InitialValue": 0,
+    "MaxValue": 6,
+    "IntervalValue": 2640
+  },
+  {
+    "GimmickId": 21071025,
+    "InitialValue": 0,
+    "MaxValue": 7,
+    "IntervalValue": 2160
+  },
+  {
+    "GimmickId": 21072026,
+    "InitialValue": 0,
+    "MaxValue": 7,
+    "IntervalValue": 1680
+  },
+  {
+    "GimmickId": 21073027,
+    "InitialValue": 0,
+    "MaxValue": 7,
+    "IntervalValue": 1920
+  },
+  {
+    "GimmickId": 21074028,
+    "InitialValue": 0,
+    "MaxValue": 7,
+    "IntervalValue": 1440
+  },
+  {
+    "GimmickId": 21081029,
+    "InitialValue": 0,
+    "MaxValue": 7,
+    "IntervalValue": 1440
+  },
+  {
+    "GimmickId": 21082030,
+    "InitialValue": 0,
+    "MaxValue": 7,
+    "IntervalValue": 2160
+  },
+  {
+    "GimmickId": 21083031,
+    "InitialValue": 0,
+    "MaxValue": 7,
+    "IntervalValue": 1920
+  },
+  {
+    "GimmickId": 21084032,
+    "InitialValue": 0,
+    "MaxValue": 7,
+    "IntervalValue": 1680
+  },
+  {
+    "GimmickId": 21091033,
+    "InitialValue": 0,
+    "MaxValue": 7,
+    "IntervalValue": 2400
+  },
+  {
+    "GimmickId": 21092034,
+    "InitialValue": 0,
+    "MaxValue": 7,
+    "IntervalValue": 1920
+  },
+  {
+    "GimmickId": 21093035,
+    "InitialValue": 0,
+    "MaxValue": 7,
+    "IntervalValue": 2160
+  },
+  {
+    "GimmickId": 21094036,
+    "InitialValue": 0,
+    "MaxValue": 7,
+    "IntervalValue": 2640
+  },
+  {
+    "GimmickId": 21101037,
+    "InitialValue": 0,
+    "MaxValue": 8,
+    "IntervalValue": 1440
+  },
+  {
+    "GimmickId": 21102038,
+    "InitialValue": 0,
+    "MaxValue": 8,
+    "IntervalValue": 1920
+  },
+  {
+    "GimmickId": 21103039,
+    "InitialValue": 0,
+    "MaxValue": 8,
+    "IntervalValue": 1680
+  },
+  {
+    "GimmickId": 21104040,
+    "InitialValue": 0,
+    "MaxValue": 8,
+    "IntervalValue": 2160
+  },
+  {
+    "GimmickId": 21111041,
+    "InitialValue": 0,
+    "MaxValue": 8,
+    "IntervalValue": 2160
+  },
+  {
+    "GimmickId": 21112042,
+    "InitialValue": 0,
+    "MaxValue": 8,
+    "IntervalValue": 1920
+  },
+  {
+    "GimmickId": 21113043,
+    "InitialValue": 0,
+    "MaxValue": 8,
+    "IntervalValue": 2400
+  },
+  {
+    "GimmickId": 21114044,
+    "InitialValue": 0,
+    "MaxValue": 8,
+    "IntervalValue": 1680
+  },
+  {
+    "GimmickId": 21121045,
+    "InitialValue": 0,
+    "MaxValue": 8,
+    "IntervalValue": 2160
+  },
+  {
+    "GimmickId": 21122046,
+    "InitialValue": 0,
+    "MaxValue": 8,
+    "IntervalValue": 1920
+  },
+  {
+    "GimmickId": 21123047,
+    "InitialValue": 0,
+    "MaxValue": 8,
+    "IntervalValue": 2640
+  },
+  {
+    "GimmickId": 21124048,
+    "InitialValue": 0,
+    "MaxValue": 8,
+    "IntervalValue": 2400
+  },
+  {
+    "GimmickId": 22011049,
+    "InitialValue": 0,
+    "MaxValue": 9,
+    "IntervalValue": 2160
+  },
+  {
+    "GimmickId": 22012050,
+    "InitialValue": 0,
+    "MaxValue": 9,
+    "IntervalValue": 1440
+  },
+  {
+    "GimmickId": 22013051,
+    "InitialValue": 0,
+    "MaxValue": 9,
+    "IntervalValue": 1920
+  },
+  {
+    "GimmickId": 22014052,
+    "InitialValue": 0,
+    "MaxValue": 9,
+    "IntervalValue": 1680
+  },
+  {
+    "GimmickId": 22021057,
+    "InitialValue": 0,
+    "MaxValue": 9,
+    "IntervalValue": 1680
+  },
+  {
+    "GimmickId": 22022058,
+    "InitialValue": 0,
+    "MaxValue": 9,
+    "IntervalValue": 1920
+  },
+  {
+    "GimmickId": 22023059,
+    "InitialValue": 0,
+    "MaxValue": 9,
+    "IntervalValue": 2160
+  },
+  {
+    "GimmickId": 22024060,
+    "InitialValue": 0,
+    "MaxValue": 9,
+    "IntervalValue": 2400
+  },
+  {
+    "GimmickId": 22031065,
+    "InitialValue": 0,
+    "MaxValue": 9,
+    "IntervalValue": 2640
+  },
+  {
+    "GimmickId": 22032066,
+    "InitialValue": 0,
+    "MaxValue": 9,
+    "IntervalValue": 1920
+  },
+  {
+    "GimmickId": 22033067,
+    "InitialValue": 0,
+    "MaxValue": 9,
+    "IntervalValue": 2400
+  },
+  {
+    "GimmickId": 22034068,
+    "InitialValue": 0,
+    "MaxValue": 9,
+    "IntervalValue": 2160
+  },
+  {
+    "GimmickId": 22041073,
+    "InitialValue": 0,
+    "MaxValue": 10,
+    "IntervalValue": 1440
+  },
+  {
+    "GimmickId": 22042074,
+    "InitialValue": 0,
+    "MaxValue": 10,
+    "IntervalValue": 1680
+  },
+  {
+    "GimmickId": 22043075,
+    "InitialValue": 0,
+    "MaxValue": 10,
+    "IntervalValue": 1920
+  },
+  {
+    "GimmickId": 22044076,
+    "InitialValue": 0,
+    "MaxValue": 10,
+    "IntervalValue": 2160
+  },
+  {
+    "GimmickId": 22051081,
+    "InitialValue": 0,
+    "MaxValue": 10,
+    "IntervalValue": 1680
+  },
+  {
+    "GimmickId": 22052082,
+    "InitialValue": 0,
+    "MaxValue": 10,
+    "IntervalValue": 1920
+  },
+  {
+    "GimmickId": 22053083,
+    "InitialValue": 0,
+    "MaxValue": 10,
+    "IntervalValue": 2160
+  },
+  {
+    "GimmickId": 22054084,
+    "InitialValue": 0,
+    "MaxValue": 10,
+    "IntervalValue": 2400
+  },
+  {
+    "GimmickId": 22061089,
+    "InitialValue": 0,
+    "MaxValue": 10,
+    "IntervalValue": 1920
+  },
+  {
+    "GimmickId": 22062090,
+    "InitialValue": 0,
+    "MaxValue": 10,
+    "IntervalValue": 2160
+  },
+  {
+    "GimmickId": 22063091,
+    "InitialValue": 0,
+    "MaxValue": 10,
+    "IntervalValue": 2400
+  },
+  {
+    "GimmickId": 22064092,
+    "InitialValue": 0,
+    "MaxValue": 10,
+    "IntervalValue": 2640
+  },
+  {
+    "GimmickId": 23011053,
+    "InitialValue": 0,
+    "MaxValue": 9,
+    "IntervalValue": 2160
+  },
+  {
+    "GimmickId": 23012054,
+    "InitialValue": 0,
+    "MaxValue": 9,
+    "IntervalValue": 1440
+  },
+  {
+    "GimmickId": 23013055,
+    "InitialValue": 0,
+    "MaxValue": 9,
+    "IntervalValue": 1920
+  },
+  {
+    "GimmickId": 23014056,
+    "InitialValue": 0,
+    "MaxValue": 9,
+    "IntervalValue": 1680
+  },
+  {
+    "GimmickId": 23021061,
+    "InitialValue": 0,
+    "MaxValue": 9,
+    "IntervalValue": 1680
+  },
+  {
+    "GimmickId": 23022062,
+    "InitialValue": 0,
+    "MaxValue": 9,
+    "IntervalValue": 1920
+  },
+  {
+    "GimmickId": 23023063,
+    "InitialValue": 0,
+    "MaxValue": 9,
+    "IntervalValue": 2160
+  },
+  {
+    "GimmickId": 23024064,
+    "InitialValue": 0,
+    "MaxValue": 9,
+    "IntervalValue": 2400
+  },
+  {
+    "GimmickId": 23031069,
+    "InitialValue": 0,
+    "MaxValue": 9,
+    "IntervalValue": 2640
+  },
+  {
+    "GimmickId": 23032070,
+    "InitialValue": 0,
+    "MaxValue": 9,
+    "IntervalValue": 1920
+  },
+  {
+    "GimmickId": 23033071,
+    "InitialValue": 0,
+    "MaxValue": 9,
+    "IntervalValue": 2400
+  },
+  {
+    "GimmickId": 23034072,
+    "InitialValue": 0,
+    "MaxValue": 9,
+    "IntervalValue": 2160
+  },
+  {
+    "GimmickId": 23041077,
+    "InitialValue": 0,
+    "MaxValue": 10,
+    "IntervalValue": 1440
+  },
+  {
+    "GimmickId": 23042078,
+    "InitialValue": 0,
+    "MaxValue": 10,
+    "IntervalValue": 1680
+  },
+  {
+    "GimmickId": 23043079,
+    "InitialValue": 0,
+    "MaxValue": 10,
+    "IntervalValue": 1920
+  },
+  {
+    "GimmickId": 23044080,
+    "InitialValue": 0,
+    "MaxValue": 10,
+    "IntervalValue": 2160
+  },
+  {
+    "GimmickId": 23051085,
+    "InitialValue": 0,
+    "MaxValue": 10,
+    "IntervalValue": 1680
+  },
+  {
+    "GimmickId": 23052086,
+    "InitialValue": 0,
+    "MaxValue": 10,
+    "IntervalValue": 1920
+  },
+  {
+    "GimmickId": 23053087,
+    "InitialValue": 0,
+    "MaxValue": 10,
+    "IntervalValue": 2160
+  },
+  {
+    "GimmickId": 23054088,
+    "InitialValue": 0,
+    "MaxValue": 10,
+    "IntervalValue": 2400
+  },
+  {
+    "GimmickId": 23061093,
+    "InitialValue": 0,
+    "MaxValue": 10,
+    "IntervalValue": 1920
+  },
+  {
+    "GimmickId": 23062094,
+    "InitialValue": 0,
+    "MaxValue": 10,
+    "IntervalValue": 2160
+  },
+  {
+    "GimmickId": 23063095,
+    "InitialValue": 0,
+    "MaxValue": 10,
+    "IntervalValue": 2400
+  },
+  {
+    "GimmickId": 23064096,
+    "InitialValue": 0,
+    "MaxValue": 10,
+    "IntervalValue": 2640
+  },
+  {
+    "GimmickId": 24011097,
+    "InitialValue": 0,
+    "MaxValue": 10,
+    "IntervalValue": 1680
+  },
+  {
+    "GimmickId": 24012098,
+    "InitialValue": 0,
+    "MaxValue": 10,
+    "IntervalValue": 1920
+  },
+  {
+    "GimmickId": 24013099,
+    "InitialValue": 0,
+    "MaxValue": 10,
+    "IntervalValue": 2160
+  },
+  {
+    "GimmickId": 24014100,
+    "InitialValue": 0,
+    "MaxValue": 10,
+    "IntervalValue": 2400
+  },
+  {
+    "GimmickId": 24021101,
+    "InitialValue": 0,
+    "MaxValue": 10,
+    "IntervalValue": 2160
+  },
+  {
+    "GimmickId": 24022102,
+    "InitialValue": 0,
+    "MaxValue": 10,
+    "IntervalValue": 1440
+  },
+  {
+    "GimmickId": 24023103,
+    "InitialValue": 0,
+    "MaxValue": 10,
+    "IntervalValue": 1920
+  },
+  {
+    "GimmickId": 24024104,
+    "InitialValue": 0,
+    "MaxValue": 10,
+    "IntervalValue": 1680
+  },
+  {
+    "GimmickId": 24031105,
+    "InitialValue": 0,
+    "MaxValue": 10,
+    "IntervalValue": 1920
+  },
+  {
+    "GimmickId": 24032106,
+    "InitialValue": 0,
+    "MaxValue": 10,
+    "IntervalValue": 2160
+  },
+  {
+    "GimmickId": 24033107,
+    "InitialValue": 0,
+    "MaxValue": 10,
+    "IntervalValue": 2400
+  },
+  {
+    "GimmickId": 24034108,
+    "InitialValue": 0,
+    "MaxValue": 10,
+    "IntervalValue": 2640
+  },
+  {
+    "GimmickId": 24041109,
+    "InitialValue": 0,
+    "MaxValue": 10,
+    "IntervalValue": 2400
+  },
+  {
+    "GimmickId": 24042110,
+    "InitialValue": 0,
+    "MaxValue": 10,
+    "IntervalValue": 2160
+  },
+  {
+    "GimmickId": 24043111,
+    "InitialValue": 0,
+    "MaxValue": 10,
+    "IntervalValue": 1920
+  },
+  {
+    "GimmickId": 24044112,
+    "InitialValue": 0,
+    "MaxValue": 10,
+    "IntervalValue": 1680
+  },
+  {
+    "GimmickId": 24051113,
+    "InitialValue": 0,
+    "MaxValue": 10,
+    "IntervalValue": 2160
+  },
+  {
+    "GimmickId": 24052114,
+    "InitialValue": 0,
+    "MaxValue": 10,
+    "IntervalValue": 1920
+  },
+  {
+    "GimmickId": 24053115,
+    "InitialValue": 0,
+    "MaxValue": 10,
+    "IntervalValue": 2400
+  },
+  {
+    "GimmickId": 24054116,
+    "InitialValue": 0,
+    "MaxValue": 10,
+    "IntervalValue": 1680
+  },
+  {
+    "GimmickId": 24061117,
+    "InitialValue": 0,
+    "MaxValue": 10,
+    "IntervalValue": 1920
+  },
+  {
+    "GimmickId": 81001001,
+    "InitialValue": 0,
+    "MaxValue": 3,
+    "IntervalValue": 480
+  }
+]

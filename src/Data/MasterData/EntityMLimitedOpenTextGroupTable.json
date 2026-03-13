@@ -1,0 +1,534 @@
+[
+  {
+    "LimitedOpenTextGroupId": 1002,
+    "SortOrder": 1,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 1,
+    "TextAssetId": 100201
+  },
+  {
+    "LimitedOpenTextGroupId": 1002,
+    "SortOrder": 9,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 2,
+    "TextAssetId": 100209
+  },
+  {
+    "LimitedOpenTextGroupId": 1003,
+    "SortOrder": 1,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 1,
+    "TextAssetId": 100301
+  },
+  {
+    "LimitedOpenTextGroupId": 1003,
+    "SortOrder": 9,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 2,
+    "TextAssetId": 100309
+  },
+  {
+    "LimitedOpenTextGroupId": 1004,
+    "SortOrder": 1,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 1,
+    "TextAssetId": 100401
+  },
+  {
+    "LimitedOpenTextGroupId": 1004,
+    "SortOrder": 9,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 2,
+    "TextAssetId": 100409
+  },
+  {
+    "LimitedOpenTextGroupId": 1005,
+    "SortOrder": 1,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 1,
+    "TextAssetId": 100501
+  },
+  {
+    "LimitedOpenTextGroupId": 1005,
+    "SortOrder": 2,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 2,
+    "TextAssetId": 100509
+  },
+  {
+    "LimitedOpenTextGroupId": 1006,
+    "SortOrder": 1,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 1,
+    "TextAssetId": 100601
+  },
+  {
+    "LimitedOpenTextGroupId": 1006,
+    "SortOrder": 2,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 2,
+    "TextAssetId": 100609
+  },
+  {
+    "LimitedOpenTextGroupId": 1007,
+    "SortOrder": 1,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 1,
+    "TextAssetId": 100701
+  },
+  {
+    "LimitedOpenTextGroupId": 1007,
+    "SortOrder": 2,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 2,
+    "TextAssetId": 100709
+  },
+  {
+    "LimitedOpenTextGroupId": 1008,
+    "SortOrder": 1,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 1,
+    "TextAssetId": 100801
+  },
+  {
+    "LimitedOpenTextGroupId": 1008,
+    "SortOrder": 2,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 2,
+    "TextAssetId": 100809
+  },
+  {
+    "LimitedOpenTextGroupId": 1009,
+    "SortOrder": 1,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 1,
+    "TextAssetId": 100901
+  },
+  {
+    "LimitedOpenTextGroupId": 1009,
+    "SortOrder": 2,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 2,
+    "TextAssetId": 100909
+  },
+  {
+    "LimitedOpenTextGroupId": 1010,
+    "SortOrder": 1,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 1,
+    "TextAssetId": 101001
+  },
+  {
+    "LimitedOpenTextGroupId": 1010,
+    "SortOrder": 2,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 2,
+    "TextAssetId": 101009
+  },
+  {
+    "LimitedOpenTextGroupId": 1011,
+    "SortOrder": 1,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 1,
+    "TextAssetId": 101101
+  },
+  {
+    "LimitedOpenTextGroupId": 1011,
+    "SortOrder": 2,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 2,
+    "TextAssetId": 101108
+  },
+  {
+    "LimitedOpenTextGroupId": 1012,
+    "SortOrder": 1,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 1,
+    "TextAssetId": 101201
+  },
+  {
+    "LimitedOpenTextGroupId": 1012,
+    "SortOrder": 2,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 2,
+    "TextAssetId": 101209
+  },
+  {
+    "LimitedOpenTextGroupId": 1013,
+    "SortOrder": 1,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 1,
+    "TextAssetId": 101301
+  },
+  {
+    "LimitedOpenTextGroupId": 1013,
+    "SortOrder": 2,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 2,
+    "TextAssetId": 101309
+  },
+  {
+    "LimitedOpenTextGroupId": 1014,
+    "SortOrder": 1,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 1,
+    "TextAssetId": 101401
+  },
+  {
+    "LimitedOpenTextGroupId": 1014,
+    "SortOrder": 2,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 2,
+    "TextAssetId": 101409
+  },
+  {
+    "LimitedOpenTextGroupId": 1015,
+    "SortOrder": 1,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 1,
+    "TextAssetId": 101501
+  },
+  {
+    "LimitedOpenTextGroupId": 1015,
+    "SortOrder": 2,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 2,
+    "TextAssetId": 101509
+  },
+  {
+    "LimitedOpenTextGroupId": 1016,
+    "SortOrder": 1,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 1,
+    "TextAssetId": 101601
+  },
+  {
+    "LimitedOpenTextGroupId": 1016,
+    "SortOrder": 2,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 2,
+    "TextAssetId": 101609
+  },
+  {
+    "LimitedOpenTextGroupId": 1017,
+    "SortOrder": 1,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 1,
+    "TextAssetId": 101701
+  },
+  {
+    "LimitedOpenTextGroupId": 1017,
+    "SortOrder": 2,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 2,
+    "TextAssetId": 101709
+  },
+  {
+    "LimitedOpenTextGroupId": 1018,
+    "SortOrder": 1,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 1,
+    "TextAssetId": 101801
+  },
+  {
+    "LimitedOpenTextGroupId": 1018,
+    "SortOrder": 2,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 2,
+    "TextAssetId": 101809
+  },
+  {
+    "LimitedOpenTextGroupId": 1019,
+    "SortOrder": 1,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 1,
+    "TextAssetId": 101901
+  },
+  {
+    "LimitedOpenTextGroupId": 1019,
+    "SortOrder": 2,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 2,
+    "TextAssetId": 101909
+  },
+  {
+    "LimitedOpenTextGroupId": 1020,
+    "SortOrder": 1,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 1,
+    "TextAssetId": 102001
+  },
+  {
+    "LimitedOpenTextGroupId": 1020,
+    "SortOrder": 2,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 2,
+    "TextAssetId": 102009
+  },
+  {
+    "LimitedOpenTextGroupId": 1021,
+    "SortOrder": 1,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 1,
+    "TextAssetId": 102101
+  },
+  {
+    "LimitedOpenTextGroupId": 1021,
+    "SortOrder": 2,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 2,
+    "TextAssetId": 102109
+  },
+  {
+    "LimitedOpenTextGroupId": 1022,
+    "SortOrder": 1,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 1,
+    "TextAssetId": 102201
+  },
+  {
+    "LimitedOpenTextGroupId": 1022,
+    "SortOrder": 2,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 2,
+    "TextAssetId": 102209
+  },
+  {
+    "LimitedOpenTextGroupId": 1023,
+    "SortOrder": 1,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 1,
+    "TextAssetId": 102301
+  },
+  {
+    "LimitedOpenTextGroupId": 1023,
+    "SortOrder": 2,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 2,
+    "TextAssetId": 102309
+  },
+  {
+    "LimitedOpenTextGroupId": 1024,
+    "SortOrder": 1,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 1,
+    "TextAssetId": 102401
+  },
+  {
+    "LimitedOpenTextGroupId": 1024,
+    "SortOrder": 2,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 2,
+    "TextAssetId": 102409
+  },
+  {
+    "LimitedOpenTextGroupId": 1025,
+    "SortOrder": 1,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 1,
+    "TextAssetId": 102501
+  },
+  {
+    "LimitedOpenTextGroupId": 1025,
+    "SortOrder": 2,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 2,
+    "TextAssetId": 102509
+  },
+  {
+    "LimitedOpenTextGroupId": 1026,
+    "SortOrder": 1,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 1,
+    "TextAssetId": 102601
+  },
+  {
+    "LimitedOpenTextGroupId": 1026,
+    "SortOrder": 2,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 2,
+    "TextAssetId": 102609
+  },
+  {
+    "LimitedOpenTextGroupId": 1027,
+    "SortOrder": 1,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 1,
+    "TextAssetId": 102701
+  },
+  {
+    "LimitedOpenTextGroupId": 1027,
+    "SortOrder": 2,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 2,
+    "TextAssetId": 102709
+  },
+  {
+    "LimitedOpenTextGroupId": 1028,
+    "SortOrder": 1,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 1,
+    "TextAssetId": 102801
+  },
+  {
+    "LimitedOpenTextGroupId": 1028,
+    "SortOrder": 2,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 2,
+    "TextAssetId": 102809
+  },
+  {
+    "LimitedOpenTextGroupId": 1029,
+    "SortOrder": 1,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 1,
+    "TextAssetId": 102901
+  },
+  {
+    "LimitedOpenTextGroupId": 1029,
+    "SortOrder": 2,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 2,
+    "TextAssetId": 102909
+  },
+  {
+    "LimitedOpenTextGroupId": 1030,
+    "SortOrder": 1,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 1,
+    "TextAssetId": 103001
+  },
+  {
+    "LimitedOpenTextGroupId": 1030,
+    "SortOrder": 2,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 2,
+    "TextAssetId": 103009
+  },
+  {
+    "LimitedOpenTextGroupId": 1031,
+    "SortOrder": 1,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 1,
+    "TextAssetId": 103101
+  },
+  {
+    "LimitedOpenTextGroupId": 1031,
+    "SortOrder": 2,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 2,
+    "TextAssetId": 103109
+  },
+  {
+    "LimitedOpenTextGroupId": 1032,
+    "SortOrder": 1,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 1,
+    "TextAssetId": 103201
+  },
+  {
+    "LimitedOpenTextGroupId": 1032,
+    "SortOrder": 2,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 2,
+    "TextAssetId": 103209
+  },
+  {
+    "LimitedOpenTextGroupId": 1033,
+    "SortOrder": 1,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 1,
+    "TextAssetId": 103301
+  },
+  {
+    "LimitedOpenTextGroupId": 1033,
+    "SortOrder": 2,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 2,
+    "TextAssetId": 103309
+  },
+  {
+    "LimitedOpenTextGroupId": 1034,
+    "SortOrder": 1,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 1,
+    "TextAssetId": 103401
+  },
+  {
+    "LimitedOpenTextGroupId": 1034,
+    "SortOrder": 2,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 2,
+    "TextAssetId": 103409
+  },
+  {
+    "LimitedOpenTextGroupId": 1035,
+    "SortOrder": 1,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 1,
+    "TextAssetId": 103501
+  },
+  {
+    "LimitedOpenTextGroupId": 1035,
+    "SortOrder": 2,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 2,
+    "TextAssetId": 103509
+  },
+  {
+    "LimitedOpenTextGroupId": 1036,
+    "SortOrder": 1,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 1,
+    "TextAssetId": 103601
+  },
+  {
+    "LimitedOpenTextGroupId": 1036,
+    "SortOrder": 2,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 2,
+    "TextAssetId": 103609
+  },
+  {
+    "LimitedOpenTextGroupId": 1037,
+    "SortOrder": 1,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 1,
+    "TextAssetId": 103701
+  },
+  {
+    "LimitedOpenTextGroupId": 1037,
+    "SortOrder": 2,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 2,
+    "TextAssetId": 103709
+  },
+  {
+    "LimitedOpenTextGroupId": 1038,
+    "SortOrder": 1,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 1,
+    "TextAssetId": 103801
+  },
+  {
+    "LimitedOpenTextGroupId": 1038,
+    "SortOrder": 2,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 2,
+    "TextAssetId": 103809
+  },
+  {
+    "LimitedOpenTextGroupId": 1039,
+    "SortOrder": 1,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 1,
+    "TextAssetId": 103901
+  },
+  {
+    "LimitedOpenTextGroupId": 1039,
+    "SortOrder": 2,
+    "LimitedOpenTextDisplayConditionType": 1,
+    "LimitedOpenTextDisplayConditionValue": 2,
+    "TextAssetId": 103909
+  }
+]

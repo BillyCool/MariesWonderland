@@ -1,0 +1,632 @@
+[
+  {
+    "SkillCasttimeId": 0,
+    "SkillCasttimeValue": 0,
+    "SkillCasttimeBehaviourGroupId": 1
+  },
+  {
+    "SkillCasttimeId": 30,
+    "SkillCasttimeValue": 30,
+    "SkillCasttimeBehaviourGroupId": 1
+  },
+  {
+    "SkillCasttimeId": 60,
+    "SkillCasttimeValue": 60,
+    "SkillCasttimeBehaviourGroupId": 1
+  },
+  {
+    "SkillCasttimeId": 90,
+    "SkillCasttimeValue": 90,
+    "SkillCasttimeBehaviourGroupId": 1
+  },
+  {
+    "SkillCasttimeId": 120,
+    "SkillCasttimeValue": 120,
+    "SkillCasttimeBehaviourGroupId": 1
+  },
+  {
+    "SkillCasttimeId": 150,
+    "SkillCasttimeValue": 150,
+    "SkillCasttimeBehaviourGroupId": 1
+  },
+  {
+    "SkillCasttimeId": 180,
+    "SkillCasttimeValue": 180,
+    "SkillCasttimeBehaviourGroupId": 1
+  },
+  {
+    "SkillCasttimeId": 210,
+    "SkillCasttimeValue": 210,
+    "SkillCasttimeBehaviourGroupId": 1
+  },
+  {
+    "SkillCasttimeId": 240,
+    "SkillCasttimeValue": 240,
+    "SkillCasttimeBehaviourGroupId": 1
+  },
+  {
+    "SkillCasttimeId": 300,
+    "SkillCasttimeValue": 300,
+    "SkillCasttimeBehaviourGroupId": 1
+  },
+  {
+    "SkillCasttimeId": 330,
+    "SkillCasttimeValue": 330,
+    "SkillCasttimeBehaviourGroupId": 1
+  },
+  {
+    "SkillCasttimeId": 360,
+    "SkillCasttimeValue": 360,
+    "SkillCasttimeBehaviourGroupId": 1
+  },
+  {
+    "SkillCasttimeId": 390,
+    "SkillCasttimeValue": 390,
+    "SkillCasttimeBehaviourGroupId": 1
+  },
+  {
+    "SkillCasttimeId": 420,
+    "SkillCasttimeValue": 420,
+    "SkillCasttimeBehaviourGroupId": 1
+  },
+  {
+    "SkillCasttimeId": 450,
+    "SkillCasttimeValue": 450,
+    "SkillCasttimeBehaviourGroupId": 1
+  },
+  {
+    "SkillCasttimeId": 480,
+    "SkillCasttimeValue": 480,
+    "SkillCasttimeBehaviourGroupId": 1
+  },
+  {
+    "SkillCasttimeId": 510,
+    "SkillCasttimeValue": 510,
+    "SkillCasttimeBehaviourGroupId": 1
+  },
+  {
+    "SkillCasttimeId": 540,
+    "SkillCasttimeValue": 540,
+    "SkillCasttimeBehaviourGroupId": 1
+  },
+  {
+    "SkillCasttimeId": 570,
+    "SkillCasttimeValue": 570,
+    "SkillCasttimeBehaviourGroupId": 1
+  },
+  {
+    "SkillCasttimeId": 600,
+    "SkillCasttimeValue": 600,
+    "SkillCasttimeBehaviourGroupId": 1
+  },
+  {
+    "SkillCasttimeId": 660,
+    "SkillCasttimeValue": 660,
+    "SkillCasttimeBehaviourGroupId": 1
+  },
+  {
+    "SkillCasttimeId": 690,
+    "SkillCasttimeValue": 690,
+    "SkillCasttimeBehaviourGroupId": 1
+  },
+  {
+    "SkillCasttimeId": 720,
+    "SkillCasttimeValue": 720,
+    "SkillCasttimeBehaviourGroupId": 1
+  },
+  {
+    "SkillCasttimeId": 750,
+    "SkillCasttimeValue": 750,
+    "SkillCasttimeBehaviourGroupId": 1
+  },
+  {
+    "SkillCasttimeId": 780,
+    "SkillCasttimeValue": 780,
+    "SkillCasttimeBehaviourGroupId": 1
+  },
+  {
+    "SkillCasttimeId": 900,
+    "SkillCasttimeValue": 900,
+    "SkillCasttimeBehaviourGroupId": 1
+  },
+  {
+    "SkillCasttimeId": 1050,
+    "SkillCasttimeValue": 1050,
+    "SkillCasttimeBehaviourGroupId": 1
+  },
+  {
+    "SkillCasttimeId": 1200,
+    "SkillCasttimeValue": 1200,
+    "SkillCasttimeBehaviourGroupId": 1
+  },
+  {
+    "SkillCasttimeId": 1350,
+    "SkillCasttimeValue": 1350,
+    "SkillCasttimeBehaviourGroupId": 1
+  },
+  {
+    "SkillCasttimeId": 1500,
+    "SkillCasttimeValue": 1500,
+    "SkillCasttimeBehaviourGroupId": 1
+  },
+  {
+    "SkillCasttimeId": 1800,
+    "SkillCasttimeValue": 1800,
+    "SkillCasttimeBehaviourGroupId": 1
+  },
+  {
+    "SkillCasttimeId": 2100,
+    "SkillCasttimeValue": 2100,
+    "SkillCasttimeBehaviourGroupId": 1
+  },
+  {
+    "SkillCasttimeId": 2250,
+    "SkillCasttimeValue": 2250,
+    "SkillCasttimeBehaviourGroupId": 1
+  },
+  {
+    "SkillCasttimeId": 2700,
+    "SkillCasttimeValue": 2700,
+    "SkillCasttimeBehaviourGroupId": 1
+  },
+  {
+    "SkillCasttimeId": 3150,
+    "SkillCasttimeValue": 3150,
+    "SkillCasttimeBehaviourGroupId": 1
+  },
+  {
+    "SkillCasttimeId": 3600,
+    "SkillCasttimeValue": 3600,
+    "SkillCasttimeBehaviourGroupId": 1
+  },
+  {
+    "SkillCasttimeId": 4500,
+    "SkillCasttimeValue": 4500,
+    "SkillCasttimeBehaviourGroupId": 1
+  },
+  {
+    "SkillCasttimeId": 4800,
+    "SkillCasttimeValue": 4800,
+    "SkillCasttimeBehaviourGroupId": 1
+  },
+  {
+    "SkillCasttimeId": 5400,
+    "SkillCasttimeValue": 5400,
+    "SkillCasttimeBehaviourGroupId": 1
+  },
+  {
+    "SkillCasttimeId": 6000,
+    "SkillCasttimeValue": 6000,
+    "SkillCasttimeBehaviourGroupId": 1
+  },
+  {
+    "SkillCasttimeId": 6300,
+    "SkillCasttimeValue": 6300,
+    "SkillCasttimeBehaviourGroupId": 1
+  },
+  {
+    "SkillCasttimeId": 7200,
+    "SkillCasttimeValue": 7200,
+    "SkillCasttimeBehaviourGroupId": 1
+  },
+  {
+    "SkillCasttimeId": 9000,
+    "SkillCasttimeValue": 9000,
+    "SkillCasttimeBehaviourGroupId": 1
+  },
+  {
+    "SkillCasttimeId": 9900,
+    "SkillCasttimeValue": 9900,
+    "SkillCasttimeBehaviourGroupId": 1
+  },
+  {
+    "SkillCasttimeId": 11200,
+    "SkillCasttimeValue": 1200,
+    "SkillCasttimeBehaviourGroupId": 2
+  },
+  {
+    "SkillCasttimeId": 21200,
+    "SkillCasttimeValue": 1200,
+    "SkillCasttimeBehaviourGroupId": 3
+  },
+  {
+    "SkillCasttimeId": 21350,
+    "SkillCasttimeValue": 1350,
+    "SkillCasttimeBehaviourGroupId": 3
+  },
+  {
+    "SkillCasttimeId": 31200,
+    "SkillCasttimeValue": 1200,
+    "SkillCasttimeBehaviourGroupId": 4
+  },
+  {
+    "SkillCasttimeId": 41200,
+    "SkillCasttimeValue": 1200,
+    "SkillCasttimeBehaviourGroupId": 5
+  },
+  {
+    "SkillCasttimeId": 51350,
+    "SkillCasttimeValue": 1350,
+    "SkillCasttimeBehaviourGroupId": 6
+  },
+  {
+    "SkillCasttimeId": 61350,
+    "SkillCasttimeValue": 1350,
+    "SkillCasttimeBehaviourGroupId": 7
+  },
+  {
+    "SkillCasttimeId": 71350,
+    "SkillCasttimeValue": 1350,
+    "SkillCasttimeBehaviourGroupId": 8
+  },
+  {
+    "SkillCasttimeId": 81350,
+    "SkillCasttimeValue": 1350,
+    "SkillCasttimeBehaviourGroupId": 9
+  },
+  {
+    "SkillCasttimeId": 90900,
+    "SkillCasttimeValue": 900,
+    "SkillCasttimeBehaviourGroupId": 10
+  },
+  {
+    "SkillCasttimeId": 91200,
+    "SkillCasttimeValue": 1200,
+    "SkillCasttimeBehaviourGroupId": 10
+  },
+  {
+    "SkillCasttimeId": 91350,
+    "SkillCasttimeValue": 1350,
+    "SkillCasttimeBehaviourGroupId": 10
+  },
+  {
+    "SkillCasttimeId": 100900,
+    "SkillCasttimeValue": 900,
+    "SkillCasttimeBehaviourGroupId": 11
+  },
+  {
+    "SkillCasttimeId": 110900,
+    "SkillCasttimeValue": 900,
+    "SkillCasttimeBehaviourGroupId": 12
+  },
+  {
+    "SkillCasttimeId": 111200,
+    "SkillCasttimeValue": 1200,
+    "SkillCasttimeBehaviourGroupId": 12
+  },
+  {
+    "SkillCasttimeId": 120900,
+    "SkillCasttimeValue": 900,
+    "SkillCasttimeBehaviourGroupId": 13
+  },
+  {
+    "SkillCasttimeId": 121200,
+    "SkillCasttimeValue": 1200,
+    "SkillCasttimeBehaviourGroupId": 13
+  },
+  {
+    "SkillCasttimeId": 130900,
+    "SkillCasttimeValue": 900,
+    "SkillCasttimeBehaviourGroupId": 14
+  },
+  {
+    "SkillCasttimeId": 131200,
+    "SkillCasttimeValue": 1200,
+    "SkillCasttimeBehaviourGroupId": 14
+  },
+  {
+    "SkillCasttimeId": 131800,
+    "SkillCasttimeValue": 1800,
+    "SkillCasttimeBehaviourGroupId": 14
+  },
+  {
+    "SkillCasttimeId": 140900,
+    "SkillCasttimeValue": 900,
+    "SkillCasttimeBehaviourGroupId": 15
+  },
+  {
+    "SkillCasttimeId": 151200,
+    "SkillCasttimeValue": 1200,
+    "SkillCasttimeBehaviourGroupId": 16
+  },
+  {
+    "SkillCasttimeId": 151350,
+    "SkillCasttimeValue": 1350,
+    "SkillCasttimeBehaviourGroupId": 16
+  },
+  {
+    "SkillCasttimeId": 160900,
+    "SkillCasttimeValue": 900,
+    "SkillCasttimeBehaviourGroupId": 17
+  },
+  {
+    "SkillCasttimeId": 161200,
+    "SkillCasttimeValue": 1200,
+    "SkillCasttimeBehaviourGroupId": 17
+  },
+  {
+    "SkillCasttimeId": 161350,
+    "SkillCasttimeValue": 1350,
+    "SkillCasttimeBehaviourGroupId": 17
+  },
+  {
+    "SkillCasttimeId": 161500,
+    "SkillCasttimeValue": 1500,
+    "SkillCasttimeBehaviourGroupId": 17
+  },
+  {
+    "SkillCasttimeId": 170900,
+    "SkillCasttimeValue": 900,
+    "SkillCasttimeBehaviourGroupId": 18
+  },
+  {
+    "SkillCasttimeId": 171500,
+    "SkillCasttimeValue": 1500,
+    "SkillCasttimeBehaviourGroupId": 18
+  },
+  {
+    "SkillCasttimeId": 190900,
+    "SkillCasttimeValue": 900,
+    "SkillCasttimeBehaviourGroupId": 20
+  },
+  {
+    "SkillCasttimeId": 200900,
+    "SkillCasttimeValue": 900,
+    "SkillCasttimeBehaviourGroupId": 21
+  },
+  {
+    "SkillCasttimeId": 201500,
+    "SkillCasttimeValue": 1500,
+    "SkillCasttimeBehaviourGroupId": 21
+  },
+  {
+    "SkillCasttimeId": 210900,
+    "SkillCasttimeValue": 900,
+    "SkillCasttimeBehaviourGroupId": 22
+  },
+  {
+    "SkillCasttimeId": 220900,
+    "SkillCasttimeValue": 900,
+    "SkillCasttimeBehaviourGroupId": 23
+  },
+  {
+    "SkillCasttimeId": 230900,
+    "SkillCasttimeValue": 900,
+    "SkillCasttimeBehaviourGroupId": 24
+  },
+  {
+    "SkillCasttimeId": 231200,
+    "SkillCasttimeValue": 1200,
+    "SkillCasttimeBehaviourGroupId": 24
+  },
+  {
+    "SkillCasttimeId": 231350,
+    "SkillCasttimeValue": 1350,
+    "SkillCasttimeBehaviourGroupId": 24
+  },
+  {
+    "SkillCasttimeId": 231500,
+    "SkillCasttimeValue": 1500,
+    "SkillCasttimeBehaviourGroupId": 24
+  },
+  {
+    "SkillCasttimeId": 231800,
+    "SkillCasttimeValue": 1800,
+    "SkillCasttimeBehaviourGroupId": 24
+  },
+  {
+    "SkillCasttimeId": 240450,
+    "SkillCasttimeValue": 450,
+    "SkillCasttimeBehaviourGroupId": 25
+  },
+  {
+    "SkillCasttimeId": 250450,
+    "SkillCasttimeValue": 450,
+    "SkillCasttimeBehaviourGroupId": 26
+  },
+  {
+    "SkillCasttimeId": 250600,
+    "SkillCasttimeValue": 600,
+    "SkillCasttimeBehaviourGroupId": 26
+  },
+  {
+    "SkillCasttimeId": 250750,
+    "SkillCasttimeValue": 750,
+    "SkillCasttimeBehaviourGroupId": 26
+  },
+  {
+    "SkillCasttimeId": 250900,
+    "SkillCasttimeValue": 900,
+    "SkillCasttimeBehaviourGroupId": 26
+  },
+  {
+    "SkillCasttimeId": 251050,
+    "SkillCasttimeValue": 1050,
+    "SkillCasttimeBehaviourGroupId": 26
+  },
+  {
+    "SkillCasttimeId": 251200,
+    "SkillCasttimeValue": 1200,
+    "SkillCasttimeBehaviourGroupId": 26
+  },
+  {
+    "SkillCasttimeId": 251350,
+    "SkillCasttimeValue": 1350,
+    "SkillCasttimeBehaviourGroupId": 26
+  },
+  {
+    "SkillCasttimeId": 251500,
+    "SkillCasttimeValue": 1500,
+    "SkillCasttimeBehaviourGroupId": 26
+  },
+  {
+    "SkillCasttimeId": 251800,
+    "SkillCasttimeValue": 1800,
+    "SkillCasttimeBehaviourGroupId": 26
+  },
+  {
+    "SkillCasttimeId": 252700,
+    "SkillCasttimeValue": 2700,
+    "SkillCasttimeBehaviourGroupId": 26
+  },
+  {
+    "SkillCasttimeId": 260900,
+    "SkillCasttimeValue": 900,
+    "SkillCasttimeBehaviourGroupId": 27
+  },
+  {
+    "SkillCasttimeId": 261200,
+    "SkillCasttimeValue": 1200,
+    "SkillCasttimeBehaviourGroupId": 27
+  },
+  {
+    "SkillCasttimeId": 261350,
+    "SkillCasttimeValue": 1350,
+    "SkillCasttimeBehaviourGroupId": 27
+  },
+  {
+    "SkillCasttimeId": 261800,
+    "SkillCasttimeValue": 1800,
+    "SkillCasttimeBehaviourGroupId": 27
+  },
+  {
+    "SkillCasttimeId": 270900,
+    "SkillCasttimeValue": 900,
+    "SkillCasttimeBehaviourGroupId": 28
+  },
+  {
+    "SkillCasttimeId": 271350,
+    "SkillCasttimeValue": 1350,
+    "SkillCasttimeBehaviourGroupId": 28
+  },
+  {
+    "SkillCasttimeId": 271500,
+    "SkillCasttimeValue": 1500,
+    "SkillCasttimeBehaviourGroupId": 28
+  },
+  {
+    "SkillCasttimeId": 271800,
+    "SkillCasttimeValue": 1800,
+    "SkillCasttimeBehaviourGroupId": 28
+  },
+  {
+    "SkillCasttimeId": 280450,
+    "SkillCasttimeValue": 450,
+    "SkillCasttimeBehaviourGroupId": 29
+  },
+  {
+    "SkillCasttimeId": 280600,
+    "SkillCasttimeValue": 600,
+    "SkillCasttimeBehaviourGroupId": 29
+  },
+  {
+    "SkillCasttimeId": 281200,
+    "SkillCasttimeValue": 1200,
+    "SkillCasttimeBehaviourGroupId": 29
+  },
+  {
+    "SkillCasttimeId": 281350,
+    "SkillCasttimeValue": 1350,
+    "SkillCasttimeBehaviourGroupId": 29
+  },
+  {
+    "SkillCasttimeId": 281800,
+    "SkillCasttimeValue": 1800,
+    "SkillCasttimeBehaviourGroupId": 29
+  },
+  {
+    "SkillCasttimeId": 283000,
+    "SkillCasttimeValue": 3000,
+    "SkillCasttimeBehaviourGroupId": 29
+  },
+  {
+    "SkillCasttimeId": 290600,
+    "SkillCasttimeValue": 600,
+    "SkillCasttimeBehaviourGroupId": 30
+  },
+  {
+    "SkillCasttimeId": 291200,
+    "SkillCasttimeValue": 1200,
+    "SkillCasttimeBehaviourGroupId": 30
+  },
+  {
+    "SkillCasttimeId": 291350,
+    "SkillCasttimeValue": 1350,
+    "SkillCasttimeBehaviourGroupId": 30
+  },
+  {
+    "SkillCasttimeId": 291500,
+    "SkillCasttimeValue": 1500,
+    "SkillCasttimeBehaviourGroupId": 30
+  },
+  {
+    "SkillCasttimeId": 291800,
+    "SkillCasttimeValue": 1800,
+    "SkillCasttimeBehaviourGroupId": 30
+  },
+  {
+    "SkillCasttimeId": 300450,
+    "SkillCasttimeValue": 450,
+    "SkillCasttimeBehaviourGroupId": 31
+  },
+  {
+    "SkillCasttimeId": 300900,
+    "SkillCasttimeValue": 900,
+    "SkillCasttimeBehaviourGroupId": 31
+  },
+  {
+    "SkillCasttimeId": 301500,
+    "SkillCasttimeValue": 1500,
+    "SkillCasttimeBehaviourGroupId": 31
+  },
+  {
+    "SkillCasttimeId": 301800,
+    "SkillCasttimeValue": 1800,
+    "SkillCasttimeBehaviourGroupId": 31
+  },
+  {
+    "SkillCasttimeId": 310750,
+    "SkillCasttimeValue": 750,
+    "SkillCasttimeBehaviourGroupId": 32
+  },
+  {
+    "SkillCasttimeId": 311050,
+    "SkillCasttimeValue": 1050,
+    "SkillCasttimeBehaviourGroupId": 32
+  },
+  {
+    "SkillCasttimeId": 311350,
+    "SkillCasttimeValue": 1350,
+    "SkillCasttimeBehaviourGroupId": 32
+  },
+  {
+    "SkillCasttimeId": 311500,
+    "SkillCasttimeValue": 1500,
+    "SkillCasttimeBehaviourGroupId": 32
+  },
+  {
+    "SkillCasttimeId": 311800,
+    "SkillCasttimeValue": 1800,
+    "SkillCasttimeBehaviourGroupId": 32
+  },
+  {
+    "SkillCasttimeId": 312700,
+    "SkillCasttimeValue": 2700,
+    "SkillCasttimeBehaviourGroupId": 32
+  },
+  {
+    "SkillCasttimeId": 313600,
+    "SkillCasttimeValue": 3600,
+    "SkillCasttimeBehaviourGroupId": 32
+  },
+  {
+    "SkillCasttimeId": 321500,
+    "SkillCasttimeValue": 1500,
+    "SkillCasttimeBehaviourGroupId": 33
+  },
+  {
+    "SkillCasttimeId": 321800,
+    "SkillCasttimeValue": 1800,
+    "SkillCasttimeBehaviourGroupId": 33
+  }
+]

@@ -1,0 +1,866 @@
+[
+  {
+    "PartsGroupId": 1,
+    "PartsSeriesId": 1,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 1
+  },
+  {
+    "PartsGroupId": 2,
+    "PartsSeriesId": 1,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 2
+  },
+  {
+    "PartsGroupId": 3,
+    "PartsSeriesId": 1,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 3
+  },
+  {
+    "PartsGroupId": 4,
+    "PartsSeriesId": 2,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 4
+  },
+  {
+    "PartsGroupId": 5,
+    "PartsSeriesId": 2,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 5
+  },
+  {
+    "PartsGroupId": 6,
+    "PartsSeriesId": 2,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 6
+  },
+  {
+    "PartsGroupId": 7,
+    "PartsSeriesId": 3,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 7
+  },
+  {
+    "PartsGroupId": 8,
+    "PartsSeriesId": 3,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 8
+  },
+  {
+    "PartsGroupId": 9,
+    "PartsSeriesId": 3,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 9
+  },
+  {
+    "PartsGroupId": 10,
+    "PartsSeriesId": 4,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 10
+  },
+  {
+    "PartsGroupId": 11,
+    "PartsSeriesId": 4,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 11
+  },
+  {
+    "PartsGroupId": 12,
+    "PartsSeriesId": 4,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 12
+  },
+  {
+    "PartsGroupId": 13,
+    "PartsSeriesId": 5,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 13
+  },
+  {
+    "PartsGroupId": 14,
+    "PartsSeriesId": 5,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 14
+  },
+  {
+    "PartsGroupId": 15,
+    "PartsSeriesId": 5,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 15
+  },
+  {
+    "PartsGroupId": 16,
+    "PartsSeriesId": 6,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 16
+  },
+  {
+    "PartsGroupId": 17,
+    "PartsSeriesId": 6,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 17
+  },
+  {
+    "PartsGroupId": 18,
+    "PartsSeriesId": 6,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 18
+  },
+  {
+    "PartsGroupId": 19,
+    "PartsSeriesId": 7,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 19
+  },
+  {
+    "PartsGroupId": 20,
+    "PartsSeriesId": 7,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 20
+  },
+  {
+    "PartsGroupId": 21,
+    "PartsSeriesId": 7,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 21
+  },
+  {
+    "PartsGroupId": 22,
+    "PartsSeriesId": 8,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 22
+  },
+  {
+    "PartsGroupId": 23,
+    "PartsSeriesId": 8,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 23
+  },
+  {
+    "PartsGroupId": 24,
+    "PartsSeriesId": 8,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 24
+  },
+  {
+    "PartsGroupId": 25,
+    "PartsSeriesId": 9,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 25
+  },
+  {
+    "PartsGroupId": 26,
+    "PartsSeriesId": 9,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 26
+  },
+  {
+    "PartsGroupId": 27,
+    "PartsSeriesId": 9,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 27
+  },
+  {
+    "PartsGroupId": 28,
+    "PartsSeriesId": 10,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 28
+  },
+  {
+    "PartsGroupId": 29,
+    "PartsSeriesId": 10,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 29
+  },
+  {
+    "PartsGroupId": 30,
+    "PartsSeriesId": 10,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 30
+  },
+  {
+    "PartsGroupId": 31,
+    "PartsSeriesId": 11,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 31
+  },
+  {
+    "PartsGroupId": 32,
+    "PartsSeriesId": 11,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 32
+  },
+  {
+    "PartsGroupId": 33,
+    "PartsSeriesId": 11,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 33
+  },
+  {
+    "PartsGroupId": 34,
+    "PartsSeriesId": 12,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 34
+  },
+  {
+    "PartsGroupId": 35,
+    "PartsSeriesId": 12,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 35
+  },
+  {
+    "PartsGroupId": 36,
+    "PartsSeriesId": 12,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 36
+  },
+  {
+    "PartsGroupId": 37,
+    "PartsSeriesId": 13,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 37
+  },
+  {
+    "PartsGroupId": 38,
+    "PartsSeriesId": 13,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 38
+  },
+  {
+    "PartsGroupId": 39,
+    "PartsSeriesId": 13,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 39
+  },
+  {
+    "PartsGroupId": 40,
+    "PartsSeriesId": 14,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 40
+  },
+  {
+    "PartsGroupId": 41,
+    "PartsSeriesId": 14,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 41
+  },
+  {
+    "PartsGroupId": 42,
+    "PartsSeriesId": 14,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 42
+  },
+  {
+    "PartsGroupId": 43,
+    "PartsSeriesId": 15,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 43
+  },
+  {
+    "PartsGroupId": 44,
+    "PartsSeriesId": 15,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 44
+  },
+  {
+    "PartsGroupId": 45,
+    "PartsSeriesId": 15,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 45
+  },
+  {
+    "PartsGroupId": 46,
+    "PartsSeriesId": 16,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 46
+  },
+  {
+    "PartsGroupId": 47,
+    "PartsSeriesId": 16,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 47
+  },
+  {
+    "PartsGroupId": 48,
+    "PartsSeriesId": 16,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 48
+  },
+  {
+    "PartsGroupId": 49,
+    "PartsSeriesId": 17,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 49
+  },
+  {
+    "PartsGroupId": 50,
+    "PartsSeriesId": 17,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 50
+  },
+  {
+    "PartsGroupId": 51,
+    "PartsSeriesId": 17,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 51
+  },
+  {
+    "PartsGroupId": 52,
+    "PartsSeriesId": 18,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 52
+  },
+  {
+    "PartsGroupId": 53,
+    "PartsSeriesId": 18,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 53
+  },
+  {
+    "PartsGroupId": 54,
+    "PartsSeriesId": 18,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 54
+  },
+  {
+    "PartsGroupId": 401,
+    "PartsSeriesId": 1,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 401
+  },
+  {
+    "PartsGroupId": 402,
+    "PartsSeriesId": 1,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 402
+  },
+  {
+    "PartsGroupId": 403,
+    "PartsSeriesId": 1,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 403
+  },
+  {
+    "PartsGroupId": 404,
+    "PartsSeriesId": 2,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 404
+  },
+  {
+    "PartsGroupId": 405,
+    "PartsSeriesId": 2,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 405
+  },
+  {
+    "PartsGroupId": 406,
+    "PartsSeriesId": 2,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 406
+  },
+  {
+    "PartsGroupId": 407,
+    "PartsSeriesId": 3,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 407
+  },
+  {
+    "PartsGroupId": 408,
+    "PartsSeriesId": 3,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 408
+  },
+  {
+    "PartsGroupId": 409,
+    "PartsSeriesId": 3,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 409
+  },
+  {
+    "PartsGroupId": 410,
+    "PartsSeriesId": 4,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 410
+  },
+  {
+    "PartsGroupId": 411,
+    "PartsSeriesId": 4,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 411
+  },
+  {
+    "PartsGroupId": 412,
+    "PartsSeriesId": 4,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 412
+  },
+  {
+    "PartsGroupId": 413,
+    "PartsSeriesId": 5,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 413
+  },
+  {
+    "PartsGroupId": 414,
+    "PartsSeriesId": 5,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 414
+  },
+  {
+    "PartsGroupId": 415,
+    "PartsSeriesId": 5,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 415
+  },
+  {
+    "PartsGroupId": 416,
+    "PartsSeriesId": 6,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 416
+  },
+  {
+    "PartsGroupId": 417,
+    "PartsSeriesId": 6,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 417
+  },
+  {
+    "PartsGroupId": 418,
+    "PartsSeriesId": 6,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 418
+  },
+  {
+    "PartsGroupId": 419,
+    "PartsSeriesId": 7,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 419
+  },
+  {
+    "PartsGroupId": 420,
+    "PartsSeriesId": 7,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 420
+  },
+  {
+    "PartsGroupId": 421,
+    "PartsSeriesId": 7,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 421
+  },
+  {
+    "PartsGroupId": 422,
+    "PartsSeriesId": 8,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 422
+  },
+  {
+    "PartsGroupId": 423,
+    "PartsSeriesId": 8,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 423
+  },
+  {
+    "PartsGroupId": 424,
+    "PartsSeriesId": 8,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 424
+  },
+  {
+    "PartsGroupId": 425,
+    "PartsSeriesId": 9,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 425
+  },
+  {
+    "PartsGroupId": 426,
+    "PartsSeriesId": 9,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 426
+  },
+  {
+    "PartsGroupId": 427,
+    "PartsSeriesId": 9,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 427
+  },
+  {
+    "PartsGroupId": 428,
+    "PartsSeriesId": 10,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 428
+  },
+  {
+    "PartsGroupId": 429,
+    "PartsSeriesId": 10,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 429
+  },
+  {
+    "PartsGroupId": 430,
+    "PartsSeriesId": 10,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 430
+  },
+  {
+    "PartsGroupId": 431,
+    "PartsSeriesId": 11,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 431
+  },
+  {
+    "PartsGroupId": 432,
+    "PartsSeriesId": 11,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 432
+  },
+  {
+    "PartsGroupId": 433,
+    "PartsSeriesId": 11,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 433
+  },
+  {
+    "PartsGroupId": 434,
+    "PartsSeriesId": 12,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 434
+  },
+  {
+    "PartsGroupId": 435,
+    "PartsSeriesId": 12,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 435
+  },
+  {
+    "PartsGroupId": 436,
+    "PartsSeriesId": 12,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 436
+  },
+  {
+    "PartsGroupId": 437,
+    "PartsSeriesId": 1,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 437
+  },
+  {
+    "PartsGroupId": 438,
+    "PartsSeriesId": 1,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 438
+  },
+  {
+    "PartsGroupId": 439,
+    "PartsSeriesId": 1,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 439
+  },
+  {
+    "PartsGroupId": 440,
+    "PartsSeriesId": 2,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 440
+  },
+  {
+    "PartsGroupId": 441,
+    "PartsSeriesId": 2,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 441
+  },
+  {
+    "PartsGroupId": 442,
+    "PartsSeriesId": 2,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 442
+  },
+  {
+    "PartsGroupId": 443,
+    "PartsSeriesId": 3,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 443
+  },
+  {
+    "PartsGroupId": 444,
+    "PartsSeriesId": 3,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 444
+  },
+  {
+    "PartsGroupId": 445,
+    "PartsSeriesId": 3,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 445
+  },
+  {
+    "PartsGroupId": 446,
+    "PartsSeriesId": 4,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 446
+  },
+  {
+    "PartsGroupId": 447,
+    "PartsSeriesId": 4,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 447
+  },
+  {
+    "PartsGroupId": 448,
+    "PartsSeriesId": 4,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 448
+  },
+  {
+    "PartsGroupId": 449,
+    "PartsSeriesId": 5,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 449
+  },
+  {
+    "PartsGroupId": 450,
+    "PartsSeriesId": 5,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 450
+  },
+  {
+    "PartsGroupId": 451,
+    "PartsSeriesId": 5,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 451
+  },
+  {
+    "PartsGroupId": 452,
+    "PartsSeriesId": 6,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 452
+  },
+  {
+    "PartsGroupId": 453,
+    "PartsSeriesId": 6,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 453
+  },
+  {
+    "PartsGroupId": 454,
+    "PartsSeriesId": 6,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 454
+  },
+  {
+    "PartsGroupId": 455,
+    "PartsSeriesId": 7,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 455
+  },
+  {
+    "PartsGroupId": 456,
+    "PartsSeriesId": 7,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 456
+  },
+  {
+    "PartsGroupId": 457,
+    "PartsSeriesId": 7,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 457
+  },
+  {
+    "PartsGroupId": 458,
+    "PartsSeriesId": 8,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 458
+  },
+  {
+    "PartsGroupId": 459,
+    "PartsSeriesId": 8,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 459
+  },
+  {
+    "PartsGroupId": 460,
+    "PartsSeriesId": 8,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 460
+  },
+  {
+    "PartsGroupId": 461,
+    "PartsSeriesId": 9,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 461
+  },
+  {
+    "PartsGroupId": 462,
+    "PartsSeriesId": 9,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 462
+  },
+  {
+    "PartsGroupId": 463,
+    "PartsSeriesId": 9,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 463
+  },
+  {
+    "PartsGroupId": 464,
+    "PartsSeriesId": 10,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 464
+  },
+  {
+    "PartsGroupId": 465,
+    "PartsSeriesId": 10,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 465
+  },
+  {
+    "PartsGroupId": 466,
+    "PartsSeriesId": 10,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 466
+  },
+  {
+    "PartsGroupId": 467,
+    "PartsSeriesId": 11,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 467
+  },
+  {
+    "PartsGroupId": 468,
+    "PartsSeriesId": 11,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 468
+  },
+  {
+    "PartsGroupId": 469,
+    "PartsSeriesId": 11,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 469
+  },
+  {
+    "PartsGroupId": 470,
+    "PartsSeriesId": 12,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 470
+  },
+  {
+    "PartsGroupId": 471,
+    "PartsSeriesId": 12,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 471
+  },
+  {
+    "PartsGroupId": 472,
+    "PartsSeriesId": 12,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 472
+  },
+  {
+    "PartsGroupId": 473,
+    "PartsSeriesId": 13,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 473
+  },
+  {
+    "PartsGroupId": 474,
+    "PartsSeriesId": 13,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 474
+  },
+  {
+    "PartsGroupId": 475,
+    "PartsSeriesId": 13,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 475
+  },
+  {
+    "PartsGroupId": 476,
+    "PartsSeriesId": 14,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 476
+  },
+  {
+    "PartsGroupId": 477,
+    "PartsSeriesId": 14,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 477
+  },
+  {
+    "PartsGroupId": 478,
+    "PartsSeriesId": 14,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 478
+  },
+  {
+    "PartsGroupId": 479,
+    "PartsSeriesId": 15,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 479
+  },
+  {
+    "PartsGroupId": 480,
+    "PartsSeriesId": 15,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 480
+  },
+  {
+    "PartsGroupId": 481,
+    "PartsSeriesId": 15,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 481
+  },
+  {
+    "PartsGroupId": 482,
+    "PartsSeriesId": 16,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 482
+  },
+  {
+    "PartsGroupId": 483,
+    "PartsSeriesId": 16,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 483
+  },
+  {
+    "PartsGroupId": 484,
+    "PartsSeriesId": 16,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 484
+  },
+  {
+    "PartsGroupId": 485,
+    "PartsSeriesId": 17,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 485
+  },
+  {
+    "PartsGroupId": 486,
+    "PartsSeriesId": 17,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 486
+  },
+  {
+    "PartsGroupId": 487,
+    "PartsSeriesId": 17,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 487
+  },
+  {
+    "PartsGroupId": 488,
+    "PartsSeriesId": 18,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 488
+  },
+  {
+    "PartsGroupId": 489,
+    "PartsSeriesId": 18,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 489
+  },
+  {
+    "PartsGroupId": 490,
+    "PartsSeriesId": 18,
+    "SortOrder": 1,
+    "PartsGroupAssetId": 490
+  }
+]

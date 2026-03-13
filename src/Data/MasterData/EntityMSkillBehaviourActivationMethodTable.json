@@ -1,0 +1,842 @@
+[
+  {
+    "SkillBehaviourActivationMethodId": 1,
+    "ActivationMethodType": 1,
+    "SkillBehaviourActivationConditionGroupId": 1
+  },
+  {
+    "SkillBehaviourActivationMethodId": 2,
+    "ActivationMethodType": 5,
+    "SkillBehaviourActivationConditionGroupId": 2
+  },
+  {
+    "SkillBehaviourActivationMethodId": 3,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 1
+  },
+  {
+    "SkillBehaviourActivationMethodId": 4,
+    "ActivationMethodType": 6,
+    "SkillBehaviourActivationConditionGroupId": 1
+  },
+  {
+    "SkillBehaviourActivationMethodId": 5,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 3
+  },
+  {
+    "SkillBehaviourActivationMethodId": 6,
+    "ActivationMethodType": 6,
+    "SkillBehaviourActivationConditionGroupId": 4
+  },
+  {
+    "SkillBehaviourActivationMethodId": 7,
+    "ActivationMethodType": 6,
+    "SkillBehaviourActivationConditionGroupId": 5
+  },
+  {
+    "SkillBehaviourActivationMethodId": 8,
+    "ActivationMethodType": 7,
+    "SkillBehaviourActivationConditionGroupId": 1
+  },
+  {
+    "SkillBehaviourActivationMethodId": 9,
+    "ActivationMethodType": 5,
+    "SkillBehaviourActivationConditionGroupId": 6
+  },
+  {
+    "SkillBehaviourActivationMethodId": 10,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 7
+  },
+  {
+    "SkillBehaviourActivationMethodId": 11,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 8
+  },
+  {
+    "SkillBehaviourActivationMethodId": 12,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 9
+  },
+  {
+    "SkillBehaviourActivationMethodId": 13,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 10
+  },
+  {
+    "SkillBehaviourActivationMethodId": 14,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 11
+  },
+  {
+    "SkillBehaviourActivationMethodId": 15,
+    "ActivationMethodType": 7,
+    "SkillBehaviourActivationConditionGroupId": 12
+  },
+  {
+    "SkillBehaviourActivationMethodId": 16,
+    "ActivationMethodType": 7,
+    "SkillBehaviourActivationConditionGroupId": 13
+  },
+  {
+    "SkillBehaviourActivationMethodId": 17,
+    "ActivationMethodType": 7,
+    "SkillBehaviourActivationConditionGroupId": 14
+  },
+  {
+    "SkillBehaviourActivationMethodId": 18,
+    "ActivationMethodType": 7,
+    "SkillBehaviourActivationConditionGroupId": 15
+  },
+  {
+    "SkillBehaviourActivationMethodId": 19,
+    "ActivationMethodType": 7,
+    "SkillBehaviourActivationConditionGroupId": 16
+  },
+  {
+    "SkillBehaviourActivationMethodId": 20,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 17
+  },
+  {
+    "SkillBehaviourActivationMethodId": 21,
+    "ActivationMethodType": 5,
+    "SkillBehaviourActivationConditionGroupId": 18
+  },
+  {
+    "SkillBehaviourActivationMethodId": 22,
+    "ActivationMethodType": 5,
+    "SkillBehaviourActivationConditionGroupId": 4
+  },
+  {
+    "SkillBehaviourActivationMethodId": 23,
+    "ActivationMethodType": 5,
+    "SkillBehaviourActivationConditionGroupId": 3
+  },
+  {
+    "SkillBehaviourActivationMethodId": 24,
+    "ActivationMethodType": 5,
+    "SkillBehaviourActivationConditionGroupId": 19
+  },
+  {
+    "SkillBehaviourActivationMethodId": 1001,
+    "ActivationMethodType": 1,
+    "SkillBehaviourActivationConditionGroupId": 1001
+  },
+  {
+    "SkillBehaviourActivationMethodId": 1002,
+    "ActivationMethodType": 5,
+    "SkillBehaviourActivationConditionGroupId": 1002
+  },
+  {
+    "SkillBehaviourActivationMethodId": 1003,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 1001
+  },
+  {
+    "SkillBehaviourActivationMethodId": 1004,
+    "ActivationMethodType": 6,
+    "SkillBehaviourActivationConditionGroupId": 1001
+  },
+  {
+    "SkillBehaviourActivationMethodId": 1005,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 1003
+  },
+  {
+    "SkillBehaviourActivationMethodId": 1006,
+    "ActivationMethodType": 6,
+    "SkillBehaviourActivationConditionGroupId": 1004
+  },
+  {
+    "SkillBehaviourActivationMethodId": 1007,
+    "ActivationMethodType": 6,
+    "SkillBehaviourActivationConditionGroupId": 1005
+  },
+  {
+    "SkillBehaviourActivationMethodId": 1008,
+    "ActivationMethodType": 7,
+    "SkillBehaviourActivationConditionGroupId": 1001
+  },
+  {
+    "SkillBehaviourActivationMethodId": 1009,
+    "ActivationMethodType": 5,
+    "SkillBehaviourActivationConditionGroupId": 1006
+  },
+  {
+    "SkillBehaviourActivationMethodId": 1010,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 1007
+  },
+  {
+    "SkillBehaviourActivationMethodId": 1011,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 1008
+  },
+  {
+    "SkillBehaviourActivationMethodId": 1012,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 1009
+  },
+  {
+    "SkillBehaviourActivationMethodId": 1013,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 1010
+  },
+  {
+    "SkillBehaviourActivationMethodId": 1014,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 1011
+  },
+  {
+    "SkillBehaviourActivationMethodId": 1015,
+    "ActivationMethodType": 7,
+    "SkillBehaviourActivationConditionGroupId": 1012
+  },
+  {
+    "SkillBehaviourActivationMethodId": 1016,
+    "ActivationMethodType": 7,
+    "SkillBehaviourActivationConditionGroupId": 1013
+  },
+  {
+    "SkillBehaviourActivationMethodId": 1017,
+    "ActivationMethodType": 7,
+    "SkillBehaviourActivationConditionGroupId": 1014
+  },
+  {
+    "SkillBehaviourActivationMethodId": 1018,
+    "ActivationMethodType": 7,
+    "SkillBehaviourActivationConditionGroupId": 1015
+  },
+  {
+    "SkillBehaviourActivationMethodId": 1019,
+    "ActivationMethodType": 7,
+    "SkillBehaviourActivationConditionGroupId": 1016
+  },
+  {
+    "SkillBehaviourActivationMethodId": 1020,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 1017
+  },
+  {
+    "SkillBehaviourActivationMethodId": 1021,
+    "ActivationMethodType": 5,
+    "SkillBehaviourActivationConditionGroupId": 1018
+  },
+  {
+    "SkillBehaviourActivationMethodId": 1022,
+    "ActivationMethodType": 5,
+    "SkillBehaviourActivationConditionGroupId": 1004
+  },
+  {
+    "SkillBehaviourActivationMethodId": 1023,
+    "ActivationMethodType": 5,
+    "SkillBehaviourActivationConditionGroupId": 1003
+  },
+  {
+    "SkillBehaviourActivationMethodId": 1024,
+    "ActivationMethodType": 5,
+    "SkillBehaviourActivationConditionGroupId": 1019
+  },
+  {
+    "SkillBehaviourActivationMethodId": 2001,
+    "ActivationMethodType": 1,
+    "SkillBehaviourActivationConditionGroupId": 2001
+  },
+  {
+    "SkillBehaviourActivationMethodId": 2002,
+    "ActivationMethodType": 5,
+    "SkillBehaviourActivationConditionGroupId": 2002
+  },
+  {
+    "SkillBehaviourActivationMethodId": 2003,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 2001
+  },
+  {
+    "SkillBehaviourActivationMethodId": 2004,
+    "ActivationMethodType": 6,
+    "SkillBehaviourActivationConditionGroupId": 2001
+  },
+  {
+    "SkillBehaviourActivationMethodId": 2005,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 2003
+  },
+  {
+    "SkillBehaviourActivationMethodId": 2006,
+    "ActivationMethodType": 6,
+    "SkillBehaviourActivationConditionGroupId": 2004
+  },
+  {
+    "SkillBehaviourActivationMethodId": 2007,
+    "ActivationMethodType": 6,
+    "SkillBehaviourActivationConditionGroupId": 2005
+  },
+  {
+    "SkillBehaviourActivationMethodId": 2008,
+    "ActivationMethodType": 7,
+    "SkillBehaviourActivationConditionGroupId": 2001
+  },
+  {
+    "SkillBehaviourActivationMethodId": 2009,
+    "ActivationMethodType": 5,
+    "SkillBehaviourActivationConditionGroupId": 2006
+  },
+  {
+    "SkillBehaviourActivationMethodId": 2010,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 2007
+  },
+  {
+    "SkillBehaviourActivationMethodId": 2011,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 2008
+  },
+  {
+    "SkillBehaviourActivationMethodId": 2012,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 2009
+  },
+  {
+    "SkillBehaviourActivationMethodId": 2013,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 2010
+  },
+  {
+    "SkillBehaviourActivationMethodId": 2014,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 2011
+  },
+  {
+    "SkillBehaviourActivationMethodId": 2015,
+    "ActivationMethodType": 7,
+    "SkillBehaviourActivationConditionGroupId": 2012
+  },
+  {
+    "SkillBehaviourActivationMethodId": 2016,
+    "ActivationMethodType": 7,
+    "SkillBehaviourActivationConditionGroupId": 2013
+  },
+  {
+    "SkillBehaviourActivationMethodId": 2017,
+    "ActivationMethodType": 7,
+    "SkillBehaviourActivationConditionGroupId": 2014
+  },
+  {
+    "SkillBehaviourActivationMethodId": 2018,
+    "ActivationMethodType": 7,
+    "SkillBehaviourActivationConditionGroupId": 2015
+  },
+  {
+    "SkillBehaviourActivationMethodId": 2019,
+    "ActivationMethodType": 7,
+    "SkillBehaviourActivationConditionGroupId": 2016
+  },
+  {
+    "SkillBehaviourActivationMethodId": 2020,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 2017
+  },
+  {
+    "SkillBehaviourActivationMethodId": 2021,
+    "ActivationMethodType": 5,
+    "SkillBehaviourActivationConditionGroupId": 2018
+  },
+  {
+    "SkillBehaviourActivationMethodId": 2022,
+    "ActivationMethodType": 5,
+    "SkillBehaviourActivationConditionGroupId": 2004
+  },
+  {
+    "SkillBehaviourActivationMethodId": 2023,
+    "ActivationMethodType": 5,
+    "SkillBehaviourActivationConditionGroupId": 2003
+  },
+  {
+    "SkillBehaviourActivationMethodId": 2024,
+    "ActivationMethodType": 5,
+    "SkillBehaviourActivationConditionGroupId": 2019
+  },
+  {
+    "SkillBehaviourActivationMethodId": 3001,
+    "ActivationMethodType": 1,
+    "SkillBehaviourActivationConditionGroupId": 3001
+  },
+  {
+    "SkillBehaviourActivationMethodId": 3002,
+    "ActivationMethodType": 5,
+    "SkillBehaviourActivationConditionGroupId": 3002
+  },
+  {
+    "SkillBehaviourActivationMethodId": 3003,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 3001
+  },
+  {
+    "SkillBehaviourActivationMethodId": 3004,
+    "ActivationMethodType": 6,
+    "SkillBehaviourActivationConditionGroupId": 3001
+  },
+  {
+    "SkillBehaviourActivationMethodId": 3005,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 3003
+  },
+  {
+    "SkillBehaviourActivationMethodId": 3006,
+    "ActivationMethodType": 6,
+    "SkillBehaviourActivationConditionGroupId": 3004
+  },
+  {
+    "SkillBehaviourActivationMethodId": 3007,
+    "ActivationMethodType": 6,
+    "SkillBehaviourActivationConditionGroupId": 3005
+  },
+  {
+    "SkillBehaviourActivationMethodId": 3008,
+    "ActivationMethodType": 7,
+    "SkillBehaviourActivationConditionGroupId": 3001
+  },
+  {
+    "SkillBehaviourActivationMethodId": 3009,
+    "ActivationMethodType": 5,
+    "SkillBehaviourActivationConditionGroupId": 3006
+  },
+  {
+    "SkillBehaviourActivationMethodId": 3010,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 3007
+  },
+  {
+    "SkillBehaviourActivationMethodId": 3011,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 3008
+  },
+  {
+    "SkillBehaviourActivationMethodId": 3012,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 3009
+  },
+  {
+    "SkillBehaviourActivationMethodId": 3013,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 3010
+  },
+  {
+    "SkillBehaviourActivationMethodId": 3014,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 3011
+  },
+  {
+    "SkillBehaviourActivationMethodId": 3015,
+    "ActivationMethodType": 7,
+    "SkillBehaviourActivationConditionGroupId": 3012
+  },
+  {
+    "SkillBehaviourActivationMethodId": 3016,
+    "ActivationMethodType": 7,
+    "SkillBehaviourActivationConditionGroupId": 3013
+  },
+  {
+    "SkillBehaviourActivationMethodId": 3017,
+    "ActivationMethodType": 7,
+    "SkillBehaviourActivationConditionGroupId": 3014
+  },
+  {
+    "SkillBehaviourActivationMethodId": 3018,
+    "ActivationMethodType": 7,
+    "SkillBehaviourActivationConditionGroupId": 3015
+  },
+  {
+    "SkillBehaviourActivationMethodId": 3019,
+    "ActivationMethodType": 7,
+    "SkillBehaviourActivationConditionGroupId": 3016
+  },
+  {
+    "SkillBehaviourActivationMethodId": 3020,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 3017
+  },
+  {
+    "SkillBehaviourActivationMethodId": 3021,
+    "ActivationMethodType": 5,
+    "SkillBehaviourActivationConditionGroupId": 3018
+  },
+  {
+    "SkillBehaviourActivationMethodId": 3022,
+    "ActivationMethodType": 5,
+    "SkillBehaviourActivationConditionGroupId": 3004
+  },
+  {
+    "SkillBehaviourActivationMethodId": 3023,
+    "ActivationMethodType": 5,
+    "SkillBehaviourActivationConditionGroupId": 3003
+  },
+  {
+    "SkillBehaviourActivationMethodId": 3024,
+    "ActivationMethodType": 5,
+    "SkillBehaviourActivationConditionGroupId": 3019
+  },
+  {
+    "SkillBehaviourActivationMethodId": 4001,
+    "ActivationMethodType": 1,
+    "SkillBehaviourActivationConditionGroupId": 4001
+  },
+  {
+    "SkillBehaviourActivationMethodId": 4002,
+    "ActivationMethodType": 5,
+    "SkillBehaviourActivationConditionGroupId": 4002
+  },
+  {
+    "SkillBehaviourActivationMethodId": 4003,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 4001
+  },
+  {
+    "SkillBehaviourActivationMethodId": 4004,
+    "ActivationMethodType": 6,
+    "SkillBehaviourActivationConditionGroupId": 4001
+  },
+  {
+    "SkillBehaviourActivationMethodId": 4005,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 4003
+  },
+  {
+    "SkillBehaviourActivationMethodId": 4006,
+    "ActivationMethodType": 6,
+    "SkillBehaviourActivationConditionGroupId": 4004
+  },
+  {
+    "SkillBehaviourActivationMethodId": 4007,
+    "ActivationMethodType": 6,
+    "SkillBehaviourActivationConditionGroupId": 4005
+  },
+  {
+    "SkillBehaviourActivationMethodId": 4008,
+    "ActivationMethodType": 7,
+    "SkillBehaviourActivationConditionGroupId": 4001
+  },
+  {
+    "SkillBehaviourActivationMethodId": 4009,
+    "ActivationMethodType": 5,
+    "SkillBehaviourActivationConditionGroupId": 4006
+  },
+  {
+    "SkillBehaviourActivationMethodId": 4010,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 4007
+  },
+  {
+    "SkillBehaviourActivationMethodId": 4011,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 4008
+  },
+  {
+    "SkillBehaviourActivationMethodId": 4012,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 4009
+  },
+  {
+    "SkillBehaviourActivationMethodId": 4013,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 4010
+  },
+  {
+    "SkillBehaviourActivationMethodId": 4014,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 4011
+  },
+  {
+    "SkillBehaviourActivationMethodId": 4015,
+    "ActivationMethodType": 7,
+    "SkillBehaviourActivationConditionGroupId": 4012
+  },
+  {
+    "SkillBehaviourActivationMethodId": 4016,
+    "ActivationMethodType": 7,
+    "SkillBehaviourActivationConditionGroupId": 4013
+  },
+  {
+    "SkillBehaviourActivationMethodId": 4017,
+    "ActivationMethodType": 7,
+    "SkillBehaviourActivationConditionGroupId": 4014
+  },
+  {
+    "SkillBehaviourActivationMethodId": 4018,
+    "ActivationMethodType": 7,
+    "SkillBehaviourActivationConditionGroupId": 4015
+  },
+  {
+    "SkillBehaviourActivationMethodId": 4019,
+    "ActivationMethodType": 7,
+    "SkillBehaviourActivationConditionGroupId": 4016
+  },
+  {
+    "SkillBehaviourActivationMethodId": 4020,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 4017
+  },
+  {
+    "SkillBehaviourActivationMethodId": 4021,
+    "ActivationMethodType": 5,
+    "SkillBehaviourActivationConditionGroupId": 4018
+  },
+  {
+    "SkillBehaviourActivationMethodId": 4022,
+    "ActivationMethodType": 5,
+    "SkillBehaviourActivationConditionGroupId": 4004
+  },
+  {
+    "SkillBehaviourActivationMethodId": 4023,
+    "ActivationMethodType": 5,
+    "SkillBehaviourActivationConditionGroupId": 4003
+  },
+  {
+    "SkillBehaviourActivationMethodId": 4024,
+    "ActivationMethodType": 5,
+    "SkillBehaviourActivationConditionGroupId": 4019
+  },
+  {
+    "SkillBehaviourActivationMethodId": 5001,
+    "ActivationMethodType": 1,
+    "SkillBehaviourActivationConditionGroupId": 5001
+  },
+  {
+    "SkillBehaviourActivationMethodId": 5002,
+    "ActivationMethodType": 5,
+    "SkillBehaviourActivationConditionGroupId": 5002
+  },
+  {
+    "SkillBehaviourActivationMethodId": 5003,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 5001
+  },
+  {
+    "SkillBehaviourActivationMethodId": 5004,
+    "ActivationMethodType": 6,
+    "SkillBehaviourActivationConditionGroupId": 5001
+  },
+  {
+    "SkillBehaviourActivationMethodId": 5005,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 5003
+  },
+  {
+    "SkillBehaviourActivationMethodId": 5006,
+    "ActivationMethodType": 6,
+    "SkillBehaviourActivationConditionGroupId": 5004
+  },
+  {
+    "SkillBehaviourActivationMethodId": 5007,
+    "ActivationMethodType": 6,
+    "SkillBehaviourActivationConditionGroupId": 5005
+  },
+  {
+    "SkillBehaviourActivationMethodId": 5008,
+    "ActivationMethodType": 7,
+    "SkillBehaviourActivationConditionGroupId": 5001
+  },
+  {
+    "SkillBehaviourActivationMethodId": 5009,
+    "ActivationMethodType": 5,
+    "SkillBehaviourActivationConditionGroupId": 5006
+  },
+  {
+    "SkillBehaviourActivationMethodId": 5010,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 5007
+  },
+  {
+    "SkillBehaviourActivationMethodId": 5011,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 5008
+  },
+  {
+    "SkillBehaviourActivationMethodId": 5012,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 5009
+  },
+  {
+    "SkillBehaviourActivationMethodId": 5013,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 5010
+  },
+  {
+    "SkillBehaviourActivationMethodId": 5014,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 5011
+  },
+  {
+    "SkillBehaviourActivationMethodId": 5015,
+    "ActivationMethodType": 7,
+    "SkillBehaviourActivationConditionGroupId": 5012
+  },
+  {
+    "SkillBehaviourActivationMethodId": 5016,
+    "ActivationMethodType": 7,
+    "SkillBehaviourActivationConditionGroupId": 5013
+  },
+  {
+    "SkillBehaviourActivationMethodId": 5017,
+    "ActivationMethodType": 7,
+    "SkillBehaviourActivationConditionGroupId": 5014
+  },
+  {
+    "SkillBehaviourActivationMethodId": 5018,
+    "ActivationMethodType": 7,
+    "SkillBehaviourActivationConditionGroupId": 5015
+  },
+  {
+    "SkillBehaviourActivationMethodId": 5019,
+    "ActivationMethodType": 7,
+    "SkillBehaviourActivationConditionGroupId": 5016
+  },
+  {
+    "SkillBehaviourActivationMethodId": 5020,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 5017
+  },
+  {
+    "SkillBehaviourActivationMethodId": 5021,
+    "ActivationMethodType": 5,
+    "SkillBehaviourActivationConditionGroupId": 5018
+  },
+  {
+    "SkillBehaviourActivationMethodId": 5022,
+    "ActivationMethodType": 5,
+    "SkillBehaviourActivationConditionGroupId": 5004
+  },
+  {
+    "SkillBehaviourActivationMethodId": 5023,
+    "ActivationMethodType": 5,
+    "SkillBehaviourActivationConditionGroupId": 5003
+  },
+  {
+    "SkillBehaviourActivationMethodId": 5024,
+    "ActivationMethodType": 5,
+    "SkillBehaviourActivationConditionGroupId": 5019
+  },
+  {
+    "SkillBehaviourActivationMethodId": 10001,
+    "ActivationMethodType": 1,
+    "SkillBehaviourActivationConditionGroupId": 10001
+  },
+  {
+    "SkillBehaviourActivationMethodId": 10002,
+    "ActivationMethodType": 5,
+    "SkillBehaviourActivationConditionGroupId": 10002
+  },
+  {
+    "SkillBehaviourActivationMethodId": 10003,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 10001
+  },
+  {
+    "SkillBehaviourActivationMethodId": 10004,
+    "ActivationMethodType": 6,
+    "SkillBehaviourActivationConditionGroupId": 10001
+  },
+  {
+    "SkillBehaviourActivationMethodId": 10005,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 10003
+  },
+  {
+    "SkillBehaviourActivationMethodId": 10006,
+    "ActivationMethodType": 6,
+    "SkillBehaviourActivationConditionGroupId": 10004
+  },
+  {
+    "SkillBehaviourActivationMethodId": 10007,
+    "ActivationMethodType": 6,
+    "SkillBehaviourActivationConditionGroupId": 10005
+  },
+  {
+    "SkillBehaviourActivationMethodId": 10008,
+    "ActivationMethodType": 7,
+    "SkillBehaviourActivationConditionGroupId": 10001
+  },
+  {
+    "SkillBehaviourActivationMethodId": 10009,
+    "ActivationMethodType": 5,
+    "SkillBehaviourActivationConditionGroupId": 10006
+  },
+  {
+    "SkillBehaviourActivationMethodId": 10010,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 10007
+  },
+  {
+    "SkillBehaviourActivationMethodId": 10011,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 10008
+  },
+  {
+    "SkillBehaviourActivationMethodId": 10012,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 10009
+  },
+  {
+    "SkillBehaviourActivationMethodId": 10013,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 10010
+  },
+  {
+    "SkillBehaviourActivationMethodId": 10014,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 10011
+  },
+  {
+    "SkillBehaviourActivationMethodId": 10015,
+    "ActivationMethodType": 7,
+    "SkillBehaviourActivationConditionGroupId": 10012
+  },
+  {
+    "SkillBehaviourActivationMethodId": 10016,
+    "ActivationMethodType": 7,
+    "SkillBehaviourActivationConditionGroupId": 10013
+  },
+  {
+    "SkillBehaviourActivationMethodId": 10017,
+    "ActivationMethodType": 7,
+    "SkillBehaviourActivationConditionGroupId": 10014
+  },
+  {
+    "SkillBehaviourActivationMethodId": 10018,
+    "ActivationMethodType": 7,
+    "SkillBehaviourActivationConditionGroupId": 10015
+  },
+  {
+    "SkillBehaviourActivationMethodId": 10019,
+    "ActivationMethodType": 7,
+    "SkillBehaviourActivationConditionGroupId": 10016
+  },
+  {
+    "SkillBehaviourActivationMethodId": 10020,
+    "ActivationMethodType": 3,
+    "SkillBehaviourActivationConditionGroupId": 10017
+  },
+  {
+    "SkillBehaviourActivationMethodId": 10021,
+    "ActivationMethodType": 5,
+    "SkillBehaviourActivationConditionGroupId": 10018
+  },
+  {
+    "SkillBehaviourActivationMethodId": 10022,
+    "ActivationMethodType": 5,
+    "SkillBehaviourActivationConditionGroupId": 10004
+  },
+  {
+    "SkillBehaviourActivationMethodId": 10023,
+    "ActivationMethodType": 5,
+    "SkillBehaviourActivationConditionGroupId": 10003
+  },
+  {
+    "SkillBehaviourActivationMethodId": 10024,
+    "ActivationMethodType": 5,
+    "SkillBehaviourActivationConditionGroupId": 10019
+  }
+]

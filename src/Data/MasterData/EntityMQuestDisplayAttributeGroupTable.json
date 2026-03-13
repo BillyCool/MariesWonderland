@@ -1,0 +1,836 @@
+[
+  {
+    "QuestDisplayAttributeGroupId": 1,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 1,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 2,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 2,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 3,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 3,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 5,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 5,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 6,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 6,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 7,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 90,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 8,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 100,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 9,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 6,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 9,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 1,
+    "QuestDisplayAttributeIconSizeType": 1
+  },
+  {
+    "QuestDisplayAttributeGroupId": 1001,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 1,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 1001,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 5,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 1002,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 1,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 1002,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 6,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 1003,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 1,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 1003,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 5,
+    "QuestDisplayAttributeIconSizeType": 1
+  },
+  {
+    "QuestDisplayAttributeGroupId": 1003,
+    "SortOrder": 3,
+    "QuestDisplayAttributeType": 6,
+    "QuestDisplayAttributeIconSizeType": 1
+  },
+  {
+    "QuestDisplayAttributeGroupId": 1004,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 1,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 1004,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 2,
+    "QuestDisplayAttributeIconSizeType": 1
+  },
+  {
+    "QuestDisplayAttributeGroupId": 1004,
+    "SortOrder": 3,
+    "QuestDisplayAttributeType": 5,
+    "QuestDisplayAttributeIconSizeType": 1
+  },
+  {
+    "QuestDisplayAttributeGroupId": 1005,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 1,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 1005,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 6,
+    "QuestDisplayAttributeIconSizeType": 1
+  },
+  {
+    "QuestDisplayAttributeGroupId": 1005,
+    "SortOrder": 3,
+    "QuestDisplayAttributeType": 2,
+    "QuestDisplayAttributeIconSizeType": 1
+  },
+  {
+    "QuestDisplayAttributeGroupId": 1006,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 1,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 1006,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 3,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 1006,
+    "SortOrder": 3,
+    "QuestDisplayAttributeType": 5,
+    "QuestDisplayAttributeIconSizeType": 1
+  },
+  {
+    "QuestDisplayAttributeGroupId": 1007,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 1,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 1007,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 3,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 1007,
+    "SortOrder": 3,
+    "QuestDisplayAttributeType": 6,
+    "QuestDisplayAttributeIconSizeType": 1
+  },
+  {
+    "QuestDisplayAttributeGroupId": 1008,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 1,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 1008,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 3,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 1008,
+    "SortOrder": 3,
+    "QuestDisplayAttributeType": 2,
+    "QuestDisplayAttributeIconSizeType": 1
+  },
+  {
+    "QuestDisplayAttributeGroupId": 1009,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 1,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 1009,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 2,
+    "QuestDisplayAttributeIconSizeType": 1
+  },
+  {
+    "QuestDisplayAttributeGroupId": 2001,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 2,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 2001,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 1,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 2002,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 2,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 2002,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 5,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 2003,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 2,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 2003,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 3,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 2004,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 2,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 2004,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 3,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 2004,
+    "SortOrder": 3,
+    "QuestDisplayAttributeType": 1,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 2005,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 2,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 2005,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 1,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 2005,
+    "SortOrder": 3,
+    "QuestDisplayAttributeType": 3,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 2006,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 2,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 2006,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 5,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 2006,
+    "SortOrder": 3,
+    "QuestDisplayAttributeType": 6,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 2007,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 2,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 2007,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 6,
+    "QuestDisplayAttributeIconSizeType": 1
+  },
+  {
+    "QuestDisplayAttributeGroupId": 2007,
+    "SortOrder": 3,
+    "QuestDisplayAttributeType": 5,
+    "QuestDisplayAttributeIconSizeType": 1
+  },
+  {
+    "QuestDisplayAttributeGroupId": 2008,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 2,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 2008,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 6,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 2008,
+    "SortOrder": 3,
+    "QuestDisplayAttributeType": 5,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 2009,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 2,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 2009,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 3,
+    "QuestDisplayAttributeIconSizeType": 1
+  },
+  {
+    "QuestDisplayAttributeGroupId": 2009,
+    "SortOrder": 3,
+    "QuestDisplayAttributeType": 1,
+    "QuestDisplayAttributeIconSizeType": 1
+  },
+  {
+    "QuestDisplayAttributeGroupId": 2010,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 2,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 2010,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 5,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 2010,
+    "SortOrder": 3,
+    "QuestDisplayAttributeType": 3,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 2011,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 2,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 2011,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 5,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 2011,
+    "SortOrder": 3,
+    "QuestDisplayAttributeType": 1,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 2012,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 2,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 2012,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 6,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 2013,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 2,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 2013,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 5,
+    "QuestDisplayAttributeIconSizeType": 1
+  },
+  {
+    "QuestDisplayAttributeGroupId": 2014,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 2,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 2014,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 1,
+    "QuestDisplayAttributeIconSizeType": 1
+  },
+  {
+    "QuestDisplayAttributeGroupId": 3001,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 3,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 3001,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 5,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 3002,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 3,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 3002,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 6,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 3003,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 3,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 3003,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 2,
+    "QuestDisplayAttributeIconSizeType": 1
+  },
+  {
+    "QuestDisplayAttributeGroupId": 3003,
+    "SortOrder": 3,
+    "QuestDisplayAttributeType": 5,
+    "QuestDisplayAttributeIconSizeType": 1
+  },
+  {
+    "QuestDisplayAttributeGroupId": 3004,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 3,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 3004,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 6,
+    "QuestDisplayAttributeIconSizeType": 1
+  },
+  {
+    "QuestDisplayAttributeGroupId": 3004,
+    "SortOrder": 3,
+    "QuestDisplayAttributeType": 2,
+    "QuestDisplayAttributeIconSizeType": 1
+  },
+  {
+    "QuestDisplayAttributeGroupId": 3005,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 3,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 3005,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 5,
+    "QuestDisplayAttributeIconSizeType": 1
+  },
+  {
+    "QuestDisplayAttributeGroupId": 3005,
+    "SortOrder": 3,
+    "QuestDisplayAttributeType": 6,
+    "QuestDisplayAttributeIconSizeType": 1
+  },
+  {
+    "QuestDisplayAttributeGroupId": 3006,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 3,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 3006,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 1,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 3006,
+    "SortOrder": 3,
+    "QuestDisplayAttributeType": 6,
+    "QuestDisplayAttributeIconSizeType": 1
+  },
+  {
+    "QuestDisplayAttributeGroupId": 3007,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 3,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 3007,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 1,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 3008,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 3,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 3008,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 1,
+    "QuestDisplayAttributeIconSizeType": 1
+  },
+  {
+    "QuestDisplayAttributeGroupId": 4001,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 5,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 4001,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 3,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 4002,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 5,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 4002,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 6,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 4003,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 5,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 4003,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 2,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 4004,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 5,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 4004,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 1,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 4005,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 5,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 4005,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 3,
+    "QuestDisplayAttributeIconSizeType": 1
+  },
+  {
+    "QuestDisplayAttributeGroupId": 4005,
+    "SortOrder": 3,
+    "QuestDisplayAttributeType": 6,
+    "QuestDisplayAttributeIconSizeType": 1
+  },
+  {
+    "QuestDisplayAttributeGroupId": 4006,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 5,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 4006,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 3,
+    "QuestDisplayAttributeIconSizeType": 1
+  },
+  {
+    "QuestDisplayAttributeGroupId": 4006,
+    "SortOrder": 3,
+    "QuestDisplayAttributeType": 1,
+    "QuestDisplayAttributeIconSizeType": 1
+  },
+  {
+    "QuestDisplayAttributeGroupId": 4007,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 5,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 4007,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 6,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 4007,
+    "SortOrder": 3,
+    "QuestDisplayAttributeType": 1,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 4008,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 5,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 4008,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 6,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 4008,
+    "SortOrder": 3,
+    "QuestDisplayAttributeType": 3,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 4009,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 5,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 4009,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 2,
+    "QuestDisplayAttributeIconSizeType": 1
+  },
+  {
+    "QuestDisplayAttributeGroupId": 5001,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 6,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 5001,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 3,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 5002,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 6,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 5002,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 1,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 5003,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 6,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 5003,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 2,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 5004,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 6,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 5004,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 5,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 5004,
+    "SortOrder": 3,
+    "QuestDisplayAttributeType": 2,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 5005,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 6,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 5005,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 3,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 5005,
+    "SortOrder": 3,
+    "QuestDisplayAttributeType": 1,
+    "QuestDisplayAttributeIconSizeType": 1
+  },
+  {
+    "QuestDisplayAttributeGroupId": 5006,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 6,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 5006,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 2,
+    "QuestDisplayAttributeIconSizeType": 1
+  },
+  {
+    "QuestDisplayAttributeGroupId": 5006,
+    "SortOrder": 3,
+    "QuestDisplayAttributeType": 5,
+    "QuestDisplayAttributeIconSizeType": 1
+  },
+  {
+    "QuestDisplayAttributeGroupId": 5007,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 6,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 5007,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 3,
+    "QuestDisplayAttributeIconSizeType": 1
+  },
+  {
+    "QuestDisplayAttributeGroupId": 5007,
+    "SortOrder": 3,
+    "QuestDisplayAttributeType": 1,
+    "QuestDisplayAttributeIconSizeType": 1
+  },
+  {
+    "QuestDisplayAttributeGroupId": 5008,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 6,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 5008,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 2,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 5008,
+    "SortOrder": 3,
+    "QuestDisplayAttributeType": 1,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 5009,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 6,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 5009,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 2,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 5009,
+    "SortOrder": 3,
+    "QuestDisplayAttributeType": 3,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 5010,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 6,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 5010,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 5,
+    "QuestDisplayAttributeIconSizeType": 1
+  },
+  {
+    "QuestDisplayAttributeGroupId": 5011,
+    "SortOrder": 1,
+    "QuestDisplayAttributeType": 6,
+    "QuestDisplayAttributeIconSizeType": 2
+  },
+  {
+    "QuestDisplayAttributeGroupId": 5011,
+    "SortOrder": 2,
+    "QuestDisplayAttributeType": 2,
+    "QuestDisplayAttributeIconSizeType": 1
+  }
+]

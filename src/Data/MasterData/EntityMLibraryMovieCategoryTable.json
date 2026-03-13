@@ -1,0 +1,22 @@
+[
+  {
+    "LibraryMovieCategoryId": 1,
+    "NameLibraryTextId": 1001,
+    "SortOrder": 1
+  },
+  {
+    "LibraryMovieCategoryId": 2,
+    "NameLibraryTextId": 1002,
+    "SortOrder": 2
+  },
+  {
+    "LibraryMovieCategoryId": 3,
+    "NameLibraryTextId": 1003,
+    "SortOrder": 3
+  },
+  {
+    "LibraryMovieCategoryId": 101,
+    "NameLibraryTextId": 100001,
+    "SortOrder": 101
+  }
+]
