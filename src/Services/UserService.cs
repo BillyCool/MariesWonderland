@@ -1,10 +1,10 @@
-﻿using Art.Framework.ApiNetwork.Grpc.Api.User;
+using MariesWonderland.Proto.User;
 using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
 
 namespace MariesWonderland.Services;
 
-public class UserService : Art.Framework.ApiNetwork.Grpc.Api.User.UserService.UserServiceBase
+public class UserService : MariesWonderland.Proto.User.UserService.UserServiceBase
 {
     public override Task<GetAndroidArgsResponse> GetAndroidArgs(GetAndroidArgsRequest request, ServerCallContext context)
     {

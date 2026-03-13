@@ -1,22 +1,27 @@
-﻿using Art.Framework.ApiNetwork.Grpc.Api.Data;
+using MariesWonderland.Configuration;
+using MariesWonderland.Proto.Data;
 using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
+using Microsoft.Extensions.Options;
 
 namespace MariesWonderland.Services;
 
-public class DataService : Art.Framework.ApiNetwork.Grpc.Api.Data.DataService.DataServiceBase
+public class DataService : MariesWonderland.Proto.Data.DataService.DataServiceBase
 {
-    private const string LatestMasterDataVersion = "20240404193219";
-    private const string UserDataBasePath = @"path\to\user\data";
-
+    private readonly DataOptions _data;
     private const string TablePrefix = "Entity";
     private const string TableSuffix = "Table";
+
+    public DataService(IOptions<ServerOptions> options)
+    {
+        _data = options.Value.Data;
+    }
 
     public override Task<MasterDataGetLatestVersionResponse> GetLatestMasterDataVersion(Empty request, ServerCallContext context)
     {
         return Task.FromResult(new MasterDataGetLatestVersionResponse
         {
-            LatestMasterDataVersion = LatestMasterDataVersion
+            LatestMasterDataVersion = _data.LatestMasterDataVersion
         });
     }
 
@@ -25,7 +30,7 @@ public class DataService : Art.Framework.ApiNetwork.Grpc.Api.Data.DataService.Da
         UserDataGetNameResponseV2 response = new();
         TableNameList tableNameList = new();
         var names = Directory
-            .EnumerateFiles(UserDataBasePath, "*.json")
+            .EnumerateFiles(_data.UserDataBasePath, "*.json")
             .Select(path =>
             {
                 var name = Path.GetFileNameWithoutExtension(path); // e.g. "EntityIUserTable"

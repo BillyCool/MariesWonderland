@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option csharp_namespace = "Art.Framework.ApiNetwork.Grpc.Api.Dokan";
+option csharp_namespace = "MariesWonderland.Proto.Dokan";
 
 import "proto/data.proto";
 

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option csharp_namespace = "Art.Framework.ApiNetwork.Grpc.Api.GamePlay";
+option csharp_namespace = "MariesWonderland.Proto.GamePlay";
 
 import "proto/gacha.proto";
 import "proto/data.proto";

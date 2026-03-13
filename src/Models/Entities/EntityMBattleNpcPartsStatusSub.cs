@@ -1,0 +1,22 @@
+using MariesWonderland.Models.Type;
+
+namespace MariesWonderland.Models.Entities;
+
+public class EntityMBattleNpcPartsStatusSub
+{
+    public long BattleNpcId { get; set; }
+
+    public string BattleNpcPartsUuid { get; set; }
+
+    public int StatusIndex { get; set; }
+
+    public int PartsStatusSubLotteryId { get; set; }
+
+    public int Level { get; set; }
+
+    public StatusKindType StatusKindType { get; set; }
+
+    public StatusCalculationType StatusCalculationType { get; set; }
+
+    public int StatusChangeValue { get; set; }
+}

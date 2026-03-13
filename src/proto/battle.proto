@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option csharp_namespace = "Art.Framework.ApiNetwork.Grpc.Api.Battle";
+option csharp_namespace = "MariesWonderland.Proto.Battle";
 
 import "proto/data.proto";
 
