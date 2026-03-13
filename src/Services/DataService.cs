@@ -1,17 +1,17 @@
 using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
 using MariesWonderland.Configuration;
+using MariesWonderland.Data;
+using MariesWonderland.Extensions;
 using MariesWonderland.Proto.Data;
 using Microsoft.Extensions.Options;
 
 namespace MariesWonderland.Services;
 
-public class DataService(IOptions<ServerOptions> options) : MariesWonderland.Proto.Data.DataService.DataServiceBase
+public class DataService(IOptions<ServerOptions> options, UserDataStore userDataStore)
+    : MariesWonderland.Proto.Data.DataService.DataServiceBase
 {
     private readonly DataOptions _data = options.Value.Data;
-
-    private const string TablePrefix = "Entity";
-    private const string TableSuffix = "Table";
 
     public override Task<MasterDataGetLatestVersionResponse> GetLatestMasterDataVersion(Empty request, ServerCallContext context)
     {
@@ -23,17 +23,10 @@ public class DataService(IOptions<ServerOptions> options) : MariesWonderland.Pro
 
     public override Task<UserDataGetNameResponseV2> GetUserDataNameV2(Empty request, ServerCallContext context)
     {
-        UserDataGetNameResponseV2 response = new();
         TableNameList tableNameList = new();
-        var names = Directory
-            .EnumerateFiles(_data.UserDataPath, "*.json")
-            .Select(path =>
-            {
-                var name = Path.GetFileNameWithoutExtension(path); // e.g. "EntityIUserTable"
-                return name.Substring(TablePrefix.Length, name.Length - TablePrefix.Length - TableSuffix.Length); // result for "EntityIUserTable" -> "IUser"
-            });
+        tableNameList.TableName.AddRange(UserDataDiffBuilder.TableNames.Order());
 
-        tableNameList.TableName.AddRange(names);
+        UserDataGetNameResponseV2 response = new();
         response.TableNameList.Add(tableNameList);
 
         return Task.FromResult(response);
@@ -41,13 +34,20 @@ public class DataService(IOptions<ServerOptions> options) : MariesWonderland.Pro
 
     public override Task<UserDataGetResponse> GetUserData(UserDataGetRequest request, ServerCallContext context)
     {
+        long userId = context.GetUserId();
+        string sessionKey = context.GetSessionKey();
+
+        if (!userDataStore.TryResolveSession(sessionKey, out long resolvedUserId) || resolvedUserId != userId)
+        {
+            throw new RpcException(new Status(StatusCode.Unauthenticated, "Invalid or expired session."));
+        }
+
+        DarkUserMemoryDatabase userDb = userDataStore.GetOrCreate(userId);
         UserDataGetResponse response = new();
 
-        foreach (var tableName in request.TableName)
+        foreach (string tableName in request.TableName)
         {
-            var filePath = Path.Combine(UserDataBasePath, TablePrefix + tableName + TableSuffix + ".json");
-            var jsonContent = File.ReadAllText(filePath);
-            response.UserDataJson.Add(tableName, jsonContent);
+            response.UserDataJson[tableName] = UserDataDiffBuilder.SerializeTable(userDb, tableName);
         }
 
         return Task.FromResult(response);

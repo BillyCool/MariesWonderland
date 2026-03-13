@@ -1,26 +1,84 @@
 using MariesWonderland.Configuration;
+using MariesWonderland.Http;
 using Microsoft.Extensions.Options;
+using System.Text;
 
 namespace MariesWonderland.Extensions;
 
 public static class HttpApiExtensions
 {
+    // The URL embedded in list.bin pointing to the original CDN (must be exactly 43 ASCII bytes).
+    private static readonly byte[] ResourcesUrlOriginal =
+        Encoding.ASCII.GetBytes("https://resources.app.nierreincarnation.com");
+
     public static WebApplication MapHttpApis(this WebApplication app)
     {
-        var options = app.Services.GetRequiredService<IOptions<ServerOptions>>().Value;
-        var assetDatabaseBasePath = options.Paths.AssetDatabase;
-        var masterDatabaseBasePath = options.Paths.MasterDatabase;
+        ServerOptions options = app.Services.GetRequiredService<IOptions<ServerOptions>>().Value;
+        string assetDatabaseBasePath = options.Paths.AssetDatabase;
+        string masterDatabaseBasePath = options.Paths.MasterDatabase;
+        string resourcesBaseUrl = options.Paths.ResourcesBaseUrl;
+
+        ILogger<AssetDatabase> assetLogger = app.Services.GetRequiredService<ILoggerFactory>().CreateLogger<AssetDatabase>();
+        AssetDatabase assetDb = new(assetDatabaseBasePath, assetLogger);
 
         app.MapGet("/", () => "Marie's Wonderland is open for business :marie:");
 
         // ToS. Expects the version wrapped in delimiters like "###123###".
         app.MapGet("/web/static/{languagePath}/terms/termsofuse", (string languagePath) => $"<html><head><title>Terms of Service</title></head><body><h1>Terms of Service</h1><p>Language: {languagePath}</p><p>Version: ###123###</p></body></html>");
 
-        // Asset Database
-        app.MapGet("/v1/list/300116832/{revision}", async (string revision) =>
-            await File.ReadAllBytesAsync(Path.Combine(assetDatabaseBasePath, revision, "list.bin")));
-        app.MapGet("/v2/pub/a/301/v/300116832/list/{revision}", async (string revision) =>
-            await File.ReadAllBytesAsync(Path.Combine(assetDatabaseBasePath, revision, "list.bin")));
+        // Asset Database — serves list.bin, rewriting the embedded CDN base URL if configured.
+        // Records which revision the client is using so subsequent asset requests resolve correctly.
+        app.MapGet("/v1/list/300116832/{revision}", async (string revision, HttpContext ctx) =>
+        {
+            string clientIp = ctx.Connection.RemoteIpAddress?.ToString() ?? "";
+            assetDb.RememberRevision(clientIp, revision);
+
+            byte[] data = await File.ReadAllBytesAsync(Path.Combine(assetDatabaseBasePath, revision, "list.bin"));
+            RewriteResourcesUrl(data, resourcesBaseUrl, app.Logger);
+            return Results.Bytes(data, "application/x-protobuf");
+        });
+
+        // Asset Bundles / Resources — resolves objectId via the list.bin index for the client's active revision.
+        // Path: /aaaaaaaaaaaaaaaaaaaaaaaa/unso-{version}-{type}/{objectId}
+        //   type = "assetbundle" or "resources" (last segment of "unso-…" after splitting on '-')
+        app.MapGet("/aaaaaaaaaaaaaaaaaaaaaaaa/unso-{version}-{type}/{objectId}", (string version, string type, string objectId, HttpContext ctx) =>
+        {
+            string clientIp = ctx.Connection.RemoteIpAddress?.ToString() ?? "";
+
+            foreach (AssetCandidate candidate in assetDb.Resolve(clientIp, type, objectId))
+            {
+                FileInfo info = new(candidate.Path);
+                if (!info.Exists) continue;
+
+                // Size validation: only enforce when list.bin provided a plausible size (≥ 256 bytes).
+                if (candidate.ExpectedSize >= 256 && info.Length != candidate.ExpectedSize)
+                {
+                    app.Logger.LogDebug(
+                        "Asset size mismatch: objectId={ObjectId} path={Path} expected={Expected} actual={Actual} — skipping",
+                        objectId, candidate.Path, candidate.ExpectedSize, info.Length);
+                    continue;
+                }
+
+                // MD5 validation when the index provided a checksum.
+                if (!string.IsNullOrEmpty(candidate.ExpectedMD5))
+                {
+                    string? actualMd5 = assetDb.ComputeMd5(candidate.Path, info);
+                    if (actualMd5 is not null && !string.Equals(actualMd5, candidate.ExpectedMD5, StringComparison.OrdinalIgnoreCase))
+                    {
+                        app.Logger.LogDebug(
+                            "Asset MD5 mismatch: objectId={ObjectId} path={Path} expected={Expected} actual={Actual} source={Source} — skipping",
+                            objectId, candidate.Path, candidate.ExpectedMD5, actualMd5, candidate.Source);
+                        continue;
+                    }
+                }
+
+                // Serve the file — Results.File handles Range requests, ETags, etc.
+                return Results.File(candidate.Path, "application/octet-stream");
+            }
+
+            app.Logger.LogWarning("Asset not found: objectId={ObjectId} type={Type} clientIp={Ip}", objectId, type, clientIp);
+            return Results.NotFound();
+        });
 
         // Master Database
         app.MapMethods("/assets/release/{masterVersion}/database.bin.e", ["GET", "HEAD"], async (HttpContext ctx, string masterVersion) =>
@@ -118,7 +176,7 @@ public static class HttpApiExtensions
                 while (remaining > 0)
                 {
                     int toRead = (int)Math.Min(buffer.Length, remaining);
-                    int read = await fs.ReadAsync(buffer, 0, toRead);
+                    int read = await fs.ReadAsync(buffer.AsMemory(0, toRead));
                     if (read == 0) break;
                     await ctx.Response.Body.WriteAsync(buffer.AsMemory(0, read));
                     remaining -= read;
@@ -150,5 +208,34 @@ public static class HttpApiExtensions
         });
 
         return app;
+    }
+
+    /// <summary>
+    /// Rewrites the CDN base URL embedded in list.bin bytes to the configured local URL.
+    /// The replacement must be exactly 43 ASCII bytes to match the original protobuf field length.
+    /// </summary>
+    private static void RewriteResourcesUrl(byte[] data, string replacementUrl, ILogger logger)
+    {
+        if (string.IsNullOrEmpty(replacementUrl))
+            return;
+
+        byte[] replacement = Encoding.ASCII.GetBytes(replacementUrl);
+        if (replacement.Length != ResourcesUrlOriginal.Length)
+        {
+            logger.LogWarning(
+                "ResourcesBaseUrl is {Length} bytes but must be exactly {Required} bytes — serving list.bin unmodified.",
+                replacement.Length, ResourcesUrlOriginal.Length);
+            return;
+        }
+
+        int idx = data.AsSpan().IndexOf(ResourcesUrlOriginal);
+        if (idx < 0)
+        {
+            logger.LogWarning("CDN URL not found in list.bin — serving unmodified.");
+            return;
+        }
+
+        replacement.CopyTo(data, idx);
+        logger.LogDebug("list.bin: rewrote resource base URL to {Url}", replacementUrl);
     }
 }

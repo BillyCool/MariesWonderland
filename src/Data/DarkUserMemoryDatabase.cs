@@ -218,4 +218,7 @@ public class DarkUserMemoryDatabase
 
     public List<EntityIUserWebviewPanelMission> EntityIUserWebviewPanelMission { get; set; } = [];
 
+    // Server-exclusive data (EntityS* prefix): never sent to client
+    public List<EntitySUserDevice> EntitySUserDevice { get; set; } = [];
+
 }
