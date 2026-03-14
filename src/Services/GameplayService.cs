@@ -1,5 +1,6 @@
-using MariesWonderland.Proto.GamePlay;
 using Grpc.Core;
+using MariesWonderland.Proto.Gacha;
+using MariesWonderland.Proto.GamePlay;
 
 namespace MariesWonderland.Services;
 
@@ -7,6 +8,16 @@ public class GameplayService : MariesWonderland.Proto.GamePlay.GameplayService.G
 {
     public override Task<CheckBeforeGamePlayResponse> CheckBeforeGamePlay(CheckBeforeGamePlayRequest request, ServerCallContext context)
     {
-        return Task.FromResult(new CheckBeforeGamePlayResponse());
+        CheckBeforeGamePlayResponse response = new()
+        {
+            IsExistUnreadPop = true
+        };
+        response.MenuGachaBadgeInfo.Add(new MenuGachaBadgeInfo()
+        {
+            DisplayStartDatetime = Google.Protobuf.WellKnownTypes.Timestamp.FromDateTimeOffset(DateTimeOffset.MinValue),
+            DisplayEndDatetime = Google.Protobuf.WellKnownTypes.Timestamp.FromDateTimeOffset(DateTimeOffset.MaxValue),
+        });
+
+        return Task.FromResult(response);
     }
 }

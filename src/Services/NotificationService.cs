@@ -1,6 +1,6 @@
-using MariesWonderland.Proto.Notification;
 using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
+using MariesWonderland.Proto.Notification;
 
 namespace MariesWonderland.Services;
 
@@ -8,6 +8,11 @@ public class NotificationService : MariesWonderland.Proto.Notification.Notificat
 {
     public override Task<GetHeaderNotificationResponse> GetHeaderNotification(Empty request, ServerCallContext context)
     {
-        return Task.FromResult(new GetHeaderNotificationResponse());
+        return Task.FromResult(new GetHeaderNotificationResponse()
+        {
+            FriendRequestReceiveCount = 0,
+            GiftNotReceiveCount = 0,
+            IsExistUnreadInformation = false
+        });
     }
 }

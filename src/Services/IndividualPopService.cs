@@ -1,6 +1,6 @@
-using MariesWonderland.Proto.IndividualPop;
 using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
+using MariesWonderland.Proto.IndividualPop;
 
 namespace MariesWonderland.Services;
 

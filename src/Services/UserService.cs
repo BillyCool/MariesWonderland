@@ -65,7 +65,18 @@ public class UserService(UserDataStore store) : MariesWonderland.Proto.User.User
 
     public override Task<GameStartResponse> GameStart(Empty request, ServerCallContext context)
     {
-        return Task.FromResult(new GameStartResponse());
+        long userId = context.GetUserId();
+        DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
+
+        Dictionary<string, string> before = UserDataDiffBuilder.Snapshot(userDb);
+
+        EntityIUser user = userDb.EntityIUser.FirstOrDefault(u => u.UserId == userId)
+            ?? AddEntity(userDb.EntityIUser, new EntityIUser { UserId = userId });
+        user.GameStartDatetime = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+
+        GameStartResponse response = new();
+        foreach (var (k, v) in UserDataDiffBuilder.Delta(before, userDb)) response.DiffUserData[k] = v;
+        return Task.FromResult(response);
     }
 
     public override Task<GetBackupTokenResponse> GetBackupToken(GetBackupTokenRequest request, ServerCallContext context)

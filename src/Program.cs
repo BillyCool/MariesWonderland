@@ -1,5 +1,8 @@
+using MariesWonderland.Configuration;
+using MariesWonderland.Data;
 using MariesWonderland.Extensions;
 using Microsoft.AspNetCore.Server.Kestrel.Core;
+using Microsoft.Extensions.Options;
 
 namespace MariesWonderland;
 
@@ -25,6 +28,19 @@ public static class Program
         builder.Services.AddDataStores(builder.Configuration);
 
         var app = builder.Build();
+
+        // Load user data on startup
+        UserDataStore userDataStore = app.Services.GetRequiredService<UserDataStore>();
+        ServerOptions serverOptions = app.Services.GetRequiredService<IOptions<ServerOptions>>().Value;
+        string userDatabasePath = Path.IsPathRooted(serverOptions.Data.UserDatabase)
+            ? serverOptions.Data.UserDatabase
+            : Path.Combine(AppContext.BaseDirectory, serverOptions.Data.UserDatabase);
+
+        int loadedUsers = userDataStore.Load(userDatabasePath);
+        if (loadedUsers > 0)
+        {
+            app.Logger.LogInformation("Loaded {Count} users from {Path}", loadedUsers, userDatabasePath);
+        }
 
         app.MapGrpcServices();
         app.MapHttpApis();

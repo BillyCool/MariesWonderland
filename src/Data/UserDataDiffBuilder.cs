@@ -83,11 +83,11 @@ public static class UserDataDiffBuilder
 
     /// <summary>
     /// Computes only the tables that changed since the snapshot.
-    /// Use this for incremental API responses (e.g. SetUserName, GameStart).
+    /// Use this for incremental API responses (e.g. SetUserName).
     /// </summary>
     public static Dictionary<string, DiffData> Delta(Dictionary<string, string> before, DarkUserMemoryDatabase db)
     {
-        var diff = new Dictionary<string, DiffData>();
+        Dictionary<string, DiffData> diff = [];
         foreach (var (table, serialize) in Serializers)
         {
             var afterJson = serialize(db);

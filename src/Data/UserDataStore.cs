@@ -1,5 +1,6 @@
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
+using System.Text.Json;
 
 namespace MariesWonderland.Data;
 
@@ -62,6 +63,58 @@ public class UserDataStore
         => _users[userId] = db;
 
     public IReadOnlyDictionary<long, DarkUserMemoryDatabase> All => _users;
+
+    /// <summary>
+    /// Serialize all user data to a JSON file on disk.
+    /// </summary>
+    public void Save(string filePath)
+    {
+        UserDataSnapshot snapshot = new()
+        {
+            Users = _users,
+            UuidToUserId = _uuidToUserId,
+            Sessions = _sessions.Values.ToList()
+        };
+
+        JsonSerializerOptions options = new()
+        {
+            WriteIndented = true
+        };
+
+        string json = JsonSerializer.Serialize(snapshot, options);
+        File.WriteAllText(filePath, json);
+    }
+
+    /// <summary>
+    /// Deserialize user data from a JSON file on disk, replacing the current in-memory state.
+    /// Returns the number of users loaded.
+    /// </summary>
+    public int Load(string filePath)
+    {
+        if (!File.Exists(filePath))
+            return 0;
+
+        string json = File.ReadAllText(filePath);
+        UserDataSnapshot? snapshot = JsonSerializer.Deserialize<UserDataSnapshot>(json);
+
+        if (snapshot is null)
+            return 0;
+
+        _users.Clear();
+        _uuidToUserId.Clear();
+        _sessions.Clear();
+
+        foreach (var (userId, db) in snapshot.Users)
+            _users[userId] = db;
+
+        foreach (var (uuid, userId) in snapshot.UuidToUserId)
+            _uuidToUserId[uuid] = userId;
+
+        foreach (UserSession session in snapshot.Sessions)
+            _sessions[session.SessionKey] = session;
+
+        return _users.Count;
+    }
 
     private static long GenerateUserId()
     {
@@ -135,5 +188,15 @@ public class UserDataStore
             LatestVersion = 0
         });
     }
+}
+
+/// <summary>
+/// Serializable snapshot of all user data for persistence.
+/// </summary>
+file record UserDataSnapshot
+{
+    public Dictionary<long, DarkUserMemoryDatabase> Users { get; init; } = [];
+    public Dictionary<string, long> UuidToUserId { get; init; } = [];
+    public List<UserSession> Sessions { get; init; } = [];
 }
 

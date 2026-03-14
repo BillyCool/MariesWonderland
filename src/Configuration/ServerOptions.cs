@@ -26,4 +26,10 @@ public sealed class DataOptions
     public string LatestMasterDataVersion { get; init; } = string.Empty;
     public string UserDataPath { get; init; } = string.Empty;
     public string MasterDataPath { get; init; } = string.Empty;
+    
+    /// <summary>
+    /// Path to the JSON file used to persist user data between server restarts.
+    /// If relative, resolved against the application base directory.
+    /// </summary>
+    public string UserDatabase { get; init; } = "userdata.json";
 }

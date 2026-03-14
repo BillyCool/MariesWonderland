@@ -8,7 +8,14 @@ namespace MariesWonderland.Http;
 
 /// <summary>
 /// Resolves asset bundle/resource requests by parsing list.bin protobuf indexes and info.json alias maps.
-/// Tracks the last-served list.bin revision per client IP so asset requests use the matching revision.
+///
+/// <para>
+/// Asset revisions are deltas, but revision 0 is a complete superset: it contains every objectId
+/// that appears across all 818 revisions (confirmed by exhaustive analysis). Later revisions carry
+/// updated versions of existing assets, not new ones. <see cref="Resolve"/> therefore checks the
+/// client's current revision first, then falls back to revision 0 — a single 25 MB index that
+/// covers the entire asset catalogue.
+/// </para>
 /// </summary>
 public sealed class AssetDatabase(string basePath, ILogger<AssetDatabase> logger)
 {
@@ -35,9 +42,21 @@ public sealed class AssetDatabase(string basePath, ILogger<AssetDatabase> logger
     /// Resolves an asset request to ordered file-path candidates.
     /// Caller should try each candidate in order, validating size and MD5, and serve the first valid one.
     /// </summary>
+    /// <remarks>
+    /// The client's current revision is checked first. If the objectId is not present (e.g. a
+    /// recent revision carries only updated entries, not the full catalogue), revision 0 is used
+    /// as the fallback. Revision 0 is a confirmed superset of all objectIds across every revision.
+    /// </remarks>
     public IEnumerable<AssetCandidate> Resolve(string clientIp, string assetType, string objectId)
     {
         string revision = _clientRevisions.TryGetValue(clientIp, out string? rev) ? rev : _lastKnownRevision;
+
+        // If the objectId isn't in the client's current revision, fall back to revision 0.
+        // Revision 0 is a complete superset — every objectId in the game is present there.
+        Dictionary<string, ListBinEntry>? currentIndex = LoadListBinIndex(revision);
+        if ((currentIndex is null || !currentIndex.ContainsKey(objectId)) && revision != "0")
+            revision = "0";
+
         return ResolveForRevision(revision, assetType, objectId);
     }
 

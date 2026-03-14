@@ -1,4 +1,5 @@
 using MariesWonderland.Configuration;
+using MariesWonderland.Data;
 using MariesWonderland.Http;
 using Microsoft.Extensions.Options;
 using System.Text;
@@ -17,11 +18,45 @@ public static class HttpApiExtensions
         string assetDatabaseBasePath = options.Paths.AssetDatabase;
         string masterDatabaseBasePath = options.Paths.MasterDatabase;
         string resourcesBaseUrl = options.Paths.ResourcesBaseUrl;
+        string userDatabasePath = Path.IsPathRooted(options.Data.UserDatabase)
+            ? options.Data.UserDatabase
+            : Path.Combine(AppContext.BaseDirectory, options.Data.UserDatabase);
 
         ILogger<AssetDatabase> assetLogger = app.Services.GetRequiredService<ILoggerFactory>().CreateLogger<AssetDatabase>();
         AssetDatabase assetDb = new(assetDatabaseBasePath, assetLogger);
 
         app.MapGet("/", () => "Marie's Wonderland is open for business :marie:");
+
+        // Debug endpoints for manual save/load
+        app.MapGet("/debug/save", () =>
+        {
+            try
+            {
+                UserDataStore store = app.Services.GetRequiredService<UserDataStore>();
+                store.Save(userDatabasePath);
+                return Results.Ok($"Saved {store.All.Count} users to {userDatabasePath}");
+            }
+            catch (Exception ex)
+            {
+                return Results.Problem($"Save failed: {ex.Message}");
+            }
+        });
+
+        app.MapGet("/debug/load", () =>
+        {
+            try
+            {
+                UserDataStore store = app.Services.GetRequiredService<UserDataStore>();
+                int count = store.Load(userDatabasePath);
+                return count > 0
+                    ? Results.Ok($"Loaded {count} users from {userDatabasePath}")
+                    : Results.Ok("No save file found.");
+            }
+            catch (Exception ex)
+            {
+                return Results.Problem($"Load failed: {ex.Message}");
+            }
+        });
 
         // ToS. Expects the version wrapped in delimiters like "###123###".
         app.MapGet("/web/static/{languagePath}/terms/termsofuse", (string languagePath) => $"<html><head><title>Terms of Service</title></head><body><h1>Terms of Service</h1><p>Language: {languagePath}</p><p>Version: ###123###</p></body></html>");
