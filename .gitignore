@@ -398,5 +398,10 @@ FodyWeavers.xsd
 *.sln.iml
 
 # Squad
+.gitattributes
+.github
 .copilot
 .squad
+
+# User Data
+src/Data/UserData
