@@ -56,6 +56,22 @@ public class UserDataStore
         return db;
     }
 
+    /// <summary>
+    /// Registers a pre-seeded database under a UUID. If the UUID is already mapped,
+    /// returns the existing userId without overwriting. Otherwise stores the seeded
+    /// database and maps the UUID to the userId found inside it.
+    /// </summary>
+    public long SeedUserFromDatabase(string uuid, DarkUserMemoryDatabase seededDb)
+    {
+        if (_uuidToUserId.TryGetValue(uuid, out var existingId))
+            return existingId;
+
+        long userId = seededDb.EntityIUser.FirstOrDefault()?.UserId ?? GenerateUserId();
+        _uuidToUserId[uuid] = userId;
+        _users[userId] = seededDb;
+        return userId;
+    }
+
     public bool TryGet(long userId, out DarkUserMemoryDatabase db)
         => _users.TryGetValue(userId, out db!);
 

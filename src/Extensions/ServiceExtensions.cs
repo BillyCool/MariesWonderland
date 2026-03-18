@@ -21,6 +21,7 @@ public static class ServiceExtensions
         var masterDb = MasterDataLoader.Load(masterDataPath);
         services.AddSingleton(masterDb);
         services.AddSingleton<UserDataStore>();
+        services.AddSingleton<UserDataSeeder>();
 
         return services;
     }

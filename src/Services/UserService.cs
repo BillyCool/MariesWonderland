@@ -8,9 +8,10 @@ using MariesWonderland.Proto.User;
 
 namespace MariesWonderland.Services;
 
-public class UserService(UserDataStore store) : MariesWonderland.Proto.User.UserService.UserServiceBase
+public class UserService(UserDataStore store, UserDataSeeder seeder) : MariesWonderland.Proto.User.UserService.UserServiceBase
 {
     private readonly UserDataStore _store = store;
+    private readonly UserDataSeeder _seeder = seeder;
 
     public override Task<GetAndroidArgsResponse> GetAndroidArgs(GetAndroidArgsRequest request, ServerCallContext context)
     {
@@ -183,7 +184,15 @@ public class UserService(UserDataStore store) : MariesWonderland.Proto.User.User
 
     public override Task<TransferUserResponse> TransferUser(TransferUserRequest request, ServerCallContext context)
     {
-        return Task.FromResult(new TransferUserResponse());
+        DarkUserMemoryDatabase seededDb = _seeder.LoadFromFiles();
+        long userId = _store.SeedUserFromDatabase(request.Uuid, seededDb);
+
+        TransferUserResponse response = new()
+        {
+            UserId = userId,
+            Signature = $"sig_{userId}_{DateTimeOffset.UtcNow.ToUnixTimeSeconds()}"
+        };
+        return Task.FromResult(response);
     }
 
     public override Task<TransferUserByAppleResponse> TransferUserByApple(TransferUserByAppleRequest request, ServerCallContext context)

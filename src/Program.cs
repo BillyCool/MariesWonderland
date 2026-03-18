@@ -1,6 +1,7 @@
 using MariesWonderland.Configuration;
 using MariesWonderland.Data;
 using MariesWonderland.Extensions;
+using MariesWonderland.Interceptors;
 using Microsoft.AspNetCore.Server.Kestrel.Core;
 using Microsoft.Extensions.Options;
 
@@ -23,7 +24,8 @@ public static class Program
             });
         });
 
-        builder.Services.AddGrpc();
+        builder.Services.AddSingleton<LoggingInterceptor>();
+        builder.Services.AddGrpc(options => options.Interceptors.Add<LoggingInterceptor>());
         builder.Services.AddServerOptions(builder.Configuration);
         builder.Services.AddDataStores(builder.Configuration);
 
