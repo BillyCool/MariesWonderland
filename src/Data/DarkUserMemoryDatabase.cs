@@ -10,6 +10,8 @@ namespace MariesWonderland.Data;
 /// </summary>
 public class DarkUserMemoryDatabase
 {
+    public long UserId { get; set; }
+
     public List<EntityIUser> EntityIUser { get; set; } = [];
 
     public List<EntityIUserApple> EntityIUserApple { get; set; } = [];

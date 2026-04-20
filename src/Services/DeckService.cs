@@ -34,14 +34,14 @@ public class DeckService(UserDataStore store) : MariesWonderland.Proto.Deck.Deck
 
         if (request.Deck != null)
         {
-            ApplyDeckReplacement(userDb, userId, (DeckType)request.DeckType, request.UserDeckNumber, request.Deck);
+            ApplyDeckReplacement(userDb, (DeckType)request.DeckType, request.UserDeckNumber, request.Deck);
         }
 
         return Task.FromResult(new ReplaceDeckResponse());
     }
 
     /// <summary>Creates a deck character record from a DeckCharacter slot proto and returns the new UUID.</summary>
-    private static string CreateDeckCharacter(DarkUserMemoryDatabase db, long userId, DeckCharacter? slot)
+    private static string CreateDeckCharacter(DarkUserMemoryDatabase db, DeckCharacter? slot)
     {
         if (slot is null || string.IsNullOrEmpty(slot.UserCostumeUuid))
         {
@@ -51,7 +51,7 @@ public class DeckService(UserDataStore store) : MariesWonderland.Proto.Deck.Deck
         string newUuid = Guid.NewGuid().ToString();
         db.EntityIUserDeckCharacter.Add(new EntityIUserDeckCharacter
         {
-            UserId = userId,
+            UserId = db.UserId,
             UserDeckCharacterUuid = newUuid,
             UserCostumeUuid = slot.UserCostumeUuid,
             MainUserWeaponUuid = slot.MainUserWeaponUuid,
@@ -64,7 +64,7 @@ public class DeckService(UserDataStore store) : MariesWonderland.Proto.Deck.Deck
         {
             db.EntityIUserDeckCharacterDressupCostume.Add(new EntityIUserDeckCharacterDressupCostume
             {
-                UserId = userId,
+                UserId = db.UserId,
                 UserDeckCharacterUuid = newUuid,
                 DressupCostumeId = slot.DressupCostumeId
             });
@@ -75,7 +75,7 @@ public class DeckService(UserDataStore store) : MariesWonderland.Proto.Deck.Deck
             if (string.IsNullOrEmpty(slot.UserPartsUuid[i])) { continue; }
             db.EntityIUserDeckPartsGroup.Add(new EntityIUserDeckPartsGroup
             {
-                UserId = userId,
+                UserId = db.UserId,
                 UserDeckCharacterUuid = newUuid,
                 UserPartsUuid = slot.UserPartsUuid[i],
                 SortOrder = i + 1
@@ -87,7 +87,7 @@ public class DeckService(UserDataStore store) : MariesWonderland.Proto.Deck.Deck
             if (string.IsNullOrEmpty(slot.SubUserWeaponUuid[i])) { continue; }
             db.EntityIUserDeckSubWeaponGroup.Add(new EntityIUserDeckSubWeaponGroup
             {
-                UserId = userId,
+                UserId = db.UserId,
                 UserDeckCharacterUuid = newUuid,
                 UserWeaponUuid = slot.SubUserWeaponUuid[i],
                 SortOrder = i + 1
@@ -123,7 +123,7 @@ public class DeckService(UserDataStore store) : MariesWonderland.Proto.Deck.Deck
 
         if (request.DeckPower != null)
         {
-            ApplyDeckPowerRefresh(userDb, userId, (DeckType)request.DeckType, request.UserDeckNumber, request.DeckPower);
+            ApplyDeckPowerRefresh(userDb, (DeckType)request.DeckType, request.UserDeckNumber, request.DeckPower);
         }
 
         return Task.FromResult(new RefreshDeckPowerResponse());
@@ -148,7 +148,7 @@ public class DeckService(UserDataStore store) : MariesWonderland.Proto.Deck.Deck
                 continue;
             }
 
-            ApplyDeckReplacement(userDb, userId, (DeckType)detail.DeckType, detail.UserDeckNumber, detail.Deck);
+            ApplyDeckReplacement(userDb, (DeckType)detail.DeckType, detail.UserDeckNumber, detail.Deck);
         }
 
         return Task.FromResult(new ReplaceTripleDeckResponse());
@@ -167,7 +167,7 @@ public class DeckService(UserDataStore store) : MariesWonderland.Proto.Deck.Deck
                 continue;
             }
 
-            ApplyDeckReplacement(userDb, userId, (DeckType)detail.DeckType, detail.UserDeckNumber, detail.Deck);
+            ApplyDeckReplacement(userDb, (DeckType)detail.DeckType, detail.UserDeckNumber, detail.Deck);
         }
 
         return Task.FromResult(new ReplaceMultiDeckResponse());
@@ -186,14 +186,14 @@ public class DeckService(UserDataStore store) : MariesWonderland.Proto.Deck.Deck
                 continue;
             }
 
-            ApplyDeckPowerRefresh(userDb, userId, (DeckType)info.DeckType, info.UserDeckNumber, info.DeckPower);
+            ApplyDeckPowerRefresh(userDb, (DeckType)info.DeckType, info.UserDeckNumber, info.DeckPower);
         }
 
         return Task.FromResult(new RefreshMultiDeckPowerResponse());
     }
 
     /// <summary>Removes old deck characters and creates new ones from the provided deck proto.</summary>
-    private static void ApplyDeckReplacement(DarkUserMemoryDatabase userDb, long userId, DeckType deckType, int deckNumber, Deck deck)
+    private static void ApplyDeckReplacement(DarkUserMemoryDatabase userDb, DeckType deckType, int deckNumber, Deck deck)
     {
         EntityIUserDeck? existing = userDb.EntityIUserDeck
             .FirstOrDefault(d => d.DeckType == deckType && d.UserDeckNumber == deckNumber);
@@ -210,15 +210,15 @@ public class DeckService(UserDataStore store) : MariesWonderland.Proto.Deck.Deck
             userDb.EntityIUserDeckSubWeaponGroup.RemoveAll(swg => oldUuids.Contains(swg.UserDeckCharacterUuid));
         }
 
-        string uuid01 = CreateDeckCharacter(userDb, userId, deck.Character01);
-        string uuid02 = CreateDeckCharacter(userDb, userId, deck.Character02);
-        string uuid03 = CreateDeckCharacter(userDb, userId, deck.Character03);
+        string uuid01 = CreateDeckCharacter(userDb, deck.Character01);
+        string uuid02 = CreateDeckCharacter(userDb, deck.Character02);
+        string uuid03 = CreateDeckCharacter(userDb, deck.Character03);
 
         if (existing == null)
         {
             existing = new EntityIUserDeck
             {
-                UserId = userId,
+                UserId = userDb.UserId,
                 DeckType = deckType,
                 UserDeckNumber = deckNumber,
                 Name = $"Loadout {deckNumber}",
@@ -233,7 +233,7 @@ public class DeckService(UserDataStore store) : MariesWonderland.Proto.Deck.Deck
     }
 
     /// <summary>Updates deck and character power values and tracks max deck power per type.</summary>
-    private static void ApplyDeckPowerRefresh(DarkUserMemoryDatabase userDb, long userId, DeckType deckType, int deckNumber, DeckPower deckPower)
+    private static void ApplyDeckPowerRefresh(DarkUserMemoryDatabase userDb, DeckType deckType, int deckNumber, DeckPower deckPower)
     {
         EntityIUserDeck? deck = userDb.EntityIUserDeck.FirstOrDefault(d =>
             d.DeckType == deckType && d.UserDeckNumber == deckNumber);
@@ -271,7 +271,7 @@ public class DeckService(UserDataStore store) : MariesWonderland.Proto.Deck.Deck
 
         if (note == null)
         {
-            note = new EntityIUserDeckTypeNote { UserId = userId, DeckType = deckType };
+            note = new EntityIUserDeckTypeNote { UserId = userDb.UserId, DeckType = deckType };
             userDb.EntityIUserDeckTypeNote.Add(note);
         }
 

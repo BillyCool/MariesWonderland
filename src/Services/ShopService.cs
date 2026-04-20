@@ -37,11 +37,11 @@ public class ShopService(UserDataStore store, DarkMasterMemoryDatabase masterDb)
 
             foreach (EntityMShopItemContentPossession content in contents)
             {
-                GrantShopPossession(userDb, userId, content.PossessionType, content.PossessionId, content.Count * qty);
+                GrantShopPossession(userDb, content.PossessionType, content.PossessionId, content.Count * qty);
             }
 
             // Apply side effects (e.g., stamina recovery)
-            ApplyContentEffects(userDb, shopItemId, qty, userId, nowMs);
+            ApplyContentEffects(userDb, shopItemId, qty, nowMs);
 
             // Track purchase count
             EntityIUserShopItem? shopItem = userDb.EntityIUserShopItem.FirstOrDefault(s => s.ShopItemId == shopItemId);
@@ -145,10 +145,10 @@ public class ShopService(UserDataStore store, DarkMasterMemoryDatabase masterDb)
 
             foreach (EntityMShopItemContentPossession content in contents)
             {
-                GrantShopPossession(userDb, userId, content.PossessionType, content.PossessionId, content.Count);
+                GrantShopPossession(userDb, content.PossessionType, content.PossessionId, content.Count);
             }
 
-            ApplyContentEffects(userDb, request.ShopItemId, 1, userId, nowMs);
+            ApplyContentEffects(userDb, request.ShopItemId, 1, nowMs);
 
             EntityIUserShopItem? shopItem = userDb.EntityIUserShopItem.FirstOrDefault(s => s.ShopItemId == request.ShopItemId);
             if (shopItem == null)
@@ -226,7 +226,7 @@ public class ShopService(UserDataStore store, DarkMasterMemoryDatabase masterDb)
     /// Grants a shop possession to the user. For costumes already owned, grants duplication
     /// exchange items instead. All other types delegate to PossessionHelper.Apply.
     /// </summary>
-    private void GrantShopPossession(DarkUserMemoryDatabase userDb, long userId, PossessionType possessionType, int possessionId, int count)
+    private void GrantShopPossession(DarkUserMemoryDatabase userDb, PossessionType possessionType, int possessionId, int count)
     {
         if (possessionType is PossessionType.COSTUME or PossessionType.COSTUME_ENHANCED
             && userDb.EntityIUserCostume.Any(c => c.CostumeId == possessionId))
@@ -234,21 +234,21 @@ public class ShopService(UserDataStore store, DarkMasterMemoryDatabase masterDb)
             foreach (EntityMCostumeDuplicationExchangePossessionGroup exchange in _masterDb.EntityMCostumeDuplicationExchangePossessionGroup
                 .Where(e => e.CostumeId == possessionId))
             {
-                PossessionHelper.Apply(userDb, userId, exchange.PossessionType, exchange.PossessionId, exchange.Count * count, _masterDb);
+                PossessionHelper.Apply(userDb, exchange.PossessionType, exchange.PossessionId, exchange.Count * count, _masterDb);
             }
             return;
         }
 
-        PossessionHelper.Apply(userDb, userId, possessionType, possessionId, count, _masterDb);
+        PossessionHelper.Apply(userDb, possessionType, possessionId, count, _masterDb);
     }
 
-    /// <summary>Applies side-effect content (e.g., stamina recovery) from a shop item purchase.</summary>
-    private void ApplyContentEffects(DarkUserMemoryDatabase userDb, int shopItemId, int qty, long userId, long nowMs)
+    /// <summary>Applies side-effect content(e.g., stamina recovery) from a shop item purchase.</summary>
+    private void ApplyContentEffects(DarkUserMemoryDatabase userDb, int shopItemId, int qty, long nowMs)
     {
         List<EntityMShopItemContentEffect> effects = [.. _masterDb.EntityMShopItemContentEffect
             .Where(e => e.ShopItemId == shopItemId)];
 
-        EntityIUserStatus? userStatus = userDb.EntityIUserStatus.FirstOrDefault(s => s.UserId == userId);
+        EntityIUserStatus? userStatus = userDb.EntityIUserStatus.FirstOrDefault(s => s.UserId == userDb.UserId);
         if (userStatus == null) { return; }
 
         EntityMUserLevel? levelData = _masterDb.EntityMUserLevel.FirstOrDefault(l => l.UserLevel == userStatus.Level);

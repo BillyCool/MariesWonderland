@@ -26,8 +26,8 @@ public class UserDataStore(DarkMasterMemoryDatabase masterDb)
 
         var userId = GenerateUserId();
         _uuidToUserId[uuid] = userId;
-        var db = new DarkUserMemoryDatabase();
-        SeedInitialUserData(db, userId);
+        var db = new DarkUserMemoryDatabase { UserId = userId };
+        SeedInitialUserData(db);
         _users[userId] = db;
         return (userId, true);
     }
@@ -64,7 +64,7 @@ public class UserDataStore(DarkMasterMemoryDatabase masterDb)
     {
         if (!_users.TryGetValue(userId, out var db))
         {
-            db = new DarkUserMemoryDatabase();
+            db = new DarkUserMemoryDatabase { UserId = userId };
             _users[userId] = db;
         }
         return db;
@@ -96,7 +96,10 @@ public class UserDataStore(DarkMasterMemoryDatabase masterDb)
     /// Stores a user database, replacing any existing one for that userId.
     /// </summary>
     public void Set(long userId, DarkUserMemoryDatabase db)
-        => _users[userId] = db;
+    {
+        db.UserId = userId;
+        _users[userId] = db;
+    }
 
     public IReadOnlyDictionary<long, DarkUserMemoryDatabase> All => _users;
 
@@ -141,7 +144,10 @@ public class UserDataStore(DarkMasterMemoryDatabase masterDb)
         _sessions.Clear();
 
         foreach (var (userId, db) in snapshot.Users)
+        {
+            db.UserId = userId;
             _users[userId] = db;
+        }
 
         foreach (var (uuid, userId) in snapshot.UuidToUserId)
             _uuidToUserId[uuid] = userId;
@@ -173,13 +179,13 @@ public class UserDataStore(DarkMasterMemoryDatabase masterDb)
     /// <summary>
     /// Populates a new user database with default records (profile, status, starting weapons, etc.).
     /// </summary>
-    private void SeedInitialUserData(DarkUserMemoryDatabase db, long userId)
+    private void SeedInitialUserData(DarkUserMemoryDatabase db)
     {
         var nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
 
         db.EntityIUser.Add(new EntityIUser
         {
-            UserId = userId,
+            UserId = db.UserId,
             PlayerId = GeneratePlayerId(),
             OsType = 2,
             PlatformType = PlatformType.GOOGLE_PLAY_STORE,
@@ -190,13 +196,13 @@ public class UserDataStore(DarkMasterMemoryDatabase masterDb)
 
         db.EntityIUserSetting.Add(new EntityIUserSetting
         {
-            UserId = userId,
+            UserId = db.UserId,
             IsNotifyPurchaseAlert = false
         });
 
         db.EntityIUserStatus.Add(new EntityIUserStatus
         {
-            UserId = userId,
+            UserId = db.UserId,
             Level = 1,
             Exp = 0,
             StaminaMilliValue = 60000,
@@ -205,7 +211,7 @@ public class UserDataStore(DarkMasterMemoryDatabase masterDb)
 
         db.EntityIUserProfile.Add(new EntityIUserProfile
         {
-            UserId = userId,
+            UserId = db.UserId,
             Name = string.Empty,
             NameUpdateDatetime = nowMs,
             Message = string.Empty,
@@ -216,7 +222,7 @@ public class UserDataStore(DarkMasterMemoryDatabase masterDb)
 
         db.EntityIUserLogin.Add(new EntityIUserLogin
         {
-            UserId = userId,
+            UserId = db.UserId,
             TotalLoginCount = 1,
             ContinualLoginCount = 1,
             MaxContinualLoginCount = 1,
@@ -226,7 +232,7 @@ public class UserDataStore(DarkMasterMemoryDatabase masterDb)
 
         db.EntityIUserLoginBonus.Add(new EntityIUserLoginBonus
         {
-            UserId = userId,
+            UserId = db.UserId,
             LoginBonusId = 1,
             CurrentPageNumber = 1,
             CurrentStampNumber = 0,
@@ -235,7 +241,7 @@ public class UserDataStore(DarkMasterMemoryDatabase masterDb)
 
         db.EntityIUserTutorialProgress.Add(new EntityIUserTutorialProgress
         {
-            UserId = userId,
+            UserId = db.UserId,
             TutorialType = TutorialType.GAME_START,
             ProgressPhase = 0,
             ChoiceId = 0
@@ -247,7 +253,7 @@ public class UserDataStore(DarkMasterMemoryDatabase masterDb)
 
             db.EntityIUserWeapon.Add(new EntityIUserWeapon
             {
-                UserId = userId,
+                UserId = db.UserId,
                 UserWeaponUuid = uuid,
                 WeaponId = weaponId,
                 Level = 1,
@@ -259,7 +265,7 @@ public class UserDataStore(DarkMasterMemoryDatabase masterDb)
 
             db.EntityIUserWeaponNote.Add(new EntityIUserWeaponNote
             {
-                UserId = userId,
+                UserId = db.UserId,
                 WeaponId = weaponId,
                 MaxLevel = 1,
                 MaxLimitBreakCount = 0,
@@ -268,7 +274,7 @@ public class UserDataStore(DarkMasterMemoryDatabase masterDb)
 
             db.EntityIUserWeaponStory.Add(new EntityIUserWeaponStory
             {
-                UserId = userId,
+                UserId = db.UserId,
                 WeaponId = weaponId,
                 ReleasedMaxStoryIndex = 1
             });
@@ -277,10 +283,10 @@ public class UserDataStore(DarkMasterMemoryDatabase masterDb)
             if (masterWeapon != null)
             {
                 foreach (EntityMWeaponAbilityGroup ag in _masterDb.EntityMWeaponAbilityGroup.Where(g => g.WeaponAbilityGroupId == masterWeapon.WeaponAbilityGroupId))
-                    db.EntityIUserWeaponAbility.Add(new EntityIUserWeaponAbility { UserId = userId, UserWeaponUuid = uuid, SlotNumber = ag.SlotNumber, Level = 1 });
+                    db.EntityIUserWeaponAbility.Add(new EntityIUserWeaponAbility { UserId = db.UserId, UserWeaponUuid = uuid, SlotNumber = ag.SlotNumber, Level = 1 });
 
                 foreach (EntityMWeaponSkillGroup sg in _masterDb.EntityMWeaponSkillGroup.Where(g => g.WeaponSkillGroupId == masterWeapon.WeaponSkillGroupId))
-                    db.EntityIUserWeaponSkill.Add(new EntityIUserWeaponSkill { UserId = userId, UserWeaponUuid = uuid, SlotNumber = sg.SlotNumber, Level = 1 });
+                    db.EntityIUserWeaponSkill.Add(new EntityIUserWeaponSkill { UserId = db.UserId, UserWeaponUuid = uuid, SlotNumber = sg.SlotNumber, Level = 1 });
             }
         }
     }

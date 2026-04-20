@@ -66,7 +66,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         EntityIUserPortalCageStatus portalCageStatus = userDb.EntityIUserPortalCageStatus.GetOrCreate(userId);
         portalCageStatus.IsCurrentProgress = false;
 
-        ApplySceneGrants(userDb, questSceneId, userId);
+        ApplySceneGrants(userDb, questSceneId);
 
         return Task.FromResult(new UpdateMainFlowSceneProgressResponse());
     }
@@ -156,12 +156,12 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         if (IsSceneAhead(questSceneId, progressStatus.HeadQuestSceneId))
             progressStatus.HeadQuestSceneId = questSceneId;
 
-        ApplySceneGrants(userDb, questSceneId, userId);
+        ApplySceneGrants(userDb, questSceneId);
 
         EntityMQuestScene? scene = _masterDb.EntityMQuestScene.FirstOrDefault(s => s.QuestSceneId == questSceneId);
         if (scene != null && scene.QuestResultType == QuestResultType.HALF_RESULT)
         {
-            ClearQuestMissions(userDb, scene.QuestId, userId, nowMs);
+            ClearQuestMissions(userDb, scene.QuestId, nowMs);
         }
 
         return Task.FromResult(new UpdateExtraQuestSceneProgressResponse());
@@ -181,12 +181,12 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         if (IsSceneAhead(questSceneId, progressStatus.HeadQuestSceneId))
             progressStatus.HeadQuestSceneId = questSceneId;
 
-        ApplySceneGrants(userDb, questSceneId, userId);
+        ApplySceneGrants(userDb, questSceneId);
 
         EntityMQuestScene? scene = _masterDb.EntityMQuestScene.FirstOrDefault(s => s.QuestSceneId == questSceneId);
         if (scene != null && scene.QuestResultType == QuestResultType.HALF_RESULT)
         {
-            ClearQuestMissions(userDb, scene.QuestId, userId, nowMs);
+            ClearQuestMissions(userDb, scene.QuestId, nowMs);
         }
 
         return Task.FromResult(new UpdateEventQuestSceneProgressResponse());
@@ -505,14 +505,14 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         {
             if (isFirstClear)
             {
-                ApplyExpRewards(userDb, quest, userId, questId);
-                ApplyGoldReward(userDb, quest, userId, nowMs);
-                ApplyFirstClearPossessions(userDb, firstClearRewardRows, userId, _masterDb);
-                ApplyWeaponStoryUnlocks(userDb, questId, userId);
+                ApplyExpRewards(userDb, quest, questId);
+                ApplyGoldReward(userDb, quest, nowMs);
+                ApplyFirstClearPossessions(userDb, firstClearRewardRows, _masterDb);
+                ApplyWeaponStoryUnlocks(userDb, questId);
             }
 
-            ApplyDropRewardPossessions(userDb, dropRewards, userId, _masterDb);
-            ApplyDropRewardPossessions(userDb, replayFlowFirstClearRewards, userId, _masterDb);
+            ApplyDropRewardPossessions(userDb, dropRewards, _masterDb);
+            ApplyDropRewardPossessions(userDb, replayFlowFirstClearRewards, _masterDb);
 
             userQuest.QuestStateType = (int)QuestStateType.CLEARED;
             userQuest.ClearCount++;
@@ -546,10 +546,10 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         }
 
         // Mark all missions as cleared (always)
-        ClearQuestMissions(userDb, questId, userId, nowMs);
+        ClearQuestMissions(userDb, questId, nowMs);
 
         // Build response with all reward categories and clean up the server-side quest session
-        FinishMainQuestResponse response = new() { IsBigWin = isBigWin };
+        FinishMainQuestResponse response= new() { IsBigWin = isBigWin };
         response.DropReward.AddRange(dropRewards);
         response.FirstClearReward.AddRange(firstClearRewards);
         response.MissionClearReward.AddRange(missionClearRewards);
@@ -566,7 +566,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
     }
 
     /// <summary>Applies user, character, and costume EXP from quest completion. Rental quests skip character/costume EXP.</summary>
-    private void ApplyExpRewards(DarkUserMemoryDatabase userDb, EntityMQuest quest, long userId, int questId)
+    private void ApplyExpRewards(DarkUserMemoryDatabase userDb, EntityMQuest quest, int questId)
     {
         // User EXP is always applied regardless of deck.
         EntityIUserStatus? status = userDb.EntityIUserStatus.FirstOrDefault();
@@ -675,7 +675,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
     }
 
     /// <summary>Clears all quest missions for a given quest, creating any missing records.</summary>
-    private void ClearQuestMissions(DarkUserMemoryDatabase userDb, int questId, long userId, long nowMs)
+    private void ClearQuestMissions(DarkUserMemoryDatabase userDb, int questId, long nowMs)
     {
         EntityMQuest? quest = _masterDb.EntityMQuest.FirstOrDefault(q => q.QuestId == questId);
         if (quest == null || quest.QuestMissionGroupId == 0) return;
@@ -685,7 +685,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         {
             EntityIUserQuestMission userMission = userDb.EntityIUserQuestMission.GetOrCreate(
                 m => m.QuestId == questId && m.QuestMissionId == missionGroupRow.QuestMissionId,
-                () => new EntityIUserQuestMission { UserId = userId, QuestId = questId, QuestMissionId = missionGroupRow.QuestMissionId });
+                () => new EntityIUserQuestMission { UserId = userDb.UserId, QuestId = questId, QuestMissionId = missionGroupRow.QuestMissionId });
             userMission.IsClear = true;
             userMission.ProgressValue = 1;
             userMission.LatestClearDatetime = nowMs;
@@ -693,44 +693,44 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
     }
 
     /// <summary>Grants gold (consumable item ID 1) from quest completion.</summary>
-    private static void ApplyGoldReward(DarkUserMemoryDatabase userDb, EntityMQuest quest, long userId, long nowMs)
+    private static void ApplyGoldReward(DarkUserMemoryDatabase userDb, EntityMQuest quest, long nowMs)
     {
         if (quest.Gold <= 0) return;
         EntityIUserConsumableItem? gold = userDb.EntityIUserConsumableItem.FirstOrDefault(c => c.ConsumableItemId == 1);
         if (gold == null)
         {
-            gold = new EntityIUserConsumableItem { UserId = userId, ConsumableItemId = 1, Count = 0, FirstAcquisitionDatetime = nowMs };
+            gold = new EntityIUserConsumableItem { UserId = userDb.UserId, ConsumableItemId = 1, Count = 0, FirstAcquisitionDatetime = nowMs };
             userDb.EntityIUserConsumableItem.Add(gold);
         }
         gold.Count += quest.Gold;
     }
 
     /// <summary>Grants first-clear reward possessions to the user.</summary>
-    private static void ApplyFirstClearPossessions(DarkUserMemoryDatabase userDb, List<EntityMQuestFirstClearRewardGroup> rewardRows, long userId, DarkMasterMemoryDatabase masterDb)
+    private static void ApplyFirstClearPossessions(DarkUserMemoryDatabase userDb, List<EntityMQuestFirstClearRewardGroup> rewardRows, DarkMasterMemoryDatabase masterDb)
     {
         foreach (EntityMQuestFirstClearRewardGroup row in rewardRows)
-            PossessionHelper.Apply(userDb, userId, row.PossessionType, row.PossessionId, row.Count, masterDb);
+            PossessionHelper.Apply(userDb, row.PossessionType, row.PossessionId, row.Count, masterDb);
     }
 
     /// <summary>Grants scene-based possessions from master data for the given quest scene.</summary>
-    private void ApplySceneGrants(DarkUserMemoryDatabase userDb, int questSceneId, long userId)
+    private void ApplySceneGrants(DarkUserMemoryDatabase userDb, int questSceneId)
     {
         List<EntityMUserQuestSceneGrantPossession> grants = [.. _masterDb.EntityMUserQuestSceneGrantPossession
             .Where(g => g.QuestSceneId == questSceneId && !g.IsDebug)];
 
         foreach (EntityMUserQuestSceneGrantPossession grant in grants)
-            PossessionHelper.Apply(userDb, userId, grant.PossessionType, grant.PossessionId, grant.Count, _masterDb);
+            PossessionHelper.Apply(userDb, grant.PossessionType, grant.PossessionId, grant.Count, _masterDb);
     }
 
     /// <summary>Grants all drop reward possessions from a reward list.</summary>
-    private static void ApplyDropRewardPossessions(DarkUserMemoryDatabase userDb, List<QuestReward> rewards, long userId, DarkMasterMemoryDatabase masterDb)
+    private static void ApplyDropRewardPossessions(DarkUserMemoryDatabase userDb, List<QuestReward> rewards, DarkMasterMemoryDatabase masterDb)
     {
         foreach (QuestReward reward in rewards)
-            PossessionHelper.Apply(userDb, userId, (PossessionType)reward.PossessionType, reward.PossessionId, reward.Count, masterDb);
+            PossessionHelper.Apply(userDb, (PossessionType)reward.PossessionType, reward.PossessionId, reward.Count, masterDb);
     }
 
     /// <summary>Unlocks weapon stories triggered by QUEST_CLEAR. ACQUISITION unlocks are handled by WeaponHelper.GrantWeapon.</summary>
-    private void ApplyWeaponStoryUnlocks(DarkUserMemoryDatabase userDb, int questId, long userId)
+    private void ApplyWeaponStoryUnlocks(DarkUserMemoryDatabase userDb, int questId)
     {
         IEnumerable<EntityMWeaponStoryReleaseConditionGroup> questClearCondRows = _masterDb.EntityMWeaponStoryReleaseConditionGroup
             .Where(c => c.WeaponStoryReleaseConditionType == WeaponStoryReleaseConditionType.QUEST_CLEAR
@@ -740,7 +740,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
             EntityMWeapon? masterWeapon = _masterDb.EntityMWeapon
                 .FirstOrDefault(w => w.WeaponStoryReleaseConditionGroupId == condRow.WeaponStoryReleaseConditionGroupId);
             if (masterWeapon != null)
-                WeaponHelper.GrantWeaponStory(userDb, masterWeapon.WeaponId, condRow.StoryIndex, userId);
+                WeaponHelper.GrantWeaponStory(userDb, masterWeapon.WeaponId, condRow.StoryIndex);
         }
     }
 
@@ -962,13 +962,13 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         {
             if (isFirstClear)
             {
-                ApplyExpRewards(userDb, quest, userId, questId);
-                ApplyGoldReward(userDb, quest, userId, nowMs);
-                ApplyFirstClearPossessions(userDb, firstClearRewardRows, userId, _masterDb);
-                ApplyWeaponStoryUnlocks(userDb, questId, userId);
+                ApplyExpRewards(userDb, quest, questId);
+                ApplyGoldReward(userDb, quest, nowMs);
+                ApplyFirstClearPossessions(userDb, firstClearRewardRows, _masterDb);
+                ApplyWeaponStoryUnlocks(userDb, questId);
             }
 
-            ApplyDropRewardPossessions(userDb, dropRewardsExtra, userId, _masterDb);
+            ApplyDropRewardPossessions(userDb, dropRewardsExtra, _masterDb);
 
             userQuest.QuestStateType = (int)QuestStateType.CLEARED;
             userQuest.ClearCount++;
@@ -987,9 +987,9 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         }
 
         // Mark all missions as cleared (always)
-        ClearQuestMissions(userDb, questId, userId, nowMs);
+        ClearQuestMissions(userDb, questId, nowMs);
 
-        FinishExtraQuestResponse response = new() { IsBigWin = isBigWin };
+        FinishExtraQuestResponse response= new() { IsBigWin = isBigWin };
         response.DropReward.AddRange(dropRewardsExtra);
         response.FirstClearReward.AddRange(firstClearRewards);
         response.MissionClearReward.AddRange(missionClearRewards);
@@ -1218,13 +1218,13 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         {
             if (isFirstClear)
             {
-                ApplyExpRewards(userDb, quest, userId, questId);
-                ApplyGoldReward(userDb, quest, userId, nowMs);
-                ApplyFirstClearPossessions(userDb, firstClearRewardRows, userId, _masterDb);
-                ApplyWeaponStoryUnlocks(userDb, questId, userId);
+                ApplyExpRewards(userDb, quest, questId);
+                ApplyGoldReward(userDb, quest, nowMs);
+                ApplyFirstClearPossessions(userDb, firstClearRewardRows, _masterDb);
+                ApplyWeaponStoryUnlocks(userDb, questId);
             }
 
-            ApplyDropRewardPossessions(userDb, dropRewardsEvent, userId, _masterDb);
+            ApplyDropRewardPossessions(userDb, dropRewardsEvent, _masterDb);
 
             userQuest.QuestStateType = (int)QuestStateType.CLEARED;
             userQuest.ClearCount++;
@@ -1243,9 +1243,9 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         }
 
         // Mark all missions as cleared (always)
-        ClearQuestMissions(userDb, questId, userId, nowMs);
+        ClearQuestMissions(userDb, questId, nowMs);
 
-        FinishEventQuestResponse response = new() { IsBigWin = isBigWin };
+        FinishEventQuestResponse response= new() { IsBigWin = isBigWin };
         response.DropReward.AddRange(dropRewardsEvent);
         response.FirstClearReward.AddRange(firstClearRewards);
         response.MissionClearReward.AddRange(missionClearRewards);
@@ -1335,11 +1335,11 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
             for (int i = 0; i < request.SkipCount; i++)
             {
                 List<QuestReward> iterDrops = BuildDropRewards(quest);
-                ApplyDropRewardPossessions(userDb, iterDrops, userId, _masterDb);
+                ApplyDropRewardPossessions(userDb, iterDrops, _masterDb);
                 dropRewards.AddRange(iterDrops);
 
-                ApplyGoldReward(userDb, quest, userId, nowMs);
-                ApplyExpRewards(userDb, quest, userId, questId);
+                ApplyGoldReward(userDb, quest, nowMs);
+                ApplyExpRewards(userDb, quest, questId);
             }
 
             userQuest.ClearCount += request.SkipCount;

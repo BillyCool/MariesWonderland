@@ -37,8 +37,8 @@ public class CharacterBoardService(DarkMasterMemoryDatabase masterDb, UserDataSt
             }
 
             ConsumeCosts(userDb, panel);
-            SetReleaseBit(userDb, userId, panel);
-            ApplyEffects(userDb, userId, panel);
+            SetReleaseBit(userDb, panel);
+            ApplyEffects(userDb, panel);
         }
 
         return Task.FromResult(new ReleasePanelResponse());
@@ -129,7 +129,7 @@ public class CharacterBoardService(DarkMasterMemoryDatabase masterDb, UserDataSt
     }
 
     /// <summary>Sets the release bit for a panel on the user's character board, using bitfield-packed storage (32 panels per field).</summary>
-    private static void SetReleaseBit(DarkUserMemoryDatabase userDb, long userId, EntityMCharacterBoardPanel panel)
+    private static void SetReleaseBit(DarkUserMemoryDatabase userDb, EntityMCharacterBoardPanel panel)
     {
         int boardId = panel.CharacterBoardId;
 
@@ -147,7 +147,7 @@ public class CharacterBoardService(DarkMasterMemoryDatabase masterDb, UserDataSt
         {
             board = new EntityIUserCharacterBoard
             {
-                UserId = userId,
+                UserId = userDb.UserId,
                 CharacterBoardId = boardId
             };
             userDb.EntityIUserCharacterBoard.Add(board);
@@ -175,7 +175,7 @@ public class CharacterBoardService(DarkMasterMemoryDatabase masterDb, UserDataSt
     }
 
     /// <summary>Applies the panel's release effects (ability unlocks or stat boosts) to the character.</summary>
-    private void ApplyEffects(DarkUserMemoryDatabase userDb, long userId, EntityMCharacterBoardPanel panel)
+    private void ApplyEffects(DarkUserMemoryDatabase userDb, EntityMCharacterBoardPanel panel)
     {
         foreach (EntityMCharacterBoardPanelReleaseEffectGroup eff in _masterDb.EntityMCharacterBoardPanelReleaseEffectGroup)
         {
@@ -187,17 +187,17 @@ public class CharacterBoardService(DarkMasterMemoryDatabase masterDb, UserDataSt
             switch (eff.CharacterBoardEffectType)
             {
                 case CharacterBoardEffectType.ABILITY:
-                    ApplyAbilityEffect(userDb, userId, eff);
+                    ApplyAbilityEffect(userDb, eff);
                     break;
                 case CharacterBoardEffectType.STATUS_UP:
-                    ApplyStatusUpEffect(userDb, userId, eff);
+                    ApplyStatusUpEffect(userDb, eff);
                     break;
             }
         }
     }
 
     /// <summary>Grants or levels up a character ability from a board panel release, capped by the master-defined max level.</summary>
-    private void ApplyAbilityEffect(DarkUserMemoryDatabase userDb, long userId, EntityMCharacterBoardPanelReleaseEffectGroup eff)
+    private void ApplyAbilityEffect(DarkUserMemoryDatabase userDb, EntityMCharacterBoardPanelReleaseEffectGroup eff)
     {
         EntityMCharacterBoardAbility? ability = null;
         foreach (EntityMCharacterBoardAbility a in _masterDb.EntityMCharacterBoardAbility)
@@ -235,7 +235,7 @@ public class CharacterBoardService(DarkMasterMemoryDatabase masterDb, UserDataSt
         {
             state = new EntityIUserCharacterBoardAbility
             {
-                UserId = userId,
+                UserId = userDb.UserId,
                 CharacterId = characterId,
                 AbilityId = ability.AbilityId,
                 Level = 0
@@ -260,7 +260,7 @@ public class CharacterBoardService(DarkMasterMemoryDatabase masterDb, UserDataSt
     }
 
     /// <summary>Applies a stat increase (HP, ATK, AGI, VIT, CRIT) to a character from a board panel release.</summary>
-    private void ApplyStatusUpEffect(DarkUserMemoryDatabase userDb, long userId, EntityMCharacterBoardPanelReleaseEffectGroup eff)
+    private void ApplyStatusUpEffect(DarkUserMemoryDatabase userDb, EntityMCharacterBoardPanelReleaseEffectGroup eff)
     {
         EntityMCharacterBoardStatusUp? statusUp = null;
         foreach (EntityMCharacterBoardStatusUp s in _masterDb.EntityMCharacterBoardStatusUp)
@@ -300,7 +300,7 @@ public class CharacterBoardService(DarkMasterMemoryDatabase masterDb, UserDataSt
         {
             state = new EntityIUserCharacterBoardStatusUp
             {
-                UserId = userId,
+                UserId = userDb.UserId,
                 CharacterId = characterId,
                 StatusCalculationType = calcType
             };

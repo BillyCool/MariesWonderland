@@ -53,7 +53,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
             {
                 if (exchange.WeaponId == weapon.WeaponId)
                 {
-                    AddConsumableItem(userDb, userId, exchange.ConsumableItemId, exchange.Count);
+                    AddConsumableItem(userDb, exchange.ConsumableItemId, exchange.Count);
                 }
             }
 
@@ -66,7 +66,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
 
         if (totalGold > 0)
         {
-            AddConsumableItem(userDb, userId, _gameConfig.ConsumableItemIdForGold, totalGold);
+            AddConsumableItem(userDb, _gameConfig.ConsumableItemIdForGold, totalGold);
         }
 
         return Task.FromResult(new SellResponse());
@@ -186,9 +186,9 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
         weapon.Exp += totalExp;
         ApplyLevelFromExp(weapon, wm);
 
-        CheckWeaponStoryUnlocks(userDb, userId, weapon.WeaponId, weapon.Level);
+        CheckWeaponStoryUnlocks(userDb, weapon.WeaponId, weapon.Level);
 
-        return Task.FromResult(new EnhanceByMaterialResponse { IsGreatSuccess = false });
+        return Task.FromResult(new EnhanceByMaterialResponse{ IsGreatSuccess = false });
     }
 
     /// <summary>
@@ -242,7 +242,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
             {
                 if (exchange.WeaponId == matWeapon.WeaponId)
                 {
-                    AddConsumableItem(userDb, userId, exchange.ConsumableItemId, exchange.Count);
+                    AddConsumableItem(userDb, exchange.ConsumableItemId, exchange.Count);
                 }
             }
 
@@ -269,9 +269,9 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
         weapon.Exp += totalExp;
         ApplyLevelFromExp(weapon, wm);
 
-        CheckWeaponStoryUnlocks(userDb, userId, weapon.WeaponId, weapon.Level);
+        CheckWeaponStoryUnlocks(userDb, weapon.WeaponId, weapon.Level);
 
-        return Task.FromResult(new EnhanceByWeaponResponse { IsGreatSuccess = false });
+        return Task.FromResult(new EnhanceByWeaponResponse{ IsGreatSuccess = false });
     }
 
     /// <summary>
@@ -533,7 +533,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
         weapon.LimitBreakCount += totalMaterialCount;
 
         // Track the highest limit break count in the weapon note
-        UpdateWeaponNote(userDb, userId, weapon);
+        UpdateWeaponNote(userDb, weapon);
 
         return Task.FromResult(new LimitBreakByMaterialResponse());
     }
@@ -583,7 +583,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
             {
                 if (exchange.WeaponId == matWeapon.WeaponId)
                 {
-                    AddConsumableItem(userDb, userId, exchange.ConsumableItemId, exchange.Count);
+                    AddConsumableItem(userDb, exchange.ConsumableItemId, exchange.Count);
                 }
             }
 
@@ -609,7 +609,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
         weapon.LimitBreakCount += consumedCount;
 
         // Track the highest limit break count in the weapon note
-        UpdateWeaponNote(userDb, userId, weapon);
+        UpdateWeaponNote(userDb, weapon);
 
         return Task.FromResult(new LimitBreakByWeaponResponse());
     }
@@ -712,7 +712,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
         }
 
         // Check if the evolution unlocks new weapon story pages
-        CheckWeaponStoryUnlocks(userDb, userId, evolvedId, weapon.Level);
+        CheckWeaponStoryUnlocks(userDb, evolvedId, weapon.Level);
 
         return Task.FromResult(new EvolveResponse());
     }
@@ -883,7 +883,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
     /// <summary>
     /// Grants a consumable item to the user, creating the inventory entry if it doesn't exist yet.
     /// </summary>
-    private static void AddConsumableItem(DarkUserMemoryDatabase userDb, long userId, int itemId, int count)
+    private static void AddConsumableItem(DarkUserMemoryDatabase userDb, int itemId, int count)
     {
         foreach (EntityIUserConsumableItem ci in userDb.EntityIUserConsumableItem)
         {
@@ -896,7 +896,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
 
         userDb.EntityIUserConsumableItem.Add(new EntityIUserConsumableItem
         {
-            UserId = userId,
+            UserId = userDb.UserId,
             ConsumableItemId = itemId,
             Count = count,
             FirstAcquisitionDatetime = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds()
@@ -992,7 +992,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
     /// <summary>
     /// Updates the weapon note to track the highest limit break count ever achieved for this weapon.
     /// </summary>
-    private static void UpdateWeaponNote(DarkUserMemoryDatabase userDb, long userId, EntityIUserWeapon weapon)
+    private static void UpdateWeaponNote(DarkUserMemoryDatabase userDb, EntityIUserWeapon weapon)
     {
         EntityIUserWeaponNote? note = null;
         foreach (EntityIUserWeaponNote n in userDb.EntityIUserWeaponNote)
@@ -1016,7 +1016,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
     /// <summary>
     /// Evaluates weapon story release conditions and unlocks story pages when conditions are met (level reached, evolution, acquisition, etc.).
     /// </summary>
-    private void CheckWeaponStoryUnlocks(DarkUserMemoryDatabase userDb, long userId, int weaponId, int level)
+    private void CheckWeaponStoryUnlocks(DarkUserMemoryDatabase userDb, int weaponId, int level)
     {
         EntityMWeapon? wm = FindWeaponMaster(weaponId);
         if (wm == null || wm.WeaponStoryReleaseConditionGroupId == 0)
@@ -1057,7 +1057,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
 
             if (shouldUnlock)
             {
-                GrantWeaponStoryUnlock(userDb, userId, weaponId, cond.StoryIndex);
+                GrantWeaponStoryUnlock(userDb, weaponId, cond.StoryIndex);
             }
         }
     }
@@ -1086,7 +1086,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
     /// <summary>
     /// Unlocks a weapon story page, creating the story record if new or advancing the max released story index.
     /// </summary>
-    private static void GrantWeaponStoryUnlock(DarkUserMemoryDatabase userDb, long userId, int weaponId, int storyIndex)
+    private static void GrantWeaponStoryUnlock(DarkUserMemoryDatabase userDb, int weaponId, int storyIndex)
     {
         EntityIUserWeaponStory? existing = null;
         foreach (EntityIUserWeaponStory ws in userDb.EntityIUserWeaponStory)
@@ -1109,7 +1109,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
         {
             userDb.EntityIUserWeaponStory.Add(new EntityIUserWeaponStory
             {
-                UserId = userId,
+                UserId = userDb.UserId,
                 WeaponId = weaponId,
                 ReleasedMaxStoryIndex = storyIndex
             });

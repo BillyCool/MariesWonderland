@@ -70,14 +70,14 @@ public class ConsumableItemService(DarkMasterMemoryDatabase masterDb, UserDataSt
 
         if (totalGold > 0)
         {
-            AddGold(userDb, userId, totalGold);
+            AddGold(userDb, totalGold);
         }
 
         return Task.FromResult(new SellResponse());
     }
 
     /// <summary>Adds gold (consumable item ID 1) to the user's inventory, creating the entry if needed.</summary>
-    private void AddGold(DarkUserMemoryDatabase userDb, long userId, int amount)
+    private void AddGold(DarkUserMemoryDatabase userDb, int amount)
     {
         foreach (EntityIUserConsumableItem ci in userDb.EntityIUserConsumableItem)
         {
@@ -90,7 +90,7 @@ public class ConsumableItemService(DarkMasterMemoryDatabase masterDb, UserDataSt
 
         userDb.EntityIUserConsumableItem.Add(new EntityIUserConsumableItem
         {
-            UserId = userId,
+            UserId = userDb.UserId,
             ConsumableItemId = _gameConfig.ConsumableItemIdForGold,
             Count = amount,
             FirstAcquisitionDatetime = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds()

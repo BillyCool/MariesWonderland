@@ -31,7 +31,7 @@ public class AutoSaveInterceptor(UserDataStore store, ILogger<AutoSaveIntercepto
         {
             string[] parts = context.Method.Split('/', StringSplitOptions.RemoveEmptyEntries);
             string methodSuffix = parts.Length >= 2 ? $"{parts[^2]}_{parts[^1]}" : context.Method.TrimStart('/').Replace('/', '_');
-            _ = Task.Run(() => SaveUser(userId, userDb, methodSuffix));
+            _ = Task.Run(() => SaveUser(userDb, methodSuffix));
         }
 
         return response;
@@ -40,20 +40,20 @@ public class AutoSaveInterceptor(UserDataStore store, ILogger<AutoSaveIntercepto
     /// <summary>
     /// Serializes and writes a user's database to a timestamped JSON file.
     /// </summary>
-    private void SaveUser(long userId, DarkUserMemoryDatabase userDb, string methodSuffix)
+    private void SaveUser(DarkUserMemoryDatabase userDb, string methodSuffix)
     {
         try
         {
             Directory.CreateDirectory(SavesDirectory);
             string timestamp = DateTime.UtcNow.ToString("yyyyMMdd_HHmmss");
-            string filePath = Path.Combine(SavesDirectory, $"{userId}_{timestamp}_{methodSuffix}.json");
+            string filePath = Path.Combine(SavesDirectory, $"{userDb.UserId}_{timestamp}_{methodSuffix}.json");
             string json = JsonSerializer.Serialize(userDb, JsonOptions);
             File.WriteAllText(filePath, json);
-            //logger.LogDebug("Auto-saved user {UserId} to {FilePath}", userId, filePath);
+            //logger.LogDebug("Auto-saved user {UserId} to {FilePath}", userDb.UserId, filePath);
         }
         catch (Exception ex)
         {
-            logger.LogError(ex, "AutoSaveInterceptor failed to save user {UserId}", userId);
+            logger.LogError(ex, "AutoSaveInterceptor failed to save user {UserId}", userDb.UserId);
         }
     }
 }

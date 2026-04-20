@@ -18,15 +18,15 @@ public class TutorialService(UserDataStore store, DarkMasterMemoryDatabase maste
         DarkUserMemoryDatabase userDb = store.GetOrCreate(userId);
         long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
 
-        UpsertTutorialProgress(userDb, userId, (TutorialType)request.TutorialType, request.ProgressPhase, request.ChoiceId);
+        UpsertTutorialProgress(userDb, (TutorialType)request.TutorialType, request.ProgressPhase, request.ChoiceId);
 
         if (request.TutorialType == (int)TutorialType.MENU_FIRST ||
             request.TutorialType == (int)TutorialType.MENU_SECOND)
         {
-            CreateStarterDeck(userDb, userId);
+            CreateStarterDeck(userDb);
         }
 
-        List<TutorialChoiceReward> rewards = ApplyTutorialRewards(userDb, userId, (TutorialType)request.TutorialType);
+        List<TutorialChoiceReward> rewards = ApplyTutorialRewards(userDb, (TutorialType)request.TutorialType);
 
         SetTutorialProgressResponse response = new();
         response.TutorialChoiceReward.AddRange(rewards);
@@ -39,14 +39,14 @@ public class TutorialService(UserDataStore store, DarkMasterMemoryDatabase maste
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = store.GetOrCreate(userId);
 
-        UpsertTutorialProgress(userDb, userId, (TutorialType)request.TutorialType, request.ProgressPhase, choiceId: 0);
-        UpsertDeck(userDb, userId, request);
+        UpsertTutorialProgress(userDb, (TutorialType)request.TutorialType, request.ProgressPhase, choiceId: 0);
+        UpsertDeck(userDb, request);
 
         return Task.FromResult(new SetTutorialProgressAndReplaceDeckResponse());
     }
 
     /// <summary>Creates or updates a tutorial progress record, advancing to the specified phase.</summary>
-    private static void UpsertTutorialProgress(DarkUserMemoryDatabase db, long userId, TutorialType type, int phase, int choiceId)
+    private static void UpsertTutorialProgress(DarkUserMemoryDatabase db, TutorialType type, int phase, int choiceId)
     {
         EntityIUserTutorialProgress? existing = db.EntityIUserTutorialProgress
             .FirstOrDefault(t => t.TutorialType == type);
@@ -55,7 +55,7 @@ public class TutorialService(UserDataStore store, DarkMasterMemoryDatabase maste
         {
             db.EntityIUserTutorialProgress.Add(new EntityIUserTutorialProgress
             {
-                UserId = userId,
+                UserId = db.UserId,
                 TutorialType = type,
                 ProgressPhase = phase,
                 ChoiceId = choiceId
@@ -76,7 +76,7 @@ public class TutorialService(UserDataStore store, DarkMasterMemoryDatabase maste
     /// owned costume/weapon/companion. Only runs when no deck 1 character slot exists yet.
     /// Idempotent: safe to call multiple times.
     /// </summary>
-    private static void CreateStarterDeck(DarkUserMemoryDatabase db, long userId)
+    private static void CreateStarterDeck(DarkUserMemoryDatabase db)
     {
         if (db.EntityIUserCostume.Count == 0)
         {
@@ -106,7 +106,7 @@ public class TutorialService(UserDataStore store, DarkMasterMemoryDatabase maste
 
         db.EntityIUserDeckCharacter.Add(new EntityIUserDeckCharacter
         {
-            UserId = userId,
+            UserId = db.UserId,
             UserDeckCharacterUuid = dcUuid,
             UserCostumeUuid = costumeUuid,
             MainUserWeaponUuid = weaponUuid,
@@ -117,9 +117,7 @@ public class TutorialService(UserDataStore store, DarkMasterMemoryDatabase maste
         {
             db.EntityIUserDeck.Add(new EntityIUserDeck
             {
-                UserId = userId,
-                DeckType = DeckType.QUEST,
-                UserDeckNumber = 1,
+                UserId = db.UserId,
                 UserDeckCharacterUuid01 = dcUuid,
                 Name = "Loadout 1",
                 Power = 0
@@ -137,7 +135,7 @@ public class TutorialService(UserDataStore store, DarkMasterMemoryDatabase maste
         {
             db.EntityIUserDeckTypeNote.Add(new EntityIUserDeckTypeNote
             {
-                UserId = userId,
+                UserId = db.UserId,
                 DeckType = DeckType.QUEST,
                 MaxDeckPower = 0
             });
@@ -149,7 +147,7 @@ public class TutorialService(UserDataStore store, DarkMasterMemoryDatabase maste
     /// Removes existing EntityIUserDeckCharacter records for the deck, creates fresh ones with new
     /// UUIDs, and updates EntityIUserDeck to reference the newly generated character UUIDs.
     /// </summary>
-    private static void UpsertDeck(DarkUserMemoryDatabase db, long userId, SetTutorialProgressAndReplaceDeckRequest request)
+    private static void UpsertDeck(DarkUserMemoryDatabase db, SetTutorialProgressAndReplaceDeckRequest request)
     {
         DeckType deckType = (DeckType)request.DeckType;
 
@@ -168,15 +166,15 @@ public class TutorialService(UserDataStore store, DarkMasterMemoryDatabase maste
             db.EntityIUserDeckSubWeaponGroup.RemoveAll(swg => oldUuids.Contains(swg.UserDeckCharacterUuid));
         }
 
-        string uuid01 = CreateDeckCharacter(db, userId, request.Deck?.Character01);
-        string uuid02 = CreateDeckCharacter(db, userId, request.Deck?.Character02);
-        string uuid03 = CreateDeckCharacter(db, userId, request.Deck?.Character03);
+        string uuid01 = CreateDeckCharacter(db, request.Deck?.Character01);
+        string uuid02 = CreateDeckCharacter(db, request.Deck?.Character02);
+        string uuid03 = CreateDeckCharacter(db, request.Deck?.Character03);
 
         if (existing is null)
         {
             db.EntityIUserDeck.Add(new EntityIUserDeck
             {
-                UserId = userId,
+                UserId = db.UserId,
                 DeckType = deckType,
                 UserDeckNumber = request.UserDeckNumber,
                 UserDeckCharacterUuid01 = uuid01,
@@ -195,7 +193,7 @@ public class TutorialService(UserDataStore store, DarkMasterMemoryDatabase maste
     }
 
     /// <summary>Creates a deck character record from a DeckCharacter slot proto and returns the new UUID.</summary>
-    private static string CreateDeckCharacter(DarkUserMemoryDatabase db, long userId, DeckCharacter? slot)
+    private static string CreateDeckCharacter(DarkUserMemoryDatabase db, DeckCharacter? slot)
     {
         if (slot is null || string.IsNullOrEmpty(slot.UserCostumeUuid))
         {
@@ -205,7 +203,7 @@ public class TutorialService(UserDataStore store, DarkMasterMemoryDatabase maste
         string newUuid = Guid.NewGuid().ToString();
         db.EntityIUserDeckCharacter.Add(new EntityIUserDeckCharacter
         {
-            UserId = userId,
+            UserId = db.UserId,
             UserDeckCharacterUuid = newUuid,
             UserCostumeUuid = slot.UserCostumeUuid,
             MainUserWeaponUuid = slot.MainUserWeaponUuid,
@@ -218,7 +216,7 @@ public class TutorialService(UserDataStore store, DarkMasterMemoryDatabase maste
         {
             db.EntityIUserDeckCharacterDressupCostume.Add(new EntityIUserDeckCharacterDressupCostume
             {
-                UserId = userId,
+                UserId = db.UserId,
                 UserDeckCharacterUuid = newUuid,
                 DressupCostumeId = slot.DressupCostumeId
             });
@@ -229,7 +227,7 @@ public class TutorialService(UserDataStore store, DarkMasterMemoryDatabase maste
             if (string.IsNullOrEmpty(slot.UserPartsUuid[i])) { continue; }
             db.EntityIUserDeckPartsGroup.Add(new EntityIUserDeckPartsGroup
             {
-                UserId = userId,
+                UserId = db.UserId,
                 UserDeckCharacterUuid = newUuid,
                 UserPartsUuid = slot.UserPartsUuid[i],
                 SortOrder = i + 1
@@ -241,7 +239,7 @@ public class TutorialService(UserDataStore store, DarkMasterMemoryDatabase maste
             if (string.IsNullOrEmpty(slot.SubUserWeaponUuid[i])) { continue; }
             db.EntityIUserDeckSubWeaponGroup.Add(new EntityIUserDeckSubWeaponGroup
             {
-                UserId = userId,
+                UserId = db.UserId,
                 UserDeckCharacterUuid = newUuid,
                 UserWeaponUuid = slot.SubUserWeaponUuid[i],
                 SortOrder = i + 1
@@ -255,7 +253,7 @@ public class TutorialService(UserDataStore store, DarkMasterMemoryDatabase maste
     /// Grants tutorial rewards from master data keyed by tutorial type and returns the reward list
     /// for the response. Each tutorial type may grant companions, gems, items, or other possessions.
     /// </summary>
-    private List<TutorialChoiceReward> ApplyTutorialRewards(DarkUserMemoryDatabase db, long userId, TutorialType tutorialType)
+    private List<TutorialChoiceReward> ApplyTutorialRewards(DarkUserMemoryDatabase db, TutorialType tutorialType)
     {
         List<EntityMTutorialConsumePossessionGroup> rewardRows = [.. masterDb.EntityMTutorialConsumePossessionGroup
             .Where(r => r.TutorialType == tutorialType)];
@@ -264,7 +262,7 @@ public class TutorialService(UserDataStore store, DarkMasterMemoryDatabase maste
 
         foreach (EntityMTutorialConsumePossessionGroup row in rewardRows)
         {
-            PossessionHelper.Apply(db, userId, row.PossessionType, row.PossessionId, row.Count, masterDb);
+            PossessionHelper.Apply(db, row.PossessionType, row.PossessionId, row.Count, masterDb);
 
             result.Add(new TutorialChoiceReward
             {

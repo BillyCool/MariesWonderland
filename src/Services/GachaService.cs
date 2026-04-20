@@ -67,7 +67,7 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
             int conversionRate = entry.Medal.ConversionRate > 0 ? entry.Medal.ConversionRate : 1;
             int bookmarkCount = bs.MedalCount * conversionRate;
 
-            PossessionHelper.Apply(userDb, userId, PossessionType.CONSUMABLE_ITEM, entry.Medal.ConsumableItemId, bookmarkCount, _masterDb);
+            PossessionHelper.Apply(userDb, PossessionType.CONSUMABLE_ITEM, entry.Medal.ConsumableItemId, bookmarkCount, _masterDb);
 
             convertedMedal.ConvertedMedalPossession.Add(new ConsumableItemPossession
             {
@@ -162,7 +162,7 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
         }
 
         // Find or create banner state
-        EntitySGachaBannerState bannerState = GetOrCreateBannerState(userDb, userId, entry.GachaId);
+        EntitySGachaBannerState bannerState = GetOrCreateBannerState(userDb, entry.GachaId);
 
         // Draw items based on label type
         List<DrawnItem> drawnItems;
@@ -221,7 +221,7 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
             if (isMaterialDraw)
             {
                 // Material draws: grant material and build simple result
-                PossessionHelper.Apply(userDb, userId, (PossessionType)item.PossessionType, item.PossessionId, 1, _masterDb);
+                PossessionHelper.Apply(userDb, (PossessionType)item.PossessionType, item.PossessionId, 1, _masterDb);
                 bool isNew = !IsOwnedByType(item.PossessionType, item.PossessionId, ownedCostumeIds, ownedWeaponIds, userDb);
 
                 gachaResults.Add(new DrawGachaOddsItem
@@ -259,14 +259,14 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
                 }
                 else
                 {
-                    PossessionHelper.GrantCostume(userDb, userId, item.PossessionId, _masterDb);
+                    PossessionHelper.GrantCostume(userDb, item.PossessionId, _masterDb);
                     ownedCostumeIds.Add(item.PossessionId);
 
                     // Bonus weapon via costume->weapon pairing map
                     GachaItem bonusGachaItem = new();
                     if (costumeWeaponMap.TryGetValue(item.PossessionId, out int pairedWeaponId) && pairedWeaponId > 0)
                     {
-                        WeaponHelper.GrantWeapon(userDb, userId, pairedWeaponId, _masterDb);
+                        WeaponHelper.GrantWeapon(userDb, pairedWeaponId, _masterDb);
                         bonusGachaItem = new GachaItem
                         {
                             PossessionType = (int)PossessionType.WEAPON,
@@ -294,7 +294,7 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
             {
                 // Weapon
                 bool isNew = !ownedWeaponIds.Contains(item.PossessionId);
-                WeaponHelper.GrantWeapon(userDb, userId, item.PossessionId, _masterDb);
+                WeaponHelper.GrantWeapon(userDb, item.PossessionId, _masterDb);
                 ownedWeaponIds.Add(item.PossessionId);
 
                 gachaResults.Add(new DrawGachaOddsItem
@@ -325,7 +325,7 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
         // Grant medal consumable items (1 per draw)
         if (entry.Medal != null && medalBonus > 0)
         {
-            PossessionHelper.Apply(userDb, userId, PossessionType.CONSUMABLE_ITEM, entry.Medal.ConsumableItemId, medalBonus, _masterDb);
+            PossessionHelper.Apply(userDb, PossessionType.CONSUMABLE_ITEM, entry.Medal.ConsumableItemId, medalBonus, _masterDb);
         }
 
         DrawResponse response = new()
@@ -361,7 +361,7 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
             return Task.FromResult(new ResetBoxGachaResponse());
         }
 
-        EntitySGachaBannerState bannerState = GetOrCreateBannerState(userDb, userId, request.GachaId);
+        EntitySGachaBannerState bannerState = GetOrCreateBannerState(userDb, request.GachaId);
         bannerState.BoxDrewCounts = [];
         bannerState.BoxNumber++;
 
@@ -459,7 +459,7 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
         {
             EntityMMaterial mat = materials[Random.Shared.Next(materials.Count)];
             drawnItems.Add(((int)PossessionType.MATERIAL, mat.MaterialId));
-            PossessionHelper.Apply(userDb, userId, PossessionType.MATERIAL, mat.MaterialId, 1, _masterDb);
+            PossessionHelper.Apply(userDb, PossessionType.MATERIAL, mat.MaterialId, 1, _masterDb);
         }
 
         int newCount = currentCount + drawCount;
@@ -1248,14 +1248,14 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
         return null;
     }
 
-    private static EntitySGachaBannerState GetOrCreateBannerState(DarkUserMemoryDatabase userDb, long userId, int gachaId)
+    private static EntitySGachaBannerState GetOrCreateBannerState(DarkUserMemoryDatabase userDb, int gachaId)
     {
         EntitySGachaBannerState? bs = FindBannerState(userDb, gachaId);
         if (bs != null) return bs;
 
         bs = new EntitySGachaBannerState
         {
-            UserId = userId,
+            UserId = userDb.UserId,
             GachaId = gachaId,
             BoxNumber = 1,
             StepNumber = 1

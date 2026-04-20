@@ -73,7 +73,7 @@ public class RewardService(UserDataStore store, DarkMasterMemoryDatabase masterD
                 List<EntityMBigHuntRewardGroup> items = CollectNewRewards(rewardGroupId, 0, maxScore);
                 foreach (EntityMBigHuntRewardGroup item in items)
                 {
-                    PossessionHelper.Apply(userDb, userId, item.PossessionType, item.PossessionId, item.Count, _masterDb);
+                    PossessionHelper.Apply(userDb, item.PossessionType, item.PossessionId, item.Count, _masterDb);
                     weeklyRewards.Add(new BigHuntReward
                     {
                         PossessionType = (int)item.PossessionType,

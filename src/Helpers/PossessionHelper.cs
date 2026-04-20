@@ -13,7 +13,7 @@ public static class PossessionHelper
     /// <summary>
     /// Grants a possession to the user by type, delegating to type-specific handlers.
     /// </summary>
-    public static void Apply(DarkUserMemoryDatabase userDb, long userId, PossessionType type, int id, int count, DarkMasterMemoryDatabase masterDb)
+    public static void Apply(DarkUserMemoryDatabase userDb, PossessionType type, int id, int count, DarkMasterMemoryDatabase masterDb)
     {
         long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
 
@@ -29,7 +29,7 @@ public static class PossessionHelper
                 {
                     EntityIUserMaterial? mat = userDb.EntityIUserMaterial.FirstOrDefault(m => m.MaterialId == id);
                     if (mat == null)
-                        userDb.EntityIUserMaterial.Add(new EntityIUserMaterial { UserId = userId, MaterialId = id, Count = count, FirstAcquisitionDatetime = nowMs });
+                        userDb.EntityIUserMaterial.Add(new EntityIUserMaterial { UserId = userDb.UserId, MaterialId = id, Count = count, FirstAcquisitionDatetime = nowMs });
                     else
                         mat.Count += count;
                     break;
@@ -38,7 +38,7 @@ public static class PossessionHelper
                 {
                     EntityIUserConsumableItem? item = userDb.EntityIUserConsumableItem.FirstOrDefault(c => c.ConsumableItemId == id);
                     if (item == null)
-                        userDb.EntityIUserConsumableItem.Add(new EntityIUserConsumableItem { UserId = userId, ConsumableItemId = id, Count = count, FirstAcquisitionDatetime = nowMs });
+                        userDb.EntityIUserConsumableItem.Add(new EntityIUserConsumableItem { UserId = userDb.UserId, ConsumableItemId = id, Count = count, FirstAcquisitionDatetime = nowMs });
                     else
                         item.Count += count;
                     break;
@@ -47,7 +47,7 @@ public static class PossessionHelper
                 {
                     EntityIUserImportantItem? item = userDb.EntityIUserImportantItem.FirstOrDefault(c => c.ImportantItemId == id);
                     if (item == null)
-                        userDb.EntityIUserImportantItem.Add(new EntityIUserImportantItem { UserId = userId, ImportantItemId = id, Count = count, FirstAcquisitionDatetime = nowMs });
+                        userDb.EntityIUserImportantItem.Add(new EntityIUserImportantItem { UserId = userDb.UserId, ImportantItemId = id, Count = count, FirstAcquisitionDatetime = nowMs });
                     else
                         item.Count += count;
                     break;
@@ -56,24 +56,24 @@ public static class PossessionHelper
                 {
                     EntityIUserPremiumItem? item = userDb.EntityIUserPremiumItem.FirstOrDefault(p => p.PremiumItemId == id);
                     if (item == null)
-                        userDb.EntityIUserPremiumItem.Add(new EntityIUserPremiumItem { UserId = userId, PremiumItemId = id, AcquisitionDatetime = nowMs });
+                        userDb.EntityIUserPremiumItem.Add(new EntityIUserPremiumItem { UserId = userDb.UserId, PremiumItemId = id, AcquisitionDatetime = nowMs });
                     else
                         item.AcquisitionDatetime = nowMs;
                     break;
                 }
             case PossessionType.WEAPON:
             case PossessionType.WEAPON_ENHANCED:
-                WeaponHelper.GrantWeapon(userDb, userId, id, masterDb);
+                WeaponHelper.GrantWeapon(userDb, id, masterDb);
                 break;
             case PossessionType.COSTUME:
             case PossessionType.COSTUME_ENHANCED:
-                GrantCostume(userDb, userId, id, masterDb);
+                GrantCostume(userDb, id, masterDb);
                 break;
             case PossessionType.COMPANION:
-                GrantCompanion(userDb, userId, id);
+                GrantCompanion(userDb, id);
                 break;
             case PossessionType.PARTS:
-                GrantParts(userDb, userId, id, masterDb);
+                GrantParts(userDb, id, masterDb);
                 break;
         }
     }
@@ -81,14 +81,14 @@ public static class PossessionHelper
     /// <summary>
     /// Grants a costume to the user, unlocking the associated character if not already owned.
     /// </summary>
-    public static void GrantCostume(DarkUserMemoryDatabase userDb, long userId, int costumeId, DarkMasterMemoryDatabase masterDb)
+    public static void GrantCostume(DarkUserMemoryDatabase userDb, int costumeId, DarkMasterMemoryDatabase masterDb)
     {
         long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
         string uuid = Guid.NewGuid().ToString();
 
         userDb.EntityIUserCostume.Add(new EntityIUserCostume
         {
-            UserId = userId,
+            UserId = userDb.UserId,
             UserCostumeUuid = uuid,
             CostumeId = costumeId,
             Level = 1,
@@ -99,22 +99,22 @@ public static class PossessionHelper
         // Auto-unlock the character tied to this costume if not already owned
         EntityMCostume? masterCostume = masterDb.EntityMCostume.FirstOrDefault(c => c.CostumeId == costumeId);
         if (masterCostume != null && !userDb.EntityIUserCharacter.Any(c => c.CharacterId == masterCostume.CharacterId))
-            userDb.EntityIUserCharacter.Add(new EntityIUserCharacter { UserId = userId, CharacterId = masterCostume.CharacterId, Level = 1 });
+            userDb.EntityIUserCharacter.Add(new EntityIUserCharacter { UserId = userDb.UserId, CharacterId = masterCostume.CharacterId, Level = 1 });
 
-        userDb.EntityIUserCostumeActiveSkill.Add(new EntityIUserCostumeActiveSkill { UserId = userId, UserCostumeUuid = uuid, Level = 1, AcquisitionDatetime = nowMs });
+        userDb.EntityIUserCostumeActiveSkill.Add(new EntityIUserCostumeActiveSkill { UserId = userDb.UserId, UserCostumeUuid = uuid, Level = 1, AcquisitionDatetime = nowMs });
     }
 
     /// <summary>
     /// Grants a companion to the user. Skips if the companion is already owned.
     /// </summary>
-    public static void GrantCompanion(DarkUserMemoryDatabase userDb, long userId, int companionId)
+    public static void GrantCompanion(DarkUserMemoryDatabase userDb, int companionId)
     {
         if (userDb.EntityIUserCompanion.Any(c => c.CompanionId == companionId)) return;
 
         long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
         userDb.EntityIUserCompanion.Add(new EntityIUserCompanion
         {
-            UserId = userId,
+            UserId = userDb.UserId,
             UserCompanionUuid = Guid.NewGuid().ToString(),
             CompanionId = companionId,
             Level = 1,
@@ -126,7 +126,7 @@ public static class PossessionHelper
     /// <summary>
     /// Grants a single Parts item to the user. Skips if the user already owns a part with the same PartsId.
     /// </summary>
-    public static void GrantParts(DarkUserMemoryDatabase userDb, long userId, int partsId, DarkMasterMemoryDatabase masterDb)
+    public static void GrantParts(DarkUserMemoryDatabase userDb, int partsId, DarkMasterMemoryDatabase masterDb)
     {
         if (userDb.EntityIUserParts.Any(p => p.PartsId == partsId)) return;
 
@@ -148,7 +148,7 @@ public static class PossessionHelper
             {
                 userDb.EntityIUserPartsGroupNote.Add(new EntityIUserPartsGroupNote
                 {
-                    UserId = userId,
+                    UserId = userDb.UserId,
                     PartsGroupId = partsDef.PartsGroupId,
                     FirstAcquisitionDatetime = nowMs
                 });
@@ -157,7 +157,7 @@ public static class PossessionHelper
 
         userDb.EntityIUserParts.Add(new EntityIUserParts
         {
-            UserId = userId,
+            UserId = userDb.UserId,
             UserPartsUuid = Guid.NewGuid().ToString(),
             PartsId = partsId,
             Level = 1,

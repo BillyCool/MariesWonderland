@@ -83,7 +83,7 @@ public class PartsService(DarkMasterMemoryDatabase masterDb, UserDataStore store
         // Award total gold earned from the sale
         if (totalGold > 0)
         {
-            AddGold(userDb, userId, totalGold);
+            AddGold(userDb, totalGold);
         }
 
         return Task.FromResult(new SellResponse());
@@ -452,7 +452,7 @@ public class PartsService(DarkMasterMemoryDatabase masterDb, UserDataStore store
     /// <summary>
     /// Credits gold to the user's consumable inventory, creating the inventory entry if one does not yet exist.
     /// </summary>
-    private void AddGold(DarkUserMemoryDatabase userDb, long userId, int amount)
+    private void AddGold(DarkUserMemoryDatabase userDb, int amount)
     {
         EntityIUserConsumableItem? gold = null;
         foreach (EntityIUserConsumableItem ci in userDb.EntityIUserConsumableItem)
@@ -472,7 +472,7 @@ public class PartsService(DarkMasterMemoryDatabase masterDb, UserDataStore store
         {
             userDb.EntityIUserConsumableItem.Add(new EntityIUserConsumableItem
             {
-                UserId = userId,
+                UserId = userDb.UserId,
                 ConsumableItemId = _gameConfig.ConsumableItemIdForGold,
                 Count = amount,
                 FirstAcquisitionDatetime = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds()

@@ -53,7 +53,7 @@ public class CageOrnamentService(UserDataStore store, DarkMasterMemoryDatabase m
             });
         }
 
-        PossessionHelper.Apply(userDb, userId, reward.PossessionType, reward.PossessionId, reward.Count, _masterDb);
+        PossessionHelper.Apply(userDb, reward.PossessionType, reward.PossessionId, reward.Count, _masterDb);
 
         ReceiveRewardResponse response = new();
         response.CageOrnamentReward.Add(new CageOrnamentReward

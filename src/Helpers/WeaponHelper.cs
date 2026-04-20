@@ -14,14 +14,14 @@ public static class WeaponHelper
     /// Grants a weapon to the user: creates EntityIUserWeapon, EntityIUserWeaponNote (if new),
     /// ability/skill slots, and unlocks weapon stories for the ACQUISITION condition.
     /// </summary>
-    public static void GrantWeapon(DarkUserMemoryDatabase userDb, long userId, int weaponId, DarkMasterMemoryDatabase masterDb)
+    public static void GrantWeapon(DarkUserMemoryDatabase userDb, int weaponId, DarkMasterMemoryDatabase masterDb)
     {
         long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
         string uuid = Guid.NewGuid().ToString();
 
         userDb.EntityIUserWeapon.Add(new EntityIUserWeapon
         {
-            UserId = userId,
+            UserId = userDb.UserId,
             UserWeaponUuid = uuid,
             WeaponId = weaponId,
             Level = 1,
@@ -33,7 +33,7 @@ public static class WeaponHelper
         {
             userDb.EntityIUserWeaponNote.Add(new EntityIUserWeaponNote
             {
-                UserId = userId,
+                UserId = userDb.UserId,
                 WeaponId = weaponId,
                 MaxLevel = 1,
                 FirstAcquisitionDatetime = nowMs
@@ -46,11 +46,11 @@ public static class WeaponHelper
 
         // Create one ability slot per entry in the weapon's ability group
         foreach (EntityMWeaponAbilityGroup ag in masterDb.EntityMWeaponAbilityGroup.Where(g => g.WeaponAbilityGroupId == masterWeapon.WeaponAbilityGroupId))
-            userDb.EntityIUserWeaponAbility.Add(new EntityIUserWeaponAbility { UserId = userId, UserWeaponUuid = uuid, SlotNumber = ag.SlotNumber, Level = 1 });
+            userDb.EntityIUserWeaponAbility.Add(new EntityIUserWeaponAbility { UserId = userDb.UserId, UserWeaponUuid = uuid, SlotNumber = ag.SlotNumber, Level = 1 });
 
         // Create one skill slot per entry in the weapon's skill group
         foreach (EntityMWeaponSkillGroup sg in masterDb.EntityMWeaponSkillGroup.Where(g => g.WeaponSkillGroupId == masterWeapon.WeaponSkillGroupId))
-            userDb.EntityIUserWeaponSkill.Add(new EntityIUserWeaponSkill { UserId = userId, UserWeaponUuid = uuid, SlotNumber = sg.SlotNumber, Level = 1 });
+            userDb.EntityIUserWeaponSkill.Add(new EntityIUserWeaponSkill { UserId = userDb.UserId, UserWeaponUuid = uuid, SlotNumber = sg.SlotNumber, Level = 1 });
 
         // Unlock weapon stories for ACQUISITION condition
         if (masterWeapon.WeaponStoryReleaseConditionGroupId != 0)
@@ -60,17 +60,17 @@ public static class WeaponHelper
                          && c.WeaponStoryReleaseConditionType == WeaponStoryReleaseConditionType.ACQUISITION
                          && c.ConditionValue == 0))
             {
-                GrantWeaponStory(userDb, masterWeapon.WeaponId, condRow.StoryIndex, userId);
+                GrantWeaponStory(userDb, masterWeapon.WeaponId, condRow.StoryIndex);
             }
         }
     }
 
     /// <summary>Creates or updates a weapon story unlock record.</summary>
-    public static void GrantWeaponStory(DarkUserMemoryDatabase userDb, int weaponId, int storyIndex, long userId)
+    public static void GrantWeaponStory(DarkUserMemoryDatabase userDb, int weaponId, int storyIndex)
     {
         EntityIUserWeaponStory? existing = userDb.EntityIUserWeaponStory.FirstOrDefault(s => s.WeaponId == weaponId);
         if (existing == null)
-            userDb.EntityIUserWeaponStory.Add(new EntityIUserWeaponStory { UserId = userId, WeaponId = weaponId, ReleasedMaxStoryIndex = storyIndex });
+            userDb.EntityIUserWeaponStory.Add(new EntityIUserWeaponStory { UserId = userDb.UserId, WeaponId = weaponId, ReleasedMaxStoryIndex = storyIndex });
         else
             existing.ReleasedMaxStoryIndex = Math.Max(existing.ReleasedMaxStoryIndex, storyIndex);
     }

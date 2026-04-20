@@ -461,12 +461,12 @@ public class CostumeService(DarkMasterMemoryDatabase masterDb, UserDataStore sto
             switch (effect.CostumeAwakenEffectType)
             {
                 case CostumeAwakenEffectType.STATUS_UP:
-                    ApplyAwakenStatusUp(userDb, userId, request.UserCostumeUuid, effect.CostumeAwakenEffectId);
+                    ApplyAwakenStatusUp(userDb, request.UserCostumeUuid, effect.CostumeAwakenEffectId);
                     break;
                 case CostumeAwakenEffectType.ABILITY:
                     break;
                 case CostumeAwakenEffectType.ITEM_ACQUIRE:
-                    ApplyAwakenItemAcquire(userDb, userId, effect.CostumeAwakenEffectId);
+                    ApplyAwakenItemAcquire(userDb, effect.CostumeAwakenEffectId);
                     break;
             }
         }
@@ -668,7 +668,7 @@ public class CostumeService(DarkMasterMemoryDatabase masterDb, UserDataStore sto
     /// <summary>
     /// Applies awakening stat bonuses (HP, ATK, VIT, AGI, CRIT, etc.) to the costume's awaken status record.
     /// </summary>
-    private void ApplyAwakenStatusUp(DarkUserMemoryDatabase userDb, long userId, string userCostumeUuid, int statusUpGroupId)
+    private void ApplyAwakenStatusUp(DarkUserMemoryDatabase userDb, string userCostumeUuid, int statusUpGroupId)
     {
         foreach (EntityMCostumeAwakenStatusUpGroup row in _masterDb.EntityMCostumeAwakenStatusUpGroup)
         {
@@ -691,7 +691,7 @@ public class CostumeService(DarkMasterMemoryDatabase masterDb, UserDataStore sto
             {
                 state = new EntityIUserCostumeAwakenStatusUp
                 {
-                    UserId = userId,
+                    UserId = userDb.UserId,
                     UserCostumeUuid = userCostumeUuid,
                     StatusCalculationType = row.StatusCalculationType,
                 };
@@ -728,7 +728,7 @@ public class CostumeService(DarkMasterMemoryDatabase masterDb, UserDataStore sto
     /// <summary>
     /// Grants a thought item as an awakening reward, creating a new inventory entry if not already owned.
     /// </summary>
-    private void ApplyAwakenItemAcquire(DarkUserMemoryDatabase userDb, long userId, int itemAcquireId)
+    private void ApplyAwakenItemAcquire(DarkUserMemoryDatabase userDb, int itemAcquireId)
     {
         EntityMCostumeAwakenItemAcquire? acq = null;
         foreach (EntityMCostumeAwakenItemAcquire a in _masterDb.EntityMCostumeAwakenItemAcquire)
@@ -756,7 +756,7 @@ public class CostumeService(DarkMasterMemoryDatabase masterDb, UserDataStore sto
 
         userDb.EntityIUserThought.Add(new EntityIUserThought
         {
-            UserId = userId,
+            UserId = userDb.UserId,
             UserThoughtUuid = uuid,
             ThoughtId = acq.PossessionId,
             AcquisitionDatetime = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds(),

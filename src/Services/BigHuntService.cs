@@ -30,22 +30,22 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
 
         if (bhQuest is not null)
         {
-            HandleBigHuntQuestStart(userDb, userId, bhQuest.QuestId, request.UserDeckNumber, nowMs);
+            HandleBigHuntQuestStart(userDb, bhQuest.QuestId, request.UserDeckNumber, nowMs);
         }
 
         // Set progress status
-        EntityIUserBigHuntProgressStatus progress = GetOrCreateProgress(userDb, userId);
+        EntityIUserBigHuntProgressStatus progress = GetOrCreateProgress(userDb);
         progress.CurrentBigHuntBossQuestId = request.BigHuntBossQuestId;
         progress.CurrentBigHuntQuestId = request.BigHuntQuestId;
         progress.CurrentQuestSceneId = 0;
         progress.IsDryRun = request.IsDryRun;
 
         // Store deck number in server-side session
-        EntitySBigHuntSession session = GetOrCreateSession(userDb, userId);
+        EntitySBigHuntSession session = GetOrCreateSession(userDb);
         session.DeckNumber = request.UserDeckNumber;
 
         // Update per-boss-quest status
-        EntityIUserBigHuntStatus status = GetOrCreateStatus(userDb, userId, request.BigHuntBossQuestId);
+        EntityIUserBigHuntStatus status = GetOrCreateStatus(userDb, request.BigHuntBossQuestId);
         status.DailyChallengeCount++;
         status.LatestChallengeDatetime = nowMs;
 
@@ -60,7 +60,7 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
 
-        EntityIUserBigHuntProgressStatus progress = GetOrCreateProgress(userDb, userId);
+        EntityIUserBigHuntProgressStatus progress = GetOrCreateProgress(userDb);
         progress.CurrentQuestSceneId = request.QuestSceneId;
 
         return Task.FromResult(new UpdateBigHuntQuestSceneProgressResponse());
@@ -87,11 +87,11 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
 
         if (bhQuest is not null)
         {
-            HandleBigHuntQuestFinish(userDb, userId, bhQuest.QuestId, request.IsRetired, nowMs);
+            HandleBigHuntQuestFinish(userDb, bhQuest.QuestId, request.IsRetired, nowMs);
         }
 
-        EntityIUserBigHuntProgressStatus progress = GetOrCreateProgress(userDb, userId);
-        EntitySBigHuntSession session = GetOrCreateSession(userDb, userId);
+        EntityIUserBigHuntProgressStatus progress = GetOrCreateProgress(userDb);
+        EntitySBigHuntSession session = GetOrCreateSession(userDb);
 
         // Retired or dry run — clear progress and return empty score info.
         if (request.IsRetired || progress.IsDryRun)
@@ -246,7 +246,7 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
                 List<(PossessionType Type, int Id, int Count)> newItems = CollectNewRewards(rewardGroupId, oldMaxScore, userScore);
                 foreach ((PossessionType type, int id, int count) in newItems)
                 {
-                    GrantPossessionViaPossessionHelper(userDb, userId, type, id, count);
+                    GrantPossessionViaPossessionHelper(userDb, type, id, count);
                     scoreRewards.Add(new BigHuntReward
                     {
                         PossessionType = (int)type,
@@ -289,23 +289,23 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
         EntityMBigHuntQuest? bhQuest = _masterDb.EntityMBigHuntQuest
             .FirstOrDefault(q => q.BigHuntQuestId == request.BigHuntQuestId);
 
-        EntitySBigHuntSession session = GetOrCreateSession(userDb, userId);
+        EntitySBigHuntSession session = GetOrCreateSession(userDb);
 
         if (bhQuest is not null)
         {
-            HandleBigHuntQuestStart(userDb, userId, bhQuest.QuestId, session.DeckNumber, nowMs);
+            HandleBigHuntQuestStart(userDb, bhQuest.QuestId, session.DeckNumber, nowMs);
         }
 
         // Reset scene progress
-        EntityIUserBigHuntProgressStatus progress = GetOrCreateProgress(userDb, userId);
+        EntityIUserBigHuntProgressStatus progress = GetOrCreateProgress(userDb);
         progress.CurrentQuestSceneId = 0;
 
         // Increment daily challenge count
-        EntityIUserBigHuntStatus status = GetOrCreateStatus(userDb, userId, request.BigHuntBossQuestId);
+        EntityIUserBigHuntStatus status = GetOrCreateStatus(userDb, request.BigHuntBossQuestId);
         status.DailyChallengeCount++;
         status.LatestChallengeDatetime = nowMs;
 
-        RestartBigHuntQuestResponse response = new()
+        RestartBigHuntQuestResponse response= new()
         {
             BattleBinary = Google.Protobuf.ByteString.CopyFrom(session.BattleBinary),
             DeckNumber = session.DeckNumber
@@ -324,7 +324,7 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
         long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
 
-        EntityIUserBigHuntStatus status = GetOrCreateStatus(userDb, userId, request.BigHuntBossQuestId);
+        EntityIUserBigHuntStatus status = GetOrCreateStatus(userDb, request.BigHuntBossQuestId);
         status.DailyChallengeCount += request.SkipCount;
         status.LatestChallengeDatetime = nowMs;
 
@@ -343,8 +343,8 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
 
-        EntitySBigHuntSession session = GetOrCreateSession(userDb, userId);
-        session.BattleBinary = request.BattleBinary.ToByteArray();
+        EntitySBigHuntSession session = GetOrCreateSession(userDb);
+        session.BattleBinary= request.BattleBinary.ToByteArray();
 
         if (request.BigHuntBattleDetail is not null)
         {
@@ -412,11 +412,11 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
             .FirstOrDefault(s => s.BigHuntWeeklyVersion == weeklyVersion);
 
         // Resolve current week rewards
-        List<BigHuntReward> weeklyRewards = ResolveWeeklyRewards(userDb, userId, weeklyVersion, nowMs);
+        List<BigHuntReward> weeklyRewards = ResolveWeeklyRewards(userDb, weeklyVersion, nowMs);
 
         // Resolve last week rewards
         long lastWeekVersion = weeklyVersion - (7L * 24 * 60 * 60 * 1000);
-        List<BigHuntReward> lastWeekRewards = ResolveWeeklyRewards(userDb, userId, lastWeekVersion, nowMs);
+        List<BigHuntReward> lastWeekRewards = ResolveWeeklyRewards(userDb, lastWeekVersion, nowMs);
 
         GetBigHuntTopDataResponse response = new()
         {
@@ -434,13 +434,13 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
     /// <summary>
     /// Initializes quest and mission state for the underlying quest, and transitions its state to active.
     /// </summary>
-    private void HandleBigHuntQuestStart(DarkUserMemoryDatabase userDb, long userId, int questId, int deckNumber, long nowMs)
+    private void HandleBigHuntQuestStart(DarkUserMemoryDatabase userDb, int questId, int deckNumber, long nowMs)
     {
         EntityMQuest? masterQuest = _masterDb.EntityMQuest.FirstOrDefault(q => q.QuestId == questId);
 
         EntityIUserQuest userQuest = userDb.EntityIUserQuest
             .FirstOrDefault(q => q.QuestId == questId)
-            ?? AddEntity(userDb.EntityIUserQuest, new EntityIUserQuest { UserId = userId, QuestId = questId });
+            ?? AddEntity(userDb.EntityIUserQuest, new EntityIUserQuest { UserId = userDb.UserId, QuestId = questId });
 
         // Initialize quest missions
         if (masterQuest is not null && masterQuest.QuestMissionGroupId != 0)
@@ -449,7 +449,7 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
                 .Where(g => g.QuestMissionGroupId == masterQuest.QuestMissionGroupId))
             {
                 if (!userDb.EntityIUserQuestMission.Any(m => m.QuestId == questId && m.QuestMissionId == missionGroupRow.QuestMissionId))
-                    userDb.EntityIUserQuestMission.Add(new EntityIUserQuestMission { UserId = userId, QuestId = questId, QuestMissionId = missionGroupRow.QuestMissionId });
+                    userDb.EntityIUserQuestMission.Add(new EntityIUserQuestMission { UserId = userDb.UserId, QuestId = questId, QuestMissionId = missionGroupRow.QuestMissionId });
             }
         }
 
@@ -461,7 +461,7 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
     /// Marks the quest cleared, applies first-clear and drop rewards on success,
     /// and clears quest missions.
     /// </summary>
-    private void HandleBigHuntQuestFinish(DarkUserMemoryDatabase userDb, long userId, int questId, bool isRetired, long nowMs)
+    private void HandleBigHuntQuestFinish(DarkUserMemoryDatabase userDb, int questId, bool isRetired, long nowMs)
     {
         EntityMQuest? masterQuest = _masterDb.EntityMQuest.FirstOrDefault(q => q.QuestId == questId);
         EntityIUserQuest? userQuest = userDb.EntityIUserQuest
@@ -486,7 +486,7 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
                 foreach (EntityMQuestFirstClearRewardGroup reward in _masterDb.EntityMQuestFirstClearRewardGroup
                     .Where(r => r.QuestFirstClearRewardGroupId == rewardGroupId))
                 {
-                    PossessionHelper.Apply(userDb, userId, reward.PossessionType, reward.PossessionId, reward.Count, _masterDb);
+                    PossessionHelper.Apply(userDb, reward.PossessionType, reward.PossessionId, reward.Count, _masterDb);
                 }
             }
 
@@ -499,7 +499,7 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
                     EntityMBattleDropReward? drop = _masterDb.EntityMBattleDropReward
                         .FirstOrDefault(d => d.BattleDropRewardId == pickup.BattleDropRewardId);
                     if (drop != null)
-                        PossessionHelper.Apply(userDb, userId, drop.PossessionType, drop.PossessionId, drop.Count, _masterDb);
+                        PossessionHelper.Apply(userDb, drop.PossessionType, drop.PossessionId, drop.Count, _masterDb);
                 }
             }
 
@@ -519,7 +519,7 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
                     .FirstOrDefault(m => m.QuestId == questId && m.QuestMissionId == missionGroupRow.QuestMissionId);
                 if (userMission is null)
                 {
-                    userMission = new EntityIUserQuestMission { UserId = userId, QuestId = questId, QuestMissionId = missionGroupRow.QuestMissionId };
+                    userMission = new EntityIUserQuestMission { UserId = userDb.UserId, QuestId = questId, QuestMissionId = missionGroupRow.QuestMissionId };
                     userDb.EntityIUserQuestMission.Add(userMission);
                 }
                 userMission.IsClear = true;
@@ -656,7 +656,7 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
     /// Builds the list of weekly reward items earned across all boss attributes for a given week version,
     /// based on the player's weekly max scores.
     /// </summary>
-    private List<BigHuntReward> ResolveWeeklyRewards(DarkUserMemoryDatabase userDb, long userId, long weeklyVersion, long nowMs)
+    private List<BigHuntReward> ResolveWeeklyRewards(DarkUserMemoryDatabase userDb, long weeklyVersion, long nowMs)
     {
         List<BigHuntReward> rewards = [];
 
@@ -669,7 +669,7 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
             }
 
             EntityIUserBigHuntWeeklyMaxScore? ws = userDb.EntityIUserBigHuntWeeklyMaxScore
-                .FirstOrDefault(m => m.UserId == userId
+                .FirstOrDefault(m => m.UserId == userDb.UserId
                     && m.BigHuntWeeklyVersion == weeklyVersion
                     && m.AttributeType == boss.AttributeType);
 
@@ -694,23 +694,23 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
     /// <summary>
     /// Gets or initialises the player's BigHunt in-progress quest status record.
     /// </summary>
-    private static EntityIUserBigHuntProgressStatus GetOrCreateProgress(DarkUserMemoryDatabase userDb, long userId)
+    private static EntityIUserBigHuntProgressStatus GetOrCreateProgress(DarkUserMemoryDatabase userDb)
     {
         return userDb.EntityIUserBigHuntProgressStatus
-            .FirstOrDefault(p => p.UserId == userId)
-            ?? AddEntity(userDb.EntityIUserBigHuntProgressStatus, new EntityIUserBigHuntProgressStatus { UserId = userId });
+            .FirstOrDefault(p => p.UserId == userDb.UserId)
+            ?? AddEntity(userDb.EntityIUserBigHuntProgressStatus, new EntityIUserBigHuntProgressStatus { UserId = userDb.UserId });
     }
 
     /// <summary>
     /// Gets or initialises the player's per-boss-quest challenge status record.
     /// </summary>
-    private static EntityIUserBigHuntStatus GetOrCreateStatus(DarkUserMemoryDatabase userDb, long userId, int bossQuestId)
+    private static EntityIUserBigHuntStatus GetOrCreateStatus(DarkUserMemoryDatabase userDb, int bossQuestId)
     {
         return userDb.EntityIUserBigHuntStatus
             .FirstOrDefault(s => s.BigHuntBossQuestId == bossQuestId)
             ?? AddEntity(userDb.EntityIUserBigHuntStatus, new EntityIUserBigHuntStatus
             {
-                UserId = userId,
+                UserId = userDb.UserId,
                 BigHuntBossQuestId = bossQuestId
             });
     }
@@ -718,11 +718,11 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
     /// <summary>
     /// Gets or initialises the player's server-side battle session record.
     /// </summary>
-    private static EntitySBigHuntSession GetOrCreateSession(DarkUserMemoryDatabase userDb, long userId)
+    private static EntitySBigHuntSession GetOrCreateSession(DarkUserMemoryDatabase userDb)
     {
         return userDb.EntitySBigHuntSession
-            .FirstOrDefault(s => s.UserId == userId)
-            ?? AddEntity(userDb.EntitySBigHuntSession, new EntitySBigHuntSession { UserId = userId });
+            .FirstOrDefault(s => s.UserId == userDb.UserId)
+            ?? AddEntity(userDb.EntitySBigHuntSession, new EntitySBigHuntSession { UserId = userDb.UserId });
     }
 
     /// <summary>
@@ -741,9 +741,9 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
     /// <summary>
     /// Routes possession grants through PossessionHelper.Apply for consistent handling.
     /// </summary>
-    private void GrantPossessionViaPossessionHelper(DarkUserMemoryDatabase userDb, long userId, PossessionType possessionType, int possessionId, int count)
+    private void GrantPossessionViaPossessionHelper(DarkUserMemoryDatabase userDb, PossessionType possessionType, int possessionId, int count)
     {
-        PossessionHelper.Apply(userDb, userId, possessionType, possessionId, count, _masterDb);
+        PossessionHelper.Apply(userDb, possessionType, possessionId, count, _masterDb);
     }
 
     // ────────── Time helpers ──────────
