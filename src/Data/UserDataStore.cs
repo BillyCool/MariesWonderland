@@ -93,6 +93,24 @@ public class UserDataStore(DarkMasterMemoryDatabase masterDb)
         => _users.TryGetValue(userId, out db!);
 
     /// <summary>
+    /// Finds the user database whose EntityIUser record matches the given playerId.
+    /// Returns false if no user has that playerId.
+    /// </summary>
+    public bool TryGetByPlayerId(long playerId, out DarkUserMemoryDatabase db)
+    {
+        foreach (var (_, userDb) in _users)
+        {
+            if (userDb.EntityIUser.Any(u => u.PlayerId == playerId))
+            {
+                db = userDb;
+                return true;
+            }
+        }
+        db = null!;
+        return false;
+    }
+
+    /// <summary>
     /// Stores a user database, replacing any existing one for that userId.
     /// </summary>
     public void Set(long userId, DarkUserMemoryDatabase db)

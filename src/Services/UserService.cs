@@ -11,6 +11,9 @@ namespace MariesWonderland.Services;
 
 public class UserService(UserDataStore store, UserDataSeeder seeder) : MariesWonderland.Proto.User.UserService.UserServiceBase
 {
+    public const string AndroidApiKey = "1234567890";
+    public const string AndroidNonce = "Mama";
+
     private readonly UserDataStore _store = store;
     private readonly UserDataSeeder _seeder = seeder;
 
@@ -19,8 +22,8 @@ public class UserService(UserDataStore store, UserDataSeeder seeder) : MariesWon
     {
         return Task.FromResult(new GetAndroidArgsResponse
         {
-            ApiKey = "1234567890",
-            Nonce = "Mama"
+            ApiKey = AndroidApiKey,
+            Nonce = AndroidNonce
         });
     }
 
@@ -166,41 +169,33 @@ public class UserService(UserDataStore store, UserDataSeeder seeder) : MariesWon
     /// <summary>Returns a player's profile including name, level, favorite costume, and lead deck character.</summary>
     public override Task<GetUserProfileResponse> GetUserProfile(GetUserProfileRequest request, ServerCallContext context)
     {
-        long userId = request.PlayerId != 0 ? request.PlayerId : context.GetUserId();
+        long callerUserId = context.GetUserId();
 
-        if (!_store.TryGet(userId, out DarkUserMemoryDatabase userDb))
-        {
-            return Task.FromResult(new GetUserProfileResponse
-            {
-                LatestUsedDeck = new ProfileDeck { Power = 100 },
-                PvpInfo = new ProfilePvpInfo(),
-                GamePlayHistory = new GamePlayHistory
-                {
-                    HistoryItem = { },
-                    HistoryCategoryGraphItem = { }
-                }
-            });
-        }
+        if (!_store.TryGetByPlayerId(request.PlayerId, out DarkUserMemoryDatabase targetDb))
+            return Task.FromResult(new GetUserProfileResponse());
 
-        EntityIUserProfile? profile = userDb.EntityIUserProfile.FirstOrDefault(p => p.UserId == userId);
-        EntityIUserStatus? status = userDb.EntityIUserStatus.FirstOrDefault(s => s.UserId == userId);
+        EntityIUserProfile? profile = targetDb.EntityIUserProfile.FirstOrDefault(p => p.UserId == targetDb.UserId);
+        EntityIUserStatus? status = targetDb.EntityIUserStatus.FirstOrDefault(s => s.UserId == targetDb.UserId);
+        bool isOwnProfile = targetDb.UserId == callerUserId;
+        int maxDeckPower = 0;
 
         List<ProfileDeckCharacter> deckCharacters = [];
 
-        EntityIUserDeck? deck = userDb.EntityIUserDeck.FirstOrDefault(d =>
+        EntityIUserDeck? deck = targetDb.EntityIUserDeck.FirstOrDefault(d =>
             d.DeckType == DeckType.QUEST && d.UserDeckNumber == 1);
 
         if (deck != null && !string.IsNullOrEmpty(deck.UserDeckCharacterUuid01))
         {
-            EntityIUserDeckCharacter? dc = userDb.EntityIUserDeckCharacter
+            EntityIUserDeckCharacter? dc = targetDb.EntityIUserDeckCharacter
                 .FirstOrDefault(c => c.UserDeckCharacterUuid == deck.UserDeckCharacterUuid01);
 
             if (dc != null)
             {
-                int costumeId = userDb.EntityIUserCostume
+                maxDeckPower = dc.Power;
+                int costumeId = targetDb.EntityIUserCostume
                     .FirstOrDefault(c => c.UserCostumeUuid == dc.UserCostumeUuid)?.CostumeId ?? 0;
 
-                EntityIUserWeapon? weapon = userDb.EntityIUserWeapon
+                EntityIUserWeapon? weapon = targetDb.EntityIUserWeapon
                     .FirstOrDefault(w => w.UserWeaponUuid == dc.MainUserWeaponUuid);
 
                 deckCharacters.Add(new ProfileDeckCharacter
@@ -215,16 +210,22 @@ public class UserService(UserDataStore store, UserDataSeeder seeder) : MariesWon
         return Task.FromResult(new GetUserProfileResponse
         {
             Level = status?.Level ?? 0,
-            Name = profile?.Name ?? "",
+            Name = profile?.Name ?? string.Empty,
             FavoriteCostumeId = profile?.FavoriteCostumeId ?? 0,
-            Message = profile?.Message ?? "",
+            Message = profile?.Message ?? string.Empty,
             IsFriend = false,
             LatestUsedDeck = new ProfileDeck
             {
-                Power = 100,
+                Power = maxDeckPower,
                 DeckCharacter = { deckCharacters }
             },
-            PvpInfo = new ProfilePvpInfo(),
+            PvpInfo = new ProfilePvpInfo()
+            {
+                MaxSeasonRank = targetDb.EntityIUserPvpWeeklyResult
+                    .GroupBy(x => x.PvpSeasonId)
+                    .DefaultIfEmpty()
+                    .Min(x => x?.OrderBy(y => y.PvpWeeklyVersion).Select(y => y.FinalRank).LastOrDefault() ?? 0),
+            },
             GamePlayHistory = new GamePlayHistory
             {
                 HistoryItem = { },
