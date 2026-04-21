@@ -1,4 +1,5 @@
 ﻿using Grpc.Core;
+using MariesWonderland.Constants;
 using MariesWonderland.Data;
 using MariesWonderland.Extensions;
 using MariesWonderland.Helpers;
@@ -93,12 +94,12 @@ public class TutorialService(UserDataStore store, DarkMasterMemoryDatabase maste
 
         // Hardcoded to Rion & Everlasting Cardia
         string costumeUuid = db.EntityIUserCostume
-            .Where(c => c.CostumeId == Constants.StartingDeckCostumeId)
+            .Where(c => c.CostumeId == GameConstants.StartingDeckCostumeId)
             .Select(c => c.UserCostumeUuid)
             .Single();
 
         string weaponUuid = db.EntityIUserWeapon
-            .Where(w => w.WeaponId == Constants.StartingDeckWeaponId)
+            .Where(w => w.WeaponId == GameConstants.StartingDeckWeaponId)
             .Select(w => w.UserWeaponUuid)
             .Single();
 

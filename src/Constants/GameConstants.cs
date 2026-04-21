@@ -1,6 +1,6 @@
-﻿namespace MariesWonderland;
+namespace MariesWonderland.Constants;
 
-public static class Constants
+public static class GameConstants
 {
     public const long MinPlayerId = 1_000_000_000_000L; // 1e12, 1 trillion
 

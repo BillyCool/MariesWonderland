@@ -17,6 +17,7 @@ public static class EntityHelper
 
     /// <summary>Returns the first element matching <paramref name="predicate"/>, creating and adding one via <paramref name="factory"/> if none match.</summary>
     public static T GetOrCreate<T>(this List<T> list, Func<T, bool> predicate, Func<T> factory)
+        where T : IUserEntity, new()
     {
         T? existing = list.FirstOrDefault(predicate);
         if (existing is not null) return existing;

@@ -25,10 +25,13 @@ public class GameConfig
     public int MaterialSameWeaponExpCoefficientPermil { get; init; }
 
     public int UserStaminaRecoverySecond { get; init; }
+    public int StaminaMaxCount { get; init; }
     public int RewardGachaDailyMaxCount { get; init; }
     public int QuestSkipMaxCountAtOnce { get; init; }
 
     public int WeaponLimitBreakAvailableCount { get; init; }
+
+    public int UserLevelExpNumericalParameterMapId { get; init; }
 
     /// <summary>Builds a <see cref="GameConfig"/> from the loaded master config rows.</summary>
     public static GameConfig From(IEnumerable<EntityMConfig> configs)
@@ -55,10 +58,13 @@ public class GameConfig
             MaterialSameWeaponExpCoefficientPermil = ParseInt(kv, "MATERIAL_SAME_WEAPON_EXP_COEFFICIENT_PERMIL"),
 
             UserStaminaRecoverySecond = ParseInt(kv, "USER_STAMINA_RECOVERY_SECOND"),
+            StaminaMaxCount = ParseInt(kv, "POSSESSION_COUNT_LIMIT_STAMINA"),
             RewardGachaDailyMaxCount = ParseInt(kv, "REWARD_GACHA_DAILY_MAX_COUNT"),
             QuestSkipMaxCountAtOnce = ParseInt(kv, "QUEST_SKIP_MAX_COUNT_AT_ONCE"),
 
             WeaponLimitBreakAvailableCount = ParseInt(kv, "WEAPON_LIMIT_BREAK_AVAILABLE_COUNT"),
+
+            UserLevelExpNumericalParameterMapId = ParseInt(kv, "USER_LEVEL_EXP_NUMERICAL_PARAMETER_MAP_ID"),
         };
     }
 

@@ -78,18 +78,15 @@ public class UserService(UserDataStore store, UserDataSeeder seeder) : MariesWon
         EntityIUser user = userDb.EntityIUser.GetOrCreate(userId);
         user.GameStartDatetime = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
 
-        // Initialize gem balance with 0/0 if not exists
-        if (!userDb.EntityIUserGem.Any(g => g.UserId == userId))
-        {
-            userDb.EntityIUserGem.Add(new EntityIUserGem { UserId = userId, PaidGem = 0, FreeGem = 0 });
-        }
+        // Initialize singleton entities
+        userDb.EntityIUserGem.Add(new EntityIUserGem { UserId = userId, PaidGem = 0, FreeGem = 0 });
+        userDb.EntityIUserExplore.Add(new EntityIUserExplore { UserId = userId });
 
         // TODO: Investigate if these singleton tables need to be pre-initialized at registration.
         // Uncomment to enable initialization:
         // userDb.EntityIUserBigHuntProgressStatus.AddNew(new EntityIUserBigHuntProgressStatus { UserId = userId });
         // userDb.EntityIUserEventQuestGuerrillaFreeOpen.AddNew(new EntityIUserEventQuestGuerrillaFreeOpen { UserId = userId });
         // userDb.EntityIUserEventQuestProgressStatus.AddNew(new EntityIUserEventQuestProgressStatus { UserId = userId });
-        // userDb.EntityIUserExplore.AddNew(new EntityIUserExplore { UserId = userId });
         // userDb.EntityIUserExtraQuestProgressStatus.AddNew(new EntityIUserExtraQuestProgressStatus { UserId = userId });
         // userDb.EntityIUserMainQuestFlowStatus.AddNew(new EntityIUserMainQuestFlowStatus { UserId = userId });
         // userDb.EntityIUserMainQuestMainFlowStatus.AddNew(new EntityIUserMainQuestMainFlowStatus { UserId = userId });

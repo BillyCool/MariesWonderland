@@ -1,3 +1,4 @@
+using MariesWonderland.Constants;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
 using System.Text.Json;
@@ -182,7 +183,7 @@ public class UserDataStore(DarkMasterMemoryDatabase masterDb)
     private static long GenerateUserId()
     {
         // Random 19-digit positive long (range: 1e18 to 2e18)
-        return Random.Shared.NextInt64(Constants.MinUserId, Constants.MaxUserId);
+        return Random.Shared.NextInt64(GameConstants.MinUserId, GameConstants.MaxUserId);
     }
 
     /// <summary>
@@ -191,7 +192,7 @@ public class UserDataStore(DarkMasterMemoryDatabase masterDb)
     private static long GeneratePlayerId()
     {
         // Random 12-digit positive long (range: 1e12 to 2e12)
-        return Random.Shared.NextInt64(Constants.MinPlayerId, Constants.MaxPlayerId);
+        return Random.Shared.NextInt64(GameConstants.MinPlayerId, GameConstants.MaxPlayerId);
     }
 
     /// <summary>
@@ -265,7 +266,7 @@ public class UserDataStore(DarkMasterMemoryDatabase masterDb)
             ChoiceId = 0
         });
 
-        foreach (int weaponId in Constants.StartingWeaponIds)
+        foreach (int weaponId in GameConstants.StartingWeaponIds)
         {
             string uuid = Guid.NewGuid().ToString();
 
