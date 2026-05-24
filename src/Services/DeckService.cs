@@ -103,15 +103,43 @@ public class DeckService(UserDataStore store) : MariesWonderland.Proto.Deck.Deck
         return Task.FromResult(new SetPvpDefenseDeckResponse());
     }
 
-    /// <summary>Stub for deck copy; returns empty response.</summary>
+    /// <summary>Copies a deck's character lineup into another deck, recreating linked slot records.</summary>
     public override Task<CopyDeckResponse> CopyDeck(CopyDeckRequest request, ServerCallContext context)
     {
-        return Task.FromResult(new CopyDeckResponse());
+        long userId = context.GetUserId();
+        DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
+
+        EntityIUserDeck? sourceDeck = FindDeck(userDb, (DeckType)request.FromDeckType, request.FromUserDeckNumber);
+        if (sourceDeck == null)
+        {
+            return Task.FromResult(new CopyDeckResponse());
+        }
+
+        Deck sourceSlots = ReadDeck(userDb, sourceDeck);
+        ApplyDeckReplacement(userDb, (DeckType)request.ToDeckType, request.ToUserDeckNumber, sourceSlots);
+
+        EntityIUserDeck? targetDeck = FindDeck(userDb, (DeckType)request.ToDeckType, request.ToUserDeckNumber);
+        if (targetDeck != null)
+        {
+            targetDeck.Name = sourceDeck.Name;
+        }
+
+        return Task.FromResult(new CopyDeckResponse { ResultType = 1 });
     }
 
-    /// <summary>Stub for deck removal; returns empty response.</summary>
+    /// <summary>Removes a deck and its linked character records.</summary>
     public override Task<RemoveDeckResponse> RemoveDeck(RemoveDeckRequest request, ServerCallContext context)
     {
+        long userId = context.GetUserId();
+        DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
+
+        EntityIUserDeck? deck = FindDeck(userDb, (DeckType)request.DeckType, request.UserDeckNumber);
+        if (deck != null)
+        {
+            RemoveDeckLinkedRecords(userDb, deck);
+            userDb.EntityIUserDeck.Remove(deck);
+        }
+
         return Task.FromResult(new RemoveDeckResponse());
     }
 
@@ -195,19 +223,11 @@ public class DeckService(UserDataStore store) : MariesWonderland.Proto.Deck.Deck
     /// <summary>Removes old deck characters and creates new ones from the provided deck proto.</summary>
     private static void ApplyDeckReplacement(DarkUserMemoryDatabase userDb, DeckType deckType, int deckNumber, Deck deck)
     {
-        EntityIUserDeck? existing = userDb.EntityIUserDeck
-            .FirstOrDefault(d => d.DeckType == deckType && d.UserDeckNumber == deckNumber);
+        EntityIUserDeck? existing = FindDeck(userDb, deckType, deckNumber);
 
         if (existing != null)
         {
-            HashSet<string> oldUuids = [];
-            if (!string.IsNullOrEmpty(existing.UserDeckCharacterUuid01)) { oldUuids.Add(existing.UserDeckCharacterUuid01); }
-            if (!string.IsNullOrEmpty(existing.UserDeckCharacterUuid02)) { oldUuids.Add(existing.UserDeckCharacterUuid02); }
-            if (!string.IsNullOrEmpty(existing.UserDeckCharacterUuid03)) { oldUuids.Add(existing.UserDeckCharacterUuid03); }
-            userDb.EntityIUserDeckCharacter.RemoveAll(dc => oldUuids.Contains(dc.UserDeckCharacterUuid));
-            userDb.EntityIUserDeckCharacterDressupCostume.RemoveAll(dc => oldUuids.Contains(dc.UserDeckCharacterUuid));
-            userDb.EntityIUserDeckPartsGroup.RemoveAll(pg => oldUuids.Contains(pg.UserDeckCharacterUuid));
-            userDb.EntityIUserDeckSubWeaponGroup.RemoveAll(swg => oldUuids.Contains(swg.UserDeckCharacterUuid));
+            RemoveDeckLinkedRecords(userDb, existing);
         }
 
         string uuid01 = CreateDeckCharacter(userDb, deck.Character01);
@@ -230,6 +250,84 @@ public class DeckService(UserDataStore store) : MariesWonderland.Proto.Deck.Deck
         existing.UserDeckCharacterUuid01 = uuid01;
         existing.UserDeckCharacterUuid02 = uuid02;
         existing.UserDeckCharacterUuid03 = uuid03;
+    }
+
+    private static EntityIUserDeck? FindDeck(DarkUserMemoryDatabase userDb, DeckType deckType, int deckNumber) =>
+        userDb.EntityIUserDeck.FirstOrDefault(d => d.DeckType == deckType && d.UserDeckNumber == deckNumber);
+
+    private static void RemoveDeckLinkedRecords(DarkUserMemoryDatabase userDb, EntityIUserDeck deck)
+    {
+        HashSet<string> oldUuids =
+        [
+            .. GetDeckCharacterUuids(deck).Where(uuid => !string.IsNullOrEmpty(uuid))
+        ];
+
+        if (oldUuids.Count == 0)
+        {
+            return;
+        }
+
+        userDb.EntityIUserDeckCharacter.RemoveAll(dc => oldUuids.Contains(dc.UserDeckCharacterUuid));
+        userDb.EntityIUserDeckCharacterDressupCostume.RemoveAll(dc => oldUuids.Contains(dc.UserDeckCharacterUuid));
+        userDb.EntityIUserDeckPartsGroup.RemoveAll(pg => oldUuids.Contains(pg.UserDeckCharacterUuid));
+        userDb.EntityIUserDeckSubWeaponGroup.RemoveAll(swg => oldUuids.Contains(swg.UserDeckCharacterUuid));
+    }
+
+    private static IEnumerable<string> GetDeckCharacterUuids(EntityIUserDeck deck)
+    {
+        yield return deck.UserDeckCharacterUuid01;
+        yield return deck.UserDeckCharacterUuid02;
+        yield return deck.UserDeckCharacterUuid03;
+    }
+
+    private static Deck ReadDeck(DarkUserMemoryDatabase userDb, EntityIUserDeck deck) =>
+        new()
+        {
+            Character01 = ReadDeckCharacter(userDb, deck.UserDeckCharacterUuid01),
+            Character02 = ReadDeckCharacter(userDb, deck.UserDeckCharacterUuid02),
+            Character03 = ReadDeckCharacter(userDb, deck.UserDeckCharacterUuid03)
+        };
+
+    private static DeckCharacter? ReadDeckCharacter(DarkUserMemoryDatabase userDb, string userDeckCharacterUuid)
+    {
+        if (string.IsNullOrEmpty(userDeckCharacterUuid))
+        {
+            return null;
+        }
+
+        EntityIUserDeckCharacter? deckCharacter = userDb.EntityIUserDeckCharacter
+            .FirstOrDefault(dc => dc.UserDeckCharacterUuid == userDeckCharacterUuid);
+
+        if (deckCharacter == null)
+        {
+            return null;
+        }
+
+        DeckCharacter slot = new()
+        {
+            UserCostumeUuid = deckCharacter.UserCostumeUuid,
+            MainUserWeaponUuid = deckCharacter.MainUserWeaponUuid,
+            UserCompanionUuid = deckCharacter.UserCompanionUuid,
+            UserThoughtUuid = deckCharacter.UserThoughtUuid
+        };
+
+        EntityIUserDeckCharacterDressupCostume? dressup = userDb.EntityIUserDeckCharacterDressupCostume
+            .FirstOrDefault(dc => dc.UserDeckCharacterUuid == userDeckCharacterUuid);
+        if (dressup != null)
+        {
+            slot.DressupCostumeId = dressup.DressupCostumeId;
+        }
+
+        slot.UserPartsUuid.AddRange(userDb.EntityIUserDeckPartsGroup
+            .Where(pg => pg.UserDeckCharacterUuid == userDeckCharacterUuid)
+            .OrderBy(pg => pg.SortOrder)
+            .Select(pg => pg.UserPartsUuid));
+        slot.SubUserWeaponUuid.AddRange(userDb.EntityIUserDeckSubWeaponGroup
+            .Where(swg => swg.UserDeckCharacterUuid == userDeckCharacterUuid)
+            .OrderBy(swg => swg.SortOrder)
+            .Select(swg => swg.UserWeaponUuid));
+
+        return slot;
     }
 
     /// <summary>Updates deck and character power values and tracks max deck power per type.</summary>

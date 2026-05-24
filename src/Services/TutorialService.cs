@@ -119,6 +119,8 @@ public class TutorialService(UserDataStore store, DarkMasterMemoryDatabase maste
             db.EntityIUserDeck.Add(new EntityIUserDeck
             {
                 UserId = db.UserId,
+                DeckType = DeckType.QUEST,
+                UserDeckNumber = 1,
                 UserDeckCharacterUuid01 = dcUuid,
                 Name = "Loadout 1",
                 Power = 0

@@ -43,7 +43,7 @@ public class GiftService(UserDataStore store) : MariesWonderland.Proto.Gift.Gift
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
 
         List<EntitySUserGift> unreceived = [.. userDb.EntitySUserGift
-            .Where(g => g.ReceivedDatetime == 0)];
+            .Where(g => g.UserId == userId && g.ReceivedDatetime == 0)];
 
         if (request.IsAscendingSort)
         {
@@ -93,7 +93,7 @@ public class GiftService(UserDataStore store) : MariesWonderland.Proto.Gift.Gift
 
         GetGiftReceiveHistoryListResponse response = new();
 
-        foreach (EntitySUserGift gift in userDb.EntitySUserGift.Where(g => g.ReceivedDatetime != 0))
+        foreach (EntitySUserGift gift in userDb.EntitySUserGift.Where(g => g.UserId == userId && g.ReceivedDatetime != 0))
         {
             response.Gift.Add(new ReceivedGift
             {

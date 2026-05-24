@@ -13,14 +13,17 @@ public sealed class FakeServerCallContext : ServerCallContext
     private readonly Metadata _responseTrailers = [];
     private readonly CancellationToken _cancellationToken;
 
-    private FakeServerCallContext(long userId, CancellationToken cancellationToken = default)
+    private FakeServerCallContext(long userId, string? sessionKey = null, CancellationToken cancellationToken = default)
     {
         _requestHeaders = [new Metadata.Entry("x-apb-user-id", userId.ToString())];
+        if (!string.IsNullOrEmpty(sessionKey))
+            _requestHeaders.Add("x-apb-session-key", sessionKey);
+
         _cancellationToken = cancellationToken;
     }
 
-    public static FakeServerCallContext For(long userId, CancellationToken cancellationToken = default)
-        => new(userId, cancellationToken);
+    public static FakeServerCallContext For(long userId, string? sessionKey = null, CancellationToken cancellationToken = default)
+        => new(userId, sessionKey, cancellationToken);
 
     protected override string MethodCore => string.Empty;
     protected override string HostCore => string.Empty;

@@ -23,6 +23,11 @@ public class MaterialService(DarkMasterMemoryDatabase masterDb, UserDataStore st
 
         foreach (SellPossession item in request.MaterialPossession)
         {
+            if (item.Count <= 0)
+            {
+                continue;
+            }
+
             // Look up the material's sell price from master data
             EntityMMaterial? mat = null;
             foreach (EntityMMaterial m in _masterDb.EntityMMaterial)

@@ -21,39 +21,13 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
 
         int questSceneId = request.QuestSceneId;
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
-
-        // Resolve quest ID from the scene, then walk the master data chain to find the route:
-        // QuestScene -> MainQuestSequence (by QuestId) -> MainQuestSequenceGroup (by MainQuestSequenceId)
-        // -> MainQuestChapter (by MainQuestSequenceGroupId) -> MainQuestRouteId
-        EntityMQuestScene? scene = _masterDb.EntityMQuestScene.FirstOrDefault(s => s.QuestSceneId == questSceneId);
-        int routeId = 0;
-        if (scene != null)
-        {
-            EntityMMainQuestSequence? sequence = _masterDb.EntityMMainQuestSequence.FirstOrDefault(s => s.QuestId == scene.QuestId);
-            if (sequence != null)
-            {
-                EntityMMainQuestSequenceGroup? sequenceGroup = _masterDb.EntityMMainQuestSequenceGroup.FirstOrDefault(g => g.MainQuestSequenceId == sequence.MainQuestSequenceId);
-                if (sequenceGroup != null)
-                {
-                    EntityMMainQuestChapter? chapter = _masterDb.EntityMMainQuestChapter.FirstOrDefault(c => c.MainQuestSequenceGroupId == sequenceGroup.MainQuestSequenceGroupId);
-                    routeId = chapter?.MainQuestRouteId ?? 0;
-                }
-            }
-        }
+        MainQuestSceneContext? sceneContext = ResolveMainQuestSceneContext(questSceneId);
 
         // Update flow status to indicate the player is in the main story flow
         EntityIUserMainQuestFlowStatus flowStatus = userDb.EntityIUserMainQuestFlowStatus.GetOrCreate(userId);
         flowStatus.CurrentQuestFlowType = QuestFlowType.MAIN_FLOW;
 
-        // Advance the main flow scene position and track the furthest scene reached
-        EntityIUserMainQuestMainFlowStatus mainFlowStatus = userDb.EntityIUserMainQuestMainFlowStatus.GetOrCreate(userId);
-        mainFlowStatus.CurrentQuestSceneId = questSceneId;
-        if (IsSceneAhead(questSceneId, mainFlowStatus.HeadQuestSceneId))
-            mainFlowStatus.HeadQuestSceneId = questSceneId;
-        if (routeId != 0) mainFlowStatus.CurrentMainQuestRouteId = routeId;
-        if (scene != null)
-            mainFlowStatus.IsReachedLastQuestScene = questSceneId == GetChapterLastSceneId(scene.QuestId);
+        ApplyMainFlowSceneProgress(userDb, userId, questSceneId, sceneContext);
 
         // Clear side story active progress if the user was in a side story
         EntityIUserSideStoryQuestSceneProgressStatus sideStoryProgress = userDb.EntityIUserSideStoryQuestSceneProgressStatus.GetOrCreate(userId);
@@ -97,8 +71,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
 
         EntityMQuestScene? scene = _masterDb.EntityMQuestScene.FirstOrDefault(s => s.QuestSceneId == questSceneId);
         EntityMQuest? quest = scene != null ? _masterDb.EntityMQuest.FirstOrDefault(q => q.QuestId == scene.QuestId) : null;
-
-        EntityIUserMainQuestMainFlowStatus mainFlowStatus = userDb.EntityIUserMainQuestMainFlowStatus.GetOrCreate(userId);
+        MainQuestSceneContext? sceneContext = scene != null ? ResolveMainQuestSceneContext(questSceneId) : null;
 
         bool isPlayable = quest != null && !quest.IsRunInTheBackground && quest.IsCountedAsQuest;
         if (isPlayable)
@@ -132,10 +105,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         else if (scene != null)
         {
             // Non-playable quests (background, cutscene, etc.) update the main flow scene position
-            mainFlowStatus.CurrentQuestSceneId = questSceneId;
-            if (IsSceneAhead(questSceneId, mainFlowStatus.HeadQuestSceneId))
-                mainFlowStatus.HeadQuestSceneId = questSceneId;
-            mainFlowStatus.IsReachedLastQuestScene = questSceneId == GetChapterLastSceneId(scene.QuestId);
+            ApplyMainFlowSceneProgress(userDb, userId, questSceneId, sceneContext);
         }
 
         UpdateMainQuestSceneProgressResponse response = new();
@@ -305,15 +275,9 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
                 .FirstOrDefault();
             if (firstScene != null)
             {
-                EntityIUserMainQuestMainFlowStatus mainFlowStatus = userDb.EntityIUserMainQuestMainFlowStatus.GetOrCreate(userId);
-                mainFlowStatus.CurrentQuestSceneId = firstScene.QuestSceneId;
-                if (IsSceneAhead(firstScene.QuestSceneId, mainFlowStatus.HeadQuestSceneId))
-                    mainFlowStatus.HeadQuestSceneId = firstScene.QuestSceneId;
-
                 EntityIUserMainQuestFlowStatus flowStatus = userDb.EntityIUserMainQuestFlowStatus.GetOrCreate(userId);
                 flowStatus.CurrentQuestFlowType = QuestFlowType.MAIN_FLOW;
-
-                mainFlowStatus.IsReachedLastQuestScene = firstScene.QuestSceneId == GetChapterLastSceneId(questId);
+                ApplyMainFlowSceneProgress(userDb, userId, firstScene.QuestSceneId, ResolveMainQuestSceneContext(firstScene.QuestSceneId));
             }
         }
 
@@ -518,6 +482,16 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
             userQuest.ClearCount++;
             userQuest.DailyClearCount++;
             userQuest.LastClearDatetime = nowMs;
+
+            bool isPlayableMainQuest = !quest.IsRunInTheBackground && quest.IsCountedAsQuest;
+            if (isPlayableMainQuest && !wasReplayFlow)
+            {
+                int lastSceneId = GetLastSceneIdForQuest(questId);
+                if (lastSceneId != 0)
+                {
+                    ApplyMainFlowSceneProgress(userDb, userId, lastSceneId, ResolveMainQuestSceneContext(lastSceneId));
+                }
+            }
         }
 
         // === PHASE C: Reset flow and progress (always, even on retire) ===
@@ -1277,14 +1251,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         EntityMMainQuestRoute? route = _masterDb.EntityMMainQuestRoute.FirstOrDefault(r => r.MainQuestRouteId == routeId);
 
         EntityIUserMainQuestMainFlowStatus mainFlowStatus = userDb.EntityIUserMainQuestMainFlowStatus.GetOrCreate(userId);
-        mainFlowStatus.CurrentMainQuestRouteId = routeId;
-
-        if (route != null)
-        {
-            EntityIUserMainQuestSeasonRoute seasonRoute = userDb.EntityIUserMainQuestSeasonRoute.GetOrCreate(userId);
-            seasonRoute.MainQuestRouteId = routeId;
-            seasonRoute.MainQuestSeasonId = route.MainQuestSeasonId;
-        }
+        ApplyMainQuestRoute(userDb, userId, mainFlowStatus, routeId, route?.MainQuestSeasonId ?? 0);
 
         EntityIUserPortalCageStatus portalCageStatus = userDb.EntityIUserPortalCageStatus.GetOrCreate(userId);
         portalCageStatus.IsCurrentProgress = false;
@@ -1480,6 +1447,84 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
             .OrderByDescending(s => s.SortOrder)
             .FirstOrDefault()?.QuestSceneId ?? 0;
     }
+
+    private void ApplyMainFlowSceneProgress(
+        DarkUserMemoryDatabase userDb,
+        long userId,
+        int questSceneId,
+        MainQuestSceneContext? sceneContext)
+    {
+        EntityIUserMainQuestMainFlowStatus mainFlowStatus = userDb.EntityIUserMainQuestMainFlowStatus.GetOrCreate(userId);
+        mainFlowStatus.CurrentQuestSceneId = questSceneId;
+        if (IsSceneAhead(questSceneId, mainFlowStatus.HeadQuestSceneId))
+        {
+            mainFlowStatus.HeadQuestSceneId = questSceneId;
+        }
+
+        if (sceneContext == null)
+        {
+            return;
+        }
+
+        mainFlowStatus.IsReachedLastQuestScene = questSceneId == GetChapterLastSceneId(sceneContext.Scene.QuestId);
+        ApplyMainQuestRoute(userDb, userId, mainFlowStatus, sceneContext.RouteId, sceneContext.SeasonId);
+    }
+
+    private void ApplyMainQuestRoute(
+        DarkUserMemoryDatabase userDb,
+        long userId,
+        EntityIUserMainQuestMainFlowStatus mainFlowStatus,
+        int routeId,
+        int seasonId)
+    {
+        if (routeId == 0)
+        {
+            return;
+        }
+
+        mainFlowStatus.CurrentMainQuestRouteId = routeId;
+
+        EntityIUserMainQuestSeasonRoute seasonRoute = userDb.EntityIUserMainQuestSeasonRoute.GetOrCreate(userId);
+        seasonRoute.MainQuestRouteId = routeId;
+        if (seasonId != 0)
+        {
+            seasonRoute.MainQuestSeasonId = seasonId;
+        }
+    }
+
+    private MainQuestSceneContext? ResolveMainQuestSceneContext(int questSceneId)
+    {
+        EntityMQuestScene? scene = _masterDb.EntityMQuestScene.FirstOrDefault(s => s.QuestSceneId == questSceneId);
+        if (scene == null)
+        {
+            return null;
+        }
+
+        int routeId = 0;
+        int seasonId = 0;
+
+        EntityMMainQuestSequence? sequence = _masterDb.EntityMMainQuestSequence.FirstOrDefault(s => s.QuestId == scene.QuestId);
+        if (sequence != null)
+        {
+            EntityMMainQuestSequenceGroup? sequenceGroup = _masterDb.EntityMMainQuestSequenceGroup
+                .FirstOrDefault(g => g.MainQuestSequenceId == sequence.MainQuestSequenceId);
+            if (sequenceGroup != null)
+            {
+                EntityMMainQuestChapter? chapter = _masterDb.EntityMMainQuestChapter
+                    .FirstOrDefault(c => c.MainQuestSequenceGroupId == sequenceGroup.MainQuestSequenceGroupId);
+                routeId = chapter?.MainQuestRouteId ?? 0;
+                if (routeId != 0)
+                {
+                    seasonId = _masterDb.EntityMMainQuestRoute
+                        .FirstOrDefault(r => r.MainQuestRouteId == routeId)?.MainQuestSeasonId ?? 0;
+                }
+            }
+        }
+
+        return new MainQuestSceneContext(scene, routeId, seasonId);
+    }
+
+    private sealed record MainQuestSceneContext(EntityMQuestScene Scene, int RouteId, int SeasonId);
 
     /// <summary>
     /// Builds the BattleDropReward list for a given quest by following the master data chain:

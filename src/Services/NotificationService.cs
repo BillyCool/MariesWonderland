@@ -16,7 +16,7 @@ public class NotificationService(UserDataStore store) : MariesWonderland.Proto.N
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
 
-        int giftNotReceiveCount = userDb.EntitySUserGift.Count(g => g.ReceivedDatetime == 0);
+        int giftNotReceiveCount = userDb.EntitySUserGift.Count(g => g.UserId == userId && g.ReceivedDatetime == 0);
 
         return Task.FromResult(new GetHeaderNotificationResponse
         {
