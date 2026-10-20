@@ -44,7 +44,7 @@ public class DiffInterceptor(UserDataStore store, ILogger<DiffInterceptor> logge
         if (userId != 0)
         {
             // Normal path: userId is known from the session — snapshot before, diff after
-            Dictionary<string, string> before = store.TryGet(userId, out DarkUserMemoryDatabase userDb)
+            Dictionary<string, TableSnapshot> before = store.TryGet(userId, out DarkUserMemoryDatabase userDb)
                 ? UserDataDiffBuilder.Snapshot(userDb)
                 : [];
 
