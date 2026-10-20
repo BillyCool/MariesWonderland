@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMLibraryMainQuestStory))]
+[PrimaryKey(nameof(LibraryMainQuestGroupId), nameof(SortOrder))]
 public class EntityMLibraryMainQuestStory
 {
     [Key(0)] public int LibraryMainQuestGroupId { get; set; }

@@ -1,5 +1,8 @@
+using Microsoft.EntityFrameworkCore;
+
 namespace MariesWonderland.Models.Entities;
 
+[PrimaryKey(nameof(UserId), nameof(UserDeckCharacterUuid), nameof(UserWeaponUuid))]
 public class EntityIUserDeckSubWeaponGroup : IUserEntity
 {
     public long UserId { get; set; }

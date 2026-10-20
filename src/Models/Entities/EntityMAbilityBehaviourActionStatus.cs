@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMAbilityBehaviourActionStatus))]
+[PrimaryKey(nameof(AbilityBehaviourActionId))]
 public class EntityMAbilityBehaviourActionStatus
 {
     [Key(0)] public int AbilityBehaviourActionId { get; set; }

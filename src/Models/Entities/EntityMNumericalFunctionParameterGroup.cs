@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMNumericalFunctionParameterGroup))]
+[PrimaryKey(nameof(NumericalFunctionParameterGroupId), nameof(ParameterIndex))]
 public class EntityMNumericalFunctionParameterGroup
 {
     [Key(0)] public int NumericalFunctionParameterGroupId { get; set; }

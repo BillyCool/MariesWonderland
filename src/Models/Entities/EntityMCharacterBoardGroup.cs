@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMCharacterBoardGroup))]
+[PrimaryKey(nameof(CharacterBoardGroupId))]
 public class EntityMCharacterBoardGroup
 {
     [Key(0)] public int CharacterBoardGroupId { get; set; }

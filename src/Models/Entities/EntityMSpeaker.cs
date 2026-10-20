@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMSpeaker))]
+[PrimaryKey(nameof(ActorObjectId))]
 public class EntityMSpeaker
 {
     [Key(0)] public int ActorObjectId { get; set; }

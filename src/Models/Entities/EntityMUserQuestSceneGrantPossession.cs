@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMUserQuestSceneGrantPossession))]
+[PrimaryKey(nameof(QuestSceneId), nameof(PossessionType), nameof(PossessionId))]
 public class EntityMUserQuestSceneGrantPossession
 {
     [Key(0)] public int QuestSceneId { get; set; }

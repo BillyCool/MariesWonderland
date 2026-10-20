@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMBigHuntRewardGroup))]
+[PrimaryKey(nameof(BigHuntRewardGroupId), nameof(SortOrder))]
 public class EntityMBigHuntRewardGroup
 {
     [Key(0)] public int BigHuntRewardGroupId { get; set; }

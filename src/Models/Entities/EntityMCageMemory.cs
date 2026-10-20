@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMCageMemory))]
+[PrimaryKey(nameof(CageMemoryId))]
 public class EntityMCageMemory
 {
     [Key(0)] public int CageMemoryId { get; set; }

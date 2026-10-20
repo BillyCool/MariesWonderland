@@ -1,7 +1,9 @@
 using MariesWonderland.Models.Type;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
+[PrimaryKey(nameof(UserId), nameof(EventQuestChapterId), nameof(QuestId), nameof(DeckRestrictedUuid))]
 public class EntityIUserDeckLimitContentRestricted : IUserEntity
 {
     public long UserId { get; set; }

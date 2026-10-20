@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMBattleNpcCompanion))]
+[PrimaryKey(nameof(BattleNpcId), nameof(BattleNpcCompanionUuid))]
 public class EntityMBattleNpcCompanion
 {
     [Key(0)] public long BattleNpcId { get; set; }

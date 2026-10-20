@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMAssetCalculator))]
+[PrimaryKey(nameof(AssetCalculatorId))]
 public class EntityMAssetCalculator
 {
     [Key(0)] public int AssetCalculatorId { get; set; }

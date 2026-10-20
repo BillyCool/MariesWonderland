@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMLimitedOpenTextGroup))]
+[PrimaryKey(nameof(LimitedOpenTextGroupId), nameof(SortOrder))]
 public class EntityMLimitedOpenTextGroup
 {
     [Key(0)] public int LimitedOpenTextGroupId { get; set; }

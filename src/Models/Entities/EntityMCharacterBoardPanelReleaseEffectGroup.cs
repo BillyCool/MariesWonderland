@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMCharacterBoardPanelReleaseEffectGroup))]
+[PrimaryKey(nameof(CharacterBoardPanelReleaseEffectGroupId), nameof(SortOrder))]
 public class EntityMCharacterBoardPanelReleaseEffectGroup
 {
     [Key(0)] public int CharacterBoardPanelReleaseEffectGroupId { get; set; }

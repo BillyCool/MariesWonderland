@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMSkillAbnormalBehaviourActionAttributeDamageCorrection))]
+[PrimaryKey(nameof(SkillAbnormalBehaviourActionId))]
 public class EntityMSkillAbnormalBehaviourActionAttributeDamageCorrection
 {
     [Key(0)] public int SkillAbnormalBehaviourActionId { get; set; }

@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMBattleActorSkillAiGroup))]
+[PrimaryKey(nameof(BattleActorSkillAiGroupId), nameof(Priority))]
 public class EntityMBattleActorSkillAiGroup
 {
     [Key(0)] public int BattleActorSkillAiGroupId { get; set; }

@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMMissionPassRewardGroup))]
+[PrimaryKey(nameof(MissionPassRewardGroupId), nameof(Level), nameof(IsPremium), nameof(SortOrder))]
 public class EntityMMissionPassRewardGroup
 {
     [Key(0)] public int MissionPassRewardGroupId { get; set; }

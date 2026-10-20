@@ -1,7 +1,9 @@
 using MariesWonderland.Models.Type;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
+[PrimaryKey(nameof(UserId), nameof(MainQuestSeasonId))]
 public class EntityIUserMainQuestSeasonRoute : IUserEntity
 {
     public long UserId { get; set; }

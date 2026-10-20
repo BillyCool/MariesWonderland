@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMLoginBonusStamp))]
+[PrimaryKey(nameof(LoginBonusId), nameof(LowerPageNumber), nameof(StampNumber))]
 public class EntityMLoginBonusStamp
 {
     [Key(0)] public int LoginBonusId { get; set; }

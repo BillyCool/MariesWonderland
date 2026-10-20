@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMCharacterRebirthMaterialGroup))]
+[PrimaryKey(nameof(CharacterRebirthMaterialGroupId), nameof(MaterialId))]
 public class EntityMCharacterRebirthMaterialGroup
 {
     [Key(0)] public int CharacterRebirthMaterialGroupId { get; set; }

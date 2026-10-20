@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMPvpSeasonGrade))]
+[PrimaryKey(nameof(PvpGradeId), nameof(PvpSeasonId))]
 public class EntityMPvpSeasonGrade
 {
     [Key(0)] public int PvpGradeId { get; set; }

@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMBattleBgmSet))]
+[PrimaryKey(nameof(BgmSetId), nameof(TrackNumber))]
 public class EntityMBattleBgmSet
 {
     [Key(0)] public int BgmSetId { get; set; }

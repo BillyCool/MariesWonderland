@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMQuestDeckRestrictionGroup))]
+[PrimaryKey(nameof(QuestDeckRestrictionGroupId), nameof(SlotNumber))]
 public class EntityMQuestDeckRestrictionGroup
 {
     [Key(0)] public int QuestDeckRestrictionGroupId { get; set; }

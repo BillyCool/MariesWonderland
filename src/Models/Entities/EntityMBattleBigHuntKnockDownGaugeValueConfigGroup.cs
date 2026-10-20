@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMBattleBigHuntKnockDownGaugeValueConfigGroup))]
+[PrimaryKey(nameof(KnockDownGaugeValueConfigGroupId), nameof(ActiveSkillHitCount), nameof(DamageValueLowerLimit))]
 public class EntityMBattleBigHuntKnockDownGaugeValueConfigGroup
 {
     [Key(0)] public int KnockDownGaugeValueConfigGroupId { get; set; }

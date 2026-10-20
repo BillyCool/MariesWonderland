@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMBattleGeneralViewConfiguration))]
+[PrimaryKey(nameof(QuestSceneId), nameof(WaveNumber))]
 public class EntityMBattleGeneralViewConfiguration
 {
     [Key(0)] public int QuestSceneId { get; set; }

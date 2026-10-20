@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMQuestFirstClearRewardGroup))]
+[PrimaryKey(nameof(QuestFirstClearRewardGroupId), nameof(QuestFirstClearRewardType), nameof(SortOrder))]
 public class EntityMQuestFirstClearRewardGroup
 {
     [Key(0)] public int QuestFirstClearRewardGroupId { get; set; }

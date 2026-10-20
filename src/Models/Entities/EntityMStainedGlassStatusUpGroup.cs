@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMStainedGlassStatusUpGroup))]
+[PrimaryKey(nameof(StainedGlassStatusUpGroupId), nameof(GroupIndex))]
 public class EntityMStainedGlassStatusUpGroup
 {
     [Key(0)] public int StainedGlassStatusUpGroupId { get; set; }

@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMCostumeCollectionBonus))]
+[PrimaryKey(nameof(CollectionBonusId))]
 public class EntityMCostumeCollectionBonus
 {
     [Key(0)] public int CollectionBonusId { get; set; }

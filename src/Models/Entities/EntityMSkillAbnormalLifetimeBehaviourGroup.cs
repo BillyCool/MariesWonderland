@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMSkillAbnormalLifetimeBehaviourGroup))]
+[PrimaryKey(nameof(SkillAbnormalLifetimeBehaviourGroupId), nameof(AbnormalLifetimeBehaviourIndex))]
 public class EntityMSkillAbnormalLifetimeBehaviourGroup
 {
     [Key(0)] public int SkillAbnormalLifetimeBehaviourGroupId { get; set; }

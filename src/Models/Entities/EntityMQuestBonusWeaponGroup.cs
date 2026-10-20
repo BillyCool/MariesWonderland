@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMQuestBonusWeaponGroup))]
+[PrimaryKey(nameof(QuestBonusWeaponGroupId), nameof(WeaponId), nameof(LimitBreakCountLowerLimit))]
 public class EntityMQuestBonusWeaponGroup
 {
     [Key(0)] public int QuestBonusWeaponGroupId { get; set; }

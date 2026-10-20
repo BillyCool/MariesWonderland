@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMQuestRelationMainFlow))]
+[PrimaryKey(nameof(MainFlowQuestId), nameof(DifficultyType))]
 public class EntityMQuestRelationMainFlow
 {
     [Key(0)] public int MainFlowQuestId { get; set; }

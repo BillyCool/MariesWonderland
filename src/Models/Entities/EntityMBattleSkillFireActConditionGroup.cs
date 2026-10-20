@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMBattleSkillFireActConditionGroup))]
+[PrimaryKey(nameof(BattleSkillFireActConditionGroupId), nameof(BattleSkillFireActConditionGroupOrder))]
 public class EntityMBattleSkillFireActConditionGroup
 {
     [Key(0)] public int BattleSkillFireActConditionGroupId { get; set; }

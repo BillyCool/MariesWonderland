@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMDokanText))]
+[PrimaryKey(nameof(DokanTextId), nameof(LanguageType))]
 public class EntityMDokanText
 {
     [Key(0)] public int DokanTextId { get; set; }

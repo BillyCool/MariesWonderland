@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMNaviCutIn))]
+[PrimaryKey(nameof(NaviCutInId))]
 public class EntityMNaviCutIn
 {
     [Key(0)] public int NaviCutInId { get; set; }

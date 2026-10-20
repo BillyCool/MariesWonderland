@@ -1,7 +1,9 @@
 using MariesWonderland.Models.Type;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
+[PrimaryKey(nameof(UserId), nameof(BigHuntBossId))]
 public class EntityIUserBigHuntMaxScore : IUserEntity
 {
     public long UserId { get; set; }

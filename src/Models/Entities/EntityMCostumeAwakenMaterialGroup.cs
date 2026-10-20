@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMCostumeAwakenMaterialGroup))]
+[PrimaryKey(nameof(CostumeAwakenMaterialGroupId), nameof(MaterialId))]
 public class EntityMCostumeAwakenMaterialGroup
 {
     [Key(0)] public int CostumeAwakenMaterialGroupId { get; set; }

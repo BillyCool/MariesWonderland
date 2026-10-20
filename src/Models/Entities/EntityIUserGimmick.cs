@@ -1,7 +1,9 @@
 using MariesWonderland.Models.Type;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
+[PrimaryKey(nameof(UserId), nameof(GimmickSequenceScheduleId), nameof(GimmickSequenceId), nameof(GimmickId))]
 public class EntityIUserGimmick : IUserEntity
 {
     public long UserId { get; set; }

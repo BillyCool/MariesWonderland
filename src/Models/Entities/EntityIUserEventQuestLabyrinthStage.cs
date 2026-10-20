@@ -1,7 +1,9 @@
 using MariesWonderland.Models.Type;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
+[PrimaryKey(nameof(UserId), nameof(EventQuestChapterId), nameof(StageOrder))]
 public class EntityIUserEventQuestLabyrinthStage : IUserEntity
 {
     public long UserId { get; set; }

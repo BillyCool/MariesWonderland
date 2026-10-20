@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMCharacterRebirthStepGroup))]
+[PrimaryKey(nameof(CharacterRebirthStepGroupId), nameof(BeforeRebirthCount))]
 public class EntityMCharacterRebirthStepGroup
 {
     [Key(0)] public int CharacterRebirthStepGroupId { get; set; }

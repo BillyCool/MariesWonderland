@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMBigHuntLink))]
+[PrimaryKey(nameof(BigHuntLinkId))]
 public class EntityMBigHuntLink
 {
     [Key(0)] public int BigHuntLinkId { get; set; }

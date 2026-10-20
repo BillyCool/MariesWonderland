@@ -25,7 +25,9 @@ public static class BinaryMasterDataLoader
     {
         var encrypted = File.ReadAllBytes(binFilePath);
         var decrypted = Decrypt(encrypted);
-        return Parse(decrypted);
+        var masterDb = Parse(decrypted);
+        TableExtensions.MarkReadOnly(masterDb);
+        return masterDb;
     }
 
     /// <summary>Decrypts the raw .bin.e file bytes using AES-128-CBC.</summary>

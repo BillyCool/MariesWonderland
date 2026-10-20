@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMCostumeRarity))]
+[PrimaryKey(nameof(RarityType))]
 public class EntityMCostumeRarity
 {
     [Key(0)] public RarityType RarityType { get; set; }

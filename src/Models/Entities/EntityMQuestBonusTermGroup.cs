@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMQuestBonusTermGroup))]
+[PrimaryKey(nameof(QuestBonusTermGroupId), nameof(SortOrder))]
 public class EntityMQuestBonusTermGroup
 {
     [Key(0)] public int QuestBonusTermGroupId { get; set; }

@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMShopItem))]
+[PrimaryKey(nameof(ShopItemId))]
 public class EntityMShopItem
 {
     [Key(0)] public int ShopItemId { get; set; }

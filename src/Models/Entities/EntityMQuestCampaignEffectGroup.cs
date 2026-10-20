@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMQuestCampaignEffectGroup))]
+[PrimaryKey(nameof(QuestCampaignEffectGroupId), nameof(QuestCampaignEffectType))]
 public class EntityMQuestCampaignEffectGroup
 {
     [Key(0)] public int QuestCampaignEffectGroupId { get; set; }

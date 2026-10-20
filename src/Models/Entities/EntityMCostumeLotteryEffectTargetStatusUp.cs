@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMCostumeLotteryEffectTargetStatusUp))]
+[PrimaryKey(nameof(CostumeLotteryEffectTargetStatusUpId), nameof(StatusKindType), nameof(StatusCalculationType))]
 public class EntityMCostumeLotteryEffectTargetStatusUp
 {
     [Key(0)] public int CostumeLotteryEffectTargetStatusUpId { get; set; }

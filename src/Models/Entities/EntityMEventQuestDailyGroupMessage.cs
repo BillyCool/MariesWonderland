@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMEventQuestDailyGroupMessage))]
+[PrimaryKey(nameof(EventQuestDailyGroupMessageId), nameof(OddsNumber))]
 public class EntityMEventQuestDailyGroupMessage
 {
     [Key(0)] public int EventQuestDailyGroupMessageId { get; set; }

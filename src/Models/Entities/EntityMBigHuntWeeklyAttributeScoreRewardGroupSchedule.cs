@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMBigHuntWeeklyAttributeScoreRewardGroupSchedule))]
+[PrimaryKey(nameof(BigHuntWeeklyAttributeScoreRewardGroupScheduleId), nameof(AttributeType), nameof(GroupIndex))]
 public class EntityMBigHuntWeeklyAttributeScoreRewardGroupSchedule
 {
     [Key(0)] public int BigHuntWeeklyAttributeScoreRewardGroupScheduleId { get; set; }

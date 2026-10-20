@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMSkillDamageMultiplyTargetSpecifiedCostumeGroup))]
+[PrimaryKey(nameof(TargetSpecifiedCostumeGroupId), nameof(TargetSpecifiedCostumeGroupIndex))]
 public class EntityMSkillDamageMultiplyTargetSpecifiedCostumeGroup
 {
     [Key(0)] public int TargetSpecifiedCostumeGroupId { get; set; }

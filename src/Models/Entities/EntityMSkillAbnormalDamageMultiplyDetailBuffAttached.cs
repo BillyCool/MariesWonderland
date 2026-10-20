@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMSkillAbnormalDamageMultiplyDetailBuffAttached))]
+[PrimaryKey(nameof(DamageMultiplyAbnormalDetailId))]
 public class EntityMSkillAbnormalDamageMultiplyDetailBuffAttached
 {
     [Key(0)] public int DamageMultiplyAbnormalDetailId { get; set; }

@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMTipDisplayConditionGroup))]
+[PrimaryKey(nameof(TipDisplayConditionGroupId), nameof(SortOrder))]
 public class EntityMTipDisplayConditionGroup
 {
     [Key(0)] public int TipDisplayConditionGroupId { get; set; }

@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMWebviewPanelMission))]
+[PrimaryKey(nameof(WebviewPanelMissionId), nameof(Page))]
 public class EntityMWebviewPanelMission
 {
     [Key(0)] public int WebviewPanelMissionId { get; set; }

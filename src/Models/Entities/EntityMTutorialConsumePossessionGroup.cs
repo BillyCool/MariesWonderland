@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMTutorialConsumePossessionGroup))]
+[PrimaryKey(nameof(TutorialType), nameof(PossessionType), nameof(PossessionId))]
 public class EntityMTutorialConsumePossessionGroup
 {
     [Key(0)] public TutorialType TutorialType { get; set; }

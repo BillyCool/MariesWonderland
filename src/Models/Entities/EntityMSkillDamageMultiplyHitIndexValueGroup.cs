@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMSkillDamageMultiplyHitIndexValueGroup))]
+[PrimaryKey(nameof(SkillDamageMultiplyHitIndexValueGroupId), nameof(SkillDamageMultiplyHitIndexValueGroupIndex))]
 public class EntityMSkillDamageMultiplyHitIndexValueGroup
 {
     [Key(0)] public int SkillDamageMultiplyHitIndexValueGroupId { get; set; }

@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMCharacterViewerActorIcon))]
+[PrimaryKey(nameof(CostumeAssetCategoryType), nameof(SkeletonId), nameof(AssetVariationId))]
 public class EntityMCharacterViewerActorIcon
 {
     [Key(0)] public CostumeAssetCategoryType CostumeAssetCategoryType { get; set; }

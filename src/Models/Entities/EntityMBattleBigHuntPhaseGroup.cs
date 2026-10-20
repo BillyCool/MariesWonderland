@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMBattleBigHuntPhaseGroup))]
+[PrimaryKey(nameof(BattleBigHuntPhaseGroupId), nameof(BattleBigHuntPhaseGroupOrder))]
 public class EntityMBattleBigHuntPhaseGroup
 {
     [Key(0)] public int BattleBigHuntPhaseGroupId { get; set; }

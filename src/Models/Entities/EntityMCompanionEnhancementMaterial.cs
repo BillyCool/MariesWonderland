@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMCompanionEnhancementMaterial))]
+[PrimaryKey(nameof(CompanionCategoryType), nameof(Level), nameof(MaterialId))]
 public class EntityMCompanionEnhancementMaterial
 {
     [Key(0)] public int CompanionCategoryType { get; set; }

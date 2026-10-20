@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMQuestBonusDropReward))]
+[PrimaryKey(nameof(QuestBonusEffectId))]
 public class EntityMQuestBonusDropReward
 {
     [Key(0)] public int QuestBonusEffectId { get; set; }

@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMBattleNpcCostumeLevelBonusReevaluate))]
+[PrimaryKey(nameof(BattleNpcId))]
 public class EntityMBattleNpcCostumeLevelBonusReevaluate
 {
     [Key(0)] public long BattleNpcId { get; set; }

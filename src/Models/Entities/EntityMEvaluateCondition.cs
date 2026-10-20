@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMEvaluateCondition))]
+[PrimaryKey(nameof(EvaluateConditionId))]
 public class EntityMEvaluateCondition
 {
     [Key(0)] public int EvaluateConditionId { get; set; }

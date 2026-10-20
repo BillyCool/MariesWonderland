@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMCharacterVoiceUnlockCondition))]
+[PrimaryKey(nameof(CharacterId), nameof(SortOrder))]
 public class EntityMCharacterVoiceUnlockCondition
 {
     [Key(0)] public int CharacterId { get; set; }

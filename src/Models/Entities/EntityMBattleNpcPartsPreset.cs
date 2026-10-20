@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMBattleNpcPartsPreset))]
+[PrimaryKey(nameof(BattleNpcId), nameof(BattleNpcPartsPresetNumber))]
 public class EntityMBattleNpcPartsPreset
 {
     [Key(0)] public long BattleNpcId { get; set; }

@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMEventQuestLabyrinthQuestEffectDisplay))]
+[PrimaryKey(nameof(QuestId), nameof(SortOrder))]
 public class EntityMEventQuestLabyrinthQuestEffectDisplay
 {
     [Key(0)] public int QuestId { get; set; }

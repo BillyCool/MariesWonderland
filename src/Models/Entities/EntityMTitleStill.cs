@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMTitleStill))]
+[PrimaryKey(nameof(TitleStillId))]
 public class EntityMTitleStill
 {
     [Key(0)] public int TitleStillId { get; set; }

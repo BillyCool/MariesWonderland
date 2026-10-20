@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMCostumeActiveSkillGroup))]
+[PrimaryKey(nameof(CostumeActiveSkillGroupId), nameof(CostumeLimitBreakCountLowerLimit))]
 public class EntityMCostumeActiveSkillGroup
 {
     [Key(0)] public int CostumeActiveSkillGroupId { get; set; }

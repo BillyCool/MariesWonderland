@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMHeadupDisplayView))]
+[PrimaryKey(nameof(HeadupDisplayViewId))]
 public class EntityMHeadupDisplayView
 {
     [Key(0)] public int HeadupDisplayViewId { get; set; }

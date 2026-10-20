@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMCostumeLimitBreakMaterialGroup))]
+[PrimaryKey(nameof(CostumeLimitBreakMaterialGroupId), nameof(MaterialId))]
 public class EntityMCostumeLimitBreakMaterialGroup
 {
     [Key(0)] public int CostumeLimitBreakMaterialGroupId { get; set; }

@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMPvpBackground))]
+[PrimaryKey(nameof(AssetBackgroundId), nameof(BattleFieldLocaleSettingIndex), nameof(BattlePointIndex))]
 public class EntityMPvpBackground
 {
     [Key(0)] public int AssetBackgroundId { get; set; }

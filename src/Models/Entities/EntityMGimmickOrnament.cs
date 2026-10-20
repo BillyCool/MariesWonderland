@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMGimmickOrnament))]
+[PrimaryKey(nameof(GimmickOrnamentGroupId), nameof(GimmickOrnamentIndex))]
 public class EntityMGimmickOrnament
 {
     [Key(0)] public int GimmickOrnamentGroupId { get; set; }

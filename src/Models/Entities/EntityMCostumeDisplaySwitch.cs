@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMCostumeDisplaySwitch))]
+[PrimaryKey(nameof(CostumeId))]
 public class EntityMCostumeDisplaySwitch
 {
     [Key(0)] public int CostumeId { get; set; }

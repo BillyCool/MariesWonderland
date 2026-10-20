@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMSmartphoneChatGroupMessage))]
+[PrimaryKey(nameof(SmartphoneChatGroupId), nameof(SortOrder))]
 public class EntityMSmartphoneChatGroupMessage
 {
     [Key(0)] public int SmartphoneChatGroupId { get; set; }

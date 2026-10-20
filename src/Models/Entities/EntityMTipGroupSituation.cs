@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMTipGroupSituation))]
+[PrimaryKey(nameof(TipSituationType), nameof(TipGroupId))]
 public class EntityMTipGroupSituation
 {
     [Key(0)] public TipSituationType TipSituationType { get; set; }

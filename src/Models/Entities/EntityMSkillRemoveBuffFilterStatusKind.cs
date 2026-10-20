@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMSkillRemoveBuffFilterStatusKind))]
+[PrimaryKey(nameof(SkillRemoveBuffFilteringId), nameof(FilterIndex))]
 public class EntityMSkillRemoveBuffFilterStatusKind
 {
     [Key(0)] public int SkillRemoveBuffFilteringId { get; set; }

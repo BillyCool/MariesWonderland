@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMCharacterBoardCompleteReward))]
+[PrimaryKey(nameof(CharacterBoardCompleteRewardId))]
 public class EntityMCharacterBoardCompleteReward
 {
     [Key(0)] public int CharacterBoardCompleteRewardId { get; set; }

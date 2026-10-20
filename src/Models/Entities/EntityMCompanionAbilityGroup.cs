@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMCompanionAbilityGroup))]
+[PrimaryKey(nameof(CompanionAbilityGroupId), nameof(SlotNumber))]
 public class EntityMCompanionAbilityGroup
 {
     [Key(0)] public int CompanionAbilityGroupId { get; set; }

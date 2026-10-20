@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMCostumeOverflowExchangePossessionGroup))]
+[PrimaryKey(nameof(MaterialId), nameof(SortOrder))]
 public class EntityMCostumeOverflowExchangePossessionGroup
 {
     [Key(0)] public int MaterialId { get; set; }

@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMWeaponSpecificEnhance))]
+[PrimaryKey(nameof(WeaponSpecificEnhanceId))]
 public class EntityMWeaponSpecificEnhance
 {
     [Key(0)] public int WeaponSpecificEnhanceId { get; set; }

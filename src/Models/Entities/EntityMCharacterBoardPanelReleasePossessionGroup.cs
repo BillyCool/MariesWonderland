@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMCharacterBoardPanelReleasePossessionGroup))]
+[PrimaryKey(nameof(CharacterBoardPanelReleasePossessionGroupId), nameof(PossessionType), nameof(PossessionId))]
 public class EntityMCharacterBoardPanelReleasePossessionGroup
 {
     [Key(0)] public int CharacterBoardPanelReleasePossessionGroupId { get; set; }

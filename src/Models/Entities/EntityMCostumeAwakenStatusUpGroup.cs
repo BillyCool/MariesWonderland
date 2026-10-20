@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMCostumeAwakenStatusUpGroup))]
+[PrimaryKey(nameof(CostumeAwakenStatusUpGroupId), nameof(SortOrder))]
 public class EntityMCostumeAwakenStatusUpGroup
 {
     [Key(0)] public int CostumeAwakenStatusUpGroupId { get; set; }

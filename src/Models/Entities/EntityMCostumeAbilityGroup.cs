@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMCostumeAbilityGroup))]
+[PrimaryKey(nameof(CostumeAbilityGroupId), nameof(SlotNumber))]
 public class EntityMCostumeAbilityGroup
 {
     [Key(0)] public int CostumeAbilityGroupId { get; set; }

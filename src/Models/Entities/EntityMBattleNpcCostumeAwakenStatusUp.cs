@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMBattleNpcCostumeAwakenStatusUp))]
+[PrimaryKey(nameof(BattleNpcId), nameof(BattleNpcCostumeUuid), nameof(StatusCalculationType))]
 public class EntityMBattleNpcCostumeAwakenStatusUp
 {
     [Key(0)] public long BattleNpcId { get; set; }

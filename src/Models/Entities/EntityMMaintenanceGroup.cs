@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMMaintenanceGroup))]
+[PrimaryKey(nameof(MaintenanceGroupId), nameof(ApiPath))]
 public class EntityMMaintenanceGroup
 {
     [Key(0)] public int MaintenanceGroupId { get; set; }

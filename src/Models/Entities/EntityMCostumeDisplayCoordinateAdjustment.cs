@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMCostumeDisplayCoordinateAdjustment))]
+[PrimaryKey(nameof(CostumeId), nameof(DisplayCoordinateAdjustmentFunctionType))]
 public class EntityMCostumeDisplayCoordinateAdjustment
 {
     [Key(0)] public int CostumeId { get; set; }

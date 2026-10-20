@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMEventQuestUnlockCondition))]
+[PrimaryKey(nameof(EventQuestType), nameof(CharacterId), nameof(QuestId))]
 public class EntityMEventQuestUnlockCondition
 {
     [Key(0)] public EventQuestType EventQuestType { get; set; }

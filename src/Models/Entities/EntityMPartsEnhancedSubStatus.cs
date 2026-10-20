@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMPartsEnhancedSubStatus))]
+[PrimaryKey(nameof(PartsEnhancedId), nameof(StatusIndex))]
 public class EntityMPartsEnhancedSubStatus
 {
     [Key(0)] public int PartsEnhancedId { get; set; }

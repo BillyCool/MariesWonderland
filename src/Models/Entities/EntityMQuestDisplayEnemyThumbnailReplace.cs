@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMQuestDisplayEnemyThumbnailReplace))]
+[PrimaryKey(nameof(QuestId), nameof(Priority))]
 public class EntityMQuestDisplayEnemyThumbnailReplace
 {
     [Key(0)] public int QuestId { get; set; }

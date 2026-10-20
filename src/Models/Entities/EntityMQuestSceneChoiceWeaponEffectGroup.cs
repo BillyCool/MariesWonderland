@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMQuestSceneChoiceWeaponEffectGroup))]
+[PrimaryKey(nameof(QuestSceneChoiceWeaponEffectGroupId), nameof(SortOrder))]
 public class EntityMQuestSceneChoiceWeaponEffectGroup
 {
     [Key(0)] public int QuestSceneChoiceWeaponEffectGroupId { get; set; }

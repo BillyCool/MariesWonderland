@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMWeaponRarityLimitBreakMaterialGroup))]
+[PrimaryKey(nameof(RarityType), nameof(MaterialId))]
 public class EntityMWeaponRarityLimitBreakMaterialGroup
 {
     [Key(0)] public RarityType RarityType { get; set; }

@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMEventQuestLimitContent))]
+[PrimaryKey(nameof(EventQuestLimitContentId))]
 public class EntityMEventQuestLimitContent
 {
     [Key(0)] public int EventQuestLimitContentId { get; set; }

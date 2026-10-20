@@ -1,11 +1,13 @@
 using MariesWonderland.MasterMemory;
 using MariesWonderland.Models.Type;
 using MessagePack;
+using Microsoft.EntityFrameworkCore;
 
 namespace MariesWonderland.Models.Entities;
 
 [MessagePackObject]
 [MemoryTable(nameof(EntityMWeaponStoryReleaseConditionGroup))]
+[PrimaryKey(nameof(WeaponStoryReleaseConditionGroupId), nameof(StoryIndex))]
 public class EntityMWeaponStoryReleaseConditionGroup
 {
     [Key(0)] public int WeaponStoryReleaseConditionGroupId { get; set; }
