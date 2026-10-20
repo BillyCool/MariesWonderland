@@ -1,4 +1,5 @@
 using MariesWonderland.Data;
+using MariesWonderland.Helpers;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.Costume;
@@ -610,7 +611,7 @@ public class CostumeServiceTests
                 ConsumableItemIdForGold = GoldItemId,
                 CostumeLimitBreakAvailableCount = costumeLimitBreakAvailableCount,
                 MaterialSameWeaponExpCoefficientPermil = sameWeaponExpCoefficientPermil
-            }, TimeProvider.System);
+            }, new EnhanceCampaignHelper(masterDb), TimeProvider.System);
     }
 
     private static DarkMasterMemoryDatabase CreateMasterDb() => new();

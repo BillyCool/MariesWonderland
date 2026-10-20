@@ -8,12 +8,13 @@ using MariesWonderland.Proto.Costume;
 
 namespace MariesWonderland.Services;
 
-public class CostumeService(DarkMasterMemoryDatabase masterDb, UserDataStore store, GameConfig gameConfig, TimeProvider timeProvider)
+public class CostumeService(DarkMasterMemoryDatabase masterDb, UserDataStore store, GameConfig gameConfig, EnhanceCampaignHelper enhanceCampaigns, TimeProvider timeProvider)
     : MariesWonderland.Proto.Costume.CostumeService.CostumeServiceBase
 {
     private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
     private readonly UserDataStore _store = store;
     private readonly GameConfig _gameConfig = gameConfig;
+    private readonly EnhanceCampaignHelper _enhanceCampaigns = enhanceCampaigns;
     private readonly TimeProvider _timeProvider = timeProvider;
 
     /// <summary>
@@ -141,8 +142,8 @@ public class CostumeService(DarkMasterMemoryDatabase masterDb, UserDataStore sto
             }
         }
 
-        // Apply EXP and recalculate level from rarity-specific thresholds
-        costume.Exp += totalExp;
+        // Apply EXP (after enhance campaigns) and recalculate level from rarity-specific thresholds
+        costume.Exp += _enhanceCampaigns.ApplyCostumeExp(totalExp, costumeMaster, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
 
         if (rarityRow != null)
         {

@@ -11,6 +11,7 @@ public sealed class MasterDataSnapshot
     public DarkMasterMemoryDatabase Database { get; }
     public GameConfig GameConfig { get; }
     public QuestCampaignHelper QuestCampaigns { get; }
+    public EnhanceCampaignHelper EnhanceCampaigns { get; }
 
     /// <summary>The version string advertised to the client; a change makes it download the file again.</summary>
     public string Version { get; }
@@ -20,6 +21,7 @@ public sealed class MasterDataSnapshot
         Database = database;
         GameConfig = GameConfig.From(database.EntityMConfig);
         QuestCampaigns = new QuestCampaignHelper(database);
+        EnhanceCampaigns = new EnhanceCampaignHelper(database);
         Version = version;
     }
 

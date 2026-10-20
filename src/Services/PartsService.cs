@@ -1,13 +1,14 @@
 using Grpc.Core;
 using MariesWonderland.Data;
 using MariesWonderland.Extensions;
+using MariesWonderland.Helpers;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.Parts;
 
 namespace MariesWonderland.Services;
 
-public class PartsService(DarkMasterMemoryDatabase masterDb, UserDataStore store, GameConfig gameConfig, TimeProvider timeProvider)
+public class PartsService(DarkMasterMemoryDatabase masterDb, UserDataStore store, GameConfig gameConfig, EnhanceCampaignHelper enhanceCampaigns, TimeProvider timeProvider)
     : MariesWonderland.Proto.Parts.PartsService.PartsServiceBase
 {
     private readonly TimeProvider _timeProvider = timeProvider;
@@ -17,6 +18,7 @@ public class PartsService(DarkMasterMemoryDatabase masterDb, UserDataStore store
     private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
     private readonly UserDataStore _store = store;
     private readonly GameConfig _gameConfig = gameConfig;
+    private readonly EnhanceCampaignHelper _enhanceCampaigns = enhanceCampaigns;
 
     /// <summary>
     /// Sells one or more parts from the player's inventory, awarding gold based on each part's rarity and level.
@@ -205,8 +207,11 @@ public class PartsService(DarkMasterMemoryDatabase masterDb, UserDataStore store
         // Deduct gold before rolling — cost applies even on failure
         gold.Count -= goldCost;
 
-        // Look up success rate
-        int successRate = LookupPartsLevelUpRate(rarityRow.PartsLevelUpRateGroupId, part.Level);
+        // Look up success rate, raised by enhance campaigns
+        int successRate = _enhanceCampaigns.ApplyPartsSuccessRate(
+            LookupPartsLevelUpRate(rarityRow.PartsLevelUpRateGroupId, part.Level),
+            partDef,
+            _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
 
         // Roll for enhancement success (permil)
         bool isSuccess = Random.Shared.Next(1000) < successRate;

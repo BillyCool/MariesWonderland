@@ -8,12 +8,13 @@ using MariesWonderland.Proto.Weapon;
 
 namespace MariesWonderland.Services;
 
-public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore store, GameConfig gameConfig, TimeProvider timeProvider)
+public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore store, GameConfig gameConfig, EnhanceCampaignHelper enhanceCampaigns, TimeProvider timeProvider)
     : MariesWonderland.Proto.Weapon.WeaponService.WeaponServiceBase
 {
     private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
     private readonly UserDataStore _store = store;
     private readonly GameConfig _gameConfig = gameConfig;
+    private readonly EnhanceCampaignHelper _enhanceCampaigns = enhanceCampaigns;
     private readonly TimeProvider _timeProvider = timeProvider;
 
     /// <summary>
@@ -185,8 +186,8 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
             }
         }
 
-        // Apply EXP, recalculate level, and check for new story page unlocks
-        weapon.Exp += totalExp;
+        // Apply EXP (after enhance campaigns), recalculate level, and check for new story page unlocks
+        weapon.Exp += _enhanceCampaigns.ApplyWeaponExp(totalExp, wm, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
         ApplyLevelFromExp(userDb, weapon, wm);
 
         CheckWeaponStoryUnlocks(userDb, weapon.WeaponId, weapon.Level);
@@ -269,8 +270,8 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
             }
         }
 
-        // Apply EXP, recalculate level, and check for new story page unlocks
-        weapon.Exp += totalExp;
+        // Apply EXP (after enhance campaigns), recalculate level, and check for new story page unlocks
+        weapon.Exp += _enhanceCampaigns.ApplyWeaponExp(totalExp, wm, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
         ApplyLevelFromExp(userDb, weapon, wm);
 
         CheckWeaponStoryUnlocks(userDb, weapon.WeaponId, weapon.Level);

@@ -1,4 +1,5 @@
 using MariesWonderland.Data;
+using MariesWonderland.Helpers;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.Parts;
@@ -227,7 +228,7 @@ public class PartsServiceTests
         userDb.UserId = UserId;
         UserDataStore store = new(TimeProvider.System);
         store.Set(UserId, userDb);
-        return new PartsService(masterDb, store, new GameConfig { ConsumableItemIdForGold = GoldItemId }, TimeProvider.System);
+        return new PartsService(masterDb, store, new GameConfig { ConsumableItemIdForGold = GoldItemId }, new EnhanceCampaignHelper(masterDb), TimeProvider.System);
     }
 
     private static DarkMasterMemoryDatabase CreateMasterDb() => new();
