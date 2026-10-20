@@ -9,12 +9,12 @@ using QuestService = MariesWonderland.Services.QuestService;
 
 namespace MariesWonderland.Tests.Quests;
 
-public class MenuPickQuestTests(MasterDatabaseFixture fixture) : ServiceTestBase(fixture), IClassFixture<MasterDatabaseFixture>
+public class MainQuestFlowTests(MasterDatabaseFixture fixture) : ServiceTestBase(fixture), IClassFixture<MasterDatabaseFixture>
 {
     private (QuestService Service, DarkUserMemoryDatabase UserDb, long UserId) CreateService()
     {
         UserDataStore store = new(TimeProvider.System);
-        (long userId, _) = store.RegisterOrGetUser("menu-pick-test", MasterDb);
+        (long userId, _) = store.RegisterOrGetUser("main-quest-flow-test", MasterDb);
         store.TryGet(userId, out DarkUserMemoryDatabase userDb);
         QuestCampaignHelper campaigns = new(MasterDb);
         QuestService service = new(store, MasterDb, new QuestEngine(MasterDb, GameConfig, campaigns), campaigns, TimeProvider.System);
@@ -68,5 +68,27 @@ public class MenuPickQuestTests(MasterDatabaseFixture fixture) : ServiceTestBase
 
         EntityIUserQuest userQuest = userDb.EntityIUserQuest.Single(q => q.QuestId == quest.QuestId);
         Assert.Equal(isRetired ? (int)QuestStateType.ACTIVE : (int)QuestStateType.CLEARED, userQuest.QuestStateType);
+    }
+
+    [Fact]
+    public async Task MainFlowSceneProgress_BehindTheHead_LeavesStoryPosition()
+    {
+        (QuestService service, DarkUserMemoryDatabase userDb, long userId) = CreateService();
+        HashSet<int> mainQuestIds = [.. MasterDb.EntityMMainQuestSequence.Select(s => s.QuestId)];
+        List<EntityMQuestScene> scenes = [.. MasterDb.EntityMQuestScene
+            .Where(s => mainQuestIds.Contains(s.QuestId))
+            .OrderBy(s => s.SortOrder)];
+        EntityMQuestScene early = scenes[0];
+        EntityMQuestScene late = scenes[^1];
+
+        await service.UpdateMainFlowSceneProgress(new UpdateMainFlowSceneProgressRequest { QuestSceneId = late.QuestSceneId }, ContextFor(userId));
+        EntityIUserMainQuestMainFlowStatus mainFlow = userDb.EntityIUserMainQuestMainFlowStatus.GetOrCreate(userId);
+        int routeAfterLate = mainFlow.CurrentMainQuestRouteId;
+
+        await service.UpdateMainFlowSceneProgress(new UpdateMainFlowSceneProgressRequest { QuestSceneId = early.QuestSceneId }, ContextFor(userId));
+
+        Assert.Equal(late.QuestSceneId, mainFlow.CurrentQuestSceneId);
+        Assert.Equal(late.QuestSceneId, mainFlow.HeadQuestSceneId);
+        Assert.Equal(routeAfterLate, mainFlow.CurrentMainQuestRouteId);
     }
 }

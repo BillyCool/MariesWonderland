@@ -1254,12 +1254,15 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         int questSceneId,
         MainQuestSceneContext? sceneContext)
     {
+        // The story position only moves forward; a scene behind the head leaves it, and the route, alone.
         EntityIUserMainQuestMainFlowStatus mainFlowStatus = userDb.EntityIUserMainQuestMainFlowStatus.GetOrCreate(userId);
-        mainFlowStatus.CurrentQuestSceneId = questSceneId;
-        if (IsSceneAhead(questSceneId, mainFlowStatus.HeadQuestSceneId))
+        if (!IsSceneAhead(questSceneId, mainFlowStatus.HeadQuestSceneId))
         {
-            mainFlowStatus.HeadQuestSceneId = questSceneId;
+            return;
         }
+
+        mainFlowStatus.CurrentQuestSceneId = questSceneId;
+        mainFlowStatus.HeadQuestSceneId = questSceneId;
 
         if (sceneContext == null)
         {
