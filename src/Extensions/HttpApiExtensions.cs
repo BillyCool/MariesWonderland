@@ -8,7 +8,8 @@ namespace MariesWonderland.Extensions;
 
 /// <summary>
 /// Registers all non-gRPC HTTP endpoints: asset serving (list.bin, asset bundles, master database),
-/// debug save/load utilities, terms of service, and the catch-all fallback route.
+/// terms of service, and the catch-all fallback route. Debug save/load endpoints are mapped separately
+/// by <see cref="MapDebugApis"/> when dev mode allows it.
 /// </summary>
 public static class HttpApiExtensions
 {
@@ -17,7 +18,7 @@ public static class HttpApiExtensions
         Encoding.ASCII.GetBytes("https://resources.app.nierreincarnation.com");
 
     /// <summary>
-    /// Registers all HTTP endpoints, including asset serving, master database, debug utilities, and the catch-all route.
+    /// Registers all HTTP endpoints, including asset serving, master database, and the catch-all route.
     /// </summary>
     public static WebApplication MapHttpApis(this WebApplication app)
     {
@@ -25,45 +26,11 @@ public static class HttpApiExtensions
         string assetDatabaseBasePath = options.Paths.AssetDatabase;
         string masterDatabaseBasePath = options.Paths.MasterDatabase;
         string resourcesBaseUrl = options.Paths.ResourcesBaseUrl;
-        string userDatabasePath = Path.IsPathRooted(options.Data.UserDatabase)
-            ? options.Data.UserDatabase
-            : Path.Combine(AppContext.BaseDirectory, options.Data.UserDatabase);
 
         ILogger<AssetDatabase> assetLogger = app.Services.GetRequiredService<ILoggerFactory>().CreateLogger<AssetDatabase>();
         AssetDatabase assetDb = new(assetDatabaseBasePath, assetLogger);
 
         app.MapGet("/", () => "Marie's Wonderland is open for business :marie:");
-
-        // Debug endpoints for manual save/load
-        app.MapGet("/debug/save", () =>
-        {
-            try
-            {
-                UserDataStore store = app.Services.GetRequiredService<UserDataStore>();
-                store.Save(userDatabasePath);
-                return Results.Ok($"Saved {store.All.Count} users to {userDatabasePath}");
-            }
-            catch (Exception ex)
-            {
-                return Results.Problem($"Save failed: {ex.Message}");
-            }
-        });
-
-        app.MapGet("/debug/load", () =>
-        {
-            try
-            {
-                UserDataStore store = app.Services.GetRequiredService<UserDataStore>();
-                int count = store.Load(userDatabasePath);
-                return count > 0
-                    ? Results.Ok($"Loaded {count} users from {userDatabasePath}")
-                    : Results.Ok("No save file found.");
-            }
-            catch (Exception ex)
-            {
-                return Results.Problem($"Load failed: {ex.Message}");
-            }
-        });
 
         // ToS. Expects the version wrapped in delimiters like "###123###".
         app.MapGet("/web/static/{languagePath}/terms/termsofuse", (string languagePath) => $"<html><head><title>Terms of Service</title></head><body><h1>Terms of Service</h1><p>Language: {languagePath}</p><p>Version: ###123###</p></body></html>");
@@ -247,6 +214,49 @@ public static class HttpApiExtensions
         {
             app.Logger.LogWarning("Catchall endpoint hit for {Method} {Path}", ctx.Request.Method, ctx.Request.Path);
             return $"You requested: {catchAll}";
+        });
+
+        return app;
+    }
+
+    /// <summary>
+    /// Registers the dev-only /debug/save and /debug/load endpoints for manual snapshots of all user data.
+    /// </summary>
+    public static WebApplication MapDebugApis(this WebApplication app)
+    {
+        ServerOptions options = app.Services.GetRequiredService<IOptions<ServerOptions>>().Value;
+        string userDatabasePath = Path.IsPathRooted(options.Data.UserDatabase)
+            ? options.Data.UserDatabase
+            : Path.Combine(AppContext.BaseDirectory, options.Data.UserDatabase);
+
+        app.MapGet("/debug/save", () =>
+        {
+            try
+            {
+                UserDataStore store = app.Services.GetRequiredService<UserDataStore>();
+                store.Save(userDatabasePath);
+                return Results.Ok($"Saved {store.All.Count} users to {userDatabasePath}");
+            }
+            catch (Exception ex)
+            {
+                return Results.Problem($"Save failed: {ex.Message}");
+            }
+        });
+
+        app.MapGet("/debug/load", () =>
+        {
+            try
+            {
+                UserDataStore store = app.Services.GetRequiredService<UserDataStore>();
+                int count = store.Load(userDatabasePath);
+                return count > 0
+                    ? Results.Ok($"Loaded {count} users from {userDatabasePath}")
+                    : Results.Ok("No save file found.");
+            }
+            catch (Exception ex)
+            {
+                return Results.Problem($"Load failed: {ex.Message}");
+            }
         });
 
         return app;

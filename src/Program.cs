@@ -27,6 +27,9 @@ public static class Program
             });
         });
 
+        DevModeOptions devMode = builder.Configuration.GetSection(DevModeOptions.SectionName).Get<DevModeOptions>() ?? new();
+        builder.Services.Configure<DevModeOptions>(builder.Configuration.GetSection(DevModeOptions.SectionName));
+
         builder.Services.AddSingleton<CommonHeaderInterceptor>();
         builder.Services.AddSingleton<DiffInterceptor>();
         builder.Services.AddSingleton<LoggingInterceptor>();
@@ -36,7 +39,8 @@ public static class Program
             options.Interceptors.Add<LoggingInterceptor>();
             options.Interceptors.Add<DiffInterceptor>();
             options.Interceptors.Add<CommonHeaderInterceptor>();
-            options.Interceptors.Add<AutoSaveInterceptor>();
+            if (devMode.IsRequestJournalEnabled)
+                options.Interceptors.Add<AutoSaveInterceptor>();
         });
         builder.Services.AddServerOptions(builder.Configuration);
         builder.Services.AddDataStores(builder.Configuration);
@@ -58,6 +62,11 @@ public static class Program
 
         app.MapGrpcServices();
         app.MapHttpApis();
+        if (devMode.IsDebugEndpointsEnabled)
+            app.MapDebugApis();
+
+        if (devMode.Enabled)
+            app.Logger.LogWarning("DevMode is enabled. Don't use this configuration on a hosted server.");
 
         app.Run();
     }

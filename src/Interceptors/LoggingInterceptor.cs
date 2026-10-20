@@ -1,8 +1,10 @@
 using Google.Protobuf;
 using Grpc.Core;
 using Grpc.Core.Interceptors;
+using MariesWonderland.Configuration;
 using MariesWonderland.Proto.Data;
 using MariesWonderland.Proto.User;
+using Microsoft.Extensions.Options;
 using System.Text;
 using System.Text.Json;
 using System.Text.Json.Nodes;
@@ -11,12 +13,14 @@ namespace MariesWonderland.Interceptors;
 
 /// <summary>
 /// gRPC interceptor that logs every request/response pair. Writes compact JSON summaries to the
-/// configured logger at Debug level and full indented payloads to timestamped files in the GRPC/
-/// directory. Large fields (DiffUserData, UserDataJson, TableName) are stripped from log output
-/// to keep console logs readable.
+/// configured logger at Debug level and, when <see cref="DevModeOptions.GrpcDiskLog"/> is on, full
+/// indented payloads to timestamped files in the GRPC/ directory. Large fields (DiffUserData,
+/// UserDataJson, TableName) are stripped from log output to keep console logs readable.
 /// </summary>
-public class LoggingInterceptor(ILogger<LoggingInterceptor> logger) : Interceptor
+public class LoggingInterceptor(ILogger<LoggingInterceptor> logger, IOptions<DevModeOptions> devMode) : Interceptor
 {
+    private readonly bool _writeToDisk = devMode.Value.IsGrpcDiskLogEnabled;
+
     private static readonly List<string> ExcludedPropertyNames = [
         nameof(AuthUserResponse.DiffUserData),
         nameof(TableNameList.TableName),
@@ -50,7 +54,8 @@ public class LoggingInterceptor(ILogger<LoggingInterceptor> logger) : Intercepto
             logger.LogDebug("{Json}", SerializeForLog(response));
         }
 
-        _ = Task.Run(() => WriteToDisk(methodName, request, response));
+        if (_writeToDisk)
+            _ = Task.Run(() => WriteToDisk(methodName, request, response));
 
         return response;
     }
