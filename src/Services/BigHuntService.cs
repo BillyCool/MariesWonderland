@@ -5,7 +5,9 @@ using MariesWonderland.Extensions;
 using MariesWonderland.Helpers;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
+using MariesWonderland.Proto.Battle;
 using MariesWonderland.Proto.BigHunt;
+using MariesWonderland.Proto.Quest;
 
 namespace MariesWonderland.Services;
 
@@ -14,6 +16,7 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
 {
     private readonly UserDataStore _store = store;
     private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
+    private readonly QuestCampaignHelper _questCampaignHelper = new(masterDb);
 
     /// <summary>
     /// Begins a BigHunt quest run: deducts stamina for the selected quest, records the player's deck choice,
@@ -97,6 +100,7 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
         if (request.IsRetired || progress.IsDryRun)
         {
             ClearProgress(progress);
+            ClearBattleSession(session);
             return Task.FromResult(new FinishBigHuntQuestResponse
             {
                 ScoreInfo = new BigHuntScoreInfo(),
@@ -259,17 +263,13 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
 
         // Clear progress and battle state
         ClearProgress(progress);
-        session.BattleBinary = [];
-        session.TotalDamage = 0;
-        session.MaxComboCount = 0;
-        session.BossKnockDownCount = 0;
-        session.DeckType = 0;
-        session.UserTripleDeckNumber = 0;
+        BigHuntBattleReport battleReport = BuildBattleReport(session);
+        ClearBattleSession(session);
 
         FinishBigHuntQuestResponse response = new()
         {
             ScoreInfo = scoreInfo,
-            BattleReport = new BigHuntBattleReport()
+            BattleReport = battleReport
         };
         response.ScoreReward.AddRange(scoreRewards);
 
@@ -364,6 +364,25 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
             session.BossKnockDownCount = request.BigHuntBattleDetail.BossKnockDownCount;
             session.MaxComboCount = request.BigHuntBattleDetail.MaxComboCount;
             session.TotalDamage = totalDamage;
+
+            int waveIndex = NextWaveIndex(session);
+            foreach (CostumeBattleInfo ci in request.BigHuntBattleDetail.CostumeBattleInfo)
+            {
+                if (ci is null)
+                {
+                    continue;
+                }
+
+                session.BattleReportCostume.Add(new EntitySBigHuntBattleReportCostume
+                {
+                    WaveIndex = waveIndex,
+                    CostumeId = ResolveBigHuntCostumeId(userDb, ci.UserDeckNumber, ci.DeckCharacterNumber, session.DeckNumber),
+                    TotalDamage = ci.TotalDamage,
+                    HitCount = ci.HitCount,
+                    RandomDisplayValueType = ci.BattleReportRandomDisplay?.RandomDisplayValueType ?? 0,
+                    RandomDisplayValue = ci.BattleReportRandomDisplay?.RandomDisplayValue ?? 0
+                });
+            }
         }
 
         return Task.FromResult(new SaveBigHuntBattleInfoResponse());
@@ -493,13 +512,10 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
             // Drop rewards
             if (masterQuest is not null && masterQuest.QuestPickupRewardGroupId != 0)
             {
-                foreach (EntityMQuestPickupRewardGroup pickup in _masterDb.EntityMQuestPickupRewardGroup
-                    .Where(p => p.QuestPickupRewardGroupId == masterQuest.QuestPickupRewardGroupId))
+                List<QuestReward> dropRewards = BuildDropRewards(masterQuest, questId, nowMs);
+                foreach (QuestReward dropReward in dropRewards)
                 {
-                    EntityMBattleDropReward? drop = _masterDb.EntityMBattleDropReward
-                        .FirstOrDefault(d => d.BattleDropRewardId == pickup.BattleDropRewardId);
-                    if (drop != null)
-                        PossessionHelper.Apply(userDb, drop.PossessionType, drop.PossessionId, drop.Count, _masterDb);
+                    PossessionHelper.Apply(userDb, (PossessionType)dropReward.PossessionType, dropReward.PossessionId, dropReward.Count, _masterDb);
                 }
             }
 
@@ -725,6 +741,41 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
             ?? AddEntity(userDb.EntitySBigHuntSession, new EntitySBigHuntSession { UserId = userDb.UserId });
     }
 
+    private List<QuestReward> BuildDropRewards(EntityMQuest quest, int questId, long nowMs)
+    {
+        List<QuestReward> rewards = [];
+        if (quest.QuestPickupRewardGroupId == 0)
+        {
+            return rewards;
+        }
+
+        foreach (EntityMQuestPickupRewardGroup pickup in _masterDb.EntityMQuestPickupRewardGroup
+            .Where(p => p.QuestPickupRewardGroupId == quest.QuestPickupRewardGroupId))
+        {
+            EntityMBattleDropReward? drop = _masterDb.EntityMBattleDropReward
+                .FirstOrDefault(d => d.BattleDropRewardId == pickup.BattleDropRewardId);
+            if (drop == null)
+            {
+                continue;
+            }
+
+            rewards.Add(new QuestReward
+            {
+                PossessionType = (int)drop.PossessionType,
+                PossessionId = drop.PossessionId,
+                Count = drop.Count
+            });
+        }
+
+        return _questCampaignHelper.ApplyDropCampaignBonuses(
+            rewards,
+            _questCampaignHelper.GetBigHuntQuestTarget(questId),
+            nowMs);
+    }
+
+    private static int NextWaveIndex(EntitySBigHuntSession session)
+        => session.BattleReportCostume.Count == 0 ? 0 : session.BattleReportCostume.Max(c => c.WaveIndex) + 1;
+
     /// <summary>
     /// Resets all fields on a BigHunt progress status record to their default (no active hunt) values.
     /// </summary>
@@ -734,6 +785,89 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
         progress.CurrentBigHuntQuestId = 0;
         progress.CurrentQuestSceneId = 0;
         progress.IsDryRun = false;
+    }
+
+    private static void ClearBattleSession(EntitySBigHuntSession session)
+    {
+        session.BattleBinary = [];
+        session.TotalDamage = 0;
+        session.MaxComboCount = 0;
+        session.BossKnockDownCount = 0;
+        session.DeckType = 0;
+        session.UserTripleDeckNumber = 0;
+        session.BattleReportCostume.Clear();
+    }
+
+    private static BigHuntBattleReport BuildBattleReport(EntitySBigHuntSession session)
+    {
+        BigHuntBattleReport report = new();
+
+        foreach (IGrouping<int, EntitySBigHuntBattleReportCostume> wave in session.BattleReportCostume
+            .OrderBy(c => c.WaveIndex)
+            .GroupBy(c => c.WaveIndex))
+        {
+            BigHuntBattleReportWave reportWave = new();
+            foreach (EntitySBigHuntBattleReportCostume costume in wave)
+            {
+                reportWave.BattleReportCostume.Add(new BigHuntBattleReportCostume
+                {
+                    CostumeId = costume.CostumeId,
+                    TotalDamage = costume.TotalDamage,
+                    HitCount = costume.HitCount,
+                    BattleReportRandomDisplay = new BattleReportRandomDisplay
+                    {
+                        RandomDisplayValueType = costume.RandomDisplayValueType,
+                        RandomDisplayValue = costume.RandomDisplayValue
+                    }
+                });
+            }
+
+            report.BattleReportWave.Add(reportWave);
+        }
+
+        return report;
+    }
+
+    private static int ResolveBigHuntCostumeId(DarkUserMemoryDatabase userDb, int userDeckNumber, int deckCharacterNumber, int fallbackDeckNumber)
+    {
+        int deckNumber = userDeckNumber == 0 ? fallbackDeckNumber : userDeckNumber;
+        foreach (DeckType deckType in new[] { DeckType.BIG_HUNT, DeckType.QUEST })
+        {
+            EntityIUserDeck? deck = userDb.EntityIUserDeck
+                .FirstOrDefault(d => d.DeckType == deckType && d.UserDeckNumber == deckNumber);
+            if (deck is null)
+            {
+                continue;
+            }
+
+            string? deckCharacterUuid = deckCharacterNumber switch
+            {
+                1 => deck.UserDeckCharacterUuid01,
+                2 => deck.UserDeckCharacterUuid02,
+                3 => deck.UserDeckCharacterUuid03,
+                _ => null
+            };
+            if (string.IsNullOrEmpty(deckCharacterUuid))
+            {
+                continue;
+            }
+
+            EntityIUserDeckCharacter? deckCharacter = userDb.EntityIUserDeckCharacter
+                .FirstOrDefault(dc => dc.UserDeckCharacterUuid == deckCharacterUuid);
+            if (deckCharacter is null || string.IsNullOrEmpty(deckCharacter.UserCostumeUuid))
+            {
+                continue;
+            }
+
+            EntityIUserCostume? costume = userDb.EntityIUserCostume
+                .FirstOrDefault(c => c.UserCostumeUuid == deckCharacter.UserCostumeUuid);
+            if (costume is not null)
+            {
+                return costume.CostumeId;
+            }
+        }
+
+        return 0;
     }
 
     // ────────── Possession grant ──────────

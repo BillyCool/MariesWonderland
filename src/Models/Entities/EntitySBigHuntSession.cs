@@ -14,4 +14,15 @@ public class EntitySBigHuntSession : IUserEntity
     public int BossKnockDownCount { get; set; }
     public int MaxComboCount { get; set; }
     public long TotalDamage { get; set; }
+    public List<EntitySBigHuntBattleReportCostume> BattleReportCostume { get; set; } = [];
+}
+
+public class EntitySBigHuntBattleReportCostume
+{
+    public int WaveIndex { get; set; }
+    public int CostumeId { get; set; }
+    public long TotalDamage { get; set; }
+    public int HitCount { get; set; }
+    public int RandomDisplayValueType { get; set; }
+    public long RandomDisplayValue { get; set; }
 }
