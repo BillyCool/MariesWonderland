@@ -1,4 +1,4 @@
-﻿using Grpc.Core;
+using Grpc.Core;
 using MariesWonderland.Data;
 using MariesWonderland.Extensions;
 using MariesWonderland.Models.Entities;
@@ -160,6 +160,13 @@ public class DeckService(UserDataStore store) : MariesWonderland.Proto.Deck.Deck
     /// <summary>Stub for triple deck name update; returns empty response.</summary>
     public override Task<UpdateTripleDeckNameResponse> UpdateTripleDeckName(UpdateTripleDeckNameRequest request, ServerCallContext context)
     {
+        long userId = context.GetUserId();
+        DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
+
+        EntityIUserTripleDeck tripleDeck = GetOrCreateTripleDeck(userDb, (DeckType)request.DeckType, request.UserDeckNumber);
+        tripleDeck.Name = request.Name;
+        tripleDeck.LatestVersion = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+
         return Task.FromResult(new UpdateTripleDeckNameResponse());
     }
 
@@ -168,6 +175,7 @@ public class DeckService(UserDataStore store) : MariesWonderland.Proto.Deck.Deck
     {
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
+        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
 
         foreach (DeckDetail? detail in new[] { request.DeckDetail01, request.DeckDetail02, request.DeckDetail03 })
         {
@@ -178,6 +186,12 @@ public class DeckService(UserDataStore store) : MariesWonderland.Proto.Deck.Deck
 
             ApplyDeckReplacement(userDb, (DeckType)detail.DeckType, detail.UserDeckNumber, detail.Deck);
         }
+
+        EntityIUserTripleDeck tripleDeck = GetOrCreateTripleDeck(userDb, (DeckType)request.DeckType, request.UserDeckNumber);
+        tripleDeck.DeckNumber01 = request.DeckDetail01?.UserDeckNumber ?? 0;
+        tripleDeck.DeckNumber02 = request.DeckDetail02?.UserDeckNumber ?? 0;
+        tripleDeck.DeckNumber03 = request.DeckDetail03?.UserDeckNumber ?? 0;
+        tripleDeck.LatestVersion = nowMs;
 
         return Task.FromResult(new ReplaceTripleDeckResponse());
     }
@@ -254,6 +268,26 @@ public class DeckService(UserDataStore store) : MariesWonderland.Proto.Deck.Deck
 
     private static EntityIUserDeck? FindDeck(DarkUserMemoryDatabase userDb, DeckType deckType, int deckNumber) =>
         userDb.EntityIUserDeck.FirstOrDefault(d => d.DeckType == deckType && d.UserDeckNumber == deckNumber);
+
+    private static EntityIUserTripleDeck GetOrCreateTripleDeck(DarkUserMemoryDatabase userDb, DeckType deckType, int deckNumber)
+    {
+        EntityIUserTripleDeck? existing = userDb.EntityIUserTripleDeck
+            .FirstOrDefault(td => td.DeckType == deckType && td.UserDeckNumber == deckNumber);
+        if (existing is not null)
+        {
+            return existing;
+        }
+
+        EntityIUserTripleDeck tripleDeck = new()
+        {
+            UserId = userDb.UserId,
+            DeckType = deckType,
+            UserDeckNumber = deckNumber,
+            Name = string.Empty
+        };
+        userDb.EntityIUserTripleDeck.Add(tripleDeck);
+        return tripleDeck;
+    }
 
     private static void RemoveDeckLinkedRecords(DarkUserMemoryDatabase userDb, EntityIUserDeck deck)
     {
