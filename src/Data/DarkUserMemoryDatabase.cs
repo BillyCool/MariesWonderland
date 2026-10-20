@@ -239,6 +239,8 @@ public class DarkUserMemoryDatabase
 
     public List<EntitySBigHuntSession> EntitySBigHuntSession { get; set; } = [];
 
+    public List<EntitySQuestAutoOrbit> EntitySQuestAutoOrbit { get; set; } = [];
+
     public List<EntitySGachaBannerState> EntitySGachaBannerState { get; set; } = [];
 
     public List<EntitySGachaRewardState> EntitySGachaRewardState { get; set; } = [];

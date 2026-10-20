@@ -12,6 +12,9 @@ namespace MariesWonderland.Services;
 
 public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb, QuestEngine questEngine, QuestCampaignHelper questCampaignHelper, TimeProvider timeProvider) : MariesWonderland.Proto.Quest.QuestService.QuestServiceBase
 {
+    // Most runs one auto-orbit loop may be set to. The client's picker stops here; master data has no config for it.
+    private const int MaxAutoOrbitLoops = 10;
+
     private readonly UserDataStore _store = store;
     private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
     private readonly QuestEngine _questEngine = questEngine;
@@ -490,7 +493,6 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
 
         // Build response with all reward categories and clean up the server-side quest session
         FinishMainQuestResponse response = new() { IsBigWin = result.IsBigWin };
-        response.AutoOrbitReward = new QuestAutoOrbitResult();
         response.DropReward.AddRange(result.DropRewards);
         response.FirstClearReward.AddRange(result.FirstClearRewards);
         response.MissionClearReward.AddRange(result.MissionClearRewards);
@@ -501,7 +503,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
             response.BigWinClearedQuestMissionIdList.Add(result.BigWinMissionId);
         }
 
-        AdvanceQuestAutoOrbit(
+        response.AutoOrbitReward = AdvanceQuestAutoOrbit(
             userDb,
             userId,
             request.IsAutoOrbit,
@@ -510,6 +512,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
             QuestType.MAIN_QUEST,
             0,
             questId,
+            result.DropRewards,
             nowMs);
 
         userDb.EntitySQuestSession.RemoveAll(s => s.QuestId == questId);
@@ -732,7 +735,6 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         }
 
         FinishEventQuestResponse response = new() { IsBigWin = result.IsBigWin };
-        response.AutoOrbitReward = new QuestAutoOrbitResult();
         response.DropReward.AddRange(result.DropRewards);
         response.FirstClearReward.AddRange(result.FirstClearRewards);
         response.MissionClearReward.AddRange(result.MissionClearRewards);
@@ -742,7 +744,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
             response.BigWinClearedQuestMissionIdList.Add(result.BigWinMissionId);
         }
 
-        AdvanceQuestAutoOrbit(
+        response.AutoOrbitReward = AdvanceQuestAutoOrbit(
             userDb,
             userId,
             request.IsAutoOrbit,
@@ -751,6 +753,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
             QuestType.EVENT_QUEST,
             request.EventQuestChapterId,
             questId,
+            result.DropRewards,
             nowMs);
 
         userDb.EntitySQuestSession.RemoveAll(s => s.QuestId == questId);
@@ -758,21 +761,22 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         return Task.FromResult(response);
     }
 
-    /// <summary>Clears tracked auto-orbit state; accumulated reward replay remains unsupported by the current model.</summary>
+    /// <summary>
+    /// Ends the auto-orbit loop: returns the drops collected across its cleared runs (already granted run by run)
+    /// and clears the loop's counters and collected drops.
+    /// </summary>
     public override Task<FinishAutoOrbitResponse> FinishAutoOrbit(Empty request, ServerCallContext context)
     {
         long userId = context.GetUserId();
+        FinishAutoOrbitResponse response = new() { AutoOrbitReward = new QuestAutoOrbitResult() };
         if (_store.TryGet(userId, out DarkUserMemoryDatabase? userDb))
         {
+            response.AutoOrbitReward.DropReward.AddRange(CollectedAutoOrbitDrops(userDb));
             userDb.EntityIUserQuestAutoOrbit.RemoveAll(s => s.UserId == userId);
+            userDb.EntitySQuestAutoOrbit.Clear();
         }
 
-        return Task.FromResult(new FinishAutoOrbitResponse
-        {
-            // TODO: Return the drops accumulated across auto-orbit runs. They need a server-side
-            // EntityS table to accumulate into; until then FinishAutoOrbit only clears the counters.
-            AutoOrbitReward = new QuestAutoOrbitResult()
-        });
+        return Task.FromResult(response);
     }
 
     /// <summary>Sets the active main quest route and updates season route tracking.</summary>
@@ -1045,9 +1049,11 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         if (maxCount <= 0)
         {
             userDb.EntityIUserQuestAutoOrbit.RemoveAll(s => s.UserId == userId);
+            userDb.EntitySQuestAutoOrbit.Clear();
             return;
         }
 
+        maxCount = Math.Min(maxCount, MaxAutoOrbitLoops);
         EntityIUserQuestAutoOrbit state = userDb.EntityIUserQuestAutoOrbit.GetOrCreate(
             s => s.UserId == userId,
             () => new EntityIUserQuestAutoOrbit { UserId = userId });
@@ -1069,9 +1075,15 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         state.ClearedAutoOrbitCount = 0;
         state.LastClearDatetime = 0;
         state.LatestVersion = nowMs;
+        userDb.EntitySQuestAutoOrbit.Clear();
     }
 
-    private static bool AdvanceQuestAutoOrbit(
+    /// <summary>
+    /// Counts a finished run of the tracked auto-orbit loop and collects its drops. When this run ends the loop
+    /// (last run, retire, annihilation or auto-orbit switched off), the result lists every collected drop;
+    /// otherwise it is empty. The drops stay collected for <c>FinishAutoOrbit</c>.
+    /// </summary>
+    private static QuestAutoOrbitResult AdvanceQuestAutoOrbit(
         DarkUserMemoryDatabase userDb,
         long userId,
         bool isAutoOrbit,
@@ -1080,8 +1092,10 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         QuestType questType,
         int chapterId,
         int questId,
+        IEnumerable<QuestReward> drops,
         long nowMs)
     {
+        QuestAutoOrbitResult result = new();
         EntityIUserQuestAutoOrbit? state = userDb.EntityIUserQuestAutoOrbit.FirstOrDefault(s => s.UserId == userId);
         if (state == null
             || state.MaxAutoOrbitCount <= 0
@@ -1089,19 +1103,46 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
             || state.ChapterId != chapterId
             || state.QuestId != questId)
         {
-            return false;
+            return result;
         }
 
         if (!isRetired && !isAnnihilated)
         {
             state.ClearedAutoOrbitCount++;
+            EntitySQuestAutoOrbit collected = userDb.EntitySQuestAutoOrbit.GetOrCreate(
+                s => s.UserId == userId,
+                () => new EntitySQuestAutoOrbit { UserId = userId });
+            collected.Drops.AddRange(drops.Select(d => new EntitySQuestAutoOrbitDrop
+            {
+                PossessionType = d.PossessionType,
+                PossessionId = d.PossessionId,
+                Count = d.Count,
+                IsAutoSale = d.IsAutoSale
+            }));
         }
 
         state.LastClearDatetime = nowMs;
         state.LatestVersion = nowMs;
 
-        return !isAutoOrbit || isRetired || isAnnihilated || state.ClearedAutoOrbitCount >= state.MaxAutoOrbitCount;
+        bool loopEnded = !isAutoOrbit || isRetired || isAnnihilated || state.ClearedAutoOrbitCount >= state.MaxAutoOrbitCount;
+        if (loopEnded)
+        {
+            result.DropReward.AddRange(CollectedAutoOrbitDrops(userDb));
+        }
+
+        return result;
     }
+
+    private static IEnumerable<QuestReward> CollectedAutoOrbitDrops(DarkUserMemoryDatabase userDb)
+        => userDb.EntitySQuestAutoOrbit
+            .SelectMany(s => s.Drops)
+            .Select(d => new QuestReward
+            {
+                PossessionType = d.PossessionType,
+                PossessionId = d.PossessionId,
+                Count = d.Count,
+                IsAutoSale = d.IsAutoSale
+            });
 
     /// <summary>Returns true if <paramref name="newSceneId"/> is further along in narrative order than <paramref name="currentHeadId"/>, comparing by SortOrder (not scene ID).</summary>
     private bool IsSceneAhead(int newSceneId, int currentHeadId)
