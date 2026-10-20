@@ -70,7 +70,7 @@ public class QuestEngineTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         int expBefore = userDb.EntityIUserStatus[0].Exp;
         long goldBefore = GoldCount(userDb);
 
-        QuestFinishResult result = engine.Finish(userDb, quest, new QuestCampaignTarget(quest.QuestId, QuestType.MAIN_QUEST), isRetired: false, NowMs);
+        QuestFinishResult result = engine.Finish(userDb, quest, MainTarget(quest), isWin: true, NowMs);
 
         Assert.Equal((int)QuestStateType.CLEARED, userQuest.QuestStateType);
         Assert.Equal(1, userQuest.ClearCount);
@@ -83,27 +83,53 @@ public class QuestEngineTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
     }
 
     [Fact]
-    public void Finish_SecondWin_GivesNoFirstClearMissionOrBigWinRewards()
+    public void Finish_SecondWin_GrantsExpAndGoldButNoOneTimeRewards()
     {
         QuestEngine engine = CreateEngine();
         EntityMQuest quest = FindRewardingQuest();
         DarkUserMemoryDatabase userDb = CreateUser();
         EntityIUserQuest userQuest = engine.EnsureQuestRows(userDb, quest.QuestId);
-        QuestCampaignTarget target = new(quest.QuestId, QuestType.MAIN_QUEST);
 
-        engine.Finish(userDb, quest, target, isRetired: false, NowMs);
+        engine.Finish(userDb, quest, MainTarget(quest), isWin: true, NowMs);
         int expAfterFirst = userDb.EntityIUserStatus[0].Exp;
-        QuestFinishResult second = engine.Finish(userDb, quest, target, isRetired: false, NowMs);
+        long goldAfterFirst = GoldCount(userDb);
+        QuestFinishResult second = engine.Finish(userDb, quest, MainTarget(quest), isWin: true, NowMs);
 
         Assert.Empty(second.FirstClearRewards);
         Assert.Empty(second.MissionClearRewards);
         Assert.False(second.IsBigWin);
         Assert.Equal(2, userQuest.ClearCount);
-        Assert.Equal(expAfterFirst, userDb.EntityIUserStatus[0].Exp);
+        Assert.Equal(expAfterFirst + quest.UserExp, userDb.EntityIUserStatus[0].Exp);
+        Assert.True(GoldCount(userDb) - goldAfterFirst >= quest.Gold);
     }
 
     [Fact]
-    public void Finish_Retired_GrantsNothingAndDoesNotClear()
+    public void Finish_Win_GrantsMissionAndBigWinRewards()
+    {
+        QuestEngine engine = CreateEngine();
+        EntityMQuest quest = FindRewardingQuest();
+        DarkUserMemoryDatabase userDb = CreateUser();
+        engine.EnsureQuestRows(userDb, quest.QuestId);
+        int gemsBefore = userDb.EntityIUserGem[0].FreeGem;
+
+        QuestFinishResult result = engine.Finish(userDb, quest, MainTarget(quest), isWin: true, NowMs);
+
+        // Every free-gem reward in the result was granted, mission and big-win rewards included.
+        int listedGems = result.FirstClearRewards
+            .Concat(result.MissionClearRewards)
+            .Concat(result.MissionClearCompleteRewards)
+            .Concat(result.DropRewards)
+            .Where(r => r.PossessionType == (int)PossessionType.FREE_GEM)
+            .Sum(r => r.Count);
+        Assert.NotEmpty(result.MissionClearRewards.Concat(result.MissionClearCompleteRewards));
+        Assert.True(result.MissionClearRewards.Concat(result.MissionClearCompleteRewards).Any(r => r.PossessionType == (int)PossessionType.FREE_GEM));
+        Assert.Equal(gemsBefore + listedGems, userDb.EntityIUserGem[0].FreeGem);
+    }
+
+    [Theory]
+    [InlineData(true, false)]
+    [InlineData(false, true)]
+    public void Finish_Loss_GrantsNothingAndLeavesMissions(bool isRetired, bool isAnnihilated)
     {
         QuestEngine engine = CreateEngine();
         EntityMQuest quest = FindRewardingQuest();
@@ -113,13 +139,77 @@ public class QuestEngineTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         int expBefore = userDb.EntityIUserStatus[0].Exp;
         long goldBefore = GoldCount(userDb);
 
-        engine.Finish(userDb, quest, new QuestCampaignTarget(quest.QuestId, QuestType.MAIN_QUEST), isRetired: true, NowMs);
+        QuestFinishResult result = engine.Finish(userDb, quest, MainTarget(quest), isWin: !isRetired && !isAnnihilated, NowMs);
 
         Assert.Equal((int)QuestStateType.ACTIVE, userQuest.QuestStateType);
         Assert.Equal(0, userQuest.ClearCount);
         Assert.Equal(expBefore, userDb.EntityIUserStatus[0].Exp);
         Assert.Equal(goldBefore, GoldCount(userDb));
+        Assert.Empty(result.FirstClearRewards);
+        Assert.Empty(result.DropRewards);
+        Assert.All(userDb.EntityIUserQuestMission.Where(m => m.QuestId == quest.QuestId), m => Assert.False(m.IsClear));
     }
+
+    [Fact]
+    public void Finish_LossOfAClearedQuest_RestoresCleared()
+    {
+        QuestEngine engine = CreateEngine();
+        EntityMQuest quest = FindRewardingQuest();
+        DarkUserMemoryDatabase userDb = CreateUser();
+        EntityIUserQuest userQuest = engine.EnsureQuestRows(userDb, quest.QuestId);
+        engine.Finish(userDb, quest, MainTarget(quest), isWin: true, NowMs);
+        QuestEngine.MarkActive(userQuest, NowMs);
+
+        engine.Finish(userDb, quest, MainTarget(quest), isWin: false, NowMs);
+
+        Assert.Equal((int)QuestStateType.CLEARED, userQuest.QuestStateType);
+        Assert.Equal(1, userQuest.ClearCount);
+    }
+
+    [Fact]
+    public void Finish_UserLevelUp_RefillsStaminaToNewMax()
+    {
+        QuestEngine engine = CreateEngine();
+        EntityMQuest quest = FindRewardingQuest();
+        DarkUserMemoryDatabase userDb = CreateUser();
+        engine.EnsureQuestRows(userDb, quest.QuestId);
+        EntityIUserStatus status = userDb.EntityIUserStatus[0];
+        status.Level = 1;
+        status.Exp = UserLevelThreshold(2) - 1;
+        status.StaminaMilliValue = 0;
+
+        engine.Finish(userDb, quest, MainTarget(quest), isWin: true, NowMs);
+
+        Assert.True(status.Level >= 2);
+        Assert.Equal(MasterDb.EntityMUserLevel.Find(status.Level)!.MaxStamina * 1000, status.StaminaMilliValue);
+    }
+
+    [Fact]
+    public void Finish_AtMaxLevel_CapsUserExp()
+    {
+        QuestEngine engine = CreateEngine();
+        EntityMQuest quest = FindRewardingQuest();
+        DarkUserMemoryDatabase userDb = CreateUser();
+        engine.EnsureQuestRows(userDb, quest.QuestId);
+        int maxLevelExp = MasterDb.EntityMNumericalParameterMap
+            .Where(r => r.NumericalParameterMapId == LevelHelper.UserExpMapId)
+            .Max(r => r.ParameterValue);
+        EntityIUserStatus status = userDb.EntityIUserStatus[0];
+        (status.Level, status.Exp) = LevelHelper.ApplyExp(MasterDb, LevelHelper.UserExpMapId, maxLevelExp);
+        int maxLevel = status.Level;
+
+        engine.Finish(userDb, quest, MainTarget(quest), isWin: true, NowMs);
+
+        Assert.Equal(maxLevelExp, status.Exp);
+        Assert.Equal(maxLevel, status.Level);
+    }
+
+    private static QuestCampaignTarget MainTarget(EntityMQuest quest) => new(quest.QuestId, QuestType.MAIN_QUEST);
+
+    private int UserLevelThreshold(int level)
+        => MasterDb.EntityMNumericalParameterMap
+            .Single(r => r.NumericalParameterMapId == LevelHelper.UserExpMapId && r.ParameterKey == level)
+            .ParameterValue;
 
     [Fact]
     public void ResetMissionProgress_UnclearsTheQuestsMissions()

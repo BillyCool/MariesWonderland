@@ -30,4 +30,14 @@ public static class StaminaHelper
     /// <param name="nowMs">Current Unix timestamp in milliseconds for the update datetime.</param>
     public static void AddStamina(EntityIUserStatus status, int amount, GameConfig gameConfig, long nowMs)
         => AddStamina(status, amount, gameConfig.StaminaMaxCount, nowMs);
+
+    /// <summary>
+    /// Raises regular stamina to <paramref name="maxStamina"/> (the level's maximum), as on a level-up.
+    /// Stamina already above it is kept.
+    /// </summary>
+    public static void RefillToMax(EntityIUserStatus status, int maxStamina, long nowMs)
+    {
+        status.StaminaMilliValue = Math.Max(status.StaminaMilliValue, maxStamina * 1000);
+        status.StaminaUpdateDatetime = nowMs;
+    }
 }

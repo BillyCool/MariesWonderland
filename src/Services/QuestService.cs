@@ -386,7 +386,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
 
         long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
         int questId = request.QuestId;
-        bool isRetired = request.IsRetired;
+        bool isWin = !request.IsRetired && !request.IsAnnihilated;
 
         EntityMQuest? quest = _questEngine.FindQuest(questId);
         if (quest == null) return Task.FromResult(new FinishMainQuestResponse());
@@ -395,7 +395,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         List<QuestReward> replayFlowFirstClearRewards = [];
         EntityIUserMainQuestFlowStatus? currentFlowStatus = userDb.EntityIUserMainQuestFlowStatus.FirstOrDefault(s => s.UserId == userId);
         bool wasReplayFlow = currentFlowStatus?.CurrentQuestFlowType == QuestFlowType.REPLAY_FLOW;
-        if (wasReplayFlow && quest.QuestReplayFlowRewardGroupId > 0)
+        if (isWin && wasReplayFlow && quest.QuestReplayFlowRewardGroupId > 0)
         {
             foreach (EntityMQuestReplayFlowRewardGroup reward in _masterDb.EntityMQuestReplayFlowRewardGroup
                 .Where(r => r.QuestReplayFlowRewardGroupId == quest.QuestReplayFlowRewardGroupId))
@@ -409,9 +409,9 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
             }
         }
 
-        QuestFinishResult result = _questEngine.Finish(userDb, quest, _questCampaignHelper.GetMainQuestTarget(questId), isRetired, nowMs);
+        QuestFinishResult result = _questEngine.Finish(userDb, quest, _questCampaignHelper.GetMainQuestTarget(questId), isWin, nowMs);
 
-        if (!isRetired)
+        if (isWin)
         {
             foreach (QuestReward replayReward in replayFlowFirstClearRewards)
             {
@@ -471,7 +471,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
             userDb,
             userId,
             request.IsAutoOrbit,
-            isRetired,
+            request.IsRetired,
             request.IsAnnihilated,
             QuestType.MAIN_QUEST,
             0,
@@ -569,7 +569,8 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         EntityMQuest? quest = _questEngine.FindQuest(questId);
         if (quest == null) return Task.FromResult(new FinishExtraQuestResponse());
 
-        QuestFinishResult result = _questEngine.Finish(userDb, quest, _questCampaignHelper.GetExtraQuestTarget(questId), request.IsRetired, nowMs);
+        bool isWin = !request.IsRetired && !request.IsAnnihilated;
+        QuestFinishResult result = _questEngine.Finish(userDb, quest, _questCampaignHelper.GetExtraQuestTarget(questId), isWin, nowMs);
 
         // Reset extra quest progress (always)
         EntityIUserExtraQuestProgressStatus? extraProgress = userDb.EntityIUserExtraQuestProgressStatus
@@ -677,12 +678,12 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
 
         long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
         int questId = request.QuestId;
-        bool isRetired = request.IsRetired;
+        bool isWin = !request.IsRetired && !request.IsAnnihilated;
 
         EntityMQuest? quest = _questEngine.FindQuest(questId);
         if (quest == null) return Task.FromResult(new FinishEventQuestResponse());
 
-        QuestFinishResult result = _questEngine.Finish(userDb, quest, ResolveEventQuestCampaignTarget(userDb, userId, questId), isRetired, nowMs);
+        QuestFinishResult result = _questEngine.Finish(userDb, quest, ResolveEventQuestCampaignTarget(userDb, userId, questId), isWin, nowMs);
 
         // Reset event quest progress (always)
         EntityIUserEventQuestProgressStatus? progressStatus = userDb.EntityIUserEventQuestProgressStatus
@@ -709,7 +710,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
             userDb,
             userId,
             request.IsAutoOrbit,
-            isRetired,
+            request.IsRetired,
             request.IsAnnihilated,
             QuestType.EVENT_QUEST,
             request.EventQuestChapterId,

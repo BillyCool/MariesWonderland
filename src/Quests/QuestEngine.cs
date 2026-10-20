@@ -73,13 +73,25 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
     }
 
     /// <summary>
-    /// Finishes a run: works out the first-clear, mission, big-win and drop rewards; on a win (not retired)
-    /// grants them with first-clear EXP and gold and marks the quest cleared. The quest's missions are
-    /// marked cleared either way.
+    /// Finishes a run. A win grants EXP and gold, first-clear rewards (first clear only), the rewards of
+    /// missions not yet cleared plus the big win when this run completes them, and drops; then marks the
+    /// quest and its missions cleared. A loss (retired or annihilated) grants nothing and leaves the
+    /// missions as they were; a quest cleared before goes back to <see cref="QuestStateType.CLEARED"/>.
     /// </summary>
-    public QuestFinishResult Finish(DarkUserMemoryDatabase userDb, EntityMQuest quest, QuestCampaignTarget campaignTarget, bool isRetired, long nowMs)
+    public QuestFinishResult Finish(DarkUserMemoryDatabase userDb, EntityMQuest quest, QuestCampaignTarget campaignTarget, bool isWin, long nowMs)
     {
         EntityIUserQuest userQuest = GetOrCreateUserQuest(userDb, quest.QuestId);
+
+        if (!isWin)
+        {
+            if (userQuest.ClearCount > 0 && userQuest.QuestStateType == (int)QuestStateType.ACTIVE)
+            {
+                userQuest.QuestStateType = (int)QuestStateType.CLEARED;
+            }
+
+            return new QuestFinishResult();
+        }
+
         bool isFirstClear = userQuest.ClearCount == 0;
 
         List<EntityMQuestFirstClearRewardGroup> firstClearRows = isFirstClear ? ResolveFirstClearRewardRows(userDb, quest) : [];
@@ -120,26 +132,27 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
             }
         }
 
-        List<QuestReward> dropRewards = BuildDropRewards(quest, campaignTarget, nowMs);
+        ApplyExpRewards(userDb, quest, nowMs);
+        ApplyGoldReward(userDb, quest, nowMs);
 
-        if (!isRetired)
+        if (isFirstClear)
         {
-            if (isFirstClear)
+            foreach (EntityMQuestFirstClearRewardGroup row in firstClearRows)
             {
-                ApplyExpRewards(userDb, quest);
-                ApplyGoldReward(userDb, quest, nowMs);
-                foreach (EntityMQuestFirstClearRewardGroup row in firstClearRows)
-                {
-                    PossessionHelper.Apply(userDb, row.PossessionType, row.PossessionId, row.Count, _masterDb, nowMs);
-                }
-
-                ApplyWeaponStoryUnlocks(userDb, quest.QuestId);
+                PossessionHelper.Apply(userDb, row.PossessionType, row.PossessionId, row.Count, _masterDb, nowMs);
             }
 
-            dropRewards = ApplyDropRewards(userDb, dropRewards, nowMs);
-            MarkCleared(userQuest, 1, nowMs);
+            ApplyWeaponStoryUnlocks(userDb, quest.QuestId);
         }
 
+        // Only missions not cleared yet are listed, so each mission's reward is granted once.
+        foreach (QuestReward reward in missionClearRewards.Concat(bigWinRewards))
+        {
+            PossessionHelper.Apply(userDb, (PossessionType)reward.PossessionType, reward.PossessionId, reward.Count, _masterDb, nowMs);
+        }
+
+        List<QuestReward> dropRewards = ApplyDropRewards(userDb, BuildDropRewards(quest, campaignTarget, nowMs), nowMs);
+        MarkCleared(userQuest, 1, nowMs);
         ClearQuestMissions(userDb, quest.QuestId, nowMs);
 
         return new QuestFinishResult
@@ -158,7 +171,7 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
     {
         List<QuestReward> drops = ApplyDropRewards(userDb, BuildDropRewards(quest, campaignTarget, nowMs), nowMs);
         ApplyGoldReward(userDb, quest, nowMs);
-        ApplyExpRewards(userDb, quest);
+        ApplyExpRewards(userDb, quest, nowMs);
         return drops;
     }
 
@@ -386,15 +399,24 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
     private static QuestReward ToReward(PossessionType possessionType, int possessionId, int count)
         => new() { PossessionType = (int)possessionType, PossessionId = possessionId, Count = count };
 
-    /// <summary>Applies user, character and costume EXP. Rental quests skip character and costume EXP.</summary>
-    private void ApplyExpRewards(DarkUserMemoryDatabase userDb, EntityMQuest quest)
+    /// <summary>
+    /// Applies user, character and costume EXP, capped at each map's max level. A user level-up refills
+    /// stamina to the new level's maximum. Rental quests skip character and costume EXP.
+    /// </summary>
+    private void ApplyExpRewards(DarkUserMemoryDatabase userDb, EntityMQuest quest, long nowMs)
     {
         // User EXP is always applied regardless of deck.
         EntityIUserStatus? status = userDb.EntityIUserStatus.FirstOrDefault();
         if (status != null)
         {
-            status.Exp += quest.UserExp;
-            status.Level = LevelHelper.LevelForExp(_masterDb, LevelHelper.UserExpMapId, status.Exp);
+            int previousLevel = status.Level;
+            (status.Level, status.Exp) = LevelHelper.ApplyExp(_masterDb, LevelHelper.UserExpMapId, status.Exp + quest.UserExp);
+
+            EntityMUserLevel? userLevel = _masterDb.EntityMUserLevel.Find(status.Level);
+            if (status.Level > previousLevel && userLevel != null)
+            {
+                StaminaHelper.RefillToMax(status, userLevel.MaxStamina, nowMs);
+            }
         }
 
         // Rental quests use borrowed characters; EXP is not awarded to the player's own roster.
@@ -453,8 +475,7 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
 
         foreach (EntityIUserCharacter character in userDb.EntityIUserCharacter.Where(c => characterIds.Contains(c.CharacterId)))
         {
-            character.Exp += quest.CharacterExp;
-            character.Level = LevelHelper.LevelForExp(_masterDb, LevelHelper.CharacterExpMapId, character.Exp);
+            (character.Level, character.Exp) = LevelHelper.ApplyExp(_masterDb, LevelHelper.CharacterExpMapId, character.Exp + quest.CharacterExp);
         }
 
         foreach (EntityIUserCostume costume in userDb.EntityIUserCostume.Where(c => costumeUuids.Contains(c.UserCostumeUuid)))
@@ -471,8 +492,7 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
                 continue;
             }
 
-            costume.Exp += quest.CostumeExp;
-            costume.Level = LevelHelper.LevelForExp(_masterDb, rarity.RequiredExpForLevelUpNumericalParameterMapId, costume.Exp);
+            (costume.Level, costume.Exp) = LevelHelper.ApplyExp(_masterDb, rarity.RequiredExpForLevelUpNumericalParameterMapId, costume.Exp + quest.CostumeExp);
         }
     }
 

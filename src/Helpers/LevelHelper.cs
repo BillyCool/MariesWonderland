@@ -33,4 +33,19 @@ public static class LevelHelper
 
         return level;
     }
+
+    /// <summary>
+    /// Returns the level for <paramref name="exp"/> and the EXP to store, which stops at the max level's
+    /// threshold so EXP doesn't pile up past the cap.
+    /// </summary>
+    public static (int Level, int Exp) ApplyExp(DarkMasterMemoryDatabase masterDb, int numericalParameterMapId, int exp)
+    {
+        int maxLevelExp = masterDb.EntityMNumericalParameterMap
+            .Where(r => r.NumericalParameterMapId == numericalParameterMapId)
+            .Select(r => r.ParameterValue)
+            .DefaultIfEmpty(int.MaxValue)
+            .Max();
+        int cappedExp = Math.Min(exp, maxLevelExp);
+        return (LevelForExp(masterDb, numericalParameterMapId, cappedExp), cappedExp);
+    }
 }
