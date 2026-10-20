@@ -1,3 +1,5 @@
+using MariesWonderland.Models.Type;
+
 namespace MariesWonderland.Models.Entities;
 
 /// <summary>
@@ -10,4 +12,9 @@ public class EntitySQuestSession : IUserEntity
     public long UserId { get; set; }
     public int QuestId { get; set; }
     public int UserDeckNumber { get; set; }
+    public int CurrentEventQuestChapterId { get; set; }
+    public int CurrentQuestSceneId { get; set; }
+    public int HeadQuestSceneId { get; set; }
+    public QuestFlowType CurrentQuestFlowType { get; set; }
+    public bool IsBattleOnly { get; set; }
 }

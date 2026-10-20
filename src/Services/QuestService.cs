@@ -11,8 +11,11 @@ namespace MariesWonderland.Services;
 
 public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb) : MariesWonderland.Proto.Quest.QuestService.QuestServiceBase
 {
+    private const int QuestGoldConsumableItemId = 1;
+
     private readonly UserDataStore _store = store;
     private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
+    private readonly QuestCampaignHelper _questCampaignHelper = new(masterDb);
 
     /// <summary>Advances the main story flow to the specified quest scene and updates route/progress tracking.</summary>
     public override Task<UpdateMainFlowSceneProgressResponse> UpdateMainFlowSceneProgress(UpdateMainFlowSceneProgressRequest request, ServerCallContext context)
@@ -40,6 +43,14 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         EntityIUserPortalCageStatus portalCageStatus = userDb.EntityIUserPortalCageStatus.GetOrCreate(userId);
         portalCageStatus.IsCurrentProgress = false;
 
+        EntityMQuestScene? scene = _masterDb.EntityMQuestScene.FirstOrDefault(s => s.QuestSceneId == questSceneId);
+        if (scene != null)
+        {
+            EntitySQuestSession? session = userDb.EntitySQuestSession.FirstOrDefault(s => s.UserId == userId && s.QuestId == scene.QuestId);
+            if (session != null)
+                UpdateQuestSessionState(session, questSceneId, GetHeadSceneId(session.HeadQuestSceneId, questSceneId), QuestFlowType.MAIN_FLOW);
+        }
+
         ApplySceneGrants(userDb, questSceneId);
 
         return Task.FromResult(new UpdateMainFlowSceneProgressResponse());
@@ -57,6 +68,17 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         replayFlowStatus.CurrentQuestSceneId = questSceneId;
         if (IsSceneAhead(questSceneId, replayFlowStatus.CurrentHeadQuestSceneId))
             replayFlowStatus.CurrentHeadQuestSceneId = questSceneId;
+
+        EntityMQuestScene? scene = _masterDb.EntityMQuestScene.FirstOrDefault(s => s.QuestSceneId == questSceneId);
+        if (scene != null)
+        {
+            EntitySQuestSession session = GetOrCreateQuestSession(userDb, userId, scene.QuestId);
+            QuestFlowType replayFlowType = userDb.EntityIUserMainQuestFlowStatus.FirstOrDefault(s => s.UserId == userId)?.CurrentQuestFlowType
+                == QuestFlowType.ANOTHER_ROUTE_REPLAY_FLOW
+                ? QuestFlowType.ANOTHER_ROUTE_REPLAY_FLOW
+                : QuestFlowType.REPLAY_FLOW;
+            UpdateQuestSessionState(session, questSceneId, replayFlowStatus.CurrentHeadQuestSceneId, replayFlowType);
+        }
 
         return Task.FromResult(new UpdateReplayFlowSceneProgressResponse());
     }
@@ -101,11 +123,18 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
             if (IsSceneAhead(questSceneId, progressStatus.HeadQuestSceneId))
                 progressStatus.HeadQuestSceneId = questSceneId;
             progressStatus.CurrentQuestFlowType = QuestFlowType.SUB_FLOW;
+
+            EntitySQuestSession session = GetOrCreateQuestSession(userDb, userId, scene!.QuestId);
+            UpdateQuestSessionState(session, questSceneId, progressStatus.HeadQuestSceneId, QuestFlowType.SUB_FLOW);
         }
         else if (scene != null)
         {
             // Non-playable quests (background, cutscene, etc.) update the main flow scene position
             ApplyMainFlowSceneProgress(userDb, userId, questSceneId, sceneContext);
+
+            EntitySQuestSession? session = userDb.EntitySQuestSession.FirstOrDefault(s => s.UserId == userId && s.QuestId == scene.QuestId);
+            if (session != null)
+                UpdateQuestSessionState(session, questSceneId, GetHeadSceneId(session.HeadQuestSceneId, questSceneId), QuestFlowType.MAIN_FLOW);
         }
 
         UpdateMainQuestSceneProgressResponse response = new();
@@ -126,9 +155,14 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         if (IsSceneAhead(questSceneId, progressStatus.HeadQuestSceneId))
             progressStatus.HeadQuestSceneId = questSceneId;
 
-        ApplySceneGrants(userDb, questSceneId);
-
         EntityMQuestScene? scene = _masterDb.EntityMQuestScene.FirstOrDefault(s => s.QuestSceneId == questSceneId);
+        if (scene != null)
+        {
+            EntitySQuestSession session = GetOrCreateQuestSession(userDb, userId, scene.QuestId);
+            UpdateQuestSessionState(session, questSceneId, progressStatus.HeadQuestSceneId, QuestFlowType.SUB_FLOW);
+        }
+
+        ApplySceneGrants(userDb, questSceneId);
         if (scene != null && scene.QuestResultType == QuestResultType.HALF_RESULT)
         {
             ClearQuestMissions(userDb, scene.QuestId, nowMs);
@@ -151,9 +185,14 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         if (IsSceneAhead(questSceneId, progressStatus.HeadQuestSceneId))
             progressStatus.HeadQuestSceneId = questSceneId;
 
-        ApplySceneGrants(userDb, questSceneId);
-
         EntityMQuestScene? scene = _masterDb.EntityMQuestScene.FirstOrDefault(s => s.QuestSceneId == questSceneId);
+        if (scene != null)
+        {
+            EntitySQuestSession session = GetOrCreateQuestSession(userDb, userId, scene.QuestId);
+            UpdateQuestSessionState(session, questSceneId, progressStatus.HeadQuestSceneId, QuestFlowType.SUB_FLOW, progressStatus.CurrentEventQuestChapterId);
+        }
+
+        ApplySceneGrants(userDb, questSceneId);
         if (scene != null && scene.QuestResultType == QuestResultType.HALF_RESULT)
         {
             ClearQuestMissions(userDb, scene.QuestId, nowMs);
@@ -207,11 +246,16 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
                 userQuest.LatestStartDatetime = nowMs;
                 userQuest.IsBattleOnly = request.IsBattleOnly;
 
-                EntitySQuestSession replaySession = userDb.EntitySQuestSession.GetOrCreate(
-                    s => s.QuestId == questId,
-                    () => new EntitySQuestSession { UserId = userId, QuestId = questId });
+                EntitySQuestSession replaySession = GetOrCreateQuestSession(userDb, userId, questId);
                 replaySession.UserDeckNumber = request.UserDeckNumber;
+                replaySession.IsBattleOnly = request.IsBattleOnly;
+                replaySession.CurrentQuestFlowType = QuestFlowType.REPLAY_FLOW;
+                int replayStartSceneId = GetQuestStartSceneId(questId, request.IsBattleOnly);
+                replaySession.CurrentQuestSceneId = replayStartSceneId;
+                replaySession.HeadQuestSceneId = replayStartSceneId;
             }
+
+            StartQuestAutoOrbit(userDb, userId, QuestType.MAIN_QUEST, 0, questId, request.MaxAutoOrbitCount, nowMs);
 
             StartMainQuestResponse earlyResponse = new();
             earlyResponse.BattleDropReward.AddRange(BuildBattleDropRewards(questId));
@@ -220,12 +264,15 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
 
         userQuest.IsBattleOnly = request.IsBattleOnly;
 
-        EntitySQuestSession startSession = userDb.EntitySQuestSession.GetOrCreate(
-            s => s.QuestId == questId,
-            () => new EntitySQuestSession { UserId = userId, QuestId = questId });
+        EntitySQuestSession startSession = GetOrCreateQuestSession(userDb, userId, questId);
         startSession.UserDeckNumber = request.UserDeckNumber;
+        startSession.IsBattleOnly = request.IsBattleOnly;
 
         bool isPlayable = quest != null && !quest.IsRunInTheBackground && quest.IsCountedAsQuest;
+        int startSceneId = GetQuestStartSceneId(questId, request.IsBattleOnly);
+        startSession.CurrentQuestFlowType = isPlayable ? QuestFlowType.SUB_FLOW : QuestFlowType.MAIN_FLOW;
+        startSession.CurrentQuestSceneId = startSceneId;
+        startSession.HeadQuestSceneId = startSceneId;
         if (isPlayable)
         {
             EntityIUserMainQuestFlowStatus flowStatus = userDb.EntityIUserMainQuestFlowStatus.GetOrCreate(userId);
@@ -239,15 +286,11 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
 
             // For battle-only quests the client skips UpdateMainQuestSceneProgress, so ProgressStatus
             // would never have the battle scene set. Explicitly set it here.
-            if (request.IsBattleOnly)
+            if (request.IsBattleOnly && startSceneId != 0)
             {
-                EntityMQuestScene? battleScene = _masterDb.EntityMQuestScene.FirstOrDefault(s => s.QuestId == questId && s.IsBattleOnlyTarget);
-                if (battleScene != null)
-                {
-                    progressStatus.CurrentQuestSceneId = battleScene.QuestSceneId;
-                    progressStatus.HeadQuestSceneId = Math.Max(progressStatus.HeadQuestSceneId, battleScene.QuestSceneId);
-                    progressStatus.CurrentQuestFlowType = QuestFlowType.SUB_FLOW;
-                }
+                progressStatus.CurrentQuestSceneId = startSceneId;
+                progressStatus.HeadQuestSceneId = GetHeadSceneId(progressStatus.HeadQuestSceneId, startSceneId);
+                progressStatus.CurrentQuestFlowType = QuestFlowType.SUB_FLOW;
             }
 
             // Ensure ReplayFlowStatus singleton exists so it is always included in the delta.
@@ -269,17 +312,15 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
             userQuest.LastClearDatetime = nowMs;
 
             // Set scene IDs from the first scene of this quest
-            EntityMQuestScene? firstScene = _masterDb.EntityMQuestScene
-                .Where(s => s.QuestId == questId)
-                .OrderBy(s => s.SortOrder)
-                .FirstOrDefault();
-            if (firstScene != null)
+            if (startSceneId != 0)
             {
                 EntityIUserMainQuestFlowStatus flowStatus = userDb.EntityIUserMainQuestFlowStatus.GetOrCreate(userId);
                 flowStatus.CurrentQuestFlowType = QuestFlowType.MAIN_FLOW;
-                ApplyMainFlowSceneProgress(userDb, userId, firstScene.QuestSceneId, ResolveMainQuestSceneContext(firstScene.QuestSceneId));
+                ApplyMainFlowSceneProgress(userDb, userId, startSceneId, ResolveMainQuestSceneContext(startSceneId));
             }
         }
+
+        StartQuestAutoOrbit(userDb, userId, QuestType.MAIN_QUEST, 0, questId, request.MaxAutoOrbitCount, nowMs);
 
         StartMainQuestResponse response = new();
         response.BattleDropReward.AddRange(BuildBattleDropRewards(questId));
@@ -300,16 +341,64 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
             () => new EntityIUserQuest { UserId = userId, QuestId = questId });
 
         userQuest.QuestStateType = (int)QuestStateType.ACTIVE;
-        userQuest.IsBattleOnly = false;
         userQuest.LatestStartDatetime = nowMs;
 
-        EntitySQuestSession restartSession = userDb.EntitySQuestSession.GetOrCreate(
-            s => s.QuestId == questId,
-            () => new EntitySQuestSession { UserId = userId, QuestId = questId });
+        EntitySQuestSession restartSession = GetOrCreateQuestSession(userDb, userId, questId);
+        userQuest.IsBattleOnly = restartSession.IsBattleOnly;
+        int restoredSceneId = restartSession.CurrentQuestSceneId != 0
+            ? restartSession.CurrentQuestSceneId
+            : GetQuestStartSceneId(questId, restartSession.IsBattleOnly);
+        int restoredHeadSceneId = restartSession.HeadQuestSceneId != 0
+            ? restartSession.HeadQuestSceneId
+            : restoredSceneId;
 
-        // Reset flow to MAIN_FLOW on retry so the client re-enters the quest from the beginning.
         EntityIUserMainQuestFlowStatus flowStatus = userDb.EntityIUserMainQuestFlowStatus.GetOrCreate(userId);
-        flowStatus.CurrentQuestFlowType = QuestFlowType.MAIN_FLOW;
+        EntityMQuest? quest = _masterDb.EntityMQuest.FirstOrDefault(q => q.QuestId == questId);
+        bool isPlayableMainQuest = quest != null && !quest.IsRunInTheBackground && quest.IsCountedAsQuest;
+        QuestFlowType restoredFlowType = restartSession.CurrentQuestFlowType;
+        if (restoredFlowType == QuestFlowType.UNKNOWN)
+            restoredFlowType = isPlayableMainQuest ? QuestFlowType.SUB_FLOW : QuestFlowType.MAIN_FLOW;
+        flowStatus.CurrentQuestFlowType = restoredFlowType;
+
+        if (isPlayableMainQuest)
+        {
+            if (restoredFlowType == QuestFlowType.REPLAY_FLOW || restoredFlowType == QuestFlowType.ANOTHER_ROUTE_REPLAY_FLOW)
+            {
+                EntityIUserMainQuestReplayFlowStatus replayFlowStatus = userDb.EntityIUserMainQuestReplayFlowStatus.GetOrCreate(userId);
+                replayFlowStatus.CurrentQuestSceneId = restoredSceneId;
+                replayFlowStatus.CurrentHeadQuestSceneId = restoredHeadSceneId;
+
+                EntityIUserMainQuestProgressStatus progressStatus = userDb.EntityIUserMainQuestProgressStatus.GetOrCreate(userId);
+                progressStatus.CurrentQuestSceneId = 0;
+                progressStatus.HeadQuestSceneId = 0;
+                progressStatus.CurrentQuestFlowType = QuestFlowType.UNKNOWN;
+            }
+            else
+            {
+                EntityIUserMainQuestProgressStatus progressStatus = userDb.EntityIUserMainQuestProgressStatus.GetOrCreate(userId);
+                progressStatus.CurrentQuestSceneId = restoredSceneId;
+                progressStatus.HeadQuestSceneId = restoredHeadSceneId;
+                progressStatus.CurrentQuestFlowType = QuestFlowType.SUB_FLOW;
+
+                EntityIUserMainQuestReplayFlowStatus replayFlowStatus = userDb.EntityIUserMainQuestReplayFlowStatus.GetOrCreate(userId);
+                replayFlowStatus.CurrentQuestSceneId = 0;
+                replayFlowStatus.CurrentHeadQuestSceneId = 0;
+            }
+
+            MainQuestSceneContext? sceneContext = ResolveMainQuestSceneContext(restoredSceneId);
+            if (sceneContext != null)
+            {
+                EntityIUserMainQuestMainFlowStatus mainFlowStatus = userDb.EntityIUserMainQuestMainFlowStatus.GetOrCreate(userId);
+                ApplyMainQuestRoute(userDb, userId, mainFlowStatus, sceneContext.RouteId, sceneContext.SeasonId);
+            }
+        }
+        else if (restoredSceneId != 0)
+        {
+            flowStatus.CurrentQuestFlowType = QuestFlowType.MAIN_FLOW;
+            ApplyMainFlowSceneProgress(userDb, userId, restoredSceneId, ResolveMainQuestSceneContext(restoredSceneId));
+        }
+
+        UpdateQuestSessionState(restartSession, restoredSceneId, restoredHeadSceneId, flowStatus.CurrentQuestFlowType);
 
         // Reset all mission progress for this quest so they can be re-evaluated during battle.
         foreach (EntityIUserQuestMission mission in userDb.EntityIUserQuestMission.Where(m => m.QuestId == questId))
@@ -462,7 +551,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
             }
         }
 
-        List<QuestReward> dropRewards = BuildDropRewards(quest);
+        List<QuestReward> dropRewards = BuildDropRewards(quest, _questCampaignHelper.GetMainQuestTarget(questId), nowMs);
 
         // === PHASE B: Apply rewards and update quest state (only on victory) ===
         if (!isRetired)
@@ -475,8 +564,11 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
                 ApplyWeaponStoryUnlocks(userDb, questId);
             }
 
-            ApplyDropRewardPossessions(userDb, dropRewards, _masterDb);
-            ApplyDropRewardPossessions(userDb, replayFlowFirstClearRewards, _masterDb);
+            dropRewards = ApplyDropRewardPossessions(userDb, dropRewards);
+            foreach (QuestReward replayReward in replayFlowFirstClearRewards)
+            {
+                PossessionHelper.Apply(userDb, (PossessionType)replayReward.PossessionType, replayReward.PossessionId, replayReward.Count, _masterDb);
+            }
 
             userQuest.QuestStateType = (int)QuestStateType.CLEARED;
             userQuest.ClearCount++;
@@ -524,6 +616,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
 
         // Build response with all reward categories and clean up the server-side quest session
         FinishMainQuestResponse response= new() { IsBigWin = isBigWin };
+        response.AutoOrbitReward = new QuestAutoOrbitResult();
         response.DropReward.AddRange(dropRewards);
         response.FirstClearReward.AddRange(firstClearRewards);
         response.MissionClearReward.AddRange(missionClearRewards);
@@ -533,6 +626,17 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         {
             response.BigWinClearedQuestMissionIdList.Add(bigWinMissionId);
         }
+
+        AdvanceQuestAutoOrbit(
+            userDb,
+            userId,
+            request.IsAutoOrbit,
+            isRetired,
+            request.IsAnnihilated,
+            QuestType.MAIN_QUEST,
+            0,
+            questId,
+            nowMs);
 
         userDb.EntitySQuestSession.RemoveAll(s => s.QuestId == questId);
 
@@ -696,11 +800,46 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
             PossessionHelper.Apply(userDb, grant.PossessionType, grant.PossessionId, grant.Count, _masterDb);
     }
 
-    /// <summary>Grants all drop reward possessions from a reward list.</summary>
-    private static void ApplyDropRewardPossessions(DarkUserMemoryDatabase userDb, List<QuestReward> rewards, DarkMasterMemoryDatabase masterDb)
+    /// <summary>Grants all drop reward possessions from a reward list, applying memoir auto-sell where supported.</summary>
+    private List<QuestReward> ApplyDropRewardPossessions(DarkUserMemoryDatabase userDb, List<QuestReward> rewards)
     {
+        ParseAutoSaleRules(userDb, out HashSet<int> raritySet, out HashSet<int> rankSet);
+        List<QuestReward> appliedRewards = [];
+
         foreach (QuestReward reward in rewards)
-            PossessionHelper.Apply(userDb, (PossessionType)reward.PossessionType, reward.PossessionId, reward.Count, masterDb);
+        {
+            PossessionType possessionType = (PossessionType)reward.PossessionType;
+            if (possessionType == PossessionType.PARTS || possessionType == PossessionType.PARTS_ENHANCED)
+            {
+                int grantCount = Math.Max(reward.Count, 1);
+                for (int i = 0; i < grantCount; i++)
+                {
+                    (int grantedPartsId, bool isAutoSold) = PossessionHelper.GrantOrSellPartsDrop(
+                        userDb,
+                        reward.PossessionId,
+                        _masterDb,
+                        QuestGoldConsumableItemId,
+                        raritySet,
+                        rankSet);
+
+                    appliedRewards.Add(new QuestReward
+                    {
+                        PossessionType = reward.PossessionType,
+                        PossessionId = grantedPartsId,
+                        Count = 1,
+                        RewardEffectId = reward.RewardEffectId,
+                        IsAutoSale = isAutoSold
+                    });
+                }
+
+                continue;
+            }
+
+            PossessionHelper.Apply(userDb, possessionType, reward.PossessionId, reward.Count, _masterDb);
+            appliedRewards.Add(reward.Clone());
+        }
+
+        return appliedRewards;
     }
 
     /// <summary>Unlocks weapon stories triggered by QUEST_CLEAR. ACQUISITION unlocks are handled by WeaponHelper.GrantWeapon.</summary>
@@ -747,9 +886,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
             }
         }
 
-        EntitySQuestSession session = userDb.EntitySQuestSession.GetOrCreate(
-            s => s.QuestId == questId,
-            () => new EntitySQuestSession { UserId = userId, QuestId = questId });
+        EntitySQuestSession session = GetOrCreateQuestSession(userDb, userId, questId);
         session.UserDeckNumber = request.UserDeckNumber;
 
         userQuest.QuestStateType = (int)QuestStateType.ACTIVE;
@@ -759,15 +896,13 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         progressStatus.CurrentQuestId = questId;
 
         // Set initial scene IDs from the first scene of this quest
-        EntityMQuestScene? firstScene = _masterDb.EntityMQuestScene
-            .Where(s => s.QuestId == questId)
-            .OrderBy(s => s.SortOrder)
-            .FirstOrDefault();
-        if (firstScene != null)
+        int firstSceneId = GetQuestStartSceneId(questId);
+        if (firstSceneId != 0)
         {
-            progressStatus.CurrentQuestSceneId = firstScene.QuestSceneId;
-            progressStatus.HeadQuestSceneId = firstScene.QuestSceneId;
+            progressStatus.CurrentQuestSceneId = firstSceneId;
+            progressStatus.HeadQuestSceneId = firstSceneId;
         }
+        UpdateQuestSessionState(session, firstSceneId, firstSceneId, QuestFlowType.SUB_FLOW);
 
         StartExtraQuestResponse response = new();
         response.BattleDropReward.AddRange(BuildBattleDropRewards(questId));
@@ -789,12 +924,10 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
             () => new EntityIUserQuest { UserId = userId, QuestId = questId });
 
         userQuest.QuestStateType = (int)QuestStateType.ACTIVE;
-        userQuest.IsBattleOnly = false;
         userQuest.LatestStartDatetime = nowMs;
 
-        EntitySQuestSession session = userDb.EntitySQuestSession.GetOrCreate(
-            s => s.QuestId == questId,
-            () => new EntitySQuestSession { UserId = userId, QuestId = questId });
+        EntitySQuestSession session = GetOrCreateQuestSession(userDb, userId, questId);
+        userQuest.IsBattleOnly = session.IsBattleOnly;
 
         // Reset all mission progress for this quest so they can be re-evaluated during battle
         foreach (EntityIUserQuestMission mission in userDb.EntityIUserQuestMission.Where(m => m.QuestId == questId))
@@ -806,6 +939,11 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
 
         EntityIUserExtraQuestProgressStatus progressStatus = userDb.EntityIUserExtraQuestProgressStatus.GetOrCreate(userId);
         progressStatus.CurrentQuestId = questId;
+        int restoredSceneId = session.CurrentQuestSceneId != 0 ? session.CurrentQuestSceneId : GetQuestStartSceneId(questId);
+        int restoredHeadSceneId = session.HeadQuestSceneId != 0 ? session.HeadQuestSceneId : restoredSceneId;
+        progressStatus.CurrentQuestSceneId = restoredSceneId;
+        progressStatus.HeadQuestSceneId = restoredHeadSceneId;
+        UpdateQuestSessionState(session, restoredSceneId, restoredHeadSceneId, QuestFlowType.SUB_FLOW);
 
         RestartExtraQuestResponse response = new();
         response.BattleDropReward.AddRange(BuildBattleDropRewards(questId));
@@ -929,7 +1067,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
             }
         }
 
-        List<QuestReward> dropRewardsExtra = BuildDropRewards(quest);
+        List<QuestReward> dropRewardsExtra = BuildDropRewards(quest, _questCampaignHelper.GetExtraQuestTarget(questId), nowMs);
 
         // Apply rewards and update quest state only on victory (not retired)
         if (!isRetired)
@@ -942,7 +1080,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
                 ApplyWeaponStoryUnlocks(userDb, questId);
             }
 
-            ApplyDropRewardPossessions(userDb, dropRewardsExtra, _masterDb);
+            dropRewardsExtra = ApplyDropRewardPossessions(userDb, dropRewardsExtra);
 
             userQuest.QuestStateType = (int)QuestStateType.CLEARED;
             userQuest.ClearCount++;
@@ -1009,10 +1147,10 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
 
         userQuest.IsBattleOnly = request.IsBattleOnly;
 
-        EntitySQuestSession eventSession = userDb.EntitySQuestSession.GetOrCreate(
-            s => s.QuestId == questId,
-            () => new EntitySQuestSession { UserId = userId, QuestId = questId });
+        EntitySQuestSession eventSession = GetOrCreateQuestSession(userDb, userId, questId);
         eventSession.UserDeckNumber = request.UserDeckNumber;
+        eventSession.IsBattleOnly = request.IsBattleOnly;
+        eventSession.CurrentEventQuestChapterId = chapterId;
 
         userQuest.QuestStateType = (int)QuestStateType.ACTIVE;
         userQuest.LatestStartDatetime = nowMs;
@@ -1022,15 +1160,15 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         progressStatus.CurrentQuestId = questId;
 
         // Set initial scene IDs from the first scene of this quest
-        EntityMQuestScene? firstScene = _masterDb.EntityMQuestScene
-            .Where(s => s.QuestId == questId)
-            .OrderBy(s => s.SortOrder)
-            .FirstOrDefault();
-        if (firstScene != null)
+        int firstSceneId = GetQuestStartSceneId(questId, request.IsBattleOnly);
+        if (firstSceneId != 0)
         {
-            progressStatus.CurrentQuestSceneId = firstScene.QuestSceneId;
-            progressStatus.HeadQuestSceneId = firstScene.QuestSceneId;
+            progressStatus.CurrentQuestSceneId = firstSceneId;
+            progressStatus.HeadQuestSceneId = firstSceneId;
         }
+        UpdateQuestSessionState(eventSession, firstSceneId, firstSceneId, QuestFlowType.SUB_FLOW, chapterId, request.IsBattleOnly);
+
+        StartQuestAutoOrbit(userDb, userId, QuestType.EVENT_QUEST, chapterId, questId, request.MaxAutoOrbitCount, nowMs);
 
         StartEventQuestResponse response = new();
         response.BattleDropReward.AddRange(BuildBattleDropRewards(questId));
@@ -1051,8 +1189,10 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
             () => new EntityIUserQuest { UserId = userId, QuestId = questId });
 
         userQuest.QuestStateType = (int)QuestStateType.ACTIVE;
-        userQuest.IsBattleOnly = false;
         userQuest.LatestStartDatetime = nowMs;
+
+        EntitySQuestSession session = GetOrCreateQuestSession(userDb, userId, questId);
+        userQuest.IsBattleOnly = session.IsBattleOnly;
 
         // Reset all mission progress for this quest so they can be re-evaluated during battle
         foreach (EntityIUserQuestMission mission in userDb.EntityIUserQuestMission.Where(m => m.QuestId == questId))
@@ -1063,10 +1203,19 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         }
 
         EntityIUserEventQuestProgressStatus progressStatus = userDb.EntityIUserEventQuestProgressStatus.GetOrCreate(userId);
-        progressStatus.CurrentEventQuestChapterId = request.EventQuestChapterId;
+        int restoredSceneId = session.CurrentQuestSceneId != 0 ? session.CurrentQuestSceneId : GetQuestStartSceneId(questId, session.IsBattleOnly);
+        int restoredHeadSceneId = session.HeadQuestSceneId != 0 ? session.HeadQuestSceneId : restoredSceneId;
+        int restoredChapterId = session.CurrentEventQuestChapterId != 0 ? session.CurrentEventQuestChapterId : request.EventQuestChapterId;
+        progressStatus.CurrentEventQuestChapterId = restoredChapterId;
         progressStatus.CurrentQuestId = questId;
+        progressStatus.CurrentQuestSceneId = restoredSceneId;
+        progressStatus.HeadQuestSceneId = restoredHeadSceneId;
+        UpdateQuestSessionState(session, restoredSceneId, restoredHeadSceneId, QuestFlowType.SUB_FLOW, restoredChapterId, session.IsBattleOnly);
 
-        return Task.FromResult(new RestartEventQuestResponse());
+        RestartEventQuestResponse response = new();
+        response.BattleDropReward.AddRange(BuildBattleDropRewards(questId));
+        response.DeckNumber = session.UserDeckNumber;
+        return Task.FromResult(response);
     }
 
     /// <summary>Completes an event quest: evaluates rewards, applies possessions, updates quest state, and returns results.</summary>
@@ -1185,7 +1334,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
             }
         }
 
-        List<QuestReward> dropRewardsEvent = BuildDropRewards(quest);
+        List<QuestReward> dropRewardsEvent = BuildDropRewards(quest, ResolveEventQuestCampaignTarget(userDb, userId, questId), nowMs);
 
         // Apply rewards and update quest state only on victory (not retired)
         if (!isRetired)
@@ -1198,7 +1347,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
                 ApplyWeaponStoryUnlocks(userDb, questId);
             }
 
-            ApplyDropRewardPossessions(userDb, dropRewardsEvent, _masterDb);
+            dropRewardsEvent = ApplyDropRewardPossessions(userDb, dropRewardsEvent);
 
             userQuest.QuestStateType = (int)QuestStateType.CLEARED;
             userQuest.ClearCount++;
@@ -1220,6 +1369,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         ClearQuestMissions(userDb, questId, nowMs);
 
         FinishEventQuestResponse response= new() { IsBigWin = isBigWin };
+        response.AutoOrbitReward = new QuestAutoOrbitResult();
         response.DropReward.AddRange(dropRewardsEvent);
         response.FirstClearReward.AddRange(firstClearRewards);
         response.MissionClearReward.AddRange(missionClearRewards);
@@ -1229,15 +1379,37 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
             response.BigWinClearedQuestMissionIdList.Add(bigWinMissionId);
         }
 
+        AdvanceQuestAutoOrbit(
+            userDb,
+            userId,
+            request.IsAutoOrbit,
+            isRetired,
+            request.IsAnnihilated,
+            QuestType.EVENT_QUEST,
+            request.EventQuestChapterId,
+            questId,
+            nowMs);
+
         userDb.EntitySQuestSession.RemoveAll(s => s.QuestId == questId);
 
         return Task.FromResult(response);
     }
 
-    /// <summary>Stub for auto-orbit completion; returns empty response.</summary>
+    /// <summary>Clears tracked auto-orbit state; accumulated reward replay remains unsupported by the current model.</summary>
     public override Task<FinishAutoOrbitResponse> FinishAutoOrbit(Empty request, ServerCallContext context)
     {
-        return Task.FromResult(new FinishAutoOrbitResponse());
+        long userId = context.GetUserId();
+        if (_store.TryGet(userId, out DarkUserMemoryDatabase? userDb))
+        {
+            userDb.EntityIUserQuestAutoOrbit.RemoveAll(s => s.UserId == userId);
+        }
+
+        return Task.FromResult(new FinishAutoOrbitResponse
+        {
+            // TODO: Return the drops accumulated across auto-orbit runs. They need a server-side
+            // EntityS table to accumulate into; until then FinishAutoOrbit only clears the counters.
+            AutoOrbitReward = new QuestAutoOrbitResult()
+        });
     }
 
     /// <summary>Sets the active main quest route and updates season route tracking.</summary>
@@ -1259,15 +1431,120 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         return Task.FromResult(new SetRouteResponse());
     }
 
-    /// <summary>Stub for scene choice selection; returns empty response.</summary>
+    /// <summary>Stores the selected quest-scene choice and updates replay-route state when applicable.</summary>
     public override Task<SetQuestSceneChoiceResponse> SetQuestSceneChoice(SetQuestSceneChoiceRequest request, ServerCallContext context)
     {
+        long userId = context.GetUserId();
+        DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
+
+        QuestFlowType requestedFlowType = System.Enum.IsDefined(typeof(QuestFlowType), request.QuestFlowType)
+            ? (QuestFlowType)request.QuestFlowType
+            : QuestFlowType.UNKNOWN;
+
+        EntityMQuestSceneChoice? masterChoice = ResolveQuestSceneChoice(request.QuestSceneId, request.ChoiceNumber, requestedFlowType);
+        if (masterChoice == null)
+            return Task.FromResult(new SetQuestSceneChoiceResponse());
+
+        EntityMQuestSceneChoiceEffect? choiceEffect = _masterDb.EntityMQuestSceneChoiceEffect
+            .FirstOrDefault(e => e.QuestSceneChoiceEffectId == masterChoice.QuestSceneChoiceEffectId);
+        if (choiceEffect != null)
+        {
+            bool isFirstChoiceEffectSelection = !userDb.EntityIUserQuestSceneChoiceHistory.Any(
+                c => c.UserId == userId && c.QuestSceneChoiceEffectId == choiceEffect.QuestSceneChoiceEffectId);
+
+            EntityIUserQuestSceneChoice userChoice = userDb.EntityIUserQuestSceneChoice.GetOrCreate(
+                c => c.UserId == userId && c.QuestSceneChoiceGroupingId == choiceEffect.QuestSceneChoiceGroupingId,
+                () => new EntityIUserQuestSceneChoice
+                {
+                    UserId = userId,
+                    QuestSceneChoiceGroupingId = choiceEffect.QuestSceneChoiceGroupingId
+                });
+            userChoice.QuestSceneChoiceEffectId = choiceEffect.QuestSceneChoiceEffectId;
+
+            EntityIUserQuestSceneChoiceHistory userChoiceHistory = userDb.EntityIUserQuestSceneChoiceHistory.GetOrCreate(
+                c => c.UserId == userId && c.QuestSceneChoiceEffectId == choiceEffect.QuestSceneChoiceEffectId,
+                () => new EntityIUserQuestSceneChoiceHistory
+                {
+                    UserId = userId,
+                    QuestSceneChoiceEffectId = choiceEffect.QuestSceneChoiceEffectId
+                });
+            userChoiceHistory.ChoiceDatetime = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+
+            if (isFirstChoiceEffectSelection)
+                ApplyQuestSceneChoiceSideEffects(userDb, choiceEffect);
+        }
+
+        if (requestedFlowType == QuestFlowType.ANOTHER_ROUTE_REPLAY_FLOW)
+        {
+            EntityIUserMainQuestFlowStatus flowStatus = userDb.EntityIUserMainQuestFlowStatus.GetOrCreate(userId);
+            flowStatus.CurrentQuestFlowType = QuestFlowType.ANOTHER_ROUTE_REPLAY_FLOW;
+
+            MainQuestSceneContext? sceneContext = ResolveMainQuestSceneContext(request.QuestSceneId);
+            if (sceneContext != null)
+            {
+                EntityIUserMainQuestMainFlowStatus mainFlowStatus = userDb.EntityIUserMainQuestMainFlowStatus.GetOrCreate(userId);
+                ApplyMainQuestRoute(userDb, userId, mainFlowStatus, sceneContext.RouteId, sceneContext.SeasonId);
+            }
+
+            EntityMQuestScene? scene = _masterDb.EntityMQuestScene.FirstOrDefault(s => s.QuestSceneId == request.QuestSceneId);
+            if (scene != null)
+            {
+                EntitySQuestSession? session = userDb.EntitySQuestSession.FirstOrDefault(s => s.UserId == userId && s.QuestId == scene.QuestId);
+                if (session != null)
+                    session.CurrentQuestFlowType = QuestFlowType.ANOTHER_ROUTE_REPLAY_FLOW;
+            }
+        }
+
         return Task.FromResult(new SetQuestSceneChoiceResponse());
     }
 
     /// <summary>Stub for tower accumulation reward; returns empty response.</summary>
     public override Task<ReceiveTowerAccumulationRewardResponse> ReceiveTowerAccumulationReward(ReceiveTowerAccumulationRewardRequest request, ServerCallContext context)
     {
+        long userId = context.GetUserId();
+        DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
+        EntityIUserEventQuestTowerAccumulationReward towerRewardState = userDb.EntityIUserEventQuestTowerAccumulationReward.GetOrCreate(
+            r => r.EventQuestChapterId == request.EventQuestChapterId,
+            () => new EntityIUserEventQuestTowerAccumulationReward
+            {
+                UserId = userDb.UserId,
+                EventQuestChapterId = request.EventQuestChapterId
+            });
+
+        int accumulationRewardGroupId = _masterDb.EntityMEventQuestTowerAccumulationReward
+            .Where(r => r.EventQuestChapterId == request.EventQuestChapterId)
+            .Select(r => r.EventQuestTowerAccumulationRewardGroupId)
+            .FirstOrDefault();
+        if (accumulationRewardGroupId == 0)
+        {
+            return Task.FromResult(new ReceiveTowerAccumulationRewardResponse());
+        }
+
+        List<EntityMEventQuestTowerAccumulationRewardGroup> eligibleRewards = [.. _masterDb.EntityMEventQuestTowerAccumulationRewardGroup
+            .Where(r => r.EventQuestTowerAccumulationRewardGroupId == accumulationRewardGroupId
+                && r.QuestMissionClearCount > towerRewardState.LatestRewardReceiveQuestMissionClearCount
+                && r.QuestMissionClearCount <= request.TargetMissionClearCount)
+            .OrderBy(r => r.QuestMissionClearCount)];
+
+        int highestClaimedCount = towerRewardState.LatestRewardReceiveQuestMissionClearCount;
+        foreach (EntityMEventQuestTowerAccumulationRewardGroup tier in eligibleRewards)
+        {
+            foreach (EntityMEventQuestTowerRewardGroup reward in _masterDb.EntityMEventQuestTowerRewardGroup
+                .Where(r => r.EventQuestTowerRewardGroupId == tier.EventQuestTowerRewardGroupId)
+                .OrderBy(r => r.SortOrder))
+            {
+                PossessionHelper.Apply(userDb, reward.PossessionType, reward.PossessionId, reward.Count, _masterDb);
+            }
+
+            highestClaimedCount = Math.Max(highestClaimedCount, tier.QuestMissionClearCount);
+        }
+
+        if (highestClaimedCount > towerRewardState.LatestRewardReceiveQuestMissionClearCount)
+        {
+            towerRewardState.LatestRewardReceiveQuestMissionClearCount = highestClaimedCount;
+            towerRewardState.LatestVersion = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        }
+
         return Task.FromResult(new ReceiveTowerAccumulationRewardResponse());
     }
 
@@ -1301,8 +1578,8 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         {
             for (int i = 0; i < request.SkipCount; i++)
             {
-                List<QuestReward> iterDrops = BuildDropRewards(quest);
-                ApplyDropRewardPossessions(userDb, iterDrops, _masterDb);
+                List<QuestReward> iterDrops = BuildDropRewards(quest, ResolveEventQuestCampaignTarget(userDb, userId, questId), nowMs);
+                iterDrops = ApplyDropRewardPossessions(userDb, iterDrops);
                 dropRewards.AddRange(iterDrops);
 
                 ApplyGoldReward(userDb, quest, nowMs);
@@ -1397,6 +1674,127 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         return Task.FromResult(new ReceiveDailyQuestGroupCompleteRewardResponse());
     }
 
+    private static void StartQuestAutoOrbit(
+        DarkUserMemoryDatabase userDb,
+        long userId,
+        QuestType questType,
+        int chapterId,
+        int questId,
+        int maxCount,
+        long nowMs)
+    {
+        if (maxCount <= 0)
+        {
+            userDb.EntityIUserQuestAutoOrbit.RemoveAll(s => s.UserId == userId);
+            return;
+        }
+
+        EntityIUserQuestAutoOrbit state = userDb.EntityIUserQuestAutoOrbit.GetOrCreate(
+            s => s.UserId == userId,
+            () => new EntityIUserQuestAutoOrbit { UserId = userId });
+
+        if (state.MaxAutoOrbitCount > 0
+            && state.QuestType == questType
+            && state.ChapterId == chapterId
+            && state.QuestId == questId
+            && state.MaxAutoOrbitCount == maxCount)
+        {
+            state.LatestVersion = nowMs;
+            return;
+        }
+
+        state.QuestType = questType;
+        state.ChapterId = chapterId;
+        state.QuestId = questId;
+        state.MaxAutoOrbitCount = maxCount;
+        state.ClearedAutoOrbitCount = 0;
+        state.LastClearDatetime = 0;
+        state.LatestVersion = nowMs;
+    }
+
+    private static bool AdvanceQuestAutoOrbit(
+        DarkUserMemoryDatabase userDb,
+        long userId,
+        bool isAutoOrbit,
+        bool isRetired,
+        bool isAnnihilated,
+        QuestType questType,
+        int chapterId,
+        int questId,
+        long nowMs)
+    {
+        EntityIUserQuestAutoOrbit? state = userDb.EntityIUserQuestAutoOrbit.FirstOrDefault(s => s.UserId == userId);
+        if (state == null
+            || state.MaxAutoOrbitCount <= 0
+            || state.QuestType != questType
+            || state.ChapterId != chapterId
+            || state.QuestId != questId)
+        {
+            return false;
+        }
+
+        if (!isRetired && !isAnnihilated)
+        {
+            state.ClearedAutoOrbitCount++;
+        }
+
+        state.LastClearDatetime = nowMs;
+        state.LatestVersion = nowMs;
+
+        return !isAutoOrbit || isRetired || isAnnihilated || state.ClearedAutoOrbitCount >= state.MaxAutoOrbitCount;
+    }
+
+    private static void ParseAutoSaleRules(DarkUserMemoryDatabase userDb, out HashSet<int> raritySet, out HashSet<int> rankSet)
+    {
+        raritySet = [];
+        rankSet = [];
+
+        foreach (EntityIUserAutoSaleSettingDetail setting in userDb.EntityIUserAutoSaleSettingDetail)
+        {
+            foreach (int value in ExtractInts(setting.PossessionAutoSaleItemValue))
+            {
+                if (value is 10 or 20 or 30 or 40 or 50)
+                {
+                    raritySet.Add(value);
+                }
+                else if (value is >= 1 and <= 5)
+                {
+                    rankSet.Add(value);
+                }
+            }
+        }
+    }
+
+    private static IEnumerable<int> ExtractInts(string value)
+    {
+        int current = 0;
+        bool hasDigits = false;
+
+        foreach (char c in value)
+        {
+            if (char.IsDigit(c))
+            {
+                current = (current * 10) + (c - '0');
+                hasDigits = true;
+                continue;
+            }
+
+            if (!hasDigits)
+            {
+                continue;
+            }
+
+            yield return current;
+            current = 0;
+            hasDigits = false;
+        }
+
+        if (hasDigits)
+        {
+            yield return current;
+        }
+    }
+
     /// <summary>Returns true if <paramref name="newSceneId"/> is further along in narrative order than <paramref name="currentHeadId"/>, comparing by SortOrder (not scene ID).</summary>
     private bool IsSceneAhead(int newSceneId, int currentHeadId)
     {
@@ -1446,6 +1844,47 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
             .Where(s => s.QuestId == questId)
             .OrderByDescending(s => s.SortOrder)
             .FirstOrDefault()?.QuestSceneId ?? 0;
+    }
+
+    private int GetQuestStartSceneId(int questId, bool preferBattleOnlyTarget = false)
+    {
+        IEnumerable<EntityMQuestScene> questScenes = _masterDb.EntityMQuestScene.Where(s => s.QuestId == questId);
+        EntityMQuestScene? startScene = preferBattleOnlyTarget
+            ? questScenes.FirstOrDefault(s => s.IsBattleOnlyTarget)
+            : null;
+        startScene ??= questScenes.OrderBy(s => s.SortOrder).FirstOrDefault();
+        return startScene?.QuestSceneId ?? 0;
+    }
+
+    private static EntitySQuestSession GetOrCreateQuestSession(DarkUserMemoryDatabase userDb, long userId, int questId)
+    {
+        return userDb.EntitySQuestSession.GetOrCreate(
+            s => s.UserId == userId && s.QuestId == questId,
+            () => new EntitySQuestSession { UserId = userId, QuestId = questId });
+    }
+
+    private void UpdateQuestSessionState(
+        EntitySQuestSession session,
+        int currentQuestSceneId,
+        int headQuestSceneId,
+        QuestFlowType questFlowType,
+        int currentEventQuestChapterId = 0,
+        bool? isBattleOnly = null)
+    {
+        session.CurrentQuestSceneId = currentQuestSceneId;
+        session.HeadQuestSceneId = headQuestSceneId != 0 ? headQuestSceneId : currentQuestSceneId;
+        session.CurrentQuestFlowType = questFlowType;
+        if (currentEventQuestChapterId != 0)
+            session.CurrentEventQuestChapterId = currentEventQuestChapterId;
+        if (isBattleOnly.HasValue)
+            session.IsBattleOnly = isBattleOnly.Value;
+    }
+
+    private int GetHeadSceneId(int currentHeadSceneId, int newQuestSceneId)
+    {
+        if (newQuestSceneId == 0)
+            return currentHeadSceneId;
+        return IsSceneAhead(newQuestSceneId, currentHeadSceneId) ? newQuestSceneId : currentHeadSceneId;
     }
 
     private void ApplyMainFlowSceneProgress(
@@ -1522,6 +1961,60 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         }
 
         return new MainQuestSceneContext(scene, routeId, seasonId);
+    }
+
+    private QuestCampaignTarget ResolveEventQuestCampaignTarget(DarkUserMemoryDatabase userDb, long userId, int questId)
+    {
+        int eventQuestChapterId = userDb.EntitySQuestSession
+            .FirstOrDefault(session => session.UserId == userId && session.QuestId == questId)
+            ?.CurrentEventQuestChapterId
+            ?? userDb.EntityIUserEventQuestProgressStatus.FirstOrDefault(status => status.UserId == userId)?.CurrentEventQuestChapterId
+            ?? 0;
+
+        return _questCampaignHelper.GetEventQuestTarget(questId, eventQuestChapterId);
+    }
+
+    private EntityMQuestSceneChoice? ResolveQuestSceneChoice(int questSceneId, int choiceNumber, QuestFlowType flowType)
+    {
+        IEnumerable<QuestFlowType> candidateFlowTypes = flowType switch
+        {
+            QuestFlowType.ANOTHER_ROUTE_REPLAY_FLOW => [QuestFlowType.ANOTHER_ROUTE_REPLAY_FLOW, QuestFlowType.REPLAY_FLOW, QuestFlowType.MAIN_FLOW],
+            QuestFlowType.UNKNOWN => [QuestFlowType.MAIN_FLOW],
+            _ => [flowType, QuestFlowType.MAIN_FLOW]
+        };
+
+        foreach (QuestFlowType candidateFlowType in candidateFlowTypes.Distinct())
+        {
+            EntityMQuestSceneChoice? choice = _masterDb.EntityMQuestSceneChoice.FirstOrDefault(c =>
+                c.MainFlowQuestSceneId == questSceneId &&
+                c.QuestFlowType == candidateFlowType &&
+                c.ChoiceNumber == choiceNumber);
+            if (choice != null)
+                return choice;
+        }
+
+        return null;
+    }
+
+    private void ApplyQuestSceneChoiceSideEffects(DarkUserMemoryDatabase userDb, EntityMQuestSceneChoiceEffect choiceEffect)
+    {
+        // TODO: If quest-scene choice effects are supposed to compensate already-owned gear with duplicate rewards,
+        // the current repo has no quest-choice-specific conversion model for that. Skip duplicate grants for safety.
+        foreach (EntityMQuestSceneChoiceCostumeEffectGroup costumeEffect in _masterDb.EntityMQuestSceneChoiceCostumeEffectGroup
+            .Where(g => g.QuestSceneChoiceCostumeEffectGroupId == choiceEffect.QuestSceneChoiceCostumeEffectGroupId)
+            .OrderBy(g => g.SortOrder))
+        {
+            if (!userDb.EntityIUserCostume.Any(c => c.CostumeId == costumeEffect.CostumeId))
+                PossessionHelper.GrantCostume(userDb, costumeEffect.CostumeId, _masterDb);
+        }
+
+        foreach (EntityMQuestSceneChoiceWeaponEffectGroup weaponEffect in _masterDb.EntityMQuestSceneChoiceWeaponEffectGroup
+            .Where(g => g.QuestSceneChoiceWeaponEffectGroupId == choiceEffect.QuestSceneChoiceWeaponEffectGroupId)
+            .OrderBy(g => g.SortOrder))
+        {
+            if (!userDb.EntityIUserWeapon.Any(w => w.WeaponId == weaponEffect.WeaponId))
+                WeaponHelper.GrantWeapon(userDb, weaponEffect.WeaponId, _masterDb);
+        }
     }
 
     private sealed record MainQuestSceneContext(EntityMQuestScene Scene, int RouteId, int SeasonId);
@@ -1612,7 +2105,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
     /// Builds the DropReward list for a given quest from EntityMQuestPickupRewardGroup + EntityMBattleDropReward.
     /// Returns an empty list if the quest has no QuestPickupRewardGroupId or master data is missing.
     /// </summary>
-    private List<QuestReward> BuildDropRewards(EntityMQuest quest)
+    private List<QuestReward> BuildDropRewards(EntityMQuest quest, QuestCampaignTarget target, long nowMs)
     {
         List<QuestReward> rewards = [];
         if (quest.QuestPickupRewardGroupId == 0)
@@ -1636,6 +2129,6 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
             }
         }
 
-        return rewards;
+        return _questCampaignHelper.ApplyDropCampaignBonuses(rewards, target, nowMs);
     }
 }
