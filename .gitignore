@@ -397,13 +397,12 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 
-# Squad
-.gitattributes
-.github
-.copilot
-.squad
-
-# User Data
+# Game data (user-provided, never committed)
 src/Data/UserData
-.squad-workstream
 src/Data/MasterData
+
+# Local tooling (Frida hooks etc.)
+scripts/hooks.js
+
+# Local working docs (not tracked)
+docs/
