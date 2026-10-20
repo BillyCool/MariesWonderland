@@ -220,7 +220,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
             EntityIUserMainQuestFlowStatus replayFlow = userDb.EntityIUserMainQuestFlowStatus.GetOrCreate(userId);
             QuestFlowType replayFlowType = replayFlow.CurrentQuestFlowType == QuestFlowType.ANOTHER_ROUTE_REPLAY_FLOW
                 ? QuestFlowType.ANOTHER_ROUTE_REPLAY_FLOW
-                : QuestFlowType.REPLAY_FLOW;
+                : ResolveReplayFlowType(userDb, userId, questId);
             replayFlow.CurrentQuestFlowType = replayFlowType;
 
             EntityIUserMainQuestReplayFlowStatus replayFlowStatus = userDb.EntityIUserMainQuestReplayFlowStatus.GetOrCreate(userId);
@@ -302,10 +302,6 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
 
             // Ensure MainFlowStatus singleton exists and always appears in the delta, even when unchanged.
             EntityIUserMainQuestMainFlowStatus mainFlowStatus = userDb.EntityIUserMainQuestMainFlowStatus.GetOrCreate(userId);
-
-            // Ensure SeasonRoute singleton exists (season 1 is the default for all new users).
-            if (!userDb.EntityIUserMainQuestSeasonRoute.Any(r => r.UserId == userId))
-                userDb.EntityIUserMainQuestSeasonRoute.AddNew(new EntityIUserMainQuestSeasonRoute { UserId = userId, MainQuestSeasonId = 1, MainQuestRouteId = 1 });
         }
         else
         {
@@ -1326,12 +1322,31 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
 
         mainFlowStatus.CurrentMainQuestRouteId = routeId;
 
-        EntityIUserMainQuestSeasonRoute seasonRoute = userDb.EntityIUserMainQuestSeasonRoute.GetOrCreate(userId);
-        seasonRoute.MainQuestRouteId = routeId;
-        if (seasonId != 0)
+        // Each season records the first route taken there (only season 2 has two routes); it is never
+        // overwritten. Deviation: a real save has no season-1 row, but we write one too so every season is
+        // treated the same.
+        if (seasonId > 0 && !userDb.EntityIUserMainQuestSeasonRoute.Any(r => r.UserId == userId && r.MainQuestSeasonId == seasonId))
         {
-            seasonRoute.MainQuestSeasonId = seasonId;
+            userDb.EntityIUserMainQuestSeasonRoute.AddNew(new EntityIUserMainQuestSeasonRoute { UserId = userId, MainQuestSeasonId = seasonId, MainQuestRouteId = routeId });
         }
+    }
+
+    /// <summary>
+    /// A replay of a quest on a route other than the one first taken in its season is an another-route replay.
+    /// </summary>
+    private QuestFlowType ResolveReplayFlowType(DarkUserMemoryDatabase userDb, long userId, int questId)
+    {
+        MainQuestSceneContext? sceneContext = ResolveMainQuestSceneContext(_questEngine.GetQuestStartSceneId(questId, false));
+        if (sceneContext == null || sceneContext.RouteId == 0)
+        {
+            return QuestFlowType.REPLAY_FLOW;
+        }
+
+        EntityIUserMainQuestSeasonRoute? seasonRoute = userDb.EntityIUserMainQuestSeasonRoute
+            .FirstOrDefault(r => r.UserId == userId && r.MainQuestSeasonId == sceneContext.SeasonId);
+        return seasonRoute != null && seasonRoute.MainQuestRouteId != sceneContext.RouteId
+            ? QuestFlowType.ANOTHER_ROUTE_REPLAY_FLOW
+            : QuestFlowType.REPLAY_FLOW;
     }
 
     private MainQuestSceneContext? ResolveMainQuestSceneContext(int questSceneId)

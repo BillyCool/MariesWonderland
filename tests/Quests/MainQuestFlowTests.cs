@@ -123,4 +123,41 @@ public class MainQuestFlowTests(MasterDatabaseFixture fixture) : ServiceTestBase
             Assert.Equal(1, previousUserQuest.ClearCount);
         }
     }
+
+    [Fact]
+    public async Task SetRoute_RecordsTheFirstRoutePerSeason()
+    {
+        (QuestService service, DarkUserMemoryDatabase userDb, long userId) = CreateService();
+
+        await service.SetRoute(new SetRouteRequest { MainQuestRouteId = 1 }, ContextFor(userId));
+        await service.SetRoute(new SetRouteRequest { MainQuestRouteId = 2 }, ContextFor(userId));
+        await service.SetRoute(new SetRouteRequest { MainQuestRouteId = 3 }, ContextFor(userId));
+
+        Assert.Equal(2, userDb.EntityIUserMainQuestSeasonRoute.Count);
+        Assert.Equal(1, userDb.EntityIUserMainQuestSeasonRoute.Single(r => r.MainQuestSeasonId == 1).MainQuestRouteId);
+        Assert.Equal(2, userDb.EntityIUserMainQuestSeasonRoute.Single(r => r.MainQuestSeasonId == 2).MainQuestRouteId);
+        Assert.Equal(3, userDb.EntityIUserMainQuestMainFlowStatus[0].CurrentMainQuestRouteId);
+    }
+
+    [Theory]
+    [InlineData(2, QuestFlowType.REPLAY_FLOW)]
+    [InlineData(3, QuestFlowType.ANOTHER_ROUTE_REPLAY_FLOW)]
+    public async Task ReplayStart_OnAnotherRouteOfTheSeason_IsAnotherRouteReplay(int questRouteId, QuestFlowType expected)
+    {
+        (QuestService service, DarkUserMemoryDatabase userDb, long userId) = CreateService();
+        await service.SetRoute(new SetRouteRequest { MainQuestRouteId = 2 }, ContextFor(userId));
+
+        int sequenceGroupId = MasterDb.EntityMMainQuestChapter.First(c => c.MainQuestRouteId == questRouteId).MainQuestSequenceGroupId;
+        HashSet<int> sequenceIds = [.. MasterDb.EntityMMainQuestSequenceGroup
+            .Where(g => g.MainQuestSequenceGroupId == sequenceGroupId)
+            .Select(g => g.MainQuestSequenceId)];
+        int questId = MasterDb.EntityMMainQuestSequence
+            .Where(s => sequenceIds.Contains(s.MainQuestSequenceId))
+            .Select(s => s.QuestId)
+            .First(id => MasterDb.EntityMQuestScene.Any(s => s.QuestId == id));
+
+        await service.StartMainQuest(new StartMainQuestRequest { QuestId = questId, IsReplayFlow = true, UserDeckNumber = 1 }, ContextFor(userId));
+
+        Assert.Equal(expected, userDb.EntityIUserMainQuestFlowStatus[0].CurrentQuestFlowType);
+    }
 }
