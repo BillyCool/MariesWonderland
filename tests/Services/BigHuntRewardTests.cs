@@ -8,6 +8,7 @@ using MariesWonderland.Tests.Infrastructure;
 using Microsoft.Extensions.Options;
 using Microsoft.Extensions.Time.Testing;
 using BigHuntService = MariesWonderland.Services.BigHuntService;
+using RewardService = MariesWonderland.Services.RewardService;
 
 namespace MariesWonderland.Tests.Services;
 
@@ -25,9 +26,12 @@ public class BigHuntRewardTests(MasterDatabaseFixture fixture) : ServiceTestBase
         UserDataStore store = new(TimeProvider.System);
         (long userId, _) = store.RegisterOrGetUser("big-hunt-reward-test", MasterDb);
         store.TryGet(userId, out DarkUserMemoryDatabase userDb);
+        // Base tier rewards unless a test adds "Daily Reward+".
+        userDb.EntityIUserImportantItem.RemoveAll(i => i.ImportantItemId == 200020);
         QuestCampaignHelper campaigns = new(MasterDb);
-        QuestEngine engine = new(MasterDb, GameConfig, campaigns, Options.Create(new DevModeOptions()));
-        return (new BigHuntService(store, MasterDb, engine, campaigns, new FakeTimeProvider(Now)), userDb, userId);
+        ImportantItemEffectHelper importantItems = new(MasterDb);
+        QuestEngine engine = new(MasterDb, GameConfig, campaigns, importantItems, Options.Create(new DevModeOptions()));
+        return (new BigHuntService(store, MasterDb, engine, campaigns, importantItems, new FakeTimeProvider(Now)), userDb, userId);
     }
 
     private EntityMBigHuntBossQuest BossQuest => MasterDb.EntityMBigHuntBossQuest.OrderBy(q => q.BigHuntBossQuestId).First();
@@ -73,6 +77,74 @@ public class BigHuntRewardTests(MasterDatabaseFixture fixture) : ServiceTestBase
         List<string> once = TierItems(tier);
         Assert.NotEmpty(once);
         Assert.Equal([.. once, .. once], Keys(response.ScoreReward));
+    }
+
+    [Fact]
+    public async Task Skip_WithDailyRewardPlus_DoublesTheTierRewards()
+    {
+        (BigHuntService service, DarkUserMemoryDatabase userDb, long userId) = CreateService();
+        EntityMBigHuntBossQuest bossQuest = BossQuest;
+        EntityMBigHuntScoreRewardGroup tier = Tiers(bossQuest)[^1];
+        userDb.EntityIUserImportantItem.RemoveAll(i => i.ImportantItemId == 200020);
+        userDb.EntityIUserImportantItem.Add(new EntityIUserImportantItem { UserId = userId, ImportantItemId = 200020, Count = 1 });
+        userDb.EntityIUserBigHuntScheduleMaxScore.Add(new EntityIUserBigHuntScheduleMaxScore
+        {
+            UserId = userId,
+            BigHuntScheduleId = ActiveScheduleId,
+            BigHuntBossId = bossQuest.BigHuntBossId,
+            MaxScore = tier.NecessaryScore
+        });
+
+        SkipBigHuntQuestResponse response = await service.SkipBigHuntQuest(
+            new SkipBigHuntQuestRequest { BigHuntBossQuestId = bossQuest.BigHuntBossQuestId, SkipCount = 1 }, ContextFor(userId));
+
+        List<string> doubled = [.. MasterDb.EntityMBigHuntRewardGroup
+            .Where(r => r.BigHuntRewardGroupId == tier.BigHuntRewardGroupId)
+            .OrderBy(r => r.SortOrder)
+            .Select(r => $"{(int)r.PossessionType}:{r.PossessionId}:{r.Count * 2}")];
+        Assert.Equal(doubled, Keys(response.ScoreReward));
+    }
+
+    [Fact]
+    public async Task WeeklyClaim_GrantsEachAttributesHighestTier_WithoutTheDailyRewardPlusBoost()
+    {
+        // The user's recorded weekly claim: 250M+ on all five attributes, Daily Reward+ owned.
+        (_, DarkUserMemoryDatabase userDb, long userId) = CreateService();
+        UserDataStore store = new(TimeProvider.System);
+        store.Set(userId, userDb);
+        userDb.EntityIUserImportantItem.Add(new EntityIUserImportantItem { UserId = userId, ImportantItemId = 200020, Count = 1 });
+        long weeklyVersion = GameDayHelper.StartOfWeek(Now.ToUnixTimeMilliseconds());
+        userDb.EntityIUserBigHuntWeeklyStatus.RemoveAll(s => s.BigHuntWeeklyVersion == weeklyVersion);
+        foreach (EntityMBigHuntBoss boss in MasterDb.EntityMBigHuntBoss)
+        {
+            userDb.EntityIUserBigHuntWeeklyMaxScore.Add(new EntityIUserBigHuntWeeklyMaxScore
+            {
+                UserId = userId,
+                BigHuntWeeklyVersion = weeklyVersion,
+                AttributeType = boss.AttributeType,
+                MaxScore = 250_000_000
+            });
+        }
+
+        RewardService service = new(store, MasterDb, new FakeTimeProvider(Now));
+        Proto.Reward.ReceiveBigHuntRewardResponse response = await service.ReceiveBigHuntReward(new Google.Protobuf.WellKnownTypes.Empty(), ContextFor(userId));
+
+        Dictionary<string, int> totals = response.WeeklyScoreReward
+            .GroupBy(r => $"{r.PossessionType}:{r.PossessionId}")
+            .ToDictionary(g => g.Key, g => g.Sum(r => r.Count));
+        Dictionary<string, int> recorded = new()
+        {
+            ["6:37"] = 3750,     // Silver Subjugation Battle Coin
+            ["6:39"] = 5250,     // Gold Subjugation Battle Coin
+            ["6:144"] = 2250,    // Shiny Subjugation Battle Coin
+            ["6:30"] = 4000,     // Bronze Subjugation Battle Coin
+            ["5:402001"] = 1500, // Small Cursed-God Antler Bit
+            ["5:402002"] = 500,  // Medium Cursed-God Antler Bit
+            ["5:402003"] = 300,  // Large Cursed-God Antler Bit
+            ["5:501001"] = 5,    // Piece: Zenith's Brilliance
+            ["5:501002"] = 5     // Piece: Black Pearl
+        };
+        Assert.Equal(recorded.OrderBy(p => p.Key), totals.OrderBy(p => p.Key));
     }
 
     [Fact]

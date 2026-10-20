@@ -19,7 +19,7 @@ public class MainQuestFlowTests(MasterDatabaseFixture fixture) : ServiceTestBase
         (long userId, _) = store.RegisterOrGetUser("main-quest-flow-test", MasterDb);
         store.TryGet(userId, out DarkUserMemoryDatabase userDb);
         QuestCampaignHelper campaigns = new(MasterDb);
-        QuestService service = new(store, MasterDb, new QuestEngine(MasterDb, GameConfig, campaigns, Options.Create(new DevModeOptions())), campaigns, TimeProvider.System);
+        QuestService service = new(store, MasterDb, new QuestEngine(MasterDb, GameConfig, campaigns, new ImportantItemEffectHelper(MasterDb), Options.Create(new DevModeOptions())), campaigns, TimeProvider.System);
         return (service, userDb, userId);
     }
 

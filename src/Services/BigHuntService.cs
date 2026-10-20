@@ -12,13 +12,14 @@ using MariesWonderland.Quests;
 
 namespace MariesWonderland.Services;
 
-public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase masterDb, QuestEngine questEngine, QuestCampaignHelper questCampaignHelper, TimeProvider timeProvider)
+public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase masterDb, QuestEngine questEngine, QuestCampaignHelper questCampaignHelper, ImportantItemEffectHelper importantItems, TimeProvider timeProvider)
     : MariesWonderland.Proto.BigHunt.BighuntService.BighuntServiceBase
 {
     private readonly UserDataStore _store = store;
     private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
     private readonly QuestEngine _questEngine = questEngine;
     private readonly QuestCampaignHelper _questCampaignHelper = questCampaignHelper;
+    private readonly ImportantItemEffectHelper _importantItems = importantItems;
     private readonly TimeProvider _timeProvider = timeProvider;
 
     /// <summary>
@@ -485,7 +486,7 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
                     }
                 }
 
-                foreach (QuestReward dropReward in _questEngine.BuildDropRewards(masterQuest, _questCampaignHelper.GetBigHuntQuestTarget(questId), nowMs))
+                foreach (QuestReward dropReward in _questEngine.BuildDropRewards(userDb, masterQuest, _questCampaignHelper.GetBigHuntQuestTarget(questId), nowMs))
                 {
                     PossessionHelper.Apply(userDb, (PossessionType)dropReward.PossessionType, dropReward.PossessionId, dropReward.Count, _masterDb, nowMs);
                 }
@@ -553,103 +554,28 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
     }
 
     /// <summary>
-    /// Returns the score reward group ID in effect for a given boss-quest score reward group schedule at <paramref name="nowMs"/>.
-    /// </summary>
-    private int ResolveActiveScoreRewardGroupId(int scheduleId, long nowMs)
-    {
-        // Entries sorted descending by start datetime; first one where nowMs >= start wins.
-        List<EntityMBigHuntScoreRewardGroupSchedule> entries = [.. _masterDb.EntityMBigHuntScoreRewardGroupSchedule
-            .Where(e => e.BigHuntScoreRewardGroupScheduleId == scheduleId)
-            .OrderByDescending(e => e.StartDatetime)];
-
-        foreach (EntityMBigHuntScoreRewardGroupSchedule entry in entries)
-        {
-            if (nowMs >= entry.StartDatetime)
-            {
-                return entry.BigHuntScoreRewardGroupId;
-            }
-        }
-
-        return entries.Count > 0 ? entries[^1].BigHuntScoreRewardGroupId : 0;
-    }
-
-    /// <summary>
-    /// Returns the weekly score reward group ID in effect for a given schedule and boss attribute type at <paramref name="nowMs"/>.
-    /// </summary>
-    private int ResolveActiveWeeklyRewardGroupId(int scheduleId, AttributeType attributeType, long nowMs)
-    {
-        List<EntityMBigHuntWeeklyAttributeScoreRewardGroupSchedule> entries =
-            [.. _masterDb.EntityMBigHuntWeeklyAttributeScoreRewardGroupSchedule
-                .Where(e => e.BigHuntWeeklyAttributeScoreRewardGroupScheduleId == scheduleId
-                    && e.AttributeType == attributeType)
-                .OrderByDescending(e => e.StartDatetime)];
-
-        foreach (EntityMBigHuntWeeklyAttributeScoreRewardGroupSchedule entry in entries)
-        {
-            if (nowMs >= entry.StartDatetime)
-            {
-                return entry.BigHuntScoreRewardGroupId;
-            }
-        }
-
-        return entries.Count > 0 ? entries[^1].BigHuntScoreRewardGroupId : 0;
-    }
-
-    /// <summary>
-    /// Returns all reward items whose score thresholds fall within the range (<paramref name="oldMax"/>, <paramref name="newMax"/>],
-    /// i.e. thresholds newly crossed by the player's improved score.
-    /// </summary>
-    private List<(PossessionType Type, int Id, int Count)> CollectNewRewards(int scoreRewardGroupId, long oldMax, long newMax)
-    {
-        List<(PossessionType, int, int)> items = [];
-
-        foreach (EntityMBigHuntScoreRewardGroup threshold in _masterDb.EntityMBigHuntScoreRewardGroup
-            .Where(t => t.BigHuntScoreRewardGroupId == scoreRewardGroupId)
-            .OrderBy(t => t.NecessaryScore))
-        {
-            if (threshold.NecessaryScore > oldMax && threshold.NecessaryScore <= newMax)
-            {
-                foreach (EntityMBigHuntRewardGroup reward in _masterDb.EntityMBigHuntRewardGroup
-                    .Where(r => r.BigHuntRewardGroupId == threshold.BigHuntRewardGroupId))
-                {
-                    items.Add((reward.PossessionType, reward.PossessionId, reward.Count));
-                }
-            }
-        }
-
-        return items;
-    }
-
-    /// <summary>
     /// Grants the rewards of the highest score tier <paramref name="score"/> reaches, <paramref name="times"/> times,
-    /// and returns them as granted (one entry per item per time).
+    /// and returns them as granted (one entry per item per time). Counts include important-item boosts
+    /// for Big Hunt quests ("Daily Reward+").
     /// </summary>
     private List<BigHuntReward> GrantHighestTierRewards(DarkUserMemoryDatabase userDb, EntityMBigHuntBossQuest bossQuest, long score, int times, long nowMs)
     {
         List<BigHuntReward> granted = [];
-        int rewardGroupId = ResolveActiveScoreRewardGroupId(bossQuest.BigHuntScoreRewardGroupScheduleId, nowMs);
-        EntityMBigHuntScoreRewardGroup? tier = _masterDb.EntityMBigHuntScoreRewardGroup
-            .Where(t => t.BigHuntScoreRewardGroupId == rewardGroupId && t.NecessaryScore <= score)
-            .OrderByDescending(t => t.NecessaryScore)
-            .FirstOrDefault();
-        if (tier is null)
-        {
-            return granted;
-        }
-
-        List<EntityMBigHuntRewardGroup> items = [.. _masterDb.EntityMBigHuntRewardGroup
-            .Where(r => r.BigHuntRewardGroupId == tier.BigHuntRewardGroupId)
-            .OrderBy(r => r.SortOrder)];
+        int rewardGroupId = BigHuntRewardHelper.ResolveScoreRewardGroupId(_masterDb, bossQuest.BigHuntScoreRewardGroupScheduleId, nowMs);
+        List<EntityMBigHuntRewardGroup> items = BigHuntRewardHelper.HighestTierItems(_masterDb, rewardGroupId, score);
+        QuestCampaignTarget target = _questCampaignHelper.GetBigHuntQuestTarget(0);
         for (int i = 0; i < times; i++)
         {
             foreach (EntityMBigHuntRewardGroup item in items)
             {
-                GrantPossessionViaPossessionHelper(userDb, item.PossessionType, item.PossessionId, item.Count, nowMs);
+                int count = QuestCampaignHelper.ApplyBonusPermil(
+                    item.Count, _importantItems.DropBonusPermil(userDb, target, item.PossessionType, item.PossessionId, nowMs));
+                GrantPossessionViaPossessionHelper(userDb, item.PossessionType, item.PossessionId, count, nowMs);
                 granted.Add(new BigHuntReward
                 {
                     PossessionType = (int)item.PossessionType,
                     PossessionId = item.PossessionId,
-                    Count = item.Count
+                    Count = count
                 });
             }
         }
@@ -658,8 +584,8 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
     }
 
     /// <summary>
-    /// Builds the list of weekly reward items earned across all boss attributes for a given week version,
-    /// based on the player's weekly max scores.
+    /// Builds the weekly reward items across all boss attributes for a given week version: per attribute, the
+    /// highest tier its weekly max score reached. Important items do not boost weekly rewards.
     /// </summary>
     private List<BigHuntReward> ResolveWeeklyRewards(DarkUserMemoryDatabase userDb, long weeklyVersion, long nowMs)
     {
@@ -667,7 +593,7 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
 
         foreach (EntityMBigHuntBoss boss in _masterDb.EntityMBigHuntBoss)
         {
-            int rewardGroupId = ResolveActiveWeeklyRewardGroupId(1, boss.AttributeType, nowMs);
+            int rewardGroupId = BigHuntRewardHelper.ResolveWeeklyRewardGroupId(_masterDb, boss.AttributeType, nowMs);
             if (rewardGroupId == 0)
             {
                 continue;
@@ -680,13 +606,13 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
 
             long maxScore = ws?.MaxScore ?? 0;
 
-            foreach ((PossessionType type, int id, int count) in CollectNewRewards(rewardGroupId, 0, maxScore))
+            foreach (EntityMBigHuntRewardGroup item in BigHuntRewardHelper.HighestTierItems(_masterDb, rewardGroupId, maxScore))
             {
                 rewards.Add(new BigHuntReward
                 {
-                    PossessionType = (int)type,
-                    PossessionId = id,
-                    Count = count
+                    PossessionType = (int)item.PossessionType,
+                    PossessionId = item.PossessionId,
+                    Count = item.Count
                 });
             }
         }

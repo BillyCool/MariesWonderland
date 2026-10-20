@@ -12,6 +12,7 @@ public sealed class MasterDataSnapshot
     public GameConfig GameConfig { get; }
     public QuestCampaignHelper QuestCampaigns { get; }
     public EnhanceCampaignHelper EnhanceCampaigns { get; }
+    public ImportantItemEffectHelper ImportantItems { get; }
 
     /// <summary>The version string advertised to the client; a change makes it download the file again.</summary>
     public string Version { get; }
@@ -22,6 +23,7 @@ public sealed class MasterDataSnapshot
         GameConfig = GameConfig.From(database.EntityMConfig);
         QuestCampaigns = new QuestCampaignHelper(database);
         EnhanceCampaigns = new EnhanceCampaignHelper(database);
+        ImportantItems = new ImportantItemEffectHelper(database);
         Version = version;
     }
 

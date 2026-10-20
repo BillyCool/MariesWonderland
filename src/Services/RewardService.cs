@@ -20,14 +20,15 @@ public class RewardService(UserDataStore store, DarkMasterMemoryDatabase masterD
     private readonly TimeProvider _timeProvider = timeProvider;
 
     /// <summary>
-    /// Collects the weekly score rewards for all bosses and grants any unclaimed ones to the user.
+    /// Grants this week's score rewards once: per attribute, the highest tier its weekly max score reached.
+    /// Important items ("Daily Reward+") do not boost them.
     /// </summary>
     public override Task<ReceiveBigHuntRewardResponse> ReceiveBigHuntReward(Empty request, ServerCallContext context)
     {
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
         long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
-        long weeklyVersion = GetWeeklyVersion(nowMs);
+        long weeklyVersion = GameDayHelper.StartOfWeek(nowMs);
 
         EntityIUserBigHuntWeeklyStatus? ws = userDb.EntityIUserBigHuntWeeklyStatus
             .FirstOrDefault(s => s.BigHuntWeeklyVersion == weeklyVersion);
@@ -63,7 +64,7 @@ public class RewardService(UserDataStore store, DarkMasterMemoryDatabase masterD
         {
             foreach (EntityMBigHuntBoss boss in _masterDb.EntityMBigHuntBoss)
             {
-                int rewardGroupId = ResolveActiveWeeklyRewardGroupId((int)boss.AttributeType, nowMs);
+                int rewardGroupId = BigHuntRewardHelper.ResolveWeeklyRewardGroupId(_masterDb, boss.AttributeType, nowMs);
                 if (rewardGroupId == 0) { continue; }
 
                 EntityIUserBigHuntWeeklyMaxScore? wms = userDb.EntityIUserBigHuntWeeklyMaxScore
@@ -73,8 +74,7 @@ public class RewardService(UserDataStore store, DarkMasterMemoryDatabase masterD
 
                 long maxScore = wms?.MaxScore ?? 0;
 
-                List<EntityMBigHuntRewardGroup> items = CollectNewRewards(rewardGroupId, 0, maxScore);
-                foreach (EntityMBigHuntRewardGroup item in items)
+                foreach (EntityMBigHuntRewardGroup item in BigHuntRewardHelper.HighestTierItems(_masterDb, rewardGroupId, maxScore))
                 {
                     PossessionHelper.Apply(userDb, item.PossessionType, item.PossessionId, item.Count, _masterDb, nowMs);
                     weeklyRewards.Add(new BigHuntReward
@@ -237,19 +237,6 @@ public class RewardService(UserDataStore store, DarkMasterMemoryDatabase masterD
         return Task.FromResult(new ReceiveMissionPassRemainingRewardResponse());
     }
 
-    /// <summary>
-    /// Returns the Monday 00:00 UTC timestamp in milliseconds for the week containing the given timestamp.
-    /// </summary>
-    private static long GetWeeklyVersion(long millis)
-    {
-        DateTimeOffset dt = DateTimeOffset.FromUnixTimeMilliseconds(millis).ToUniversalTime();
-        int weekday = (int)dt.DayOfWeek;
-        if (weekday == 0) { weekday = 7; }
-        DateTimeOffset monday = new(dt.Year, dt.Month, dt.Day, 0, 0, 0, TimeSpan.Zero);
-        monday = monday.AddDays(-(weekday - 1));
-        return monday.ToUnixTimeMilliseconds();
-    }
-
     private int ResolveGradeIconId(int bossId, long score)
     {
         EntityMBigHuntBoss? boss = _masterDb.EntityMBigHuntBoss.FirstOrDefault(b => b.BigHuntBossId == bossId);
@@ -266,46 +253,6 @@ public class RewardService(UserDataStore store, DarkMasterMemoryDatabase masterD
             else { break; }
         }
         return iconId;
-    }
-
-    /// <summary>
-    /// Finds the active weekly reward group for a given attribute type at the specified time.
-    /// Uses ScheduleId=1 (the default schedule).
-    /// </summary>
-    private int ResolveActiveWeeklyRewardGroupId(int attributeType, long nowMs)
-    {
-        List<EntityMBigHuntWeeklyAttributeScoreRewardGroupSchedule> entries = [.. _masterDb
-            .EntityMBigHuntWeeklyAttributeScoreRewardGroupSchedule
-            .Where(e => e.AttributeType == (AttributeType)attributeType
-                && e.BigHuntWeeklyAttributeScoreRewardGroupScheduleId == 1)
-            .OrderByDescending(e => e.StartDatetime)];
-
-        foreach (EntityMBigHuntWeeklyAttributeScoreRewardGroupSchedule e in entries)
-        {
-            if (nowMs >= e.StartDatetime) { return e.BigHuntScoreRewardGroupId; }
-        }
-        return entries.Count > 0 ? entries[^1].BigHuntScoreRewardGroupId : 0;
-    }
-
-    /// <summary>
-    /// Collects reward items for thresholds between oldMax (exclusive) and newMax (inclusive).
-    /// </summary>
-    private List<EntityMBigHuntRewardGroup> CollectNewRewards(int scoreRewardGroupId, long oldMax, long newMax)
-    {
-        List<EntityMBigHuntScoreRewardGroup> thresholds = [.. _masterDb.EntityMBigHuntScoreRewardGroup
-            .Where(t => t.BigHuntScoreRewardGroupId == scoreRewardGroupId)
-            .OrderBy(t => t.NecessaryScore)];
-
-        List<EntityMBigHuntRewardGroup> items = [];
-        foreach (EntityMBigHuntScoreRewardGroup t in thresholds)
-        {
-            if (t.NecessaryScore > oldMax && t.NecessaryScore <= newMax)
-            {
-                items.AddRange(_masterDb.EntityMBigHuntRewardGroup
-                    .Where(r => r.BigHuntRewardGroupId == t.BigHuntRewardGroupId));
-            }
-        }
-        return items;
     }
 
     private int ResolvePvpGradeWeeklyRewardGroupId(EntityMPvpSeason season, int finalPoint)

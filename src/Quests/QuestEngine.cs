@@ -13,11 +13,12 @@ namespace MariesWonderland.Quests;
 /// big wins, drops, EXP and gold. Each quest type's service handles its own progress tables and flow,
 /// and calls in here for the rest.
 /// </summary>
-public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig gameConfig, QuestCampaignHelper questCampaigns, IOptions<DevModeOptions> devMode)
+public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig gameConfig, QuestCampaignHelper questCampaigns, ImportantItemEffectHelper importantItems, IOptions<DevModeOptions> devMode)
 {
     private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
     private readonly GameConfig _gameConfig = gameConfig;
     private readonly QuestCampaignHelper _questCampaigns = questCampaigns;
+    private readonly ImportantItemEffectHelper _importantItems = importantItems;
     private readonly DevModeOptions _devMode = devMode.Value;
 
     public EntityMQuest? FindQuest(int questId)
@@ -192,7 +193,7 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
             PossessionHelper.Apply(userDb, (PossessionType)reward.PossessionType, reward.PossessionId, reward.Count, _masterDb, nowMs);
         }
 
-        List<QuestReward> dropRewards = ApplyDropRewards(userDb, BuildDropRewards(quest, campaignTarget, nowMs), nowMs);
+        List<QuestReward> dropRewards = ApplyDropRewards(userDb, BuildDropRewards(userDb, quest, campaignTarget, nowMs), nowMs);
         MarkCleared(userQuest, 1, nowMs);
         if (!isReplay)
         {
@@ -235,7 +236,7 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
     /// <summary>Grants one skipped clear: drops, gold and EXP. Returns the drops as granted.</summary>
     public List<QuestReward> ApplySkippedClear(DarkUserMemoryDatabase userDb, EntityMQuest quest, QuestCampaignTarget campaignTarget, long nowMs)
     {
-        List<QuestReward> drops = ApplyDropRewards(userDb, BuildDropRewards(quest, campaignTarget, nowMs), nowMs);
+        List<QuestReward> drops = ApplyDropRewards(userDb, BuildDropRewards(userDb, quest, campaignTarget, nowMs), nowMs);
         ApplyGoldReward(userDb, quest, nowMs);
         ApplyExpRewards(userDb, quest, nowMs);
         return drops;
@@ -266,8 +267,11 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
         return [.. _masterDb.EntityMQuestFirstClearRewardGroup.Where(r => r.QuestFirstClearRewardGroupId == rewardGroupId)];
     }
 
-    /// <summary>The quest's pickup drops with any active drop campaign applied. Nothing is granted.</summary>
-    public List<QuestReward> BuildDropRewards(EntityMQuest quest, QuestCampaignTarget campaignTarget, long nowMs)
+    /// <summary>
+    /// The quest's pickup drops with active drop campaigns and the user's important-item boosts applied
+    /// (bonuses add together). Nothing is granted.
+    /// </summary>
+    public List<QuestReward> BuildDropRewards(DarkUserMemoryDatabase userDb, EntityMQuest quest, QuestCampaignTarget campaignTarget, long nowMs)
     {
         if (quest.QuestPickupRewardGroupId == 0)
         {
@@ -285,7 +289,8 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
             }
         }
 
-        return _questCampaigns.ApplyDropCampaignBonuses(rewards, campaignTarget, nowMs);
+        return _questCampaigns.ApplyDropCampaignBonuses(
+            rewards, campaignTarget, nowMs, reward => _importantItems.DropBonusPermil(userDb, campaignTarget, reward, nowMs));
     }
 
     /// <summary>Grants drop rewards, auto-selling memoirs that match the user's auto-sale settings.</summary>

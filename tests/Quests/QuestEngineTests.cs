@@ -19,7 +19,7 @@ public class QuestEngineTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
     private const long NowMs = 0;
 
     private QuestEngine CreateEngine(bool freeStamina = false)
-        => new(MasterDb, GameConfig, new QuestCampaignHelper(MasterDb), Options.Create(new DevModeOptions { FreeStamina = freeStamina }));
+        => new(MasterDb, GameConfig, new QuestCampaignHelper(MasterDb), new ImportantItemEffectHelper(MasterDb), Options.Create(new DevModeOptions { FreeStamina = freeStamina }));
 
     private EntityMQuest FindRewardingQuest()
     {

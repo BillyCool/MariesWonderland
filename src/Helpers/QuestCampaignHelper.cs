@@ -9,19 +9,25 @@ public sealed class QuestCampaignHelper
 {
     private readonly IReadOnlyList<QuestCampaignRow> _questCampaigns;
     private readonly IReadOnlyDictionary<int, int> _mainQuestChapterByQuestId;
+    private readonly IReadOnlyDictionary<int, DifficultyType> _mainQuestDifficultyByQuestId;
     private readonly IReadOnlyDictionary<int, EventQuestType> _eventQuestTypeByChapterId;
 
     public QuestCampaignHelper(DarkMasterMemoryDatabase masterDb)
     {
         _questCampaigns = LoadQuestCampaigns(masterDb);
         _mainQuestChapterByQuestId = BuildMainQuestChapterLookup(masterDb);
+        _mainQuestDifficultyByQuestId = BuildMainQuestDifficultyLookup(masterDb);
         _eventQuestTypeByChapterId = masterDb.EntityMEventQuestChapter
             .GroupBy(chapter => chapter.EventQuestChapterId)
             .ToDictionary(group => group.Key, group => group.First().EventQuestType);
     }
 
     public QuestCampaignTarget GetMainQuestTarget(int questId)
-        => new(questId, QuestType.MAIN_QUEST, _mainQuestChapterByQuestId.GetValueOrDefault(questId));
+        => new(
+            questId,
+            QuestType.MAIN_QUEST,
+            _mainQuestChapterByQuestId.GetValueOrDefault(questId),
+            Difficulty: _mainQuestDifficultyByQuestId.GetValueOrDefault(questId));
 
     public QuestCampaignTarget GetEventQuestTarget(int questId, int eventQuestChapterId)
         => new(
@@ -36,13 +42,18 @@ public sealed class QuestCampaignHelper
     public QuestCampaignTarget GetBigHuntQuestTarget(int questId)
         => new(questId, QuestType.BIG_HUNT_QUEST);
 
+    /// <summary>
+    /// Applies active drop campaigns: drop-rate campaigns add together into one bonus, which also takes
+    /// <paramref name="extraBonusPermil"/> per reward (important items); bonus items are appended unboosted.
+    /// </summary>
     public List<QuestReward> ApplyDropCampaignBonuses(
         IEnumerable<QuestReward> baseRewards,
         QuestCampaignTarget target,
         long nowMs,
+        Func<QuestReward, int>? extraBonusPermil = null,
         TargetUserStatusType userStatus = TargetUserStatusType.ALL)
     {
-        int maxDropRateBonusPermil = 0;
+        int dropRateBonusPermil = 0;
         List<QuestReward> bonusDrops = [];
 
         foreach (QuestCampaignRow row in _questCampaigns)
@@ -55,7 +66,7 @@ public sealed class QuestCampaignHelper
             switch (row.EffectType)
             {
                 case QuestCampaignEffectType.DROP_RATE:
-                    maxDropRateBonusPermil = Math.Max(maxDropRateBonusPermil, row.EffectValue);
+                    dropRateBonusPermil += row.EffectValue;
                     break;
                 case QuestCampaignEffectType.DROP_ITEM_ADD:
                     bonusDrops.AddRange(row.BonusItems.Select(CloneReward));
@@ -64,12 +75,10 @@ public sealed class QuestCampaignHelper
         }
 
         List<QuestReward> rewards = [.. baseRewards.Select(CloneReward)];
-        if (maxDropRateBonusPermil > 0)
+        foreach (QuestReward reward in rewards)
         {
-            foreach (QuestReward reward in rewards)
-            {
-                reward.Count = ApplyDropRateBonus(reward.Count, maxDropRateBonusPermil);
-            }
+            int bonusPermil = dropRateBonusPermil + (extraBonusPermil?.Invoke(reward) ?? 0);
+            reward.Count = ApplyBonusPermil(reward.Count, bonusPermil);
         }
 
         rewards.AddRange(bonusDrops);
@@ -159,6 +168,26 @@ public sealed class QuestCampaignHelper
         return campaigns;
     }
 
+    private static IReadOnlyDictionary<int, DifficultyType> BuildMainQuestDifficultyLookup(DarkMasterMemoryDatabase masterDb)
+    {
+        Dictionary<int, DifficultyType> difficultyBySequenceId = [];
+        foreach (EntityMMainQuestSequenceGroup group in masterDb.EntityMMainQuestSequenceGroup)
+        {
+            difficultyBySequenceId.TryAdd(group.MainQuestSequenceId, group.DifficultyType);
+        }
+
+        Dictionary<int, DifficultyType> difficultyByQuestId = [];
+        foreach (EntityMMainQuestSequence sequence in masterDb.EntityMMainQuestSequence)
+        {
+            if (difficultyBySequenceId.TryGetValue(sequence.MainQuestSequenceId, out DifficultyType difficulty))
+            {
+                difficultyByQuestId.TryAdd(sequence.QuestId, difficulty);
+            }
+        }
+
+        return difficultyByQuestId;
+    }
+
     private static IReadOnlyDictionary<int, int> BuildMainQuestChapterLookup(DarkMasterMemoryDatabase masterDb)
     {
         Dictionary<int, int> sequenceGroupBySequenceId = masterDb.EntityMMainQuestSequenceGroup
@@ -192,8 +221,9 @@ public sealed class QuestCampaignHelper
             RewardEffectId = reward.RewardEffectId
         };
 
-    private static int ApplyDropRateBonus(int baseCount, int bonusPermil)
-        => (int)(((long)baseCount * (1000 + bonusPermil) + 999) / 1000);
+    /// <summary>Raises a count by a permil bonus, rounding up.</summary>
+    public static int ApplyBonusPermil(int baseCount, int bonusPermil)
+        => bonusPermil <= 0 ? baseCount : (int)(((long)baseCount * (1000 + bonusPermil) + 999) / 1000);
 
     // TODO: The current repo has no per-user comeback-grade state, so COMEBACK_GRADE filters cannot be evaluated cleanly yet.
     private sealed record QuestCampaignRow(
@@ -241,4 +271,5 @@ public sealed record QuestCampaignTarget(
     int QuestId,
     QuestType QuestType,
     int ChapterId = 0,
-    EventQuestType EventQuestType = EventQuestType.UNKNOWN);
+    EventQuestType EventQuestType = EventQuestType.UNKNOWN,
+    DifficultyType Difficulty = DifficultyType.UNKNOWN);
