@@ -32,6 +32,33 @@ public static class StaminaHelper
         => AddStamina(status, amount, gameConfig.StaminaMaxCount, nowMs);
 
     /// <summary>
+    /// Adds the stamina regenerated since the last update (one point per <paramref name="recoverySecond"/>
+    /// seconds) up to <paramref name="maxStamina"/>. Stamina already at or above the max is left as it is.
+    /// </summary>
+    public static void Settle(EntityIUserStatus status, int maxStamina, int recoverySecond, long nowMs)
+    {
+        long maxMilliValue = maxStamina * 1000L;
+        long elapsedMs = nowMs - status.StaminaUpdateDatetime;
+        if (status.StaminaMilliValue >= maxMilliValue || elapsedMs <= 0 || recoverySecond <= 0)
+        {
+            return;
+        }
+
+        // One point (1000 milli) every recoverySecond seconds is one milli every recoverySecond ms.
+        long regenerated = elapsedMs / recoverySecond;
+        status.StaminaMilliValue = (int)Math.Min(status.StaminaMilliValue + regenerated, maxMilliValue);
+        status.StaminaUpdateDatetime = nowMs;
+    }
+
+    /// <summary>Settles regeneration, then spends <paramref name="cost"/> stamina, never going below zero.</summary>
+    public static void Consume(EntityIUserStatus status, int cost, int maxStamina, int recoverySecond, long nowMs)
+    {
+        Settle(status, maxStamina, recoverySecond, nowMs);
+        status.StaminaMilliValue = Math.Max(status.StaminaMilliValue - cost * 1000, 0);
+        status.StaminaUpdateDatetime = nowMs;
+    }
+
+    /// <summary>
     /// Raises regular stamina to <paramref name="maxStamina"/> (the level's maximum), as on a level-up.
     /// Stamina already above it is kept.
     /// </summary>

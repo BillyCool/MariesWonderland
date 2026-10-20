@@ -1,8 +1,10 @@
+using MariesWonderland.Configuration;
 using MariesWonderland.Data;
 using MariesWonderland.Helpers;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.Quest;
+using Microsoft.Extensions.Options;
 
 namespace MariesWonderland.Quests;
 
@@ -11,11 +13,12 @@ namespace MariesWonderland.Quests;
 /// big wins, drops, EXP and gold. Each quest type's service handles its own progress tables and flow,
 /// and calls in here for the rest.
 /// </summary>
-public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig gameConfig, QuestCampaignHelper questCampaigns)
+public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig gameConfig, QuestCampaignHelper questCampaigns, IOptions<DevModeOptions> devMode)
 {
     private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
     private readonly GameConfig _gameConfig = gameConfig;
     private readonly QuestCampaignHelper _questCampaigns = questCampaigns;
+    private readonly DevModeOptions _devMode = devMode.Value;
 
     public EntityMQuest? FindQuest(int questId)
         => _masterDb.EntityMQuest.FirstOrDefault(q => q.QuestId == questId);
@@ -46,6 +49,23 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
         => userDb.EntityIUserQuest.GetOrCreate(
             q => q.QuestId == questId,
             () => new EntityIUserQuest { UserId = userDb.UserId, QuestId = questId });
+
+    /// <summary>
+    /// Spends the stamina for <paramref name="times"/> runs of the quest (after stamina campaigns), unless
+    /// <see cref="DevModeOptions.FreeStamina"/> is on.
+    /// </summary>
+    public void ConsumeStamina(DarkUserMemoryDatabase userDb, EntityMQuest? quest, QuestCampaignTarget campaignTarget, int times, long nowMs)
+    {
+        if (_devMode.IsFreeStaminaEnabled || quest == null || quest.Stamina <= 0 || times <= 0)
+        {
+            return;
+        }
+
+        EntityIUserStatus status = userDb.EntityIUserStatus[0];
+        int cost = _questCampaigns.ApplyStaminaCampaign(quest.Stamina, campaignTarget, nowMs) * times;
+        int maxStamina = _masterDb.EntityMUserLevel.Find(status.Level)?.MaxStamina ?? 0;
+        StaminaHelper.Consume(status, cost, maxStamina, _gameConfig.UserStaminaRecoverySecond, nowMs);
+    }
 
     /// <summary>
     /// True when the quest is actually played rather than auto-cleared on start. A background quest still

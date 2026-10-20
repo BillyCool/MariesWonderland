@@ -36,6 +36,7 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
 
         if (bhQuest is not null)
         {
+            _questEngine.ConsumeStamina(userDb, _questEngine.FindQuest(bhQuest.QuestId), _questCampaignHelper.GetBigHuntQuestTarget(bhQuest.QuestId), 1, nowMs);
             HandleBigHuntQuestStart(userDb, bhQuest.QuestId, request.UserDeckNumber, nowMs);
         }
 

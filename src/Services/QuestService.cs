@@ -212,6 +212,8 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
 
         EntityMQuest? quest = _questEngine.FindQuest(questId);
 
+        _questEngine.ConsumeStamina(userDb, quest, _questCampaignHelper.GetMainQuestTarget(questId), 1, nowMs);
+
         // Replay quests have their own ids and may never have been cleared; they keep no mission rows.
         if (request.IsReplayFlow)
         {
@@ -535,6 +537,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         int questId = request.QuestId;
 
         EntityIUserQuest userQuest = _questEngine.EnsureQuestRows(userDb, questId);
+        _questEngine.ConsumeStamina(userDb, _questEngine.FindQuest(questId), _questCampaignHelper.GetExtraQuestTarget(questId), 1, nowMs);
 
         EntitySQuestSession session = GetOrCreateQuestSession(userDb, userId, questId);
         session.UserDeckNumber = request.UserDeckNumber;
@@ -641,6 +644,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
 
         EntityIUserQuest userQuest = _questEngine.EnsureQuestRows(userDb, questId);
         userQuest.IsBattleOnly = request.IsBattleOnly;
+        _questEngine.ConsumeStamina(userDb, _questEngine.FindQuest(questId), _questCampaignHelper.GetEventQuestTarget(questId, chapterId), 1, nowMs);
 
         EntitySQuestSession eventSession = GetOrCreateQuestSession(userDb, userId, questId);
         eventSession.UserDeckNumber = request.UserDeckNumber;
@@ -935,6 +939,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         List<QuestReward> dropRewards = [];
         if (quest != null)
         {
+            _questEngine.ConsumeStamina(userDb, quest, ResolveEventQuestCampaignTarget(userDb, userId, questId), request.SkipCount, nowMs);
             for (int i = 0; i < request.SkipCount; i++)
             {
                 dropRewards.AddRange(_questEngine.ApplySkippedClear(userDb, quest, ResolveEventQuestCampaignTarget(userDb, userId, questId), nowMs));

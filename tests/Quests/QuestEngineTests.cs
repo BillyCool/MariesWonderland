@@ -1,9 +1,11 @@
+using MariesWonderland.Configuration;
 using MariesWonderland.Data;
 using MariesWonderland.Helpers;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
 using MariesWonderland.Quests;
 using MariesWonderland.Tests.Infrastructure;
+using Microsoft.Extensions.Options;
 
 namespace MariesWonderland.Tests.Quests;
 
@@ -16,7 +18,8 @@ public class QuestEngineTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
     // Before any campaign, so drops are the quest's base drops.
     private const long NowMs = 0;
 
-    private QuestEngine CreateEngine() => new(MasterDb, GameConfig, new QuestCampaignHelper(MasterDb));
+    private QuestEngine CreateEngine(bool freeStamina = false)
+        => new(MasterDb, GameConfig, new QuestCampaignHelper(MasterDb), Options.Create(new DevModeOptions { FreeStamina = freeStamina }));
 
     private EntityMQuest FindRewardingQuest()
     {
@@ -234,6 +237,23 @@ public class QuestEngineTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
 
         Assert.True(QuestEngine.IsPlayable(battle));
         Assert.False(QuestEngine.IsPlayable(cutscene));
+    }
+
+    [Theory]
+    [InlineData(false)]
+    [InlineData(true)]
+    public void ConsumeStamina_SpendsTheQuestCostUnlessFreeStamina(bool freeStamina)
+    {
+        QuestEngine engine = CreateEngine(freeStamina);
+        EntityMQuest quest = MasterDb.EntityMQuest.Where(q => q.Stamina > 0).OrderBy(q => q.QuestId).First();
+        DarkUserMemoryDatabase userDb = CreateUser();
+        EntityIUserStatus status = userDb.EntityIUserStatus[0];
+        status.StaminaMilliValue = 100_000;
+        status.StaminaUpdateDatetime = NowMs;
+
+        engine.ConsumeStamina(userDb, quest, MainTarget(quest), 2, NowMs);
+
+        Assert.Equal(freeStamina ? 100_000 : 100_000 - quest.Stamina * 2 * 1000, status.StaminaMilliValue);
     }
 
     private EntityMQuest FindReplayQuest()

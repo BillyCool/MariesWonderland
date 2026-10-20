@@ -1,3 +1,4 @@
+using MariesWonderland.Configuration;
 using MariesWonderland.Data;
 using MariesWonderland.Helpers;
 using MariesWonderland.Models.Entities;
@@ -5,6 +6,7 @@ using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.Quest;
 using MariesWonderland.Quests;
 using MariesWonderland.Tests.Infrastructure;
+using Microsoft.Extensions.Options;
 using QuestService = MariesWonderland.Services.QuestService;
 
 namespace MariesWonderland.Tests.Quests;
@@ -17,7 +19,7 @@ public class MainQuestFlowTests(MasterDatabaseFixture fixture) : ServiceTestBase
         (long userId, _) = store.RegisterOrGetUser("main-quest-flow-test", MasterDb);
         store.TryGet(userId, out DarkUserMemoryDatabase userDb);
         QuestCampaignHelper campaigns = new(MasterDb);
-        QuestService service = new(store, MasterDb, new QuestEngine(MasterDb, GameConfig, campaigns), campaigns, TimeProvider.System);
+        QuestService service = new(store, MasterDb, new QuestEngine(MasterDb, GameConfig, campaigns, Options.Create(new DevModeOptions())), campaigns, TimeProvider.System);
         return (service, userDb, userId);
     }
 

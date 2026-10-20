@@ -39,4 +39,46 @@ public class StaminaHelperTests
 
         Assert.Equal(999_000, status.StaminaMilliValue);
     }
+
+    [Fact]
+    public void Consume_SettlesRegenerationBeforeSpending()
+    {
+        // 10 points at t=0; 30 minutes at 180 s per point regenerates 10 points.
+        EntityIUserStatus status = new() { StaminaMilliValue = 10_000, StaminaUpdateDatetime = 0 };
+
+        StaminaHelper.Consume(status, cost: 5, maxStamina: 50, recoverySecond: 180, nowMs: 30 * 60 * 1000L);
+
+        Assert.Equal(15_000, status.StaminaMilliValue);
+        Assert.Equal(30 * 60 * 1000L, status.StaminaUpdateDatetime);
+    }
+
+    [Fact]
+    public void Settle_StopsAtTheMax()
+    {
+        EntityIUserStatus status = new() { StaminaMilliValue = 49_000, StaminaUpdateDatetime = 0 };
+
+        StaminaHelper.Settle(status, maxStamina: 50, recoverySecond: 180, nowMs: 24 * 60 * 60 * 1000L);
+
+        Assert.Equal(50_000, status.StaminaMilliValue);
+    }
+
+    [Fact]
+    public void Consume_AboveTheMax_SpendsWithoutRegenerating()
+    {
+        EntityIUserStatus status = new() { StaminaMilliValue = 80_000, StaminaUpdateDatetime = 0 };
+
+        StaminaHelper.Consume(status, cost: 10, maxStamina: 50, recoverySecond: 180, nowMs: 60 * 60 * 1000L);
+
+        Assert.Equal(70_000, status.StaminaMilliValue);
+    }
+
+    [Fact]
+    public void Consume_MoreThanAvailable_StopsAtZero()
+    {
+        EntityIUserStatus status = new() { StaminaMilliValue = 3_000, StaminaUpdateDatetime = 0 };
+
+        StaminaHelper.Consume(status, cost: 10, maxStamina: 50, recoverySecond: 180, nowMs: 0);
+
+        Assert.Equal(0, status.StaminaMilliValue);
+    }
 }
