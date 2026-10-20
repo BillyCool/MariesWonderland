@@ -9,15 +9,13 @@ using MariesWonderland.Proto.Quest;
 
 namespace MariesWonderland.Services;
 
-public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb, TimeProvider timeProvider) : MariesWonderland.Proto.Quest.QuestService.QuestServiceBase
+public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb, GameConfig gameConfig, QuestCampaignHelper questCampaignHelper, TimeProvider timeProvider) : MariesWonderland.Proto.Quest.QuestService.QuestServiceBase
 {
-    private readonly TimeProvider _timeProvider = timeProvider;
-
-    private const int QuestGoldConsumableItemId = 1;
-
     private readonly UserDataStore _store = store;
     private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
-    private readonly QuestCampaignHelper _questCampaignHelper = new(masterDb);
+    private readonly GameConfig _gameConfig = gameConfig;
+    private readonly QuestCampaignHelper _questCampaignHelper = questCampaignHelper;
+    private readonly TimeProvider _timeProvider = timeProvider;
 
     /// <summary>Advances the main story flow to the specified quest scene and updates route/progress tracking.</summary>
     public override Task<UpdateMainFlowSceneProgressResponse> UpdateMainFlowSceneProgress(UpdateMainFlowSceneProgressRequest request, ServerCallContext context)
@@ -773,17 +771,11 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         }
     }
 
-    /// <summary>Grants gold (consumable item ID 1) from quest completion.</summary>
-    private static void ApplyGoldReward(DarkUserMemoryDatabase userDb, EntityMQuest quest, long nowMs)
+    /// <summary>Grants the quest's gold reward.</summary>
+    private void ApplyGoldReward(DarkUserMemoryDatabase userDb, EntityMQuest quest, long nowMs)
     {
         if (quest.Gold <= 0) return;
-        EntityIUserConsumableItem? gold = userDb.EntityIUserConsumableItem.FirstOrDefault(c => c.ConsumableItemId == 1);
-        if (gold == null)
-        {
-            gold = new EntityIUserConsumableItem { UserId = userDb.UserId, ConsumableItemId = 1, Count = 0, FirstAcquisitionDatetime = nowMs };
-            userDb.EntityIUserConsumableItem.Add(gold);
-        }
-        gold.Count += quest.Gold;
+        PossessionHelper.Apply(userDb, PossessionType.CONSUMABLE_ITEM, _gameConfig.ConsumableItemIdForGold, quest.Gold, _masterDb, nowMs);
     }
 
     /// <summary>Grants first-clear reward possessions to the user.</summary>
@@ -821,7 +813,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
                         userDb,
                         reward.PossessionId,
                         _masterDb,
-                        QuestGoldConsumableItemId,
+                        _gameConfig.ConsumableItemIdForGold,
                         raritySet,
                         rankSet, nowMs);
 

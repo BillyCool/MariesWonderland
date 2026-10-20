@@ -1,5 +1,6 @@
 using MariesWonderland.Configuration;
 using MariesWonderland.Data;
+using MariesWonderland.Helpers;
 
 namespace MariesWonderland.Extensions;
 
@@ -22,16 +23,17 @@ public static class ServiceExtensions
     /// </summary>
     public static IServiceCollection AddDataStores(this IServiceCollection services, IConfiguration configuration)
     {
-        var options = configuration.GetSection(ServerOptions.SectionName).Get<ServerOptions>()!;
+        ServerOptions options = configuration.GetSection(ServerOptions.SectionName).Get<ServerOptions>()!;
 
-        var binPath = Path.Combine(options.Paths.MasterDatabase, $"{options.Data.LatestMasterDataVersion}.bin.e");
-        var masterDb = BinaryMasterDataLoader.Load(binPath);
+        string binPath = Path.Combine(options.Paths.MasterDatabase, $"{options.Data.LatestMasterDataVersion}.bin.e");
+        DarkMasterMemoryDatabase masterDb = BinaryMasterDataLoader.Load(binPath);
 
-        var gameConfig = GameConfig.From(masterDb.EntityMConfig);
+        GameConfig gameConfig = GameConfig.From(masterDb.EntityMConfig);
 
         services.AddSingleton(TimeProvider.System);
         services.AddSingleton(masterDb);
         services.AddSingleton(gameConfig);
+        services.AddSingleton<QuestCampaignHelper>();
         services.AddSingleton<UserDataStore>();
         services.AddSingleton<UserDataSeeder>();
 

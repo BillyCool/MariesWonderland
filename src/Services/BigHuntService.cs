@@ -11,12 +11,12 @@ using MariesWonderland.Proto.Quest;
 
 namespace MariesWonderland.Services;
 
-public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase masterDb, TimeProvider timeProvider)
+public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase masterDb, QuestCampaignHelper questCampaignHelper, TimeProvider timeProvider)
     : MariesWonderland.Proto.BigHunt.BighuntService.BighuntServiceBase
 {
     private readonly UserDataStore _store = store;
     private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
-    private readonly QuestCampaignHelper _questCampaignHelper = new(masterDb);
+    private readonly QuestCampaignHelper _questCampaignHelper = questCampaignHelper;
     private readonly TimeProvider _timeProvider = timeProvider;
 
     /// <summary>
