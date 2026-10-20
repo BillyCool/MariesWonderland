@@ -8,14 +8,16 @@ using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.Battle;
 using MariesWonderland.Proto.BigHunt;
 using MariesWonderland.Proto.Quest;
+using MariesWonderland.Quests;
 
 namespace MariesWonderland.Services;
 
-public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase masterDb, QuestCampaignHelper questCampaignHelper, TimeProvider timeProvider)
+public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase masterDb, QuestEngine questEngine, QuestCampaignHelper questCampaignHelper, TimeProvider timeProvider)
     : MariesWonderland.Proto.BigHunt.BighuntService.BighuntServiceBase
 {
     private readonly UserDataStore _store = store;
     private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
+    private readonly QuestEngine _questEngine = questEngine;
     private readonly QuestCampaignHelper _questCampaignHelper = questCampaignHelper;
     private readonly TimeProvider _timeProvider = timeProvider;
 
@@ -456,25 +458,8 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
     /// </summary>
     private void HandleBigHuntQuestStart(DarkUserMemoryDatabase userDb, int questId, int deckNumber, long nowMs)
     {
-        EntityMQuest? masterQuest = _masterDb.EntityMQuest.FirstOrDefault(q => q.QuestId == questId);
-
-        EntityIUserQuest userQuest = userDb.EntityIUserQuest
-            .FirstOrDefault(q => q.QuestId == questId)
-            ?? AddEntity(userDb.EntityIUserQuest, new EntityIUserQuest { UserId = userDb.UserId, QuestId = questId });
-
-        // Initialize quest missions
-        if (masterQuest is not null && masterQuest.QuestMissionGroupId != 0)
-        {
-            foreach (EntityMQuestMissionGroup missionGroupRow in _masterDb.EntityMQuestMissionGroup
-                .Where(g => g.QuestMissionGroupId == masterQuest.QuestMissionGroupId))
-            {
-                if (!userDb.EntityIUserQuestMission.Any(m => m.QuestId == questId && m.QuestMissionId == missionGroupRow.QuestMissionId))
-                    userDb.EntityIUserQuestMission.Add(new EntityIUserQuestMission { UserId = userDb.UserId, QuestId = questId, QuestMissionId = missionGroupRow.QuestMissionId });
-            }
-        }
-
-        userQuest.QuestStateType = (int)QuestStateType.ACTIVE;
-        userQuest.LatestStartDatetime = nowMs;
+        EntityIUserQuest userQuest = _questEngine.EnsureQuestRows(userDb, questId);
+        QuestEngine.MarkActive(userQuest, nowMs);
     }
 
     /// <summary>
@@ -483,67 +468,31 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
     /// </summary>
     private void HandleBigHuntQuestFinish(DarkUserMemoryDatabase userDb, int questId, bool isRetired, long nowMs)
     {
-        EntityMQuest? masterQuest = _masterDb.EntityMQuest.FirstOrDefault(q => q.QuestId == questId);
-        EntityIUserQuest? userQuest = userDb.EntityIUserQuest
-            .FirstOrDefault(q => q.QuestId == questId);
+        EntityMQuest? masterQuest = _questEngine.FindQuest(questId);
+        EntityIUserQuest? userQuest = userDb.EntityIUserQuest.FirstOrDefault(q => q.QuestId == questId);
 
         if (userQuest is not null && !isRetired)
         {
-            // First-clear rewards
-            if (userQuest.ClearCount == 0 && masterQuest is not null && masterQuest.QuestFirstClearRewardGroupId != 0)
+            if (masterQuest is not null)
             {
-                int rewardGroupId = masterQuest.QuestFirstClearRewardGroupId;
-                EntityMQuestFirstClearRewardSwitch? switchRow = _masterDb.EntityMQuestFirstClearRewardSwitch
-                    .FirstOrDefault(s => s.QuestId == questId);
-                if (switchRow != null)
+                if (userQuest.ClearCount == 0)
                 {
-                    EntityIUserQuest? prereq = userDb.EntityIUserQuest
-                        .FirstOrDefault(q => q.QuestId == switchRow.SwitchConditionClearQuestId);
-                    if (prereq != null && prereq.QuestStateType == (int)QuestStateType.CLEARED)
-                        rewardGroupId = switchRow.QuestFirstClearRewardGroupId;
+                    foreach (EntityMQuestFirstClearRewardGroup reward in _questEngine.ResolveFirstClearRewardRows(userDb, masterQuest))
+                    {
+                        PossessionHelper.Apply(userDb, reward.PossessionType, reward.PossessionId, reward.Count, _masterDb, nowMs);
+                    }
                 }
 
-                foreach (EntityMQuestFirstClearRewardGroup reward in _masterDb.EntityMQuestFirstClearRewardGroup
-                    .Where(r => r.QuestFirstClearRewardGroupId == rewardGroupId))
-                {
-                    PossessionHelper.Apply(userDb, reward.PossessionType, reward.PossessionId, reward.Count, _masterDb, nowMs);
-                }
-            }
-
-            // Drop rewards
-            if (masterQuest is not null && masterQuest.QuestPickupRewardGroupId != 0)
-            {
-                List<QuestReward> dropRewards = BuildDropRewards(masterQuest, questId, nowMs);
-                foreach (QuestReward dropReward in dropRewards)
+                foreach (QuestReward dropReward in _questEngine.BuildDropRewards(masterQuest, _questCampaignHelper.GetBigHuntQuestTarget(questId), nowMs))
                 {
                     PossessionHelper.Apply(userDb, (PossessionType)dropReward.PossessionType, dropReward.PossessionId, dropReward.Count, _masterDb, nowMs);
                 }
             }
 
-            userQuest.QuestStateType = (int)QuestStateType.CLEARED;
-            userQuest.ClearCount++;
-            userQuest.DailyClearCount++;
-            userQuest.LastClearDatetime = nowMs;
+            QuestEngine.MarkCleared(userQuest, 1, nowMs);
         }
 
-        // Clear quest missions
-        if (masterQuest is not null && masterQuest.QuestMissionGroupId != 0)
-        {
-            foreach (EntityMQuestMissionGroup missionGroupRow in _masterDb.EntityMQuestMissionGroup
-                .Where(g => g.QuestMissionGroupId == masterQuest.QuestMissionGroupId))
-            {
-                EntityIUserQuestMission? userMission = userDb.EntityIUserQuestMission
-                    .FirstOrDefault(m => m.QuestId == questId && m.QuestMissionId == missionGroupRow.QuestMissionId);
-                if (userMission is null)
-                {
-                    userMission = new EntityIUserQuestMission { UserId = userDb.UserId, QuestId = questId, QuestMissionId = missionGroupRow.QuestMissionId };
-                    userDb.EntityIUserQuestMission.Add(userMission);
-                }
-                userMission.IsClear = true;
-                userMission.ProgressValue = 1;
-                userMission.LatestClearDatetime = nowMs;
-            }
-        }
+        _questEngine.ClearQuestMissions(userDb, questId, nowMs);
     }
 
     // ────────── Catalog resolution helpers ──────────
@@ -740,38 +689,6 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
         return userDb.EntitySBigHuntSession
             .FirstOrDefault(s => s.UserId == userDb.UserId)
             ?? AddEntity(userDb.EntitySBigHuntSession, new EntitySBigHuntSession { UserId = userDb.UserId });
-    }
-
-    private List<QuestReward> BuildDropRewards(EntityMQuest quest, int questId, long nowMs)
-    {
-        List<QuestReward> rewards = [];
-        if (quest.QuestPickupRewardGroupId == 0)
-        {
-            return rewards;
-        }
-
-        foreach (EntityMQuestPickupRewardGroup pickup in _masterDb.EntityMQuestPickupRewardGroup
-            .Where(p => p.QuestPickupRewardGroupId == quest.QuestPickupRewardGroupId))
-        {
-            EntityMBattleDropReward? drop = _masterDb.EntityMBattleDropReward
-                .FirstOrDefault(d => d.BattleDropRewardId == pickup.BattleDropRewardId);
-            if (drop == null)
-            {
-                continue;
-            }
-
-            rewards.Add(new QuestReward
-            {
-                PossessionType = (int)drop.PossessionType,
-                PossessionId = drop.PossessionId,
-                Count = drop.Count
-            });
-        }
-
-        return _questCampaignHelper.ApplyDropCampaignBonuses(
-            rewards,
-            _questCampaignHelper.GetBigHuntQuestTarget(questId),
-            nowMs);
     }
 
     private static int NextWaveIndex(EntitySBigHuntSession session)

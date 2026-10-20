@@ -1,5 +1,6 @@
 using MariesWonderland.Configuration;
 using MariesWonderland.Data;
+using MariesWonderland.Quests;
 
 namespace MariesWonderland.Extensions;
 
@@ -37,6 +38,7 @@ public static class ServiceExtensions
         services.AddScoped(provider => provider.GetRequiredService<MasterDataSnapshot>().Database);
         services.AddScoped(provider => provider.GetRequiredService<MasterDataSnapshot>().GameConfig);
         services.AddScoped(provider => provider.GetRequiredService<MasterDataSnapshot>().QuestCampaigns);
+        services.AddScoped<QuestEngine>();
         if (hotReload)
         {
             services.AddHostedService(provider => new MasterDataReloader(
