@@ -20,7 +20,7 @@ public static class TestSettings
 
     private static string ResolveMasterDataPath()
     {
-        var config = new ConfigurationBuilder()
+        IConfigurationRoot config = new ConfigurationBuilder()
             .SetBasePath(Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "..", "src"))
             .AddJsonFile("appsettings.json", optional: false)
             .AddJsonFile("appsettings.Development.json", optional: true)
@@ -28,7 +28,7 @@ public static class TestSettings
             .AddEnvironmentVariables()
             .Build();
 
-        var options = config.GetSection(ServerOptions.SectionName).Get<ServerOptions>()!;
+        ServerOptions options = config.GetSection(ServerOptions.SectionName).Get<ServerOptions>()!;
         return Path.Combine(options.Paths.MasterDatabase, $"{options.Data.LatestMasterDataVersion}.bin.e");
     }
 }

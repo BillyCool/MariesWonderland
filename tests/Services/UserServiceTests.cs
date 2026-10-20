@@ -382,9 +382,9 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
     [Fact]
     public void RegisterOrGetUser_NewUser_SeedsOneRowPerUserTablesOnce()
     {
-        var store = new UserDataStore(MasterDb);
+        UserDataStore store = new(MasterDb);
 
-        var (userId, isNew) = store.RegisterOrGetUser("seed-test-uuid");
+        (long userId, bool isNew) = store.RegisterOrGetUser("seed-test-uuid");
         store.RegisterOrGetUser("seed-test-uuid");
         Assert.True(store.TryGet(userId, out DarkUserMemoryDatabase userDb));
 
@@ -414,10 +414,10 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
     [Fact]
     public async Task GameStart_DoesNotAddRows()
     {
-        var userDb = CreateUserDb();
+        DarkUserMemoryDatabase userDb = CreateUserDb();
         userDb.EntityIUser.Add(new EntityIUser { UserId = UserId });
-        var store = CreateStore(UserId, userDb, MasterDb);
-        var service = CreateService(store);
+        UserDataStore store = CreateStore(UserId, userDb, MasterDb);
+        UserService service = CreateService(store);
 
         await service.GameStart(new Empty(), ContextFor(UserId));
         await service.GameStart(new Empty(), ContextFor(UserId));

@@ -17,11 +17,15 @@ public static class EntityKey<T>
     public static object Of(T entity)
     {
         if (Properties.Count == 1)
+        {
             return Properties[0].GetValue(entity)!;
+        }
 
         object[] parts = new object[Properties.Count];
         for (int i = 0; i < parts.Length; i++)
+        {
             parts[i] = Properties[i].GetValue(entity)!;
+        }
         return new CompositeKey(parts);
     }
 
@@ -32,21 +36,29 @@ public static class EntityKey<T>
     public static object From(object[] values)
     {
         if (values.Length != Properties.Count)
+        {
             throw new ArgumentException($"{typeof(T).Name} has a {Properties.Count}-part key but {values.Length} values were given.");
+        }
 
         if (values.Length == 1)
+        {
             return Convert(values[0], Properties[0].PropertyType);
+        }
 
         object[] parts = new object[values.Length];
         for (int i = 0; i < parts.Length; i++)
+        {
             parts[i] = Convert(values[i], Properties[i].PropertyType);
+        }
         return new CompositeKey(parts);
     }
 
     private static object Convert(object value, Type type)
     {
         if (value.GetType() == type)
+        {
             return value;
+        }
         return type.IsEnum
             ? Enum.ToObject(type, value)
             : System.Convert.ChangeType(value, type);
@@ -75,7 +87,9 @@ public readonly struct CompositeKey(object[] parts) : IEquatable<CompositeKey>
     {
         HashCode hash = new();
         foreach (object part in _parts)
+        {
             hash.Add(part);
+        }
         return hash.ToHashCode();
     }
 

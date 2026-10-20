@@ -1,5 +1,6 @@
 using System.Collections.Concurrent;
 using System.Collections.Frozen;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 
 namespace MariesWonderland.Data;
@@ -31,7 +32,9 @@ public static class TableExtensions
         foreach (T row in table)
         {
             if (EntityKey<T>.Of(row).Equals(key))
+            {
                 return row;
+            }
         }
         return null;
     }
@@ -42,10 +45,9 @@ public static class TableExtensions
     /// </summary>
     public static void MarkReadOnly(DarkMasterMemoryDatabase masterDb)
     {
-        foreach (var property in typeof(DarkMasterMemoryDatabase).GetProperties())
+        foreach (PropertyInfo property in typeof(DarkMasterMemoryDatabase).GetProperties())
         {
-            if (property.GetValue(masterDb) is not { } table || !property.PropertyType.IsGenericType)
-                continue;
+            if (property.GetValue(masterDb) is not { } table || !property.PropertyType.IsGenericType) continue;
 
             Type rowType = property.PropertyType.GetGenericArguments()[0];
             Func<object> build = IndexBuilders.GetOrAdd(rowType, CreateIndexBuilder)(table);
@@ -57,8 +59,8 @@ public static class TableExtensions
 
     private static Func<object, Func<object>> CreateIndexBuilder(Type rowType)
     {
-        var method = typeof(TableExtensions)
-            .GetMethod(nameof(BuildIndex), System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Static)!
+        MethodInfo method = typeof(TableExtensions)
+            .GetMethod(nameof(BuildIndex), BindingFlags.NonPublic | BindingFlags.Static)!
             .MakeGenericMethod(rowType);
         return table => () => method.Invoke(null, [table])!;
     }
@@ -68,7 +70,9 @@ public static class TableExtensions
         // Master data can contain repeated keys; the first row wins, as with a linear scan.
         Dictionary<object, T> index = new(table.Count);
         foreach (T row in table)
+        {
             index.TryAdd(EntityKey<T>.Of(row), row);
+        }
         return index.ToFrozenDictionary();
     }
 }

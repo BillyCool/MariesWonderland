@@ -55,7 +55,9 @@ public class LoggingInterceptor(ILogger<LoggingInterceptor> logger, IOptions<Dev
         }
 
         if (_writeToDisk)
+        {
             _ = Task.Run(() => WriteToDisk(methodName, request, response));
+        }
 
         return response;
     }

@@ -16,7 +16,9 @@ public sealed class FakeServerCallContext : ServerCallContext
     private FakeServerCallContext(string? sessionKey)
     {
         if (!string.IsNullOrEmpty(sessionKey))
+        {
             _requestHeaders.Add("x-apb-session-key", sessionKey);
+        }
     }
 
     /// <summary>
@@ -27,7 +29,9 @@ public sealed class FakeServerCallContext : ServerCallContext
     {
         FakeServerCallContext context = new(sessionKey);
         if (userId != 0)
+        {
             context.SetUserId(userId);
+        }
         return context;
     }
 
@@ -36,7 +40,9 @@ public sealed class FakeServerCallContext : ServerCallContext
     {
         FakeServerCallContext context = new(sessionKey);
         foreach (Metadata.Entry header in headers)
+        {
             context._requestHeaders.Add(header);
+        }
         return context;
     }
 

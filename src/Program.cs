@@ -42,7 +42,9 @@ public static class Program
             options.Interceptors.Add<DiffInterceptor>();
             options.Interceptors.Add<CommonHeaderInterceptor>();
             if (devMode.IsRequestJournalEnabled)
+            {
                 options.Interceptors.Add<AutoSaveInterceptor>();
+            }
         });
         builder.Services.AddServerOptions(builder.Configuration);
         builder.Services.AddDataStores(builder.Configuration);
@@ -65,10 +67,14 @@ public static class Program
         app.MapGrpcServices();
         app.MapHttpApis();
         if (devMode.IsDebugEndpointsEnabled)
+        {
             app.MapDebugApis();
+        }
 
         if (devMode.Enabled)
+        {
             app.Logger.LogWarning("DevMode is enabled. Don't use this configuration on a hosted server.");
+        }
 
         app.Run();
     }
