@@ -406,3 +406,6 @@ scripts/hooks.js
 
 # Local working docs (not tracked)
 docs/
+
+# Machine-specific settings (data paths, LAN address)
+src/appsettings.Local.json

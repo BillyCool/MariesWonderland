@@ -14,7 +14,7 @@ public class NaviCutInServiceTests(MasterDatabaseFixture fixture) : ServiceTestB
 
     private static NaviCutInServiceImpl CreateService(UserDataStore store) => new(store);
 
-    [Fact]
+    [MasterDataFact]
     public async Task RegisterPlayed_NewCutIn_AddsRecordWithCurrentTimestamp()
     {
         DarkUserMemoryDatabase userDb = CreateUserDb();
@@ -35,7 +35,7 @@ public class NaviCutInServiceTests(MasterDatabaseFixture fixture) : ServiceTestB
         Assert.InRange(record.PlayDatetime, beforeMs, afterMs);
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task RegisterPlayed_ExistingCutIn_UpdatesTimestampWithoutDuplicatingRecord()
     {
         DarkUserMemoryDatabase userDb = CreateUserDb();
@@ -77,7 +77,7 @@ public class NaviCutInServiceTests(MasterDatabaseFixture fixture) : ServiceTestB
         Assert.Equal(456, untouchedRecord.PlayDatetime);
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task RegisterPlayed_MissingUserDatabase_CreatesUserDatabaseAndPersistsRecord()
     {
         UserDataStore store = new(MasterDb);

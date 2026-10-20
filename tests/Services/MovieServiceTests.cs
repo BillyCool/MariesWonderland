@@ -14,7 +14,7 @@ public class MovieServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(
 
     private static MovieServiceImpl CreateService(UserDataStore store) => new(store);
 
-    [Fact]
+    [MasterDataFact]
     public async Task SaveViewedMovie_NewMovies_AddsRecordsWithCurrentTimestamp()
     {
         var userDb = CreateUserDb();
@@ -40,7 +40,7 @@ public class MovieServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(
         Assert.InRange(secondRecord.LatestViewedDatetime, beforeMs, afterMs);
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task SaveViewedMovie_ExistingMovie_UpdatesTimestampWithoutDuplicatingRecord()
     {
         var userDb = CreateUserDb();
@@ -82,7 +82,7 @@ public class MovieServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(
         Assert.Equal(456, untouchedRecord.LatestViewedDatetime);
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task SaveViewedMovie_DuplicateMovieIdsInRequest_DoesNotCreateDuplicateRows()
     {
         var userDb = CreateUserDb();
@@ -98,7 +98,7 @@ public class MovieServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(
         Assert.Single(userDb.EntityIUserMovie, movie => movie.MovieId == SecondMovieId);
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task SaveViewedMovie_MissingUserDatabase_CreatesUserDatabaseAndPersistsRecords()
     {
         var store = new UserDataStore(MasterDb);
@@ -118,7 +118,7 @@ public class MovieServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(
         Assert.True(record.LatestViewedDatetime > 0);
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task SaveViewedMovie_EmptyRequest_DoesNotMutateExistingRows()
     {
         var userDb = CreateUserDb();

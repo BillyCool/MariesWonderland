@@ -96,7 +96,7 @@ public class DeckServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         }
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task ReplaceDeck_RemovesStaleLinkedRecordsBeforeRecreatingSlots()
     {
         DarkUserMemoryDatabase userDb = CreateUserDb();
@@ -157,7 +157,7 @@ public class DeckServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         Assert.Equal(30, Assert.Single(userDb.EntityIUserDeckCharacterDressupCostume, dc => dc.UserDeckCharacterUuid == deck.UserDeckCharacterUuid01).DressupCostumeId);
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task CopyDeck_CopiesSlotsToTargetWithFreshRecordsAndSourceName()
     {
         DarkUserMemoryDatabase userDb = CreateUserDb();
@@ -210,7 +210,7 @@ public class DeckServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         Assert.Equal(100, Assert.Single(userDb.EntityIUserDeckCharacterDressupCostume, dc => dc.UserDeckCharacterUuid == targetDeck.UserDeckCharacterUuid01).DressupCostumeId);
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task CopyDeck_WithoutSourceDeck_LeavesTargetUntouched()
     {
         DarkUserMemoryDatabase userDb = CreateUserDb();
@@ -236,7 +236,7 @@ public class DeckServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         Assert.Single(userDb.EntityIUserDeckCharacter);
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task RemoveDeck_RemovesDeckAndLinkedRecords()
     {
         DarkUserMemoryDatabase userDb = CreateUserDb();

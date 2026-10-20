@@ -14,7 +14,7 @@ public class ContentsStoryServiceTests(MasterDatabaseFixture fixture) : ServiceT
 
     private static ContentsStoryServiceImpl CreateService(UserDataStore store) => new(store);
 
-    [Fact]
+    [MasterDataFact]
     public async Task RegisterPlayed_NewStory_AddsRecordWithCurrentTimestamp()
     {
         var userDb = CreateUserDb();
@@ -35,7 +35,7 @@ public class ContentsStoryServiceTests(MasterDatabaseFixture fixture) : ServiceT
         Assert.InRange(record.PlayDatetime, beforeMs, afterMs);
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task RegisterPlayed_ExistingStory_UpdatesTimestampWithoutDuplicatingRecord()
     {
         var userDb = CreateUserDb();
@@ -75,7 +75,7 @@ public class ContentsStoryServiceTests(MasterDatabaseFixture fixture) : ServiceT
         Assert.Equal(456, untouchedRecord.PlayDatetime);
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task RegisterPlayed_MissingUserDatabase_CreatesUserDatabaseAndPersistsRecord()
     {
         var store = new UserDataStore(MasterDb);

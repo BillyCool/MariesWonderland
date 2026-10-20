@@ -48,7 +48,7 @@ public class ExploreServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
 
     #region StartExplore
 
-    [Fact]
+    [MasterDataFact]
     public async Task StartExplore_FreePlay_SetsPlayingStateWithoutDeductingItem()
     {
         var userDb = CreateUserDb();
@@ -71,7 +71,7 @@ public class ExploreServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
         Assert.Equal(3, userDb.EntityIUserConsumableItem[0].Count); // not deducted
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task StartExplore_WithTicket_DeductsTicketAndSetsFlag()
     {
         var userDb = CreateUserDb();
@@ -93,7 +93,7 @@ public class ExploreServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
         Assert.Equal(2, userDb.EntityIUserConsumableItem[0].Count); // 3 - 1 = 2
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task StartExplore_InvalidExploreId_ThrowsInvalidArgument()
     {
         var store = CreateStore(UserId, CreateUserDb(), MasterDb);
@@ -107,7 +107,7 @@ public class ExploreServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
         Assert.Equal(StatusCode.InvalidArgument, ex.StatusCode);
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task StartExplore_UnlockConditionNotMet_ThrowsFailedPrecondition()
     {
         var userDb = CreateUserDb();
@@ -123,7 +123,7 @@ public class ExploreServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
         Assert.Equal(StatusCode.FailedPrecondition, ex.StatusCode);
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task StartExplore_TicketNotFound_ThrowsFailedPrecondition()
     {
         var userDb = CreateUserDb();
@@ -140,7 +140,7 @@ public class ExploreServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
         Assert.Equal(StatusCode.FailedPrecondition, ex.StatusCode);
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task StartExplore_InsufficientTickets_ThrowsFailedPrecondition()
     {
         var userDb = CreateUserDb();
@@ -165,7 +165,7 @@ public class ExploreServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
 
     #region RetireExplore
 
-    [Fact]
+    [MasterDataFact]
     public async Task RetireExplore_WithActiveExplore_ClearsState()
     {
         var userDb = CreateUserDb();
@@ -181,7 +181,7 @@ public class ExploreServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
         Assert.False(userExplore.IsUseExploreTicket);
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task RetireExplore_NoMatchingActiveExplore_ThrowsFailedPrecondition()
     {
         var userDb = CreateUserDb();
@@ -197,7 +197,7 @@ public class ExploreServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
         Assert.Equal(StatusCode.FailedPrecondition, ex.StatusCode);
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task RetireExplore_UserExploreNotFound_ThrowsFailedPrecondition()
     {
         var store = CreateStore(UserId, CreateUserDb(), MasterDb);
@@ -215,7 +215,7 @@ public class ExploreServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
 
     #region FinishExplore
 
-    [Fact]
+    [MasterDataFact]
     public async Task FinishExplore_NewHighScore_GrantsRewardsAndClearsState()
     {
         // Score 50000 hits the 50000 threshold → ExploreGradeId 102 → AssetGradeIconId 17000
@@ -257,7 +257,7 @@ public class ExploreServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
         Assert.Equal(8, response.ExploreReward[0].Count);
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task FinishExplore_ImprovedScore_UpdatesMaxScore()
     {
         var userDb = CreateUserDb();
@@ -277,7 +277,7 @@ public class ExploreServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
         Assert.Equal(80000, userDb.EntityIUserExploreScore[0].MaxScore);
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task FinishExplore_LowerScore_DoesNotUpdateMaxScore()
     {
         var userDb = CreateUserDb();
@@ -297,7 +297,7 @@ public class ExploreServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
         Assert.Equal(80000, userDb.EntityIUserExploreScore[0].MaxScore);
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task FinishExplore_InvalidExploreId_ThrowsInvalidArgument()
     {
         var store = CreateStore(UserId, CreateUserDb(), MasterDb);
@@ -311,7 +311,7 @@ public class ExploreServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
         Assert.Equal(StatusCode.InvalidArgument, ex.StatusCode);
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task FinishExplore_NoMatchingActiveExplore_ThrowsFailedPrecondition()
     {
         var userDb = CreateUserDb();
@@ -327,7 +327,7 @@ public class ExploreServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
         Assert.Equal(StatusCode.FailedPrecondition, ex.StatusCode);
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task FinishExplore_UserExploreNotFound_ThrowsFailedPrecondition()
     {
         var store = CreateStore(UserId, CreateUserDb(), MasterDb);
@@ -341,7 +341,7 @@ public class ExploreServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
         Assert.Equal(StatusCode.FailedPrecondition, ex.StatusCode);
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task FinishExplore_UserStatusNotFound_ThrowsFailedPrecondition()
     {
         var userDb = CreateUserDb();
@@ -357,7 +357,7 @@ public class ExploreServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
         Assert.Equal(StatusCode.FailedPrecondition, ex.StatusCode);
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task FinishExplore_ExpGrantCrossesThreshold_AdvancesLevel()
     {
         // Level 229 → 230 threshold is 87,191,772. Start 100 EXP below so the grant (4,422) pushes us over.
@@ -378,7 +378,7 @@ public class ExploreServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
         Assert.True(status.Exp >= level230Threshold);
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task FinishExplore_WorstGrade_GrantsNoMaterials()
     {
         // Score 0 → grade 106 (worst) → stackPerDraw = 0 → no ExploreReward entries

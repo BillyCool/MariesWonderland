@@ -92,7 +92,7 @@ public class CharacterBoardServiceTests(MasterDatabaseFixture fixture) : Service
         });
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task ReleasePanel_DeductsCostsSetsReleaseBitAndAppliesEffects()
     {
         const int panelId = 1001;
@@ -186,7 +186,7 @@ public class CharacterBoardServiceTests(MasterDatabaseFixture fixture) : Service
         Assert.Equal(15, statusUpState.Attack);
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task ReleasePanel_WithMultiplePanels_ReusesExistingBoardAndCreatesNewStates()
     {
         const int boardId = 2002;
@@ -255,7 +255,7 @@ public class CharacterBoardServiceTests(MasterDatabaseFixture fixture) : Service
         Assert.Equal(2, abilityState.Level);
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task ReleasePanel_UnknownPanelsAndUnresolvableEffects_AreIgnored()
     {
         const int validPanelId = 1004;

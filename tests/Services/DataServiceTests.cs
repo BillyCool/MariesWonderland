@@ -30,7 +30,7 @@ public class DataServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
     private static FakeServerCallContext ContextFor(long userId, string? sessionKey)
         => FakeServerCallContext.For(userId, sessionKey);
 
-    [Fact]
+    [MasterDataFact]
     public async Task GetLatestMasterDataVersion_ReturnsConfiguredVersion()
     {
         UserDataStore store = new(MasterDb);
@@ -43,7 +43,7 @@ public class DataServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         Assert.Equal("2025.04.01", response.LatestMasterDataVersion);
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task GetUserDataNameV2_ReturnsSortedUserDataTableNames()
     {
         UserDataStore store = new(MasterDb);
@@ -57,7 +57,7 @@ public class DataServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         Assert.Equal(UserDataDiffBuilder.TableNames.Order(), tableNameList.TableName);
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task GetUserData_WithValidSession_ReturnsRequestedTables()
     {
         DarkUserMemoryDatabase userDb = CreateUserDb();
@@ -91,7 +91,7 @@ public class DataServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         Assert.Equal("[]", response.UserDataJson["UnknownTable"]);
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task GetUserData_WithoutSession_ThrowsUnauthenticated()
     {
         UserDataStore store = CreateStore(UserId, CreateUserDb(), MasterDb);
@@ -104,7 +104,7 @@ public class DataServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         Assert.Equal(StatusCode.Unauthenticated, exception.StatusCode);
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task GetUserData_WithExpiredSession_ThrowsUnauthenticated()
     {
         UserDataStore store = CreateStore(UserId, CreateUserDb(), MasterDb);
@@ -118,7 +118,7 @@ public class DataServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         Assert.Equal(StatusCode.Unauthenticated, exception.StatusCode);
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task GetUserData_WithSessionForDifferentUser_ThrowsUnauthenticated()
     {
         UserDataStore store = CreateStore(UserId, CreateUserDb(), MasterDb);

@@ -1,12 +1,11 @@
-using MariesWonderland.Configuration;
 using MariesWonderland.Data;
-using Microsoft.Extensions.Configuration;
 
 namespace MariesWonderland.Tests.Infrastructure;
 
 /// <summary>
 /// Shared fixture that loads the master database and game config once per test collection.
-/// Use as <c>IClassFixture&lt;MasterDatabaseFixture&gt;</c> on test classes that need master data.
+/// Use as <c>IClassFixture&lt;MasterDatabaseFixture&gt;</c> on test classes that need master data,
+/// and mark their tests with <see cref="MasterDataFactAttribute"/> so they skip when it's missing.
 /// </summary>
 public sealed class MasterDatabaseFixture : IDisposable
 {
@@ -15,16 +14,15 @@ public sealed class MasterDatabaseFixture : IDisposable
 
     public MasterDatabaseFixture()
     {
-        var config = new ConfigurationBuilder()
-            .SetBasePath(Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "..", "src"))
-            .AddJsonFile("appsettings.json", optional: false)
-            .AddJsonFile("appsettings.Development.json", optional: true)
-            .Build();
+        if (!TestSettings.IsMasterDataAvailable)
+        {
+            // Every test using this fixture is skipped; keep construction from failing.
+            MasterDb = new DarkMasterMemoryDatabase();
+            GameConfig = GameConfig.From([]);
+            return;
+        }
 
-        var options = config.GetSection(ServerOptions.SectionName).Get<ServerOptions>()!;
-        var binPath = Path.Combine(options.Paths.MasterDatabase, $"{options.Data.LatestMasterDataVersion}.bin.e");
-
-        MasterDb = BinaryMasterDataLoader.Load(binPath);
+        MasterDb = BinaryMasterDataLoader.Load(TestSettings.MasterDataPath);
         GameConfig = GameConfig.From(MasterDb.EntityMConfig);
     }
 

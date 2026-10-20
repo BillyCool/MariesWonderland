@@ -24,7 +24,7 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
     /// <summary>
     /// Verifies that SetUserName updates the profile name and sets the name update timestamp.
     /// </summary>
-    [Fact]
+    [MasterDataFact]
     public async Task SetUserName_WithExistingProfile_UpdatesNameAndTimestamp()
     {
         var userDb = CreateUserDb();
@@ -48,7 +48,7 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
     /// <summary>
     /// Verifies that SetUserSetting updates the notification preference on the setting record.
     /// </summary>
-    [Fact]
+    [MasterDataFact]
     public async Task SetUserSetting_WithExistingSetting_UpdatesNotifyPurchaseAlert()
     {
         var userDb = CreateUserDb();
@@ -71,7 +71,7 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
     /// <summary>
     /// Verifies that SetUserMessage updates the profile message and sets the message update timestamp.
     /// </summary>
-    [Fact]
+    [MasterDataFact]
     public async Task SetUserMessage_WithExistingProfile_UpdatesMessageAndTimestamp()
     {
         var userDb = CreateUserDb();
@@ -95,7 +95,7 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
     /// <summary>
     /// Verifies that SetUserFavoriteCostumeId updates the profile's favorite costume and timestamp.
     /// </summary>
-    [Fact]
+    [MasterDataFact]
     public async Task SetUserFavoriteCostumeId_WithExistingProfile_UpdatesCostumeIdAndTimestamp()
     {
         var userDb = CreateUserDb();
@@ -119,7 +119,7 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
     /// <summary>
     /// Verifies that SetBirthYearMonth updates the user's birth year and month.
     /// </summary>
-    [Fact]
+    [MasterDataFact]
     public async Task SetBirthYearMonth_WithExistingUser_UpdatesBirthYearAndMonth()
     {
         var userDb = CreateUserDb();
@@ -139,7 +139,7 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
     /// <summary>
     /// Verifies that GetBirthYearMonth returns the stored birth year and month.
     /// </summary>
-    [Fact]
+    [MasterDataFact]
     public async Task GetBirthYearMonth_WithExistingUser_ReturnsStoredValues()
     {
         var userDb = CreateUserDb();
@@ -163,7 +163,7 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
     /// <summary>
     /// Verifies that GetChargeMoney returns the stored charge money amount.
     /// </summary>
-    [Fact]
+    [MasterDataFact]
     public async Task GetChargeMoney_WithExistingSUser_ReturnsChargeMoneyThisMonth()
     {
         var userDb = CreateUserDb();
@@ -185,7 +185,7 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
     /// <summary>
     /// Verifies that GetChargeMoney returns zero when no EntitySUser record exists.
     /// </summary>
-    [Fact]
+    [MasterDataFact]
     public async Task GetChargeMoney_WithNoSUser_ReturnsZero()
     {
         var userDb = CreateUserDb();
@@ -199,7 +199,7 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         Assert.Equal(0, response.ChargeMoneyThisMonth);
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task GetUserProfile_ReturnsLevelFromStatus()
     {
         var userDb = CreateUserDb();
@@ -215,7 +215,7 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         Assert.Equal(42, response.Level);
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task GetUserProfile_ReturnsNameFromProfile()
     {
         var userDb = CreateUserDb();
@@ -231,7 +231,7 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         Assert.Equal("TestPlayer", response.Name);
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task GetUserProfile_ReturnsFavoriteCostumeIdFromProfile()
     {
         var userDb = CreateUserDb();
@@ -247,7 +247,7 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         Assert.Equal(99, response.FavoriteCostumeId);
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task GetUserProfile_ReturnsMessageFromProfile()
     {
         var userDb = CreateUserDb();
@@ -263,7 +263,7 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         Assert.Equal("Hello!", response.Message);
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task GetUserProfile_ReturnsPopulatedLatestUsedDeck()
     {
         var userDb = CreateUserDb();
@@ -310,7 +310,7 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         Assert.Equal(15, response.LatestUsedDeck.DeckCharacter[0].MainWeaponLevel);
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task GetUserProfile_ReturnsMaxSeasonRankFromPvpResults()
     {
         var userDb = CreateUserDb();
@@ -339,7 +339,7 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         Assert.Equal(30, response.PvpInfo.MaxSeasonRank);
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task GetUserProfile_UnknownPlayerId_ReturnsEmptyResponse()
     {
         var userDb = CreateUserDb();
@@ -354,7 +354,7 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         Assert.Equal(0, response.Level);
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task GetAndroidArgs_ReturnsExpectedApiKeyAndNonce()
     {
         var store = CreateStore(UserId, CreateUserDb(), MasterDb);
@@ -366,7 +366,7 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         Assert.Equal(UserService.AndroidNonce, response.Nonce);
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task GameStart_SetsGameStartDatetimeOnEntityIUser()
     {
         var userDb = CreateUserDb();
@@ -379,7 +379,7 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         Assert.True(userDb.EntityIUser[0].GameStartDatetime > 0);
     }
 
-    [Fact]
+    [MasterDataFact]
     public void RegisterOrGetUser_NewUser_SeedsOneRowPerUserTablesOnce()
     {
         var store = new UserDataStore(MasterDb);
@@ -411,7 +411,7 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         Assert.All(userDb.EntityIUserGem, gem => Assert.Equal(userId, gem.UserId));
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task GameStart_DoesNotAddRows()
     {
         var userDb = CreateUserDb();
@@ -426,7 +426,7 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         Assert.Empty(userDb.EntityIUserExplore);
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task GameStart_DoesNotCreateDuplicateEntityIUserGem()
     {
         var userDb = CreateUserDb();

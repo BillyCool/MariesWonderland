@@ -17,7 +17,7 @@ public class BigHuntServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
 
     private BigHuntService CreateService(UserDataStore store) => new(store, MasterDb);
 
-    [Fact]
+    [MasterDataFact]
     public async Task StartBigHuntQuest_WithQuestMissionGroup_InitializesQuestProgressAndStatus()
     {
         BigHuntScenario scenario = ResolveScenario();
@@ -66,7 +66,7 @@ public class BigHuntServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
         Assert.Equal(expectedMissionIds, userDb.EntityIUserQuestMission.Select(m => m.QuestMissionId).Order().ToList());
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task UpdateBigHuntQuestSceneProgress_WithoutProgress_CreatesAndStoresSceneId()
     {
         var userDb = CreateUserDb();
@@ -81,7 +81,7 @@ public class BigHuntServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
         Assert.Equal(42, progress.CurrentQuestSceneId);
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task SaveBigHuntBattleInfo_WithBattleDetail_PersistsBinaryAndAggregatesStats()
     {
         var userDb = CreateUserDb();
@@ -116,7 +116,7 @@ public class BigHuntServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
         Assert.Equal(500, session.TotalDamage);
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task FinishBigHuntQuest_WhenRetired_ReturnsEmptyScoreAndClearsProgress()
     {
         BigHuntScenario scenario = ResolveScenario();
@@ -157,7 +157,7 @@ public class BigHuntServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
         Assert.False(progress.IsDryRun);
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task FinishBigHuntQuest_NewHighScore_UpdatesScoresRewardsAndClearsBattleState()
     {
         BigHuntScenario scenario = ResolveScenario(requireScoreRewards: true);
@@ -252,7 +252,7 @@ public class BigHuntServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
         Assert.Equal(4, session.DeckNumber);
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task FinishBigHuntQuest_WithLowerScore_DoesNotOverwriteExistingMaxScores()
     {
         BigHuntScenario scenario = ResolveScenario();
@@ -322,7 +322,7 @@ public class BigHuntServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
         Assert.Equal(existingHighScore, Assert.Single(userDb.EntityIUserBigHuntWeeklyMaxScore).MaxScore);
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task RestartBigHuntQuest_WithSavedSession_ReturnsBattleBinaryAndIncrementsStatus()
     {
         BigHuntScenario scenario = ResolveScenario();
@@ -359,7 +359,7 @@ public class BigHuntServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
         Assert.True(status.LatestChallengeDatetime > 0);
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task SkipBigHuntQuest_WithoutExistingStatus_CreatesStatusAndAddsSkipCount()
     {
         BigHuntScenario scenario = ResolveScenario();
@@ -381,7 +381,7 @@ public class BigHuntServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
         Assert.True(status.LatestChallengeDatetime > 0);
     }
 
-    [Fact]
+    [MasterDataFact]
     public async Task GetBigHuntTopData_WithSeededWeeklyScores_ReturnsExpectedResultsAndRewards()
     {
         BigHuntScenario scenario = ResolveScenario();

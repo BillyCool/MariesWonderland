@@ -13,6 +13,9 @@ public static class Program
     {
         var builder = WebApplication.CreateBuilder(args);
 
+        // Machine-specific settings (data paths, LAN address); git-ignored
+        builder.Configuration.AddJsonFile("appsettings.Local.json", optional: true, reloadOnChange: true);
+
         builder.WebHost.ConfigureKestrel(options =>
         {
             options.ListenAnyIP(80, x => x.Protocols = HttpProtocols.Http1AndHttp2);
