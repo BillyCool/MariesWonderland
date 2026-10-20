@@ -91,4 +91,36 @@ public class MainQuestFlowTests(MasterDatabaseFixture fixture) : ServiceTestBase
         Assert.Equal(late.QuestSceneId, mainFlow.HeadQuestSceneId);
         Assert.Equal(routeAfterLate, mainFlow.CurrentMainQuestRouteId);
     }
+
+    [Theory]
+    [InlineData(false)]
+    [InlineData(true)]
+    public async Task SceneProgress_IntoAnotherQuest_ClearsAPassedBackgroundQuestOnly(bool previousIsPlayable)
+    {
+        (QuestService service, DarkUserMemoryDatabase userDb, long userId) = CreateService();
+        HashSet<int> sceneQuestIds = [.. MasterDb.EntityMQuestScene.Select(s => s.QuestId)];
+        EntityMQuest next = FindPlayableMainQuest();
+        EntityMQuest previous = MasterDb.EntityMQuest
+            .Where(q => q.QuestId != next.QuestId && sceneQuestIds.Contains(q.QuestId) && QuestEngine.IsPlayable(q) == previousIsPlayable && (previousIsPlayable || q.IsRunInTheBackground))
+            .OrderBy(q => q.QuestId)
+            .First();
+        EntityMQuestScene previousScene = MasterDb.EntityMQuestScene.First(s => s.QuestId == previous.QuestId);
+        EntityMQuestScene nextScene = MasterDb.EntityMQuestScene.First(s => s.QuestId == next.QuestId);
+
+        userDb.EntityIUserMainQuestProgressStatus.GetOrCreate(userId).CurrentQuestSceneId = previousScene.QuestSceneId;
+
+        await service.UpdateMainQuestSceneProgress(new UpdateMainQuestSceneProgressRequest { QuestSceneId = nextScene.QuestSceneId }, ContextFor(userId));
+
+        EntityIUserQuest? previousUserQuest = userDb.EntityIUserQuest.FirstOrDefault(q => q.QuestId == previous.QuestId);
+        if (previousIsPlayable)
+        {
+            Assert.Null(previousUserQuest);
+        }
+        else
+        {
+            Assert.NotNull(previousUserQuest);
+            Assert.Equal((int)QuestStateType.CLEARED, previousUserQuest.QuestStateType);
+            Assert.Equal(1, previousUserQuest.ClearCount);
+        }
+    }
 }

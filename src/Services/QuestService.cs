@@ -97,10 +97,15 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         EntityMQuest? quest = scene != null ? _questEngine.FindQuest(scene.QuestId) : null;
         MainQuestSceneContext? sceneContext = scene != null ? ResolveMainQuestSceneContext(questSceneId) : null;
 
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
+        if (quest != null)
+        {
+            FinalizeChainPreviousQuest(userDb, userId, quest.QuestId, nowMs);
+        }
+
         bool isPlayable = QuestEngine.IsPlayable(quest);
         if (isPlayable)
         {
-            long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
             // On half-result scenes, auto-clear all quest missions before the battle phase ends
             if (scene!.QuestResultType == QuestResultType.HALF_RESULT)
@@ -1146,6 +1151,40 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
             .Where(s => s.QuestId == questId)
             .OrderByDescending(s => s.SortOrder)
             .FirstOrDefault()?.QuestSceneId ?? 0;
+    }
+
+    /// <summary>
+    /// When scene progress moves into another quest, clears the quest the progress status was in if it is
+    /// a background quest that never got cleared. Playable quests are left alone: their own finish call
+    /// clears them.
+    /// </summary>
+    private void FinalizeChainPreviousQuest(DarkUserMemoryDatabase userDb, long userId, int questId, long nowMs)
+    {
+        EntityIUserMainQuestProgressStatus? progressStatus = userDb.EntityIUserMainQuestProgressStatus.FirstOrDefault(s => s.UserId == userId);
+        if (progressStatus == null || progressStatus.CurrentQuestSceneId == 0)
+        {
+            return;
+        }
+
+        EntityMQuestScene? previousScene = _masterDb.EntityMQuestScene.FirstOrDefault(s => s.QuestSceneId == progressStatus.CurrentQuestSceneId);
+        if (previousScene == null || previousScene.QuestId == questId)
+        {
+            return;
+        }
+
+        EntityMQuest? previousQuest = _questEngine.FindQuest(previousScene.QuestId);
+        if (previousQuest == null || QuestEngine.IsPlayable(previousQuest))
+        {
+            return;
+        }
+
+        EntityIUserQuest previousUserQuest = _questEngine.EnsureQuestRows(userDb, previousQuest.QuestId);
+        if (previousUserQuest.QuestStateType == (int)QuestStateType.CLEARED)
+        {
+            return;
+        }
+
+        _questEngine.FinalizePassedQuest(userDb, previousQuest, nowMs);
     }
 
     /// <summary>

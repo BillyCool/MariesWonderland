@@ -186,6 +186,28 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
         };
     }
 
+    /// <summary>
+    /// Clears a background quest the story moved past without a finish call: EXP, gold and (on the first
+    /// clear) first-clear items, then the quest and its missions are marked cleared. No drops or mission rewards.
+    /// </summary>
+    public void FinalizePassedQuest(DarkUserMemoryDatabase userDb, EntityMQuest quest, long nowMs)
+    {
+        EntityIUserQuest userQuest = EnsureQuestRows(userDb, quest.QuestId);
+
+        ApplyExpRewards(userDb, quest, nowMs);
+        ApplyGoldReward(userDb, quest, nowMs);
+        if (userQuest.ClearCount == 0)
+        {
+            foreach (EntityMQuestFirstClearRewardGroup row in ResolveFirstClearRewardRows(userDb, quest))
+            {
+                PossessionHelper.Apply(userDb, row.PossessionType, row.PossessionId, row.Count, _masterDb, nowMs);
+            }
+        }
+
+        MarkCleared(userQuest, 1, nowMs);
+        ClearQuestMissions(userDb, quest.QuestId, nowMs);
+    }
+
     /// <summary>Grants one skipped clear: drops, gold and EXP. Returns the drops as granted.</summary>
     public List<QuestReward> ApplySkippedClear(DarkUserMemoryDatabase userDb, EntityMQuest quest, QuestCampaignTarget campaignTarget, long nowMs)
     {
