@@ -47,6 +47,20 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
             q => q.QuestId == questId,
             () => new EntityIUserQuest { UserId = userDb.UserId, QuestId = questId });
 
+    /// <summary>
+    /// True when the quest is actually played rather than auto-cleared on start. A background quest still
+    /// counts when it has a battle (non-zero recommended deck power); pure cutscenes have none.
+    /// </summary>
+    public static bool IsPlayable(EntityMQuest? quest)
+    {
+        if (quest == null)
+        {
+            return false;
+        }
+
+        return quest.IsRunInTheBackground ? quest.RecommendedDeckPower > 0 : quest.IsCountedAsQuest;
+    }
+
     public static void MarkActive(EntityIUserQuest userQuest, long nowMs)
     {
         userQuest.QuestStateType = (int)QuestStateType.ACTIVE;

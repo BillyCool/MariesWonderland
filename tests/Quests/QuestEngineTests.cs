@@ -226,6 +226,16 @@ public class QuestEngineTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         Assert.DoesNotContain(userDb.EntityIUserQuestMission, m => m.QuestId == quest.QuestId);
     }
 
+    [Fact]
+    public void IsPlayable_BackgroundQuestWithBattleIsPlayed()
+    {
+        EntityMQuest battle = MasterDb.EntityMQuest.First(q => q.IsRunInTheBackground && q.RecommendedDeckPower > 0);
+        EntityMQuest cutscene = MasterDb.EntityMQuest.First(q => q.IsRunInTheBackground && q.RecommendedDeckPower == 0);
+
+        Assert.True(QuestEngine.IsPlayable(battle));
+        Assert.False(QuestEngine.IsPlayable(cutscene));
+    }
+
     private EntityMQuest FindReplayQuest()
         => MasterDb.EntityMQuest
             .Where(q => q.QuestReplayFlowRewardGroupId != 0 && q.QuestFirstClearRewardGroupId != 0 && q.QuestMissionGroupId != 0 && q.UserExp > 0)

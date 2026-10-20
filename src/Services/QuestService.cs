@@ -97,7 +97,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         EntityMQuest? quest = scene != null ? _questEngine.FindQuest(scene.QuestId) : null;
         MainQuestSceneContext? sceneContext = scene != null ? ResolveMainQuestSceneContext(questSceneId) : null;
 
-        bool isPlayable = quest != null && !quest.IsRunInTheBackground && quest.IsCountedAsQuest;
+        bool isPlayable = QuestEngine.IsPlayable(quest);
         if (isPlayable)
         {
             long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
@@ -268,7 +268,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         startSession.UserDeckNumber = request.UserDeckNumber;
         startSession.IsBattleOnly = request.IsBattleOnly;
 
-        bool isPlayable = quest != null && !quest.IsRunInTheBackground && quest.IsCountedAsQuest;
+        bool isPlayable = QuestEngine.IsPlayable(quest);
         int startSceneId = _questEngine.GetQuestStartSceneId(questId, request.IsBattleOnly);
         startSession.CurrentQuestFlowType = isPlayable ? QuestFlowType.SUB_FLOW : QuestFlowType.MAIN_FLOW;
         startSession.CurrentQuestSceneId = startSceneId;
@@ -346,7 +346,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
 
         EntityIUserMainQuestFlowStatus flowStatus = userDb.EntityIUserMainQuestFlowStatus.GetOrCreate(userId);
         EntityMQuest? quest = _questEngine.FindQuest(questId);
-        bool isPlayableMainQuest = quest != null && !quest.IsRunInTheBackground && quest.IsCountedAsQuest;
+        bool isPlayableMainQuest = QuestEngine.IsPlayable(quest);
         QuestFlowType restoredFlowType = restartSession.CurrentQuestFlowType;
         if (restoredFlowType == QuestFlowType.UNKNOWN)
             restoredFlowType = isPlayableMainQuest ? QuestFlowType.SUB_FLOW : QuestFlowType.MAIN_FLOW;
@@ -444,7 +444,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
                 PossessionHelper.Apply(userDb, (PossessionType)replayReward.PossessionType, replayReward.PossessionId, replayReward.Count, _masterDb, nowMs);
             }
 
-            bool isPlayableMainQuest = !quest.IsRunInTheBackground && quest.IsCountedAsQuest;
+            bool isPlayableMainQuest = QuestEngine.IsPlayable(quest);
             if (isPlayableMainQuest && !wasReplayFlow && !wasMenuPick)
             {
                 int lastSceneId = GetLastSceneIdForQuest(questId);
@@ -1188,7 +1188,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         sideStoryProgress.LatestVersion = nowMs;
 
         userQuest.IsBattleOnly = request.IsBattleOnly;
-        bool isPlayable = quest != null && !quest.IsRunInTheBackground && quest.IsCountedAsQuest;
+        bool isPlayable = QuestEngine.IsPlayable(quest);
         if (isPlayable)
         {
             QuestEngine.MarkActive(userQuest, nowMs);
