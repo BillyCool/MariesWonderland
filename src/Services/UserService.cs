@@ -9,7 +9,7 @@ using MariesWonderland.Proto.User;
 
 namespace MariesWonderland.Services;
 
-public class UserService(UserDataStore store, UserDataSeeder seeder, TimeProvider timeProvider) : MariesWonderland.Proto.User.UserService.UserServiceBase
+public class UserService(UserDataStore store, UserDataSeeder seeder, DarkMasterMemoryDatabase masterDb, TimeProvider timeProvider) : MariesWonderland.Proto.User.UserService.UserServiceBase
 {
     private readonly TimeProvider _timeProvider = timeProvider;
 
@@ -18,6 +18,7 @@ public class UserService(UserDataStore store, UserDataSeeder seeder, TimeProvide
 
     private readonly UserDataStore _store = store;
     private readonly UserDataSeeder _seeder = seeder;
+    private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
 
     /// <summary>Returns Android-specific arguments (API key and nonce) for client initialization.</summary>
     public override Task<GetAndroidArgsResponse> GetAndroidArgs(GetAndroidArgsRequest request, ServerCallContext context)
@@ -32,7 +33,7 @@ public class UserService(UserDataStore store, UserDataSeeder seeder, TimeProvide
     /// <summary>Authenticates a user by UUID, creates/updates device records, and returns a session key.</summary>
     public override Task<AuthUserResponse> Auth(AuthUserRequest request, ServerCallContext context)
     {
-        var (userId, isNew) = _store.RegisterOrGetUser(request.Uuid);
+        var (userId, isNew) = _store.RegisterOrGetUser(request.Uuid, _masterDb);
         var userDb = _store.GetOrCreate(userId);
 
         var nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
@@ -211,7 +212,7 @@ public class UserService(UserDataStore store, UserDataSeeder seeder, TimeProvide
     {
         // RegisterUser is the very first API called on a fresh install. It registers the device UUID
         // and assigns a permanent userId (random 19-digit number). Subsequent launches call Auth instead.
-        var (userId, _) = _store.RegisterOrGetUser(request.Uuid);
+        var (userId, _) = _store.RegisterOrGetUser(request.Uuid, _masterDb);
 
         RegisterUserResponse response = new()
         {

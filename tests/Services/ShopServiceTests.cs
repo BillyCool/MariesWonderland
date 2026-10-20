@@ -331,7 +331,7 @@ public class ShopServiceTests
 
     private static ShopServiceImpl CreateService(DarkMasterMemoryDatabase masterDb, DarkUserMemoryDatabase userDb)
     {
-        UserDataStore store = new(masterDb, TimeProvider.System);
+        UserDataStore store = new(TimeProvider.System);
         store.Set(UserId, userDb);
         return new ShopServiceImpl(store, masterDb, TimeProvider.System);
     }

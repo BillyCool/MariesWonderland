@@ -89,10 +89,10 @@ public static class HttpApiExtensions
             return Results.NotFound();
         });
 
-        // Master Database
+        // Master Database. In dev mode the advertised version carries the file's write time, which isn't part of the file name.
         app.MapMethods("/assets/release/{masterVersion}/database.bin.e", ["GET", "HEAD"], async (HttpContext ctx, string masterVersion) =>
         {
-            var filePath = Path.Combine(masterDatabaseBasePath, $"{masterVersion}.bin.e");
+            string filePath = Path.Combine(masterDatabaseBasePath, $"{MasterDataSnapshot.BaseVersion(masterVersion)}.bin.e");
 
             var fileInfo = new FileInfo(filePath);
             long totalLength = fileInfo.Length;

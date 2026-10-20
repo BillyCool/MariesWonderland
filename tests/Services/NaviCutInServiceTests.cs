@@ -18,7 +18,7 @@ public class NaviCutInServiceTests(MasterDatabaseFixture fixture) : ServiceTestB
     public async Task RegisterPlayed_NewCutIn_AddsRecordWithCurrentTimestamp()
     {
         DarkUserMemoryDatabase userDb = CreateUserDb();
-        UserDataStore store = CreateStore(UserId, userDb, MasterDb);
+        UserDataStore store = CreateStore(UserId, userDb);
         NaviCutInServiceImpl service = CreateService(store);
         long beforeMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
 
@@ -54,7 +54,7 @@ public class NaviCutInServiceTests(MasterDatabaseFixture fixture) : ServiceTestB
                 PlayDatetime = 456
             }
         ]);
-        UserDataStore store = CreateStore(UserId, userDb, MasterDb);
+        UserDataStore store = CreateStore(UserId, userDb);
         NaviCutInServiceImpl service = CreateService(store);
         long beforeMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
 
@@ -80,7 +80,7 @@ public class NaviCutInServiceTests(MasterDatabaseFixture fixture) : ServiceTestB
     [Fact]
     public async Task RegisterPlayed_MissingUserDatabase_CreatesUserDatabaseAndPersistsRecord()
     {
-        UserDataStore store = new(MasterDb, TimeProvider.System);
+        UserDataStore store = new(TimeProvider.System);
         NaviCutInServiceImpl service = CreateService(store);
 
         await service.RegisterPlayed(

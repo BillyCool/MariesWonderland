@@ -994,7 +994,7 @@ public class WeaponServiceTests
         DarkUserMemoryDatabase userDb,
         int weaponLimitBreakAvailableCount = 4)
     {
-        UserDataStore store = new(masterDb, TimeProvider.System);
+        UserDataStore store = new(TimeProvider.System);
         store.Set(UserId, userDb);
         return new WeaponServiceImpl(
             masterDb,

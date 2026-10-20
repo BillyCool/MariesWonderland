@@ -600,7 +600,7 @@ public class CostumeServiceTests
         int costumeLimitBreakAvailableCount = 4)
     {
         userDb.UserId = UserId;
-        UserDataStore store = new(masterDb, TimeProvider.System);
+        UserDataStore store = new(TimeProvider.System);
         store.Set(UserId, userDb);
         return new CostumeServiceImpl(
             masterDb,

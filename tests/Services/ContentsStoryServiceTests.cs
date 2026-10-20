@@ -18,7 +18,7 @@ public class ContentsStoryServiceTests(MasterDatabaseFixture fixture) : ServiceT
     public async Task RegisterPlayed_NewStory_AddsRecordWithCurrentTimestamp()
     {
         var userDb = CreateUserDb();
-        var store = CreateStore(UserId, userDb, MasterDb);
+        var store = CreateStore(UserId, userDb);
         var service = CreateService(store);
         long beforeMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
 
@@ -54,7 +54,7 @@ public class ContentsStoryServiceTests(MasterDatabaseFixture fixture) : ServiceT
                 PlayDatetime = 456
             }
         ]);
-        var store = CreateStore(UserId, userDb, MasterDb);
+        var store = CreateStore(UserId, userDb);
         var service = CreateService(store);
         long beforeMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
 
@@ -78,7 +78,7 @@ public class ContentsStoryServiceTests(MasterDatabaseFixture fixture) : ServiceT
     [Fact]
     public async Task RegisterPlayed_MissingUserDatabase_CreatesUserDatabaseAndPersistsRecord()
     {
-        UserDataStore store = new(MasterDb, TimeProvider.System);
+        UserDataStore store = new(TimeProvider.System);
         var service = CreateService(store);
 
         await service.RegisterPlayed(

@@ -1,24 +1,20 @@
 using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
-using MariesWonderland.Configuration;
 using MariesWonderland.Data;
 using MariesWonderland.Extensions;
 using MariesWonderland.Proto.Data;
-using Microsoft.Extensions.Options;
 
 namespace MariesWonderland.Services;
 
-public class DataService(IOptions<ServerOptions> options, UserDataStore userDataStore)
+public class DataService(MasterDataSnapshot masterData, UserDataStore userDataStore)
     : MariesWonderland.Proto.Data.DataService.DataServiceBase
 {
-    private readonly DataOptions _data = options.Value.Data;
-
     /// <summary>Returns the latest master data version so the client can check if an asset update is needed.</summary>
     public override Task<MasterDataGetLatestVersionResponse> GetLatestMasterDataVersion(Empty request, ServerCallContext context)
     {
         return Task.FromResult(new MasterDataGetLatestVersionResponse
         {
-            LatestMasterDataVersion = _data.LatestMasterDataVersion
+            LatestMasterDataVersion = masterData.Version
         });
     }
 

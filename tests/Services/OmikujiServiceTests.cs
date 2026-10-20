@@ -19,9 +19,9 @@ public class OmikujiServiceTests
 
     private static DarkUserMemoryDatabase CreateUserDb() => new();
 
-    private static UserDataStore CreateStore(long userId, DarkUserMemoryDatabase userDb, DarkMasterMemoryDatabase masterDb)
+    private static UserDataStore CreateStore(long userId, DarkUserMemoryDatabase userDb)
     {
-        UserDataStore store = new(masterDb, TimeProvider.System);
+        UserDataStore store = new(TimeProvider.System);
         store.Set(userId, userDb);
         return store;
     }
@@ -37,7 +37,7 @@ public class OmikujiServiceTests
         });
 
         DarkUserMemoryDatabase userDb = CreateUserDb();
-        UserDataStore store = CreateStore(UserId, userDb, masterDb);
+        UserDataStore store = CreateStore(UserId, userDb);
         OmikujiServiceImpl service = CreateService(masterDb, store);
         long beforeMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
 
@@ -82,7 +82,7 @@ public class OmikujiServiceTests
             }
         ]);
 
-        UserDataStore store = CreateStore(UserId, userDb, masterDb);
+        UserDataStore store = CreateStore(UserId, userDb);
         OmikujiServiceImpl service = CreateService(masterDb, store);
         long beforeMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
 
@@ -110,7 +110,7 @@ public class OmikujiServiceTests
     public async Task OmikujiDraw_MissingMasterEntry_CreatesUserDatabasePersistsDrawAndReturnsZero()
     {
         DarkMasterMemoryDatabase masterDb = new();
-        UserDataStore store = new(masterDb, TimeProvider.System);
+        UserDataStore store = new(TimeProvider.System);
         OmikujiServiceImpl service = CreateService(masterDb, store);
 
         OmikujiDrawResponse response = await service.OmikujiDraw(

@@ -47,7 +47,7 @@ public static class Program
             }
         });
         builder.Services.AddServerOptions(builder.Configuration);
-        builder.Services.AddDataStores(builder.Configuration);
+        builder.Services.AddDataStores(builder.Configuration, devMode);
 
         var app = builder.Build();
 

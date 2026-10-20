@@ -1,11 +1,9 @@
 using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
-using MariesWonderland.Configuration;
 using MariesWonderland.Data;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Proto.Data;
 using MariesWonderland.Tests.Infrastructure;
-using Microsoft.Extensions.Options;
 using DataServiceImpl = MariesWonderland.Services.DataService;
 
 namespace MariesWonderland.Tests.Services;
@@ -16,15 +14,7 @@ public class DataServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
 
     private DataServiceImpl CreateService(UserDataStore store, string latestMasterDataVersion = "")
     {
-        ServerOptions options = new()
-        {
-            Data = new DataOptions
-            {
-                LatestMasterDataVersion = latestMasterDataVersion
-            }
-        };
-
-        return new DataServiceImpl(Options.Create(options), store);
+        return new DataServiceImpl(new MasterDataSnapshot(MasterDb, latestMasterDataVersion), store);
     }
 
     private static FakeServerCallContext ContextFor(long userId, string? sessionKey = null)
@@ -33,7 +23,7 @@ public class DataServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
     [Fact]
     public async Task GetLatestMasterDataVersion_ReturnsConfiguredVersion()
     {
-        UserDataStore store = new(MasterDb, TimeProvider.System);
+        UserDataStore store = new(TimeProvider.System);
         DataServiceImpl service = CreateService(store, latestMasterDataVersion: "2025.04.01");
 
         MasterDataGetLatestVersionResponse response = await service.GetLatestMasterDataVersion(
@@ -46,7 +36,7 @@ public class DataServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
     [Fact]
     public async Task GetUserDataNameV2_ReturnsSortedUserDataTableNames()
     {
-        UserDataStore store = new(MasterDb, TimeProvider.System);
+        UserDataStore store = new(TimeProvider.System);
         DataServiceImpl service = CreateService(store);
 
         UserDataGetNameResponseV2 response = await service.GetUserDataNameV2(
@@ -74,7 +64,7 @@ public class DataServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
             Exp = 250
         });
 
-        UserDataStore store = CreateStore(UserId, userDb, MasterDb);
+        UserDataStore store = CreateStore(UserId, userDb);
         UserSession session = store.CreateSession(UserId, TimeSpan.FromMinutes(5));
         DataServiceImpl service = CreateService(store);
         UserDataGetRequest request = new();
@@ -94,7 +84,7 @@ public class DataServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
     [Fact]
     public async Task GetUserData_WithoutAuthenticatedSession_ThrowsUnauthenticated()
     {
-        UserDataStore store = CreateStore(UserId, CreateUserDb(), MasterDb);
+        UserDataStore store = CreateStore(UserId, CreateUserDb());
         DataServiceImpl service = CreateService(store);
 
         RpcException exception = await Assert.ThrowsAsync<RpcException>(() => service.GetUserData(

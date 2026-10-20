@@ -21,7 +21,14 @@ public sealed class DevModeOptions
     /// <summary>Map the /debug/save and /debug/load endpoints.</summary>
     public bool? DebugEndpoints { get; init; }
 
+    /// <summary>
+    /// Reload the master data file when it changes, and stamp its write time onto the advertised
+    /// master data version so the client downloads the new file.
+    /// </summary>
+    public bool? MasterDataHotReload { get; init; }
+
     public bool IsGrpcDiskLogEnabled => GrpcDiskLog ?? Enabled;
     public bool IsRequestJournalEnabled => RequestJournal ?? Enabled;
     public bool IsDebugEndpointsEnabled => DebugEndpoints ?? Enabled;
+    public bool IsMasterDataHotReloadEnabled => MasterDataHotReload ?? Enabled;
 }

@@ -106,7 +106,7 @@
 //         AddDeckCharacter(userDb, "keep", "costume-keep", "main-keep", "comp-keep", "thought-keep", dressupCostumeId: 20, parts: ["part-keep"], subWeapons: ["sub-keep"]);
 //         EntityIUserDeck deck = AddDeck(userDb, DeckType.QUEST, 1, "Quest Deck", "old-1", "old-2");
 // 
-//         UserDataStore store = CreateStore(UserId, userDb, MasterDb);
+//         UserDataStore store = CreateStore(UserId, userDb);
 //         DeckService service = CreateService(store);
 // 
 //         await service.ReplaceDeck(
@@ -170,7 +170,7 @@
 //         AddDeckCharacter(userDb, "target-old", "costume-target-old", "main-target-old", "comp-target-old", "thought-target-old", dressupCostumeId: 200, parts: ["part-target"], subWeapons: ["sub-target"]);
 //         AddDeckCharacter(userDb, "keep", "costume-keep", "main-keep", "comp-keep", "thought-keep", parts: ["part-keep"], subWeapons: ["sub-keep"]);
 // 
-//         UserDataStore store = CreateStore(UserId, userDb, MasterDb);
+//         UserDataStore store = CreateStore(UserId, userDb);
 //         DeckService service = CreateService(store);
 // 
 //         CopyDeckResponse response = await service.CopyDeck(
@@ -218,7 +218,7 @@
 //         EntityIUserDeck targetDeck = AddDeck(userDb, DeckType.MULTI, 2, "Target Deck", "target-old");
 //         AddDeckCharacter(userDb, "target-old", "costume-target-old", "main-target-old", "comp-target-old", "thought-target-old");
 // 
-//         UserDataStore store = CreateStore(UserId, userDb, MasterDb);
+//         UserDataStore store = CreateStore(UserId, userDb);
 //         DeckService service = CreateService(store);
 // 
 //         CopyDeckResponse response = await service.CopyDeck(
@@ -241,7 +241,7 @@
 //     public async Task UpdateTripleDeckName_CreatesOrUpdatesTripleDeckRecord()
 //     {
 //         DarkUserMemoryDatabase userDb = CreateUserDb();
-//         UserDataStore store = CreateStore(UserId, userDb, MasterDb);
+//         UserDataStore store = CreateStore(UserId, userDb);
 //         DeckService service = CreateService(store);
 // 
 //         await service.UpdateTripleDeckName(
@@ -280,7 +280,7 @@
 //             UserDeckNumber = 7,
 //             Name = "Subjugation Preset"
 //         });
-//         UserDataStore store = CreateStore(UserId, userDb, MasterDb);
+//         UserDataStore store = CreateStore(UserId, userDb);
 //         DeckService service = CreateService(store);
 // 
 //         await service.ReplaceTripleDeck(
@@ -328,7 +328,7 @@
 //         AddDeckCharacter(userDb, "keep", "costume-keep", "main-keep", "comp-keep", "thought-keep", dressupCostumeId: 30, parts: ["part-keep"], subWeapons: ["sub-keep"]);
 //         AddDeck(userDb, DeckType.QUEST, 1, "Keep Deck", "keep");
 // 
-//         UserDataStore store = CreateStore(UserId, userDb, MasterDb);
+//         UserDataStore store = CreateStore(UserId, userDb);
 //         DeckService service = CreateService(store);
 // 
 //         await service.RemoveDeck(

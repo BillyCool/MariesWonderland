@@ -23,7 +23,7 @@
 //     {
 //         BigHuntScenario scenario = ResolveScenario();
 //         var userDb = CreateUserDb();
-//         var store = CreateStore(UserId, userDb, MasterDb);
+//         var store = CreateStore(UserId, userDb);
 //         var service = CreateService(store);
 // 
 //         await service.StartBigHuntQuest(
@@ -71,7 +71,7 @@
 //     public async Task UpdateBigHuntQuestSceneProgress_WithoutProgress_CreatesAndStoresSceneId()
 //     {
 //         var userDb = CreateUserDb();
-//         var store = CreateStore(UserId, userDb, MasterDb);
+//         var store = CreateStore(UserId, userDb);
 //         var service = CreateService(store);
 // 
 //         await service.UpdateBigHuntQuestSceneProgress(
@@ -86,7 +86,7 @@
 //     public async Task SaveBigHuntBattleInfo_WithBattleDetail_PersistsBinaryAndAggregatesStats()
 //     {
 //         var userDb = CreateUserDb();
-//         var store = CreateStore(UserId, userDb, MasterDb);
+//         var store = CreateStore(UserId, userDb);
 //         var service = CreateService(store);
 // 
 //         await service.SaveBigHuntBattleInfo(
@@ -135,7 +135,7 @@
 //             BattleBinary = [9, 8, 7],
 //             TotalDamage = 999
 //         });
-//         var store = CreateStore(UserId, userDb, MasterDb);
+//         var store = CreateStore(UserId, userDb);
 //         var service = CreateService(store);
 // 
 //         FinishBigHuntQuestResponse response = await service.FinishBigHuntQuest(
@@ -237,7 +237,7 @@
 //             UserId = UserId
 //         });
 // 
-//         UserDataStore store = CreateStore(UserId, userDb, masterDb);
+//         UserDataStore store = CreateStore(UserId, userDb);
 //         BigHuntService service = new(store, masterDb);
 // 
 //         await service.FinishBigHuntQuest(
@@ -292,7 +292,7 @@
 //             TotalDamage = totalDamage,
 //             BattleBinary = [1, 3, 5]
 //         });
-//         var store = CreateStore(UserId, userDb, MasterDb);
+//         var store = CreateStore(UserId, userDb);
 //         var service = CreateService(store);
 // 
 //         FinishBigHuntQuestResponse response = await service.FinishBigHuntQuest(
@@ -395,7 +395,7 @@
 //             AttributeType = scenario.Boss.AttributeType,
 //             MaxScore = existingHighScore
 //         });
-//         var store = CreateStore(UserId, userDb, MasterDb);
+//         var store = CreateStore(UserId, userDb);
 //         var service = CreateService(store);
 // 
 //         FinishBigHuntQuestResponse response = await service.FinishBigHuntQuest(
@@ -430,7 +430,7 @@
 //             UserId = UserId,
 //             CurrentQuestSceneId = 77
 //         });
-//         var store = CreateStore(UserId, userDb, MasterDb);
+//         var store = CreateStore(UserId, userDb);
 //         var service = CreateService(store);
 // 
 //         RestartBigHuntQuestResponse response = await service.RestartBigHuntQuest(
@@ -456,7 +456,7 @@
 //     {
 //         BigHuntScenario scenario = ResolveScenario();
 //         var userDb = CreateUserDb();
-//         var store = CreateStore(UserId, userDb, MasterDb);
+//         var store = CreateStore(UserId, userDb);
 //         var service = CreateService(store);
 // 
 //         await service.SkipBigHuntQuest(
@@ -502,7 +502,7 @@
 //             AttributeType = scenario.Boss.AttributeType,
 //             MaxScore = seededScore / 2
 //         });
-//         var store = CreateStore(UserId, userDb, MasterDb);
+//         var store = CreateStore(UserId, userDb);
 //         var service = CreateService(store);
 // 
 //         GetBigHuntTopDataResponse response = await service.GetBigHuntTopData(new Empty(), ContextFor(UserId));
@@ -582,7 +582,7 @@
 //         });
 //         SeedDeckForBattleReport(userDb, DeckType.BIG_HUNT, 4, 501, 502);
 // 
-//         var store = CreateStore(UserId, userDb, MasterDb);
+//         var store = CreateStore(UserId, userDb);
 //         var service = CreateService(store);
 // 
 //         await service.SaveBigHuntBattleInfo(

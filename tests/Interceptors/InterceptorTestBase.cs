@@ -31,14 +31,14 @@ public abstract class InterceptorTestBase
 
     /// <summary>Creates a <see cref="UserDataStore"/> with no users registered.</summary>
     protected static UserDataStore CreateEmptyStore() =>
-        new(new DarkMasterMemoryDatabase(), TimeProvider.System);
+        new(TimeProvider.System);
 
     /// <summary>
     /// Creates a <see cref="UserDataStore"/> pre-loaded with the given user database.
     /// </summary>
     protected static UserDataStore CreateStoreWithUser(long userId, DarkUserMemoryDatabase userDb)
     {
-        UserDataStore store = new(new DarkMasterMemoryDatabase(), TimeProvider.System);
+        UserDataStore store = new(TimeProvider.System);
         store.Set(userId, userDb);
         return store;
     }

@@ -58,7 +58,7 @@ public class ExploreServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
         {
             UserId = UserId, ConsumableItemId = TicketItemId, Count = 3
         });
-        var store = CreateStore(UserId, userDb, MasterDb);
+        var store = CreateStore(UserId, userDb);
         var service = CreateService(store);
 
         await service.StartExplore(
@@ -81,7 +81,7 @@ public class ExploreServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
         {
             UserId = UserId, ConsumableItemId = TicketItemId, Count = 3
         });
-        var store = CreateStore(UserId, userDb, MasterDb);
+        var store = CreateStore(UserId, userDb);
         var service = CreateService(store);
 
         await service.StartExplore(
@@ -96,7 +96,7 @@ public class ExploreServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
     [Fact]
     public async Task StartExplore_InvalidExploreId_ThrowsInvalidArgument()
     {
-        var store = CreateStore(UserId, CreateUserDb(), MasterDb);
+        var store = CreateStore(UserId, CreateUserDb());
         var service = CreateService(store);
 
         var ex = await Assert.ThrowsAsync<RpcException>(() =>
@@ -112,7 +112,7 @@ public class ExploreServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
     {
         var userDb = CreateUserDb();
         AddUserExplore(userDb); // quest 31 NOT cleared
-        var store = CreateStore(UserId, userDb, MasterDb);
+        var store = CreateStore(UserId, userDb);
         var service = CreateService(store);
 
         var ex = await Assert.ThrowsAsync<RpcException>(() =>
@@ -129,7 +129,7 @@ public class ExploreServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
         var userDb = CreateUserDb();
         AddQuestCleared(userDb);
         AddUserExplore(userDb); // no consumable item record
-        var store = CreateStore(UserId, userDb, MasterDb);
+        var store = CreateStore(UserId, userDb);
         var service = CreateService(store);
 
         var ex = await Assert.ThrowsAsync<RpcException>(() =>
@@ -150,7 +150,7 @@ public class ExploreServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
         {
             UserId = UserId, ConsumableItemId = TicketItemId, Count = 0
         });
-        var store = CreateStore(UserId, userDb, MasterDb);
+        var store = CreateStore(UserId, userDb);
         var service = CreateService(store);
 
         var ex = await Assert.ThrowsAsync<RpcException>(() =>
@@ -170,7 +170,7 @@ public class ExploreServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
     {
         var userDb = CreateUserDb();
         var userExplore = AddUserExplore(userDb, playingExploreId: ExploreId, isUsingTicket: true);
-        var store = CreateStore(UserId, userDb, MasterDb);
+        var store = CreateStore(UserId, userDb);
         var service = CreateService(store);
 
         await service.RetireExplore(
@@ -186,7 +186,7 @@ public class ExploreServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
     {
         var userDb = CreateUserDb();
         AddUserExplore(userDb, playingExploreId: 0);
-        var store = CreateStore(UserId, userDb, MasterDb);
+        var store = CreateStore(UserId, userDb);
         var service = CreateService(store);
 
         var ex = await Assert.ThrowsAsync<RpcException>(() =>
@@ -200,7 +200,7 @@ public class ExploreServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
     [Fact]
     public async Task RetireExplore_UserExploreNotFound_ThrowsFailedPrecondition()
     {
-        var store = CreateStore(UserId, CreateUserDb(), MasterDb);
+        var store = CreateStore(UserId, CreateUserDb());
         var service = CreateService(store);
 
         var ex = await Assert.ThrowsAsync<RpcException>(() =>
@@ -225,7 +225,7 @@ public class ExploreServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
         var userDb = CreateUserDb();
         var userExplore = AddUserExplore(userDb, playingExploreId: ExploreId, isUsingTicket: true);
         var status = AddUserStatus(userDb, staminaMilliValue: 5000, level: 229);
-        var store = CreateStore(UserId, userDb, MasterDb);
+        var store = CreateStore(UserId, userDb);
         var service = CreateService(store);
 
         var response = await service.FinishExplore(
@@ -267,7 +267,7 @@ public class ExploreServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
         {
             UserId = UserId, ExploreId = ExploreId, MaxScore = 50000
         });
-        var store = CreateStore(UserId, userDb, MasterDb);
+        var store = CreateStore(UserId, userDb);
         var service = CreateService(store);
 
         await service.FinishExplore(
@@ -287,7 +287,7 @@ public class ExploreServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
         {
             UserId = UserId, ExploreId = ExploreId, MaxScore = 80000
         });
-        var store = CreateStore(UserId, userDb, MasterDb);
+        var store = CreateStore(UserId, userDb);
         var service = CreateService(store);
 
         await service.FinishExplore(
@@ -300,7 +300,7 @@ public class ExploreServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
     [Fact]
     public async Task FinishExplore_InvalidExploreId_ThrowsInvalidArgument()
     {
-        var store = CreateStore(UserId, CreateUserDb(), MasterDb);
+        var store = CreateStore(UserId, CreateUserDb());
         var service = CreateService(store);
 
         var ex = await Assert.ThrowsAsync<RpcException>(() =>
@@ -316,7 +316,7 @@ public class ExploreServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
     {
         var userDb = CreateUserDb();
         AddUserExplore(userDb, playingExploreId: 0); // nothing active
-        var store = CreateStore(UserId, userDb, MasterDb);
+        var store = CreateStore(UserId, userDb);
         var service = CreateService(store);
 
         var ex = await Assert.ThrowsAsync<RpcException>(() =>
@@ -330,7 +330,7 @@ public class ExploreServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
     [Fact]
     public async Task FinishExplore_UserExploreNotFound_ThrowsFailedPrecondition()
     {
-        var store = CreateStore(UserId, CreateUserDb(), MasterDb);
+        var store = CreateStore(UserId, CreateUserDb());
         var service = CreateService(store);
 
         var ex = await Assert.ThrowsAsync<RpcException>(() =>
@@ -346,7 +346,7 @@ public class ExploreServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
     {
         var userDb = CreateUserDb();
         AddUserExplore(userDb, playingExploreId: ExploreId); // no status record
-        var store = CreateStore(UserId, userDb, MasterDb);
+        var store = CreateStore(UserId, userDb);
         var service = CreateService(store);
 
         var ex = await Assert.ThrowsAsync<RpcException>(() =>
@@ -367,7 +367,7 @@ public class ExploreServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
         var userDb = CreateUserDb();
         AddUserExplore(userDb, playingExploreId: ExploreId);
         var status = AddUserStatus(userDb, staminaMilliValue: 0, level: 229, exp: startExp);
-        var store = CreateStore(UserId, userDb, MasterDb);
+        var store = CreateStore(UserId, userDb);
         var service = CreateService(store);
 
         await service.FinishExplore(
@@ -385,7 +385,7 @@ public class ExploreServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
         var userDb = CreateUserDb();
         AddUserExplore(userDb, playingExploreId: ExploreId);
         AddUserStatus(userDb, level: 229);
-        var store = CreateStore(UserId, userDb, MasterDb);
+        var store = CreateStore(UserId, userDb);
         var service = CreateService(store);
 
         var response = await service.FinishExplore(

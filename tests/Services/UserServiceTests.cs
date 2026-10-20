@@ -14,11 +14,11 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
 {
     private const long UserId = 1L;
 
-    private static UserService CreateService(UserDataStore store)
+    private UserService CreateService(UserDataStore store)
     {
         var options = Options.Create(new ServerOptions());
         var seeder = new UserDataSeeder(options);
-        return new UserService(store, seeder, TimeProvider.System);
+        return new UserService(store, seeder, MasterDb, TimeProvider.System);
     }
 
     /// <summary>
@@ -33,7 +33,7 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
             UserId = UserId,
             Name = "OldName"
         });
-        var store = CreateStore(UserId, userDb, MasterDb);
+        var store = CreateStore(UserId, userDb);
         var service = CreateService(store);
 
         var response = await service.SetUserName(
@@ -57,7 +57,7 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
             UserId = UserId,
             IsNotifyPurchaseAlert = false
         });
-        var store = CreateStore(UserId, userDb, MasterDb);
+        var store = CreateStore(UserId, userDb);
         var service = CreateService(store);
 
         var response = await service.SetUserSetting(
@@ -80,7 +80,7 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
             UserId = UserId,
             Name = "TestUser"
         });
-        var store = CreateStore(UserId, userDb, MasterDb);
+        var store = CreateStore(UserId, userDb);
         var service = CreateService(store);
 
         var response = await service.SetUserMessage(
@@ -104,7 +104,7 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
             UserId = UserId,
             Name = "TestUser"
         });
-        var store = CreateStore(UserId, userDb, MasterDb);
+        var store = CreateStore(UserId, userDb);
         var service = CreateService(store);
 
         var response = await service.SetUserFavoriteCostumeId(
@@ -124,7 +124,7 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
     {
         var userDb = CreateUserDb();
         userDb.EntityIUser.Add(new EntityIUser { UserId = UserId });
-        var store = CreateStore(UserId, userDb, MasterDb);
+        var store = CreateStore(UserId, userDb);
         var service = CreateService(store);
 
         var response = await service.SetBirthYearMonth(
@@ -149,7 +149,7 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
             BirthYear = 1985,
             BirthMonth = 3
         });
-        var store = CreateStore(UserId, userDb, MasterDb);
+        var store = CreateStore(UserId, userDb);
         var service = CreateService(store);
 
         var response = await service.GetBirthYearMonth(
@@ -172,7 +172,7 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
             UserId = UserId,
             ChargeMoneyThisMonth = 500
         });
-        var store = CreateStore(UserId, userDb, MasterDb);
+        var store = CreateStore(UserId, userDb);
         var service = CreateService(store);
 
         var response = await service.GetChargeMoney(
@@ -189,7 +189,7 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
     public async Task GetChargeMoney_WithNoSUser_ReturnsZero()
     {
         var userDb = CreateUserDb();
-        var store = CreateStore(UserId, userDb, MasterDb);
+        var store = CreateStore(UserId, userDb);
         var service = CreateService(store);
 
         var response = await service.GetChargeMoney(
@@ -205,7 +205,7 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         var userDb = CreateUserDb();
         userDb.EntityIUser.Add(new EntityIUser { UserId = UserId, PlayerId = 12345L });
         userDb.EntityIUserStatus.Add(new EntityIUserStatus { UserId = UserId, Level = 42 });
-        var store = CreateStore(UserId, userDb, MasterDb);
+        var store = CreateStore(UserId, userDb);
         var service = CreateService(store);
 
         var response = await service.GetUserProfile(
@@ -221,7 +221,7 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         var userDb = CreateUserDb();
         userDb.EntityIUser.Add(new EntityIUser { UserId = UserId, PlayerId = 12345L });
         userDb.EntityIUserProfile.Add(new EntityIUserProfile { UserId = UserId, Name = "TestPlayer" });
-        var store = CreateStore(UserId, userDb, MasterDb);
+        var store = CreateStore(UserId, userDb);
         var service = CreateService(store);
 
         var response = await service.GetUserProfile(
@@ -237,7 +237,7 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         var userDb = CreateUserDb();
         userDb.EntityIUser.Add(new EntityIUser { UserId = UserId, PlayerId = 12345L });
         userDb.EntityIUserProfile.Add(new EntityIUserProfile { UserId = UserId, FavoriteCostumeId = 99 });
-        var store = CreateStore(UserId, userDb, MasterDb);
+        var store = CreateStore(UserId, userDb);
         var service = CreateService(store);
 
         var response = await service.GetUserProfile(
@@ -253,7 +253,7 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         var userDb = CreateUserDb();
         userDb.EntityIUser.Add(new EntityIUser { UserId = UserId, PlayerId = 12345L });
         userDb.EntityIUserProfile.Add(new EntityIUserProfile { UserId = UserId, Message = "Hello!" });
-        var store = CreateStore(UserId, userDb, MasterDb);
+        var store = CreateStore(UserId, userDb);
         var service = CreateService(store);
 
         var response = await service.GetUserProfile(
@@ -296,7 +296,7 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
             WeaponId = 300100,
             Level = 15
         });
-        var store = CreateStore(UserId, userDb, MasterDb);
+        var store = CreateStore(UserId, userDb);
         var service = CreateService(store);
 
         var response = await service.GetUserProfile(
@@ -329,7 +329,7 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
             PvpWeeklyVersion = 2,
             FinalRank = 30
         });
-        var store = CreateStore(UserId, userDb, MasterDb);
+        var store = CreateStore(UserId, userDb);
         var service = CreateService(store);
 
         var response = await service.GetUserProfile(
@@ -343,7 +343,7 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
     public async Task GetUserProfile_UnknownPlayerId_ReturnsEmptyResponse()
     {
         var userDb = CreateUserDb();
-        var store = CreateStore(UserId, userDb, MasterDb);
+        var store = CreateStore(UserId, userDb);
         var service = CreateService(store);
 
         var response = await service.GetUserProfile(
@@ -357,7 +357,7 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
     [Fact]
     public async Task GetAndroidArgs_ReturnsExpectedApiKeyAndNonce()
     {
-        var store = CreateStore(UserId, CreateUserDb(), MasterDb);
+        var store = CreateStore(UserId, CreateUserDb());
         var service = CreateService(store);
 
         var response = await service.GetAndroidArgs(new GetAndroidArgsRequest(), ContextFor(UserId));
@@ -371,7 +371,7 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
     {
         var userDb = CreateUserDb();
         userDb.EntityIUser.Add(new EntityIUser { UserId = UserId });
-        var store = CreateStore(UserId, userDb, MasterDb);
+        var store = CreateStore(UserId, userDb);
         var service = CreateService(store);
 
         await service.GameStart(new Empty(), ContextFor(UserId));
@@ -382,10 +382,10 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
     [Fact]
     public void RegisterOrGetUser_NewUser_SeedsOneRowPerUserTablesOnce()
     {
-        UserDataStore store = new(MasterDb, TimeProvider.System);
+        UserDataStore store = new(TimeProvider.System);
 
-        (long userId, bool isNew) = store.RegisterOrGetUser("seed-test-uuid");
-        store.RegisterOrGetUser("seed-test-uuid");
+        (long userId, bool isNew) = store.RegisterOrGetUser("seed-test-uuid", MasterDb);
+        store.RegisterOrGetUser("seed-test-uuid", MasterDb);
         Assert.True(store.TryGet(userId, out DarkUserMemoryDatabase userDb));
 
         Assert.True(isNew);
@@ -416,7 +416,7 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
     {
         DarkUserMemoryDatabase userDb = CreateUserDb();
         userDb.EntityIUser.Add(new EntityIUser { UserId = UserId });
-        UserDataStore store = CreateStore(UserId, userDb, MasterDb);
+        UserDataStore store = CreateStore(UserId, userDb);
         UserService service = CreateService(store);
 
         await service.GameStart(new Empty(), ContextFor(UserId));
@@ -432,7 +432,7 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         var userDb = CreateUserDb();
         userDb.EntityIUser.Add(new EntityIUser { UserId = UserId });
         userDb.EntityIUserGem.Add(new EntityIUserGem { UserId = UserId, PaidGem = 100, FreeGem = 50 });
-        var store = CreateStore(UserId, userDb, MasterDb);
+        var store = CreateStore(UserId, userDb);
         var service = CreateService(store);
 
         await service.GameStart(new Empty(), ContextFor(UserId));

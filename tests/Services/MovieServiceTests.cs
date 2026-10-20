@@ -18,7 +18,7 @@ public class MovieServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(
     public async Task SaveViewedMovie_NewMovies_AddsRecordsWithCurrentTimestamp()
     {
         var userDb = CreateUserDb();
-        var store = CreateStore(UserId, userDb, MasterDb);
+        var store = CreateStore(UserId, userDb);
         var service = CreateService(store);
         long beforeMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
 
@@ -59,7 +59,7 @@ public class MovieServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(
                 LatestViewedDatetime = 456
             }
         ]);
-        var store = CreateStore(UserId, userDb, MasterDb);
+        var store = CreateStore(UserId, userDb);
         var service = CreateService(store);
         long beforeMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
 
@@ -86,7 +86,7 @@ public class MovieServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(
     public async Task SaveViewedMovie_DuplicateMovieIdsInRequest_DoesNotCreateDuplicateRows()
     {
         var userDb = CreateUserDb();
-        var store = CreateStore(UserId, userDb, MasterDb);
+        var store = CreateStore(UserId, userDb);
         var service = CreateService(store);
 
         await service.SaveViewedMovie(
@@ -101,7 +101,7 @@ public class MovieServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(
     [Fact]
     public async Task SaveViewedMovie_MissingUserDatabase_CreatesUserDatabaseAndPersistsRecords()
     {
-        UserDataStore store = new(MasterDb, TimeProvider.System);
+        UserDataStore store = new(TimeProvider.System);
         var service = CreateService(store);
 
         await service.SaveViewedMovie(
@@ -128,7 +128,7 @@ public class MovieServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(
             MovieId = FirstMovieId,
             LatestViewedDatetime = 789
         });
-        var store = CreateStore(UserId, userDb, MasterDb);
+        var store = CreateStore(UserId, userDb);
         var service = CreateService(store);
 
         SaveViewedMovieResponse response = await service.SaveViewedMovie(

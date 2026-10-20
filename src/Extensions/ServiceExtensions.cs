@@ -1,6 +1,5 @@
 using MariesWonderland.Configuration;
 using MariesWonderland.Data;
-using MariesWonderland.Helpers;
 
 namespace MariesWonderland.Extensions;
 
@@ -20,20 +19,30 @@ public static class ServiceExtensions
 
     /// <summary>
     /// Loads the master database and registers <see cref="UserDataStore"/> and related singletons.
+    /// Master data and everything derived from it is resolved per request from the
+    /// <see cref="MasterDataHolder"/>, so a dev-mode hot reload takes effect on the next request.
     /// </summary>
-    public static IServiceCollection AddDataStores(this IServiceCollection services, IConfiguration configuration)
+    public static IServiceCollection AddDataStores(this IServiceCollection services, IConfiguration configuration, DevModeOptions devMode)
     {
         ServerOptions options = configuration.GetSection(ServerOptions.SectionName).Get<ServerOptions>()!;
 
-        string binPath = Path.Combine(options.Paths.MasterDatabase, $"{options.Data.LatestMasterDataVersion}.bin.e");
-        DarkMasterMemoryDatabase masterDb = BinaryMasterDataLoader.Load(binPath);
-
-        GameConfig gameConfig = GameConfig.From(masterDb.EntityMConfig);
+        string baseVersion = options.Data.LatestMasterDataVersion;
+        string binPath = Path.Combine(options.Paths.MasterDatabase, $"{baseVersion}.bin.e");
+        bool hotReload = devMode.IsMasterDataHotReloadEnabled;
+        MasterDataHolder holder = new(MasterDataSnapshot.Load(binPath, baseVersion, stampFileTime: hotReload));
 
         services.AddSingleton(TimeProvider.System);
-        services.AddSingleton(masterDb);
-        services.AddSingleton(gameConfig);
-        services.AddSingleton<QuestCampaignHelper>();
+        services.AddSingleton(holder);
+        services.AddScoped(provider => provider.GetRequiredService<MasterDataHolder>().Current);
+        services.AddScoped(provider => provider.GetRequiredService<MasterDataSnapshot>().Database);
+        services.AddScoped(provider => provider.GetRequiredService<MasterDataSnapshot>().GameConfig);
+        services.AddScoped(provider => provider.GetRequiredService<MasterDataSnapshot>().QuestCampaigns);
+        if (hotReload)
+        {
+            services.AddHostedService(provider => new MasterDataReloader(
+                holder, binPath, baseVersion, provider.GetRequiredService<ILogger<MasterDataReloader>>()));
+        }
+
         services.AddSingleton<UserDataStore>();
         services.AddSingleton<UserDataSeeder>();
 

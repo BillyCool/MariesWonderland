@@ -162,7 +162,7 @@ public class CharacterServiceTests
 
     private static CharacterServiceImpl CreateService(DarkMasterMemoryDatabase masterDb, DarkUserMemoryDatabase userDb)
     {
-        UserDataStore store = new(masterDb, TimeProvider.System);
+        UserDataStore store = new(TimeProvider.System);
         store.Set(UserId, userDb);
         return new CharacterServiceImpl(
             masterDb,

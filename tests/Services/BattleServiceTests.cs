@@ -230,7 +230,7 @@ public class BattleServiceTests
 
     private static UserDataStore CreateStore(DarkUserMemoryDatabase? userDb = null)
     {
-        UserDataStore store = new(new DarkMasterMemoryDatabase(), TimeProvider.System);
+        UserDataStore store = new(TimeProvider.System);
         if (userDb != null)
             store.Set(UserId, userDb);
 

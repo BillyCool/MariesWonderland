@@ -9,9 +9,8 @@ namespace MariesWonderland.Data;
 /// Manages the map of userId → <see cref="DarkUserMemoryDatabase"/>. Handles user registration,
 /// session management, and persistence to/from JSON files on disk.
 /// </summary>
-public class UserDataStore(DarkMasterMemoryDatabase masterDb, TimeProvider timeProvider)
+public class UserDataStore(TimeProvider timeProvider)
 {
-    private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
     private readonly Dictionary<long, DarkUserMemoryDatabase> _users = [];
     private readonly Dictionary<string, long> _uuidToUserId = [];
     private readonly Dictionary<string, UserSession> _sessions = [];
@@ -21,7 +20,7 @@ public class UserDataStore(DarkMasterMemoryDatabase masterDb, TimeProvider timeP
     /// Look up or create a user by UUID. Returns the userId and whether the user is new.
     /// For new users, seeds the initial data into their database.
     /// </summary>
-    public (long UserId, bool IsNew) RegisterOrGetUser(string uuid)
+    public (long UserId, bool IsNew) RegisterOrGetUser(string uuid, DarkMasterMemoryDatabase masterDb)
     {
         if (_uuidToUserId.TryGetValue(uuid, out var existingId))
             return (existingId, false);
@@ -29,7 +28,7 @@ public class UserDataStore(DarkMasterMemoryDatabase masterDb, TimeProvider timeP
         var userId = GenerateUserId();
         _uuidToUserId[uuid] = userId;
         var db = new DarkUserMemoryDatabase { UserId = userId };
-        SeedInitialUserData(db);
+        SeedInitialUserData(db, masterDb);
         _users[userId] = db;
         return (userId, true);
     }
@@ -199,7 +198,7 @@ public class UserDataStore(DarkMasterMemoryDatabase masterDb, TimeProvider timeP
     /// <summary>
     /// Populates a new user database with default records (profile, status, starting weapons, etc.).
     /// </summary>
-    private void SeedInitialUserData(DarkUserMemoryDatabase db)
+    private void SeedInitialUserData(DarkUserMemoryDatabase db, DarkMasterMemoryDatabase masterDb)
     {
         var nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
@@ -320,13 +319,13 @@ public class UserDataStore(DarkMasterMemoryDatabase masterDb, TimeProvider timeP
                 ReleasedMaxStoryIndex = 1
             });
 
-            EntityMWeapon? masterWeapon = _masterDb.EntityMWeapon.FirstOrDefault(w => w.WeaponId == weaponId);
+            EntityMWeapon? masterWeapon = masterDb.EntityMWeapon.FirstOrDefault(w => w.WeaponId == weaponId);
             if (masterWeapon != null)
             {
-                foreach (EntityMWeaponAbilityGroup ag in _masterDb.EntityMWeaponAbilityGroup.Where(g => g.WeaponAbilityGroupId == masterWeapon.WeaponAbilityGroupId))
+                foreach (EntityMWeaponAbilityGroup ag in masterDb.EntityMWeaponAbilityGroup.Where(g => g.WeaponAbilityGroupId == masterWeapon.WeaponAbilityGroupId))
                     db.EntityIUserWeaponAbility.Add(new EntityIUserWeaponAbility { UserId = db.UserId, UserWeaponUuid = uuid, SlotNumber = ag.SlotNumber, Level = 1 });
 
-                foreach (EntityMWeaponSkillGroup sg in _masterDb.EntityMWeaponSkillGroup.Where(g => g.WeaponSkillGroupId == masterWeapon.WeaponSkillGroupId))
+                foreach (EntityMWeaponSkillGroup sg in masterDb.EntityMWeaponSkillGroup.Where(g => g.WeaponSkillGroupId == masterWeapon.WeaponSkillGroupId))
                     db.EntityIUserWeaponSkill.Add(new EntityIUserWeaponSkill { UserId = db.UserId, UserWeaponUuid = uuid, SlotNumber = sg.SlotNumber, Level = 1 });
             }
         }

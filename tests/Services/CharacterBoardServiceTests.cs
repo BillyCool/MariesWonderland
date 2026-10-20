@@ -156,7 +156,7 @@ public class CharacterBoardServiceTests(MasterDatabaseFixture fixture) : Service
             Attack = 4
         });
 
-        UserDataStore store = CreateStore(UserId, userDb, masterDb);
+        UserDataStore store = CreateStore(UserId, userDb);
         CharacterBoardService service = CreateService(masterDb, store);
 
         await service.ReleasePanel(
@@ -230,7 +230,7 @@ public class CharacterBoardServiceTests(MasterDatabaseFixture fixture) : Service
         };
         userDb.EntityIUserCharacterBoard.Add(existingBoard);
 
-        UserDataStore store = CreateStore(UserId, userDb, masterDb);
+        UserDataStore store = CreateStore(UserId, userDb);
         CharacterBoardService service = CreateService(masterDb, store);
 
         await service.ReleasePanel(
@@ -283,7 +283,7 @@ public class CharacterBoardServiceTests(MasterDatabaseFixture fixture) : Service
         DarkUserMemoryDatabase userDb = CreateUserDb();
         userDb.EntityIUserMaterial.Add(new EntityIUserMaterial { UserId = UserId, MaterialId = materialId, Count = 1 });
 
-        UserDataStore store = CreateStore(UserId, userDb, masterDb);
+        UserDataStore store = CreateStore(UserId, userDb);
         CharacterBoardService service = CreateService(masterDb, store);
 
         await service.ReleasePanel(

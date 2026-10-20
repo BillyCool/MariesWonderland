@@ -118,7 +118,7 @@ public class CharacterViewerServiceTests
     {
         DarkMasterMemoryDatabase masterDb = CreateMasterDb();
         AddField(masterDb, fieldId: 42, releaseConditionId: 0);
-        UserDataStore store = new(masterDb, TimeProvider.System);
+        UserDataStore store = new(TimeProvider.System);
         CharacterViewerServiceImpl service = new(store, masterDb, TimeProvider.System);
 
         CharacterViewerTopResponse response = await service.CharacterViewerTop(
@@ -138,7 +138,7 @@ public class CharacterViewerServiceTests
 
     private static CharacterViewerServiceImpl CreateService(DarkMasterMemoryDatabase masterDb, DarkUserMemoryDatabase userDb)
     {
-        UserDataStore store = new(masterDb, TimeProvider.System);
+        UserDataStore store = new(TimeProvider.System);
         store.Set(UserId, userDb);
         return new CharacterViewerServiceImpl(store, masterDb, TimeProvider.System);
     }

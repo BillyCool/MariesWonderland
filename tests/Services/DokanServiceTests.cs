@@ -72,7 +72,7 @@ public class DokanServiceTests
     [Fact]
     public async Task RegisterDokanConfirmed_WhenUserDatabaseDoesNotExist_CreatesItViaStore()
     {
-        UserDataStore store = new(new DarkMasterMemoryDatabase(), TimeProvider.System);
+        UserDataStore store = new(TimeProvider.System);
         DokanServiceImpl service = new(store, TimeProvider.System);
 
         await service.RegisterDokanConfirmed(
@@ -115,7 +115,7 @@ public class DokanServiceTests
 
     private static UserDataStore CreateStore(DarkUserMemoryDatabase userDb)
     {
-        UserDataStore store = new(new DarkMasterMemoryDatabase(), TimeProvider.System);
+        UserDataStore store = new(TimeProvider.System);
         store.Set(UserId, userDb);
         return store;
     }

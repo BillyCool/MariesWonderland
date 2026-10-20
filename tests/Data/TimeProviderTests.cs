@@ -18,7 +18,7 @@ public class TimeProviderTests
     public void Session_ExpiresWhenClockPassesTtl()
     {
         FakeTimeProvider time = new(Start);
-        UserDataStore store = new(new DarkMasterMemoryDatabase(), time);
+        UserDataStore store = new(time);
         UserSession session = store.CreateSession(userId: 1, TimeSpan.FromHours(24));
 
         time.Advance(TimeSpan.FromHours(23));
@@ -32,9 +32,9 @@ public class TimeProviderTests
     public void NewUser_IsStampedWithProviderTime()
     {
         FakeTimeProvider time = new(Start);
-        UserDataStore store = new(new DarkMasterMemoryDatabase(), time);
+        UserDataStore store = new(time);
 
-        (long userId, _) = store.RegisterOrGetUser("time-test-uuid");
+        (long userId, _) = store.RegisterOrGetUser("time-test-uuid", new DarkMasterMemoryDatabase());
 
         Assert.True(store.TryGet(userId, out DarkUserMemoryDatabase userDb));
         Assert.Equal(Start.ToUnixTimeMilliseconds(), userDb.EntityIUser[0].RegisterDatetime);
