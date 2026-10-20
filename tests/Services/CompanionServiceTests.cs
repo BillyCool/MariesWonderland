@@ -1,4 +1,5 @@
 using MariesWonderland.Data;
+using MariesWonderland.Missions;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.Companion;
@@ -148,7 +149,7 @@ public class CompanionServiceTests
         userDb.UserId = UserId;
         UserDataStore store = new(TimeProvider.System);
         store.Set(UserId, userDb);
-        return new CompanionServiceImpl(masterDb, store, new GameConfig { ConsumableItemIdForGold = GoldItemId });
+        return new CompanionServiceImpl(masterDb, store, new GameConfig { ConsumableItemIdForGold = GoldItemId }, new MissionTracker(masterDb, new MissionCatalog(masterDb, MissionFilterTable.Empty)), TimeProvider.System);
     }
 
     private static DarkMasterMemoryDatabase CreateMasterDb() => new();

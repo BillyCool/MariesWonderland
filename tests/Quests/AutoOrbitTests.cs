@@ -2,6 +2,7 @@ using Google.Protobuf.WellKnownTypes;
 using MariesWonderland.Configuration;
 using MariesWonderland.Data;
 using MariesWonderland.Helpers;
+using MariesWonderland.Missions;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Proto.Quest;
 using MariesWonderland.Quests;
@@ -23,7 +24,7 @@ public class AutoOrbitTests(MasterDatabaseFixture fixture) : ServiceTestBase(fix
         (long userId, _) = store.RegisterOrGetUser("auto-orbit-test", MasterDb);
         store.TryGet(userId, out DarkUserMemoryDatabase userDb);
         QuestCampaignHelper campaigns = new(MasterDb);
-        QuestEngine engine = new(MasterDb, GameConfig, campaigns, new ImportantItemEffectHelper(MasterDb), Options.Create(new DevModeOptions { FreeStamina = true }));
+        QuestEngine engine = new(MasterDb, GameConfig, campaigns, new ImportantItemEffectHelper(MasterDb), new MissionTracker(MasterDb, new MissionCatalog(MasterDb, MissionFilterTable.Empty)), Options.Create(new DevModeOptions { FreeStamina = true }));
         return (new QuestService(store, MasterDb, engine, campaigns, TimeProvider.System), userDb, userId);
     }
 

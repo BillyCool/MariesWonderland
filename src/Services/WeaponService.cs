@@ -2,15 +2,17 @@ using Grpc.Core;
 using MariesWonderland.Data;
 using MariesWonderland.Extensions;
 using MariesWonderland.Helpers;
+using MariesWonderland.Missions;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.Weapon;
 
 namespace MariesWonderland.Services;
 
-public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore store, GameConfig gameConfig, EnhanceCampaignHelper enhanceCampaigns, TimeProvider timeProvider)
+public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore store, GameConfig gameConfig, EnhanceCampaignHelper enhanceCampaigns, MissionTracker missions, TimeProvider timeProvider)
     : MariesWonderland.Proto.Weapon.WeaponService.WeaponServiceBase
 {
+    private readonly MissionTracker _missions = missions;
     private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
     private readonly UserDataStore _store = store;
     private readonly GameConfig _gameConfig = gameConfig;
@@ -95,6 +97,8 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
                 weapon.IsProtected = true;
             }
         }
+
+        _missions.Record(userDb, MissionClearConditionType.WEAPON_PROTECT_BY_COUNT, request.UserWeaponUuid.Count, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
 
         return Task.FromResult(new ProtectResponse());
     }
@@ -192,6 +196,8 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
 
         CheckWeaponStoryUnlocks(userDb, weapon.WeaponId, weapon.Level);
 
+        _missions.Record(userDb, MissionClearConditionType.WEAPON_ENHANCE_BY_COUNT, 1, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
+
         return Task.FromResult(new EnhanceByMaterialResponse{ IsGreatSuccess = false });
     }
 
@@ -275,6 +281,8 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
         ApplyLevelFromExp(userDb, weapon, wm);
 
         CheckWeaponStoryUnlocks(userDb, weapon.WeaponId, weapon.Level);
+
+        _missions.Record(userDb, MissionClearConditionType.WEAPON_ENHANCE_BY_COUNT, 1, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
 
         return Task.FromResult(new EnhanceByWeaponResponse{ IsGreatSuccess = false });
     }
@@ -370,6 +378,8 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
         }
 
         userSkill.Level += addCount;
+
+        _missions.Record(userDb, MissionClearConditionType.WEAPON_ENHANCE_SKILL_BY_COUNT, 1, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
 
         return Task.FromResult(new EnhanceSkillResponse());
     }
@@ -540,6 +550,8 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
         // Track the highest limit break count in the weapon note
         UpdateWeaponNote(userDb, weapon);
 
+        _missions.Record(userDb, MissionClearConditionType.WEAPON_LIMIT_BREAK_BY_COUNT, 1, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
+
         return Task.FromResult(new LimitBreakByMaterialResponse());
     }
 
@@ -616,6 +628,8 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
 
         // Track the highest limit break count in the weapon note
         UpdateWeaponNote(userDb, weapon);
+
+        _missions.Record(userDb, MissionClearConditionType.WEAPON_LIMIT_BREAK_BY_COUNT, 1, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
 
         return Task.FromResult(new LimitBreakByWeaponResponse());
     }
@@ -720,6 +734,8 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
         // Check if the evolution unlocks new weapon story pages
         CheckWeaponStoryUnlocks(userDb, evolvedId, weapon.Level);
 
+        _missions.Record(userDb, MissionClearConditionType.WEAPON_EVOLVE_BY_COUNT, 1, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
+
         return Task.FromResult(new EvolveResponse());
     }
 
@@ -787,6 +803,8 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
             UserId = userId,
             UserWeaponUuid = request.UserWeaponUuid
         });
+
+        _missions.Record(userDb, MissionClearConditionType.WEAPON_AWAKEN_COUNT, 1, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
 
         return Task.FromResult(new AwakenResponse());
     }

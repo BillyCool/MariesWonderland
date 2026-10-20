@@ -1,6 +1,7 @@
 using MariesWonderland.Configuration;
 using MariesWonderland.Data;
 using MariesWonderland.Helpers;
+using MariesWonderland.Missions;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Proto.BigHunt;
 using MariesWonderland.Quests;
@@ -30,8 +31,9 @@ public class BigHuntRewardTests(MasterDatabaseFixture fixture) : ServiceTestBase
         userDb.EntityIUserImportantItem.RemoveAll(i => i.ImportantItemId == 200020);
         QuestCampaignHelper campaigns = new(MasterDb);
         ImportantItemEffectHelper importantItems = new(MasterDb);
-        QuestEngine engine = new(MasterDb, GameConfig, campaigns, importantItems, Options.Create(new DevModeOptions()));
-        return (new BigHuntService(store, MasterDb, engine, campaigns, importantItems, new FakeTimeProvider(Now)), userDb, userId);
+        MissionTracker missions = new(MasterDb, new MissionCatalog(MasterDb, MissionFilterTable.Empty));
+        QuestEngine engine = new(MasterDb, GameConfig, campaigns, importantItems, missions, Options.Create(new DevModeOptions()));
+        return (new BigHuntService(store, MasterDb, engine, campaigns, importantItems, missions, new FakeTimeProvider(Now)), userDb, userId);
     }
 
     private EntityMBigHuntBossQuest BossQuest => MasterDb.EntityMBigHuntBossQuest.OrderBy(q => q.BigHuntBossQuestId).First();

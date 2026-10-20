@@ -1,5 +1,6 @@
 using Grpc.Core;
 using MariesWonderland.Data;
+using MariesWonderland.Missions;
 using MariesWonderland.Extensions;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
@@ -7,9 +8,11 @@ using MariesWonderland.Proto.Companion;
 
 namespace MariesWonderland.Services;
 
-public class CompanionService(DarkMasterMemoryDatabase masterDb, UserDataStore store, GameConfig gameConfig)
+public class CompanionService(DarkMasterMemoryDatabase masterDb, UserDataStore store, GameConfig gameConfig, MissionTracker missions, TimeProvider timeProvider)
     : MariesWonderland.Proto.Companion.CompanionService.CompanionServiceBase
 {
+    private readonly MissionTracker _missions = missions;
+    private readonly TimeProvider _timeProvider = timeProvider;
     private const int CompanionMaxLevel = 50;
 
     private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
@@ -118,6 +121,8 @@ public class CompanionService(DarkMasterMemoryDatabase masterDb, UserDataStore s
         }
 
         companion.Level = targetLevel;
+
+        _missions.Record(userDb, MissionClearConditionType.COMPANION_ENHANCE_BY_COUNT, 1, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
 
         return Task.FromResult(new EnhanceResponse());
     }

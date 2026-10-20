@@ -74,7 +74,10 @@ public class UserService(UserDataStore store, UserDataSeeder seeder, DarkMasterM
         return Task.FromResult(new CheckTransferSettingResponse());
     }
 
-    /// <summary>Starts the game session by recording the game start time.</summary>
+    /// <summary>
+    /// Starts the game session: records the game start time, brings missions up to date and, on the first start of
+    /// a game day, counts the login (login record and login missions).
+    /// </summary>
     public override Task<GameStartResponse> GameStart(Empty request, ServerCallContext context)
     {
         long userId = context.GetUserId();
@@ -82,12 +85,41 @@ public class UserService(UserDataStore store, UserDataSeeder seeder, DarkMasterM
 
         long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
         EntityIUser user = userDb.EntityIUser.GetOrCreate(userId);
+        bool isFirstStartToday = GameDayHelper.IsBeforeToday(user.GameStartDatetime, nowMs);
         user.GameStartDatetime = nowMs;
 
         // Missions that became available since the last session, daily restarts, state conditions.
         _missions.Refresh(userDb, nowMs);
 
+        if (isFirstStartToday)
+        {
+            RecordDailyLogin(userDb, userId, nowMs);
+            _missions.Record(userDb, MissionClearConditionType.USER_LOGIN_BY_COUNT, 1, nowMs);
+            _missions.Record(userDb, MissionClearConditionType.USER_LOGIN_BY_COUNT_FROM_UNLOCK, 1, nowMs);
+        }
+
         return Task.FromResult(new GameStartResponse());
+    }
+
+    /// <summary>
+    /// Updates the login record for a game day's first start: total days, the run of consecutive days and its best.
+    /// A record already stamped today (registration does that) is left as it is.
+    /// </summary>
+    private static void RecordDailyLogin(DarkUserMemoryDatabase userDb, long userId, long nowMs)
+    {
+        EntityIUserLogin login = userDb.EntityIUserLogin.GetOrCreate(userId);
+        long today = GameDayHelper.StartOfDay(nowMs);
+        if (login.LastLoginDatetime >= today)
+        {
+            return;
+        }
+
+        long yesterday = today - (long)TimeSpan.FromDays(1).TotalMilliseconds;
+        login.ContinualLoginCount = login.LastLoginDatetime >= yesterday ? login.ContinualLoginCount + 1 : 1;
+        login.MaxContinualLoginCount = Math.Max(login.MaxContinualLoginCount, login.ContinualLoginCount);
+        login.TotalLoginCount++;
+        login.LastLoginDatetime = nowMs;
+        login.LatestVersion = nowMs;
     }
 
     /// <summary>Returns the user's backup token for account recovery.</summary>

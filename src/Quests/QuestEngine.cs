@@ -1,6 +1,7 @@
 using MariesWonderland.Configuration;
 using MariesWonderland.Data;
 using MariesWonderland.Helpers;
+using MariesWonderland.Missions;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.Quest;
@@ -13,12 +14,13 @@ namespace MariesWonderland.Quests;
 /// big wins, drops, EXP and gold. Each quest type's service handles its own progress tables and flow,
 /// and calls in here for the rest.
 /// </summary>
-public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig gameConfig, QuestCampaignHelper questCampaigns, ImportantItemEffectHelper importantItems, IOptions<DevModeOptions> devMode)
+public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig gameConfig, QuestCampaignHelper questCampaigns, ImportantItemEffectHelper importantItems, MissionTracker missions, IOptions<DevModeOptions> devMode)
 {
     private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
     private readonly GameConfig _gameConfig = gameConfig;
     private readonly QuestCampaignHelper _questCampaigns = questCampaigns;
     private readonly ImportantItemEffectHelper _importantItems = importantItems;
+    private readonly MissionTracker _missions = missions;
     private readonly DevModeOptions _devMode = devMode.Value;
 
     public EntityMQuest? FindQuest(int questId)
@@ -53,17 +55,23 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
 
     /// <summary>
     /// Spends the stamina for <paramref name="times"/> runs of the quest (after stamina campaigns), unless
-    /// <see cref="DevModeOptions.FreeStamina"/> is on.
+    /// <see cref="DevModeOptions.FreeStamina"/> is on. The cost counts for stamina missions either way.
     /// </summary>
     public void ConsumeStamina(DarkUserMemoryDatabase userDb, EntityMQuest? quest, QuestCampaignTarget campaignTarget, int times, long nowMs)
     {
-        if (_devMode.IsFreeStaminaEnabled || quest == null || quest.Stamina <= 0 || times <= 0)
+        if (quest == null || quest.Stamina <= 0 || times <= 0)
+        {
+            return;
+        }
+
+        int cost = _questCampaigns.ApplyStaminaCampaign(quest.Stamina, campaignTarget, nowMs) * times;
+        _missions.Record(userDb, MissionClearConditionType.CONSUME_STAMINA_AMOUNT, cost, nowMs);
+        if (_devMode.IsFreeStaminaEnabled)
         {
             return;
         }
 
         EntityIUserStatus status = userDb.EntityIUserStatus[0];
-        int cost = _questCampaigns.ApplyStaminaCampaign(quest.Stamina, campaignTarget, nowMs) * times;
         int maxStamina = _masterDb.EntityMUserLevel.Find(status.Level)?.MaxStamina ?? 0;
         StaminaHelper.Consume(status, cost, maxStamina, _gameConfig.UserStaminaRecoverySecond, nowMs);
     }
@@ -195,6 +203,7 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
 
         List<QuestReward> dropRewards = ApplyDropRewards(userDb, BuildDropRewards(userDb, quest, campaignTarget, nowMs), nowMs);
         MarkCleared(userQuest, 1, nowMs);
+        _missions.RecordQuestClear(userDb, new MissionQuestEvent(campaignTarget, DeckCharacterIds(userDb, quest.QuestId)), 1, isSkipped: false, nowMs);
         if (!isReplay)
         {
             ClearQuestMissions(userDb, quest.QuestId, nowMs);
@@ -239,7 +248,36 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
         List<QuestReward> drops = ApplyDropRewards(userDb, BuildDropRewards(userDb, quest, campaignTarget, nowMs), nowMs);
         ApplyGoldReward(userDb, quest, nowMs);
         ApplyExpRewards(userDb, quest, nowMs);
+        _missions.RecordQuestClear(userDb, new MissionQuestEvent(campaignTarget, []), 1, isSkipped: true, nowMs);
         return drops;
+    }
+
+    /// <summary>
+    /// The characters in the deck the quest was started with (from its session), for "with X in your loadout" missions.
+    /// Empty when the session or deck is unknown.
+    /// </summary>
+    public HashSet<int> DeckCharacterIds(DarkUserMemoryDatabase userDb, int questId)
+    {
+        int deckNumber = userDb.EntitySQuestSession.FirstOrDefault(s => s.QuestId == questId)?.UserDeckNumber ?? 0;
+        EntityIUserDeck? deck = userDb.EntityIUserDeck.FirstOrDefault(d => d.DeckType == DeckType.QUEST && d.UserDeckNumber == deckNumber);
+        if (deck == null)
+        {
+            return [];
+        }
+
+        HashSet<int> characterIds = [];
+        foreach (string? deckCharacterUuid in new[] { deck.UserDeckCharacterUuid01, deck.UserDeckCharacterUuid02, deck.UserDeckCharacterUuid03 })
+        {
+            string? costumeUuid = userDb.EntityIUserDeckCharacter.FirstOrDefault(c => c.UserDeckCharacterUuid == deckCharacterUuid)?.UserCostumeUuid;
+            int costumeId = userDb.EntityIUserCostume.FirstOrDefault(c => c.UserCostumeUuid == costumeUuid)?.CostumeId ?? 0;
+            EntityMCostume? costume = _masterDb.EntityMCostume.FirstOrDefault(c => c.CostumeId == costumeId);
+            if (costume != null)
+            {
+                characterIds.Add(costume.CharacterId);
+            }
+        }
+
+        return characterIds;
     }
 
     /// <summary>

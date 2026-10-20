@@ -1,5 +1,6 @@
 using Google.Protobuf.WellKnownTypes;
 using MariesWonderland.Data;
+using MariesWonderland.Missions;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.Gacha;
@@ -285,7 +286,7 @@ public class GachaServiceTests
     {
         UserDataStore store = new(TimeProvider.System);
         store.Set(UserId, userDb);
-        return new GachaServiceImpl(masterDb, store, gameConfig ?? new GameConfig(), TimeProvider.System);
+        return new GachaServiceImpl(masterDb, store, gameConfig ?? new GameConfig(), new MissionTracker(masterDb, new MissionCatalog(masterDb, MissionFilterTable.Empty)), TimeProvider.System);
     }
 
     private static DarkUserMemoryDatabase CreateUserDb() => new() { UserId = UserId };

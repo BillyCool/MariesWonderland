@@ -2,6 +2,354 @@
   "_about": "Mission clear-condition filters: the server-side table the client never had, rebuilt by hand. Keyed by EntityMMission.MissionClearConditionOptionGroupId. A mission whose option group is not listed here never progresses.",
   "optionGroups": [
     {
+      "optionGroupId": 8,
+      "note": "Main quests on hard",
+      "questType": "MAIN_QUEST",
+      "difficulty": "HARD"
+    },
+    {
+      "optionGroupId": 71,
+      "note": "Dark Memory quests",
+      "eventQuestType": "END_CONTENTS"
+    },
+    {
+      "optionGroupId": 253,
+      "note": "Event chapter: Record: Seat of Shadow",
+      "eventQuestChapterId": 507
+    },
+    {
+      "optionGroupId": 270,
+      "note": "Event chapter: Variation: C. Armed Aberration",
+      "eventQuestChapterId": 303
+    },
+    {
+      "optionGroupId": 280,
+      "note": "Event chapter: Record: Sunset Port",
+      "eventQuestChapterId": 509
+    },
+    {
+      "optionGroupId": 290,
+      "note": "Event chapter: Record: Path of Longing",
+      "eventQuestChapterId": 511
+    },
+    {
+      "optionGroupId": 334,
+      "note": "Event chapter: Record: Rhythm's Citadel",
+      "eventQuestChapterId": 513
+    },
+    {
+      "optionGroupId": 344,
+      "note": "Event chapter: Record: Town of Deceit",
+      "eventQuestChapterId": 514
+    },
+    {
+      "optionGroupId": 365,
+      "note": "Event chapter: Variation: Blazing Armed Aberration",
+      "eventQuestChapterId": 307
+    },
+    {
+      "optionGroupId": 372,
+      "note": "Event chapter: Record: Bridge of Supplication",
+      "eventQuestChapterId": 517
+    },
+    {
+      "optionGroupId": 385,
+      "note": "Event chapter: Record: Festive Fountain",
+      "eventQuestChapterId": 519
+    },
+    {
+      "optionGroupId": 396,
+      "note": "Event chapter: Variation: Aurora Blossom",
+      "eventQuestChapterId": 309
+    },
+    {
+      "optionGroupId": 403,
+      "note": "Event chapter: Record: Garden of Paradise",
+      "eventQuestChapterId": 521
+    },
+    {
+      "optionGroupId": 421,
+      "note": "Dark Memory quests",
+      "eventQuestType": "END_CONTENTS"
+    },
+    {
+      "optionGroupId": 437,
+      "note": "Event chapter: Variation: Gloomy Senior Officer",
+      "eventQuestChapterId": 311
+    },
+    {
+      "optionGroupId": 444,
+      "note": "Event chapter: Record: Stronghold of Desolation",
+      "eventQuestChapterId": 524
+    },
+    {
+      "optionGroupId": 454,
+      "note": "Event chapter: Record: Covetous Grove",
+      "eventQuestChapterId": 527
+    },
+    {
+      "optionGroupId": 464,
+      "note": "Event chapter: Variation: Blazing Daemon",
+      "eventQuestChapterId": 312
+    },
+    {
+      "optionGroupId": 476,
+      "note": "Event chapter: Record: Vestiges of Paradise",
+      "eventQuestChapterId": 526
+    },
+    {
+      "optionGroupId": 479,
+      "note": "Quests with Rion in the deck",
+      "characterId": 1008
+    },
+    {
+      "optionGroupId": 480,
+      "note": "Quests with Noelle in the deck",
+      "characterId": 1010
+    },
+    {
+      "optionGroupId": 481,
+      "note": "Quests with 063y in the deck",
+      "characterId": 1011
+    },
+    {
+      "optionGroupId": 486,
+      "note": "Event chapter: Record: Original Sin's Door",
+      "eventQuestChapterId": 531
+    },
+    {
+      "optionGroupId": 492,
+      "note": "Event chapter: Variation: Blazing Blossom",
+      "eventQuestChapterId": 314
+    },
+    {
+      "optionGroupId": 500,
+      "note": "Event chapter: Record: Playful Seas",
+      "eventQuestChapterId": 534
+    },
+    {
+      "optionGroupId": 501,
+      "note": "Quests with Gayle in the deck",
+      "characterId": 1009
+    },
+    {
+      "optionGroupId": 502,
+      "note": "Quests with F66x in the deck",
+      "characterId": 1012
+    },
+    {
+      "optionGroupId": 504,
+      "note": "Event chapter: Variation: Gloomy Armed Aberration",
+      "eventQuestChapterId": 315
+    },
+    {
+      "optionGroupId": 512,
+      "note": "Event chapter: Record: Trench of Lost Bonds",
+      "eventQuestChapterId": 539
+    },
+    {
+      "optionGroupId": 532,
+      "note": "Event chapter: Variation: Cascading Mage",
+      "eventQuestChapterId": 316
+    },
+    {
+      "optionGroupId": 539,
+      "note": "Event chapter: Record: Rebellion's Illusion",
+      "eventQuestChapterId": 536
+    },
+    {
+      "optionGroupId": 540,
+      "note": "Dark Memory quests",
+      "eventQuestType": "END_CONTENTS"
+    },
+    {
+      "optionGroupId": 548,
+      "note": "Event chapter: Record: Rebellion's Reality",
+      "eventQuestChapterId": 537
+    },
+    {
+      "optionGroupId": 552,
+      "note": "Event chapter: Record: The Pumpkin Box",
+      "eventQuestChapterId": 544
+    },
+    {
+      "optionGroupId": 558,
+      "note": "Event chapter: Variation: Aurora Phantom",
+      "eventQuestChapterId": 318
+    },
+    {
+      "optionGroupId": 565,
+      "note": "Event chapter: Record: Mechanical Foundations",
+      "eventQuestChapterId": 546
+    },
+    {
+      "optionGroupId": 571,
+      "note": "Event chapter: Variation: Puppets Parrah-Noya",
+      "eventQuestChapterId": 317
+    },
+    {
+      "optionGroupId": 586,
+      "note": "Event chapter: Variation: Blazing Dynast",
+      "eventQuestChapterId": 321
+    },
+    {
+      "optionGroupId": 593,
+      "note": "Event chapter: Variation: Tempestuous Daemon",
+      "eventQuestChapterId": 322
+    },
+    {
+      "optionGroupId": 598,
+      "note": "Event chapter: Record: Forest of Temptation",
+      "eventQuestChapterId": 554
+    },
+    {
+      "optionGroupId": 607,
+      "note": "Event chapter: Record: Hidden Truths",
+      "eventQuestChapterId": 558
+    },
+    {
+      "optionGroupId": 610,
+      "note": "Event chapter: Variation: Aurora Senior Officer",
+      "eventQuestChapterId": 323
+    },
+    {
+      "optionGroupId": 614,
+      "note": "Event chapter: Record: Traces of Pursuit",
+      "eventQuestChapterId": 562
+    },
+    {
+      "optionGroupId": 620,
+      "note": "Event chapter: Record: Market of Ruse",
+      "eventQuestChapterId": 564
+    },
+    {
+      "optionGroupId": 623,
+      "note": "Event chapter: Variation: Gloomy Dynast",
+      "eventQuestChapterId": 325
+    },
+    {
+      "optionGroupId": 626,
+      "note": "Event chapter: Record: The Devil's Tray",
+      "eventQuestChapterId": 566
+    },
+    {
+      "optionGroupId": 629,
+      "note": "Event chapter: Variation: Cascading Resentful Witch",
+      "eventQuestChapterId": 327
+    },
+    {
+      "optionGroupId": 633,
+      "note": "Event chapter: Record: Tower of Beginnings",
+      "eventQuestChapterId": 569
+    },
+    {
+      "optionGroupId": 637,
+      "note": "Event chapter: Variation: Blazing Personality Amalgam",
+      "eventQuestChapterId": 328
+    },
+    {
+      "optionGroupId": 642,
+      "note": "Event chapter: Variation: Gloomy Binding Oculus",
+      "eventQuestChapterId": 330
+    },
+    {
+      "optionGroupId": 652,
+      "note": "Event chapter: Variation: Blazing Mage",
+      "eventQuestChapterId": 332
+    },
+    {
+      "optionGroupId": 655,
+      "note": "Event chapter: Record: Their Stage",
+      "eventQuestChapterId": 574
+    },
+    {
+      "optionGroupId": 658,
+      "note": "Event chapter: Record: Valley of Light",
+      "eventQuestChapterId": 503
+    },
+    {
+      "optionGroupId": 661,
+      "note": "Event chapter: Record: A Question of Decorum",
+      "eventQuestChapterId": 576
+    },
+    {
+      "optionGroupId": 664,
+      "note": "Event chapter: Variation: Nelgel the Netherfiend",
+      "eventQuestChapterId": 333
+    },
+    {
+      "optionGroupId": 668,
+      "note": "Event chapter: Record: City of Discontent",
+      "eventQuestChapterId": 505
+    },
+    {
+      "optionGroupId": 671,
+      "note": "Event chapter: Variation: Cascading Phantom",
+      "eventQuestChapterId": 336
+    },
+    {
+      "optionGroupId": 674,
+      "note": "Event chapter: Record: An Endearing Journey",
+      "eventQuestChapterId": 578
+    },
+    {
+      "optionGroupId": 677,
+      "note": "Event chapter: Record: Seat of Shadow",
+      "eventQuestChapterId": 507
+    },
+    {
+      "optionGroupId": 680,
+      "note": "Event chapter: Record: Hallowed Struggle",
+      "eventQuestChapterId": 580
+    },
+    {
+      "optionGroupId": 683,
+      "note": "Event chapter: Variation: Tempestuous Armed Aberration",
+      "eventQuestChapterId": 337
+    },
+    {
+      "optionGroupId": 689,
+      "note": "Event chapter: Record: Starfall Cliff",
+      "eventQuestChapterId": 582
+    },
+    {
+      "optionGroupId": 692,
+      "note": "Event chapter: Variation: Cascading Personality Amalgam",
+      "eventQuestChapterId": 339
+    },
+    {
+      "optionGroupId": 695,
+      "note": "Event chapter: Record: The Wishing Space",
+      "eventQuestChapterId": 551
+    },
+    {
+      "optionGroupId": 701,
+      "note": "Event chapter: Variation: Blazing Binding Oculus",
+      "eventQuestChapterId": 340
+    },
+    {
+      "optionGroupId": 707,
+      "note": "Event chapter: Record: The Cage of Rebirth",
+      "eventQuestChapterId": 586
+    },
+    {
+      "optionGroupId": 11010,
+      "note": "Dark Memory quests (Normal)",
+      "eventQuestType": "END_CONTENTS",
+      "difficulty": "NORMAL"
+    },
+    {
+      "optionGroupId": 11011,
+      "note": "Dark Memory quests (Hard)",
+      "eventQuestType": "END_CONTENTS",
+      "difficulty": "HARD"
+    },
+    {
+      "optionGroupId": 30029,
+      "note": "Daily (day-of-the-week) quests",
+      "eventQuestType": "DAY_OF_THE_WEEK"
+    },
+    {
       "optionGroupId": 60001,
       "note": "Character: 2B",
       "characterId": 1001
@@ -167,6 +515,12 @@
       "characterId": 1048
     },
     {
+      "optionGroupId": 100021,
+      "note": "Main quests on Very Hard",
+      "questType": "MAIN_QUEST",
+      "difficulty": "VERY_HARD"
+    },
+    {
       "optionGroupId": 300001,
       "note": "Big Hunt boss: Manifestation: Fiery Cursed God",
       "bigHuntBossId": 1
@@ -190,6 +544,86 @@
       "optionGroupId": 300005,
       "note": "Big Hunt boss: Manifestation: Bleak Cursed God",
       "bigHuntBossId": 5
+    },
+    {
+      "optionGroupId": 500001,
+      "note": "Quests with Lars in the deck",
+      "characterId": 1013
+    },
+    {
+      "optionGroupId": 500002,
+      "note": "Quests with Rion in the deck",
+      "characterId": 1008
+    },
+    {
+      "optionGroupId": 500003,
+      "note": "Quests with Saryu in the deck",
+      "characterId": 1022
+    },
+    {
+      "optionGroupId": 500015,
+      "note": "Quests with Gayle in the deck",
+      "characterId": 1009
+    },
+    {
+      "optionGroupId": 500026,
+      "note": "Quests with F66x in the deck",
+      "characterId": 1012
+    },
+    {
+      "optionGroupId": 500032,
+      "note": "Quests with Priyet in the deck",
+      "characterId": 1023
+    },
+    {
+      "optionGroupId": 500038,
+      "note": "Quests with Akeha in the deck",
+      "characterId": 1015
+    },
+    {
+      "optionGroupId": 500072,
+      "note": "Dungeons",
+      "eventQuestType": "DUNGEON"
+    },
+    {
+      "optionGroupId": 500077,
+      "note": "Quests with Argo in the deck",
+      "characterId": 1006
+    },
+    {
+      "optionGroupId": 500095,
+      "note": "Quests with Levania in the deck",
+      "characterId": 1004
+    },
+    {
+      "optionGroupId": 500099,
+      "note": "Quests with Fio in the deck",
+      "characterId": 1019
+    },
+    {
+      "optionGroupId": 500113,
+      "note": "Quests with Marie in the deck",
+      "characterId": 1024
+    },
+    {
+      "optionGroupId": 500124,
+      "note": "Quests with Dimos in the deck",
+      "characterId": 1007
+    },
+    {
+      "optionGroupId": 500146,
+      "note": "Quests with Noelle in the deck",
+      "characterId": 1010
+    },
+    {
+      "optionGroupId": 50004501,
+      "note": "Quests with Griff in the deck",
+      "characterId": 1014
+    },
+    {
+      "optionGroupId": 101030801,
+      "note": "Dungeons",
+      "eventQuestType": "DUNGEON"
     }
   ]
 }

@@ -1,4 +1,5 @@
 using MariesWonderland.Data;
+using MariesWonderland.Missions;
 using MariesWonderland.Helpers;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
@@ -1005,7 +1006,7 @@ public class WeaponServiceTests
                 ConsumableItemIdForGold = GoldItemId,
                 MaterialSameWeaponExpCoefficientPermil = 1500,
                 WeaponLimitBreakAvailableCount = weaponLimitBreakAvailableCount
-            }, new EnhanceCampaignHelper(masterDb), TimeProvider.System);
+            }, new EnhanceCampaignHelper(masterDb), new MissionTracker(masterDb, new MissionCatalog(masterDb, MissionFilterTable.Empty)), TimeProvider.System);
     }
 
     private static DarkMasterMemoryDatabase CreateMasterDb() => new();

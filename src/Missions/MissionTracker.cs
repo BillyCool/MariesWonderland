@@ -56,6 +56,33 @@ public sealed class MissionTracker(DarkMasterMemoryDatabase masterDb, MissionCat
             }
         }
 
+        // The action behind the event (a quest clear, an enhance) can also have raised levels or scores.
+        EvaluateStateConditions(userDb, rows, nowMs);
+        EvaluateDailyCompletion(userDb, rows, nowMs);
+    }
+
+    /// <summary>An unfiltered counter event: counts for missions without a filter only.</summary>
+    public void Record(DarkUserMemoryDatabase userDb, MissionClearConditionType conditionType, int amount, long nowMs)
+        => Record(userDb, conditionType, amount, filter => filter == null, nowMs);
+
+    /// <summary>
+    /// Counts <paramref name="times"/> clears of a quest for the quest-clear missions it matches. A skipped clear
+    /// (skip ticket) doesn't count for the "without skip" missions.
+    /// </summary>
+    public void RecordQuestClear(DarkUserMemoryDatabase userDb, MissionQuestEvent quest, int times, bool isSkipped, long nowMs)
+    {
+        Record(userDb, MissionClearConditionType.QUEST_CLEAR_BY_COUNT, times, filter => filter == null || filter.MatchesQuest(quest), nowMs);
+        if (!isSkipped)
+        {
+            Record(userDb, MissionClearConditionType.QUEST_CLEAR_BY_COUNT_WITHOUT_SKIP, times, filter => filter == null || filter.MatchesQuest(quest), nowMs);
+        }
+    }
+
+    /// <summary>Re-reads the state conditions (levels, scores, exalts) after something changed them outside an event.</summary>
+    public void EvaluateStates(DarkUserMemoryDatabase userDb, long nowMs)
+    {
+        Dictionary<int, EntityIUserMission> rows = userDb.EntityIUserMission.ToDictionary(r => r.MissionId);
+        EvaluateStateConditions(userDb, rows, nowMs);
         EvaluateDailyCompletion(userDb, rows, nowMs);
     }
 

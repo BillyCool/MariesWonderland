@@ -1,5 +1,6 @@
 using Grpc.Core;
 using MariesWonderland.Data;
+using MariesWonderland.Missions;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.Explore;
@@ -15,7 +16,7 @@ public class ExploreServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
     private const int UnlockQuestId = 31;
     private const int TicketItemId = 2001;   // ConsumableItemIdForExploreTicket
 
-    private ExploreService CreateService(UserDataStore store) => new(store, MasterDb, GameConfig, TimeProvider.System);
+    private ExploreService CreateService(UserDataStore store) => new(store, MasterDb, GameConfig, new MissionTracker(MasterDb, new MissionCatalog(MasterDb, MissionFilterTable.Empty)), TimeProvider.System);
 
     private static void AddQuestCleared(DarkUserMemoryDatabase userDb, int questId = UnlockQuestId)
         => userDb.EntityIUserQuest.Add(new EntityIUserQuest

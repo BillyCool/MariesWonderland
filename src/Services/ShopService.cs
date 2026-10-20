@@ -56,6 +56,8 @@ public class ShopService(UserDataStore store, DarkMasterMemoryDatabase masterDb,
             }
             shopItem.BoughtCount += qty;
             shopItem.LatestBoughtCountChangedDatetime = nowMs;
+
+            _missions.Record(userDb, MissionClearConditionType.SHOP_BUY_BY_COUNT, 1, nowMs);
         }
 
         return Task.FromResult(new BuyResponse());

@@ -2,15 +2,17 @@ using Grpc.Core;
 using MariesWonderland.Data;
 using MariesWonderland.Extensions;
 using MariesWonderland.Helpers;
+using MariesWonderland.Missions;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.Costume;
 
 namespace MariesWonderland.Services;
 
-public class CostumeService(DarkMasterMemoryDatabase masterDb, UserDataStore store, GameConfig gameConfig, EnhanceCampaignHelper enhanceCampaigns, TimeProvider timeProvider)
+public class CostumeService(DarkMasterMemoryDatabase masterDb, UserDataStore store, GameConfig gameConfig, EnhanceCampaignHelper enhanceCampaigns, MissionTracker missions, TimeProvider timeProvider)
     : MariesWonderland.Proto.Costume.CostumeService.CostumeServiceBase
 {
+    private readonly MissionTracker _missions = missions;
     private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
     private readonly UserDataStore _store = store;
     private readonly GameConfig _gameConfig = gameConfig;
@@ -150,6 +152,8 @@ public class CostumeService(DarkMasterMemoryDatabase masterDb, UserDataStore sto
             int maxLevel = LevelHelper.CostumeMaxLevel(_masterDb, userDb, costume, costumeMaster);
             (costume.Level, costume.Exp) = LevelHelper.ApplyExp(_masterDb, rarityRow.RequiredExpForLevelUpNumericalParameterMapId, costume.Exp, maxLevel);
         }
+
+        _missions.Record(userDb, MissionClearConditionType.COSTUME_ENHANCE_BY_COUNT, 1, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
 
         return Task.FromResult(new EnhanceResponse { IsGreatSuccess = false });
     }
@@ -316,6 +320,8 @@ public class CostumeService(DarkMasterMemoryDatabase masterDb, UserDataStore sto
 
         costume.LimitBreakCount++;
 
+        _missions.Record(userDb, MissionClearConditionType.COSTUME_LIMIT_BREAK_BY_COUNT, 1, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
+
         return Task.FromResult(new LimitBreakResponse());
     }
 
@@ -429,6 +435,8 @@ public class CostumeService(DarkMasterMemoryDatabase masterDb, UserDataStore sto
                     break;
             }
         }
+
+        _missions.Record(userDb, MissionClearConditionType.COSTUME_AWAKEN_COUNT, 1, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
 
         return Task.FromResult(new AwakenResponse());
     }
@@ -573,6 +581,8 @@ public class CostumeService(DarkMasterMemoryDatabase masterDb, UserDataStore sto
         }
 
         skill.Level = currentLevel + addCount;
+
+        _missions.Record(userDb, MissionClearConditionType.COSTUME_ACTIVE_SKILL_ENHANCE_BY_COUNT, 1, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
 
         return Task.FromResult(new EnhanceActiveSkillResponse());
     }

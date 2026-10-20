@@ -1,6 +1,7 @@
 using MariesWonderland.Configuration;
 using MariesWonderland.Data;
 using MariesWonderland.Helpers;
+using MariesWonderland.Missions;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.Quest;
@@ -19,7 +20,7 @@ public class MainQuestFlowTests(MasterDatabaseFixture fixture) : ServiceTestBase
         (long userId, _) = store.RegisterOrGetUser("main-quest-flow-test", MasterDb);
         store.TryGet(userId, out DarkUserMemoryDatabase userDb);
         QuestCampaignHelper campaigns = new(MasterDb);
-        QuestService service = new(store, MasterDb, new QuestEngine(MasterDb, GameConfig, campaigns, new ImportantItemEffectHelper(MasterDb), Options.Create(new DevModeOptions())), campaigns, TimeProvider.System);
+        QuestService service = new(store, MasterDb, new QuestEngine(MasterDb, GameConfig, campaigns, new ImportantItemEffectHelper(MasterDb), new MissionTracker(MasterDb, new MissionCatalog(MasterDb, MissionFilterTable.Empty)), Options.Create(new DevModeOptions())), campaigns, TimeProvider.System);
         return (service, userDb, userId);
     }
 

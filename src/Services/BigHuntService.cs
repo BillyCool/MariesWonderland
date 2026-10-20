@@ -3,6 +3,7 @@ using Grpc.Core;
 using MariesWonderland.Data;
 using MariesWonderland.Extensions;
 using MariesWonderland.Helpers;
+using MariesWonderland.Missions;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.Battle;
@@ -12,7 +13,7 @@ using MariesWonderland.Quests;
 
 namespace MariesWonderland.Services;
 
-public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase masterDb, QuestEngine questEngine, QuestCampaignHelper questCampaignHelper, ImportantItemEffectHelper importantItems, TimeProvider timeProvider)
+public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase masterDb, QuestEngine questEngine, QuestCampaignHelper questCampaignHelper, ImportantItemEffectHelper importantItems, MissionTracker missions, TimeProvider timeProvider)
     : MariesWonderland.Proto.BigHunt.BighuntService.BighuntServiceBase
 {
     private readonly UserDataStore _store = store;
@@ -20,6 +21,7 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
     private readonly QuestEngine _questEngine = questEngine;
     private readonly QuestCampaignHelper _questCampaignHelper = questCampaignHelper;
     private readonly ImportantItemEffectHelper _importantItems = importantItems;
+    private readonly MissionTracker _missions = missions;
     private readonly TimeProvider _timeProvider = timeProvider;
 
     /// <summary>
@@ -248,6 +250,14 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
             ? GrantHighestTierRewards(userDb, bossQuest, userScore, 1, nowMs)
             : [];
 
+        // Missions: a play, its knockdowns, a quest clear, and the high-score conditions (read after the scores above).
+        _missions.Record(userDb, MissionClearConditionType.BIG_HUNT_PLAY_BY_COUNT, 1, nowMs);
+        _missions.Record(userDb, MissionClearConditionType.BIG_HUNT_BOSS_KNOCK_DOWN, session.BossKnockDownCount, nowMs);
+        if (bhQuest is not null)
+        {
+            _missions.RecordQuestClear(userDb, new MissionQuestEvent(_questCampaignHelper.GetBigHuntQuestTarget(bhQuest.QuestId), []), 1, isSkipped: false, nowMs);
+        }
+
         // Clear progress and battle state
         ClearProgress(progress);
         BigHuntBattleReport battleReport = BuildBattleReport(session);
@@ -317,6 +327,7 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
         }
 
         CountChallenges(GetOrCreateStatus(userDb, request.BigHuntBossQuestId), request.SkipCount, nowMs);
+        _missions.Record(userDb, MissionClearConditionType.BIG_HUNT_PLAY_BY_COUNT, request.SkipCount, nowMs);
 
         EntityMBigHuntBossQuest? bossQuest = _masterDb.EntityMBigHuntBossQuest
             .FirstOrDefault(q => q.BigHuntBossQuestId == request.BigHuntBossQuestId);

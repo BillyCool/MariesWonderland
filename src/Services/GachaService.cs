@@ -4,15 +4,17 @@ using Grpc.Core;
 using MariesWonderland.Data;
 using MariesWonderland.Extensions;
 using MariesWonderland.Helpers;
+using MariesWonderland.Missions;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.Gacha;
 
 namespace MariesWonderland.Services;
 
-public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store, GameConfig gameConfig, TimeProvider timeProvider)
+public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store, GameConfig gameConfig, MissionTracker missions, TimeProvider timeProvider)
     : MariesWonderland.Proto.Gacha.GachaService.GachaServiceBase
 {
+    private readonly MissionTracker _missions = missions;
     private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
     private readonly UserDataStore _store = store;
     private readonly GameConfig _gameConfig = gameConfig;
@@ -334,6 +336,8 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
             NextGacha = ToProtoGacha(entry, bannerState)
         };
         response.GachaResult.AddRange(gachaResults);
+
+        _missions.Record(userDb, MissionClearConditionType.GACHA_DRAW_BY_COUNT, response.GachaResult.Count, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
 
         return Task.FromResult(response);
     }

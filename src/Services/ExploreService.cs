@@ -3,15 +3,17 @@ using MariesWonderland.Constants;
 using MariesWonderland.Data;
 using MariesWonderland.Extensions;
 using MariesWonderland.Helpers;
+using MariesWonderland.Missions;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.Explore;
 
 namespace MariesWonderland.Services;
 
-public class ExploreService(UserDataStore store, DarkMasterMemoryDatabase masterDb, GameConfig gameConfig, TimeProvider timeProvider)
+public class ExploreService(UserDataStore store, DarkMasterMemoryDatabase masterDb, GameConfig gameConfig, MissionTracker missions, TimeProvider timeProvider)
     : MariesWonderland.Proto.Explore.ExploreService.ExploreServiceBase
 {
+    private readonly MissionTracker _missions = missions;
     private readonly TimeProvider _timeProvider = timeProvider;
 
     // EXP granted per run = 0.5% of the user's current level EXP requirement × RewardLotteryCount.
@@ -168,6 +170,8 @@ public class ExploreService(UserDataStore store, DarkMasterMemoryDatabase master
                 });
             }
         }
+
+        _missions.Record(userDb, MissionClearConditionType.EXPLORE_FINISH_BY_COUNT, 1, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
 
         return Task.FromResult(response);
     }

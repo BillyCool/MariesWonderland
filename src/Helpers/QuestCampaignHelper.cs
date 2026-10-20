@@ -11,6 +11,7 @@ public sealed class QuestCampaignHelper
     private readonly IReadOnlyDictionary<int, int> _mainQuestChapterByQuestId;
     private readonly IReadOnlyDictionary<int, DifficultyType> _mainQuestDifficultyByQuestId;
     private readonly IReadOnlyDictionary<int, EventQuestType> _eventQuestTypeByChapterId;
+    private readonly IReadOnlyDictionary<int, DifficultyType> _eventQuestDifficultyByQuestId;
 
     public QuestCampaignHelper(DarkMasterMemoryDatabase masterDb)
     {
@@ -20,6 +21,7 @@ public sealed class QuestCampaignHelper
         _eventQuestTypeByChapterId = masterDb.EntityMEventQuestChapter
             .GroupBy(chapter => chapter.EventQuestChapterId)
             .ToDictionary(group => group.Key, group => group.First().EventQuestType);
+        _eventQuestDifficultyByQuestId = BuildEventQuestDifficultyLookup(masterDb);
     }
 
     public QuestCampaignTarget GetMainQuestTarget(int questId)
@@ -34,7 +36,8 @@ public sealed class QuestCampaignHelper
             questId,
             QuestType.EVENT_QUEST,
             eventQuestChapterId,
-            _eventQuestTypeByChapterId.GetValueOrDefault(eventQuestChapterId, EventQuestType.UNKNOWN));
+            _eventQuestTypeByChapterId.GetValueOrDefault(eventQuestChapterId, EventQuestType.UNKNOWN),
+            _eventQuestDifficultyByQuestId.GetValueOrDefault(questId));
 
     public QuestCampaignTarget GetExtraQuestTarget(int questId)
         => new(questId, QuestType.EXTRA_QUEST);
@@ -166,6 +169,26 @@ public sealed class QuestCampaignHelper
         }
 
         return campaigns;
+    }
+
+    private static IReadOnlyDictionary<int, DifficultyType> BuildEventQuestDifficultyLookup(DarkMasterMemoryDatabase masterDb)
+    {
+        Dictionary<int, DifficultyType> difficultyBySequenceId = [];
+        foreach (EntityMEventQuestSequenceGroup group in masterDb.EntityMEventQuestSequenceGroup)
+        {
+            difficultyBySequenceId.TryAdd(group.EventQuestSequenceId, group.DifficultyType);
+        }
+
+        Dictionary<int, DifficultyType> difficultyByQuestId = [];
+        foreach (EntityMEventQuestSequence sequence in masterDb.EntityMEventQuestSequence)
+        {
+            if (difficultyBySequenceId.TryGetValue(sequence.EventQuestSequenceId, out DifficultyType difficulty))
+            {
+                difficultyByQuestId.TryAdd(sequence.QuestId, difficulty);
+            }
+        }
+
+        return difficultyByQuestId;
     }
 
     private static IReadOnlyDictionary<int, DifficultyType> BuildMainQuestDifficultyLookup(DarkMasterMemoryDatabase masterDb)

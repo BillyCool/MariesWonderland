@@ -2,15 +2,17 @@ using Grpc.Core;
 using MariesWonderland.Data;
 using MariesWonderland.Extensions;
 using MariesWonderland.Helpers;
+using MariesWonderland.Missions;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.Parts;
 
 namespace MariesWonderland.Services;
 
-public class PartsService(DarkMasterMemoryDatabase masterDb, UserDataStore store, GameConfig gameConfig, EnhanceCampaignHelper enhanceCampaigns, TimeProvider timeProvider)
+public class PartsService(DarkMasterMemoryDatabase masterDb, UserDataStore store, GameConfig gameConfig, EnhanceCampaignHelper enhanceCampaigns, MissionTracker missions, TimeProvider timeProvider)
     : MariesWonderland.Proto.Parts.PartsService.PartsServiceBase
 {
+    private readonly MissionTracker _missions = missions;
     private readonly TimeProvider _timeProvider = timeProvider;
 
     private const int PartsMaxLevel = 15;
@@ -220,6 +222,8 @@ public class PartsService(DarkMasterMemoryDatabase masterDb, UserDataStore store
             part.Level++;
             GrantUnlockedSubStatuses(userDb, part);
         }
+
+        _missions.Record(userDb, MissionClearConditionType.PARTS_ENHANCE_BY_COUNT, 1, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
 
         return Task.FromResult(new EnhanceResponse { IsSuccess = isSuccess });
     }
