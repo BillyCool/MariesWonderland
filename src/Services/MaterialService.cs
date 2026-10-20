@@ -1,7 +1,9 @@
 using Grpc.Core;
 using MariesWonderland.Data;
 using MariesWonderland.Extensions;
+using MariesWonderland.Helpers;
 using MariesWonderland.Models.Entities;
+using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.Material;
 
 namespace MariesWonderland.Services;
@@ -68,37 +70,29 @@ public class MaterialService(DarkMasterMemoryDatabase masterDb, UserDataStore st
             }
 
             totalGold += mat.SellPrice * item.Count;
+            GrantSaleBonus(userDb, mat, item.Count);
         }
 
-        // Credit the total gold earned to the user's consumable inventory
         if (totalGold > 0)
         {
-            EntityIUserConsumableItem? gold = null;
-            foreach (EntityIUserConsumableItem ci in userDb.EntityIUserConsumableItem)
-            {
-                if (ci.ConsumableItemId == _gameConfig.ConsumableItemIdForGold)
-                {
-                    gold = ci;
-                    break;
-                }
-            }
-
-            if (gold != null)
-            {
-                gold.Count += totalGold;
-            }
-            else
-            {
-                userDb.EntityIUserConsumableItem.Add(new EntityIUserConsumableItem
-                {
-                    UserId = userId,
-                    ConsumableItemId = _gameConfig.ConsumableItemIdForGold,
-                    Count = totalGold,
-                    FirstAcquisitionDatetime = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds()
-                });
-            }
+            PossessionHelper.Apply(userDb, PossessionType.CONSUMABLE_ITEM, _gameConfig.ConsumableItemIdForGold, totalGold, _masterDb);
         }
 
         return Task.FromResult(new SellResponse());
+    }
+
+    private void GrantSaleBonus(DarkUserMemoryDatabase userDb, EntityMMaterial material, int soldCount)
+    {
+        if (soldCount <= 0 || material.MaterialSaleObtainPossessionId <= 0)
+        {
+            return;
+        }
+
+        foreach (EntityMMaterialSaleObtainPossession bonus in _masterDb.EntityMMaterialSaleObtainPossession
+                     .Where(entry => entry.MaterialSaleObtainPossessionId == material.MaterialSaleObtainPossessionId)
+                     .OrderBy(entry => entry.SortOrder))
+        {
+            PossessionHelper.Apply(userDb, bonus.PossessionType, bonus.PossessionId, bonus.Count * soldCount, _masterDb);
+        }
     }
 }
