@@ -6,6 +6,8 @@ using MariesWonderland.Helpers;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.BigHunt;
+using MariesWonderland.Proto.Labyrinth;
+using MariesWonderland.Proto.Pvp;
 using MariesWonderland.Proto.Reward;
 
 namespace MariesWonderland.Services;
@@ -106,15 +108,120 @@ public class RewardService(UserDataStore store, DarkMasterMemoryDatabase masterD
     }
 
     /// <summary>
-    /// Returns an empty PvP reward response (not yet implemented).
+    /// Grants any claimable PvP weekly rewards and any ended-season rewards supported by the current models.
     /// </summary>
     public override Task<ReceivePvpRewardResponse> ReceivePvpReward(Empty request, ServerCallContext context)
     {
-        return Task.FromResult(new ReceivePvpRewardResponse());
+        long userId = context.GetUserId();
+        if (!_store.TryGet(userId, out DarkUserMemoryDatabase? userDb))
+        {
+            return Task.FromResult(new ReceivePvpRewardResponse());
+        }
+
+        EntityIUserPvpStatus? existingStatus = userDb.EntityIUserPvpStatus.FirstOrDefault(s => s.UserId == userId);
+        long latestReceivedWeeklyVersion = existingStatus?.LatestRewardReceivePvpWeeklyVersion ?? 0;
+        int latestReceivedSeasonId = existingStatus?.LatestRewardReceivePvpSeasonId ?? 0;
+        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+
+        ReceivePvpRewardResponse response = new();
+
+        long newestClaimedWeeklyVersion = latestReceivedWeeklyVersion;
+        foreach (EntityIUserPvpWeeklyResult weeklyResult in userDb.EntityIUserPvpWeeklyResult
+            .Where(r => r.UserId == userId && r.PvpWeeklyVersion > latestReceivedWeeklyVersion)
+            .OrderBy(r => r.PvpWeeklyVersion))
+        {
+            EntityMPvpSeason? season = _masterDb.EntityMPvpSeason.FirstOrDefault(s => s.PvpSeasonId == weeklyResult.PvpSeasonId);
+            if (season is null)
+            {
+                break;
+            }
+
+            int gradeRewardGroupId = ResolvePvpGradeWeeklyRewardGroupId(season, weeklyResult.FinalPoint);
+            int weeklyRankRewardGroupId = ResolvePvpWeeklyRankRewardGroupId(season, weeklyResult.FinalRank);
+
+            ApplyPvpRewards(userDb, CollectPvpRewards(
+                gradeRewardGroupId,
+                _masterDb.EntityMPvpGradeWeeklyRewardGroup,
+                g => g.PvpGradeWeeklyRewardGroupId,
+                g => g.PvpRewardId,
+                g => g.SortOrder));
+            ApplyPvpRewards(userDb, CollectPvpRewards(
+                weeklyRankRewardGroupId,
+                _masterDb.EntityMPvpWeeklyRankRewardGroup,
+                g => g.PvpWeeklyRankRewardGroupId,
+                g => g.PvpRewardId,
+                g => g.SortOrder));
+
+            response.WeeklyGradeResult = new WeeklyGradeResult
+            {
+                TargetSeasonId = weeklyResult.PvpSeasonId,
+                PvpPoint = weeklyResult.FinalPoint,
+                PvpGradeWeeklyRewardGroupId = gradeRewardGroupId
+            };
+            response.WeeklyRankResult = new WeeklyRankResult
+            {
+                TargetSeasonId = weeklyResult.PvpSeasonId,
+                Rank = weeklyResult.FinalRank,
+                PvpWeeklyRankRewardGroupId = weeklyRankRewardGroupId
+            };
+
+            newestClaimedWeeklyVersion = weeklyResult.PvpWeeklyVersion;
+        }
+
+        int newestClaimedSeasonId = latestReceivedSeasonId;
+        foreach (IGrouping<int, EntityIUserPvpWeeklyResult> seasonResults in userDb.EntityIUserPvpWeeklyResult
+            .Where(r => r.UserId == userId && r.PvpSeasonId > latestReceivedSeasonId)
+            .GroupBy(r => r.PvpSeasonId)
+            .OrderBy(g => g.Key))
+        {
+            EntityIUserPvpWeeklyResult latestSeasonResult = seasonResults
+                .OrderBy(r => r.PvpWeeklyVersion)
+                .Last();
+            EntityMPvpSeason? season = _masterDb.EntityMPvpSeason.FirstOrDefault(s => s.PvpSeasonId == latestSeasonResult.PvpSeasonId);
+            if (season is null)
+            {
+                break;
+            }
+
+            if (season.SeasonEndDatetime > nowMs)
+            {
+                break;
+            }
+
+            int seasonRankRewardGroupId = ResolvePvpSeasonRankRewardGroupId(season, latestSeasonResult.FinalRank);
+            ApplyPvpRewards(userDb, CollectPvpRewards(
+                seasonRankRewardGroupId,
+                _masterDb.EntityMPvpSeasonRankRewardGroup,
+                g => g.PvpSeasonRankRewardGroupId,
+                g => g.PvpRewardId,
+                g => g.SortOrder));
+
+            response.SeasonRankResult = new SeasonRankResult
+            {
+                TargetSeasonId = latestSeasonResult.PvpSeasonId,
+                Rank = latestSeasonResult.FinalRank,
+                PvpSeasonRankRewardGroupId = seasonRankRewardGroupId
+            };
+
+            newestClaimedSeasonId = latestSeasonResult.PvpSeasonId;
+        }
+
+        if (newestClaimedWeeklyVersion == latestReceivedWeeklyVersion
+            && newestClaimedSeasonId == latestReceivedSeasonId)
+        {
+            return Task.FromResult(response);
+        }
+
+        EntityIUserPvpStatus status = existingStatus ?? userDb.EntityIUserPvpStatus.GetOrCreate(userId);
+        status.LatestRewardReceivePvpWeeklyVersion = newestClaimedWeeklyVersion;
+        status.LatestRewardReceivePvpSeasonId = newestClaimedSeasonId;
+        status.LatestVersion = nowMs;
+
+        return Task.FromResult(response);
     }
 
     /// <summary>
-    /// Returns an empty labyrinth season reward response (not yet implemented).
+    /// The current labyrinth models do not record enough per-season progression to safely resolve claimable season rewards.
     /// </summary>
     public override Task<ReceiveLabyrinthSeasonRewardResponse> ReceiveLabyrinthSeasonReward(Empty request, ServerCallContext context)
     {
@@ -198,6 +305,136 @@ public class RewardService(UserDataStore store, DarkMasterMemoryDatabase masterD
             }
         }
         return items;
+    }
+
+    private int ResolvePvpGradeWeeklyRewardGroupId(EntityMPvpSeason season, int finalPoint)
+    {
+        List<EntityMPvpSeasonGrade> seasonGrades = [.. _masterDb.EntityMPvpSeasonGrade
+            .Where(g => g.PvpSeasonId == season.PvpSeasonId)
+            .OrderBy(g => g.NecessaryPvpPoint)];
+        if (seasonGrades.Count > 0)
+        {
+            int rewardGroupId = 0;
+            foreach (EntityMPvpSeasonGrade grade in seasonGrades)
+            {
+                if (finalPoint >= grade.NecessaryPvpPoint)
+                {
+                    rewardGroupId = grade.PvpGradeWeeklyRewardGroupId;
+                }
+                else
+                {
+                    break;
+                }
+            }
+            return rewardGroupId;
+        }
+
+        List<EntityMPvpGradeGroup> gradeGroups = [.. _masterDb.EntityMPvpGradeGroup
+            .Where(g => g.PvpGradeGroupId == season.PvpGradeGroupId)
+            .OrderBy(g => g.NecessaryPvpPoint)];
+        int fallbackRewardGroupId = 0;
+        foreach (EntityMPvpGradeGroup grade in gradeGroups)
+        {
+            if (finalPoint >= grade.NecessaryPvpPoint)
+            {
+                fallbackRewardGroupId = grade.PvpGradeWeeklyRewardGroupId;
+            }
+            else
+            {
+                break;
+            }
+        }
+        return fallbackRewardGroupId;
+    }
+
+    private int ResolvePvpWeeklyRankRewardGroupId(EntityMPvpSeason season, int finalRank)
+        => ResolvePvpRankRewardGroupId(
+            season.PvpWeeklyRankRewardRankGroupId,
+            finalRank,
+            _masterDb.EntityMPvpWeeklyRankRewardRankGroup,
+            g => g.PvpWeeklyRankRewardRankGroupId,
+            g => g.RankLowerLimit,
+            g => g.PvpWeeklyRankRewardGroupId);
+
+    private int ResolvePvpSeasonRankRewardGroupId(EntityMPvpSeason season, int finalRank)
+        => ResolvePvpRankRewardGroupId(
+            season.PvpSeasonRankRewardRankGroupId,
+            finalRank,
+            _masterDb.EntityMPvpSeasonRankRewardRankGroup,
+            g => g.PvpSeasonRankRewardRankGroupId,
+            g => g.RankLowerLimit,
+            g => g.PvpSeasonRankRewardGroupId);
+
+    private static int ResolvePvpRankRewardGroupId<T>(
+        int rankGroupId,
+        int finalRank,
+        IEnumerable<T> groups,
+        Func<T, int> rankGroupIdSelector,
+        Func<T, int> lowerLimitSelector,
+        Func<T, int> rewardGroupIdSelector)
+    {
+        if (rankGroupId == 0 || finalRank <= 0)
+        {
+            return 0;
+        }
+
+        int rewardGroupId = 0;
+        foreach (T group in groups
+            .Where(g => rankGroupIdSelector(g) == rankGroupId)
+            .OrderBy(g => lowerLimitSelector(g)))
+        {
+            if (finalRank >= lowerLimitSelector(group))
+            {
+                rewardGroupId = rewardGroupIdSelector(group);
+            }
+            else
+            {
+                break;
+            }
+        }
+
+        return rewardGroupId;
+    }
+
+    private List<EntityMPvpReward> CollectPvpRewards<T>(
+        int rewardGroupId,
+        IEnumerable<T> groups,
+        Func<T, int> rewardGroupIdSelector,
+        Func<T, int> rewardIdSelector,
+        Func<T, int> sortOrderSelector)
+    {
+        if (rewardGroupId == 0)
+        {
+            return [];
+        }
+
+        List<int> rewardIds = [.. groups
+            .Where(g => rewardGroupIdSelector(g) == rewardGroupId)
+            .OrderBy(sortOrderSelector)
+            .Select(rewardIdSelector)];
+        return [.. rewardIds.Join(
+            _masterDb.EntityMPvpReward,
+            rewardId => rewardId,
+            reward => reward.PvpRewardId,
+            (_, reward) => reward)];
+    }
+
+    private void ApplyPvpRewards(DarkUserMemoryDatabase userDb, List<EntityMPvpReward> rewards)
+    {
+        if (rewards.Count == 0)
+        {
+            return;
+        }
+
+        if (userDb.EntityIUserGem.Count == 0)
+        {
+            userDb.EntityIUserGem.Add(new EntityIUserGem { UserId = userDb.UserId });
+        }
+
+        foreach (EntityMPvpReward reward in rewards)
+        {
+            PossessionHelper.Apply(userDb, reward.PossessionType, reward.PossessionId, reward.Count, _masterDb);
+        }
     }
 
 }
