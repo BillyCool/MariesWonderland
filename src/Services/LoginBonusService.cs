@@ -2,6 +2,7 @@ using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
 using MariesWonderland.Data;
 using MariesWonderland.Extensions;
+using MariesWonderland.Helpers;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Proto.LoginBonus;
 
@@ -19,54 +20,82 @@ public class LoginBonusService(UserDataStore store, DarkMasterMemoryDatabase mas
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
 
-        // Get or create login bonus tracker, defaulting to page 1 / stamp 0
         EntityIUserLoginBonus loginBonus = userDb.EntityIUserLoginBonus.FirstOrDefault(lb => lb.UserId == userId)
-            ?? AddEntity(userDb.EntityIUserLoginBonus, new EntityIUserLoginBonus
-            {
-                UserId = userId,
-                LoginBonusId = 1,
-                CurrentPageNumber = 1,
-                CurrentStampNumber = 0
-            });
+            ?? userDb.EntityIUserLoginBonus.GetOrCreate(
+                entry => entry.UserId == userId && entry.LoginBonusId == 1,
+                () => new EntityIUserLoginBonus
+                {
+                    UserId = userId,
+                    LoginBonusId = 1,
+                    CurrentPageNumber = 1,
+                    CurrentStampNumber = 0
+                });
 
-        int nextStamp = loginBonus.CurrentStampNumber + 1;
-
-        // Look up the reward for the next stamp from master data
-        EntityMLoginBonusStamp? stamp = _masterDb.EntityMLoginBonusStamp.FirstOrDefault(s =>
-            s.LoginBonusId == loginBonus.LoginBonusId
-            && s.LowerPageNumber == loginBonus.CurrentPageNumber
-            && s.StampNumber == nextStamp);
+        (int nextPage, int nextStamp, EntityMLoginBonusStamp stamp) = ResolveNextStamp(loginBonus);
 
         long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
         long expiryMs = nowMs + 30L * 24 * 60 * 60 * 1000;
 
-        // Deliver the stamp reward as a gift with 30-day expiry
-        if (stamp is not null)
+        userDb.EntitySUserGift.Add(new EntitySUserGift
         {
-            userDb.EntitySUserGift.Add(new EntitySUserGift
-            {
-                UserId = userId,
-                UserGiftUuid = $"login-bonus-{userId}-{nextStamp}",
-                PossessionType = (int)stamp.RewardPossessionType,
-                PossessionId = stamp.RewardPossessionId,
-                Count = stamp.RewardCount,
-                GrantDatetime = nowMs,
-                ExpirationDatetime = expiryMs,
-                ReceivedDatetime = 0
-            });
-        }
+            UserId = userId,
+            UserGiftUuid = $"login-bonus-{userId}-{nextPage}-{nextStamp}",
+            PossessionType = (int)stamp.RewardPossessionType,
+            PossessionId = stamp.RewardPossessionId,
+            Count = stamp.RewardCount,
+            GrantDatetime = nowMs,
+            ExpirationDatetime = expiryMs,
+            ReceivedDatetime = 0
+        });
 
+        loginBonus.CurrentPageNumber = nextPage;
         loginBonus.CurrentStampNumber = nextStamp;
         loginBonus.LatestRewardReceiveDatetime = nowMs;
+        loginBonus.LatestVersion = nowMs;
 
         return Task.FromResult(new ReceiveStampResponse());
     }
 
-    /// <summary>Adds an entity to a list and returns it, enabling inline initialization with null-coalescing.</summary>
-    private static T AddEntity<T>(List<T> list, T entity)
+    private (int NextPage, int NextStamp, EntityMLoginBonusStamp Stamp) ResolveNextStamp(EntityIUserLoginBonus loginBonus)
     {
-        list.Add(entity);
-        return entity;
-    }
-}
+        int nextPage = loginBonus.CurrentPageNumber;
+        int nextStamp = loginBonus.CurrentStampNumber + 1;
 
+        EntityMLoginBonusStamp? stamp = FindStamp(loginBonus.LoginBonusId, nextPage, nextStamp);
+        if (stamp is not null)
+        {
+            return (nextPage, nextStamp, stamp);
+        }
+
+        nextPage = loginBonus.CurrentPageNumber + 1;
+        nextStamp = 1;
+
+        EntityMLoginBonus? masterBonus = _masterDb.EntityMLoginBonus
+            .FirstOrDefault(entry => entry.LoginBonusId == loginBonus.LoginBonusId);
+
+        if (masterBonus is not null
+            && masterBonus.TotalPageCount > 0
+            && nextPage > masterBonus.TotalPageCount)
+        {
+            throw new RpcException(new Status(
+                StatusCode.FailedPrecondition,
+                $"login bonus {loginBonus.LoginBonusId} exhausted at page {loginBonus.CurrentPageNumber} stamp {loginBonus.CurrentStampNumber}"));
+        }
+
+        stamp = FindStamp(loginBonus.LoginBonusId, nextPage, nextStamp);
+        if (stamp is null)
+        {
+            throw new RpcException(new Status(
+                StatusCode.FailedPrecondition,
+                $"no reward found for login bonus {loginBonus.LoginBonusId} page {nextPage} stamp {nextStamp}"));
+        }
+
+        return (nextPage, nextStamp, stamp);
+    }
+
+    private EntityMLoginBonusStamp? FindStamp(int loginBonusId, int pageNumber, int stampNumber) =>
+        _masterDb.EntityMLoginBonusStamp.FirstOrDefault(s =>
+            s.LoginBonusId == loginBonusId
+            && s.LowerPageNumber == pageNumber
+            && s.StampNumber == stampNumber);
+}
