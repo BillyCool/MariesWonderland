@@ -2,7 +2,9 @@ using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
 using MariesWonderland.Data;
 using MariesWonderland.Extensions;
+using MariesWonderland.Helpers;
 using MariesWonderland.Models.Entities;
+using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.PortalCage;
 
 namespace MariesWonderland.Services;
@@ -17,17 +19,27 @@ public class PortalCageService(UserDataStore store)
     {
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
+        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
 
-        EntityIUserPortalCageStatus? status = userDb.EntityIUserPortalCageStatus
+        EntityIUserPortalCageStatus status = userDb.EntityIUserPortalCageStatus.GetOrCreate(userId);
+        status.IsCurrentProgress = true;
+        status.LatestVersion = nowMs;
+
+        EntityIUserSideStoryQuestSceneProgressStatus? sideStoryProgress = userDb.EntityIUserSideStoryQuestSceneProgressStatus
             .FirstOrDefault(s => s.UserId == userId);
-
-        if (status is null)
+        if (sideStoryProgress != null)
         {
-            status = new EntityIUserPortalCageStatus { UserId = userId };
-            userDb.EntityIUserPortalCageStatus.Add(status);
+            sideStoryProgress.CurrentSideStoryQuestId = 0;
+            sideStoryProgress.CurrentSideStoryQuestSceneId = 0;
+            sideStoryProgress.LatestVersion = nowMs;
         }
 
-        status.IsCurrentProgress = true;
+        EntityIUserMainQuestFlowStatus mainQuestFlowStatus = userDb.EntityIUserMainQuestFlowStatus.GetOrCreate(userId);
+        if (mainQuestFlowStatus.CurrentQuestFlowType != QuestFlowType.MAIN_FLOW)
+        {
+            mainQuestFlowStatus.CurrentQuestFlowType = QuestFlowType.MAIN_FLOW;
+            mainQuestFlowStatus.LatestVersion = nowMs;
+        }
 
         return Task.FromResult(new UpdatePortalCageSceneProgressResponse());
     }

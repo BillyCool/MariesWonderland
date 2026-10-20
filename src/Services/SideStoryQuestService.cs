@@ -1,6 +1,7 @@
 ﻿using Grpc.Core;
 using MariesWonderland.Data;
 using MariesWonderland.Extensions;
+using MariesWonderland.Helpers;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Proto.SideStoryQuest;
 
@@ -18,26 +19,27 @@ public class SideStoryQuestService(UserDataStore store, DarkMasterMemoryDatabase
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
 
         int questId = request.SideStoryQuestId;
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        if (questId <= 0)
+        {
+            ClearActiveProgress(userDb, userId);
+            return Task.FromResult(new MoveSideStoryQuestResponse());
+        }
 
-        int firstSceneId = _masterDb.EntityMSideStoryQuestScene
-            .Where(s => s.SideStoryQuestId == questId)
-            .OrderBy(s => s.SortOrder)
-            .Select(s => s.SideStoryQuestSceneId)
-            .FirstOrDefault();
+        int firstSceneId = GetFirstSceneId(questId);
 
         EntityIUserSideStoryQuest? existing = userDb.EntityIUserSideStoryQuest
             .FirstOrDefault(s => s.SideStoryQuestId == questId);
 
-        int sceneId = (existing != null && existing.HeadSideStoryQuestSceneId > 0)
-            ? existing.HeadSideStoryQuestSceneId
-            : firstSceneId;
+        int sceneId = ResolveCurrentSceneId(existing, questId, firstSceneId);
 
-        EntityIUserSideStoryQuestSceneProgressStatus activeProgress = userDb.EntityIUserSideStoryQuestSceneProgressStatus
-            .FirstOrDefault(s => s.UserId == userId)
-            ?? AddEntity(userDb.EntityIUserSideStoryQuestSceneProgressStatus, new EntityIUserSideStoryQuestSceneProgressStatus { UserId = userId });
+        EntityIUserSideStoryQuestSceneProgressStatus activeProgress = userDb.EntityIUserSideStoryQuestSceneProgressStatus.GetOrCreate(userId);
         activeProgress.CurrentSideStoryQuestId = questId;
         activeProgress.CurrentSideStoryQuestSceneId = sceneId;
+
+        EntityIUserPortalCageStatus? portalCageStatus = userDb.EntityIUserPortalCageStatus
+            .FirstOrDefault(s => s.UserId == userId);
+        if (portalCageStatus != null)
+            portalCageStatus.IsCurrentProgress = false;
 
         if (existing == null)
         {
@@ -48,6 +50,12 @@ public class SideStoryQuestService(UserDataStore store, DarkMasterMemoryDatabase
                 HeadSideStoryQuestSceneId = firstSceneId,
                 SideStoryQuestStateType = 1, // Active
             });
+        }
+        else
+        {
+            existing.HeadSideStoryQuestSceneId = sceneId;
+            if (existing.SideStoryQuestStateType == 0)
+                existing.SideStoryQuestStateType = 1;
         }
 
         return Task.FromResult(new MoveSideStoryQuestResponse());
@@ -61,30 +69,82 @@ public class SideStoryQuestService(UserDataStore store, DarkMasterMemoryDatabase
 
         int questId = request.SideStoryQuestId;
         int sceneId = request.SideStoryQuestSceneId;
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
 
-        EntityIUserSideStoryQuestSceneProgressStatus activeProgress = userDb.EntityIUserSideStoryQuestSceneProgressStatus
-            .FirstOrDefault(s => s.UserId == userId)
-            ?? AddEntity(userDb.EntityIUserSideStoryQuestSceneProgressStatus, new EntityIUserSideStoryQuestSceneProgressStatus { UserId = userId });
+        EntityIUserSideStoryQuestSceneProgressStatus activeProgress = userDb.EntityIUserSideStoryQuestSceneProgressStatus.GetOrCreate(userId);
+        activeProgress.CurrentSideStoryQuestId = questId;
         activeProgress.CurrentSideStoryQuestSceneId = sceneId;
 
         EntityIUserSideStoryQuest? progress = userDb.EntityIUserSideStoryQuest
             .FirstOrDefault(s => s.SideStoryQuestId == questId);
         if (progress != null)
         {
-            if (sceneId > progress.HeadSideStoryQuestSceneId)
-            {
+            if (progress.SideStoryQuestStateType == 0)
+                progress.SideStoryQuestStateType = 1;
+
+            if (IsSceneAhead(questId, sceneId, progress.HeadSideStoryQuestSceneId))
                 progress.HeadSideStoryQuestSceneId = sceneId;
-            }
         }
 
         return Task.FromResult(new UpdateSideStoryQuestSceneProgressResponse());
     }
 
-    /// <summary>Adds an entity to a list and returns it, enabling inline initialization with null-coalescing.</summary>
-    private static T AddEntity<T>(List<T> list, T entity)
+    private void ClearActiveProgress(DarkUserMemoryDatabase userDb, long userId)
     {
-        list.Add(entity);
-        return entity;
+        EntityIUserSideStoryQuestSceneProgressStatus? activeProgress = userDb.EntityIUserSideStoryQuestSceneProgressStatus
+            .FirstOrDefault(s => s.UserId == userId);
+        if (activeProgress == null)
+            return;
+
+        activeProgress.CurrentSideStoryQuestId = 0;
+        activeProgress.CurrentSideStoryQuestSceneId = 0;
     }
+
+    private int GetFirstSceneId(int questId)
+    {
+        return _masterDb.EntityMSideStoryQuestScene
+            .Where(s => s.SideStoryQuestId == questId)
+            .OrderBy(s => s.SortOrder)
+            .Select(s => s.SideStoryQuestSceneId)
+            .FirstOrDefault();
+    }
+
+    private int ResolveCurrentSceneId(EntityIUserSideStoryQuest? existing, int questId, int firstSceneId)
+    {
+        if (existing == null || existing.HeadSideStoryQuestSceneId <= 0)
+            return firstSceneId;
+
+        return IsSceneInQuest(questId, existing.HeadSideStoryQuestSceneId)
+            ? existing.HeadSideStoryQuestSceneId
+            : firstSceneId;
+    }
+
+    private bool IsSceneAhead(int questId, int newSceneId, int currentHeadSceneId)
+    {
+        if (newSceneId == 0 || !TryGetSceneSortOrder(questId, newSceneId, out int newSortOrder))
+            return false;
+
+        if (currentHeadSceneId == 0)
+            return true;
+
+        return !TryGetSceneSortOrder(questId, currentHeadSceneId, out int currentSortOrder)
+            || newSortOrder > currentSortOrder;
+    }
+
+    private bool IsSceneInQuest(int questId, int sceneId)
+        => TryGetSceneSortOrder(questId, sceneId, out _);
+
+    private bool TryGetSceneSortOrder(int questId, int sceneId, out int sortOrder)
+    {
+        EntityMSideStoryQuestScene? scene = _masterDb.EntityMSideStoryQuestScene
+            .FirstOrDefault(s => s.SideStoryQuestId == questId && s.SideStoryQuestSceneId == sceneId);
+        if (scene == null)
+        {
+            sortOrder = 0;
+            return false;
+        }
+
+        sortOrder = scene.SortOrder;
+        return true;
+    }
+
 }
