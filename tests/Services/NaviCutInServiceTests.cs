@@ -6,7 +6,7 @@ using NaviCutInServiceImpl = MariesWonderland.Services.NaviCutInService;
 
 namespace MariesWonderland.Tests.Services;
 
-public class NaviCutInServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(fixture), IClassFixture<MasterDatabaseFixture>
+public class NaviCutInServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(fixture)
 {
     private const long UserId = 1L;
     private const int FirstNaviCutInId = 101;
@@ -14,7 +14,7 @@ public class NaviCutInServiceTests(MasterDatabaseFixture fixture) : ServiceTestB
 
     private static NaviCutInServiceImpl CreateService(UserDataStore store) => new(store);
 
-    [MasterDataFact]
+    [Fact]
     public async Task RegisterPlayed_NewCutIn_AddsRecordWithCurrentTimestamp()
     {
         DarkUserMemoryDatabase userDb = CreateUserDb();
@@ -35,7 +35,7 @@ public class NaviCutInServiceTests(MasterDatabaseFixture fixture) : ServiceTestB
         Assert.InRange(record.PlayDatetime, beforeMs, afterMs);
     }
 
-    [MasterDataFact]
+    [Fact]
     public async Task RegisterPlayed_ExistingCutIn_UpdatesTimestampWithoutDuplicatingRecord()
     {
         DarkUserMemoryDatabase userDb = CreateUserDb();
@@ -77,7 +77,7 @@ public class NaviCutInServiceTests(MasterDatabaseFixture fixture) : ServiceTestB
         Assert.Equal(456, untouchedRecord.PlayDatetime);
     }
 
-    [MasterDataFact]
+    [Fact]
     public async Task RegisterPlayed_MissingUserDatabase_CreatesUserDatabaseAndPersistsRecord()
     {
         UserDataStore store = new(MasterDb);

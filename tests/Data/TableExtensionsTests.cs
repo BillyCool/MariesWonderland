@@ -5,7 +5,7 @@ using MariesWonderland.Tests.Infrastructure;
 
 namespace MariesWonderland.Tests.Data;
 
-public class TableExtensionsTests
+public class TableExtensionsTests(MasterDatabaseFixture fixture)
 {
     [Fact]
     public void Find_SingleKey_ReturnsMatchingRow()
@@ -103,10 +103,11 @@ public class TableExtensionsTests
         Assert.Empty(missing);
     }
 
-    [MasterDataFact]
+    [Fact]
     public void Find_OnLoadedMasterData_MatchesLinearScan()
     {
-        DarkMasterMemoryDatabase masterDb = BinaryMasterDataLoader.Load(TestSettings.MasterDataPath);
+        MasterDatabaseFixture.SkipIfUnavailable();
+        DarkMasterMemoryDatabase masterDb = fixture.MasterDb;
 
         foreach (EntityMQuestScene scene in masterDb.EntityMQuestScene.Take(500))
         {

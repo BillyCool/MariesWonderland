@@ -1,13 +1,16 @@
 using MariesWonderland.Data;
+using MariesWonderland.Tests.Infrastructure;
+
+[assembly: AssemblyFixture(typeof(MasterDatabaseFixture))]
 
 namespace MariesWonderland.Tests.Infrastructure;
 
 /// <summary>
-/// Shared fixture that loads the master database and game config once per test collection.
-/// Use as <c>IClassFixture&lt;MasterDatabaseFixture&gt;</c> on test classes that need master data,
-/// and mark their tests with <see cref="MasterDataFactAttribute"/> so they skip when it's missing.
+/// Assembly-wide fixture that loads the master database and game config once per test run.
+/// Test classes that need master data take it as a constructor parameter (usually via
+/// <see cref="ServiceTestBase"/>) and call <see cref="SkipIfUnavailable"/> before using it.
 /// </summary>
-public sealed class MasterDatabaseFixture : IDisposable
+public sealed class MasterDatabaseFixture
 {
     public DarkMasterMemoryDatabase MasterDb { get; }
     public GameConfig GameConfig { get; }
@@ -16,7 +19,7 @@ public sealed class MasterDatabaseFixture : IDisposable
     {
         if (!TestSettings.IsMasterDataAvailable)
         {
-            // Every test using this fixture is skipped; keep construction from failing.
+            // Tests that need master data skip themselves; keep construction from failing.
             MasterDb = new DarkMasterMemoryDatabase();
             GameConfig = GameConfig.From([]);
             return;
@@ -26,5 +29,9 @@ public sealed class MasterDatabaseFixture : IDisposable
         GameConfig = GameConfig.From(MasterDb.EntityMConfig);
     }
 
-    public void Dispose() { }
+    /// <summary>Skips the current test when the master data file isn't available on this machine.</summary>
+    public static void SkipIfUnavailable()
+        => Assert.SkipUnless(TestSettings.IsMasterDataAvailable,
+            $"Master data not found at '{TestSettings.MasterDataPath}'. " +
+            "Set Server:Paths:MasterDatabase in src/appsettings.Local.json or the Server__Paths__MasterDatabase environment variable.");
 }

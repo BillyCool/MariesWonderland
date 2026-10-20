@@ -3,8 +3,9 @@ using MariesWonderland.Data;
 namespace MariesWonderland.Tests.Infrastructure;
 
 /// <summary>
-/// Base class for service-level tests. Concrete test classes should implement
-/// <c>IClassFixture&lt;MasterDatabaseFixture&gt;</c> and pass the fixture here.
+/// Base class for service-level tests that use the real master data. Concrete test classes take the
+/// assembly-wide <see cref="MasterDatabaseFixture"/> in their constructor and pass it here; every
+/// test is skipped when the master data file isn't available.
 /// </summary>
 public abstract class ServiceTestBase
 {
@@ -13,6 +14,7 @@ public abstract class ServiceTestBase
 
     protected ServiceTestBase(MasterDatabaseFixture fixture)
     {
+        MasterDatabaseFixture.SkipIfUnavailable();
         MasterDb = fixture.MasterDb;
         GameConfig = fixture.GameConfig;
     }

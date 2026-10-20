@@ -7,7 +7,7 @@ using CharacterBoardService = MariesWonderland.Services.CharacterBoardService;
 
 namespace MariesWonderland.Tests.Services;
 
-public class CharacterBoardServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(fixture), IClassFixture<MasterDatabaseFixture>
+public class CharacterBoardServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(fixture)
 {
     private const long UserId = 1L;
 
@@ -92,7 +92,7 @@ public class CharacterBoardServiceTests(MasterDatabaseFixture fixture) : Service
         });
     }
 
-    [MasterDataFact]
+    [Fact]
     public async Task ReleasePanel_DeductsCostsSetsReleaseBitAndAppliesEffects()
     {
         const int panelId = 1001;
@@ -186,7 +186,7 @@ public class CharacterBoardServiceTests(MasterDatabaseFixture fixture) : Service
         Assert.Equal(15, statusUpState.Attack);
     }
 
-    [MasterDataFact]
+    [Fact]
     public async Task ReleasePanel_WithMultiplePanels_ReusesExistingBoardAndCreatesNewStates()
     {
         const int boardId = 2002;
@@ -255,7 +255,7 @@ public class CharacterBoardServiceTests(MasterDatabaseFixture fixture) : Service
         Assert.Equal(2, abilityState.Level);
     }
 
-    [MasterDataFact]
+    [Fact]
     public async Task ReleasePanel_UnknownPanelsAndUnresolvableEffects_AreIgnored()
     {
         const int validPanelId = 1004;

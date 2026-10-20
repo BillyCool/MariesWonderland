@@ -6,7 +6,7 @@ using MovieServiceImpl = MariesWonderland.Services.MovieService;
 
 namespace MariesWonderland.Tests.Services;
 
-public class MovieServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(fixture), IClassFixture<MasterDatabaseFixture>
+public class MovieServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(fixture)
 {
     private const long UserId = 1L;
     private const int FirstMovieId = 101;
@@ -14,7 +14,7 @@ public class MovieServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(
 
     private static MovieServiceImpl CreateService(UserDataStore store) => new(store);
 
-    [MasterDataFact]
+    [Fact]
     public async Task SaveViewedMovie_NewMovies_AddsRecordsWithCurrentTimestamp()
     {
         var userDb = CreateUserDb();
@@ -40,7 +40,7 @@ public class MovieServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(
         Assert.InRange(secondRecord.LatestViewedDatetime, beforeMs, afterMs);
     }
 
-    [MasterDataFact]
+    [Fact]
     public async Task SaveViewedMovie_ExistingMovie_UpdatesTimestampWithoutDuplicatingRecord()
     {
         var userDb = CreateUserDb();
@@ -82,7 +82,7 @@ public class MovieServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(
         Assert.Equal(456, untouchedRecord.LatestViewedDatetime);
     }
 
-    [MasterDataFact]
+    [Fact]
     public async Task SaveViewedMovie_DuplicateMovieIdsInRequest_DoesNotCreateDuplicateRows()
     {
         var userDb = CreateUserDb();
@@ -98,7 +98,7 @@ public class MovieServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(
         Assert.Single(userDb.EntityIUserMovie, movie => movie.MovieId == SecondMovieId);
     }
 
-    [MasterDataFact]
+    [Fact]
     public async Task SaveViewedMovie_MissingUserDatabase_CreatesUserDatabaseAndPersistsRecords()
     {
         var store = new UserDataStore(MasterDb);
@@ -118,7 +118,7 @@ public class MovieServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(
         Assert.True(record.LatestViewedDatetime > 0);
     }
 
-    [MasterDataFact]
+    [Fact]
     public async Task SaveViewedMovie_EmptyRequest_DoesNotMutateExistingRows()
     {
         var userDb = CreateUserDb();

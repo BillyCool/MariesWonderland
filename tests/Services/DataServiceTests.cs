@@ -10,7 +10,7 @@ using DataServiceImpl = MariesWonderland.Services.DataService;
 
 namespace MariesWonderland.Tests.Services;
 
-public class DataServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(fixture), IClassFixture<MasterDatabaseFixture>
+public class DataServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(fixture)
 {
     private const long UserId = 1L;
 
@@ -30,7 +30,7 @@ public class DataServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
     private static FakeServerCallContext ContextFor(long userId, string? sessionKey = null)
         => FakeServerCallContext.For(userId, sessionKey);
 
-    [MasterDataFact]
+    [Fact]
     public async Task GetLatestMasterDataVersion_ReturnsConfiguredVersion()
     {
         UserDataStore store = new(MasterDb);
@@ -43,7 +43,7 @@ public class DataServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         Assert.Equal("2025.04.01", response.LatestMasterDataVersion);
     }
 
-    [MasterDataFact]
+    [Fact]
     public async Task GetUserDataNameV2_ReturnsSortedUserDataTableNames()
     {
         UserDataStore store = new(MasterDb);
@@ -57,7 +57,7 @@ public class DataServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         Assert.Equal(UserDataDiffBuilder.TableNames.Order(), tableNameList.TableName);
     }
 
-    [MasterDataFact]
+    [Fact]
     public async Task GetUserData_WithValidSession_ReturnsRequestedTables()
     {
         DarkUserMemoryDatabase userDb = CreateUserDb();
@@ -91,7 +91,7 @@ public class DataServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         Assert.Equal("[]", response.UserDataJson["UnknownTable"]);
     }
 
-    [MasterDataFact]
+    [Fact]
     public async Task GetUserData_WithoutAuthenticatedSession_ThrowsUnauthenticated()
     {
         UserDataStore store = CreateStore(UserId, CreateUserDb(), MasterDb);
