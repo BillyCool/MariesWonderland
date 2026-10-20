@@ -2,6 +2,7 @@
 using Grpc.Core;
 using MariesWonderland.Data;
 using MariesWonderland.Extensions;
+using MariesWonderland.Helpers;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.Gimmick;
@@ -41,6 +42,9 @@ public class GimmickService(UserDataStore store, DarkMasterMemoryDatabase master
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
         long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        List<GimmickReward> ornamentRewards = [];
+        List<GimmickReward> sequenceClearRewards = [];
+        bool isSequenceCleared = false;
 
         EntityIUserGimmick? gimmick = userDb.EntityIUserGimmick.FirstOrDefault(g =>
             g.GimmickSequenceScheduleId == request.GimmickSequenceScheduleId &&
@@ -59,6 +63,7 @@ public class GimmickService(UserDataStore store, DarkMasterMemoryDatabase master
             userDb.EntityIUserGimmick.Add(gimmick);
         }
         gimmick.StartDatetime = nowMs;
+        gimmick.LatestVersion = nowMs;
 
         EntityIUserGimmickOrnamentProgress? ornament = userDb.EntityIUserGimmickOrnamentProgress.FirstOrDefault(o =>
             o.GimmickSequenceScheduleId == request.GimmickSequenceScheduleId &&
@@ -80,8 +85,68 @@ public class GimmickService(UserDataStore store, DarkMasterMemoryDatabase master
         }
         ornament.ProgressValueBit = request.ProgressValueBit;
         ornament.BaseDatetime = nowMs;
+        ornament.LatestVersion = nowMs;
 
-        return Task.FromResult(new UpdateGimmickProgressResponse { IsSequenceCleared = false });
+        EntityMGimmick? masterGimmick = _masterDb.EntityMGimmick.FirstOrDefault(g => g.GimmickId == request.GimmickId);
+        if (masterGimmick is not null)
+        {
+            switch (masterGimmick.GimmickType)
+            {
+                case GimmickType.REPORT:
+                    gimmick.IsGimmickCleared = true;
+                    (isSequenceCleared, sequenceClearRewards) = MarkSequenceClearedOnce(
+                        userDb,
+                        userId,
+                        request.GimmickSequenceScheduleId,
+                        request.GimmickSequenceId,
+                        nowMs);
+                    break;
+
+                case GimmickType.MAP_ONLY_CAGE_TREASURE_HUNT:
+                    GimmickReward? hiddenBirdReward = ResolveHiddenBirdReward(masterGimmick.GimmickOrnamentGroupId, request.GimmickOrnamentIndex);
+                    if (hiddenBirdReward is not null)
+                    {
+                        PossessionHelper.Apply(
+                            userDb,
+                            (PossessionType)hiddenBirdReward.PossessionType,
+                            hiddenBirdReward.PossessionId,
+                            hiddenBirdReward.Count,
+                            _masterDb);
+                        ornamentRewards.Add(hiddenBirdReward);
+                    }
+
+                    gimmick.IsGimmickCleared = true;
+                    (isSequenceCleared, sequenceClearRewards) = MarkSequenceClearedOnce(
+                        userDb,
+                        userId,
+                        request.GimmickSequenceScheduleId,
+                        request.GimmickSequenceId,
+                        nowMs);
+                    break;
+
+                case GimmickType.CAGE_MEMORY:
+                    int? importantItemId = ResolveCageMemoryImportantItemId(masterGimmick);
+                    if (importantItemId is int itemId
+                        && !userDb.EntityIUserImportantItem.Any(item => item.ImportantItemId == itemId))
+                    {
+                        PossessionHelper.Apply(userDb, PossessionType.IMPORTANT_ITEM, itemId, 1, _masterDb);
+                        ornamentRewards.Add(new GimmickReward
+                        {
+                            PossessionType = (int)PossessionType.IMPORTANT_ITEM,
+                            PossessionId = itemId,
+                            Count = 1
+                        });
+                    }
+                    break;
+            }
+        }
+
+        return Task.FromResult(new UpdateGimmickProgressResponse
+        {
+            GimmickOrnamentReward = { ornamentRewards },
+            IsSequenceCleared = isSequenceCleared,
+            GimmickSequenceClearReward = { sequenceClearRewards }
+        });
     }
 
     /// <summary>Initializes gimmick sequence schedules whose time windows are active and quest prerequisites are met.</summary>
@@ -92,6 +157,8 @@ public class GimmickService(UserDataStore store, DarkMasterMemoryDatabase master
         long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
 
         Dictionary<int, long> conditionToQuestId = BuildConditionQuestMap();
+        Dictionary<int, GimmickType> sequenceTypes = BuildSequenceTypeMap();
+        List<EntityMGimmickSequenceSchedule> activeSchedules = ResolveActiveSchedules(nowMs);
 
         // Collect all cleared quest IDs for prerequisite checks
         HashSet<int> clearedQuests = [];
@@ -103,15 +170,32 @@ public class GimmickService(UserDataStore store, DarkMasterMemoryDatabase master
             }
         }
 
-        // Activate each schedule whose time window includes now and whose quest prerequisite is met
-        foreach (EntityMGimmickSequenceSchedule schedule in _masterDb.EntityMGimmickSequenceSchedule)
+        userDb.EntityIUserGimmickSequence.RemoveAll(sequence =>
         {
-            if (nowMs < schedule.StartDatetime || nowMs > schedule.EndDatetime)
+            if (sequence.IsGimmickSequenceCleared)
+            {
+                return false;
+            }
+
+            return !activeSchedules.Any(schedule =>
+                schedule.GimmickSequenceScheduleId == sequence.GimmickSequenceScheduleId &&
+                schedule.FirstGimmickSequenceId == sequence.GimmickSequenceId);
+        });
+
+        // Activate each schedule whose time window includes now and whose quest prerequisite is met
+        foreach (EntityMGimmickSequenceSchedule schedule in activeSchedules)
+        {
+            if (nowMs < schedule.StartDatetime)
             {
                 continue;
             }
 
-            if (schedule.ReleaseEvaluateConditionId != 0)
+            bool bypassQuestRequirement = sequenceTypes.TryGetValue(schedule.FirstGimmickSequenceId, out GimmickType sequenceType)
+                && sequenceType is GimmickType.REPORT or GimmickType.CAGE_MEMORY;
+
+            // TODO: Full hidden-story parity still needs projected IUserMission/IUserQuestMission and active-chain
+            // gimmick rows; the current .NET model only persists concrete user rows.
+            if (!bypassQuestRequirement && schedule.ReleaseEvaluateConditionId != 0)
             {
                 if (conditionToQuestId.TryGetValue(schedule.ReleaseEvaluateConditionId, out long requiredQuestId)
                     && !clearedQuests.Contains((int)requiredQuestId))
@@ -131,6 +215,7 @@ public class GimmickService(UserDataStore store, DarkMasterMemoryDatabase master
                     UserId = userId,
                     GimmickSequenceScheduleId = schedule.GimmickSequenceScheduleId,
                     GimmickSequenceId = schedule.FirstGimmickSequenceId,
+                    LatestVersion = nowMs
                 });
             }
         }
@@ -163,6 +248,7 @@ public class GimmickService(UserDataStore store, DarkMasterMemoryDatabase master
                 userDb.EntityIUserGimmickUnlock.Add(unlock);
             }
             unlock.IsUnlocked = true;
+            unlock.LatestVersion = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
         }
 
         return Task.FromResult(new UnlockResponse());
@@ -194,5 +280,210 @@ public class GimmickService(UserDataStore store, DarkMasterMemoryDatabase master
         }
 
         return conditionToQuestId;
+    }
+
+    private Dictionary<int, GimmickType> BuildSequenceTypeMap()
+    {
+        Dictionary<int, GimmickType> gimmickTypes = [];
+        foreach (EntityMGimmick gimmick in _masterDb.EntityMGimmick)
+        {
+            gimmickTypes[gimmick.GimmickId] = gimmick.GimmickType;
+        }
+
+        Dictionary<int, GimmickType> typeByGroup = [];
+        foreach (EntityMGimmickGroup group in _masterDb.EntityMGimmickGroup)
+        {
+            if (!typeByGroup.ContainsKey(group.GimmickGroupId)
+                && gimmickTypes.TryGetValue(group.GimmickId, out GimmickType type))
+            {
+                typeByGroup[group.GimmickGroupId] = type;
+            }
+        }
+
+        Dictionary<int, GimmickType> typeBySequence = [];
+        foreach (EntityMGimmickSequence sequence in _masterDb.EntityMGimmickSequence)
+        {
+            if (typeByGroup.TryGetValue(sequence.GimmickGroupId, out GimmickType type))
+            {
+                typeBySequence[sequence.GimmickSequenceId] = type;
+            }
+        }
+
+        return typeBySequence;
+    }
+
+    private List<EntityMGimmickSequenceSchedule> ResolveActiveSchedules(long nowMs)
+    {
+        Dictionary<int, EntityMGimmickSequenceSchedule> bestByFirstSequence = [];
+        foreach (EntityMGimmickSequenceSchedule schedule in _masterDb.EntityMGimmickSequenceSchedule)
+        {
+            if (bestByFirstSequence.TryGetValue(schedule.FirstGimmickSequenceId, out EntityMGimmickSequenceSchedule? existing))
+            {
+                bool existingHasFutureEnd = existing.EndDatetime > nowMs;
+                bool candidateHasFutureEnd = schedule.EndDatetime > nowMs;
+
+                if (existingHasFutureEnd != candidateHasFutureEnd)
+                {
+                    if (existingHasFutureEnd)
+                    {
+                        continue;
+                    }
+                }
+                else if (existing.StartDatetime < schedule.StartDatetime
+                    || (existing.StartDatetime == schedule.StartDatetime
+                        && existing.GimmickSequenceScheduleId <= schedule.GimmickSequenceScheduleId))
+                {
+                    continue;
+                }
+            }
+
+            bestByFirstSequence[schedule.FirstGimmickSequenceId] = schedule;
+        }
+
+        return [.. bestByFirstSequence.Values];
+    }
+
+    private (bool SequenceCleared, List<GimmickReward> Rewards) MarkSequenceClearedOnce(
+        DarkUserMemoryDatabase userDb,
+        long userId,
+        int scheduleId,
+        int sequenceId,
+        long nowMs)
+    {
+        EntityIUserGimmickSequence sequence = userDb.EntityIUserGimmickSequence.GetOrCreate(
+            entry => entry.GimmickSequenceScheduleId == scheduleId && entry.GimmickSequenceId == sequenceId,
+            () => new EntityIUserGimmickSequence
+            {
+                UserId = userId,
+                GimmickSequenceScheduleId = scheduleId,
+                GimmickSequenceId = sequenceId
+            });
+
+        if (sequence.IsGimmickSequenceCleared)
+        {
+            return (false, []);
+        }
+
+        sequence.IsGimmickSequenceCleared = true;
+        sequence.ClearDatetime = nowMs;
+        sequence.LatestVersion = nowMs;
+
+        List<GimmickReward> rewards = [];
+        EntityMGimmickSequence? masterSequence = _masterDb.EntityMGimmickSequence
+            .FirstOrDefault(entry => entry.GimmickSequenceId == sequenceId);
+        if (masterSequence is null || masterSequence.GimmickSequenceRewardGroupId == 0)
+        {
+            return (true, rewards);
+        }
+
+        foreach (EntityMGimmickSequenceRewardGroup reward in _masterDb.EntityMGimmickSequenceRewardGroup
+                     .Where(entry => entry.GimmickSequenceRewardGroupId == masterSequence.GimmickSequenceRewardGroupId)
+                     .OrderBy(entry => entry.GroupIndex))
+        {
+            if (reward.PossessionType == PossessionType.UNKNOWN || reward.PossessionId == 0 || reward.Count == 0)
+            {
+                continue;
+            }
+
+            PossessionHelper.Apply(userDb, reward.PossessionType, reward.PossessionId, reward.Count, _masterDb);
+            rewards.Add(new GimmickReward
+            {
+                PossessionType = (int)reward.PossessionType,
+                PossessionId = reward.PossessionId,
+                Count = reward.Count
+            });
+        }
+
+        return (true, rewards);
+    }
+
+    private GimmickReward? ResolveHiddenBirdReward(int gimmickOrnamentGroupId, int gimmickOrnamentIndex)
+    {
+        EntityMGimmickOrnament? ornament = _masterDb.EntityMGimmickOrnament.FirstOrDefault(entry =>
+            entry.GimmickOrnamentGroupId == gimmickOrnamentGroupId
+            && entry.GimmickOrnamentIndex == gimmickOrnamentIndex);
+        if (ornament is null)
+        {
+            return null;
+        }
+
+        EntityMCageOrnament? cageOrnament = _masterDb.EntityMCageOrnament
+            .FirstOrDefault(entry => entry.CageOrnamentId == ornament.GimmickOrnamentViewId);
+        if (cageOrnament is null)
+        {
+            return null;
+        }
+
+        EntityMCageOrnamentReward? reward = _masterDb.EntityMCageOrnamentReward
+            .FirstOrDefault(entry => entry.CageOrnamentRewardId == cageOrnament.CageOrnamentRewardId);
+        if (reward is null)
+        {
+            return null;
+        }
+
+        return new GimmickReward
+        {
+            PossessionType = (int)reward.PossessionType,
+            PossessionId = reward.PossessionId,
+            Count = reward.Count
+        };
+    }
+
+    private int? ResolveCageMemoryImportantItemId(EntityMGimmick masterGimmick)
+    {
+        int chapterId = _masterDb.EntityMGimmickOrnament
+            .Where(entry => entry.GimmickOrnamentGroupId == masterGimmick.GimmickOrnamentGroupId)
+            .Select(entry => entry.ChapterId)
+            .FirstOrDefault();
+        if (chapterId == 0)
+        {
+            return null;
+        }
+
+        EntityMMainQuestChapter? chapter = _masterDb.EntityMMainQuestChapter
+            .FirstOrDefault(entry => entry.MainQuestChapterId == chapterId);
+        if (chapter is null)
+        {
+            return null;
+        }
+
+        EntityMMainQuestRoute? route = _masterDb.EntityMMainQuestRoute
+            .FirstOrDefault(entry => entry.MainQuestRouteId == chapter.MainQuestRouteId);
+        if (route is null)
+        {
+            return null;
+        }
+
+        List<int> routeGimmickIds = [.. _masterDb.EntityMGimmick
+            .Where(entry => entry.GimmickType == GimmickType.CAGE_MEMORY)
+            .Where(entry => _masterDb.EntityMGimmickOrnament.Any(ornament =>
+                ornament.GimmickOrnamentGroupId == entry.GimmickOrnamentGroupId
+                && _masterDb.EntityMMainQuestChapter.Any(routeChapter =>
+                    routeChapter.MainQuestChapterId == ornament.ChapterId
+                    && routeChapter.MainQuestRouteId == route.MainQuestRouteId)))
+            .Select(entry => entry.GimmickId)
+            .Distinct()
+            .OrderBy(entry => entry)];
+
+        int gimmickIndex = routeGimmickIds.IndexOf(masterGimmick.GimmickId);
+        if (gimmickIndex < 0)
+        {
+            return null;
+        }
+
+        List<int> seasonCageMemoryIds = [.. _masterDb.EntityMCageMemory
+            .Where(entry => entry.MainQuestSeasonId == route.MainQuestSeasonId)
+            .Select(entry => entry.CageMemoryId)
+            .OrderBy(entry => entry)];
+        if (gimmickIndex >= seasonCageMemoryIds.Count)
+        {
+            return null;
+        }
+
+        int cageMemoryId = seasonCageMemoryIds[gimmickIndex];
+        return _masterDb.EntityMImportantItem
+            .Where(entry => entry.ImportantItemType == 4 && entry.CageMemoryId == cageMemoryId)
+            .Select(entry => (int?)entry.ImportantItemId)
+            .FirstOrDefault();
     }
 }
