@@ -9,8 +9,8 @@ namespace MariesWonderland.Data;
 /// Computes the delta between before/after snapshots of a <see cref="DarkUserMemoryDatabase"/>
 /// to produce incremental <see cref="DiffData"/> maps for gRPC responses. Uses reflection at
 /// startup to discover all EntityI* (client-visible) list properties. Rows are matched across
-/// snapshots by their primary key (<see cref="EntityKey{T}"/>), so rows removed by a handler are
-/// reported to the client in <c>DeleteKeysJson</c>.
+/// snapshots by their primary key (<see cref="EntityKey{T}"/>): new or changed rows are sent in
+/// <c>UpdateRecordsJson</c> and rows removed by a handler in <c>DeleteKeysJson</c>.
 /// </summary>
 public static class UserDataDiffBuilder
 {
@@ -97,8 +97,9 @@ public static class UserDataDiffBuilder
         => Tables.TryGetValue(tableName, out Table? table) ? table.Serialize(db) : "[]";
 
     /// <summary>
-    /// Computes only the tables that changed since the snapshot. Changed tables are sent in full
-    /// in <c>UpdateRecordsJson</c>; rows whose key no longer exists are sent in <c>DeleteKeysJson</c>.
+    /// Computes the rows that changed since the snapshot, per table. New or changed rows are sent in
+    /// <c>UpdateRecordsJson</c>; rows whose key no longer exists are sent in <c>DeleteKeysJson</c>.
+    /// Tables with neither are left out. Against an empty snapshot this is the full user state.
     /// </summary>
     public static Dictionary<string, DiffData> Delta(Dictionary<string, TableSnapshot> before, DarkUserMemoryDatabase db)
     {
@@ -108,13 +109,16 @@ public static class UserDataDiffBuilder
             TableSnapshot after = table.Snapshot(db);
             TableSnapshot beforeRows = before.TryGetValue(name, out TableSnapshot? rows) ? rows : TableSnapshot.Empty;
 
+            List<string> updated = [.. after.RowsChangedFrom(beforeRows)];
+            List<string> deleted = [.. beforeRows.RowsMissingFrom(after)];
+
             // Skip unchanged tables — only emit tables with actual modifications
-            if (after.SequenceEqual(beforeRows)) continue;
+            if (updated.Count == 0 && deleted.Count == 0) continue;
 
             diff[name] = new DiffData
             {
-                UpdateRecordsJson = table.Serialize(db),
-                DeleteKeysJson = ToJsonArray(beforeRows.RowsMissingFrom(after))
+                UpdateRecordsJson = ToJsonArray(updated),
+                DeleteKeysJson = ToJsonArray(deleted)
             };
         }
         return diff;
@@ -154,8 +158,9 @@ public sealed class TableSnapshot
         _byKey.TryAdd(key, json);
     }
 
-    /// <summary>Whether both snapshots hold the same rows, with the same content, in the same order.</summary>
-    public bool SequenceEqual(TableSnapshot other) => _rows.SequenceEqual(other._rows);
+    /// <summary>JSON of the rows that are new or whose content differs from <paramref name="previous"/>.</summary>
+    public IEnumerable<string> RowsChangedFrom(TableSnapshot previous)
+        => _rows.Where(row => !previous._byKey.TryGetValue(row.Key, out string? json) || json != row.Json).Select(row => row.Json);
 
     /// <summary>JSON of the rows whose key doesn't exist in <paramref name="other"/>.</summary>
     public IEnumerable<string> RowsMissingFrom(TableSnapshot other)

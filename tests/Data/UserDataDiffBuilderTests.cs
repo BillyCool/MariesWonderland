@@ -58,16 +58,53 @@ public class UserDataDiffBuilderTests
     }
 
     [Fact]
-    public void Delta_RowUpdatedOrAdded_HasNoDeletes()
+    public void Delta_RowUpdatedOrAdded_SendsOnlyThoseRows()
     {
-        DarkUserMemoryDatabase db = CreateDbWithWeapons("a");
+        DarkUserMemoryDatabase db = CreateDbWithWeapons("a", "b", "c");
         Dictionary<string, TableSnapshot> before = UserDataDiffBuilder.Snapshot(db);
 
         db.EntityIUserWeapon[0].Level = 5;
-        db.EntityIUserWeapon.Add(new EntityIUserWeapon { UserId = UserId, UserWeaponUuid = "b", WeaponId = 200 });
+        db.EntityIUserWeapon.Add(new EntityIUserWeapon { UserId = UserId, UserWeaponUuid = "d", WeaponId = 200 });
 
         DiffData diff = UserDataDiffBuilder.Delta(before, db)["IUserWeapon"];
+        Assert.Equal(["a", "d"], ParseRows(diff.UpdateRecordsJson).Select(row => row.GetProperty("userWeaponUuid").GetString()));
+        Assert.Equal(5, ParseRows(diff.UpdateRecordsJson)[0].GetProperty("level").GetInt32());
         Assert.Equal("[]", diff.DeleteKeysJson);
+    }
+
+    [Fact]
+    public void Delta_RowRemoved_DoesNotResendRemainingRows()
+    {
+        DarkUserMemoryDatabase db = CreateDbWithWeapons("a", "b");
+        Dictionary<string, TableSnapshot> before = UserDataDiffBuilder.Snapshot(db);
+
+        db.EntityIUserWeapon.RemoveAll(w => w.UserWeaponUuid == "a");
+
+        Assert.Equal("[]", UserDataDiffBuilder.Delta(before, db)["IUserWeapon"].UpdateRecordsJson);
+    }
+
+    [Fact]
+    public void Delta_RowsOnlyReordered_IsEmpty()
+    {
+        DarkUserMemoryDatabase db = CreateDbWithWeapons("a", "b");
+        Dictionary<string, TableSnapshot> before = UserDataDiffBuilder.Snapshot(db);
+
+        db.EntityIUserWeapon.Reverse();
+
+        Assert.Empty(UserDataDiffBuilder.Delta(before, db));
+    }
+
+    [Fact]
+    public void Delta_EmptyBaseline_SendsFullState()
+    {
+        DarkUserMemoryDatabase db = CreateDbWithWeapons("a", "b");
+        db.EntityIUserStatus.Add(new EntityIUserStatus { UserId = UserId, Level = 1 });
+
+        Dictionary<string, DiffData> diff = UserDataDiffBuilder.Delta([], db);
+
+        Assert.Equal(2, ParseRows(diff["IUserWeapon"].UpdateRecordsJson).Count);
+        Assert.Single(ParseRows(diff["IUserStatus"].UpdateRecordsJson));
+        Assert.Equal(UserDataDiffBuilder.SerializeTable(db, "IUserWeapon"), diff["IUserWeapon"].UpdateRecordsJson);
     }
 
     [Fact]
