@@ -194,8 +194,8 @@ public class GimmickService(UserDataStore store, DarkMasterMemoryDatabase master
             bool bypassQuestRequirement = sequenceTypes.TryGetValue(schedule.FirstGimmickSequenceId, out GimmickType sequenceType)
                 && sequenceType is GimmickType.REPORT or GimmickType.CAGE_MEMORY;
 
-            // TODO: Full hidden-story parity still needs projected IUserMission/IUserQuestMission and active-chain
-            // gimmick rows; the current .NET model only persists concrete user rows.
+            // TODO: Hidden-story quest-mission prerequisites are real rows now (invisible missions clear on a win);
+            // the IUserMission prerequisites wait on the mission system, and active-chain gimmick rows are missing.
             if (!bypassQuestRequirement && schedule.ReleaseEvaluateConditionId != 0)
             {
                 if (conditionToQuestId.TryGetValue(schedule.ReleaseEvaluateConditionId, out long requiredQuestId)

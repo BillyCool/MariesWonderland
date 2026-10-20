@@ -96,9 +96,13 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
     }
 
     /// <summary>Resets the progress of the quest's missions so a restarted run evaluates them again.</summary>
-    public static void ResetMissionProgress(DarkUserMemoryDatabase userDb, int questId)
+    public void ResetMissionProgress(DarkUserMemoryDatabase userDb, int questId)
     {
-        foreach (EntityIUserQuestMission mission in userDb.EntityIUserQuestMission.Where(m => m.QuestId == questId))
+        // Invisible missions stay cleared: hidden stories unlock from them.
+        EntityMQuest? quest = FindQuest(questId);
+        HashSet<int> invisibleMissionIds = quest == null ? [] : [.. InvisibleMissionIds(quest)];
+        foreach (EntityIUserQuestMission mission in userDb.EntityIUserQuestMission
+            .Where(m => m.QuestId == questId && !invisibleMissionIds.Contains(m.QuestMissionId)))
         {
             mission.IsClear = false;
             mission.ProgressValue = 0;
@@ -330,7 +334,8 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
             return;
         }
 
-        foreach (int missionId in MissionIds(quest))
+        // Invisible missions (no rewards, never listed) are cleared too; hidden stories unlock from them.
+        foreach (int missionId in MissionIds(quest).Concat(InvisibleMissionIds(quest)))
         {
             EntityIUserQuestMission userMission = userDb.EntityIUserQuestMission.GetOrCreate(
                 m => m.QuestId == quest.QuestId && m.QuestMissionId == missionId,
@@ -434,15 +439,19 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
         return drops;
     }
 
-    private IEnumerable<int> MissionIds(EntityMQuest quest)
+    private IEnumerable<int> MissionIds(EntityMQuest quest) => MissionGroupIds(quest.QuestMissionGroupId);
+
+    private IEnumerable<int> InvisibleMissionIds(EntityMQuest quest) => MissionGroupIds(quest.InvisibleQuestMissionGroupId);
+
+    private IEnumerable<int> MissionGroupIds(int questMissionGroupId)
     {
-        if (quest.QuestMissionGroupId == 0)
+        if (questMissionGroupId == 0)
         {
             return [];
         }
 
         return [.. _masterDb.EntityMQuestMissionGroup
-            .Where(g => g.QuestMissionGroupId == quest.QuestMissionGroupId)
+            .Where(g => g.QuestMissionGroupId == questMissionGroupId)
             .Select(g => g.QuestMissionId)];
     }
 

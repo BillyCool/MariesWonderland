@@ -396,7 +396,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         UpdateQuestSessionState(restartSession, restoredSceneId, restoredHeadSceneId, flowStatus.CurrentQuestFlowType);
 
         // Reset all mission progress for this quest so they can be re-evaluated during battle.
-        QuestEngine.ResetMissionProgress(userDb, questId);
+        _questEngine.ResetMissionProgress(userDb, questId);
 
         RestartMainQuestResponse response = new();
         response.BattleDropReward.AddRange(_questEngine.BuildBattleDropRewards(questId));
@@ -576,7 +576,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         EntitySQuestSession session = GetOrCreateQuestSession(userDb, userId, questId);
         userQuest.IsBattleOnly = session.IsBattleOnly;
 
-        QuestEngine.ResetMissionProgress(userDb, questId);
+        _questEngine.ResetMissionProgress(userDb, questId);
 
         EntityIUserExtraQuestProgressStatus progressStatus = userDb.EntityIUserExtraQuestProgressStatus.GetOrCreate(userId);
         progressStatus.CurrentQuestId = questId;
@@ -688,7 +688,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         EntitySQuestSession session = GetOrCreateQuestSession(userDb, userId, questId);
         userQuest.IsBattleOnly = session.IsBattleOnly;
 
-        QuestEngine.ResetMissionProgress(userDb, questId);
+        _questEngine.ResetMissionProgress(userDb, questId);
 
         EntityIUserEventQuestProgressStatus progressStatus = userDb.EntityIUserEventQuestProgressStatus.GetOrCreate(userId);
         int restoredSceneId = session.CurrentQuestSceneId != 0 ? session.CurrentQuestSceneId : _questEngine.GetQuestStartSceneId(questId, session.IsBattleOnly);

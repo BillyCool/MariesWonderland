@@ -256,6 +256,48 @@ public class QuestEngineTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         Assert.Equal(freeStamina ? 100_000 : 100_000 - quest.Stamina * 2 * 1000, status.StaminaMilliValue);
     }
 
+    [Fact]
+    public void Finish_Win_ClearsInvisibleMissionsWithoutListingThem()
+    {
+        QuestEngine engine = CreateEngine();
+        EntityMQuest quest = FindQuestWithInvisibleMissions();
+        HashSet<int> invisibleIds = InvisibleMissionIds(quest);
+        DarkUserMemoryDatabase userDb = CreateUser();
+        engine.EnsureQuestRows(userDb, quest.QuestId);
+
+        QuestFinishResult result = engine.Finish(userDb, quest, MainTarget(quest), isWin: true, NowMs);
+
+        Assert.All(invisibleIds, id => Assert.Contains(userDb.EntityIUserQuestMission, m => m.QuestId == quest.QuestId && m.QuestMissionId == id && m.IsClear));
+        Assert.Equal(MasterDb.EntityMQuestMissionGroup.Count(g => g.QuestMissionGroupId == quest.QuestMissionGroupId), result.MissionClearRewards.Count + result.MissionClearCompleteRewards.Count);
+    }
+
+    [Fact]
+    public void ResetMissionProgress_KeepsInvisibleMissionsCleared()
+    {
+        QuestEngine engine = CreateEngine();
+        EntityMQuest quest = FindQuestWithInvisibleMissions();
+        HashSet<int> invisibleIds = InvisibleMissionIds(quest);
+        DarkUserMemoryDatabase userDb = CreateUser();
+        engine.ClearQuestMissions(userDb, quest.QuestId, NowMs);
+
+        engine.ResetMissionProgress(userDb, quest.QuestId);
+
+        List<EntityIUserQuestMission> rows = [.. userDb.EntityIUserQuestMission.Where(m => m.QuestId == quest.QuestId)];
+        Assert.All(rows.Where(m => invisibleIds.Contains(m.QuestMissionId)), m => Assert.True(m.IsClear));
+        Assert.All(rows.Where(m => !invisibleIds.Contains(m.QuestMissionId)), m => Assert.False(m.IsClear));
+    }
+
+    private EntityMQuest FindQuestWithInvisibleMissions()
+        => MasterDb.EntityMQuest
+            .Where(q => q.InvisibleQuestMissionGroupId != 0 && q.QuestMissionGroupId != 0)
+            .OrderBy(q => q.QuestId)
+            .First();
+
+    private HashSet<int> InvisibleMissionIds(EntityMQuest quest)
+        => [.. MasterDb.EntityMQuestMissionGroup
+            .Where(g => g.QuestMissionGroupId == quest.InvisibleQuestMissionGroupId)
+            .Select(g => g.QuestMissionId)];
+
     private EntityMQuest FindReplayQuest()
         => MasterDb.EntityMQuest
             .Where(q => q.QuestReplayFlowRewardGroupId != 0 && q.QuestFirstClearRewardGroupId != 0 && q.QuestMissionGroupId != 0 && q.UserExp > 0)
@@ -277,7 +319,7 @@ public class QuestEngineTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         DarkUserMemoryDatabase userDb = CreateUser();
         engine.ClearQuestMissions(userDb, quest.QuestId, NowMs);
 
-        QuestEngine.ResetMissionProgress(userDb, quest.QuestId);
+        engine.ResetMissionProgress(userDb, quest.QuestId);
 
         List<EntityIUserQuestMission> missions = [.. userDb.EntityIUserQuestMission.Where(m => m.QuestId == quest.QuestId)];
         Assert.NotEmpty(missions);
