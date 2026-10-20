@@ -69,7 +69,7 @@ public class UserService(UserDataStore store, UserDataSeeder seeder) : MariesWon
         return Task.FromResult(new CheckTransferSettingResponse());
     }
 
-    /// <summary>Initializes the game session: sets game start time and ensures gem balance exists.</summary>
+    /// <summary>Starts the game session by recording the game start time.</summary>
     public override Task<GameStartResponse> GameStart(Empty request, ServerCallContext context)
     {
         long userId = context.GetUserId();
@@ -77,33 +77,6 @@ public class UserService(UserDataStore store, UserDataSeeder seeder) : MariesWon
 
         EntityIUser user = userDb.EntityIUser.GetOrCreate(userId);
         user.GameStartDatetime = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
-
-        // Initialize singleton entities
-        userDb.EntityIUserGem.Add(new EntityIUserGem { UserId = userId, PaidGem = 0, FreeGem = 0 });
-        userDb.EntityIUserExplore.Add(new EntityIUserExplore { UserId = userId });
-
-        // TODO: Investigate if these singleton tables need to be pre-initialized at registration.
-        // Uncomment to enable initialization:
-        // userDb.EntityIUserBigHuntProgressStatus.AddNew(new EntityIUserBigHuntProgressStatus { UserId = userId });
-        // userDb.EntityIUserEventQuestGuerrillaFreeOpen.AddNew(new EntityIUserEventQuestGuerrillaFreeOpen { UserId = userId });
-        // userDb.EntityIUserEventQuestProgressStatus.AddNew(new EntityIUserEventQuestProgressStatus { UserId = userId });
-        // userDb.EntityIUserExtraQuestProgressStatus.AddNew(new EntityIUserExtraQuestProgressStatus { UserId = userId });
-        // userDb.EntityIUserMainQuestFlowStatus.AddNew(new EntityIUserMainQuestFlowStatus { UserId = userId });
-        // userDb.EntityIUserMainQuestMainFlowStatus.AddNew(new EntityIUserMainQuestMainFlowStatus { UserId = userId });
-        // userDb.EntityIUserMainQuestProgressStatus.AddNew(new EntityIUserMainQuestProgressStatus { UserId = userId });
-        // userDb.EntityIUserMainQuestReplayFlowStatus.AddNew(new EntityIUserMainQuestReplayFlowStatus { UserId = userId });
-        // userDb.EntityIUserMainQuestSeasonRoute.AddNew(new EntityIUserMainQuestSeasonRoute { UserId = userId });
-        // userDb.EntityIUserPortalCageStatus.AddNew(new EntityIUserPortalCageStatus { UserId = userId });
-        // userDb.EntityIUserShopReplaceable.AddNew(new EntityIUserShopReplaceable { UserId = userId });
-        // userDb.EntityIUserSideStoryQuestSceneProgressStatus.AddNew(new EntityIUserSideStoryQuestSceneProgressStatus { UserId = userId });
-
-        // TODO: Initialize first mission record (missionId=1, IN_PROGRESS) at registration.
-        // userDb.EntityIUserMission.AddNew(new EntityIUserMission
-        // {
-        //     UserId = userId,
-        //     MissionId = 1,
-        //     MissionProgressStatusType = MissionProgressStatusType.IN_PROGRESS
-        // });
 
         return Task.FromResult(new GameStartResponse());
     }

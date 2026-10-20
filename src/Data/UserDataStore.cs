@@ -266,6 +266,27 @@ public class UserDataStore(DarkMasterMemoryDatabase masterDb)
             ChoiceId = 0
         });
 
+        // One-row-per-user tables present on every real account, seeded with default values
+        db.EntityIUserGem.Add(new EntityIUserGem { UserId = db.UserId });
+        db.EntityIUserExplore.Add(new EntityIUserExplore { UserId = db.UserId });
+        db.EntityIUserMainQuestFlowStatus.Add(new EntityIUserMainQuestFlowStatus { UserId = db.UserId });
+        db.EntityIUserMainQuestMainFlowStatus.Add(new EntityIUserMainQuestMainFlowStatus { UserId = db.UserId });
+        db.EntityIUserMainQuestProgressStatus.Add(new EntityIUserMainQuestProgressStatus { UserId = db.UserId });
+        db.EntityIUserMainQuestReplayFlowStatus.Add(new EntityIUserMainQuestReplayFlowStatus { UserId = db.UserId });
+        db.EntityIUserEventQuestProgressStatus.Add(new EntityIUserEventQuestProgressStatus { UserId = db.UserId });
+        db.EntityIUserExtraQuestProgressStatus.Add(new EntityIUserExtraQuestProgressStatus { UserId = db.UserId });
+        db.EntityIUserSideStoryQuestSceneProgressStatus.Add(new EntityIUserSideStoryQuestSceneProgressStatus { UserId = db.UserId });
+        db.EntityIUserPortalCageStatus.Add(new EntityIUserPortalCageStatus { UserId = db.UserId });
+        db.EntityIUserBigHuntProgressStatus.Add(new EntityIUserBigHuntProgressStatus { UserId = db.UserId });
+        db.EntityIUserEventQuestGuerrillaFreeOpen.Add(new EntityIUserEventQuestGuerrillaFreeOpen { UserId = db.UserId });
+        db.EntityIUserEventQuestDailyGroupCompleteReward.Add(new EntityIUserEventQuestDailyGroupCompleteReward { UserId = db.UserId });
+        db.EntityIUserShopReplaceable.Add(new EntityIUserShopReplaceable { UserId = db.UserId });
+        db.EntityIUserPvpStatus.Add(new EntityIUserPvpStatus { UserId = db.UserId, StaminaUpdateDatetime = nowMs });
+        db.EntityIUserPvpDefenseDeck.Add(new EntityIUserPvpDefenseDeck { UserId = db.UserId });
+        db.EntityIUserQuestAutoOrbit.Add(new EntityIUserQuestAutoOrbit { UserId = db.UserId });
+
+        // TODO: Seed the first mission record (missionId=1, IN_PROGRESS) once missions are implemented.
+
         foreach (int weaponId in GameConstants.StartingWeaponIds)
         {
             string uuid = Guid.NewGuid().ToString();

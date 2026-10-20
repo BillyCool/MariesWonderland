@@ -380,7 +380,39 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
     }
 
     [Fact]
-    public async Task GameStart_CreatesEntityIUserGemIfNoneExists()
+    public void RegisterOrGetUser_NewUser_SeedsOneRowPerUserTablesOnce()
+    {
+        var store = new UserDataStore(MasterDb);
+
+        var (userId, isNew) = store.RegisterOrGetUser("seed-test-uuid");
+        store.RegisterOrGetUser("seed-test-uuid");
+        Assert.True(store.TryGet(userId, out DarkUserMemoryDatabase userDb));
+
+        Assert.True(isNew);
+        Assert.Single(userDb.EntityIUserGem);
+        Assert.Equal(0, userDb.EntityIUserGem[0].PaidGem);
+        Assert.Equal(0, userDb.EntityIUserGem[0].FreeGem);
+        Assert.Single(userDb.EntityIUserExplore);
+        Assert.Single(userDb.EntityIUserMainQuestFlowStatus);
+        Assert.Single(userDb.EntityIUserMainQuestMainFlowStatus);
+        Assert.Single(userDb.EntityIUserMainQuestProgressStatus);
+        Assert.Single(userDb.EntityIUserMainQuestReplayFlowStatus);
+        Assert.Single(userDb.EntityIUserEventQuestProgressStatus);
+        Assert.Single(userDb.EntityIUserExtraQuestProgressStatus);
+        Assert.Single(userDb.EntityIUserSideStoryQuestSceneProgressStatus);
+        Assert.Single(userDb.EntityIUserPortalCageStatus);
+        Assert.Single(userDb.EntityIUserBigHuntProgressStatus);
+        Assert.Single(userDb.EntityIUserEventQuestGuerrillaFreeOpen);
+        Assert.Single(userDb.EntityIUserEventQuestDailyGroupCompleteReward);
+        Assert.Single(userDb.EntityIUserShopReplaceable);
+        Assert.Single(userDb.EntityIUserPvpStatus);
+        Assert.Single(userDb.EntityIUserPvpDefenseDeck);
+        Assert.Single(userDb.EntityIUserQuestAutoOrbit);
+        Assert.All(userDb.EntityIUserGem, gem => Assert.Equal(userId, gem.UserId));
+    }
+
+    [Fact]
+    public async Task GameStart_DoesNotAddRows()
     {
         var userDb = CreateUserDb();
         userDb.EntityIUser.Add(new EntityIUser { UserId = UserId });
@@ -388,10 +420,10 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         var service = CreateService(store);
 
         await service.GameStart(new Empty(), ContextFor(UserId));
+        await service.GameStart(new Empty(), ContextFor(UserId));
 
-        Assert.Single(userDb.EntityIUserGem);
-        Assert.Equal(0, userDb.EntityIUserGem[0].PaidGem);
-        Assert.Equal(0, userDb.EntityIUserGem[0].FreeGem);
+        Assert.Empty(userDb.EntityIUserGem);
+        Assert.Empty(userDb.EntityIUserExplore);
     }
 
     [Fact]
