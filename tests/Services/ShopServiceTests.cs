@@ -241,6 +241,40 @@ public class ShopServiceTests
     }
 
     [Fact]
+    public async Task Buy_StaminaRecovery_KeepsRegenerationPendingUntilNow()
+    {
+        DateTimeOffset now = new(2024, 4, 29, 12, 0, 0, TimeSpan.Zero);
+        DarkMasterMemoryDatabase masterDb = CreateMasterDb();
+        AddShopItem(masterDb, GemShopItemId, PriceType.GEM, price: 0);
+        masterDb.EntityMShopItemContentEffect.Add(new EntityMShopItemContentEffect
+        {
+            ShopItemId = GemShopItemId,
+            EffectTargetType = EffectTargetType.STAMINA_RECOVERY,
+            EffectValueType = EffectValueType.FIXED_VALUE,
+            EffectValue = 5000
+        });
+        masterDb.EntityMUserLevel.Add(new EntityMUserLevel { UserLevel = 10, MaxStamina = 50 });
+
+        DarkUserMemoryDatabase userDb = CreateUserDb();
+        userDb.EntityIUserGem.Add(new EntityIUserGem { UserId = UserId });
+        userDb.EntityIUserStatus.Add(new EntityIUserStatus
+        {
+            UserId = UserId,
+            Level = 10,
+            StaminaMilliValue = 10000,
+            // 30 minutes ago: 10 points regenerated at one per 180 s.
+            StaminaUpdateDatetime = now.AddMinutes(-30).ToUnixTimeMilliseconds()
+        });
+
+        ShopServiceImpl service = CreateService(masterDb, userDb, new GameConfig { UserStaminaRecoverySecond = 180 }, new Microsoft.Extensions.Time.Testing.FakeTimeProvider(now));
+        BuyRequest request = new();
+        request.ShopItems.Add(GemShopItemId, 1);
+        await service.Buy(request, FakeServerCallContext.For(UserId));
+
+        Assert.Equal(25000, Assert.Single(userDb.EntityIUserStatus).StaminaMilliValue);
+    }
+
+    [Fact]
     public async Task CreatePurchaseTransaction_AppliesRewardsUpdatesStockAndReturnsTransactionId()
     {
         DarkMasterMemoryDatabase masterDb = CreateMasterDb();
@@ -329,11 +363,11 @@ public class ShopServiceTests
         Assert.Empty(googlePurchase.DiffUserData);
     }
 
-    private static ShopServiceImpl CreateService(DarkMasterMemoryDatabase masterDb, DarkUserMemoryDatabase userDb)
+    private static ShopServiceImpl CreateService(DarkMasterMemoryDatabase masterDb, DarkUserMemoryDatabase userDb, GameConfig? gameConfig = null, TimeProvider? timeProvider = null)
     {
         UserDataStore store = new(TimeProvider.System);
         store.Set(UserId, userDb);
-        return new ShopServiceImpl(store, masterDb, TimeProvider.System);
+        return new ShopServiceImpl(store, masterDb, gameConfig ?? new GameConfig(), timeProvider ?? TimeProvider.System);
     }
 
     private static DarkMasterMemoryDatabase CreateMasterDb() => new();

@@ -121,7 +121,8 @@ public class ExploreService(UserDataStore store, DarkMasterMemoryDatabase master
         userExplore.PlayingExploreId = 0;
         userExplore.IsUseExploreTicket = false;
 
-        // Recover stamina (capped at the configured maximum)
+        // Recover stamina (capped at the configured maximum), keeping regeneration pending until now
+        StaminaHelper.Settle(status, _masterDb, _gameConfig, nowMs);
         StaminaHelper.AddStamina(status, staminaReward, _gameConfig, nowMs);
 
         // Grant EXP; max gain per run is 5.5% of a level so at most one level-up is possible

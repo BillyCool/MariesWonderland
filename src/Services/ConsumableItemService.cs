@@ -64,6 +64,7 @@ public class ConsumableItemService(DarkMasterMemoryDatabase masterDb, UserDataSt
         }
 
         long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
+        StaminaHelper.Settle(userStatus, _masterDb, _gameConfig, nowMs);
         StaminaHelper.AddStamina(userStatus, recoverAmount * request.Count, staminaCap, nowMs);
 
         userItem.Count -= request.Count;

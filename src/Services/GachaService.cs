@@ -1265,12 +1265,9 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
         return bs;
     }
 
+    /// <summary>Start of the current game day (daily reset at 08:00 UTC).</summary>
     private long StartOfDayMillis()
-    {
-        DateTimeOffset now = _timeProvider.GetUtcNow();
-        DateTimeOffset startOfDay = new(now.Year, now.Month, now.Day, 0, 0, 0, TimeSpan.Zero);
-        return startOfDay.ToUnixTimeMilliseconds();
-    }
+        => GameDayHelper.StartOfDay(_timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
 
     private static bool IsOwnedByType(
         int possessionType,

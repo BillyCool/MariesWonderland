@@ -148,6 +148,42 @@ public class BigHuntRewardTests(MasterDatabaseFixture fixture) : ServiceTestBase
     }
 
     [Fact]
+    public async Task Finish_IsHighScore_ComparesWithThisSchedulesBest_NotTheAllTimeBest()
+    {
+        (BigHuntService service, DarkUserMemoryDatabase userDb, long userId) = CreateService();
+        EntityMBigHuntBossQuest bossQuest = BossQuest;
+        EntityMBigHuntQuest bhQuest = MasterDb.EntityMBigHuntQuestGroup
+            .Where(g => g.BigHuntQuestGroupId == bossQuest.BigHuntQuestGroupId)
+            .OrderBy(g => g.SortOrder)
+            .Select(g => MasterDb.EntityMBigHuntQuest.Single(q => q.BigHuntQuestId == g.BigHuntQuestId))
+            .First();
+        // An earlier season's best far above anything this run scores.
+        userDb.EntityIUserBigHuntMaxScore.RemoveAll(m => m.BigHuntBossId == bossQuest.BigHuntBossId);
+        userDb.EntityIUserBigHuntMaxScore.Add(new EntityIUserBigHuntMaxScore { UserId = userId, BigHuntBossId = bossQuest.BigHuntBossId, MaxScore = long.MaxValue / 2 });
+        userDb.EntityIUserBigHuntScheduleMaxScore.RemoveAll(m => m.BigHuntBossId == bossQuest.BigHuntBossId);
+
+        async Task<FinishBigHuntQuestResponse> Run(long damage)
+        {
+            await service.StartBigHuntQuest(new StartBigHuntQuestRequest
+            {
+                BigHuntBossQuestId = bossQuest.BigHuntBossQuestId,
+                BigHuntQuestId = bhQuest.BigHuntQuestId,
+                UserDeckNumber = 1
+            }, ContextFor(userId));
+            userDb.EntitySBigHuntSession.Single().TotalDamage = damage;
+            return await service.FinishBigHuntQuest(new FinishBigHuntQuestRequest
+            {
+                BigHuntBossQuestId = bossQuest.BigHuntBossQuestId,
+                BigHuntQuestId = bhQuest.BigHuntQuestId
+            }, ContextFor(userId));
+        }
+
+        Assert.True((await Run(1_000_000)).ScoreInfo.IsHighScore);
+        Assert.False((await Run(500_000)).ScoreInfo.IsHighScore);
+        Assert.True((await Run(2_000_000)).ScoreInfo.IsHighScore);
+    }
+
+    [Fact]
     public async Task Skip_WithoutAScoreThisSchedule_GrantsNothingButUsesAttempts()
     {
         (BigHuntService service, DarkUserMemoryDatabase userDb, long userId) = CreateService();

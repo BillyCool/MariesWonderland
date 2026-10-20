@@ -138,18 +138,14 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
 
         long userScore = baseScore * (1000 + difficultyBonusPermil + aliveBonusPermil + maxComboBonusPermil) / 1000;
 
-        // --- High-score tracking (per-boss) ---
-        bool isHighScore = false;
-        long oldMaxScore = 0;
+        // --- High-score tracking (per-boss, all time) ---
         if (bossQuest is not null)
         {
             EntityIUserBigHuntMaxScore? maxScoreEntry = userDb.EntityIUserBigHuntMaxScore
                 .FirstOrDefault(m => m.BigHuntBossId == bossQuest.BigHuntBossId);
-            oldMaxScore = maxScoreEntry?.MaxScore ?? 0;
 
-            if (userScore > oldMaxScore)
+            if (userScore > (maxScoreEntry?.MaxScore ?? 0))
             {
-                isHighScore = true;
                 if (maxScoreEntry is null)
                 {
                     userDb.EntityIUserBigHuntMaxScore.Add(new EntityIUserBigHuntMaxScore
@@ -169,6 +165,8 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
         }
 
         // --- High-score tracking (per-schedule) ---
+        // A high score is a new best for this boss in the current schedule (season), the same best a skip pays out on.
+        bool isHighScore = false;
         int activeScheduleId = ResolveActiveScheduleId(nowMs);
         if (bossQuest is not null && activeScheduleId > 0)
         {
@@ -181,6 +179,7 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
             {
                 if (userScore > 0)
                 {
+                    isHighScore = true;
                     userDb.EntityIUserBigHuntScheduleMaxScore.Add(new EntityIUserBigHuntScheduleMaxScore
                     {
                         UserId = userId,
@@ -193,6 +192,7 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
             }
             else if (userScore > schedMax.MaxScore)
             {
+                isHighScore = true;
                 schedMax.MaxScore = userScore;
                 schedMax.MaxScoreUpdateDatetime = nowMs;
             }

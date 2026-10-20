@@ -41,7 +41,15 @@ public class ExploreServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
     private static EntityIUserStatus AddUserStatus(DarkUserMemoryDatabase userDb,
         int staminaMilliValue = 5000, int level = 0, int exp = 0)
     {
-        var entity = new EntityIUserStatus { UserId = UserId, StaminaMilliValue = staminaMilliValue, Level = level, Exp = exp };
+        // Stamina just updated, so no regeneration is pending when the service settles it.
+        var entity = new EntityIUserStatus
+        {
+            UserId = UserId,
+            StaminaMilliValue = staminaMilliValue,
+            StaminaUpdateDatetime = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds(),
+            Level = level,
+            Exp = exp
+        };
         userDb.EntityIUserStatus.Add(entity);
         return entity;
     }

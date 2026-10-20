@@ -50,6 +50,17 @@ public static class StaminaHelper
         status.StaminaUpdateDatetime = nowMs;
     }
 
+    /// <summary>
+    /// <see cref="Settle(EntityIUserStatus, int, int, long)"/> with the max of the user's current level and the
+    /// configured recovery time. Call it before any other change to stamina, so regeneration pending until now is kept.
+    /// </summary>
+    public static void Settle(EntityIUserStatus status, DarkMasterMemoryDatabase masterDb, GameConfig gameConfig, long nowMs)
+        => Settle(status, LevelMaxStamina(masterDb, status.Level), gameConfig.UserStaminaRecoverySecond, nowMs);
+
+    /// <summary>The regular stamina maximum of a user level; 0 when the level is unknown.</summary>
+    public static int LevelMaxStamina(DarkMasterMemoryDatabase masterDb, int level)
+        => masterDb.EntityMUserLevel.Find(level)?.MaxStamina ?? 0;
+
     /// <summary>Settles regeneration, then spends <paramref name="cost"/> stamina, never going below zero.</summary>
     public static void Consume(EntityIUserStatus status, int cost, int maxStamina, int recoverySecond, long nowMs)
     {

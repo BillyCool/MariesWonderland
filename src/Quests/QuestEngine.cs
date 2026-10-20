@@ -485,6 +485,8 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
         EntityIUserStatus? status = userDb.EntityIUserStatus.FirstOrDefault();
         if (status != null)
         {
+            // Regeneration up to now counts against the level the user was at.
+            StaminaHelper.Settle(status, _masterDb, _gameConfig, nowMs);
             int previousLevel = status.Level;
             (status.Level, status.Exp) = LevelHelper.ApplyExp(_masterDb, LevelHelper.UserExpMapId, status.Exp + quest.UserExp);
 

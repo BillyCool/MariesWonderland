@@ -9,10 +9,11 @@ using MariesWonderland.Proto.Shop;
 
 namespace MariesWonderland.Services;
 
-public class ShopService(UserDataStore store, DarkMasterMemoryDatabase masterDb, TimeProvider timeProvider) : MariesWonderland.Proto.Shop.ShopService.ShopServiceBase
+public class ShopService(UserDataStore store, DarkMasterMemoryDatabase masterDb, GameConfig gameConfig, TimeProvider timeProvider) : MariesWonderland.Proto.Shop.ShopService.ShopServiceBase
 {
     private readonly UserDataStore _store = store;
     private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
+    private readonly GameConfig _gameConfig = gameConfig;
     private readonly TimeProvider _timeProvider = timeProvider;
 
     /// <summary>Purchases shop items: deducts currency, grants item contents and effects, and updates purchase history.</summary>
@@ -254,6 +255,12 @@ public class ShopService(UserDataStore store, DarkMasterMemoryDatabase masterDb,
 
         EntityMUserLevel? levelData = _masterDb.EntityMUserLevel.FirstOrDefault(l => l.UserLevel == userStatus.Level);
         int maxStaminaMillis = (levelData?.MaxStamina ?? 0) * 1000;
+
+        if (effects.Any(e => e.EffectTargetType == EffectTargetType.STAMINA_RECOVERY))
+        {
+            // Keep regeneration pending until now before the recovery is added.
+            StaminaHelper.Settle(userStatus, _masterDb, _gameConfig, nowMs);
+        }
 
         foreach (EntityMShopItemContentEffect effect in effects)
         {
