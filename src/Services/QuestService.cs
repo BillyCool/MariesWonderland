@@ -205,33 +205,45 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
 
         EntityMQuest? quest = _questEngine.FindQuest(questId);
 
+        // Replay quests have their own ids and may never have been cleared; they keep no mission rows.
+        if (request.IsReplayFlow)
+        {
+            EntityIUserQuest replayQuest = QuestEngine.GetOrCreateUserQuest(userDb, questId);
+
+            EntityIUserMainQuestFlowStatus replayFlow = userDb.EntityIUserMainQuestFlowStatus.GetOrCreate(userId);
+            QuestFlowType replayFlowType = replayFlow.CurrentQuestFlowType == QuestFlowType.ANOTHER_ROUTE_REPLAY_FLOW
+                ? QuestFlowType.ANOTHER_ROUTE_REPLAY_FLOW
+                : QuestFlowType.REPLAY_FLOW;
+            replayFlow.CurrentQuestFlowType = replayFlowType;
+
+            EntityIUserMainQuestReplayFlowStatus replayFlowStatus = userDb.EntityIUserMainQuestReplayFlowStatus.GetOrCreate(userId);
+            replayFlowStatus.CurrentQuestSceneId = 0;
+            replayFlowStatus.CurrentHeadQuestSceneId = 0;
+
+            QuestEngine.MarkActive(replayQuest, nowMs);
+            replayQuest.IsBattleOnly = request.IsBattleOnly;
+
+            EntitySQuestSession replaySession = GetOrCreateQuestSession(userDb, userId, questId);
+            replaySession.UserDeckNumber = request.UserDeckNumber;
+            replaySession.IsBattleOnly = request.IsBattleOnly;
+            replaySession.CurrentQuestFlowType = replayFlowType;
+            int replayStartSceneId = _questEngine.GetQuestStartSceneId(questId, request.IsBattleOnly);
+            replaySession.CurrentQuestSceneId = replayStartSceneId;
+            replaySession.HeadQuestSceneId = replayStartSceneId;
+
+            StartQuestAutoOrbit(userDb, userId, QuestType.MAIN_QUEST, 0, questId, request.MaxAutoOrbitCount, nowMs);
+
+            StartMainQuestResponse replayResponse = new();
+            replayResponse.BattleDropReward.AddRange(_questEngine.BuildBattleDropRewards(questId));
+            return Task.FromResult(replayResponse);
+        }
+
         // Ensure user quest and mission rows exist before any state transitions.
         EntityIUserQuest userQuest = _questEngine.EnsureQuestRows(userDb, questId);
 
-        // Already-cleared quests: handle replay flow or early-return.
+        // Already-cleared quests start nothing new.
         if (userQuest.QuestStateType == (int)QuestStateType.CLEARED)
         {
-            if (request.IsReplayFlow)
-            {
-                EntityIUserMainQuestFlowStatus replayFlow = userDb.EntityIUserMainQuestFlowStatus.GetOrCreate(userId);
-                replayFlow.CurrentQuestFlowType = QuestFlowType.REPLAY_FLOW;
-
-                EntityIUserMainQuestReplayFlowStatus replayFlowStatus = userDb.EntityIUserMainQuestReplayFlowStatus.GetOrCreate(userId);
-                replayFlowStatus.CurrentQuestSceneId = 0;
-                replayFlowStatus.CurrentHeadQuestSceneId = 0;
-
-                QuestEngine.MarkActive(userQuest, nowMs);
-                userQuest.IsBattleOnly = request.IsBattleOnly;
-
-                EntitySQuestSession replaySession = GetOrCreateQuestSession(userDb, userId, questId);
-                replaySession.UserDeckNumber = request.UserDeckNumber;
-                replaySession.IsBattleOnly = request.IsBattleOnly;
-                replaySession.CurrentQuestFlowType = QuestFlowType.REPLAY_FLOW;
-                int replayStartSceneId = _questEngine.GetQuestStartSceneId(questId, request.IsBattleOnly);
-                replaySession.CurrentQuestSceneId = replayStartSceneId;
-                replaySession.HeadQuestSceneId = replayStartSceneId;
-            }
-
             StartQuestAutoOrbit(userDb, userId, QuestType.MAIN_QUEST, 0, questId, request.MaxAutoOrbitCount, nowMs);
 
             StartMainQuestResponse earlyResponse = new();
@@ -391,10 +403,10 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         EntityMQuest? quest = _questEngine.FindQuest(questId);
         if (quest == null) return Task.FromResult(new FinishMainQuestResponse());
 
-        // Replay flow rewards, granted on a win in the replay flow
+        // Replay flow rewards, granted on every replay win
         List<QuestReward> replayFlowFirstClearRewards = [];
         EntityIUserMainQuestFlowStatus? currentFlowStatus = userDb.EntityIUserMainQuestFlowStatus.FirstOrDefault(s => s.UserId == userId);
-        bool wasReplayFlow = currentFlowStatus?.CurrentQuestFlowType == QuestFlowType.REPLAY_FLOW;
+        bool wasReplayFlow = currentFlowStatus?.CurrentQuestFlowType is QuestFlowType.REPLAY_FLOW or QuestFlowType.ANOTHER_ROUTE_REPLAY_FLOW;
         if (isWin && wasReplayFlow && quest.QuestReplayFlowRewardGroupId > 0)
         {
             foreach (EntityMQuestReplayFlowRewardGroup reward in _masterDb.EntityMQuestReplayFlowRewardGroup
@@ -409,7 +421,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
             }
         }
 
-        QuestFinishResult result = _questEngine.Finish(userDb, quest, _questCampaignHelper.GetMainQuestTarget(questId), isWin, nowMs);
+        QuestFinishResult result = _questEngine.Finish(userDb, quest, _questCampaignHelper.GetMainQuestTarget(questId), isWin, nowMs, isReplay: wasReplayFlow);
 
         if (isWin)
         {

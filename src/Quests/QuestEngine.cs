@@ -77,8 +77,10 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
     /// missions not yet cleared plus the big win when this run completes them, and drops; then marks the
     /// quest and its missions cleared. A loss (retired or annihilated) grants nothing and leaves the
     /// missions as they were; a quest cleared before goes back to <see cref="QuestStateType.CLEARED"/>.
+    /// A replay win grants only EXP, gold and drops: replay quests have no first-clear or mission rewards
+    /// and keep no mission rows.
     /// </summary>
-    public QuestFinishResult Finish(DarkUserMemoryDatabase userDb, EntityMQuest quest, QuestCampaignTarget campaignTarget, bool isWin, long nowMs)
+    public QuestFinishResult Finish(DarkUserMemoryDatabase userDb, EntityMQuest quest, QuestCampaignTarget campaignTarget, bool isWin, long nowMs, bool isReplay = false)
     {
         EntityIUserQuest userQuest = GetOrCreateUserQuest(userDb, quest.QuestId);
 
@@ -92,7 +94,7 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
             return new QuestFinishResult();
         }
 
-        bool isFirstClear = userQuest.ClearCount == 0;
+        bool isFirstClear = userQuest.ClearCount == 0 && !isReplay;
 
         List<EntityMQuestFirstClearRewardGroup> firstClearRows = isFirstClear ? ResolveFirstClearRewardRows(userDb, quest) : [];
         List<QuestReward> missionClearRewards = [];
@@ -100,7 +102,8 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
         int regularMissionCount = 0;
         int bigWinMissionId = 0;
 
-        foreach (int missionId in MissionIds(quest))
+        IEnumerable<int> missionIds = isReplay ? [] : MissionIds(quest);
+        foreach (int missionId in missionIds)
         {
             EntityMQuestMission? mission = _masterDb.EntityMQuestMission.FirstOrDefault(m => m.QuestMissionId == missionId);
             if (mission == null)
@@ -153,7 +156,10 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
 
         List<QuestReward> dropRewards = ApplyDropRewards(userDb, BuildDropRewards(quest, campaignTarget, nowMs), nowMs);
         MarkCleared(userQuest, 1, nowMs);
-        ClearQuestMissions(userDb, quest.QuestId, nowMs);
+        if (!isReplay)
+        {
+            ClearQuestMissions(userDb, quest.QuestId, nowMs);
+        }
 
         return new QuestFinishResult
         {

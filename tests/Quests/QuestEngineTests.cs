@@ -204,6 +204,34 @@ public class QuestEngineTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         Assert.Equal(maxLevel, status.Level);
     }
 
+    [Fact]
+    public void Finish_ReplayWin_GrantsOnlyExpGoldAndDrops()
+    {
+        QuestEngine engine = CreateEngine();
+        EntityMQuest quest = FindReplayQuest();
+        DarkUserMemoryDatabase userDb = CreateUser();
+        EntityIUserQuest userQuest = QuestEngine.GetOrCreateUserQuest(userDb, quest.QuestId);
+        QuestEngine.MarkActive(userQuest, NowMs);
+        int expBefore = userDb.EntityIUserStatus[0].Exp;
+
+        QuestFinishResult result = engine.Finish(userDb, quest, MainTarget(quest), isWin: true, NowMs, isReplay: true);
+
+        Assert.Equal((int)QuestStateType.CLEARED, userQuest.QuestStateType);
+        Assert.Equal(1, userQuest.ClearCount);
+        Assert.Equal(expBefore + quest.UserExp, userDb.EntityIUserStatus[0].Exp);
+        Assert.Empty(result.FirstClearRewards);
+        Assert.Empty(result.MissionClearRewards);
+        Assert.Empty(result.MissionClearCompleteRewards);
+        Assert.False(result.IsBigWin);
+        Assert.DoesNotContain(userDb.EntityIUserQuestMission, m => m.QuestId == quest.QuestId);
+    }
+
+    private EntityMQuest FindReplayQuest()
+        => MasterDb.EntityMQuest
+            .Where(q => q.QuestReplayFlowRewardGroupId != 0 && q.QuestFirstClearRewardGroupId != 0 && q.QuestMissionGroupId != 0 && q.UserExp > 0)
+            .OrderBy(q => q.QuestId)
+            .First();
+
     private static QuestCampaignTarget MainTarget(EntityMQuest quest) => new(quest.QuestId, QuestType.MAIN_QUEST);
 
     private int UserLevelThreshold(int level)
