@@ -15,7 +15,7 @@ namespace MariesWonderland.Interceptors;
 /// that declares the field. Takes a before-snapshot of the user's database prior to service execution,
 /// then computes the delta after the service mutates state. This means individual services never need
 /// to populate DiffUserData manually.
-/// Special-cases the RegisterUser flow where no userId is available in request headers: extracts the
+/// Special-cases pre-login calls such as RegisterUser where no session exists yet: extracts the
 /// newly assigned userId from the response to perform a full-state diff against an empty baseline.
 /// </summary>
 public class DiffInterceptor(UserDataStore store, ILogger<DiffInterceptor> logger) : Interceptor
@@ -32,7 +32,7 @@ public class DiffInterceptor(UserDataStore store, ILogger<DiffInterceptor> logge
         ServerCallContext context,
         UnaryServerMethod<TRequest, TResponse> continuation)
     {
-        long userId = context.GetUserId();
+        context.TryGetUserId(out long userId);
         PropertyInfo? diffProp = PropertyCache.GetOrAdd(typeof(TResponse), static t => t.GetProperty(nameof(AuthUserResponse.DiffUserData)));
 
         // Response type has no DiffUserData property — pass through without snapshotting
@@ -43,7 +43,7 @@ public class DiffInterceptor(UserDataStore store, ILogger<DiffInterceptor> logge
 
         if (userId != 0)
         {
-            // Normal path: userId is known from request headers — snapshot before, diff after
+            // Normal path: userId is known from the session — snapshot before, diff after
             Dictionary<string, string> before = store.TryGet(userId, out DarkUserMemoryDatabase userDb)
                 ? UserDataDiffBuilder.Snapshot(userDb)
                 : [];
@@ -77,7 +77,7 @@ public class DiffInterceptor(UserDataStore store, ILogger<DiffInterceptor> logge
         }
         else
         {
-            // RegisterUser path: userId=0 in headers because the user doesn't exist yet.
+            // Pre-login path (RegisterUser, Auth…): there is no session yet.
             // Run the handler first, then extract the newly assigned userId from the response
             // and diff against an empty baseline to send all initial state to the client.
             TResponse response = await continuation(request, context);

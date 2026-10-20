@@ -1,29 +1,47 @@
 using Grpc.Core;
+using MariesWonderland.Extensions;
 
 namespace MariesWonderland.Tests.Infrastructure;
 
 /// <summary>
-/// Minimal <see cref="ServerCallContext"/> stub that pre-populates the
-/// <c>x-apb-user-id</c> request header so service methods can call
-/// <c>context.GetUserId()</c> without a real gRPC channel.
+/// Minimal <see cref="ServerCallContext"/> stub for calling services and interceptors without a real
+/// gRPC channel. <see cref="For"/> marks the call as authenticated, as <c>SessionInterceptor</c> would,
+/// so service methods can call <c>context.GetUserId()</c>.
 /// </summary>
 public sealed class FakeServerCallContext : ServerCallContext
 {
-    private readonly Metadata _requestHeaders;
+    private readonly Metadata _requestHeaders = [];
     private readonly Metadata _responseTrailers = [];
     private readonly CancellationToken _cancellationToken;
 
-    private FakeServerCallContext(long userId, string? sessionKey = null, CancellationToken cancellationToken = default)
+    private FakeServerCallContext(string? sessionKey, CancellationToken cancellationToken)
     {
-        _requestHeaders = [new Metadata.Entry("x-apb-user-id", userId.ToString())];
         if (!string.IsNullOrEmpty(sessionKey))
             _requestHeaders.Add("x-apb-session-key", sessionKey);
 
         _cancellationToken = cancellationToken;
     }
 
+    /// <summary>
+    /// A call authenticated as <paramref name="userId"/>. A userId of 0 means no session,
+    /// like the calls made before login.
+    /// </summary>
     public static FakeServerCallContext For(long userId, string? sessionKey = null, CancellationToken cancellationToken = default)
-        => new(userId, sessionKey, cancellationToken);
+    {
+        FakeServerCallContext context = new(sessionKey, cancellationToken);
+        if (userId != 0)
+            context.SetUserId(userId);
+        return context;
+    }
+
+    /// <summary>A call with no resolved identity, optionally carrying extra request headers.</summary>
+    public static FakeServerCallContext Anonymous(string? sessionKey = null, params Metadata.Entry[] headers)
+    {
+        FakeServerCallContext context = new(sessionKey, default);
+        foreach (Metadata.Entry header in headers)
+            context._requestHeaders.Add(header);
+        return context;
+    }
 
     protected override string MethodCore => string.Empty;
     protected override string HostCore => string.Empty;

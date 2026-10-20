@@ -26,8 +26,7 @@ public class AutoSaveInterceptor(UserDataStore store, ILogger<AutoSaveIntercepto
     {
         TResponse response = await continuation(request, context);
 
-        long userId = context.GetUserId();
-        if (userId > 0 && store.TryGet(userId, out DarkUserMemoryDatabase userDb))
+        if (context.TryGetUserId(out long userId) && store.TryGet(userId, out DarkUserMemoryDatabase userDb))
         {
             string[] parts = context.Method.Split('/', StringSplitOptions.RemoveEmptyEntries);
             string methodSuffix = parts.Length >= 2 ? $"{parts[^2]}_{parts[^1]}" : context.Method.TrimStart('/').Replace('/', '_');

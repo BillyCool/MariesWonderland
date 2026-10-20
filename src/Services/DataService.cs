@@ -34,17 +34,10 @@ public class DataService(IOptions<ServerOptions> options, UserDataStore userData
         return Task.FromResult(response);
     }
 
-    /// <summary>Returns the full user state for the requested tables, serialized as JSON. Validates session before responding.</summary>
+    /// <summary>Returns the full user state for the requested tables, serialized as JSON.</summary>
     public override Task<UserDataGetResponse> GetUserData(UserDataGetRequest request, ServerCallContext context)
     {
         long userId = context.GetUserId();
-        string sessionKey = context.GetSessionKey();
-
-        if (!userDataStore.TryResolveSession(sessionKey, out long resolvedUserId) || resolvedUserId != userId)
-        {
-            throw new RpcException(new Status(StatusCode.Unauthenticated, "Invalid or expired session."));
-        }
-
         DarkUserMemoryDatabase userDb = userDataStore.GetOrCreate(userId);
         UserDataGetResponse response = new();
 

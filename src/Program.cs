@@ -30,12 +30,14 @@ public static class Program
         DevModeOptions devMode = builder.Configuration.GetSection(DevModeOptions.SectionName).Get<DevModeOptions>() ?? new();
         builder.Services.Configure<DevModeOptions>(builder.Configuration.GetSection(DevModeOptions.SectionName));
 
+        builder.Services.AddSingleton<SessionInterceptor>();
         builder.Services.AddSingleton<CommonHeaderInterceptor>();
         builder.Services.AddSingleton<DiffInterceptor>();
         builder.Services.AddSingleton<LoggingInterceptor>();
         builder.Services.AddSingleton<AutoSaveInterceptor>();
         builder.Services.AddGrpc(options =>
         {
+            options.Interceptors.Add<SessionInterceptor>();
             options.Interceptors.Add<LoggingInterceptor>();
             options.Interceptors.Add<DiffInterceptor>();
             options.Interceptors.Add<CommonHeaderInterceptor>();

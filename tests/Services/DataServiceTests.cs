@@ -27,7 +27,7 @@ public class DataServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         return new DataServiceImpl(Options.Create(options), store);
     }
 
-    private static FakeServerCallContext ContextFor(long userId, string? sessionKey)
+    private static FakeServerCallContext ContextFor(long userId, string? sessionKey = null)
         => FakeServerCallContext.For(userId, sessionKey);
 
     [MasterDataFact]
@@ -92,42 +92,14 @@ public class DataServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
     }
 
     [MasterDataFact]
-    public async Task GetUserData_WithoutSession_ThrowsUnauthenticated()
+    public async Task GetUserData_WithoutAuthenticatedSession_ThrowsUnauthenticated()
     {
         UserDataStore store = CreateStore(UserId, CreateUserDb(), MasterDb);
         DataServiceImpl service = CreateService(store);
 
         RpcException exception = await Assert.ThrowsAsync<RpcException>(() => service.GetUserData(
             new UserDataGetRequest(),
-            ContextFor(UserId)));
-
-        Assert.Equal(StatusCode.Unauthenticated, exception.StatusCode);
-    }
-
-    [MasterDataFact]
-    public async Task GetUserData_WithExpiredSession_ThrowsUnauthenticated()
-    {
-        UserDataStore store = CreateStore(UserId, CreateUserDb(), MasterDb);
-        UserSession session = store.CreateSession(UserId, TimeSpan.FromSeconds(-1));
-        DataServiceImpl service = CreateService(store);
-
-        RpcException exception = await Assert.ThrowsAsync<RpcException>(() => service.GetUserData(
-            new UserDataGetRequest(),
-            ContextFor(UserId, session.SessionKey)));
-
-        Assert.Equal(StatusCode.Unauthenticated, exception.StatusCode);
-    }
-
-    [MasterDataFact]
-    public async Task GetUserData_WithSessionForDifferentUser_ThrowsUnauthenticated()
-    {
-        UserDataStore store = CreateStore(UserId, CreateUserDb(), MasterDb);
-        UserSession session = store.CreateSession(userId: 2, ttl: TimeSpan.FromMinutes(5));
-        DataServiceImpl service = CreateService(store);
-
-        RpcException exception = await Assert.ThrowsAsync<RpcException>(() => service.GetUserData(
-            new UserDataGetRequest(),
-            ContextFor(UserId, session.SessionKey)));
+            FakeServerCallContext.Anonymous()));
 
         Assert.Equal(StatusCode.Unauthenticated, exception.StatusCode);
     }
