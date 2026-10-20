@@ -144,14 +144,13 @@ public class DiffInterceptorTests : InterceptorTestBase
     }
 
     /// <summary>
-    /// Verifies the RegisterUser path: when userId is 0 in the request headers,
-    /// the interceptor runs the continuation first, extracts the newly assigned
-    /// UserId from the response, and diffs the full state against an empty baseline.
+    /// Verifies that calls without a session (RegisterUser, Auth, TransferUser…) get no diff,
+    /// even when the response names a user that exists in the store.
     /// </summary>
     [Fact]
-    public async Task RegisterUser_FullStateDiffed()
+    public async Task PreLoginCall_NoDiff()
     {
-        var userDb = new DarkUserMemoryDatabase();
+        DarkUserMemoryDatabase userDb = new();
         userDb.EntityIUser.Add(new EntityIUser
         {
             UserId = 42,
@@ -159,17 +158,18 @@ public class DiffInterceptorTests : InterceptorTestBase
             RegisterDatetime = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds()
         });
 
-        var store = CreateStoreWithUser(42, userDb);
-        var interceptor = CreateInterceptor(store);
-        var context = FakeServerCallContext.For(userId: 0);
+        UserDataStore store = CreateStoreWithUser(42, userDb);
+        DiffInterceptor interceptor = CreateInterceptor(store);
+        FakeServerCallContext context = FakeServerCallContext.Anonymous();
 
-        var response = await CallInterceptor(
+        AuthUserResponse response = await CallInterceptor(
             interceptor,
             new SetUserNameRequest(),
             context,
             () => new AuthUserResponse { UserId = 42 });
 
-        Assert.NotEmpty(response.DiffUserData);
+        Assert.Empty(response.DiffUserData);
+        Assert.DoesNotContain(context.ResponseTrailers, m => m.Key == "x-apb-update-user-data-names");
     }
 
     /// <summary>
