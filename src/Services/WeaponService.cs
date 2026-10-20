@@ -1,6 +1,7 @@
 using Grpc.Core;
 using MariesWonderland.Data;
 using MariesWonderland.Extensions;
+using MariesWonderland.Helpers;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.Weapon;
@@ -44,7 +45,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
             }
 
             // Calculate sell price based on weapon level
-            EntityMWeaponSpecificEnhance? enhance = FindEnhance(wm.WeaponSpecificEnhanceId);
+            EntityMWeaponSpecificEnhance? enhance = WeaponHelper.ResolveEnhance(_masterDb, wm);
             if (enhance != null)
             {
                 totalGold += EvaluateNumericalFunction(enhance.SellPriceNumericalFunctionId, weapon.Level);
@@ -176,7 +177,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
         // Deduct gold cost scaled by number of materials used
         if (totalMaterialCount > 0)
         {
-            EntityMWeaponSpecificEnhance? enhance = FindEnhance(wm.WeaponSpecificEnhanceId);
+            EntityMWeaponSpecificEnhance? enhance = WeaponHelper.ResolveEnhance(_masterDb, wm);
             if (enhance != null)
             {
                 int goldCost = EvaluateNumericalFunction(enhance.EnhancementCostByMaterialNumericalFunctionId, totalMaterialCount);
@@ -186,7 +187,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
 
         // Apply EXP, recalculate level, and check for new story page unlocks
         weapon.Exp += totalExp;
-        ApplyLevelFromExp(weapon, wm);
+        ApplyLevelFromExp(userDb, weapon, wm);
 
         CheckWeaponStoryUnlocks(userDb, weapon.WeaponId, weapon.Level);
 
@@ -232,7 +233,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
                 continue;
             }
 
-            EntityMWeaponSpecificEnhance? matEnhance = FindEnhance(matMaster.WeaponSpecificEnhanceId);
+            EntityMWeaponSpecificEnhance? matEnhance = WeaponHelper.ResolveEnhance(_masterDb, matMaster);
             int baseExp = matEnhance?.BaseEnhancementObtainedExp ?? 0;
             if (matMaster.WeaponType != WeaponType.UNKNOWN && matMaster.WeaponType == wm.WeaponType)
             {
@@ -260,7 +261,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
         // Deduct gold cost scaled by number of weapons consumed
         if (consumedCount > 0)
         {
-            EntityMWeaponSpecificEnhance? enhance = FindEnhance(wm.WeaponSpecificEnhanceId);
+            EntityMWeaponSpecificEnhance? enhance = WeaponHelper.ResolveEnhance(_masterDb, wm);
             if (enhance != null)
             {
                 int goldCost = EvaluateNumericalFunction(enhance.EnhancementCostByWeaponNumericalFunctionId, consumedCount);
@@ -270,7 +271,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
 
         // Apply EXP, recalculate level, and check for new story page unlocks
         weapon.Exp += totalExp;
-        ApplyLevelFromExp(weapon, wm);
+        ApplyLevelFromExp(userDb, weapon, wm);
 
         CheckWeaponStoryUnlocks(userDb, weapon.WeaponId, weapon.Level);
 
@@ -330,7 +331,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
         }
 
         // Cap the requested level increase at the skill's max level (based on limit break count)
-        EntityMWeaponSpecificEnhance? enhance = FindEnhance(wm.WeaponSpecificEnhanceId);
+        EntityMWeaponSpecificEnhance? enhance = WeaponHelper.ResolveEnhance(_masterDb, wm);
         if (enhance == null)
         {
             return Task.FromResult(new EnhanceSkillResponse());
@@ -425,7 +426,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
         }
 
         // Cap the requested level increase at the ability's max level (based on limit break count)
-        EntityMWeaponSpecificEnhance? enhance = FindEnhance(wm.WeaponSpecificEnhanceId);
+        EntityMWeaponSpecificEnhance? enhance = WeaponHelper.ResolveEnhance(_masterDb, wm);
         if (enhance == null)
         {
             return Task.FromResult(new EnhanceAbilityResponse());
@@ -525,7 +526,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
         // Deduct gold cost for the limit break
         if (totalMaterialCount > 0)
         {
-            EntityMWeaponSpecificEnhance? enhance = FindEnhance(wm.WeaponSpecificEnhanceId);
+            EntityMWeaponSpecificEnhance? enhance = WeaponHelper.ResolveEnhance(_masterDb, wm);
             if (enhance != null)
             {
                 int goldCost = EvaluateNumericalFunction(enhance.LimitBreakCostByMaterialNumericalFunctionId, totalMaterialCount);
@@ -602,7 +603,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
         // Deduct gold cost for the limit break
         if (consumedCount > 0)
         {
-            EntityMWeaponSpecificEnhance? enhance = FindEnhance(wm.WeaponSpecificEnhanceId);
+            EntityMWeaponSpecificEnhance? enhance = WeaponHelper.ResolveEnhance(_masterDb, wm);
             if (enhance != null)
             {
                 int goldCost = EvaluateNumericalFunction(enhance.LimitBreakCostByWeaponNumericalFunctionId, consumedCount);
@@ -684,7 +685,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
         // Deduct gold cost for the evolution
         if (totalMaterialCount > 0)
         {
-            EntityMWeaponSpecificEnhance? enhance = FindEnhance(wm.WeaponSpecificEnhanceId);
+            EntityMWeaponSpecificEnhance? enhance = WeaponHelper.ResolveEnhance(_masterDb, wm);
             if (enhance != null)
             {
                 int goldCost = EvaluateNumericalFunction(enhance.EvolutionCostNumericalFunctionId, totalMaterialCount);
@@ -833,18 +834,6 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
     /// <summary>
     /// Looks up the weapon-specific enhancement parameters (cost formulas, max levels, etc.) by enhance ID.
     /// </summary>
-    private EntityMWeaponSpecificEnhance? FindEnhance(int enhanceId)
-    {
-        foreach (EntityMWeaponSpecificEnhance e in _masterDb.EntityMWeaponSpecificEnhance)
-        {
-            if (e.WeaponSpecificEnhanceId == enhanceId)
-            {
-                return e;
-            }
-        }
-        return null;
-    }
-
     /// <summary>
     /// Finds a material's master data definition by material ID.
     /// </summary>
@@ -936,58 +925,16 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
     /// <summary>
     /// Recalculates the weapon's level from its accumulated EXP using master data EXP thresholds. Caps EXP at the max threshold.
     /// </summary>
-    private void ApplyLevelFromExp(EntityIUserWeapon weapon, EntityMWeapon wm)
+    private void ApplyLevelFromExp(DarkUserMemoryDatabase userDb, EntityIUserWeapon weapon, EntityMWeapon wm)
     {
-        EntityMWeaponSpecificEnhance? enhance = FindEnhance(wm.WeaponSpecificEnhanceId);
-        if (enhance == null)
+        EntityMWeaponSpecificEnhance? leveling = WeaponHelper.ResolveLevelingEnhance(_masterDb, wm);
+        if (leveling == null)
         {
             return;
         }
 
-        // Build EXP-to-level threshold table from master data parameter map
-        int paramMapId = enhance.RequiredExpForLevelUpNumericalParameterMapId;
-        int maxKey = 0;
-        foreach (EntityMNumericalParameterMap row in _masterDb.EntityMNumericalParameterMap)
-        {
-            if (row.NumericalParameterMapId == paramMapId && row.ParameterKey > maxKey)
-            {
-                maxKey = row.ParameterKey;
-            }
-        }
-
-        int[] thresholds = new int[maxKey + 1];
-        foreach (EntityMNumericalParameterMap row in _masterDb.EntityMNumericalParameterMap)
-        {
-            if (row.NumericalParameterMapId == paramMapId && row.ParameterKey < thresholds.Length)
-            {
-                thresholds[row.ParameterKey] = row.ParameterValue;
-            }
-        }
-
-        // Find the highest level whose cumulative EXP threshold is met
-        int level = 1;
-        for (int lvl = 1; lvl < thresholds.Length; lvl++)
-        {
-            if (weapon.Exp >= thresholds[lvl])
-            {
-                level = lvl;
-            }
-            else
-            {
-                break;
-            }
-        }
-
-        // Cap EXP at the highest threshold when at max level
-        if (level > 0 && level < thresholds.Length - 1)
-        {
-        }
-        else if (level >= thresholds.Length - 1 && thresholds.Length > 1)
-        {
-            weapon.Exp = thresholds[^1];
-        }
-
-        weapon.Level = level;
+        int maxLevel = LevelHelper.WeaponMaxLevel(_masterDb, userDb, weapon, wm);
+        (weapon.Level, weapon.Exp) = LevelHelper.ApplyExp(_masterDb, leveling.RequiredExpForLevelUpNumericalParameterMapId, weapon.Exp, maxLevel);
     }
 
     /// <summary>
@@ -1074,7 +1021,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
     /// </summary>
     private bool CheckInitialMaxLevel(EntityMWeapon wm, int level)
     {
-        EntityMWeaponSpecificEnhance? enhance = FindEnhance(wm.WeaponSpecificEnhanceId);
+        EntityMWeaponSpecificEnhance? enhance = WeaponHelper.ResolveEnhance(_masterDb, wm);
         if (enhance == null)
         {
             return false;

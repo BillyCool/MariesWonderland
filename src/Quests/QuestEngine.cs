@@ -563,7 +563,8 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
                 continue;
             }
 
-            (costume.Level, costume.Exp) = LevelHelper.ApplyExp(_masterDb, rarity.RequiredExpForLevelUpNumericalParameterMapId, costume.Exp + quest.CostumeExp);
+            int maxLevel = LevelHelper.CostumeMaxLevel(_masterDb, userDb, costume, masterCostume);
+            (costume.Level, costume.Exp) = LevelHelper.ApplyExp(_masterDb, rarity.RequiredExpForLevelUpNumericalParameterMapId, costume.Exp + quest.CostumeExp, maxLevel);
         }
     }
 

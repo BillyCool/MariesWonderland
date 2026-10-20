@@ -1,6 +1,7 @@
 using Grpc.Core;
 using MariesWonderland.Data;
 using MariesWonderland.Extensions;
+using MariesWonderland.Helpers;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.Costume;
@@ -145,55 +146,11 @@ public class CostumeService(DarkMasterMemoryDatabase masterDb, UserDataStore sto
 
         if (rarityRow != null)
         {
-            (costume.Level, costume.Exp) = CalculateCostumeLevelAndCap(costume.Exp, rarityRow.RequiredExpForLevelUpNumericalParameterMapId);
+            int maxLevel = LevelHelper.CostumeMaxLevel(_masterDb, userDb, costume, costumeMaster);
+            (costume.Level, costume.Exp) = LevelHelper.ApplyExp(_masterDb, rarityRow.RequiredExpForLevelUpNumericalParameterMapId, costume.Exp, maxLevel);
         }
 
         return Task.FromResult(new EnhanceResponse { IsGreatSuccess = false });
-    }
-
-    /// <summary>
-    /// Calculates the costume level from accumulated EXP and caps EXP at the max threshold.
-    /// </summary>
-    private (int Level, int CappedExp) CalculateCostumeLevelAndCap(int exp, int paramMapId)
-    {
-        int maxKey = 0;
-        foreach (EntityMNumericalParameterMap row in _masterDb.EntityMNumericalParameterMap)
-        {
-            if (row.NumericalParameterMapId == paramMapId && row.ParameterKey > maxKey)
-            {
-                maxKey = row.ParameterKey;
-            }
-        }
-
-        int[] thresholds = new int[maxKey + 1];
-        foreach (EntityMNumericalParameterMap row in _masterDb.EntityMNumericalParameterMap)
-        {
-            if (row.NumericalParameterMapId == paramMapId && row.ParameterKey < thresholds.Length)
-            {
-                thresholds[row.ParameterKey] = row.ParameterValue;
-            }
-        }
-
-        int level = 1;
-        for (int lvl = 1; lvl < thresholds.Length; lvl++)
-        {
-            if (exp >= thresholds[lvl])
-            {
-                level = lvl;
-            }
-            else
-            {
-                break;
-            }
-        }
-
-        // Cap EXP at the last threshold (max level cap)
-        if (thresholds.Length > 0 && exp > thresholds[^1])
-        {
-            exp = thresholds[^1];
-        }
-
-        return (level, exp);
     }
 
     /// <summary>

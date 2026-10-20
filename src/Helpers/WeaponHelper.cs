@@ -11,6 +11,64 @@ namespace MariesWonderland.Helpers;
 public static class WeaponHelper
 {
     /// <summary>
+    /// The weapon's enhance parameters: its own <see cref="EntityMWeaponSpecificEnhance"/> row, or, for the
+    /// many weapons without one (id 0), its rarity's row, which has the same columns.
+    /// </summary>
+    public static EntityMWeaponSpecificEnhance? ResolveEnhance(DarkMasterMemoryDatabase masterDb, EntityMWeapon weaponMaster)
+    {
+        if (weaponMaster.WeaponSpecificEnhanceId != 0)
+        {
+            return masterDb.EntityMWeaponSpecificEnhance.FirstOrDefault(e => e.WeaponSpecificEnhanceId == weaponMaster.WeaponSpecificEnhanceId);
+        }
+
+        EntityMWeaponRarity? rarity = masterDb.EntityMWeaponRarity.FirstOrDefault(r => r.RarityType == weaponMaster.RarityType);
+        if (rarity == null)
+        {
+            return null;
+        }
+
+        return new EntityMWeaponSpecificEnhance
+        {
+            BaseEnhancementObtainedExp = rarity.BaseEnhancementObtainedExp,
+            SellPriceNumericalFunctionId = rarity.SellPriceNumericalFunctionId,
+            MaxLevelNumericalFunctionId = rarity.MaxLevelNumericalFunctionId,
+            MaxSkillLevelNumericalFunctionId = rarity.MaxSkillLevelNumericalFunctionId,
+            MaxAbilityLevelNumericalFunctionId = rarity.MaxAbilityLevelNumericalFunctionId,
+            RequiredExpForLevelUpNumericalParameterMapId = rarity.RequiredExpForLevelUpNumericalParameterMapId,
+            EnhancementCostByWeaponNumericalFunctionId = rarity.EnhancementCostByWeaponNumericalFunctionId,
+            EnhancementCostByMaterialNumericalFunctionId = rarity.EnhancementCostByMaterialNumericalFunctionId,
+            SkillEnhancementCostNumericalFunctionId = rarity.SkillEnhancementCostNumericalFunctionId,
+            AbilityEnhancementCostNumericalFunctionId = rarity.AbilityEnhancementCostNumericalFunctionId,
+            LimitBreakCostByWeaponNumericalFunctionId = rarity.LimitBreakCostByWeaponNumericalFunctionId,
+            LimitBreakCostByMaterialNumericalFunctionId = rarity.LimitBreakCostByMaterialNumericalFunctionId,
+            EvolutionCostNumericalFunctionId = rarity.EvolutionCostNumericalFunctionId
+        };
+    }
+
+    /// <summary>
+    /// The enhance parameters whose EXP table levels the weapon: those of its evolution chain's first weapon,
+    /// so EXP carries over unchanged when the weapon evolves.
+    /// </summary>
+    public static EntityMWeaponSpecificEnhance? ResolveLevelingEnhance(DarkMasterMemoryDatabase masterDb, EntityMWeapon weaponMaster)
+    {
+        EntityMWeaponEvolutionGroup? member = masterDb.EntityMWeaponEvolutionGroup.FirstOrDefault(e => e.WeaponId == weaponMaster.WeaponId);
+        if (member != null)
+        {
+            EntityMWeaponEvolutionGroup root = masterDb.EntityMWeaponEvolutionGroup
+                .Where(e => e.WeaponEvolutionGroupId == member.WeaponEvolutionGroupId)
+                .OrderBy(e => e.EvolutionOrder)
+                .First();
+            EntityMWeapon? rootMaster = masterDb.EntityMWeapon.FirstOrDefault(w => w.WeaponId == root.WeaponId);
+            if (rootMaster != null)
+            {
+                return ResolveEnhance(masterDb, rootMaster);
+            }
+        }
+
+        return ResolveEnhance(masterDb, weaponMaster);
+    }
+
+    /// <summary>
     /// Grants a weapon to the user: creates EntityIUserWeapon, EntityIUserWeaponNote (if new),
     /// ability/skill slots, and unlocks weapon stories for the ACQUISITION condition.
     /// </summary>
