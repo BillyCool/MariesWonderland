@@ -52,9 +52,7 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
         session.DeckNumber = request.UserDeckNumber;
 
         // Update per-boss-quest status
-        EntityIUserBigHuntStatus status = GetOrCreateStatus(userDb, request.BigHuntBossQuestId);
-        status.DailyChallengeCount++;
-        status.LatestChallengeDatetime = nowMs;
+        CountChallenges(GetOrCreateStatus(userDb, request.BigHuntBossQuestId), 1, nowMs);
 
         return Task.FromResult(new StartBigHuntQuestResponse());
     }
@@ -200,7 +198,7 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
         }
 
         // --- High-score tracking (per-weekly-attribute) ---
-        long weeklyVersion = WeeklyVersion(nowMs);
+        long weeklyVersion = GameDayHelper.StartOfWeek(nowMs);
         if (boss is not null)
         {
             EntityIUserBigHuntWeeklyMaxScore? weeklyMax = userDb.EntityIUserBigHuntWeeklyMaxScore
@@ -244,26 +242,10 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
             AssetGradeIconId = assetGradeIconId
         };
 
-        // --- Reward collection on high score ---
-        List<BigHuntReward> scoreRewards = [];
-        if (isHighScore && bossQuest is not null)
-        {
-            int rewardGroupId = ResolveActiveScoreRewardGroupId(bossQuest.BigHuntScoreRewardGroupScheduleId, nowMs);
-            if (rewardGroupId > 0)
-            {
-                List<(PossessionType Type, int Id, int Count)> newItems = CollectNewRewards(rewardGroupId, oldMaxScore, userScore);
-                foreach ((PossessionType type, int id, int count) in newItems)
-                {
-                    GrantPossessionViaPossessionHelper(userDb, type, id, count, nowMs);
-                    scoreRewards.Add(new BigHuntReward
-                    {
-                        PossessionType = (int)type,
-                        PossessionId = id,
-                        Count = count
-                    });
-                }
-            }
-        }
+        // --- Score reward: every run grants the rewards of the highest tier its score reached ---
+        List<BigHuntReward> scoreRewards = bossQuest is not null
+            ? GrantHighestTierRewards(userDb, bossQuest, userScore, 1, nowMs)
+            : [];
 
         // Clear progress and battle state
         ClearProgress(progress);
@@ -305,9 +287,7 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
         progress.CurrentQuestSceneId = 0;
 
         // Increment daily challenge count
-        EntityIUserBigHuntStatus status = GetOrCreateStatus(userDb, request.BigHuntBossQuestId);
-        status.DailyChallengeCount++;
-        status.LatestChallengeDatetime = nowMs;
+        CountChallenges(GetOrCreateStatus(userDb, request.BigHuntBossQuestId), 1, nowMs);
 
         RestartBigHuntQuestResponse response= new()
         {
@@ -319,8 +299,9 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
     }
 
     /// <summary>
-    /// Applies a bulk skip of one or more hunt attempts, incrementing the daily challenge counter
-    /// without entering combat.
+    /// Skips one or more hunt attempts without combat: uses up daily attempts and, per skip, grants the rewards of
+    /// the highest tier reached by the best score against this boss in the current schedule. Nothing is granted
+    /// before the boss has been fought in this schedule.
     /// </summary>
     public override Task<SkipBigHuntQuestResponse> SkipBigHuntQuest(SkipBigHuntQuestRequest request, ServerCallContext context)
     {
@@ -328,11 +309,31 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
         long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
-        EntityIUserBigHuntStatus status = GetOrCreateStatus(userDb, request.BigHuntBossQuestId);
-        status.DailyChallengeCount += request.SkipCount;
-        status.LatestChallengeDatetime = nowMs;
+        SkipBigHuntQuestResponse response = new();
+        if (request.SkipCount <= 0)
+        {
+            return Task.FromResult(response);
+        }
 
-        return Task.FromResult(new SkipBigHuntQuestResponse());
+        CountChallenges(GetOrCreateStatus(userDb, request.BigHuntBossQuestId), request.SkipCount, nowMs);
+
+        EntityMBigHuntBossQuest? bossQuest = _masterDb.EntityMBigHuntBossQuest
+            .FirstOrDefault(q => q.BigHuntBossQuestId == request.BigHuntBossQuestId);
+        if (bossQuest is null)
+        {
+            return Task.FromResult(response);
+        }
+
+        int activeScheduleId = ResolveActiveScheduleId(nowMs);
+        long bestScore = userDb.EntityIUserBigHuntScheduleMaxScore
+            .FirstOrDefault(m => m.BigHuntScheduleId == activeScheduleId && m.BigHuntBossId == bossQuest.BigHuntBossId)
+            ?.MaxScore ?? 0;
+        if (bestScore > 0)
+        {
+            response.ScoreReward.AddRange(GrantHighestTierRewards(userDb, bossQuest, bestScore, request.SkipCount, nowMs));
+        }
+
+        return Task.FromResult(response);
     }
 
     /// <summary>
@@ -404,7 +405,7 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
         long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
-        long weeklyVersion = WeeklyVersion(nowMs);
+        long weeklyVersion = GameDayHelper.StartOfWeek(nowMs);
 
         // Build weekly score results for each boss
         List<WeeklyScoreResult> weeklyScoreResults = [];
@@ -620,6 +621,43 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
     }
 
     /// <summary>
+    /// Grants the rewards of the highest score tier <paramref name="score"/> reaches, <paramref name="times"/> times,
+    /// and returns them as granted (one entry per item per time).
+    /// </summary>
+    private List<BigHuntReward> GrantHighestTierRewards(DarkUserMemoryDatabase userDb, EntityMBigHuntBossQuest bossQuest, long score, int times, long nowMs)
+    {
+        List<BigHuntReward> granted = [];
+        int rewardGroupId = ResolveActiveScoreRewardGroupId(bossQuest.BigHuntScoreRewardGroupScheduleId, nowMs);
+        EntityMBigHuntScoreRewardGroup? tier = _masterDb.EntityMBigHuntScoreRewardGroup
+            .Where(t => t.BigHuntScoreRewardGroupId == rewardGroupId && t.NecessaryScore <= score)
+            .OrderByDescending(t => t.NecessaryScore)
+            .FirstOrDefault();
+        if (tier is null)
+        {
+            return granted;
+        }
+
+        List<EntityMBigHuntRewardGroup> items = [.. _masterDb.EntityMBigHuntRewardGroup
+            .Where(r => r.BigHuntRewardGroupId == tier.BigHuntRewardGroupId)
+            .OrderBy(r => r.SortOrder)];
+        for (int i = 0; i < times; i++)
+        {
+            foreach (EntityMBigHuntRewardGroup item in items)
+            {
+                GrantPossessionViaPossessionHelper(userDb, item.PossessionType, item.PossessionId, item.Count, nowMs);
+                granted.Add(new BigHuntReward
+                {
+                    PossessionType = (int)item.PossessionType,
+                    PossessionId = item.PossessionId,
+                    Count = item.Count
+                });
+            }
+        }
+
+        return granted;
+    }
+
+    /// <summary>
     /// Builds the list of weekly reward items earned across all boss attributes for a given week version,
     /// based on the player's weekly max scores.
     /// </summary>
@@ -680,6 +718,20 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
                 UserId = userDb.UserId,
                 BigHuntBossQuestId = bossQuestId
             });
+    }
+
+    /// <summary>
+    /// Adds <paramref name="count"/> attempts to today's challenge count, starting from zero on a new game day.
+    /// </summary>
+    private static void CountChallenges(EntityIUserBigHuntStatus status, int count, long nowMs)
+    {
+        if (GameDayHelper.IsBeforeToday(status.LatestChallengeDatetime, nowMs))
+        {
+            status.DailyChallengeCount = 0;
+        }
+
+        status.DailyChallengeCount += count;
+        status.LatestChallengeDatetime = nowMs;
     }
 
     /// <summary>
@@ -797,21 +849,6 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
     private void GrantPossessionViaPossessionHelper(DarkUserMemoryDatabase userDb, PossessionType possessionType, int possessionId, int count, long nowMs)
     {
         PossessionHelper.Apply(userDb, possessionType, possessionId, count, _masterDb, nowMs);
-    }
-
-    // ────────── Time helpers ──────────
-
-    /// <summary>
-    /// Returns Monday 00:00 UTC of the week containing the given timestamp, as millis.
-    /// </summary>
-    private static long WeeklyVersion(long millis)
-    {
-        DateTimeOffset dto = DateTimeOffset.FromUnixTimeMilliseconds(millis);
-        DateTime utc = dto.UtcDateTime;
-        int weekday = (int)utc.DayOfWeek;
-        if (weekday == 0) { weekday = 7; } // Sunday = 7
-        DateTime monday = utc.Date.AddDays(-(weekday - 1));
-        return new DateTimeOffset(monday, TimeSpan.Zero).ToUnixTimeMilliseconds();
     }
 
     /// <summary>
