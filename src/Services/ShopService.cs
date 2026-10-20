@@ -9,17 +9,18 @@ using MariesWonderland.Proto.Shop;
 
 namespace MariesWonderland.Services;
 
-public class ShopService(UserDataStore store, DarkMasterMemoryDatabase masterDb) : MariesWonderland.Proto.Shop.ShopService.ShopServiceBase
+public class ShopService(UserDataStore store, DarkMasterMemoryDatabase masterDb, TimeProvider timeProvider) : MariesWonderland.Proto.Shop.ShopService.ShopServiceBase
 {
     private readonly UserDataStore _store = store;
     private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
+    private readonly TimeProvider _timeProvider = timeProvider;
 
     /// <summary>Purchases shop items: deducts currency, grants item contents and effects, and updates purchase history.</summary>
     public override Task<BuyResponse> Buy(BuyRequest request, ServerCallContext context)
     {
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
         foreach ((int shopItemId, int qty) in request.ShopItems)
         {
@@ -37,7 +38,7 @@ public class ShopService(UserDataStore store, DarkMasterMemoryDatabase masterDb)
 
             foreach (EntityMShopItemContentPossession content in contents)
             {
-                GrantShopPossession(userDb, content.PossessionType, content.PossessionId, content.Count * qty);
+                GrantShopPossession(userDb, content.PossessionType, content.PossessionId, content.Count * qty, nowMs);
             }
 
             // Apply side effects (e.g., stamina recovery)
@@ -86,7 +87,7 @@ public class ShopService(UserDataStore store, DarkMasterMemoryDatabase masterDb)
     {
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
         List<int> itemShopPool = GetItemShopPool();
 
@@ -133,7 +134,7 @@ public class ShopService(UserDataStore store, DarkMasterMemoryDatabase masterDb)
     {
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
         EntityMShopItem? item = _masterDb.EntityMShopItem.FirstOrDefault(i => i.ShopItemId == request.ShopItemId);
         if (item != null)
@@ -145,7 +146,7 @@ public class ShopService(UserDataStore store, DarkMasterMemoryDatabase masterDb)
 
             foreach (EntityMShopItemContentPossession content in contents)
             {
-                GrantShopPossession(userDb, content.PossessionType, content.PossessionId, content.Count);
+                GrantShopPossession(userDb, content.PossessionType, content.PossessionId, content.Count, nowMs);
             }
 
             ApplyContentEffects(userDb, request.ShopItemId, 1, nowMs);
@@ -226,7 +227,7 @@ public class ShopService(UserDataStore store, DarkMasterMemoryDatabase masterDb)
     /// Grants a shop possession to the user. For costumes already owned, grants duplication
     /// exchange items instead. All other types delegate to PossessionHelper.Apply.
     /// </summary>
-    private void GrantShopPossession(DarkUserMemoryDatabase userDb, PossessionType possessionType, int possessionId, int count)
+    private void GrantShopPossession(DarkUserMemoryDatabase userDb, PossessionType possessionType, int possessionId, int count, long nowMs)
     {
         if (possessionType is PossessionType.COSTUME or PossessionType.COSTUME_ENHANCED
             && userDb.EntityIUserCostume.Any(c => c.CostumeId == possessionId))
@@ -234,12 +235,12 @@ public class ShopService(UserDataStore store, DarkMasterMemoryDatabase masterDb)
             foreach (EntityMCostumeDuplicationExchangePossessionGroup exchange in _masterDb.EntityMCostumeDuplicationExchangePossessionGroup
                 .Where(e => e.CostumeId == possessionId))
             {
-                PossessionHelper.Apply(userDb, exchange.PossessionType, exchange.PossessionId, exchange.Count * count, _masterDb);
+                PossessionHelper.Apply(userDb, exchange.PossessionType, exchange.PossessionId, exchange.Count * count, _masterDb, nowMs);
             }
             return;
         }
 
-        PossessionHelper.Apply(userDb, possessionType, possessionId, count, _masterDb);
+        PossessionHelper.Apply(userDb, possessionType, possessionId, count, _masterDb, nowMs);
     }
 
     /// <summary>Applies side-effect content(e.g., stamina recovery) from a shop item purchase.</summary>

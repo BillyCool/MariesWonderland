@@ -226,11 +226,11 @@ public class BattleServiceTests
         Assert.Single(userDb.BattleDetails);
     }
 
-    private static BattleServiceImpl CreateService(UserDataStore store) => new(store);
+    private static BattleServiceImpl CreateService(UserDataStore store) => new(store, TimeProvider.System);
 
     private static UserDataStore CreateStore(DarkUserMemoryDatabase? userDb = null)
     {
-        UserDataStore store = new(new DarkMasterMemoryDatabase());
+        UserDataStore store = new(new DarkMasterMemoryDatabase(), TimeProvider.System);
         if (userDb != null)
             store.Set(UserId, userDb);
 

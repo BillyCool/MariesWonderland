@@ -15,7 +15,7 @@ public class ExploreServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
     private const int UnlockQuestId = 31;
     private const int TicketItemId = 2001;   // ConsumableItemIdForExploreTicket
 
-    private ExploreService CreateService(UserDataStore store) => new(store, MasterDb, GameConfig);
+    private ExploreService CreateService(UserDataStore store) => new(store, MasterDb, GameConfig, TimeProvider.System);
 
     private static void AddQuestCleared(DarkUserMemoryDatabase userDb, int questId = UnlockQuestId)
         => userDb.EntityIUserQuest.Add(new EntityIUserQuest

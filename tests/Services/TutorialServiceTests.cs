@@ -247,9 +247,9 @@ public class TutorialServiceTests
 
     private static TutorialServiceImpl CreateService(DarkMasterMemoryDatabase masterDb, DarkUserMemoryDatabase userDb)
     {
-        UserDataStore store = new(masterDb);
+        UserDataStore store = new(masterDb, TimeProvider.System);
         store.Set(UserId, userDb);
-        return new TutorialServiceImpl(store, masterDb);
+        return new TutorialServiceImpl(store, masterDb, TimeProvider.System);
     }
 
     private static DarkUserMemoryDatabase CreateUserDb() => new();

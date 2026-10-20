@@ -11,8 +11,10 @@ namespace MariesWonderland.Interceptors;
 /// the Saves/ directory after every API call. Runs asynchronously on a background thread so it
 /// does not block the response. Useful for debugging and post-mortem analysis.
 /// </summary>
-public class AutoSaveInterceptor(UserDataStore store, ILogger<AutoSaveInterceptor> logger) : Interceptor
+public class AutoSaveInterceptor(UserDataStore store, ILogger<AutoSaveInterceptor> logger, TimeProvider timeProvider) : Interceptor
 {
+    private readonly TimeProvider _timeProvider = timeProvider;
+
     private static readonly JsonSerializerOptions JsonOptions = new() { WriteIndented = true };
     private static readonly string SavesDirectory = Path.Combine(AppContext.BaseDirectory, "Saves");
 
@@ -44,7 +46,7 @@ public class AutoSaveInterceptor(UserDataStore store, ILogger<AutoSaveIntercepto
         try
         {
             Directory.CreateDirectory(SavesDirectory);
-            string timestamp = DateTime.UtcNow.ToString("yyyyMMdd_HHmmss");
+            string timestamp = _timeProvider.GetUtcNow().UtcDateTime.ToString("yyyyMMdd_HHmmss");
             string filePath = Path.Combine(SavesDirectory, $"{userDb.UserId}_{timestamp}_{methodSuffix}.json");
             string json = JsonSerializer.Serialize(userDb, JsonOptions);
             File.WriteAllText(filePath, json);

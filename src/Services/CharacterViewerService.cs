@@ -8,11 +8,12 @@ using MariesWonderland.Proto.CharacterViewer;
 
 namespace MariesWonderland.Services;
 
-public class CharacterViewerService(UserDataStore store, DarkMasterMemoryDatabase masterDb)
+public class CharacterViewerService(UserDataStore store, DarkMasterMemoryDatabase masterDb, TimeProvider timeProvider)
     : MariesWonderland.Proto.CharacterViewer.CharacterviewerService.CharacterviewerServiceBase
 {
     private readonly UserDataStore _store = store;
     private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
+    private readonly TimeProvider _timeProvider = timeProvider;
 
     /// <summary>Returns the character viewer top screen with all unlocked field IDs based on quest clear conditions.</summary>
     public override Task<CharacterViewerTopResponse> CharacterViewerTop(Empty request, ServerCallContext context)
@@ -32,7 +33,7 @@ public class CharacterViewerService(UserDataStore store, DarkMasterMemoryDatabas
             }
         }
 
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
         List<int> releasedFieldIds = [];
 
         // Check each field's release condition and track newly unlocked ones

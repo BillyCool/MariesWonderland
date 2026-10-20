@@ -283,9 +283,9 @@ public class GachaServiceTests
 
     private static GachaServiceImpl CreateService(DarkMasterMemoryDatabase masterDb, DarkUserMemoryDatabase userDb, GameConfig? gameConfig = null)
     {
-        UserDataStore store = new(masterDb);
+        UserDataStore store = new(masterDb, TimeProvider.System);
         store.Set(UserId, userDb);
-        return new GachaServiceImpl(masterDb, store, gameConfig ?? new GameConfig());
+        return new GachaServiceImpl(masterDb, store, gameConfig ?? new GameConfig(), TimeProvider.System);
     }
 
     private static DarkUserMemoryDatabase CreateUserDb() => new() { UserId = UserId };

@@ -127,8 +127,8 @@ public class GiftServiceTests
     [Fact]
     public async Task GetGiftList_ForNewUser_ReturnsEmptyResponseAndCreatesDatabase()
     {
-        UserDataStore store = new(new DarkMasterMemoryDatabase());
-        GiftServiceImpl service = new(store);
+        UserDataStore store = new(new DarkMasterMemoryDatabase(), TimeProvider.System);
+        GiftServiceImpl service = new(store, TimeProvider.System);
 
         GetGiftListResponse response = await service.GetGiftList(
             new GetGiftListRequest { IsAscendingSort = false, GetCount = 0 },
@@ -202,9 +202,9 @@ public class GiftServiceTests
 
     private static GiftServiceImpl CreateService(DarkUserMemoryDatabase userDb)
     {
-        UserDataStore store = new(new DarkMasterMemoryDatabase());
+        UserDataStore store = new(new DarkMasterMemoryDatabase(), TimeProvider.System);
         store.Set(UserId, userDb);
-        return new GiftServiceImpl(store);
+        return new GiftServiceImpl(store, TimeProvider.System);
     }
 
     private static DarkUserMemoryDatabase CreateUserDb() => new() { UserId = UserId };

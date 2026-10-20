@@ -18,7 +18,7 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
     {
         var options = Options.Create(new ServerOptions());
         var seeder = new UserDataSeeder(options);
-        return new UserService(store, seeder);
+        return new UserService(store, seeder, TimeProvider.System);
     }
 
     /// <summary>
@@ -382,7 +382,7 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
     [Fact]
     public void RegisterOrGetUser_NewUser_SeedsOneRowPerUserTablesOnce()
     {
-        UserDataStore store = new(MasterDb);
+        UserDataStore store = new(MasterDb, TimeProvider.System);
 
         (long userId, bool isNew) = store.RegisterOrGetUser("seed-test-uuid");
         store.RegisterOrGetUser("seed-test-uuid");

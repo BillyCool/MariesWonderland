@@ -33,7 +33,7 @@ public class DataServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
     [Fact]
     public async Task GetLatestMasterDataVersion_ReturnsConfiguredVersion()
     {
-        UserDataStore store = new(MasterDb);
+        UserDataStore store = new(MasterDb, TimeProvider.System);
         DataServiceImpl service = CreateService(store, latestMasterDataVersion: "2025.04.01");
 
         MasterDataGetLatestVersionResponse response = await service.GetLatestMasterDataVersion(
@@ -46,7 +46,7 @@ public class DataServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
     [Fact]
     public async Task GetUserDataNameV2_ReturnsSortedUserDataTableNames()
     {
-        UserDataStore store = new(MasterDb);
+        UserDataStore store = new(MasterDb, TimeProvider.System);
         DataServiceImpl service = CreateService(store);
 
         UserDataGetNameResponseV2 response = await service.GetUserDataNameV2(

@@ -9,9 +9,11 @@ using MariesWonderland.Proto.Explore;
 
 namespace MariesWonderland.Services;
 
-public class ExploreService(UserDataStore store, DarkMasterMemoryDatabase masterDb, GameConfig gameConfig)
+public class ExploreService(UserDataStore store, DarkMasterMemoryDatabase masterDb, GameConfig gameConfig, TimeProvider timeProvider)
     : MariesWonderland.Proto.Explore.ExploreService.ExploreServiceBase
 {
+    private readonly TimeProvider _timeProvider = timeProvider;
+
     // EXP granted per run = 0.5% of the user's current level EXP requirement × RewardLotteryCount.
     // Normal explore (×1) grants 0.5%; Hard (×11) grants 5.5%.
     private const double ExploreExpRewardBasePercent = 0.005;
@@ -32,7 +34,7 @@ public class ExploreService(UserDataStore store, DarkMasterMemoryDatabase master
     public override Task<StartExploreResponse> StartExplore(StartExploreRequest request, ServerCallContext context)
     {
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(context.GetUserId());
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
         EntityMExplore explore = _masterDb.EntityMExplore
             .FirstOrDefault(e => e.ExploreId == request.ExploreId)
@@ -77,7 +79,7 @@ public class ExploreService(UserDataStore store, DarkMasterMemoryDatabase master
     public override Task<FinishExploreResponse> FinishExplore(FinishExploreRequest request, ServerCallContext context)
     {
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(context.GetUserId());
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
         EntityMExplore explore = _masterDb.EntityMExplore
             .FirstOrDefault(e => e.ExploreId == request.ExploreId)
@@ -156,7 +158,7 @@ public class ExploreService(UserDataStore store, DarkMasterMemoryDatabase master
             foreach (var (materialId, drawCount) in draws)
             {
                 int totalCount = drawCount * stackPerDraw;
-                PossessionHelper.Apply(userDb, PossessionType.MATERIAL, materialId, totalCount, _masterDb);
+                PossessionHelper.Apply(userDb, PossessionType.MATERIAL, materialId, totalCount, _masterDb, nowMs);
                 response.ExploreReward.Add(new ExploreReward
                 {
                     PossessionType = (int)PossessionType.MATERIAL,

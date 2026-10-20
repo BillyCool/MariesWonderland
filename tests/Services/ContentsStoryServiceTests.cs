@@ -12,7 +12,7 @@ public class ContentsStoryServiceTests(MasterDatabaseFixture fixture) : ServiceT
     private const int FirstStoryId = 101;
     private const int SecondStoryId = 202;
 
-    private static ContentsStoryServiceImpl CreateService(UserDataStore store) => new(store);
+    private static ContentsStoryServiceImpl CreateService(UserDataStore store) => new(store, TimeProvider.System);
 
     [Fact]
     public async Task RegisterPlayed_NewStory_AddsRecordWithCurrentTimestamp()
@@ -78,7 +78,7 @@ public class ContentsStoryServiceTests(MasterDatabaseFixture fixture) : ServiceT
     [Fact]
     public async Task RegisterPlayed_MissingUserDatabase_CreatesUserDatabaseAndPersistsRecord()
     {
-        var store = new UserDataStore(MasterDb);
+        UserDataStore store = new(MasterDb, TimeProvider.System);
         var service = CreateService(store);
 
         await service.RegisterPlayed(

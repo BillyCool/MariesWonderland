@@ -9,12 +9,13 @@ namespace MariesWonderland.Data;
 /// Manages the map of userId → <see cref="DarkUserMemoryDatabase"/>. Handles user registration,
 /// session management, and persistence to/from JSON files on disk.
 /// </summary>
-public class UserDataStore(DarkMasterMemoryDatabase masterDb)
+public class UserDataStore(DarkMasterMemoryDatabase masterDb, TimeProvider timeProvider)
 {
     private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
     private readonly Dictionary<long, DarkUserMemoryDatabase> _users = [];
     private readonly Dictionary<string, long> _uuidToUserId = [];
     private readonly Dictionary<string, UserSession> _sessions = [];
+    private readonly TimeProvider _timeProvider = timeProvider;
 
     /// <summary>
     /// Look up or create a user by UUID. Returns the userId and whether the user is new.
@@ -39,7 +40,7 @@ public class UserDataStore(DarkMasterMemoryDatabase masterDb)
     public UserSession CreateSession(long userId, TimeSpan ttl)
     {
         var key = $"session_{userId}_{Guid.NewGuid():N}";
-        var session = new UserSession(key, userId, DateTime.UtcNow.Add(ttl));
+        var session = new UserSession(key, userId, _timeProvider.GetUtcNow().UtcDateTime.Add(ttl));
         _sessions[key] = session;
         return session;
     }
@@ -49,7 +50,7 @@ public class UserDataStore(DarkMasterMemoryDatabase masterDb)
     /// </summary>
     public bool TryResolveSession(string sessionKey, out long userId)
     {
-        if (_sessions.TryGetValue(sessionKey, out var session) && session.ExpiresAt > DateTime.UtcNow)
+        if (_sessions.TryGetValue(sessionKey, out var session) && session.ExpiresAt > _timeProvider.GetUtcNow().UtcDateTime)
         {
             userId = session.UserId;
             return true;
@@ -200,7 +201,7 @@ public class UserDataStore(DarkMasterMemoryDatabase masterDb)
     /// </summary>
     private void SeedInitialUserData(DarkUserMemoryDatabase db)
     {
-        var nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        var nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
         db.EntityIUser.Add(new EntityIUser
         {

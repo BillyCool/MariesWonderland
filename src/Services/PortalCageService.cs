@@ -9,17 +9,18 @@ using MariesWonderland.Proto.PortalCage;
 
 namespace MariesWonderland.Services;
 
-public class PortalCageService(UserDataStore store)
+public class PortalCageService(UserDataStore store, TimeProvider timeProvider)
     : MariesWonderland.Proto.PortalCage.PortalcageService.PortalcageServiceBase
 {
     private readonly UserDataStore _store = store;
+    private readonly TimeProvider _timeProvider = timeProvider;
 
     /// <summary>Marks the portal cage scene as in-progress for the current user.</summary>
     public override Task<UpdatePortalCageSceneProgressResponse> UpdatePortalCageSceneProgress(UpdatePortalCageSceneProgressRequest request, ServerCallContext context)
     {
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
         EntityIUserPortalCageStatus status = userDb.EntityIUserPortalCageStatus.GetOrCreate(userId);
         status.IsCurrentProgress = true;

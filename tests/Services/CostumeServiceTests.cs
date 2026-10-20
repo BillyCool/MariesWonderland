@@ -600,7 +600,7 @@ public class CostumeServiceTests
         int costumeLimitBreakAvailableCount = 4)
     {
         userDb.UserId = UserId;
-        UserDataStore store = new(masterDb);
+        UserDataStore store = new(masterDb, TimeProvider.System);
         store.Set(UserId, userDb);
         return new CostumeServiceImpl(
             masterDb,
@@ -610,7 +610,7 @@ public class CostumeServiceTests
                 ConsumableItemIdForGold = GoldItemId,
                 CostumeLimitBreakAvailableCount = costumeLimitBreakAvailableCount,
                 MaterialSameWeaponExpCoefficientPermil = sameWeaponExpCoefficientPermil
-            });
+            }, TimeProvider.System);
     }
 
     private static DarkMasterMemoryDatabase CreateMasterDb() => new();

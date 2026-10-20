@@ -9,8 +9,10 @@ using MariesWonderland.Proto.Quest;
 
 namespace MariesWonderland.Services;
 
-public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb) : MariesWonderland.Proto.Quest.QuestService.QuestServiceBase
+public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb, TimeProvider timeProvider) : MariesWonderland.Proto.Quest.QuestService.QuestServiceBase
 {
+    private readonly TimeProvider _timeProvider = timeProvider;
+
     private const int QuestGoldConsumableItemId = 1;
 
     private readonly UserDataStore _store = store;
@@ -22,6 +24,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
     {
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
         int questSceneId = request.QuestSceneId;
         MainQuestSceneContext? sceneContext = ResolveMainQuestSceneContext(questSceneId);
@@ -51,7 +54,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
                 UpdateQuestSessionState(session, questSceneId, GetHeadSceneId(session.HeadQuestSceneId, questSceneId), QuestFlowType.MAIN_FLOW);
         }
 
-        ApplySceneGrants(userDb, questSceneId);
+        ApplySceneGrants(userDb, questSceneId, nowMs);
 
         return Task.FromResult(new UpdateMainFlowSceneProgressResponse());
     }
@@ -98,7 +101,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         bool isPlayable = quest != null && !quest.IsRunInTheBackground && quest.IsCountedAsQuest;
         if (isPlayable)
         {
-            long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+            long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
             // On half-result scenes, auto-clear all quest missions before the battle phase ends
             if (scene!.QuestResultType == QuestResultType.HALF_RESULT && quest!.QuestMissionGroupId != 0)
@@ -148,7 +151,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
 
         int questSceneId = request.QuestSceneId;
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
         EntityIUserExtraQuestProgressStatus progressStatus = userDb.EntityIUserExtraQuestProgressStatus.GetOrCreate(userId);
         progressStatus.CurrentQuestSceneId = questSceneId;
@@ -162,7 +165,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
             UpdateQuestSessionState(session, questSceneId, progressStatus.HeadQuestSceneId, QuestFlowType.SUB_FLOW);
         }
 
-        ApplySceneGrants(userDb, questSceneId);
+        ApplySceneGrants(userDb, questSceneId, nowMs);
         if (scene != null && scene.QuestResultType == QuestResultType.HALF_RESULT)
         {
             ClearQuestMissions(userDb, scene.QuestId, nowMs);
@@ -178,7 +181,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
 
         int questSceneId = request.QuestSceneId;
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
         EntityIUserEventQuestProgressStatus progressStatus = userDb.EntityIUserEventQuestProgressStatus.GetOrCreate(userId);
         progressStatus.CurrentQuestSceneId = questSceneId;
@@ -192,7 +195,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
             UpdateQuestSessionState(session, questSceneId, progressStatus.HeadQuestSceneId, QuestFlowType.SUB_FLOW, progressStatus.CurrentEventQuestChapterId);
         }
 
-        ApplySceneGrants(userDb, questSceneId);
+        ApplySceneGrants(userDb, questSceneId, nowMs);
         if (scene != null && scene.QuestResultType == QuestResultType.HALF_RESULT)
         {
             ClearQuestMissions(userDb, scene.QuestId, nowMs);
@@ -207,7 +210,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
 
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
         int questId = request.QuestId;
 
         EntityMQuest? quest = _masterDb.EntityMQuest.FirstOrDefault(q => q.QuestId == questId);
@@ -333,7 +336,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
 
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
         int questId = request.QuestId;
 
         EntityIUserQuest userQuest = userDb.EntityIUserQuest.GetOrCreate(
@@ -420,7 +423,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         long userId = context.GetUserId();
         if (!_store.TryGet(userId, out DarkUserMemoryDatabase userDb)) return Task.FromResult(new FinishMainQuestResponse());
 
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
         int questId = request.QuestId;
         bool isRetired = request.IsRetired;
 
@@ -560,14 +563,14 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
             {
                 ApplyExpRewards(userDb, quest, questId);
                 ApplyGoldReward(userDb, quest, nowMs);
-                ApplyFirstClearPossessions(userDb, firstClearRewardRows, _masterDb);
+                ApplyFirstClearPossessions(userDb, firstClearRewardRows, _masterDb, nowMs);
                 ApplyWeaponStoryUnlocks(userDb, questId);
             }
 
-            dropRewards = ApplyDropRewardPossessions(userDb, dropRewards);
+            dropRewards = ApplyDropRewardPossessions(userDb, dropRewards, nowMs);
             foreach (QuestReward replayReward in replayFlowFirstClearRewards)
             {
-                PossessionHelper.Apply(userDb, (PossessionType)replayReward.PossessionType, replayReward.PossessionId, replayReward.Count, _masterDb);
+                PossessionHelper.Apply(userDb, (PossessionType)replayReward.PossessionType, replayReward.PossessionId, replayReward.Count, _masterDb, nowMs);
             }
 
             userQuest.QuestStateType = (int)QuestStateType.CLEARED;
@@ -784,24 +787,24 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
     }
 
     /// <summary>Grants first-clear reward possessions to the user.</summary>
-    private static void ApplyFirstClearPossessions(DarkUserMemoryDatabase userDb, List<EntityMQuestFirstClearRewardGroup> rewardRows, DarkMasterMemoryDatabase masterDb)
+    private static void ApplyFirstClearPossessions(DarkUserMemoryDatabase userDb, List<EntityMQuestFirstClearRewardGroup> rewardRows, DarkMasterMemoryDatabase masterDb, long nowMs)
     {
         foreach (EntityMQuestFirstClearRewardGroup row in rewardRows)
-            PossessionHelper.Apply(userDb, row.PossessionType, row.PossessionId, row.Count, masterDb);
+            PossessionHelper.Apply(userDb, row.PossessionType, row.PossessionId, row.Count, masterDb, nowMs);
     }
 
     /// <summary>Grants scene-based possessions from master data for the given quest scene.</summary>
-    private void ApplySceneGrants(DarkUserMemoryDatabase userDb, int questSceneId)
+    private void ApplySceneGrants(DarkUserMemoryDatabase userDb, int questSceneId, long nowMs)
     {
         List<EntityMUserQuestSceneGrantPossession> grants = [.. _masterDb.EntityMUserQuestSceneGrantPossession
             .Where(g => g.QuestSceneId == questSceneId && !g.IsDebug)];
 
         foreach (EntityMUserQuestSceneGrantPossession grant in grants)
-            PossessionHelper.Apply(userDb, grant.PossessionType, grant.PossessionId, grant.Count, _masterDb);
+            PossessionHelper.Apply(userDb, grant.PossessionType, grant.PossessionId, grant.Count, _masterDb, nowMs);
     }
 
     /// <summary>Grants all drop reward possessions from a reward list, applying memoir auto-sell where supported.</summary>
-    private List<QuestReward> ApplyDropRewardPossessions(DarkUserMemoryDatabase userDb, List<QuestReward> rewards)
+    private List<QuestReward> ApplyDropRewardPossessions(DarkUserMemoryDatabase userDb, List<QuestReward> rewards, long nowMs)
     {
         ParseAutoSaleRules(userDb, out HashSet<int> raritySet, out HashSet<int> rankSet);
         List<QuestReward> appliedRewards = [];
@@ -820,7 +823,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
                         _masterDb,
                         QuestGoldConsumableItemId,
                         raritySet,
-                        rankSet);
+                        rankSet, nowMs);
 
                     appliedRewards.Add(new QuestReward
                     {
@@ -835,7 +838,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
                 continue;
             }
 
-            PossessionHelper.Apply(userDb, possessionType, reward.PossessionId, reward.Count, _masterDb);
+            PossessionHelper.Apply(userDb, possessionType, reward.PossessionId, reward.Count, _masterDb, nowMs);
             appliedRewards.Add(reward.Clone());
         }
 
@@ -863,7 +866,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
 
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
         int questId = request.QuestId;
 
         EntityMQuest? quest = _masterDb.EntityMQuest.FirstOrDefault(q => q.QuestId == questId);
@@ -915,7 +918,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
 
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
         int questId = request.QuestId;
 
         // Reset quest state to ACTIVE
@@ -957,7 +960,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         long userId = context.GetUserId();
         if (!_store.TryGet(userId, out DarkUserMemoryDatabase userDb)) return Task.FromResult(new FinishExtraQuestResponse());
 
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
         int questId = request.QuestId;
         bool isRetired = request.IsRetired;
 
@@ -1076,11 +1079,11 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
             {
                 ApplyExpRewards(userDb, quest, questId);
                 ApplyGoldReward(userDb, quest, nowMs);
-                ApplyFirstClearPossessions(userDb, firstClearRewardRows, _masterDb);
+                ApplyFirstClearPossessions(userDb, firstClearRewardRows, _masterDb, nowMs);
                 ApplyWeaponStoryUnlocks(userDb, questId);
             }
 
-            dropRewardsExtra = ApplyDropRewardPossessions(userDb, dropRewardsExtra);
+            dropRewardsExtra = ApplyDropRewardPossessions(userDb, dropRewardsExtra, nowMs);
 
             userQuest.QuestStateType = (int)QuestStateType.CLEARED;
             userQuest.ClearCount++;
@@ -1122,7 +1125,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
 
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
         int questId = request.QuestId;
         int chapterId = request.EventQuestChapterId;
 
@@ -1181,7 +1184,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
 
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
         int questId = request.QuestId;
 
         EntityIUserQuest userQuest = userDb.EntityIUserQuest.GetOrCreate(
@@ -1224,7 +1227,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         long userId = context.GetUserId();
         if (!_store.TryGet(userId, out DarkUserMemoryDatabase userDb)) return Task.FromResult(new FinishEventQuestResponse());
 
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
         int questId = request.QuestId;
         bool isRetired = request.IsRetired;
 
@@ -1343,11 +1346,11 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
             {
                 ApplyExpRewards(userDb, quest, questId);
                 ApplyGoldReward(userDb, quest, nowMs);
-                ApplyFirstClearPossessions(userDb, firstClearRewardRows, _masterDb);
+                ApplyFirstClearPossessions(userDb, firstClearRewardRows, _masterDb, nowMs);
                 ApplyWeaponStoryUnlocks(userDb, questId);
             }
 
-            dropRewardsEvent = ApplyDropRewardPossessions(userDb, dropRewardsEvent);
+            dropRewardsEvent = ApplyDropRewardPossessions(userDb, dropRewardsEvent, nowMs);
 
             userQuest.QuestStateType = (int)QuestStateType.CLEARED;
             userQuest.ClearCount++;
@@ -1436,6 +1439,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
     {
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
         QuestFlowType requestedFlowType = System.Enum.IsDefined(typeof(QuestFlowType), request.QuestFlowType)
             ? (QuestFlowType)request.QuestFlowType
@@ -1468,10 +1472,10 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
                     UserId = userId,
                     QuestSceneChoiceEffectId = choiceEffect.QuestSceneChoiceEffectId
                 });
-            userChoiceHistory.ChoiceDatetime = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+            userChoiceHistory.ChoiceDatetime = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
             if (isFirstChoiceEffectSelection)
-                ApplyQuestSceneChoiceSideEffects(userDb, choiceEffect);
+                ApplyQuestSceneChoiceSideEffects(userDb, choiceEffect, nowMs);
         }
 
         if (requestedFlowType == QuestFlowType.ANOTHER_ROUTE_REPLAY_FLOW)
@@ -1503,6 +1507,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
     {
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
         EntityIUserEventQuestTowerAccumulationReward towerRewardState = userDb.EntityIUserEventQuestTowerAccumulationReward.GetOrCreate(
             r => r.EventQuestChapterId == request.EventQuestChapterId,
             () => new EntityIUserEventQuestTowerAccumulationReward
@@ -1533,7 +1538,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
                 .Where(r => r.EventQuestTowerRewardGroupId == tier.EventQuestTowerRewardGroupId)
                 .OrderBy(r => r.SortOrder))
             {
-                PossessionHelper.Apply(userDb, reward.PossessionType, reward.PossessionId, reward.Count, _masterDb);
+                PossessionHelper.Apply(userDb, reward.PossessionType, reward.PossessionId, reward.Count, _masterDb, nowMs);
             }
 
             highestClaimedCount = Math.Max(highestClaimedCount, tier.QuestMissionClearCount);
@@ -1542,7 +1547,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         if (highestClaimedCount > towerRewardState.LatestRewardReceiveQuestMissionClearCount)
         {
             towerRewardState.LatestRewardReceiveQuestMissionClearCount = highestClaimedCount;
-            towerRewardState.LatestVersion = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+            towerRewardState.LatestVersion = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
         }
 
         return Task.FromResult(new ReceiveTowerAccumulationRewardResponse());
@@ -1554,7 +1559,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
 
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
         int questId = request.QuestId;
 
         // Consume skip tickets
@@ -1579,7 +1584,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
             for (int i = 0; i < request.SkipCount; i++)
             {
                 List<QuestReward> iterDrops = BuildDropRewards(quest, ResolveEventQuestCampaignTarget(userDb, userId, questId), nowMs);
-                iterDrops = ApplyDropRewardPossessions(userDb, iterDrops);
+                iterDrops = ApplyDropRewardPossessions(userDb, iterDrops, nowMs);
                 dropRewards.AddRange(iterDrops);
 
                 ApplyGoldReward(userDb, quest, nowMs);
@@ -1629,7 +1634,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
 
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
         EntityIUserEventQuestGuerrillaFreeOpen freeOpen = userDb.EntityIUserEventQuestGuerrillaFreeOpen.GetOrCreate(userId);
         freeOpen.StartDatetime = nowMs;
@@ -1996,7 +2001,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         return null;
     }
 
-    private void ApplyQuestSceneChoiceSideEffects(DarkUserMemoryDatabase userDb, EntityMQuestSceneChoiceEffect choiceEffect)
+    private void ApplyQuestSceneChoiceSideEffects(DarkUserMemoryDatabase userDb, EntityMQuestSceneChoiceEffect choiceEffect, long nowMs)
     {
         // TODO: If quest-scene choice effects are supposed to compensate already-owned gear with duplicate rewards,
         // the current repo has no quest-choice-specific conversion model for that. Skip duplicate grants for safety.
@@ -2005,7 +2010,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
             .OrderBy(g => g.SortOrder))
         {
             if (!userDb.EntityIUserCostume.Any(c => c.CostumeId == costumeEffect.CostumeId))
-                PossessionHelper.GrantCostume(userDb, costumeEffect.CostumeId, _masterDb);
+                PossessionHelper.GrantCostume(userDb, costumeEffect.CostumeId, _masterDb, nowMs);
         }
 
         foreach (EntityMQuestSceneChoiceWeaponEffectGroup weaponEffect in _masterDb.EntityMQuestSceneChoiceWeaponEffectGroup
@@ -2013,7 +2018,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
             .OrderBy(g => g.SortOrder))
         {
             if (!userDb.EntityIUserWeapon.Any(w => w.WeaponId == weaponEffect.WeaponId))
-                WeaponHelper.GrantWeapon(userDb, weaponEffect.WeaponId, _masterDb);
+                WeaponHelper.GrantWeapon(userDb, weaponEffect.WeaponId, _masterDb, nowMs);
         }
     }
 

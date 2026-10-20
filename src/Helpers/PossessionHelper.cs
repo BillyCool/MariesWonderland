@@ -13,10 +13,8 @@ public static class PossessionHelper
     /// <summary>
     /// Grants a possession to the user by type, delegating to type-specific handlers.
     /// </summary>
-    public static void Apply(DarkUserMemoryDatabase userDb, PossessionType type, int id, int count, DarkMasterMemoryDatabase masterDb)
+    public static void Apply(DarkUserMemoryDatabase userDb, PossessionType type, int id, int count, DarkMasterMemoryDatabase masterDb, long nowMs)
     {
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
-
         switch (type)
         {
             case PossessionType.FREE_GEM:
@@ -63,18 +61,18 @@ public static class PossessionHelper
                 }
             case PossessionType.WEAPON:
             case PossessionType.WEAPON_ENHANCED:
-                WeaponHelper.GrantWeapon(userDb, id, masterDb);
+                WeaponHelper.GrantWeapon(userDb, id, masterDb, nowMs);
                 break;
             case PossessionType.COSTUME:
             case PossessionType.COSTUME_ENHANCED:
-                GrantCostume(userDb, id, masterDb);
+                GrantCostume(userDb, id, masterDb, nowMs);
                 break;
             case PossessionType.COMPANION:
-                GrantCompanion(userDb, id);
+                GrantCompanion(userDb, id, nowMs);
                 break;
             case PossessionType.PARTS:
             case PossessionType.PARTS_ENHANCED:
-                GrantParts(userDb, id, masterDb);
+                GrantParts(userDb, id, masterDb, nowMs);
                 break;
         }
     }
@@ -82,9 +80,8 @@ public static class PossessionHelper
     /// <summary>
     /// Grants a costume to the user, unlocking the associated character if not already owned.
     /// </summary>
-    public static void GrantCostume(DarkUserMemoryDatabase userDb, int costumeId, DarkMasterMemoryDatabase masterDb)
+    public static void GrantCostume(DarkUserMemoryDatabase userDb, int costumeId, DarkMasterMemoryDatabase masterDb, long nowMs)
     {
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
         string uuid = Guid.NewGuid().ToString();
 
         userDb.EntityIUserCostume.Add(new EntityIUserCostume
@@ -108,11 +105,10 @@ public static class PossessionHelper
     /// <summary>
     /// Grants a companion to the user. Skips if the companion is already owned.
     /// </summary>
-    public static void GrantCompanion(DarkUserMemoryDatabase userDb, int companionId)
+    public static void GrantCompanion(DarkUserMemoryDatabase userDb, int companionId, long nowMs)
     {
         if (userDb.EntityIUserCompanion.Any(c => c.CompanionId == companionId)) return;
 
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
         userDb.EntityIUserCompanion.Add(new EntityIUserCompanion
         {
             UserId = userDb.UserId,
@@ -127,9 +123,8 @@ public static class PossessionHelper
     /// <summary>
     /// Grants a single Parts item to the user.
     /// </summary>
-    public static void GrantParts(DarkUserMemoryDatabase userDb, int partsId, DarkMasterMemoryDatabase masterDb)
+    public static void GrantParts(DarkUserMemoryDatabase userDb, int partsId, DarkMasterMemoryDatabase masterDb, long nowMs)
     {
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
         CreateGrantedParts(userDb, ResolveGrantedPartsVariant(partsId, masterDb), partsId, nowMs);
     }
 
@@ -142,9 +137,9 @@ public static class PossessionHelper
         DarkMasterMemoryDatabase masterDb,
         int goldConsumableItemId,
         ISet<int> autoSaleRaritySet,
-        ISet<int> autoSaleRankSet)
+        ISet<int> autoSaleRankSet,
+        long nowMs)
     {
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
         EntityMParts? grantedParts = ResolveGrantedPartsVariant(requestedPartsId, masterDb);
         if (grantedParts == null)
         {
@@ -158,7 +153,7 @@ public static class PossessionHelper
         int sellPrice = shouldAutoSell ? ResolvePartsSellPrice(masterDb, grantedParts.RarityType, 1) : 0;
         if (sellPrice > 0)
         {
-            Apply(userDb, PossessionType.CONSUMABLE_ITEM, goldConsumableItemId, sellPrice, masterDb);
+            Apply(userDb, PossessionType.CONSUMABLE_ITEM, goldConsumableItemId, sellPrice, masterDb, nowMs);
             return (grantedParts.PartsId, true);
         }
 

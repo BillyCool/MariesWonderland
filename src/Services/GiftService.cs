@@ -8,9 +8,10 @@ using MariesWonderland.Proto.Gift;
 
 namespace MariesWonderland.Services;
 
-public class GiftService(UserDataStore store) : MariesWonderland.Proto.Gift.GiftService.GiftServiceBase
+public class GiftService(UserDataStore store, TimeProvider timeProvider) : MariesWonderland.Proto.Gift.GiftService.GiftServiceBase
 {
     private readonly UserDataStore _store = store;
+    private readonly TimeProvider _timeProvider = timeProvider;
 
     /// <summary>Claims inbox gifts by UUID, marking them as received with the current timestamp.</summary>
     public override Task<ReceiveGiftResponse> ReceiveGift(ReceiveGiftRequest request, ServerCallContext context)
@@ -26,7 +27,7 @@ public class GiftService(UserDataStore store) : MariesWonderland.Proto.Gift.Gift
                 && gift.ReceivedDatetime == 0
                 && request.UserGiftUuid.Contains(gift.UserGiftUuid))
             {
-                gift.ReceivedDatetime = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+                gift.ReceivedDatetime = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
                 received.Add(gift.UserGiftUuid);
             }
         }

@@ -28,7 +28,7 @@ public abstract class ServiceTestBase
     /// </summary>
     protected static UserDataStore CreateStore(long userId, DarkUserMemoryDatabase userDb, DarkMasterMemoryDatabase masterDb)
     {
-        var store = new UserDataStore(masterDb);
+        UserDataStore store = new(masterDb, TimeProvider.System);
         store.Set(userId, userDb);
         return store;
     }

@@ -12,11 +12,12 @@ using MariesWonderland.Proto.Reward;
 
 namespace MariesWonderland.Services;
 
-public class RewardService(UserDataStore store, DarkMasterMemoryDatabase masterDb)
+public class RewardService(UserDataStore store, DarkMasterMemoryDatabase masterDb, TimeProvider timeProvider)
     : MariesWonderland.Proto.Reward.RewardService.RewardServiceBase
 {
     private readonly UserDataStore _store = store;
     private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
+    private readonly TimeProvider _timeProvider = timeProvider;
 
     /// <summary>
     /// Collects the weekly score rewards for all bosses and grants any unclaimed ones to the user.
@@ -25,7 +26,7 @@ public class RewardService(UserDataStore store, DarkMasterMemoryDatabase masterD
     {
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
         long weeklyVersion = GetWeeklyVersion(nowMs);
 
         EntityIUserBigHuntWeeklyStatus? ws = userDb.EntityIUserBigHuntWeeklyStatus
@@ -75,7 +76,7 @@ public class RewardService(UserDataStore store, DarkMasterMemoryDatabase masterD
                 List<EntityMBigHuntRewardGroup> items = CollectNewRewards(rewardGroupId, 0, maxScore);
                 foreach (EntityMBigHuntRewardGroup item in items)
                 {
-                    PossessionHelper.Apply(userDb, item.PossessionType, item.PossessionId, item.Count, _masterDb);
+                    PossessionHelper.Apply(userDb, item.PossessionType, item.PossessionId, item.Count, _masterDb, nowMs);
                     weeklyRewards.Add(new BigHuntReward
                     {
                         PossessionType = (int)item.PossessionType,
@@ -121,7 +122,7 @@ public class RewardService(UserDataStore store, DarkMasterMemoryDatabase masterD
         EntityIUserPvpStatus? existingStatus = userDb.EntityIUserPvpStatus.FirstOrDefault(s => s.UserId == userId);
         long latestReceivedWeeklyVersion = existingStatus?.LatestRewardReceivePvpWeeklyVersion ?? 0;
         int latestReceivedSeasonId = existingStatus?.LatestRewardReceivePvpSeasonId ?? 0;
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
         ReceivePvpRewardResponse response = new();
 
@@ -144,13 +145,13 @@ public class RewardService(UserDataStore store, DarkMasterMemoryDatabase masterD
                 _masterDb.EntityMPvpGradeWeeklyRewardGroup,
                 g => g.PvpGradeWeeklyRewardGroupId,
                 g => g.PvpRewardId,
-                g => g.SortOrder));
+                g => g.SortOrder), nowMs);
             ApplyPvpRewards(userDb, CollectPvpRewards(
                 weeklyRankRewardGroupId,
                 _masterDb.EntityMPvpWeeklyRankRewardGroup,
                 g => g.PvpWeeklyRankRewardGroupId,
                 g => g.PvpRewardId,
-                g => g.SortOrder));
+                g => g.SortOrder), nowMs);
 
             response.WeeklyGradeResult = new WeeklyGradeResult
             {
@@ -194,7 +195,7 @@ public class RewardService(UserDataStore store, DarkMasterMemoryDatabase masterD
                 _masterDb.EntityMPvpSeasonRankRewardGroup,
                 g => g.PvpSeasonRankRewardGroupId,
                 g => g.PvpRewardId,
-                g => g.SortOrder));
+                g => g.SortOrder), nowMs);
 
             response.SeasonRankResult = new SeasonRankResult
             {
@@ -419,7 +420,7 @@ public class RewardService(UserDataStore store, DarkMasterMemoryDatabase masterD
             (_, reward) => reward)];
     }
 
-    private void ApplyPvpRewards(DarkUserMemoryDatabase userDb, List<EntityMPvpReward> rewards)
+    private void ApplyPvpRewards(DarkUserMemoryDatabase userDb, List<EntityMPvpReward> rewards, long nowMs)
     {
         if (rewards.Count == 0)
         {
@@ -433,7 +434,7 @@ public class RewardService(UserDataStore store, DarkMasterMemoryDatabase masterD
 
         foreach (EntityMPvpReward reward in rewards)
         {
-            PossessionHelper.Apply(userDb, reward.PossessionType, reward.PossessionId, reward.Count, _masterDb);
+            PossessionHelper.Apply(userDb, reward.PossessionType, reward.PossessionId, reward.Count, _masterDb, nowMs);
         }
     }
 

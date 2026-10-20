@@ -8,18 +8,20 @@ using MariesWonderland.Proto.Material;
 
 namespace MariesWonderland.Services;
 
-public class MaterialService(DarkMasterMemoryDatabase masterDb, UserDataStore store, GameConfig gameConfig)
+public class MaterialService(DarkMasterMemoryDatabase masterDb, UserDataStore store, GameConfig gameConfig, TimeProvider timeProvider)
     : MariesWonderland.Proto.Material.MaterialService.MaterialServiceBase
 {
     private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
     private readonly UserDataStore _store = store;
     private readonly GameConfig _gameConfig = gameConfig;
+    private readonly TimeProvider _timeProvider = timeProvider;
 
     /// <summary>Sells materials for gold, removing depleted material entries from inventory.</summary>
     public override Task<SellResponse> Sell(SellRequest request, ServerCallContext context)
     {
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
         int totalGold = 0;
 
@@ -70,18 +72,18 @@ public class MaterialService(DarkMasterMemoryDatabase masterDb, UserDataStore st
             }
 
             totalGold += mat.SellPrice * item.Count;
-            GrantSaleBonus(userDb, mat, item.Count);
+            GrantSaleBonus(userDb, mat, item.Count, nowMs);
         }
 
         if (totalGold > 0)
         {
-            PossessionHelper.Apply(userDb, PossessionType.CONSUMABLE_ITEM, _gameConfig.ConsumableItemIdForGold, totalGold, _masterDb);
+            PossessionHelper.Apply(userDb, PossessionType.CONSUMABLE_ITEM, _gameConfig.ConsumableItemIdForGold, totalGold, _masterDb, nowMs);
         }
 
         return Task.FromResult(new SellResponse());
     }
 
-    private void GrantSaleBonus(DarkUserMemoryDatabase userDb, EntityMMaterial material, int soldCount)
+    private void GrantSaleBonus(DarkUserMemoryDatabase userDb, EntityMMaterial material, int soldCount, long nowMs)
     {
         if (soldCount <= 0 || material.MaterialSaleObtainPossessionId <= 0)
         {
@@ -92,7 +94,7 @@ public class MaterialService(DarkMasterMemoryDatabase masterDb, UserDataStore st
                      .Where(entry => entry.MaterialSaleObtainPossessionId == material.MaterialSaleObtainPossessionId)
                      .OrderBy(entry => entry.SortOrder))
         {
-            PossessionHelper.Apply(userDb, bonus.PossessionType, bonus.PossessionId, bonus.Count * soldCount, _masterDb);
+            PossessionHelper.Apply(userDb, bonus.PossessionType, bonus.PossessionId, bonus.Count * soldCount, _masterDb, nowMs);
         }
     }
 }

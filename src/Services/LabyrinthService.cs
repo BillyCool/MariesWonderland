@@ -7,10 +7,11 @@ using MariesWonderland.Proto.Labyrinth;
 
 namespace MariesWonderland.Services;
 
-public class LabyrinthService(UserDataStore store, DarkMasterMemoryDatabase masterDb) : MariesWonderland.Proto.Labyrinth.LabyrinthService.LabyrinthServiceBase
+public class LabyrinthService(UserDataStore store, DarkMasterMemoryDatabase masterDb, TimeProvider timeProvider) : MariesWonderland.Proto.Labyrinth.LabyrinthService.LabyrinthServiceBase
 {
     private readonly UserDataStore _store = store;
     private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
+    private readonly TimeProvider _timeProvider = timeProvider;
 
     public override Task<UpdateSeasonDataResponse> UpdateSeasonData(UpdateSeasonDataRequest request, ServerCallContext context)
     {
@@ -71,6 +72,7 @@ public class LabyrinthService(UserDataStore store, DarkMasterMemoryDatabase mast
     {
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
         EntityIUserEventQuestLabyrinthStage stageState = GetOrCreateLabyrinthStage(userDb, request.EventQuestChapterId, request.StageOrder);
 
         if (stageState.IsReceivedStageClearReward)
@@ -89,11 +91,11 @@ public class LabyrinthService(UserDataStore store, DarkMasterMemoryDatabase mast
             .Where(r => r.EventQuestLabyrinthRewardGroupId == stage.StageClearRewardGroupId)
             .OrderBy(r => r.SortOrder))
         {
-            PossessionHelper.Apply(userDb, reward.PossessionType, reward.PossessionId, reward.Count, _masterDb);
+            PossessionHelper.Apply(userDb, reward.PossessionType, reward.PossessionId, reward.Count, _masterDb, nowMs);
         }
 
         stageState.IsReceivedStageClearReward = true;
-        stageState.LatestVersion = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        stageState.LatestVersion = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
         return Task.FromResult(new ReceiveStageClearRewardResponse());
     }
@@ -102,6 +104,7 @@ public class LabyrinthService(UserDataStore store, DarkMasterMemoryDatabase mast
     {
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
         EntityIUserEventQuestLabyrinthStage stageState = GetOrCreateLabyrinthStage(userDb, request.EventQuestChapterId, request.StageOrder);
 
         EntityMEventQuestLabyrinthStage? stage = _masterDb.EntityMEventQuestLabyrinthStage
@@ -124,7 +127,7 @@ public class LabyrinthService(UserDataStore store, DarkMasterMemoryDatabase mast
                 .Where(r => r.EventQuestLabyrinthRewardGroupId == tier.EventQuestLabyrinthRewardGroupId)
                 .OrderBy(r => r.SortOrder))
             {
-                PossessionHelper.Apply(userDb, reward.PossessionType, reward.PossessionId, reward.Count, _masterDb);
+                PossessionHelper.Apply(userDb, reward.PossessionType, reward.PossessionId, reward.Count, _masterDb, nowMs);
             }
 
             highestClaimedCount = Math.Max(highestClaimedCount, tier.QuestMissionClearCount);
@@ -133,7 +136,7 @@ public class LabyrinthService(UserDataStore store, DarkMasterMemoryDatabase mast
         if (highestClaimedCount > stageState.AccumulationRewardReceivedQuestMissionCount)
         {
             stageState.AccumulationRewardReceivedQuestMissionCount = highestClaimedCount;
-            stageState.LatestVersion = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+            stageState.LatestVersion = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
         }
 
         return Task.FromResult(new ReceiveStageAccumulationRewardResponse());

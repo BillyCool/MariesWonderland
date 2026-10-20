@@ -11,12 +11,13 @@ using MariesWonderland.Proto.Quest;
 
 namespace MariesWonderland.Services;
 
-public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase masterDb)
+public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase masterDb, TimeProvider timeProvider)
     : MariesWonderland.Proto.BigHunt.BighuntService.BighuntServiceBase
 {
     private readonly UserDataStore _store = store;
     private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
     private readonly QuestCampaignHelper _questCampaignHelper = new(masterDb);
+    private readonly TimeProvider _timeProvider = timeProvider;
 
     /// <summary>
     /// Begins a BigHunt quest run: deducts stamina for the selected quest, records the player's deck choice,
@@ -26,7 +27,7 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
     {
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
         EntityMBigHuntQuest? bhQuest = _masterDb.EntityMBigHuntQuest
             .FirstOrDefault(q => q.BigHuntQuestId == request.BigHuntQuestId);
@@ -78,7 +79,7 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
     {
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
         EntityMBigHuntQuest? bhQuest = _masterDb.EntityMBigHuntQuest
             .FirstOrDefault(q => q.BigHuntQuestId == request.BigHuntQuestId);
@@ -250,7 +251,7 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
                 List<(PossessionType Type, int Id, int Count)> newItems = CollectNewRewards(rewardGroupId, oldMaxScore, userScore);
                 foreach ((PossessionType type, int id, int count) in newItems)
                 {
-                    GrantPossessionViaPossessionHelper(userDb, type, id, count);
+                    GrantPossessionViaPossessionHelper(userDb, type, id, count, nowMs);
                     scoreRewards.Add(new BigHuntReward
                     {
                         PossessionType = (int)type,
@@ -284,7 +285,7 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
     {
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
         EntityMBigHuntQuest? bhQuest = _masterDb.EntityMBigHuntQuest
             .FirstOrDefault(q => q.BigHuntQuestId == request.BigHuntQuestId);
@@ -322,7 +323,7 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
     {
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
         EntityIUserBigHuntStatus status = GetOrCreateStatus(userDb, request.BigHuntBossQuestId);
         status.DailyChallengeCount += request.SkipCount;
@@ -399,7 +400,7 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
     {
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
         long weeklyVersion = WeeklyVersion(nowMs);
 
         // Build weekly score results for each boss
@@ -505,7 +506,7 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
                 foreach (EntityMQuestFirstClearRewardGroup reward in _masterDb.EntityMQuestFirstClearRewardGroup
                     .Where(r => r.QuestFirstClearRewardGroupId == rewardGroupId))
                 {
-                    PossessionHelper.Apply(userDb, reward.PossessionType, reward.PossessionId, reward.Count, _masterDb);
+                    PossessionHelper.Apply(userDb, reward.PossessionType, reward.PossessionId, reward.Count, _masterDb, nowMs);
                 }
             }
 
@@ -515,7 +516,7 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
                 List<QuestReward> dropRewards = BuildDropRewards(masterQuest, questId, nowMs);
                 foreach (QuestReward dropReward in dropRewards)
                 {
-                    PossessionHelper.Apply(userDb, (PossessionType)dropReward.PossessionType, dropReward.PossessionId, dropReward.Count, _masterDb);
+                    PossessionHelper.Apply(userDb, (PossessionType)dropReward.PossessionType, dropReward.PossessionId, dropReward.Count, _masterDb, nowMs);
                 }
             }
 
@@ -875,9 +876,9 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
     /// <summary>
     /// Routes possession grants through PossessionHelper.Apply for consistent handling.
     /// </summary>
-    private void GrantPossessionViaPossessionHelper(DarkUserMemoryDatabase userDb, PossessionType possessionType, int possessionId, int count)
+    private void GrantPossessionViaPossessionHelper(DarkUserMemoryDatabase userDb, PossessionType possessionType, int possessionId, int count, long nowMs)
     {
-        PossessionHelper.Apply(userDb, possessionType, possessionId, count, _masterDb);
+        PossessionHelper.Apply(userDb, possessionType, possessionId, count, _masterDb, nowMs);
     }
 
     // ────────── Time helpers ──────────

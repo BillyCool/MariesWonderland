@@ -8,8 +8,10 @@ namespace MariesWonderland.Interceptors;
 /// Currently adds the <c>x-apb-response-datetime</c> trailer with the server's UTC timestamp
 /// in Unix milliseconds, which the client uses for time synchronisation.
 /// </summary>
-public class CommonHeaderInterceptor : Interceptor
+public class CommonHeaderInterceptor(TimeProvider timeProvider) : Interceptor
 {
+    private readonly TimeProvider _timeProvider = timeProvider;
+
     /// <summary>
     /// Runs after the service handler completes and appends the response-datetime trailer.
     /// </summary>
@@ -21,7 +23,7 @@ public class CommonHeaderInterceptor : Interceptor
         TResponse response = await continuation(request, context);
 
         Metadata trailers = context.ResponseTrailers;
-        trailers.Add("x-apb-response-datetime", DateTimeOffset.UtcNow.ToUnixTimeMilliseconds().ToString());
+        trailers.Add("x-apb-response-datetime", _timeProvider.GetUtcNow().ToUnixTimeMilliseconds().ToString());
 
         return response;
     }

@@ -7,9 +7,10 @@ using MariesWonderland.Proto.Deck;
 
 namespace MariesWonderland.Services;
 
-public class DeckService(UserDataStore store) : MariesWonderland.Proto.Deck.DeckService.DeckServiceBase
+public class DeckService(UserDataStore store, TimeProvider timeProvider) : MariesWonderland.Proto.Deck.DeckService.DeckServiceBase
 {
     private readonly UserDataStore _store = store;
+    private readonly TimeProvider _timeProvider = timeProvider;
 
     /// <summary>Renames a deck.</summary>
     public override Task<UpdateNameResponse> UpdateName(UpdateNameRequest request, ServerCallContext context)
@@ -165,7 +166,7 @@ public class DeckService(UserDataStore store) : MariesWonderland.Proto.Deck.Deck
 
         EntityIUserTripleDeck tripleDeck = GetOrCreateTripleDeck(userDb, (DeckType)request.DeckType, request.UserDeckNumber);
         tripleDeck.Name = request.Name;
-        tripleDeck.LatestVersion = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        tripleDeck.LatestVersion = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
         return Task.FromResult(new UpdateTripleDeckNameResponse());
     }
@@ -175,7 +176,7 @@ public class DeckService(UserDataStore store) : MariesWonderland.Proto.Deck.Deck
     {
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
         foreach (DeckDetail? detail in new[] { request.DeckDetail01, request.DeckDetail02, request.DeckDetail03 })
         {

@@ -7,9 +7,11 @@ using MariesWonderland.Proto.Parts;
 
 namespace MariesWonderland.Services;
 
-public class PartsService(DarkMasterMemoryDatabase masterDb, UserDataStore store, GameConfig gameConfig)
+public class PartsService(DarkMasterMemoryDatabase masterDb, UserDataStore store, GameConfig gameConfig, TimeProvider timeProvider)
     : MariesWonderland.Proto.Parts.PartsService.PartsServiceBase
 {
+    private readonly TimeProvider _timeProvider = timeProvider;
+
     private const int PartsMaxLevel = 15;
 
     private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
@@ -472,7 +474,7 @@ public class PartsService(DarkMasterMemoryDatabase masterDb, UserDataStore store
             return;
         }
 
-        long now = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        long now = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
         foreach (EntityMPartsEnhancedSubStatus row in _masterDb.EntityMPartsEnhancedSubStatus)
         {
             if (row.PartsEnhancedId != enhancedRow.PartsEnhancedId || row.StatusIndex > enhancedRow.SubStatusCount)
@@ -536,7 +538,7 @@ public class PartsService(DarkMasterMemoryDatabase masterDb, UserDataStore store
                 UserId = userDb.UserId,
                 ConsumableItemId = _gameConfig.ConsumableItemIdForGold,
                 Count = amount,
-                FirstAcquisitionDatetime = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds()
+                FirstAcquisitionDatetime = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds()
             });
         }
     }

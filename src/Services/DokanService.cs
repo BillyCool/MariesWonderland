@@ -6,9 +6,10 @@ using MariesWonderland.Proto.Dokan;
 
 namespace MariesWonderland.Services;
 
-public class DokanService(UserDataStore store) : MariesWonderland.Proto.Dokan.DokanService.DokanServiceBase
+public class DokanService(UserDataStore store, TimeProvider timeProvider) : MariesWonderland.Proto.Dokan.DokanService.DokanServiceBase
 {
     private readonly UserDataStore _store = store;
+    private readonly TimeProvider _timeProvider = timeProvider;
 
     /// <summary>Marks one or more dokan story chapters as seen by the player, recording the display timestamp.</summary>
     public override Task<RegisterDokanConfirmedResponse> RegisterDokanConfirmed(RegisterDokanConfirmedRequest request, ServerCallContext context)
@@ -16,7 +17,7 @@ public class DokanService(UserDataStore store) : MariesWonderland.Proto.Dokan.Do
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
 
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
         foreach (int dokanId in request.DokanId)
         {

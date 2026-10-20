@@ -15,13 +15,13 @@ public class OmikujiServiceTests
     private const int SecondAssetId = 2002;
 
     private static OmikujiServiceImpl CreateService(DarkMasterMemoryDatabase masterDb, UserDataStore store) =>
-        new(store, masterDb);
+        new(store, masterDb, TimeProvider.System);
 
     private static DarkUserMemoryDatabase CreateUserDb() => new();
 
     private static UserDataStore CreateStore(long userId, DarkUserMemoryDatabase userDb, DarkMasterMemoryDatabase masterDb)
     {
-        var store = new UserDataStore(masterDb);
+        UserDataStore store = new(masterDb, TimeProvider.System);
         store.Set(userId, userDb);
         return store;
     }
@@ -110,7 +110,7 @@ public class OmikujiServiceTests
     public async Task OmikujiDraw_MissingMasterEntry_CreatesUserDatabasePersistsDrawAndReturnsZero()
     {
         DarkMasterMemoryDatabase masterDb = new();
-        UserDataStore store = new(masterDb);
+        UserDataStore store = new(masterDb, TimeProvider.System);
         OmikujiServiceImpl service = CreateService(masterDb, store);
 
         OmikujiDrawResponse response = await service.OmikujiDraw(

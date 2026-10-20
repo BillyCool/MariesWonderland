@@ -29,6 +29,7 @@ public static class ServiceExtensions
 
         var gameConfig = GameConfig.From(masterDb.EntityMConfig);
 
+        services.AddSingleton(TimeProvider.System);
         services.AddSingleton(masterDb);
         services.AddSingleton(gameConfig);
         services.AddSingleton<UserDataStore>();

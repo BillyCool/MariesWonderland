@@ -7,9 +7,10 @@ using MariesWonderland.Proto.Battle;
 
 namespace MariesWonderland.Services;
 
-public class BattleService(UserDataStore store) : MariesWonderland.Proto.Battle.BattleService.BattleServiceBase
+public class BattleService(UserDataStore store, TimeProvider timeProvider) : MariesWonderland.Proto.Battle.BattleService.BattleServiceBase
 {
     private readonly UserDataStore _store = store;
+    private readonly TimeProvider _timeProvider = timeProvider;
 
     /// <summary>Initializes a battle wave; currently a no-op that returns empty response.</summary>
     public override Task<StartWaveResponse> StartWave(StartWaveRequest request, ServerCallContext context)
@@ -26,7 +27,7 @@ public class BattleService(UserDataStore store) : MariesWonderland.Proto.Battle.
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
 
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
         BattleDetail? detail = request.BattleDetail;
 
         // Find the currently active quest so we can associate this battle with it.
@@ -40,7 +41,7 @@ public class BattleService(UserDataStore store) : MariesWonderland.Proto.Battle.
             UserId = userId,
             ElapsedFrameCount = request.ElapsedFrameCount,
             BattleBinary = request.BattleBinary.ToBase64(),
-            RecordedAt = DateTime.UtcNow,
+            RecordedAt = _timeProvider.GetUtcNow().UtcDateTime,
             MaxDamage = detail?.MaxDamage ?? 0,
             PlayerCostumeActiveSkillUsedCount = detail?.PlayerCostumeActiveSkillUsedCount ?? 0,
             PlayerWeaponActiveSkillUsedCount = detail?.PlayerWeaponActiveSkillUsedCount ?? 0,

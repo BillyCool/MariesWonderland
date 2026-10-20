@@ -8,12 +8,13 @@ using MariesWonderland.Proto.ConsumableItem;
 
 namespace MariesWonderland.Services;
 
-public class ConsumableItemService(DarkMasterMemoryDatabase masterDb, UserDataStore store, GameConfig gameConfig)
+public class ConsumableItemService(DarkMasterMemoryDatabase masterDb, UserDataStore store, GameConfig gameConfig, TimeProvider timeProvider)
     : MariesWonderland.Proto.ConsumableItem.ConsumableitemService.ConsumableitemServiceBase
 {
     private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
     private readonly UserDataStore _store = store;
     private readonly GameConfig _gameConfig = gameConfig;
+    private readonly TimeProvider _timeProvider = timeProvider;
 
     /// <summary>Consumes supported effect items and applies their effect to the user's state.</summary>
     public override Task<UseEffectItemResponse> UseEffectItem(UseEffectItemRequest request, ServerCallContext context)
@@ -62,7 +63,7 @@ public class ConsumableItemService(DarkMasterMemoryDatabase masterDb, UserDataSt
             return Task.FromResult(new UseEffectItemResponse());
         }
 
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
         StaminaHelper.AddStamina(userStatus, recoverAmount * request.Count, staminaCap, nowMs);
 
         userItem.Count -= request.Count;
@@ -79,6 +80,7 @@ public class ConsumableItemService(DarkMasterMemoryDatabase masterDb, UserDataSt
     {
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
         int totalGold = 0;
 
@@ -130,15 +132,15 @@ public class ConsumableItemService(DarkMasterMemoryDatabase masterDb, UserDataSt
 
         if (totalGold > 0)
         {
-            AddGold(userDb, totalGold);
+            AddGold(userDb, totalGold, nowMs);
         }
 
         return Task.FromResult(new SellResponse());
     }
 
     /// <summary>Adds gold (consumable item ID 1) to the user's inventory, creating the entry if needed.</summary>
-    private void AddGold(DarkUserMemoryDatabase userDb, int amount)
-        => PossessionHelper.Apply(userDb, PossessionType.CONSUMABLE_ITEM, _gameConfig.ConsumableItemIdForGold, amount, _masterDb);
+    private void AddGold(DarkUserMemoryDatabase userDb, int amount, long nowMs)
+        => PossessionHelper.Apply(userDb, PossessionType.CONSUMABLE_ITEM, _gameConfig.ConsumableItemIdForGold, amount, _masterDb, nowMs);
 
     private int ResolveStaminaCap(int userLevel)
         => _masterDb.EntityMUserLevel.FirstOrDefault(level => level.UserLevel == userLevel)?.MaxStamina

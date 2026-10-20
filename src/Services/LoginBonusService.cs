@@ -8,11 +8,12 @@ using MariesWonderland.Proto.LoginBonus;
 
 namespace MariesWonderland.Services;
 
-public class LoginBonusService(UserDataStore store, DarkMasterMemoryDatabase masterDb)
+public class LoginBonusService(UserDataStore store, DarkMasterMemoryDatabase masterDb, TimeProvider timeProvider)
     : MariesWonderland.Proto.LoginBonus.LoginbonusService.LoginbonusServiceBase
 {
     private readonly UserDataStore _store = store;
     private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
+    private readonly TimeProvider _timeProvider = timeProvider;
 
     /// <summary>Claims the daily login stamp reward and delivers it to the player's gift inbox.</summary>
     public override Task<ReceiveStampResponse> ReceiveStamp(Empty request, ServerCallContext context)
@@ -33,7 +34,7 @@ public class LoginBonusService(UserDataStore store, DarkMasterMemoryDatabase mas
 
         (int nextPage, int nextStamp, EntityMLoginBonusStamp stamp) = ResolveNextStamp(loginBonus);
 
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
         long expiryMs = nowMs + 30L * 24 * 60 * 60 * 1000;
 
         userDb.EntitySUserGift.Add(new EntitySUserGift

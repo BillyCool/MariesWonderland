@@ -83,8 +83,8 @@ public class CageOrnamentServiceTests
     public async Task ReceiveReward_UnknownOrnament_ReturnsEmptyWithoutCreatingUserData()
     {
         DarkMasterMemoryDatabase masterDb = CreateMasterDb();
-        UserDataStore store = new(masterDb);
-        CageOrnamentService service = new(store, masterDb);
+        UserDataStore store = new(masterDb, TimeProvider.System);
+        CageOrnamentService service = new(store, masterDb, TimeProvider.System);
 
         ReceiveRewardResponse response = await service.ReceiveReward(
             new ReceiveRewardRequest { CageOrnamentId = CageOrnamentId },
@@ -104,8 +104,8 @@ public class CageOrnamentServiceTests
             CageOrnamentRewardId = CageOrnamentRewardId
         });
 
-        UserDataStore store = new(masterDb);
-        CageOrnamentService service = new(store, masterDb);
+        UserDataStore store = new(masterDb, TimeProvider.System);
+        CageOrnamentService service = new(store, masterDb, TimeProvider.System);
 
         ReceiveRewardResponse response = await service.ReceiveReward(
             new ReceiveRewardRequest { CageOrnamentId = CageOrnamentId },
@@ -156,9 +156,9 @@ public class CageOrnamentServiceTests
 
     private static CageOrnamentService CreateService(DarkMasterMemoryDatabase masterDb, DarkUserMemoryDatabase userDb)
     {
-        UserDataStore store = new(masterDb);
+        UserDataStore store = new(masterDb, TimeProvider.System);
         store.Set(UserId, userDb);
-        return new CageOrnamentService(store, masterDb);
+        return new CageOrnamentService(store, masterDb, TimeProvider.System);
     }
 
     private static DarkMasterMemoryDatabase CreateMasterDb() => new();

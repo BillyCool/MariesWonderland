@@ -12,7 +12,7 @@ public class MovieServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(
     private const int FirstMovieId = 101;
     private const int SecondMovieId = 202;
 
-    private static MovieServiceImpl CreateService(UserDataStore store) => new(store);
+    private static MovieServiceImpl CreateService(UserDataStore store) => new(store, TimeProvider.System);
 
     [Fact]
     public async Task SaveViewedMovie_NewMovies_AddsRecordsWithCurrentTimestamp()
@@ -101,7 +101,7 @@ public class MovieServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(
     [Fact]
     public async Task SaveViewedMovie_MissingUserDatabase_CreatesUserDatabaseAndPersistsRecords()
     {
-        var store = new UserDataStore(MasterDb);
+        UserDataStore store = new(MasterDb, TimeProvider.System);
         var service = CreateService(store);
 
         await service.SaveViewedMovie(

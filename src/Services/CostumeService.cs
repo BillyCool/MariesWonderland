@@ -7,12 +7,13 @@ using MariesWonderland.Proto.Costume;
 
 namespace MariesWonderland.Services;
 
-public class CostumeService(DarkMasterMemoryDatabase masterDb, UserDataStore store, GameConfig gameConfig)
+public class CostumeService(DarkMasterMemoryDatabase masterDb, UserDataStore store, GameConfig gameConfig, TimeProvider timeProvider)
     : MariesWonderland.Proto.Costume.CostumeService.CostumeServiceBase
 {
     private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
     private readonly UserDataStore _store = store;
     private readonly GameConfig _gameConfig = gameConfig;
+    private readonly TimeProvider _timeProvider = timeProvider;
 
     /// <summary>
     /// Enhances a costume using materials: deducts materials and gold, adds EXP, recalculates level.
@@ -608,7 +609,7 @@ public class CostumeService(DarkMasterMemoryDatabase masterDb, UserDataStore sto
             {
                 UserId = userId,
                 UserCostumeUuid = request.UserCostumeUuid,
-                AcquisitionDatetime = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds(),
+                AcquisitionDatetime = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds(),
             };
             userDb.EntityIUserCostumeActiveSkill.Add(skill);
         }
@@ -759,7 +760,7 @@ public class CostumeService(DarkMasterMemoryDatabase masterDb, UserDataStore sto
             UserId = userDb.UserId,
             UserThoughtUuid = uuid,
             ThoughtId = acq.PossessionId,
-            AcquisitionDatetime = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds(),
+            AcquisitionDatetime = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds(),
         });
     }
 

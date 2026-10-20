@@ -12,7 +12,7 @@ public class AutoSaveInterceptorTests : InterceptorTestBase
     private static readonly ILogger<AutoSaveInterceptor> Logger = NullLogger<AutoSaveInterceptor>.Instance;
 
     private static AutoSaveInterceptor CreateInterceptor(UserDataStore store) =>
-        new(store, Logger);
+        new(store, Logger, TimeProvider.System);
 
     /// <summary>
     /// Verifies that the interceptor returns the continuation's response unchanged.

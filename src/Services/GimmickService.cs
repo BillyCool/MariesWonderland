@@ -9,11 +9,12 @@ using MariesWonderland.Proto.Gimmick;
 
 namespace MariesWonderland.Services;
 
-public class GimmickService(UserDataStore store, DarkMasterMemoryDatabase masterDb)
+public class GimmickService(UserDataStore store, DarkMasterMemoryDatabase masterDb, TimeProvider timeProvider)
     : MariesWonderland.Proto.Gimmick.GimmickService.GimmickServiceBase
 {
     private readonly UserDataStore _store = store;
     private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
+    private readonly TimeProvider _timeProvider = timeProvider;
 
     /// <summary>Records that the user has advanced to a gimmick sequence, preventing duplicate entries.</summary>
     public override Task<UpdateSequenceResponse> UpdateSequence(UpdateSequenceRequest request, ServerCallContext context)
@@ -41,7 +42,7 @@ public class GimmickService(UserDataStore store, DarkMasterMemoryDatabase master
     {
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
         List<GimmickReward> ornamentRewards = [];
         List<GimmickReward> sequenceClearRewards = [];
         bool isSequenceCleared = false;
@@ -111,7 +112,7 @@ public class GimmickService(UserDataStore store, DarkMasterMemoryDatabase master
                             (PossessionType)hiddenBirdReward.PossessionType,
                             hiddenBirdReward.PossessionId,
                             hiddenBirdReward.Count,
-                            _masterDb);
+                            _masterDb, nowMs);
                         ornamentRewards.Add(hiddenBirdReward);
                     }
 
@@ -129,7 +130,7 @@ public class GimmickService(UserDataStore store, DarkMasterMemoryDatabase master
                     if (importantItemId is int itemId
                         && !userDb.EntityIUserImportantItem.Any(item => item.ImportantItemId == itemId))
                     {
-                        PossessionHelper.Apply(userDb, PossessionType.IMPORTANT_ITEM, itemId, 1, _masterDb);
+                        PossessionHelper.Apply(userDb, PossessionType.IMPORTANT_ITEM, itemId, 1, _masterDb, nowMs);
                         ornamentRewards.Add(new GimmickReward
                         {
                             PossessionType = (int)PossessionType.IMPORTANT_ITEM,
@@ -154,7 +155,7 @@ public class GimmickService(UserDataStore store, DarkMasterMemoryDatabase master
     {
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
         Dictionary<int, long> conditionToQuestId = BuildConditionQuestMap();
         Dictionary<int, GimmickType> sequenceTypes = BuildSequenceTypeMap();
@@ -248,7 +249,7 @@ public class GimmickService(UserDataStore store, DarkMasterMemoryDatabase master
                 userDb.EntityIUserGimmickUnlock.Add(unlock);
             }
             unlock.IsUnlocked = true;
-            unlock.LatestVersion = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+            unlock.LatestVersion = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
         }
 
         return Task.FromResult(new UnlockResponse());
@@ -385,7 +386,7 @@ public class GimmickService(UserDataStore store, DarkMasterMemoryDatabase master
                 continue;
             }
 
-            PossessionHelper.Apply(userDb, reward.PossessionType, reward.PossessionId, reward.Count, _masterDb);
+            PossessionHelper.Apply(userDb, reward.PossessionType, reward.PossessionId, reward.Count, _masterDb, nowMs);
             rewards.Add(new GimmickReward
             {
                 PossessionType = (int)reward.PossessionType,

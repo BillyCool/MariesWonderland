@@ -9,8 +9,10 @@ using MariesWonderland.Proto.User;
 
 namespace MariesWonderland.Services;
 
-public class UserService(UserDataStore store, UserDataSeeder seeder) : MariesWonderland.Proto.User.UserService.UserServiceBase
+public class UserService(UserDataStore store, UserDataSeeder seeder, TimeProvider timeProvider) : MariesWonderland.Proto.User.UserService.UserServiceBase
 {
+    private readonly TimeProvider _timeProvider = timeProvider;
+
     public const string AndroidApiKey = "1234567890";
     public const string AndroidNonce = "Mama";
 
@@ -33,7 +35,7 @@ public class UserService(UserDataStore store, UserDataSeeder seeder) : MariesWon
         var (userId, isNew) = _store.RegisterOrGetUser(request.Uuid);
         var userDb = _store.GetOrCreate(userId);
 
-        var nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        var nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
         var deviceRecord = userDb.EntitySUserDevice.FirstOrDefault(d => d.UserId == userId);
         if (deviceRecord == null)
         {
@@ -76,7 +78,7 @@ public class UserService(UserDataStore store, UserDataSeeder seeder) : MariesWon
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
 
         EntityIUser user = userDb.EntityIUser.GetOrCreate(userId);
-        user.GameStartDatetime = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        user.GameStartDatetime = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
         return Task.FromResult(new GameStartResponse());
     }
@@ -214,7 +216,7 @@ public class UserService(UserDataStore store, UserDataSeeder seeder) : MariesWon
         RegisterUserResponse response = new()
         {
             UserId = userId,
-            Signature = $"sig_{userId}_{DateTimeOffset.UtcNow.ToUnixTimeSeconds()}"
+            Signature = $"sig_{userId}_{_timeProvider.GetUtcNow().ToUnixTimeSeconds()}"
         };
 
         return Task.FromResult(response);
@@ -255,7 +257,7 @@ public class UserService(UserDataStore store, UserDataSeeder seeder) : MariesWon
         EntityIUserProfile profile = userDb.EntityIUserProfile.GetOrCreate(userId);
 
         profile.FavoriteCostumeId = request.FavoriteCostumeId;
-        profile.FavoriteCostumeIdUpdateDatetime = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        profile.FavoriteCostumeIdUpdateDatetime = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
         return Task.FromResult(new SetUserFavoriteCostumeIdResponse());
     }
@@ -269,7 +271,7 @@ public class UserService(UserDataStore store, UserDataSeeder seeder) : MariesWon
         EntityIUserProfile profile = userDb.EntityIUserProfile.GetOrCreate(userId);
 
         profile.Message = request.Message;
-        profile.MessageUpdateDatetime = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        profile.MessageUpdateDatetime = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
         return Task.FromResult(new SetUserMessageResponse());
     }
@@ -283,7 +285,7 @@ public class UserService(UserDataStore store, UserDataSeeder seeder) : MariesWon
         EntityIUserProfile profile = userDb.EntityIUserProfile.GetOrCreate(userId);
 
         profile.Name = request.Name;
-        profile.NameUpdateDatetime = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        profile.NameUpdateDatetime = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
         return Task.FromResult(new SetUserNameResponse());
     }
@@ -310,7 +312,7 @@ public class UserService(UserDataStore store, UserDataSeeder seeder) : MariesWon
         TransferUserResponse response = new()
         {
             UserId = userId,
-            Signature = $"sig_{userId}_{DateTimeOffset.UtcNow.ToUnixTimeSeconds()}"
+            Signature = $"sig_{userId}_{_timeProvider.GetUtcNow().ToUnixTimeSeconds()}"
         };
         return Task.FromResult(response);
     }

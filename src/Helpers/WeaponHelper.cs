@@ -14,9 +14,8 @@ public static class WeaponHelper
     /// Grants a weapon to the user: creates EntityIUserWeapon, EntityIUserWeaponNote (if new),
     /// ability/skill slots, and unlocks weapon stories for the ACQUISITION condition.
     /// </summary>
-    public static void GrantWeapon(DarkUserMemoryDatabase userDb, int weaponId, DarkMasterMemoryDatabase masterDb)
+    public static void GrantWeapon(DarkUserMemoryDatabase userDb, int weaponId, DarkMasterMemoryDatabase masterDb, long nowMs)
     {
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
         string uuid = Guid.NewGuid().ToString();
 
         userDb.EntityIUserWeapon.Add(new EntityIUserWeapon

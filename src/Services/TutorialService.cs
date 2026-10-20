@@ -10,14 +10,16 @@ using MariesWonderland.Proto.Tutorial;
 
 namespace MariesWonderland.Services;
 
-public class TutorialService(UserDataStore store, DarkMasterMemoryDatabase masterDb) : MariesWonderland.Proto.Tutorial.TutorialService.TutorialServiceBase
+public class TutorialService(UserDataStore store, DarkMasterMemoryDatabase masterDb, TimeProvider timeProvider) : MariesWonderland.Proto.Tutorial.TutorialService.TutorialServiceBase
 {
+    private readonly TimeProvider _timeProvider = timeProvider;
+
     /// <summary>Advances tutorial progress, triggers starter deck creation on menu tutorials, and returns tutorial rewards.</summary>
     public override Task<SetTutorialProgressResponse> SetTutorialProgress(SetTutorialProgressRequest request, ServerCallContext context)
     {
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = store.GetOrCreate(userId);
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
         UpsertTutorialProgress(userDb, (TutorialType)request.TutorialType, request.ProgressPhase, request.ChoiceId);
 
@@ -27,7 +29,7 @@ public class TutorialService(UserDataStore store, DarkMasterMemoryDatabase maste
             CreateStarterDeck(userDb);
         }
 
-        List<TutorialChoiceReward> rewards = ApplyTutorialRewards(userDb, (TutorialType)request.TutorialType);
+        List<TutorialChoiceReward> rewards = ApplyTutorialRewards(userDb, (TutorialType)request.TutorialType, nowMs);
 
         SetTutorialProgressResponse response = new();
         response.TutorialChoiceReward.AddRange(rewards);
@@ -256,7 +258,7 @@ public class TutorialService(UserDataStore store, DarkMasterMemoryDatabase maste
     /// Grants tutorial rewards from master data keyed by tutorial type and returns the reward list
     /// for the response. Each tutorial type may grant companions, gems, items, or other possessions.
     /// </summary>
-    private List<TutorialChoiceReward> ApplyTutorialRewards(DarkUserMemoryDatabase db, TutorialType tutorialType)
+    private List<TutorialChoiceReward> ApplyTutorialRewards(DarkUserMemoryDatabase db, TutorialType tutorialType, long nowMs)
     {
         List<EntityMTutorialConsumePossessionGroup> rewardRows = [.. masterDb.EntityMTutorialConsumePossessionGroup
             .Where(r => r.TutorialType == tutorialType)];
@@ -265,7 +267,7 @@ public class TutorialService(UserDataStore store, DarkMasterMemoryDatabase maste
 
         foreach (EntityMTutorialConsumePossessionGroup row in rewardRows)
         {
-            PossessionHelper.Apply(db, row.PossessionType, row.PossessionId, row.Count, masterDb);
+            PossessionHelper.Apply(db, row.PossessionType, row.PossessionId, row.Count, masterDb, nowMs);
 
             result.Add(new TutorialChoiceReward
             {

@@ -15,7 +15,7 @@ public class DokanServiceTests
     {
         DarkUserMemoryDatabase userDb = CreateUserDb();
         UserDataStore store = CreateStore(userDb);
-        DokanServiceImpl service = new(store);
+        DokanServiceImpl service = new(store, TimeProvider.System);
 
         RegisterDokanConfirmedResponse response = await service.RegisterDokanConfirmed(
             new RegisterDokanConfirmedRequest { DokanId = { 101, 202 } },
@@ -54,7 +54,7 @@ public class DokanServiceTests
         userDb.EntityIUserDokan.Add(existing);
 
         UserDataStore store = CreateStore(userDb);
-        DokanServiceImpl service = new(store);
+        DokanServiceImpl service = new(store, TimeProvider.System);
 
         await service.RegisterDokanConfirmed(
             new RegisterDokanConfirmedRequest { DokanId = { 101, 303, 303 } },
@@ -72,8 +72,8 @@ public class DokanServiceTests
     [Fact]
     public async Task RegisterDokanConfirmed_WhenUserDatabaseDoesNotExist_CreatesItViaStore()
     {
-        UserDataStore store = new(new DarkMasterMemoryDatabase());
-        DokanServiceImpl service = new(store);
+        UserDataStore store = new(new DarkMasterMemoryDatabase(), TimeProvider.System);
+        DokanServiceImpl service = new(store, TimeProvider.System);
 
         await service.RegisterDokanConfirmed(
             new RegisterDokanConfirmedRequest { DokanId = { 404 } },
@@ -100,7 +100,7 @@ public class DokanServiceTests
         userDb.EntityIUserDokan.Add(existing);
 
         UserDataStore store = CreateStore(userDb);
-        DokanServiceImpl service = new(store);
+        DokanServiceImpl service = new(store, TimeProvider.System);
 
         await service.RegisterDokanConfirmed(
             new RegisterDokanConfirmedRequest(),
@@ -115,7 +115,7 @@ public class DokanServiceTests
 
     private static UserDataStore CreateStore(DarkUserMemoryDatabase userDb)
     {
-        UserDataStore store = new(new DarkMasterMemoryDatabase());
+        UserDataStore store = new(new DarkMasterMemoryDatabase(), TimeProvider.System);
         store.Set(UserId, userDb);
         return store;
     }

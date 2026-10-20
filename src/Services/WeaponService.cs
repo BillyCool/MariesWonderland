@@ -7,12 +7,13 @@ using MariesWonderland.Proto.Weapon;
 
 namespace MariesWonderland.Services;
 
-public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore store, GameConfig gameConfig)
+public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore store, GameConfig gameConfig, TimeProvider timeProvider)
     : MariesWonderland.Proto.Weapon.WeaponService.WeaponServiceBase
 {
     private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
     private readonly UserDataStore _store = store;
     private readonly GameConfig _gameConfig = gameConfig;
+    private readonly TimeProvider _timeProvider = timeProvider;
 
     /// <summary>
     /// Sells one or more weapons from the player's inventory, granting gold based on weapon level and any exchange medals.
@@ -24,6 +25,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
     {
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
         int totalGold = 0;
 
@@ -53,7 +55,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
             {
                 if (exchange.WeaponId == weapon.WeaponId)
                 {
-                    AddConsumableItem(userDb, exchange.ConsumableItemId, exchange.Count);
+                    AddConsumableItem(userDb, exchange.ConsumableItemId, exchange.Count, nowMs);
                 }
             }
 
@@ -66,7 +68,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
 
         if (totalGold > 0)
         {
-            AddConsumableItem(userDb, _gameConfig.ConsumableItemIdForGold, totalGold);
+            AddConsumableItem(userDb, _gameConfig.ConsumableItemIdForGold, totalGold, nowMs);
         }
 
         return Task.FromResult(new SellResponse());
@@ -198,6 +200,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
     {
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
         EntityIUserWeapon? weapon = FindWeapon(userDb, request.UserWeaponUuid);
         if (weapon == null)
@@ -242,7 +245,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
             {
                 if (exchange.WeaponId == matWeapon.WeaponId)
                 {
-                    AddConsumableItem(userDb, exchange.ConsumableItemId, exchange.Count);
+                    AddConsumableItem(userDb, exchange.ConsumableItemId, exchange.Count, nowMs);
                 }
             }
 
@@ -548,6 +551,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
     {
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
         EntityIUserWeapon? weapon = FindWeapon(userDb, request.UserWeaponUuid);
         if (weapon == null || weapon.LimitBreakCount >= _gameConfig.WeaponLimitBreakAvailableCount)
@@ -583,7 +587,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
             {
                 if (exchange.WeaponId == matWeapon.WeaponId)
                 {
-                    AddConsumableItem(userDb, exchange.ConsumableItemId, exchange.Count);
+                    AddConsumableItem(userDb, exchange.ConsumableItemId, exchange.Count, nowMs);
                 }
             }
 
@@ -883,7 +887,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
     /// <summary>
     /// Grants a consumable item to the user, creating the inventory entry if it doesn't exist yet.
     /// </summary>
-    private static void AddConsumableItem(DarkUserMemoryDatabase userDb, int itemId, int count)
+    private static void AddConsumableItem(DarkUserMemoryDatabase userDb, int itemId, int count, long nowMs)
     {
         foreach (EntityIUserConsumableItem ci in userDb.EntityIUserConsumableItem)
         {
@@ -899,7 +903,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
             UserId = userDb.UserId,
             ConsumableItemId = itemId,
             Count = count,
-            FirstAcquisitionDatetime = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds()
+            FirstAcquisitionDatetime = nowMs
         });
     }
 

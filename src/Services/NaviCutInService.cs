@@ -6,17 +6,18 @@ using MariesWonderland.Proto.NaviCutIn;
 
 namespace MariesWonderland.Services;
 
-public class NaviCutInService(UserDataStore store)
+public class NaviCutInService(UserDataStore store, TimeProvider timeProvider)
     : MariesWonderland.Proto.NaviCutIn.NavicutinService.NavicutinServiceBase
 {
     private readonly UserDataStore _store = store;
+    private readonly TimeProvider _timeProvider = timeProvider;
 
     /// <summary>Records that a navi cut-in animation has been played, so the client won't show it again.</summary>
     public override Task<RegisterPlayedResponse> RegisterPlayed(RegisterPlayedRequest request, ServerCallContext context)
     {
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
         EntityIUserNaviCutIn? record = userDb.EntityIUserNaviCutIn
             .FirstOrDefault(n => n.NaviCutInId == request.NaviCutId);

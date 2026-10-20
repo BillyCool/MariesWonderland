@@ -37,7 +37,7 @@ public class NotificationServiceTests
     [Fact]
     public async Task GetHeaderNotification_ForNewUser_ReturnsZeroCountsAndCreatesDatabase()
     {
-        UserDataStore store = new(new DarkMasterMemoryDatabase());
+        UserDataStore store = new(new DarkMasterMemoryDatabase(), TimeProvider.System);
         NotificationServiceImpl service = new(store);
 
         GetHeaderNotificationResponse response = await service.GetHeaderNotification(
@@ -75,7 +75,7 @@ public class NotificationServiceTests
 
     private static NotificationServiceImpl CreateService(DarkUserMemoryDatabase userDb)
     {
-        UserDataStore store = new(new DarkMasterMemoryDatabase());
+        UserDataStore store = new(new DarkMasterMemoryDatabase(), TimeProvider.System);
         store.Set(UserId, userDb);
         return new NotificationServiceImpl(store);
     }

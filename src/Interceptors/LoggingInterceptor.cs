@@ -17,9 +17,10 @@ namespace MariesWonderland.Interceptors;
 /// indented payloads to timestamped files in the GRPC/ directory. Large fields (DiffUserData,
 /// UserDataJson, TableName) are stripped from log output to keep console logs readable.
 /// </summary>
-public class LoggingInterceptor(ILogger<LoggingInterceptor> logger, IOptions<DevModeOptions> devMode) : Interceptor
+public class LoggingInterceptor(ILogger<LoggingInterceptor> logger, IOptions<DevModeOptions> devMode, TimeProvider timeProvider) : Interceptor
 {
     private readonly bool _writeToDisk = devMode.Value.IsGrpcDiskLogEnabled;
+    private readonly TimeProvider _timeProvider = timeProvider;
 
     private static readonly List<string> ExcludedPropertyNames = [
         nameof(AuthUserResponse.DiffUserData),
@@ -71,7 +72,7 @@ public class LoggingInterceptor(ILogger<LoggingInterceptor> logger, IOptions<Dev
         {
             string[] parts = methodName.Split('/', StringSplitOptions.RemoveEmptyEntries);
             string methodSuffix = parts.Length >= 2 ? $"{parts[^2]}_{parts[^1]}" : methodName.TrimStart('/').Replace('/', '_');
-            string timestamp = DateTime.UtcNow.ToString("yyyyMMdd_HHmmss_fff");
+            string timestamp = _timeProvider.GetUtcNow().UtcDateTime.ToString("yyyyMMdd_HHmmss_fff");
             string fileName = $"{timestamp}_{methodSuffix}.json";
 
             Directory.CreateDirectory(GrpcDirectory);
@@ -80,7 +81,7 @@ public class LoggingInterceptor(ILogger<LoggingInterceptor> logger, IOptions<Dev
             StringBuilder sb = new();
             sb.AppendLine("{");
             sb.AppendLine($"  \"method\": {JsonSerializer.Serialize(methodName)},");
-            sb.AppendLine($"  \"timestamp\": \"{DateTime.UtcNow:O}\",");
+            sb.AppendLine($"  \"timestamp\": \"{_timeProvider.GetUtcNow().UtcDateTime:O}\",");
             sb.AppendLine($"  \"request\": {SerializeFull(request)},");
             sb.AppendLine($"  \"response\": {SerializeFull(response)}");
             sb.AppendLine("}");

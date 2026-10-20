@@ -6,16 +6,17 @@ using MariesWonderland.Proto.Movie;
 
 namespace MariesWonderland.Services;
 
-public class MovieService(UserDataStore store) : MariesWonderland.Proto.Movie.MovieService.MovieServiceBase
+public class MovieService(UserDataStore store, TimeProvider timeProvider) : MariesWonderland.Proto.Movie.MovieService.MovieServiceBase
 {
     private readonly UserDataStore _store = store;
+    private readonly TimeProvider _timeProvider = timeProvider;
 
     /// <summary>Records one or more cutscenes as viewed, so the client can track which have been watched.</summary>
     public override Task<SaveViewedMovieResponse> SaveViewedMovie(SaveViewedMovieRequest request, ServerCallContext context)
     {
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
         foreach (int movieId in request.MovieId)
         {

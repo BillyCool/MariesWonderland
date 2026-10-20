@@ -12,7 +12,7 @@ public class NaviCutInServiceTests(MasterDatabaseFixture fixture) : ServiceTestB
     private const int FirstNaviCutInId = 101;
     private const int SecondNaviCutInId = 202;
 
-    private static NaviCutInServiceImpl CreateService(UserDataStore store) => new(store);
+    private static NaviCutInServiceImpl CreateService(UserDataStore store) => new(store, TimeProvider.System);
 
     [Fact]
     public async Task RegisterPlayed_NewCutIn_AddsRecordWithCurrentTimestamp()
@@ -80,7 +80,7 @@ public class NaviCutInServiceTests(MasterDatabaseFixture fixture) : ServiceTestB
     [Fact]
     public async Task RegisterPlayed_MissingUserDatabase_CreatesUserDatabaseAndPersistsRecord()
     {
-        UserDataStore store = new(MasterDb);
+        UserDataStore store = new(MasterDb, TimeProvider.System);
         NaviCutInServiceImpl service = CreateService(store);
 
         await service.RegisterPlayed(

@@ -6,17 +6,18 @@ using MariesWonderland.Proto.ContentsStory;
 
 namespace MariesWonderland.Services;
 
-public class ContentsStoryService(UserDataStore store)
+public class ContentsStoryService(UserDataStore store, TimeProvider timeProvider)
     : MariesWonderland.Proto.ContentsStory.ContentsstoryService.ContentsstoryServiceBase
 {
     private readonly UserDataStore _store = store;
+    private readonly TimeProvider _timeProvider = timeProvider;
 
     /// <summary>Records that a contents story entry has been played, tracking the play timestamp.</summary>
     public override Task<RegisterPlayedResponse> RegisterPlayed(RegisterPlayedRequest request, ServerCallContext context)
     {
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
         EntityIUserContentsStory? existing = userDb.EntityIUserContentsStory
             .FirstOrDefault(s => s.ContentsStoryId == request.ContentsStoryId);

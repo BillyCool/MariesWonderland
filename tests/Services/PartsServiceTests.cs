@@ -225,9 +225,9 @@ public class PartsServiceTests
     private static PartsService CreateService(DarkMasterMemoryDatabase masterDb, DarkUserMemoryDatabase userDb)
     {
         userDb.UserId = UserId;
-        UserDataStore store = new(masterDb);
+        UserDataStore store = new(masterDb, TimeProvider.System);
         store.Set(UserId, userDb);
-        return new PartsService(masterDb, store, new GameConfig { ConsumableItemIdForGold = GoldItemId });
+        return new PartsService(masterDb, store, new GameConfig { ConsumableItemIdForGold = GoldItemId }, TimeProvider.System);
     }
 
     private static DarkMasterMemoryDatabase CreateMasterDb() => new();

@@ -8,11 +8,12 @@ using MariesWonderland.Proto.CageOrnament;
 
 namespace MariesWonderland.Services;
 
-public class CageOrnamentService(UserDataStore store, DarkMasterMemoryDatabase masterDb)
+public class CageOrnamentService(UserDataStore store, DarkMasterMemoryDatabase masterDb, TimeProvider timeProvider)
     : MariesWonderland.Proto.CageOrnament.CageornamentService.CageornamentServiceBase
 {
     private readonly UserDataStore _store = store;
     private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
+    private readonly TimeProvider _timeProvider = timeProvider;
 
     /// <summary>
     /// Claims the ornament's reward: records the acquisition, grants the possession, and returns the reward details.
@@ -37,7 +38,7 @@ public class CageOrnamentService(UserDataStore store, DarkMasterMemoryDatabase m
 
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
         // Track the reward acquisition state.
         EntityIUserCageOrnamentReward? existing = userDb.EntityIUserCageOrnamentReward
@@ -53,7 +54,7 @@ public class CageOrnamentService(UserDataStore store, DarkMasterMemoryDatabase m
             });
         }
 
-        PossessionHelper.Apply(userDb, reward.PossessionType, reward.PossessionId, reward.Count, _masterDb);
+        PossessionHelper.Apply(userDb, reward.PossessionType, reward.PossessionId, reward.Count, _masterDb, nowMs);
 
         ReceiveRewardResponse response = new();
         response.CageOrnamentReward.Add(new CageOrnamentReward
@@ -73,7 +74,7 @@ public class CageOrnamentService(UserDataStore store, DarkMasterMemoryDatabase m
     {
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
         // Create access record if it doesn't exist
         bool exists = userDb.EntityIUserCageOrnamentReward

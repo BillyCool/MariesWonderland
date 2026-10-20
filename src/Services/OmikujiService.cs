@@ -6,17 +6,18 @@ using MariesWonderland.Proto.Omikuji;
 
 namespace MariesWonderland.Services;
 
-public class OmikujiService(UserDataStore store, DarkMasterMemoryDatabase masterDb) : MariesWonderland.Proto.Omikuji.OmikujiService.OmikujiServiceBase
+public class OmikujiService(UserDataStore store, DarkMasterMemoryDatabase masterDb, TimeProvider timeProvider) : MariesWonderland.Proto.Omikuji.OmikujiService.OmikujiServiceBase
 {
     private readonly UserDataStore _store = store;
     private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
+    private readonly TimeProvider _timeProvider = timeProvider;
 
     /// <summary>Draws a fortune (omikuji), records the draw timestamp, and returns the result asset ID.</summary>
     public override Task<OmikujiDrawResponse> OmikujiDraw(OmikujiDrawRequest request, ServerCallContext context)
     {
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
         int omikujiId = request.OmikujiId;
 

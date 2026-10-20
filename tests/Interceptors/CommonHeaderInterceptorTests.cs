@@ -6,7 +6,7 @@ namespace MariesWonderland.Tests.Interceptors;
 
 public class CommonHeaderInterceptorTests : InterceptorTestBase
 {
-    private static readonly CommonHeaderInterceptor Interceptor = new();
+    private static readonly CommonHeaderInterceptor Interceptor = new(TimeProvider.System);
 
     /// <summary>
     /// Verifies that after handling a unary call the interceptor adds the

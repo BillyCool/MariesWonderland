@@ -146,7 +146,7 @@ public class CompanionServiceTests
     private static CompanionServiceImpl CreateService(DarkMasterMemoryDatabase masterDb, DarkUserMemoryDatabase userDb)
     {
         userDb.UserId = UserId;
-        UserDataStore store = new(masterDb);
+        UserDataStore store = new(masterDb, TimeProvider.System);
         store.Set(UserId, userDb);
         return new CompanionServiceImpl(masterDb, store, new GameConfig { ConsumableItemIdForGold = GoldItemId });
     }

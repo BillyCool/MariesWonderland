@@ -10,12 +10,13 @@ using MariesWonderland.Proto.Gacha;
 
 namespace MariesWonderland.Services;
 
-public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store, GameConfig gameConfig)
+public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store, GameConfig gameConfig, TimeProvider timeProvider)
     : MariesWonderland.Proto.Gacha.GachaService.GachaServiceBase
 {
     private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
     private readonly UserDataStore _store = store;
     private readonly GameConfig _gameConfig = gameConfig;
+    private readonly TimeProvider _timeProvider = timeProvider;
 
     private const int PhaseIdMultiplier = 10;
     private const int StepUpGroupDivisor = 1000;
@@ -52,7 +53,7 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
             ObtainPossession = new ConsumableItemPossession()
         };
 
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
         foreach (GachaEntry entry in catalog)
         {
             if (entry.Medal == null || entry.EndDatetime == 0)
@@ -67,7 +68,7 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
             int conversionRate = entry.Medal.ConversionRate > 0 ? entry.Medal.ConversionRate : 1;
             int bookmarkCount = bs.MedalCount * conversionRate;
 
-            PossessionHelper.Apply(userDb, PossessionType.CONSUMABLE_ITEM, entry.Medal.ConsumableItemId, bookmarkCount, _masterDb);
+            PossessionHelper.Apply(userDb, PossessionType.CONSUMABLE_ITEM, entry.Medal.ConsumableItemId, bookmarkCount, _masterDb, nowMs);
 
             convertedMedal.ConvertedMedalPossession.Add(new ConsumableItemPossession
             {
@@ -129,7 +130,7 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
     {
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
         List<GachaEntry> catalog = BuildCatalog();
         GachaEntry? entry = null;
@@ -221,7 +222,7 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
             if (isMaterialDraw)
             {
                 // Material draws: grant material and build simple result
-                PossessionHelper.Apply(userDb, (PossessionType)item.PossessionType, item.PossessionId, 1, _masterDb);
+                PossessionHelper.Apply(userDb, (PossessionType)item.PossessionType, item.PossessionId, 1, _masterDb, nowMs);
                 bool isNew = !IsOwnedByType(item.PossessionType, item.PossessionId, ownedCostumeIds, ownedWeaponIds, userDb);
 
                 gachaResults.Add(new DrawGachaOddsItem
@@ -259,14 +260,14 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
                 }
                 else
                 {
-                    PossessionHelper.GrantCostume(userDb, item.PossessionId, _masterDb);
+                    PossessionHelper.GrantCostume(userDb, item.PossessionId, _masterDb, nowMs);
                     ownedCostumeIds.Add(item.PossessionId);
 
                     // Bonus weapon via costume->weapon pairing map
                     GachaItem bonusGachaItem = new();
                     if (costumeWeaponMap.TryGetValue(item.PossessionId, out int pairedWeaponId) && pairedWeaponId > 0)
                     {
-                        WeaponHelper.GrantWeapon(userDb, pairedWeaponId, _masterDb);
+                        WeaponHelper.GrantWeapon(userDb, pairedWeaponId, _masterDb, nowMs);
                         bonusGachaItem = new GachaItem
                         {
                             PossessionType = (int)PossessionType.WEAPON,
@@ -294,7 +295,7 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
             {
                 // Weapon
                 bool isNew = !ownedWeaponIds.Contains(item.PossessionId);
-                WeaponHelper.GrantWeapon(userDb, item.PossessionId, _masterDb);
+                WeaponHelper.GrantWeapon(userDb, item.PossessionId, _masterDb, nowMs);
                 ownedWeaponIds.Add(item.PossessionId);
 
                 gachaResults.Add(new DrawGachaOddsItem
@@ -325,7 +326,7 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
         // Grant medal consumable items (1 per draw)
         if (entry.Medal != null && medalBonus > 0)
         {
-            PossessionHelper.Apply(userDb, PossessionType.CONSUMABLE_ITEM, entry.Medal.ConsumableItemId, medalBonus, _masterDb);
+            PossessionHelper.Apply(userDb, PossessionType.CONSUMABLE_ITEM, entry.Medal.ConsumableItemId, medalBonus, _masterDb, nowMs);
         }
 
         DrawResponse response = new()
@@ -413,7 +414,7 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
     {
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
-        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
         long todayStart = StartOfDayMillis();
 
         int maxCount = _gameConfig.RewardGachaDailyMaxCount > 0 ? _gameConfig.RewardGachaDailyMaxCount : 5;
@@ -459,7 +460,7 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
         {
             EntityMMaterial mat = materials[Random.Shared.Next(materials.Count)];
             drawnItems.Add(((int)PossessionType.MATERIAL, mat.MaterialId));
-            PossessionHelper.Apply(userDb, PossessionType.MATERIAL, mat.MaterialId, 1, _masterDb);
+            PossessionHelper.Apply(userDb, PossessionType.MATERIAL, mat.MaterialId, 1, _masterDb, nowMs);
         }
 
         int newCount = currentCount + drawCount;
@@ -501,8 +502,8 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
     /// </summary>
     private List<GachaEntry> BuildCatalog()
     {
-        long startDt = DateTimeOffset.UtcNow.AddDays(-3).ToUnixTimeMilliseconds();
-        long endDt = DateTimeOffset.UtcNow.AddDays(3).ToUnixTimeMilliseconds();
+        long startDt = _timeProvider.GetUtcNow().AddDays(-3).ToUnixTimeMilliseconds();
+        long endDt = _timeProvider.GetUtcNow().AddDays(3).ToUnixTimeMilliseconds();
 
         Dictionary<int, EntityMGachaMedal> medalByGachaId = [];
         foreach (EntityMGachaMedal medal in _masterDb.EntityMGachaMedal)
@@ -1264,9 +1265,9 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
         return bs;
     }
 
-    private static long StartOfDayMillis()
+    private long StartOfDayMillis()
     {
-        DateTimeOffset now = DateTimeOffset.UtcNow;
+        DateTimeOffset now = _timeProvider.GetUtcNow();
         DateTimeOffset startOfDay = new(now.Year, now.Month, now.Day, 0, 0, 0, TimeSpan.Zero);
         return startOfDay.ToUnixTimeMilliseconds();
     }
