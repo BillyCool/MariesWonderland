@@ -13,6 +13,7 @@
   <ItemGroup>
     <Content Remove="Data\MasterData\**" />
     <Content Update="Data\UserData\**\*.json" CopyToOutputDirectory="PreserveNewest" />
+    <Content Update="Data\Custom\**\*.json" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 
   <ItemGroup>

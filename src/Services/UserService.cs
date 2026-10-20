@@ -3,13 +3,14 @@ using Grpc.Core;
 using MariesWonderland.Data;
 using MariesWonderland.Extensions;
 using MariesWonderland.Helpers;
+using MariesWonderland.Missions;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.User;
 
 namespace MariesWonderland.Services;
 
-public class UserService(UserDataStore store, UserDataSeeder seeder, DarkMasterMemoryDatabase masterDb, TimeProvider timeProvider) : MariesWonderland.Proto.User.UserService.UserServiceBase
+public class UserService(UserDataStore store, UserDataSeeder seeder, DarkMasterMemoryDatabase masterDb, MissionTracker missions, TimeProvider timeProvider) : MariesWonderland.Proto.User.UserService.UserServiceBase
 {
     private readonly TimeProvider _timeProvider = timeProvider;
 
@@ -19,6 +20,7 @@ public class UserService(UserDataStore store, UserDataSeeder seeder, DarkMasterM
     private readonly UserDataStore _store = store;
     private readonly UserDataSeeder _seeder = seeder;
     private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
+    private readonly MissionTracker _missions = missions;
 
     /// <summary>Returns Android-specific arguments (API key and nonce) for client initialization.</summary>
     public override Task<GetAndroidArgsResponse> GetAndroidArgs(GetAndroidArgsRequest request, ServerCallContext context)
@@ -78,8 +80,12 @@ public class UserService(UserDataStore store, UserDataSeeder seeder, DarkMasterM
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
 
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
         EntityIUser user = userDb.EntityIUser.GetOrCreate(userId);
-        user.GameStartDatetime = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
+        user.GameStartDatetime = nowMs;
+
+        // Missions that became available since the last session, daily restarts, state conditions.
+        _missions.Refresh(userDb, nowMs);
 
         return Task.FromResult(new GameStartResponse());
     }

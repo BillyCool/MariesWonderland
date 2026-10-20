@@ -3,17 +3,19 @@ using Grpc.Core;
 using MariesWonderland.Data;
 using MariesWonderland.Extensions;
 using MariesWonderland.Helpers;
+using MariesWonderland.Missions;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.Shop;
 
 namespace MariesWonderland.Services;
 
-public class ShopService(UserDataStore store, DarkMasterMemoryDatabase masterDb, GameConfig gameConfig, TimeProvider timeProvider) : MariesWonderland.Proto.Shop.ShopService.ShopServiceBase
+public class ShopService(UserDataStore store, DarkMasterMemoryDatabase masterDb, GameConfig gameConfig, MissionTracker missions, TimeProvider timeProvider) : MariesWonderland.Proto.Shop.ShopService.ShopServiceBase
 {
     private readonly UserDataStore _store = store;
     private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
     private readonly GameConfig _gameConfig = gameConfig;
+    private readonly MissionTracker _missions = missions;
     private readonly TimeProvider _timeProvider = timeProvider;
 
     /// <summary>Purchases shop items: deducts currency, grants item contents and effects, and updates purchase history.</summary>
@@ -244,9 +246,14 @@ public class ShopService(UserDataStore store, DarkMasterMemoryDatabase masterDb,
         PossessionHelper.Apply(userDb, possessionType, possessionId, count, _masterDb, nowMs);
     }
 
-    /// <summary>Applies side-effect content(e.g., stamina recovery) from a shop item purchase.</summary>
+    /// <summary>Applies side-effect content from a shop item purchase: granted mission groups and stamina recovery.</summary>
     private void ApplyContentEffects(DarkUserMemoryDatabase userDb, int shopItemId, int qty, long nowMs)
     {
+        foreach (EntityMShopItemContentMission contentMission in _masterDb.EntityMShopItemContentMission.Where(m => m.ShopItemId == shopItemId))
+        {
+            _missions.GrantGroup(userDb, contentMission.MissionGroupId, nowMs);
+        }
+
         List<EntityMShopItemContentEffect> effects = [.. _masterDb.EntityMShopItemContentEffect
             .Where(e => e.ShopItemId == shopItemId)];
 

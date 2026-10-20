@@ -1,0 +1,195 @@
+{
+  "_about": "Mission clear-condition filters: the server-side table the client never had, rebuilt by hand. Keyed by EntityMMission.MissionClearConditionOptionGroupId. A mission whose option group is not listed here never progresses.",
+  "optionGroups": [
+    {
+      "optionGroupId": 60001,
+      "note": "Character: 2B",
+      "characterId": 1001
+    },
+    {
+      "optionGroupId": 60002,
+      "note": "Character: 9S",
+      "characterId": 1002
+    },
+    {
+      "optionGroupId": 60003,
+      "note": "Character: A2",
+      "characterId": 1003
+    },
+    {
+      "optionGroupId": 60004,
+      "note": "Character: Levania",
+      "characterId": 1004
+    },
+    {
+      "optionGroupId": 60005,
+      "note": "Character: Argo",
+      "characterId": 1006
+    },
+    {
+      "optionGroupId": 60006,
+      "note": "Character: Dimos",
+      "characterId": 1007
+    },
+    {
+      "optionGroupId": 60007,
+      "note": "Character: Rion",
+      "characterId": 1008
+    },
+    {
+      "optionGroupId": 60008,
+      "note": "Character: Gayle",
+      "characterId": 1009
+    },
+    {
+      "optionGroupId": 60009,
+      "note": "Character: Noelle",
+      "characterId": 1010
+    },
+    {
+      "optionGroupId": 60010,
+      "note": "Character: 063y",
+      "characterId": 1011
+    },
+    {
+      "optionGroupId": 60011,
+      "note": "Character: F66x",
+      "characterId": 1012
+    },
+    {
+      "optionGroupId": 60012,
+      "note": "Character: Lars",
+      "characterId": 1013
+    },
+    {
+      "optionGroupId": 60013,
+      "note": "Character: Griff",
+      "characterId": 1014
+    },
+    {
+      "optionGroupId": 60014,
+      "note": "Character: Akeha",
+      "characterId": 1015
+    },
+    {
+      "optionGroupId": 60015,
+      "note": "Character: The World-Ender",
+      "characterId": 1016
+    },
+    {
+      "optionGroupId": 60016,
+      "note": "Character: Kainé",
+      "characterId": 1018
+    },
+    {
+      "optionGroupId": 60017,
+      "note": "Character: Emil",
+      "characterId": 1017
+    },
+    {
+      "optionGroupId": 60018,
+      "note": "Character: Fio",
+      "characterId": 1019
+    },
+    {
+      "optionGroupId": 60019,
+      "note": "Character: Saryu",
+      "characterId": 1022
+    },
+    {
+      "optionGroupId": 60020,
+      "note": "Character: Priyet",
+      "characterId": 1023
+    },
+    {
+      "optionGroupId": 60021,
+      "note": "Character: Marie",
+      "characterId": 1024
+    },
+    {
+      "optionGroupId": 60022,
+      "note": "Character: Yurie",
+      "characterId": 1025
+    },
+    {
+      "optionGroupId": 60023,
+      "note": "Character: Yudil",
+      "characterId": 1027
+    },
+    {
+      "optionGroupId": 60024,
+      "note": "Character: Sarafa",
+      "characterId": 1026
+    },
+    {
+      "optionGroupId": 60025,
+      "note": "Character: Hina",
+      "characterId": 1020
+    },
+    {
+      "optionGroupId": 60026,
+      "note": "Character: Yuzuki",
+      "characterId": 1021
+    },
+    {
+      "optionGroupId": 60027,
+      "note": "Character: Zero",
+      "characterId": 1031
+    },
+    {
+      "optionGroupId": 60028,
+      "note": "Character: Joker",
+      "characterId": 1044
+    },
+    {
+      "optionGroupId": 60029,
+      "note": "Character: Queen",
+      "characterId": 1045
+    },
+    {
+      "optionGroupId": 60030,
+      "note": "Character: Fox",
+      "characterId": 1046
+    },
+    {
+      "optionGroupId": 60031,
+      "note": "Character: Crow",
+      "characterId": 1047
+    },
+    {
+      "optionGroupId": 60032,
+      "note": "Character: 2P",
+      "characterId": 100001
+    },
+    {
+      "optionGroupId": 60033,
+      "note": "Character: 10H",
+      "characterId": 1048
+    },
+    {
+      "optionGroupId": 300001,
+      "note": "Big Hunt boss: Manifestation: Fiery Cursed God",
+      "bigHuntBossId": 1
+    },
+    {
+      "optionGroupId": 300002,
+      "note": "Big Hunt boss: Manifestation: Soggy Cursed God",
+      "bigHuntBossId": 2
+    },
+    {
+      "optionGroupId": 300003,
+      "note": "Big Hunt boss: Manifestation: Windy Cursed God",
+      "bigHuntBossId": 3
+    },
+    {
+      "optionGroupId": 300004,
+      "note": "Big Hunt boss: Manifestation: Bright Cursed God",
+      "bigHuntBossId": 4
+    },
+    {
+      "optionGroupId": 300005,
+      "note": "Big Hunt boss: Manifestation: Bleak Cursed God",
+      "bigHuntBossId": 5
+    }
+  ]
+}

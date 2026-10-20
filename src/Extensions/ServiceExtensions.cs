@@ -1,5 +1,6 @@
 using MariesWonderland.Configuration;
 using MariesWonderland.Data;
+using MariesWonderland.Missions;
 using MariesWonderland.Quests;
 
 namespace MariesWonderland.Extensions;
@@ -40,6 +41,8 @@ public static class ServiceExtensions
         services.AddScoped(provider => provider.GetRequiredService<MasterDataSnapshot>().QuestCampaigns);
         services.AddScoped(provider => provider.GetRequiredService<MasterDataSnapshot>().EnhanceCampaigns);
         services.AddScoped(provider => provider.GetRequiredService<MasterDataSnapshot>().ImportantItems);
+        services.AddScoped(provider => provider.GetRequiredService<MasterDataSnapshot>().Missions);
+        services.AddScoped<MissionTracker>();
         services.AddScoped<QuestEngine>();
         if (hotReload)
         {

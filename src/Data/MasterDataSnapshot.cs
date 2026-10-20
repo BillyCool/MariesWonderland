@@ -1,4 +1,5 @@
 using MariesWonderland.Helpers;
+using MariesWonderland.Missions;
 
 namespace MariesWonderland.Data;
 
@@ -13,17 +14,19 @@ public sealed class MasterDataSnapshot
     public QuestCampaignHelper QuestCampaigns { get; }
     public EnhanceCampaignHelper EnhanceCampaigns { get; }
     public ImportantItemEffectHelper ImportantItems { get; }
+    public MissionCatalog Missions { get; }
 
     /// <summary>The version string advertised to the client; a change makes it download the file again.</summary>
     public string Version { get; }
 
-    public MasterDataSnapshot(DarkMasterMemoryDatabase database, string version)
+    public MasterDataSnapshot(DarkMasterMemoryDatabase database, string version, MissionFilterTable? missionFilters = null)
     {
         Database = database;
         GameConfig = GameConfig.From(database.EntityMConfig);
         QuestCampaigns = new QuestCampaignHelper(database);
         EnhanceCampaigns = new EnhanceCampaignHelper(database);
         ImportantItems = new ImportantItemEffectHelper(database);
+        Missions = new MissionCatalog(database, missionFilters ?? MissionFilterTable.Empty);
         Version = version;
     }
 
@@ -36,7 +39,10 @@ public sealed class MasterDataSnapshot
         DateTimeOffset lastWrite = File.GetLastWriteTimeUtc(filePath);
         DarkMasterMemoryDatabase database = BinaryMasterDataLoader.Load(filePath);
         string version = stampFileTime ? $"{baseVersion}_{lastWrite.ToUnixTimeMilliseconds()}" : baseVersion;
-        return new MasterDataSnapshot(database, version);
+        MissionFilterTable missionFilters = File.Exists(MissionFilterTable.DefaultPath)
+            ? MissionFilterTable.Load(MissionFilterTable.DefaultPath)
+            : MissionFilterTable.Empty;
+        return new MasterDataSnapshot(database, version, missionFilters);
     }
 
     /// <summary>Strips a file-time stamp from a version the client requests, leaving the file's base version.</summary>

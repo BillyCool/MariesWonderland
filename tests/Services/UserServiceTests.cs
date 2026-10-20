@@ -1,4 +1,5 @@
 using Google.Protobuf.WellKnownTypes;
+using MariesWonderland.Missions;
 using MariesWonderland.Configuration;
 using MariesWonderland.Data;
 using MariesWonderland.Models.Entities;
@@ -18,7 +19,7 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
     {
         var options = Options.Create(new ServerOptions());
         var seeder = new UserDataSeeder(options);
-        return new UserService(store, seeder, MasterDb, TimeProvider.System);
+        return new UserService(store, seeder, MasterDb, new MissionTracker(MasterDb, new MissionCatalog(MasterDb, MissionFilterTable.Empty)), TimeProvider.System);
     }
 
     /// <summary>

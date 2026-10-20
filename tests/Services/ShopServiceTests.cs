@@ -1,4 +1,5 @@
 using Google.Protobuf.WellKnownTypes;
+using MariesWonderland.Missions;
 using MariesWonderland.Data;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
@@ -367,7 +368,7 @@ public class ShopServiceTests
     {
         UserDataStore store = new(TimeProvider.System);
         store.Set(UserId, userDb);
-        return new ShopServiceImpl(store, masterDb, gameConfig ?? new GameConfig(), timeProvider ?? TimeProvider.System);
+        return new ShopServiceImpl(store, masterDb, gameConfig ?? new GameConfig(), new MissionTracker(masterDb, new MissionCatalog(masterDb, MissionFilterTable.Empty)), timeProvider ?? TimeProvider.System);
     }
 
     private static DarkMasterMemoryDatabase CreateMasterDb() => new();
