@@ -17,4 +17,11 @@ public class EntitySQuestSession : IUserEntity
     public int HeadQuestSceneId { get; set; }
     public QuestFlowType CurrentQuestFlowType { get; set; }
     public bool IsBattleOnly { get; set; }
+
+    /// <summary>Started from the quest menu: the story position stays put and the fields below are restored at finish.</summary>
+    public bool IsMenuPick { get; set; }
+    public QuestFlowType SavedQuestFlowType { get; set; }
+    public bool SavedPortalCageInProgress { get; set; }
+    public int SavedSideStoryQuestId { get; set; }
+    public int SavedSideStoryQuestSceneId { get; set; }
 }

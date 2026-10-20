@@ -122,10 +122,12 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         }
         else if (scene != null)
         {
-            // Non-playable quests (background, cutscene, etc.) update the main flow scene position
-            ApplyMainFlowSceneProgress(userDb, userId, questSceneId, sceneContext);
-
+            // Non-playable quests (background, cutscene, etc.) update the main flow scene position,
+            // except during a menu pick, which never moves the story position.
             EntitySQuestSession? session = userDb.EntitySQuestSession.FirstOrDefault(s => s.UserId == userId && s.QuestId == scene.QuestId);
+            if (session?.IsMenuPick != true)
+                ApplyMainFlowSceneProgress(userDb, userId, questSceneId, sceneContext);
+
             if (session != null)
                 UpdateQuestSessionState(session, questSceneId, GetHeadSceneId(session.HeadQuestSceneId, questSceneId), QuestFlowType.MAIN_FLOW);
         }
@@ -240,6 +242,15 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
 
         // Ensure user quest and mission rows exist before any state transitions.
         EntityIUserQuest userQuest = _questEngine.EnsureQuestRows(userDb, questId);
+
+        if (!request.IsMainFlow)
+        {
+            StartMenuPickQuest(userDb, userId, quest, userQuest, request, nowMs);
+
+            StartMainQuestResponse menuPickResponse = new();
+            menuPickResponse.BattleDropReward.AddRange(_questEngine.BuildBattleDropRewards(questId));
+            return Task.FromResult(menuPickResponse);
+        }
 
         // Already-cleared quests start nothing new.
         if (userQuest.QuestStateType == (int)QuestStateType.CLEARED)
@@ -367,13 +378,13 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
             }
 
             MainQuestSceneContext? sceneContext = ResolveMainQuestSceneContext(restoredSceneId);
-            if (sceneContext != null)
+            if (sceneContext != null && !restartSession.IsMenuPick)
             {
                 EntityIUserMainQuestMainFlowStatus mainFlowStatus = userDb.EntityIUserMainQuestMainFlowStatus.GetOrCreate(userId);
                 ApplyMainQuestRoute(userDb, userId, mainFlowStatus, sceneContext.RouteId, sceneContext.SeasonId);
             }
         }
-        else if (restoredSceneId != 0)
+        else if (restoredSceneId != 0 && !restartSession.IsMenuPick)
         {
             flowStatus.CurrentQuestFlowType = QuestFlowType.MAIN_FLOW;
             ApplyMainFlowSceneProgress(userDb, userId, restoredSceneId, ResolveMainQuestSceneContext(restoredSceneId));
@@ -421,6 +432,9 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
             }
         }
 
+        EntitySQuestSession? finishSession = userDb.EntitySQuestSession.FirstOrDefault(s => s.UserId == userId && s.QuestId == questId);
+        bool wasMenuPick = finishSession?.IsMenuPick == true;
+
         QuestFinishResult result = _questEngine.Finish(userDb, quest, _questCampaignHelper.GetMainQuestTarget(questId), isWin, nowMs, isReplay: wasReplayFlow);
 
         if (isWin)
@@ -431,7 +445,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
             }
 
             bool isPlayableMainQuest = !quest.IsRunInTheBackground && quest.IsCountedAsQuest;
-            if (isPlayableMainQuest && !wasReplayFlow)
+            if (isPlayableMainQuest && !wasReplayFlow && !wasMenuPick)
             {
                 int lastSceneId = GetLastSceneIdForQuest(questId);
                 if (lastSceneId != 0)
@@ -453,6 +467,11 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         if (currentFlowStatus != null)
         {
             currentFlowStatus.CurrentQuestFlowType = QuestFlowType.UNKNOWN;
+        }
+
+        if (wasMenuPick)
+        {
+            RestoreMenuPickContext(userDb, userId, finishSession!, nowMs);
         }
 
         // Restore main flow state after replay
@@ -1127,6 +1146,75 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
             .Where(s => s.QuestId == questId)
             .OrderByDescending(s => s.SortOrder)
             .FirstOrDefault()?.QuestSceneId ?? 0;
+    }
+
+    /// <summary>
+    /// Starts a quest picked from the quest menu. Only the progress status points at the quest; the story
+    /// position (main-flow status, route, season) is never touched. Flow type, portal-cage and side-story
+    /// state are saved in the session and put back at finish.
+    /// </summary>
+    private void StartMenuPickQuest(DarkUserMemoryDatabase userDb, long userId, EntityMQuest? quest, EntityIUserQuest userQuest, StartMainQuestRequest request, long nowMs)
+    {
+        EntityIUserMainQuestFlowStatus flowStatus = userDb.EntityIUserMainQuestFlowStatus.GetOrCreate(userId);
+        EntityIUserPortalCageStatus portalCageStatus = userDb.EntityIUserPortalCageStatus.GetOrCreate(userId);
+        EntityIUserSideStoryQuestSceneProgressStatus sideStoryProgress = userDb.EntityIUserSideStoryQuestSceneProgressStatus.GetOrCreate(userId);
+
+        EntitySQuestSession session = GetOrCreateQuestSession(userDb, userId, request.QuestId);
+        if (!session.IsMenuPick)
+        {
+            session.IsMenuPick = true;
+            session.SavedQuestFlowType = flowStatus.CurrentQuestFlowType;
+            session.SavedPortalCageInProgress = portalCageStatus.IsCurrentProgress;
+            session.SavedSideStoryQuestId = sideStoryProgress.CurrentSideStoryQuestId;
+            session.SavedSideStoryQuestSceneId = sideStoryProgress.CurrentSideStoryQuestSceneId;
+        }
+
+        int startSceneId = _questEngine.GetQuestStartSceneId(request.QuestId, request.IsBattleOnly);
+        session.UserDeckNumber = request.UserDeckNumber;
+        session.IsBattleOnly = request.IsBattleOnly;
+        session.CurrentQuestFlowType = QuestFlowType.MAIN_FLOW;
+        session.CurrentQuestSceneId = startSceneId;
+        session.HeadQuestSceneId = startSceneId;
+
+        EntityIUserMainQuestProgressStatus progressStatus = userDb.EntityIUserMainQuestProgressStatus.GetOrCreate(userId);
+        progressStatus.CurrentQuestSceneId = startSceneId;
+        progressStatus.HeadQuestSceneId = startSceneId;
+        progressStatus.CurrentQuestFlowType = QuestFlowType.MAIN_FLOW;
+
+        portalCageStatus.IsCurrentProgress = false;
+        portalCageStatus.LatestVersion = nowMs;
+        sideStoryProgress.CurrentSideStoryQuestId = 0;
+        sideStoryProgress.CurrentSideStoryQuestSceneId = 0;
+        sideStoryProgress.LatestVersion = nowMs;
+
+        userQuest.IsBattleOnly = request.IsBattleOnly;
+        bool isPlayable = quest != null && !quest.IsRunInTheBackground && quest.IsCountedAsQuest;
+        if (isPlayable)
+        {
+            QuestEngine.MarkActive(userQuest, nowMs);
+        }
+        else if (userQuest.ClearCount == 0)
+        {
+            QuestEngine.MarkCleared(userQuest, 1, nowMs);
+        }
+
+        StartQuestAutoOrbit(userDb, userId, QuestType.MAIN_QUEST, 0, request.QuestId, request.MaxAutoOrbitCount, nowMs);
+    }
+
+    /// <summary>Puts back the flow type, portal-cage and side-story state saved when a menu pick started.</summary>
+    private static void RestoreMenuPickContext(DarkUserMemoryDatabase userDb, long userId, EntitySQuestSession session, long nowMs)
+    {
+        EntityIUserMainQuestFlowStatus flowStatus = userDb.EntityIUserMainQuestFlowStatus.GetOrCreate(userId);
+        flowStatus.CurrentQuestFlowType = session.SavedQuestFlowType;
+
+        EntityIUserPortalCageStatus portalCageStatus = userDb.EntityIUserPortalCageStatus.GetOrCreate(userId);
+        portalCageStatus.IsCurrentProgress = session.SavedPortalCageInProgress;
+        portalCageStatus.LatestVersion = nowMs;
+
+        EntityIUserSideStoryQuestSceneProgressStatus sideStoryProgress = userDb.EntityIUserSideStoryQuestSceneProgressStatus.GetOrCreate(userId);
+        sideStoryProgress.CurrentSideStoryQuestId = session.SavedSideStoryQuestId;
+        sideStoryProgress.CurrentSideStoryQuestSceneId = session.SavedSideStoryQuestSceneId;
+        sideStoryProgress.LatestVersion = nowMs;
     }
 
     private static EntitySQuestSession GetOrCreateQuestSession(DarkUserMemoryDatabase userDb, long userId, int questId)
