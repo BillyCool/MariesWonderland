@@ -203,7 +203,8 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
 
         List<QuestReward> dropRewards = ApplyDropRewards(userDb, BuildDropRewards(userDb, quest, campaignTarget, nowMs), nowMs);
         MarkCleared(userQuest, 1, nowMs);
-        _missions.RecordQuestClear(userDb, new MissionQuestEvent(campaignTarget, DeckCharacterIds(userDb, quest.QuestId)), 1, isSkipped: false, nowMs);
+        (HashSet<int> deckCharacterIds, HashSet<int> deckCostumeIds) = DeckMembers(userDb, quest.QuestId);
+        _missions.RecordQuestClear(userDb, new MissionQuestEvent(campaignTarget, deckCharacterIds, deckCostumeIds, quest.DailyClearableCount), 1, isSkipped: false, nowMs);
         if (!isReplay)
         {
             ClearQuestMissions(userDb, quest.QuestId, nowMs);
@@ -248,24 +249,25 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
         List<QuestReward> drops = ApplyDropRewards(userDb, BuildDropRewards(userDb, quest, campaignTarget, nowMs), nowMs);
         ApplyGoldReward(userDb, quest, nowMs);
         ApplyExpRewards(userDb, quest, nowMs);
-        _missions.RecordQuestClear(userDb, new MissionQuestEvent(campaignTarget, []), 1, isSkipped: true, nowMs);
+        _missions.RecordQuestClear(userDb, new MissionQuestEvent(campaignTarget, [], DailyClearableCount: quest.DailyClearableCount), 1, isSkipped: true, nowMs);
         return drops;
     }
 
     /// <summary>
-    /// The characters in the deck the quest was started with (from its session), for "with X in your loadout" missions.
-    /// Empty when the session or deck is unknown.
+    /// The characters and costumes in the deck the quest was started with (from its session), for "with X in your
+    /// loadout" missions. Both empty when the session or deck is unknown.
     /// </summary>
-    public HashSet<int> DeckCharacterIds(DarkUserMemoryDatabase userDb, int questId)
+    public (HashSet<int> CharacterIds, HashSet<int> CostumeIds) DeckMembers(DarkUserMemoryDatabase userDb, int questId)
     {
         int deckNumber = userDb.EntitySQuestSession.FirstOrDefault(s => s.QuestId == questId)?.UserDeckNumber ?? 0;
         EntityIUserDeck? deck = userDb.EntityIUserDeck.FirstOrDefault(d => d.DeckType == DeckType.QUEST && d.UserDeckNumber == deckNumber);
         if (deck == null)
         {
-            return [];
+            return ([], []);
         }
 
         HashSet<int> characterIds = [];
+        HashSet<int> costumeIds = [];
         foreach (string? deckCharacterUuid in new[] { deck.UserDeckCharacterUuid01, deck.UserDeckCharacterUuid02, deck.UserDeckCharacterUuid03 })
         {
             string? costumeUuid = userDb.EntityIUserDeckCharacter.FirstOrDefault(c => c.UserDeckCharacterUuid == deckCharacterUuid)?.UserCostumeUuid;
@@ -274,10 +276,11 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
             if (costume != null)
             {
                 characterIds.Add(costume.CharacterId);
+                costumeIds.Add(costume.CostumeId);
             }
         }
 
-        return characterIds;
+        return (characterIds, costumeIds);
     }
 
     /// <summary>

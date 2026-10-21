@@ -1,23 +1,27 @@
 using Grpc.Core;
 using MariesWonderland.Data;
 using MariesWonderland.Extensions;
+using MariesWonderland.Missions;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.CharacterBoard;
 
 namespace MariesWonderland.Services;
 
-public class CharacterBoardService(DarkMasterMemoryDatabase masterDb, UserDataStore store)
+public class CharacterBoardService(DarkMasterMemoryDatabase masterDb, UserDataStore store, MissionTracker missions, TimeProvider timeProvider)
     : MariesWonderland.Proto.CharacterBoard.CharacterboardService.CharacterboardServiceBase
 {
     private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
     private readonly UserDataStore _store = store;
+    private readonly MissionTracker _missions = missions;
+    private readonly TimeProvider _timeProvider = timeProvider;
 
     /// <summary>Unlocks character board panels: deducts material costs, sets release bits, and applies stat/ability effects.</summary>
     public override Task<ReleasePanelResponse> ReleasePanel(ReleasePanelRequest request, ServerCallContext context)
     {
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
+        Dictionary<int, int> newPanelsByGroup = [];
 
         foreach (int panelId in request.CharacterBoardPanelId)
         {
@@ -37,8 +41,21 @@ public class CharacterBoardService(DarkMasterMemoryDatabase masterDb, UserDataSt
             }
 
             ConsumeCosts(userDb, panel);
-            SetReleaseBit(userDb, panel);
+            bool isNew = SetReleaseBit(userDb, panel);
             ApplyEffects(userDb, panel);
+
+            // Only panels unlocked for the first time count for the Mythic Slab missions.
+            int groupId = _masterDb.EntityMCharacterBoard.FirstOrDefault(b => b.CharacterBoardId == panel.CharacterBoardId)?.CharacterBoardGroupId ?? 0;
+            if (isNew && groupId != 0)
+            {
+                newPanelsByGroup[groupId] = newPanelsByGroup.GetValueOrDefault(groupId) + 1;
+            }
+        }
+
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
+        foreach ((int groupId, int panels) in newPanelsByGroup)
+        {
+            _missions.RecordBoardPanels(userDb, groupId, panels, nowMs);
         }
 
         return Task.FromResult(new ReleasePanelResponse());
@@ -128,8 +145,11 @@ public class CharacterBoardService(DarkMasterMemoryDatabase masterDb, UserDataSt
         }
     }
 
-    /// <summary>Sets the release bit for a panel on the user's character board, using bitfield-packed storage (32 panels per field).</summary>
-    private static void SetReleaseBit(DarkUserMemoryDatabase userDb, EntityMCharacterBoardPanel panel)
+    /// <summary>
+    /// Sets the release bit for a panel on the user's character board, using bitfield-packed storage (32 panels per field).
+    /// Returns true when the panel wasn't released before.
+    /// </summary>
+    private static bool SetReleaseBit(DarkUserMemoryDatabase userDb, EntityMCharacterBoardPanel panel)
     {
         int boardId = panel.CharacterBoardId;
 
@@ -157,6 +177,15 @@ public class CharacterBoardService(DarkMasterMemoryDatabase masterDb, UserDataSt
         int bitPosition = (panel.SortOrder - 1) % 32;
         int mask = 1 << bitPosition;
 
+        int before = bitFieldIndex switch
+        {
+            0 => board.PanelReleaseBit1,
+            1 => board.PanelReleaseBit2,
+            2 => board.PanelReleaseBit3,
+            3 => board.PanelReleaseBit4,
+            _ => mask
+        };
+
         switch (bitFieldIndex)
         {
             case 0:
@@ -172,6 +201,8 @@ public class CharacterBoardService(DarkMasterMemoryDatabase masterDb, UserDataSt
                 board.PanelReleaseBit4 |= mask;
                 break;
         }
+
+        return (before & mask) == 0;
     }
 
     /// <summary>Applies the panel's release effects (ability unlocks or stat boosts) to the character.</summary>

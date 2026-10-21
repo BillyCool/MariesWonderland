@@ -337,7 +337,10 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
         };
         response.GachaResult.AddRange(gachaResults);
 
-        _missions.Record(userDb, MissionClearConditionType.GACHA_DRAW_BY_COUNT, response.GachaResult.Count, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
+        // A step-up banner is listed under its group id; missions name its first step's master gacha id.
+        int[] gachaIds = entry.Medal is { } medal && medal.ShopTransitionGachaId != entry.GachaId ? [entry.GachaId, medal.ShopTransitionGachaId] : [entry.GachaId];
+        int priceItemId = phase.PriceType == (int)PriceType.CONSUMABLE_ITEM ? phase.PriceId : 0;
+        _missions.RecordGachaDraw(userDb, entry.LabelType, gachaIds, isDailyFreeDraw: false, response.GachaResult.Count, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds(), priceItemId);
 
         return Task.FromResult(response);
     }
@@ -493,6 +496,12 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
                 Count = 1,
                 IsNew = !isOwned
             });
+        }
+
+        // A free daily pull counts as a draw for gacha missions (user-confirmed).
+        if (response.RewardGachaResult.Count > 0)
+        {
+            _missions.RecordGachaDraw(userDb, labelType: null, [], isDailyFreeDraw: true, 1, nowMs);
         }
 
         return Task.FromResult(response);

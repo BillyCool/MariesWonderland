@@ -171,7 +171,9 @@ public class ExploreService(UserDataStore store, DarkMasterMemoryDatabase master
             }
         }
 
-        _missions.Record(userDb, MissionClearConditionType.EXPLORE_FINISH_BY_COUNT, 1, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
+        _missions.RecordExplore(userDb, MissionClearConditionType.EXPLORE_FINISH_BY_COUNT, request.ExploreId, 1, nowMs);
+        // EXPLORE_SCORE is the score summed over runs since the mission became available.
+        _missions.RecordExplore(userDb, MissionClearConditionType.EXPLORE_SCORE, request.ExploreId, request.Score, nowMs);
 
         return Task.FromResult(response);
     }

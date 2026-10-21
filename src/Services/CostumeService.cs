@@ -320,7 +320,7 @@ public class CostumeService(DarkMasterMemoryDatabase masterDb, UserDataStore sto
 
         costume.LimitBreakCount++;
 
-        _missions.Record(userDb, MissionClearConditionType.COSTUME_LIMIT_BREAK_BY_COUNT, 1, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
+        _missions.RecordCostume(userDb, MissionClearConditionType.COSTUME_LIMIT_BREAK_BY_COUNT, costume.CostumeId, 1, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
 
         return Task.FromResult(new LimitBreakResponse());
     }
@@ -436,7 +436,7 @@ public class CostumeService(DarkMasterMemoryDatabase masterDb, UserDataStore sto
             }
         }
 
-        _missions.Record(userDb, MissionClearConditionType.COSTUME_AWAKEN_COUNT, 1, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
+        _missions.RecordCostume(userDb, MissionClearConditionType.COSTUME_AWAKEN_COUNT, costume.CostumeId, 1, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
 
         return Task.FromResult(new AwakenResponse());
     }
@@ -582,7 +582,7 @@ public class CostumeService(DarkMasterMemoryDatabase masterDb, UserDataStore sto
 
         skill.Level = currentLevel + addCount;
 
-        _missions.Record(userDb, MissionClearConditionType.COSTUME_ACTIVE_SKILL_ENHANCE_BY_COUNT, 1, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
+        _missions.RecordCostume(userDb, MissionClearConditionType.COSTUME_ACTIVE_SKILL_ENHANCE_BY_COUNT, costume.CostumeId, 1, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
 
         return Task.FromResult(new EnhanceActiveSkillResponse());
     }

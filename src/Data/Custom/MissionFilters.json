@@ -1,6 +1,53 @@
 {
-  "_about": "Mission clear-condition filters: the server-side table the client never had, rebuilt by hand. Keyed by EntityMMission.MissionClearConditionOptionGroupId. A mission whose option group is not listed here never progresses.",
+  "_about": "Mission clear-condition filters: the server-side table the client never had, rebuilt by hand. Keyed by EntityMMission.MissionClearConditionOptionGroupId, or by missionId for a mission that shares an option group but counts something else (a mission entry wins). A mission whose option group is not listed here never progresses.",
   "optionGroups": [
+    {
+      "optionGroupId": 2,
+      "note": "Purchase something in the item shop (+10 more)",
+      "shopType": "ITEM_SHOP"
+    },
+    {
+      "optionGroupId": 3,
+      "note": "Get rank A in Shooting (+7 more)",
+      "exploreIds": [
+        1
+      ]
+    },
+    {
+      "optionGroupId": 4,
+      "note": "Clear a main quest (+27 more)",
+      "questType": "MAIN_QUEST"
+    },
+    {
+      "optionGroupId": 5,
+      "note": "Clear 3 subquests (+29 more)",
+      "eventQuestTypes": [
+        "MARATHON",
+        "HUNT",
+        "DUNGEON",
+        "DAY_OF_THE_WEEK",
+        "GUERRILLA",
+        "CHARACTER",
+        "PORTAL_CAGE",
+        "SPECIAL",
+        "TOWER",
+        "LABYRINTH"
+      ]
+    },
+    {
+      "optionGroupId": 6,
+      "note": "Clear Quest 1 of Main Quest Chapter 4",
+      "questIds": [
+        32
+      ]
+    },
+    {
+      "optionGroupId": 7,
+      "note": "Get rank A in Flying Mama (+5 more)",
+      "exploreIds": [
+        2
+      ]
+    },
     {
       "optionGroupId": 8,
       "note": "Main quests on hard",
@@ -8,9 +55,1219 @@
       "difficulty": "HARD"
     },
     {
+      "optionGroupId": 9,
+      "note": "Clear main quests on Hard or Very Hard 5 times (+3 more)",
+      "difficulties": [
+        "HARD",
+        "VERY_HARD"
+      ],
+      "questType": "MAIN_QUEST"
+    },
+    {
+      "optionGroupId": 10,
+      "note": "Clear story quest 1-1",
+      "questIds": [
+        2
+      ]
+    },
+    {
+      "optionGroupId": 11,
+      "note": "Clear story quest 2-2",
+      "questIds": [
+        13
+      ]
+    },
+    {
+      "optionGroupId": 12,
+      "note": "Clear Chapter 3 on Hard: Sand (JP text only)",
+      "questIds": [
+        31
+      ]
+    },
+    {
+      "optionGroupId": 13,
+      "note": "Clear The Sun II: Noontide Quest 1",
+      "questIds": [
+        315
+      ]
+    },
+    {
+      "optionGroupId": 14,
+      "note": "Clear The Sun II: Noontide Quest 4",
+      "questIds": [
+        318
+      ]
+    },
+    {
+      "optionGroupId": 15,
+      "note": "Clear The Sun II: Noontide Quest 7",
+      "questIds": [
+        321
+      ]
+    },
+    {
+      "optionGroupId": 16,
+      "note": "Clear The Sun II: Noontide Quest 10",
+      "questIds": [
+        324
+      ]
+    },
+    {
+      "optionGroupId": 17,
+      "note": "Clear The Moon II: Eventide Quest 1",
+      "questIds": [
+        415
+      ]
+    },
+    {
+      "optionGroupId": 18,
+      "note": "Clear The Moon II: Eventide Quest 4",
+      "questIds": [
+        418
+      ]
+    },
+    {
+      "optionGroupId": 19,
+      "note": "Clear The Moon II: Eventide Quest 7",
+      "questIds": [
+        421
+      ]
+    },
+    {
+      "optionGroupId": 20,
+      "note": "Clear The Moon II: Eventide Quest 10",
+      "questIds": [
+        424
+      ]
+    },
+    {
+      "optionGroupId": 21,
+      "note": "Complete character quest 1 for Priyet",
+      "questIds": [
+        120131
+      ]
+    },
+    {
+      "optionGroupId": 22,
+      "note": "Complete character quest 4 for Priyet",
+      "questIds": [
+        120134
+      ]
+    },
+    {
+      "optionGroupId": 23,
+      "note": "Complete character quest 7 for Priyet",
+      "questIds": [
+        120137
+      ]
+    },
+    {
+      "optionGroupId": 24,
+      "note": "Complete character quest 10 for Priyet",
+      "questIds": [
+        120140
+      ]
+    },
+    {
+      "optionGroupId": 25,
+      "note": "Clear Quest 1 of Chapter 4: Flowing Water on Hard",
+      "questIds": [
+        10025
+      ]
+    },
+    {
+      "optionGroupId": 26,
+      "note": "Reach rank S in Shooting (Hard) (+1 more)",
+      "exploreIds": [
+        11
+      ]
+    },
+    {
+      "optionGroupId": 27,
+      "note": "Reach rank S in Flying Mama (Hard) (+1 more)",
+      "exploreIds": [
+        12
+      ]
+    },
+    {
+      "optionGroupId": 28,
+      "note": "Reach a score of 100000 in Shooting. (+2 more)",
+      "exploreIds": [
+        1
+      ]
+    },
+    {
+      "optionGroupId": 29,
+      "note": "Reach a score of 100000 in Flying Mama (+3 more)",
+      "exploreIds": [
+        2
+      ]
+    },
+    {
+      "optionGroupId": 31,
+      "note": "Clear Hard Exploration 1 time",
+      "exploreIds": [
+        11,
+        12
+      ]
+    },
+    {
+      "optionGroupId": 32,
+      "note": "Clear Quest 1 of The Sun III: Twilight",
+      "questIds": [
+        325
+      ]
+    },
+    {
+      "optionGroupId": 33,
+      "note": "Clear Quest 4 of The Sun III: Twilight",
+      "questIds": [
+        328
+      ]
+    },
+    {
+      "optionGroupId": 34,
+      "note": "Clear Quest 7 of The Sun III: Twilight",
+      "questIds": [
+        331
+      ]
+    },
+    {
+      "optionGroupId": 35,
+      "note": "Clear Quest 10 of The Sun III: Twilight",
+      "questIds": [
+        334
+      ]
+    },
+    {
+      "optionGroupId": 36,
+      "note": "Clear Quest 1 of The Moon III: Daybreak",
+      "questIds": [
+        425
+      ]
+    },
+    {
+      "optionGroupId": 37,
+      "note": "Clear Quest 4 of The Moon III: Daybreak",
+      "questIds": [
+        428
+      ]
+    },
+    {
+      "optionGroupId": 38,
+      "note": "Clear Quest 7 of The Moon III: Daybreak",
+      "questIds": [
+        431
+      ]
+    },
+    {
+      "optionGroupId": 39,
+      "note": "Clear Quest 10 of The Moon III: Daybreak",
+      "questIds": [
+        434
+      ]
+    },
+    {
+      "optionGroupId": 40,
+      "note": "Complete character quest 1 for Marie",
+      "questIds": [
+        120141
+      ]
+    },
+    {
+      "optionGroupId": 41,
+      "note": "Complete character quest 4 for Marie",
+      "questIds": [
+        120144
+      ]
+    },
+    {
+      "optionGroupId": 42,
+      "note": "Complete character quest 7 for Marie",
+      "questIds": [
+        120147
+      ]
+    },
+    {
+      "optionGroupId": 43,
+      "note": "Complete character quest 10 for Marie",
+      "questIds": [
+        120150
+      ]
+    },
+    {
+      "optionGroupId": 44,
+      "note": "Clear The Moon IV: The Gloaming Quest 1",
+      "questIds": [
+        341
+      ]
+    },
+    {
+      "optionGroupId": 45,
+      "note": "Clear The Moon IV: The Gloaming Quest 4",
+      "questIds": [
+        344
+      ]
+    },
+    {
+      "optionGroupId": 46,
+      "note": "Clear The Moon IV: The Gloaming Quest 7",
+      "questIds": [
+        347
+      ]
+    },
+    {
+      "optionGroupId": 47,
+      "note": "Clear The Moon IV: The Gloaming Quest 10",
+      "questIds": [
+        350
+      ]
+    },
+    {
+      "optionGroupId": 48,
+      "note": "Clear The Sun IV: The Dawn Quest 1",
+      "questIds": [
+        441
+      ]
+    },
+    {
+      "optionGroupId": 49,
+      "note": "Clear The Sun IV: The Dawn Quest 4",
+      "questIds": [
+        444
+      ]
+    },
+    {
+      "optionGroupId": 50,
+      "note": "Clear The Sun IV: The Dawn Quest 7",
+      "questIds": [
+        447
+      ]
+    },
+    {
+      "optionGroupId": 51,
+      "note": "Clear The Sun IV: The Dawn Quest 10",
+      "questIds": [
+        450
+      ]
+    },
+    {
+      "optionGroupId": 52,
+      "note": "Complete character quest 1 for Yurie",
+      "questIds": [
+        120151
+      ]
+    },
+    {
+      "optionGroupId": 53,
+      "note": "Complete character quest 4 for Yurie",
+      "questIds": [
+        120154
+      ]
+    },
+    {
+      "optionGroupId": 54,
+      "note": "Complete character quest 7 for Yurie",
+      "questIds": [
+        120157
+      ]
+    },
+    {
+      "optionGroupId": 55,
+      "note": "Complete character quest 10 for Yurie",
+      "questIds": [
+        120160
+      ]
+    },
+    {
+      "optionGroupId": 56,
+      "note": "Clear The Moon V: Eventide Quest 1",
+      "questIds": [
+        351
+      ]
+    },
+    {
+      "optionGroupId": 57,
+      "note": "Clear The Moon V: Eventide Quest 4",
+      "questIds": [
+        354
+      ]
+    },
+    {
+      "optionGroupId": 58,
+      "note": "Clear The Moon V: Eventide Quest 7",
+      "questIds": [
+        357
+      ]
+    },
+    {
+      "optionGroupId": 59,
+      "note": "Clear The Moon V: Eventide Quest 9",
+      "questIds": [
+        359
+      ]
+    },
+    {
+      "optionGroupId": 60,
+      "note": "Clear The Moon V: Eventide Quest 10",
+      "questIds": [
+        360
+      ]
+    },
+    {
+      "optionGroupId": 61,
+      "note": "Clear The Sun V: Noontide Quest 1",
+      "questIds": [
+        451
+      ]
+    },
+    {
+      "optionGroupId": 62,
+      "note": "Clear The Sun V: Noontide Quest 4",
+      "questIds": [
+        454
+      ]
+    },
+    {
+      "optionGroupId": 63,
+      "note": "Clear The Sun V: Noontide Quest 7",
+      "questIds": [
+        457
+      ]
+    },
+    {
+      "optionGroupId": 64,
+      "note": "Clear The Sun V: Noontide Quest 9",
+      "questIds": [
+        459
+      ]
+    },
+    {
+      "optionGroupId": 65,
+      "note": "Clear The Sun V: Noontide Quest 10",
+      "questIds": [
+        460
+      ]
+    },
+    {
+      "optionGroupId": 66,
+      "note": "Complete character quest 1 for Yudil",
+      "questIds": [
+        120161
+      ]
+    },
+    {
+      "optionGroupId": 67,
+      "note": "Complete character quest 4 for Yudil",
+      "questIds": [
+        120164
+      ]
+    },
+    {
+      "optionGroupId": 68,
+      "note": "Complete character quest 7 for Yudil",
+      "questIds": [
+        120167
+      ]
+    },
+    {
+      "optionGroupId": 69,
+      "note": "Complete character quest 10 for Yudil",
+      "questIds": [
+        120170
+      ]
+    },
+    {
+      "optionGroupId": 70,
+      "note": "Clear 5 subquests (+5 more)",
+      "eventQuestTypes": [
+        "MARATHON",
+        "HUNT",
+        "DUNGEON",
+        "DAY_OF_THE_WEEK",
+        "GUERRILLA",
+        "CHARACTER",
+        "PORTAL_CAGE",
+        "SPECIAL",
+        "TOWER",
+        "LABYRINTH"
+      ]
+    },
+    {
       "optionGroupId": 71,
       "note": "Dark Memory quests",
       "eventQuestType": "END_CONTENTS"
+    },
+    {
+      "optionGroupId": 72,
+      "note": "Clear The Moon Ⅵ: Daybreak Quest 1",
+      "questIds": [
+        361
+      ]
+    },
+    {
+      "optionGroupId": 73,
+      "note": "Clear The Moon Ⅵ: Daybreak Quest 4",
+      "questIds": [
+        364
+      ]
+    },
+    {
+      "optionGroupId": 74,
+      "note": "Clear The Moon Ⅵ: Daybreak Quest 7",
+      "questIds": [
+        367
+      ]
+    },
+    {
+      "optionGroupId": 75,
+      "note": "Clear The Moon Ⅵ: Daybreak Quest 9",
+      "questIds": [
+        369
+      ]
+    },
+    {
+      "optionGroupId": 76,
+      "note": "Clear The Sun Ⅵ: Twilight Quest 1",
+      "questIds": [
+        461
+      ]
+    },
+    {
+      "optionGroupId": 77,
+      "note": "Clear The Sun Ⅵ: Twilight Quest 4",
+      "questIds": [
+        464
+      ]
+    },
+    {
+      "optionGroupId": 78,
+      "note": "Clear The Sun Ⅵ: Twilight Quest 7",
+      "questIds": [
+        467
+      ]
+    },
+    {
+      "optionGroupId": 79,
+      "note": "Clear The Sun Ⅵ: Twilight Quest 9",
+      "questIds": [
+        469
+      ]
+    },
+    {
+      "optionGroupId": 80,
+      "note": "Complete character quest 1 for Sarafa",
+      "questIds": [
+        120171
+      ]
+    },
+    {
+      "optionGroupId": 81,
+      "note": "Complete character quest 4 for Sarafa",
+      "questIds": [
+        120174
+      ]
+    },
+    {
+      "optionGroupId": 82,
+      "note": "Complete character quest 7 for Sarafa",
+      "questIds": [
+        120177
+      ]
+    },
+    {
+      "optionGroupId": 83,
+      "note": "Complete character quest 10 for Sarafa",
+      "questIds": [
+        120180
+      ]
+    },
+    {
+      "optionGroupId": 84,
+      "note": "Clear 1 Daily Challenge (+2 more)",
+      "eventQuestType": "PORTAL_CAGE"
+    },
+    {
+      "optionGroupId": 85,
+      "note": "Clear character quest 3 times (+2 more)",
+      "eventQuestType": "CHARACTER"
+    },
+    {
+      "optionGroupId": 86,
+      "note": "Clear 1 Recollections of Dusk Quests (+2 more)",
+      "eventQuestType": "LIMIT_CONTENT"
+    },
+    {
+      "optionGroupId": 101,
+      "note": "Clear Main Quest: Chapter 1 (+1 more)",
+      "questIds": [
+        11
+      ]
+    },
+    {
+      "optionGroupId": 102,
+      "note": "Clear Main Quest: Chapter 2 (+2 more)",
+      "questIds": [
+        21
+      ]
+    },
+    {
+      "optionGroupId": 103,
+      "note": "Clear Main Quest: Chapter 3 (+2 more)",
+      "questIds": [
+        31
+      ]
+    },
+    {
+      "optionGroupId": 104,
+      "note": "Clear Main Quest: Chapter 4 (+1 more)",
+      "questIds": [
+        41
+      ]
+    },
+    {
+      "optionGroupId": 105,
+      "note": "Clear Main Quest: Chapter 5 (+1 more)",
+      "questIds": [
+        51
+      ]
+    },
+    {
+      "optionGroupId": 106,
+      "note": "Clear Main Quest: Chapter 6 (+2 more)",
+      "questIds": [
+        61
+      ]
+    },
+    {
+      "optionGroupId": 107,
+      "note": "Clear Main Quest: Chapter 7 (+1 more)",
+      "questIds": [
+        71
+      ]
+    },
+    {
+      "optionGroupId": 108,
+      "note": "Clear Main Quest: Chapter 8 (+1 more)",
+      "questIds": [
+        81
+      ]
+    },
+    {
+      "optionGroupId": 109,
+      "note": "Clear Main Quest Ch 9 on Normal (+1 more)",
+      "questIds": [
+        91
+      ]
+    },
+    {
+      "optionGroupId": 110,
+      "note": "Clear Main Quest Ch 10 on Normal",
+      "questIds": [
+        101
+      ]
+    },
+    {
+      "optionGroupId": 111,
+      "note": "Clear Main Quest Ch 11 on Normal",
+      "questIds": [
+        111
+      ]
+    },
+    {
+      "optionGroupId": 112,
+      "note": "Clear Main Quest Ch 12 on Normal (+2 more)",
+      "questIds": [
+        121
+      ]
+    },
+    {
+      "optionGroupId": 113,
+      "note": "-",
+      "questIds": [
+        314
+      ]
+    },
+    {
+      "optionGroupId": 114,
+      "note": "-",
+      "questIds": [
+        414
+      ]
+    },
+    {
+      "optionGroupId": 115,
+      "note": "-",
+      "questIds": [
+        324
+      ]
+    },
+    {
+      "optionGroupId": 116,
+      "note": "-",
+      "questIds": [
+        424
+      ]
+    },
+    {
+      "optionGroupId": 117,
+      "note": "-",
+      "questIds": [
+        334
+      ]
+    },
+    {
+      "optionGroupId": 118,
+      "note": "-",
+      "questIds": [
+        434
+      ]
+    },
+    {
+      "optionGroupId": 119,
+      "note": "-",
+      "questIds": [
+        350
+      ]
+    },
+    {
+      "optionGroupId": 120,
+      "note": "-",
+      "questIds": [
+        450
+      ]
+    },
+    {
+      "optionGroupId": 121,
+      "note": "Clear The Moon V: Eventide on Normal",
+      "questIds": [
+        360
+      ]
+    },
+    {
+      "optionGroupId": 122,
+      "note": "Clear The Sun V: Noontide on Normal",
+      "questIds": [
+        460
+      ]
+    },
+    {
+      "optionGroupId": 123,
+      "note": "Clear The Moon Ⅵ: Daybreak Quest 10 (Normal) (+1 more)",
+      "questIds": [
+        370
+      ]
+    },
+    {
+      "optionGroupId": 124,
+      "note": "Clear The Sun Ⅵ: Twilight Quest 10 (Normal) (+1 more)",
+      "questIds": [
+        470
+      ]
+    },
+    {
+      "optionGroupId": 125,
+      "note": "Clear Overture I: Indigo on Normal",
+      "questIds": [
+        507
+      ]
+    },
+    {
+      "optionGroupId": 126,
+      "note": "Clear Overture II: Scarlet Quest 7 (Normal) (+1 more)",
+      "questIds": [
+        514
+      ]
+    },
+    {
+      "optionGroupId": 127,
+      "note": "Clear Overture III: Emerald on Normal",
+      "questIds": [
+        521
+      ]
+    },
+    {
+      "optionGroupId": 128,
+      "note": "Clear Overture IV: Amber on Normal",
+      "questIds": [
+        529
+      ]
+    },
+    {
+      "optionGroupId": 129,
+      "note": "Clear Act II: The Return on Normal",
+      "questIds": [
+        536
+      ]
+    },
+    {
+      "optionGroupId": 130,
+      "note": "Clear Act III: Transmigration Quest 7 (Normal) (+1 more)",
+      "questIds": [
+        546
+      ]
+    },
+    {
+      "optionGroupId": 131,
+      "note": "Clear Finale: Reincarnation on Normal",
+      "questIds": [
+        550
+      ]
+    },
+    {
+      "optionGroupId": 193,
+      "note": "Clear a Normal event quest",
+      "difficulty": "NORMAL",
+      "questType": "EVENT_QUEST"
+    },
+    {
+      "optionGroupId": 194,
+      "note": "Clear a Hard event quest",
+      "difficulty": "HARD",
+      "questType": "EVENT_QUEST"
+    },
+    {
+      "optionGroupId": 195,
+      "note": "Clear a Very Hard event quest",
+      "difficulty": "VERY_HARD",
+      "questType": "EVENT_QUEST"
+    },
+    {
+      "optionGroupId": 196,
+      "note": "Clear 10 event quests (+5 more)",
+      "questType": "EVENT_QUEST"
+    },
+    {
+      "missionId": 30901,
+      "note": "Clear Record: Den of Madness 50 time(s) (shares option group 196)",
+      "eventQuestChapterId": 501
+    },
+    {
+      "optionGroupId": 197,
+      "note": "Reach level 10 with Gayle (Guardian Hunter) (+4 more)",
+      "costumeIds": [
+        25002
+      ]
+    },
+    {
+      "optionGroupId": 198,
+      "note": "Enhance Gayle (Guardian Hunter)'s skills 4 times (+1 more)",
+      "costumeIds": [
+        25002
+      ]
+    },
+    {
+      "optionGroupId": 199,
+      "note": "Ascend Gayle (Guardian Hunter) 1 time (+3 more)",
+      "costumeIds": [
+        25002
+      ]
+    },
+    {
+      "optionGroupId": 200,
+      "note": "Reach level 10 with Desolate Loss (+3 more)",
+      "weaponIds": [
+        250011,
+        250012
+      ]
+    },
+    {
+      "optionGroupId": 201,
+      "note": "Enhance Desolate Loss's weapon skills 10 times (+1 more)",
+      "weaponIds": [
+        250011,
+        250012
+      ]
+    },
+    {
+      "optionGroupId": 202,
+      "note": "Ascend Desolate Loss 1 time (+3 more)",
+      "weaponIds": [
+        250011,
+        250012
+      ]
+    },
+    {
+      "optionGroupId": 203,
+      "note": "Evolve Desolate Loss",
+      "weaponIds": [
+        250011
+      ]
+    },
+    {
+      "optionGroupId": 204,
+      "note": "Clear 10 event quests (+7 more)",
+      "questType": "EVENT_QUEST"
+    },
+    {
+      "missionId": 31903,
+      "note": "Clear Variation: Aurora Dynast quest 30 times (shares option group 204)",
+      "eventQuestChapterId": 300
+    },
+    {
+      "missionId": 31904,
+      "note": "Clear Variation: Aurora Dynast quest 50 times (shares option group 204)",
+      "eventQuestChapterId": 300
+    },
+    {
+      "missionId": 31905,
+      "note": "Clear Variation: Aurora Dynast quest 100 times (shares option group 204)",
+      "eventQuestChapterId": 300
+    },
+    {
+      "optionGroupId": 205,
+      "note": "Reach level 10 with Blackbird Dagger (+5 more)",
+      "weaponIds": [
+        340031,
+        340032
+      ]
+    },
+    {
+      "optionGroupId": 206,
+      "note": "Enhance Blackbird Dagger skills 10 times (+1 more)",
+      "weaponIds": [
+        340031,
+        340032
+      ]
+    },
+    {
+      "optionGroupId": 207,
+      "note": "Ascend Blackbird Dagger 1 time (+3 more)",
+      "weaponIds": [
+        340031,
+        340032
+      ]
+    },
+    {
+      "optionGroupId": 208,
+      "note": "Evolve Blackbird Dagger",
+      "weaponIds": [
+        340031
+      ]
+    },
+    {
+      "optionGroupId": 209,
+      "note": "Reach level 10 with Dark Revolver (+4 more)",
+      "weaponIds": [
+        250141,
+        250142
+      ]
+    },
+    {
+      "optionGroupId": 210,
+      "note": "Enhance Dark Revolver skills 10 times (+1 more)",
+      "weaponIds": [
+        250141,
+        250142
+      ]
+    },
+    {
+      "optionGroupId": 211,
+      "note": "Ascend Dark Revolver 1 time (+3 more)",
+      "weaponIds": [
+        250141,
+        250142
+      ]
+    },
+    {
+      "optionGroupId": 212,
+      "note": "Evolve Dark Revolver",
+      "weaponIds": [
+        250141
+      ]
+    },
+    {
+      "optionGroupId": 213,
+      "note": "Clear a Normal event quest",
+      "difficulty": "NORMAL",
+      "questType": "EVENT_QUEST"
+    },
+    {
+      "optionGroupId": 214,
+      "note": "Clear a Hard event quest",
+      "difficulty": "HARD",
+      "questType": "EVENT_QUEST"
+    },
+    {
+      "optionGroupId": 215,
+      "note": "Clear a Very Hard event quest",
+      "difficulty": "VERY_HARD",
+      "questType": "EVENT_QUEST"
+    },
+    {
+      "optionGroupId": 216,
+      "note": "Clear 10 event quests (+4 more)",
+      "questType": "EVENT_QUEST"
+    },
+    {
+      "optionGroupId": 217,
+      "note": "Reach level 10 with Argo (Guardian Traveler) (+4 more)",
+      "costumeIds": [
+        22003
+      ]
+    },
+    {
+      "optionGroupId": 218,
+      "note": "Enhance Argo's (Guardian Traveler) skills 4 times (+1 more)",
+      "costumeIds": [
+        22003
+      ]
+    },
+    {
+      "optionGroupId": 219,
+      "note": "Ascend Argo (Guardian Traveler) 1 time (+3 more)",
+      "costumeIds": [
+        22003
+      ]
+    },
+    {
+      "optionGroupId": 220,
+      "note": "Reach level 10 with Spear of Freezing Mist (+3 more)",
+      "weaponIds": [
+        220061,
+        220062
+      ]
+    },
+    {
+      "optionGroupId": 221,
+      "note": "Enhance Spear of Freezing Mist's weapon skills 1 time (+2 more)",
+      "weaponIds": [
+        220061,
+        220062
+      ]
+    },
+    {
+      "optionGroupId": 222,
+      "note": "Ascend Spear of Freezing Mist 1 time (+3 more)",
+      "weaponIds": [
+        220061,
+        220062
+      ]
+    },
+    {
+      "optionGroupId": 224,
+      "note": "Clear 10 event quests (+11 more)",
+      "questType": "EVENT_QUEST"
+    },
+    {
+      "missionId": 33002,
+      "note": "Clear Variation: B. Resentful Witch 200 times (shares option group 224)",
+      "eventQuestChapterId": 301
+    },
+    {
+      "missionId": 33003,
+      "note": "Clear Variation: B. Resentful Witch 250 times (shares option group 224)",
+      "eventQuestChapterId": 301
+    },
+    {
+      "missionId": 33004,
+      "note": "Clear Variation: B. Resentful Witch 300 times (shares option group 224)",
+      "eventQuestChapterId": 301
+    },
+    {
+      "missionId": 33005,
+      "note": "Clear Variation: B. Resentful Witch 400 times (shares option group 224)",
+      "eventQuestChapterId": 301
+    },
+    {
+      "missionId": 33006,
+      "note": "Clear Variation: B. Resentful Witch 500 times (shares option group 224)",
+      "eventQuestChapterId": 301
+    },
+    {
+      "missionId": 33007,
+      "note": "Clear Variation: B. Resentful Witch 700 times (shares option group 224)",
+      "eventQuestChapterId": 301
+    },
+    {
+      "optionGroupId": 225,
+      "note": "Reach level 10 with Blackbird Gauntlets (+4 more)",
+      "weaponIds": [
+        310131,
+        310132
+      ]
+    },
+    {
+      "optionGroupId": 226,
+      "note": "Reach level 10 with Dark Spear (+4 more)",
+      "weaponIds": [
+        220071,
+        220072
+      ]
+    },
+    {
+      "optionGroupId": 227,
+      "note": "Enhance Blackbird Gauntlet's skills 1 time (+2 more)",
+      "weaponIds": [
+        310131,
+        310132
+      ]
+    },
+    {
+      "optionGroupId": 228,
+      "note": "Enhance Dark Spear's skills 1 time (+2 more)",
+      "weaponIds": [
+        220071,
+        220072
+      ]
+    },
+    {
+      "optionGroupId": 229,
+      "note": "Ascend Blackbird Gauntlets 1 time (+3 more)",
+      "weaponIds": [
+        310131,
+        310132
+      ]
+    },
+    {
+      "optionGroupId": 230,
+      "note": "Ascend Dark Spear 1 time (+3 more)",
+      "weaponIds": [
+        220071,
+        220072
+      ]
+    },
+    {
+      "optionGroupId": 233,
+      "note": "Clear a Normal event quest",
+      "difficulty": "NORMAL",
+      "questType": "EVENT_QUEST"
+    },
+    {
+      "optionGroupId": 234,
+      "note": "Clear a Hard event quest",
+      "difficulty": "HARD",
+      "questType": "EVENT_QUEST"
+    },
+    {
+      "optionGroupId": 235,
+      "note": "Clear a Very Hard event quest",
+      "difficulty": "VERY_HARD",
+      "questType": "EVENT_QUEST"
+    },
+    {
+      "optionGroupId": 236,
+      "note": "Clear 10 event quests (+4 more)",
+      "questType": "EVENT_QUEST"
+    },
+    {
+      "optionGroupId": 237,
+      "note": "Reach level 10 with Dimos (Guardian Gunman) (+4 more)",
+      "costumeIds": [
+        25003
+      ]
+    },
+    {
+      "optionGroupId": 238,
+      "note": "Enhance Dimos's (Guardian Gunman) skills 4 times (+1 more)",
+      "costumeIds": [
+        25003
+      ]
+    },
+    {
+      "optionGroupId": 239,
+      "note": "Ascend Dimos (Guardian Gunman) 1 time (+3 more)",
+      "costumeIds": [
+        25003
+      ]
+    },
+    {
+      "optionGroupId": 240,
+      "note": "Reach level 10 with Serene Handgun (+3 more)",
+      "weaponIds": [
+        250151,
+        250152
+      ]
+    },
+    {
+      "optionGroupId": 241,
+      "note": "Enhance Serene Handgun's weapon skills 1 time (+2 more)",
+      "weaponIds": [
+        250151,
+        250152
+      ]
+    },
+    {
+      "optionGroupId": 242,
+      "note": "Ascend Serene Handgun 1 time (+3 more)",
+      "weaponIds": [
+        250151,
+        250152
+      ]
+    },
+    {
+      "optionGroupId": 243,
+      "note": "Clear Variation: Tempestuous Senior Officer 10 times (+5 more)",
+      "eventQuestChapterId": 302
+    },
+    {
+      "optionGroupId": 244,
+      "note": "Reach level 10 with Blackbird Greatsword (+4 more)",
+      "weaponIds": [
+        330061,
+        330062
+      ]
+    },
+    {
+      "optionGroupId": 245,
+      "note": "Reach level 10 with Dark Dagger (+4 more)",
+      "weaponIds": [
+        210021,
+        210022
+      ]
+    },
+    {
+      "optionGroupId": 246,
+      "note": "Enhance Blackbird Greatsword's skills 1 time (+2 more)",
+      "weaponIds": [
+        330061,
+        330062
+      ]
+    },
+    {
+      "optionGroupId": 247,
+      "note": "Enhance Dark Dagger's skills 1 time (+2 more)",
+      "weaponIds": [
+        210021,
+        210022
+      ]
+    },
+    {
+      "optionGroupId": 248,
+      "note": "Ascend Blackbird Greatsword 1 time (+3 more)",
+      "weaponIds": [
+        330061,
+        330062
+      ]
+    },
+    {
+      "optionGroupId": 249,
+      "note": "Ascend Dark Dagger 1 time (+3 more)",
+      "weaponIds": [
+        210021,
+        210022
+      ]
+    },
+    {
+      "optionGroupId": 250,
+      "note": "Clear Record: Seat of Shadow on Normal (+1 more)",
+      "questIds": [
+        200190
+      ]
+    },
+    {
+      "optionGroupId": 251,
+      "note": "Clear Record: Seat of Shadow on Hard (+1 more)",
+      "questIds": [
+        200200
+      ]
+    },
+    {
+      "optionGroupId": 252,
+      "note": "Clear Record: Seat of Shadow on Very Hard (+1 more)",
+      "questIds": [
+        200210
+      ]
     },
     {
       "optionGroupId": 253,
@@ -18,9 +1275,194 @@
       "eventQuestChapterId": 507
     },
     {
+      "optionGroupId": 254,
+      "note": "Reach level 10 with Rion (Guardian Exile) (+4 more)",
+      "costumeIds": [
+        21003
+      ]
+    },
+    {
+      "optionGroupId": 255,
+      "note": "Enhance Rion (Guardian Exile)'s skills 4 times (+1 more)",
+      "costumeIds": [
+        21003
+      ]
+    },
+    {
+      "optionGroupId": 256,
+      "note": "Ascend Rion (Guardian Exile) 1 time (+3 more)",
+      "costumeIds": [
+        21003
+      ]
+    },
+    {
+      "optionGroupId": 257,
+      "note": "Reach level 10 with Hexer's Staff (+3 more)",
+      "weaponIds": [
+        210181,
+        210182
+      ]
+    },
+    {
+      "optionGroupId": 258,
+      "note": "Enhance Hexer's Staff's skills 1 time (+2 more)",
+      "weaponIds": [
+        210181,
+        210182
+      ]
+    },
+    {
+      "optionGroupId": 259,
+      "note": "Ascend Hexer's Staff 1 time (+3 more)",
+      "weaponIds": [
+        210181,
+        210182
+      ]
+    },
+    {
+      "optionGroupId": 260,
+      "note": "Clear Record: Coffin of Repose on Normal",
+      "questIds": [
+        200220
+      ]
+    },
+    {
+      "optionGroupId": 261,
+      "note": "Clear Record: Coffin of Repose on Hard",
+      "questIds": [
+        200230
+      ]
+    },
+    {
+      "optionGroupId": 262,
+      "note": "Clear Record: Coffin of Repose on Very Hard",
+      "questIds": [
+        200240
+      ]
+    },
+    {
+      "optionGroupId": 263,
+      "note": "Clear Record: Coffin of Repose 10 times (+4 more)",
+      "eventQuestChapterId": 508
+    },
+    {
+      "optionGroupId": 264,
+      "note": "Reach level 10 with F66x (Guardian Captive) (+4 more)",
+      "costumeIds": [
+        23005
+      ]
+    },
+    {
+      "optionGroupId": 265,
+      "note": "Enhance F66x's (Guardian Captive) skills 4 times (+1 more)",
+      "costumeIds": [
+        23005
+      ]
+    },
+    {
+      "optionGroupId": 266,
+      "note": "Ascend F66x (Guardian Captive) 1 time (+3 more)",
+      "costumeIds": [
+        23005
+      ]
+    },
+    {
+      "optionGroupId": 267,
+      "note": "Reach level 10 with Baton of Tender Rain (+3 more)",
+      "weaponIds": [
+        230151,
+        230152
+      ]
+    },
+    {
+      "optionGroupId": 268,
+      "note": "Enhance Baton of Tender Rain's weapon skills 1 time (+2 more)",
+      "weaponIds": [
+        230151,
+        230152
+      ]
+    },
+    {
+      "optionGroupId": 269,
+      "note": "Ascend Baton of Tender Rain 1 time (+3 more)",
+      "weaponIds": [
+        230151,
+        230152
+      ]
+    },
+    {
       "optionGroupId": 270,
       "note": "Event chapter: Variation: C. Armed Aberration",
       "eventQuestChapterId": 303
+    },
+    {
+      "optionGroupId": 271,
+      "note": "Reach level 10 with Blackbird Lance (+4 more)",
+      "weaponIds": [
+        320071,
+        320072
+      ]
+    },
+    {
+      "optionGroupId": 272,
+      "note": "Reach level 10 with Dark Staff (+4 more)",
+      "weaponIds": [
+        230121,
+        230122
+      ]
+    },
+    {
+      "optionGroupId": 273,
+      "note": "Enhance Blackbird Lance's skills 1 time (+2 more)",
+      "weaponIds": [
+        320071,
+        320072
+      ]
+    },
+    {
+      "optionGroupId": 274,
+      "note": "Enhance Dark Staff's skills 1 time (+2 more)",
+      "weaponIds": [
+        230121,
+        230122
+      ]
+    },
+    {
+      "optionGroupId": 275,
+      "note": "Ascend Blackbird Lance 1 time (+3 more)",
+      "weaponIds": [
+        320071,
+        320072
+      ]
+    },
+    {
+      "optionGroupId": 276,
+      "note": "Ascend Dark Staff 1 time (+3 more)",
+      "weaponIds": [
+        230121,
+        230122
+      ]
+    },
+    {
+      "optionGroupId": 277,
+      "note": "Clear Record: Sunset Port on Normal (+1 more)",
+      "questIds": [
+        200250
+      ]
+    },
+    {
+      "optionGroupId": 278,
+      "note": "Clear Record: Sunset Port on Hard (+1 more)",
+      "questIds": [
+        200260
+      ]
+    },
+    {
+      "optionGroupId": 279,
+      "note": "Clear Record: Sunset Port on Very Hard (+1 more)",
+      "questIds": [
+        200270
+      ]
     },
     {
       "optionGroupId": 280,
@@ -28,9 +1470,318 @@
       "eventQuestChapterId": 509
     },
     {
+      "optionGroupId": 281,
+      "note": "Reach level 10 with Argo (Summer Traveler) (+4 more)",
+      "costumeIds": [
+        25006
+      ]
+    },
+    {
+      "optionGroupId": 282,
+      "note": "Enhance Argo's (Summer Traveler) skills 4 times (+1 more)",
+      "costumeIds": [
+        25006
+      ]
+    },
+    {
+      "optionGroupId": 283,
+      "note": "Ascend Argo (Summer Traveler) 1 time (+3 more)",
+      "costumeIds": [
+        25006
+      ]
+    },
+    {
+      "optionGroupId": 284,
+      "note": "Reach level 10 with Javelin of Vice (+3 more)",
+      "weaponIds": [
+        250171,
+        250172
+      ]
+    },
+    {
+      "optionGroupId": 285,
+      "note": "Enhance Javelin of Vice's weapon skills 1 time (+2 more)",
+      "weaponIds": [
+        250171,
+        250172
+      ]
+    },
+    {
+      "optionGroupId": 286,
+      "note": "Ascend Javelin of Vice 1 time (+3 more)",
+      "weaponIds": [
+        250171,
+        250172
+      ]
+    },
+    {
+      "optionGroupId": 287,
+      "note": "Clear Record: Path of Longing on Normal (+1 more)",
+      "questIds": [
+        200310
+      ]
+    },
+    {
+      "optionGroupId": 288,
+      "note": "Clear Record: Path of Longing on Hard (+1 more)",
+      "questIds": [
+        200320
+      ]
+    },
+    {
+      "optionGroupId": 289,
+      "note": "Clear Record: Path of Longing on Very Hard (+1 more)",
+      "questIds": [
+        200330
+      ]
+    },
+    {
       "optionGroupId": 290,
       "note": "Event chapter: Record: Path of Longing",
       "eventQuestChapterId": 511
+    },
+    {
+      "optionGroupId": 291,
+      "note": "Reach level 10 with Noelle (Guardian Weapon) (+4 more)",
+      "costumeIds": [
+        21004
+      ]
+    },
+    {
+      "optionGroupId": 292,
+      "note": "Enhance Noelle (Guardian Weapon)'s skills 4 times (+1 more)",
+      "costumeIds": [
+        21004
+      ]
+    },
+    {
+      "optionGroupId": 293,
+      "note": "Ascend Noelle (Guardian Weapon) 1 time (+3 more)",
+      "costumeIds": [
+        21004
+      ]
+    },
+    {
+      "optionGroupId": 294,
+      "note": "Reach level 10 with Trial Shearing Pike: WR0a (+3 more)",
+      "weaponIds": [
+        210191,
+        210192
+      ]
+    },
+    {
+      "optionGroupId": 295,
+      "note": "Enhance Trial Shearing Pike: WR0a's skills 1 time (+2 more)",
+      "weaponIds": [
+        210191,
+        210192
+      ]
+    },
+    {
+      "optionGroupId": 296,
+      "note": "Ascend Trial Shearing Pike: WR0a 1 time (+3 more)",
+      "weaponIds": [
+        210191,
+        210192
+      ]
+    },
+    {
+      "optionGroupId": 297,
+      "note": "Clear Variation: Aurora Daemon quests 10 times (+5 more)",
+      "eventQuestChapterId": 304
+    },
+    {
+      "optionGroupId": 298,
+      "note": "Reach level 10 with Blackbird Crosier (+4 more)",
+      "weaponIds": [
+        340271,
+        340272
+      ]
+    },
+    {
+      "optionGroupId": 299,
+      "note": "Reach level 10 with Dark Fists (+4 more)",
+      "weaponIds": [
+        250181,
+        250182
+      ]
+    },
+    {
+      "optionGroupId": 300,
+      "note": "Enhance Blackbird Crosier's skills 1 time (+2 more)",
+      "weaponIds": [
+        340271,
+        340272
+      ]
+    },
+    {
+      "optionGroupId": 301,
+      "note": "Enhance Dark Fists' skills 1 time (+2 more)",
+      "weaponIds": [
+        250181,
+        250182
+      ]
+    },
+    {
+      "optionGroupId": 302,
+      "note": "Ascend Blackbird Crosier 1 time (+3 more)",
+      "weaponIds": [
+        340271,
+        340272
+      ]
+    },
+    {
+      "optionGroupId": 303,
+      "note": "Ascend Dark Fists 1 time (+3 more)",
+      "weaponIds": [
+        250181,
+        250182
+      ]
+    },
+    {
+      "optionGroupId": 304,
+      "note": "Clear Variation: Cascading Blossom 10 times (+5 more)",
+      "eventQuestChapterId": 305
+    },
+    {
+      "optionGroupId": 305,
+      "note": "Reach level 10 with Blackbird Gun (+4 more)",
+      "weaponIds": [
+        320161,
+        320162
+      ]
+    },
+    {
+      "optionGroupId": 306,
+      "note": "Reach level 10 with Dark Longsword (+4 more)",
+      "weaponIds": [
+        230171,
+        230172
+      ]
+    },
+    {
+      "optionGroupId": 307,
+      "note": "Enhance Blackbird Gun's skills 1 time (+2 more)",
+      "weaponIds": [
+        320161,
+        320162
+      ]
+    },
+    {
+      "optionGroupId": 308,
+      "note": "Enhance Dark Longsword's skills 1 time (+2 more)",
+      "weaponIds": [
+        230171,
+        230172
+      ]
+    },
+    {
+      "optionGroupId": 309,
+      "note": "Ascend Blackbird Gun 1 time (+3 more)",
+      "weaponIds": [
+        320161,
+        320162
+      ]
+    },
+    {
+      "optionGroupId": 310,
+      "note": "Ascend Dark Longsword 1 time (+3 more)",
+      "weaponIds": [
+        230171,
+        230172
+      ]
+    },
+    {
+      "optionGroupId": 311,
+      "note": "Clear Garden of Benediction on Normal (+1 more)",
+      "questIds": [
+        200340
+      ]
+    },
+    {
+      "optionGroupId": 312,
+      "note": "Clear Garden of Benediction on Hard (+1 more)",
+      "questIds": [
+        200350
+      ]
+    },
+    {
+      "optionGroupId": 313,
+      "note": "Clear Garden of Benediction on Very Hard (+1 more)",
+      "questIds": [
+        200360
+      ]
+    },
+    {
+      "optionGroupId": 314,
+      "note": "Clear the Garden of Benediction quest 10 times (+11 more)",
+      "eventQuestChapterId": 512
+    },
+    {
+      "optionGroupId": 315,
+      "note": "Reach level 10 with Fio (Celebratory Girl) (+4 more)",
+      "costumeIds": [
+        35008
+      ]
+    },
+    {
+      "optionGroupId": 316,
+      "note": "Enhance Fio (Celebratory Girl)'s skills 4 times (+1 more)",
+      "costumeIds": [
+        35008
+      ]
+    },
+    {
+      "optionGroupId": 317,
+      "note": "Ascend Fio (Celebratory Girl) 1 time (+3 more)",
+      "costumeIds": [
+        35008
+      ]
+    },
+    {
+      "optionGroupId": 318,
+      "note": "Reach level 10 with Wicked Bottles (+3 more)",
+      "weaponIds": [
+        350181,
+        350182
+      ]
+    },
+    {
+      "optionGroupId": 319,
+      "note": "Enhance Wicked Bottles's skills 1 time (+6 more)",
+      "weaponIds": [
+        350181,
+        350182
+      ]
+    },
+    {
+      "optionGroupId": 320,
+      "note": "Ascend Wicked Bottles 1 time (+3 more)",
+      "weaponIds": [
+        350181,
+        350182
+      ]
+    },
+    {
+      "optionGroupId": 331,
+      "note": "Clear Record: Rhythm's Citadel on Normal (+1 more)",
+      "questIds": [
+        200370
+      ]
+    },
+    {
+      "optionGroupId": 332,
+      "note": "Clear Record: Rhythm's Citadel on Hard (+1 more)",
+      "questIds": [
+        200380
+      ]
+    },
+    {
+      "optionGroupId": 333,
+      "note": "Clear Record: Rhythm's Citadel on Very Hard (+1 more)",
+      "questIds": [
+        200390
+      ]
     },
     {
       "optionGroupId": 334,
@@ -38,9 +1789,220 @@
       "eventQuestChapterId": 513
     },
     {
+      "optionGroupId": 335,
+      "note": "Reach level 10 with Akeha (Guardian Assassin) (+4 more)",
+      "costumeIds": [
+        22005
+      ]
+    },
+    {
+      "optionGroupId": 336,
+      "note": "Enhance Akeha (Guardian Assassin)'s skills 4 time(s) (+1 more)",
+      "costumeIds": [
+        22005
+      ]
+    },
+    {
+      "optionGroupId": 337,
+      "note": "Ascend Akeha (Guardian Assassin) 1 time (+3 more)",
+      "costumeIds": [
+        22005
+      ]
+    },
+    {
+      "optionGroupId": 338,
+      "note": "Reach level 10 with Hakage (+3 more)",
+      "weaponIds": [
+        220161,
+        220162
+      ]
+    },
+    {
+      "optionGroupId": 339,
+      "note": "Enhance Hakage's skills 1 time (+2 more)",
+      "weaponIds": [
+        220161,
+        220162
+      ]
+    },
+    {
+      "optionGroupId": 340,
+      "note": "Ascend Hakage 1 time (+3 more)",
+      "weaponIds": [
+        220161,
+        220162
+      ]
+    },
+    {
+      "optionGroupId": 341,
+      "note": "Clear Record: Town of Deceit on Normal (+1 more)",
+      "questIds": [
+        200400
+      ]
+    },
+    {
+      "optionGroupId": 342,
+      "note": "Clear Record: Town of Deceit on Hard (+1 more)",
+      "questIds": [
+        200410
+      ]
+    },
+    {
+      "optionGroupId": 343,
+      "note": "Clear Record: Town of Deceit on Very Hard (+1 more)",
+      "questIds": [
+        200420
+      ]
+    },
+    {
       "optionGroupId": 344,
       "note": "Event chapter: Record: Town of Deceit",
       "eventQuestChapterId": 514
+    },
+    {
+      "optionGroupId": 345,
+      "note": "Reach level 10 with Griff (Guardian Captain) (+4 more)",
+      "costumeIds": [
+        24005
+      ]
+    },
+    {
+      "optionGroupId": 346,
+      "note": "Enhance Griff (Guardian Captain)'s skills 4 times (+1 more)",
+      "costumeIds": [
+        24005
+      ]
+    },
+    {
+      "optionGroupId": 347,
+      "note": "Ascend Griff (Guardian Captain) 1 time (+3 more)",
+      "costumeIds": [
+        24005
+      ]
+    },
+    {
+      "optionGroupId": 348,
+      "note": "Reach level 10 with Umbra 1945 (+3 more)",
+      "weaponIds": [
+        240201,
+        240202
+      ]
+    },
+    {
+      "optionGroupId": 349,
+      "note": "Enhance Umbra 1945's weapon skills 1 time (+2 more)",
+      "weaponIds": [
+        240201,
+        240202
+      ]
+    },
+    {
+      "optionGroupId": 350,
+      "note": "Ascend Umbra 1945 1 time (+3 more)",
+      "weaponIds": [
+        240201,
+        240202
+      ]
+    },
+    {
+      "optionGroupId": 351,
+      "note": "Clear Variation: Gloomy Resentful Witch 10 time(s) (+5 more)",
+      "eventQuestChapterId": 306
+    },
+    {
+      "optionGroupId": 352,
+      "note": "Reach level 10 with Blacktoe Dagger (+4 more)",
+      "weaponIds": [
+        350211,
+        350212
+      ]
+    },
+    {
+      "optionGroupId": 353,
+      "note": "Enhance Blacktoe Dagger's skills 1 time (+2 more)",
+      "weaponIds": [
+        350211,
+        350212
+      ]
+    },
+    {
+      "optionGroupId": 354,
+      "note": "Ascend Blacktoe Dagger 1 time (+3 more)",
+      "weaponIds": [
+        350211,
+        350212
+      ]
+    },
+    {
+      "optionGroupId": 355,
+      "note": "Clear Quest 10 of Record: Chamber of Prayer (Normal)",
+      "questIds": [
+        200430
+      ]
+    },
+    {
+      "optionGroupId": 356,
+      "note": "Clear Quest 10 of Record: Chamber of Prayer (Hard)",
+      "questIds": [
+        200440
+      ]
+    },
+    {
+      "optionGroupId": 357,
+      "note": "Clear Quest 10 of Record: Chamber of Prayer (Very Hard)",
+      "questIds": [
+        200450
+      ]
+    },
+    {
+      "optionGroupId": 358,
+      "note": "Clear Record: Chamber of Prayer quests 10 times (+6 more)",
+      "eventQuestChapterId": 515
+    },
+    {
+      "optionGroupId": 359,
+      "note": "Reach level 10 with Guardian Girl (+4 more)",
+      "costumeIds": [
+        24006
+      ]
+    },
+    {
+      "optionGroupId": 360,
+      "note": "Enhance Fio (Guardian Girl)'s skills 4 times (+1 more)",
+      "costumeIds": [
+        24006
+      ]
+    },
+    {
+      "optionGroupId": 361,
+      "note": "Ascend Fio (Guardian Girl) 1 times (+3 more)",
+      "costumeIds": [
+        24006
+      ]
+    },
+    {
+      "optionGroupId": 362,
+      "note": "Reach level 10 with Muguet Lumière (+3 more)",
+      "weaponIds": [
+        240221,
+        240222
+      ]
+    },
+    {
+      "optionGroupId": 363,
+      "note": "Enhance Muguet Lumière's weapon skills (JP text only)",
+      "weaponIds": [
+        240221,
+        240222
+      ]
+    },
+    {
+      "optionGroupId": 364,
+      "note": "Ascend Muguet Lumière 1 time (+3 more)",
+      "weaponIds": [
+        240221,
+        240222
+      ]
     },
     {
       "optionGroupId": 365,
@@ -48,9 +2010,141 @@
       "eventQuestChapterId": 307
     },
     {
+      "optionGroupId": 366,
+      "note": "Reach level 10 with Blacktoe Greatsword (+4 more)",
+      "weaponIds": [
+        310281,
+        310282
+      ]
+    },
+    {
+      "optionGroupId": 367,
+      "note": "Enhance Blacktoe Greatsword's skills 1 time (+2 more)",
+      "weaponIds": [
+        310281,
+        310282
+      ]
+    },
+    {
+      "optionGroupId": 368,
+      "note": "Ascend Blacktoe Greatsword 1 time (+3 more)",
+      "weaponIds": [
+        310281,
+        310282
+      ]
+    },
+    {
+      "optionGroupId": 369,
+      "note": "Clear Record: Bridge of Supplication on Normal (+1 more)",
+      "questIds": [
+        200470
+      ]
+    },
+    {
+      "optionGroupId": 370,
+      "note": "Clear Record: Bridge of Supplication on Hard",
+      "questIds": [
+        200480
+      ]
+    },
+    {
+      "optionGroupId": 371,
+      "note": "Clear Record: Bridge of Supplication Hard",
+      "questIds": [
+        200480
+      ]
+    },
+    {
       "optionGroupId": 372,
       "note": "Event chapter: Record: Bridge of Supplication",
       "eventQuestChapterId": 517
+    },
+    {
+      "optionGroupId": 373,
+      "note": "Reach level 10 with Yuletide Exile (+3 more)",
+      "costumeIds": [
+        35010
+      ]
+    },
+    {
+      "optionGroupId": 374,
+      "note": "Ascend Rion (Yuletide Exile) 1 times (+3 more)",
+      "costumeIds": [
+        35010
+      ]
+    },
+    {
+      "optionGroupId": 375,
+      "note": "Reach level 10 with Flurry of Indulgence (+3 more)",
+      "weaponIds": [
+        350221,
+        350222
+      ]
+    },
+    {
+      "optionGroupId": 376,
+      "note": "Flurry of Indulgence Dagger 1 times (+3 more)",
+      "weaponIds": [
+        350221,
+        350222
+      ]
+    },
+    {
+      "optionGroupId": 377,
+      "note": "Clear quests 10 times with Rion (Yuletide Exile) in your loadout (+2 more)",
+      "costumeIds": [
+        35010
+      ]
+    },
+    {
+      "optionGroupId": 378,
+      "note": "Clear Variation: Cascading Daemon 10 times (+5 more)",
+      "eventQuestChapterId": 308
+    },
+    {
+      "optionGroupId": 379,
+      "note": "Reach level 10 with Blacktoe Crosier (+4 more)",
+      "weaponIds": [
+        320221,
+        320222
+      ]
+    },
+    {
+      "optionGroupId": 380,
+      "note": "Enhance Blacktoe Crosier's skills 1 time (+2 more)",
+      "weaponIds": [
+        320221,
+        320222
+      ]
+    },
+    {
+      "optionGroupId": 381,
+      "note": "Ascend Blacktoe Crosier 1 time (+3 more)",
+      "weaponIds": [
+        320221,
+        320222
+      ]
+    },
+    {
+      "optionGroupId": 382,
+      "note": "Clear Record: Festive Fountain on Normal",
+      "questIds": [
+        200500
+      ]
+    },
+    {
+      "optionGroupId": 383,
+      "note": "Clear Record: Festive Fountain on Hard",
+      "questIds": [
+        200510
+      ]
+    },
+    {
+      "optionGroupId": 384,
+      "note": "Clear Record: Festive Fountain on Very Hard",
+      "questIds": [
+        200520
+      ]
     },
     {
       "optionGroupId": 385,
@@ -58,9 +2152,132 @@
       "eventQuestChapterId": 519
     },
     {
+      "optionGroupId": 386,
+      "note": "Reach level 10 with Gayle (New Year's Hunter) (+3 more)",
+      "costumeIds": [
+        35012
+      ]
+    },
+    {
+      "optionGroupId": 387,
+      "note": "Ascend Gayle (New Year's Hunter) 1 time (+3 more)",
+      "costumeIds": [
+        35012
+      ]
+    },
+    {
+      "optionGroupId": 388,
+      "note": "Reach level 10 with Blackened Plumage (+3 more)",
+      "weaponIds": [
+        350261,
+        350262
+      ]
+    },
+    {
+      "optionGroupId": 389,
+      "note": "Ascend Blackened Plumage 1 time (+3 more)",
+      "weaponIds": [
+        350261,
+        350262
+      ]
+    },
+    {
+      "optionGroupId": 390,
+      "note": "Clear quests 10 times with Gayle (New Year's Hunter) in your loadout (+2 more)",
+      "costumeIds": [
+        35012
+      ]
+    },
+    {
+      "optionGroupId": 391,
+      "note": "Option group 391 (no mission text)",
+      "exploreIds": [
+        1,
+        2,
+        11,
+        12
+      ]
+    },
+    {
+      "optionGroupId": 392,
+      "note": "Set your profile comment as \"A Happy New Year\"",
+      "messageWords": [
+        "A Happy New Year",
+        "あけましておめでとう",
+        "새해 복 많이 받으세요"
+      ]
+    },
+    {
+      "optionGroupId": 393,
+      "note": "Put the word \"Mama\" in your profile comment (JP text only)",
+      "messageWords": [
+        "Mama",
+        "ママ",
+        "마마"
+      ]
+    },
+    {
+      "optionGroupId": 394,
+      "note": "Set your profile comment as \"New Year's gift\"",
+      "messageWords": [
+        "New Year's gift",
+        "お年玉",
+        "세뱃돈"
+      ]
+    },
+    {
+      "optionGroupId": 395,
+      "note": "See the title screen 5 times in a day (JP text only)"
+    },
+    {
       "optionGroupId": 396,
       "note": "Event chapter: Variation: Aurora Blossom",
       "eventQuestChapterId": 309
+    },
+    {
+      "optionGroupId": 397,
+      "note": "Reach level 10 with Blacktoe Handgun (+4 more)",
+      "weaponIds": [
+        340371,
+        340372
+      ]
+    },
+    {
+      "optionGroupId": 398,
+      "note": "Enhance Blacktoe Handgun's skills 1 time (+2 more)",
+      "weaponIds": [
+        340371,
+        340372
+      ]
+    },
+    {
+      "optionGroupId": 399,
+      "note": "Ascend Blacktoe Handgun 1 time (+3 more)",
+      "weaponIds": [
+        340371,
+        340372
+      ]
+    },
+    {
+      "optionGroupId": 400,
+      "note": "Clear Record: Garden of Paradise on Normal",
+      "questIds": [
+        200530
+      ]
+    },
+    {
+      "optionGroupId": 401,
+      "note": "Clear Record: Garden of Paradise on Hard",
+      "questIds": [
+        200540
+      ]
+    },
+    {
+      "optionGroupId": 402,
+      "note": "Clear Record: Garden of Paradise on Very Hard",
+      "questIds": [
+        200550
+      ]
     },
     {
       "optionGroupId": 403,
@@ -68,9 +2285,184 @@
       "eventQuestChapterId": 521
     },
     {
+      "optionGroupId": 404,
+      "note": "Reach level 10 with 063y (Guardian Prisoner) (+3 more)",
+      "costumeIds": [
+        22006
+      ]
+    },
+    {
+      "optionGroupId": 405,
+      "note": "Ascend 063y (Guardian Prisoner) 1 time (+3 more)",
+      "costumeIds": [
+        22006
+      ]
+    },
+    {
+      "optionGroupId": 406,
+      "note": "Reach level 10 with Rare-Iron Blade (+3 more)",
+      "weaponIds": [
+        220181,
+        220182
+      ]
+    },
+    {
+      "optionGroupId": 407,
+      "note": "Ascend Rare-Iron Blade once (+4 more)",
+      "weaponIds": [
+        220181,
+        220182
+      ]
+    },
+    {
+      "optionGroupId": 408,
+      "note": "Clear 10 quests with 063y (Guardian Prisoner) in your loadout (+5 more)",
+      "costumeIds": [
+        22006
+      ]
+    },
+    {
+      "optionGroupId": 409,
+      "note": "Clear Variation: Tempestuous Dynast 10 times (+5 more)",
+      "eventQuestChapterId": 310
+    },
+    {
+      "optionGroupId": 410,
+      "note": "Reach level 10 with Blacktoe Gauntlets (+4 more)",
+      "weaponIds": [
+        330301,
+        330302
+      ]
+    },
+    {
+      "optionGroupId": 411,
+      "note": "Enhance Blacktoe Gauntlets' skills 1 time (+2 more)",
+      "weaponIds": [
+        330301,
+        330302
+      ]
+    },
+    {
+      "optionGroupId": 412,
+      "note": "Ascend Blacktoe Gauntlets 1 time (+3 more)",
+      "weaponIds": [
+        330301,
+        330302
+      ]
+    },
+    {
+      "optionGroupId": 420,
+      "note": "Update your profile comment (+1 more)"
+    },
+    {
       "optionGroupId": 421,
       "note": "Dark Memory quests",
       "eventQuestType": "END_CONTENTS"
+    },
+    {
+      "optionGroupId": 422,
+      "note": "Clear Foundation of Fortune on Normal (+1 more)",
+      "questIds": [
+        200560
+      ]
+    },
+    {
+      "optionGroupId": 423,
+      "note": "Clear Foundation of Fortune on Hard (+1 more)",
+      "questIds": [
+        200570
+      ]
+    },
+    {
+      "optionGroupId": 424,
+      "note": "Complete Record: Foundation of Fortune (Very Hard) up through Quest 10. (+1 more)",
+      "questIds": [
+        200580
+      ]
+    },
+    {
+      "optionGroupId": 425,
+      "note": "Clear Record:Foundation of Fortune 10 times (+12 more)",
+      "eventQuestChapterId": 522
+    },
+    {
+      "optionGroupId": 426,
+      "note": "Reach level 10 with Lars (Celebratory Soldier) (+3 more)",
+      "costumeIds": [
+        31013
+      ]
+    },
+    {
+      "optionGroupId": 427,
+      "note": "Ascend Lars (Celebratory Soldier) 1 times (+3 more)",
+      "costumeIds": [
+        31013
+      ]
+    },
+    {
+      "optionGroupId": 428,
+      "note": "Reach level 10 with Blade of Begging (+3 more)",
+      "weaponIds": [
+        310321,
+        310322
+      ]
+    },
+    {
+      "optionGroupId": 429,
+      "note": "Ascend Blade of Begging 1 times (+4 more)",
+      "weaponIds": [
+        310321,
+        310322
+      ]
+    },
+    {
+      "optionGroupId": 430,
+      "note": "Clear quests 10 times with Lars (Celebratory Soldier) in your loadout (+5 more)",
+      "costumeIds": [
+        31013
+      ]
+    },
+    {
+      "optionGroupId": 431,
+      "note": "Clear Record: The Cage of Reincarnation on Normal",
+      "questIds": [
+        200010
+      ]
+    },
+    {
+      "optionGroupId": 432,
+      "note": "Clear Record: The Cage of Reincarnation on Hard",
+      "questIds": [
+        200020
+      ]
+    },
+    {
+      "optionGroupId": 433,
+      "note": "Clear Record: The Cage of Reincarnation on Very Hard",
+      "questIds": [
+        200030
+      ]
+    },
+    {
+      "optionGroupId": 434,
+      "note": "Clear quests 10 times with Praying Battler in your loadout (+2 more)",
+      "costumeIds": [
+        24003
+      ]
+    },
+    {
+      "optionGroupId": 435,
+      "note": "Clear quests 10 times with Isolated Scanner in your loadout (+2 more)",
+      "costumeIds": [
+        25005
+      ]
+    },
+    {
+      "optionGroupId": 436,
+      "note": "Clear quests 10 times with Vengeful Attacker in your loadout (+2 more)",
+      "costumeIds": [
+        24004
+      ]
     },
     {
       "optionGroupId": 437,
@@ -78,9 +2470,119 @@
       "eventQuestChapterId": 311
     },
     {
+      "optionGroupId": 438,
+      "note": "Reach level 10 with Blacktoe Halberd (+4 more)",
+      "weaponIds": [
+        350291,
+        350292
+      ]
+    },
+    {
+      "optionGroupId": 439,
+      "note": "Enhance Blacktoe Halberd's skills 1 time (+2 more)",
+      "weaponIds": [
+        350291,
+        350292
+      ]
+    },
+    {
+      "optionGroupId": 440,
+      "note": "Ascend Blacktoe Halberd 1 time (+3 more)",
+      "weaponIds": [
+        350291,
+        350292
+      ]
+    },
+    {
+      "optionGroupId": 441,
+      "note": "Clear Record: Stronghold of Desolation on Normal",
+      "questIds": [
+        200592
+      ]
+    },
+    {
+      "optionGroupId": 442,
+      "note": "Clear Record: Stronghold of Desolation on Hard",
+      "questIds": [
+        200602
+      ]
+    },
+    {
+      "optionGroupId": 443,
+      "note": "Clear Record: Stronghold of Desolation on Very Hard",
+      "questIds": [
+        200612
+      ]
+    },
+    {
       "optionGroupId": 444,
       "note": "Event chapter: Record: Stronghold of Desolation",
       "eventQuestChapterId": 524
+    },
+    {
+      "optionGroupId": 445,
+      "note": "Reach level 10 with False Guardian Gunman (+3 more)",
+      "costumeIds": [
+        24007
+      ]
+    },
+    {
+      "optionGroupId": 446,
+      "note": "Ascend False Guardian Gunman 1 time (+3 more)",
+      "costumeIds": [
+        24007
+      ]
+    },
+    {
+      "optionGroupId": 447,
+      "note": "Reach level 10 with Nightcrow's Pistol (+3 more)",
+      "weaponIds": [
+        240241,
+        240242
+      ]
+    },
+    {
+      "optionGroupId": 448,
+      "note": "Ascend Nightcrow's Pistol 1 time (+3 more)",
+      "weaponIds": [
+        240241,
+        240242
+      ]
+    },
+    {
+      "optionGroupId": 449,
+      "note": "Clear quests 10 times with False Guardian Gunman in your loadout (+2 more)",
+      "costumeIds": [
+        24007
+      ]
+    },
+    {
+      "optionGroupId": 450,
+      "note": "Clear quests 10 times with Guardian Exile in your loadout (+2 more)",
+      "costumeIds": [
+        21003
+      ]
+    },
+    {
+      "optionGroupId": 451,
+      "note": "Clear Quest 10Record: Covetous Grove on Normal",
+      "questIds": [
+        200628
+      ]
+    },
+    {
+      "optionGroupId": 452,
+      "note": "Clear Quest 10Record: Covetous Grove on Hard",
+      "questIds": [
+        200638
+      ]
+    },
+    {
+      "optionGroupId": 453,
+      "note": "Clear Quest 10Record: Covetous Grove on Very Hard",
+      "questIds": [
+        200648
+      ]
     },
     {
       "optionGroupId": 454,
@@ -88,14 +2590,176 @@
       "eventQuestChapterId": 527
     },
     {
+      "optionGroupId": 455,
+      "note": "Reach level 10 with False Guardian Assassin (+3 more)",
+      "costumeIds": [
+        22007
+      ]
+    },
+    {
+      "optionGroupId": 456,
+      "note": "Ascend False Guardian Assassin 1 time (+3 more)",
+      "costumeIds": [
+        22007
+      ]
+    },
+    {
+      "optionGroupId": 457,
+      "note": "Reach level 10 with Haze (+3 more)",
+      "weaponIds": [
+        220191,
+        220192
+      ]
+    },
+    {
+      "optionGroupId": 458,
+      "note": "Ascend Haze 1 time (+3 more)",
+      "weaponIds": [
+        220191,
+        220192
+      ]
+    },
+    {
+      "optionGroupId": 459,
+      "note": "Clear quests 10 times with False Guardian Assassin in your loadout (+2 more)",
+      "costumeIds": [
+        22007
+      ]
+    },
+    {
+      "optionGroupId": 460,
+      "note": "Clear 10 quests with World-Ender (Soulful Lad) in your loadout (+2 more)",
+      "costumeIds": [
+        23004
+      ]
+    },
+    {
+      "optionGroupId": 461,
+      "note": "Clear 10 quests with Kainé (The Aerie Warrior) in your loadout (+2 more)",
+      "costumeIds": [
+        21001
+      ]
+    },
+    {
+      "optionGroupId": 462,
+      "note": "Clear 10 quests with Emil (Puzzling Oddity) in your loadout (+2 more)",
+      "costumeIds": [
+        22004
+      ]
+    },
+    {
+      "optionGroupId": 463,
+      "note": "Clear 10 quests with Argo (Patriotic Traveler) in your loadout (+2 more)",
+      "costumeIds": [
+        32001
+      ]
+    },
+    {
       "optionGroupId": 464,
       "note": "Event chapter: Variation: Blazing Daemon",
       "eventQuestChapterId": 312
     },
     {
+      "optionGroupId": 465,
+      "note": "Reach level 10 with Darkweave Gauntlets (+4 more)",
+      "weaponIds": [
+        310361,
+        310362
+      ]
+    },
+    {
+      "optionGroupId": 466,
+      "note": "Enhance Darkweave Gauntlets' skills 1 time (+2 more)",
+      "weaponIds": [
+        310361,
+        310362
+      ]
+    },
+    {
+      "optionGroupId": 467,
+      "note": "Ascend Darkweave Gauntlets 1 time (+3 more)",
+      "weaponIds": [
+        310361,
+        310362
+      ]
+    },
+    {
+      "optionGroupId": 468,
+      "note": "Clear a quest with the Guardian Captive costume in the deck (JP text only)",
+      "costumeIds": [
+        23005
+      ]
+    },
+    {
+      "optionGroupId": 469,
+      "note": "Clear Variation: Tempestuous Resentful Witch 10 times (+5 more)",
+      "eventQuestChapterId": 313
+    },
+    {
+      "optionGroupId": 470,
+      "note": "Reach level 10 with Darkweave Baton (+4 more)",
+      "weaponIds": [
+        330371,
+        330372
+      ]
+    },
+    {
+      "optionGroupId": 471,
+      "note": "Enhance Darkweave Baton's skills 1 time (+2 more)",
+      "weaponIds": [
+        330371,
+        330372
+      ]
+    },
+    {
+      "optionGroupId": 472,
+      "note": "Ascend Darkweave Baton 1 time (+3 more)",
+      "weaponIds": [
+        330371,
+        330372
+      ]
+    },
+    {
+      "optionGroupId": 473,
+      "note": "Clear Quest 10 of Record: Vestiges of Paradise (Normal)",
+      "questIds": [
+        200664
+      ]
+    },
+    {
+      "optionGroupId": 474,
+      "note": "Clear Quest 10 of Record: Vestiges of Paradise (Hard)",
+      "questIds": [
+        200674
+      ]
+    },
+    {
+      "optionGroupId": 475,
+      "note": "Clear Quest 10 of Record: Vestiges of Paradise (Very Hard)",
+      "questIds": [
+        200684
+      ]
+    },
+    {
       "optionGroupId": 476,
       "note": "Event chapter: Record: Vestiges of Paradise",
       "eventQuestChapterId": 526
+    },
+    {
+      "optionGroupId": 477,
+      "note": "Reach level 10 with Misos (+3 more)",
+      "weaponIds": [
+        350331,
+        350332
+      ]
+    },
+    {
+      "optionGroupId": 478,
+      "note": "Ascend Misos 1 times (+3 more)",
+      "weaponIds": [
+        350331,
+        350332
+      ]
     },
     {
       "optionGroupId": 479,
@@ -113,14 +2777,131 @@
       "characterId": 1011
     },
     {
+      "optionGroupId": 482,
+      "note": "Clear quests 10 times with Guardian Weapon in your loadout (+2 more)",
+      "costumeIds": [
+        21004
+      ]
+    },
+    {
+      "optionGroupId": 483,
+      "note": "Clear Record: Original Sin's Door on Normal",
+      "questIds": [
+        200700
+      ]
+    },
+    {
+      "optionGroupId": 484,
+      "note": "Clear Record: Original Sin's Door on Hard",
+      "questIds": [
+        200710
+      ]
+    },
+    {
+      "optionGroupId": 485,
+      "note": "Clear Record: Original Sin's Door on Very Hard",
+      "questIds": [
+        200720
+      ]
+    },
+    {
       "optionGroupId": 486,
       "note": "Event chapter: Record: Original Sin's Door",
       "eventQuestChapterId": 531
     },
     {
+      "optionGroupId": 487,
+      "note": "Reach level 10 with Guardian Monster (+3 more)",
+      "costumeIds": [
+        22008
+      ]
+    },
+    {
+      "optionGroupId": 488,
+      "note": "Ascend Guardian Monster 1 time (+3 more)",
+      "costumeIds": [
+        22008
+      ]
+    },
+    {
+      "optionGroupId": 489,
+      "note": "Reach level 10 with Deceit's Fang (+3 more)",
+      "weaponIds": [
+        220211,
+        220212
+      ]
+    },
+    {
+      "optionGroupId": 490,
+      "note": "Ascend Deceit's Fang 1 time (+3 more)",
+      "weaponIds": [
+        220211,
+        220212
+      ]
+    },
+    {
+      "optionGroupId": 491,
+      "note": "Clear quests 10 times with Guardian Monster in your loadout (+2 more)",
+      "costumeIds": [
+        22008
+      ]
+    },
+    {
       "optionGroupId": 492,
       "note": "Event chapter: Variation: Blazing Blossom",
       "eventQuestChapterId": 314
+    },
+    {
+      "optionGroupId": 493,
+      "note": "Reach level 10 with Darkweave Pike (+4 more)",
+      "weaponIds": [
+        310391,
+        310392
+      ]
+    },
+    {
+      "optionGroupId": 494,
+      "note": "Enhance Darkweave Pike's skills 1 time (+2 more)",
+      "weaponIds": [
+        310391,
+        310392
+      ]
+    },
+    {
+      "optionGroupId": 495,
+      "note": "Ascend Darkweave Pike 1 time (+3 more)",
+      "weaponIds": [
+        310391,
+        310392
+      ]
+    },
+    {
+      "optionGroupId": 496,
+      "note": "Clear quests 10 times with Guardian Assassin in your loadout (+2 more)",
+      "costumeIds": [
+        22005
+      ]
+    },
+    {
+      "optionGroupId": 497,
+      "note": "Clear Quest 10 of Record: Playful Seas (Normal)",
+      "questIds": [
+        200747
+      ]
+    },
+    {
+      "optionGroupId": 498,
+      "note": "Clear Quest 10 of Record: Playful Seas (Hard)",
+      "questIds": [
+        200757
+      ]
+    },
+    {
+      "optionGroupId": 499,
+      "note": "Clear Quest 10 of Record: Playful Seas (Very Hard)",
+      "questIds": [
+        200767
+      ]
     },
     {
       "optionGroupId": 500,
@@ -138,9 +2919,68 @@
       "characterId": 1012
     },
     {
+      "optionGroupId": 503,
+      "note": "Clear quests 10 times with Summer Traveler in your loadout (+2 more)",
+      "costumeIds": [
+        25006
+      ]
+    },
+    {
       "optionGroupId": 504,
       "note": "Event chapter: Variation: Gloomy Armed Aberration",
       "eventQuestChapterId": 315
+    },
+    {
+      "optionGroupId": 505,
+      "note": "Reach level 10 with Darkweave Pistol (+4 more)",
+      "weaponIds": [
+        350351,
+        350352
+      ]
+    },
+    {
+      "optionGroupId": 506,
+      "note": "Enhance Darkweave Pistol's skills 1 time (+2 more)",
+      "weaponIds": [
+        350351,
+        350352
+      ]
+    },
+    {
+      "optionGroupId": 507,
+      "note": "Ascend Darkweave Pistol 1 time (+3 more)",
+      "weaponIds": [
+        350351,
+        350352
+      ]
+    },
+    {
+      "optionGroupId": 508,
+      "note": "Clear quests 10 times with Guardian Girl in your loadout (+2 more)",
+      "costumeIds": [
+        24006
+      ]
+    },
+    {
+      "optionGroupId": 509,
+      "note": "Clear Record: Trench of Lost Bonds on Normal",
+      "questIds": [
+        200793
+      ]
+    },
+    {
+      "optionGroupId": 510,
+      "note": "Clear Record: Trench of Lost Bonds on Hard",
+      "questIds": [
+        200803
+      ]
+    },
+    {
+      "optionGroupId": 511,
+      "note": "Clear Record: Trench of Lost Bonds on Very Hard",
+      "questIds": [
+        200813
+      ]
     },
     {
       "optionGroupId": 512,
@@ -148,9 +2988,189 @@
       "eventQuestChapterId": 539
     },
     {
+      "optionGroupId": 513,
+      "note": "Reach level 10 with Guardian Soldier (+3 more)",
+      "costumeIds": [
+        25007
+      ]
+    },
+    {
+      "optionGroupId": 514,
+      "note": "Ascend Guardian Soldier 1 time (+3 more)",
+      "costumeIds": [
+        25007
+      ]
+    },
+    {
+      "optionGroupId": 515,
+      "note": "Reach level 10 with Hero's Dying Wish (+3 more)",
+      "weaponIds": [
+        250221,
+        250222
+      ]
+    },
+    {
+      "optionGroupId": 516,
+      "note": "Ascend Hero's Dying Wish 1 time (+3 more)",
+      "weaponIds": [
+        250221,
+        250222
+      ]
+    },
+    {
+      "optionGroupId": 517,
+      "note": "Clear quests 10 times with Guardian Soldier in your loadout (+2 more)",
+      "costumeIds": [
+        25007
+      ]
+    },
+    {
+      "optionGroupId": 518,
+      "note": "Clear quests 10 times with Celebratory Girl in your loadout (+2 more)",
+      "costumeIds": [
+        35008
+      ]
+    },
+    {
+      "optionGroupId": 519,
+      "note": "Clear Quest 1 of Japanese 1.5-Year Anniv. Eve Challenge Quest",
+      "questIds": [
+        400131
+      ]
+    },
+    {
+      "optionGroupId": 520,
+      "note": "Clear Quest 2 of Japanese 1.5-Year Anniv. Eve Challenge Quest",
+      "questIds": [
+        400132
+      ]
+    },
+    {
+      "optionGroupId": 521,
+      "note": "Clear Quest 3 of Japanese 1.5-Year Anniv. Eve Challenge Quest",
+      "questIds": [
+        400133
+      ]
+    },
+    {
+      "optionGroupId": 522,
+      "note": "Clear Record: Happy Home on Normal (+1 more)",
+      "questIds": [
+        200834
+      ]
+    },
+    {
+      "optionGroupId": 523,
+      "note": "Clear Record: Happy Home on Hard",
+      "questIds": [
+        200844
+      ]
+    },
+    {
+      "optionGroupId": 524,
+      "note": "Clear Record: Happy Home on Very Hard",
+      "questIds": [
+        200854
+      ]
+    },
+    {
+      "optionGroupId": 525,
+      "note": "Clear Record: Happy Home 10 times (+6 more)",
+      "eventQuestChapterId": 542
+    },
+    {
+      "optionGroupId": 526,
+      "note": "Reach level 10 with Celebratory Werebeast (+3 more)",
+      "costumeIds": [
+        34029
+      ]
+    },
+    {
+      "optionGroupId": 527,
+      "note": "Ascend Celebratory Werebeast 1 time (+3 more)",
+      "costumeIds": [
+        34029
+      ]
+    },
+    {
+      "optionGroupId": 528,
+      "note": "Awaken Celebratory Werebeast once",
+      "costumeIds": [
+        34029
+      ]
+    },
+    {
+      "optionGroupId": 529,
+      "note": "Reach level 10 with Blackened Will (+3 more)",
+      "weaponIds": [
+        340521,
+        340522
+      ]
+    },
+    {
+      "optionGroupId": 530,
+      "note": "Ascend Blackened Will 1 time (+3 more)",
+      "weaponIds": [
+        340521,
+        340522
+      ]
+    },
+    {
+      "optionGroupId": 531,
+      "note": "Clear quests 10 times with Celebratory Werebeast in your loadout (+2 more)",
+      "costumeIds": [
+        34029
+      ]
+    },
+    {
       "optionGroupId": 532,
       "note": "Event chapter: Variation: Cascading Mage",
       "eventQuestChapterId": 316
+    },
+    {
+      "optionGroupId": 533,
+      "note": "Reach level 10 with Darkweave Dagger (+4 more)",
+      "weaponIds": [
+        320361,
+        320362
+      ]
+    },
+    {
+      "optionGroupId": 534,
+      "note": "Enhance Darkweave Dagger skills 1 time (+2 more)",
+      "weaponIds": [
+        320361,
+        320362
+      ]
+    },
+    {
+      "optionGroupId": 535,
+      "note": "Ascend Darkweave Dagger 1 time (+3 more)",
+      "weaponIds": [
+        320361,
+        320362
+      ]
+    },
+    {
+      "optionGroupId": 536,
+      "note": "Clear Quest 10 of Record: Rebellion's Illusion (Normal)",
+      "questIds": [
+        200869
+      ]
+    },
+    {
+      "optionGroupId": 537,
+      "note": "Clear Quest 10 of Record: Rebellion's Illusion (Hard)",
+      "questIds": [
+        200879
+      ]
+    },
+    {
+      "optionGroupId": 538,
+      "note": "Clear Quest 10 of Record: Rebellion's Illusion (Very Hard)",
+      "questIds": [
+        200889
+      ]
     },
     {
       "optionGroupId": 539,
@@ -163,9 +3183,81 @@
       "eventQuestType": "END_CONTENTS"
     },
     {
+      "optionGroupId": 541,
+      "note": "Ascend Katana 1 time (+3 more)",
+      "weaponIds": [
+        320371,
+        320372
+      ]
+    },
+    {
+      "optionGroupId": 542,
+      "note": "Clear quests 10 times with Insightful Emperor in your loadout (+2 more)",
+      "costumeIds": [
+        32018
+      ]
+    },
+    {
+      "optionGroupId": 543,
+      "note": "Reach level 10 with Katana (+3 more)",
+      "weaponIds": [
+        320371,
+        320372
+      ]
+    },
+    {
+      "optionGroupId": 544,
+      "note": "Clear quests 10 times with Guardian Captain in your loadout (+2 more)",
+      "costumeIds": [
+        24005
+      ]
+    },
+    {
+      "optionGroupId": 545,
+      "note": "Clear Quest 10 of Record: Rebellion's Reality (Normal)",
+      "questIds": [
+        200904
+      ]
+    },
+    {
+      "optionGroupId": 546,
+      "note": "Clear Quest 10 of Record: Rebellion's Reality (Hard)",
+      "questIds": [
+        200914
+      ]
+    },
+    {
+      "optionGroupId": 547,
+      "note": "Clear Quest 10 of Record: Rebellion's Reality (Very Hard)",
+      "questIds": [
+        200924
+      ]
+    },
+    {
       "optionGroupId": 548,
       "note": "Event chapter: Record: Rebellion's Reality",
       "eventQuestChapterId": 537
+    },
+    {
+      "optionGroupId": 549,
+      "note": "Clear Record: The Pumpkin Box on Normal (+1 more)",
+      "questIds": [
+        200944
+      ]
+    },
+    {
+      "optionGroupId": 550,
+      "note": "Clear Record: The Pumpkin Box on Hard",
+      "questIds": [
+        200954
+      ]
+    },
+    {
+      "optionGroupId": 551,
+      "note": "Clear Record: The Pumpkin Box on Very Hard",
+      "questIds": [
+        200964
+      ]
     },
     {
       "optionGroupId": 552,
@@ -173,9 +3265,91 @@
       "eventQuestChapterId": 544
     },
     {
+      "optionGroupId": 553,
+      "note": "Reach level 10 with Guardian Witch (+3 more)",
+      "costumeIds": [
+        25008
+      ]
+    },
+    {
+      "optionGroupId": 554,
+      "note": "Ascend Guardian Witch 1 time (+3 more)",
+      "costumeIds": [
+        25008
+      ]
+    },
+    {
+      "optionGroupId": 555,
+      "note": "Reach level 10 with Fairy-Tale Staff (+3 more)",
+      "weaponIds": [
+        250231,
+        250232
+      ]
+    },
+    {
+      "optionGroupId": 556,
+      "note": "Ascend Fairy-Tale Staff 1 time (+3 more)",
+      "weaponIds": [
+        250231,
+        250232
+      ]
+    },
+    {
+      "optionGroupId": 557,
+      "note": "Clear quests 10 times with Guardian Witch in your loadout (+2 more)",
+      "costumeIds": [
+        25008
+      ]
+    },
+    {
       "optionGroupId": 558,
       "note": "Event chapter: Variation: Aurora Phantom",
       "eventQuestChapterId": 318
+    },
+    {
+      "optionGroupId": 559,
+      "note": "Reach level 10 with Darkweave Zweihander (+4 more)",
+      "weaponIds": [
+        340561,
+        340562
+      ]
+    },
+    {
+      "optionGroupId": 560,
+      "note": "Enhance Darkweave Zweihander skills 1 time (+2 more)",
+      "weaponIds": [
+        340561,
+        340562
+      ]
+    },
+    {
+      "optionGroupId": 561,
+      "note": "Ascend Darkweave Zweihander 1 time (+3 more)",
+      "weaponIds": [
+        340561,
+        340562
+      ]
+    },
+    {
+      "optionGroupId": 562,
+      "note": "Clear Record: Mechanical Foundations on Normal (+1 more)",
+      "questIds": [
+        200984
+      ]
+    },
+    {
+      "optionGroupId": 563,
+      "note": "Clear Record: Mechanical Foundations on Hard",
+      "questIds": [
+        200994
+      ]
+    },
+    {
+      "optionGroupId": 564,
+      "note": "Clear Record: Mechanical Foundations on Very Hard",
+      "questIds": [
+        201004
+      ]
     },
     {
       "optionGroupId": 565,
@@ -183,9 +3357,132 @@
       "eventQuestChapterId": 546
     },
     {
+      "optionGroupId": 566,
+      "note": "Reach level 10 with Guardian Ruler (+3 more)",
+      "costumeIds": [
+        22009
+      ]
+    },
+    {
+      "optionGroupId": 567,
+      "note": "Ascend Guardian Ruler 1 time (+3 more)",
+      "costumeIds": [
+        22009
+      ]
+    },
+    {
+      "optionGroupId": 568,
+      "note": "Reach level 10 with Ocarina (+3 more)",
+      "weaponIds": [
+        220231,
+        220232
+      ]
+    },
+    {
+      "optionGroupId": 569,
+      "note": "Ascend Ocarina 1 time (+3 more)",
+      "weaponIds": [
+        220231,
+        220232
+      ]
+    },
+    {
+      "optionGroupId": 570,
+      "note": "Clear quests 10 times with Guardian Ruler in your loadout (+2 more)",
+      "costumeIds": [
+        22009
+      ]
+    },
+    {
       "optionGroupId": 571,
       "note": "Event chapter: Variation: Puppets Parrah-Noya",
       "eventQuestChapterId": 317
+    },
+    {
+      "optionGroupId": 572,
+      "note": "Reach level 10 with Gun of Incineration (+4 more)",
+      "weaponIds": [
+        310491,
+        310492
+      ]
+    },
+    {
+      "optionGroupId": 573,
+      "note": "Enhance Gun of Incineration skills 1 time (+2 more)",
+      "weaponIds": [
+        310491,
+        310492
+      ]
+    },
+    {
+      "optionGroupId": 574,
+      "note": "Ascend Gun of Incineration 1 time (+3 more)",
+      "weaponIds": [
+        310491,
+        310492
+      ]
+    },
+    {
+      "optionGroupId": 575,
+      "note": "Clear 10 subquests",
+      "eventQuestTypes": [
+        "MARATHON",
+        "HUNT",
+        "DUNGEON",
+        "DAY_OF_THE_WEEK",
+        "GUERRILLA",
+        "CHARACTER",
+        "PORTAL_CAGE",
+        "SPECIAL",
+        "TOWER",
+        "LABYRINTH"
+      ]
+    },
+    {
+      "optionGroupId": 576,
+      "note": "Clear 30 subquests",
+      "eventQuestTypes": [
+        "MARATHON",
+        "HUNT",
+        "DUNGEON",
+        "DAY_OF_THE_WEEK",
+        "GUERRILLA",
+        "CHARACTER",
+        "PORTAL_CAGE",
+        "SPECIAL",
+        "TOWER",
+        "LABYRINTH"
+      ]
+    },
+    {
+      "optionGroupId": 577,
+      "note": "Clear 60 subquests (+2 more)",
+      "eventQuestTypes": [
+        "MARATHON",
+        "HUNT",
+        "DUNGEON",
+        "DAY_OF_THE_WEEK",
+        "GUERRILLA",
+        "CHARACTER",
+        "PORTAL_CAGE",
+        "SPECIAL",
+        "TOWER",
+        "LABYRINTH"
+      ]
+    },
+    {
+      "optionGroupId": 584,
+      "note": "Clear Quest 1 of Variation: Blazing Dynast (Normal)",
+      "questIds": [
+        220192
+      ]
+    },
+    {
+      "optionGroupId": 585,
+      "note": "Clear Quest 5 of Variation: Blazing Dynast (EX Hard)",
+      "questIds": [
+        220201
+      ]
     },
     {
       "optionGroupId": 586,
@@ -193,9 +3490,77 @@
       "eventQuestChapterId": 321
     },
     {
+      "optionGroupId": 587,
+      "note": "Clear Quest 5 of Record: Bridge of Supplication (EX Hard)",
+      "questIds": [
+        201051
+      ]
+    },
+    {
+      "optionGroupId": 588,
+      "note": "Ascend Guardian Traveler 3 times",
+      "questIds": [
+        201068
+      ]
+    },
+    {
+      "optionGroupId": 589,
+      "note": "Ascend Guardian Traveler 4 times",
+      "questIds": [
+        201093
+      ]
+    },
+    {
+      "optionGroupId": 590,
+      "note": "Reach level 10 with Spear of Freezing Mist (+2 more)",
+      "eventQuestChapterId": 551
+    },
+    {
+      "optionGroupId": 591,
+      "note": "Clear Quest 1 of Variation: Tempestuous Daemon (Normal)",
+      "questIds": [
+        220202
+      ]
+    },
+    {
+      "optionGroupId": 592,
+      "note": "Clear Quest 5 of Variation: Tempestuous Daemon (EX Hard)",
+      "questIds": [
+        220211
+      ]
+    },
+    {
       "optionGroupId": 593,
       "note": "Event chapter: Variation: Tempestuous Daemon",
       "eventQuestChapterId": 322
+    },
+    {
+      "optionGroupId": 594,
+      "note": "Clear Quest 10 of Record: Original Sin's Door (Normal)",
+      "questIds": [
+        200700
+      ]
+    },
+    {
+      "optionGroupId": 595,
+      "note": "Clear Quest 5 of Record: Original Sin's Door (EX Hard)",
+      "questIds": [
+        200725
+      ]
+    },
+    {
+      "optionGroupId": 596,
+      "note": "Clear Quest 10 of Record: Forest of Temptation (Normal)",
+      "questIds": [
+        201103
+      ]
+    },
+    {
+      "optionGroupId": 597,
+      "note": "Clear Quest 5 of Record: Forest of Temptation (EX Hard)",
+      "questIds": [
+        201128
+      ]
     },
     {
       "optionGroupId": 598,
@@ -203,9 +3568,70 @@
       "eventQuestChapterId": 554
     },
     {
+      "optionGroupId": 599,
+      "note": "Clear Quest 5 of Record: Happy Home (EX Hard) (+1 more)",
+      "questIds": [
+        200859
+      ]
+    },
+    {
+      "optionGroupId": 600,
+      "note": "Perform 10 Mama's Exciting Festival Multi-Step Summons",
+      "gachaIds": [
+        552001
+      ]
+    },
+    {
+      "optionGroupId": 602,
+      "note": "Clear Quest 10 of Record: Eternal Steps (Normal)",
+      "questIds": [
+        201138
+      ]
+    },
+    {
+      "optionGroupId": 603,
+      "note": "Clear Quest 5 of Record: Eternal Steps (EX Hard) (+1 more)",
+      "questIds": [
+        201163
+      ]
+    },
+    {
+      "optionGroupId": 604,
+      "note": "Clear Record: Eternal Steps 30 times (+2 more)",
+      "eventQuestChapterId": 556
+    },
+    {
+      "optionGroupId": 605,
+      "note": "Clear Quest 10 of Record: Hidden Truths (Normal)",
+      "questIds": [
+        201173
+      ]
+    },
+    {
+      "optionGroupId": 606,
+      "note": "Clear Quest 5 of Record: Hidden Truths (EX Hard)",
+      "questIds": [
+        201198
+      ]
+    },
+    {
       "optionGroupId": 607,
       "note": "Event chapter: Record: Hidden Truths",
       "eventQuestChapterId": 558
+    },
+    {
+      "optionGroupId": 608,
+      "note": "Clear Quest 1 of Variation: Aurora Senior Officer (Normal)",
+      "questIds": [
+        220212
+      ]
+    },
+    {
+      "optionGroupId": 609,
+      "note": "Clear Quest 5 of Variation: Aurora Senior Officer (EX Hard)",
+      "questIds": [
+        220221
+      ]
     },
     {
       "optionGroupId": 610,
@@ -213,9 +3639,65 @@
       "eventQuestChapterId": 323
     },
     {
+      "optionGroupId": 611,
+      "note": "Clear Quest 5 of The Pumpkin Box (EX Hard)",
+      "questIds": [
+        200969
+      ]
+    },
+    {
+      "optionGroupId": 612,
+      "note": "Clear Quest 10 of Record: Traces of Pursuit (Normal)",
+      "questIds": [
+        201220
+      ]
+    },
+    {
+      "optionGroupId": 613,
+      "note": "Clear Quest 5 of Record: Traces of Pursuit (Ex Hard)",
+      "questIds": [
+        201245
+      ]
+    },
+    {
       "optionGroupId": 614,
       "note": "Event chapter: Record: Traces of Pursuit",
       "eventQuestChapterId": 562
+    },
+    {
+      "optionGroupId": 615,
+      "note": "Clear Quest 5 of Record: Mechanical Foundations (Ex Hard)",
+      "questIds": [
+        201009
+      ]
+    },
+    {
+      "optionGroupId": 616,
+      "note": "Clear Quest 1 of Variation: Puppets Parrah-Noya (Normal)",
+      "questIds": [
+        220181
+      ]
+    },
+    {
+      "optionGroupId": 617,
+      "note": "Clear Quest 5 of Variation: Puppets Parrah-Noya (Ex Hard)",
+      "questIds": [
+        220190
+      ]
+    },
+    {
+      "optionGroupId": 618,
+      "note": "Clear Quest 10 of Record: Market of Ruse (Normal)",
+      "questIds": [
+        201255
+      ]
+    },
+    {
+      "optionGroupId": 619,
+      "note": "Clear Quest 5 of Record: Market of Ruse (Ex Hard)",
+      "questIds": [
+        201280
+      ]
     },
     {
       "optionGroupId": 620,
@@ -223,9 +3705,37 @@
       "eventQuestChapterId": 564
     },
     {
+      "optionGroupId": 621,
+      "note": "Clear Quest 1 of Variation: Gloomy Dynast (Normal)",
+      "questIds": [
+        220222
+      ]
+    },
+    {
+      "optionGroupId": 622,
+      "note": "Clear Quest 5 of Variation: Gloomy Dynast (Ex Hard)",
+      "questIds": [
+        220231
+      ]
+    },
+    {
       "optionGroupId": 623,
       "note": "Event chapter: Variation: Gloomy Dynast",
       "eventQuestChapterId": 325
+    },
+    {
+      "optionGroupId": 624,
+      "note": "Clear Quest 10 of Record: The Devil's Tray (Normal)",
+      "questIds": [
+        201290
+      ]
+    },
+    {
+      "optionGroupId": 625,
+      "note": "Clear Quest 5 of Record: The Devil's Tray (Ex Hard)",
+      "questIds": [
+        201315
+      ]
     },
     {
       "optionGroupId": 626,
@@ -233,9 +3743,44 @@
       "eventQuestChapterId": 566
     },
     {
+      "optionGroupId": 627,
+      "note": "Clear Quest 1 of Variation: Cascading Resentful Witch (Normal)",
+      "questIds": [
+        220232
+      ]
+    },
+    {
+      "optionGroupId": 628,
+      "note": "Clear Quest 5 of Variation: Cascading Resentful Witch (Ex Hard)",
+      "questIds": [
+        220241
+      ]
+    },
+    {
       "optionGroupId": 629,
       "note": "Event chapter: Variation: Cascading Resentful Witch",
       "eventQuestChapterId": 327
+    },
+    {
+      "optionGroupId": 630,
+      "note": "Clear Quest 5 of Record: Vestiges of Paradise (Ex Hard)",
+      "questIds": [
+        201318
+      ]
+    },
+    {
+      "optionGroupId": 631,
+      "note": "Clear Quest 10 of Record: Tower of Beginnings (Normal)",
+      "questIds": [
+        201333
+      ]
+    },
+    {
+      "optionGroupId": 632,
+      "note": "Clear Quest 5 of Record: Tower of Beginnings (Ex Hard)",
+      "questIds": [
+        201358
+      ]
     },
     {
       "optionGroupId": 633,
@@ -243,9 +3788,51 @@
       "eventQuestChapterId": 569
     },
     {
+      "optionGroupId": 635,
+      "note": "Clear Quest 1 of Variation: Blazing Personality Amalgam (Normal)",
+      "questIds": [
+        220242
+      ]
+    },
+    {
+      "optionGroupId": 636,
+      "note": "Clear Quest 5 of Variation: Blazing Personality Amalgam (Ex Hard)",
+      "questIds": [
+        220251
+      ]
+    },
+    {
       "optionGroupId": 637,
       "note": "Event chapter: Variation: Blazing Personality Amalgam",
       "eventQuestChapterId": 328
+    },
+    {
+      "optionGroupId": 638,
+      "note": "Clear Quest 1 of Variation: Aurora Dynast (Normal)",
+      "questIds": [
+        220001
+      ]
+    },
+    {
+      "optionGroupId": 639,
+      "note": "Clear Quest 5 of Variation: Aurora Dynast (EX Hard)",
+      "questIds": [
+        220256
+      ]
+    },
+    {
+      "optionGroupId": 640,
+      "note": "Clear Quest 1 of Variation: Gloomy Binding Oculus (Normal)",
+      "questIds": [
+        220257
+      ]
+    },
+    {
+      "optionGroupId": 641,
+      "note": "Clear Quest 5 of Variation: Gloomy Binding Oculus (EX Hard)",
+      "questIds": [
+        220266
+      ]
     },
     {
       "optionGroupId": 642,
@@ -253,9 +3840,82 @@
       "eventQuestChapterId": 330
     },
     {
+      "optionGroupId": 643,
+      "note": "Clear Quest 10 of Record: Happy Home (Normal)",
+      "questIds": [
+        201369
+      ]
+    },
+    {
+      "optionGroupId": 644,
+      "note": "Clear Quest 5 of Record: Happy Home (EX Hard)",
+      "questIds": [
+        201394
+      ]
+    },
+    {
+      "optionGroupId": 645,
+      "note": "Clear Record: Happy Home 30 times (+2 more)",
+      "eventQuestChapterId": 572
+    },
+    {
+      "optionGroupId": 646,
+      "note": "Clear Quest 10 of Record: Ritual of Reverie (Normal)",
+      "questIds": [
+        201404
+      ]
+    },
+    {
+      "optionGroupId": 647,
+      "note": "Clear Quest 5 of Record: Ritual of Reverie (Ex Hard)",
+      "questIds": [
+        201429
+      ]
+    },
+    {
+      "optionGroupId": 648,
+      "note": "Clear Record: Ritual of Reverie 30 times (+2 more)",
+      "eventQuestChapterId": 573
+    },
+    {
+      "optionGroupId": 649,
+      "note": "Clear Quest 5 of Variation: B. Resentful Witch (Ex Hard)",
+      "questIds": [
+        220271
+      ]
+    },
+    {
+      "optionGroupId": 650,
+      "note": "Clear Quest 1 of Variation: Blazing Mage (Normal)",
+      "questIds": [
+        220272
+      ]
+    },
+    {
+      "optionGroupId": 651,
+      "note": "Clear Quest 5 of Variation: Blazing Mage (EX Hard)",
+      "questIds": [
+        220281
+      ]
+    },
+    {
       "optionGroupId": 652,
       "note": "Event chapter: Variation: Blazing Mage",
       "eventQuestChapterId": 332
+    },
+    {
+      "optionGroupId": 653,
+      "note": "Clear Quest 10 of Record: Their Stage (Normal)",
+      "questIds": [
+        201439
+      ]
+    },
+    {
+      "optionGroupId": 654,
+      "note": "Clear Quest 5 of Record: Their Stage (Ex Hard)",
+      "questIds": [
+        201464
+      ]
     },
     {
       "optionGroupId": 655,
@@ -263,9 +3923,37 @@
       "eventQuestChapterId": 574
     },
     {
+      "optionGroupId": 656,
+      "note": "Clear Quest 10 of Record: Valley of Light (Normal)",
+      "questIds": [
+        200100
+      ]
+    },
+    {
+      "optionGroupId": 657,
+      "note": "Clear Quest 5 of Record: Valley of Light (Ex Hard)",
+      "questIds": [
+        201469
+      ]
+    },
+    {
       "optionGroupId": 658,
       "note": "Event chapter: Record: Valley of Light",
       "eventQuestChapterId": 503
+    },
+    {
+      "optionGroupId": 659,
+      "note": "Clear Quest 10 of Record: A Question of Decorum (Normal)",
+      "questIds": [
+        201479
+      ]
+    },
+    {
+      "optionGroupId": 660,
+      "note": "Clear Quest 5 of Record: A Question of Decorum (Ex Hard)",
+      "questIds": [
+        201504
+      ]
     },
     {
       "optionGroupId": 661,
@@ -273,9 +3961,44 @@
       "eventQuestChapterId": 576
     },
     {
+      "optionGroupId": 662,
+      "note": "Clear Quest 1 of Variation: Nelgel the Netherfiend (Normal)",
+      "questIds": [
+        220282
+      ]
+    },
+    {
+      "optionGroupId": 663,
+      "note": "Clear Quest 5 of Variation: Nelgel the Netherfiend (Ex Hard)",
+      "questIds": [
+        220291
+      ]
+    },
+    {
       "optionGroupId": 664,
       "note": "Event chapter: Variation: Nelgel the Netherfiend",
       "eventQuestChapterId": 333
+    },
+    {
+      "optionGroupId": 665,
+      "note": "Clear Quest 5 of Variation: Nelgel the Netherfiend (Normal)",
+      "questIds": [
+        220286
+      ]
+    },
+    {
+      "optionGroupId": 666,
+      "note": "Clear Quest 10 of Record: City of Discontent (Normal)",
+      "questIds": [
+        200130
+      ]
+    },
+    {
+      "optionGroupId": 667,
+      "note": "Clear Quest 5 of Record: City of Discontent (Ex Hard)",
+      "questIds": [
+        201509
+      ]
     },
     {
       "optionGroupId": 668,
@@ -283,9 +4006,37 @@
       "eventQuestChapterId": 505
     },
     {
+      "optionGroupId": 669,
+      "note": "Clear Quest 1 of Variation: Cascading Phantom (Normal)",
+      "questIds": [
+        220293
+      ]
+    },
+    {
+      "optionGroupId": 670,
+      "note": "Clear Quest 5 of Variation: Cascading Phantom (Ex Hard)",
+      "questIds": [
+        220302
+      ]
+    },
+    {
       "optionGroupId": 671,
       "note": "Event chapter: Variation: Cascading Phantom",
       "eventQuestChapterId": 336
+    },
+    {
+      "optionGroupId": 672,
+      "note": "Clear Quest 10 of Record: An Endearing Journey (Normal)",
+      "questIds": [
+        201519
+      ]
+    },
+    {
+      "optionGroupId": 673,
+      "note": "Clear Quest 5 of Record: An Endearing Journey (Ex Hard)",
+      "questIds": [
+        201544
+      ]
     },
     {
       "optionGroupId": 674,
@@ -293,9 +4044,37 @@
       "eventQuestChapterId": 578
     },
     {
+      "optionGroupId": 675,
+      "note": "Clear Quest 10 of Record: Seat of Shadow on Normal",
+      "questIds": [
+        200190
+      ]
+    },
+    {
+      "optionGroupId": 676,
+      "note": "Clear Quest 5 of Record: Seat of Shadow (Ex Hard)",
+      "questIds": [
+        201546
+      ]
+    },
+    {
       "optionGroupId": 677,
       "note": "Event chapter: Record: Seat of Shadow",
       "eventQuestChapterId": 507
+    },
+    {
+      "optionGroupId": 678,
+      "note": "Clear Quest 10 of Record: Hallowed Struggle (Normal)",
+      "questIds": [
+        201556
+      ]
+    },
+    {
+      "optionGroupId": 679,
+      "note": "Clear Quest 5 of Record: Hallowed Struggle (Ex Hard)",
+      "questIds": [
+        201581
+      ]
     },
     {
       "optionGroupId": 680,
@@ -303,9 +4082,56 @@
       "eventQuestChapterId": 580
     },
     {
+      "optionGroupId": 681,
+      "note": "Clear Quest 1 of Variation: Tempestuous Armed Aberration (Normal)",
+      "questIds": [
+        220303
+      ]
+    },
+    {
+      "optionGroupId": 682,
+      "note": "Clear Quest 5 of Variation: Tempestuous Armed Aberration (Ex Hard)",
+      "questIds": [
+        220312
+      ]
+    },
+    {
       "optionGroupId": 683,
       "note": "Event chapter: Variation: Tempestuous Armed Aberration",
       "eventQuestChapterId": 337
+    },
+    {
+      "optionGroupId": 684,
+      "note": "Clear Quest 10 of Record: A Distant Peak (Normal)",
+      "questIds": [
+        201591
+      ]
+    },
+    {
+      "optionGroupId": 685,
+      "note": "Clear Quest 5 of Record: A Distant Peak (EX Hard)",
+      "questIds": [
+        201616
+      ]
+    },
+    {
+      "optionGroupId": 686,
+      "note": "Clear Record: A Distant Peak 30 times (+2 more)",
+      "eventQuestChapterId": 581
+    },
+    {
+      "optionGroupId": 687,
+      "note": "Clear Quest 10 of Record: Starfall Cliff (Normal)",
+      "questIds": [
+        201626
+      ]
+    },
+    {
+      "optionGroupId": 688,
+      "note": "Clear Quest 5 of Record: Starfall Cliff (Ex Hard)",
+      "questIds": [
+        201651
+      ]
     },
     {
       "optionGroupId": 689,
@@ -313,9 +4139,37 @@
       "eventQuestChapterId": 582
     },
     {
+      "optionGroupId": 690,
+      "note": "Clear Quest 1 of Variation: Cascading Personality Amalgam (Normal)",
+      "questIds": [
+        220313
+      ]
+    },
+    {
+      "optionGroupId": 691,
+      "note": "Clear Quest 5 of Variation: Cascading Personality Amalgam (Ex Hard)",
+      "questIds": [
+        220322
+      ]
+    },
+    {
       "optionGroupId": 692,
       "note": "Event chapter: Variation: Cascading Personality Amalgam",
       "eventQuestChapterId": 339
+    },
+    {
+      "optionGroupId": 693,
+      "note": "Clear Quest 10 of Record: The Wishing Space (Normal)",
+      "questIds": [
+        201068
+      ]
+    },
+    {
+      "optionGroupId": 694,
+      "note": "Clear Quest 5 of Record: The Wishing Space (EX Hard)",
+      "questIds": [
+        201093
+      ]
     },
     {
       "optionGroupId": 695,
@@ -323,9 +4177,56 @@
       "eventQuestChapterId": 551
     },
     {
+      "optionGroupId": 696,
+      "note": "Clear Quest 10 of Record: Garden of Benediction (Normal)",
+      "questIds": [
+        201661
+      ]
+    },
+    {
+      "optionGroupId": 697,
+      "note": "Clear Quest 3 of Record: Garden of Benediction (Ex Hard)",
+      "questIds": [
+        201684
+      ]
+    },
+    {
+      "optionGroupId": 698,
+      "note": "Clear Record: Garden of Benediction 30 times (+2 more)",
+      "eventQuestChapterId": 584
+    },
+    {
+      "optionGroupId": 699,
+      "note": "Clear Quest 1 of Variation: Blazing Binding Oculus (Normal)",
+      "questIds": [
+        220323
+      ]
+    },
+    {
+      "optionGroupId": 700,
+      "note": "Clear Quest 5 of Variation: Blazing Binding Oculus (Ex Hard)",
+      "questIds": [
+        220332
+      ]
+    },
+    {
       "optionGroupId": 701,
       "note": "Event chapter: Variation: Blazing Binding Oculus",
       "eventQuestChapterId": 340
+    },
+    {
+      "optionGroupId": 705,
+      "note": "Clear Quest 10 of Record: The Cage of Rebirth (Normal)",
+      "questIds": [
+        201727
+      ]
+    },
+    {
+      "optionGroupId": 706,
+      "note": "Clear Quest 5 of Record: The Cage of Rebirth (Ex Hard)",
+      "questIds": [
+        201752
+      ]
     },
     {
       "optionGroupId": 707,
@@ -333,21 +4234,1119 @@
       "eventQuestChapterId": 586
     },
     {
+      "optionGroupId": 708,
+      "note": "Clear Quest 10 of Record: Happy Home (Normal)",
+      "questIds": [
+        201762
+      ]
+    },
+    {
+      "optionGroupId": 709,
+      "note": "Clear Quest 5 of Record: Happy Home (EX Hard)",
+      "questIds": [
+        201787
+      ]
+    },
+    {
+      "optionGroupId": 710,
+      "note": "Clear Record: Happy Home 30 times (+2 more)",
+      "eventQuestChapterId": 587
+    },
+    {
+      "optionGroupId": 711,
+      "note": "Clear Quest 10 of Record: Eternal Steps (Normal)",
+      "questIds": [
+        201797
+      ]
+    },
+    {
+      "optionGroupId": 712,
+      "note": "Clear Quest 5 of Record: Eternal Steps (EX Hard)",
+      "questIds": [
+        201822
+      ]
+    },
+    {
+      "optionGroupId": 713,
+      "note": "Clear Record: Eternal Steps 30 times (+2 more)",
+      "eventQuestChapterId": 588
+    },
+    {
+      "optionGroupId": 714,
+      "note": "Clear Quest 10 of Record: Ritual of Reverie (Normal)",
+      "questIds": [
+        201832
+      ]
+    },
+    {
+      "optionGroupId": 715,
+      "note": "Clear Quest 5 of Record: Ritual of Reverie (Ex Hard)",
+      "questIds": [
+        201857
+      ]
+    },
+    {
+      "optionGroupId": 716,
+      "note": "Clear Record: Ritual of Reverie 30 times (+2 more)",
+      "eventQuestChapterId": 589
+    },
+    {
+      "optionGroupId": 10001,
+      "note": "Clear Main Quest Ch 1 on Hard (+1 more)",
+      "questIds": [
+        10004
+      ]
+    },
+    {
+      "optionGroupId": 10002,
+      "note": "Clear Main Quest Ch 2 on Hard",
+      "questIds": [
+        10014
+      ]
+    },
+    {
+      "optionGroupId": 10003,
+      "note": "Clear Main Quest Ch 3 on Hard",
+      "questIds": [
+        10024
+      ]
+    },
+    {
+      "optionGroupId": 10004,
+      "note": "Clear Main Quest Ch 4 on Hard",
+      "questIds": [
+        10034
+      ]
+    },
+    {
+      "optionGroupId": 10005,
+      "note": "Clear Main Quest Ch 5 on Hard",
+      "questIds": [
+        10044
+      ]
+    },
+    {
+      "optionGroupId": 10006,
+      "note": "Clear Quest 10 of Main Quest, Chapter 6 (Hard) (+1 more)",
+      "questIds": [
+        10054
+      ]
+    },
+    {
+      "optionGroupId": 10007,
+      "note": "Clear Main Quest Ch 7 on Hard",
+      "questIds": [
+        10064
+      ]
+    },
+    {
+      "optionGroupId": 10008,
+      "note": "Clear Main Quest Ch 8 on Hard",
+      "questIds": [
+        10074
+      ]
+    },
+    {
+      "optionGroupId": 10009,
+      "note": "Clear Main Quest Ch 9 on Hard",
+      "questIds": [
+        10084
+      ]
+    },
+    {
+      "optionGroupId": 10010,
+      "note": "Clear Main Quest Ch 10 on Hard",
+      "questIds": [
+        10094
+      ]
+    },
+    {
+      "optionGroupId": 10011,
+      "note": "Clear Main Quest Ch 11 on Hard",
+      "questIds": [
+        10104
+      ]
+    },
+    {
+      "optionGroupId": 10012,
+      "note": "Clear Quest 4 of Main Quest, Chapter 12 (Hard) (+1 more)",
+      "questIds": [
+        10108
+      ]
+    },
+    {
+      "optionGroupId": 10013,
+      "note": "Clear The Sun 1: The Dawn on Hard",
+      "questIds": [
+        10310
+      ]
+    },
+    {
+      "optionGroupId": 10014,
+      "note": "Clear The Moon 1: The Gloaming on Hard",
+      "questIds": [
+        10410
+      ]
+    },
+    {
+      "optionGroupId": 10015,
+      "note": "Clear The Sun II: Noontide on Hard",
+      "questIds": [
+        10320
+      ]
+    },
+    {
+      "optionGroupId": 10016,
+      "note": "Clear The Moon II: Eventide on Hard",
+      "questIds": [
+        10420
+      ]
+    },
+    {
+      "optionGroupId": 10017,
+      "note": "Clear The Sun III: Twilight on Hard",
+      "questIds": [
+        10330
+      ]
+    },
+    {
+      "optionGroupId": 10018,
+      "note": "Clear The Moon III: Daybreak on Hard",
+      "questIds": [
+        10430
+      ]
+    },
+    {
+      "optionGroupId": 10019,
+      "note": "Clear The Moon IV: The Gloaming on Hard",
+      "questIds": [
+        10340
+      ]
+    },
+    {
+      "optionGroupId": 10020,
+      "note": "Clear The Sun IV: The Dawn on Hard",
+      "questIds": [
+        10440
+      ]
+    },
+    {
+      "optionGroupId": 10021,
+      "note": "Clear The Moon V: Eventide on Hard",
+      "questIds": [
+        10350
+      ]
+    },
+    {
+      "optionGroupId": 10022,
+      "note": "Clear The Sun V: Noontide on Hard",
+      "questIds": [
+        10450
+      ]
+    },
+    {
+      "optionGroupId": 10023,
+      "note": "Clear The Moon Ⅵ: Daybreak Quest 10 (Hard) (+1 more)",
+      "questIds": [
+        10360
+      ]
+    },
+    {
+      "optionGroupId": 10024,
+      "note": "Clear The Sun Ⅵ: Twilight Quest 10 (Hard) (+1 more)",
+      "questIds": [
+        10460
+      ]
+    },
+    {
+      "optionGroupId": 10025,
+      "note": "Clear Overture I: Indigo on Hard",
+      "questIds": [
+        10507
+      ]
+    },
+    {
+      "optionGroupId": 10026,
+      "note": "Clear Overture II: Scarlet on Hard",
+      "questIds": [
+        10514
+      ]
+    },
+    {
+      "optionGroupId": 10027,
+      "note": "Clear Overture III: Emerald on Hard",
+      "questIds": [
+        10521
+      ]
+    },
+    {
+      "optionGroupId": 10028,
+      "note": "Clear Overture IV: Amber on Hard",
+      "questIds": [
+        10529
+      ]
+    },
+    {
+      "optionGroupId": 10029,
+      "note": "Clear Act II: The Return on Hard",
+      "questIds": [
+        10536
+      ]
+    },
+    {
+      "optionGroupId": 10030,
+      "note": "Clear Act III: Transmigration Quest 7 (Hard) (+1 more)",
+      "questIds": [
+        10546
+      ]
+    },
+    {
+      "optionGroupId": 11001,
+      "note": "Clear Levania Dark Lair: Easy",
+      "questIds": [
+        110156
+      ]
+    },
+    {
+      "optionGroupId": 11002,
+      "note": "Clear Levania Dark Lair: Normal",
+      "questIds": [
+        110157
+      ]
+    },
+    {
+      "optionGroupId": 11003,
+      "note": "Clear Levania Dark Lair: Hard",
+      "questIds": [
+        110158
+      ]
+    },
+    {
+      "optionGroupId": 11004,
+      "note": "Clear 063y Dark Lair: Easy",
+      "questIds": [
+        110068
+      ]
+    },
+    {
+      "optionGroupId": 11005,
+      "note": "Clear 063y Dark Lair: Normal",
+      "questIds": [
+        110069
+      ]
+    },
+    {
+      "optionGroupId": 11006,
+      "note": "Clear 063y Dark Lair: Hard",
+      "questIds": [
+        110070
+      ]
+    },
+    {
+      "optionGroupId": 11007,
+      "note": "Clear 1 Recollections of Dusk quest for Lars",
+      "eventQuestChapterIds": [
+        500051,
+        500052,
+        500053,
+        500054
+      ]
+    },
+    {
+      "optionGroupId": 11008,
+      "note": "Clear 1 Recollections of Dusk quest for Fio",
+      "eventQuestChapterIds": [
+        500001,
+        500002,
+        500003,
+        500004
+      ]
+    },
+    {
+      "optionGroupId": 11009,
+      "note": "Clear 1 Dark Memory quest  (Easy)",
+      "questIds": [
+        110001,
+        110002,
+        110008,
+        110011,
+        110012,
+        110018,
+        110021,
+        110022,
+        110028,
+        110031,
+        110032,
+        110038,
+        110041,
+        110042,
+        110048,
+        110061,
+        110062,
+        110068,
+        110071,
+        110072,
+        110078,
+        110081,
+        110084,
+        110087,
+        110090,
+        110093,
+        110096,
+        110099,
+        110102,
+        110103,
+        110108,
+        110111,
+        110114,
+        110115,
+        110120,
+        110123,
+        110126,
+        110127,
+        110132,
+        110135,
+        110138,
+        110139,
+        110144,
+        110147,
+        110150,
+        110151,
+        110156,
+        110159,
+        110162,
+        110163,
+        110168,
+        110171,
+        110174,
+        110175,
+        110180,
+        110183,
+        110186,
+        110187,
+        110192,
+        110195,
+        110198,
+        110199,
+        110204,
+        110207,
+        110210,
+        110211,
+        110216,
+        110219,
+        110222,
+        110223,
+        110228,
+        110231,
+        110234,
+        110235,
+        110240,
+        110243,
+        110246,
+        110247,
+        110252,
+        110255,
+        110258,
+        110259,
+        110264,
+        110267
+      ]
+    },
+    {
       "optionGroupId": 11010,
-      "note": "Dark Memory quests (Normal)",
-      "eventQuestType": "END_CONTENTS",
-      "difficulty": "NORMAL"
+      "note": "Dark Memory quests (Normal): the Normal quest of each Dark Memory chapter, by quest name",
+      "questIds": [
+        110003,
+        110004,
+        110009,
+        110013,
+        110014,
+        110019,
+        110023,
+        110024,
+        110029,
+        110033,
+        110034,
+        110039,
+        110043,
+        110044,
+        110049,
+        110063,
+        110064,
+        110069,
+        110073,
+        110074,
+        110079,
+        110082,
+        110085,
+        110088,
+        110091,
+        110094,
+        110097,
+        110100,
+        110104,
+        110105,
+        110109,
+        110112,
+        110116,
+        110117,
+        110121,
+        110124,
+        110128,
+        110129,
+        110133,
+        110136,
+        110140,
+        110141,
+        110145,
+        110148,
+        110152,
+        110153,
+        110157,
+        110160,
+        110164,
+        110165,
+        110169,
+        110172,
+        110176,
+        110177,
+        110181,
+        110184,
+        110188,
+        110189,
+        110193,
+        110196,
+        110200,
+        110201,
+        110205,
+        110208,
+        110212,
+        110213,
+        110217,
+        110220,
+        110224,
+        110225,
+        110229,
+        110232,
+        110236,
+        110237,
+        110241,
+        110244,
+        110248,
+        110249,
+        110253,
+        110256,
+        110260,
+        110261,
+        110265,
+        110268
+      ]
     },
     {
       "optionGroupId": 11011,
-      "note": "Dark Memory quests (Hard)",
-      "eventQuestType": "END_CONTENTS",
-      "difficulty": "HARD"
+      "note": "Dark Memory quests (Hard): the Hard quest of each Dark Memory chapter, by quest name",
+      "questIds": [
+        110005,
+        110006,
+        110010,
+        110015,
+        110016,
+        110020,
+        110025,
+        110026,
+        110030,
+        110035,
+        110036,
+        110040,
+        110045,
+        110046,
+        110050,
+        110065,
+        110066,
+        110070,
+        110075,
+        110076,
+        110080,
+        110083,
+        110086,
+        110089,
+        110092,
+        110095,
+        110098,
+        110101,
+        110106,
+        110107,
+        110110,
+        110113,
+        110118,
+        110119,
+        110122,
+        110125,
+        110130,
+        110131,
+        110134,
+        110137,
+        110142,
+        110143,
+        110146,
+        110149,
+        110154,
+        110155,
+        110158,
+        110161,
+        110166,
+        110167,
+        110170,
+        110173,
+        110178,
+        110179,
+        110182,
+        110185,
+        110190,
+        110191,
+        110194,
+        110197,
+        110202,
+        110203,
+        110206,
+        110209,
+        110214,
+        110215,
+        110218,
+        110221,
+        110226,
+        110227,
+        110230,
+        110233,
+        110238,
+        110239,
+        110242,
+        110245,
+        110250,
+        110251,
+        110254,
+        110257,
+        110262,
+        110263,
+        110266,
+        110269
+      ]
+    },
+    {
+      "optionGroupId": 11012,
+      "note": "Clear 1 Recollections of Dusk Quests for 063y (+2 more)",
+      "eventQuestChapterIds": [
+        500071,
+        500072,
+        500073,
+        500074
+      ]
+    },
+    {
+      "optionGroupId": 11013,
+      "note": "Clear 1 Recollections of Dusk Quests for Akeha (+2 more)",
+      "eventQuestChapterIds": [
+        500081,
+        500082,
+        500083,
+        500084
+      ]
+    },
+    {
+      "optionGroupId": 11014,
+      "note": "Clear 1 Recollections of Dusk Quests for Griff (+2 more)",
+      "eventQuestChapterIds": [
+        500091,
+        500092,
+        500093,
+        500094
+      ]
+    },
+    {
+      "optionGroupId": 11015,
+      "note": "Clear 1 Recollections of Dusk Quests for F66x (+2 more)",
+      "eventQuestChapterIds": [
+        500101,
+        500102,
+        500103,
+        500104
+      ]
+    },
+    {
+      "optionGroupId": 11016,
+      "note": "Clear 1 Recollections of Dusk Quests for Argo (+2 more)",
+      "eventQuestChapterIds": [
+        500111,
+        500112,
+        500113,
+        500114
+      ]
+    },
+    {
+      "optionGroupId": 20001,
+      "note": "Clear Main Quest Ch 1 on Very Hard (+1 more)",
+      "questIds": [
+        20004
+      ]
+    },
+    {
+      "optionGroupId": 20002,
+      "note": "Clear Main Quest Ch 2 on Very Hard (+1 more)",
+      "questIds": [
+        20014
+      ]
+    },
+    {
+      "optionGroupId": 20003,
+      "note": "Clear Main Quest Ch 3 on Very Hard (+1 more)",
+      "questIds": [
+        20024
+      ]
+    },
+    {
+      "optionGroupId": 20004,
+      "note": "Clear Main Quest Ch 4 on Very Hard (+1 more)",
+      "questIds": [
+        20034
+      ]
+    },
+    {
+      "optionGroupId": 20005,
+      "note": "Clear Main Quest Ch 5 on Very Hard (+1 more)",
+      "questIds": [
+        20044
+      ]
+    },
+    {
+      "optionGroupId": 20006,
+      "note": "Clear Main Quest Ch 6 on Very Hard (+1 more)",
+      "questIds": [
+        20054
+      ]
+    },
+    {
+      "optionGroupId": 20007,
+      "note": "Clear Main Quest Ch 7 on Very Hard",
+      "questIds": [
+        20064
+      ]
+    },
+    {
+      "optionGroupId": 20008,
+      "note": "Clear Main Quest Ch 8 on Very Hard",
+      "questIds": [
+        20074
+      ]
+    },
+    {
+      "optionGroupId": 20009,
+      "note": "Clear Main Quest Ch 9 on Very Hard",
+      "questIds": [
+        20084
+      ]
+    },
+    {
+      "optionGroupId": 20010,
+      "note": "Clear Main Quest Ch 10 on Very Hard",
+      "questIds": [
+        20094
+      ]
+    },
+    {
+      "optionGroupId": 20011,
+      "note": "Clear Main Quest Ch 11 on Very Hard",
+      "questIds": [
+        20104
+      ]
+    },
+    {
+      "optionGroupId": 20012,
+      "note": "Clear Main Quest Ch 12 on Very Hard",
+      "questIds": [
+        20108
+      ]
+    },
+    {
+      "optionGroupId": 20013,
+      "note": "Clear The Sun 1: The Dawn on Very Hard",
+      "questIds": [
+        20310
+      ]
+    },
+    {
+      "optionGroupId": 20014,
+      "note": "Clear The Moon 1: The Gloaming on Very Hard",
+      "questIds": [
+        20410
+      ]
+    },
+    {
+      "optionGroupId": 20015,
+      "note": "Clear The Sun II: Noontide on Very Hard",
+      "questIds": [
+        20320
+      ]
+    },
+    {
+      "optionGroupId": 20016,
+      "note": "Clear The Moon II: Eventide on Very Hard",
+      "questIds": [
+        20420
+      ]
+    },
+    {
+      "optionGroupId": 20017,
+      "note": "Clear The Sun III: Twilight on Very Hard",
+      "questIds": [
+        20330
+      ]
+    },
+    {
+      "optionGroupId": 20018,
+      "note": "Clear The Moon III: Daybreak on Very Hard",
+      "questIds": [
+        20430
+      ]
+    },
+    {
+      "optionGroupId": 20019,
+      "note": "Clear The Moon IV: The Gloaming on Very Hard",
+      "questIds": [
+        20340
+      ]
+    },
+    {
+      "optionGroupId": 20020,
+      "note": "Clear The Sun IV: The Dawn on Very Hard",
+      "questIds": [
+        20440
+      ]
+    },
+    {
+      "optionGroupId": 20021,
+      "note": "Clear The Moon V: Eventide on Very Hard",
+      "questIds": [
+        20350
+      ]
+    },
+    {
+      "optionGroupId": 20022,
+      "note": "Clear The Sun V: Noontide on Very Hard",
+      "questIds": [
+        20450
+      ]
+    },
+    {
+      "optionGroupId": 20023,
+      "note": "Clear The Moon Ⅵ: Daybreak on Very Hard",
+      "questIds": [
+        20360
+      ]
+    },
+    {
+      "optionGroupId": 20024,
+      "note": "Clear The Sun Ⅵ: Twilight on Very Hard",
+      "questIds": [
+        20460
+      ]
+    },
+    {
+      "optionGroupId": 20025,
+      "note": "Clear Overture I: Indigo on Very Hard",
+      "questIds": [
+        20507
+      ]
+    },
+    {
+      "optionGroupId": 20026,
+      "note": "Clear Overture II: Scarlet on Very Hard",
+      "questIds": [
+        20514
+      ]
+    },
+    {
+      "optionGroupId": 20027,
+      "note": "Clear Overture III: Emerald on Very Hard",
+      "questIds": [
+        20521
+      ]
+    },
+    {
+      "optionGroupId": 20028,
+      "note": "Clear Overture IV: Amber on Very Hard",
+      "questIds": [
+        20529
+      ]
+    },
+    {
+      "optionGroupId": 20029,
+      "note": "Clear Act II: The Return on Very Hard",
+      "questIds": [
+        20536
+      ]
+    },
+    {
+      "optionGroupId": 20030,
+      "note": "Clear Act III: Transmigration on Very Hard",
+      "questIds": [
+        20546
+      ]
+    },
+    {
+      "optionGroupId": 30001,
+      "note": "Clear Monday Quest on Easy",
+      "questIds": [
+        100001
+      ]
+    },
+    {
+      "optionGroupId": 30005,
+      "note": "Clear Tuesday Quest on Easy",
+      "questIds": [
+        100005
+      ]
+    },
+    {
+      "optionGroupId": 30009,
+      "note": "Clear Wednesday Quest on Easy",
+      "questIds": [
+        100009
+      ]
+    },
+    {
+      "optionGroupId": 30013,
+      "note": "Clear Thursday Quest on Easy",
+      "questIds": [
+        100013
+      ]
+    },
+    {
+      "optionGroupId": 30017,
+      "note": "Clear Friday Quest on Easy",
+      "questIds": [
+        100017
+      ]
+    },
+    {
+      "optionGroupId": 30021,
+      "note": "Clear Saturday Quest on Easy",
+      "questIds": [
+        100021
+      ]
     },
     {
       "optionGroupId": 30029,
       "note": "Daily (day-of-the-week) quests",
       "eventQuestType": "DAY_OF_THE_WEEK"
+    },
+    {
+      "optionGroupId": 30030,
+      "note": "Clear guerrilla quests 30 times (+26 more)",
+      "eventQuestType": "GUERRILLA"
+    },
+    {
+      "optionGroupId": 30031,
+      "note": "Clear Once per Day Quest 3 times (+3 more)",
+      "dailyClearableCount": 1,
+      "eventQuestType": "SPECIAL"
+    },
+    {
+      "optionGroupId": 30032,
+      "note": "Clear Once per Day Quest 3 times (+3 more)",
+      "dailyClearableCount": 1,
+      "eventQuestType": "SPECIAL"
+    },
+    {
+      "optionGroupId": 30033,
+      "note": "Clear Once per Day Quest 3 times (+3 more)",
+      "dailyClearableCount": 1,
+      "eventQuestType": "SPECIAL"
+    },
+    {
+      "optionGroupId": 30034,
+      "note": "Clear Once per Day Quest 3 times (+3 more)",
+      "dailyClearableCount": 1,
+      "eventQuestType": "SPECIAL"
+    },
+    {
+      "optionGroupId": 30035,
+      "note": "Clear Once per Day Quest 3 times (+3 more)",
+      "dailyClearableCount": 1,
+      "eventQuestType": "SPECIAL"
+    },
+    {
+      "optionGroupId": 30036,
+      "note": "Clear Once per Day Quest 3 times (+5 more)",
+      "dailyClearableCount": 1,
+      "eventQuestType": "SPECIAL"
+    },
+    {
+      "optionGroupId": 30037,
+      "note": "Clear Once per Day Quest 3 times (+5 more)",
+      "dailyClearableCount": 1,
+      "eventQuestType": "SPECIAL"
+    },
+    {
+      "optionGroupId": 30038,
+      "note": "Clear Once per Day Quest 3 times (+5 more)",
+      "dailyClearableCount": 1,
+      "eventQuestType": "SPECIAL"
+    },
+    {
+      "optionGroupId": 40001,
+      "note": "Clear Gun Guerrilla on Easy",
+      "questIds": [
+        100025
+      ]
+    },
+    {
+      "optionGroupId": 40002,
+      "note": "Clear Gun Guerrilla on Normal",
+      "questIds": [
+        100026
+      ]
+    },
+    {
+      "optionGroupId": 40005,
+      "note": "Clear 1H-Sword Guerrilla on Easy",
+      "questIds": [
+        100029
+      ]
+    },
+    {
+      "optionGroupId": 40006,
+      "note": "Clear 1H-Sword Guerrilla on Normal",
+      "questIds": [
+        100030
+      ]
+    },
+    {
+      "optionGroupId": 40009,
+      "note": "Clear 2H-Sword Guerrilla on Easy",
+      "questIds": [
+        100033
+      ]
+    },
+    {
+      "optionGroupId": 40010,
+      "note": "Clear 2H-Sword Guerrilla on Normal",
+      "questIds": [
+        100034
+      ]
+    },
+    {
+      "optionGroupId": 40013,
+      "note": "Clear Fists Guerrilla on Easy",
+      "questIds": [
+        100037
+      ]
+    },
+    {
+      "optionGroupId": 40014,
+      "note": "Clear Fists Guerrilla on Normal",
+      "questIds": [
+        100038
+      ]
+    },
+    {
+      "optionGroupId": 40017,
+      "note": "Clear Staff Guerrilla on Easy",
+      "questIds": [
+        100041
+      ]
+    },
+    {
+      "optionGroupId": 40018,
+      "note": "Clear Staff Guerrilla on Normal",
+      "questIds": [
+        100042
+      ]
+    },
+    {
+      "optionGroupId": 40021,
+      "note": "Clear Spear Guerrilla on Easy",
+      "questIds": [
+        100045
+      ]
+    },
+    {
+      "optionGroupId": 40022,
+      "note": "Clear Spear Guerrilla on Normal",
+      "questIds": [
+        100046
+      ]
+    },
+    {
+      "optionGroupId": 50001,
+      "note": "Clear Dungeon 1F",
+      "questIds": [
+        210001,
+        210011,
+        210021,
+        210031,
+        210041,
+        210051,
+        210061
+      ]
+    },
+    {
+      "optionGroupId": 50002,
+      "note": "Clear Dungeon 2F",
+      "questIds": [
+        210002,
+        210012,
+        210022,
+        210032,
+        210042,
+        210052,
+        210062
+      ]
+    },
+    {
+      "optionGroupId": 50003,
+      "note": "Clear Dungeon 3F",
+      "questIds": [
+        210003,
+        210013,
+        210023,
+        210033,
+        210043,
+        210053,
+        210063
+      ]
+    },
+    {
+      "optionGroupId": 50004,
+      "note": "Clear Dungeon 4F",
+      "questIds": [
+        210004,
+        210014,
+        210024,
+        210034,
+        210044,
+        210054,
+        210064
+      ]
+    },
+    {
+      "optionGroupId": 50005,
+      "note": "Clear Dungeon 5F",
+      "questIds": [
+        210005,
+        210015,
+        210025,
+        210035,
+        210045,
+        210055,
+        210065
+      ]
+    },
+    {
+      "optionGroupId": 50011,
+      "note": "Clear Dungeon: The Dynast's Memories 1F",
+      "questIds": [
+        210001
+      ]
     },
     {
       "optionGroupId": 60001,
@@ -515,10 +5514,201 @@
       "characterId": 1048
     },
     {
+      "optionGroupId": 100001,
+      "note": "Perform 10 chapter summons (+10 more)",
+      "gachaLabelType": "CHAPTER",
+      "gachaPriceItemIds": [
+        1008,
+        1009,
+        1010,
+        1011,
+        1012,
+        1013,
+        1014,
+        1015,
+        1016,
+        1017,
+        1018,
+        1019,
+        1020,
+        1021,
+        1022,
+        1023,
+        1024,
+        1025,
+        1026,
+        1027,
+        1028,
+        1029,
+        1030,
+        1031
+      ]
+    },
+    {
+      "optionGroupId": 100004,
+      "note": "Clear the designated quest enough times (+2 more)",
+      "difficulty": "HARD",
+      "questType": "MAIN_QUEST"
+    },
+    {
       "optionGroupId": 100021,
       "note": "Main quests on Very Hard",
       "questType": "MAIN_QUEST",
       "difficulty": "VERY_HARD"
+    },
+    {
+      "optionGroupId": 100022,
+      "note": "Clear Quest 1 of Main Quest, Chapter 5 (Hard) 15 times",
+      "questIds": [
+        10035
+      ]
+    },
+    {
+      "optionGroupId": 100023,
+      "note": "Clear Quest 6 of Ch. 6 Inscriptions in Stone on Hard",
+      "questIds": [
+        10050
+      ]
+    },
+    {
+      "optionGroupId": 100024,
+      "note": "Clear 1 Abyss Tower event quest (+4 more)",
+      "eventQuestType": "TOWER"
+    },
+    {
+      "optionGroupId": 100025,
+      "note": "Clear 1 Fate Board event quest (+3 more)",
+      "eventQuestType": "LABYRINTH"
+    },
+    {
+      "optionGroupId": 100026,
+      "note": "Perform 5 Daily Summons (+5 more)",
+      "isDailyFreeDraw": true
+    },
+    {
+      "optionGroupId": 200001,
+      "note": "Clear a Normal event quest",
+      "difficulty": "NORMAL",
+      "questType": "EVENT_QUEST"
+    },
+    {
+      "optionGroupId": 200002,
+      "note": "Clear a Hard event quest",
+      "difficulty": "HARD",
+      "questType": "EVENT_QUEST"
+    },
+    {
+      "optionGroupId": 200003,
+      "note": "Clear a Very Hard event quest",
+      "difficulty": "VERY_HARD",
+      "questType": "EVENT_QUEST"
+    },
+    {
+      "optionGroupId": 200007,
+      "note": "Clear a Normal event quest (+1 more)",
+      "difficulty": "NORMAL",
+      "questType": "EVENT_QUEST"
+    },
+    {
+      "missionId": 8901,
+      "note": "Clear Quest 10 of Record: Pure Hills (Normal) (shares option group 200007)",
+      "questIds": [
+        200070
+      ]
+    },
+    {
+      "optionGroupId": 200008,
+      "note": "Clear a Hard event quest (+1 more)",
+      "difficulty": "HARD",
+      "questType": "EVENT_QUEST"
+    },
+    {
+      "missionId": 8902,
+      "note": "Clear Quest 10 of Record: Pure Hills (Hard) (shares option group 200008)",
+      "questIds": [
+        200080
+      ]
+    },
+    {
+      "optionGroupId": 200009,
+      "note": "Clear a Very Hard event quest (+1 more)",
+      "difficulty": "VERY_HARD",
+      "questType": "EVENT_QUEST"
+    },
+    {
+      "missionId": 8903,
+      "note": "Clear Quest 10 of Record: Pure Hills (Very Hard) (shares option group 200009)",
+      "questIds": [
+        200090
+      ]
+    },
+    {
+      "optionGroupId": 200010,
+      "note": "Clear Blood Oath's Edge on Normal",
+      "questIds": [
+        200160
+      ]
+    },
+    {
+      "optionGroupId": 200011,
+      "note": "Clear Blood Oath's Edge on Hard",
+      "questIds": [
+        200170
+      ]
+    },
+    {
+      "optionGroupId": 200012,
+      "note": "Clear Blood Oath's Edge on Very Hard",
+      "questIds": [
+        200180
+      ]
+    },
+    {
+      "optionGroupId": 200013,
+      "note": "Clear Record: The Cage of Reincarnation on Normal (+1 more)",
+      "questIds": [
+        200010
+      ]
+    },
+    {
+      "missionId": 28501,
+      "note": "Clear Quest 10 of Record: The Cage of Reincarnation (Normal) (shares option group 200013)",
+      "questIds": [
+        200280
+      ]
+    },
+    {
+      "optionGroupId": 200014,
+      "note": "Clear Record: The Cage of Reincarnation on Hard",
+      "questIds": [
+        200020
+      ]
+    },
+    {
+      "optionGroupId": 200015,
+      "note": "Clear Record: The Cage of Reincarnation on Very Hard",
+      "questIds": [
+        200030
+      ]
+    },
+    {
+      "optionGroupId": 200016,
+      "note": "Clear Quest 5 of Record: The Cage of Reincarnation (EX Hard)",
+      "questIds": [
+        201203
+      ]
+    },
+    {
+      "optionGroupId": 200017,
+      "note": "Clear Record: The Cage of Reincarnation 30 times (+2 more)",
+      "eventQuestChapterId": 510
+    },
+    {
+      "optionGroupId": 200018,
+      "note": "Clear Quest 6 of Record: Pure Hills (Ex Hard)",
+      "questIds": [
+        201210
+      ]
     },
     {
       "optionGroupId": 300001,
@@ -546,6 +5736,232 @@
       "bigHuntBossId": 5
     },
     {
+      "optionGroupId": 310001,
+      "note": "Unlock 10 Stone Tower Monument panels for Rion (+2 more)",
+      "characterBoardGroupId": 100401
+    },
+    {
+      "optionGroupId": 310002,
+      "note": "Unlock 5 Cursed God Monument panels for Rion (+2 more)",
+      "characterBoardGroupId": 100402
+    },
+    {
+      "optionGroupId": 310003,
+      "note": "Unlock 10 Stone Tower Monument panels for Gayle (+2 more)",
+      "characterBoardGroupId": 100501
+    },
+    {
+      "optionGroupId": 310004,
+      "note": "Unlock 5 Cursed God Monument panels for Gayle (+2 more)",
+      "characterBoardGroupId": 100502
+    },
+    {
+      "optionGroupId": 310005,
+      "note": "Unlock 10 Stone Tower Monument panels for Dimos (+2 more)",
+      "characterBoardGroupId": 100301
+    },
+    {
+      "optionGroupId": 310006,
+      "note": "Unlock 5 Cursed God Monument panels for Dimos (+2 more)",
+      "characterBoardGroupId": 100302
+    },
+    {
+      "optionGroupId": 310007,
+      "note": "Unlock 10 Stone Tower Monument panels for Akeha (+2 more)",
+      "characterBoardGroupId": 101101
+    },
+    {
+      "optionGroupId": 310008,
+      "note": "Unlock 5 Cursed God Monument panels for Akeha (+2 more)",
+      "characterBoardGroupId": 101102
+    },
+    {
+      "optionGroupId": 310009,
+      "note": "Unlock 10 Stone Tower Monument panels for Argo (+2 more)",
+      "characterBoardGroupId": 100201
+    },
+    {
+      "optionGroupId": 310010,
+      "note": "Unlock 5 Cursed God Monument panels for Argo (+2 more)",
+      "characterBoardGroupId": 100202
+    },
+    {
+      "optionGroupId": 310011,
+      "note": "Unlock 10 Stone Tower Monument panels for 063y (+2 more)",
+      "characterBoardGroupId": 100701
+    },
+    {
+      "optionGroupId": 310012,
+      "note": "Unlock 5 Cursed God Monument panels for 063y (+2 more)",
+      "characterBoardGroupId": 100702
+    },
+    {
+      "optionGroupId": 310013,
+      "note": "Unlock 10 Stone Tower Monument panels for F66x (+2 more)",
+      "characterBoardGroupId": 100801
+    },
+    {
+      "optionGroupId": 310014,
+      "note": "Unlock 5 Cursed God Monument panels for F66x (+2 more)",
+      "characterBoardGroupId": 100802
+    },
+    {
+      "optionGroupId": 310015,
+      "note": "Unlock 10 Stone Tower Monument panels for Lars (+2 more)",
+      "characterBoardGroupId": 100901
+    },
+    {
+      "optionGroupId": 310016,
+      "note": "Unlock 5 Cursed God Monument panels for Lars (+2 more)",
+      "characterBoardGroupId": 100902
+    },
+    {
+      "optionGroupId": 310017,
+      "note": "Unlock 10 Stone Tower Monument panels for Griff (+2 more)",
+      "characterBoardGroupId": 101001
+    },
+    {
+      "optionGroupId": 310018,
+      "note": "Unlock 5 Cursed God Monument panels for Griff (+2 more)",
+      "characterBoardGroupId": 101002
+    },
+    {
+      "optionGroupId": 310019,
+      "note": "Unlock 10 Stone Tower Monument panels for Noelle (+2 more)",
+      "characterBoardGroupId": 100601
+    },
+    {
+      "optionGroupId": 310020,
+      "note": "Unlock 5 Cursed God Monument panels for Noelle (+2 more)",
+      "characterBoardGroupId": 100602
+    },
+    {
+      "optionGroupId": 310021,
+      "note": "Unlock 10 Stone Tower Monument panels for Levania (+2 more)",
+      "characterBoardGroupId": 100101
+    },
+    {
+      "optionGroupId": 310022,
+      "note": "Unlock 5 Cursed God Monument panels for Levania (+2 more)",
+      "characterBoardGroupId": 100102
+    },
+    {
+      "optionGroupId": 310023,
+      "note": "Unlock 10 Stone Tower Monument panels for Fio (+2 more)",
+      "characterBoardGroupId": 101201
+    },
+    {
+      "optionGroupId": 310024,
+      "note": "Unlock 5 Cursed God Monument panels for Fio (+2 more)",
+      "characterBoardGroupId": 101202
+    },
+    {
+      "optionGroupId": 310025,
+      "note": "Unlock 10 Stone Tower Monument panels for Saryu (+2 more)",
+      "characterBoardGroupId": 101301
+    },
+    {
+      "optionGroupId": 310026,
+      "note": "Unlock 5 Cursed God Monument panels for Saryu (+2 more)",
+      "characterBoardGroupId": 101302
+    },
+    {
+      "optionGroupId": 310027,
+      "note": "Unlock 10 Stone Tower Monument panels for Priyet (+2 more)",
+      "characterBoardGroupId": 101401
+    },
+    {
+      "optionGroupId": 310028,
+      "note": "Unlock 5 Cursed God Monument panels for Priyet (+2 more)",
+      "characterBoardGroupId": 101402
+    },
+    {
+      "optionGroupId": 310029,
+      "note": "Unlock 10 Stone Tower Monument panels for Marie (+2 more)",
+      "characterBoardGroupId": 101501
+    },
+    {
+      "optionGroupId": 310030,
+      "note": "Unlock 5 Cursed God Monument panels for Marie (+2 more)",
+      "characterBoardGroupId": 101502
+    },
+    {
+      "optionGroupId": 310031,
+      "note": "Unlock 10 Stone Tower Monument panels for Yurie (+2 more)",
+      "characterBoardGroupId": 101601
+    },
+    {
+      "optionGroupId": 310032,
+      "note": "Unlock 5 Cursed God Monument panels for Yurie (+2 more)",
+      "characterBoardGroupId": 101602
+    },
+    {
+      "optionGroupId": 310033,
+      "note": "Unlock 10 Stone Tower Monument panels for Yudil (+2 more)",
+      "characterBoardGroupId": 101701
+    },
+    {
+      "optionGroupId": 310034,
+      "note": "Unlock 5 Cursed God Monument panels for Yudil (+2 more)",
+      "characterBoardGroupId": 101702
+    },
+    {
+      "optionGroupId": 310035,
+      "note": "Unlock 10 Stone Tower Monument panels for Sarafa (+2 more)",
+      "characterBoardGroupId": 101801
+    },
+    {
+      "optionGroupId": 310036,
+      "note": "Unlock 5 Cursed God Monument panels for Sarafa (+2 more)",
+      "characterBoardGroupId": 101802
+    },
+    {
+      "optionGroupId": 310037,
+      "note": "Unlock 10 Stone Tower Monument panels for Hina (+2 more)",
+      "characterBoardGroupId": 101901
+    },
+    {
+      "optionGroupId": 310038,
+      "note": "Unlock 5 Cursed God Monument panels for Hina (+2 more)",
+      "characterBoardGroupId": 101902
+    },
+    {
+      "optionGroupId": 310039,
+      "note": "Unlock 10 Stone Tower Monument panels for Yuzuki (+2 more)",
+      "characterBoardGroupId": 102001
+    },
+    {
+      "optionGroupId": 310040,
+      "note": "Unlock 5 Cursed God Monument panels for Yuzuki (+2 more)",
+      "characterBoardGroupId": 102002
+    },
+    {
+      "optionGroupId": 310041,
+      "note": "Unlock 10 Stone Tower Monument panels for 10H (+2 more)",
+      "characterBoardGroupId": 102101
+    },
+    {
+      "optionGroupId": 310042,
+      "note": "Unlock 5 Cursed God Monument panels for 10H (+2 more)",
+      "characterBoardGroupId": 102102
+    },
+    {
+      "optionGroupId": 460007,
+      "note": "Liven up the concert in Quest 1 of The Sun III: Twilight to max excitement (+1 more)",
+      "questIds": [
+        325,
+        425
+      ]
+    },
+    {
+      "optionGroupId": 460008,
+      "note": "Show your resolve by singing perfectly in Quest 10 of The Sun III: Twilight (+1 more)",
+      "questIds": [
+        334,
+        434
+      ]
+    },
+    {
       "optionGroupId": 500001,
       "note": "Quests with Lars in the deck",
       "characterId": 1013
@@ -559,6 +5975,14 @@
       "optionGroupId": 500003,
       "note": "Quests with Saryu in the deck",
       "characterId": 1022
+    },
+    {
+      "optionGroupId": 500004,
+      "note": "Complete Floor 10 of Dungeon: The Dynast’s Memories with Saryu in your loadout (Skip Tickets cannot be used).",
+      "characterId": 1022,
+      "questIds": [
+        210010
+      ]
     },
     {
       "optionGroupId": 500015,
@@ -611,9 +6035,19 @@
       "characterId": 1007
     },
     {
+      "optionGroupId": 500144,
+      "note": "Clear 10 Dark Memory quests for Marie",
+      "eventQuestChapterId": 99016
+    },
+    {
       "optionGroupId": 500146,
       "note": "Quests with Noelle in the deck",
       "characterId": 1010
+    },
+    {
+      "optionGroupId": 500159,
+      "note": "Clear 10 Dark Memory quests for Hina",
+      "eventQuestChapterId": 99020
     },
     {
       "optionGroupId": 50004501,
@@ -624,6 +6058,28 @@
       "optionGroupId": 101030801,
       "note": "Dungeons",
       "eventQuestType": "DUNGEON"
+    },
+    {
+      "optionGroupId": 101120401,
+      "note": "Clear Argo's Dark Coin Quest (Easy) 10 times",
+      "questIds": [
+        110041
+      ]
+    },
+    {
+      "optionGroupId": 101120501,
+      "note": "Clear Argo's EX Ticket Quest (Easy) 10 times",
+      "questIds": [
+        110042
+      ]
+    },
+    {
+      "optionGroupId": 101120601,
+      "note": "Perform 100 Dark Memories Chapter Summons",
+      "gachaLabelType": "CHAPTER",
+      "gachaPriceItemIds": [
+        2002
+      ]
     }
   ]
 }

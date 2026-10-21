@@ -24,6 +24,7 @@ public class ShopService(UserDataStore store, DarkMasterMemoryDatabase masterDb,
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
         long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
+        ShopType shopType = _masterDb.EntityMShop.FirstOrDefault(s => s.ShopId == request.ShopId)?.ShopType ?? ShopType.UNKNOWN;
 
         foreach ((int shopItemId, int qty) in request.ShopItems)
         {
@@ -57,7 +58,8 @@ public class ShopService(UserDataStore store, DarkMasterMemoryDatabase masterDb,
             shopItem.BoughtCount += qty;
             shopItem.LatestBoughtCountChangedDatetime = nowMs;
 
-            _missions.Record(userDb, MissionClearConditionType.SHOP_BUY_BY_COUNT, 1, nowMs);
+            // Each item bought counts: 5 of one item is 5 purchases (user-confirmed).
+            _missions.RecordShopBuy(userDb, shopType, qty, nowMs);
         }
 
         return Task.FromResult(new BuyResponse());

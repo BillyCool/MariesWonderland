@@ -52,7 +52,7 @@ public sealed class MissionCatalog
             EntityMMissionTerm? term = terms.GetValueOrDefault(mission.MissionTermId);
             EntityMMissionUnlockCondition? unlock = unlocks.GetValueOrDefault(mission.MissionUnlockConditionId);
             int optionGroupId = mission.MissionClearConditionOptionGroupId;
-            MissionFilter? filter = optionGroupId == 0 ? null : filters.Find(optionGroupId);
+            MissionFilter? filter = filters.FindForMission(mission.MissionId, optionGroupId);
 
             definitions.Add(new MissionDefinition(
                 mission,

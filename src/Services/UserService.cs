@@ -309,8 +309,10 @@ public class UserService(UserDataStore store, UserDataSeeder seeder, DarkMasterM
 
         EntityIUserProfile profile = userDb.EntityIUserProfile.GetOrCreate(userId);
 
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
         profile.Message = request.Message;
-        profile.MessageUpdateDatetime = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
+        profile.MessageUpdateDatetime = nowMs;
+        _missions.RecordProfileMessage(userDb, request.Message, nowMs);
 
         return Task.FromResult(new SetUserMessageResponse());
     }

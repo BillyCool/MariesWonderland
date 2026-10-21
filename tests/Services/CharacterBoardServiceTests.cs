@@ -1,4 +1,5 @@
 using MariesWonderland.Data;
+using MariesWonderland.Missions;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.CharacterBoard;
@@ -11,7 +12,8 @@ public class CharacterBoardServiceTests(MasterDatabaseFixture fixture) : Service
 {
     private const long UserId = 1L;
 
-    private static CharacterBoardService CreateService(DarkMasterMemoryDatabase masterDb, UserDataStore store) => new(masterDb, store);
+    private static CharacterBoardService CreateService(DarkMasterMemoryDatabase masterDb, UserDataStore store)
+        => new(masterDb, store, new MissionTracker(masterDb, new MissionCatalog(masterDb, MissionFilterTable.Empty)), TimeProvider.System);
 
     private static DarkMasterMemoryDatabase CreateMasterDb() => new();
 

@@ -65,6 +65,34 @@ public sealed class MissionTracker(DarkMasterMemoryDatabase masterDb, MissionCat
     public void Record(DarkUserMemoryDatabase userDb, MissionClearConditionType conditionType, int amount, long nowMs)
         => Record(userDb, conditionType, amount, filter => filter == null, nowMs);
 
+    /// <summary>An event on one weapon: counts for unfiltered missions and those naming the weapon.</summary>
+    public void RecordWeapon(DarkUserMemoryDatabase userDb, MissionClearConditionType conditionType, int weaponId, int amount, long nowMs)
+        => Record(userDb, conditionType, amount, filter => filter == null || filter.MatchesWeapon(weaponId), nowMs);
+
+    /// <summary>An event on one costume: counts for unfiltered missions and those naming the costume.</summary>
+    public void RecordCostume(DarkUserMemoryDatabase userDb, MissionClearConditionType conditionType, int costumeId, int amount, long nowMs)
+        => Record(userDb, conditionType, amount, filter => filter == null || filter.MatchesCostume(costumeId), nowMs);
+
+    /// <summary>An event in one exploration: counts for unfiltered missions and those naming the exploration.</summary>
+    public void RecordExplore(DarkUserMemoryDatabase userDb, MissionClearConditionType conditionType, int exploreId, int amount, long nowMs)
+        => Record(userDb, conditionType, amount, filter => filter == null || filter.MatchesExplore(exploreId), nowMs);
+
+    /// <summary>Panels newly unlocked on one Mythic Slab board group: counts for unfiltered missions and those naming the group.</summary>
+    public void RecordBoardPanels(DarkUserMemoryDatabase userDb, int characterBoardGroupId, int panels, long nowMs)
+        => Record(userDb, MissionClearConditionType.CHARACTER_BOARD_PANEL_RELEASE_BY_COUNT, panels, filter => filter == null || filter.MatchesBoardGroup(characterBoardGroupId), nowMs);
+
+    /// <summary>Items drawn from a summon: counts for unfiltered missions and those naming this kind of summon.</summary>
+    public void RecordGachaDraw(DarkUserMemoryDatabase userDb, GachaLabelType? labelType, IReadOnlyCollection<int> gachaIds, bool isDailyFreeDraw, int draws, long nowMs, int priceItemId = 0)
+        => Record(userDb, MissionClearConditionType.GACHA_DRAW_BY_COUNT, draws, filter => filter == null || filter.MatchesGacha(labelType, gachaIds, isDailyFreeDraw, priceItemId), nowMs);
+
+    /// <summary>Items bought in one shop (each item counts, so 5 of one item is 5): counts for unfiltered missions and those naming the shop type.</summary>
+    public void RecordShopBuy(DarkUserMemoryDatabase userDb, ShopType shopType, int quantity, long nowMs)
+        => Record(userDb, MissionClearConditionType.SHOP_BUY_BY_COUNT, quantity, filter => filter == null || filter.MatchesShop(shopType), nowMs);
+
+    /// <summary>A profile comment was set: counts for missions asking for any comment or for this exact one.</summary>
+    public void RecordProfileMessage(DarkUserMemoryDatabase userDb, string message, long nowMs)
+        => Record(userDb, MissionClearConditionType.USER_MESSAGE_MATCH_WORD, 1, filter => filter == null || filter.MatchesMessage(message), nowMs);
+
     /// <summary>
     /// Counts <paramref name="times"/> clears of a quest for the quest-clear missions it matches. A skipped clear
     /// (skip ticket) doesn't count for the "without skip" missions.
@@ -256,8 +284,17 @@ public sealed class MissionTracker(DarkMasterMemoryDatabase masterDb, MissionCat
             MissionClearConditionType.MAX_DECK_POWER => Math.Max(
                 userDb.EntityIUserDeckTypeNote.Select(n => n.MaxDeckPower).DefaultIfEmpty(0).Max(),
                 userDb.EntityIUserDeck.Select(d => d.Power).DefaultIfEmpty(0).Max()),
-            MissionClearConditionType.COSTUME_MAX_LEVEL when filter == null => userDb.EntityIUserCostume.Select(c => c.Level).DefaultIfEmpty(0).Max(),
-            MissionClearConditionType.WEAPON_MAX_LEVEL when filter == null => userDb.EntityIUserWeapon.Select(w => w.Level).DefaultIfEmpty(0).Max(),
+            MissionClearConditionType.COSTUME_MAX_LEVEL => userDb.EntityIUserCostume
+                .Where(c => filter?.CostumeIds == null || filter.CostumeIds.Contains(c.CostumeId))
+                .Select(c => c.Level).DefaultIfEmpty(0).Max(),
+            // Every evolution stage is listed, so the weapon counts before and after evolving.
+            MissionClearConditionType.WEAPON_MAX_LEVEL => userDb.EntityIUserWeapon
+                .Where(w => filter?.WeaponIds == null || filter.WeaponIds.Contains(w.WeaponId))
+                .Select(w => w.Level).DefaultIfEmpty(0).Max(),
+            // Best single-run score in the explorations the filter names (Normal and Hard are separate explore ids).
+            MissionClearConditionType.EXPLORE_HIGH_SCORE => userDb.EntityIUserExploreScore
+                .Where(s => filter?.ExploreIds == null || filter.ExploreIds.Contains(s.ExploreId))
+                .Select(s => (long)s.MaxScore).DefaultIfEmpty(0).Max(),
             MissionClearConditionType.COSTUME_SKILL_MAX_LEVEL => userDb.EntityIUserCostumeActiveSkill.Select(s => s.Level).DefaultIfEmpty(0).Max(),
             MissionClearConditionType.WEAPON_SKILL_MAX_LEVEL => userDb.EntityIUserWeaponSkill.Select(s => s.Level).DefaultIfEmpty(0).Max(),
             MissionClearConditionType.WEAPON_ABILITY_MAX_LEVEL => userDb.EntityIUserWeaponAbility.Select(a => a.Level).DefaultIfEmpty(0).Max(),

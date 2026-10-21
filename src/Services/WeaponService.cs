@@ -379,7 +379,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
 
         userSkill.Level += addCount;
 
-        _missions.Record(userDb, MissionClearConditionType.WEAPON_ENHANCE_SKILL_BY_COUNT, 1, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
+        _missions.RecordWeapon(userDb, MissionClearConditionType.WEAPON_ENHANCE_SKILL_BY_COUNT, weapon.WeaponId, 1, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
 
         return Task.FromResult(new EnhanceSkillResponse());
     }
@@ -550,7 +550,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
         // Track the highest limit break count in the weapon note
         UpdateWeaponNote(userDb, weapon);
 
-        _missions.Record(userDb, MissionClearConditionType.WEAPON_LIMIT_BREAK_BY_COUNT, 1, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
+        _missions.RecordWeapon(userDb, MissionClearConditionType.WEAPON_LIMIT_BREAK_BY_COUNT, weapon.WeaponId, 1, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
 
         return Task.FromResult(new LimitBreakByMaterialResponse());
     }
@@ -629,7 +629,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
         // Track the highest limit break count in the weapon note
         UpdateWeaponNote(userDb, weapon);
 
-        _missions.Record(userDb, MissionClearConditionType.WEAPON_LIMIT_BREAK_BY_COUNT, 1, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
+        _missions.RecordWeapon(userDb, MissionClearConditionType.WEAPON_LIMIT_BREAK_BY_COUNT, weapon.WeaponId, 1, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
 
         return Task.FromResult(new LimitBreakByWeaponResponse());
     }
@@ -734,7 +734,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
         // Check if the evolution unlocks new weapon story pages
         CheckWeaponStoryUnlocks(userDb, evolvedId, weapon.Level);
 
-        _missions.Record(userDb, MissionClearConditionType.WEAPON_EVOLVE_BY_COUNT, 1, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
+        _missions.RecordWeapon(userDb, MissionClearConditionType.WEAPON_EVOLVE_BY_COUNT, wm.WeaponId, 1, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
 
         return Task.FromResult(new EvolveResponse());
     }
