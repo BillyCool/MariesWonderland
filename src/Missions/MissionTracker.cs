@@ -161,7 +161,6 @@ public sealed class MissionTracker(DarkMasterMemoryDatabase masterDb, MissionCat
             }
 
             row.MissionProgressStatusType = MissionProgressStatusType.REWARD_RECEIVED;
-            row.LatestVersion = nowMs;
         }
 
         return (received, expired);
@@ -188,8 +187,7 @@ public sealed class MissionTracker(DarkMasterMemoryDatabase masterDb, MissionCat
             UserId = userDb.UserId,
             MissionId = mission.MissionId,
             StartDatetime = nowMs,
-            MissionProgressStatusType = MissionProgressStatusType.IN_PROGRESS,
-            LatestVersion = nowMs
+            MissionProgressStatusType = MissionProgressStatusType.IN_PROGRESS
         };
         userDb.EntityIUserMission.Add(row);
         return row;
@@ -208,7 +206,6 @@ public sealed class MissionTracker(DarkMasterMemoryDatabase masterDb, MissionCat
                 row.ProgressValue = 0;
                 row.MissionProgressStatusType = MissionProgressStatusType.IN_PROGRESS;
                 row.ClearDatetime = 0;
-                row.LatestVersion = nowMs;
             }
         }
     }
@@ -229,7 +226,6 @@ public sealed class MissionTracker(DarkMasterMemoryDatabase masterDb, MissionCat
         }
 
         row.ProgressValue = value;
-        row.LatestVersion = nowMs;
         if (row.MissionProgressStatusType != MissionProgressStatusType.IN_PROGRESS || value < mission.ClearValue)
         {
             return;

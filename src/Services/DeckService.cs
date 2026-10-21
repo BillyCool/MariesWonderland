@@ -7,10 +7,9 @@ using MariesWonderland.Proto.Deck;
 
 namespace MariesWonderland.Services;
 
-public class DeckService(UserDataStore store, TimeProvider timeProvider) : MariesWonderland.Proto.Deck.DeckService.DeckServiceBase
+public class DeckService(UserDataStore store) : MariesWonderland.Proto.Deck.DeckService.DeckServiceBase
 {
     private readonly UserDataStore _store = store;
-    private readonly TimeProvider _timeProvider = timeProvider;
 
     /// <summary>Renames a deck.</summary>
     public override Task<UpdateNameResponse> UpdateName(UpdateNameRequest request, ServerCallContext context)
@@ -166,7 +165,6 @@ public class DeckService(UserDataStore store, TimeProvider timeProvider) : Marie
 
         EntityIUserTripleDeck tripleDeck = GetOrCreateTripleDeck(userDb, (DeckType)request.DeckType, request.UserDeckNumber);
         tripleDeck.Name = request.Name;
-        tripleDeck.LatestVersion = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
         return Task.FromResult(new UpdateTripleDeckNameResponse());
     }
@@ -176,7 +174,6 @@ public class DeckService(UserDataStore store, TimeProvider timeProvider) : Marie
     {
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
-        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
         foreach (DeckDetail? detail in new[] { request.DeckDetail01, request.DeckDetail02, request.DeckDetail03 })
         {
@@ -192,7 +189,6 @@ public class DeckService(UserDataStore store, TimeProvider timeProvider) : Marie
         tripleDeck.DeckNumber01 = request.DeckDetail01?.UserDeckNumber ?? 0;
         tripleDeck.DeckNumber02 = request.DeckDetail02?.UserDeckNumber ?? 0;
         tripleDeck.DeckNumber03 = request.DeckDetail03?.UserDeckNumber ?? 0;
-        tripleDeck.LatestVersion = nowMs;
 
         return Task.FromResult(new ReplaceTripleDeckResponse());
     }

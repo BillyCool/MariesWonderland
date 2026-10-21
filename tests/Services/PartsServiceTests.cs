@@ -72,7 +72,6 @@ public class PartsServiceTests
         Assert.Equal(StatusKindType.ATTACK, subStatus.StatusKindType);
         Assert.Equal(StatusCalculationType.ADD, subStatus.StatusCalculationType);
         Assert.Equal(150, subStatus.StatusChangeValue);
-        Assert.True(subStatus.LatestVersion > 0);
     }
 
     [Fact]

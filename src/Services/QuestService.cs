@@ -911,7 +911,6 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         if (highestClaimedCount > towerRewardState.LatestRewardReceiveQuestMissionClearCount)
         {
             towerRewardState.LatestRewardReceiveQuestMissionClearCount = highestClaimedCount;
-            towerRewardState.LatestVersion = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
         }
 
         return Task.FromResult(new ReceiveTowerAccumulationRewardResponse());
@@ -1064,7 +1063,6 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
             && state.QuestId == questId
             && state.MaxAutoOrbitCount == maxCount)
         {
-            state.LatestVersion = nowMs;
             return;
         }
 
@@ -1074,7 +1072,6 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         state.MaxAutoOrbitCount = maxCount;
         state.ClearedAutoOrbitCount = 0;
         state.LastClearDatetime = 0;
-        state.LatestVersion = nowMs;
         userDb.EntitySQuestAutoOrbit.Clear();
     }
 
@@ -1122,7 +1119,6 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         }
 
         state.LastClearDatetime = nowMs;
-        state.LatestVersion = nowMs;
 
         bool loopEnded = !isAutoOrbit || isRetired || isAnnihilated || state.ClearedAutoOrbitCount >= state.MaxAutoOrbitCount;
         if (loopEnded)
@@ -1263,10 +1259,8 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         progressStatus.CurrentQuestFlowType = QuestFlowType.MAIN_FLOW;
 
         portalCageStatus.IsCurrentProgress = false;
-        portalCageStatus.LatestVersion = nowMs;
         sideStoryProgress.CurrentSideStoryQuestId = 0;
         sideStoryProgress.CurrentSideStoryQuestSceneId = 0;
-        sideStoryProgress.LatestVersion = nowMs;
 
         userQuest.IsBattleOnly = request.IsBattleOnly;
         bool isPlayable = QuestEngine.IsPlayable(quest);
@@ -1290,12 +1284,10 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
 
         EntityIUserPortalCageStatus portalCageStatus = userDb.EntityIUserPortalCageStatus.GetOrCreate(userId);
         portalCageStatus.IsCurrentProgress = session.SavedPortalCageInProgress;
-        portalCageStatus.LatestVersion = nowMs;
 
         EntityIUserSideStoryQuestSceneProgressStatus sideStoryProgress = userDb.EntityIUserSideStoryQuestSceneProgressStatus.GetOrCreate(userId);
         sideStoryProgress.CurrentSideStoryQuestId = session.SavedSideStoryQuestId;
         sideStoryProgress.CurrentSideStoryQuestSceneId = session.SavedSideStoryQuestSceneId;
-        sideStoryProgress.LatestVersion = nowMs;
     }
 
     private static EntitySQuestSession GetOrCreateQuestSession(DarkUserMemoryDatabase userDb, long userId, int questId)

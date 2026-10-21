@@ -52,7 +52,6 @@ public class LoginBonusService(UserDataStore store, DarkMasterMemoryDatabase mas
         loginBonus.CurrentPageNumber = nextPage;
         loginBonus.CurrentStampNumber = nextStamp;
         loginBonus.LatestRewardReceiveDatetime = nowMs;
-        loginBonus.LatestVersion = nowMs;
 
         return Task.FromResult(new ReceiveStampResponse());
     }

@@ -483,7 +483,6 @@ public class PartsService(DarkMasterMemoryDatabase masterDb, UserDataStore store
             return;
         }
 
-        long now = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
         foreach (EntityMPartsEnhancedSubStatus row in _masterDb.EntityMPartsEnhancedSubStatus)
         {
             if (row.PartsEnhancedId != enhancedRow.PartsEnhancedId || row.StatusIndex > enhancedRow.SubStatusCount)
@@ -515,8 +514,7 @@ public class PartsService(DarkMasterMemoryDatabase masterDb, UserDataStore store
                 Level = row.Level,
                 StatusKindType = row.StatusKindType,
                 StatusCalculationType = row.StatusCalculationType,
-                StatusChangeValue = row.FixedStatusChangeValue,
-                LatestVersion = now
+                StatusChangeValue = row.FixedStatusChangeValue
             });
         }
     }

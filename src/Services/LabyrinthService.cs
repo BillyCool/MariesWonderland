@@ -95,7 +95,6 @@ public class LabyrinthService(UserDataStore store, DarkMasterMemoryDatabase mast
         }
 
         stageState.IsReceivedStageClearReward = true;
-        stageState.LatestVersion = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
         return Task.FromResult(new ReceiveStageClearRewardResponse());
     }
@@ -136,7 +135,6 @@ public class LabyrinthService(UserDataStore store, DarkMasterMemoryDatabase mast
         if (highestClaimedCount > stageState.AccumulationRewardReceivedQuestMissionCount)
         {
             stageState.AccumulationRewardReceivedQuestMissionCount = highestClaimedCount;
-            stageState.LatestVersion = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
         }
 
         return Task.FromResult(new ReceiveStageAccumulationRewardResponse());

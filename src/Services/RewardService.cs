@@ -216,7 +216,6 @@ public class RewardService(UserDataStore store, DarkMasterMemoryDatabase masterD
         EntityIUserPvpStatus status = existingStatus ?? userDb.EntityIUserPvpStatus.GetOrCreate(userId);
         status.LatestRewardReceivePvpWeeklyVersion = newestClaimedWeeklyVersion;
         status.LatestRewardReceivePvpSeasonId = newestClaimedSeasonId;
-        status.LatestVersion = nowMs;
 
         return Task.FromResult(response);
     }

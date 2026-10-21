@@ -64,7 +64,6 @@ public class GimmickService(UserDataStore store, DarkMasterMemoryDatabase master
             userDb.EntityIUserGimmick.Add(gimmick);
         }
         gimmick.StartDatetime = nowMs;
-        gimmick.LatestVersion = nowMs;
 
         EntityIUserGimmickOrnamentProgress? ornament = userDb.EntityIUserGimmickOrnamentProgress.FirstOrDefault(o =>
             o.GimmickSequenceScheduleId == request.GimmickSequenceScheduleId &&
@@ -86,7 +85,6 @@ public class GimmickService(UserDataStore store, DarkMasterMemoryDatabase master
         }
         ornament.ProgressValueBit = request.ProgressValueBit;
         ornament.BaseDatetime = nowMs;
-        ornament.LatestVersion = nowMs;
 
         EntityMGimmick? masterGimmick = _masterDb.EntityMGimmick.FirstOrDefault(g => g.GimmickId == request.GimmickId);
         if (masterGimmick is not null)
@@ -215,8 +213,7 @@ public class GimmickService(UserDataStore store, DarkMasterMemoryDatabase master
                 {
                     UserId = userId,
                     GimmickSequenceScheduleId = schedule.GimmickSequenceScheduleId,
-                    GimmickSequenceId = schedule.FirstGimmickSequenceId,
-                    LatestVersion = nowMs
+                    GimmickSequenceId = schedule.FirstGimmickSequenceId
                 });
             }
         }
@@ -249,7 +246,6 @@ public class GimmickService(UserDataStore store, DarkMasterMemoryDatabase master
                 userDb.EntityIUserGimmickUnlock.Add(unlock);
             }
             unlock.IsUnlocked = true;
-            unlock.LatestVersion = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
         }
 
         return Task.FromResult(new UnlockResponse());
@@ -367,7 +363,6 @@ public class GimmickService(UserDataStore store, DarkMasterMemoryDatabase master
 
         sequence.IsGimmickSequenceCleared = true;
         sequence.ClearDatetime = nowMs;
-        sequence.LatestVersion = nowMs;
 
         List<GimmickReward> rewards = [];
         EntityMGimmickSequence? masterSequence = _masterDb.EntityMGimmickSequence

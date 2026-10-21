@@ -119,7 +119,6 @@ public class UserService(UserDataStore store, UserDataSeeder seeder, DarkMasterM
         login.MaxContinualLoginCount = Math.Max(login.MaxContinualLoginCount, login.ContinualLoginCount);
         login.TotalLoginCount++;
         login.LastLoginDatetime = nowMs;
-        login.LatestVersion = nowMs;
     }
 
     /// <summary>Returns the user's backup token for account recovery.</summary>
