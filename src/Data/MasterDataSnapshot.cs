@@ -1,5 +1,6 @@
 using MariesWonderland.Helpers;
 using MariesWonderland.Missions;
+using MariesWonderland.Summons;
 
 namespace MariesWonderland.Data;
 
@@ -15,11 +16,12 @@ public sealed class MasterDataSnapshot
     public EnhanceCampaignHelper EnhanceCampaigns { get; }
     public ImportantItemEffectHelper ImportantItems { get; }
     public MissionCatalog Missions { get; }
+    public BoxSummonTable BoxSummons { get; }
 
     /// <summary>The version string advertised to the client; a change makes it download the file again.</summary>
     public string Version { get; }
 
-    public MasterDataSnapshot(DarkMasterMemoryDatabase database, string version, MissionFilterTable? missionFilters = null)
+    public MasterDataSnapshot(DarkMasterMemoryDatabase database, string version, MissionFilterTable? missionFilters = null, BoxSummonTable? boxSummons = null)
     {
         Database = database;
         GameConfig = GameConfig.From(database.EntityMConfig);
@@ -27,6 +29,7 @@ public sealed class MasterDataSnapshot
         EnhanceCampaigns = new EnhanceCampaignHelper(database);
         ImportantItems = new ImportantItemEffectHelper(database);
         Missions = new MissionCatalog(database, missionFilters ?? MissionFilterTable.Empty);
+        BoxSummons = boxSummons ?? BoxSummonTable.Empty;
         Version = version;
     }
 
@@ -42,7 +45,10 @@ public sealed class MasterDataSnapshot
         MissionFilterTable missionFilters = File.Exists(MissionFilterTable.DefaultPath)
             ? MissionFilterTable.Load(MissionFilterTable.DefaultPath)
             : MissionFilterTable.Empty;
-        return new MasterDataSnapshot(database, version, missionFilters);
+        BoxSummonTable boxSummons = File.Exists(BoxSummonTable.DefaultPath)
+            ? BoxSummonTable.Load(BoxSummonTable.DefaultPath)
+            : BoxSummonTable.Empty;
+        return new MasterDataSnapshot(database, version, missionFilters, boxSummons);
     }
 
     /// <summary>Strips a file-time stamp from a version the client requests, leaving the file's base version.</summary>

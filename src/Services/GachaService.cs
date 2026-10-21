@@ -8,13 +8,15 @@ using MariesWonderland.Missions;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.Gacha;
+using MariesWonderland.Summons;
 
 namespace MariesWonderland.Services;
 
-public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store, GameConfig gameConfig, MissionTracker missions, TimeProvider timeProvider)
+public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store, GameConfig gameConfig, MissionTracker missions, BoxSummonTable boxSummons, TimeProvider timeProvider)
     : MariesWonderland.Proto.Gacha.GachaService.GachaServiceBase
 {
     private readonly MissionTracker _missions = missions;
+    private readonly BoxSummonTable _boxSummons = boxSummons;
     private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
     private readonly UserDataStore _store = store;
     private readonly GameConfig _gameConfig = gameConfig;
@@ -22,7 +24,6 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
 
     private const int PhaseIdMultiplier = 10;
     private const int StepUpGroupDivisor = 1000;
-    private const int ChapterGachaIdBase = 200000;
     private const int PremiumSinglePullPrice = 300;
     private const int PremiumMultiPullPrice = 3000;
     private const int PremiumMultiPullCount = 10;
@@ -31,7 +32,7 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
     private const int StepUpStep5Cost = 5000;
     private const int StepUpFreeCost = 0;
     private const int ConsumableIdPremiumTicket = 1;
-    private const int ConsumableIdChapterTicket = 2;
+    private const int GiftExpirationDays = 30;
     private const int MedalCountCap = 9999;
     private const int DupGradeMin = 2;
     private const int DupGradeRange = 4;
@@ -95,6 +96,10 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
             if (entry.LabelType is GachaLabelType.PORTAL_CAGE or GachaLabelType.RECYCLE)
                 continue;
 
+            // A chapter summon is listed once the player has reached its chapter.
+            if (entry.BoxSummon is { Kind: BoxSummonKind.CHAPTER } chapterSummon && !IsChapterReached(userDb, chapterSummon))
+                continue;
+
             EntitySGachaBannerState? bs = FindBannerState(userDb, entry.GachaId);
             response.Gacha.Add(ToProtoGacha(entry, bs));
         }
@@ -155,6 +160,11 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
         // Find the price phase from the catalog entry's phases
         PricePhaseEntry phase = FindPhase(entry, request.GachaPricePhaseId);
 
+        if (entry.BoxSummon is BoxSummon boxSummon)
+        {
+            return Task.FromResult(DrawBoxSummon(userDb, entry, boxSummon, phase.DrawCount * execCount, nowMs));
+        }
+
         int totalCost = phase.Price * execCount;
         int drawCount = phase.DrawCount * execCount;
 
@@ -169,7 +179,7 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
 
         // Draw items based on label type
         List<DrawnItem> drawnItems;
-        bool isMaterialDraw = entry.LabelType is GachaLabelType.CHAPTER or GachaLabelType.RECYCLE or GachaLabelType.PORTAL_CAGE;
+        bool isMaterialDraw = entry.LabelType is GachaLabelType.RECYCLE or GachaLabelType.PORTAL_CAGE;
 
         if (isMaterialDraw)
         {
@@ -370,8 +380,13 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
         }
 
         EntitySGachaBannerState bannerState = GetOrCreateBannerState(userDb, request.GachaId);
-        bannerState.BoxDrewCounts = [];
-        bannerState.BoxNumber++;
+
+        // Box summons refill on their own schedule (chapter summons monthly), never on request.
+        if (entry.BoxSummon == null)
+        {
+            bannerState.BoxDrewCounts = [];
+            bannerState.BoxNumber++;
+        }
 
         return Task.FromResult(new ResetBoxGachaResponse
         {
@@ -510,8 +525,8 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
     #region Catalog Building
 
     /// <summary>
-    /// Builds the gacha catalog from MomBanner + GachaMedal master data, grouping step-up banners
-    /// and including chapter banners (common_ prefix) that don't require medal entries.
+    /// Builds the gacha catalog from MomBanner + GachaMedal master data, grouping step-up banners, plus the box
+    /// summons (chapter summons and Mama's Dream) from <see cref="BoxSummonTable"/>.
     /// </summary>
     private List<GachaEntry> BuildCatalog()
     {
@@ -532,6 +547,10 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
                 continue;
 
             int gachaId = banner.DestinationDomainId;
+
+            // Mama's Dream home banners (common_) are box summons, built below.
+            if (_boxSummons.Find(gachaId) != null)
+                continue;
 
             // Step-up banners: group by truncated ID
             if (banner.BannerAssetName.StartsWith("step_up_", StringComparison.Ordinal))
@@ -563,45 +582,49 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
                 continue;
             }
 
-            bool isChapter = banner.BannerAssetName.StartsWith("common_", StringComparison.Ordinal);
             bool isLimited = banner.BannerAssetName.StartsWith("limited_", StringComparison.Ordinal);
 
-            medalByGachaId.TryGetValue(gachaId, out EntityMGachaMedal? medal);
-
-            // Chapter banners don't require medals; non-chapter banners do
-            if (medal == null && !isChapter)
+            // Premium banners need a medal entry.
+            if (!medalByGachaId.TryGetValue(gachaId, out EntityMGachaMedal? medal))
                 continue;
-
-            GachaLabelType labelType = GachaLabelType.PREMIUM;
-            GachaModeType modeType = GachaModeType.BASIC;
-            GachaDecorationType decoration = GachaDecorationType.NORMAL;
-
-            if (isLimited)
-                decoration = GachaDecorationType.FESTIVAL;
-
-            if (isChapter)
-            {
-                labelType = GachaLabelType.CHAPTER;
-                modeType = GachaModeType.BOX;
-            }
-
-            int relMainQuest = isChapter ? gachaId - ChapterGachaIdBase : 0;
-            int descriptionTextId = isChapter ? gachaId : 0;
 
             entries.Add(new GachaEntry
             {
                 GachaId = gachaId,
-                LabelType = labelType,
-                ModeType = modeType,
+                LabelType = GachaLabelType.PREMIUM,
+                ModeType = GachaModeType.BASIC,
                 StartDatetime = startDt,
                 EndDatetime = endDt,
                 Medal = medal,
                 BannerAssetName = banner.BannerAssetName,
                 SortOrder = banner.SortOrderDesc,
-                DecorationType = decoration,
-                RelatedMainQuestChapterId = relMainQuest,
-                DescriptionTextId = descriptionTextId,
-                PricePhases = isChapter ? BuildChapterPricePhases(gachaId) : BuildPremiumBasicPricePhases(gachaId)
+                DecorationType = isLimited ? GachaDecorationType.FESTIVAL : GachaDecorationType.NORMAL,
+                PricePhases = BuildPremiumBasicPricePhases(gachaId)
+            });
+        }
+
+        // Box summons: chapter summons on the Chapter tab (refilled on the 1st of each month), Mama's Dream on the Event tab.
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
+        foreach (BoxSummon summon in _boxSummons.All)
+        {
+            bool isChapter = summon.Kind == BoxSummonKind.CHAPTER;
+            int sortOrder = _masterDb.EntityMMomBanner
+                .FirstOrDefault(b => b.DestinationDomainType == DomainType.GACHA && b.DestinationDomainId == summon.GachaId)?.SortOrderDesc
+                ?? summon.GachaId;
+            entries.Add(new GachaEntry
+            {
+                GachaId = summon.GachaId,
+                LabelType = isChapter ? GachaLabelType.CHAPTER : GachaLabelType.EVENT,
+                ModeType = GachaModeType.BOX,
+                StartDatetime = startDt,
+                EndDatetime = endDt,
+                BannerAssetName = summon.AssetName,
+                SortOrder = sortOrder,
+                RelatedMainQuestChapterId = summon.MainQuestChapterId,
+                AutoResetType = isChapter ? GachaAutoResetType.MONTHLY : GachaAutoResetType.NONE,
+                NextAutoResetDatetime = isChapter ? GameDayHelper.StartOfNextMonth(nowMs) : 0,
+                PricePhases = BuildBoxSummonPricePhases(summon),
+                BoxSummon = summon
             });
         }
 
@@ -692,29 +715,171 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
         return phases;
     }
 
-    private static List<PricePhaseEntry> BuildChapterPricePhases(int gachaId)
+    /// <summary>Box summons cost one ticket per draw, in batches of 1, 10 or 100.</summary>
+    private static List<PricePhaseEntry> BuildBoxSummonPricePhases(BoxSummon summon)
     {
-        return
-        [
-            new PricePhaseEntry
+        int[] batches = [1, 10, 100];
+        return [.. batches.Select((batch, index) => new PricePhaseEntry
+        {
+            PhaseId = summon.GachaId * PhaseIdMultiplier + index + 1,
+            PriceType = (int)PriceType.CONSUMABLE_ITEM,
+            PriceId = summon.TicketItemId,
+            Price = batch,
+            RegularPrice = batch,
+            DrawCount = batch
+        })];
+    }
+
+    #endregion
+
+    #region Box Summons
+
+    /// <summary>
+    /// Draws from a box summon: one ticket per draw (capped at the tickets owned), one prize per ticket. A chapter
+    /// summon's featured prizes are per player and refill on the 1st of each month; Mama's Dream limited prizes are
+    /// shared by every player on the server. Gems go to the gift box, everything else straight to the inventory.
+    /// </summary>
+    private DrawResponse DrawBoxSummon(DarkUserMemoryDatabase userDb, GachaEntry entry, BoxSummon summon, int requestedDraws, long nowMs)
+    {
+        int tickets = userDb.EntityIUserConsumableItem.FirstOrDefault(c => c.ConsumableItemId == summon.TicketItemId)?.Count ?? 0;
+        int draws = Math.Min(requestedDraws, tickets);
+        EntitySGachaBannerState bannerState = GetOrCreateBannerState(userDb, entry.GachaId);
+        if (summon.Kind == BoxSummonKind.CHAPTER && bannerState.BoxRefillDatetime < GameDayHelper.StartOfMonth(nowMs))
+        {
+            bannerState.BoxDrewCounts = [];
+            bannerState.BoxRefillDatetime = nowMs;
+        }
+
+        if (draws > 0)
+        {
+            DeductPrice(userDb, (int)PriceType.CONSUMABLE_ITEM, summon.TicketItemId, draws);
+        }
+
+        DrawResponse response = new();
+        for (int i = 0; i < draws; i++)
+        {
+            BoxSummonPrize prize = PickBoxSummonPrize(summon, bannerState);
+            bool isNew = !IsOwnedByType((int)prize.PossessionType, prize.PossessionId, [], [], userDb);
+            GrantBoxSummonPrize(userDb, prize, nowMs);
+            response.GachaResult.Add(new DrawGachaOddsItem
             {
-                PhaseId = gachaId * PhaseIdMultiplier + 1,
-                PriceType = (int)PriceType.CONSUMABLE_ITEM,
-                PriceId = ConsumableIdChapterTicket,
-                Price = 1,
-                RegularPrice = 1,
-                DrawCount = 1
-            },
-            new PricePhaseEntry
+                GachaItem = new GachaItem
+                {
+                    PossessionType = (int)prize.PossessionType,
+                    PossessionId = prize.PossessionId,
+                    Count = prize.Count,
+                    IsNew = isNew
+                },
+                GachaItemBonus = new GachaItem()
+            });
+        }
+
+        bannerState.DrawCount += draws;
+        response.NextGacha = ToProtoGacha(entry, bannerState);
+        if (draws > 0)
+        {
+            _missions.RecordGachaDraw(userDb, entry.LabelType, [entry.GachaId], isDailyFreeDraw: false, draws, nowMs, summon.TicketItemId);
+        }
+
+        return response;
+    }
+
+    /// <summary>
+    /// Picks one prize by weight among the unlimited prizes and the limited (featured) ones still in stock. A limited
+    /// prize won is claimed at once (per player for chapter summons, server-wide for Mama's Dream).
+    /// </summary>
+    private BoxSummonPrize PickBoxSummonPrize(BoxSummon summon, EntitySGachaBannerState bannerState)
+    {
+        BoxSummonPool pool = summon.Pool;
+        bool isShared = summon.Kind == BoxSummonKind.MAMAS_DREAM;
+        long unlimitedTotal = pool.Unlimited.Sum(p => (long)p.Weight);
+        List<long> limitedWeights = [.. pool.Limited.Select((prize, index) =>
+        {
+            int claimed = isShared ? _store.SharedPrizeClaimed(summon.GachaId, index) : bannerState.BoxDrewCounts.GetValueOrDefault(index);
+            return claimed < prize.Stock ? (long)prize.Weight : 0;
+        })];
+        long roll = Random.Shared.NextInt64(limitedWeights.Sum() + unlimitedTotal);
+
+        for (int index = 0; index < limitedWeights.Count; index++)
+        {
+            if (roll >= limitedWeights[index])
             {
-                PhaseId = gachaId * PhaseIdMultiplier + 2,
-                PriceType = (int)PriceType.CONSUMABLE_ITEM,
-                PriceId = ConsumableIdChapterTicket,
-                Price = 10,
-                RegularPrice = 10,
-                DrawCount = PremiumMultiPullCount
+                roll -= limitedWeights[index];
+                continue;
             }
-        ];
+
+            if (!isShared)
+            {
+                bannerState.BoxDrewCounts[index] = bannerState.BoxDrewCounts.GetValueOrDefault(index) + 1;
+                return pool.Limited[index];
+            }
+
+            // Another player may have taken the last one meanwhile; then it's an unlimited prize.
+            return _store.TryClaimSharedPrize(summon.GachaId, index, pool.Limited[index].Stock)
+                ? pool.Limited[index]
+                : PickUnlimitedPrize(pool, Random.Shared.NextInt64(unlimitedTotal));
+        }
+
+        return PickUnlimitedPrize(pool, roll);
+    }
+
+    private static BoxSummonPrize PickUnlimitedPrize(BoxSummonPool pool, long roll)
+    {
+        foreach (BoxSummonPrize prize in pool.Unlimited)
+        {
+            if (roll < prize.Weight)
+            {
+                return prize;
+            }
+
+            roll -= prize.Weight;
+        }
+
+        return pool.Unlimited[^1];
+    }
+
+    /// <summary>Gems are sent to the gift box; every other prize is added to the inventory directly.</summary>
+    private void GrantBoxSummonPrize(DarkUserMemoryDatabase userDb, BoxSummonPrize prize, long nowMs)
+    {
+        if (prize.PossessionType is PossessionType.FREE_GEM or PossessionType.PAID_GEM)
+        {
+            userDb.EntitySUserGift.Add(new EntitySUserGift
+            {
+                UserId = userDb.UserId,
+                UserGiftUuid = Guid.NewGuid().ToString(),
+                PossessionType = (int)prize.PossessionType,
+                PossessionId = prize.PossessionId,
+                Count = prize.Count,
+                GrantDatetime = nowMs,
+                ExpirationDatetime = nowMs + GiftExpirationDays * 24L * 60 * 60 * 1000
+            });
+            return;
+        }
+
+        PossessionHelper.Apply(userDb, prize.PossessionType, prize.PossessionId, prize.Count, _masterDb, nowMs);
+    }
+
+    /// <summary>
+    /// True once the player has reached the summon's main chapter (played any of its quests); Dark Memories, which
+    /// has no chapter, once any Dark Memory quest has been played.
+    /// </summary>
+    private bool IsChapterReached(DarkUserMemoryDatabase userDb, BoxSummon summon)
+    {
+        HashSet<int> questIds;
+        if (summon.MainQuestChapterId > 0)
+        {
+            int? groupId = _masterDb.EntityMMainQuestChapter.FirstOrDefault(c => c.MainQuestChapterId == summon.MainQuestChapterId)?.MainQuestSequenceGroupId;
+            HashSet<int> sequenceIds = [.. _masterDb.EntityMMainQuestSequenceGroup.Where(g => g.MainQuestSequenceGroupId == groupId).Select(g => g.MainQuestSequenceId)];
+            questIds = [.. _masterDb.EntityMMainQuestSequence.Where(s => sequenceIds.Contains(s.MainQuestSequenceId)).Select(s => s.QuestId)];
+        }
+        else
+        {
+            HashSet<int> groupIds = [.. _masterDb.EntityMEventQuestChapter.Where(c => c.EventQuestType == EventQuestType.END_CONTENTS).Select(c => c.EventQuestSequenceGroupId)];
+            HashSet<int> sequenceIds = [.. _masterDb.EntityMEventQuestSequenceGroup.Where(g => groupIds.Contains(g.EventQuestSequenceGroupId)).Select(g => g.EventQuestSequenceId)];
+            questIds = [.. _masterDb.EntityMEventQuestSequence.Where(s => sequenceIds.Contains(s.EventQuestSequenceId)).Select(s => s.QuestId)];
+        }
+
+        return userDb.EntityIUserQuest.Any(q => questIds.Contains(q.QuestId));
     }
 
     #endregion
@@ -732,9 +897,9 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
             GachaId = entry.GachaId,
             GachaLabelType = (int)entry.LabelType,
             GachaModeType = (int)entry.ModeType,
-            GachaAutoResetType = (int)GachaAutoResetType.NONE,
+            GachaAutoResetType = (int)entry.AutoResetType,
             GachaAutoResetPeriod = 0,
-            NextAutoResetDatetime = new Timestamp { Seconds = 0 },
+            NextAutoResetDatetime = Timestamp.FromDateTimeOffset(DateTimeOffset.FromUnixTimeMilliseconds(entry.NextAutoResetDatetime)),
             IsUserGachaUnlock = true,
             StartDatetime = Timestamp.FromDateTimeOffset(DateTimeOffset.FromUnixTimeMilliseconds(entry.StartDatetime)),
             EndDatetime = Timestamp.FromDateTimeOffset(DateTimeOffset.FromUnixTimeMilliseconds(entry.EndDatetime)),
@@ -1318,6 +1483,9 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
         public int DescriptionTextId { get; init; }
         public List<PricePhaseEntry> PricePhases { get; init; } = [];
         public int MaxStepNumber { get; init; }
+        public GachaAutoResetType AutoResetType { get; init; } = GachaAutoResetType.NONE;
+        public long NextAutoResetDatetime { get; init; }
+        public BoxSummon? BoxSummon { get; init; }
     }
 
     private sealed class PricePhaseEntry

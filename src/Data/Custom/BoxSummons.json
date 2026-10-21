@@ -1,0 +1,823 @@
+{
+  "_about": "Box summons the original server kept to itself: chapter summons (one per main chapter plus Dark Memories, paid with that chapter's ticket, featured prizes per player refilled on the 1st of each month at 08:00 UTC) and Mama's Dream summons (paid with their own ticket, limited prizes shared by every player on the server). Each draw costs one ticket and gives one prize. Each draw picks by weight among the unlimited prizes and the limited (featured) ones still in stock; featured prizes are rarer by having smaller weights. Gems go to the gift box, everything else straight to the inventory.",
+  "pools": [
+    {
+      "poolId": "mamasDream2_5Year",
+      "note": "Japanese 2.5 Year Anniversary Mama's Dream Summons (Aug 18 - Sep 10 2023), from the in-game notice (nierrein.guide/notice/1296). Rates weren't published: the weights are a guess (featured 1/10/50/200/500 from the top prize down, 1000 per regular prize).",
+      "limited": [
+        {
+          "possessionType": "FREE_GEM",
+          "possessionId": 0,
+          "count": 300000,
+          "weight": 1,
+          "stock": 1
+        },
+        {
+          "possessionType": "FREE_GEM",
+          "possessionId": 0,
+          "count": 30000,
+          "weight": 10,
+          "stock": 6
+        },
+        {
+          "possessionType": "FREE_GEM",
+          "possessionId": 0,
+          "count": 3000,
+          "weight": 50,
+          "stock": 100
+        },
+        {
+          "possessionType": "FREE_GEM",
+          "possessionId": 0,
+          "count": 300,
+          "weight": 200,
+          "stock": 600
+        },
+        {
+          "possessionType": "FREE_GEM",
+          "possessionId": 0,
+          "count": 100,
+          "weight": 500,
+          "stock": 1000
+        }
+      ],
+      "unlimited": [
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 315001,
+          "count": 10,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 314001,
+          "count": 1,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 325001,
+          "count": 10,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 313203,
+          "count": 1,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 300023,
+          "count": 1,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 300024,
+          "count": 2,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 321007,
+          "count": 100,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 321008,
+          "count": 100,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 321009,
+          "count": 100,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 321010,
+          "count": 100,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 321011,
+          "count": 100,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 311003,
+          "count": 10,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 312003,
+          "count": 1,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 322002,
+          "count": 1,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 302113,
+          "count": 1,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 312101,
+          "count": 1,
+          "weight": 1000
+        },
+        {
+          "possessionType": "CONSUMABLE_ITEM",
+          "possessionId": 2003,
+          "count": 10,
+          "weight": 1000
+        }
+      ]
+    },
+    {
+      "poolId": "mamasDreamEndOfYear",
+      "note": "End of the Year Mama's Dream Summons (Dec 27 2023 - Jan 14 2024), from the in-game notice (nierrein.guide/notice/1521). The same limited stock was added again on Jan 4 when it ran out (notice 1549); not modelled. Rates weren't published: the weights are a guess (featured 1/10/50/200/500 from the top prize down, 1000 per regular prize).",
+      "limited": [
+        {
+          "possessionType": "FREE_GEM",
+          "possessionId": 0,
+          "count": 500000,
+          "weight": 1,
+          "stock": 1
+        },
+        {
+          "possessionType": "FREE_GEM",
+          "possessionId": 0,
+          "count": 50000,
+          "weight": 10,
+          "stock": 6
+        },
+        {
+          "possessionType": "FREE_GEM",
+          "possessionId": 0,
+          "count": 5000,
+          "weight": 50,
+          "stock": 100
+        },
+        {
+          "possessionType": "FREE_GEM",
+          "possessionId": 0,
+          "count": 500,
+          "weight": 200,
+          "stock": 600
+        },
+        {
+          "possessionType": "FREE_GEM",
+          "possessionId": 0,
+          "count": 100,
+          "weight": 500,
+          "stock": 6000
+        }
+      ],
+      "unlimited": [
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 315001,
+          "count": 10,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 314001,
+          "count": 1,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 325001,
+          "count": 10,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 315002,
+          "count": 10,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 313203,
+          "count": 1,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 300023,
+          "count": 2,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 300024,
+          "count": 1,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 321007,
+          "count": 100,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 321008,
+          "count": 100,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 321009,
+          "count": 100,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 321010,
+          "count": 100,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 321011,
+          "count": 100,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 311003,
+          "count": 10,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 312003,
+          "count": 1,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 322002,
+          "count": 1,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 302113,
+          "count": 1,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 312101,
+          "count": 1,
+          "weight": 1000
+        },
+        {
+          "possessionType": "CONSUMABLE_ITEM",
+          "possessionId": 2003,
+          "count": 10,
+          "weight": 1000
+        }
+      ]
+    },
+    {
+      "poolId": "mamasDream3rdAnniversary",
+      "note": "Japanese 3rd Anniversary Mama's Dream Summons (Feb 17 - Mar 7 2024), from the in-game notice (nierrein.guide/notice/1618). Rates weren't published: the weights are a guess (featured 1/10/50/200/500 from the top prize down, 1000 per regular prize).",
+      "limited": [
+        {
+          "possessionType": "FREE_GEM",
+          "possessionId": 0,
+          "count": 2800000,
+          "weight": 1,
+          "stock": 1
+        },
+        {
+          "possessionType": "FREE_GEM",
+          "possessionId": 0,
+          "count": 280000,
+          "weight": 10,
+          "stock": 6
+        },
+        {
+          "possessionType": "FREE_GEM",
+          "possessionId": 0,
+          "count": 28000,
+          "weight": 50,
+          "stock": 100
+        },
+        {
+          "possessionType": "FREE_GEM",
+          "possessionId": 0,
+          "count": 2800,
+          "weight": 200,
+          "stock": 600
+        },
+        {
+          "possessionType": "FREE_GEM",
+          "possessionId": 0,
+          "count": 280,
+          "weight": 500,
+          "stock": 6000
+        }
+      ],
+      "unlimited": [
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 315001,
+          "count": 10,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 314001,
+          "count": 1,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 325001,
+          "count": 10,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 315002,
+          "count": 10,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 313203,
+          "count": 1,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 300023,
+          "count": 1,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 300024,
+          "count": 2,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 321007,
+          "count": 100,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 321008,
+          "count": 100,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 321009,
+          "count": 100,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 321010,
+          "count": 100,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 321011,
+          "count": 100,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 311003,
+          "count": 10,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 312003,
+          "count": 1,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 322002,
+          "count": 1,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 302113,
+          "count": 1,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 312101,
+          "count": 1,
+          "weight": 1000
+        },
+        {
+          "possessionType": "CONSUMABLE_ITEM",
+          "possessionId": 2003,
+          "count": 10,
+          "weight": 1000
+        }
+      ]
+    },
+    {
+      "poolId": "chapterStandIn",
+      "note": "STAND-IN, revisit: the real chapter summon pools (featured and regular) aren't known yet. Copied from the 2.5 Year Mama's Dream list. In a chapter summon the limited prizes are the featured ones: per player, refilled on the 1st of each month. Weights are a guess too: featured 1/10/50/200/500 from the top prize down, 1000 per regular prize.",
+      "limited": [
+        {
+          "possessionType": "FREE_GEM",
+          "possessionId": 0,
+          "count": 300000,
+          "weight": 1,
+          "stock": 1
+        },
+        {
+          "possessionType": "FREE_GEM",
+          "possessionId": 0,
+          "count": 30000,
+          "weight": 10,
+          "stock": 6
+        },
+        {
+          "possessionType": "FREE_GEM",
+          "possessionId": 0,
+          "count": 3000,
+          "weight": 50,
+          "stock": 100
+        },
+        {
+          "possessionType": "FREE_GEM",
+          "possessionId": 0,
+          "count": 300,
+          "weight": 200,
+          "stock": 600
+        },
+        {
+          "possessionType": "FREE_GEM",
+          "possessionId": 0,
+          "count": 100,
+          "weight": 500,
+          "stock": 1000
+        }
+      ],
+      "unlimited": [
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 315001,
+          "count": 10,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 314001,
+          "count": 1,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 325001,
+          "count": 10,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 313203,
+          "count": 1,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 300023,
+          "count": 1,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 300024,
+          "count": 2,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 321007,
+          "count": 100,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 321008,
+          "count": 100,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 321009,
+          "count": 100,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 321010,
+          "count": 100,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 321011,
+          "count": 100,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 311003,
+          "count": 10,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 312003,
+          "count": 1,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 322002,
+          "count": 1,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 302113,
+          "count": 1,
+          "weight": 1000
+        },
+        {
+          "possessionType": "MATERIAL",
+          "possessionId": 312101,
+          "count": 1,
+          "weight": 1000
+        },
+        {
+          "possessionType": "CONSUMABLE_ITEM",
+          "possessionId": 2003,
+          "count": 10,
+          "weight": 1000
+        }
+      ]
+    }
+  ],
+  "summons": [
+    {
+      "gachaId": 300001,
+      "kind": "CHAPTER",
+      "assetName": "chapter_1",
+      "ticketItemId": 1008,
+      "mainQuestChapterId": 2,
+      "poolId": "chapterStandIn"
+    },
+    {
+      "gachaId": 300002,
+      "kind": "CHAPTER",
+      "assetName": "chapter_2",
+      "ticketItemId": 1009,
+      "mainQuestChapterId": 3,
+      "poolId": "chapterStandIn"
+    },
+    {
+      "gachaId": 300003,
+      "kind": "CHAPTER",
+      "assetName": "chapter_3",
+      "ticketItemId": 1010,
+      "mainQuestChapterId": 4,
+      "poolId": "chapterStandIn"
+    },
+    {
+      "gachaId": 300004,
+      "kind": "CHAPTER",
+      "assetName": "chapter_4",
+      "ticketItemId": 1011,
+      "mainQuestChapterId": 5,
+      "poolId": "chapterStandIn"
+    },
+    {
+      "gachaId": 300005,
+      "kind": "CHAPTER",
+      "assetName": "chapter_5",
+      "ticketItemId": 1012,
+      "mainQuestChapterId": 6,
+      "poolId": "chapterStandIn"
+    },
+    {
+      "gachaId": 300006,
+      "kind": "CHAPTER",
+      "assetName": "chapter_6",
+      "ticketItemId": 1013,
+      "mainQuestChapterId": 7,
+      "poolId": "chapterStandIn"
+    },
+    {
+      "gachaId": 300007,
+      "kind": "CHAPTER",
+      "assetName": "chapter_7",
+      "ticketItemId": 1014,
+      "mainQuestChapterId": 9,
+      "poolId": "chapterStandIn"
+    },
+    {
+      "gachaId": 300008,
+      "kind": "CHAPTER",
+      "assetName": "chapter_8",
+      "ticketItemId": 1015,
+      "mainQuestChapterId": 10,
+      "poolId": "chapterStandIn"
+    },
+    {
+      "gachaId": 300009,
+      "kind": "CHAPTER",
+      "assetName": "chapter_9",
+      "ticketItemId": 1016,
+      "mainQuestChapterId": 11,
+      "poolId": "chapterStandIn"
+    },
+    {
+      "gachaId": 300010,
+      "kind": "CHAPTER",
+      "assetName": "chapter_10",
+      "ticketItemId": 1017,
+      "mainQuestChapterId": 12,
+      "poolId": "chapterStandIn"
+    },
+    {
+      "gachaId": 300011,
+      "kind": "CHAPTER",
+      "assetName": "chapter_11",
+      "ticketItemId": 1018,
+      "mainQuestChapterId": 13,
+      "poolId": "chapterStandIn"
+    },
+    {
+      "gachaId": 300012,
+      "kind": "CHAPTER",
+      "assetName": "chapter_12",
+      "ticketItemId": 1019,
+      "mainQuestChapterId": 14,
+      "poolId": "chapterStandIn"
+    },
+    {
+      "gachaId": 300013,
+      "kind": "CHAPTER",
+      "assetName": "chapter_13",
+      "ticketItemId": 1020,
+      "mainQuestChapterId": 16,
+      "poolId": "chapterStandIn"
+    },
+    {
+      "gachaId": 300014,
+      "kind": "CHAPTER",
+      "assetName": "chapter_14",
+      "ticketItemId": 1021,
+      "mainQuestChapterId": 17,
+      "poolId": "chapterStandIn"
+    },
+    {
+      "gachaId": 300015,
+      "kind": "CHAPTER",
+      "assetName": "chapter_15",
+      "ticketItemId": 1022,
+      "mainQuestChapterId": 18,
+      "poolId": "chapterStandIn"
+    },
+    {
+      "gachaId": 300016,
+      "kind": "CHAPTER",
+      "assetName": "chapter_16",
+      "ticketItemId": 1023,
+      "mainQuestChapterId": 20,
+      "poolId": "chapterStandIn"
+    },
+    {
+      "gachaId": 300017,
+      "kind": "CHAPTER",
+      "assetName": "chapter_17",
+      "ticketItemId": 1024,
+      "mainQuestChapterId": 21,
+      "poolId": "chapterStandIn"
+    },
+    {
+      "gachaId": 300018,
+      "kind": "CHAPTER",
+      "assetName": "chapter_18",
+      "ticketItemId": 1025,
+      "mainQuestChapterId": 22,
+      "poolId": "chapterStandIn"
+    },
+    {
+      "gachaId": 300019,
+      "kind": "CHAPTER",
+      "assetName": "chapter_19",
+      "ticketItemId": 1026,
+      "mainQuestChapterId": 24,
+      "poolId": "chapterStandIn"
+    },
+    {
+      "gachaId": 300020,
+      "kind": "CHAPTER",
+      "assetName": "chapter_20",
+      "ticketItemId": 1027,
+      "mainQuestChapterId": 25,
+      "poolId": "chapterStandIn"
+    },
+    {
+      "gachaId": 300021,
+      "kind": "CHAPTER",
+      "assetName": "chapter_21",
+      "ticketItemId": 1028,
+      "mainQuestChapterId": 26,
+      "poolId": "chapterStandIn"
+    },
+    {
+      "gachaId": 300022,
+      "kind": "CHAPTER",
+      "assetName": "chapter_22",
+      "ticketItemId": 1029,
+      "mainQuestChapterId": 28,
+      "poolId": "chapterStandIn"
+    },
+    {
+      "gachaId": 300023,
+      "kind": "CHAPTER",
+      "assetName": "chapter_23",
+      "ticketItemId": 1030,
+      "mainQuestChapterId": 29,
+      "poolId": "chapterStandIn"
+    },
+    {
+      "gachaId": 300024,
+      "kind": "CHAPTER",
+      "assetName": "chapter_24",
+      "ticketItemId": 1031,
+      "mainQuestChapterId": 30,
+      "poolId": "chapterStandIn"
+    },
+    {
+      "gachaId": 300099,
+      "kind": "CHAPTER",
+      "assetName": "chapter_ex",
+      "ticketItemId": 2002,
+      "poolId": "chapterStandIn",
+      "note": "Dark Memories Chapter Summons"
+    },
+    {
+      "gachaId": 200001,
+      "kind": "MAMAS_DREAM",
+      "assetName": "common_200001",
+      "ticketItemId": 6064,
+      "poolId": "mamasDream2_5Year",
+      "note": "Japanese 2.5 Year Anniversary Mama's Dream Summons"
+    },
+    {
+      "gachaId": 200002,
+      "kind": "MAMAS_DREAM",
+      "assetName": "common_200002",
+      "ticketItemId": 6069,
+      "poolId": "mamasDreamEndOfYear",
+      "note": "End of the Year Mama's Dream Summons"
+    },
+    {
+      "gachaId": 200003,
+      "kind": "MAMAS_DREAM",
+      "assetName": "common_200003",
+      "ticketItemId": 6072,
+      "poolId": "mamasDream3rdAnniversary",
+      "note": "Japanese 3rd Anniversary Mama's Dream Summons"
+    }
+  ]
+}

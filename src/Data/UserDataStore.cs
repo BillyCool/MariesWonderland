@@ -14,7 +14,37 @@ public class UserDataStore(TimeProvider timeProvider)
     private readonly Dictionary<long, DarkUserMemoryDatabase> _users = [];
     private readonly Dictionary<string, long> _uuidToUserId = [];
     private readonly Dictionary<string, UserSession> _sessions = [];
+    private readonly Dictionary<string, int> _sharedPrizeClaims = [];
+    private readonly Lock _sharedPrizeLock = new();
     private readonly TimeProvider _timeProvider = timeProvider;
+
+    /// <summary>How many of a shared limited prize (e.g. Mama's Dream gems) every player on the server has won so far.</summary>
+    public int SharedPrizeClaimed(int gachaId, int prizeIndex)
+    {
+        lock (_sharedPrizeLock)
+        {
+            return _sharedPrizeClaims.GetValueOrDefault(SharedPrizeKey(gachaId, prizeIndex));
+        }
+    }
+
+    /// <summary>Claims one of a shared limited prize; false when its <paramref name="stock"/> is already used up.</summary>
+    public bool TryClaimSharedPrize(int gachaId, int prizeIndex, int stock)
+    {
+        lock (_sharedPrizeLock)
+        {
+            string key = SharedPrizeKey(gachaId, prizeIndex);
+            int claimed = _sharedPrizeClaims.GetValueOrDefault(key);
+            if (claimed >= stock)
+            {
+                return false;
+            }
+
+            _sharedPrizeClaims[key] = claimed + 1;
+            return true;
+        }
+    }
+
+    private static string SharedPrizeKey(int gachaId, int prizeIndex) => $"{gachaId}:{prizeIndex}";
 
     /// <summary>
     /// Look up or create a user by UUID. Returns the userId and whether the user is new.
@@ -131,7 +161,8 @@ public class UserDataStore(TimeProvider timeProvider)
         {
             Users = _users,
             UuidToUserId = _uuidToUserId,
-            Sessions = _sessions.Values.ToList()
+            Sessions = _sessions.Values.ToList(),
+            SharedPrizeClaims = _sharedPrizeClaims
         };
 
         JsonSerializerOptions options = new()
@@ -173,6 +204,13 @@ public class UserDataStore(TimeProvider timeProvider)
 
         foreach (UserSession session in snapshot.Sessions)
             _sessions[session.SessionKey] = session;
+
+        lock (_sharedPrizeLock)
+        {
+            _sharedPrizeClaims.Clear();
+            foreach (var (key, claimed) in snapshot.SharedPrizeClaims)
+                _sharedPrizeClaims[key] = claimed;
+        }
 
         return _users.Count;
     }
@@ -340,5 +378,8 @@ file record UserDataSnapshot
     public Dictionary<long, DarkUserMemoryDatabase> Users { get; init; } = [];
     public Dictionary<string, long> UuidToUserId { get; init; } = [];
     public List<UserSession> Sessions { get; init; } = [];
+
+    /// <summary>Server-wide claims of shared limited summon prizes, keyed "gachaId:prizeIndex".</summary>
+    public Dictionary<string, int> SharedPrizeClaims { get; init; } = [];
 }
 

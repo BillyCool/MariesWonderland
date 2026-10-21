@@ -42,6 +42,7 @@ public static class ServiceExtensions
         services.AddScoped(provider => provider.GetRequiredService<MasterDataSnapshot>().EnhanceCampaigns);
         services.AddScoped(provider => provider.GetRequiredService<MasterDataSnapshot>().ImportantItems);
         services.AddScoped(provider => provider.GetRequiredService<MasterDataSnapshot>().Missions);
+        services.AddScoped(provider => provider.GetRequiredService<MasterDataSnapshot>().BoxSummons);
         services.AddScoped<MissionTracker>();
         services.AddScoped<QuestEngine>();
         if (hotReload)

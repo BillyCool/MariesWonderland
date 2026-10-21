@@ -3,17 +3,20 @@ using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
 using MariesWonderland.Data;
 using MariesWonderland.Extensions;
+using MariesWonderland.Helpers;
 using MariesWonderland.Models.Entities;
+using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.Gift;
 
 namespace MariesWonderland.Services;
 
-public class GiftService(UserDataStore store, TimeProvider timeProvider) : MariesWonderland.Proto.Gift.GiftService.GiftServiceBase
+public class GiftService(UserDataStore store, DarkMasterMemoryDatabase masterDb, TimeProvider timeProvider) : MariesWonderland.Proto.Gift.GiftService.GiftServiceBase
 {
     private readonly UserDataStore _store = store;
+    private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
     private readonly TimeProvider _timeProvider = timeProvider;
 
-    /// <summary>Claims inbox gifts by UUID, marking them as received with the current timestamp.</summary>
+    /// <summary>Claims inbox gifts by UUID: grants their contents and marks them received with the current timestamp.</summary>
     public override Task<ReceiveGiftResponse> ReceiveGift(ReceiveGiftRequest request, ServerCallContext context)
     {
         long userId = context.GetUserId();
@@ -27,7 +30,9 @@ public class GiftService(UserDataStore store, TimeProvider timeProvider) : Marie
                 && gift.ReceivedDatetime == 0
                 && request.UserGiftUuid.Contains(gift.UserGiftUuid))
             {
-                gift.ReceivedDatetime = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
+                long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
+                PossessionHelper.Apply(userDb, (PossessionType)gift.PossessionType, gift.PossessionId, gift.Count, _masterDb, nowMs);
+                gift.ReceivedDatetime = nowMs;
                 received.Add(gift.UserGiftUuid);
             }
         }
