@@ -1,5 +1,7 @@
 using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
+using MariesWonderland.Data;
+using MariesWonderland.Missions;
 using MariesWonderland.Proto.Data;
 using MariesWonderland.Proto.Friend;
 using MariesWonderland.Tests.Infrastructure;
@@ -97,7 +99,7 @@ public class FriendServiceTests
     [Fact]
     public async Task FriendRequestAndCheerMutations_ReturnFreshEmptyResponses()
     {
-        FriendServiceImpl service = new();
+        FriendServiceImpl service = CreateService();
 
         await AssertDiffOnlyResponseAsync(
             () => service.SendFriendRequest(
@@ -151,7 +153,7 @@ public class FriendServiceTests
     [Fact]
     public async Task BulkCheerAndReceive_ReturnFreshEmptyResponses()
     {
-        FriendServiceImpl service = new();
+        FriendServiceImpl service = CreateService();
 
         BulkCheerFriendResponse firstCheer = await service.BulkCheerFriend(new Empty(), FakeServerCallContext.For(UserId));
         Assert.Empty(firstCheer.PlayerId);
@@ -182,7 +184,7 @@ public class FriendServiceTests
         Action<TResponse> mutate)
         where TResponse : class
     {
-        FriendServiceImpl service = new();
+        FriendServiceImpl service = CreateService();
 
         TResponse firstResponse = await invoke(service, FakeServerCallContext.For(UserId));
         Assert.NotNull(firstResponse);
@@ -258,5 +260,11 @@ public class FriendServiceTests
             default:
                 throw new InvalidOperationException($"Unexpected response type: {typeof(TResponse).Name}");
         }
+    }
+
+    private static FriendServiceImpl CreateService()
+    {
+        DarkMasterMemoryDatabase masterDb = new();
+        return new(new UserDataStore(TimeProvider.System), new MissionTracker(masterDb, new MissionCatalog(masterDb, MissionFilterTable.Empty)), TimeProvider.System);
     }
 }

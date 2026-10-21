@@ -1,4 +1,5 @@
 using MariesWonderland.Data;
+using MariesWonderland.Missions;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.Banner;
@@ -113,7 +114,8 @@ public class BannerServiceTests
         Assert.False(response.IsExistUnreadPop);
     }
 
-    private static BannerServiceImpl CreateService(DarkMasterMemoryDatabase masterDb) => new(masterDb);
+    private static BannerServiceImpl CreateService(DarkMasterMemoryDatabase masterDb)
+        => new(new UserDataStore(TimeProvider.System), masterDb, new MissionTracker(masterDb, new MissionCatalog(masterDb, MissionFilterTable.Empty)), TimeProvider.System);
 
     private static DarkMasterMemoryDatabase CreateMasterDb() => new();
 

@@ -2,6 +2,7 @@ using Grpc.Core;
 using MariesWonderland.Data;
 using MariesWonderland.Extensions;
 using MariesWonderland.Missions;
+using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.Mission;
 
 namespace MariesWonderland.Services;
@@ -14,14 +15,25 @@ public class MissionService(UserDataStore store, MissionTracker missions, TimePr
     private readonly TimeProvider _timeProvider = timeProvider;
 
     /// <summary>
-    /// Takes the values the client measures itself and sends later (when the mission list refreshes): for now the
-    /// last concert's tap count. Cage values (running distance, Mama taps) and wizard defeats aren't tracked yet.
+    /// Takes the values the client measures itself and sends later (when the mission list refreshes): Cage values
+    /// (metres walked, Mama taps) and magick users crossed out since the last report, and the last concert's tap count.
     /// </summary>
     public override Task<UpdateMissionProgressResponse> UpdateMissionProgress(UpdateMissionProgressRequest request, ServerCallContext context)
     {
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
         long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
+
+        if (request.CageMeasurableValues is { } cage)
+        {
+            _missions.RecordCageValues(userDb, cage.RunningDistanceMeters, cage.MamaTappedCount, nowMs);
+        }
+
+        int defeatedWizards = request.PictureBookMeasurableValues?.DefeatWizardCount ?? 0;
+        if (defeatedWizards > 0)
+        {
+            _missions.Record(userDb, MissionClearConditionType.DEFEAT_WIZARD_COUNT, defeatedWizards, nowMs);
+        }
 
         RhythmInteractionMeasurableValues? rhythm = request.PictureBookMeasurableValues?.RhythmInteractionMeasurableValues;
         if (rhythm != null && rhythm.LiveTypeId > 0 && rhythm.TapCount > 0)

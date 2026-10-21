@@ -73,15 +73,14 @@ public class MissionEventTests(MasterDatabaseFixture fixture) : ServiceTestBase(
     public void QuestClear_CountsUnfilteredAndMatchingMissionsOnly()
     {
         (MissionTracker tracker, MissionCatalog catalog, DarkUserMemoryDatabase userDb, _, _) = Create();
-        // The "without skip" missions all belong to ended events: play inside one of their terms.
-        MissionDefinition withoutSkip = catalog.ByConditionType(MissionClearConditionType.QUEST_CLEAR_BY_COUNT_WITHOUT_SKIP).First();
-        long atMs = withoutSkip.StartDatetime + 1;
+        // Account mission 500056: Quest 10 of Chapter 4 on Very Hard with only Akeha, skip tickets not allowed.
+        MissionDefinition withoutSkip = catalog.Find(500056)!;
+        long atMs = NowMs;
         MissionDefinition any = catalog.ByConditionType(MissionClearConditionType.QUEST_CLEAR_BY_COUNT)
             .First(m => m.MissionGroupId != withoutSkip.MissionGroupId && m.Filter == null && !m.IsFilterUnmapped && m.ClearValue > 3 && m.IsInTerm(atMs));
         tracker.GrantGroup(userDb, withoutSkip.MissionGroupId, atMs);
         tracker.GrantGroup(userDb, any.MissionGroupId, atMs);
-        MissionQuestEvent quest = new(new QuestCampaignTarget(1, QuestType.MAIN_QUEST, 1, Difficulty: DifficultyType.NORMAL), []);
-        Assert.Null(withoutSkip.Filter);
+        MissionQuestEvent quest = new(new QuestCampaignTarget(20034, QuestType.MAIN_QUEST, 5, Difficulty: DifficultyType.VERY_HARD), [1015]);
 
         tracker.RecordQuestClear(userDb, quest, 1, isSkipped: false, atMs);
         tracker.RecordQuestClear(userDb, quest, 2, isSkipped: true, atMs);

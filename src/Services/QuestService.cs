@@ -3,6 +3,7 @@ using Grpc.Core;
 using MariesWonderland.Data;
 using MariesWonderland.Extensions;
 using MariesWonderland.Helpers;
+using MariesWonderland.Missions;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.Quest;
@@ -10,7 +11,7 @@ using MariesWonderland.Quests;
 
 namespace MariesWonderland.Services;
 
-public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb, QuestEngine questEngine, QuestCampaignHelper questCampaignHelper, TimeProvider timeProvider) : MariesWonderland.Proto.Quest.QuestService.QuestServiceBase
+public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb, QuestEngine questEngine, QuestCampaignHelper questCampaignHelper, MissionTracker missions, TimeProvider timeProvider) : MariesWonderland.Proto.Quest.QuestService.QuestServiceBase
 {
     // Most runs one auto-orbit loop may be set to. The client's picker stops here; master data has no config for it.
     private const int MaxAutoOrbitLoops = 10;
@@ -19,6 +20,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
     private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
     private readonly QuestEngine _questEngine = questEngine;
     private readonly QuestCampaignHelper _questCampaignHelper = questCampaignHelper;
+    private readonly MissionTracker _missions = missions;
     private readonly TimeProvider _timeProvider = timeProvider;
 
     /// <summary>Advances the main story flow to the specified quest scene and updates route/progress tracking.</summary>
@@ -214,6 +216,12 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         int questId = request.QuestId;
 
         EntityMQuest? quest = _questEngine.FindQuest(questId);
+
+        // Leaving The Cage for a quest reports what was measured there since the last report.
+        if (request.CageMeasurableValues is { } cage)
+        {
+            _missions.RecordCageValues(userDb, cage.RunningDistanceMeters, cage.MamaTappedCount, nowMs);
+        }
 
         _questEngine.ConsumeStamina(userDb, quest, _questCampaignHelper.GetMainQuestTarget(questId), 1, nowMs);
 

@@ -18,7 +18,8 @@ public sealed record MissionQuestEvent(
 /// <summary>
 /// What a mission's clear condition is restricted to. Only the fields a filter entry sets are non-null, and an event
 /// has to match all of them. An entry with no fields matches every event of its condition type.
-/// For quest conditions, <see cref="CharacterId"/> is a character in the deck and <see cref="CostumeIds"/> a costume in the deck.
+/// For quest and Big Hunt conditions, <see cref="CharacterId"/> and every one of <see cref="CharacterIds"/> must be in the
+/// deck, <see cref="OnlyCharacters"/> allows no other character in it, and <see cref="CostumeIds"/> is a costume in the deck.
 /// </summary>
 public sealed record MissionFilter(
     int? CharacterId = null,
@@ -43,12 +44,17 @@ public sealed record MissionFilter(
     bool? IsDailyFreeDraw = null,
     IReadOnlyList<int>? GachaPriceItemIds = null,
     ShopType? ShopType = null,
-    int? LiveTypeId = null)
+    int? LiveTypeId = null,
+    IReadOnlyList<int>? CharacterIds = null,
+    bool? OnlyCharacters = null)
 {
     private static readonly MissionFilter NoRestrictions = new();
 
     /// <summary>True for an entry that sets no field (<c>{}</c>): it restricts nothing.</summary>
     public bool IsEmpty => Equals(NoRestrictions);
+
+    /// <summary>True when the filter names characters the deck must hold, which only a run (not the saved scores) can tell.</summary>
+    public bool HasDeckRequirement => CharacterId != null || CharacterIds != null || OnlyCharacters == true;
 
     /// <summary>True when the cleared quest meets every restriction this filter sets.</summary>
     public bool MatchesQuest(MissionQuestEvent quest)
@@ -67,8 +73,32 @@ public sealed record MissionFilter(
             && (Difficulties == null || Difficulties.Contains(target.Difficulty))
             && (QuestIds == null || QuestIds.Contains(target.QuestId))
             && (DailyClearableCount == null || quest.DailyClearableCount == DailyClearableCount)
-            && (CharacterId == null || quest.DeckCharacterIds.Contains(CharacterId.Value))
+            && MatchesDeck(quest.DeckCharacterIds)
             && (CostumeIds == null || (quest.DeckCostumeIds ?? []).Any(CostumeIds.Contains));
+    }
+
+    /// <summary>True for a finished Big Hunt run against this boss with a deck that meets the character restrictions.</summary>
+    public bool MatchesBigHuntRun(int bigHuntBossId, IReadOnlyCollection<int> deckCharacterIds)
+        => (BigHuntBossId == null || BigHuntBossId == bigHuntBossId) && MatchesDeck(deckCharacterIds);
+
+    /// <summary>
+    /// True when the deck holds <see cref="CharacterId"/> and every one of <see cref="CharacterIds"/>, and, for
+    /// <see cref="OnlyCharacters"/>, no character besides them ("with only Akeha in your loadout").
+    /// </summary>
+    private bool MatchesDeck(IReadOnlyCollection<int> deckCharacterIds)
+    {
+        if (CharacterId != null && !deckCharacterIds.Contains(CharacterId.Value))
+        {
+            return false;
+        }
+
+        if (CharacterIds != null && !CharacterIds.All(deckCharacterIds.Contains))
+        {
+            return false;
+        }
+
+        return OnlyCharacters != true
+            || (deckCharacterIds.Count > 0 && deckCharacterIds.All(id => id == CharacterId || (CharacterIds?.Contains(id) ?? false)));
     }
 
     /// <summary>True for an event on this weapon (enhance skills, ascend, evolve: the weapon before evolving).</summary>
@@ -187,7 +217,9 @@ public sealed class MissionFilterTable
                 entry.IsDailyFreeDraw,
                 entry.GachaPriceItemIds,
                 entry.ShopType,
-                entry.LiveTypeId);
+                entry.LiveTypeId,
+                entry.CharacterIds,
+                entry.OnlyCharacters);
             (Dictionary<int, MissionFilter> table, int key, string kind) = entry.MissionId is int missionId
                 ? (byMissionId, missionId, "mission")
                 : (byOptionGroupId, entry.OptionGroupId!.Value, "option group");
@@ -230,5 +262,7 @@ public sealed class MissionFilterTable
         bool? IsDailyFreeDraw,
         List<int>? GachaPriceItemIds,
         ShopType? ShopType,
-        int? LiveTypeId);
+        int? LiveTypeId,
+        List<int>? CharacterIds,
+        bool? OnlyCharacters);
 }

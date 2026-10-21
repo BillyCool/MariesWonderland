@@ -250,12 +250,20 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
             ? GrantHighestTierRewards(userDb, bossQuest, userScore, 1, nowMs)
             : [];
 
-        // Missions: a play, its knockdowns, a quest clear, and the high-score conditions (read after the scores above).
+        // Missions: a play, its knockdowns, a quest clear and the run's score, with the deck the battle report names
+        // (high-score missions without a deck restriction also read the scores saved above).
+        HashSet<int> deckCostumeIds = [.. session.BattleReportCostume.Select(c => c.CostumeId).Where(id => id != 0)];
+        HashSet<int> deckCharacterIds = [.. _masterDb.EntityMCostume.Where(c => deckCostumeIds.Contains(c.CostumeId)).Select(c => c.CharacterId)];
         _missions.Record(userDb, MissionClearConditionType.BIG_HUNT_PLAY_BY_COUNT, 1, nowMs);
         _missions.Record(userDb, MissionClearConditionType.BIG_HUNT_BOSS_KNOCK_DOWN, session.BossKnockDownCount, nowMs);
         if (bhQuest is not null)
         {
-            _missions.RecordQuestClear(userDb, new MissionQuestEvent(_questCampaignHelper.GetBigHuntQuestTarget(bhQuest.QuestId), []), 1, isSkipped: false, nowMs);
+            _missions.RecordQuestClear(userDb, new MissionQuestEvent(_questCampaignHelper.GetBigHuntQuestTarget(bhQuest.QuestId), deckCharacterIds, deckCostumeIds), 1, isSkipped: false, nowMs);
+        }
+
+        if (bossQuest is not null)
+        {
+            _missions.RecordBigHuntScore(userDb, bossQuest.BigHuntBossId, deckCharacterIds, userScore, nowMs);
         }
 
         // Clear progress and battle state

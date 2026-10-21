@@ -85,6 +85,31 @@ public sealed class MissionTracker(DarkMasterMemoryDatabase masterDb, MissionCat
         => RecordBest(userDb, MissionClearConditionType.RHYTHM_INTERACTION_TAP_COUNT, tapCount, filter => filter == null || filter.MatchesLive(liveTypeId), nowMs);
 
     /// <summary>
+    /// A finished Big Hunt run's score: the best run counts for the high-score missions naming this boss and a deck
+    /// the run had ("with Lars and Griff in your loadout"). Missions without a deck restriction also read the saved
+    /// max scores, so they clear from earlier runs too.
+    /// </summary>
+    public void RecordBigHuntScore(DarkUserMemoryDatabase userDb, int bigHuntBossId, IReadOnlyCollection<int> deckCharacterIds, long score, long nowMs)
+        => RecordBest(userDb, MissionClearConditionType.BIG_HUNT_HIGH_SCORE, (int)Math.Clamp(score, 0, int.MaxValue), filter => filter == null || filter.MatchesBigHuntRun(bigHuntBossId, deckCharacterIds), nowMs);
+
+    /// <summary>
+    /// What the client measured in The Cage since it last reported (it sends the values on the next call that
+    /// carries them, then starts again from 0): metres walked and taps on Mama. Both add up.
+    /// </summary>
+    public void RecordCageValues(DarkUserMemoryDatabase userDb, int walkedMeters, int mamaTaps, long nowMs)
+    {
+        if (walkedMeters > 0)
+        {
+            Record(userDb, MissionClearConditionType.TOWER_WALKED_DISTANCE, walkedMeters, nowMs);
+        }
+
+        if (mamaTaps > 0)
+        {
+            Record(userDb, MissionClearConditionType.MAMA_TAP_BY_COUNT, mamaTaps, nowMs);
+        }
+    }
+
+    /// <summary>
     /// The title screen was passed (each <c>GameStart</c>): counts for the "see the title screen N times in a day"
     /// missions. Their group isn't a daily one, so a mission not yet cleared starts over on the first pass of a new
     /// game day (<paramref name="previousPassMs"/>, the last <c>GameStart</c>, is before today).
@@ -340,6 +365,8 @@ public sealed class MissionTracker(DarkMasterMemoryDatabase masterDb, MissionCat
             MissionClearConditionType.CHARACTER_REBIRTH_COUNT => userDb.EntityIUserCharacterRebirth
                 .Where(r => filter?.CharacterId == null || r.CharacterId == filter.CharacterId)
                 .Select(r => r.RebirthCount).DefaultIfEmpty(0).Max(),
+            // A deck restriction can't be read from the saved scores: those missions count runs (RecordBigHuntScore).
+            MissionClearConditionType.BIG_HUNT_HIGH_SCORE when filter?.HasDeckRequirement == true => null,
             MissionClearConditionType.BIG_HUNT_HIGH_SCORE => userDb.EntityIUserBigHuntMaxScore
                 .Where(s => filter?.BigHuntBossId == null || s.BigHuntBossId == filter.BigHuntBossId)
                 .Select(s => s.MaxScore).DefaultIfEmpty(0).Max(),

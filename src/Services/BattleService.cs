@@ -1,15 +1,18 @@
 ﻿using Grpc.Core;
 using MariesWonderland.Data;
 using MariesWonderland.Extensions;
+using MariesWonderland.Missions;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.Battle;
 
 namespace MariesWonderland.Services;
 
-public class BattleService(UserDataStore store, TimeProvider timeProvider) : MariesWonderland.Proto.Battle.BattleService.BattleServiceBase
+public class BattleService(UserDataStore store, DarkMasterMemoryDatabase masterDb, MissionTracker missions, TimeProvider timeProvider) : MariesWonderland.Proto.Battle.BattleService.BattleServiceBase
 {
     private readonly UserDataStore _store = store;
+    private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
+    private readonly MissionTracker _missions = missions;
     private readonly TimeProvider _timeProvider = timeProvider;
 
     /// <summary>Initializes a battle wave; currently a no-op that returns empty response.</summary>
@@ -21,7 +24,7 @@ public class BattleService(UserDataStore store, TimeProvider timeProvider) : Mar
         return Task.FromResult(new StartWaveResponse());
     }
 
-    /// <summary>Records battle results and tracks shortest clear time.</summary>
+    /// <summary>Records battle results, tracks shortest clear time and counts the bosses defeated in the wave.</summary>
     public override Task<FinishWaveResponse> FinishWave(FinishWaveRequest request, ServerCallContext context)
     {
         long userId = context.GetUserId();
@@ -65,6 +68,34 @@ public class BattleService(UserDataStore store, TimeProvider timeProvider) : Mar
             }
         }
 
+        int defeatedBosses = request.NpcPartyResultInfoList.Sum(DefeatedBosses);
+        if (defeatedBosses > 0)
+        {
+            _missions.Record(userDb, MissionClearConditionType.DEFEAT_BOSS_COUNT, defeatedBosses, nowMs);
+        }
+
         return Task.FromResult(new FinishWaveResponse());
+    }
+
+    /// <summary>
+    /// The bosses of an enemy party the wave wiped out: its deck's members typed BOSS in master data, counted only
+    /// when every member's HP was depleted. The result reports how many were, not which ones.
+    /// </summary>
+    private int DefeatedBosses(NpcPartyResultInfo npcParty)
+    {
+        EntityMBattleNpcDeck? deck = _masterDb.EntityMBattleNpcDeck.Find(npcParty.NpcId, (DeckType)npcParty.DeckType, npcParty.BattleNpcDeckNumber);
+        if (deck == null)
+        {
+            return 0;
+        }
+
+        List<string> members = [.. new[] { deck.BattleNpcDeckCharacterUuid01, deck.BattleNpcDeckCharacterUuid02, deck.BattleNpcDeckCharacterUuid03 }
+            .Where(uuid => !string.IsNullOrEmpty(uuid))];
+        if (members.Count == 0 || npcParty.CharacterHpDepletedCount < members.Count)
+        {
+            return 0;
+        }
+
+        return members.Count(uuid => _masterDb.EntityMBattleNpcDeckCharacterType.Find(deck.BattleNpcId, uuid)?.BattleEnemyType == BattleEnemyType.BOSS);
     }
 }

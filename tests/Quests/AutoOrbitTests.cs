@@ -24,8 +24,9 @@ public class AutoOrbitTests(MasterDatabaseFixture fixture) : ServiceTestBase(fix
         (long userId, _) = store.RegisterOrGetUser("auto-orbit-test", MasterDb);
         store.TryGet(userId, out DarkUserMemoryDatabase userDb);
         QuestCampaignHelper campaigns = new(MasterDb);
-        QuestEngine engine = new(MasterDb, GameConfig, campaigns, new ImportantItemEffectHelper(MasterDb), new MissionTracker(MasterDb, new MissionCatalog(MasterDb, MissionFilterTable.Empty)), Options.Create(new DevModeOptions { FreeStamina = true }));
-        return (new QuestService(store, MasterDb, engine, campaigns, TimeProvider.System), userDb, userId);
+        MissionTracker missions = new(MasterDb, new MissionCatalog(MasterDb, MissionFilterTable.Empty));
+        QuestEngine engine = new(MasterDb, GameConfig, campaigns, new ImportantItemEffectHelper(MasterDb), missions, Options.Create(new DevModeOptions { FreeStamina = true }));
+        return (new QuestService(store, MasterDb, engine, campaigns, missions, TimeProvider.System), userDb, userId);
     }
 
     /// <summary>A playable main quest whose drops are all stackable items, so each run's drop list is the same.</summary>

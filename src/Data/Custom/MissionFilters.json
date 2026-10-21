@@ -6074,6 +6074,232 @@
       "gachaPriceItemIds": [
         2002
       ]
+    },
+    {
+      "missionId": 500013,
+      "note": "Account mission: Clear Quest 3 of an event quest on EX Hard (any event's EX Hard sequence, its 3rd quest)",
+      "questIds": [
+        200615,
+        200618,
+        200651,
+        200654,
+        200687,
+        200690,
+        200723,
+        200729,
+        200735,
+        200770,
+        200776,
+        200781,
+        200816,
+        200821,
+        200824,
+        200857,
+        200892,
+        200927,
+        200932,
+        200967,
+        200972,
+        201007,
+        201044,
+        201049,
+        201056,
+        201091,
+        201126,
+        201161,
+        201196,
+        201201,
+        201207,
+        201243,
+        201278,
+        201313,
+        201321,
+        201356,
+        201392,
+        201427,
+        201462,
+        201467,
+        201502,
+        201507,
+        201542,
+        201579,
+        201614,
+        201649,
+        201684,
+        201717,
+        201750,
+        201785,
+        201820,
+        201855,
+        220118,
+        220128,
+        220138,
+        220148,
+        220158,
+        220168,
+        220178,
+        220188,
+        220199,
+        220209,
+        220219,
+        220229,
+        220239,
+        220249,
+        220254,
+        220264,
+        220269,
+        220279,
+        220289,
+        220300,
+        220310,
+        220320,
+        220330
+      ]
+    },
+    {
+      "missionId": 500045,
+      "note": "Account mission: Score rank S1 in Manifestation: Windy Cursed God with Lars and Griff in your loadout",
+      "bigHuntBossId": 3,
+      "characterIds": [
+        1013,
+        1014
+      ]
+    },
+    {
+      "missionId": 500056,
+      "note": "Account mission: Clear Quest 10 of Chapter 4: Flowing Water on Very Hard with only Akeha in your loadout, no skip tickets",
+      "questIds": [
+        20034
+      ],
+      "characterIds": [
+        1015
+      ],
+      "onlyCharacters": true
+    },
+    {
+      "missionId": 500057,
+      "note": "Account mission: Clear Akeha's Dark Lair: Hard with only Akeha in your loadout, no skip tickets",
+      "questIds": [
+        110040
+      ],
+      "characterIds": [
+        1015
+      ],
+      "onlyCharacters": true
+    },
+    {
+      "missionId": 500058,
+      "note": "Account mission: Clear Quest 10 of Chapter 7: Withered Crimson on Hard with only 063y in your loadout, no skip tickets (Japanese text says Hard)",
+      "questIds": [
+        10064
+      ],
+      "characterIds": [
+        1011
+      ],
+      "onlyCharacters": true
+    },
+    {
+      "missionId": 500059,
+      "note": "Account mission: Clear Quest 10 of Chapter 8: Piles of Leaves on Hard with only F66x in your loadout, no skip tickets (Japanese text says Hard)",
+      "questIds": [
+        10074
+      ],
+      "characterIds": [
+        1012
+      ],
+      "onlyCharacters": true
+    },
+    {
+      "missionId": 500067,
+      "note": "Account mission: Score rank S1 in Manifestation: Fiery Cursed God with 063y and F66x in your loadout",
+      "bigHuntBossId": 1,
+      "characterIds": [
+        1011,
+        1012
+      ]
+    },
+    {
+      "missionId": 500068,
+      "note": "Account mission: Score rank S1 in Manifestation: Soggy Cursed God with 063y and F66x in your loadout",
+      "bigHuntBossId": 2,
+      "characterIds": [
+        1011,
+        1012
+      ]
+    },
+    {
+      "missionId": 500078,
+      "note": "Account mission: Score rank S1 in Manifestation: Fiery Cursed God with Saryu in your loadout",
+      "bigHuntBossId": 1,
+      "characterIds": [
+        1022
+      ]
+    },
+    {
+      "missionId": 500084,
+      "note": "Account mission: Clear Quest 10 of Chapter 5: Snowy Peaks on Very Hard with only Argo in your loadout, no skip tickets",
+      "questIds": [
+        20044
+      ],
+      "characterIds": [
+        1006
+      ],
+      "onlyCharacters": true
+    },
+    {
+      "missionId": 500085,
+      "note": "Account mission: Clear Argo's Dark Lair: Hard with only Argo in your loadout, no skip tickets",
+      "questIds": [
+        110050
+      ],
+      "characterIds": [
+        1006
+      ],
+      "onlyCharacters": true
+    },
+    {
+      "missionId": 500087,
+      "note": "Account mission: Clear Quest 10 of Chapter 10: Flickers of Light on Hard with only Griff in your loadout, no skip tickets (Japanese text says Hard)",
+      "questIds": [
+        10094
+      ],
+      "characterIds": [
+        1014
+      ],
+      "onlyCharacters": true
+    },
+    {
+      "missionId": 500089,
+      "note": "Account mission: Score rank S1 in Manifestation: Fiery Cursed God with Lars and Griff in your loadout",
+      "bigHuntBossId": 1,
+      "characterIds": [
+        1013,
+        1014
+      ]
+    },
+    {
+      "missionId": 500102,
+      "note": "Account mission: Score rank S1 in Manifestation: Bright Cursed God with Levania in your loadout",
+      "bigHuntBossId": 4,
+      "characterIds": [
+        1004
+      ]
+    },
+    {
+      "missionId": 500108,
+      "note": "Account mission: Score rank S1 in Manifestation: Soggy Cursed God with Hina in your loadout",
+      "bigHuntBossId": 2,
+      "characterIds": [
+        1020
+      ]
+    },
+    {
+      "missionId": 500109,
+      "note": "Account mission: Score rank S1 in Manifestation: Bright Cursed God with Yuzuki in your loadout",
+      "bigHuntBossId": 4,
+      "characterIds": [
+        1021
+      ]
     }
   ]
 }

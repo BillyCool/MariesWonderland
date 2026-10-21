@@ -1,5 +1,6 @@
 using Google.Protobuf;
 using MariesWonderland.Data;
+using MariesWonderland.Missions;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.Battle;
@@ -226,7 +227,11 @@ public class BattleServiceTests
         Assert.Single(userDb.BattleDetails);
     }
 
-    private static BattleServiceImpl CreateService(UserDataStore store) => new(store, TimeProvider.System);
+    private static BattleServiceImpl CreateService(UserDataStore store)
+    {
+        DarkMasterMemoryDatabase masterDb = new();
+        return new(store, masterDb, new MissionTracker(masterDb, new MissionCatalog(masterDb, MissionFilterTable.Empty)), TimeProvider.System);
+    }
 
     private static UserDataStore CreateStore(DarkUserMemoryDatabase? userDb = null)
     {

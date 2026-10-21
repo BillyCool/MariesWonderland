@@ -1,11 +1,19 @@
 using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
+using MariesWonderland.Data;
+using MariesWonderland.Extensions;
+using MariesWonderland.Missions;
+using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.Friend;
 
 namespace MariesWonderland.Services;
 
-public class FriendService : MariesWonderland.Proto.Friend.FriendService.FriendServiceBase
+public class FriendService(UserDataStore store, MissionTracker missions, TimeProvider timeProvider) : MariesWonderland.Proto.Friend.FriendService.FriendServiceBase
 {
+    private readonly UserDataStore _store = store;
+    private readonly MissionTracker _missions = missions;
+    private readonly TimeProvider _timeProvider = timeProvider;
+
     /// <summary>Returns an empty response. Friend lookup not yet implemented.</summary>
     public override Task<GetUserResponse> GetUser(GetUserRequest request, ServerCallContext context)
     {
@@ -18,9 +26,15 @@ public class FriendService : MariesWonderland.Proto.Friend.FriendService.FriendS
         return Task.FromResult(new SearchRecommendedUsersResponse());
     }
 
-    /// <summary>Returns an empty response. Friend list not yet implemented.</summary>
+    /// <summary>Returns an empty response (friend list not yet implemented), and takes the Cage values measured since the last report.</summary>
     public override Task<GetFriendListResponse> GetFriendList(GetFriendListRequest request, ServerCallContext context)
     {
+        if (request.CageMeasurableValues is { } cage)
+        {
+            DarkUserMemoryDatabase userDb = _store.GetOrCreate(context.GetUserId());
+            _missions.RecordCageValues(userDb, cage.RunningDistanceMeters, cage.MamaTappedCount, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
+        }
+
         return Task.FromResult(new GetFriendListResponse());
     }
 
@@ -54,9 +68,11 @@ public class FriendService : MariesWonderland.Proto.Friend.FriendService.FriendS
         return Task.FromResult(new DeleteFriendResponse());
     }
 
-    /// <summary>Returns an empty response. Cheering friends not yet implemented.</summary>
+    /// <summary>Counts the cheer for the friend-support missions; nothing else (friends aren't implemented yet).</summary>
     public override Task<CheerFriendResponse> CheerFriend(CheerFriendRequest request, ServerCallContext context)
     {
+        DarkUserMemoryDatabase userDb = _store.GetOrCreate(context.GetUserId());
+        _missions.Record(userDb, MissionClearConditionType.CHEER_FRIEND_BY_COUNT, 1, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
         return Task.FromResult(new CheerFriendResponse());
     }
 

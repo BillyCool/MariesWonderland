@@ -1,18 +1,32 @@
 using Grpc.Core;
 using MariesWonderland.Data;
+using MariesWonderland.Extensions;
+using MariesWonderland.Missions;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.Banner;
 
 namespace MariesWonderland.Services;
 
-public class BannerService(DarkMasterMemoryDatabase masterDb) : MariesWonderland.Proto.Banner.BannerService.BannerServiceBase
+public class BannerService(UserDataStore store, DarkMasterMemoryDatabase masterDb, MissionTracker missions, TimeProvider timeProvider) : MariesWonderland.Proto.Banner.BannerService.BannerServiceBase
 {
+    private readonly UserDataStore _store = store;
     private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
+    private readonly MissionTracker _missions = missions;
+    private readonly TimeProvider _timeProvider = timeProvider;
 
-    /// <summary>Returns available gacha banners grouped into term-limited and chapter categories for the Mama banner screen.</summary>
+    /// <summary>
+    /// Returns available gacha banners grouped into term-limited and chapter categories for the Mama banner screen,
+    /// and takes the Cage values measured since the last report.
+    /// </summary>
     public override Task<GetMamaBannerResponse> GetMamaBanner(GetMamaBannerRequest request, ServerCallContext context)
     {
+        if (request.CageMeasurableValues is { } cage)
+        {
+            DarkUserMemoryDatabase userDb = _store.GetOrCreate(context.GetUserId());
+            _missions.RecordCageValues(userDb, cage.RunningDistanceMeters, cage.MamaTappedCount, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
+        }
+
         Dictionary<int, EntityMGachaMedal> medalByGachaId = [];
         foreach (EntityMGachaMedal medal in _masterDb.EntityMGachaMedal)
         {
