@@ -7,10 +7,11 @@ using MariesWonderland.Proto.Mission;
 
 namespace MariesWonderland.Services;
 
-public class MissionService(UserDataStore store, MissionTracker missions, TimeProvider timeProvider)
+public class MissionService(UserDataStore store, DarkMasterMemoryDatabase masterDb, MissionTracker missions, TimeProvider timeProvider)
     : MariesWonderland.Proto.Mission.MissionService.MissionServiceBase
 {
     private readonly UserDataStore _store = store;
+    private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
     private readonly MissionTracker _missions = missions;
     private readonly TimeProvider _timeProvider = timeProvider;
 
@@ -64,13 +65,21 @@ public class MissionService(UserDataStore store, MissionTracker missions, TimePr
         return Task.FromResult(response);
     }
 
-    /// <summary>Returns an empty response. Mission pass rewards not yet implemented.</summary>
+    /// <summary>
+    /// Grants every reached level of the mission pass not claimed yet: free rewards, plus premium rewards when the
+    /// pass's premium item is owned (levels reached before buying it included).
+    /// </summary>
     public override Task<ReceiveMissionPassRewardsResponse> ReceiveMissionPassRewards(ReceiveMissionPassRewardsRequest request, ServerCallContext context)
     {
         long userId = context.GetUserId();
-        _ = _store.GetOrCreate(userId);
+        DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
-        return Task.FromResult(new ReceiveMissionPassRewardsResponse());
+        List<MissionRewardGrant> granted = MissionPassHelper.Claim(userDb, _masterDb, request.MissionPassId, nowMs);
+
+        ReceiveMissionPassRewardsResponse response = new();
+        response.ReceivedPossession.AddRange(granted.Select(g => new MissionPassReward { PossessionType = (int)g.PossessionType, PossessionId = g.PossessionId, Count = g.Count }));
+        return Task.FromResult(response);
     }
 
     private static MissionReward ToProto(MissionRewardGrant grant)

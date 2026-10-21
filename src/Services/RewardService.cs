@@ -3,6 +3,7 @@ using Grpc.Core;
 using MariesWonderland.Data;
 using MariesWonderland.Extensions;
 using MariesWonderland.Helpers;
+using MariesWonderland.Missions;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.BigHunt;
@@ -229,11 +230,14 @@ public class RewardService(UserDataStore store, DarkMasterMemoryDatabase masterD
     }
 
     /// <summary>
-    /// Returns an empty mission pass remaining reward response (not yet implemented).
+    /// Claims what's left on the most recently ended mission pass that still has unclaimed levels, and returns its
+    /// id (0 when there's nothing left on any ended pass).
     /// </summary>
     public override Task<ReceiveMissionPassRemainingRewardResponse> ReceiveMissionPassRemainingReward(Empty request, ServerCallContext context)
     {
-        return Task.FromResult(new ReceiveMissionPassRemainingRewardResponse());
+        DarkUserMemoryDatabase userDb = _store.GetOrCreate(context.GetUserId());
+        int missionPassId = MissionPassHelper.ClaimRemaining(userDb, _masterDb, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
+        return Task.FromResult(new ReceiveMissionPassRemainingRewardResponse { RewardReceivedMissionPassId = missionPassId });
     }
 
     private int ResolveGradeIconId(int bossId, long score)

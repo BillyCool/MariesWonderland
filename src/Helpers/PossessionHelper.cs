@@ -50,6 +50,16 @@ public static class PossessionHelper
                         item.Count += count;
                     break;
                 }
+            // Mission pass points: the possession id is the pass. Points keep counting past the last level.
+            case PossessionType.MISSION_PASS_POINT:
+                {
+                    EntityIUserMissionPassPoint? pass = userDb.EntityIUserMissionPassPoint.FirstOrDefault(p => p.MissionPassId == id);
+                    if (pass == null)
+                        userDb.EntityIUserMissionPassPoint.Add(new EntityIUserMissionPassPoint { UserId = userDb.UserId, MissionPassId = id, Point = count });
+                    else
+                        pass.Point += count;
+                    break;
+                }
             case PossessionType.PREMIUM_ITEM:
                 {
                     EntityIUserPremiumItem? item = userDb.EntityIUserPremiumItem.FirstOrDefault(p => p.PremiumItemId == id);
