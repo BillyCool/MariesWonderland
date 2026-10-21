@@ -91,7 +91,15 @@ public class GimmickService(UserDataStore store, DarkMasterMemoryDatabase master
         {
             switch (masterGimmick.GimmickType)
             {
+                // A hidden-story report clears once its prerequisites are met: account missions (IUserMission) and
+                // quest missions (IUserQuestMission), combined through ClearEvaluateConditionId.
                 case GimmickType.REPORT:
+                    if (masterGimmick.ClearEvaluateConditionId != 0
+                        && EvaluateConditionHelper.Evaluate(masterGimmick.ClearEvaluateConditionId, userDb, _masterDb) == false)
+                    {
+                        break;
+                    }
+
                     gimmick.IsGimmickCleared = true;
                     (isSequenceCleared, sequenceClearRewards) = MarkSequenceClearedOnce(
                         userDb,
@@ -148,26 +156,17 @@ public class GimmickService(UserDataStore store, DarkMasterMemoryDatabase master
         });
     }
 
-    /// <summary>Initializes gimmick sequence schedules whose time windows are active and quest prerequisites are met.</summary>
+    /// <summary>
+    /// Initializes gimmick sequence schedules whose time windows are active and whose release condition is met
+    /// (in master data always a quest clear, hidden-story reports and cage memories included).
+    /// </summary>
     public override Task<InitSequenceScheduleResponse> InitSequenceSchedule(Empty request, ServerCallContext context)
     {
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
         long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
-        Dictionary<int, long> conditionToQuestId = BuildConditionQuestMap();
-        Dictionary<int, GimmickType> sequenceTypes = BuildSequenceTypeMap();
         List<EntityMGimmickSequenceSchedule> activeSchedules = ResolveActiveSchedules(nowMs);
-
-        // Collect all cleared quest IDs for prerequisite checks
-        HashSet<int> clearedQuests = [];
-        foreach (EntityIUserQuest quest in userDb.EntityIUserQuest)
-        {
-            if (quest.QuestStateType == (int)QuestStateType.CLEARED)
-            {
-                clearedQuests.Add(quest.QuestId);
-            }
-        }
 
         userDb.EntityIUserGimmickSequence.RemoveAll(sequence =>
         {
@@ -181,7 +180,8 @@ public class GimmickService(UserDataStore store, DarkMasterMemoryDatabase master
                 schedule.FirstGimmickSequenceId == sequence.GimmickSequenceId);
         });
 
-        // Activate each schedule whose time window includes now and whose quest prerequisite is met
+        // Activate each schedule whose time window includes now and whose release condition is met. An unsupported
+        // condition doesn't block (none exist in master data today).
         foreach (EntityMGimmickSequenceSchedule schedule in activeSchedules)
         {
             if (nowMs < schedule.StartDatetime)
@@ -189,19 +189,10 @@ public class GimmickService(UserDataStore store, DarkMasterMemoryDatabase master
                 continue;
             }
 
-            bool bypassQuestRequirement = sequenceTypes.TryGetValue(schedule.FirstGimmickSequenceId, out GimmickType sequenceType)
-                && sequenceType is GimmickType.REPORT or GimmickType.CAGE_MEMORY;
-
-            // TODO: Both kinds of hidden-story prerequisite are real rows now (invisible quest missions clear on a win,
-            // account missions through the mission engine), but report and cage-memory gimmicks still skip this check
-            // instead of reading them, and active-chain gimmick rows are missing.
-            if (!bypassQuestRequirement && schedule.ReleaseEvaluateConditionId != 0)
+            if (schedule.ReleaseEvaluateConditionId != 0
+                && EvaluateConditionHelper.Evaluate(schedule.ReleaseEvaluateConditionId, userDb, _masterDb) == false)
             {
-                if (conditionToQuestId.TryGetValue(schedule.ReleaseEvaluateConditionId, out long requiredQuestId)
-                    && !clearedQuests.Contains((int)requiredQuestId))
-                {
-                    continue;
-                }
+                continue;
             }
 
             bool exists = userDb.EntityIUserGimmickSequence.Any(s =>
@@ -250,64 +241,6 @@ public class GimmickService(UserDataStore store, DarkMasterMemoryDatabase master
         }
 
         return Task.FromResult(new UnlockResponse());
-    }
-
-    /// <summary>Builds a mapping from EvaluateConditionId to required quest ID for QUEST_CLEAR conditions.</summary>
-    private Dictionary<int, long> BuildConditionQuestMap()    {
-        Dictionary<(int GroupId, int GroupIndex), long> vgByKey = [];
-        foreach (EntityMEvaluateConditionValueGroup vg in _masterDb.EntityMEvaluateConditionValueGroup)
-        {
-            vgByKey[(vg.EvaluateConditionValueGroupId, vg.GroupIndex)] = vg.Value;
-        }
-
-        Dictionary<int, long> conditionToQuestId = [];
-        foreach (EntityMEvaluateCondition cond in _masterDb.EntityMEvaluateCondition)
-        {
-            if (cond.EvaluateConditionFunctionType != EvaluateConditionFunctionType.QUEST_CLEAR)
-            {
-                continue;
-            }
-            if (cond.EvaluateConditionEvaluateType != EvaluateConditionEvaluateType.ID_CONTAIN)
-            {
-                continue;
-            }
-            if (vgByKey.TryGetValue((cond.EvaluateConditionValueGroupId, 1), out long questId))
-            {
-                conditionToQuestId[cond.EvaluateConditionId] = questId;
-            }
-        }
-
-        return conditionToQuestId;
-    }
-
-    private Dictionary<int, GimmickType> BuildSequenceTypeMap()
-    {
-        Dictionary<int, GimmickType> gimmickTypes = [];
-        foreach (EntityMGimmick gimmick in _masterDb.EntityMGimmick)
-        {
-            gimmickTypes[gimmick.GimmickId] = gimmick.GimmickType;
-        }
-
-        Dictionary<int, GimmickType> typeByGroup = [];
-        foreach (EntityMGimmickGroup group in _masterDb.EntityMGimmickGroup)
-        {
-            if (!typeByGroup.ContainsKey(group.GimmickGroupId)
-                && gimmickTypes.TryGetValue(group.GimmickId, out GimmickType type))
-            {
-                typeByGroup[group.GimmickGroupId] = type;
-            }
-        }
-
-        Dictionary<int, GimmickType> typeBySequence = [];
-        foreach (EntityMGimmickSequence sequence in _masterDb.EntityMGimmickSequence)
-        {
-            if (typeByGroup.TryGetValue(sequence.GimmickGroupId, out GimmickType type))
-            {
-                typeBySequence[sequence.GimmickSequenceId] = type;
-            }
-        }
-
-        return typeBySequence;
     }
 
     private List<EntityMGimmickSequenceSchedule> ResolveActiveSchedules(long nowMs)
