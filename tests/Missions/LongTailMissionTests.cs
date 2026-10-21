@@ -7,6 +7,12 @@ using MariesWonderland.Models.Type;
 using MariesWonderland.Tests.Infrastructure;
 using Microsoft.Extensions.Options;
 using Microsoft.Extensions.Time.Testing;
+using MariesWonderland.Helpers;
+using MariesWonderland.Proto.Mission;
+using MariesWonderland.Proto.Quest;
+using MariesWonderland.Quests;
+using MissionServiceImpl = MariesWonderland.Services.MissionService;
+using QuestServiceImpl = MariesWonderland.Services.QuestService;
 using UserServiceImpl = MariesWonderland.Services.UserService;
 
 namespace MariesWonderland.Tests.Missions;
@@ -74,5 +80,43 @@ public class LongTailMissionTests(MasterDatabaseFixture fixture) : ServiceTestBa
         await service.CheckTransferSetting(new Empty(), ContextFor(userId));
 
         Assert.Equal(MissionProgressStatusType.CLEAR, Row(userDb, 12).MissionProgressStatusType);
+    }
+
+    [Fact]
+    public async Task UpdateMissionProgress_CageValuesCountForTheCageMissions()
+    {
+        UserDataStore store = new(TimeProvider.System);
+        (long userId, _) = store.RegisterOrGetUser("long-tail-cage-test", MasterDb);
+        store.TryGet(userId, out DarkUserMemoryDatabase userDb);
+        MissionTracker tracker = CreateTracker();
+        tracker.Refresh(userDb, NowMs);
+        MissionServiceImpl service = new(store, MasterDb, tracker, new FakeTimeProvider(Now));
+        UpdateMissionProgressRequest report = new() { CageMeasurableValues = new CageMeasurableValues { RunningDistanceMeters = 600, MamaTappedCount = 30 } };
+
+        await service.UpdateMissionProgress(report, ContextFor(userId));
+        await service.UpdateMissionProgress(report, ContextFor(userId));
+
+        Assert.Equal(MissionProgressStatusType.CLEAR, Row(userDb, 500047).MissionProgressStatusType);  // "Walk 1 km in The Cage"
+        Assert.Equal(60, Row(userDb, 500021).ProgressValue);                                            // "Tap Mama 50 times"
+    }
+
+    [Theory]
+    [InlineData(true, false, 440001)]
+    [InlineData(false, true, 450001)]
+    public async Task FinishMainQuest_QuitOrWipe_CountsForItsMission(bool isRetired, bool isAnnihilated, int missionId)
+    {
+        UserDataStore store = new(TimeProvider.System);
+        (long userId, _) = store.RegisterOrGetUser("long-tail-loss-test", MasterDb);
+        store.TryGet(userId, out DarkUserMemoryDatabase userDb);
+        MissionTracker tracker = CreateTracker();
+        tracker.Refresh(userDb, NowMs);
+        QuestServiceImpl service = new(store, MasterDb, TestServices.QuestEngine(MasterDb, tracker), new QuestCampaignHelper(MasterDb), tracker, new FakeTimeProvider(Now));
+        HashSet<int> mainQuestIds = [.. MasterDb.EntityMMainQuestSequence.Select(s => s.QuestId)];
+        EntityMQuest quest = MasterDb.EntityMQuest.Where(q => mainQuestIds.Contains(q.QuestId) && !q.IsRunInTheBackground && q.IsCountedAsQuest).OrderBy(q => q.QuestId).First();
+
+        await service.StartMainQuest(new StartMainQuestRequest { QuestId = quest.QuestId, IsMainFlow = true, UserDeckNumber = 1 }, ContextFor(userId));
+        await service.FinishMainQuest(new FinishMainQuestRequest { QuestId = quest.QuestId, IsMainFlow = true, IsRetired = isRetired, IsAnnihilated = isAnnihilated }, ContextFor(userId));
+
+        Assert.Equal(1, Row(userDb, missionId).ProgressValue);
     }
 }

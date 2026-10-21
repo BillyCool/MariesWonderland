@@ -9,6 +9,7 @@ using MariesWonderland.Tests.Infrastructure;
 using Microsoft.Extensions.Options;
 using Microsoft.Extensions.Time.Testing;
 using MissionServiceImpl = MariesWonderland.Services.MissionService;
+using RewardServiceImpl = MariesWonderland.Services.RewardService;
 
 namespace MariesWonderland.Tests.Missions;
 
@@ -107,5 +108,20 @@ public class MissionPassTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         Assert.Equal(10001, MissionPassHelper.ClaimRemaining(userDb, MasterDb, NowMs));
         Assert.Equal(0, MissionPassHelper.ClaimRemaining(userDb, MasterDb, NowMs));
         Assert.Equal(2, Progress(userDb, 10003).NoPremiumRewardReceivedLevel);
+    }
+
+    [Fact]
+    public async Task ReceiveMissionPassRemainingReward_ReturnsThePassItClaimed()
+    {
+        (UserDataStore store, DarkUserMemoryDatabase userDb, long userId) = CreateUser();
+        PossessionHelper.Apply(userDb, PossessionType.MISSION_PASS_POINT, 10003, 300, MasterDb, NowMs);
+        RewardServiceImpl service = new(store, MasterDb, new FakeTimeProvider(Now));
+
+        Proto.Reward.ReceiveMissionPassRemainingRewardResponse first = await service.ReceiveMissionPassRemainingReward(new Google.Protobuf.WellKnownTypes.Empty(), ContextFor(userId));
+        Proto.Reward.ReceiveMissionPassRemainingRewardResponse second = await service.ReceiveMissionPassRemainingReward(new Google.Protobuf.WellKnownTypes.Empty(), ContextFor(userId));
+
+        Assert.Equal(10003, first.RewardReceivedMissionPassId);
+        Assert.Equal(0, second.RewardReceivedMissionPassId);
+        Assert.Equal(3, Progress(userDb, 10003).NoPremiumRewardReceivedLevel);
     }
 }
