@@ -61,9 +61,52 @@ public sealed class MissionTracker(DarkMasterMemoryDatabase masterDb, MissionCat
         EvaluateDailyCompletion(userDb, rows, nowMs);
     }
 
-    /// <summary>An unfiltered counter event: counts for missions without a filter only.</summary>
+    /// <summary>
+    /// A score measured in one go (e.g. taps in one concert): raises every matching mission's progress to
+    /// <paramref name="value"/> when it beats the best so far, instead of adding to it.
+    /// </summary>
+    public void RecordBest(DarkUserMemoryDatabase userDb, MissionClearConditionType conditionType, int value, Func<MissionFilter?, bool> matches, long nowMs)
+    {
+        Dictionary<int, EntityIUserMission> rows = userDb.EntityIUserMission.ToDictionary(r => r.MissionId);
+        foreach (MissionDefinition mission in _catalog.ByConditionType(conditionType))
+        {
+            if (!mission.IsFilterUnmapped && matches(mission.Filter) && mission.IsInTerm(nowMs)
+                && rows.TryGetValue(mission.MissionId, out EntityIUserMission? row) && !IsReceived(row) && value > row.ProgressValue)
+            {
+                SetProgress(userDb, rows, mission, row, value, nowMs);
+            }
+        }
+
+        EvaluateDailyCompletion(userDb, rows, nowMs);
+    }
+
+    /// <summary>Taps landed in one concert (rhythm game): the best run counts for missions naming its live type.</summary>
+    public void RecordRhythmTaps(DarkUserMemoryDatabase userDb, int liveTypeId, int tapCount, long nowMs)
+        => RecordBest(userDb, MissionClearConditionType.RHYTHM_INTERACTION_TAP_COUNT, tapCount, filter => filter == null || filter.MatchesLive(liveTypeId), nowMs);
+
+    /// <summary>
+    /// The title screen was passed (each <c>GameStart</c>): counts for the "see the title screen N times in a day"
+    /// missions. Their group isn't a daily one, so a mission not yet cleared starts over on the first pass of a new
+    /// game day (<paramref name="previousPassMs"/>, the last <c>GameStart</c>, is before today).
+    /// </summary>
+    public void RecordTitleTransition(DarkUserMemoryDatabase userDb, long previousPassMs, long nowMs)
+    {
+        bool isNewDay = GameDayHelper.IsBeforeToday(previousPassMs, nowMs);
+        foreach (EntityIUserMission row in userDb.EntityIUserMission)
+        {
+            if (isNewDay && row.MissionProgressStatusType == MissionProgressStatusType.IN_PROGRESS && row.ProgressValue > 0
+                && _catalog.Find(row.MissionId)?.ConditionType == MissionClearConditionType.TITLE_TRANSITION_BY_COUNT)
+            {
+                row.ProgressValue = 0;
+            }
+        }
+
+        Record(userDb, MissionClearConditionType.TITLE_TRANSITION_BY_COUNT, 1, nowMs);
+    }
+
+    /// <summary>An unfiltered counter event: counts for missions without a filter (or with an empty one) only.</summary>
     public void Record(DarkUserMemoryDatabase userDb, MissionClearConditionType conditionType, int amount, long nowMs)
-        => Record(userDb, conditionType, amount, filter => filter == null, nowMs);
+        => Record(userDb, conditionType, amount, filter => filter == null || filter.IsEmpty, nowMs);
 
     /// <summary>An event on one weapon: counts for unfiltered missions and those naming the weapon.</summary>
     public void RecordWeapon(DarkUserMemoryDatabase userDb, MissionClearConditionType conditionType, int weaponId, int amount, long nowMs)

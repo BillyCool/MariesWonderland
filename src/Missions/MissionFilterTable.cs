@@ -42,15 +42,21 @@ public sealed record MissionFilter(
     IReadOnlyList<int>? GachaIds = null,
     bool? IsDailyFreeDraw = null,
     IReadOnlyList<int>? GachaPriceItemIds = null,
-    ShopType? ShopType = null)
+    ShopType? ShopType = null,
+    int? LiveTypeId = null)
 {
+    private static readonly MissionFilter NoRestrictions = new();
+
+    /// <summary>True for an entry that sets no field (<c>{}</c>): it restricts nothing.</summary>
+    public bool IsEmpty => Equals(NoRestrictions);
+
     /// <summary>True when the cleared quest meets every restriction this filter sets.</summary>
     public bool MatchesQuest(MissionQuestEvent quest)
     {
         QuestCampaignTarget target = quest.Target;
         bool isEvent = target.QuestType == Models.Type.QuestType.EVENT_QUEST;
         return BigHuntBossId == null && WeaponIds == null && ExploreIds == null && MessageWords == null && CharacterBoardGroupId == null
-            && GachaLabelType == null && GachaIds == null && IsDailyFreeDraw == null && GachaPriceItemIds == null && ShopType == null
+            && GachaLabelType == null && GachaIds == null && IsDailyFreeDraw == null && GachaPriceItemIds == null && ShopType == null && LiveTypeId == null
             && (QuestType == null || target.QuestType == QuestType)
             && (EventQuestType == null || (isEvent && target.EventQuestType == EventQuestType))
             && (EventQuestTypes == null || (isEvent && EventQuestTypes.Contains(target.EventQuestType)))
@@ -91,6 +97,12 @@ public sealed record MissionFilter(
 
     /// <summary>True for a purchase in a shop of this type (e.g. the Item Shop).</summary>
     public bool MatchesShop(Models.Type.ShopType shopType) => ShopType == null || ShopType == shopType;
+
+    /// <summary>
+    /// True for a concert (rhythm game) of this live type. The client's live types: 1 the tutorial, 2 the 43-note
+    /// concert (The Sun/Moon III quest 1), 3 the 33-note concert (quest 10); note counts from its live gimmick data.
+    /// </summary>
+    public bool MatchesLive(int liveTypeId) => LiveTypeId == null || LiveTypeId == liveTypeId;
 
     /// <summary>
     /// True when the profile comment contains one of the words the mission asks for (any comment when none is set).
@@ -174,7 +186,8 @@ public sealed class MissionFilterTable
                 entry.GachaIds,
                 entry.IsDailyFreeDraw,
                 entry.GachaPriceItemIds,
-                entry.ShopType);
+                entry.ShopType,
+                entry.LiveTypeId);
             (Dictionary<int, MissionFilter> table, int key, string kind) = entry.MissionId is int missionId
                 ? (byMissionId, missionId, "mission")
                 : (byOptionGroupId, entry.OptionGroupId!.Value, "option group");
@@ -216,5 +229,6 @@ public sealed class MissionFilterTable
         List<int>? GachaIds,
         bool? IsDailyFreeDraw,
         List<int>? GachaPriceItemIds,
-        ShopType? ShopType);
+        ShopType? ShopType,
+        int? LiveTypeId);
 }

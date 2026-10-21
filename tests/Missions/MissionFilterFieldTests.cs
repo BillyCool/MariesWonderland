@@ -84,6 +84,51 @@ public class MissionFilterFieldTests(MasterDatabaseFixture fixture) : ServiceTes
     }
 
     [Fact]
+    public void RhythmTaps_CountTheBestRunOfTheNamedConcert()
+    {
+        (MissionTracker tracker, MissionCatalog catalog, DarkUserMemoryDatabase userDb) = Create();
+        MissionDefinition maxExcitement = catalog.Find(460007)!;  // live type 2, 43 notes
+        MissionDefinition perfect = catalog.Find(460008)!;        // live type 3, 33 notes
+        long atMs = Math.Max(maxExcitement.StartDatetime, perfect.StartDatetime) + 1;
+        tracker.GrantGroup(userDb, maxExcitement.MissionGroupId, atMs);
+
+        tracker.RecordRhythmTaps(userDb, 3, 30, atMs);
+        Assert.Equal(0, Progress(userDb, maxExcitement));
+        Assert.Equal(30, Progress(userDb, perfect));
+
+        // A worse run doesn't lower the best; a perfect run clears it.
+        tracker.RecordRhythmTaps(userDb, 3, 12, atMs);
+        Assert.Equal(30, Progress(userDb, perfect));
+        tracker.RecordRhythmTaps(userDb, 3, 33, atMs);
+        Assert.Equal(MissionProgressStatusType.CLEAR, userDb.EntityIUserMission.Single(r => r.MissionId == perfect.MissionId).MissionProgressStatusType);
+
+        tracker.RecordRhythmTaps(userDb, 2, 43, atMs);
+        Assert.Equal(MissionProgressStatusType.CLEAR, userDb.EntityIUserMission.Single(r => r.MissionId == maxExcitement.MissionId).MissionProgressStatusType);
+    }
+
+    [Fact]
+    public void TitleTransitions_CountWithinOneGameDay()
+    {
+        (MissionTracker tracker, MissionCatalog catalog, DarkUserMemoryDatabase userDb) = Create();
+        MissionDefinition titleFiveTimes = catalog.Find(7007)!;  // "See the title screen 5 times in a day", empty filter
+        const long DayMs = 24L * 60 * 60 * 1000;
+        long dayOne = GameDayHelper.StartOfDay(titleFiveTimes.StartDatetime) + DayMs + 1000;
+        tracker.GrantGroup(userDb, titleFiveTimes.MissionGroupId, dayOne);
+
+        for (int i = 0; i < 4; i++)
+        {
+            tracker.RecordTitleTransition(userDb, dayOne, dayOne);
+        }
+
+        Assert.Equal(4, Progress(userDb, titleFiveTimes));
+
+        // Four views one day and one the next don't add up to five in a day.
+        long dayTwo = dayOne + DayMs;
+        tracker.RecordTitleTransition(userDb, dayOne, dayTwo);
+        Assert.Equal(1, Progress(userDb, titleFiveTimes));
+    }
+
+    [Fact]
     public void WeaponEvent_CountsOnlyForTheNamedWeapon()
     {
         (MissionTracker tracker, MissionCatalog catalog, DarkUserMemoryDatabase userDb) = Create();

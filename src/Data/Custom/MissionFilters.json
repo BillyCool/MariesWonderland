@@ -5948,18 +5948,12 @@
     {
       "optionGroupId": 460007,
       "note": "Liven up the concert in Quest 1 of The Sun III: Twilight to max excitement (+1 more)",
-      "questIds": [
-        325,
-        425
-      ]
+      "liveTypeId": 2
     },
     {
       "optionGroupId": 460008,
       "note": "Show your resolve by singing perfectly in Quest 10 of The Sun III: Twilight (+1 more)",
-      "questIds": [
-        334,
-        434
-      ]
+      "liveTypeId": 3
     },
     {
       "optionGroupId": 500001,

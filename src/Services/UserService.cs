@@ -85,11 +85,13 @@ public class UserService(UserDataStore store, UserDataSeeder seeder, DarkMasterM
 
         long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
         EntityIUser user = userDb.EntityIUser.GetOrCreate(userId);
-        bool isFirstStartToday = GameDayHelper.IsBeforeToday(user.GameStartDatetime, nowMs);
+        long previousGameStartMs = user.GameStartDatetime;
+        bool isFirstStartToday = GameDayHelper.IsBeforeToday(previousGameStartMs, nowMs);
         user.GameStartDatetime = nowMs;
 
         // Missions that became available since the last session, daily restarts, state conditions.
         _missions.Refresh(userDb, nowMs);
+        _missions.RecordTitleTransition(userDb, previousGameStartMs, nowMs);
 
         if (isFirstStartToday)
         {
