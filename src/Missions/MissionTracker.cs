@@ -109,6 +109,19 @@ public sealed class MissionTracker(DarkMasterMemoryDatabase masterDb, MissionCat
         }
     }
 
+    /// <summary>A quest battle that ended without a win: quitting and losing the whole party each have their missions.</summary>
+    public void RecordQuestBattleLoss(DarkUserMemoryDatabase userDb, bool isRetired, bool isAnnihilated, long nowMs)
+    {
+        if (isRetired)
+        {
+            Record(userDb, MissionClearConditionType.QUEST_BATTLE_RETIRED_COUNT, 1, nowMs);
+        }
+        else if (isAnnihilated)
+        {
+            Record(userDb, MissionClearConditionType.QUEST_BATTLE_ANNIHILATED_COUNT, 1, nowMs);
+        }
+    }
+
     /// <summary>
     /// The title screen was passed (each <c>GameStart</c>): counts for the "see the title screen N times in a day"
     /// missions. Their group isn't a daily one, so a mission not yet cleared starts over on the first pass of a new
@@ -339,7 +352,7 @@ public sealed class MissionTracker(DarkMasterMemoryDatabase masterDb, MissionCat
     }
 
     /// <summary>The account's current value for a state condition; null for counter and unsupported conditions.</summary>
-    private static long? StateValue(DarkUserMemoryDatabase userDb, MissionDefinition mission)
+    private long? StateValue(DarkUserMemoryDatabase userDb, MissionDefinition mission)
     {
         MissionFilter? filter = mission.Filter;
         return mission.ConditionType switch
@@ -370,8 +383,44 @@ public sealed class MissionTracker(DarkMasterMemoryDatabase masterDb, MissionCat
             MissionClearConditionType.BIG_HUNT_HIGH_SCORE => userDb.EntityIUserBigHuntMaxScore
                 .Where(s => filter?.BigHuntBossId == null || s.BigHuntBossId == filter.BigHuntBossId)
                 .Select(s => s.MaxScore).DefaultIfEmpty(0).Max(),
+            MissionClearConditionType.SET_FAVORITE_CHARACTER => userDb.EntityIUserProfile.Any(p => p.FavoriteCostumeId != 0) ? 1 : 0,
+            // Hidden stories collected: the report important items owned (report sequences grant them).
+            MissionClearConditionType.REPORT_COUNT => userDb.EntityIUserImportantItem
+                .Count(i => _masterDb.EntityMImportantItem.Find(i.ImportantItemId)?.ReportId > 0),
+            MissionClearConditionType.LIBRARY_ELEMENT_COUNT => LibraryElementCount(userDb),
+            MissionClearConditionType.COSTUME_ABILITY_MAX_LEVEL => userDb.EntityIUserCostume.Select(CostumeAbilityMaxLevel).DefaultIfEmpty(0).Max(),
             _ => null
         };
+    }
+
+    /// <summary>
+    /// Encyclopedia entries filled: owned costumes, weapons (any ever held, by weapon note), companions, memoirs (by
+    /// parts group note) and debris that have a catalog entry, the five tabs of the Library's Encyclopedia.
+    /// </summary>
+    private int LibraryElementCount(DarkUserMemoryDatabase userDb)
+    {
+        HashSet<int> costumes = [.. _masterDb.EntityMCatalogCostume.Select(c => c.CostumeId)];
+        HashSet<int> weapons = [.. _masterDb.EntityMCatalogWeapon.Select(c => c.WeaponId)];
+        HashSet<int> companions = [.. _masterDb.EntityMCatalogCompanion.Select(c => c.CompanionId)];
+        HashSet<int> partsGroups = [.. _masterDb.EntityMCatalogPartsGroup.Select(c => c.PartsGroupId)];
+        HashSet<int> thoughts = [.. _masterDb.EntityMCatalogThought.Select(c => c.ThoughtId)];
+        return userDb.EntityIUserCostume.Select(c => c.CostumeId).Where(costumes.Contains).Distinct().Count()
+            + userDb.EntityIUserWeaponNote.Select(w => w.WeaponId).Where(weapons.Contains).Distinct().Count()
+            + userDb.EntityIUserCompanion.Select(c => c.CompanionId).Where(companions.Contains).Distinct().Count()
+            + userDb.EntityIUserPartsGroupNote.Select(p => p.PartsGroupId).Where(partsGroups.Contains).Distinct().Count()
+            + userDb.EntityIUserThought.Select(t => t.ThoughtId).Where(thoughts.Contains).Distinct().Count();
+    }
+
+    /// <summary>A costume's highest ability level: each ability slot levels up with the costume's limit breaks.</summary>
+    private int CostumeAbilityMaxLevel(EntityIUserCostume userCostume)
+    {
+        int abilityGroupId = _masterDb.EntityMCostume.Find(userCostume.CostumeId)?.CostumeAbilityGroupId ?? 0;
+        HashSet<int> levelGroupIds = [.. _masterDb.EntityMCostumeAbilityGroup
+            .Where(g => g.CostumeAbilityGroupId == abilityGroupId)
+            .Select(g => g.CostumeAbilityLevelGroupId)];
+        return _masterDb.EntityMCostumeAbilityLevelGroup
+            .Where(l => levelGroupIds.Contains(l.CostumeAbilityLevelGroupId) && l.CostumeLimitBreakCountLowerLimit <= userCostume.LimitBreakCount)
+            .Select(l => l.AbilityLevel).DefaultIfEmpty(0).Max();
     }
 
     // ────────── "Clear all daily missions" ──────────

@@ -101,9 +101,14 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
         EntityIUserBigHuntProgressStatus progress = GetOrCreateProgress(userDb);
         EntitySBigHuntSession session = GetOrCreateSession(userDb);
 
-        // Retired or dry run — clear progress and return empty score info.
+        // Retired or dry run — clear progress and return empty score info. Quitting a real run counts for missions.
         if (request.IsRetired || progress.IsDryRun)
         {
+            if (request.IsRetired && !progress.IsDryRun)
+            {
+                _missions.RecordQuestBattleLoss(userDb, isRetired: true, isAnnihilated: false, nowMs);
+            }
+
             ClearProgress(progress);
             ClearBattleSession(session);
             return Task.FromResult(new FinishBigHuntQuestResponse

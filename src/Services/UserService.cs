@@ -68,10 +68,21 @@ public class UserService(UserDataStore store, UserDataSeeder seeder, DarkMasterM
         return Task.FromResult(response);
     }
 
-    /// <summary>Stub for transfer setting check; returns empty response.</summary>
+    /// <summary>
+    /// Called after the player sets up a transfer (account linking: SQEX bridge, Facebook or Apple). No client table
+    /// records a bridge link, so this is where its completion shows: it counts for the transfer-settings missions.
+    /// </summary>
     public override Task<CheckTransferSettingResponse> CheckTransferSetting(Empty request, ServerCallContext context)
     {
+        RecordTransferSettings(context);
         return Task.FromResult(new CheckTransferSettingResponse());
+    }
+
+    /// <summary>Account linking (or its check) done: counts for "Use Data Transfer to back up your game data".</summary>
+    private void RecordTransferSettings(ServerCallContext context)
+    {
+        DarkUserMemoryDatabase userDb = _store.GetOrCreate(context.GetUserId());
+        _missions.Record(userDb, MissionClearConditionType.COMPLETE_TRANSFER_SETTINGS, 1, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
     }
 
     /// <summary>
@@ -262,9 +273,10 @@ public class UserService(UserDataStore store, UserDataSeeder seeder, DarkMasterM
         return Task.FromResult(response);
     }
 
-    /// <summary>Stub for Apple account linking; returns empty response.</summary>
+    /// <summary>Apple account linking isn't supported; it still counts for the transfer-settings missions.</summary>
     public override Task<SetAppleAccountResponse> SetAppleAccount(SetAppleAccountRequest request, ServerCallContext context)
     {
+        RecordTransferSettings(context);
         return Task.FromResult(new SetAppleAccountResponse());
     }
 
@@ -282,9 +294,10 @@ public class UserService(UserDataStore store, UserDataSeeder seeder, DarkMasterM
         return Task.FromResult(new SetBirthYearMonthResponse());
     }
 
-    /// <summary>Stub for Facebook account linking; returns empty response.</summary>
+    /// <summary>Facebook account linking isn't supported; it still counts for the transfer-settings missions.</summary>
     public override Task<SetFacebookAccountResponse> SetFacebookAccount(SetFacebookAccountRequest request, ServerCallContext context)
     {
+        RecordTransferSettings(context);
         return Task.FromResult(new SetFacebookAccountResponse());
     }
 
@@ -298,6 +311,7 @@ public class UserService(UserDataStore store, UserDataSeeder seeder, DarkMasterM
 
         profile.FavoriteCostumeId = request.FavoriteCostumeId;
         profile.FavoriteCostumeIdUpdateDatetime = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
+        _missions.EvaluateStates(userDb, profile.FavoriteCostumeIdUpdateDatetime);
 
         return Task.FromResult(new SetUserFavoriteCostumeIdResponse());
     }

@@ -424,6 +424,10 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
         int questId = request.QuestId;
         bool isWin = !request.IsRetired && !request.IsAnnihilated;
+        if (!isWin)
+        {
+            _missions.RecordQuestBattleLoss(userDb, request.IsRetired, request.IsAnnihilated, nowMs);
+        }
 
         EntityMQuest? quest = _questEngine.FindQuest(questId);
         if (quest == null) return Task.FromResult(new FinishMainQuestResponse());
@@ -616,6 +620,10 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         if (quest == null) return Task.FromResult(new FinishExtraQuestResponse());
 
         bool isWin = !request.IsRetired && !request.IsAnnihilated;
+        if (!isWin)
+        {
+            _missions.RecordQuestBattleLoss(userDb, request.IsRetired, request.IsAnnihilated, nowMs);
+        }
         QuestFinishResult result = _questEngine.Finish(userDb, quest, _questCampaignHelper.GetExtraQuestTarget(questId), isWin, nowMs);
 
         // Reset extra quest progress (always)
@@ -726,6 +734,10 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
         int questId = request.QuestId;
         bool isWin = !request.IsRetired && !request.IsAnnihilated;
+        if (!isWin)
+        {
+            _missions.RecordQuestBattleLoss(userDb, request.IsRetired, request.IsAnnihilated, nowMs);
+        }
 
         EntityMQuest? quest = _questEngine.FindQuest(questId);
         if (quest == null) return Task.FromResult(new FinishEventQuestResponse());

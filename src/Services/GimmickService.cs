@@ -3,17 +3,19 @@ using Grpc.Core;
 using MariesWonderland.Data;
 using MariesWonderland.Extensions;
 using MariesWonderland.Helpers;
+using MariesWonderland.Missions;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.Gimmick;
 
 namespace MariesWonderland.Services;
 
-public class GimmickService(UserDataStore store, DarkMasterMemoryDatabase masterDb, TimeProvider timeProvider)
+public class GimmickService(UserDataStore store, DarkMasterMemoryDatabase masterDb, MissionTracker missions, TimeProvider timeProvider)
     : MariesWonderland.Proto.Gimmick.GimmickService.GimmickServiceBase
 {
     private readonly UserDataStore _store = store;
     private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
+    private readonly MissionTracker _missions = missions;
     private readonly TimeProvider _timeProvider = timeProvider;
 
     /// <summary>Records that the user has advanced to a gimmick sequence, preventing duplicate entries.</summary>
@@ -146,6 +148,12 @@ public class GimmickService(UserDataStore store, DarkMasterMemoryDatabase master
                     }
                     break;
             }
+        }
+
+        // A cleared report sequence grants its hidden story (a report important item): "Collect N Hidden Stories".
+        if (sequenceClearRewards.Count > 0 || ornamentRewards.Count > 0)
+        {
+            _missions.EvaluateStates(userDb, nowMs);
         }
 
         return Task.FromResult(new UpdateGimmickProgressResponse

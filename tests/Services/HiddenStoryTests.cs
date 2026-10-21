@@ -2,6 +2,7 @@ using Google.Protobuf.WellKnownTypes;
 using MariesWonderland.Configuration;
 using MariesWonderland.Data;
 using MariesWonderland.Helpers;
+using MariesWonderland.Missions;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.Gimmick;
@@ -57,7 +58,7 @@ public class HiddenStoryTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         int releaseQuestId = (int)MasterDb.EntityMEvaluateConditionValueGroup
             .Single(v => v.EvaluateConditionValueGroupId == MasterDb.EntityMEvaluateCondition.Find(schedule.ReleaseEvaluateConditionId)!.EvaluateConditionValueGroupId).Value;
         DarkUserMemoryDatabase userDb = CreateUserDb();
-        GimmickServiceImpl service = new(CreateStore(UserId, userDb), MasterDb, new FakeTimeProvider(Now));
+        GimmickServiceImpl service = new(CreateStore(UserId, userDb), MasterDb, new MissionTracker(MasterDb, new MissionCatalog(MasterDb, MissionFilterTable.Empty)), new FakeTimeProvider(Now));
 
         await service.InitSequenceSchedule(new Empty(), ContextFor(UserId));
         Assert.DoesNotContain(userDb.EntityIUserGimmickSequence, s => s.GimmickSequenceScheduleId == schedule.GimmickSequenceScheduleId);
@@ -75,7 +76,7 @@ public class HiddenStoryTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         int groupId = MasterDb.EntityMGimmickGroup.First(g => g.GimmickId == report.GimmickId).GimmickGroupId;
         EntityMGimmickSequence sequence = MasterDb.EntityMGimmickSequence.First(s => s.GimmickGroupId == groupId);
         DarkUserMemoryDatabase userDb = CreateUserDb();
-        GimmickServiceImpl service = new(CreateStore(UserId, userDb), MasterDb, new FakeTimeProvider(Now));
+        GimmickServiceImpl service = new(CreateStore(UserId, userDb), MasterDb, new MissionTracker(MasterDb, new MissionCatalog(MasterDb, MissionFilterTable.Empty)), new FakeTimeProvider(Now));
         UpdateGimmickProgressRequest request = new() { GimmickSequenceScheduleId = 1, GimmickSequenceId = sequence.GimmickSequenceId, GimmickId = report.GimmickId };
 
         await service.UpdateGimmickProgress(request, ContextFor(UserId));
