@@ -17,9 +17,9 @@ An open-source server implementation for mobile game NieR Reincarnation.
 ### 1. Run the server
 Open `MariesWonderland.slnx` and run the project.
 
-The server listens on the standard HTTP and HTTPS ports on localhost:
-- `http://localhost` (port 80) - used for HTTP asset serving
-- `https://localhost` (port 443) - used for gRPC (HTTP/2)
+By default the server listens on every network address on two ports (see [Ports and certificates](#ports-and-certificates) to change them):
+- port 80 (HTTP/1.1 and HTTP/2): asset serving
+- port 443 (HTTP/2): gRPC
 
 ### 2. Expose the server
 The game communicates over gRPC (HTTP/2). You do not need ngrok or an external tunnel if your emulator or device can reach your machine directly.
@@ -50,6 +50,32 @@ Server settings live in `src/appsettings.development.json`:
 
 - The `ResourcesBaseUrl` value must be exactly 43 characters long.
 - If you change the length of that segment, you may also need to update the server-side minimal API that serves the short path (the `/aaaaaaaa...` handler) so its expected length matches your new value.
+
+### Ports and certificates
+The listening addresses come from the standard ASP.NET Core `Kestrel:Endpoints` section in `src/appsettings.json`:
+
+```json
+{
+  "Kestrel": {
+    "Endpoints": {
+      "Http": { "Url": "http://*:80", "Protocols": "Http1AndHttp2" },
+      "Grpc": { "Url": "http://*:443", "Protocols": "Http2" }
+    }
+  }
+}
+```
+
+Override them in `src/appsettings.Local.json` (git-ignored) to use other ports, bind one address, or run behind a reverse proxy. To serve gRPC over TLS, give its endpoint an `https://` URL and a certificate:
+
+```json
+"Grpc": {
+  "Url": "https://*:443",
+  "Protocols": "Http2",
+  "Certificate": { "Path": "cert.pfx", "Password": "<password>" }
+}
+```
+
+They can also be set from environment variables, e.g. `Kestrel__Endpoints__Grpc__Url=http://*:5001` (handy in Docker).
 
 ## Project structure
 ```

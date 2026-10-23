@@ -3,7 +3,6 @@ using MariesWonderland.Data;
 using MariesWonderland.Extensions;
 using MariesWonderland.Interceptors;
 using MariesWonderland.Persistence;
-using Microsoft.AspNetCore.Server.Kestrel.Core;
 using Microsoft.Extensions.Options;
 
 namespace MariesWonderland;
@@ -17,16 +16,7 @@ public static class Program
         // Machine-specific settings (data paths, LAN address); git-ignored
         builder.Configuration.AddJsonFile("appsettings.Local.json", optional: true, reloadOnChange: true);
 
-        builder.WebHost.ConfigureKestrel(options =>
-        {
-            options.ListenAnyIP(80, x => x.Protocols = HttpProtocols.Http1AndHttp2);
-            options.ListenAnyIP(443, x =>
-            {
-                //var cert = X509CertificateLoader.LoadPkcs12FromFile(@"E:\Downloads\cert_key\cert.pfx", "yourpassword");
-                //x.UseHttps(cert);
-                x.Protocols = HttpProtocols.Http2;
-            });
-        });
+        // Listening addresses, protocols and certificates come from the "Kestrel:Endpoints" config section.
 
         DevModeOptions devMode = builder.Configuration.GetSection(DevModeOptions.SectionName).Get<DevModeOptions>() ?? new();
         builder.Services.Configure<DevModeOptions>(builder.Configuration.GetSection(DevModeOptions.SectionName));
