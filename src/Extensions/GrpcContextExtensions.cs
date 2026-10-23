@@ -1,4 +1,5 @@
 using Grpc.Core;
+using MariesWonderland.Data;
 
 namespace MariesWonderland.Extensions;
 
@@ -10,6 +11,7 @@ namespace MariesWonderland.Extensions;
 public static class GrpcContextExtensions
 {
     private const string UserIdKey = "MariesWonderland.UserId";
+    private const string LockedUserIdKey = "MariesWonderland.LockedUserId";
 
     /// <summary>
     /// Returns the authenticated caller's user ID.
@@ -42,4 +44,37 @@ public static class GrpcContextExtensions
     /// </summary>
     public static string GetSessionKey(this ServerCallContext context)
         => context.RequestHeaders.GetValue("x-apb-session-key") ?? "";
+
+    /// <summary>Records that this call holds <paramref name="userId"/>'s lock (set by <c>UserLockInterceptor</c>).</summary>
+    public static void SetLockedUserId(this ServerCallContext context, long userId)
+        => context.UserState[LockedUserIdKey] = userId;
+
+    /// <summary>
+    /// Takes <paramref name="userId"/>'s lock for the rest of this call, waiting up to
+    /// <see cref="UserDataStore.LockTimeout"/>; null when it stayed busy. Returns a no-op when this call already
+    /// holds that user's lock (its own caller), since the locks aren't reentrant.
+    /// </summary>
+    public static IDisposable? TryLockUser(this ServerCallContext context, UserDataStore store, long userId)
+    {
+        if (context.UserState.TryGetValue(LockedUserIdKey, out object? value) && value is long held && held == userId)
+        {
+            return NoLock.Instance;
+        }
+
+        return store.Locks.TryAcquire(userId, UserDataStore.LockTimeout);
+    }
+
+    /// <summary>Like <see cref="TryLockUser"/>, but fails the call with <see cref="StatusCode.Unavailable"/> when the user stayed busy.</summary>
+    public static IDisposable LockUser(this ServerCallContext context, UserDataStore store, long userId)
+        => context.TryLockUser(store, userId)
+            ?? throw new RpcException(new Status(StatusCode.Unavailable, "User is busy, try again."));
+
+    private sealed class NoLock : IDisposable
+    {
+        public static readonly NoLock Instance = new();
+
+        public void Dispose()
+        {
+        }
+    }
 }

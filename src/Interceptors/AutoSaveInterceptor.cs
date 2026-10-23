@@ -32,29 +32,31 @@ public class AutoSaveInterceptor(UserDataStore store, ILogger<AutoSaveIntercepto
         {
             string[] parts = context.Method.Split('/', StringSplitOptions.RemoveEmptyEntries);
             string methodSuffix = parts.Length >= 2 ? $"{parts[^2]}_{parts[^1]}" : context.Method.TrimStart('/').Replace('/', '_');
-            _ = Task.Run(() => SaveUser(userDb, methodSuffix));
+            // Serialized here, still under the user's lock (UserLockInterceptor); only the file write is left to the background.
+            string json = JsonSerializer.Serialize(userDb, JsonOptions);
+            long savedUserId = userDb.UserId;
+            _ = Task.Run(() => SaveUser(savedUserId, json, methodSuffix));
         }
 
         return response;
     }
 
     /// <summary>
-    /// Serializes and writes a user's database to a timestamped JSON file.
+    /// Writes a user's serialized database to a timestamped JSON file.
     /// </summary>
-    private void SaveUser(DarkUserMemoryDatabase userDb, string methodSuffix)
+    private void SaveUser(long userId, string json, string methodSuffix)
     {
         try
         {
             Directory.CreateDirectory(SavesDirectory);
             string timestamp = _timeProvider.GetUtcNow().UtcDateTime.ToString("yyyyMMdd_HHmmss");
-            string filePath = Path.Combine(SavesDirectory, $"{userDb.UserId}_{timestamp}_{methodSuffix}.json");
-            string json = JsonSerializer.Serialize(userDb, JsonOptions);
+            string filePath = Path.Combine(SavesDirectory, $"{userId}_{timestamp}_{methodSuffix}.json");
             File.WriteAllText(filePath, json);
             //logger.LogDebug("Auto-saved user {UserId} to {FilePath}", userDb.UserId, filePath);
         }
         catch (Exception ex)
         {
-            logger.LogError(ex, "AutoSaveInterceptor failed to save user {UserId}", userDb.UserId);
+            logger.LogError(ex, "AutoSaveInterceptor failed to save user {UserId}", userId);
         }
     }
 }

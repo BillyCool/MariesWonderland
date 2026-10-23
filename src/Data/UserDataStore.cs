@@ -1,6 +1,7 @@
 using MariesWonderland.Constants;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
+using System.Collections.Concurrent;
 using System.Text.Json;
 
 namespace MariesWonderland.Data;
@@ -8,15 +9,24 @@ namespace MariesWonderland.Data;
 /// <summary>
 /// Manages the map of userId → <see cref="DarkUserMemoryDatabase"/>. Handles user registration,
 /// session management, and persistence to/from JSON files on disk.
+/// The maps are safe to use from parallel requests. A user's own database isn't: requests reach it under that
+/// user's lock (<see cref="Locks"/>).
 /// </summary>
 public class UserDataStore(TimeProvider timeProvider)
 {
-    private readonly Dictionary<long, DarkUserMemoryDatabase> _users = [];
-    private readonly Dictionary<string, long> _uuidToUserId = [];
-    private readonly Dictionary<string, UserSession> _sessions = [];
+    /// <summary>How long code waits for another user's lock (or a user's lock outside a request) before giving up.</summary>
+    public static readonly TimeSpan LockTimeout = TimeSpan.FromSeconds(10);
+
+    private readonly ConcurrentDictionary<long, DarkUserMemoryDatabase> _users = new();
+    private readonly ConcurrentDictionary<string, long> _uuidToUserId = new();
+    private readonly ConcurrentDictionary<string, UserSession> _sessions = new();
     private readonly Dictionary<string, int> _sharedPrizeClaims = [];
     private readonly Lock _sharedPrizeLock = new();
+    private readonly Lock _registrationLock = new();
     private readonly TimeProvider _timeProvider = timeProvider;
+
+    /// <summary>The per-user locks requests run under.</summary>
+    public UserLocks Locks { get; } = new();
 
     /// <summary>How many of a shared limited prize (e.g. Mama's Dream gems) every player on the server has won so far.</summary>
     public int SharedPrizeClaimed(int gachaId, int prizeIndex)
@@ -52,15 +62,21 @@ public class UserDataStore(TimeProvider timeProvider)
     /// </summary>
     public (long UserId, bool IsNew) RegisterOrGetUser(string uuid, DarkMasterMemoryDatabase masterDb)
     {
-        if (_uuidToUserId.TryGetValue(uuid, out var existingId))
+        if (_uuidToUserId.TryGetValue(uuid, out long existingId))
             return (existingId, false);
 
-        var userId = GenerateUserId();
-        _uuidToUserId[uuid] = userId;
-        var db = new DarkUserMemoryDatabase { UserId = userId };
-        SeedInitialUserData(db, masterDb);
-        _users[userId] = db;
-        return (userId, true);
+        lock (_registrationLock)
+        {
+            if (_uuidToUserId.TryGetValue(uuid, out existingId))
+                return (existingId, false);
+
+            long userId = NewUserId();
+            DarkUserMemoryDatabase db = new() { UserId = userId };
+            SeedInitialUserData(db, masterDb);
+            _users[userId] = db;
+            _uuidToUserId[uuid] = userId;
+            return (userId, true);
+        }
     }
 
     /// <summary>
@@ -68,8 +84,15 @@ public class UserDataStore(TimeProvider timeProvider)
     /// </summary>
     public UserSession CreateSession(long userId, TimeSpan ttl)
     {
-        var key = $"session_{userId}_{Guid.NewGuid():N}";
-        var session = new UserSession(key, userId, _timeProvider.GetUtcNow().UtcDateTime.Add(ttl));
+        DateTime now = _timeProvider.GetUtcNow().UtcDateTime;
+        foreach ((string expiredKey, UserSession expired) in _sessions)
+        {
+            if (expired.ExpiresAt <= now)
+                _sessions.TryRemove(expiredKey, out _);
+        }
+
+        string key = $"session_{userId}_{Guid.NewGuid():N}";
+        UserSession session = new(key, userId, now.Add(ttl));
         _sessions[key] = session;
         return session;
     }
@@ -92,14 +115,7 @@ public class UserDataStore(TimeProvider timeProvider)
     /// Returns the user's in-memory database, creating an empty one if not found.
     /// </summary>
     public DarkUserMemoryDatabase GetOrCreate(long userId)
-    {
-        if (!_users.TryGetValue(userId, out var db))
-        {
-            db = new DarkUserMemoryDatabase { UserId = userId };
-            _users[userId] = db;
-        }
-        return db;
-    }
+        => _users.GetOrAdd(userId, static id => new DarkUserMemoryDatabase { UserId = id });
 
     /// <summary>
     /// Registers a pre-seeded database under a UUID. If the UUID is already mapped,
@@ -108,13 +124,16 @@ public class UserDataStore(TimeProvider timeProvider)
     /// </summary>
     public long SeedUserFromDatabase(string uuid, DarkUserMemoryDatabase seededDb)
     {
-        if (_uuidToUserId.TryGetValue(uuid, out var existingId))
-            return existingId;
+        lock (_registrationLock)
+        {
+            if (_uuidToUserId.TryGetValue(uuid, out long existingId))
+                return existingId;
 
-        long userId = seededDb.EntityIUser.FirstOrDefault()?.UserId ?? GenerateUserId();
-        _uuidToUserId[uuid] = userId;
-        _users[userId] = seededDb;
-        return userId;
+            long userId = seededDb.EntityIUser.FirstOrDefault()?.UserId ?? NewUserId();
+            _users[userId] = seededDb;
+            _uuidToUserId[uuid] = userId;
+            return userId;
+        }
     }
 
     /// <summary>
@@ -157,21 +176,43 @@ public class UserDataStore(TimeProvider timeProvider)
     /// </summary>
     public void Save(string filePath)
     {
-        UserDataSnapshot snapshot = new()
+        // Each user is written while holding their lock, so no request is changing them mid-write.
+        List<IDisposable> held = [];
+        try
         {
-            Users = _users,
-            UuidToUserId = _uuidToUserId,
-            Sessions = _sessions.Values.ToList(),
-            SharedPrizeClaims = _sharedPrizeClaims
-        };
+            foreach (long userId in _users.Keys.Order())
+            {
+                held.Add(Locks.TryAcquire(userId, LockTimeout)
+                    ?? throw new TimeoutException($"User {userId} stayed busy; nothing was saved."));
+            }
 
-        JsonSerializerOptions options = new()
+            UserDataSnapshot snapshot;
+            lock (_sharedPrizeLock)
+            {
+                snapshot = new()
+                {
+                    Users = new Dictionary<long, DarkUserMemoryDatabase>(_users),
+                    UuidToUserId = new Dictionary<string, long>(_uuidToUserId),
+                    Sessions = [.. _sessions.Values],
+                    SharedPrizeClaims = new Dictionary<string, int>(_sharedPrizeClaims)
+                };
+            }
+
+            JsonSerializerOptions options = new()
+            {
+                WriteIndented = true
+            };
+
+            string json = JsonSerializer.Serialize(snapshot, options);
+            File.WriteAllText(filePath, json);
+        }
+        finally
         {
-            WriteIndented = true
-        };
-
-        string json = JsonSerializer.Serialize(snapshot, options);
-        File.WriteAllText(filePath, json);
+            foreach (IDisposable handle in held)
+            {
+                handle.Dispose();
+            }
+        }
     }
 
     /// <summary>
@@ -213,6 +254,18 @@ public class UserDataStore(TimeProvider timeProvider)
         }
 
         return _users.Count;
+    }
+
+    /// <summary>A random user ID no other user has.</summary>
+    private long NewUserId()
+    {
+        long userId;
+        do
+        {
+            userId = GenerateUserId();
+        }
+        while (_users.ContainsKey(userId));
+        return userId;
     }
 
     /// <summary>

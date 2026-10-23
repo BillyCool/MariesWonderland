@@ -31,6 +31,7 @@ public static class Program
         builder.Services.Configure<DevModeOptions>(builder.Configuration.GetSection(DevModeOptions.SectionName));
 
         builder.Services.AddSingleton<SessionInterceptor>();
+        builder.Services.AddSingleton<UserLockInterceptor>();
         builder.Services.AddSingleton<CommonHeaderInterceptor>();
         builder.Services.AddSingleton<DiffInterceptor>();
         builder.Services.AddSingleton<LoggingInterceptor>();
@@ -38,6 +39,7 @@ public static class Program
         builder.Services.AddGrpc(options =>
         {
             options.Interceptors.Add<SessionInterceptor>();
+            options.Interceptors.Add<UserLockInterceptor>();
             options.Interceptors.Add<LoggingInterceptor>();
             options.Interceptors.Add<DiffInterceptor>();
             options.Interceptors.Add<CommonHeaderInterceptor>();

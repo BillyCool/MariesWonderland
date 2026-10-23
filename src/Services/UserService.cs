@@ -1,4 +1,4 @@
-﻿using Google.Protobuf.WellKnownTypes;
+using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
 using MariesWonderland.Data;
 using MariesWonderland.Extensions;
@@ -36,6 +36,8 @@ public class UserService(UserDataStore store, UserDataSeeder seeder, DarkMasterM
     public override Task<AuthUserResponse> Auth(AuthUserRequest request, ServerCallContext context)
     {
         var (userId, isNew) = _store.RegisterOrGetUser(request.Uuid, _masterDb);
+        // Auth runs before the session exists, so it isn't locked by the interceptor: lock the user it signs in.
+        using IDisposable userLock = context.LockUser(_store, userId);
         var userDb = _store.GetOrCreate(userId);
 
         var nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
@@ -195,6 +197,11 @@ public class UserService(UserDataStore store, UserDataSeeder seeder, DarkMasterM
         long callerUserId = context.GetUserId();
 
         if (!_store.TryGetByPlayerId(request.PlayerId, out DarkUserMemoryDatabase targetDb))
+            return Task.FromResult(new GetUserProfileResponse());
+
+        // Another player's data: read it under their lock (a no-op for the caller's own profile).
+        using IDisposable? targetLock = context.TryLockUser(_store, targetDb.UserId);
+        if (targetLock == null)
             return Task.FromResult(new GetUserProfileResponse());
 
         EntityIUserProfile? profile = targetDb.EntityIUserProfile.FirstOrDefault(p => p.UserId == targetDb.UserId);
