@@ -8,7 +8,7 @@ namespace MariesWonderland.Extensions;
 
 /// <summary>
 /// Registers all non-gRPC HTTP endpoints: asset serving (list.bin, asset bundles, master database),
-/// terms of service, and the catch-all fallback route. Debug save/load endpoints are mapped separately
+/// terms of service, and the catch-all fallback route. Debug save point endpoints are mapped separately
 /// by <see cref="MapDebugApis"/> when dev mode allows it.
 /// </summary>
 public static class HttpApiExtensions
@@ -220,44 +220,45 @@ public static class HttpApiExtensions
     }
 
     /// <summary>
-    /// Registers the dev-only /debug/save and /debug/load endpoints for manual snapshots of all user data.
+    /// Registers the dev-only save point endpoints (<see cref="SavePoints"/>):
+    /// <c>/debug/save?name=&amp;user=</c>, <c>/debug/load?name=</c> and <c>/debug/saves</c>.
     /// </summary>
     public static WebApplication MapDebugApis(this WebApplication app)
     {
         ServerOptions options = app.Services.GetRequiredService<IOptions<ServerOptions>>().Value;
-        string userDatabasePath = DataOptions.ResolvePath(options.Data.UserDatabase);
+        SavePoints savePoints = new(app.Services.GetRequiredService<UserDataStore>(), DataOptions.ResolvePath(options.Data.SavesDirectory));
 
-        app.MapGet("/debug/save", () =>
+        app.MapGet("/debug/save", (string? name, long? user) => SavePointCall(() =>
         {
-            try
-            {
-                UserDataStore store = app.Services.GetRequiredService<UserDataStore>();
-                store.Save(userDatabasePath);
-                return Results.Ok($"Saved {store.All.Count} users to {userDatabasePath}");
-            }
-            catch (Exception ex)
-            {
-                return Results.Problem($"Save failed: {ex.Message}");
-            }
-        });
+            long userId = savePoints.Save(name, user);
+            return $"Saved user {userId} as '{name ?? SavePoints.DefaultName}'.";
+        }));
 
-        app.MapGet("/debug/load", () =>
+        app.MapGet("/debug/load", (string? name) => SavePointCall(() =>
         {
-            try
-            {
-                UserDataStore store = app.Services.GetRequiredService<UserDataStore>();
-                int count = store.Load(userDatabasePath);
-                return count > 0
-                    ? Results.Ok($"Loaded {count} users from {userDatabasePath}")
-                    : Results.Ok("No save file found.");
-            }
-            catch (Exception ex)
-            {
-                return Results.Problem($"Load failed: {ex.Message}");
-            }
-        });
+            long userId = savePoints.Load(name);
+            return $"Loaded '{name ?? SavePoints.DefaultName}' into user {userId}. Return to the title screen to see it in game.";
+        }));
+
+        app.MapGet("/debug/saves", () => Results.Ok(savePoints.List()));
 
         return app;
+    }
+
+    private static IResult SavePointCall(Func<string> action)
+    {
+        try
+        {
+            return Results.Ok(action());
+        }
+        catch (ArgumentException ex)
+        {
+            return Results.BadRequest(ex.Message);
+        }
+        catch (Exception ex)
+        {
+            return Results.Problem(ex.Message);
+        }
     }
 
     /// <summary>

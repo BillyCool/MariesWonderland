@@ -12,6 +12,29 @@ public static class GrpcContextExtensions
 {
     private const string UserIdKey = "MariesWonderland.UserId";
     private const string LockedUserIdKey = "MariesWonderland.LockedUserId";
+    private const string RequestIdKey = "MariesWonderland.RequestId";
+    private const string UserChangesKey = "MariesWonderland.UserChanges";
+
+    /// <summary>A short id for this call, made on first use, shared by the gRPC log and the request journal.</summary>
+    public static string GetRequestId(this ServerCallContext context)
+    {
+        if (context.UserState.TryGetValue(RequestIdKey, out object? value) && value is string id)
+        {
+            return id;
+        }
+
+        string newId = Guid.NewGuid().ToString("N")[..8];
+        context.UserState[RequestIdKey] = newId;
+        return newId;
+    }
+
+    /// <summary>Records what this call changed in a user's data (set where the changes are saved).</summary>
+    public static void SetUserChanges(this ServerCallContext context, UserChanges changes)
+        => context.UserState[UserChangesKey] = changes;
+
+    /// <summary>What this call changed in a user's data, if it recorded it.</summary>
+    public static UserChanges? GetUserChanges(this ServerCallContext context)
+        => context.UserState.TryGetValue(UserChangesKey, out object? value) ? value as UserChanges : null;
 
     /// <summary>
     /// Returns the authenticated caller's user ID.

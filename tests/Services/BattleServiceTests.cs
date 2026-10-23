@@ -27,7 +27,7 @@ public class BattleServiceTests
         Assert.True(store.TryGet(UserId, out DarkUserMemoryDatabase? userDb));
         Assert.NotNull(userDb);
         Assert.Equal(UserId, userDb.UserId);
-        Assert.Empty(userDb.BattleDetails);
+        Assert.Empty(store.BattleDetails(UserId));
     }
 
     [Fact]
@@ -108,7 +108,7 @@ public class BattleServiceTests
 
         DateTime after = DateTime.UtcNow;
         EntityIUserQuest activeQuest = Assert.Single(userDb.EntityIUserQuest);
-        EntitySBattleDetail battleRecord = Assert.Single(userDb.BattleDetails);
+        EntitySBattleDetail battleRecord = Assert.Single(store.BattleDetails(UserId));
         Assert.NotNull(response);
         Assert.Equal(480, activeQuest.ShortestClearFrames);
         Assert.Equal(101, battleRecord.QuestId);
@@ -155,7 +155,7 @@ public class BattleServiceTests
             FakeServerCallContext.For(UserId));
 
         EntityIUserQuest activeQuest = Assert.Single(userDb.EntityIUserQuest);
-        EntitySBattleDetail battleRecord = Assert.Single(userDb.BattleDetails);
+        EntitySBattleDetail battleRecord = Assert.Single(store.BattleDetails(UserId));
         Assert.Equal(300, activeQuest.ShortestClearFrames);
         Assert.Equal(202, battleRecord.QuestId);
         Assert.Equal(string.Empty, battleRecord.BattleBinary);
@@ -196,7 +196,7 @@ public class BattleServiceTests
             FakeServerCallContext.For(UserId));
 
         EntityIUserQuest clearedQuest = Assert.Single(userDb.EntityIUserQuest);
-        EntitySBattleDetail battleRecord = Assert.Single(userDb.BattleDetails);
+        EntitySBattleDetail battleRecord = Assert.Single(store.BattleDetails(UserId));
         Assert.Equal(111, clearedQuest.ShortestClearFrames);
         Assert.Equal(0, battleRecord.QuestId);
         Assert.Equal("YmF0dGxl", battleRecord.BattleBinary);
@@ -224,7 +224,7 @@ public class BattleServiceTests
             FakeServerCallContext.For(UserId));
 
         Assert.Equal(150, Assert.Single(userDb.EntityIUserQuest).ShortestClearFrames);
-        Assert.Single(userDb.BattleDetails);
+        Assert.Single(store.BattleDetails(UserId));
     }
 
     private static BattleServiceImpl CreateService(UserDataStore store)

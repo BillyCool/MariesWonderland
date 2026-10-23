@@ -78,6 +78,7 @@ public class DiffInterceptor(UserDataStore store, ILogger<DiffInterceptor> logge
         }
 
         store.SaveChanges(userId, before, after, userDb);
+        context.SetUserChanges(new UserChanges(userId, before, after));
         return response;
     }
 }

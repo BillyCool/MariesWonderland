@@ -27,10 +27,16 @@ public sealed class DataOptions
     public string UserDataPath { get; init; } = string.Empty;
     
     /// <summary>
-    /// Path of the JSON snapshot file used by <c>/debug/save</c> and <c>/debug/load</c>. On a first start with an
+    /// Path of the whole-server JSON snapshot the server kept before it had a user database. On a first start with an
     /// empty user database, its users are imported. If relative, resolved against the application base directory.
     /// </summary>
     public string UserDatabase { get; init; } = "userdata.json";
+
+    /// <summary>
+    /// Directory of the per-user save points made by <c>/debug/save</c> and restored by <c>/debug/load</c>.
+    /// If relative, resolved against the application base directory.
+    /// </summary>
+    public string SavesDirectory { get; init; } = "Saves";
 
     /// <summary>
     /// Path of the SQLite user database (created on first start, migrated on every start).

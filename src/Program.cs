@@ -36,18 +36,19 @@ public static class Program
         builder.Services.AddSingleton<CommonHeaderInterceptor>();
         builder.Services.AddSingleton<DiffInterceptor>();
         builder.Services.AddSingleton<LoggingInterceptor>();
-        builder.Services.AddSingleton<AutoSaveInterceptor>();
+        builder.Services.AddSingleton<RequestJournalInterceptor>();
         builder.Services.AddGrpc(options =>
         {
             options.Interceptors.Add<SessionInterceptor>();
             options.Interceptors.Add<UserLockInterceptor>();
+            // Outside DiffInterceptor, which hands it each call's changes; inside the lock.
+            if (devMode.IsRequestJournalEnabled)
+            {
+                options.Interceptors.Add<RequestJournalInterceptor>();
+            }
             options.Interceptors.Add<LoggingInterceptor>();
             options.Interceptors.Add<DiffInterceptor>();
             options.Interceptors.Add<CommonHeaderInterceptor>();
-            if (devMode.IsRequestJournalEnabled)
-            {
-                options.Interceptors.Add<AutoSaveInterceptor>();
-            }
         });
         builder.Services.AddServerOptions(builder.Configuration);
         builder.Services.AddDataStores(builder.Configuration, devMode);

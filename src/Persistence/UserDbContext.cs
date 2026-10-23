@@ -1,4 +1,5 @@
 using MariesWonderland.Data;
+using MariesWonderland.Models.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
@@ -11,7 +12,7 @@ namespace MariesWonderland.Persistence;
 /// <summary>
 /// The user database: one table per user table of <see cref="DarkUserMemoryDatabase"/> (named like the client's
 /// tables, e.g. <c>IUserWeapon</c>, server-only ones like <c>SUserGift</c>), keyed by the entity's
-/// <c>[PrimaryKey]</c>, plus the device, session and shared-prize tables. Values that aren't plain columns (lists,
+/// <c>[PrimaryKey]</c>, plus the battle log and the device, session and shared-prize tables. Values that aren't plain columns (lists,
 /// dictionaries of a row) are stored as JSON. Provider-neutral; each provider derives its own context so it gets
 /// its own migrations.
 /// </summary>
@@ -27,24 +28,11 @@ public abstract class UserDbContext(DbContextOptions options) : DbContext(option
     {
         foreach (UserTable table in UserTables.All)
         {
-            EntityTypeBuilder entity = modelBuilder.Entity(table.RowType);
-            entity.ToTable(table.Name);
-
-            // Keys always come from the game data (user ids, uuids, master ids); the database never makes them up.
-            foreach (PropertyInfo key in typeof(EntityKey<>).MakeGenericType(table.RowType)
-                .GetProperty(nameof(EntityKey<object>.Properties))!.GetValue(null) as IReadOnlyList<PropertyInfo> ?? [])
-            {
-                entity.Property(key.Name).ValueGeneratedNever();
-            }
-
-            foreach (PropertyInfo prop in table.RowType.GetProperties(BindingFlags.Public | BindingFlags.Instance))
-            {
-                if (prop.CanWrite && !IsColumnType(prop.PropertyType))
-                {
-                    ConfigureJsonMethod.MakeGenericMethod(prop.PropertyType).Invoke(null, [entity, prop.Name]);
-                }
-            }
+            ConfigureRowTable(modelBuilder, table.RowType, table.Name);
         }
+
+        // The battle log only ever grows and is never part of the in-memory user: rows are added as battles end.
+        ConfigureRowTable(modelBuilder, typeof(EntitySBattleDetail), "SBattleDetail");
 
         modelBuilder.Entity<DeviceAccount>(entity =>
         {
@@ -67,7 +55,29 @@ public abstract class UserDbContext(DbContextOptions options) : DbContext(option
         });
 
         // Player-id lookups (friends, profiles) for users that aren't in memory.
-        modelBuilder.Entity<Models.Entities.EntityIUser>().HasIndex(u => u.PlayerId);
+        modelBuilder.Entity<EntityIUser>().HasIndex(u => u.PlayerId);
+    }
+
+    /// <summary>Maps a row type to its table, keyed by its <c>[PrimaryKey]</c>, with non-column values as JSON.</summary>
+    private static void ConfigureRowTable(ModelBuilder modelBuilder, Type rowType, string name)
+    {
+        EntityTypeBuilder entity = modelBuilder.Entity(rowType);
+        entity.ToTable(name);
+
+        // Keys always come from the game data (user ids, uuids, master ids); the database never makes them up.
+        foreach (PropertyInfo key in typeof(EntityKey<>).MakeGenericType(rowType)
+            .GetProperty(nameof(EntityKey<object>.Properties))!.GetValue(null) as IReadOnlyList<PropertyInfo> ?? [])
+        {
+            entity.Property(key.Name).ValueGeneratedNever();
+        }
+
+        foreach (PropertyInfo prop in rowType.GetProperties(BindingFlags.Public | BindingFlags.Instance))
+        {
+            if (prop.CanWrite && !IsColumnType(prop.PropertyType))
+            {
+                ConfigureJsonMethod.MakeGenericMethod(prop.PropertyType).Invoke(null, [entity, prop.Name]);
+            }
+        }
     }
 
     /// <summary>Whether a property type maps to a plain column; anything else is stored as JSON.</summary>

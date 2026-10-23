@@ -233,8 +233,6 @@ public class DarkUserMemoryDatabase
 
     public List<EntitySUserDevice> EntitySUserDevice { get; set; } = [];
 
-    public List<EntitySBattleDetail> BattleDetails { get; set; } = [];
-
     public List<EntitySQuestSession> EntitySQuestSession { get; set; } = [];
 
     public List<EntitySBigHuntSession> EntitySBigHuntSession { get; set; } = [];

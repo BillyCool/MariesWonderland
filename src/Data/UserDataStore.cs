@@ -25,6 +25,7 @@ public class UserDataStore(TimeProvider timeProvider, IUserPersistence? persiste
     private readonly ConcurrentDictionary<long, long> _lastUsedTicks = new();
     private readonly ConcurrentDictionary<string, long> _uuidToUserId = new();
     private readonly ConcurrentDictionary<string, UserSession> _sessions = new();
+    private readonly ConcurrentDictionary<long, List<EntitySBattleDetail>> _battleLogs = new();
     private readonly Dictionary<string, int> _sharedPrizeClaims = new(persistence?.SharedPrizeClaims() ?? new Dictionary<string, int>());
     private readonly Lock _sharedPrizeLock = new();
     private readonly Lock _registrationLock = new();
@@ -66,6 +67,47 @@ public class UserDataStore(TimeProvider timeProvider, IUserPersistence? persiste
     }
 
     private static string SharedPrizeKey(int gachaId, int prizeIndex) => $"{gachaId}:{prizeIndex}";
+
+    /// <summary>
+    /// Appends a finished battle to the user's battle log. The log isn't part of the in-memory user: it goes
+    /// straight to the user database (or a memory-only list without one). A failed write is logged, not thrown.
+    /// </summary>
+    public void RecordBattle(EntitySBattleDetail detail)
+    {
+        if (_persistence == null)
+        {
+            List<EntitySBattleDetail> log = _battleLogs.GetOrAdd(detail.UserId, _ => []);
+            lock (log)
+            {
+                log.Add(detail);
+            }
+            return;
+        }
+
+        try
+        {
+            _persistence.AddBattleDetail(detail);
+        }
+        catch (Exception ex)
+        {
+            _logger?.LogWarning(ex, "Recording a battle of user {UserId} failed", detail.UserId);
+        }
+    }
+
+    /// <summary>The user's battle log, oldest first.</summary>
+    public IReadOnlyList<EntitySBattleDetail> BattleDetails(long userId)
+    {
+        if (_persistence != null)
+            return _persistence.BattleDetails(userId);
+
+        if (!_battleLogs.TryGetValue(userId, out List<EntitySBattleDetail>? log))
+            return [];
+
+        lock (log)
+        {
+            return [.. log];
+        }
+    }
 
     /// <summary>
     /// Look up or create a user by UUID. Returns the userId and whether the user is new.
@@ -305,63 +347,44 @@ public class UserDataStore(TimeProvider timeProvider, IUserPersistence? persiste
 
     private void Touch(long userId) => _lastUsedTicks[userId] = _timeProvider.GetUtcNow().UtcTicks;
 
+    /// <summary>The ids of every user: saved ones with a user database, else the ones in memory.</summary>
+    public IReadOnlyList<long> UserIds() => _persistence?.UserIds() ?? [.. _users.Keys];
+
     /// <summary>
-    /// Serialize all user data to a JSON file on disk (every saved user, loading those not in memory).
+    /// The user's data as JSON, a save point for <see cref="RestoreUser"/>; null when there's no such user. Taken
+    /// while holding the user's lock, so no request is changing them mid-write.
     /// </summary>
-    public void Save(string filePath)
+    public string? ExportUser(long userId)
     {
-        if (_persistence != null)
-        {
-            foreach (long savedUserId in _persistence.UserIds())
-                TryGet(savedUserId, out _);
-            foreach ((string uuid, long deviceUserId) in _persistence.Devices())
-                _uuidToUserId.TryAdd(uuid, deviceUserId);
-            foreach (UserSession session in _persistence.Sessions())
-                _sessions.TryAdd(session.SessionKey, session);
-        }
-
-        // Each user is written while holding their lock, so no request is changing them mid-write.
-        List<IDisposable> held = [];
-        try
-        {
-            foreach (long userId in _users.Keys.Order())
-            {
-                held.Add(Locks.TryAcquire(userId, LockTimeout)
-                    ?? throw new TimeoutException($"User {userId} stayed busy; nothing was saved."));
-            }
-
-            UserDataSnapshot snapshot;
-            lock (_sharedPrizeLock)
-            {
-                snapshot = new()
-                {
-                    Users = new Dictionary<long, DarkUserMemoryDatabase>(_users),
-                    UuidToUserId = new Dictionary<string, long>(_uuidToUserId),
-                    Sessions = [.. _sessions.Values],
-                    SharedPrizeClaims = new Dictionary<string, int>(_sharedPrizeClaims)
-                };
-            }
-
-            JsonSerializerOptions options = new()
-            {
-                WriteIndented = true
-            };
-
-            string json = JsonSerializer.Serialize(snapshot, options);
-            File.WriteAllText(filePath, json);
-        }
-        finally
-        {
-            foreach (IDisposable handle in held)
-            {
-                handle.Dispose();
-            }
-        }
+        using IDisposable userLock = Locks.TryAcquire(userId, LockTimeout)
+            ?? throw new TimeoutException($"User {userId} stayed busy.");
+        return TryGet(userId, out DarkUserMemoryDatabase db) ? JsonSerializer.Serialize(db, SavePointOptions) : null;
     }
 
     /// <summary>
-    /// Deserialize user data from a JSON file on disk, replacing the current in-memory state; with a user
-    /// database, the file's users, devices, sessions and prize claims are written there too (users whole).
+    /// Puts a user back as a save point from <see cref="ExportUser"/> has them, in memory and in the user database.
+    /// Their devices and sessions stay as they are. Returns the user's id.
+    /// </summary>
+    public long RestoreUser(string json)
+    {
+        DarkUserMemoryDatabase db = JsonSerializer.Deserialize<DarkUserMemoryDatabase>(json)
+            ?? throw new InvalidDataException("The save point is empty.");
+        long userId = db.EntityIUser.FirstOrDefault()?.UserId ?? db.UserId;
+        if (userId == 0)
+            throw new InvalidDataException("The save point has no user.");
+
+        using IDisposable userLock = Locks.TryAcquire(userId, LockTimeout)
+            ?? throw new TimeoutException($"User {userId} stayed busy.");
+        Set(userId, db);
+        return userId;
+    }
+
+    private static readonly JsonSerializerOptions SavePointOptions = new() { WriteIndented = true };
+
+    /// <summary>
+    /// Imports a whole-server JSON snapshot (the file the server kept before it had a user database), replacing the
+    /// current in-memory state; with a user database, the file's users, devices, sessions and prize claims are
+    /// written there too (users whole).
     /// Returns the number of users loaded.
     /// </summary>
     public int Load(string filePath)
@@ -583,7 +606,7 @@ public class UserDataStore(TimeProvider timeProvider, IUserPersistence? persiste
 }
 
 /// <summary>
-/// Serializable snapshot of all user data for persistence.
+/// The whole-server JSON snapshot the server kept before it had a user database, imported on a first start.
 /// </summary>
 file record UserDataSnapshot
 {

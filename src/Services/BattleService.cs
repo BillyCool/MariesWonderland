@@ -57,7 +57,7 @@ public class BattleService(UserDataStore store, DarkMasterMemoryDatabase masterD
             UserPartyResultInfoList = [.. request.UserPartyResultInfoList],
             NpcPartyResultInfoList = [.. request.NpcPartyResultInfoList],
         };
-        userDb.BattleDetails.Add(battleRecord);
+        _store.RecordBattle(battleRecord);
 
         if (activeQuest != null)
         {

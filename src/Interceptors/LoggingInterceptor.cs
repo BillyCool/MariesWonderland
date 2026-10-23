@@ -2,6 +2,7 @@ using Google.Protobuf;
 using Grpc.Core;
 using Grpc.Core.Interceptors;
 using MariesWonderland.Configuration;
+using MariesWonderland.Extensions;
 using MariesWonderland.Proto.Data;
 using MariesWonderland.Proto.User;
 using Microsoft.Extensions.Options;
@@ -40,10 +41,11 @@ public class LoggingInterceptor(ILogger<LoggingInterceptor> logger, IOptions<Dev
         UnaryServerMethod<TRequest, TResponse> continuation)
     {
         string methodName = context.Method;
+        string requestId = context.GetRequestId();
 
         if (logger.IsEnabled(LogLevel.Debug))
         {
-            logger.LogDebug("[GRPC] >> {Method}  (request)", methodName);
+            logger.LogDebug("[GRPC] >> {Method} #{RequestId}  (request)", methodName, requestId);
             logger.LogDebug("{Json}", SerializeForLog(request));
         }
 
@@ -51,13 +53,13 @@ public class LoggingInterceptor(ILogger<LoggingInterceptor> logger, IOptions<Dev
 
         if (logger.IsEnabled(LogLevel.Debug))
         {
-            logger.LogDebug("[GRPC] << {Method}  (response)", methodName);
+            logger.LogDebug("[GRPC] << {Method} #{RequestId}  (response)", methodName, requestId);
             logger.LogDebug("{Json}", SerializeForLog(response));
         }
 
         if (_writeToDisk)
         {
-            _ = Task.Run(() => WriteToDisk(methodName, request, response));
+            _ = Task.Run(() => WriteToDisk(methodName, requestId, request, response));
         }
 
         return response;
@@ -66,14 +68,14 @@ public class LoggingInterceptor(ILogger<LoggingInterceptor> logger, IOptions<Dev
     /// <summary>
     /// Writes a timestamped JSON file containing the full request and response for a gRPC call.
     /// </summary>
-    private void WriteToDisk<TRequest, TResponse>(string methodName, TRequest request, TResponse response)
+    private void WriteToDisk<TRequest, TResponse>(string methodName, string requestId, TRequest request, TResponse response)
     {
         try
         {
             string[] parts = methodName.Split('/', StringSplitOptions.RemoveEmptyEntries);
             string methodSuffix = parts.Length >= 2 ? $"{parts[^2]}_{parts[^1]}" : methodName.TrimStart('/').Replace('/', '_');
             string timestamp = _timeProvider.GetUtcNow().UtcDateTime.ToString("yyyyMMdd_HHmmss_fff");
-            string fileName = $"{timestamp}_{methodSuffix}.json";
+            string fileName = $"{timestamp}_{requestId}_{methodSuffix}.json";
 
             Directory.CreateDirectory(GrpcDirectory);
             string filePath = Path.Combine(GrpcDirectory, fileName);
@@ -81,6 +83,7 @@ public class LoggingInterceptor(ILogger<LoggingInterceptor> logger, IOptions<Dev
             StringBuilder sb = new();
             sb.AppendLine("{");
             sb.AppendLine($"  \"method\": {JsonSerializer.Serialize(methodName)},");
+            sb.AppendLine($"  \"requestId\": \"{requestId}\",");
             sb.AppendLine($"  \"timestamp\": \"{_timeProvider.GetUtcNow().UtcDateTime:O}\",");
             sb.AppendLine($"  \"request\": {SerializeFull(request)},");
             sb.AppendLine($"  \"response\": {SerializeFull(response)}");

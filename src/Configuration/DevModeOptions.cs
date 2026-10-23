@@ -15,10 +15,10 @@ public sealed class DevModeOptions
     /// <summary>Write every gRPC request/response pair to files in the GRPC/ directory.</summary>
     public bool? GrpcDiskLog { get; init; }
 
-    /// <summary>Write the caller's full user database to the Saves/ directory after every gRPC call.</summary>
+    /// <summary>Append what every gRPC call changed in the caller's data to a daily file in the Journal/ directory.</summary>
     public bool? RequestJournal { get; init; }
 
-    /// <summary>Map the /debug/save and /debug/load endpoints.</summary>
+    /// <summary>Map the /debug/save, /debug/load and /debug/saves endpoints (per-user save points).</summary>
     public bool? DebugEndpoints { get; init; }
 
     /// <summary>

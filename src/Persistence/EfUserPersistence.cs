@@ -97,6 +97,19 @@ public sealed class EfUserPersistence(Func<UserDbContext> createContext) : IUser
         transaction.Commit();
     }
 
+    public void AddBattleDetail(EntitySBattleDetail detail)
+    {
+        using UserDbContext db = createContext();
+        db.Add(detail);
+        db.SaveChanges();
+    }
+
+    public IReadOnlyList<EntitySBattleDetail> BattleDetails(long userId)
+    {
+        using UserDbContext db = createContext();
+        return [.. db.Set<EntitySBattleDetail>().AsNoTracking().Where(d => d.UserId == userId).OrderBy(d => d.RecordedAt)];
+    }
+
     public IReadOnlyList<long> UserIds()
     {
         using UserDbContext db = createContext();

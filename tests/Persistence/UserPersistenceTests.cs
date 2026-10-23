@@ -146,6 +146,82 @@ public sealed class UserPersistenceTests : IDisposable
     }
 
     [Fact]
+    public void BattleLog_IsWrittenStraightToTheDatabase_NotKeptOnTheUser()
+    {
+        UserDataStore store = NewStore();
+        DarkUserMemoryDatabase userDb = store.GetOrCreate(UserId);
+        store.RecordBattle(new EntitySBattleDetail { UserId = UserId, QuestId = 7, RecordedAt = _time.GetUtcNow().UtcDateTime, MaxDamage = 1234 });
+        // Same key again: logged and skipped, not thrown.
+        store.RecordBattle(new EntitySBattleDetail { UserId = UserId, QuestId = 7, RecordedAt = _time.GetUtcNow().UtcDateTime });
+
+        EntitySBattleDetail saved = Assert.Single(NewStore().BattleDetails(UserId));
+        Assert.Equal(1234, saved.MaxDamage);
+        Assert.DoesNotContain(UserTables.All, t => t.RowType == typeof(EntitySBattleDetail));
+
+        // Replacing the user (a save point load) leaves the log alone.
+        store.Set(UserId, userDb);
+        Assert.Single(store.BattleDetails(UserId));
+    }
+
+    [Fact]
+    public void SavePoints_SaveTestLoad_PutsTheUserBack()
+    {
+        string directory = Path.ChangeExtension(_path, null) + "-saves";
+        try
+        {
+            UserDataStore store = NewStore();
+            (long userId, _) = store.RegisterOrGetUser("device-save", new DarkMasterMemoryDatabase());
+            UserSession session = store.CreateSession(userId, TimeSpan.FromHours(24));
+            SavePoints savePoints = new(store, directory);
+
+            Assert.Equal(userId, savePoints.Save("before-test", null));
+
+            // The test: changes made through a request.
+            DarkUserMemoryDatabase userDb = store.GetOrCreate(userId);
+            Dictionary<string, TableSnapshot> before = UserDataDiffBuilder.Snapshot(userDb);
+            userDb.EntityIUserMaterial.Add(new EntityIUserMaterial { UserId = userId, MaterialId = 1, Count = 99 });
+            userDb.EntityIUserStatus.Single().Level = 50;
+            store.SaveChanges(userId, before, userDb);
+
+            Assert.Equal(userId, savePoints.Load("before-test"));
+
+            // Back as saved, in memory and after a restart, still signed in.
+            foreach (UserDataStore s in new[] { store, NewStore() })
+            {
+                Assert.True(s.TryGet(userId, out DarkUserMemoryDatabase restored));
+                Assert.Empty(restored.EntityIUserMaterial);
+                Assert.Equal(1, restored.EntityIUserStatus.Single().Level);
+                Assert.True(s.TryResolveSession(session.SessionKey, out long sessionUser));
+                Assert.Equal(userId, sessionUser);
+            }
+            Assert.Equal(["before-test"], savePoints.List().Select(p => p.Name));
+        }
+        finally
+        {
+            if (Directory.Exists(directory))
+            {
+                Directory.Delete(directory, true);
+            }
+        }
+    }
+
+    [Fact]
+    public void SavePoints_RejectBadNamesMissingSavesAndAmbiguousUsers()
+    {
+        string directory = Path.ChangeExtension(_path, null) + "-saves";
+        UserDataStore store = NewStore();
+        SavePoints savePoints = new(store, directory);
+
+        Assert.Throws<ArgumentException>(() => savePoints.Save(null, null));
+        store.RegisterOrGetUser("device-a", new DarkMasterMemoryDatabase());
+        store.RegisterOrGetUser("device-b", new DarkMasterMemoryDatabase());
+        Assert.Contains("?user=", Assert.Throws<ArgumentException>(() => savePoints.Save(null, null)).Message);
+        Assert.Throws<ArgumentException>(() => savePoints.Save("../escape", null));
+        Assert.Throws<ArgumentException>(() => savePoints.Load("never-saved"));
+        Assert.Empty(savePoints.List());
+    }
+
+    [Fact]
     public void InMemoryStore_NeverEvicts()
     {
         UserDataStore store = new(_time);
@@ -180,7 +256,14 @@ public sealed class UserPersistenceTests : IDisposable
         string json = Path.ChangeExtension(_path, ".json");
         try
         {
-            memoryOnly.Save(json);
+            // The whole-server file the server kept before it had a user database.
+            File.WriteAllText(json, System.Text.Json.JsonSerializer.Serialize(new
+            {
+                Users = new Dictionary<long, DarkUserMemoryDatabase> { [userId] = memoryOnly.All[userId] },
+                UuidToUserId = new Dictionary<string, long> { ["device-json"] = userId },
+                Sessions = Array.Empty<UserSession>(),
+                SharedPrizeClaims = new Dictionary<string, int>(),
+            }));
             Assert.Equal(1, NewStore().Load(json));
         }
         finally

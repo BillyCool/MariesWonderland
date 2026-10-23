@@ -58,7 +58,9 @@ public class UserService(UserDataStore store, UserDataSeeder seeder, DarkMasterM
         deviceRecord.LastAuthAt = nowMs;
         if (isNew) deviceRecord.RegisteredAt = nowMs;
 
-        _store.SaveChanges(userId, before, userDb);
+        Dictionary<string, TableSnapshot> after = UserDataDiffBuilder.Snapshot(userDb);
+        _store.SaveChanges(userId, before, after, userDb);
+        context.SetUserChanges(new UserChanges(userId, before, after));
         var session = _store.CreateSession(userId, TimeSpan.FromHours(24));
 
         var response = new AuthUserResponse

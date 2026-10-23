@@ -1,4 +1,5 @@
 using MariesWonderland.Data;
+using MariesWonderland.Models.Entities;
 
 namespace MariesWonderland.Persistence;
 
@@ -16,6 +17,12 @@ public interface IUserPersistence
 
     /// <summary>Replaces everything saved for the user with <paramref name="userDb"/> as it is now.</summary>
     void ReplaceUser(DarkUserMemoryDatabase userDb);
+
+    /// <summary>Appends a finished battle to the battle log.</summary>
+    void AddBattleDetail(EntitySBattleDetail detail);
+
+    /// <summary>The user's battle log, oldest first.</summary>
+    IReadOnlyList<EntitySBattleDetail> BattleDetails(long userId);
 
     /// <summary>The ids of every saved user.</summary>
     IReadOnlyList<long> UserIds();

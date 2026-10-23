@@ -220,10 +220,46 @@ public sealed class TableSnapshot
         }
     }
 
+    /// <summary>
+    /// Each key (its first row) that is new, changed or gone since <paramref name="previous"/>, as its JSON before
+    /// (null when new) and after (null when gone): new and changed rows in this table's order, then the gone ones.
+    /// </summary>
+    public IEnumerable<(string? Before, string? After)> CompareTo(TableSnapshot previous)
+    {
+        HashSet<object> seen = [];
+        foreach ((object key, string json, _) in _rows)
+        {
+            if (!seen.Add(key))
+            {
+                continue;
+            }
+
+            if (!previous._byKey.TryGetValue(key, out string? oldJson))
+            {
+                yield return (null, json);
+            }
+            else if (oldJson != json)
+            {
+                yield return (oldJson, json);
+            }
+        }
+
+        foreach ((object key, string json, _) in previous._rows)
+        {
+            if (!_byKey.ContainsKey(key) && seen.Add(key))
+            {
+                yield return (json, null);
+            }
+        }
+    }
+
     /// <summary>The JSON of each key (its first row) that doesn't exist in <paramref name="other"/>.</summary>
     internal IEnumerable<string> JsonMissingFrom(TableSnapshot other)
         => _byKey.Where(entry => !other._byKey.ContainsKey(entry.Key)).Select(entry => entry.Value);
 }
+
+/// <summary>A user's tables before and after a request (<see cref="UserDataDiffBuilder.Snapshot"/>).</summary>
+public sealed record UserChanges(long UserId, Dictionary<string, TableSnapshot> Before, Dictionary<string, TableSnapshot> After);
 
 /// <summary>The rows of one user table that a request added, changed or removed.</summary>
 public sealed record TableChange(UserTable Table, IReadOnlyList<object> Added, IReadOnlyList<object> Modified, IReadOnlyList<object> Deleted);
