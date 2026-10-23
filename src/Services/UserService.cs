@@ -370,10 +370,20 @@ public class UserService(UserDataStore store, UserDataSeeder seeder, DarkMasterM
         return Task.FromResult(new SetUserSettingResponse());
     }
 
-    /// <summary>Transfers account data from seed files, creating a new user with pre-seeded database.</summary>
+    /// <summary>
+    /// Transfers the save in the seed files (<c>Server:Data:UserDataPath</c>) to the calling device. The account keeps
+    /// the save's user id, so transferring again resets it to the save. Without a save, the transfer fails and
+    /// nothing is created.
+    /// </summary>
     public override Task<TransferUserResponse> TransferUser(TransferUserRequest request, ServerCallContext context)
     {
         DarkUserMemoryDatabase seededDb = _seeder.LoadFromFiles();
+        if (seededDb.EntityIUser.Count == 0)
+        {
+            string where = _seeder.DataPath ?? "Server:Data:UserDataPath isn't set";
+            throw new RpcException(new Status(StatusCode.FailedPrecondition, $"No save to transfer: no EntityIUserTable.json with a user ({where})"));
+        }
+
         long userId = _store.SeedUserFromDatabase(request.Uuid, seededDb);
 
         TransferUserResponse response = new()

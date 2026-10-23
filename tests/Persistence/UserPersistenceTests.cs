@@ -9,6 +9,9 @@ using Microsoft.Data.Sqlite;
 using Microsoft.Extensions.Logging.Abstractions;
 using Microsoft.Extensions.Options;
 using Microsoft.Extensions.Time.Testing;
+using Grpc.Core;
+using MariesWonderland.Missions;
+using UserServiceImpl = MariesWonderland.Services.UserService;
 
 namespace MariesWonderland.Tests.Persistence;
 
@@ -274,5 +277,63 @@ public sealed class UserPersistenceTests : IDisposable
         UserDataStore restarted = NewStore();
         Assert.Equal((userId, false), restarted.RegisterOrGetUser("device-json", new DarkMasterMemoryDatabase()));
         Assert.True(restarted.TryGet(userId, out _));
+    }
+
+    private UserServiceImpl TransferService(UserDataStore store, string userDataPath = "Data/UserData")
+    {
+        DarkMasterMemoryDatabase masterDb = new();
+        UserDataSeeder seeder = new(Options.Create(new ServerOptions { Data = new DataOptions { UserDataPath = userDataPath } }));
+        return new UserServiceImpl(store, seeder, masterDb, new MissionTracker(masterDb, new MissionCatalog(masterDb, MissionFilterTable.Empty)), _time);
+    }
+
+    [Fact]
+    public async Task TransferUser_LoadsTheRealSave_SignsIntoIt_AndItSurvivesARestart()
+    {
+        DarkUserMemoryDatabase save = new UserDataSeeder(Options.Create(new ServerOptions { Data = new DataOptions { UserDataPath = "Data/UserData" } })).LoadFromFiles();
+        long saveUserId = save.EntityIUser.Single().UserId;
+
+        UserDataStore store = NewStore();
+        TransferUserResponse transfer = await TransferService(store).TransferUser(new TransferUserRequest { Uuid = "transfer-device" }, FakeServerCallContext.Anonymous());
+        AuthUserResponse auth = await TransferService(store).Auth(new AuthUserRequest { Uuid = "transfer-device", Signature = transfer.Signature }, FakeServerCallContext.Anonymous());
+
+        Assert.Equal(saveUserId, transfer.UserId);
+        Assert.Equal(saveUserId, auth.UserId);
+        Assert.True(NewStore().TryGet(saveUserId, out DarkUserMemoryDatabase reloaded));
+        Dictionary<string, List<string>> expected = Rows(save);
+        Dictionary<string, List<string>> actual = Rows(reloaded);
+        Assert.All(expected.Keys.Where(t => t != "SUserDevice"), table => Assert.True(expected[table].SequenceEqual(actual[table]), $"{table} differs"));
+        Assert.Equal("transfer-device", Assert.Single(reloaded.EntitySUserDevice).Uuid);
+    }
+
+    [Fact]
+    public async Task TransferUser_Again_ResetsTheAccountToTheSave()
+    {
+        UserDataStore store = NewStore();
+        TransferUserResponse first = await TransferService(store).TransferUser(new TransferUserRequest { Uuid = "phone-1" }, FakeServerCallContext.Anonymous());
+        DarkUserMemoryDatabase played = store.GetOrCreate(first.UserId);
+        int savedLevel = played.EntityIUserStatus.Single().Level;
+        played.EntityIUserStatus.Single().Level = 1;
+        store.Set(first.UserId, played);
+
+        TransferUserResponse second = await TransferService(store).TransferUser(new TransferUserRequest { Uuid = "phone-2" }, FakeServerCallContext.Anonymous());
+
+        Assert.Equal(first.UserId, second.UserId);
+        Assert.Equal(savedLevel, store.GetOrCreate(first.UserId).EntityIUserStatus.Single().Level);
+        Assert.True(NewStore().TryGet(first.UserId, out DarkUserMemoryDatabase reloaded));
+        Assert.Equal(savedLevel, reloaded.EntityIUserStatus.Single().Level);
+    }
+
+    [Theory]
+    [InlineData("")]
+    [InlineData("Data/NoSuchSave")]
+    public async Task TransferUser_WithoutASave_FailsAndCreatesNothing(string userDataPath)
+    {
+        UserDataStore store = NewStore();
+
+        RpcException error = await Assert.ThrowsAsync<RpcException>(() => TransferService(store, userDataPath).TransferUser(new TransferUserRequest { Uuid = "transfer-device" }, FakeServerCallContext.Anonymous()));
+
+        Assert.Equal(StatusCode.FailedPrecondition, error.StatusCode);
+        Assert.Empty(_persistence.UserIds());
+        Assert.Null(_persistence.FindUserIdByDevice("transfer-device"));
     }
 }
