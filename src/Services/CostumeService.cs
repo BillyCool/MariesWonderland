@@ -1,4 +1,5 @@
 using Grpc.Core;
+using MariesWonderland.Costumes;
 using MariesWonderland.Data;
 using MariesWonderland.Extensions;
 using MariesWonderland.Helpers;
@@ -599,35 +600,42 @@ public class CostumeService(DarkMasterMemoryDatabase masterDb, UserDataStore sto
     }
 
     /// <summary>
-    /// Stub for lottery effect slot unlock; returns empty response.
-    /// </summary>
-    /// <summary>
-    /// Unlocks a lottery effect slot on a costume. Not yet implemented.
+    /// Unlocks a karma slot (in order, paid with the costume's karma stones and gold).
     /// </summary>
     public override Task<UnlockLotteryEffectSlotResponse> UnlockLotteryEffectSlot(UnlockLotteryEffectSlotRequest request, ServerCallContext context)
     {
+        DarkUserMemoryDatabase userDb = _store.GetOrCreate(context.GetUserId());
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
+        if (CostumeKarmaHelper.UnlockSlot(userDb, _masterDb, _gameConfig, request.UserCostumeUuid, request.SlotNumber, nowMs))
+        {
+            _missions.Record(userDb, MissionClearConditionType.COSTUME_LOTTERY_EFFECT_SLOT_UNLOCK_COUNT, 1, nowMs);
+        }
+
         return Task.FromResult(new UnlockLotteryEffectSlotResponse());
     }
 
     /// <summary>
-    /// Stub for lottery effect draw; returns empty response.
-    /// </summary>
-    /// <summary>
-    /// Draws a random lottery effect for a costume slot. Not yet implemented.
+    /// Karma Flux: rolls a karma slot. An empty slot takes the result; a filled one gets a pending result to keep or decline.
     /// </summary>
     public override Task<DrawLotteryEffectResponse> DrawLotteryEffect(DrawLotteryEffectRequest request, ServerCallContext context)
     {
+        DarkUserMemoryDatabase userDb = _store.GetOrCreate(context.GetUserId());
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
+        if (CostumeKarmaHelper.Draw(userDb, _masterDb, _gameConfig, request.UserCostumeUuid, request.SlotNumber, Random.Shared, nowMs))
+        {
+            _missions.Record(userDb, MissionClearConditionType.COSTUME_LOTTERY_EFFECT_DRAW_COUNT, 1, nowMs);
+        }
+
         return Task.FromResult(new DrawLotteryEffectResponse());
     }
 
     /// <summary>
-    /// Stub for lottery effect confirmation; returns empty response.
-    /// </summary>
-    /// <summary>
-    /// Confirms and locks in a drawn lottery effect for a costume. Not yet implemented.
+    /// Keeps or declines the costume's pending Karma Flux result.
     /// </summary>
     public override Task<ConfirmLotteryEffectResponse> ConfirmLotteryEffect(ConfirmLotteryEffectRequest request, ServerCallContext context)
     {
+        DarkUserMemoryDatabase userDb = _store.GetOrCreate(context.GetUserId());
+        CostumeKarmaHelper.Confirm(userDb, _masterDb, request.UserCostumeUuid, request.IsAccept);
         return Task.FromResult(new ConfirmLotteryEffectResponse());
     }
 

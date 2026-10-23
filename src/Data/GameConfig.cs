@@ -21,6 +21,8 @@ public class GameConfig
 
     public int CostumeAwakenAvailableCount { get; init; }
     public int CostumeLimitBreakAvailableCount { get; init; }
+    public int CostumeLotteryEffectUnlockSlotConsumeGold { get; init; }
+    public int CostumeLotteryEffectDrawSlotConsumeGold { get; init; }
 
     public int MaterialSameWeaponExpCoefficientPermil { get; init; }
 
@@ -54,6 +56,8 @@ public class GameConfig
 
             CostumeAwakenAvailableCount = ParseInt(kv, "COSTUME_AWAKEN_AVAILABLE_COUNT"),
             CostumeLimitBreakAvailableCount = ParseInt(kv, "COSTUME_LIMIT_BREAK_AVAILABLE_COUNT"),
+            CostumeLotteryEffectUnlockSlotConsumeGold = ParseInt(kv, "COSTUME_LOTTERY_EFFECT_UNLOCK_SLOT_CONSUME_GOLD"),
+            CostumeLotteryEffectDrawSlotConsumeGold = ParseInt(kv, "COSTUME_LOTTERY_EFFECT_DRAW_SLOT_CONSUME_GOLD"),
 
             MaterialSameWeaponExpCoefficientPermil = ParseInt(kv, "MATERIAL_SAME_WEAPON_EXP_COEFFICIENT_PERMIL"),
 
