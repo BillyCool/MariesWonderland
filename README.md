@@ -49,7 +49,7 @@ Server settings live in `src/appsettings.development.json`:
 ```
 
 - `ResourcesBaseUrl` is where the game downloads assets from. Leave it empty: the server uses the address the game reached it on (e.g. `http://192.168.1.2/` or `http://10.0.2.2:8080/`), padded with `a`s to the 43 characters the game's asset list requires.
-- To set it yourself, it must be exactly 43 characters and end in a path segment of only `a`s, e.g. `http://192.168.1.2/aaaaaaaaaaaaaaaaaaaaaaaa`. A host (with port) longer than 34 characters doesn't fit and needs a shorter name.
+- To set it yourself, it must be exactly 43 characters, http or https, with a path of only `a`s, e.g. `http://192.168.1.2/aaaaaaaaaaaaaaaaaaaaaaaa`. Anything else is ignored with a warning at startup. A host (with port) longer than 34 characters doesn't fit and needs a shorter name.
 
 ### Ports and certificates
 The listening addresses come from the standard ASP.NET Core `Kestrel:Endpoints` section in `src/appsettings.json`:

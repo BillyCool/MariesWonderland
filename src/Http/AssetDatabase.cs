@@ -7,237 +7,163 @@ using System.Text.Json.Serialization;
 namespace MariesWonderland.Http;
 
 /// <summary>
-/// Resolves asset bundle/resource requests by parsing list.bin protobuf indexes and info.json alias maps.
+/// Finds the files of the asset dump (<c>Server:Paths:AssetDatabase</c>, a folder of numbered revisions) that answer
+/// asset requests.
 ///
 /// <para>
-/// Asset revisions are deltas, but revision 0 is a complete superset: it contains every objectId
-/// that appears across all 818 revisions (confirmed by exhaustive analysis). Later revisions carry
-/// updated versions of existing assets, not new ones. <see cref="Resolve"/> therefore checks the
-/// client's current revision first, then falls back to revision 0 — a single 25 MB index that
-/// covers the entire asset catalogue.
+/// Each revision's list.bin lists the assets changed after that revision, always at their newest version, and only
+/// revision 0's folder holds files. Revision 0's list is therefore the whole catalogue (every entry of every other
+/// list is in it with the same MD5), so every request is looked up there, whichever list the client fetched.
+/// </para>
+///
+/// <para>
+/// A few files aren't on disk under their listed name: names the dump tool mangled (UTF-8 read as Latin-1), and files
+/// stored once under another name, which revision 0's info.json maps (<c>from-name</c> → <c>to-name</c>).
 /// </para>
 /// </summary>
-public sealed class AssetDatabase(string basePath, ILogger<AssetDatabase> logger)
+public sealed class AssetDatabase
 {
-    // Lazy-initialized per-revision list.bin indexes (objectId → entry).
-    private readonly ConcurrentDictionary<string, Lazy<Dictionary<string, ListBinEntry>>> _listBinCache = new();
+    /// <summary>The revision whose list is the whole catalogue and whose folder holds the files.</summary>
+    public const string CatalogueRevision = "0";
 
-    // Lazy-initialized per-revision info.json alias maps (fromName → alias target).
-    private readonly ConcurrentDictionary<string, Lazy<Dictionary<string, InfoAlias>?>> _infoCache = new();
+    private readonly string _basePath;
+    private readonly ILogger<AssetDatabase> _logger;
+    private readonly Lazy<Dictionary<string, ListBinEntry>> _index;
+    private readonly Lazy<Dictionary<string, InfoAlias>> _aliases;
 
-    // Per-client-IP active revision (set when client fetches list.bin).
-    private readonly ConcurrentDictionary<string, string> _clientRevisions = new();
+    // path → (size, modTimeUtcTicks, md5Hex)
+    private readonly ConcurrentDictionary<string, (long Size, long ModTimeTicks, string Md5)> _md5Cache = new();
 
-    // Fallback when no per-client revision is known.
-    private volatile string _lastKnownRevision = "0";
-
-    /// <summary>Records that a client fetched list.bin for the given revision.</summary>
-    public void RememberRevision(string clientIp, string revision)
+    public AssetDatabase(string basePath, ILogger<AssetDatabase> logger)
     {
-        _clientRevisions[clientIp] = revision;
-        _lastKnownRevision = revision;
+        _basePath = string.IsNullOrEmpty(basePath) ? "" : Path.GetFullPath(basePath);
+        _logger = logger;
+        _index = new Lazy<Dictionary<string, ListBinEntry>>(LoadIndex);
+        _aliases = new Lazy<Dictionary<string, InfoAlias>>(LoadAliases);
+    }
+
+    /// <summary>Whether <paramref name="revision"/> is a revision number (digits only), so it can name a folder.</summary>
+    public static bool IsRevision(string revision) => revision.Length is > 0 and <= 9 && revision.All(char.IsAsciiDigit);
+
+    /// <summary>The path of a revision's list.bin, or null when <paramref name="revision"/> isn't a revision number or no dump is set.</summary>
+    public string? ListPath(string revision)
+        => _basePath.Length > 0 && IsRevision(revision) ? Path.Combine(_basePath, revision, "list.bin") : null;
+
+    /// <summary>Loads the catalogue now, so the first asset request doesn't wait for it. Returns its entry count.</summary>
+    public int Prewarm()
+    {
+        int count = _index.Value.Count;
+        _ = _aliases.Value;
+        return count;
     }
 
     /// <summary>
-    /// Resolves an asset request to ordered file-path candidates.
-    /// Caller should try each candidate in order, validating size and MD5, and serve the first valid one.
+    /// Looks up an asset request: the catalogue entry for <paramref name="objectId"/> and the files that may hold
+    /// it, best first. Null for an unknown object or a type other than <c>assetbundle</c> or <c>resources</c>.
+    /// The caller serves the first file whose size and MD5 match the entry.
     /// </summary>
-    /// <remarks>
-    /// The client's current revision is checked first. If the objectId is not present (e.g. a
-    /// recent revision carries only updated entries, not the full catalogue), revision 0 is used
-    /// as the fallback. Revision 0 is a confirmed superset of all objectIds across every revision.
-    /// </remarks>
-    public IEnumerable<AssetCandidate> Resolve(string clientIp, string assetType, string objectId)
+    public AssetLookup? Find(string assetType, string objectId)
     {
-        string revision = _clientRevisions.TryGetValue(clientIp, out string? rev) ? rev : _lastKnownRevision;
-
-        // If the objectId isn't in the client's current revision, fall back to revision 0.
-        // Revision 0 is a complete superset — every objectId in the game is present there.
-        Dictionary<string, ListBinEntry>? currentIndex = LoadListBinIndex(revision);
-        if ((currentIndex is null || !currentIndex.ContainsKey(objectId)) && revision != "0")
-            revision = "0";
-
-        return ResolveForRevision(revision, assetType, objectId);
-    }
-
-    private IEnumerable<AssetCandidate> ResolveForRevision(string revision, string assetType, string objectId)
-    {
-        Dictionary<string, ListBinEntry>? index = LoadListBinIndex(revision);
-        if (index is null || !index.TryGetValue(objectId, out ListBinEntry? entry))
-            yield break;
-
-        List<(string Path, bool IsLocaleFallback)> primaryPaths = BuildCandidatePaths(revision, assetType, entry.Path);
-        HashSet<string> seen = [];
-
-        foreach ((string path, bool isLocaleFallback) in primaryPaths)
+        if (assetType is not ("assetbundle" or "resources") || !_index.Value.TryGetValue(objectId, out ListBinEntry? entry))
         {
-            if (!seen.Add(path))
-            {
-                continue;
-            }
-
-            yield return new AssetCandidate(path, revision, "list.bin", isLocaleFallback ? "" : entry.MD5, entry.Size, isLocaleFallback);
+            return null;
         }
 
-        // info.json alias redirects: if the file name maps to a different target (possibly in another revision)
-        Dictionary<string, InfoAlias>? infoIndex = LoadInfoIndex(revision);
-        if (infoIndex is not null)
+        List<string> paths = [];
+        AddPath(paths, assetType, CatalogueRevision, entry.Path);
+        if (entry.Path.Any(c => c >= '\x80'))
         {
-            foreach ((string path, bool _) in primaryPaths)
-            {
-                string baseName = Path.GetFileName(path);
-                if (!infoIndex.TryGetValue(baseName, out InfoAlias? alias)) continue;
+            AddPath(paths, assetType, CatalogueRevision, Utf8ToMojibake(entry.Path));
+        }
 
-                string targetRevision = alias.ToRevision ?? revision;
-                string? altPath = BuildAliasPath(path, revision, assetType, targetRevision, alias.ToName);
-                if (altPath is null) continue;
+        if (_aliases.Value.TryGetValue(entry.Path, out InfoAlias? alias))
+        {
+            AddPath(paths, assetType, alias.ToRevision, alias.ToName);
+        }
 
-                string cacheKey = $"{targetRevision}:{altPath}";
-                if (!seen.Add(cacheKey)) continue;
+        return new AssetLookup(entry, paths);
+    }
 
-                yield return new AssetCandidate(altPath, targetRevision, "info.json redirect", alias.MD5 ?? "", 0);
-            }
+    /// <summary>Adds the file path of a listed name (')' separates folders), skipping names that would leave the dump.</summary>
+    private void AddPath(List<string> paths, string assetType, string revision, string name)
+    {
+        string relative = name.Replace(')', '/');
+        if (relative.Split('/', '\\').Contains("..") || Path.IsPathRooted(relative))
+        {
+            return;
+        }
+
+        string path = assetType == "assetbundle"
+            ? Path.Combine(_basePath, revision, "assetbundle", relative + ".assetbundle")
+            : Path.Combine(_basePath, revision, "resources", relative);
+        if (!paths.Contains(path))
+        {
+            paths.Add(path);
         }
     }
 
-    /// <summary>
-    /// Builds candidate filesystem paths for a list.bin path string.
-    /// Original path first, then locale fallbacks. Non-ASCII paths also get mojibake/fullwidth variants.
-    /// </summary>
-    private List<(string Path, bool IsLocaleFallback)> BuildCandidatePaths(string revision, string assetType, string pathStr)
+    // Each UTF-8 byte read as a Latin-1 character: how some extraction tools wrote non-ASCII file names.
+    private static string Utf8ToMojibake(string s) => new([.. Encoding.UTF8.GetBytes(s).Select(b => (char)b)]);
+
+    private Dictionary<string, ListBinEntry> LoadIndex()
     {
-        // Safety check on raw path before any substitution
-        string rawFsPath = pathStr.Replace(')', '/');
-        if (rawFsPath.Contains("..") || Path.IsPathRooted(rawFsPath))
+        string? path = ListPath(CatalogueRevision);
+        if (path == null || !File.Exists(path))
         {
+            _logger.LogWarning("No asset catalogue at {Path} (Server:Paths:AssetDatabase); every asset request will be answered with 404", path ?? "(not set)");
             return [];
         }
 
-        // Build tagged entries: original first, then mojibake/fullwidth variants, then locale fallbacks
-        List<(string PathStr, bool IsLocaleFallback)> entries = [(pathStr, false)];
-
-        if (HasNonAscii(pathStr))
+        try
         {
-            entries.Add((Utf8ToMojibake(pathStr), false));
-            entries.Add((NormalizeFullwidth(pathStr), false));
+            Dictionary<string, ListBinEntry> index = ListBinParser.Parse(File.ReadAllBytes(path));
+            _logger.LogInformation("Asset catalogue loaded: {Count} assets from {Path}", index.Count, path);
+            return index;
         }
-
-        if (pathStr.Contains(")ja)"))
+        catch (Exception ex)
         {
-            entries.Add((pathStr.Replace(")ja)", ")en)"), true));
+            _logger.LogError(ex, "Reading the asset catalogue {Path} failed; every asset request will be answered with 404", path);
+            return [];
         }
-
-        if (pathStr.Contains(")ko)"))
-        {
-            entries.Add((pathStr.Replace(")ko)", ")en)"), true));
-        }
-
-        List<(string Path, bool IsLocaleFallback)> result = [];
-        HashSet<string> seen = [];
-
-        foreach ((string variant, bool isLocaleFallback) in entries)
-        {
-            string cleaned = variant.Replace(')', '/');
-            if (cleaned.Contains("..") || Path.IsPathRooted(cleaned))
-            {
-                continue;
-            }
-
-            if (!seen.Add(cleaned))
-            {
-                continue;
-            }
-
-            string fullPath = assetType switch
-            {
-                "assetbundle" => Path.Combine(basePath, revision, "assetbundle", cleaned + ".assetbundle"),
-                "resources" => Path.Combine(basePath, revision, "resources", cleaned),
-                _ => null!
-            };
-
-            if (fullPath is not null)
-            {
-                result.Add((fullPath, isLocaleFallback));
-            }
-        }
-
-        return result;
     }
 
-    private static bool HasNonAscii(string s) => s.Any(c => c >= '\x80');
+    private Dictionary<string, InfoAlias> LoadAliases()
+    {
+        Dictionary<string, InfoAlias> aliases = [];
+        if (_basePath.Length == 0)
+        {
+            return aliases;
+        }
 
-    // Re-encodes non-ASCII chars as if each UTF-8 byte were a Latin-1 codepoint (double-encoding).
-    // Matches filenames extracted by tools that misinterpret UTF-8 paths as Latin-1.
-    private static string Utf8ToMojibake(string s) =>
-        new string(Encoding.UTF8.GetBytes(s).Select(b => (char)b).ToArray());
+        string path = Path.Combine(_basePath, CatalogueRevision, "info.json");
+        if (!File.Exists(path))
+        {
+            return aliases;
+        }
 
-    // Replaces fullwidth Unicode chars (U+FF01–U+FF5E) with their ASCII equivalents (U+0021–U+007E).
-    private static string NormalizeFullwidth(string s) =>
-        new string(s.Select(c => c is >= '\uFF01' and <= '\uFF5E' ? (char)(c - 0xFF01 + 0x21) : c).ToArray());
+        try
+        {
+            InfoJsonEntry[] entries = JsonSerializer.Deserialize<InfoJsonEntry[]>(File.ReadAllText(path)) ?? [];
+            foreach (InfoJsonEntry e in entries)
+            {
+                string revision = e.ToRevision?.ToString() ?? CatalogueRevision;
+                if (!string.IsNullOrEmpty(e.FromName) && !string.IsNullOrEmpty(e.ToName) && IsRevision(revision))
+                {
+                    aliases[e.FromName] = new InfoAlias(e.ToName, revision);
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            _logger.LogWarning(ex, "Reading the asset aliases {Path} failed; aliased assets will be answered with 404", path);
+        }
+
+        return aliases;
+    }
 
     /// <summary>
-    /// Builds the filesystem path for an info.json alias: same directory structure, different revision + filename.
-    /// </summary>
-    private string? BuildAliasPath(string originalPath, string originalRevision, string assetType,
-        string targetRevision, string targetName)
-    {
-        string typeRoot = Path.Combine(basePath, originalRevision, assetType);
-        string rel = Path.GetRelativePath(typeRoot, originalPath);
-        if (rel.StartsWith("..") || Path.IsPathRooted(rel)) return null;
-
-        string dir = Path.GetDirectoryName(rel) ?? "";
-        return Path.Combine(basePath, targetRevision, assetType, dir, targetName);
-    }
-
-    private Dictionary<string, ListBinEntry>? LoadListBinIndex(string revision)
-    {
-        Lazy<Dictionary<string, ListBinEntry>> lazy = _listBinCache.GetOrAdd(
-            revision, rev => new Lazy<Dictionary<string, ListBinEntry>>(() =>
-            {
-                string path = Path.Combine(basePath, rev, "list.bin");
-                if (!File.Exists(path)) return [];
-                byte[] data = File.ReadAllBytes(path);
-                Dictionary<string, ListBinEntry> index = ListBinParser.Parse(data.AsSpan());
-                logger.LogDebug("Loaded list.bin for revision {Revision}: {Count} entries", rev, index.Count);
-                return index;
-            }));
-        return lazy.Value;
-    }
-
-    private Dictionary<string, InfoAlias>? LoadInfoIndex(string revision)
-    {
-        Lazy<Dictionary<string, InfoAlias>?> lazy = _infoCache.GetOrAdd(
-            revision, rev => new Lazy<Dictionary<string, InfoAlias>?>(() =>
-            {
-                string path = Path.Combine(basePath, rev, "info.json");
-                if (!File.Exists(path)) return null;
-                try
-                {
-                    InfoJsonEntry[]? entries = JsonSerializer.Deserialize<InfoJsonEntry[]>(File.ReadAllText(path));
-                    if (entries is null) return null;
-
-                    Dictionary<string, InfoAlias> result = [];
-                    foreach (InfoJsonEntry e in entries)
-                    {
-                        if (!string.IsNullOrEmpty(e.FromName) && !string.IsNullOrEmpty(e.ToName))
-                            result[e.FromName] = new InfoAlias(e.ToName, e.ToRevision?.ToString(), e.MD5);
-                    }
-                    return result;
-                }
-                catch (Exception ex)
-                {
-                    logger.LogWarning(ex, "Failed to parse info.json for revision {Revision}", rev);
-                    return null;
-                }
-            }));
-        return lazy.Value;
-    }
-
-    // MD5 cache: path → (size, modTimeUtcTicks, md5Hex)
-    private readonly ConcurrentDictionary<string, (long Size, long ModTimeTicks, string Md5)> _md5Cache = new();
-
-    /// <summary>
-    /// Computes and caches the MD5 hex digest for a file, using cached result when size and modification time are unchanged.
+    /// The MD5 hex digest of a file, read as a stream and cached while its size and write time stay the same.
+    /// Null when it can't be read.
     /// </summary>
     public string? ComputeMd5(string filePath, FileInfo info)
     {
@@ -250,29 +176,31 @@ public sealed class AssetDatabase(string basePath, ILogger<AssetDatabase> logger
 
         try
         {
-            byte[] hash = MD5.HashData(File.ReadAllBytes(filePath));
-            string hex = Convert.ToHexStringLower(hash);
+            using FileStream stream = new(filePath, FileMode.Open, FileAccess.Read, FileShare.Read, 81920, FileOptions.SequentialScan);
+            string hex = Convert.ToHexStringLower(MD5.HashData(stream));
             _md5Cache[filePath] = (info.Length, modTicks, hex);
             return hex;
         }
         catch (Exception ex)
         {
-            logger.LogWarning(ex, "Failed to compute MD5 for {FilePath}", filePath);
+            _logger.LogWarning(ex, "Failed to compute MD5 for {FilePath}", filePath);
             return null;
         }
     }
 }
 
 public record ListBinEntry(string Path, long Size, string MD5);
-public record AssetCandidate(string Path, string Revision, string Source, string ExpectedMD5, long ExpectedSize, bool IsLocaleFallback = false);
-public record InfoAlias(string ToName, string? ToRevision, string? MD5);
+
+/// <summary>A catalogue entry and the files that may hold it, best first.</summary>
+public record AssetLookup(ListBinEntry Entry, IReadOnlyList<string> Paths);
+
+public record InfoAlias(string ToName, string ToRevision);
 
 public sealed class InfoJsonEntry
 {
     [JsonPropertyName("from-name")] public string FromName { get; init; } = "";
     [JsonPropertyName("to-name")] public string ToName { get; init; } = "";
     [JsonPropertyName("to-revision")] public int? ToRevision { get; init; }
-    [JsonPropertyName("md5")] public string? MD5 { get; init; }
 }
 
 /// <summary>

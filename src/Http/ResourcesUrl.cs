@@ -34,6 +34,19 @@ public static class ResourcesUrl
     }
 
     /// <summary>
+    /// Whether <paramref name="url"/> can replace the CDN URL and still reach the asset route: exactly
+    /// <see cref="Length"/> ASCII characters, http or https, with a path that is one run of 'a's.
+    /// </summary>
+    public static bool IsValid(string url)
+        => url.Length == Length
+            && Ascii.IsValid(url)
+            && Uri.TryCreate(url, UriKind.Absolute, out Uri? uri)
+            && (uri.Scheme == Uri.UriSchemeHttp || uri.Scheme == Uri.UriSchemeHttps)
+            && uri.Query.Length == 0
+            && uri.AbsolutePath.Length > 1
+            && uri.AbsolutePath[1..].All(c => c == 'a');
+
+    /// <summary>
     /// Writes <paramref name="url"/> over the CDN URL in <paramref name="listBin"/>. False when the URL isn't
     /// exactly <see cref="Length"/> ASCII bytes or the list has no CDN URL; the data is left as it was.
     /// </summary>

@@ -47,4 +47,16 @@ public class ResourcesUrlTests
         Assert.False(ResourcesUrl.Rewrite([1, 2, 3], ResourcesUrl.ForHost("http", "192.168.1.2")!));
         Assert.Equal(original, list);
     }
+
+    [Theory]
+    [InlineData("http://192.168.1.2/aaaaaaaaaaaaaaaaaaaaaaaa", true)]
+    [InlineData("https://example.org:8443/aaaaaaaaaaaaaaaaaa", true)]
+    [InlineData("http://192.168.1.2/xaaaaaaaaaaaaaaaaaaaaaaa", false)]
+    [InlineData("http://192.168.1.2/aaaaaaaaaa/aaaaaaaaaaaaa", false)]
+    [InlineData("http://192.168.1.2/aaaaaaaaaaaaaaaaaaaaa?aa", false)]
+    [InlineData("ftp://192.168.1.2/aaaaaaaaaaaaaaaaaaaaaaaaa", false)]
+    [InlineData("http://192.168.1.2/aaaaaaaaaaaaaaaaaaaaaaa", false)]
+    [InlineData("http://192.168.1.2.example.org.aaaaaaaaaaa/", false)]
+    public void IsValid_NeedsTheListLengthAndAPathOfOnlyAs(string url, bool valid)
+        => Assert.Equal(valid, ResourcesUrl.IsValid(url));
 }
