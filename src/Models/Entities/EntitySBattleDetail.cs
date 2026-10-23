@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using MariesWonderland.Proto.Battle;
 
 namespace MariesWonderland.Models.Entities;
@@ -5,6 +6,7 @@ namespace MariesWonderland.Models.Entities;
 /// <summary>
 /// Server-side battle record captured at FinishWave. Never sent to the client.
 /// </summary>
+[PrimaryKey(nameof(UserId), nameof(RecordedAt), nameof(QuestId))]
 public class EntitySBattleDetail : IUserEntity
 {
     // Server-side context fields (not in proto).

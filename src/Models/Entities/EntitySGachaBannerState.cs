@@ -1,5 +1,8 @@
+using Microsoft.EntityFrameworkCore;
+
 namespace MariesWonderland.Models.Entities;
 
+[PrimaryKey(nameof(UserId), nameof(GachaId))]
 public class EntitySGachaBannerState : IUserEntity
 {
     public long UserId { get; set; }

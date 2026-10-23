@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using MariesWonderland.Models.Type;
 
 namespace MariesWonderland.Models.Entities;
@@ -7,6 +8,7 @@ namespace MariesWonderland.Models.Entities;
 /// Tracks which deck slot the player selected so EXP can be applied only to units in that deck.
 /// Never sent to the client.
 /// </summary>
+[PrimaryKey(nameof(UserId), nameof(QuestId))]
 public class EntitySQuestSession : IUserEntity
 {
     public long UserId { get; set; }

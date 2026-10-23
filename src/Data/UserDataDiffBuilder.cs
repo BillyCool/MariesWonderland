@@ -6,11 +6,15 @@ using System.Text.Json;
 namespace MariesWonderland.Data;
 
 /// <summary>
-/// Computes the delta between before/after snapshots of a <see cref="DarkUserMemoryDatabase"/>
-/// to produce incremental <see cref="DiffData"/> maps for gRPC responses. Uses reflection at
-/// startup to discover all EntityI* (client-visible) list properties. Rows are matched across
-/// snapshots by their primary key (<see cref="EntityKey{T}"/>): new or changed rows are sent in
-/// <c>UpdateRecordsJson</c> and rows removed by a handler in <c>DeleteKeysJson</c>.
+/// Computes the delta between before/after snapshots of a <see cref="DarkUserMemoryDatabase"/>.
+/// Uses reflection at startup to discover every user table (<see cref="UserTables"/>). Rows are matched across
+/// snapshots by their primary key (<see cref="EntityKey{T}"/>). Two views of the same delta:
+/// <list type="bullet">
+/// <item>the client diff (<see cref="Delta"/>, <see cref="ClientDiff"/>): client-visible EntityI* tables only, new or
+/// changed rows in <c>UpdateRecordsJson</c> and removed ones in <c>DeleteKeysJson</c>;</item>
+/// <item>the change set (<see cref="Changes"/>): every table, server-only EntityS* included, as row objects for the
+/// user database to write.</item>
+/// </list>
 /// </summary>
 public static class UserDataDiffBuilder
 {
@@ -20,65 +24,60 @@ public static class UserDataDiffBuilder
     };
 
     private sealed record Table(
+        UserTable Info,
         Func<DarkUserMemoryDatabase, string> Serialize,
-        Func<DarkUserMemoryDatabase, TableSnapshot> Snapshot);
+        Func<DarkUserMemoryDatabase, TableSnapshot> Snapshot,
+        Func<string, object> Deserialize);
 
-    // Maps "IUserWeapon" -> accessors for db.EntityIUserWeapon
-    private static readonly IReadOnlyDictionary<string, Table> Tables;
+    // Maps "IUserWeapon" -> accessors for db.EntityIUserWeapon, "SUserGift" -> db.EntitySUserGift, …
+    private static readonly IReadOnlyDictionary<string, Table> AllTables;
+    private static readonly IReadOnlyDictionary<string, Table> ClientTables;
 
-    /// <summary>
-    /// Builds the table-name → accessor map once via reflection. Only EntityI* list properties
-    /// are included — EntityS* (server-only) and non-list properties are excluded.
-    /// </summary>
+    /// <summary>Builds the table-name → accessor maps once via reflection.</summary>
     static UserDataDiffBuilder()
     {
         Dictionary<string, Table> tables = [];
         MethodInfo createTable = typeof(UserDataDiffBuilder).GetMethod(nameof(CreateTable), BindingFlags.NonPublic | BindingFlags.Static)!;
 
-        foreach (PropertyInfo prop in typeof(DarkUserMemoryDatabase).GetProperties())
+        foreach (UserTable info in UserTables.All)
         {
-            // Only include client-visible user data tables (EntityI* prefix, List<> type)
-            if (!prop.Name.StartsWith("EntityI")) continue;
-            if (!prop.PropertyType.IsGenericType) continue;
-            if (prop.PropertyType.GetGenericTypeDefinition() != typeof(List<>)) continue;
-
-            // Strip the "Entity" prefix to get the table key the client expects (e.g. "IUserWeapon")
-            string tableName = prop.Name["Entity".Length..]; // "EntityIUser" -> "IUser"
-            Type rowType = prop.PropertyType.GetGenericArguments()[0];
-            tables[tableName] = (Table)createTable.MakeGenericMethod(rowType).Invoke(null, [prop])!;
+            tables[info.Name] = (Table)createTable.MakeGenericMethod(info.RowType).Invoke(null, [info])!;
         }
 
-        Tables = tables;
+        AllTables = tables;
+        ClientTables = tables.Where(t => t.Value.Info.IsClientVisible).ToDictionary();
     }
 
-    private static Table CreateTable<T>(PropertyInfo prop)
+    private static Table CreateTable<T>(UserTable info)
     {
-        Func<DarkUserMemoryDatabase, List<T>> getRows = db => (List<T>)prop.GetValue(db)!;
+        Func<DarkUserMemoryDatabase, List<T>> getRows = db => (List<T>)info.Property.GetValue(db)!;
 
         return new Table(
+            info,
             db => JsonSerializer.Serialize(getRows(db), CamelCaseOptions),
             db =>
             {
                 TableSnapshot snapshot = new();
                 foreach (T row in getRows(db))
                 {
-                    snapshot.Add(EntityKey<T>.Of(row), JsonSerializer.Serialize(row, CamelCaseOptions));
+                    snapshot.Add(EntityKey<T>.Of(row), JsonSerializer.Serialize(row, CamelCaseOptions), row);
                 }
                 return snapshot;
-            });
+            },
+            json => JsonSerializer.Deserialize<T>(json, CamelCaseOptions)!);
     }
 
     /// <summary>All client-visible user table names (IUser* series, excludes EntityS* and EntityM*).</summary>
-    public static IEnumerable<string> TableNames => Tables.Keys;
+    public static IEnumerable<string> TableNames => ClientTables.Keys;
 
     /// <summary>
-    /// Captures the current rows of all non-empty client-visible user tables.
-    /// Use this before making changes; pass the result to Delta() after changes.
+    /// Captures the current rows of every non-empty user table (server-only ones included).
+    /// Use this before making changes; pass the result to <see cref="Delta"/> or <see cref="Changes"/> after.
     /// </summary>
     public static Dictionary<string, TableSnapshot> Snapshot(DarkUserMemoryDatabase db)
     {
         Dictionary<string, TableSnapshot> snapshot = [];
-        foreach ((string name, Table table) in Tables)
+        foreach ((string name, Table table) in AllTables)
         {
             TableSnapshot rows = table.Snapshot(db);
             if (rows.Count > 0)
@@ -90,27 +89,31 @@ public static class UserDataDiffBuilder
     }
 
     /// <summary>
-    /// Serializes a single named table to a JSON array string.
+    /// Serializes a single named client table to a JSON array string.
     /// Returns "[]" if the table name is not recognised.
     /// </summary>
     public static string SerializeTable(DarkUserMemoryDatabase db, string tableName)
-        => Tables.TryGetValue(tableName, out Table? table) ? table.Serialize(db) : "[]";
+        => ClientTables.TryGetValue(tableName, out Table? table) ? table.Serialize(db) : "[]";
 
     /// <summary>
-    /// Computes the rows that changed since the snapshot, per table. New or changed rows are sent in
+    /// Computes the client rows that changed since the snapshot, per table. New or changed rows are sent in
     /// <c>UpdateRecordsJson</c>; rows whose key no longer exists are sent in <c>DeleteKeysJson</c>.
     /// Tables with neither are left out. Against an empty snapshot this is the full user state.
     /// </summary>
     public static Dictionary<string, DiffData> Delta(Dictionary<string, TableSnapshot> before, DarkUserMemoryDatabase db)
+        => ClientDiff(before, Snapshot(db));
+
+    /// <summary>Like <see cref="Delta"/>, between two snapshots.</summary>
+    public static Dictionary<string, DiffData> ClientDiff(Dictionary<string, TableSnapshot> before, Dictionary<string, TableSnapshot> after)
     {
         Dictionary<string, DiffData> diff = [];
-        foreach ((string name, Table table) in Tables)
+        foreach (string name in ClientTables.Keys)
         {
-            TableSnapshot after = table.Snapshot(db);
-            TableSnapshot beforeRows = before.TryGetValue(name, out TableSnapshot? rows) ? rows : TableSnapshot.Empty;
+            TableSnapshot afterRows = after.TryGetValue(name, out TableSnapshot? a) ? a : TableSnapshot.Empty;
+            TableSnapshot beforeRows = before.TryGetValue(name, out TableSnapshot? b) ? b : TableSnapshot.Empty;
 
-            List<string> updated = [.. after.RowsChangedFrom(beforeRows)];
-            List<string> deleted = [.. beforeRows.RowsMissingFrom(after)];
+            List<string> updated = [.. afterRows.RowsChangedFrom(beforeRows)];
+            List<string> deleted = [.. beforeRows.RowsMissingFrom(afterRows)];
 
             // Skip unchanged tables — only emit tables with actual modifications
             if (updated.Count == 0 && deleted.Count == 0) continue;
@@ -122,6 +125,35 @@ public static class UserDataDiffBuilder
             };
         }
         return diff;
+    }
+
+    /// <summary>
+    /// Every row that changed between the snapshots, in every table, as row objects: new rows, changed rows
+    /// (key already there before), and removed rows (rebuilt from their earlier JSON). A key that appears twice in a
+    /// table counts once (its first row).
+    /// </summary>
+    public static UserChangeSet Changes(Dictionary<string, TableSnapshot> before, Dictionary<string, TableSnapshot> after)
+    {
+        List<TableChange> tables = [];
+        foreach ((string name, Table table) in AllTables)
+        {
+            TableSnapshot afterRows = after.TryGetValue(name, out TableSnapshot? a) ? a : TableSnapshot.Empty;
+            TableSnapshot beforeRows = before.TryGetValue(name, out TableSnapshot? b) ? b : TableSnapshot.Empty;
+
+            List<object> added = [];
+            List<object> modified = [];
+            foreach ((object row, bool existed) in afterRows.ObjectsChangedFrom(beforeRows))
+            {
+                (existed ? modified : added).Add(row);
+            }
+            List<object> deleted = [.. beforeRows.JsonMissingFrom(afterRows).Select(table.Deserialize)];
+
+            if (added.Count > 0 || modified.Count > 0 || deleted.Count > 0)
+            {
+                tables.Add(new TableChange(table.Info, added, modified, deleted));
+            }
+        }
+        return new UserChangeSet(tables);
     }
 
     private static string ToJsonArray(IEnumerable<string> rowsJson)
@@ -141,20 +173,20 @@ public static class UserDataDiffBuilder
 
 /// <summary>
 /// The rows of one user table at a point in time: each row's serialized JSON keyed by its
-/// primary key, in table order.
+/// primary key, in table order, with the row object itself when it was taken from a database.
 /// </summary>
 public sealed class TableSnapshot
 {
     public static readonly TableSnapshot Empty = new();
 
-    private readonly List<(object Key, string Json)> _rows = [];
+    private readonly List<(object Key, string Json, object? Row)> _rows = [];
     private readonly Dictionary<object, string> _byKey = [];
 
     public int Count => _rows.Count;
 
-    public void Add(object key, string json)
+    public void Add(object key, string json, object? row = null)
     {
-        _rows.Add((key, json));
+        _rows.Add((key, json, row));
         _byKey.TryAdd(key, json);
     }
 
@@ -165,4 +197,41 @@ public sealed class TableSnapshot
     /// <summary>JSON of the rows whose key doesn't exist in <paramref name="other"/>.</summary>
     public IEnumerable<string> RowsMissingFrom(TableSnapshot other)
         => _rows.Where(row => !other._byKey.ContainsKey(row.Key)).Select(row => row.Json);
+
+    /// <summary>
+    /// The row objects that are new or changed since <paramref name="previous"/>, each with whether its key was
+    /// there before; only the first row of a repeated key.
+    /// </summary>
+    internal IEnumerable<(object Row, bool Existed)> ObjectsChangedFrom(TableSnapshot previous)
+    {
+        HashSet<object> seen = [];
+        foreach ((object key, string json, object? row) in _rows)
+        {
+            if (row == null || !seen.Add(key))
+            {
+                continue;
+            }
+
+            bool existed = previous._byKey.TryGetValue(key, out string? oldJson);
+            if (!existed || oldJson != json)
+            {
+                yield return (row, existed);
+            }
+        }
+    }
+
+    /// <summary>The JSON of each key (its first row) that doesn't exist in <paramref name="other"/>.</summary>
+    internal IEnumerable<string> JsonMissingFrom(TableSnapshot other)
+        => _byKey.Where(entry => !other._byKey.ContainsKey(entry.Key)).Select(entry => entry.Value);
+}
+
+/// <summary>The rows of one user table that a request added, changed or removed.</summary>
+public sealed record TableChange(UserTable Table, IReadOnlyList<object> Added, IReadOnlyList<object> Modified, IReadOnlyList<object> Deleted);
+
+/// <summary>Every user-table row a request added, changed or removed.</summary>
+public sealed record UserChangeSet(IReadOnlyList<TableChange> Tables)
+{
+    public static readonly UserChangeSet None = new([]);
+
+    public bool IsEmpty => Tables.Count == 0;
 }

@@ -1,6 +1,7 @@
 using MariesWonderland.Configuration;
 using MariesWonderland.Data;
 using MariesWonderland.Missions;
+using MariesWonderland.Persistence;
 using MariesWonderland.Quests;
 
 namespace MariesWonderland.Extensions;
@@ -51,7 +52,12 @@ public static class ServiceExtensions
                 holder, binPath, baseVersion, provider.GetRequiredService<ILogger<MasterDataReloader>>()));
         }
 
+        string sqlitePath = DataOptions.ResolvePath(options.Data.SqliteDatabase);
+        Microsoft.EntityFrameworkCore.DbContextOptions<SqliteUserDbContext> sqliteOptions = SqliteUserDbContext.Options($"Data Source={sqlitePath}");
+        services.AddSingleton(new EfUserPersistence(() => new SqliteUserDbContext(sqliteOptions)));
+        services.AddSingleton<IUserPersistence>(provider => provider.GetRequiredService<EfUserPersistence>());
         services.AddSingleton<UserDataStore>();
+        services.AddHostedService<IdleUserEvictor>();
         services.AddSingleton<UserDataSeeder>();
 
         return services;

@@ -1,5 +1,8 @@
+using Microsoft.EntityFrameworkCore;
+
 namespace MariesWonderland.Models.Entities;
 
+[PrimaryKey(nameof(UserId))]
 public class EntitySUserDevice : IUserEntity
 {
     public long UserId { get; set; }

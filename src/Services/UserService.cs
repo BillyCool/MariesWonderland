@@ -39,6 +39,7 @@ public class UserService(UserDataStore store, UserDataSeeder seeder, DarkMasterM
         // Auth runs before the session exists, so it isn't locked by the interceptor: lock the user it signs in.
         using IDisposable userLock = context.LockUser(_store, userId);
         var userDb = _store.GetOrCreate(userId);
+        Dictionary<string, TableSnapshot> before = UserDataDiffBuilder.Snapshot(userDb);
 
         var nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
         var deviceRecord = userDb.EntitySUserDevice.FirstOrDefault(d => d.UserId == userId);
@@ -57,6 +58,7 @@ public class UserService(UserDataStore store, UserDataSeeder seeder, DarkMasterM
         deviceRecord.LastAuthAt = nowMs;
         if (isNew) deviceRecord.RegisteredAt = nowMs;
 
+        _store.SaveChanges(userId, before, userDb);
         var session = _store.CreateSession(userId, TimeSpan.FromHours(24));
 
         var response = new AuthUserResponse

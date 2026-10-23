@@ -225,9 +225,7 @@ public static class HttpApiExtensions
     public static WebApplication MapDebugApis(this WebApplication app)
     {
         ServerOptions options = app.Services.GetRequiredService<IOptions<ServerOptions>>().Value;
-        string userDatabasePath = Path.IsPathRooted(options.Data.UserDatabase)
-            ? options.Data.UserDatabase
-            : Path.Combine(AppContext.BaseDirectory, options.Data.UserDatabase);
+        string userDatabasePath = DataOptions.ResolvePath(options.Data.UserDatabase);
 
         app.MapGet("/debug/save", () =>
         {

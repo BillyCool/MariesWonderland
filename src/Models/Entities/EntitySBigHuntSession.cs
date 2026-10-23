@@ -1,9 +1,12 @@
+using Microsoft.EntityFrameworkCore;
+
 namespace MariesWonderland.Models.Entities;
 
 /// <summary>
 /// Server-side BigHunt session state. Tracks in-progress battle data and deck selection.
 /// Never sent to the client.
 /// </summary>
+[PrimaryKey(nameof(UserId))]
 public class EntitySBigHuntSession : IUserEntity
 {
     public long UserId { get; set; }

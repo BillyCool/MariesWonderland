@@ -2,6 +2,7 @@ using MariesWonderland.Configuration;
 using MariesWonderland.Data;
 using MariesWonderland.Extensions;
 using MariesWonderland.Interceptors;
+using MariesWonderland.Persistence;
 using Microsoft.AspNetCore.Server.Kestrel.Core;
 using Microsoft.Extensions.Options;
 
@@ -53,17 +54,19 @@ public static class Program
 
         var app = builder.Build();
 
-        // Load user data on startup
-        UserDataStore userDataStore = app.Services.GetRequiredService<UserDataStore>();
+        // Bring the user database up to date before anything reads it (the store loads shared prize claims).
         ServerOptions serverOptions = app.Services.GetRequiredService<IOptions<ServerOptions>>().Value;
-        string userDatabasePath = Path.IsPathRooted(serverOptions.Data.UserDatabase)
-            ? serverOptions.Data.UserDatabase
-            : Path.Combine(AppContext.BaseDirectory, serverOptions.Data.UserDatabase);
+        EfUserPersistence userPersistence = app.Services.GetRequiredService<EfUserPersistence>();
+        userPersistence.Migrate();
+        UserDataStore userDataStore = app.Services.GetRequiredService<UserDataStore>();
+        app.Logger.LogInformation("User database: {Path}", DataOptions.ResolvePath(serverOptions.Data.SqliteDatabase));
 
-        int loadedUsers = userDataStore.Load(userDatabasePath);
-        if (loadedUsers > 0)
+        // First start on the database: bring over the users of the old JSON snapshot, if there is one.
+        string userSnapshotPath = DataOptions.ResolvePath(serverOptions.Data.UserDatabase);
+        if (userPersistence.UserIds().Count == 0 && File.Exists(userSnapshotPath))
         {
-            app.Logger.LogInformation("Loaded {Count} users from {Path}", loadedUsers, userDatabasePath);
+            int importedUsers = userDataStore.Load(userSnapshotPath);
+            app.Logger.LogInformation("Imported {Count} users from {Path} into the user database", importedUsers, userSnapshotPath);
         }
 
         app.MapGrpcServices();

@@ -1,5 +1,8 @@
+using Microsoft.EntityFrameworkCore;
+
 namespace MariesWonderland.Models.Entities;
 
+[PrimaryKey(nameof(UserId), nameof(UserGiftUuid))]
 public class EntitySUserGift : IUserEntity
 {
     public long UserId { get; set; }
