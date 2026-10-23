@@ -14,9 +14,9 @@ public sealed class PathsOptions
     public string MasterDatabase { get; init; } = string.Empty;
 
     /// <summary>
-    /// Replacement URL written into list.bin in-place when serving asset lists.
-    /// Must be exactly 43 ASCII bytes to preserve protobuf field lengths.
-    /// Leave empty to serve list.bin unmodified.
+    /// Asset base URL written into list.bin in place of the original CDN. Must be exactly 43 ASCII characters
+    /// (list.bin's field length), ending in a path segment of only 'a's. Leave empty to use the address the client
+    /// reached the server on, padded to that length (see <c>Http/ResourcesUrl</c>).
     /// </summary>
     public string ResourcesBaseUrl { get; init; } = string.Empty;
 }

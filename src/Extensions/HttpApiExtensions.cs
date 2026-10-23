@@ -2,7 +2,6 @@ using MariesWonderland.Configuration;
 using MariesWonderland.Data;
 using MariesWonderland.Http;
 using Microsoft.Extensions.Options;
-using System.Text;
 
 namespace MariesWonderland.Extensions;
 
@@ -13,10 +12,6 @@ namespace MariesWonderland.Extensions;
 /// </summary>
 public static class HttpApiExtensions
 {
-    // The URL embedded in list.bin pointing to the original CDN (must be exactly 43 ASCII bytes).
-    private static readonly byte[] ResourcesUrlOriginal =
-        Encoding.ASCII.GetBytes("https://resources.app.nierreincarnation.com");
-
     /// <summary>
     /// Registers all HTTP endpoints, including asset serving, master database, and the catch-all route.
     /// </summary>
@@ -35,7 +30,8 @@ public static class HttpApiExtensions
         // ToS. Expects the version wrapped in delimiters like "###123###".
         app.MapGet("/web/static/{languagePath}/terms/termsofuse", (string languagePath) => $"<html><head><title>Terms of Service</title></head><body><h1>Terms of Service</h1><p>Language: {languagePath}</p><p>Version: ###123###</p></body></html>");
 
-        // Asset Database — serves list.bin, rewriting the embedded CDN base URL if configured.
+        // Asset Database — serves list.bin with the embedded CDN base URL pointing here: the configured
+        // ResourcesBaseUrl, else the address the client reached this request on (ResourcesUrl.ForHost).
         // Records which revision the client is using so subsequent asset requests resolve correctly.
         app.MapGet("/v1/list/300116832/{revision}", async (string revision, HttpContext ctx) =>
         {
@@ -43,14 +39,15 @@ public static class HttpApiExtensions
             assetDb.RememberRevision(clientIp, revision);
 
             byte[] data = await File.ReadAllBytesAsync(Path.Combine(assetDatabaseBasePath, revision, "list.bin"));
-            RewriteResourcesUrl(data, resourcesBaseUrl, app.Logger);
+            RewriteResourcesUrl(data, resourcesBaseUrl, ctx.Request, app.Logger);
             return Results.Bytes(data, "application/x-protobuf");
         });
 
         // Asset Bundles / Resources — resolves objectId via the list.bin index for the client's active revision.
-        // Path: /aaaaaaaaaaaaaaaaaaaaaaaa/unso-{version}-{type}/{objectId}
+        // Path: /{a…a}/unso-{version}-{type}/{objectId}, the first segment being the run of 'a's that pads the base
+        // URL in list.bin to its fixed length (any length, see ResourcesUrl).
         //   type = "assetbundle" or "resources" (last segment of "unso-…" after splitting on '-')
-        app.MapGet("/aaaaaaaaaaaaaaaaaaaaaaaa/unso-{version}-{type}/{objectId}", (string version, string type, string objectId, HttpContext ctx) =>
+        app.MapGet("/{padding:regex(^a+$)}/unso-{version}-{type}/{objectId}", (string version, string type, string objectId, HttpContext ctx) =>
         {
             string clientIp = ctx.Connection.RemoteIpAddress?.ToString() ?? "";
 
@@ -262,31 +259,29 @@ public static class HttpApiExtensions
     }
 
     /// <summary>
-    /// Rewrites the CDN base URL embedded in list.bin bytes to the configured local URL.
-    /// The replacement must be exactly 43 ASCII bytes to match the original protobuf field length.
+    /// Points the CDN base URL in list.bin at this server: <paramref name="configuredUrl"/> when set (exactly
+    /// <see cref="ResourcesUrl.Length"/> characters), else built from the scheme and host the client used for
+    /// <paramref name="request"/>. Logs and leaves the list unmodified when neither fits.
     /// </summary>
-    private static void RewriteResourcesUrl(byte[] data, string replacementUrl, ILogger logger)
+    private static void RewriteResourcesUrl(byte[] data, string configuredUrl, HttpRequest request, ILogger logger)
     {
-        if (string.IsNullOrEmpty(replacementUrl))
-            return;
-
-        byte[] replacement = Encoding.ASCII.GetBytes(replacementUrl);
-        if (replacement.Length != ResourcesUrlOriginal.Length)
+        string? url = string.IsNullOrEmpty(configuredUrl)
+            ? ResourcesUrl.ForHost(request.Scheme, request.Host.ToUriComponent())
+            : configuredUrl;
+        if (url == null)
         {
-            logger.LogWarning(
-                "ResourcesBaseUrl is {Length} bytes but must be exactly {Required} bytes — serving list.bin unmodified.",
-                replacement.Length, ResourcesUrlOriginal.Length);
+            logger.LogWarning("Host {Host} is too long for the asset URL in list.bin (at most {Max} characters with http); set Server:Paths:ResourcesBaseUrl. Serving list.bin unmodified.",
+                request.Host.ToUriComponent(), ResourcesUrl.Length - "http:///a".Length);
             return;
         }
 
-        int idx = data.AsSpan().IndexOf(ResourcesUrlOriginal);
-        if (idx < 0)
+        if (!ResourcesUrl.Rewrite(data, url))
         {
-            logger.LogWarning("CDN URL not found in list.bin — serving unmodified.");
+            logger.LogWarning("Couldn't point list.bin at {Url}: it must be exactly {Length} ASCII characters and the list must contain the CDN URL. Serving list.bin unmodified.",
+                url, ResourcesUrl.Length);
             return;
         }
 
-        replacement.CopyTo(data, idx);
-        logger.LogDebug("list.bin: rewrote resource base URL to {Url}", replacementUrl);
+        logger.LogDebug("list.bin: rewrote resource base URL to {Url}", url);
     }
 }

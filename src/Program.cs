@@ -3,6 +3,7 @@ using MariesWonderland.Data;
 using MariesWonderland.Extensions;
 using MariesWonderland.Interceptors;
 using MariesWonderland.Persistence;
+using Microsoft.Extensions.Configuration.Json;
 using Microsoft.Extensions.Options;
 
 namespace MariesWonderland;
@@ -13,8 +14,13 @@ public static class Program
     {
         var builder = WebApplication.CreateBuilder(args);
 
-        // Machine-specific settings (data paths, LAN address); git-ignored
-        builder.Configuration.AddJsonFile("appsettings.Local.json", optional: true, reloadOnChange: true);
+        // Machine-specific settings (data paths, LAN address); git-ignored. Goes right after the appsettings files so it
+        // overrides them, while environment variables and the command line still override it.
+        IList<IConfigurationSource> sources = ((IConfigurationBuilder)builder.Configuration).Sources;
+        int afterAppSettings = sources
+            .Select((source, index) => source is JsonConfigurationSource { Path: string path } && path.StartsWith("appsettings", StringComparison.OrdinalIgnoreCase) ? index + 1 : 0)
+            .Max();
+        sources.Insert(afterAppSettings, new JsonConfigurationSource { Path = "appsettings.Local.json", Optional = true, ReloadOnChange = true });
 
         // Listening addresses, protocols and certificates come from the "Kestrel:Endpoints" config section.
 

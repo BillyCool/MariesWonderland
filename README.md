@@ -18,7 +18,7 @@ An open-source server implementation for mobile game NieR Reincarnation.
 Open `MariesWonderland.slnx` and run the project.
 
 By default the server listens on every network address on two ports (see [Ports and certificates](#ports-and-certificates) to change them):
-- port 80 (HTTP/1.1 and HTTP/2): asset serving
+- port 80 (HTTP/1.1): asset serving
 - port 443 (HTTP/2): gRPC
 
 ### 2. Expose the server
@@ -38,7 +38,7 @@ Server settings live in `src/appsettings.development.json`:
     "Paths": {
       "AssetDatabase": "<path to extracted asset revisions>",
       "MasterDatabase": "<path to extracted master data>",
-      "ResourcesBaseUrl": "http://<your-host>/aaaaaaaaaaaaaaaaaaaaaaaa"
+      "ResourcesBaseUrl": ""
     },
     "Data": {
       "LatestMasterDataVersion": "1234567890",
@@ -48,8 +48,8 @@ Server settings live in `src/appsettings.development.json`:
 }
 ```
 
-- The `ResourcesBaseUrl` value must be exactly 43 characters long.
-- If you change the length of that segment, you may also need to update the server-side minimal API that serves the short path (the `/aaaaaaaa...` handler) so its expected length matches your new value.
+- `ResourcesBaseUrl` is where the game downloads assets from. Leave it empty: the server uses the address the game reached it on (e.g. `http://192.168.1.2/` or `http://10.0.2.2:8080/`), padded with `a`s to the 43 characters the game's asset list requires.
+- To set it yourself, it must be exactly 43 characters and end in a path segment of only `a`s, e.g. `http://192.168.1.2/aaaaaaaaaaaaaaaaaaaaaaaa`. A host (with port) longer than 34 characters doesn't fit and needs a shorter name.
 
 ### Ports and certificates
 The listening addresses come from the standard ASP.NET Core `Kestrel:Endpoints` section in `src/appsettings.json`:
@@ -58,7 +58,7 @@ The listening addresses come from the standard ASP.NET Core `Kestrel:Endpoints` 
 {
   "Kestrel": {
     "Endpoints": {
-      "Http": { "Url": "http://*:80", "Protocols": "Http1AndHttp2" },
+      "Http": { "Url": "http://*:80", "Protocols": "Http1" },
       "Grpc": { "Url": "http://*:443", "Protocols": "Http2" }
     }
   }
