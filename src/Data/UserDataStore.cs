@@ -574,49 +574,6 @@ public class UserDataStore(TimeProvider timeProvider, IUserPersistence? persiste
         db.EntityIUserQuestAutoOrbit.Add(new EntityIUserQuestAutoOrbit { UserId = db.UserId });
 
         // TODO: Seed the first mission record (missionId=1, IN_PROGRESS) once missions are implemented.
-
-        foreach (int weaponId in GameConstants.StartingWeaponIds)
-        {
-            string uuid = Guid.NewGuid().ToString();
-
-            db.EntityIUserWeapon.Add(new EntityIUserWeapon
-            {
-                UserId = db.UserId,
-                UserWeaponUuid = uuid,
-                WeaponId = weaponId,
-                Level = 1,
-                Exp = 0,
-                LimitBreakCount = 0,
-                IsProtected = true,
-                AcquisitionDatetime = nowMs
-            });
-
-            db.EntityIUserWeaponNote.Add(new EntityIUserWeaponNote
-            {
-                UserId = db.UserId,
-                WeaponId = weaponId,
-                MaxLevel = 1,
-                MaxLimitBreakCount = 0,
-                FirstAcquisitionDatetime = nowMs
-            });
-
-            db.EntityIUserWeaponStory.Add(new EntityIUserWeaponStory
-            {
-                UserId = db.UserId,
-                WeaponId = weaponId,
-                ReleasedMaxStoryIndex = 1
-            });
-
-            EntityMWeapon? masterWeapon = masterDb.EntityMWeapon.FirstOrDefault(w => w.WeaponId == weaponId);
-            if (masterWeapon != null)
-            {
-                foreach (EntityMWeaponAbilityGroup ag in masterDb.EntityMWeaponAbilityGroup.Where(g => g.WeaponAbilityGroupId == masterWeapon.WeaponAbilityGroupId))
-                    db.EntityIUserWeaponAbility.Add(new EntityIUserWeaponAbility { UserId = db.UserId, UserWeaponUuid = uuid, SlotNumber = ag.SlotNumber, Level = 1 });
-
-                foreach (EntityMWeaponSkillGroup sg in masterDb.EntityMWeaponSkillGroup.Where(g => g.WeaponSkillGroupId == masterWeapon.WeaponSkillGroupId))
-                    db.EntityIUserWeaponSkill.Add(new EntityIUserWeaponSkill { UserId = db.UserId, UserWeaponUuid = uuid, SlotNumber = sg.SlotNumber, Level = 1 });
-            }
-        }
     }
 }
 
