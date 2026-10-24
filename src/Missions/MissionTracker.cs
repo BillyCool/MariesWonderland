@@ -180,10 +180,11 @@ public sealed class MissionTracker(DarkMasterMemoryDatabase masterDb, MissionCat
     /// </summary>
     public void RecordQuestClear(DarkUserMemoryDatabase userDb, MissionQuestEvent quest, int times, bool isSkipped, long nowMs)
     {
-        Record(userDb, MissionClearConditionType.QUEST_CLEAR_BY_COUNT, times, filter => filter == null || filter.MatchesQuest(quest), nowMs);
+        List<TutorialType> playedTutorials = [.. userDb.EntityIUserTutorialProgress.Select(t => t.TutorialType)];
+        Record(userDb, MissionClearConditionType.QUEST_CLEAR_BY_COUNT, times, filter => filter == null || filter.MatchesQuest(quest, playedTutorials), nowMs);
         if (!isSkipped)
         {
-            Record(userDb, MissionClearConditionType.QUEST_CLEAR_BY_COUNT_WITHOUT_SKIP, times, filter => filter == null || filter.MatchesQuest(quest), nowMs);
+            Record(userDb, MissionClearConditionType.QUEST_CLEAR_BY_COUNT_WITHOUT_SKIP, times, filter => filter == null || filter.MatchesQuest(quest, playedTutorials), nowMs);
         }
     }
 

@@ -113,6 +113,8 @@ public class TutorialService(UserDataStore store, DarkMasterMemoryDatabase maste
             UserDeckCharacterUuid = dcUuid,
             UserCostumeUuid = costumeUuid,
             MainUserWeaponUuid = weaponUuid,
+            UserCompanionUuid = "",
+            UserThoughtUuid = "",
             Power = 0
         });
 
@@ -124,6 +126,8 @@ public class TutorialService(UserDataStore store, DarkMasterMemoryDatabase maste
                 DeckType = DeckType.QUEST,
                 UserDeckNumber = 1,
                 UserDeckCharacterUuid01 = dcUuid,
+                UserDeckCharacterUuid02 = "",
+                UserDeckCharacterUuid03 = "",
                 Name = "Loadout 1",
                 Power = 0
             });

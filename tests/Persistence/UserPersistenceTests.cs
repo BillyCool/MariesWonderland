@@ -1,8 +1,11 @@
 using MariesWonderland.Configuration;
+using MariesWonderland.Constants;
 using MariesWonderland.Data;
 using MariesWonderland.Interceptors;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Persistence;
+using MariesWonderland.Models.Type;
+using MariesWonderland.Proto.Tutorial;
 using MariesWonderland.Proto.User;
 using MariesWonderland.Tests.Infrastructure;
 using Microsoft.Data.Sqlite;
@@ -11,6 +14,7 @@ using Microsoft.Extensions.Options;
 using Microsoft.Extensions.Time.Testing;
 using Grpc.Core;
 using MariesWonderland.Missions;
+using TutorialServiceImpl = MariesWonderland.Services.TutorialService;
 using UserServiceImpl = MariesWonderland.Services.UserService;
 
 namespace MariesWonderland.Tests.Persistence;
@@ -92,6 +96,29 @@ public sealed class UserPersistenceTests : IDisposable
         Assert.Equal([(1, 6), (3, 1)], reloaded.EntityIUserMaterial.OrderBy(m => m.MaterialId).Select(m => (m.MaterialId, m.Count)));
         EntitySGachaBannerState banner = Assert.Single(reloaded.EntitySGachaBannerState);
         Assert.Equal(new Dictionary<int, int> { [0] = 2, [5] = 1 }, banner.BoxDrewCounts);
+    }
+
+    [Fact]
+    public async Task StarterDeck_IsWrittenAndSurvivesARestart()
+    {
+        UserDataStore store = NewStore();
+        DarkUserMemoryDatabase userDb = store.GetOrCreate(UserId);
+        userDb.EntityIUserCostume.Add(new EntityIUserCostume { UserId = UserId, UserCostumeUuid = "starter-costume", CostumeId = GameConstants.StartingDeckCostumeId });
+        userDb.EntityIUserWeapon.Add(new EntityIUserWeapon { UserId = UserId, UserWeaponUuid = "starter-weapon", WeaponId = GameConstants.StartingDeckWeaponId });
+        store.Set(UserId, userDb);
+
+        TutorialServiceImpl service = new(store, new DarkMasterMemoryDatabase(), _time);
+        UserLockInterceptor locks = new(store);
+        DiffInterceptor diffs = new(store, NullLogger<DiffInterceptor>.Instance);
+        SetTutorialProgressRequest tutorial = new() { TutorialType = (int)TutorialType.MENU_FIRST, ProgressPhase = 10 };
+        await locks.UnaryServerHandler(tutorial, FakeServerCallContext.For(UserId), (request, context) =>
+            diffs.UnaryServerHandler(request, context, (r, c) => service.SetTutorialProgress(r, c)));
+
+        Assert.True(NewStore().TryGet(UserId, out DarkUserMemoryDatabase reloaded));
+        EntityIUserDeck deck = Assert.Single(reloaded.EntityIUserDeck);
+        Assert.Equal("", deck.UserDeckCharacterUuid02);
+        Assert.Single(reloaded.EntityIUserDeckCharacter);
+        Assert.Contains(reloaded.EntityIUserTutorialProgress, t => t.TutorialType == TutorialType.MENU_FIRST);
     }
 
     [Fact]

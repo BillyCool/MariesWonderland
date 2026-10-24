@@ -89,9 +89,15 @@ public static class PossessionHelper
 
     /// <summary>
     /// Grants a costume to the user, unlocking the associated character if not already owned.
+    /// Skips if the costume is already owned.
     /// </summary>
     public static void GrantCostume(DarkUserMemoryDatabase userDb, int costumeId, DarkMasterMemoryDatabase masterDb, long nowMs)
     {
+        if (userDb.EntityIUserCostume.Any(c => c.CostumeId == costumeId))
+        {
+            return;
+        }
+
         string uuid = Guid.NewGuid().ToString();
 
         userDb.EntityIUserCostume.Add(new EntityIUserCostume

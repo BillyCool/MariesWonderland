@@ -12,6 +12,8 @@ namespace MariesWonderland.Tests.Missions;
 /// <summary>The filter fields mapped from the review: weapons, costumes, explorations, quest kinds and mission-keyed entries.</summary>
 public class MissionFilterFieldTests(MasterDatabaseFixture fixture) : ServiceTestBase(fixture), IClassFixture<MasterDatabaseFixture>
 {
+    private const long NowMs = 1_700_000_000_000;
+
     private MissionCatalog Catalog => new(MasterDb, MissionFilterTable.Load(MissionFilterTable.DefaultPath));
 
     private (MissionTracker Tracker, MissionCatalog Catalog, DarkUserMemoryDatabase UserDb) Create()
@@ -274,6 +276,40 @@ public class MissionFilterFieldTests(MasterDatabaseFixture fixture) : ServiceTes
         Assert.False(newYear.MatchesMessage("a happy new year"));
         Assert.False(newYear.MatchesMessage("Happy holidays"));
         Assert.True(new MissionFilter().MatchesMessage("anything"));
+    }
+
+    [Fact]
+    public void WithoutTutorial_CountsAQuestClearOnlyUntilTheTutorialIsPlayed()
+    {
+        MissionQuestEvent quest = new(new QuestCampaignTarget(41, QuestType.MAIN_QUEST, 5, Difficulty: DifficultyType.NORMAL), []);
+        MissionFilter filter = new(QuestIds: [41], WithoutTutorial: TutorialType.LOSE_FIRST);
+
+        Assert.True(filter.MatchesQuest(quest));
+        Assert.True(filter.MatchesQuest(quest, [TutorialType.GAME_START]));
+        Assert.False(filter.MatchesQuest(quest, [TutorialType.GAME_START, TutorialType.LOSE_FIRST]));
+    }
+
+    [Fact]
+    public void ClearChapter4WithoutTheLoseTutorial_NeedsTheLastQuestAndNoTutorial()
+    {
+        MissionQuestEvent lastQuest = new(new QuestCampaignTarget(41, QuestType.MAIN_QUEST, 5, Difficulty: DifficultyType.NORMAL), []);
+        MissionQuestEvent otherQuest = new(new QuestCampaignTarget(2, QuestType.MAIN_QUEST, 2, Difficulty: DifficultyType.NORMAL), []);
+
+        (MissionTracker tracker, MissionCatalog catalog, DarkUserMemoryDatabase userDb) = Create();
+        MissionDefinition mission = catalog.Find(460002)!;
+        tracker.Refresh(userDb, NowMs);
+
+        tracker.RecordQuestClear(userDb, otherQuest, 1, isSkipped: false, NowMs);
+        Assert.Equal(0, Progress(userDb, mission));
+
+        tracker.RecordQuestClear(userDb, lastQuest, 1, isSkipped: false, NowMs);
+        Assert.Equal(1, Progress(userDb, mission));
+
+        (tracker, catalog, userDb) = Create();
+        tracker.Refresh(userDb, NowMs);
+        userDb.EntityIUserTutorialProgress.Add(new EntityIUserTutorialProgress { UserId = userDb.UserId, TutorialType = TutorialType.LOSE_FIRST, ProgressPhase = 20 });
+        tracker.RecordQuestClear(userDb, lastQuest, 1, isSkipped: false, NowMs);
+        Assert.Equal(0, Progress(userDb, mission));
     }
 
     [Fact]

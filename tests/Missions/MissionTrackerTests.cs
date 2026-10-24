@@ -132,7 +132,7 @@ public class MissionTrackerTests(MasterDatabaseFixture fixture) : ServiceTestBas
         int before = completeRow.ProgressValue;
         int counterMissions = userDb.EntityIUserMission.Count(r => r.MissionProgressStatusType == MissionProgressStatusType.IN_PROGRESS
             && catalog.Find(r.MissionId)!.ConditionType == MissionClearConditionType.QUEST_CLEAR_BY_COUNT
-            && catalog.Find(r.MissionId)!.Filter == null && !catalog.Find(r.MissionId)!.IsFilterUnmapped
+            && !catalog.Find(r.MissionId)!.IsFilterUnmapped
             && catalog.Find(r.MissionId)!.ClearValue == 1);
 
         tracker.Record(userDb, MissionClearConditionType.QUEST_CLEAR_BY_COUNT, 1, _ => true, NowMs);

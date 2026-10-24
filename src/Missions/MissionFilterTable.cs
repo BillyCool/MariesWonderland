@@ -20,6 +20,7 @@ public sealed record MissionQuestEvent(
 /// has to match all of them. An entry with no fields matches every event of its condition type.
 /// For quest and Big Hunt conditions, <see cref="CharacterId"/> and every one of <see cref="CharacterIds"/> must be in the
 /// deck, <see cref="OnlyCharacters"/> allows no other character in it, and <see cref="CostumeIds"/> is a costume in the deck.
+/// For quest conditions, <see cref="WithoutTutorial"/> only counts a clear while the user hasn't played that tutorial.
 /// </summary>
 public sealed record MissionFilter(
     int? CharacterId = null,
@@ -46,7 +47,8 @@ public sealed record MissionFilter(
     ShopType? ShopType = null,
     int? LiveTypeId = null,
     IReadOnlyList<int>? CharacterIds = null,
-    bool? OnlyCharacters = null)
+    bool? OnlyCharacters = null,
+    TutorialType? WithoutTutorial = null)
 {
     private static readonly MissionFilter NoRestrictions = new();
 
@@ -56,8 +58,11 @@ public sealed record MissionFilter(
     /// <summary>True when the filter names characters the deck must hold, which only a run (not the saved scores) can tell.</summary>
     public bool HasDeckRequirement => CharacterId != null || CharacterIds != null || OnlyCharacters == true;
 
-    /// <summary>True when the cleared quest meets every restriction this filter sets.</summary>
-    public bool MatchesQuest(MissionQuestEvent quest)
+    /// <summary>
+    /// True when the cleared quest meets every restriction this filter sets. <paramref name="playedTutorials"/> are the
+    /// tutorials the user has progress for (none when omitted).
+    /// </summary>
+    public bool MatchesQuest(MissionQuestEvent quest, IReadOnlyCollection<TutorialType>? playedTutorials = null)
     {
         QuestCampaignTarget target = quest.Target;
         bool isEvent = target.QuestType == Models.Type.QuestType.EVENT_QUEST;
@@ -72,6 +77,7 @@ public sealed record MissionFilter(
             && (Difficulty == null || target.Difficulty == Difficulty)
             && (Difficulties == null || Difficulties.Contains(target.Difficulty))
             && (QuestIds == null || QuestIds.Contains(target.QuestId))
+            && (WithoutTutorial == null || playedTutorials == null || !playedTutorials.Contains(WithoutTutorial.Value))
             && (DailyClearableCount == null || quest.DailyClearableCount == DailyClearableCount)
             && MatchesDeck(quest.DeckCharacterIds)
             && (CostumeIds == null || (quest.DeckCostumeIds ?? []).Any(CostumeIds.Contains));
@@ -219,7 +225,8 @@ public sealed class MissionFilterTable
                 entry.ShopType,
                 entry.LiveTypeId,
                 entry.CharacterIds,
-                entry.OnlyCharacters);
+                entry.OnlyCharacters,
+                entry.WithoutTutorial);
             (Dictionary<int, MissionFilter> table, int key, string kind) = entry.MissionId is int missionId
                 ? (byMissionId, missionId, "mission")
                 : (byOptionGroupId, entry.OptionGroupId!.Value, "option group");
@@ -264,5 +271,6 @@ public sealed class MissionFilterTable
         ShopType? ShopType,
         int? LiveTypeId,
         List<int>? CharacterIds,
-        bool? OnlyCharacters);
+        bool? OnlyCharacters,
+        TutorialType? WithoutTutorial);
 }

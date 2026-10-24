@@ -6076,6 +6076,30 @@
       ]
     },
     {
+      "missionId": 460002,
+      "note": "Clear Chapter 4 (Quest 10, the last quest of Main Quest Chapter 4) without playing the tutorial shown after first losing a quest (LOSE_FIRST: counts only while the user has no progress for it)",
+      "questIds": [
+        41
+      ],
+      "withoutTutorial": "LOSE_FIRST"
+    },
+    {
+      "missionId": 460003,
+      "note": "Clear Chapter 4 (Quest 10, the last quest of Main Quest Chapter 4) without playing the tutorial shown after first losing a quest (LOSE_FIRST: counts only while the user has no progress for it)",
+      "questIds": [
+        41
+      ],
+      "withoutTutorial": "LOSE_FIRST"
+    },
+    {
+      "missionId": 460004,
+      "note": "Clear Chapter 4 (Quest 10, the last quest of Main Quest Chapter 4) without playing the tutorial shown after first losing a quest (LOSE_FIRST: counts only while the user has no progress for it)",
+      "questIds": [
+        41
+      ],
+      "withoutTutorial": "LOSE_FIRST"
+    },
+    {
       "missionId": 500013,
       "note": "Account mission: Clear Quest 3 of an event quest on EX Hard (any event's EX Hard sequence, its 3rd quest)",
       "questIds": [
