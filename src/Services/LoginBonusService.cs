@@ -32,9 +32,16 @@ public class LoginBonusService(UserDataStore store, DarkMasterMemoryDatabase mas
                     CurrentStampNumber = 0
                 });
 
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
+
+        // One stamp per game day: a repeat claim, such as a client that lost its record of showing the popup, changes nothing.
+        if (!GameDayHelper.IsBeforeToday(loginBonus.LatestRewardReceiveDatetime, nowMs))
+        {
+            return Task.FromResult(new ReceiveStampResponse());
+        }
+
         (int nextPage, int nextStamp, EntityMLoginBonusStamp stamp) = ResolveNextStamp(loginBonus);
 
-        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
         // TODO: Review the gift lifetime; 30 days is an assumption, not from master data or the real game.
         long expiryMs = nowMs + 30L * 24 * 60 * 60 * 1000;
 

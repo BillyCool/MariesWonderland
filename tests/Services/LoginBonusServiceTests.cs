@@ -5,6 +5,7 @@ using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.LoginBonus;
 using MariesWonderland.Tests.Infrastructure;
+using Microsoft.Extensions.Time.Testing;
 using LoginBonusServiceImpl = MariesWonderland.Services.LoginBonusService;
 
 namespace MariesWonderland.Tests.Services;
@@ -227,6 +228,35 @@ public class LoginBonusServiceTests
         Assert.Equal(1, tracker.CurrentStampNumber);
         Assert.Equal(0, tracker.LatestRewardReceiveDatetime);
         Assert.Empty(userDb.EntitySUserGift);
+    }
+
+    [Fact]
+    public async Task ReceiveStamp_AgainOnTheSameGameDay_ChangesNothing_AndTheNextDayGivesTheNextStamp()
+    {
+        DarkMasterMemoryDatabase masterDb = new();
+        masterDb.EntityMLoginBonusStamp.AddRange(
+        [
+            new EntityMLoginBonusStamp { LoginBonusId = 1, LowerPageNumber = 1, StampNumber = 1, RewardPossessionType = PossessionType.FREE_GEM, RewardPossessionId = 0, RewardCount = 5 },
+            new EntityMLoginBonusStamp { LoginBonusId = 1, LowerPageNumber = 1, StampNumber = 2, RewardPossessionType = PossessionType.FREE_GEM, RewardPossessionId = 0, RewardCount = 6 }
+        ]);
+        UserDataStore store = CreateStore(masterDb);
+        FakeTimeProvider time = new(new DateTimeOffset(2026, 10, 24, 5, 0, 0, TimeSpan.Zero));
+        LoginBonusServiceImpl service = new(store, masterDb, time);
+
+        await service.ReceiveStamp(new Empty(), FakeServerCallContext.For(UserId));
+        time.Advance(TimeSpan.FromHours(2));
+        await service.ReceiveStamp(new Empty(), FakeServerCallContext.For(UserId));
+
+        Assert.True(store.TryGet(UserId, out DarkUserMemoryDatabase? userDb));
+        Assert.Equal(1, Assert.Single(userDb.EntityIUserLoginBonus).CurrentStampNumber);
+        Assert.Single(userDb.EntitySUserGift);
+
+        // The game day turns over at 08:00 UTC.
+        time.Advance(TimeSpan.FromHours(4));
+        await service.ReceiveStamp(new Empty(), FakeServerCallContext.For(UserId));
+
+        Assert.Equal(2, Assert.Single(userDb.EntityIUserLoginBonus).CurrentStampNumber);
+        Assert.Equal(2, userDb.EntitySUserGift.Count);
     }
 
     private static UserDataStore CreateStore(DarkMasterMemoryDatabase masterDb, DarkUserMemoryDatabase? userDb = null)
