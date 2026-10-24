@@ -33,9 +33,12 @@ public class BattleService(UserDataStore store, DarkMasterMemoryDatabase masterD
         long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
         BattleDetail? detail = request.BattleDetail;
 
-        // Find the currently active quest so we can associate this battle with it.
+        // Find the currently active quest so we can associate this battle with it: the one started last, as an
+        // abandoned run leaves its quest active.
         EntityIUserQuest? activeQuest = userDb.EntityIUserQuest
-            .FirstOrDefault(q => q.QuestStateType == (int)QuestStateType.ACTIVE);
+            .Where(q => q.QuestStateType == (int)QuestStateType.ACTIVE)
+            .OrderByDescending(q => q.LatestStartDatetime)
+            .FirstOrDefault();
 
         // Save full battle record mirroring the proto request structure.
         EntitySBattleDetail battleRecord = new()

@@ -111,13 +111,6 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         bool isPlayable = QuestEngine.IsPlayable(quest);
         if (isPlayable)
         {
-
-            // On half-result scenes, auto-clear all quest missions before the battle phase ends
-            if (scene!.QuestResultType == QuestResultType.HALF_RESULT)
-            {
-                _questEngine.ClearQuestMissions(userDb, scene.QuestId, nowMs);
-            }
-
             EntityIUserMainQuestFlowStatus flowStatus = userDb.EntityIUserMainQuestFlowStatus.GetOrCreate(userId);
             flowStatus.CurrentQuestFlowType = QuestFlowType.SUB_FLOW;
 
@@ -168,10 +161,6 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         }
 
         ApplySceneGrants(userDb, questSceneId, nowMs);
-        if (scene != null && scene.QuestResultType == QuestResultType.HALF_RESULT)
-        {
-            _questEngine.ClearQuestMissions(userDb, scene.QuestId, nowMs);
-        }
 
         return Task.FromResult(new UpdateExtraQuestSceneProgressResponse());
     }
@@ -198,10 +187,6 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         }
 
         ApplySceneGrants(userDb, questSceneId, nowMs);
-        if (scene != null && scene.QuestResultType == QuestResultType.HALF_RESULT)
-        {
-            _questEngine.ClearQuestMissions(userDb, scene.QuestId, nowMs);
-        }
 
         return Task.FromResult(new UpdateEventQuestSceneProgressResponse());
     }
@@ -337,7 +322,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         return Task.FromResult(response);
     }
 
-    /// <summary>Restarts a main quest: resets flow to MAIN_FLOW, clears mission progress, and returns battle drop rewards.</summary>
+    /// <summary>Restarts a main quest: resets flow to MAIN_FLOW and returns battle drop rewards.</summary>
     public override Task<RestartMainQuestResponse> RestartMainQuest(RestartMainQuestRequest request, ServerCallContext context)
     {
         long userId = context.GetUserId();
@@ -347,7 +332,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         int questId = request.QuestId;
 
         EntityIUserQuest userQuest = QuestEngine.GetOrCreateUserQuest(userDb, questId);
-        QuestEngine.MarkActive(userQuest, nowMs);
+        MarkRestarted(userDb, userQuest, questId, nowMs);
 
         EntitySQuestSession restartSession = GetOrCreateQuestSession(userDb, userId, questId);
         userQuest.IsBattleOnly = restartSession.IsBattleOnly;
@@ -406,9 +391,6 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
 
         UpdateQuestSessionState(restartSession, restoredSceneId, restoredHeadSceneId, flowStatus.CurrentQuestFlowType);
 
-        // Reset all mission progress for this quest so they can be re-evaluated during battle.
-        _questEngine.ResetMissionProgress(userDb, questId);
-
         RestartMainQuestResponse response = new();
         response.BattleDropReward.AddRange(_questEngine.BuildBattleDropRewards(questId));
         response.DeckNumber = restartSession.UserDeckNumber;
@@ -453,7 +435,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         EntitySQuestSession? finishSession = userDb.EntitySQuestSession.FirstOrDefault(s => s.UserId == userId && s.QuestId == questId);
         bool wasMenuPick = finishSession?.IsMenuPick == true;
 
-        QuestFinishResult result = _questEngine.Finish(userDb, quest, _questCampaignHelper.GetMainQuestTarget(questId), isWin, nowMs, isReplay: wasReplayFlow);
+        QuestFinishResult result = _questEngine.Finish(userDb, quest, _questCampaignHelper.GetMainQuestTarget(questId), isWin, nowMs, isReplay: wasReplayFlow, battles: BattlesOfRun(userDb, userId, questId));
 
         if (isWin)
         {
@@ -532,6 +514,28 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         return Task.FromResult(response);
     }
 
+    /// <summary>
+    /// A restart while the quest still has its session is the player coming back to a run the app was closed in: the run
+    /// keeps its start, so the battles already fought still count for its missions. Without a session it's a new run.
+    /// </summary>
+    private static void MarkRestarted(DarkUserMemoryDatabase userDb, EntityIUserQuest userQuest, int questId, long nowMs)
+    {
+        if (userDb.EntitySQuestSession.Any(s => s.QuestId == questId))
+        {
+            userQuest.QuestStateType = (int)QuestStateType.ACTIVE;
+            return;
+        }
+
+        QuestEngine.MarkActive(userQuest, nowMs);
+    }
+
+    /// <summary>The battles recorded for the quest's current run: those since the quest was last started.</summary>
+    private IReadOnlyList<EntitySBattleDetail> BattlesOfRun(DarkUserMemoryDatabase userDb, long userId, int questId)
+    {
+        long startMs = userDb.EntityIUserQuest.FirstOrDefault(q => q.QuestId == questId)?.LatestStartDatetime ?? 0;
+        return _store.BattleDetails(userId, questId, DateTimeOffset.FromUnixTimeMilliseconds(startMs).UtcDateTime);
+    }
+
     /// <summary>Grants scene-based possessions from master data for the given quest scene.</summary>
     private void ApplySceneGrants(DarkUserMemoryDatabase userDb, int questSceneId, long nowMs)
     {
@@ -576,7 +580,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         return Task.FromResult(response);
     }
 
-    /// <summary>Restarts an extra quest: resets mission progress and returns battle drop rewards.</summary>
+    /// <summary>Restarts an extra quest and returns battle drop rewards.</summary>
     public override Task<RestartExtraQuestResponse> RestartExtraQuest(RestartExtraQuestRequest request, ServerCallContext context)
     {
         long userId = context.GetUserId();
@@ -586,12 +590,10 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         int questId = request.QuestId;
 
         EntityIUserQuest userQuest = QuestEngine.GetOrCreateUserQuest(userDb, questId);
-        QuestEngine.MarkActive(userQuest, nowMs);
+        MarkRestarted(userDb, userQuest, questId, nowMs);
 
         EntitySQuestSession session = GetOrCreateQuestSession(userDb, userId, questId);
         userQuest.IsBattleOnly = session.IsBattleOnly;
-
-        _questEngine.ResetMissionProgress(userDb, questId);
 
         EntityIUserExtraQuestProgressStatus progressStatus = userDb.EntityIUserExtraQuestProgressStatus.GetOrCreate(userId);
         progressStatus.CurrentQuestId = questId;
@@ -624,7 +626,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         {
             _missions.RecordQuestBattleLoss(userDb, request.IsRetired, request.IsAnnihilated, nowMs);
         }
-        QuestFinishResult result = _questEngine.Finish(userDb, quest, _questCampaignHelper.GetExtraQuestTarget(questId), isWin, nowMs);
+        QuestFinishResult result = _questEngine.Finish(userDb, quest, _questCampaignHelper.GetExtraQuestTarget(questId), isWin, nowMs, battles: BattlesOfRun(userDb, userId, questId));
 
         // Reset extra quest progress (always)
         EntityIUserExtraQuestProgressStatus? extraProgress = userDb.EntityIUserExtraQuestProgressStatus
@@ -692,7 +694,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         return Task.FromResult(response);
     }
 
-    /// <summary>Restarts an event quest: resets mission progress.</summary>
+    /// <summary>Restarts an event quest.</summary>
     public override Task<RestartEventQuestResponse> RestartEventQuest(RestartEventQuestRequest request, ServerCallContext context)
     {
         long userId = context.GetUserId();
@@ -702,12 +704,10 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         int questId = request.QuestId;
 
         EntityIUserQuest userQuest = QuestEngine.GetOrCreateUserQuest(userDb, questId);
-        QuestEngine.MarkActive(userQuest, nowMs);
+        MarkRestarted(userDb, userQuest, questId, nowMs);
 
         EntitySQuestSession session = GetOrCreateQuestSession(userDb, userId, questId);
         userQuest.IsBattleOnly = session.IsBattleOnly;
-
-        _questEngine.ResetMissionProgress(userDb, questId);
 
         EntityIUserEventQuestProgressStatus progressStatus = userDb.EntityIUserEventQuestProgressStatus.GetOrCreate(userId);
         int restoredSceneId = session.CurrentQuestSceneId != 0 ? session.CurrentQuestSceneId : _questEngine.GetQuestStartSceneId(questId, session.IsBattleOnly);
@@ -742,7 +742,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         EntityMQuest? quest = _questEngine.FindQuest(questId);
         if (quest == null) return Task.FromResult(new FinishEventQuestResponse());
 
-        QuestFinishResult result = _questEngine.Finish(userDb, quest, ResolveEventQuestCampaignTarget(userDb, userId, questId), isWin, nowMs);
+        QuestFinishResult result = _questEngine.Finish(userDb, quest, ResolveEventQuestCampaignTarget(userDb, userId, questId), isWin, nowMs, battles: BattlesOfRun(userDb, userId, questId));
 
         // Reset event quest progress (always)
         EntityIUserEventQuestProgressStatus? progressStatus = userDb.EntityIUserEventQuestProgressStatus

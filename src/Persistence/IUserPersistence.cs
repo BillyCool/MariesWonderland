@@ -24,6 +24,9 @@ public interface IUserPersistence
     /// <summary>The user's battle log, oldest first.</summary>
     IReadOnlyList<EntitySBattleDetail> BattleDetails(long userId);
 
+    /// <summary>The battles of one quest recorded at or after <paramref name="sinceUtc"/>, oldest first.</summary>
+    IReadOnlyList<EntitySBattleDetail> BattleDetails(long userId, int questId, DateTime sinceUtc);
+
     /// <summary>The ids of every saved user.</summary>
     IReadOnlyList<long> UserIds();
 

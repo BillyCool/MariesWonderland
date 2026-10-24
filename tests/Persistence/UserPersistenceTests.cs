@@ -122,6 +122,20 @@ public sealed class UserPersistenceTests : IDisposable
     }
 
     [Fact]
+    public void BattleDetails_CanBeReadForOneQuestSinceItsStart()
+    {
+        UserDataStore store = NewStore();
+        DateTime start = _time.GetUtcNow().UtcDateTime;
+        store.RecordBattle(new EntitySBattleDetail { UserId = UserId, QuestId = 5, RecordedAt = start.AddMinutes(-10), MaxDamage = 1 });
+        store.RecordBattle(new EntitySBattleDetail { UserId = UserId, QuestId = 5, RecordedAt = start.AddMinutes(1), MaxDamage = 2 });
+        store.RecordBattle(new EntitySBattleDetail { UserId = UserId, QuestId = 8, RecordedAt = start.AddMinutes(2), MaxDamage = 3 });
+
+        EntitySBattleDetail detail = Assert.Single(store.BattleDetails(UserId, 5, start));
+
+        Assert.Equal(2, detail.MaxDamage);
+    }
+
+    [Fact]
     public void UsersDevicesAndSessions_SurviveARestart()
     {
         UserDataStore store = NewStore();

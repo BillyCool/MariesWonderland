@@ -22,6 +22,7 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
     private readonly ImportantItemEffectHelper _importantItems = importantItems;
     private readonly MissionTracker _missions = missions;
     private readonly DevModeOptions _devMode = devMode.Value;
+    private readonly QuestMissionEvaluator _missionEvaluator = new(masterDb);
 
     public EntityMQuest? FindQuest(int questId)
         => _masterDb.EntityMQuest.FirstOrDefault(q => q.QuestId == questId);
@@ -104,30 +105,16 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
         userQuest.LastClearDatetime = nowMs;
     }
 
-    /// <summary>Resets the progress of the quest's missions so a restarted run evaluates them again.</summary>
-    public void ResetMissionProgress(DarkUserMemoryDatabase userDb, int questId)
-    {
-        // Invisible missions stay cleared: hidden stories unlock from them.
-        EntityMQuest? quest = FindQuest(questId);
-        HashSet<int> invisibleMissionIds = quest == null ? [] : [.. InvisibleMissionIds(quest)];
-        foreach (EntityIUserQuestMission mission in userDb.EntityIUserQuestMission
-            .Where(m => m.QuestId == questId && !invisibleMissionIds.Contains(m.QuestMissionId)))
-        {
-            mission.IsClear = false;
-            mission.ProgressValue = 0;
-            mission.LatestClearDatetime = 0;
-        }
-    }
-
     /// <summary>
     /// Finishes a run. A win grants EXP and gold, first-clear rewards (first clear only), the rewards of
     /// missions not yet cleared plus the big win when this run completes them, and drops; then marks the
     /// quest and its missions cleared. A loss (retired or annihilated) grants nothing and leaves the
     /// missions as they were; a quest cleared before goes back to <see cref="QuestStateType.CLEARED"/>.
     /// A replay win grants only EXP, gold and drops: replay quests have no first-clear or mission rewards
-    /// and keep no mission rows.
+    /// and keep no mission rows. A mission counts when the run's <paramref name="battles"/> and deck meet its
+    /// condition (<see cref="QuestMissionEvaluator"/>); without battles every mission counts.
     /// </summary>
-    public QuestFinishResult Finish(DarkUserMemoryDatabase userDb, EntityMQuest quest, QuestCampaignTarget campaignTarget, bool isWin, long nowMs, bool isReplay = false)
+    public QuestFinishResult Finish(DarkUserMemoryDatabase userDb, EntityMQuest quest, QuestCampaignTarget campaignTarget, bool isWin, long nowMs, bool isReplay = false, IReadOnlyList<EntitySBattleDetail>? battles = null)
     {
         EntityIUserQuest userQuest = GetOrCreateUserQuest(userDb, quest.QuestId);
 
@@ -144,9 +131,12 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
         bool isFirstClear = userQuest.ClearCount == 0 && !isReplay;
 
         List<EntityMQuestFirstClearRewardGroup> firstClearRows = isFirstClear ? ResolveFirstClearRewardRows(userDb, quest) : [];
+        QuestRun? run = battles == null ? null : _missionEvaluator.BuildRun(userDb, quest.QuestId, battles);
         List<QuestReward> missionClearRewards = [];
         List<QuestReward> bigWinRewards = [];
+        HashSet<int> missionsMetThisRun = [];
         int regularMissionCount = 0;
+        bool allRegularMissionsCleared = true;
         int bigWinMissionId = 0;
 
         IEnumerable<int> missionIds = isReplay ? [] : MissionIds(quest);
@@ -165,20 +155,32 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
             }
 
             regularMissionCount++;
-            if (!IsMissionCleared(userDb, quest.QuestId, mission.QuestMissionId))
+            bool wasCleared = IsMissionCleared(userDb, quest.QuestId, mission.QuestMissionId);
+            bool isMet = run == null || _missionEvaluator.IsMet(mission, run);
+            if (isMet)
             {
-                AddMissionReward(missionClearRewards, mission);
+                missionsMetThisRun.Add(mission.QuestMissionId);
+                if (!wasCleared)
+                {
+                    AddMissionReward(missionClearRewards, mission);
+                }
             }
+
+            allRegularMissionsCleared &= wasCleared || isMet;
         }
 
         bool isBigWin = false;
-        if (regularMissionCount > 0 && bigWinMissionId != 0 && !IsMissionCleared(userDb, quest.QuestId, bigWinMissionId))
+        if (regularMissionCount > 0 && bigWinMissionId != 0 && allRegularMissionsCleared)
         {
-            isBigWin = true;
-            EntityMQuestMission? bigWinMission = _masterDb.EntityMQuestMission.FirstOrDefault(m => m.QuestMissionId == bigWinMissionId);
-            if (bigWinMission != null)
+            missionsMetThisRun.Add(bigWinMissionId);
+            if (!IsMissionCleared(userDb, quest.QuestId, bigWinMissionId))
             {
-                AddMissionReward(bigWinRewards, bigWinMission);
+                isBigWin = true;
+                EntityMQuestMission? bigWinMission = _masterDb.EntityMQuestMission.FirstOrDefault(m => m.QuestMissionId == bigWinMissionId);
+                if (bigWinMission != null)
+                {
+                    AddMissionReward(bigWinRewards, bigWinMission);
+                }
             }
         }
 
@@ -207,7 +209,7 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
         _missions.RecordQuestClear(userDb, new MissionQuestEvent(campaignTarget, deckCharacterIds, deckCostumeIds, quest.DailyClearableCount), 1, isSkipped: false, nowMs);
         if (!isReplay)
         {
-            ClearQuestMissions(userDb, quest.QuestId, nowMs);
+            ClearQuestMissions(userDb, quest.QuestId, nowMs, missionsMetThisRun);
         }
 
         return new QuestFinishResult
@@ -371,8 +373,11 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
         return appliedRewards;
     }
 
-    /// <summary>Marks all of the quest's missions cleared, creating any missing rows.</summary>
-    public void ClearQuestMissions(DarkUserMemoryDatabase userDb, int questId, long nowMs)
+    /// <summary>
+    /// Marks the quest's missions cleared, creating any missing rows: all of them, or only
+    /// <paramref name="clearOnly"/> among the listed ones.
+    /// </summary>
+    public void ClearQuestMissions(DarkUserMemoryDatabase userDb, int questId, long nowMs, IReadOnlySet<int>? clearOnly = null)
     {
         EntityMQuest? quest = FindQuest(questId);
         if (quest == null)
@@ -381,7 +386,7 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
         }
 
         // Invisible missions (no rewards, never listed) are cleared too; hidden stories unlock from them.
-        foreach (int missionId in MissionIds(quest).Concat(InvisibleMissionIds(quest)))
+        foreach (int missionId in MissionIds(quest).Where(id => clearOnly == null || clearOnly.Contains(id)).Concat(InvisibleMissionIds(quest)))
         {
             EntityIUserQuestMission userMission = userDb.EntityIUserQuestMission.GetOrCreate(
                 m => m.QuestId == quest.QuestId && m.QuestMissionId == missionId,

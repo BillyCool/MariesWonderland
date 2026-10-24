@@ -109,6 +109,21 @@ public class UserDataStore(TimeProvider timeProvider, IUserPersistence? persiste
         }
     }
 
+    /// <summary>The battles of one quest recorded at or after <paramref name="sinceUtc"/>, oldest first.</summary>
+    public IReadOnlyList<EntitySBattleDetail> BattleDetails(long userId, int questId, DateTime sinceUtc)
+    {
+        if (_persistence != null)
+            return _persistence.BattleDetails(userId, questId, sinceUtc);
+
+        if (!_battleLogs.TryGetValue(userId, out List<EntitySBattleDetail>? log))
+            return [];
+
+        lock (log)
+        {
+            return [.. log.Where(d => d.QuestId == questId && d.RecordedAt >= sinceUtc)];
+        }
+    }
+
     /// <summary>
     /// Look up or create a user by UUID. Returns the userId and whether the user is new.
     /// For new users, seeds the initial data into their database.

@@ -8,20 +8,21 @@ using MariesWonderland.Proto.Quest;
 using MariesWonderland.Quests;
 using MariesWonderland.Tests.Infrastructure;
 using Microsoft.Extensions.Options;
+using Microsoft.Extensions.Time.Testing;
 using QuestService = MariesWonderland.Services.QuestService;
 
 namespace MariesWonderland.Tests.Quests;
 
 public class MainQuestFlowTests(MasterDatabaseFixture fixture) : ServiceTestBase(fixture), IClassFixture<MasterDatabaseFixture>
 {
-    private (QuestService Service, DarkUserMemoryDatabase UserDb, long UserId) CreateService()
+    private (QuestService Service, DarkUserMemoryDatabase UserDb, long UserId) CreateService(TimeProvider? time = null)
     {
         UserDataStore store = new(TimeProvider.System);
         (long userId, _) = store.RegisterOrGetUser("main-quest-flow-test", MasterDb);
         store.TryGet(userId, out DarkUserMemoryDatabase userDb);
         QuestCampaignHelper campaigns = new(MasterDb);
         MissionTracker missions = new(MasterDb, new MissionCatalog(MasterDb, MissionFilterTable.Empty));
-        QuestService service = new(store, MasterDb, new QuestEngine(MasterDb, GameConfig, campaigns, new ImportantItemEffectHelper(MasterDb), missions, Options.Create(new DevModeOptions())), campaigns, missions, TimeProvider.System);
+        QuestService service = new(store, MasterDb, new QuestEngine(MasterDb, GameConfig, campaigns, new ImportantItemEffectHelper(MasterDb), missions, Options.Create(new DevModeOptions())), campaigns, missions, time ?? TimeProvider.System);
         return (service, userDb, userId);
     }
 
@@ -126,6 +127,41 @@ public class MainQuestFlowTests(MasterDatabaseFixture fixture) : ServiceTestBase
             Assert.Equal((int)QuestStateType.CLEARED, previousUserQuest.QuestStateType);
             Assert.Equal(1, previousUserQuest.ClearCount);
         }
+    }
+
+    [Fact]
+    public async Task SceneProgress_IntoAHalfResultScene_LeavesTheQuestMissionsForTheFinish()
+    {
+        (QuestService service, DarkUserMemoryDatabase userDb, long userId) = CreateService();
+        EntityMQuestScene halfResult = MasterDb.EntityMQuestScene
+            .Where(s => s.QuestResultType == QuestResultType.HALF_RESULT && QuestEngine.IsPlayable(MasterDb.EntityMQuest.FirstOrDefault(q => q.QuestId == s.QuestId)))
+            .OrderBy(s => s.QuestSceneId)
+            .First();
+
+        await service.UpdateMainQuestSceneProgress(new UpdateMainQuestSceneProgressRequest { QuestSceneId = halfResult.QuestSceneId }, ContextFor(userId));
+
+        Assert.DoesNotContain(userDb.EntityIUserQuestMission, m => m.QuestId == halfResult.QuestId && m.IsClear);
+    }
+
+    [Fact]
+    public async Task Restart_WithTheSessionLeft_KeepsTheRunsStart_ButAfterAFinishStartsANewRun()
+    {
+        FakeTimeProvider time = new(new DateTimeOffset(2026, 10, 24, 12, 0, 0, TimeSpan.Zero));
+        (QuestService service, DarkUserMemoryDatabase userDb, long userId) = CreateService(time);
+        EntityMQuest quest = FindPlayableMainQuest();
+        await service.StartMainQuest(new StartMainQuestRequest { QuestId = quest.QuestId, IsMainFlow = false, UserDeckNumber = 1 }, ContextFor(userId));
+        long start = userDb.EntityIUserQuest.Single(q => q.QuestId == quest.QuestId).LatestStartDatetime;
+
+        // Coming back to a run the app was closed in: the battles fought before still belong to it.
+        time.Advance(TimeSpan.FromMinutes(5));
+        await service.RestartMainQuest(new RestartMainQuestRequest { QuestId = quest.QuestId }, ContextFor(userId));
+        Assert.Equal(start, userDb.EntityIUserQuest.Single(q => q.QuestId == quest.QuestId).LatestStartDatetime);
+
+        // After the run ended (abandoned here), a restart is a new run.
+        await service.FinishMainQuest(new FinishMainQuestRequest { QuestId = quest.QuestId, IsMainFlow = false, IsRetired = true }, ContextFor(userId));
+        time.Advance(TimeSpan.FromMinutes(5));
+        await service.RestartMainQuest(new RestartMainQuestRequest { QuestId = quest.QuestId }, ContextFor(userId));
+        Assert.True(userDb.EntityIUserQuest.Single(q => q.QuestId == quest.QuestId).LatestStartDatetime > start);
     }
 
     [Fact]

@@ -110,6 +110,12 @@ public sealed class EfUserPersistence(Func<UserDbContext> createContext) : IUser
         return [.. db.Set<EntitySBattleDetail>().AsNoTracking().Where(d => d.UserId == userId).OrderBy(d => d.RecordedAt)];
     }
 
+    public IReadOnlyList<EntitySBattleDetail> BattleDetails(long userId, int questId, DateTime sinceUtc)
+    {
+        using UserDbContext db = createContext();
+        return [.. db.Set<EntitySBattleDetail>().AsNoTracking().Where(d => d.UserId == userId && d.QuestId == questId && d.RecordedAt >= sinceUtc).OrderBy(d => d.RecordedAt)];
+    }
+
     public IReadOnlyList<long> UserIds()
     {
         using UserDbContext db = createContext();

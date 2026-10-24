@@ -272,22 +272,6 @@ public class QuestEngineTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         Assert.Equal(MasterDb.EntityMQuestMissionGroup.Count(g => g.QuestMissionGroupId == quest.QuestMissionGroupId), result.MissionClearRewards.Count + result.MissionClearCompleteRewards.Count);
     }
 
-    [Fact]
-    public void ResetMissionProgress_KeepsInvisibleMissionsCleared()
-    {
-        QuestEngine engine = CreateEngine();
-        EntityMQuest quest = FindQuestWithInvisibleMissions();
-        HashSet<int> invisibleIds = InvisibleMissionIds(quest);
-        DarkUserMemoryDatabase userDb = CreateUser();
-        engine.ClearQuestMissions(userDb, quest.QuestId, NowMs);
-
-        engine.ResetMissionProgress(userDb, quest.QuestId);
-
-        List<EntityIUserQuestMission> rows = [.. userDb.EntityIUserQuestMission.Where(m => m.QuestId == quest.QuestId)];
-        Assert.All(rows.Where(m => invisibleIds.Contains(m.QuestMissionId)), m => Assert.True(m.IsClear));
-        Assert.All(rows.Where(m => !invisibleIds.Contains(m.QuestMissionId)), m => Assert.False(m.IsClear));
-    }
-
     private EntityMQuest FindQuestWithInvisibleMissions()
         => MasterDb.EntityMQuest
             .Where(q => q.InvisibleQuestMissionGroupId != 0 && q.QuestMissionGroupId != 0)
@@ -311,21 +295,6 @@ public class QuestEngineTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         => MasterDb.EntityMNumericalParameterMap
             .Single(r => r.NumericalParameterMapId == LevelHelper.UserExpMapId && r.ParameterKey == level)
             .ParameterValue;
-
-    [Fact]
-    public void ResetMissionProgress_UnclearsTheQuestsMissions()
-    {
-        QuestEngine engine = CreateEngine();
-        EntityMQuest quest = FindRewardingQuest();
-        DarkUserMemoryDatabase userDb = CreateUser();
-        engine.ClearQuestMissions(userDb, quest.QuestId, NowMs);
-
-        engine.ResetMissionProgress(userDb, quest.QuestId);
-
-        List<EntityIUserQuestMission> missions = [.. userDb.EntityIUserQuestMission.Where(m => m.QuestId == quest.QuestId)];
-        Assert.NotEmpty(missions);
-        Assert.All(missions, m => Assert.False(m.IsClear));
-    }
 
     [Fact]
     public void LevelForExp_UsesHighestThresholdReached()
