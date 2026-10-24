@@ -30,9 +30,13 @@ public sealed class DevModeOptions
     /// <summary>Starting or skipping a quest costs no stamina.</summary>
     public bool? FreeStamina { get; init; }
 
+    /// <summary>Every summon price is 0 gems or tickets, so banners can be drawn without limit.</summary>
+    public bool? FreeGacha { get; init; }
+
     public bool IsGrpcDiskLogEnabled => GrpcDiskLog ?? Enabled;
     public bool IsRequestJournalEnabled => RequestJournal ?? Enabled;
     public bool IsDebugEndpointsEnabled => DebugEndpoints ?? Enabled;
     public bool IsMasterDataHotReloadEnabled => MasterDataHotReload ?? Enabled;
     public bool IsFreeStaminaEnabled => FreeStamina ?? Enabled;
+    public bool IsFreeGachaEnabled => FreeGacha ?? Enabled;
 }

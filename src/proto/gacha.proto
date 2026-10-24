@@ -41,18 +41,22 @@ message Gacha {
 	google.protobuf.Timestamp nextAutoResetDatetime = 7;
 	repeated GachaUnlockCondition gachaUnlockCondition = 8;
 	bool isUserGachaUnlock = 9;
-	google.protobuf.Timestamp startDatetime = 10;
-	google.protobuf.Timestamp endDatetime = 13;
-	repeated GachaPricePhase gachaPricePhase = 14;
-	int32 relatedMainQuestChapterId = 16;
-	int32 relatedEventQuestChapterId = 17;
-	int32 promotionMovieAssetId = 18;
-	int32 gachaMedalId = 19;
-	int32 gachaDecorationType = 20;
-	int32 sortOrder = 21;
-	bool isInactive = 22;
-	int32 informationId = 23;
-	bytes gachaMode = 24;
+	repeated GachaPricePhase gachaPricePhase = 10;
+	google.protobuf.Timestamp startDatetime = 13;
+	google.protobuf.Timestamp endDatetime = 14;
+	oneof gacha_mode {
+		GachaModeBasic gachaModeBasic = 16;
+		GachaModeStepupComposition gachaModeStepupComposition = 17;
+		GachaModeBoxComposition gachaModeBoxComposition = 18;
+	}
+	int32 relatedMainQuestChapterId = 19;
+	int32 promotionMovieAssetId = 20;
+	int32 relatedEventQuestChapterId = 21;
+	int32 gachaMedalId = 22;
+	int32 gachaDecorationType = 23;
+	int32 sortOrder = 24;
+	bool isInactive = 25;
+	int32 informationId = 26;
 }
 
 message GachaUnlockCondition {
@@ -62,19 +66,19 @@ message GachaUnlockCondition {
 
 message GachaPricePhase {
 	int32 gachaPricePhaseId = 1;
-	bool isEnabled = 2;
-	google.protobuf.Timestamp endDatetime = 3;
-	int32 limitExecCount = 4;
-	int32 userExecCount = 5;
-	int32 gachaBadgeType = 6;
-	int32 priceType = 7;
-	int32 priceId = 8;
-	int32 price = 9;
-	int32 regularPrice = 10;
-	int32 drawCount = 11;
-	int32 eachMaxExecCount = 12;
-	repeated GachaBonus gachaBonus = 13;
-	GachaOddsFixedRarity gachaOddsFixedRarity = 14;
+	google.protobuf.Timestamp endDatetime = 2;
+	int32 limitExecCount = 3;
+	int32 userExecCount = 4;
+	int32 priceType = 5;
+	int32 priceId = 6;
+	int32 price = 7;
+	int32 regularPrice = 8;
+	int32 drawCount = 9;
+	int32 eachMaxExecCount = 10;
+	repeated GachaBonus gachaBonus = 11;
+	GachaOddsFixedRarity gachaOddsFixedRarity = 12;
+	bool isEnabled = 13;
+	int32 gachaBadgeType = 14;
 }
 
 message GachaBonus {
@@ -174,7 +178,17 @@ message RewardGachaItem {
 }
 
 message GachaModeBasic {
-	string gachaAssetName = 1;
+	string naviCharacterCommentAssetName = 1;
+	string gachaAssetName = 2;
+	repeated GachaOddsItem promotionGachaOddsItem = 3;
+}
+
+message GachaOddsItem {
+	GachaItem gachaItem = 1;
+	GachaItem gachaItemBonus = 2;
+	int32 maxDrawableCount = 3;
+	int32 drewCount = 4;
+	bool isTarget = 5;
 }
 
 message GachaModeStepupComposition {
@@ -183,13 +197,22 @@ message GachaModeStepupComposition {
 	int32 currentStepNumber = 3;
 	string naviCharacterCommentAssetName = 4;
 	string gachaAssetName = 5;
-	int32 currentLoopCount = 6;
+	repeated GachaOddsItem promotionGachaOddsItem = 6;
+	int32 currentLoopCount = 7;
 }
 
 message GachaModeBoxComposition {
 	int32 gachaBoxGroupId = 1;
 	int32 boxNumber = 2;
 	int32 currentBoxNumber = 3;
-	string gachaAssetName = 4;
-	int32 gachaPricePhaseId = 5;
+	bool isCurrentBoxResettable = 4;
+	string naviCharacterCommentAssetName = 5;
+	string gachaAssetName = 6;
+	repeated GachaOddsItem promotionGachaOddsItem = 7;
+	int32 gachaPricePhaseId = 8;
+	bool isAlreadyDrawn = 9;
+	bool isResettableByDrawingAllTargets = 10;
+	bool isInvalidReset = 11;
+	bool isHideMultipleDrawButton = 12;
+	int32 gachaDescriptionTextId = 13;
 }

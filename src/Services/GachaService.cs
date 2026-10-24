@@ -1,6 +1,7 @@
 using Google.Protobuf;
 using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
+using MariesWonderland.Configuration;
 using MariesWonderland.Data;
 using MariesWonderland.Extensions;
 using MariesWonderland.Helpers;
@@ -9,10 +10,11 @@ using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.Gacha;
 using MariesWonderland.Summons;
+using Microsoft.Extensions.Options;
 
 namespace MariesWonderland.Services;
 
-public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store, GameConfig gameConfig, MissionTracker missions, BoxSummonTable boxSummons, TimeProvider timeProvider)
+public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store, GameConfig gameConfig, MissionTracker missions, BoxSummonTable boxSummons, TimeProvider timeProvider, IOptions<DevModeOptions> devMode)
     : MariesWonderland.Proto.Gacha.GachaService.GachaServiceBase
 {
     private readonly MissionTracker _missions = missions;
@@ -21,6 +23,7 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
     private readonly UserDataStore _store = store;
     private readonly GameConfig _gameConfig = gameConfig;
     private readonly TimeProvider _timeProvider = timeProvider;
+    private readonly DevModeOptions _devMode = devMode.Value;
 
     private const int PhaseIdMultiplier = 10;
     private const int StepUpGroupDivisor = 1000;
@@ -106,6 +109,8 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
 
         return Task.FromResult(response);
     }
+
+    private const string NaviCommentAssetName = "production";
 
     /// <summary>
     /// Returns gacha details for the requested gacha IDs.
@@ -642,8 +647,22 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
             entries.Add(entry with { PricePhases = phases, MaxStepNumber = maxStep });
         }
 
-        return entries;
+        return _devMode.IsFreeGachaEnabled ? [.. entries.Select(e => e with { PricePhases = [.. e.PricePhases.Select(Free)] })] : entries;
     }
+
+    private static PricePhaseEntry Free(PricePhaseEntry phase) => new()
+    {
+        PhaseId = phase.PhaseId,
+        PriceType = phase.PriceType,
+        PriceId = phase.PriceId,
+        Price = 0,
+        RegularPrice = 0,
+        DrawCount = phase.DrawCount,
+        FixedRarityMin = phase.FixedRarityMin,
+        FixedCount = phase.FixedCount,
+        LimitExecCount = phase.LimitExecCount,
+        StepNumber = phase.StepNumber
+    };
 
     private static List<PricePhaseEntry> BuildPremiumBasicPricePhases(int gachaId)
     {
@@ -742,7 +761,7 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
     private DrawResponse DrawBoxSummon(DarkUserMemoryDatabase userDb, GachaEntry entry, BoxSummon summon, int requestedDraws, long nowMs)
     {
         int tickets = userDb.EntityIUserConsumableItem.FirstOrDefault(c => c.ConsumableItemId == summon.TicketItemId)?.Count ?? 0;
-        int draws = Math.Min(requestedDraws, tickets);
+        int draws = _devMode.IsFreeGachaEnabled ? requestedDraws : Math.Min(requestedDraws, tickets);
         EntitySGachaBannerState bannerState = GetOrCreateBannerState(userDb, entry.GachaId);
         if (summon.Kind == BoxSummonKind.CHAPTER && bannerState.BoxRefillDatetime < GameDayHelper.StartOfMonth(nowMs))
         {
@@ -750,7 +769,7 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
             bannerState.BoxRefillDatetime = nowMs;
         }
 
-        if (draws > 0)
+        if (draws > 0 && !_devMode.IsFreeGachaEnabled)
         {
             DeductPrice(userDb, (int)PriceType.CONSUMABLE_ITEM, summon.TicketItemId, draws);
         }
@@ -939,7 +958,8 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
                 PriceType = p.PriceType,
                 PriceId = p.PriceId,
                 Price = p.Price,
-                RegularPrice = p.RegularPrice,
+                // The client strikes the regular price through whenever one is set, so only send it for a discount.
+                RegularPrice = p.RegularPrice == p.Price ? 0 : p.RegularPrice,
                 DrawCount = p.DrawCount,
                 LimitExecCount = limitExec,
                 EachMaxExecCount = p.DrawCount,
@@ -956,29 +976,38 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
         int stepNumber = bannerState?.StepNumber > 0 ? bannerState.StepNumber : 1;
         int loopCount = bannerState?.LoopCount ?? 0;
 
-        gacha.GachaMode = entry.ModeType switch
+        switch (entry.ModeType)
         {
-            GachaModeType.BOX => new GachaModeBoxComposition
-            {
-                GachaBoxGroupId = entry.GachaId,
-                BoxNumber = boxNumber,
-                CurrentBoxNumber = boxNumber,
-                GachaAssetName = entry.BannerAssetName,
-                GachaPricePhaseId = entry.PricePhases.Count > 0 ? entry.PricePhases[0].PhaseId : 0
-            }.ToByteString(),
-            GachaModeType.STEPUP => new GachaModeStepupComposition
-            {
-                GachaStepGroupId = entry.GachaId,
-                StepNumber = 1,
-                CurrentStepNumber = stepNumber,
-                GachaAssetName = entry.BannerAssetName,
-                CurrentLoopCount = loopCount
-            }.ToByteString(),
-            _ => new GachaModeBasic
-            {
-                GachaAssetName = entry.BannerAssetName
-            }.ToByteString()
-        };
+            case GachaModeType.BOX:
+                gacha.GachaModeBoxComposition = new GachaModeBoxComposition
+                {
+                    GachaBoxGroupId = entry.GachaId,
+                    BoxNumber = boxNumber,
+                    CurrentBoxNumber = boxNumber,
+                    NaviCharacterCommentAssetName = NaviCommentAssetName,
+                    GachaAssetName = entry.BannerAssetName,
+                    GachaPricePhaseId = entry.PricePhases.Count > 0 ? entry.PricePhases[0].PhaseId : 0
+                };
+                break;
+            case GachaModeType.STEPUP:
+                gacha.GachaModeStepupComposition = new GachaModeStepupComposition
+                {
+                    GachaStepGroupId = entry.GachaId,
+                    StepNumber = 1,
+                    CurrentStepNumber = stepNumber,
+                    NaviCharacterCommentAssetName = NaviCommentAssetName,
+                    GachaAssetName = entry.BannerAssetName,
+                    CurrentLoopCount = loopCount
+                };
+                break;
+            default:
+                gacha.GachaModeBasic = new GachaModeBasic
+                {
+                    NaviCharacterCommentAssetName = NaviCommentAssetName,
+                    GachaAssetName = entry.BannerAssetName
+                };
+                break;
+        }
 
         return gacha;
     }

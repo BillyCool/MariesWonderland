@@ -1,3 +1,4 @@
+using MariesWonderland.Configuration;
 using MariesWonderland.Data;
 using MariesWonderland.Helpers;
 using MariesWonderland.Missions;
@@ -7,6 +8,7 @@ using MariesWonderland.Proto.Gacha;
 using MariesWonderland.Proto.Gift;
 using MariesWonderland.Summons;
 using MariesWonderland.Tests.Infrastructure;
+using Microsoft.Extensions.Options;
 using Microsoft.Extensions.Time.Testing;
 using GachaServiceImpl = MariesWonderland.Services.GachaService;
 using GiftServiceImpl = MariesWonderland.Services.GiftService;
@@ -26,7 +28,7 @@ public class BoxSummonTests(MasterDatabaseFixture fixture) : ServiceTestBase(fix
     private static BoxSummonTable RealTable => BoxSummonTable.Load(BoxSummonTable.DefaultPath);
 
     private GachaServiceImpl CreateService(UserDataStore store, BoxSummonTable table, TimeProvider time)
-        => new(MasterDb, store, GameConfig, new MissionTracker(MasterDb, new MissionCatalog(MasterDb, MissionFilterTable.Empty)), table, time);
+        => new(MasterDb, store, GameConfig, new MissionTracker(MasterDb, new MissionCatalog(MasterDb, MissionFilterTable.Empty)), table, time, Options.Create(new DevModeOptions()));
 
     private static DarkUserMemoryDatabase UserWithTickets(int ticketItemId, int count)
     {

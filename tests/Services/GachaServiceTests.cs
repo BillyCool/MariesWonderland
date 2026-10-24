@@ -1,4 +1,5 @@
-using Google.Protobuf.WellKnownTypes;
+﻿using Google.Protobuf.WellKnownTypes;
+using MariesWonderland.Configuration;
 using MariesWonderland.Data;
 using MariesWonderland.Missions;
 using MariesWonderland.Models.Entities;
@@ -6,6 +7,7 @@ using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.Gacha;
 using MariesWonderland.Summons;
 using MariesWonderland.Tests.Infrastructure;
+using Microsoft.Extensions.Options;
 using GachaServiceImpl = MariesWonderland.Services.GachaService;
 
 namespace MariesWonderland.Tests.Services;
@@ -60,7 +62,7 @@ public class GachaServiceTests
         Assert.False(stepUp.GachaPricePhase.Single(phase => phase.GachaPricePhaseId == StepUpGroupId * 10 + 1).IsEnabled);
         Assert.True(stepUp.GachaPricePhase.Single(phase => phase.GachaPricePhaseId == StepUpGroupId * 10 + 2).IsEnabled);
 
-        GachaModeStepupComposition stepUpMode = GachaModeStepupComposition.Parser.ParseFrom(stepUp.GachaMode);
+        GachaModeStepupComposition stepUpMode = stepUp.GachaModeStepupComposition;
         Assert.Equal(2, stepUpMode.CurrentStepNumber);
         Assert.Equal(3, stepUpMode.CurrentLoopCount);
 
@@ -69,6 +71,26 @@ public class GachaServiceTests
         Assert.Equal(3, premium.GachaPricePhase.Count);
 
         Assert.DoesNotContain(response.Gacha, gacha => gacha.GachaId == ChapterBannerId);
+    }
+
+    [Fact]
+    public async Task GetGachaList_WithFreeGacha_PricesEveryPhaseAtZero()
+    {
+        DarkMasterMemoryDatabase masterDb = new();
+        AddMedal(masterDb, PremiumBannerId, gachaMedalId: 301);
+        AddMedal(masterDb, StepUpFirstBannerId, gachaMedalId: 302);
+        AddBanner(masterDb, "limited_banner", PremiumBannerId, sortOrder: 20);
+        AddBanner(masterDb, "step_up_first", StepUpFirstBannerId, sortOrder: 10);
+
+        GachaServiceImpl paid = CreateService(masterDb, CreateUserDb());
+        GachaServiceImpl free = CreateService(masterDb, CreateUserDb(), devMode: new DevModeOptions { FreeGacha = true });
+
+        GetGachaListResponse paidList = await paid.GetGachaList(new GetGachaListRequest(), FakeServerCallContext.For(UserId));
+        GetGachaListResponse freeList = await free.GetGachaList(new GetGachaListRequest(), FakeServerCallContext.For(UserId));
+
+        Assert.Contains(paidList.Gacha.SelectMany(g => g.GachaPricePhase), phase => phase.Price > 0);
+        Assert.Equal(paidList.Gacha.Sum(g => g.GachaPricePhase.Count), freeList.Gacha.Sum(g => g.GachaPricePhase.Count));
+        Assert.All(freeList.Gacha.SelectMany(g => g.GachaPricePhase), phase => Assert.Equal((0, 0), (phase.Price, phase.RegularPrice)));
     }
 
     [Fact]
@@ -122,7 +144,7 @@ public class GachaServiceTests
             Assert.Equal(MedalConsumableItemId, result.MedalBonus.PossessionId);
         });
 
-        GachaModeStepupComposition firstNextMode = GachaModeStepupComposition.Parser.ParseFrom(firstResponse.NextGacha.GachaMode);
+        GachaModeStepupComposition firstNextMode = firstResponse.NextGacha.GachaModeStepupComposition;
         Assert.Equal(2, firstNextMode.CurrentStepNumber);
         Assert.True(firstResponse.NextGacha.GachaPricePhase.Single(phase => phase.GachaPricePhaseId == StepUpGroupId * 10 + 2).IsEnabled);
 
@@ -142,7 +164,7 @@ public class GachaServiceTests
         Assert.Equal(20, bannerState.DrawCount);
         Assert.Equal(20, bannerState.MedalCount);
 
-        GachaModeStepupComposition secondNextMode = GachaModeStepupComposition.Parser.ParseFrom(secondResponse.NextGacha.GachaMode);
+        GachaModeStepupComposition secondNextMode = secondResponse.NextGacha.GachaModeStepupComposition;
         Assert.Equal(1, secondNextMode.CurrentStepNumber);
     }
 
@@ -212,11 +234,11 @@ public class GachaServiceTests
         Assert.Equal(1, Assert.Single(userDb.EntityIUserMaterial).Count);
     }
 
-    private static GachaServiceImpl CreateService(DarkMasterMemoryDatabase masterDb, DarkUserMemoryDatabase userDb, GameConfig? gameConfig = null)
+    private static GachaServiceImpl CreateService(DarkMasterMemoryDatabase masterDb, DarkUserMemoryDatabase userDb, GameConfig? gameConfig = null, DevModeOptions? devMode = null)
     {
         UserDataStore store = new(TimeProvider.System);
         store.Set(UserId, userDb);
-        return new GachaServiceImpl(masterDb, store, gameConfig ?? new GameConfig(), new MissionTracker(masterDb, new MissionCatalog(masterDb, MissionFilterTable.Empty)), BoxSummonTable.Empty, TimeProvider.System);
+        return new GachaServiceImpl(masterDb, store, gameConfig ?? new GameConfig(), new MissionTracker(masterDb, new MissionCatalog(masterDb, MissionFilterTable.Empty)), BoxSummonTable.Empty, TimeProvider.System, Options.Create(devMode ?? new DevModeOptions()));
     }
 
     private static DarkUserMemoryDatabase CreateUserDb() => new() { UserId = UserId };
