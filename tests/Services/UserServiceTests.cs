@@ -381,6 +381,23 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
     }
 
     [Fact]
+    public async Task Auth_ReturningAccount_CountsTheLoginOncePerGameDay()
+    {
+        UserDataStore store = new(TimeProvider.System);
+        (long userId, _) = store.RegisterOrGetUser("returning-uuid", MasterDb);
+        Assert.True(store.TryGet(userId, out DarkUserMemoryDatabase userDb));
+        EntityIUserLogin login = new() { UserId = userId, TotalLoginCount = 5, LastLoginDatetime = 1000 };
+        userDb.EntityIUserLogin.Clear();
+        userDb.EntityIUserLogin.Add(login);
+        UserService service = CreateService(store);
+
+        await service.Auth(new AuthUserRequest { Uuid = "returning-uuid" }, ContextFor(userId));
+        await service.Auth(new AuthUserRequest { Uuid = "returning-uuid" }, ContextFor(userId));
+
+        Assert.Equal(6, login.TotalLoginCount);
+    }
+
+    [Fact]
     public void RegisterOrGetUser_NewUser_SeedsOneRowPerUserTablesOnce()
     {
         UserDataStore store = new(TimeProvider.System);

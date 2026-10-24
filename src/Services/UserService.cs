@@ -58,6 +58,11 @@ public class UserService(UserDataStore store, UserDataSeeder seeder, DarkMasterM
         deviceRecord.LastAuthAt = nowMs;
         if (isNew) deviceRecord.RegisteredAt = nowMs;
 
+        if (!isNew)
+        {
+            CountDailyLogin(userDb, userId, nowMs);
+        }
+
         Dictionary<string, TableSnapshot> after = UserDataDiffBuilder.Snapshot(userDb);
         _store.SaveChanges(userId, before, after, userDb);
         context.SetUserChanges(new UserChanges(userId, before, after));
@@ -118,6 +123,25 @@ public class UserService(UserDataStore store, UserDataSeeder seeder, DarkMasterM
         }
 
         return Task.FromResult(new GameStartResponse());
+    }
+
+    /// <summary>
+    /// Brings missions up to date and, on the first sign-in of a game day, counts the login. The client only calls
+    /// <c>GameStart</c> when a new account registers, so a returning account, restored or not, is counted here.
+    /// </summary>
+    private void CountDailyLogin(DarkUserMemoryDatabase userDb, long userId, long nowMs)
+    {
+        _missions.Refresh(userDb, nowMs);
+
+        EntityIUserLogin? login = userDb.EntityIUserLogin.FirstOrDefault(l => l.UserId == userId);
+        if (login != null && login.LastLoginDatetime >= GameDayHelper.StartOfDay(nowMs))
+        {
+            return;
+        }
+
+        RecordDailyLogin(userDb, userId, nowMs);
+        _missions.Record(userDb, MissionClearConditionType.USER_LOGIN_BY_COUNT, 1, nowMs);
+        _missions.Record(userDb, MissionClearConditionType.USER_LOGIN_BY_COUNT_FROM_UNLOCK, 1, nowMs);
     }
 
     /// <summary>
