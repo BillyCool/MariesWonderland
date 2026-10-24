@@ -342,8 +342,103 @@ public class ShopServiceTests
         Assert.InRange(status.StaminaUpdateDatetime, beforeMs, afterMs);
 
         EntityIUserShopItem purchaseHistory = Assert.Single(userDb.EntityIUserShopItem);
-        Assert.Equal(0, purchaseHistory.BoughtCount);
+        Assert.Equal(2, purchaseHistory.BoughtCount);
         Assert.InRange(purchaseHistory.LatestBoughtCountChangedDatetime, beforeMs, afterMs);
+    }
+
+    [Theory]
+    [InlineData(AutoResetType.DAILY, 1, "2026-10-24T12:00:00Z", 0)]
+    [InlineData(AutoResetType.DAILY, 1, "2026-10-25T09:00:00Z", 2)]
+    [InlineData(AutoResetType.DAILY, 7, "2026-10-18T12:00:00Z", 0)]
+    [InlineData(AutoResetType.DAILY, 7, "2026-10-20T12:00:00Z", 2)]
+    [InlineData(AutoResetType.MONTHLY, 1, "2026-09-30T12:00:00Z", 0)]
+    [InlineData(AutoResetType.MONTHLY, 1, "2026-10-02T12:00:00Z", 2)]
+    [InlineData(AutoResetType.NONE, 0, "2020-01-01T00:00:00Z", 2)]
+    public async Task RefreshUserData_GivesBackStockOnceItsResetHasPassed(AutoResetType resetType, int period, string lastBought, int expectedBoughtCount)
+    {
+        DarkMasterMemoryDatabase masterDb = CreateMasterDb();
+        AddShopItem(masterDb, LimitedStockShopItemId, PriceType.PAID_GEM, price: 0, limitedStockId: 1);
+        masterDb.EntityMShopItemLimitedStock.Add(new EntityMShopItemLimitedStock
+        {
+            ShopItemLimitedStockId = 1,
+            MaxCount = 3,
+            ShopItemAutoResetType = resetType,
+            ShopItemAutoResetPeriod = period
+        });
+
+        DarkUserMemoryDatabase userDb = CreateUserDb();
+        userDb.EntityIUserShopItem.Add(new EntityIUserShopItem
+        {
+            UserId = UserId,
+            ShopItemId = LimitedStockShopItemId,
+            BoughtCount = 2,
+            LatestBoughtCountChangedDatetime = DateTimeOffset.Parse(lastBought).ToUnixTimeMilliseconds()
+        });
+
+        DateTimeOffset now = new(2026, 10, 25, 12, 0, 0, TimeSpan.Zero);
+        ShopServiceImpl service = CreateService(masterDb, userDb, new GameConfig(), new Microsoft.Extensions.Time.Testing.FakeTimeProvider(now));
+
+        await service.RefreshUserData(new RefreshRequest(), FakeServerCallContext.For(UserId));
+
+        Assert.Equal(expectedBoughtCount, Assert.Single(userDb.EntityIUserShopItem).BoughtCount);
+    }
+
+    [Fact]
+    public async Task Buy_PastTheStockLimit_BuysNothing()
+    {
+        DarkMasterMemoryDatabase masterDb = CreateMasterDb();
+        AddShopItem(masterDb, LimitedStockShopItemId, PriceType.PAID_GEM, price: 25, limitedStockId: 1);
+        masterDb.EntityMShopItemLimitedStock.Add(new EntityMShopItemLimitedStock { ShopItemLimitedStockId = 1, MaxCount = 3 });
+        masterDb.EntityMShopItemContentPossession.Add(new EntityMShopItemContentPossession
+        {
+            ShopItemId = LimitedStockShopItemId,
+            PossessionType = PossessionType.CONSUMABLE_ITEM,
+            PossessionId = RewardConsumableItemId,
+            Count = 1
+        });
+
+        DarkUserMemoryDatabase userDb = CreateUserDb();
+        userDb.EntityIUserGem.Add(new EntityIUserGem { UserId = UserId, PaidGem = 1000 });
+        userDb.EntityIUserShopItem.Add(new EntityIUserShopItem { UserId = UserId, ShopItemId = LimitedStockShopItemId, BoughtCount = 2 });
+
+        ShopServiceImpl service = CreateService(masterDb, userDb);
+        BuyRequest request = new();
+        request.ShopItems.Add(LimitedStockShopItemId, 2);
+
+        await service.Buy(request, FakeServerCallContext.For(UserId));
+
+        Assert.Equal(1000, Assert.Single(userDb.EntityIUserGem).PaidGem);
+        Assert.Empty(userDb.EntityIUserConsumableItem);
+        Assert.Equal(2, Assert.Single(userDb.EntityIUserShopItem).BoughtCount);
+    }
+
+    [Fact]
+    public async Task CreatePurchaseTransaction_PastTheStockLimit_GrantsNothing()
+    {
+        DarkMasterMemoryDatabase masterDb = CreateMasterDb();
+        AddShopItem(masterDb, LimitedStockShopItemId, PriceType.PAID_GEM, price: 25, limitedStockId: 1);
+        masterDb.EntityMShopItemLimitedStock.Add(new EntityMShopItemLimitedStock { ShopItemLimitedStockId = 1, MaxCount = 3 });
+        masterDb.EntityMShopItemContentPossession.Add(new EntityMShopItemContentPossession
+        {
+            ShopItemId = LimitedStockShopItemId,
+            PossessionType = PossessionType.CONSUMABLE_ITEM,
+            PossessionId = RewardConsumableItemId,
+            Count = 1
+        });
+
+        DarkUserMemoryDatabase userDb = CreateUserDb();
+        userDb.EntityIUserGem.Add(new EntityIUserGem { UserId = UserId, PaidGem = 1000 });
+        userDb.EntityIUserShopItem.Add(new EntityIUserShopItem { UserId = UserId, ShopItemId = LimitedStockShopItemId, BoughtCount = 3 });
+
+        ShopServiceImpl service = CreateService(masterDb, userDb);
+
+        await service.CreatePurchaseTransaction(
+            new CreatePurchaseTransactionRequest { ShopItemId = LimitedStockShopItemId },
+            FakeServerCallContext.For(UserId));
+
+        Assert.Equal(1000, Assert.Single(userDb.EntityIUserGem).PaidGem);
+        Assert.Empty(userDb.EntityIUserConsumableItem);
+        Assert.Equal(3, Assert.Single(userDb.EntityIUserShopItem).BoughtCount);
     }
 
     [Fact]

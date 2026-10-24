@@ -189,6 +189,69 @@ public class LoginBonusServiceTests
     }
 
     [Fact]
+    public async Task ReceiveStamp_PageInsideARange_UsesTheRangeStartingBelowIt()
+    {
+        DarkMasterMemoryDatabase masterDb = new();
+        masterDb.EntityMLoginBonus.Add(new EntityMLoginBonus
+        {
+            LoginBonusId = 5,
+            TotalPageCount = 100
+        });
+        masterDb.EntityMLoginBonusStamp.AddRange(
+        [
+            new EntityMLoginBonusStamp
+            {
+                LoginBonusId = 5,
+                LowerPageNumber = 1,
+                StampNumber = 1,
+                RewardPossessionType = PossessionType.FREE_GEM,
+                RewardPossessionId = 1,
+                RewardCount = 1
+            },
+            new EntityMLoginBonusStamp
+            {
+                LoginBonusId = 5,
+                LowerPageNumber = 4,
+                StampNumber = 1,
+                RewardPossessionType = PossessionType.MATERIAL,
+                RewardPossessionId = 400,
+                RewardCount = 4
+            },
+            new EntityMLoginBonusStamp
+            {
+                LoginBonusId = 5,
+                LowerPageNumber = 4,
+                StampNumber = 2,
+                RewardPossessionType = PossessionType.MATERIAL,
+                RewardPossessionId = 401,
+                RewardCount = 5
+            }
+        ]);
+
+        DarkUserMemoryDatabase userDb = new() { UserId = UserId };
+        userDb.EntityIUserLoginBonus.Add(new EntityIUserLoginBonus
+        {
+            UserId = UserId,
+            LoginBonusId = 5,
+            CurrentPageNumber = 6,
+            CurrentStampNumber = 1
+        });
+
+        UserDataStore store = CreateStore(masterDb, userDb);
+        LoginBonusServiceImpl service = new(store, masterDb, TimeProvider.System);
+
+        await service.ReceiveStamp(new Empty(), FakeServerCallContext.For(UserId));
+
+        EntityIUserLoginBonus tracker = Assert.Single(userDb.EntityIUserLoginBonus);
+        Assert.Equal(6, tracker.CurrentPageNumber);
+        Assert.Equal(2, tracker.CurrentStampNumber);
+
+        EntitySUserGift gift = Assert.Single(userDb.EntitySUserGift);
+        Assert.Equal(401, gift.PossessionId);
+        Assert.Equal(5, gift.Count);
+    }
+
+    [Fact]
     public async Task ReceiveStamp_WhenLoginBonusIsExhausted_ThrowsFailedPreconditionWithoutMutatingState()
     {
         DarkMasterMemoryDatabase masterDb = new();

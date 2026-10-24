@@ -26,11 +26,16 @@ public class ShopService(UserDataStore store, DarkMasterMemoryDatabase masterDb,
         long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
         ShopType shopType = _masterDb.EntityMShop.FirstOrDefault(s => s.ShopId == request.ShopId)?.ShopType ?? ShopType.UNKNOWN;
 
+        ResetExpiredStock(userDb, nowMs);
+
         foreach ((int shopItemId, int qty) in request.ShopItems)
         {
             // Validate item exists in master data
             EntityMShopItem? item = _masterDb.EntityMShopItem.FirstOrDefault(i => i.ShopItemId == shopItemId);
             if (item == null) { continue; }
+
+            // Skip an item that would go past its stock limit
+            if (ExceedsStock(userDb, item, qty)) { continue; }
 
             // Deduct the total price; skip this item if funds are insufficient
             int totalPrice = item.Price * qty;
@@ -83,6 +88,55 @@ public class ShopService(UserDataStore store, DarkMasterMemoryDatabase masterDb,
             .Where(id => id != 0)];
     }
 
+    /// <summary>The stock limit of a shop item, or null when it has none.</summary>
+    private EntityMShopItemLimitedStock? FindStock(EntityMShopItem item) =>
+        item.ShopItemLimitedStockId > 0
+            ? _masterDb.EntityMShopItemLimitedStock.FirstOrDefault(s => s.ShopItemLimitedStockId == item.ShopItemLimitedStockId)
+            : null;
+
+    /// <summary>True when buying <paramref name="qty"/> more would go past the item's stock limit.</summary>
+    private bool ExceedsStock(DarkUserMemoryDatabase userDb, EntityMShopItem item, int qty)
+    {
+        EntityMShopItemLimitedStock? stock = FindStock(item);
+        if (stock == null)
+        {
+            return false;
+        }
+
+        int bought = userDb.EntityIUserShopItem.FirstOrDefault(s => s.ShopItemId == item.ShopItemId)?.BoughtCount ?? 0;
+        return bought + qty > stock.MaxCount;
+    }
+
+    /// <summary>
+    /// Gives back the stock of limited items whose reset has passed since their last purchase. Daily stock resets at
+    /// the game day, or at the game week when its period is 7 days (the only periods in the data are 1 and 7); monthly
+    /// stock at the game month.
+    /// </summary>
+    private void ResetExpiredStock(DarkUserMemoryDatabase userDb, long nowMs)
+    {
+        foreach (EntityIUserShopItem shopItem in userDb.EntityIUserShopItem.Where(s => s.BoughtCount > 0))
+        {
+            EntityMShopItem? item = _masterDb.EntityMShopItem.FirstOrDefault(i => i.ShopItemId == shopItem.ShopItemId);
+            EntityMShopItemLimitedStock? stock = item == null ? null : FindStock(item);
+            if (stock == null)
+            {
+                continue;
+            }
+
+            long boundary = stock.ShopItemAutoResetType switch
+            {
+                AutoResetType.DAILY => stock.ShopItemAutoResetPeriod >= 7 ? GameDayHelper.StartOfWeek(nowMs) : GameDayHelper.StartOfDay(nowMs),
+                AutoResetType.MONTHLY => GameDayHelper.StartOfMonth(nowMs),
+                _ => 0
+            };
+
+            if (shopItem.LatestBoughtCountChangedDatetime < boundary)
+            {
+                shopItem.BoughtCount = 0;
+            }
+        }
+    }
+
     /// <summary>Returns an empty response. CESA age-rating spending limits not yet implemented.</summary>
     public override Task<GetCesaLimitResponse> GetCesaLimit(Empty request, ServerCallContext context)
     {
@@ -95,6 +149,8 @@ public class ShopService(UserDataStore store, DarkMasterMemoryDatabase masterDb,
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
         long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
+
+        ResetExpiredStock(userDb, nowMs);
 
         List<int> itemShopPool = GetItemShopPool();
 
@@ -143,8 +199,10 @@ public class ShopService(UserDataStore store, DarkMasterMemoryDatabase masterDb,
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
         long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
+        ResetExpiredStock(userDb, nowMs);
+
         EntityMShopItem? item = _masterDb.EntityMShopItem.FirstOrDefault(i => i.ShopItemId == request.ShopItemId);
-        if (item != null)
+        if (item != null && !ExceedsStock(userDb, item, 1))
         {
             DeductPrice(userDb, item.PriceType, item.PriceId, item.Price);
 
@@ -165,17 +223,6 @@ public class ShopService(UserDataStore store, DarkMasterMemoryDatabase masterDb,
                 userDb.EntityIUserShopItem.Add(shopItem);
             }
             shopItem.BoughtCount++;
-
-            if (item.ShopItemLimitedStockId > 0)
-            {
-                EntityMShopItemLimitedStock? stock = _masterDb.EntityMShopItemLimitedStock
-                    .FirstOrDefault(s => s.ShopItemLimitedStockId == item.ShopItemLimitedStockId);
-                if (stock != null && shopItem.BoughtCount >= stock.MaxCount)
-                {
-                    shopItem.BoughtCount = 0;
-                }
-            }
-
             shopItem.LatestBoughtCountChangedDatetime = nowMs;
         }
 

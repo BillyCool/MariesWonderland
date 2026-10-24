@@ -101,9 +101,13 @@ public class LoginBonusService(UserDataStore store, DarkMasterMemoryDatabase mas
         return (nextPage, nextStamp, stamp);
     }
 
+    /// <summary>
+    /// The stamp's reward. Rewards are listed per range of pages, from <c>LowerPageNumber</c> up to the next listed
+    /// page, so the page uses the highest range starting at or below it.
+    /// </summary>
     private EntityMLoginBonusStamp? FindStamp(int loginBonusId, int pageNumber, int stampNumber) =>
-        _masterDb.EntityMLoginBonusStamp.FirstOrDefault(s =>
-            s.LoginBonusId == loginBonusId
-            && s.LowerPageNumber == pageNumber
-            && s.StampNumber == stampNumber);
+        _masterDb.EntityMLoginBonusStamp
+            .Where(s => s.LoginBonusId == loginBonusId && s.LowerPageNumber <= pageNumber && s.StampNumber == stampNumber)
+            .OrderByDescending(s => s.LowerPageNumber)
+            .FirstOrDefault();
 }
