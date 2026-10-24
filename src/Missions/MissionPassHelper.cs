@@ -13,11 +13,14 @@ namespace MariesWonderland.Missions;
 /// </summary>
 public static class MissionPassHelper
 {
+    private const int GiftExpirationDays = 30;
+
     /// <summary>
     /// Grants every reached level of the pass not claimed yet: free rewards always, premium rewards when the premium
-    /// item is owned. Returns the rewards granted (empty when there was nothing to claim).
+    /// item is owned. The rewards go to the inventory, or to the gift box when <paramref name="toGiftBox"/> is set.
+    /// Returns the rewards granted (empty when there was nothing to claim).
     /// </summary>
-    public static List<MissionRewardGrant> Claim(DarkUserMemoryDatabase userDb, DarkMasterMemoryDatabase masterDb, int missionPassId, long nowMs)
+    public static List<MissionRewardGrant> Claim(DarkUserMemoryDatabase userDb, DarkMasterMemoryDatabase masterDb, int missionPassId, long nowMs, bool toGiftBox = false)
     {
         EntityMMissionPass? pass = masterDb.EntityMMissionPass.Find(missionPassId);
         EntityIUserMissionPassPoint? progress = userDb.EntityIUserMissionPassPoint.FirstOrDefault(p => p.MissionPassId == missionPassId);
@@ -38,7 +41,24 @@ public static class MissionPassHelper
         List<MissionRewardGrant> granted = [];
         foreach (EntityMMissionPassRewardGroup reward in rewards)
         {
-            PossessionHelper.Apply(userDb, reward.PossessionType, reward.PossessionId, reward.Count, masterDb, nowMs);
+            if (toGiftBox)
+            {
+                userDb.EntitySUserGift.Add(new EntitySUserGift
+                {
+                    UserId = userDb.UserId,
+                    UserGiftUuid = Guid.NewGuid().ToString(),
+                    PossessionType = (int)reward.PossessionType,
+                    PossessionId = reward.PossessionId,
+                    Count = reward.Count,
+                    GrantDatetime = nowMs,
+                    ExpirationDatetime = nowMs + GiftExpirationDays * 24L * 60 * 60 * 1000
+                });
+            }
+            else
+            {
+                PossessionHelper.Apply(userDb, reward.PossessionType, reward.PossessionId, reward.Count, masterDb, nowMs);
+            }
+
             granted.Add(new MissionRewardGrant(reward.PossessionType, reward.PossessionId, reward.Count));
         }
 
@@ -52,8 +72,8 @@ public static class MissionPassHelper
     }
 
     /// <summary>
-    /// Claims what's left on the most recently ended pass that still has unclaimed levels. Returns that pass's id,
-    /// or 0 when no ended pass has anything left.
+    /// Sends what's left on the most recently ended pass that still has unclaimed levels to the gift box. Returns
+    /// that pass's id, or 0 when no ended pass has anything left.
     /// </summary>
     public static int ClaimRemaining(DarkUserMemoryDatabase userDb, DarkMasterMemoryDatabase masterDb, long nowMs)
     {
@@ -66,7 +86,7 @@ public static class MissionPassHelper
             return 0;
         }
 
-        Claim(userDb, masterDb, pass.MissionPassId, nowMs);
+        Claim(userDb, masterDb, pass.MissionPassId, nowMs, toGiftBox: true);
         return pass.MissionPassId;
     }
 

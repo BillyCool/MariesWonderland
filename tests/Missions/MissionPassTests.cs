@@ -111,6 +111,25 @@ public class MissionPassTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
     }
 
     [Fact]
+    public void ClaimRemaining_SendsTheRewardsToTheGiftBoxInsteadOfTheInventory()
+    {
+        (_, DarkUserMemoryDatabase userDb, _) = CreateUser();
+        PossessionHelper.Apply(userDb, PossessionType.MISSION_PASS_POINT, 10003, 200, MasterDb, NowMs);
+        int inventoryBefore = userDb.EntityIUserMaterial.Count + userDb.EntityIUserConsumableItem.Count;
+
+        MissionPassHelper.ClaimRemaining(userDb, MasterDb, NowMs);
+
+        Assert.Equal(RewardCount(10003, 2, isPremium: false), userDb.EntitySUserGift.Count);
+        Assert.All(userDb.EntitySUserGift, gift =>
+        {
+            Assert.Equal(0, gift.ReceivedDatetime);
+            Assert.Equal(NowMs, gift.GrantDatetime);
+            Assert.True(gift.ExpirationDatetime > NowMs);
+        });
+        Assert.Equal(inventoryBefore, userDb.EntityIUserMaterial.Count + userDb.EntityIUserConsumableItem.Count);
+    }
+
+    [Fact]
     public async Task ReceiveMissionPassRemainingReward_ReturnsThePassItClaimed()
     {
         (UserDataStore store, DarkUserMemoryDatabase userDb, long userId) = CreateUser();
