@@ -31,15 +31,14 @@ public class BattleServiceTests
     }
 
     [Fact]
-    public async Task FinishWave_WithFasterClear_RecordsBattleAndUpdatesShortestClearFrames()
+    public async Task FinishWave_RecordsBattleAgainstTheActiveQuest()
     {
         DarkUserMemoryDatabase userDb = new() { UserId = UserId };
         userDb.EntityIUserQuest.Add(new EntityIUserQuest
         {
             UserId = UserId,
             QuestId = 101,
-            QuestStateType = (int)QuestStateType.ACTIVE,
-            ShortestClearFrames = 600
+            QuestStateType = (int)QuestStateType.ACTIVE
         });
         UserDataStore store = CreateStore(userDb);
         BattleServiceImpl service = CreateService(store);
@@ -107,10 +106,8 @@ public class BattleServiceTests
         FinishWaveResponse response = await service.FinishWave(request, FakeServerCallContext.For(UserId));
 
         DateTime after = DateTime.UtcNow;
-        EntityIUserQuest activeQuest = Assert.Single(userDb.EntityIUserQuest);
         EntitySBattleDetail battleRecord = Assert.Single(store.BattleDetails(UserId));
         Assert.NotNull(response);
-        Assert.Equal(480, activeQuest.ShortestClearFrames);
         Assert.Equal(101, battleRecord.QuestId);
         Assert.Equal(UserId, battleRecord.UserId);
         Assert.Equal(480, battleRecord.ElapsedFrameCount);
@@ -134,15 +131,14 @@ public class BattleServiceTests
     }
 
     [Fact]
-    public async Task FinishWave_WithZeroShortestClearFramesAndNoBattleDetail_UsesDefaultValues()
+    public async Task FinishWave_WithoutBattleDetail_UsesDefaultValues()
     {
         DarkUserMemoryDatabase userDb = new() { UserId = UserId };
         userDb.EntityIUserQuest.Add(new EntityIUserQuest
         {
             UserId = UserId,
             QuestId = 202,
-            QuestStateType = (int)QuestStateType.ACTIVE,
-            ShortestClearFrames = 0
+            QuestStateType = (int)QuestStateType.ACTIVE
         });
         UserDataStore store = CreateStore(userDb);
         BattleServiceImpl service = CreateService(store);
@@ -154,9 +150,7 @@ public class BattleServiceTests
             },
             FakeServerCallContext.For(UserId));
 
-        EntityIUserQuest activeQuest = Assert.Single(userDb.EntityIUserQuest);
         EntitySBattleDetail battleRecord = Assert.Single(store.BattleDetails(UserId));
-        Assert.Equal(300, activeQuest.ShortestClearFrames);
         Assert.Equal(202, battleRecord.QuestId);
         Assert.Equal(string.Empty, battleRecord.BattleBinary);
         Assert.Equal(300, battleRecord.ElapsedFrameCount);
@@ -181,8 +175,7 @@ public class BattleServiceTests
         {
             UserId = UserId,
             QuestId = 303,
-            QuestStateType = (int)QuestStateType.CLEARED,
-            ShortestClearFrames = 111
+            QuestStateType = (int)QuestStateType.CLEARED
         });
         UserDataStore store = CreateStore(userDb);
         BattleServiceImpl service = CreateService(store);
@@ -195,36 +188,9 @@ public class BattleServiceTests
             },
             FakeServerCallContext.For(UserId));
 
-        EntityIUserQuest clearedQuest = Assert.Single(userDb.EntityIUserQuest);
         EntitySBattleDetail battleRecord = Assert.Single(store.BattleDetails(UserId));
-        Assert.Equal(111, clearedQuest.ShortestClearFrames);
         Assert.Equal(0, battleRecord.QuestId);
         Assert.Equal("YmF0dGxl", battleRecord.BattleBinary);
-    }
-
-    [Fact]
-    public async Task FinishWave_WithSlowerClear_DoesNotOverwriteShortestClearFrames()
-    {
-        DarkUserMemoryDatabase userDb = new() { UserId = UserId };
-        userDb.EntityIUserQuest.Add(new EntityIUserQuest
-        {
-            UserId = UserId,
-            QuestId = 404,
-            QuestStateType = (int)QuestStateType.ACTIVE,
-            ShortestClearFrames = 150
-        });
-        UserDataStore store = CreateStore(userDb);
-        BattleServiceImpl service = CreateService(store);
-
-        await service.FinishWave(
-            new FinishWaveRequest
-            {
-                ElapsedFrameCount = 200
-            },
-            FakeServerCallContext.For(UserId));
-
-        Assert.Equal(150, Assert.Single(userDb.EntityIUserQuest).ShortestClearFrames);
-        Assert.Single(store.BattleDetails(UserId));
     }
 
     private static BattleServiceImpl CreateService(UserDataStore store)

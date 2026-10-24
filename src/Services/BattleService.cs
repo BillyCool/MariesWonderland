@@ -24,7 +24,7 @@ public class BattleService(UserDataStore store, DarkMasterMemoryDatabase masterD
         return Task.FromResult(new StartWaveResponse());
     }
 
-    /// <summary>Records battle results, tracks shortest clear time and counts the bosses defeated in the wave.</summary>
+    /// <summary>Records battle results and counts the bosses defeated in the wave.</summary>
     public override Task<FinishWaveResponse> FinishWave(FinishWaveRequest request, ServerCallContext context)
     {
         long userId = context.GetUserId();
@@ -61,15 +61,6 @@ public class BattleService(UserDataStore store, DarkMasterMemoryDatabase masterD
             NpcPartyResultInfoList = [.. request.NpcPartyResultInfoList],
         };
         _store.RecordBattle(battleRecord);
-
-        if (activeQuest != null)
-        {
-            // Track shortest clear time.
-            if (activeQuest.ShortestClearFrames == 0 || request.ElapsedFrameCount < activeQuest.ShortestClearFrames)
-            {
-                activeQuest.ShortestClearFrames = (int)request.ElapsedFrameCount;
-            }
-        }
 
         int defeatedBosses = request.NpcPartyResultInfoList.Sum(DefeatedBosses);
         if (defeatedBosses > 0)

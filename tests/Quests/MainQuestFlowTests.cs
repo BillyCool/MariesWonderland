@@ -165,6 +165,41 @@ public class MainQuestFlowTests(MasterDatabaseFixture fixture) : ServiceTestBase
     }
 
     [Fact]
+    public async Task Restart_HandsBackTheLastFinishedWavesBattleBinary_OnlyForThatRun()
+    {
+        FakeTimeProvider time = new(new DateTimeOffset(2026, 10, 24, 12, 0, 0, TimeSpan.Zero));
+        UserDataStore store = new(TimeProvider.System);
+        (long userId, _) = store.RegisterOrGetUser("main-quest-restart-test", MasterDb);
+        QuestCampaignHelper campaigns = new(MasterDb);
+        MissionTracker missions = new(MasterDb, new MissionCatalog(MasterDb, MissionFilterTable.Empty));
+        QuestService service = new(store, MasterDb, new QuestEngine(MasterDb, GameConfig, campaigns, new ImportantItemEffectHelper(MasterDb), missions, Options.Create(new DevModeOptions())), campaigns, missions, time);
+        EntityMQuest quest = FindPlayableMainQuest();
+        await service.StartMainQuest(new StartMainQuestRequest { QuestId = quest.QuestId, IsMainFlow = false, UserDeckNumber = 1 }, ContextFor(userId));
+
+        // Quit before a wave was finished: the quest starts again from wave 1.
+        time.Advance(TimeSpan.FromMinutes(1));
+        RestartMainQuestResponse beforeAnyWave = await service.RestartMainQuest(new RestartMainQuestRequest { QuestId = quest.QuestId }, ContextFor(userId));
+        Assert.Empty(beforeAnyWave.BattleBinary);
+
+        // Two waves finished, then quit: the restart carries the second wave's state.
+        foreach (string binary in new[] { "AQID", "BAUG" })
+        {
+            time.Advance(TimeSpan.FromMinutes(1));
+            store.RecordBattle(new EntitySBattleDetail { UserId = userId, QuestId = quest.QuestId, RecordedAt = time.GetUtcNow().UtcDateTime, BattleBinary = binary });
+        }
+
+        time.Advance(TimeSpan.FromMinutes(1));
+        RestartMainQuestResponse afterTwoWaves = await service.RestartMainQuest(new RestartMainQuestRequest { QuestId = quest.QuestId }, ContextFor(userId));
+        Assert.Equal([4, 5, 6], afterTwoWaves.BattleBinary.ToByteArray());
+
+        // After the run ended, the next run starts with nothing to continue.
+        await service.FinishMainQuest(new FinishMainQuestRequest { QuestId = quest.QuestId, IsMainFlow = false, IsRetired = true }, ContextFor(userId));
+        time.Advance(TimeSpan.FromMinutes(1));
+        RestartMainQuestResponse nextRun = await service.RestartMainQuest(new RestartMainQuestRequest { QuestId = quest.QuestId }, ContextFor(userId));
+        Assert.Empty(nextRun.BattleBinary);
+    }
+
+    [Fact]
     public async Task SetRoute_RecordsTheFirstRoutePerSeason()
     {
         (QuestService service, DarkUserMemoryDatabase userDb, long userId) = CreateService();

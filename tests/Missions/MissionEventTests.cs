@@ -128,12 +128,13 @@ public class MissionEventTests(MasterDatabaseFixture fixture) : ServiceTestBase(
 
         await service.GameStart(new Empty(), ContextFor(userId));
         await service.GameStart(new Empty(), ContextFor(userId));
-        Assert.Equal(1, Progress(userDb, login));
+        // Total login days: the days before the mission existed count too.
+        Assert.Equal(11, Progress(userDb, login));
         Assert.Equal((11, 1), (record.TotalLoginCount, record.ContinualLoginCount));
 
         time.SetUtcNow(Now.AddDays(1));
         await service.GameStart(new Empty(), ContextFor(userId));
-        Assert.Equal(2, Progress(userDb, login));
+        Assert.Equal(12, Progress(userDb, login));
         Assert.Equal((12, 2, 5), (record.TotalLoginCount, record.ContinualLoginCount, record.MaxContinualLoginCount));
     }
 }

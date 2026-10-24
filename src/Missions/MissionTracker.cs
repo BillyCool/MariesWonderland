@@ -359,6 +359,8 @@ public sealed class MissionTracker(DarkMasterMemoryDatabase masterDb, MissionCat
         return mission.ConditionType switch
         {
             MissionClearConditionType.USER_LEVEL => userDb.EntityIUserStatus.FirstOrDefault()?.Level ?? 0,
+            // Total login days, so the days before a mission existed count too; dailies count a single day.
+            MissionClearConditionType.USER_LOGIN_BY_COUNT when !mission.IsDaily => userDb.EntityIUserLogin.FirstOrDefault()?.TotalLoginCount ?? 0,
             MissionClearConditionType.MAX_DECK_POWER => Math.Max(
                 userDb.EntityIUserDeckTypeNote.Select(n => n.MaxDeckPower).DefaultIfEmpty(0).Max(),
                 userDb.EntityIUserDeck.Select(d => d.Power).DefaultIfEmpty(0).Max()),

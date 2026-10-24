@@ -142,6 +142,26 @@ public class MissionTrackerTests(MasterDatabaseFixture fixture) : ServiceTestBas
     }
 
     [Fact]
+    public void TotalDaysLoginMissions_CountLoginDaysBeforeTheMissionExisted_AndDailiesStayAtZero()
+    {
+        (MissionTracker tracker, MissionCatalog catalog, DarkUserMemoryDatabase userDb) = Create();
+        userDb.EntityIUserLogin.Single().TotalLoginCount = 2;
+
+        tracker.Refresh(userDb, NowMs);
+
+        MissionDefinition oneDay = catalog.Find(940001)!;
+        MissionDefinition twoDays = catalog.Find(940002)!;
+        MissionDefinition threeDays = catalog.Find(940003)!;
+        Assert.Equal(MissionProgressStatusType.CLEAR, Row(userDb, oneDay.MissionId).MissionProgressStatusType);
+        Assert.Equal(MissionProgressStatusType.CLEAR, Row(userDb, twoDays.MissionId).MissionProgressStatusType);
+        Assert.Equal(2, Row(userDb, threeDays.MissionId).ProgressValue);
+        Assert.Equal(MissionProgressStatusType.IN_PROGRESS, Row(userDb, threeDays.MissionId).MissionProgressStatusType);
+        Assert.All(userDb.EntityIUserMission.Where(r => catalog.Find(r.MissionId)!.IsDaily
+            && catalog.Find(r.MissionId)!.ConditionType == MissionClearConditionType.USER_LOGIN_BY_COUNT),
+            r => Assert.Equal(0, r.ProgressValue));
+    }
+
+    [Fact]
     public void DailyMissions_StartOverOnANewGameDay()
     {
         (MissionTracker tracker, MissionCatalog catalog, DarkUserMemoryDatabase userDb) = Create();

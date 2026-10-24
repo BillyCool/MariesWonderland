@@ -87,6 +87,38 @@ public class QuestEngineTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
     }
 
     [Fact]
+    public void Finish_Win_KeepsTheFastestRunWithAllWavesAddedUp()
+    {
+        QuestEngine engine = CreateEngine();
+        EntityMQuest quest = FindRewardingQuest();
+        DarkUserMemoryDatabase userDb = CreateUser();
+        EntityIUserQuest userQuest = engine.EnsureQuestRows(userDb, quest.QuestId);
+        static EntitySBattleDetail[] Waves(params long[] frames) => [.. frames.Select(f => new EntitySBattleDetail { ElapsedFrameCount = f })];
+
+        engine.Finish(userDb, quest, MainTarget(quest), isWin: true, NowMs, battles: Waves(2000, 2500, 2300));
+        Assert.Equal(6800, userQuest.ShortestClearFrames);
+
+        engine.Finish(userDb, quest, MainTarget(quest), isWin: true, NowMs, battles: Waves(3000, 4000));
+        Assert.Equal(6800, userQuest.ShortestClearFrames);
+
+        engine.Finish(userDb, quest, MainTarget(quest), isWin: true, NowMs, battles: Waves(3000, 3500));
+        Assert.Equal(6500, userQuest.ShortestClearFrames);
+    }
+
+    [Fact]
+    public void Finish_Win_WithoutBattles_LeavesTheClearTime()
+    {
+        QuestEngine engine = CreateEngine();
+        EntityMQuest quest = FindRewardingQuest();
+        DarkUserMemoryDatabase userDb = CreateUser();
+        EntityIUserQuest userQuest = engine.EnsureQuestRows(userDb, quest.QuestId);
+
+        engine.Finish(userDb, quest, MainTarget(quest), isWin: true, NowMs);
+
+        Assert.Equal(0, userQuest.ShortestClearFrames);
+    }
+
+    [Fact]
     public void Finish_SecondWin_GrantsExpAndGoldButNoOneTimeRewards()
     {
         QuestEngine engine = CreateEngine();

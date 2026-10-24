@@ -1,4 +1,5 @@
-﻿using Google.Protobuf.WellKnownTypes;
+﻿using Google.Protobuf;
+using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
 using MariesWonderland.Data;
 using MariesWonderland.Extensions;
@@ -393,6 +394,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
 
         RestartMainQuestResponse response = new();
         response.BattleDropReward.AddRange(_questEngine.BuildBattleDropRewards(questId));
+        response.BattleBinary = LastBattleBinary(userDb, userId, questId);
         response.DeckNumber = restartSession.UserDeckNumber;
         return Task.FromResult(response);
     }
@@ -536,6 +538,16 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         return _store.BattleDetails(userId, questId, DateTimeOffset.FromUnixTimeMilliseconds(startMs).UtcDateTime);
     }
 
+    /// <summary>
+    /// The battle state the client sent when it finished the run's last wave, handed back on a restart so the
+    /// client continues with the next wave. Empty when no wave of the run was finished: it starts at wave 1.
+    /// </summary>
+    private ByteString LastBattleBinary(DarkUserMemoryDatabase userDb, long userId, int questId)
+    {
+        string? battleBinary = BattlesOfRun(userDb, userId, questId).LastOrDefault(b => b.BattleBinary.Length > 0)?.BattleBinary;
+        return battleBinary == null ? ByteString.Empty : ByteString.FromBase64(battleBinary);
+    }
+
     /// <summary>Grants scene-based possessions from master data for the given quest scene.</summary>
     private void ApplySceneGrants(DarkUserMemoryDatabase userDb, int questSceneId, long nowMs)
     {
@@ -605,6 +617,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
 
         RestartExtraQuestResponse response = new();
         response.BattleDropReward.AddRange(_questEngine.BuildBattleDropRewards(questId));
+        response.BattleBinary = LastBattleBinary(userDb, userId, questId);
         response.DeckNumber = session.UserDeckNumber;
         return Task.FromResult(response);
     }
@@ -721,6 +734,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
 
         RestartEventQuestResponse response = new();
         response.BattleDropReward.AddRange(_questEngine.BuildBattleDropRewards(questId));
+        response.BattleBinary = LastBattleBinary(userDb, userId, questId);
         response.DeckNumber = session.UserDeckNumber;
         return Task.FromResult(response);
     }

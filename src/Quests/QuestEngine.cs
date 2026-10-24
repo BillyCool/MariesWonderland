@@ -97,6 +97,16 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
         userQuest.LatestStartDatetime = nowMs;
     }
 
+    /// <summary>Keeps the fastest clear: the frames of all the run's waves added up.</summary>
+    private static void RecordClearTime(EntityIUserQuest userQuest, IReadOnlyList<EntitySBattleDetail>? battles)
+    {
+        long frames = battles?.Sum(b => b.ElapsedFrameCount) ?? 0;
+        if (frames > 0 && (userQuest.ShortestClearFrames == 0 || frames < userQuest.ShortestClearFrames))
+        {
+            userQuest.ShortestClearFrames = (int)frames;
+        }
+    }
+
     public static void MarkCleared(EntityIUserQuest userQuest, int clearCount, long nowMs)
     {
         userQuest.QuestStateType = (int)QuestStateType.CLEARED;
@@ -205,6 +215,7 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
 
         List<QuestReward> dropRewards = ApplyDropRewards(userDb, BuildDropRewards(userDb, quest, campaignTarget, nowMs), nowMs);
         MarkCleared(userQuest, 1, nowMs);
+        RecordClearTime(userQuest, battles);
         (HashSet<int> deckCharacterIds, HashSet<int> deckCostumeIds) = DeckMembers(userDb, quest.QuestId);
         _missions.RecordQuestClear(userDb, new MissionQuestEvent(campaignTarget, deckCharacterIds, deckCostumeIds, quest.DailyClearableCount), 1, isSkipped: false, nowMs);
         if (!isReplay)
