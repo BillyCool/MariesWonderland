@@ -21,7 +21,6 @@ public class GachaServiceTests
     private const int PremiumBannerId = 1001;
     private const int ChapterBannerId = 200005;
     private const int MedalConsumableItemId = 9001;
-    private const int RewardMaterialId = 801;
 
     [Fact]
     public async Task GetGachaList_FiltersCatalogAndReflectsSavedStepUpState()
@@ -172,14 +171,9 @@ public class GachaServiceTests
     public async Task RewardDraw_ResetsExpiredDailyStateAndStopsAtConfiguredLimit()
     {
         DarkMasterMemoryDatabase masterDb = new();
-        masterDb.EntityMMaterial.Add(new EntityMMaterial
-        {
-            MaterialId = RewardMaterialId,
-            RarityType = RarityType.NORMAL,
-            AssetName = "reward_material"
-        });
 
         DarkUserMemoryDatabase userDb = CreateUserDb();
+        userDb.EntityIUserGem.Add(new EntityIUserGem { UserId = UserId, FreeGem = 5 });
         userDb.EntitySGachaRewardState.Add(new EntitySGachaRewardState
         {
             UserId = UserId,
@@ -209,9 +203,11 @@ public class GachaServiceTests
             new RewardDrawRequest(),
             FakeServerCallContext.For(UserId));
 
-        Assert.Single(firstDraw.RewardGachaResult);
-        Assert.Equal(RewardMaterialId, firstDraw.RewardGachaResult[0].PossessionId);
-        Assert.Equal(1, Assert.Single(userDb.EntityIUserMaterial).Count);
+        RewardGachaItem reward = Assert.Single(firstDraw.RewardGachaResult);
+        Assert.Equal((int)PossessionType.FREE_GEM, reward.PossessionType);
+        int[] rouletteAmounts = [10, 30, 50, 100, 3000];
+        Assert.Contains(reward.Count, rouletteAmounts);
+        Assert.Equal(5 + reward.Count, userDb.EntityIUserGem[0].FreeGem);
 
         EntitySGachaRewardState rewardState = Assert.Single(userDb.EntitySGachaRewardState);
         Assert.Equal(1, rewardState.TodaysCurrentDrawCount);
@@ -231,7 +227,23 @@ public class GachaServiceTests
 
         Assert.Empty(secondDraw.RewardGachaResult);
         Assert.Equal(1, rewardState.TodaysCurrentDrawCount);
-        Assert.Equal(1, Assert.Single(userDb.EntityIUserMaterial).Count);
+        Assert.Equal(5 + reward.Count, userDb.EntityIUserGem[0].FreeGem);
+    }
+
+    [Theory]
+    [InlineData(0, 10)]
+    [InlineData(499, 10)]
+    [InlineData(500, 30)]
+    [InlineData(749, 30)]
+    [InlineData(750, 50)]
+    [InlineData(899, 50)]
+    [InlineData(900, 100)]
+    [InlineData(994, 100)]
+    [InlineData(995, 3000)]
+    [InlineData(999, 3000)]
+    public void RollRouletteGems_FollowsTheOdds(int roll, int expectedGems)
+    {
+        Assert.Equal(expectedGems, GachaServiceImpl.RollRouletteGems(roll));
     }
 
     private static GachaServiceImpl CreateService(DarkMasterMemoryDatabase masterDb, DarkUserMemoryDatabase userDb, GameConfig? gameConfig = null, DevModeOptions? devMode = null)

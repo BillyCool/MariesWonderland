@@ -435,7 +435,7 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
     }
 
     /// <summary>
-    /// Executes a free daily reward draw: grants a random material and updates daily draw state.
+    /// Spins the daily ad roulette: grants 10, 30, 50, 100 or 3000 free gems and counts the spin for today.
     /// </summary>
     public override Task<RewardDrawResponse> RewardDraw(RewardDrawRequest request, ServerCallContext context)
     {
@@ -477,54 +477,57 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
             return Task.FromResult(new RewardDrawResponse());
         }
 
-        int drawCount = Math.Min(1, remaining);
-
-        // Draw random materials
-        List<EntityMMaterial> materials = [.. _masterDb.EntityMMaterial];
-        List<(int PossessionType, int PossessionId)> drawnItems = [];
-
-        for (int i = 0; i < drawCount && materials.Count > 0; i++)
+        int gems = RollRouletteGems(Random.Shared.Next(RouletteTotalWeight));
+        if (userDb.EntityIUserGem.Count == 0)
         {
-            EntityMMaterial mat = materials[Random.Shared.Next(materials.Count)];
-            drawnItems.Add(((int)PossessionType.MATERIAL, mat.MaterialId));
-            PossessionHelper.Apply(userDb, PossessionType.MATERIAL, mat.MaterialId, 1, _masterDb, nowMs);
+            userDb.EntityIUserGem.Add(new EntityIUserGem { UserId = userId });
         }
 
-        int newCount = currentCount + drawCount;
+        PossessionHelper.Apply(userDb, PossessionType.FREE_GEM, 0, gems, _masterDb, nowMs);
+
+        int newCount = currentCount + 1;
         rewardState.TodaysCurrentDrawCount = newCount;
         rewardState.DailyMaxCount = maxCount;
         rewardState.LastRewardDrawDate = nowMs;
         rewardState.RewardAvailable = newCount < maxCount;
 
-        // Build ownership maps
-        HashSet<int> ownedCostumeIds = [];
-        foreach (EntityIUserCostume c in userDb.EntityIUserCostume)
-            ownedCostumeIds.Add(c.CostumeId);
-
-        HashSet<int> ownedWeaponIds = [];
-        foreach (EntityIUserWeapon w in userDb.EntityIUserWeapon)
-            ownedWeaponIds.Add(w.WeaponId);
-
+        // The client picks the roulette animation from this count, so it must be one of the RouletteRewards amounts.
         RewardDrawResponse response = new();
-        foreach ((int possType, int possId) in drawnItems)
+        response.RewardGachaResult.Add(new RewardGachaItem
         {
-            bool isOwned = IsOwnedByType(possType, possId, ownedCostumeIds, ownedWeaponIds, userDb);
-            response.RewardGachaResult.Add(new RewardGachaItem
-            {
-                PossessionType = possType,
-                PossessionId = possId,
-                Count = 1,
-                IsNew = !isOwned
-            });
-        }
+            PossessionType = (int)PossessionType.FREE_GEM,
+            PossessionId = 0,
+            Count = gems
+        });
 
         // A free daily pull counts as a draw for gacha missions (user-confirmed).
-        if (response.RewardGachaResult.Count > 0)
-        {
-            _missions.RecordGachaDraw(userDb, labelType: null, [], isDailyFreeDraw: true, 1, nowMs);
-        }
+        _missions.RecordGachaDraw(userDb, labelType: null, [], isDailyFreeDraw: true, 1, nowMs);
 
         return Task.FromResult(response);
+    }
+
+    /// <summary>
+    /// Free gems per roulette spin and their weights (user-set odds, out of 1000): 10 at 50%, 30 at 25%, 50 at 15%,
+    /// 100 at 9.5% and 3000 at 0.5%. The client only has roulette animations for these five amounts.
+    /// </summary>
+    private static readonly (int Gems, int Weight)[] RouletteRewards = [(10, 500), (30, 250), (50, 150), (100, 95), (3000, 5)];
+
+    private static readonly int RouletteTotalWeight = RouletteRewards.Sum(r => r.Weight);
+
+    /// <summary>Maps a roll in [0, total weight) to a roulette gem amount.</summary>
+    public static int RollRouletteGems(int roll)
+    {
+        foreach ((int gems, int weight) in RouletteRewards)
+        {
+            if (roll < weight)
+            {
+                return gems;
+            }
+
+            roll -= weight;
+        }
+
+        return RouletteRewards[^1].Gems;
     }
 
     #region Catalog Building
