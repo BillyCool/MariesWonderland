@@ -18,6 +18,79 @@ public static class BigHuntRewardHelper
                 .Select(e => (e.StartDatetime, e.BigHuntScoreRewardGroupId)),
             nowMs);
 
+    /// <summary>
+    /// The schedule (season) whose challenge window contains <paramref name="nowMs"/>, else the one that ended last.
+    /// </summary>
+    public static int ResolveActiveScheduleId(DarkMasterMemoryDatabase masterDb, long nowMs)
+    {
+        EntityMBigHuntSchedule? active = masterDb.EntityMBigHuntSchedule
+            .FirstOrDefault(s => nowMs >= s.ChallengeStartDatetime && nowMs <= s.ChallengeEndDatetime);
+        if (active is not null)
+        {
+            return active.BigHuntScheduleId;
+        }
+
+        return masterDb.EntityMBigHuntSchedule
+            .OrderByDescending(s => s.ChallengeEndDatetime)
+            .Select(s => s.BigHuntScheduleId)
+            .FirstOrDefault();
+    }
+
+    /// <summary>
+    /// A user's best score against a boss in the current season, or 0 without one. The weekly max of an attribute
+    /// carries it into every week of the season (the real save's weekly rows only fall at a new season).
+    /// </summary>
+    public static long SeasonBest(DarkMasterMemoryDatabase masterDb, DarkUserMemoryDatabase userDb, int bossId, long nowMs)
+    {
+        int scheduleId = ResolveActiveScheduleId(masterDb, nowMs);
+        return userDb.EntityIUserBigHuntScheduleMaxScore
+            .FirstOrDefault(m => m.BigHuntScheduleId == scheduleId && m.BigHuntBossId == bossId)?.MaxScore ?? 0;
+    }
+
+    /// <summary>The week whose weekly reward is claimed now: the game week that just ended.</summary>
+    public static long ClaimWeekVersion(long nowMs) => GameDayHelper.StartOfWeek(nowMs) - (long)TimeSpan.FromDays(7).TotalMilliseconds;
+
+    /// <summary>
+    /// An attribute's weekly max for a week: its row, or 0 when the week has none (a week the user never signed in
+    /// during pays nothing).
+    /// </summary>
+    public static long WeekScore(DarkMasterMemoryDatabase masterDb, DarkUserMemoryDatabase userDb, long weeklyVersion, EntityMBigHuntBoss boss, long nowMs)
+        => userDb.EntityIUserBigHuntWeeklyMaxScore
+            .FirstOrDefault(m => m.BigHuntWeeklyVersion == weeklyVersion && m.AttributeType == boss.AttributeType)?.MaxScore ?? 0;
+
+    /// <summary>True when the week has nothing left to claim: no score in it, or its reward already received.</summary>
+    public static bool IsWeekSettled(DarkMasterMemoryDatabase masterDb, DarkUserMemoryDatabase userDb, long weeklyVersion, long nowMs)
+        => !masterDb.EntityMBigHuntBoss.Any(b => WeekScore(masterDb, userDb, weeklyVersion, b, nowMs) > 0)
+            || userDb.EntityIUserBigHuntWeeklyStatus.Any(s => s.BigHuntWeeklyVersion == weeklyVersion && s.IsReceivedWeeklyReward);
+
+    /// <summary>
+    /// Brings the current game week up to date: its weekly status, and each attribute's weekly max starting from
+    /// the best score of the season so far, as in the real save (a row for every week).
+    /// </summary>
+    public static void EnsureWeek(DarkMasterMemoryDatabase masterDb, DarkUserMemoryDatabase userDb, long userId, long nowMs)
+    {
+        long weeklyVersion = GameDayHelper.StartOfWeek(nowMs);
+        if (!userDb.EntityIUserBigHuntWeeklyStatus.Any(s => s.BigHuntWeeklyVersion == weeklyVersion))
+        {
+            userDb.EntityIUserBigHuntWeeklyStatus.Add(new EntityIUserBigHuntWeeklyStatus { UserId = userId, BigHuntWeeklyVersion = weeklyVersion });
+        }
+
+        foreach (EntityMBigHuntBoss boss in masterDb.EntityMBigHuntBoss)
+        {
+            long best = SeasonBest(masterDb, userDb, boss.BigHuntBossId, nowMs);
+            if (best > 0 && !userDb.EntityIUserBigHuntWeeklyMaxScore.Any(m => m.BigHuntWeeklyVersion == weeklyVersion && m.AttributeType == boss.AttributeType))
+            {
+                userDb.EntityIUserBigHuntWeeklyMaxScore.Add(new EntityIUserBigHuntWeeklyMaxScore
+                {
+                    UserId = userId,
+                    BigHuntWeeklyVersion = weeklyVersion,
+                    AttributeType = boss.AttributeType,
+                    MaxScore = best
+                });
+            }
+        }
+    }
+
     /// <summary>The attribute's weekly reward group in effect at <paramref name="nowMs"/>. Each attribute has its own schedule.</summary>
     public static int ResolveWeeklyRewardGroupId(DarkMasterMemoryDatabase masterDb, AttributeType attributeType, long nowMs)
         => ResolveByStart(

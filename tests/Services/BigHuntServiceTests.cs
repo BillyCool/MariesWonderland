@@ -496,7 +496,7 @@ public class BigHuntServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
         userDb.EntityIUserBigHuntWeeklyStatus.Add(new EntityIUserBigHuntWeeklyStatus
         {
             UserId = UserId,
-            BigHuntWeeklyVersion = weeklyVersion,
+            BigHuntWeeklyVersion = lastWeekVersion,
             IsReceivedWeeklyReward = true
         });
         userDb.EntityIUserBigHuntWeeklyMaxScore.Add(new EntityIUserBigHuntWeeklyMaxScore

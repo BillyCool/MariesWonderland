@@ -63,6 +63,7 @@ public class UserService(UserDataStore store, UserDataSeeder seeder, DarkMasterM
         {
             CountDailyLogin(userDb, userId, nowMs);
             QuestEngine.ResetDailyClearCounts(userDb, nowMs);
+            BigHuntRewardHelper.EnsureWeek(_masterDb, userDb, userId, nowMs);
         }
 
         Dictionary<string, TableSnapshot> after = UserDataDiffBuilder.Snapshot(userDb);

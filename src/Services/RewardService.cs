@@ -29,24 +29,21 @@ public class RewardService(UserDataStore store, DarkMasterMemoryDatabase masterD
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
         long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
-        long weeklyVersion = GameDayHelper.StartOfWeek(nowMs);
+        BigHuntRewardHelper.EnsureWeek(_masterDb, userDb, userId, nowMs);
 
+        // The reward is for the week that just ended (a week with no score has nothing to claim).
+        long claimVersion = BigHuntRewardHelper.ClaimWeekVersion(nowMs);
         EntityIUserBigHuntWeeklyStatus? ws = userDb.EntityIUserBigHuntWeeklyStatus
-            .FirstOrDefault(s => s.BigHuntWeeklyVersion == weeklyVersion);
+            .FirstOrDefault(s => s.BigHuntWeeklyVersion == claimVersion);
 
-        bool isReceived = ws?.IsReceivedWeeklyReward ?? false;
+        bool isReceived = BigHuntRewardHelper.IsWeekSettled(_masterDb, userDb, claimVersion, nowMs);
 
         List<WeeklyScoreResult> weeklyScoreResults = [];
         List<BigHuntReward> weeklyRewards = [];
 
         foreach (EntityMBigHuntBoss boss in _masterDb.EntityMBigHuntBoss)
         {
-            EntityIUserBigHuntWeeklyMaxScore? wms = userDb.EntityIUserBigHuntWeeklyMaxScore
-                .FirstOrDefault(s => s.UserId == userId
-                    && s.BigHuntWeeklyVersion == weeklyVersion
-                    && s.AttributeType == boss.AttributeType);
-
-            long maxScore = wms?.MaxScore ?? 0;
+            long maxScore = BigHuntRewardHelper.WeekScore(_masterDb, userDb, claimVersion, boss, nowMs);
             int gradeIcon = ResolveGradeIconId(boss.BigHuntBossId, maxScore);
 
             weeklyScoreResults.Add(new WeeklyScoreResult
@@ -68,12 +65,7 @@ public class RewardService(UserDataStore store, DarkMasterMemoryDatabase masterD
                 int rewardGroupId = BigHuntRewardHelper.ResolveWeeklyRewardGroupId(_masterDb, boss.AttributeType, nowMs);
                 if (rewardGroupId == 0) { continue; }
 
-                EntityIUserBigHuntWeeklyMaxScore? wms = userDb.EntityIUserBigHuntWeeklyMaxScore
-                    .FirstOrDefault(s => s.UserId == userId
-                        && s.BigHuntWeeklyVersion == weeklyVersion
-                        && s.AttributeType == boss.AttributeType);
-
-                long maxScore = wms?.MaxScore ?? 0;
+                long maxScore = BigHuntRewardHelper.WeekScore(_masterDb, userDb, claimVersion, boss, nowMs);
 
                 foreach (EntityMBigHuntRewardGroup item in BigHuntRewardHelper.HighestTierItems(_masterDb, rewardGroupId, maxScore))
                 {
@@ -92,7 +84,7 @@ public class RewardService(UserDataStore store, DarkMasterMemoryDatabase masterD
                 ws = new EntityIUserBigHuntWeeklyStatus
                 {
                     UserId = userId,
-                    BigHuntWeeklyVersion = weeklyVersion,
+                    BigHuntWeeklyVersion = claimVersion,
                 };
                 userDb.EntityIUserBigHuntWeeklyStatus.Add(ws);
             }
@@ -125,11 +117,13 @@ public class RewardService(UserDataStore store, DarkMasterMemoryDatabase masterD
         int latestReceivedSeasonId = existingStatus?.LatestRewardReceivePvpSeasonId ?? 0;
         long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
+        // Only finished weeks pay: the client claims the newest finished week, and the week still running is paid next week.
+        const long WeekMs = 7L * 24 * 60 * 60 * 1000;
         ReceivePvpRewardResponse response = new();
 
         long newestClaimedWeeklyVersion = latestReceivedWeeklyVersion;
         foreach (EntityIUserPvpWeeklyResult weeklyResult in userDb.EntityIUserPvpWeeklyResult
-            .Where(r => r.UserId == userId && r.PvpWeeklyVersion > latestReceivedWeeklyVersion)
+            .Where(r => r.UserId == userId && r.PvpWeeklyVersion > latestReceivedWeeklyVersion && r.PvpWeeklyVersion + WeekMs <= nowMs)
             .OrderBy(r => r.PvpWeeklyVersion))
         {
             EntityMPvpSeason? season = _masterDb.EntityMPvpSeason.FirstOrDefault(s => s.PvpSeasonId == weeklyResult.PvpSeasonId);

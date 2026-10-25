@@ -342,8 +342,10 @@ public sealed class UserPersistenceTests : IDisposable
         Assert.True(NewStore().TryGet(saveUserId, out DarkUserMemoryDatabase reloaded));
         Dictionary<string, List<string>> expected = Rows(save);
         Dictionary<string, List<string>> actual = Rows(reloaded);
-        // Signing in records the device, counts the day's login and starts the quests' daily clear counts again.
-        Assert.All(expected.Keys.Where(t => t is not ("SUserDevice" or "IUserLogin" or "IUserQuest")), table => Assert.True(expected[table].SequenceEqual(actual[table]), $"{table} differs"));
+        // Signing in records the device, counts the day's login and starts the quests' daily clear counts again...
+        Assert.All(expected.Keys.Where(t => t is not ("SUserDevice" or "IUserLogin" or "IUserQuest" or "IUserBigHuntWeeklyStatus" or "IUserBigHuntWeeklyMaxScore")), table => Assert.True(expected[table].SequenceEqual(actual[table]), $"{table} differs"));
+        // ...and starts the current Big Hunt week, which only adds rows.
+        Assert.All(new[] { "IUserBigHuntWeeklyStatus", "IUserBigHuntWeeklyMaxScore" }, table => Assert.True(expected[table].All(actual[table].Contains), $"{table} lost rows"));
         Assert.Equal(save.EntityIUserQuest.Count, reloaded.EntityIUserQuest.Count);
         Dictionary<int, EntityIUserQuest> reloadedQuests = reloaded.EntityIUserQuest.ToDictionary(q => q.QuestId);
         Assert.All(save.EntityIUserQuest, quest =>

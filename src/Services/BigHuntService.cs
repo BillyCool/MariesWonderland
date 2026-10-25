@@ -206,9 +206,11 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
         }
 
         // --- High-score tracking (per-weekly-attribute) ---
+        // The weekly max carries the season's best, so a weaker run never lowers it or starts a week below it.
         long weeklyVersion = GameDayHelper.StartOfWeek(nowMs);
         if (boss is not null)
         {
+            BigHuntRewardHelper.EnsureWeek(_masterDb, userDb, userId, nowMs);
             EntityIUserBigHuntWeeklyMaxScore? weeklyMax = userDb.EntityIUserBigHuntWeeklyMaxScore
                 .FirstOrDefault(m => m.UserId == userId
                     && m.BigHuntWeeklyVersion == weeklyVersion
@@ -431,6 +433,7 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
         long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
         long weeklyVersion = GameDayHelper.StartOfWeek(nowMs);
+        BigHuntRewardHelper.EnsureWeek(_masterDb, userDb, userId, nowMs);
 
         // Build weekly score results for each boss
         List<WeeklyScoreResult> weeklyScoreResults = [];
@@ -456,10 +459,6 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
             });
         }
 
-        // Check if weekly reward was already received
-        EntityIUserBigHuntWeeklyStatus? weeklyStatus = userDb.EntityIUserBigHuntWeeklyStatus
-            .FirstOrDefault(s => s.BigHuntWeeklyVersion == weeklyVersion);
-
         // Resolve current week rewards
         List<BigHuntReward> weeklyRewards = ResolveWeeklyRewards(userDb, weeklyVersion, nowMs);
 
@@ -467,9 +466,10 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
         long lastWeekVersion = weeklyVersion - (7L * 24 * 60 * 60 * 1000);
         List<BigHuntReward> lastWeekRewards = ResolveWeeklyRewards(userDb, lastWeekVersion, nowMs);
 
+        // The claimable reward is last week's, so that is the week whose state the client is told.
         GetBigHuntTopDataResponse response = new()
         {
-            IsReceivedWeeklyScoreReward = weeklyStatus?.IsReceivedWeeklyReward ?? false
+            IsReceivedWeeklyScoreReward = BigHuntRewardHelper.IsWeekSettled(_masterDb, userDb, BigHuntRewardHelper.ClaimWeekVersion(nowMs), nowMs)
         };
         response.WeeklyScoreResult.AddRange(weeklyScoreResults);
         response.WeeklyScoreReward.AddRange(weeklyRewards);
@@ -528,22 +528,7 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
     /// Returns the ID of the schedule whose challenge window contains <paramref name="nowMs"/>,
     /// falling back to the schedule with the most recently ended window.
     /// </summary>
-    private int ResolveActiveScheduleId(long nowMs)
-    {
-        EntityMBigHuntSchedule? active = _masterDb.EntityMBigHuntSchedule
-            .FirstOrDefault(s => nowMs >= s.ChallengeStartDatetime && nowMs <= s.ChallengeEndDatetime);
-
-        if (active is not null)
-        {
-            return active.BigHuntScheduleId;
-        }
-
-        // Fall back to schedule with latest end datetime.
-        return _masterDb.EntityMBigHuntSchedule
-            .OrderByDescending(s => s.ChallengeEndDatetime)
-            .Select(s => s.BigHuntScheduleId)
-            .FirstOrDefault();
-    }
+    private int ResolveActiveScheduleId(long nowMs) => BigHuntRewardHelper.ResolveActiveScheduleId(_masterDb, nowMs);
 
     /// <summary>
     /// Returns the highest grade icon ID whose score threshold the player's score meets for the given boss,
@@ -623,12 +608,7 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
                 continue;
             }
 
-            EntityIUserBigHuntWeeklyMaxScore? ws = userDb.EntityIUserBigHuntWeeklyMaxScore
-                .FirstOrDefault(m => m.UserId == userDb.UserId
-                    && m.BigHuntWeeklyVersion == weeklyVersion
-                    && m.AttributeType == boss.AttributeType);
-
-            long maxScore = ws?.MaxScore ?? 0;
+            long maxScore = BigHuntRewardHelper.WeekScore(_masterDb, userDb, weeklyVersion, boss, nowMs);
 
             foreach (EntityMBigHuntRewardGroup item in BigHuntRewardHelper.HighestTierItems(_masterDb, rewardGroupId, maxScore))
             {

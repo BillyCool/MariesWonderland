@@ -115,7 +115,7 @@ public class BigHuntRewardTests(MasterDatabaseFixture fixture) : ServiceTestBase
         UserDataStore store = new(TimeProvider.System);
         store.Set(userId, userDb);
         userDb.EntityIUserImportantItem.Add(new EntityIUserImportantItem { UserId = userId, ImportantItemId = 200020, Count = 1 });
-        long weeklyVersion = GameDayHelper.StartOfWeek(Now.ToUnixTimeMilliseconds());
+        long weeklyVersion = BigHuntRewardHelper.ClaimWeekVersion(Now.ToUnixTimeMilliseconds());
         userDb.EntityIUserBigHuntWeeklyStatus.RemoveAll(s => s.BigHuntWeeklyVersion == weeklyVersion);
         foreach (EntityMBigHuntBoss boss in MasterDb.EntityMBigHuntBoss)
         {
@@ -183,6 +183,47 @@ public class BigHuntRewardTests(MasterDatabaseFixture fixture) : ServiceTestBase
         Assert.True((await Run(1_000_000)).ScoreInfo.IsHighScore);
         Assert.False((await Run(500_000)).ScoreInfo.IsHighScore);
         Assert.True((await Run(2_000_000)).ScoreInfo.IsHighScore);
+    }
+
+    [Fact]
+    public async Task Finish_WeeklyMaxCarriesTheSeasonsBest_ARunBelowItNeverLowersIt()
+    {
+        (BigHuntService service, DarkUserMemoryDatabase userDb, long userId) = CreateService();
+        EntityMBigHuntBossQuest bossQuest = BossQuest;
+        EntityMBigHuntBoss boss = MasterDb.EntityMBigHuntBoss.Single(b => b.BigHuntBossId == bossQuest.BigHuntBossId);
+        EntityMBigHuntQuest bhQuest = MasterDb.EntityMBigHuntQuestGroup
+            .Where(g => g.BigHuntQuestGroupId == bossQuest.BigHuntQuestGroupId)
+            .OrderBy(g => g.SortOrder)
+            .Select(g => MasterDb.EntityMBigHuntQuest.Single(q => q.BigHuntQuestId == g.BigHuntQuestId))
+            .First();
+        long nowMs = Now.ToUnixTimeMilliseconds();
+        long weeklyVersion = GameDayHelper.StartOfWeek(nowMs);
+        int scheduleId = BigHuntRewardHelper.ResolveActiveScheduleId(MasterDb, nowMs);
+        userDb.EntityIUserBigHuntScheduleMaxScore.RemoveAll(m => m.BigHuntBossId == bossQuest.BigHuntBossId);
+        userDb.EntityIUserBigHuntScheduleMaxScore.Add(new EntityIUserBigHuntScheduleMaxScore
+        {
+            UserId = userId,
+            BigHuntScheduleId = scheduleId,
+            BigHuntBossId = bossQuest.BigHuntBossId,
+            MaxScore = 300_000_000
+        });
+        userDb.EntityIUserBigHuntWeeklyMaxScore.RemoveAll(m => m.BigHuntWeeklyVersion == weeklyVersion && m.AttributeType == boss.AttributeType);
+
+        await service.StartBigHuntQuest(new StartBigHuntQuestRequest
+        {
+            BigHuntBossQuestId = bossQuest.BigHuntBossQuestId,
+            BigHuntQuestId = bhQuest.BigHuntQuestId,
+            UserDeckNumber = 1
+        }, ContextFor(userId));
+        userDb.EntitySBigHuntSession.Single().TotalDamage = 1_000_000;
+        await service.FinishBigHuntQuest(new FinishBigHuntQuestRequest
+        {
+            BigHuntBossQuestId = bossQuest.BigHuntBossQuestId,
+            BigHuntQuestId = bhQuest.BigHuntQuestId
+        }, ContextFor(userId));
+
+        Assert.Equal(300_000_000, userDb.EntityIUserBigHuntWeeklyMaxScore.Single(m => m.BigHuntWeeklyVersion == weeklyVersion && m.AttributeType == boss.AttributeType).MaxScore);
+        Assert.Contains(userDb.EntityIUserBigHuntWeeklyStatus, s => s.BigHuntWeeklyVersion == weeklyVersion);
     }
 
     [Fact]

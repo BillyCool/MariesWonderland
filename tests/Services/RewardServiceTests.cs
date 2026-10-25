@@ -94,8 +94,7 @@ public class RewardServiceTests
         Assert.Equal(3, material.Count);
         Assert.Equal(123, material.FirstAcquisitionDatetime);
 
-        EntityIUserBigHuntWeeklyStatus status = Assert.Single(userDb.EntityIUserBigHuntWeeklyStatus);
-        Assert.Equal(weeklyVersion, status.BigHuntWeeklyVersion);
+        EntityIUserBigHuntWeeklyStatus status = Assert.Single(userDb.EntityIUserBigHuntWeeklyStatus, s => s.BigHuntWeeklyVersion == weeklyVersion);
         Assert.True(status.IsReceivedWeeklyReward);
     }
 
@@ -146,13 +145,37 @@ public class RewardServiceTests
         Assert.Equal(1, material.Count);
         Assert.Equal(456, material.FirstAcquisitionDatetime);
 
-        EntityIUserBigHuntWeeklyStatus status = Assert.Single(userDb.EntityIUserBigHuntWeeklyStatus);
-        Assert.Equal(weeklyVersion, status.BigHuntWeeklyVersion);
+        EntityIUserBigHuntWeeklyStatus status = Assert.Single(userDb.EntityIUserBigHuntWeeklyStatus, s => s.BigHuntWeeklyVersion == weeklyVersion);
         Assert.True(status.IsReceivedWeeklyReward);
     }
 
     [Fact]
-    public async Task ReceiveBigHuntReward_ForFreshUserWithoutScores_CreatesStatusAndReturnsZeroedResults()
+    public async Task ReceiveBigHuntReward_ForAWeekWithoutASignIn_PaysNothing()
+    {
+        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        long weeklyVersion = GetWeeklyVersion(nowMs);
+        DarkMasterMemoryDatabase masterDb = CreateMasterDb(nowMs);
+        DarkUserMemoryDatabase userDb = CreateUserDb();
+        userDb.EntityIUserMaterial.Add(new EntityIUserMaterial { UserId = UserId, MaterialId = MaterialId, Count = 1 });
+        userDb.EntityIUserBigHuntScheduleMaxScore.Add(new EntityIUserBigHuntScheduleMaxScore
+        {
+            UserId = UserId,
+            BigHuntScheduleId = BigHuntRewardHelper.ResolveActiveScheduleId(masterDb, nowMs),
+            BigHuntBossId = FireBossId,
+            MaxScore = 650
+        });
+        RewardServiceImpl service = CreateService(masterDb, userDb);
+
+        ReceiveBigHuntRewardResponse response = await service.ReceiveBigHuntReward(new Empty(), FakeServerCallContext.For(UserId));
+
+        // The user has a season best but no row for last week: they didn't sign in during it.
+        Assert.Empty(response.WeeklyScoreReward);
+        Assert.Equal(1, Assert.Single(userDb.EntityIUserMaterial).Count);
+        Assert.DoesNotContain(userDb.EntityIUserBigHuntWeeklyStatus, s => s.BigHuntWeeklyVersion == weeklyVersion);
+    }
+
+    [Fact]
+    public async Task ReceiveBigHuntReward_ForFreshUserWithoutScores_StartsTheCurrentWeekAndReturnsZeroedResults()
     {
         long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
         long weeklyVersion = GetWeeklyVersion(nowMs);
@@ -179,8 +202,8 @@ public class RewardServiceTests
         Assert.NotNull(createdDb);
 
         EntityIUserBigHuntWeeklyStatus status = Assert.Single(createdDb.EntityIUserBigHuntWeeklyStatus);
-        Assert.Equal(weeklyVersion, status.BigHuntWeeklyVersion);
-        Assert.True(status.IsReceivedWeeklyReward);
+        Assert.Equal(GameDayHelper.StartOfWeek(DateTimeOffset.UtcNow.ToUnixTimeMilliseconds()), status.BigHuntWeeklyVersion);
+        Assert.False(status.IsReceivedWeeklyReward);
     }
 
     [Fact]
@@ -254,6 +277,29 @@ public class RewardServiceTests
         EntityIUserPvpStatus status = Assert.Single(userDb.EntityIUserPvpStatus);
         Assert.Equal(102, status.LatestRewardReceivePvpWeeklyVersion);
         Assert.Equal(1, status.LatestRewardReceivePvpSeasonId);
+    }
+
+    [Fact]
+    public async Task ReceivePvpReward_DoesNotPayTheWeekStillRunning()
+    {
+        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        long runningWeek = GameDayHelper.StartOfWeek(nowMs);
+        DarkMasterMemoryDatabase masterDb = CreateMasterDb(nowMs);
+        DarkUserMemoryDatabase userDb = CreateUserDb();
+        userDb.EntityIUserGem.Add(new EntityIUserGem { UserId = UserId, FreeGem = 10, PaidGem = 1 });
+        userDb.EntityIUserPvpStatus.Add(new EntityIUserPvpStatus { UserId = UserId, LatestRewardReceivePvpWeeklyVersion = 100 });
+        userDb.EntityIUserPvpWeeklyResult.AddRange(
+        [
+            new EntityIUserPvpWeeklyResult { UserId = UserId, PvpWeeklyVersion = 101, PvpSeasonId = 1, FinalPoint = 250, FinalRank = 7 },
+            new EntityIUserPvpWeeklyResult { UserId = UserId, PvpWeeklyVersion = runningWeek, PvpSeasonId = 2, FinalPoint = 450, FinalRank = 3 }
+        ]);
+
+        RewardServiceImpl service = CreateService(masterDb, userDb);
+
+        ReceivePvpRewardResponse response = await service.ReceivePvpReward(new Empty(), FakeServerCallContext.For(UserId));
+
+        Assert.Equal(1, response.WeeklyGradeResult.TargetSeasonId);
+        Assert.Equal(101, Assert.Single(userDb.EntityIUserPvpStatus).LatestRewardReceivePvpWeeklyVersion);
     }
 
     [Fact]
@@ -428,7 +474,8 @@ public class RewardServiceTests
     private static DarkUserMemoryDatabase CreateUserDb() => new() { UserId = UserId };
 
     /// <summary>The game week (Monday 08:00 UTC) containing <paramref name="millis"/>.</summary>
-    private static long GetWeeklyVersion(long millis) => GameDayHelper.StartOfWeek(millis);
+    // The claimable week is the one that just ended.
+    private static long GetWeeklyVersion(long millis) => BigHuntRewardHelper.ClaimWeekVersion(millis);
 
     private static string RewardKey(BigHuntReward reward)
         => $"{reward.PossessionType}:{reward.PossessionId}:{reward.Count}";
