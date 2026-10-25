@@ -133,8 +133,8 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
             ContextFor(UserId));
 
         Assert.NotNull(response);
-        Assert.Equal(1990, userDb.EntityIUser[0].BirthYear);
-        Assert.Equal(6, userDb.EntityIUser[0].BirthMonth);
+        Assert.Equal(1990, userDb.EntitySUser[0].BirthYear);
+        Assert.Equal(6, userDb.EntitySUser[0].BirthMonth);
     }
 
     /// <summary>
@@ -144,7 +144,7 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
     public async Task GetBirthYearMonth_WithExistingUser_ReturnsStoredValues()
     {
         var userDb = CreateUserDb();
-        userDb.EntityIUser.Add(new EntityIUser
+        userDb.EntitySUser.Add(new EntitySUser
         {
             UserId = UserId,
             BirthYear = 1985,

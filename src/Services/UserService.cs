@@ -193,12 +193,12 @@ public class UserService(UserDataStore store, UserDataSeeder seeder, DarkMasterM
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
 
-        EntityIUser? user = userDb.EntityIUser.FirstOrDefault(u => u.UserId == userId);
+        EntitySUser? sUser = userDb.EntitySUser.FirstOrDefault(u => u.UserId == userId);
 
         return Task.FromResult(new GetBirthYearMonthResponse
         {
-            BirthYear = user?.BirthYear ?? 2000,
-            BirthMonth = user?.BirthMonth ?? 1
+            BirthYear = sUser?.BirthYear ?? 2000,
+            BirthMonth = sUser?.BirthMonth ?? 1
         });
     }
 
@@ -324,10 +324,10 @@ public class UserService(UserDataStore store, UserDataSeeder seeder, DarkMasterM
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
 
-        EntityIUser user = userDb.EntityIUser.GetOrCreate(userId);
+        EntitySUser sUser = userDb.EntitySUser.GetOrCreate(userId);
 
-        user.BirthYear = request.BirthYear;
-        user.BirthMonth = request.BirthMonth;
+        sUser.BirthYear = request.BirthYear;
+        sUser.BirthMonth = request.BirthMonth;
 
         return Task.FromResult(new SetBirthYearMonthResponse());
     }

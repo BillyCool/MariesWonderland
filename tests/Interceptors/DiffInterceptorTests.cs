@@ -173,6 +173,65 @@ public class DiffInterceptorTests : InterceptorTestBase
     }
 
     /// <summary>
+    /// Verifies that a handler that changes, adds and removes rows and then throws leaves the user exactly as before
+    /// the call, and that the exception still reaches the caller.
+    /// </summary>
+    [Fact]
+    public async Task HandlerThrows_ChangesAreUndone()
+    {
+        DarkUserMemoryDatabase userDb = new();
+        userDb.EntityIUserWeapon.Add(new EntityIUserWeapon { UserId = 1, UserWeaponUuid = "a", WeaponId = 100, Level = 1 });
+        userDb.EntityIUserWeapon.Add(new EntityIUserWeapon { UserId = 1, UserWeaponUuid = "b", WeaponId = 200, Level = 3 });
+        userDb.EntitySUser.Add(new EntitySUser { UserId = 1, ChargeMoneyThisMonth = 5 });
+        UserDataStore store = CreateStoreWithUser(1, userDb);
+        DiffInterceptor interceptor = CreateInterceptor(store);
+        FakeServerCallContext context = FakeServerCallContext.For(userId: 1);
+
+        await Assert.ThrowsAsync<RpcException>(() => CallInterceptor<SetUserNameRequest, SetUserNameResponse>(
+            interceptor,
+            new SetUserNameRequest(),
+            context,
+            () =>
+            {
+                userDb.EntityIUserWeapon[0].Level = 50;
+                userDb.EntityIUserWeapon.RemoveAt(1);
+                userDb.EntityIUserWeapon.Add(new EntityIUserWeapon { UserId = 1, UserWeaponUuid = "c", WeaponId = 300 });
+                userDb.EntitySUser[0].ChargeMoneyThisMonth = 99;
+                throw new RpcException(new Status(StatusCode.FailedPrecondition, "test"));
+            }));
+
+        Assert.True(store.TryGet(1, out DarkUserMemoryDatabase current));
+        Assert.Same(userDb, current);
+        Assert.Equal(["a", "b"], current.EntityIUserWeapon.Select(w => w.UserWeaponUuid));
+        Assert.Equal([1, 3], current.EntityIUserWeapon.Select(w => w.Level));
+        Assert.Equal(5, Assert.Single(current.EntitySUser).ChargeMoneyThisMonth);
+    }
+
+    /// <summary>
+    /// Verifies that a user who wasn't in memory before a failed call is dropped from memory afterwards, so the next
+    /// call loads the saved state instead of what the failed call left behind.
+    /// </summary>
+    [Fact]
+    public async Task HandlerThrows_UserLoadedDuringCall_IsDroppedFromMemory()
+    {
+        UserDataStore store = CreateEmptyStore();
+        DiffInterceptor interceptor = CreateInterceptor(store);
+        FakeServerCallContext context = FakeServerCallContext.For(userId: 7);
+
+        await Assert.ThrowsAsync<InvalidOperationException>(() => CallInterceptor<SetUserNameRequest, SetUserNameResponse>(
+            interceptor,
+            new SetUserNameRequest(),
+            context,
+            () =>
+            {
+                store.GetOrCreate(7).EntityIUserWeapon.Add(new EntityIUserWeapon { UserId = 7, UserWeaponUuid = "x" });
+                throw new InvalidOperationException("test");
+            }));
+
+        Assert.False(store.TryGet(7, out _));
+    }
+
+    /// <summary>
     /// Verifies that when the user is not in the store, the interceptor
     /// gracefully handles it: DiffUserData remains empty and no exception is thrown.
     /// </summary>

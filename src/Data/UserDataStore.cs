@@ -360,6 +360,16 @@ public class UserDataStore(TimeProvider timeProvider, IUserPersistence? persiste
         return evicted;
     }
 
+    /// <summary>
+    /// Drops a user from memory without saving, so the next access loads them from the user database again (or starts
+    /// them fresh when there is none). The caller must hold the user's lock.
+    /// </summary>
+    public void Forget(long userId)
+    {
+        _users.TryRemove(userId, out _);
+        _lastUsedTicks.TryRemove(userId, out _);
+    }
+
     private void Touch(long userId) => _lastUsedTicks[userId] = _timeProvider.GetUtcNow().UtcTicks;
 
     /// <summary>The ids of every user: saved ones with a user database, else the ones in memory.</summary>

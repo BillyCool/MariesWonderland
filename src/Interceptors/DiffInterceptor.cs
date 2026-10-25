@@ -16,6 +16,8 @@ namespace MariesWonderland.Interceptors;
 /// services never fill it themselves), and the change set is written to the user database
 /// (<see cref="UserDataStore.SaveChanges(long, Dictionary{string, TableSnapshot}, Dictionary{string, TableSnapshot}, DarkUserMemoryDatabase)"/>).
 /// It runs inside <c>UserLockInterceptor</c>, so nothing else changes the user in between.
+/// When the handler throws, whatever it changed is undone (<see cref="UndoFailedCall"/>), since a failed call carries
+/// no diff and saves nothing.
 /// Only calls with a session are tracked: calls made before login (RegisterUser, Auth, TransferUser…) save
 /// themselves, and the client loads its full state with GetUserData right after logging in.
 /// </summary>
@@ -41,11 +43,21 @@ public class DiffInterceptor(UserDataStore store, ILogger<DiffInterceptor> logge
         }
 
         // A user the handler creates counts as all new.
-        Dictionary<string, TableSnapshot> before = store.TryGet(userId, out DarkUserMemoryDatabase? beforeDb)
-            ? UserDataDiffBuilder.Snapshot(beforeDb)
-            : [];
+        bool wasLoaded = store.TryGet(userId, out DarkUserMemoryDatabase? beforeDb);
+        Dictionary<string, TableSnapshot> before = wasLoaded ? UserDataDiffBuilder.Snapshot(beforeDb!) : [];
 
-        TResponse response = await continuation(request, context);
+        TResponse response;
+        try
+        {
+            response = await continuation(request, context);
+        }
+        catch
+        {
+            // A failed call sends the client no diff and saves nothing, so any change the handler made before it threw
+            // must not stay in memory either: the next full load would show the client a change that was never saved.
+            UndoFailedCall(userId, wasLoaded, before);
+            throw;
+        }
 
         if (!store.TryGet(userId, out DarkUserMemoryDatabase userDb))
         {
@@ -80,5 +92,37 @@ public class DiffInterceptor(UserDataStore store, ILogger<DiffInterceptor> logge
         store.SaveChanges(userId, before, after, userDb);
         context.SetUserChanges(new UserChanges(userId, before, after));
         return response;
+    }
+
+    /// <summary>
+    /// Puts the user back to how they were before a failed call. A user that was in memory gets their changed tables
+    /// rebuilt from the snapshot. A user the call loaded or created is dropped from memory instead, so the next call
+    /// loads the last saved state.
+    /// </summary>
+    private void UndoFailedCall(long userId, bool wasLoaded, Dictionary<string, TableSnapshot> before)
+    {
+        try
+        {
+            if (!wasLoaded)
+            {
+                store.Forget(userId);
+                return;
+            }
+
+            if (store.TryGet(userId, out DarkUserMemoryDatabase userDb))
+            {
+                int restored = UserDataDiffBuilder.Restore(userDb, before);
+                if (restored > 0)
+                {
+                    logger.LogInformation("Undid {Count} changed table(s) of user {UserId} after a failed call", restored, userId);
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            // Last resort: drop the user so nothing half-changed is served or saved.
+            logger.LogError(ex, "Undoing a failed call for user {UserId} failed; dropping them from memory", userId);
+            store.Forget(userId);
+        }
     }
 }

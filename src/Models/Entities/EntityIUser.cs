@@ -20,9 +20,5 @@ public class EntityIUser : IUserEntity
 
     public long GameStartDatetime { get; set; }
 
-    public int BirthYear { get; set; }
-
-    public int BirthMonth { get; set; }
-
     public long LatestVersion { get; set; }
 }

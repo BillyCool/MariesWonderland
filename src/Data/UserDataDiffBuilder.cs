@@ -27,7 +27,9 @@ public static class UserDataDiffBuilder
         UserTable Info,
         Func<DarkUserMemoryDatabase, string> Serialize,
         Func<DarkUserMemoryDatabase, TableSnapshot> Snapshot,
-        Func<string, object> Deserialize);
+        Func<string, object> Deserialize,
+        string[] KeyNames,
+        Action<DarkUserMemoryDatabase, IEnumerable<string>> ReplaceRows);
 
     // Maps "IUserWeapon" -> accessors for db.EntityIUserWeapon, "SUserGift" -> db.EntitySUserGift, …
     private static readonly IReadOnlyDictionary<string, Table> AllTables;
@@ -64,7 +66,39 @@ public static class UserDataDiffBuilder
                 }
                 return snapshot;
             },
-            json => JsonSerializer.Deserialize<T>(json, CamelCaseOptions)!);
+            json => JsonSerializer.Deserialize<T>(json, CamelCaseOptions)!,
+            [.. EntityKey<T>.Properties.Select(p => CamelCaseOptions.PropertyNamingPolicy!.ConvertName(p.Name))],
+            (db, rowsJson) =>
+            {
+                // Same list instance, new row objects: the old ones may have been changed in place.
+                List<T> rows = getRows(db);
+                rows.Clear();
+                rows.AddRange(rowsJson.Select(json => JsonSerializer.Deserialize<T>(json, CamelCaseOptions)!));
+            });
+    }
+
+    /// <summary>
+    /// Puts every table that differs from <paramref name="before"/> back the way it was (server-only tables included),
+    /// rebuilding the rows from the snapshot's JSON. Used to undo a call that failed part-way. Returns the number of
+    /// tables put back.
+    /// </summary>
+    public static int Restore(DarkUserMemoryDatabase db, Dictionary<string, TableSnapshot> before)
+    {
+        Dictionary<string, TableSnapshot> now = Snapshot(db);
+        int restored = 0;
+        foreach ((string name, Table table) in AllTables)
+        {
+            TableSnapshot beforeRows = before.TryGetValue(name, out TableSnapshot? b) ? b : TableSnapshot.Empty;
+            TableSnapshot nowRows = now.TryGetValue(name, out TableSnapshot? n) ? n : TableSnapshot.Empty;
+            if (nowRows.HasSameRowsAs(beforeRows))
+            {
+                continue;
+            }
+
+            table.ReplaceRows(db, beforeRows.RowsJson);
+            restored++;
+        }
+        return restored;
     }
 
     /// <summary>All client-visible user table names (IUser* series, excludes EntityS* and EntityM*).</summary>
@@ -97,7 +131,7 @@ public static class UserDataDiffBuilder
 
     /// <summary>
     /// Computes the client rows that changed since the snapshot, per table. New or changed rows are sent in
-    /// <c>UpdateRecordsJson</c>; rows whose key no longer exists are sent in <c>DeleteKeysJson</c>.
+    /// <c>UpdateRecordsJson</c>; rows whose key no longer exists are sent in <c>DeleteKeysJson</c>, as their key fields only.
     /// Tables with neither are left out. Against an empty snapshot this is the full user state.
     /// </summary>
     public static Dictionary<string, DiffData> Delta(Dictionary<string, TableSnapshot> before, DarkUserMemoryDatabase db)
@@ -107,13 +141,14 @@ public static class UserDataDiffBuilder
     public static Dictionary<string, DiffData> ClientDiff(Dictionary<string, TableSnapshot> before, Dictionary<string, TableSnapshot> after)
     {
         Dictionary<string, DiffData> diff = [];
-        foreach (string name in ClientTables.Keys)
+        foreach ((string name, Table table) in ClientTables)
         {
             TableSnapshot afterRows = after.TryGetValue(name, out TableSnapshot? a) ? a : TableSnapshot.Empty;
             TableSnapshot beforeRows = before.TryGetValue(name, out TableSnapshot? b) ? b : TableSnapshot.Empty;
 
             List<string> updated = [.. afterRows.RowsChangedFrom(beforeRows)];
-            List<string> deleted = [.. beforeRows.RowsMissingFrom(afterRows)];
+            // The client builds a delete key from the key fields alone, so send nothing else.
+            List<string> deleted = [.. beforeRows.RowsMissingFrom(afterRows).Select(json => KeyFieldsOnly(json, table.KeyNames))];
 
             // Skip unchanged tables — only emit tables with actual modifications
             if (updated.Count == 0 && deleted.Count == 0) continue;
@@ -156,6 +191,24 @@ public static class UserDataDiffBuilder
         return new UserChangeSet(tables);
     }
 
+    /// <summary>A row's JSON reduced to its primary-key properties, values copied as they were.</summary>
+    private static string KeyFieldsOnly(string rowJson, string[] keyNames)
+    {
+        using JsonDocument row = JsonDocument.Parse(rowJson);
+        using MemoryStream buffer = new();
+        using (Utf8JsonWriter writer = new(buffer))
+        {
+            writer.WriteStartObject();
+            foreach (string keyName in keyNames)
+            {
+                writer.WritePropertyName(keyName);
+                row.RootElement.GetProperty(keyName).WriteTo(writer);
+            }
+            writer.WriteEndObject();
+        }
+        return Encoding.UTF8.GetString(buffer.ToArray());
+    }
+
     private static string ToJsonArray(IEnumerable<string> rowsJson)
     {
         StringBuilder sb = new("[");
@@ -183,6 +236,12 @@ public sealed class TableSnapshot
     private readonly Dictionary<object, string> _byKey = [];
 
     public int Count => _rows.Count;
+
+    /// <summary>Each row's JSON, in table order.</summary>
+    public IEnumerable<string> RowsJson => _rows.Select(row => row.Json);
+
+    /// <summary>Whether both snapshots hold the same rows, with the same content, in the same order.</summary>
+    public bool HasSameRowsAs(TableSnapshot other) => RowsJson.SequenceEqual(other.RowsJson);
 
     public void Add(object key, string json, object? row = null)
     {

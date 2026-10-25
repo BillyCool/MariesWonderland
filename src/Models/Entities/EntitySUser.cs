@@ -10,4 +10,9 @@ public class EntitySUser : IUserEntity
     public string BackupToken { get; set; } = "";
 
     public long ChargeMoneyThisMonth { get; set; }
+
+    /// <summary>Set by <c>SetBirthYearMonth</c>; 0 until then. The client never has this in its user tables.</summary>
+    public int BirthYear { get; set; }
+
+    public int BirthMonth { get; set; }
 }

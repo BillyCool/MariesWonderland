@@ -22,12 +22,6 @@ namespace MariesWonderland.Persistence.Migrations.Sqlite
                     b.Property<long>("UserId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("BirthMonth")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("BirthYear")
-                        .HasColumnType("INTEGER");
-
                     b.Property<long>("GameStartDatetime")
                         .HasColumnType("INTEGER");
 
@@ -2786,6 +2780,12 @@ namespace MariesWonderland.Persistence.Migrations.Sqlite
                     b.Property<string>("BackupToken")
                         .IsRequired()
                         .HasColumnType("TEXT");
+
+                    b.Property<int>("BirthMonth")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("BirthYear")
+                        .HasColumnType("INTEGER");
 
                     b.Property<long>("ChargeMoneyThisMonth")
                         .HasColumnType("INTEGER");

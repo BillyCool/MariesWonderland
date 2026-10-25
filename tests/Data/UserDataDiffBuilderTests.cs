@@ -31,7 +31,7 @@ public class UserDataDiffBuilderTests
     }
 
     [Fact]
-    public void Delta_RowRemoved_ReportsDeletedRow()
+    public void Delta_RowRemoved_ReportsOnlyKeyFieldsOfDeletedRow()
     {
         DarkUserMemoryDatabase db = CreateDbWithWeapons("a", "b");
         Dictionary<string, TableSnapshot> before = UserDataDiffBuilder.Snapshot(db);
@@ -40,6 +40,7 @@ public class UserDataDiffBuilderTests
 
         DiffData diff = UserDataDiffBuilder.Delta(before, db)["IUserWeapon"];
         JsonElement deleted = Assert.Single(ParseRows(diff.DeleteKeysJson));
+        Assert.Equal(["userId", "userWeaponUuid"], deleted.EnumerateObject().Select(p => p.Name));
         Assert.Equal("a", deleted.GetProperty("userWeaponUuid").GetString());
         Assert.Equal(UserId, deleted.GetProperty("userId").GetInt64());
     }
