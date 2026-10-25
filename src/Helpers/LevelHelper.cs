@@ -85,6 +85,15 @@ public static class LevelHelper
     }
 
     /// <summary>
+    /// A weapon's base max level: its enhance max-level function with no limit breaks or awakening.
+    /// </summary>
+    public static int WeaponBaseMaxLevel(DarkMasterMemoryDatabase masterDb, EntityMWeapon weaponMaster)
+    {
+        EntityMWeaponSpecificEnhance? enhance = WeaponHelper.ResolveEnhance(masterDb, weaponMaster);
+        return enhance == null ? 0 : NumericalFunctionHelper.Evaluate(masterDb, enhance.MaxLevelNumericalFunctionId, 0);
+    }
+
+    /// <summary>
     /// A weapon's max level: its enhance max-level function at its limit-break count, plus the awaken
     /// level-limit-up once the weapon is awakened.
     /// </summary>

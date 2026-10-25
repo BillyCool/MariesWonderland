@@ -211,6 +211,45 @@ public class WeaponServiceTests
         Assert.True(Assert.Single(userDb.EntityIUserWeapon, weapon => weapon.UserWeaponUuid == "other-weapon").IsProtected);
     }
 
+    [Theory]
+    [InlineData(5, true, 80, 2)]
+    [InlineData(500, false, 60, 0)]
+    public async Task EnhanceByMaterial_GreatSuccessGivesHalfTheMaterialsAndGoldBack(int roll, bool expectedGreatSuccess, int expectedGold, int expectedMaterials)
+    {
+        DarkMasterMemoryDatabase masterDb = CreateMasterDb();
+        ConfigureMainWeapon(
+            masterDb,
+            weaponType: WeaponType.SWORD,
+            maxLevelFunctionId: MaxLevelFunctionId,
+            requiredExpMapId: ExpMapId,
+            enhancementCostByMaterialFunctionId: EnhanceByMaterialCostFunctionId,
+            weaponStoryReleaseConditionGroupId: WeaponStoryGroupId);
+        AddLinearFunction(masterDb, MaxLevelFunctionId, slope: 0, intercept: 3);
+        AddLinearFunction(masterDb, EnhanceByMaterialCostFunctionId, slope: 10, intercept: 0);
+        AddLevelThreshold(masterDb, ExpMapId, level: 1, requiredExp: 0);
+        AddLevelThreshold(masterDb, ExpMapId, level: 2, requiredExp: 200);
+        AddLevelThreshold(masterDb, ExpMapId, level: 3, requiredExp: 300);
+        AddMaterial(masterDb, OffWeaponMaterialId, effectValue: 50, weaponType: WeaponType.GUN);
+
+        DarkUserMemoryDatabase userDb = CreateUserDb();
+        userDb.EntityIUserWeapon.Add(new EntityIUserWeapon { UserId = UserId, UserWeaponUuid = "target-weapon", WeaponId = TargetWeaponId, Level = 1, Exp = 0 });
+        userDb.EntityIUserConsumableItem.Add(new EntityIUserConsumableItem { UserId = UserId, ConsumableItemId = GoldItemId, Count = 100 });
+        userDb.EntityIUserMaterial.Add(new EntityIUserMaterial { UserId = UserId, MaterialId = OffWeaponMaterialId, Count = 4 });
+
+        WeaponServiceImpl service = CreateService(masterDb, userDb, greatSuccessRoll: roll);
+        EnhanceByMaterialRequest request = new() { UserWeaponUuid = "target-weapon" };
+        request.Materials[OffWeaponMaterialId] = 4;
+
+        EnhanceByMaterialResponse response = await service.EnhanceByMaterial(request, FakeServerCallContext.For(UserId));
+
+        Assert.Equal(expectedGreatSuccess, response.IsGreatSuccess);
+        // The effect is the same either way.
+        Assert.Equal(200, Assert.Single(userDb.EntityIUserWeapon).Exp);
+        Assert.Equal(expectedGold, Assert.Single(userDb.EntityIUserConsumableItem).Count);
+        Assert.Equal(expectedMaterials, Assert.Single(userDb.EntityIUserMaterial).Count);
+        Assert.Equal(expectedMaterials, response.SurplusEnhanceMaterial.GetValueOrDefault(OffWeaponMaterialId));
+    }
+
     [Fact]
     public async Task EnhanceByMaterial_AppliesSameWeaponBonusCapsExpAndUnlocksStories()
     {
@@ -918,6 +957,106 @@ public class WeaponServiceTests
         Assert.Equal(5, Assert.Single(userDb.EntityIUserWeaponStory).ReleasedMaxStoryIndex);
     }
 
+    [Theory]
+    [InlineData(2, 0, false)]
+    [InlineData(3, 0, true)]
+    [InlineData(3, 1, true)]
+    [InlineData(4, 1, true)]
+    public async Task Evolve_OnlyWorksOnAWeaponAtItsBaseMaxLevelOrHigher(int level, int limitBreakCount, bool evolves)
+    {
+        DarkMasterMemoryDatabase masterDb = CreateMasterDb();
+        ConfigureMainWeapon(
+            masterDb,
+            weaponEvolutionMaterialGroupId: WeaponEvolutionMaterialGroupId,
+            maxLevelFunctionId: MaxLevelFunctionId);
+        ConfigureFodderWeapon(masterDb, weaponId: EvolvedWeaponId, weaponType: WeaponType.SWORD, enhanceId: FodderEnhanceId);
+        AddLinearFunction(masterDb, MaxLevelFunctionId, slope: 2, intercept: 3);
+        masterDb.EntityMWeaponEvolutionGroup.AddRange(
+        [
+            new EntityMWeaponEvolutionGroup { WeaponEvolutionGroupId = WeaponEvolutionGroupId, EvolutionOrder = 0, WeaponId = TargetWeaponId },
+            new EntityMWeaponEvolutionGroup { WeaponEvolutionGroupId = WeaponEvolutionGroupId, EvolutionOrder = 1, WeaponId = EvolvedWeaponId }
+        ]);
+        masterDb.EntityMWeaponEvolutionMaterialGroup.Add(new EntityMWeaponEvolutionMaterialGroup
+        {
+            WeaponEvolutionMaterialGroupId = WeaponEvolutionMaterialGroupId,
+            MaterialId = EvolutionMaterialAId,
+            Count = 1,
+            SortOrder = 1
+        });
+
+        DarkUserMemoryDatabase userDb = CreateUserDb();
+        userDb.EntityIUserWeapon.Add(new EntityIUserWeapon
+        {
+            UserId = UserId,
+            UserWeaponUuid = "target-weapon",
+            WeaponId = TargetWeaponId,
+            Level = level,
+            LimitBreakCount = limitBreakCount
+        });
+        userDb.EntityIUserMaterial.Add(new EntityIUserMaterial
+        {
+            UserId = UserId,
+            MaterialId = EvolutionMaterialAId,
+            Count = 1
+        });
+
+        WeaponServiceImpl service = CreateService(masterDb, userDb);
+
+        await service.Evolve(new EvolveRequest { UserWeaponUuid = "target-weapon" }, FakeServerCallContext.For(UserId));
+
+        Assert.Equal(evolves ? EvolvedWeaponId : TargetWeaponId, Assert.Single(userDb.EntityIUserWeapon).WeaponId);
+        Assert.Equal(evolves ? 0 : 1, Assert.Single(userDb.EntityIUserMaterial).Count);
+    }
+
+    [Fact]
+    public async Task Evolve_KeepsLimitBreaksAndTheLevelOfAbilitySlotsTheEvolvedWeaponStillHas()
+    {
+        DarkMasterMemoryDatabase masterDb = CreateMasterDb();
+        ConfigureMainWeapon(
+            masterDb,
+            weaponAbilityGroupId: WeaponAbilityGroupId,
+            weaponEvolutionMaterialGroupId: WeaponEvolutionMaterialGroupId);
+        ConfigureFodderWeapon(masterDb, weaponId: EvolvedWeaponId, weaponType: WeaponType.SWORD, enhanceId: FodderEnhanceId, weaponAbilityGroupId: WeaponAbilityGroupId + 1);
+        masterDb.EntityMWeaponAbilityGroup.AddRange(
+        [
+            new EntityMWeaponAbilityGroup { WeaponAbilityGroupId = WeaponAbilityGroupId, SlotNumber = 1, AbilityId = AbilityId },
+            new EntityMWeaponAbilityGroup { WeaponAbilityGroupId = WeaponAbilityGroupId, SlotNumber = 2, AbilityId = AbilityId + 1 },
+            new EntityMWeaponAbilityGroup { WeaponAbilityGroupId = WeaponAbilityGroupId + 1, SlotNumber = 2, AbilityId = AbilityId + 1 },
+            new EntityMWeaponAbilityGroup { WeaponAbilityGroupId = WeaponAbilityGroupId + 1, SlotNumber = 3, AbilityId = AbilityId + 2 }
+        ]);
+        masterDb.EntityMWeaponEvolutionGroup.AddRange(
+        [
+            new EntityMWeaponEvolutionGroup { WeaponEvolutionGroupId = WeaponEvolutionGroupId, EvolutionOrder = 0, WeaponId = TargetWeaponId },
+            new EntityMWeaponEvolutionGroup { WeaponEvolutionGroupId = WeaponEvolutionGroupId, EvolutionOrder = 1, WeaponId = EvolvedWeaponId }
+        ]);
+
+        DarkUserMemoryDatabase userDb = CreateUserDb();
+        userDb.EntityIUserWeapon.Add(new EntityIUserWeapon
+        {
+            UserId = UserId,
+            UserWeaponUuid = "target-weapon",
+            WeaponId = TargetWeaponId,
+            Level = 2,
+            LimitBreakCount = 2
+        });
+        userDb.EntityIUserWeaponAbility.AddRange(
+        [
+            new EntityIUserWeaponAbility { UserId = UserId, UserWeaponUuid = "target-weapon", SlotNumber = 1, Level = 4 },
+            new EntityIUserWeaponAbility { UserId = UserId, UserWeaponUuid = "target-weapon", SlotNumber = 2, Level = 5 }
+        ]);
+
+        WeaponServiceImpl service = CreateService(masterDb, userDb);
+
+        await service.Evolve(new EvolveRequest { UserWeaponUuid = "target-weapon" }, FakeServerCallContext.For(UserId));
+
+        Assert.Equal(2, Assert.Single(userDb.EntityIUserWeapon).LimitBreakCount);
+        Assert.Equal(
+            [(2, 5), (3, 1)],
+            userDb.EntityIUserWeaponAbility
+                .OrderBy(ability => ability.SlotNumber)
+                .Select(ability => (ability.SlotNumber, ability.Level)));
+    }
+
     [Fact]
     public async Task Awaken_ConsumesConfiguredResourcesAndSecondCallDoesNothing()
     {
@@ -994,7 +1133,8 @@ public class WeaponServiceTests
     private static WeaponServiceImpl CreateService(
         DarkMasterMemoryDatabase masterDb,
         DarkUserMemoryDatabase userDb,
-        int weaponLimitBreakAvailableCount = 4)
+        int weaponLimitBreakAvailableCount = 4,
+        int greatSuccessRoll = int.MaxValue)
     {
         UserDataStore store = new(TimeProvider.System);
         store.Set(UserId, userDb);
@@ -1006,7 +1146,12 @@ public class WeaponServiceTests
                 ConsumableItemIdForGold = GoldItemId,
                 MaterialSameWeaponExpCoefficientPermil = 1500,
                 WeaponLimitBreakAvailableCount = weaponLimitBreakAvailableCount
-            }, new EnhanceCampaignHelper(masterDb), new MissionTracker(masterDb, new MissionCatalog(masterDb, MissionFilterTable.Empty)), TimeProvider.System);
+            }, new EnhanceCampaignHelper(masterDb, new FixedRandom(greatSuccessRoll)), new MissionTracker(masterDb, new MissionCatalog(masterDb, MissionFilterTable.Empty)), TimeProvider.System);
+    }
+
+    private sealed class FixedRandom(int value) : Random
+    {
+        public override int Next(int maxValue) => value;
     }
 
     private static DarkMasterMemoryDatabase CreateMasterDb() => new();

@@ -134,6 +134,8 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
 
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
+
         EntityIUserWeapon? weapon = FindWeapon(userDb, request.UserWeaponUuid);
         if (weapon == null)
         {
@@ -149,6 +151,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
         // Consume materials and calculate total EXP gained
         int totalExp = 0;
         int totalMaterialCount = 0;
+        List<(EntityIUserMaterial Material, int Count)> usedMaterials = [];
 
         foreach (KeyValuePair<int, int> entry in request.Materials)
         {
@@ -168,6 +171,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
             }
 
             userMat.Count -= count;
+            usedMaterials.Add((userMat, count));
             totalMaterialCount += count;
 
             // Apply 1.5x EXP bonus when material weapon type matches the target weapon
@@ -179,6 +183,22 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
             totalExp += expPerUnit * count;
         }
 
+        // A great success has the same effect for half the materials and gold: the other half is given back
+        bool isGreatSuccess = totalMaterialCount > 0 && _enhanceCampaigns.RollWeaponGreatSuccess(wm, nowMs);
+        Dictionary<int, int> surplusMaterials = [];
+        if (isGreatSuccess)
+        {
+            foreach ((EntityIUserMaterial material, int count) in usedMaterials)
+            {
+                int refund = EnhanceCampaignHelper.GreatSuccessRefund(count);
+                if (refund > 0)
+                {
+                    material.Count += refund;
+                    surplusMaterials[material.MaterialId] = refund;
+                }
+            }
+        }
+
         // Deduct gold cost scaled by number of materials used
         if (totalMaterialCount > 0)
         {
@@ -186,19 +206,26 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
             if (enhance != null)
             {
                 int goldCost = EvaluateNumericalFunction(enhance.EnhancementCostByMaterialNumericalFunctionId, totalMaterialCount);
+                if (isGreatSuccess)
+                {
+                    goldCost -= EnhanceCampaignHelper.GreatSuccessRefund(goldCost);
+                }
+
                 SubtractGold(userDb, goldCost);
             }
         }
 
-        // Apply EXP (after enhance campaigns), recalculate level, and check for new story page unlocks
-        weapon.Exp += _enhanceCampaigns.ApplyWeaponExp(totalExp, wm, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
+        // Apply EXP, recalculate level, and check for new story page unlocks
+        weapon.Exp += totalExp;
         ApplyLevelFromExp(userDb, weapon, wm);
 
         CheckWeaponStoryUnlocks(userDb, weapon.WeaponId, weapon.Level);
 
-        _missions.Record(userDb, MissionClearConditionType.WEAPON_ENHANCE_BY_COUNT, 1, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
+        _missions.Record(userDb, MissionClearConditionType.WEAPON_ENHANCE_BY_COUNT, 1, nowMs);
 
-        return Task.FromResult(new EnhanceByMaterialResponse{ IsGreatSuccess = false });
+        EnhanceByMaterialResponse response = new() { IsGreatSuccess = isGreatSuccess };
+        response.SurplusEnhanceMaterial.Add(surplusMaterials);
+        return Task.FromResult(response);
     }
 
     /// <summary>
@@ -276,15 +303,15 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
             }
         }
 
-        // Apply EXP (after enhance campaigns), recalculate level, and check for new story page unlocks
-        weapon.Exp += _enhanceCampaigns.ApplyWeaponExp(totalExp, wm, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
+        // Apply EXP, recalculate level, and check for new story page unlocks
+        weapon.Exp += totalExp;
         ApplyLevelFromExp(userDb, weapon, wm);
 
         CheckWeaponStoryUnlocks(userDb, weapon.WeaponId, weapon.Level);
 
-        _missions.Record(userDb, MissionClearConditionType.WEAPON_ENHANCE_BY_COUNT, 1, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
+        _missions.Record(userDb, MissionClearConditionType.WEAPON_ENHANCE_BY_COUNT, 1, nowMs);
 
-        return Task.FromResult(new EnhanceByWeaponResponse{ IsGreatSuccess = false });
+        return Task.FromResult(new EnhanceByWeaponResponse { IsGreatSuccess = false });
     }
 
     /// <summary>
@@ -635,10 +662,8 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
     }
 
     /// <summary>
-    /// Evolves a weapon to its next form: deducts materials and gold, updates weapon ID and ability slots.
-    /// </summary>
-    /// <summary>
-    /// Evolves a weapon to its next form, consuming evolution materials and gold. Resets ability slots to the evolved weapon's layout.
+    /// Evolves a weapon to its next form, consuming evolution materials and gold. Limit breaks and skill levels stay; ability slots follow the evolved weapon's layout and keep their level.
+    /// Only a weapon that has reached its base max level (no limit breaks) can evolve; a limit-broken weapon past it can too.
     /// </summary>
     public override Task<EvolveResponse> Evolve(EvolveRequest request, ServerCallContext context)
     {
@@ -653,6 +678,11 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
 
         EntityMWeapon? wm = FindWeaponMaster(weapon.WeaponId);
         if (wm == null)
+        {
+            return Task.FromResult(new EvolveResponse());
+        }
+
+        if (weapon.Level < LevelHelper.WeaponBaseMaxLevel(_masterDb, wm))
         {
             return Task.FromResult(new EvolveResponse());
         }
@@ -711,20 +741,24 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
         // Transform the weapon into its evolved form
         weapon.WeaponId = evolvedId;
 
-        // Replace ability slots with the evolved weapon's ability layout
+        // Move to the evolved weapon's ability layout: slots it still has keep their level, new slots start at 1
         EntityMWeapon? evolvedMaster = FindWeaponMaster(evolvedId);
         if (evolvedMaster != null)
         {
-            userDb.EntityIUserWeaponAbility.RemoveAll(a => a.UserWeaponUuid == request.UserWeaponUuid);
-            foreach (EntityMWeaponAbilityGroup ag in _masterDb.EntityMWeaponAbilityGroup)
+            List<int> evolvedSlots = _masterDb.EntityMWeaponAbilityGroup
+                .Where(ag => ag.WeaponAbilityGroupId == evolvedMaster.WeaponAbilityGroupId)
+                .Select(ag => ag.SlotNumber)
+                .ToList();
+            userDb.EntityIUserWeaponAbility.RemoveAll(a => a.UserWeaponUuid == request.UserWeaponUuid && !evolvedSlots.Contains(a.SlotNumber));
+            foreach (int slot in evolvedSlots)
             {
-                if (ag.WeaponAbilityGroupId == evolvedMaster.WeaponAbilityGroupId)
+                if (!userDb.EntityIUserWeaponAbility.Any(a => a.UserWeaponUuid == request.UserWeaponUuid && a.SlotNumber == slot))
                 {
                     userDb.EntityIUserWeaponAbility.Add(new EntityIUserWeaponAbility
                     {
                         UserId = userId,
                         UserWeaponUuid = request.UserWeaponUuid,
-                        SlotNumber = ag.SlotNumber,
+                        SlotNumber = slot,
                         Level = 1
                     });
                 }

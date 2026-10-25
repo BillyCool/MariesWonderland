@@ -25,6 +25,51 @@ public class CostumeServiceTests
     private const int ActiveSkillMaterialTierTwoId = 802;
     private const int ThoughtId = 901;
 
+    [Theory]
+    [InlineData(5, true, 80, 2)]
+    [InlineData(500, false, 60, 0)]
+    public async Task Enhance_GreatSuccessGivesHalfTheMaterialsAndGoldBack(int roll, bool expectedGreatSuccess, int expectedGold, int expectedMaterials)
+    {
+        DarkMasterMemoryDatabase masterDb = CreateMasterDb();
+        ConfigureCostume(masterDb, skillfulWeaponType: WeaponType.SWORD, rarityType: RarityType.RARE);
+        ConfigureRarity(
+            masterDb,
+            enhancementCostFunctionId: 10,
+            requiredExpMapId: 20,
+            limitBreakCostFunctionId: 0,
+            activeSkillMaxLevelFunctionId: 0,
+            activeSkillEnhancementCostFunctionId: 0);
+        AddLinearFunction(masterDb, functionId: 10, slope: 10, intercept: 0, parameterGroupId: 110);
+        AddLevelThreshold(masterDb, mapId: 20, level: 1, requiredExp: 0);
+        AddLevelThreshold(masterDb, mapId: 20, level: 2, requiredExp: 100);
+        AddLevelThreshold(masterDb, mapId: 20, level: 3, requiredExp: 1000);
+        masterDb.EntityMMaterial.Add(new EntityMMaterial
+        {
+            MaterialId = EnhanceMaterialId,
+            MaterialType = MaterialType.COSTUME_ENHANCEMENT,
+            WeaponType = WeaponType.GUN,
+            EffectValue = 100
+        });
+
+        DarkUserMemoryDatabase userDb = CreateUserDb();
+        userDb.EntityIUserCostume.Add(new EntityIUserCostume { UserId = UserId, UserCostumeUuid = "costume-1", CostumeId = CostumeId, Level = 1, Exp = 10 });
+        userDb.EntityIUserConsumableItem.Add(new EntityIUserConsumableItem { UserId = UserId, ConsumableItemId = GoldItemId, Count = 100 });
+        userDb.EntityIUserMaterial.Add(new EntityIUserMaterial { UserId = UserId, MaterialId = EnhanceMaterialId, Count = 4 });
+
+        CostumeServiceImpl service = CreateService(masterDb, userDb, greatSuccessRoll: roll);
+        EnhanceRequest request = new() { UserCostumeUuid = "costume-1" };
+        request.Materials[EnhanceMaterialId] = 4;
+
+        EnhanceResponse response = await service.Enhance(request, FakeServerCallContext.For(UserId));
+
+        Assert.Equal(expectedGreatSuccess, response.IsGreatSuccess);
+        // The effect is the same either way.
+        Assert.Equal(410, Assert.Single(userDb.EntityIUserCostume).Exp);
+        Assert.Equal(expectedGold, Assert.Single(userDb.EntityIUserConsumableItem).Count);
+        Assert.Equal(expectedMaterials, Assert.Single(userDb.EntityIUserMaterial).Count);
+        Assert.Equal(expectedMaterials, response.SurplusEnhanceMaterial.GetValueOrDefault(EnhanceMaterialId));
+    }
+
     [Fact]
     public async Task Enhance_AppliesSameWeaponBonusAndCapsLevelFromUsedMaterialsOnly()
     {
@@ -599,7 +644,8 @@ public class CostumeServiceTests
         DarkMasterMemoryDatabase masterDb,
         DarkUserMemoryDatabase userDb,
         int sameWeaponExpCoefficientPermil = 1500,
-        int costumeLimitBreakAvailableCount = 4)
+        int costumeLimitBreakAvailableCount = 4,
+        int greatSuccessRoll = int.MaxValue)
     {
         userDb.UserId = UserId;
         UserDataStore store = new(TimeProvider.System);
@@ -612,7 +658,12 @@ public class CostumeServiceTests
                 ConsumableItemIdForGold = GoldItemId,
                 CostumeLimitBreakAvailableCount = costumeLimitBreakAvailableCount,
                 MaterialSameWeaponExpCoefficientPermil = sameWeaponExpCoefficientPermil
-            }, new EnhanceCampaignHelper(masterDb), new MissionTracker(masterDb, new MissionCatalog(masterDb, MissionFilterTable.Empty)), TimeProvider.System);
+            }, new EnhanceCampaignHelper(masterDb, new FixedRandom(greatSuccessRoll)), new MissionTracker(masterDb, new MissionCatalog(masterDb, MissionFilterTable.Empty)), TimeProvider.System);
+    }
+
+    private sealed class FixedRandom(int value) : Random
+    {
+        public override int Next(int maxValue) => value;
     }
 
     private static DarkMasterMemoryDatabase CreateMasterDb() => new();

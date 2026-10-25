@@ -74,6 +74,7 @@ public class CostumeService(DarkMasterMemoryDatabase masterDb, UserDataStore sto
         // Consume materials and calculate total EXP gained
         int totalExp = 0;
         int totalMaterialCount = 0;
+        List<(EntityIUserMaterial Material, int Count)> usedMaterials = [];
 
         foreach (KeyValuePair<int, int> entry in request.Materials)
         {
@@ -101,6 +102,7 @@ public class CostumeService(DarkMasterMemoryDatabase masterDb, UserDataStore sto
             }
 
             userMat.Count -= count;
+            usedMaterials.Add((userMat, count));
             totalMaterialCount += count;
 
             // Apply 1.5x EXP bonus when material weapon type matches the costume's proficient weapon type
@@ -111,6 +113,23 @@ public class CostumeService(DarkMasterMemoryDatabase masterDb, UserDataStore sto
             }
 
             totalExp += expPerUnit * count;
+        }
+
+        // A great success has the same effect for half the materials and gold: the other half is given back
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
+        bool isGreatSuccess = totalMaterialCount > 0 && _enhanceCampaigns.RollCostumeGreatSuccess(costumeMaster, nowMs);
+        Dictionary<int, int> surplusMaterials = [];
+        if (isGreatSuccess)
+        {
+            foreach ((EntityIUserMaterial material, int count) in usedMaterials)
+            {
+                int refund = EnhanceCampaignHelper.GreatSuccessRefund(count);
+                if (refund > 0)
+                {
+                    material.Count += refund;
+                    surplusMaterials[material.MaterialId] = refund;
+                }
+            }
         }
 
         // Look up rarity-based cost and EXP threshold parameters
@@ -128,6 +147,10 @@ public class CostumeService(DarkMasterMemoryDatabase masterDb, UserDataStore sto
         if (totalMaterialCount > 0 && rarityRow != null)
         {
             int goldCost = EvaluateNumericalFunction(rarityRow.EnhancementCostByMaterialNumericalFunctionId, totalMaterialCount);
+            if (isGreatSuccess)
+            {
+                goldCost -= EnhanceCampaignHelper.GreatSuccessRefund(goldCost);
+            }
 
             EntityIUserConsumableItem? gold = null;
             foreach (EntityIUserConsumableItem ci in userDb.EntityIUserConsumableItem)
@@ -145,8 +168,8 @@ public class CostumeService(DarkMasterMemoryDatabase masterDb, UserDataStore sto
             }
         }
 
-        // Apply EXP (after enhance campaigns) and recalculate level from rarity-specific thresholds
-        costume.Exp += _enhanceCampaigns.ApplyCostumeExp(totalExp, costumeMaster, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
+        // Apply EXP and recalculate level from rarity-specific thresholds
+        costume.Exp += totalExp;
 
         if (rarityRow != null)
         {
@@ -154,9 +177,11 @@ public class CostumeService(DarkMasterMemoryDatabase masterDb, UserDataStore sto
             (costume.Level, costume.Exp) = LevelHelper.ApplyExp(_masterDb, rarityRow.RequiredExpForLevelUpNumericalParameterMapId, costume.Exp, maxLevel);
         }
 
-        _missions.Record(userDb, MissionClearConditionType.COSTUME_ENHANCE_BY_COUNT, 1, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
+        _missions.Record(userDb, MissionClearConditionType.COSTUME_ENHANCE_BY_COUNT, 1, nowMs);
 
-        return Task.FromResult(new EnhanceResponse { IsGreatSuccess = false });
+        EnhanceResponse response = new() { IsGreatSuccess = isGreatSuccess };
+        response.SurplusEnhanceMaterial.Add(surplusMaterials);
+        return Task.FromResult(response);
     }
 
     /// <summary>
