@@ -281,7 +281,7 @@ public class PartsService(DarkMasterMemoryDatabase masterDb, UserDataStore store
     }
 
     /// <summary>
-    /// Sets the display name of a preset tag if it exists.
+    /// Sets the display name of a preset tag, creating the tag when it has no row yet.
     /// </summary>
     public override Task<UpdatePresetTagNameResponse> UpdatePresetTagName(UpdatePresetTagNameRequest request, ServerCallContext context)
     {
@@ -301,6 +301,16 @@ public class PartsService(DarkMasterMemoryDatabase masterDb, UserDataStore store
         if (tag != null)
         {
             tag.Name = request.Name;
+        }
+        else
+        {
+            // A tag only has a row once it is named (a new account has none), so naming one creates it.
+            userDb.EntityIUserPartsPresetTag.Add(new EntityIUserPartsPresetTag
+            {
+                UserId = userId,
+                UserPartsPresetTagNumber = request.UserPartsPresetTagNumber,
+                Name = request.Name
+            });
         }
 
         return Task.FromResult(new UpdatePresetTagNameResponse());
@@ -430,14 +440,13 @@ public class PartsService(DarkMasterMemoryDatabase masterDb, UserDataStore store
     private int LookupPartsLevelUpPrice(int priceGroupId, int level)
     {
         int price = 0;
+        int bestLowerLimit = -1;
         foreach (EntityMPartsLevelUpPriceGroup row in _masterDb.EntityMPartsLevelUpPriceGroup)
         {
-            if (row.PartsLevelUpPriceGroupId == priceGroupId && row.LevelLowerLimit <= level)
+            if (row.PartsLevelUpPriceGroupId == priceGroupId && row.LevelLowerLimit <= level && row.LevelLowerLimit > bestLowerLimit)
             {
-                if (row.LevelLowerLimit >= (price > 0 ? price : 0))
-                {
-                    price = row.Gold;
-                }
+                bestLowerLimit = row.LevelLowerLimit;
+                price = row.Gold;
             }
         }
         return price;

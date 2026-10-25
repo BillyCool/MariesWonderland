@@ -223,6 +223,48 @@ public class PartsServiceTests
         Assert.Equal(105, userDb.EntityIUserConsumableItem.Single().Count);
     }
 
+    [Theory]
+    [InlineData(1, 920)]
+    [InlineData(2, 1080)]
+    [InlineData(8, 1080)]
+    [InlineData(9, 5500)]
+    [InlineData(14, 5500)]
+    public async Task Enhance_CostsTheGoldOfTheHighestPriceRowAtOrBelowTheLevel(int level, int expectedGold)
+    {
+        DarkMasterMemoryDatabase masterDb = CreateMasterDb();
+        ConfigurePartsMaster(masterDb, sellFunctionId: 0);
+        masterDb.EntityMPartsLevelUpPriceGroup.Clear();
+        masterDb.EntityMPartsLevelUpPriceGroup.AddRange(
+        [
+            new EntityMPartsLevelUpPriceGroup { PartsLevelUpPriceGroupId = 1, LevelLowerLimit = 1, Gold = 920 },
+            new EntityMPartsLevelUpPriceGroup { PartsLevelUpPriceGroupId = 1, LevelLowerLimit = 2, Gold = 1080 },
+            new EntityMPartsLevelUpPriceGroup { PartsLevelUpPriceGroupId = 1, LevelLowerLimit = 9, Gold = 5500 }
+        ]);
+        DarkUserMemoryDatabase userDb = CreateUserDb();
+        userDb.EntityIUserConsumableItem.Add(new EntityIUserConsumableItem { UserId = UserId, ConsumableItemId = GoldItemId, Count = 10_000 });
+        userDb.EntityIUserParts.Add(new EntityIUserParts { UserId = UserId, UserPartsUuid = "parts-1", PartsId = PartsId, Level = level });
+        PartsService service = CreateService(masterDb, userDb);
+
+        await service.Enhance(new EnhanceRequest { UserPartsUuid = "parts-1" }, FakeServerCallContext.For(UserId));
+
+        Assert.Equal(10_000 - expectedGold, userDb.EntityIUserConsumableItem.Single().Count);
+    }
+
+    [Fact]
+    public async Task UpdatePresetTagName_RenamesATagOrCreatesItWhenItHasNoRowYet()
+    {
+        DarkUserMemoryDatabase userDb = CreateUserDb();
+        userDb.EntityIUserPartsPresetTag.Add(new EntityIUserPartsPresetTag { UserId = UserId, UserPartsPresetTagNumber = 1, Name = "Quests" });
+        PartsService service = CreateService(CreateMasterDb(), userDb);
+
+        await service.UpdatePresetTagName(new UpdatePresetTagNameRequest { UserPartsPresetTagNumber = 1, Name = "Boss" }, FakeServerCallContext.For(UserId));
+        await service.UpdatePresetTagName(new UpdatePresetTagNameRequest { UserPartsPresetTagNumber = 5, Name = "New" }, FakeServerCallContext.For(UserId));
+
+        Assert.Equal(
+            ["1:Boss", "5:New"],
+            userDb.EntityIUserPartsPresetTag.OrderBy(t => t.UserPartsPresetTagNumber).Select(t => $"{t.UserPartsPresetTagNumber}:{t.Name}"));
+    }
+
     private static PartsService CreateService(DarkMasterMemoryDatabase masterDb, DarkUserMemoryDatabase userDb)
     {
         userDb.UserId = UserId;
