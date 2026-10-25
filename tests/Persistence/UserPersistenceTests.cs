@@ -342,8 +342,16 @@ public sealed class UserPersistenceTests : IDisposable
         Assert.True(NewStore().TryGet(saveUserId, out DarkUserMemoryDatabase reloaded));
         Dictionary<string, List<string>> expected = Rows(save);
         Dictionary<string, List<string>> actual = Rows(reloaded);
-        // Signing in records the device and counts the day's login.
-        Assert.All(expected.Keys.Where(t => t is not ("SUserDevice" or "IUserLogin")), table => Assert.True(expected[table].SequenceEqual(actual[table]), $"{table} differs"));
+        // Signing in records the device, counts the day's login and starts the quests' daily clear counts again.
+        Assert.All(expected.Keys.Where(t => t is not ("SUserDevice" or "IUserLogin" or "IUserQuest")), table => Assert.True(expected[table].SequenceEqual(actual[table]), $"{table} differs"));
+        Assert.Equal(save.EntityIUserQuest.Count, reloaded.EntityIUserQuest.Count);
+        Dictionary<int, EntityIUserQuest> reloadedQuests = reloaded.EntityIUserQuest.ToDictionary(q => q.QuestId);
+        Assert.All(save.EntityIUserQuest, quest =>
+        {
+            Assert.Equal(quest.ClearCount, reloadedQuests[quest.QuestId].ClearCount);
+            Assert.Equal(quest.QuestStateType, reloadedQuests[quest.QuestId].QuestStateType);
+            Assert.True(reloadedQuests[quest.QuestId].DailyClearCount <= quest.DailyClearCount);
+        });
         Assert.Equal("transfer-device", Assert.Single(reloaded.EntitySUserDevice).Uuid);
         Assert.Equal(Assert.Single(save.EntityIUserLogin).TotalLoginCount + 1, Assert.Single(reloaded.EntityIUserLogin).TotalLoginCount);
     }

@@ -802,6 +802,40 @@ public class QuestServiceTests
         Assert.Equal(1, autoOrbit.ClearedAutoOrbitCount);
     }
 
+    [Theory]
+    [InlineData(false, true)]
+    [InlineData(true, false)]
+    public async Task FinishEventQuest_OfADuskChapter_MarksTheQuestInLimitContentStatusOnlyOnAWin(bool isRetired, bool marked)
+    {
+        DarkMasterMemoryDatabase masterDb = CreateMasterDb();
+        masterDb.EntityMEventQuestChapter.Add(new EntityMEventQuestChapter
+        {
+            EventQuestChapterId = EventQuestChapterId,
+            EventQuestType = EventQuestType.LIMIT_CONTENT
+        });
+        DarkUserMemoryDatabase userDb = new();
+        QuestServiceImpl service = CreateService(masterDb, userDb);
+
+        await service.StartEventQuest(
+            new StartEventQuestRequest { EventQuestChapterId = EventQuestChapterId, QuestId = EventQuestId },
+            FakeServerCallContext.For(UserId));
+        await service.FinishEventQuest(
+            new FinishEventQuestRequest { EventQuestChapterId = EventQuestChapterId, QuestId = EventQuestId, IsRetired = isRetired },
+            FakeServerCallContext.For(UserId));
+
+        if (marked)
+        {
+            EntityIUserQuestLimitContentStatus status = Assert.Single(userDb.EntityIUserQuestLimitContentStatus);
+            Assert.Equal(EventQuestId, status.QuestId);
+            Assert.Equal(EventQuestChapterId, status.EventQuestChapterId);
+            Assert.Equal(1, status.LimitContentQuestStatusType);
+        }
+        else
+        {
+            Assert.Empty(userDb.EntityIUserQuestLimitContentStatus);
+        }
+    }
+
     [Fact]
     public async Task ReceiveTowerAccumulationReward_GrantsOnlyNewThresholds()
     {

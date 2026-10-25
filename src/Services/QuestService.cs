@@ -790,9 +790,29 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
             result.DropRewards,
             nowMs);
 
+        if (isWin)
+        {
+            RecordLimitContentClear(userDb, userId, request.EventQuestChapterId, questId);
+        }
+
         userDb.EntitySQuestSession.RemoveAll(s => s.QuestId == questId);
 
         return Task.FromResult(response);
+    }
+
+    /// <summary>A won Recollections of Dusk quest is marked in the user's limit-content status, as every cleared one is in the real save.</summary>
+    private void RecordLimitContentClear(DarkUserMemoryDatabase userDb, long userId, int chapterId, int questId)
+    {
+        if (_masterDb.EntityMEventQuestChapter.FirstOrDefault(c => c.EventQuestChapterId == chapterId)?.EventQuestType != EventQuestType.LIMIT_CONTENT)
+        {
+            return;
+        }
+
+        EntityIUserQuestLimitContentStatus status = userDb.EntityIUserQuestLimitContentStatus.GetOrCreate(
+            s => s.QuestId == questId,
+            () => new EntityIUserQuestLimitContentStatus { UserId = userId, QuestId = questId });
+        status.LimitContentQuestStatusType = 1;
+        status.EventQuestChapterId = chapterId;
     }
 
     /// <summary>
@@ -982,6 +1002,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
                 dropRewards.AddRange(_questEngine.ApplySkippedClear(userDb, quest, ResolveEventQuestCampaignTarget(userDb, userId, questId), nowMs));
             }
 
+            QuestEngine.ResetStaleDailyClearCount(userQuest, nowMs);
             userQuest.ClearCount += request.SkipCount;
             userQuest.DailyClearCount += request.SkipCount;
             userQuest.LastClearDatetime = nowMs;

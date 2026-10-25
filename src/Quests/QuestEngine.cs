@@ -93,8 +93,27 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
 
     public static void MarkActive(EntityIUserQuest userQuest, long nowMs)
     {
+        ResetStaleDailyClearCount(userQuest, nowMs);
         userQuest.QuestStateType = (int)QuestStateType.ACTIVE;
         userQuest.LatestStartDatetime = nowMs;
+    }
+
+    /// <summary>A quest's daily clear count starts again when its last clear was before today's game day.</summary>
+    public static void ResetStaleDailyClearCount(EntityIUserQuest userQuest, long nowMs)
+    {
+        if (userQuest.DailyClearCount > 0 && GameDayHelper.IsBeforeToday(userQuest.LastClearDatetime, nowMs))
+        {
+            userQuest.DailyClearCount = 0;
+        }
+    }
+
+    /// <summary>Resets every quest's stale daily clear count, so the client sees today's limits.</summary>
+    public static void ResetDailyClearCounts(DarkUserMemoryDatabase userDb, long nowMs)
+    {
+        foreach (EntityIUserQuest userQuest in userDb.EntityIUserQuest)
+        {
+            ResetStaleDailyClearCount(userQuest, nowMs);
+        }
     }
 
     /// <summary>Keeps the fastest clear: the frames of all the run's waves added up.</summary>
@@ -109,6 +128,7 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
 
     public static void MarkCleared(EntityIUserQuest userQuest, int clearCount, long nowMs)
     {
+        ResetStaleDailyClearCount(userQuest, nowMs);
         userQuest.QuestStateType = (int)QuestStateType.CLEARED;
         userQuest.ClearCount += clearCount;
         userQuest.DailyClearCount += clearCount;

@@ -7,6 +7,7 @@ using MariesWonderland.Missions;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.User;
+using MariesWonderland.Quests;
 
 namespace MariesWonderland.Services;
 
@@ -61,6 +62,7 @@ public class UserService(UserDataStore store, UserDataSeeder seeder, DarkMasterM
         if (!isNew)
         {
             CountDailyLogin(userDb, userId, nowMs);
+            QuestEngine.ResetDailyClearCounts(userDb, nowMs);
         }
 
         Dictionary<string, TableSnapshot> after = UserDataDiffBuilder.Snapshot(userDb);

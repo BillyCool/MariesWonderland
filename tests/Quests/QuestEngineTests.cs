@@ -340,4 +340,24 @@ public class QuestEngineTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         Assert.Equal(5, LevelHelper.LevelForExp(MasterDb, LevelHelper.UserExpMapId, level5.ParameterValue));
         Assert.Equal(4, LevelHelper.LevelForExp(MasterDb, LevelHelper.UserExpMapId, level5.ParameterValue - 1));
     }
+
+    [Fact]
+    public void DailyClearCount_StartsAgainOnANewGameDay()
+    {
+        long today = new DateTimeOffset(2026, 10, 25, 12, 0, 0, TimeSpan.Zero).ToUnixTimeMilliseconds();
+        long yesterday = today - (long)TimeSpan.FromDays(1).TotalMilliseconds;
+        EntityIUserQuest staleQuest = new() { QuestId = 1, DailyClearCount = 3, ClearCount = 10, LastClearDatetime = yesterday };
+        EntityIUserQuest clearedToday = new() { QuestId = 2, DailyClearCount = 3, ClearCount = 10, LastClearDatetime = today };
+        DarkUserMemoryDatabase userDb = CreateUserDb();
+        userDb.EntityIUserQuest.AddRange([staleQuest, clearedToday]);
+
+        QuestEngine.ResetDailyClearCounts(userDb, today);
+
+        Assert.Equal(0, staleQuest.DailyClearCount);
+        Assert.Equal(3, clearedToday.DailyClearCount);
+
+        QuestEngine.MarkCleared(staleQuest, 1, today);
+        Assert.Equal(1, staleQuest.DailyClearCount);
+        Assert.Equal(11, staleQuest.ClearCount);
+    }
 }
