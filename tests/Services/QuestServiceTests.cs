@@ -727,8 +727,56 @@ public class QuestServiceTests
         Assert.Equal(AutoSalePartsId, reward.PossessionId);
         Assert.Equal(1, reward.Count);
         Assert.True(reward.IsAutoSale);
+        Assert.Null(reward.Parts);
         Assert.Empty(userDb.EntityIUserParts);
         Assert.Equal(35, Assert.Single(userDb.EntityIUserConsumableItem).Count);
+    }
+
+    [Fact]
+    public async Task FinishMainQuest_KeptMemoirDrop_CarriesItsStatsAndRarityReveal()
+    {
+        DarkMasterMemoryDatabase masterDb = CreateMasterDb();
+        DarkUserMemoryDatabase userDb = new();
+
+        EntityMQuest quest = Assert.Single(masterDb.EntityMQuest, q => q.QuestId == PlayableQuestId);
+        quest.QuestPickupRewardGroupId = 9400;
+        masterDb.EntityMQuestPickupRewardGroup.Add(new EntityMQuestPickupRewardGroup { QuestPickupRewardGroupId = 9400, BattleDropRewardId = 9402 });
+        masterDb.EntityMBattleDropReward.Add(new EntityMBattleDropReward
+        {
+            BattleDropRewardId = 9402,
+            PossessionType = PossessionType.PARTS,
+            PossessionId = AutoSalePartsId,
+            Count = 1
+        });
+        masterDb.EntityMParts.Add(new EntityMParts
+        {
+            PartsId = AutoSalePartsId,
+            RarityType = RarityType.S_RARE,
+            PartsGroupId = 94,
+            PartsStatusMainLotteryGroupId = 21
+        });
+        userDb.EntityIUserQuest.Add(new EntityIUserQuest
+        {
+            UserId = UserId,
+            QuestId = PlayableQuestId,
+            QuestStateType = (int)QuestStateType.ACTIVE,
+            ClearCount = 1
+        });
+
+        QuestServiceImpl service = CreateService(masterDb, userDb);
+
+        FinishMainQuestResponse response = await service.FinishMainQuest(
+            new FinishMainQuestRequest { QuestId = PlayableQuestId },
+            FakeServerCallContext.For(UserId));
+
+        QuestReward reward = Assert.Single(response.DropReward);
+        EntityIUserParts granted = Assert.Single(userDb.EntityIUserParts);
+        Assert.False(reward.IsAutoSale);
+        Assert.Equal(RewardEffectHelper.SRare, reward.RewardEffectId);
+        Assert.NotNull(reward.Parts);
+        Assert.Equal(granted.Level, reward.Parts.Level);
+        Assert.Equal(granted.PartsStatusMainId, reward.Parts.PartsStatusMainId);
+        Assert.Empty(reward.Parts.PartsStatusSub);
     }
 
     [Fact]

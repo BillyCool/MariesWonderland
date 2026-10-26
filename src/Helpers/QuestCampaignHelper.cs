@@ -48,20 +48,22 @@ public sealed class QuestCampaignHelper
     /// <summary>
     /// Applies active drop campaigns: drop-rate campaigns add together into one bonus, which also takes
     /// <paramref name="extraBonusPermil"/> per reward (important items); bonus items are appended unboosted.
+    /// Beginner and comeback campaigns apply according to <paramref name="userStatus"/> (none when null).
     /// </summary>
     public List<QuestReward> ApplyDropCampaignBonuses(
         IEnumerable<QuestReward> baseRewards,
         QuestCampaignTarget target,
         long nowMs,
         Func<QuestReward, int>? extraBonusPermil = null,
-        TargetUserStatusType userStatus = TargetUserStatusType.ALL)
+        UserCampaignStatus? userStatus = null)
     {
+        UserCampaignStatus status = userStatus ?? UserCampaignStatus.None;
         int dropRateBonusPermil = 0;
         List<QuestReward> bonusDrops = [];
 
         foreach (QuestCampaignRow row in _questCampaigns)
         {
-            if (!row.IsActive(nowMs, userStatus) || !row.Matches(target))
+            if (!row.IsActive(nowMs, status) || !row.Matches(target))
             {
                 continue;
             }
@@ -88,17 +90,22 @@ public sealed class QuestCampaignHelper
         return rewards;
     }
 
+    /// <summary>
+    /// The stamina a quest costs with the lowest active stamina campaign applied (rounded down). Beginner and comeback
+    /// campaigns apply according to <paramref name="userStatus"/> (none when null).
+    /// </summary>
     public int ApplyStaminaCampaign(
         int baseStamina,
         QuestCampaignTarget target,
         long nowMs,
-        TargetUserStatusType userStatus = TargetUserStatusType.ALL)
+        UserCampaignStatus? userStatus = null)
     {
+        UserCampaignStatus status = userStatus ?? UserCampaignStatus.None;
         int minPermil = 1000;
 
         foreach (QuestCampaignRow row in _questCampaigns)
         {
-            if (!row.IsActive(nowMs, userStatus) ||
+            if (!row.IsActive(nowMs, status) ||
                 row.EffectType != QuestCampaignEffectType.STAMINA_CONSUME_AMOUNT ||
                 !row.Matches(target))
             {
@@ -144,7 +151,8 @@ public sealed class QuestCampaignHelper
             {
                 PossessionType = (int)itemGroup.PossessionType,
                 PossessionId = itemGroup.PossessionId,
-                Count = itemGroup.Count
+                Count = itemGroup.Count,
+                RewardEffectId = RewardEffectHelper.EffectId(masterDb, itemGroup.PossessionType, itemGroup.PossessionId)
             });
         }
 
@@ -248,7 +256,6 @@ public sealed class QuestCampaignHelper
     public static int ApplyBonusPermil(int baseCount, int bonusPermil)
         => bonusPermil <= 0 ? baseCount : (int)(((long)baseCount * (1000 + bonusPermil) + 999) / 1000);
 
-    // TODO: The current repo has no per-user comeback-grade state, so COMEBACK_GRADE filters cannot be evaluated cleanly yet.
     private sealed record QuestCampaignRow(
         QuestCampaignEffectType EffectType,
         int EffectValue,
@@ -258,11 +265,8 @@ public sealed class QuestCampaignHelper
         long EndDatetime,
         TargetUserStatusType TargetUserStatusType)
     {
-        public bool IsActive(long nowMs, TargetUserStatusType userStatus)
-            => nowMs >= StartDatetime &&
-               nowMs <= EndDatetime &&
-               (TargetUserStatusType == TargetUserStatusType.ALL ||
-                (TargetUserStatusType != TargetUserStatusType.COMEBACK_GRADE && TargetUserStatusType == userStatus));
+        public bool IsActive(long nowMs, UserCampaignStatus userStatus)
+            => userStatus.Covers(TargetUserStatusType, StartDatetime, EndDatetime, nowMs);
 
         public bool Matches(QuestCampaignTarget target)
             => Targets.Any(match => match.Matches(target));

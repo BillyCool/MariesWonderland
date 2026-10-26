@@ -147,7 +147,7 @@ public static class PossessionHelper
     /// <summary>
     /// Grants a quest-drop memoir variant or auto-sells it into gold when the user's rules match the rolled rarity and rank.
     /// </summary>
-    public static (int GrantedPartsId, bool IsAutoSold) GrantOrSellPartsDrop(
+    public static (int GrantedPartsId, bool IsAutoSold, EntityIUserParts? Granted) GrantOrSellPartsDrop(
         DarkUserMemoryDatabase userDb,
         int requestedPartsId,
         DarkMasterMemoryDatabase masterDb,
@@ -159,8 +159,7 @@ public static class PossessionHelper
         EntityMParts? grantedParts = ResolveGrantedPartsVariant(requestedPartsId, masterDb);
         if (grantedParts == null)
         {
-            CreateGrantedParts(userDb, null, requestedPartsId, nowMs);
-            return (requestedPartsId, false);
+            return (requestedPartsId, false, CreateGrantedParts(userDb, null, requestedPartsId, nowMs));
         }
 
         bool shouldAutoSell = autoSaleRaritySet.Contains((int)grantedParts.RarityType)
@@ -170,11 +169,10 @@ public static class PossessionHelper
         if (sellPrice > 0)
         {
             Apply(userDb, PossessionType.CONSUMABLE_ITEM, goldConsumableItemId, sellPrice, masterDb, nowMs);
-            return (grantedParts.PartsId, true);
+            return (grantedParts.PartsId, true, null);
         }
 
-        CreateGrantedParts(userDb, grantedParts, grantedParts.PartsId, nowMs);
-        return (grantedParts.PartsId, false);
+        return (grantedParts.PartsId, false, CreateGrantedParts(userDb, grantedParts, grantedParts.PartsId, nowMs));
     }
 
     private static EntityMParts? ResolveGrantedPartsVariant(int requestedPartsId, DarkMasterMemoryDatabase masterDb)
@@ -197,7 +195,7 @@ public static class PossessionHelper
         return requested;
     }
 
-    private static void CreateGrantedParts(DarkUserMemoryDatabase userDb, EntityMParts? partsDef, int partsId, long nowMs)
+    private static EntityIUserParts CreateGrantedParts(DarkUserMemoryDatabase userDb, EntityMParts? partsDef, int partsId, long nowMs)
     {
         int mainStatId = 0;
         if (partsDef != null)
@@ -224,7 +222,7 @@ public static class PossessionHelper
             // from master data, which isn't modelled yet, so only the base part row is created for now.
         }
 
-        userDb.EntityIUserParts.Add(new EntityIUserParts
+        EntityIUserParts parts = new()
         {
             UserId = userDb.UserId,
             UserPartsUuid = Guid.NewGuid().ToString(),
@@ -232,7 +230,9 @@ public static class PossessionHelper
             Level = 1,
             PartsStatusMainId = mainStatId,
             AcquisitionDatetime = nowMs
-        });
+        };
+        userDb.EntityIUserParts.Add(parts);
+        return parts;
     }
 
     private static int ResolvePartsSellPrice(DarkMasterMemoryDatabase masterDb, RarityType rarityType, int level)

@@ -74,3 +74,61 @@ public static class UserCampaignHelper
     private static bool IsQuestCleared(DarkUserMemoryDatabase userDb, int questId)
         => questId == 0 || userDb.EntityIUserQuest.Any(q => q.QuestId == questId && q.QuestStateType == (int)QuestStateType.CLEARED);
 }
+
+/// <summary>
+/// A user's beginner and comeback campaign periods, read from <c>IUserBeginnerCampaign</c> / <c>IUserComebackCampaign</c>
+/// and the master campaigns' term days. Decides whether a campaign aimed at beginners or returning players applies.
+/// </summary>
+public sealed record UserCampaignStatus(long? BeginnerSinceMs, long BeginnerUntilMs, long? ComebackSinceMs, long ComebackUntilMs)
+{
+    private const long DayMs = 24L * 60 * 60 * 1000;
+
+    /// <summary>Neither a beginner nor a returning player.</summary>
+    public static UserCampaignStatus None { get; } = new(null, 0, null, 0);
+
+    public static UserCampaignStatus Of(DarkMasterMemoryDatabase masterDb, DarkUserMemoryDatabase userDb)
+    {
+        long? beginnerSince = null;
+        long beginnerUntil = 0;
+        EntityIUserBeginnerCampaign? beginner = userDb.EntityIUserBeginnerCampaign.FirstOrDefault();
+        EntityMBeginnerCampaign? beginnerTerm = beginner == null
+            ? null
+            : masterDb.EntityMBeginnerCampaign.FirstOrDefault(c => c.BeginnerCampaignId == beginner.BeginnerCampaignId);
+        if (beginner != null && beginnerTerm != null)
+        {
+            beginnerSince = beginner.CampaignRegisterDatetime;
+            beginnerUntil = beginner.CampaignRegisterDatetime + beginnerTerm.GrantCampaignTermDayCount * DayMs;
+        }
+
+        long? comebackSince = null;
+        long comebackUntil = 0;
+        EntityIUserComebackCampaign? comeback = userDb.EntityIUserComebackCampaign.FirstOrDefault();
+        EntityMComebackCampaign? comebackTerm = comeback == null
+            ? null
+            : masterDb.EntityMComebackCampaign.FirstOrDefault(c => c.ComebackCampaignId == comeback.ComebackCampaignId);
+        if (comeback != null && comebackTerm != null)
+        {
+            comebackSince = comeback.ComebackDatetime;
+            comebackUntil = comeback.ComebackDatetime + comebackTerm.GrantCampaignTermDayCount * DayMs;
+        }
+
+        return new UserCampaignStatus(beginnerSince, beginnerUntil, comebackSince, comebackUntil);
+    }
+
+    /// <summary>
+    /// Whether a campaign for <paramref name="target"/> users running from <paramref name="startMs"/> to
+    /// <paramref name="endMs"/> applies now. A campaign for everyone applies inside its window. A beginner or comeback
+    /// campaign applies when the user's beginner or comeback date is inside the window and their own term hasn't
+    /// ended. Comeback grades aren't modelled, so those campaigns never apply.
+    /// </summary>
+    public bool Covers(TargetUserStatusType target, long startMs, long endMs, long nowMs) => target switch
+    {
+        TargetUserStatusType.ALL => nowMs >= startMs && nowMs <= endMs,
+        TargetUserStatusType.BEGINNER => IsWithin(BeginnerSinceMs, BeginnerUntilMs, startMs, endMs, nowMs),
+        TargetUserStatusType.COMEBACK => IsWithin(ComebackSinceMs, ComebackUntilMs, startMs, endMs, nowMs),
+        _ => false
+    };
+
+    private static bool IsWithin(long? sinceMs, long untilMs, long startMs, long endMs, long nowMs)
+        => sinceMs is long since && since >= startMs && since <= endMs && nowMs >= since && nowMs <= untilMs;
+}

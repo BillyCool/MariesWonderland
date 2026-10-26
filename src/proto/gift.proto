@@ -57,6 +57,22 @@ message GiftCommon {
 	bytes equipmentData = 6;
 }
 
+// A memoir's details, as quest rewards carry them (and the client's gift data).
+message Parts {
+	int32 level = 1;
+	int32 partsStatusMainId = 2;
+	repeated PartsStatusSub partsStatusSub = 3;
+}
+
+message PartsStatusSub {
+	int32 statusIndex = 1;
+	int32 partsStatusSubLotteryId = 2;
+	int32 level = 3;
+	int32 statusKindType = 4;
+	int32 statusCalculationType = 5;
+	int32 statusChangeValue = 6;
+}
+
 message GetGiftReceiveHistoryListResponse {
 	repeated ReceivedGift gift = 1;
 	map<string, apb.api.data.DiffData> diffUserData = 99;

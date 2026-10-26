@@ -4,6 +4,7 @@ using MariesWonderland.Helpers;
 using MariesWonderland.Missions;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
+using MariesWonderland.Proto.Gift;
 using MariesWonderland.Proto.Quest;
 using Microsoft.Extensions.Options;
 
@@ -55,7 +56,8 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
             () => new EntityIUserQuest { UserId = userDb.UserId, QuestId = questId });
 
     /// <summary>
-    /// Spends the stamina for <paramref name="times"/> runs of the quest (after stamina campaigns), unless
+    /// Spends the stamina for <paramref name="times"/> runs of the quest (after stamina campaigns, beginner and
+    /// comeback ones included), unless
     /// <see cref="DevModeOptions.FreeStamina"/> is on. The cost counts for stamina missions either way.
     /// </summary>
     public void ConsumeStamina(DarkUserMemoryDatabase userDb, EntityMQuest? quest, QuestCampaignTarget campaignTarget, int times, long nowMs)
@@ -65,7 +67,7 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
             return;
         }
 
-        int cost = _questCampaigns.ApplyStaminaCampaign(quest.Stamina, campaignTarget, nowMs) * times;
+        int cost = _questCampaigns.ApplyStaminaCampaign(quest.Stamina, campaignTarget, nowMs, UserCampaignStatus.Of(_masterDb, userDb)) * times;
         _missions.Record(userDb, MissionClearConditionType.CONSUME_STAMINA_AMOUNT, cost, nowMs);
         if (_devMode.IsFreeStaminaEnabled)
         {
@@ -343,8 +345,8 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
     }
 
     /// <summary>
-    /// The quest's pickup drops with active drop campaigns and the user's important-item boosts applied
-    /// (bonuses add together). Nothing is granted.
+    /// The quest's pickup drops with active drop campaigns (beginner and comeback ones too, for those users) and the
+    /// user's important-item boosts applied (bonuses add together). Nothing is granted.
     /// </summary>
     public List<QuestReward> BuildDropRewards(DarkUserMemoryDatabase userDb, EntityMQuest quest, QuestCampaignTarget campaignTarget, long nowMs)
     {
@@ -365,7 +367,11 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
         }
 
         return _questCampaigns.ApplyDropCampaignBonuses(
-            rewards, campaignTarget, nowMs, reward => _importantItems.DropBonusPermil(userDb, campaignTarget, reward, nowMs));
+            rewards,
+            campaignTarget,
+            nowMs,
+            reward => _importantItems.DropBonusPermil(userDb, campaignTarget, reward, nowMs),
+            UserCampaignStatus.Of(_masterDb, userDb));
     }
 
     /// <summary>Grants drop rewards, auto-selling memoirs that match the user's auto-sale settings.</summary>
@@ -382,17 +388,24 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
                 int grantCount = Math.Max(reward.Count, 1);
                 for (int i = 0; i < grantCount; i++)
                 {
-                    (int grantedPartsId, bool isAutoSold) = PossessionHelper.GrantOrSellPartsDrop(
+                    (int grantedPartsId, bool isAutoSold, EntityIUserParts? granted) = PossessionHelper.GrantOrSellPartsDrop(
                         userDb, reward.PossessionId, _masterDb, _gameConfig.ConsumableItemIdForGold, raritySet, rankSet, nowMs);
 
-                    appliedRewards.Add(new QuestReward
+                    QuestReward applied = new()
                     {
                         PossessionType = reward.PossessionType,
                         PossessionId = grantedPartsId,
                         Count = 1,
-                        RewardEffectId = reward.RewardEffectId,
+                        RewardEffectId = RewardEffectHelper.EffectId(_masterDb, possessionType, grantedPartsId),
                         IsAutoSale = isAutoSold
-                    });
+                    };
+                    if (granted != null)
+                    {
+                        // The result screen shows the memoir's level and stats from this.
+                        applied.Parts = PartsMessage(userDb, granted);
+                    }
+
+                    appliedRewards.Add(applied);
                 }
 
                 continue;
@@ -403,6 +416,28 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
         }
 
         return appliedRewards;
+    }
+
+    /// <summary>A granted memoir as the client reads it from a reward: level, main stat and sub stats.</summary>
+    private static Parts PartsMessage(DarkUserMemoryDatabase userDb, EntityIUserParts parts)
+    {
+        Parts message = new() { Level = parts.Level, PartsStatusMainId = parts.PartsStatusMainId };
+        foreach (EntityIUserPartsStatusSub sub in userDb.EntityIUserPartsStatusSub
+            .Where(s => s.UserPartsUuid == parts.UserPartsUuid)
+            .OrderBy(s => s.StatusIndex))
+        {
+            message.PartsStatusSub.Add(new PartsStatusSub
+            {
+                StatusIndex = sub.StatusIndex,
+                PartsStatusSubLotteryId = sub.PartsStatusSubLotteryId,
+                Level = sub.Level,
+                StatusKindType = (int)sub.StatusKindType,
+                StatusCalculationType = (int)sub.StatusCalculationType,
+                StatusChangeValue = sub.StatusChangeValue
+            });
+        }
+
+        return message;
     }
 
     /// <summary>
@@ -550,8 +585,14 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
         }
     }
 
-    private static QuestReward ToReward(PossessionType possessionType, int possessionId, int count)
-        => new() { PossessionType = (int)possessionType, PossessionId = possessionId, Count = count };
+    private QuestReward ToReward(PossessionType possessionType, int possessionId, int count)
+        => new()
+        {
+            PossessionType = (int)possessionType,
+            PossessionId = possessionId,
+            Count = count,
+            RewardEffectId = RewardEffectHelper.EffectId(_masterDb, possessionType, possessionId)
+        };
 
     /// <summary>
     /// Applies user, character and costume EXP, capped at each map's max level. A user level-up refills

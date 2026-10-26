@@ -429,7 +429,8 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
                 {
                     PossessionType = (int)reward.PossessionType,
                     PossessionId = reward.PossessionId,
-                    Count = reward.Count
+                    Count = reward.Count,
+                    RewardEffectId = RewardEffectHelper.EffectId(_masterDb, reward.PossessionType, reward.PossessionId)
                 });
             }
         }
@@ -1135,7 +1136,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
     /// (last run, retire, annihilation or auto-orbit switched off), the result lists every collected drop;
     /// otherwise it is empty. The drops stay collected for <c>FinishAutoOrbit</c>.
     /// </summary>
-    private static QuestAutoOrbitResult AdvanceQuestAutoOrbit(
+    private QuestAutoOrbitResult AdvanceQuestAutoOrbit(
         DarkUserMemoryDatabase userDb,
         long userId,
         bool isAutoOrbit,
@@ -1184,7 +1185,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         return result;
     }
 
-    private static IEnumerable<QuestReward> CollectedAutoOrbitDrops(DarkUserMemoryDatabase userDb)
+    private IEnumerable<QuestReward> CollectedAutoOrbitDrops(DarkUserMemoryDatabase userDb)
         => userDb.EntitySQuestAutoOrbit
             .SelectMany(s => s.Drops)
             .Select(d => new QuestReward
@@ -1192,7 +1193,8 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
                 PossessionType = d.PossessionType,
                 PossessionId = d.PossessionId,
                 Count = d.Count,
-                IsAutoSale = d.IsAutoSale
+                IsAutoSale = d.IsAutoSale,
+                RewardEffectId = RewardEffectHelper.EffectId(_masterDb, (PossessionType)d.PossessionType, d.PossessionId)
             });
 
     /// <summary>Returns true if <paramref name="newSceneId"/> is further along in narrative order than <paramref name="currentHeadId"/>, comparing by SortOrder (not scene ID).</summary>

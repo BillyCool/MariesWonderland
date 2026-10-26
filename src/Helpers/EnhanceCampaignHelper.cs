@@ -17,15 +17,13 @@ public sealed class EnhanceCampaignHelper
     /// <summary>Chance, before campaigns, that a costume or weapon enhance is a great success (permil).</summary>
     public const int GreatSuccessChancePermil = 200;
 
-    private const long DayMs = 24L * 60 * 60 * 1000;
-
     private readonly IReadOnlyList<EnhanceCampaignRow> _campaigns;
-    private readonly IReadOnlyDictionary<int, EntityMBeginnerCampaign> _beginnerCampaigns;
-    private readonly IReadOnlyDictionary<int, EntityMComebackCampaign> _comebackCampaigns;
+    private readonly DarkMasterMemoryDatabase _masterDb;
     private readonly Random _random;
 
     public EnhanceCampaignHelper(DarkMasterMemoryDatabase masterDb, Random? random = null)
     {
+        _masterDb = masterDb;
         _random = random ?? Random.Shared;
 
         Dictionary<int, List<EntityMEnhanceCampaignTargetGroup>> targetsByGroupId = masterDb.EntityMEnhanceCampaignTargetGroup
@@ -42,8 +40,6 @@ public sealed class EnhanceCampaignHelper
         }
 
         _campaigns = campaigns;
-        _beginnerCampaigns = masterDb.EntityMBeginnerCampaign.ToDictionary(c => c.BeginnerCampaignId);
-        _comebackCampaigns = masterDb.EntityMComebackCampaign.ToDictionary(c => c.ComebackCampaignId);
     }
 
     /// <summary>Rolls whether a costume enhance is a great success, with the best active campaign for it applied.</summary>
@@ -80,6 +76,7 @@ public sealed class EnhanceCampaignHelper
     /// </summary>
     private int RatePermil(int basePermil, DarkUserMemoryDatabase userDb, long nowMs, Func<EntityMEnhanceCampaignTargetGroup, bool> matches)
     {
+        UserCampaignStatus status = UserCampaignStatus.Of(_masterDb, userDb);
         int? best = null;
         foreach (EnhanceCampaignRow row in _campaigns)
         {
@@ -91,7 +88,7 @@ public sealed class EnhanceCampaignHelper
                 _ => null
             };
 
-            if (rate is null || !IsActive(campaign, userDb, nowMs) || !row.Targets.Any(matches))
+            if (rate is null || !status.Covers(campaign.TargetUserStatusType, campaign.StartDatetime, campaign.EndDatetime, nowMs) || !row.Targets.Any(matches))
             {
                 continue;
             }
@@ -101,43 +98,6 @@ public sealed class EnhanceCampaignHelper
 
         return Math.Min(1000, best ?? basePermil);
     }
-
-    private bool IsActive(EntityMEnhanceCampaign campaign, DarkUserMemoryDatabase userDb, long nowMs)
-    {
-        switch (campaign.TargetUserStatusType)
-        {
-            case TargetUserStatusType.ALL:
-                return nowMs >= campaign.StartDatetime && nowMs <= campaign.EndDatetime;
-
-            case TargetUserStatusType.BEGINNER:
-            {
-                EntityIUserBeginnerCampaign? beginner = userDb.EntityIUserBeginnerCampaign.FirstOrDefault();
-                return beginner != null
-                    && _beginnerCampaigns.TryGetValue(beginner.BeginnerCampaignId, out EntityMBeginnerCampaign? term)
-                    && IsUserCampaignActive(campaign, beginner.CampaignRegisterDatetime, term.GrantCampaignTermDayCount, nowMs);
-            }
-
-            case TargetUserStatusType.COMEBACK:
-            {
-                EntityIUserComebackCampaign? comeback = userDb.EntityIUserComebackCampaign.FirstOrDefault();
-                return comeback != null
-                    && _comebackCampaigns.TryGetValue(comeback.ComebackCampaignId, out EntityMComebackCampaign? term)
-                    && IsUserCampaignActive(campaign, comeback.ComebackDatetime, term.GrantCampaignTermDayCount, nowMs);
-            }
-
-            default:
-                // COMEBACK_GRADE needs comeback grades, which aren't modelled.
-                return false;
-        }
-    }
-
-    /// <summary>
-    /// A beginner or comeback campaign applies when the user's date for it is inside the campaign and the user's own
-    /// term (that date plus the term days) hasn't ended.
-    /// </summary>
-    private static bool IsUserCampaignActive(EntityMEnhanceCampaign campaign, long userDatetime, int termDays, long nowMs)
-        => userDatetime >= campaign.StartDatetime && userDatetime <= campaign.EndDatetime
-            && nowMs >= userDatetime && nowMs <= userDatetime + termDays * DayMs;
 
     private static bool MatchesCostume(EntityMEnhanceCampaignTargetGroup t, EntityMCostume costume) => t.EnhanceCampaignTargetType switch
     {

@@ -5,6 +5,7 @@ option csharp_namespace = "MariesWonderland.Proto.Quest";
 import "google/protobuf/empty.proto";
 import "proto/data.proto";
 import "proto/mission.proto";
+import "proto/gift.proto";
 
 package apb.api.quest;
 
@@ -139,7 +140,9 @@ message QuestReward {
 	int32 count = 3;
 	int32 rewardEffectId = 4;
 	bool isAutoSale = 5;
-	bytes equipmentData = 6;
+	oneof equipmentData {
+		apb.api.gift.Parts parts = 6;
+	}
 }
 
 message QuestAutoOrbitResult {
