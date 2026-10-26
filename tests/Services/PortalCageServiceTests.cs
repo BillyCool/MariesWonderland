@@ -1,9 +1,10 @@
-using Google.Protobuf.WellKnownTypes;
+﻿using Google.Protobuf.WellKnownTypes;
 using MariesWonderland.Data;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.PortalCage;
 using MariesWonderland.Tests.Infrastructure;
+using Microsoft.Extensions.Time.Testing;
 using PortalCageServiceImpl = MariesWonderland.Services.PortalCageService;
 
 namespace MariesWonderland.Tests.Services;
@@ -12,13 +13,16 @@ public class PortalCageServiceTests
 {
     private const long UserId = 1L;
     private const long OtherUserId = 99L;
+    private const int GoldId = 1;
+    private const long HourMs = 3_600_000;
+    private static readonly DateTimeOffset Now = new(2026, 10, 26, 12, 0, 0, TimeSpan.Zero);
+    private static readonly long NowMs = Now.ToUnixTimeMilliseconds();
 
     [Fact]
     public async Task UpdatePortalCageSceneProgress_ForNewUser_CreatesStatusAndMarksProgress()
     {
-        DarkMasterMemoryDatabase masterDb = new();
         UserDataStore store = new(TimeProvider.System);
-        PortalCageServiceImpl service = new(store);
+        PortalCageServiceImpl service = new(store, new DarkMasterMemoryDatabase(), new GameConfig(), new FakeTimeProvider(Now));
 
         UpdatePortalCageSceneProgressResponse response = await service.UpdatePortalCageSceneProgress(
             new UpdatePortalCageSceneProgressRequest(),
@@ -31,7 +35,8 @@ public class PortalCageServiceTests
         EntityIUserPortalCageStatus status = Assert.Single(userDb.EntityIUserPortalCageStatus);
         Assert.Equal(UserId, status.UserId);
         Assert.True(status.IsCurrentProgress);
-        Assert.Equal(0, status.DropItemStartDatetime);
+        // The fruit timer starts the first time the user is in Mama's Room.
+        Assert.Equal(NowMs, status.DropItemStartDatetime);
         Assert.Equal(0, status.CurrentDropItemCount);
     }
 
@@ -72,7 +77,8 @@ public class PortalCageServiceTests
             entry => entry.UserId == UserId);
         Assert.True(status.IsCurrentProgress);
         Assert.Equal(1234, status.DropItemStartDatetime);
-        Assert.Equal(7, status.CurrentDropItemCount);
+        // The fruit count follows the timer: long past the start, the tree is full.
+        Assert.Equal(3, status.CurrentDropItemCount);
         Assert.Equal(88, status.LatestVersion);
 
         EntityIUserPortalCageStatus otherUserStatus = Assert.Single(
@@ -124,50 +130,47 @@ public class PortalCageServiceTests
     }
 
     [Fact]
-    public async Task GetDropItem_ForNewUser_ReturnsEmptyResponseAndCreatesUserDatabase()
+    public async Task GetDropItem_ForANewUser_StartsTheTreeWithoutFruit()
     {
-        DarkMasterMemoryDatabase masterDb = new();
-        UserDataStore store = new(TimeProvider.System);
-        PortalCageServiceImpl service = new(store);
+        DarkUserMemoryDatabase userDb = new() { UserId = UserId };
+        PortalCageServiceImpl service = CreateService(userDb);
 
-        GetDropItemResponse response = await service.GetDropItem(
-            new Empty(),
-            FakeServerCallContext.For(UserId));
+        GetDropItemResponse response = await service.GetDropItem(new Empty(), FakeServerCallContext.For(UserId));
 
-        Assert.NotNull(response);
-        Assert.True(store.TryGet(UserId, out DarkUserMemoryDatabase? userDb));
-        Assert.NotNull(userDb);
-        Assert.Equal(UserId, userDb.UserId);
-        Assert.Empty(userDb.EntityIUserPortalCageStatus);
+        Assert.Empty(response.PortalCageDropItem);
+        EntityIUserPortalCageStatus status = Assert.Single(userDb.EntityIUserPortalCageStatus);
+        Assert.Equal((NowMs, 0), (status.DropItemStartDatetime, status.CurrentDropItemCount));
     }
 
     [Fact]
-    public async Task GetDropItem_WithExistingStatus_DoesNotMutatePortalCageState()
+    public async Task EnteringMamasRoom_ShowsTheFruitThatFell_UpToThree()
     {
         DarkUserMemoryDatabase userDb = new() { UserId = UserId };
-        userDb.EntityIUserPortalCageStatus.Add(new EntityIUserPortalCageStatus
-        {
-            UserId = UserId,
-            IsCurrentProgress = true,
-            DropItemStartDatetime = 555,
-            CurrentDropItemCount = 3,
-            LatestVersion = 44
-        });
-
+        userDb.EntityIUserPortalCageStatus.Add(new EntityIUserPortalCageStatus { UserId = UserId, DropItemStartDatetime = NowMs - 17 * HourMs });
         PortalCageServiceImpl service = CreateService(userDb);
 
-        GetDropItemResponse response = await service.GetDropItem(
-            new Empty(),
-            FakeServerCallContext.For(UserId));
+        await service.UpdatePortalCageSceneProgress(new UpdatePortalCageSceneProgressRequest { PortalCageSceneId = 1 }, FakeServerCallContext.For(UserId));
+        Assert.Equal(2, userDb.EntityIUserPortalCageStatus.Single().CurrentDropItemCount);
 
-        Assert.NotNull(response);
+        userDb.EntityIUserPortalCageStatus.Single().DropItemStartDatetime = NowMs - 100 * HourMs;
+        await service.UpdatePortalCageSceneProgress(new UpdatePortalCageSceneProgressRequest { PortalCageSceneId = 1 }, FakeServerCallContext.For(UserId));
+        Assert.Equal(3, userDb.EntityIUserPortalCageStatus.Single().CurrentDropItemCount);
+    }
 
+    [Fact]
+    public async Task GetDropItem_GivesOneRollPerFruit_AndRestartsTheTimer()
+    {
+        DarkUserMemoryDatabase userDb = new() { UserId = UserId };
+        userDb.EntityIUserPortalCageStatus.Add(new EntityIUserPortalCageStatus { UserId = UserId, IsCurrentProgress = true, DropItemStartDatetime = NowMs - 17 * HourMs });
+        PortalCageServiceImpl service = CreateService(userDb);
+
+        GetDropItemResponse response = await service.GetDropItem(new Empty(), FakeServerCallContext.For(UserId));
+
+        PortalCageDropItem drop = Assert.Single(response.PortalCageDropItem);
+        Assert.Equal(((int)PossessionType.CONSUMABLE_ITEM, GoldId, 2000), (drop.PossessionType, drop.PossessionId, drop.Count));
+        Assert.Equal(2000, Assert.Single(userDb.EntityIUserConsumableItem).Count);
         EntityIUserPortalCageStatus status = Assert.Single(userDb.EntityIUserPortalCageStatus);
-        Assert.Equal(UserId, status.UserId);
-        Assert.True(status.IsCurrentProgress);
-        Assert.Equal(555, status.DropItemStartDatetime);
-        Assert.Equal(3, status.CurrentDropItemCount);
-        Assert.Equal(44, status.LatestVersion);
+        Assert.Equal((NowMs, 0, true), (status.DropItemStartDatetime, status.CurrentDropItemCount, status.IsCurrentProgress));
     }
 
     [Fact]
@@ -194,9 +197,12 @@ public class PortalCageServiceTests
 
     private static PortalCageServiceImpl CreateService(DarkUserMemoryDatabase userDb)
     {
+        // The fruit timer of Mama's Room: one per 480 minutes, at most 3 (gimmick 81001001 in master data).
         DarkMasterMemoryDatabase masterDb = new();
+        masterDb.EntityMGimmick.Add(new EntityMGimmick { GimmickId = 81001001, GimmickType = GimmickType.MAP_ONLY_CAGE_INTERVAL_DROP_ITEM });
+        masterDb.EntityMGimmickInterval.Add(new EntityMGimmickInterval { GimmickId = 81001001, MaxValue = 3, IntervalValue = 480 });
         UserDataStore store = new(TimeProvider.System);
         store.Set(UserId, userDb);
-        return new PortalCageServiceImpl(store);
+        return new PortalCageServiceImpl(store, masterDb, new GameConfig { ConsumableItemIdForGold = GoldId }, new FakeTimeProvider(Now));
     }
 }

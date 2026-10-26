@@ -1,4 +1,4 @@
-using Google.Protobuf.WellKnownTypes;
+﻿using Google.Protobuf.WellKnownTypes;
 using MariesWonderland.Configuration;
 using MariesWonderland.Data;
 using MariesWonderland.Helpers;
@@ -58,7 +58,7 @@ public class HiddenStoryTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         int releaseQuestId = (int)MasterDb.EntityMEvaluateConditionValueGroup
             .Single(v => v.EvaluateConditionValueGroupId == MasterDb.EntityMEvaluateCondition.Find(schedule.ReleaseEvaluateConditionId)!.EvaluateConditionValueGroupId).Value;
         DarkUserMemoryDatabase userDb = CreateUserDb();
-        GimmickServiceImpl service = new(CreateStore(UserId, userDb), MasterDb, new MissionTracker(MasterDb, new MissionCatalog(MasterDb, MissionFilterTable.Empty)), new FakeTimeProvider(Now));
+        GimmickServiceImpl service = new(CreateStore(UserId, userDb), MasterDb, GameConfig, new MissionTracker(MasterDb, new MissionCatalog(MasterDb, MissionFilterTable.Empty)), new FakeTimeProvider(Now));
 
         await service.InitSequenceSchedule(new Empty(), ContextFor(UserId));
         Assert.DoesNotContain(userDb.EntityIUserGimmickSequence, s => s.GimmickSequenceScheduleId == schedule.GimmickSequenceScheduleId);
@@ -76,7 +76,7 @@ public class HiddenStoryTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         int groupId = MasterDb.EntityMGimmickGroup.First(g => g.GimmickId == report.GimmickId).GimmickGroupId;
         EntityMGimmickSequence sequence = MasterDb.EntityMGimmickSequence.First(s => s.GimmickGroupId == groupId);
         DarkUserMemoryDatabase userDb = CreateUserDb();
-        GimmickServiceImpl service = new(CreateStore(UserId, userDb), MasterDb, new MissionTracker(MasterDb, new MissionCatalog(MasterDb, MissionFilterTable.Empty)), new FakeTimeProvider(Now));
+        GimmickServiceImpl service = new(CreateStore(UserId, userDb), MasterDb, GameConfig, new MissionTracker(MasterDb, new MissionCatalog(MasterDb, MissionFilterTable.Empty)), new FakeTimeProvider(Now));
         UpdateGimmickProgressRequest request = new() { GimmickSequenceScheduleId = 1, GimmickSequenceId = sequence.GimmickSequenceId, GimmickId = report.GimmickId };
 
         await service.UpdateGimmickProgress(request, ContextFor(UserId));
@@ -85,5 +85,41 @@ public class HiddenStoryTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         userDb.EntityIUserMission.Add(new EntityIUserMission { UserId = UserId, MissionId = 500042, MissionProgressStatusType = MissionProgressStatusType.CLEAR });
         await service.UpdateGimmickProgress(request, ContextFor(UserId));
         Assert.True(userDb.EntityIUserGimmick.Single().IsGimmickCleared);
+    }
+
+    [Fact]
+    public void FickleBlackBirds_KeepTheirLiveRotationUntil2041()
+    {
+        // The 2021-12 → 2024-04 rotation is replayed in the modded master file (7 times, 876 days apart).
+        List<EntityMGimmickSequenceSchedule> fickle = [.. MasterDb.EntityMGimmickSequenceSchedule.Where(s => SequenceType(s.FirstGimmickSequenceId) == GimmickType.CAGE_TREASURE_HUNT)];
+        foreach (DateTimeOffset day in new[] { Now, new DateTimeOffset(2033, 3, 1, 12, 0, 0, TimeSpan.Zero), new DateTimeOffset(2040, 12, 1, 12, 0, 0, TimeSpan.Zero) })
+        {
+            long ms = day.ToUnixTimeMilliseconds();
+            int running = fickle.Count(s => s.StartDatetime <= ms && ms <= s.EndDatetime);
+            Assert.InRange(running, 5, 12);
+        }
+
+        long after = new DateTimeOffset(2041, 3, 1, 0, 0, 0, TimeSpan.Zero).ToUnixTimeMilliseconds();
+        Assert.DoesNotContain(fickle, s => s.EndDatetime > after);
+    }
+
+    [Fact]
+    public void LostArchives_WaitForOneOfTheSunAndTheMoonIIIArchives()
+    {
+        // Archive gimmick 101001001 (chapter 2) has release condition 6001: any of the four archives of chapters 18/26.
+        EntityMGimmick archive = MasterDb.EntityMGimmick.Find(101001001)!;
+        Assert.Equal(6001, archive.ReleaseEvaluateConditionId);
+        int sequenceId = MasterDb.EntityMGimmickSequence.First(s => MasterDb.EntityMGimmickGroup.Any(g => g.GimmickGroupId == s.GimmickGroupId && g.GimmickId == archive.GimmickId)).GimmickSequenceId;
+        int scheduleId = MasterDb.EntityMGimmickSequenceSchedule.First(s => s.FirstGimmickSequenceId == sequenceId).GimmickSequenceScheduleId;
+        DarkUserMemoryDatabase userDb = CreateUserDb();
+        long nowMs = Now.ToUnixTimeMilliseconds();
+
+        CageGimmickHelper.SeedSequenceGimmicks(MasterDb, userDb, scheduleId, sequenceId, nowMs);
+        Assert.Empty(userDb.EntityIUserGimmick);
+
+        // Read archive 102015015 (schedule and sequence 1001515, ornament 1).
+        userDb.EntityIUserGimmickOrnamentProgress.Add(new EntityIUserGimmickOrnamentProgress { GimmickSequenceScheduleId = 1001515, GimmickSequenceId = 1001515, GimmickId = 102015015, GimmickOrnamentIndex = 1, ProgressValueBit = 1 });
+        CageGimmickHelper.SeedSequenceGimmicks(MasterDb, userDb, scheduleId, sequenceId, nowMs);
+        Assert.Contains(userDb.EntityIUserGimmick, g => g.GimmickId == archive.GimmickId);
     }
 }

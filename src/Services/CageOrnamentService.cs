@@ -16,7 +16,7 @@ public class CageOrnamentService(UserDataStore store, DarkMasterMemoryDatabase m
     private readonly TimeProvider _timeProvider = timeProvider;
 
     /// <summary>
-    /// Claims the ornament's reward: records the acquisition, grants the possession, and returns the reward details.
+    /// Dispatches a black bird: records it, grants its fixed reward and returns it. Only the first claim grants.
     /// </summary>
     public override Task<ReceiveRewardResponse> ReceiveReward(ReceiveRewardRequest request, ServerCallContext context)
     {
@@ -40,19 +40,18 @@ public class CageOrnamentService(UserDataStore store, DarkMasterMemoryDatabase m
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
         long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
-        // Track the reward acquisition state.
-        EntityIUserCageOrnamentReward? existing = userDb.EntityIUserCageOrnamentReward
-            .FirstOrDefault(r => r.CageOrnamentId == request.CageOrnamentId);
-
-        if (existing is null)
+        // A black bird is dispatched once: its reward row hides it, and a repeat call grants nothing.
+        if (userDb.EntityIUserCageOrnamentReward.Any(r => r.CageOrnamentId == request.CageOrnamentId))
         {
-            userDb.EntityIUserCageOrnamentReward.Add(new EntityIUserCageOrnamentReward
-            {
-                UserId = userId,
-                CageOrnamentId = request.CageOrnamentId,
-                AcquisitionDatetime = nowMs
-            });
+            return Task.FromResult(new ReceiveRewardResponse());
         }
+
+        userDb.EntityIUserCageOrnamentReward.Add(new EntityIUserCageOrnamentReward
+        {
+            UserId = userId,
+            CageOrnamentId = request.CageOrnamentId,
+            AcquisitionDatetime = nowMs
+        });
 
         PossessionHelper.Apply(userDb, reward.PossessionType, reward.PossessionId, reward.Count, _masterDb, nowMs);
 

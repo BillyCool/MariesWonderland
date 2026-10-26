@@ -10,19 +10,24 @@ using MariesWonderland.Proto.Gimmick;
 
 namespace MariesWonderland.Services;
 
-public class GimmickService(UserDataStore store, DarkMasterMemoryDatabase masterDb, MissionTracker missions, TimeProvider timeProvider)
+public class GimmickService(UserDataStore store, DarkMasterMemoryDatabase masterDb, GameConfig gameConfig, MissionTracker missions, TimeProvider timeProvider)
     : MariesWonderland.Proto.Gimmick.GimmickService.GimmickServiceBase
 {
     private readonly UserDataStore _store = store;
     private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
+    private readonly GameConfig _gameConfig = gameConfig;
     private readonly MissionTracker _missions = missions;
     private readonly TimeProvider _timeProvider = timeProvider;
 
-    /// <summary>Records that the user has advanced to a gimmick sequence, preventing duplicate entries.</summary>
+    /// <summary>
+    /// The user moves on to the next sequence of a schedule (the next hidden story once one is read): records it and
+    /// writes the rows its gimmicks need to show. The client resends this on every cage load, so it's idempotent.
+    /// </summary>
     public override Task<UpdateSequenceResponse> UpdateSequence(UpdateSequenceRequest request, ServerCallContext context)
     {
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
         if (!userDb.EntityIUserGimmickSequence.Any(s =>
             s.GimmickSequenceScheduleId == request.GimmickSequenceScheduleId &&
@@ -36,10 +41,15 @@ public class GimmickService(UserDataStore store, DarkMasterMemoryDatabase master
             });
         }
 
+        CageGimmickHelper.SeedSequenceGimmicks(_masterDb, userDb, request.GimmickSequenceScheduleId, request.GimmickSequenceId, nowMs);
+
         return Task.FromResult(new UpdateSequenceResponse());
     }
 
-    /// <summary>Updates progress on a field gimmick and its ornament interaction state.</summary>
+    /// <summary>
+    /// The user picked up an ornament (the client sends the gimmick's bits with the new one set): records the bits and
+    /// grants what the gimmick gives.
+    /// </summary>
     public override Task<UpdateGimmickProgressResponse> UpdateGimmickProgress(UpdateGimmickProgressRequest request, ServerCallContext context)
     {
         long userId = context.GetUserId();
@@ -48,110 +58,105 @@ public class GimmickService(UserDataStore store, DarkMasterMemoryDatabase master
         List<GimmickReward> ornamentRewards = [];
         List<GimmickReward> sequenceClearRewards = [];
         bool isSequenceCleared = false;
+        bool granted = false;
 
-        EntityIUserGimmick? gimmick = userDb.EntityIUserGimmick.FirstOrDefault(g =>
-            g.GimmickSequenceScheduleId == request.GimmickSequenceScheduleId &&
-            g.GimmickSequenceId == request.GimmickSequenceId &&
-            g.GimmickId == request.GimmickId);
-
-        if (gimmick is null)
-        {
-            gimmick = new EntityIUserGimmick
+        EntityIUserGimmick gimmick = userDb.EntityIUserGimmick.GetOrCreate(
+            g => g.GimmickSequenceScheduleId == request.GimmickSequenceScheduleId
+                && g.GimmickSequenceId == request.GimmickSequenceId
+                && g.GimmickId == request.GimmickId,
+            () => new EntityIUserGimmick
             {
                 UserId = userId,
                 GimmickSequenceScheduleId = request.GimmickSequenceScheduleId,
                 GimmickSequenceId = request.GimmickSequenceId,
                 GimmickId = request.GimmickId,
-            };
-            userDb.EntityIUserGimmick.Add(gimmick);
-        }
+            });
         gimmick.StartDatetime = nowMs;
 
-        EntityIUserGimmickOrnamentProgress? ornament = userDb.EntityIUserGimmickOrnamentProgress.FirstOrDefault(o =>
-            o.GimmickSequenceScheduleId == request.GimmickSequenceScheduleId &&
-            o.GimmickSequenceId == request.GimmickSequenceId &&
-            o.GimmickId == request.GimmickId &&
-            o.GimmickOrnamentIndex == request.GimmickOrnamentIndex);
-
-        if (ornament is null)
-        {
-            ornament = new EntityIUserGimmickOrnamentProgress
+        EntityMGimmickInterval? interval = _masterDb.EntityMGimmickInterval.FirstOrDefault(i => i.GimmickId == request.GimmickId);
+        EntityIUserGimmickOrnamentProgress ornament = userDb.EntityIUserGimmickOrnamentProgress.GetOrCreate(
+            o => o.GimmickSequenceScheduleId == request.GimmickSequenceScheduleId
+                && o.GimmickSequenceId == request.GimmickSequenceId
+                && o.GimmickId == request.GimmickId
+                && o.GimmickOrnamentIndex == request.GimmickOrnamentIndex,
+            () => new EntityIUserGimmickOrnamentProgress
             {
                 UserId = userId,
                 GimmickSequenceScheduleId = request.GimmickSequenceScheduleId,
                 GimmickSequenceId = request.GimmickSequenceId,
                 GimmickId = request.GimmickId,
                 GimmickOrnamentIndex = request.GimmickOrnamentIndex,
-            };
-            userDb.EntityIUserGimmickOrnamentProgress.Add(ornament);
-        }
+                BaseDatetime = CageGimmickHelper.InitialBaseDatetime(interval, nowMs),
+            });
+        int previousBits = ornament.ProgressValueBit;
+        long previousBase = ornament.BaseDatetime;
         ornament.ProgressValueBit = request.ProgressValueBit;
         ornament.BaseDatetime = nowMs;
 
         EntityMGimmick? masterGimmick = _masterDb.EntityMGimmick.FirstOrDefault(g => g.GimmickId == request.GimmickId);
-        if (masterGimmick is not null)
+        switch (masterGimmick?.GimmickType)
         {
-            switch (masterGimmick.GimmickType)
-            {
-                // A hidden-story report clears once its prerequisites are met: account missions (IUserMission) and
-                // quest missions (IUserQuestMission), combined through ClearEvaluateConditionId.
-                case GimmickType.REPORT:
-                    if (masterGimmick.ClearEvaluateConditionId != 0
-                        && EvaluateConditionHelper.Evaluate(masterGimmick.ClearEvaluateConditionId, userDb, _masterDb) == false)
-                    {
-                        break;
-                    }
-
-                    gimmick.IsGimmickCleared = true;
-                    (isSequenceCleared, sequenceClearRewards) = MarkSequenceClearedOnce(
-                        userDb,
-                        userId,
-                        request.GimmickSequenceScheduleId,
-                        request.GimmickSequenceId,
-                        nowMs);
+            // A hidden-story report clears once its prerequisites are met: account missions (IUserMission) and
+            // quest missions (IUserQuestMission), combined through ClearEvaluateConditionId.
+            case GimmickType.REPORT:
+                if (masterGimmick.ClearEvaluateConditionId != 0
+                    && EvaluateConditionHelper.Evaluate(masterGimmick.ClearEvaluateConditionId, userDb, _masterDb) == false)
+                {
                     break;
+                }
 
-                case GimmickType.MAP_ONLY_CAGE_TREASURE_HUNT:
-                    GimmickReward? hiddenBirdReward = ResolveHiddenBirdReward(masterGimmick.GimmickOrnamentGroupId, request.GimmickOrnamentIndex);
-                    if (hiddenBirdReward is not null)
-                    {
-                        PossessionHelper.Apply(
-                            userDb,
-                            (PossessionType)hiddenBirdReward.PossessionType,
-                            hiddenBirdReward.PossessionId,
-                            hiddenBirdReward.Count,
-                            _masterDb, nowMs);
-                        ornamentRewards.Add(hiddenBirdReward);
-                    }
+                gimmick.IsGimmickCleared = true;
+                (isSequenceCleared, sequenceClearRewards) = MarkSequenceClearedOnce(
+                    userDb,
+                    userId,
+                    request.GimmickSequenceScheduleId,
+                    request.GimmickSequenceId,
+                    nowMs);
+                break;
 
-                    gimmick.IsGimmickCleared = true;
-                    (isSequenceCleared, sequenceClearRewards) = MarkSequenceClearedOnce(
-                        userDb,
-                        userId,
-                        request.GimmickSequenceScheduleId,
-                        request.GimmickSequenceId,
-                        nowMs);
-                    break;
+            // A fickle black bird: one reward when its bit is newly set.
+            case GimmickType.CAGE_TREASURE_HUNT:
+                if ((request.ProgressValueBit & ~previousBits) != 0)
+                {
+                    ornamentRewards.Add(GrantPlaceholderLoot(userDb, 1, nowMs));
+                    granted = true;
+                }
+                break;
 
-                case GimmickType.CAGE_MEMORY:
-                    int? importantItemId = ResolveCageMemoryImportantItemId(masterGimmick);
-                    if (importantItemId is int itemId
-                        && !userDb.EntityIUserImportantItem.Any(item => item.ImportantItemId == itemId))
+            // Lost Items: the whole pile goes at once; the timer restarts from now (BaseDatetime above).
+            case GimmickType.CAGE_INTERVAL_DROP_ITEM:
+                int piled = interval == null ? 0 : CageGimmickHelper.AvailableIntervalCount(interval, previousBase, nowMs);
+                if (piled > 0)
+                {
+                    ornamentRewards.Add(GrantPlaceholderLoot(userDb, piled, nowMs));
+                    granted = true;
+                }
+                break;
+
+            // A Lost Archive: the client opens the archive of the first reward's important item, so it's sent on
+            // every visit; it's granted only once.
+            case GimmickType.CAGE_MEMORY:
+                int? importantItemId = ResolveCageMemoryImportantItemId(masterGimmick);
+                if (importantItemId is int itemId)
+                {
+                    if (!userDb.EntityIUserImportantItem.Any(item => item.ImportantItemId == itemId))
                     {
                         PossessionHelper.Apply(userDb, PossessionType.IMPORTANT_ITEM, itemId, 1, _masterDb, nowMs);
-                        ornamentRewards.Add(new GimmickReward
-                        {
-                            PossessionType = (int)PossessionType.IMPORTANT_ITEM,
-                            PossessionId = itemId,
-                            Count = 1
-                        });
+                        granted = true;
                     }
-                    break;
-            }
+
+                    ornamentRewards.Add(new GimmickReward
+                    {
+                        PossessionType = (int)PossessionType.IMPORTANT_ITEM,
+                        PossessionId = itemId,
+                        Count = 1
+                    });
+                }
+                break;
         }
 
-        // A cleared report sequence grants its hidden story (a report important item): "Collect N Hidden Stories".
-        if (sequenceClearRewards.Count > 0 || ornamentRewards.Count > 0)
+        // Anything granted can complete missions ("Collect N Hidden Stories" counts the report important items).
+        if (granted || sequenceClearRewards.Count > 0)
         {
             _missions.EvaluateStates(userDb, nowMs);
         }
@@ -165,8 +170,10 @@ public class GimmickService(UserDataStore store, DarkMasterMemoryDatabase master
     }
 
     /// <summary>
-    /// Initializes gimmick sequence schedules whose time windows are active and whose release condition is met
-    /// (in master data always a quest clear, hidden-story reports and cage memories included).
+    /// Brings the user's gimmicks up to date with the schedules running now (the cage calls this when it loads):
+    /// unfinished sequences of ended schedules are dropped; each running schedule whose release condition passes
+    /// starts its first sequence; and every current sequence gets the rows its gimmicks need to show, including
+    /// gimmicks whose own release condition has started to pass.
     /// </summary>
     public override Task<InitSequenceScheduleResponse> InitSequenceSchedule(Empty request, ServerCallContext context)
     {
@@ -174,54 +181,48 @@ public class GimmickService(UserDataStore store, DarkMasterMemoryDatabase master
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
         long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
-        List<EntityMGimmickSequenceSchedule> activeSchedules = ResolveActiveSchedules(nowMs);
+        List<EntityMGimmickSequenceSchedule> runningSchedules = [.. _masterDb.EntityMGimmickSequenceSchedule
+            .Where(s => s.StartDatetime <= nowMs && nowMs <= s.EndDatetime)];
+        HashSet<int> runningScheduleIds = [.. runningSchedules.Select(s => s.GimmickSequenceScheduleId)];
 
-        userDb.EntityIUserGimmickSequence.RemoveAll(sequence =>
+        foreach (EntityIUserGimmickSequence ended in userDb.EntityIUserGimmickSequence
+                     .Where(s => !s.IsGimmickSequenceCleared && !runningScheduleIds.Contains(s.GimmickSequenceScheduleId))
+                     .ToList())
         {
-            if (sequence.IsGimmickSequenceCleared)
-            {
-                return false;
-            }
+            CageGimmickHelper.RemoveUnfinishedSequenceGimmicks(userDb, ended.GimmickSequenceScheduleId, ended.GimmickSequenceId);
+            userDb.EntityIUserGimmickSequence.Remove(ended);
+        }
 
-            return !activeSchedules.Any(schedule =>
-                schedule.GimmickSequenceScheduleId == sequence.GimmickSequenceScheduleId &&
-                schedule.FirstGimmickSequenceId == sequence.GimmickSequenceId);
-        });
-
-        // Activate each schedule whose time window includes now and whose release condition is met. An unsupported
-        // condition doesn't block (none exist in master data today).
-        foreach (EntityMGimmickSequenceSchedule schedule in activeSchedules)
+        // An unsupported release condition doesn't block (none exist in master data today).
+        foreach (EntityMGimmickSequenceSchedule schedule in runningSchedules)
         {
-            if (nowMs < schedule.StartDatetime)
-            {
-                continue;
-            }
-
             if (schedule.ReleaseEvaluateConditionId != 0
                 && EvaluateConditionHelper.Evaluate(schedule.ReleaseEvaluateConditionId, userDb, _masterDb) == false)
             {
                 continue;
             }
 
-            bool exists = userDb.EntityIUserGimmickSequence.Any(s =>
-                s.GimmickSequenceScheduleId == schedule.GimmickSequenceScheduleId &&
-                s.GimmickSequenceId == schedule.FirstGimmickSequenceId);
-
-            if (!exists)
-            {
-                userDb.EntityIUserGimmickSequence.Add(new EntityIUserGimmickSequence
+            userDb.EntityIUserGimmickSequence.GetOrCreate(
+                s => s.GimmickSequenceScheduleId == schedule.GimmickSequenceScheduleId && s.GimmickSequenceId == schedule.FirstGimmickSequenceId,
+                () => new EntityIUserGimmickSequence
                 {
                     UserId = userId,
                     GimmickSequenceScheduleId = schedule.GimmickSequenceScheduleId,
                     GimmickSequenceId = schedule.FirstGimmickSequenceId
                 });
-            }
+        }
+
+        foreach (EntityIUserGimmickSequence sequence in userDb.EntityIUserGimmickSequence
+                     .Where(s => runningScheduleIds.Contains(s.GimmickSequenceScheduleId))
+                     .ToList())
+        {
+            CageGimmickHelper.SeedSequenceGimmicks(_masterDb, userDb, sequence.GimmickSequenceScheduleId, sequence.GimmickSequenceId, nowMs);
         }
 
         return Task.FromResult(new InitSequenceScheduleResponse());
     }
 
-    /// <summary>Marks one or more gimmicks as unlocked so the player can interact with them in the field.</summary>
+    /// <summary>Marks one or more gimmicks as unlocked (a hidden story's missions start).</summary>
     public override Task<UnlockResponse> Unlock(UnlockRequest request, ServerCallContext context)
     {
         long userId = context.GetUserId();
@@ -251,35 +252,12 @@ public class GimmickService(UserDataStore store, DarkMasterMemoryDatabase master
         return Task.FromResult(new UnlockResponse());
     }
 
-    private List<EntityMGimmickSequenceSchedule> ResolveActiveSchedules(long nowMs)
+    /// <summary>Grants <paramref name="times"/> placeholder loot rolls, merged into one reward line.</summary>
+    private GimmickReward GrantPlaceholderLoot(DarkUserMemoryDatabase userDb, int times, long nowMs)
     {
-        Dictionary<int, EntityMGimmickSequenceSchedule> bestByFirstSequence = [];
-        foreach (EntityMGimmickSequenceSchedule schedule in _masterDb.EntityMGimmickSequenceSchedule)
-        {
-            if (bestByFirstSequence.TryGetValue(schedule.FirstGimmickSequenceId, out EntityMGimmickSequenceSchedule? existing))
-            {
-                bool existingHasFutureEnd = existing.EndDatetime > nowMs;
-                bool candidateHasFutureEnd = schedule.EndDatetime > nowMs;
-
-                if (existingHasFutureEnd != candidateHasFutureEnd)
-                {
-                    if (existingHasFutureEnd)
-                    {
-                        continue;
-                    }
-                }
-                else if (existing.StartDatetime < schedule.StartDatetime
-                    || (existing.StartDatetime == schedule.StartDatetime
-                        && existing.GimmickSequenceScheduleId <= schedule.GimmickSequenceScheduleId))
-                {
-                    continue;
-                }
-            }
-
-            bestByFirstSequence[schedule.FirstGimmickSequenceId] = schedule;
-        }
-
-        return [.. bestByFirstSequence.Values];
+        (PossessionType possessionType, int possessionId, int count) = CageGimmickHelper.PlaceholderLoot(_gameConfig);
+        PossessionHelper.Apply(userDb, possessionType, possessionId, count * times, _masterDb, nowMs);
+        return new GimmickReward { PossessionType = (int)possessionType, PossessionId = possessionId, Count = count * times };
     }
 
     private (bool SequenceCleared, List<GimmickReward> Rewards) MarkSequenceClearedOnce(
@@ -335,38 +313,10 @@ public class GimmickService(UserDataStore store, DarkMasterMemoryDatabase master
         return (true, rewards);
     }
 
-    private GimmickReward? ResolveHiddenBirdReward(int gimmickOrnamentGroupId, int gimmickOrnamentIndex)
-    {
-        EntityMGimmickOrnament? ornament = _masterDb.EntityMGimmickOrnament.FirstOrDefault(entry =>
-            entry.GimmickOrnamentGroupId == gimmickOrnamentGroupId
-            && entry.GimmickOrnamentIndex == gimmickOrnamentIndex);
-        if (ornament is null)
-        {
-            return null;
-        }
-
-        EntityMCageOrnament? cageOrnament = _masterDb.EntityMCageOrnament
-            .FirstOrDefault(entry => entry.CageOrnamentId == ornament.GimmickOrnamentViewId);
-        if (cageOrnament is null)
-        {
-            return null;
-        }
-
-        EntityMCageOrnamentReward? reward = _masterDb.EntityMCageOrnamentReward
-            .FirstOrDefault(entry => entry.CageOrnamentRewardId == cageOrnament.CageOrnamentRewardId);
-        if (reward is null)
-        {
-            return null;
-        }
-
-        return new GimmickReward
-        {
-            PossessionType = (int)reward.PossessionType,
-            PossessionId = reward.PossessionId,
-            Count = reward.Count
-        };
-    }
-
+    /// <summary>
+    /// The Lost Archive a cage-memory gimmick opens. Master data doesn't link them; the n-th Lost Archive gimmick of a
+    /// route (by id) opens the n-th archive of that route's season (owner agreed, 2026-10-26).
+    /// </summary>
     private int? ResolveCageMemoryImportantItemId(EntityMGimmick masterGimmick)
     {
         int chapterId = _masterDb.EntityMGimmickOrnament

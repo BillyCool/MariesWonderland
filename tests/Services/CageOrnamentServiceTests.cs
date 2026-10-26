@@ -1,4 +1,4 @@
-using MariesWonderland.Data;
+﻿using MariesWonderland.Data;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.CageOrnament;
@@ -45,7 +45,7 @@ public class CageOrnamentServiceTests
     }
 
     [Fact]
-    public async Task ReceiveReward_WithExistingRewardRecord_DoesNotDuplicateRecord()
+    public async Task ReceiveReward_AlreadyDispatched_GrantsNothingAgain()
     {
         DarkMasterMemoryDatabase masterDb = CreateMasterDb();
         ConfigureReward(masterDb);
@@ -67,15 +67,16 @@ public class CageOrnamentServiceTests
 
         CageOrnamentService service = CreateService(masterDb, userDb);
 
-        await service.ReceiveReward(
+        ReceiveRewardResponse response = await service.ReceiveReward(
             new ReceiveRewardRequest { CageOrnamentId = CageOrnamentId },
             FakeServerCallContext.For(UserId));
 
+        Assert.Empty(response.CageOrnamentReward);
         EntityIUserCageOrnamentReward rewardRecord = Assert.Single(userDb.EntityIUserCageOrnamentReward);
         Assert.Equal(12345, rewardRecord.AcquisitionDatetime);
 
         EntityIUserConsumableItem consumable = Assert.Single(userDb.EntityIUserConsumableItem);
-        Assert.Equal(10, consumable.Count);
+        Assert.Equal(7, consumable.Count);
         Assert.Equal(67890, consumable.FirstAcquisitionDatetime);
     }
 

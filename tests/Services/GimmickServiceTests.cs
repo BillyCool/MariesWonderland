@@ -1,5 +1,6 @@
-using Google.Protobuf.WellKnownTypes;
+﻿using Google.Protobuf.WellKnownTypes;
 using MariesWonderland.Data;
+using MariesWonderland.Helpers;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.Gimmick;
@@ -11,6 +12,8 @@ namespace MariesWonderland.Tests.Services;
 public class GimmickServiceTests
 {
     private const long UserId = 1L;
+    private const int GoldId = 1;
+    private static readonly GameConfig Config = new() { ConsumableItemIdForGold = GoldId };
 
     [Fact]
     public async Task UpdateSequence_NewSequence_AddsUserSequenceRecord()
@@ -185,57 +188,6 @@ public class GimmickServiceTests
     }
 
     [Fact]
-    public async Task UpdateGimmickProgress_HiddenBirdGimmick_GrantsOrnamentRewardAndClearsSequence()
-    {
-        DarkMasterMemoryDatabase masterDb = CreateMasterDb();
-        ConfigureSequence(masterDb, sequenceId: 20, gimmickGroupId: 300, rewardGroupId: 0);
-        AddGimmickToSequence(masterDb, gimmickGroupId: 300, gimmickId: 30, gimmickType: GimmickType.MAP_ONLY_CAGE_TREASURE_HUNT, gimmickOrnamentGroupId: 700);
-        masterDb.EntityMGimmickOrnament.Add(new EntityMGimmickOrnament
-        {
-            GimmickOrnamentGroupId = 700,
-            GimmickOrnamentIndex = 2,
-            GimmickOrnamentViewId = 900
-        });
-        masterDb.EntityMCageOrnament.Add(new EntityMCageOrnament
-        {
-            CageOrnamentId = 900,
-            CageOrnamentRewardId = 901
-        });
-        masterDb.EntityMCageOrnamentReward.Add(new EntityMCageOrnamentReward
-        {
-            CageOrnamentRewardId = 901,
-            PossessionType = PossessionType.MATERIAL,
-            PossessionId = 777,
-            Count = 4
-        });
-
-        DarkUserMemoryDatabase userDb = CreateUserDb();
-        GimmickServiceImpl service = CreateService(masterDb, userDb);
-
-        UpdateGimmickProgressResponse response = await service.UpdateGimmickProgress(
-            new UpdateGimmickProgressRequest
-            {
-                GimmickSequenceScheduleId = 10,
-                GimmickSequenceId = 20,
-                GimmickId = 30,
-                GimmickOrnamentIndex = 2,
-                ProgressValueBit = 3
-            },
-            FakeServerCallContext.For(UserId));
-
-        EntityIUserMaterial material = Assert.Single(userDb.EntityIUserMaterial);
-        Assert.Equal(777, material.MaterialId);
-        Assert.Equal(4, material.Count);
-        Assert.True(Assert.Single(userDb.EntityIUserGimmickSequence).IsGimmickSequenceCleared);
-
-        GimmickReward ornamentReward = Assert.Single(response.GimmickOrnamentReward);
-        Assert.Equal((int)PossessionType.MATERIAL, ornamentReward.PossessionType);
-        Assert.Equal(777, ornamentReward.PossessionId);
-        Assert.Equal(4, ornamentReward.Count);
-        Assert.True(response.IsSequenceCleared);
-    }
-
-    [Fact]
     public async Task UpdateGimmickProgress_CageMemory_GrantsImportantItemWithoutClearingSequence()
     {
         DarkMasterMemoryDatabase masterDb = CreateMasterDb();
@@ -330,10 +282,11 @@ public class GimmickServiceTests
 
         await service.InitSequenceSchedule(new Empty(), FakeServerCallContext.For(UserId));
 
-        Assert.Equal(3, userDb.EntityIUserGimmickSequence.Count);
+        // Schedule 5 has ended: the client wouldn't show it.
+        Assert.Equal(2, userDb.EntityIUserGimmickSequence.Count);
         Assert.Contains(userDb.EntityIUserGimmickSequence, s => s.GimmickSequenceScheduleId == 1 && s.GimmickSequenceId == 101);
         Assert.Contains(userDb.EntityIUserGimmickSequence, s => s.GimmickSequenceScheduleId == 2 && s.GimmickSequenceId == 201);
-        Assert.Contains(userDb.EntityIUserGimmickSequence, s => s.GimmickSequenceScheduleId == 5 && s.GimmickSequenceId == 501);
+        Assert.DoesNotContain(userDb.EntityIUserGimmickSequence, s => s.GimmickSequenceScheduleId == 5);
         Assert.DoesNotContain(userDb.EntityIUserGimmickSequence, s => s.GimmickSequenceScheduleId == 6);
         Assert.DoesNotContain(userDb.EntityIUserGimmickSequence, s => s.GimmickSequenceScheduleId == 3);
         Assert.DoesNotContain(userDb.EntityIUserGimmickSequence, s => s.GimmickSequenceScheduleId == 4);
@@ -366,7 +319,7 @@ public class GimmickServiceTests
     }
 
     [Fact]
-    public async Task InitSequenceSchedule_PrunesStaleIncompleteRowsAndPrefersBestScheduleForDuplicateFirstSequence()
+    public async Task InitSequenceSchedule_DropsUnfinishedSequencesOfEndedSchedules_KeepsClearedOnes()
     {
         long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
         DarkMasterMemoryDatabase masterDb = CreateMasterDb();
@@ -465,7 +418,7 @@ public class GimmickServiceTests
     {
         UserDataStore store = new(TimeProvider.System);
         store.Set(UserId, userDb);
-        return new GimmickServiceImpl(store, masterDb, TestServices.Missions(masterDb), TimeProvider.System);
+        return new GimmickServiceImpl(store, masterDb, Config, TestServices.Missions(masterDb), TimeProvider.System);
     }
 
     private static DarkMasterMemoryDatabase CreateMasterDb() => new();
