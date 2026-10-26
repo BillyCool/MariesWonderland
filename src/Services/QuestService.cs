@@ -1062,33 +1062,14 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         return Task.FromResult(new StartGuerrillaFreeOpenResponse());
     }
 
-    /// <summary>Resets a Recollections of Dusk floor (the floor of the request's quest) and its side story progress.</summary>
+    /// <summary>
+    /// Resets a Recollections of Dusk floor (the floor of the request's quest): no quest cleared, nothing locked. Side-story
+    /// rows are left alone: the client reads only the current-scene row, and the floor stays the one being played.
+    /// </summary>
     public override Task<ResetLimitContentQuestProgressResponse> ResetLimitContentQuestProgress(ResetLimitContentQuestProgressRequest request, ServerCallContext context)
     {
-        long userId = context.GetUserId();
-        DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
-
-        int questId = request.QuestId;
-
-        EntityIUserSideStoryQuest? sideStoryQuest = userDb.EntityIUserSideStoryQuest
-            .FirstOrDefault(s => s.SideStoryQuestId == questId);
-        if (sideStoryQuest != null)
-        {
-            sideStoryQuest.HeadSideStoryQuestSceneId = 0;
-            sideStoryQuest.SideStoryQuestStateType = 0; // Unknown
-        }
-
-        // A reset starts the whole floor over: no quest cleared, nothing locked.
-        RecollectionsHelper.ResetFloor(_masterDb, userDb, request.EventQuestChapterId, questId);
-
-        EntityIUserSideStoryQuestSceneProgressStatus? activeProgress = userDb.EntityIUserSideStoryQuestSceneProgressStatus
-            .FirstOrDefault(s => s.UserId == userId);
-        if (activeProgress != null && activeProgress.CurrentSideStoryQuestId == questId)
-        {
-            activeProgress.CurrentSideStoryQuestId = 0;
-            activeProgress.CurrentSideStoryQuestSceneId = 0;
-        }
-
+        DarkUserMemoryDatabase userDb = _store.GetOrCreate(context.GetUserId());
+        RecollectionsHelper.ResetFloor(_masterDb, userDb, request.EventQuestChapterId, request.QuestId);
         return Task.FromResult(new ResetLimitContentQuestProgressResponse());
     }
 
