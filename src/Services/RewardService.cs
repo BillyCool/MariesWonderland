@@ -10,6 +10,7 @@ using MariesWonderland.Proto.BigHunt;
 using MariesWonderland.Proto.Labyrinth;
 using MariesWonderland.Proto.Pvp;
 using MariesWonderland.Proto.Reward;
+using MariesWonderland.Quests;
 
 namespace MariesWonderland.Services;
 
@@ -216,11 +217,24 @@ public class RewardService(UserDataStore store, DarkMasterMemoryDatabase masterD
     }
 
     /// <summary>
-    /// The current labyrinth models do not record enough per-season progression to safely resolve claimable season rewards.
+    /// The home screen's Fate Board season results: pays every board whose last joined season has ended and isn't
+    /// paid yet (the client asks within 30 days of a season's end).
     /// </summary>
     public override Task<ReceiveLabyrinthSeasonRewardResponse> ReceiveLabyrinthSeasonReward(Empty request, ServerCallContext context)
     {
-        return Task.FromResult(new ReceiveLabyrinthSeasonRewardResponse());
+        DarkUserMemoryDatabase userDb = _store.GetOrCreate(context.GetUserId());
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
+
+        ReceiveLabyrinthSeasonRewardResponse response = new();
+        foreach (EntityIUserEventQuestLabyrinthSeason row in userDb.EntityIUserEventQuestLabyrinthSeason.OrderBy(s => s.EventQuestChapterId))
+        {
+            if (FateBoardHelper.PayEndedSeason(userDb, _masterDb, row, nowMs) is { } result)
+            {
+                response.SeasonResult.Add(result);
+            }
+        }
+
+        return Task.FromResult(response);
     }
 
     /// <summary>

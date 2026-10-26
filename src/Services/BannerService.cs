@@ -1,128 +1,81 @@
-using Grpc.Core;
+﻿using Grpc.Core;
 using MariesWonderland.Data;
 using MariesWonderland.Extensions;
 using MariesWonderland.Missions;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.Banner;
+using MariesWonderland.Summons;
 
 namespace MariesWonderland.Services;
 
-public class BannerService(UserDataStore store, DarkMasterMemoryDatabase masterDb, MissionTracker missions, TimeProvider timeProvider) : MariesWonderland.Proto.Banner.BannerService.BannerServiceBase
+public class BannerService(UserDataStore store, DarkMasterMemoryDatabase masterDb, MissionTracker missions, BoxSummonTable boxSummons, TimeProvider timeProvider) : MariesWonderland.Proto.Banner.BannerService.BannerServiceBase
 {
+    private const int StepUpGroupDivisor = 1000;
+
     private readonly UserDataStore _store = store;
     private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
     private readonly MissionTracker _missions = missions;
+    private readonly BoxSummonTable _boxSummons = boxSummons;
     private readonly TimeProvider _timeProvider = timeProvider;
 
     /// <summary>
-    /// Returns available gacha banners grouped into term-limited and chapter categories for the Mama banner screen,
-    /// and takes the Cage values measured since the last report.
+    /// The summons on Mama's banner, matching the summon list: premium banners (one per step-up group) and Mama's
+    /// Dream box summons as term-limited, and the chapter summon of the furthest main chapter the user has reached.
+    /// Also takes the Cage values measured since the last report.
     /// </summary>
     public override Task<GetMamaBannerResponse> GetMamaBanner(GetMamaBannerRequest request, ServerCallContext context)
     {
+        DarkUserMemoryDatabase userDb = _store.GetOrCreate(context.GetUserId());
         if (request.CageMeasurableValues is { } cage)
         {
-            DarkUserMemoryDatabase userDb = _store.GetOrCreate(context.GetUserId());
             _missions.RecordCageValues(userDb, cage.RunningDistanceMeters, cage.MamaTappedCount, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
         }
 
-        Dictionary<int, EntityMGachaMedal> medalByGachaId = [];
-        foreach (EntityMGachaMedal medal in _masterDb.EntityMGachaMedal)
-        {
-            medalByGachaId[medal.ShopTransitionGachaId] = medal;
-        }
-
+        HashSet<int> medalGachaIds = [.. _masterDb.EntityMGachaMedal.Select(m => m.ShopTransitionGachaId)];
         List<GachaBanner> termLimited = [];
         HashSet<int> seenStepUpGroups = [];
-        GachaBanner? latestChapter = null;
-
         foreach (EntityMMomBanner banner in _masterDb.EntityMMomBanner)
         {
-            if (banner.DestinationDomainType != DomainType.GACHA)
+            if (banner.DestinationDomainType != DomainType.GACHA || _boxSummons.Find(banner.DestinationDomainId) != null
+                || !medalGachaIds.Contains(banner.DestinationDomainId)
+                || banner.BannerAssetName.StartsWith("portal_cage_", StringComparison.Ordinal)
+                || banner.BannerAssetName.StartsWith("recycle_", StringComparison.Ordinal))
             {
                 continue;
             }
 
             int gachaId = banner.DestinationDomainId;
-
-            GachaLabelType labelType = InferGachaLabelType(banner.BannerAssetName);
-
-            // Chapter gachas (common_ prefix) are exempt from the medal requirement.
-            if (!medalByGachaId.ContainsKey(gachaId) && labelType != GachaLabelType.CHAPTER)
-            {
-                continue;
-            }
-
-            // Skip portal cage and recycle banners (not displayed on home screen).
-            if (labelType is GachaLabelType.PORTAL_CAGE or GachaLabelType.RECYCLE)
-            {
-                continue;
-            }
-
-            // Step-up banners: truncate to group ID (562001 → 562) using StepUpGroupDivisor.
-            // Multiple raw step IDs map to the same group, so deduplicate.
             if (banner.BannerAssetName.StartsWith("step_up_", StringComparison.Ordinal))
             {
-                gachaId /= 1000;
+                gachaId /= StepUpGroupDivisor;
                 if (!seenStepUpGroups.Add(gachaId))
                 {
                     continue;
                 }
             }
 
-            GachaBanner b = new()
-            {
-                GachaLabelType = (int)labelType,
-                GachaAssetName = banner.BannerAssetName,
-                GachaId = gachaId
-            };
-
-            switch (labelType)
-            {
-                case GachaLabelType.EVENT:
-                case GachaLabelType.PREMIUM:
-                    termLimited.Add(b);
-                    break;
-                case GachaLabelType.CHAPTER:
-                    if (latestChapter is null || gachaId > latestChapter.GachaId)
-                    {
-                        latestChapter = b;
-                    }
-                    break;
-            }
+            termLimited.Add(new GachaBanner { GachaLabelType = (int)GachaLabelType.PREMIUM, GachaAssetName = banner.BannerAssetName, GachaId = gachaId });
         }
+
+        foreach (BoxSummon summon in _boxSummons.All.Where(b => b.Kind == BoxSummonKind.MAMAS_DREAM).OrderBy(b => b.GachaId))
+        {
+            termLimited.Add(new GachaBanner { GachaLabelType = (int)GachaLabelType.EVENT, GachaAssetName = summon.AssetName, GachaId = summon.GachaId });
+        }
+
+        BoxSummon? latestChapter = _boxSummons.All
+            .Where(b => b.Kind == BoxSummonKind.CHAPTER && b.MainQuestChapterId > 0 && BoxSummonTable.IsChapterReached(userDb, _masterDb, b))
+            .MaxBy(b => b.MainQuestChapterId);
 
         GetMamaBannerResponse response = new()
         {
-            LatestChapterGacha = latestChapter,
+            LatestChapterGacha = latestChapter == null
+                ? null
+                : new GachaBanner { GachaLabelType = (int)GachaLabelType.CHAPTER, GachaAssetName = latestChapter.AssetName, GachaId = latestChapter.GachaId },
             IsExistUnreadPop = false
         };
         response.TermLimitedGacha.AddRange(termLimited);
 
         return Task.FromResult(response);
     }
-
-    /// <summary>
-    /// Master data has no GachaLabelType field, so we infer from the banner asset name prefix.
-    /// All term-limited gachas (step_up_, limited_, etc.) use PREMIUM (value 1).
-    /// </summary>
-    private static GachaLabelType InferGachaLabelType(string assetName)
-    {
-        if (assetName.StartsWith("common_", StringComparison.Ordinal))
-        {
-            return GachaLabelType.CHAPTER;
-        }
-        if (assetName.StartsWith("portal_cage_", StringComparison.Ordinal))
-        {
-            return GachaLabelType.PORTAL_CAGE;
-        }
-        if (assetName.StartsWith("recycle_", StringComparison.Ordinal))
-        {
-            return GachaLabelType.RECYCLE;
-        }
-        // All term-limited gachas (step_up_, limited_, event_, etc.) default to PREMIUM (value 1).
-        return GachaLabelType.PREMIUM;
-    }
 }
-

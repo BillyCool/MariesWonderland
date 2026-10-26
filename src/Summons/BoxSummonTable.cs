@@ -1,5 +1,6 @@
-using System.Text.Json;
+﻿using System.Text.Json;
 using System.Text.Json.Serialization;
+using MariesWonderland.Data;
 using MariesWonderland.Models.Type;
 
 namespace MariesWonderland.Summons;
@@ -57,6 +58,29 @@ public sealed class BoxSummonTable
 
     /// <summary>The box summon with this gacha id; null for any other summon.</summary>
     public BoxSummon? Find(int gachaId) => _byGachaId.GetValueOrDefault(gachaId);
+
+    /// <summary>
+    /// True once the player has reached the summon's main chapter (played any of its quests); Dark Memories, which
+    /// has no chapter, once any Dark Memory quest has been played.
+    /// </summary>
+    public static bool IsChapterReached(DarkUserMemoryDatabase userDb, DarkMasterMemoryDatabase masterDb, BoxSummon summon)
+    {
+        HashSet<int> questIds;
+        if (summon.MainQuestChapterId > 0)
+        {
+            int? groupId = masterDb.EntityMMainQuestChapter.FirstOrDefault(c => c.MainQuestChapterId == summon.MainQuestChapterId)?.MainQuestSequenceGroupId;
+            HashSet<int> sequenceIds = [.. masterDb.EntityMMainQuestSequenceGroup.Where(g => g.MainQuestSequenceGroupId == groupId).Select(g => g.MainQuestSequenceId)];
+            questIds = [.. masterDb.EntityMMainQuestSequence.Where(s => sequenceIds.Contains(s.MainQuestSequenceId)).Select(s => s.QuestId)];
+        }
+        else
+        {
+            HashSet<int> groupIds = [.. masterDb.EntityMEventQuestChapter.Where(c => c.EventQuestType == EventQuestType.END_CONTENTS).Select(c => c.EventQuestSequenceGroupId)];
+            HashSet<int> sequenceIds = [.. masterDb.EntityMEventQuestSequenceGroup.Where(g => groupIds.Contains(g.EventQuestSequenceGroupId)).Select(g => g.EventQuestSequenceId)];
+            questIds = [.. masterDb.EntityMEventQuestSequence.Where(s => sequenceIds.Contains(s.EventQuestSequenceId)).Select(s => s.QuestId)];
+        }
+
+        return userDb.EntityIUserQuest.Any(q => questIds.Contains(q.QuestId));
+    }
 
     public static BoxSummonTable Load(string path)
     {

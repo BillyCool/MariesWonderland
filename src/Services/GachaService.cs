@@ -1,4 +1,4 @@
-using Google.Protobuf;
+﻿using Google.Protobuf;
 using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
 using MariesWonderland.Configuration;
@@ -881,28 +881,8 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
         PossessionHelper.Apply(userDb, prize.PossessionType, prize.PossessionId, prize.Count, _masterDb, nowMs);
     }
 
-    /// <summary>
-    /// True once the player has reached the summon's main chapter (played any of its quests); Dark Memories, which
-    /// has no chapter, once any Dark Memory quest has been played.
-    /// </summary>
     private bool IsChapterReached(DarkUserMemoryDatabase userDb, BoxSummon summon)
-    {
-        HashSet<int> questIds;
-        if (summon.MainQuestChapterId > 0)
-        {
-            int? groupId = _masterDb.EntityMMainQuestChapter.FirstOrDefault(c => c.MainQuestChapterId == summon.MainQuestChapterId)?.MainQuestSequenceGroupId;
-            HashSet<int> sequenceIds = [.. _masterDb.EntityMMainQuestSequenceGroup.Where(g => g.MainQuestSequenceGroupId == groupId).Select(g => g.MainQuestSequenceId)];
-            questIds = [.. _masterDb.EntityMMainQuestSequence.Where(s => sequenceIds.Contains(s.MainQuestSequenceId)).Select(s => s.QuestId)];
-        }
-        else
-        {
-            HashSet<int> groupIds = [.. _masterDb.EntityMEventQuestChapter.Where(c => c.EventQuestType == EventQuestType.END_CONTENTS).Select(c => c.EventQuestSequenceGroupId)];
-            HashSet<int> sequenceIds = [.. _masterDb.EntityMEventQuestSequenceGroup.Where(g => groupIds.Contains(g.EventQuestSequenceGroupId)).Select(g => g.EventQuestSequenceId)];
-            questIds = [.. _masterDb.EntityMEventQuestSequence.Where(s => sequenceIds.Contains(s.EventQuestSequenceId)).Select(s => s.QuestId)];
-        }
-
-        return userDb.EntityIUserQuest.Any(q => questIds.Contains(q.QuestId));
-    }
+        => BoxSummonTable.IsChapterReached(userDb, _masterDb, summon);
 
     #endregion
 

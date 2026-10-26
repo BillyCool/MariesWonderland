@@ -1,4 +1,4 @@
-using MariesWonderland.Data;
+﻿using MariesWonderland.Data;
 using MariesWonderland.Helpers;
 using MariesWonderland.Missions;
 using MariesWonderland.Models.Entities;
@@ -885,38 +885,48 @@ public class QuestServiceTests
     }
 
     [Fact]
-    public async Task ReceiveTowerAccumulationReward_GrantsOnlyNewThresholds()
+    public async Task ReceiveTowerAccumulationReward_PaysOnlyTiersTheClearedMissionsReach()
     {
         DarkMasterMemoryDatabase masterDb = CreateMasterDb();
+        masterDb.EntityMEventQuestChapter.Add(new EntityMEventQuestChapter { EventQuestChapterId = TowerChapterId, EventQuestType = EventQuestType.TOWER, EventQuestSequenceGroupId = 3010 });
+        masterDb.EntityMEventQuestSequenceGroup.AddRange(
+        [
+            new EntityMEventQuestSequenceGroup { EventQuestSequenceGroupId = 3010, DifficultyType = DifficultyType.NORMAL, EventQuestSequenceId = 3011 },
+            new EntityMEventQuestSequenceGroup { EventQuestSequenceGroupId = 3010, DifficultyType = DifficultyType.HARD, EventQuestSequenceId = 3012 }
+        ]);
+        masterDb.EntityMEventQuestSequence.AddRange(
+        [
+            new EntityMEventQuestSequence { EventQuestSequenceId = 3011, SortOrder = 1, QuestId = 30101 },
+            new EntityMEventQuestSequence { EventQuestSequenceId = 3012, SortOrder = 1, QuestId = 30201 }
+        ]);
+        masterDb.EntityMQuestMission.Add(new EntityMQuestMission { QuestMissionId = 99, QuestMissionConditionType = QuestMissionConditionType.COMPLETE });
         DarkUserMemoryDatabase userDb = new();
         QuestServiceImpl service = CreateService(masterDb, userDb);
+        void ClearMissions(int questId, params int[] missionIds)
+        {
+            foreach (int missionId in missionIds)
+            {
+                userDb.EntityIUserQuestMission.Add(new EntityIUserQuestMission { QuestId = questId, QuestMissionId = missionId, IsClear = true });
+            }
+        }
 
+        ClearMissions(30101, 1, 2, 99);
+        ClearMissions(99999, 1, 2, 3);
         await service.ReceiveTowerAccumulationReward(
-            new ReceiveTowerAccumulationRewardRequest
-            {
-                EventQuestChapterId = TowerChapterId,
-                TargetMissionClearCount = 3
-            },
+            new ReceiveTowerAccumulationRewardRequest { EventQuestChapterId = TowerChapterId, TargetMissionClearCount = 5 },
+            FakeServerCallContext.For(UserId));
+        Assert.Equal(["701:1"], userDb.EntityIUserMaterial.Select(m => $"{m.MaterialId}:{m.Count}").ToArray());
+
+        ClearMissions(30201, 1, 2, 3);
+        await service.ReceiveTowerAccumulationReward(
+            new ReceiveTowerAccumulationRewardRequest { EventQuestChapterId = TowerChapterId, TargetMissionClearCount = 5 },
             FakeServerCallContext.For(UserId));
         await service.ReceiveTowerAccumulationReward(
-            new ReceiveTowerAccumulationRewardRequest
-            {
-                EventQuestChapterId = TowerChapterId,
-                TargetMissionClearCount = 5
-            },
-            FakeServerCallContext.For(UserId));
-        await service.ReceiveTowerAccumulationReward(
-            new ReceiveTowerAccumulationRewardRequest
-            {
-                EventQuestChapterId = TowerChapterId,
-                TargetMissionClearCount = 5
-            },
+            new ReceiveTowerAccumulationRewardRequest { EventQuestChapterId = TowerChapterId, TargetMissionClearCount = 5 },
             FakeServerCallContext.For(UserId));
 
         EntityIUserEventQuestTowerAccumulationReward state = Assert.Single(userDb.EntityIUserEventQuestTowerAccumulationReward);
-        Assert.Equal(TowerChapterId, state.EventQuestChapterId);
         Assert.Equal(5, state.LatestRewardReceiveQuestMissionClearCount);
-
         Assert.Equal(
             ["701:1", "702:2"],
             userDb.EntityIUserMaterial.OrderBy(m => m.MaterialId).Select(m => $"{m.MaterialId}:{m.Count}").ToArray());

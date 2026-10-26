@@ -920,7 +920,10 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         return Task.FromResult(new SetQuestSceneChoiceResponse());
     }
 
-    /// <summary>Stub for tower accumulation reward; returns empty response.</summary>
+    /// <summary>
+    /// Abyss Tower mission milestones: every tier up to the count the client asks for, as far as the user's cleared quest
+    /// missions in the chapter (all difficulties) reach, each tier once.
+    /// </summary>
     public override Task<ReceiveTowerAccumulationRewardResponse> ReceiveTowerAccumulationReward(ReceiveTowerAccumulationRewardRequest request, ServerCallContext context)
     {
         long userId = context.GetUserId();
@@ -943,10 +946,13 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
             return Task.FromResult(new ReceiveTowerAccumulationRewardResponse());
         }
 
+        int clearedCount = FateBoardHelper.ClearedQuestMissionCount(userDb, _masterDb,
+            FateBoardHelper.ChapterQuests(_masterDb, request.EventQuestChapterId, difficulty: null).Select(q => q.QuestId));
+        int claimUpTo = Math.Min(request.TargetMissionClearCount, clearedCount);
         List<EntityMEventQuestTowerAccumulationRewardGroup> eligibleRewards = [.. _masterDb.EntityMEventQuestTowerAccumulationRewardGroup
             .Where(r => r.EventQuestTowerAccumulationRewardGroupId == accumulationRewardGroupId
                 && r.QuestMissionClearCount > towerRewardState.LatestRewardReceiveQuestMissionClearCount
-                && r.QuestMissionClearCount <= request.TargetMissionClearCount)
+                && r.QuestMissionClearCount <= claimUpTo)
             .OrderBy(r => r.QuestMissionClearCount)];
 
         int highestClaimedCount = towerRewardState.LatestRewardReceiveQuestMissionClearCount;
