@@ -322,6 +322,35 @@ public class WeaponServiceTests
     }
 
     [Fact]
+    public async Task EnhanceByWeapon_FodderGivesBaseExpPlusATenthOfItsOwnExp_ThenTheSameTypeBonus()
+    {
+        DarkMasterMemoryDatabase masterDb = CreateMasterDb();
+        ConfigureMainWeapon(masterDb, weaponType: WeaponType.SWORD, maxLevelFunctionId: MaxLevelFunctionId, requiredExpMapId: ExpMapId);
+        masterDb.EntityMWeaponSpecificEnhance.Single(enhance => enhance.WeaponSpecificEnhanceId == MainEnhanceId).BaseEnhancementObtainedExp = 120;
+        ConfigureFodderWeapon(masterDb, weaponType: WeaponType.GUN, baseEnhancementObtainedExp: 50);
+        AddLinearFunction(masterDb, MaxLevelFunctionId, slope: 0, intercept: 2);
+        AddLevelThreshold(masterDb, ExpMapId, level: 1, requiredExp: 0);
+        AddLevelThreshold(masterDb, ExpMapId, level: 2, requiredExp: 100_000);
+
+        DarkUserMemoryDatabase userDb = CreateUserDb();
+        userDb.EntityIUserWeapon.AddRange(
+        [
+            new EntityIUserWeapon { UserId = UserId, UserWeaponUuid = "target-weapon", WeaponId = TargetWeaponId, Level = 1 },
+            new EntityIUserWeapon { UserId = UserId, UserWeaponUuid = "same-fodder", WeaponId = TargetWeaponId, Level = 1, Exp = 505 },
+            new EntityIUserWeapon { UserId = UserId, UserWeaponUuid = "gun-fodder", WeaponId = FodderWeaponId, Level = 1, Exp = 1009 }
+        ]);
+        WeaponServiceImpl service = CreateService(masterDb, userDb);
+
+        EnhanceByWeaponRequest request = new() { UserWeaponUuid = "target-weapon" };
+        request.MaterialUserWeaponUuids.Add("same-fodder");
+        request.MaterialUserWeaponUuids.Add("gun-fodder");
+        await service.EnhanceByWeapon(request, FakeServerCallContext.For(UserId));
+
+        // Same type: (120 + 505 × 100 / 1000 = 50) × 1500 / 1000 = 255. Other type: 50 + 1009 × 100 / 1000 = 150.
+        Assert.Equal(405, Assert.Single(userDb.EntityIUserWeapon).Exp);
+    }
+
+    [Fact]
     public async Task EnhanceByWeapon_ConsumesFodderWeaponsAndAttachedRecords()
     {
         DarkMasterMemoryDatabase masterDb = CreateMasterDb();
@@ -1145,6 +1174,7 @@ public class WeaponServiceTests
             {
                 ConsumableItemIdForGold = GoldItemId,
                 MaterialSameWeaponExpCoefficientPermil = 1500,
+                WeaponEnhanceCalcCoefficientPermil = 100,
                 WeaponLimitBreakAvailableCount = weaponLimitBreakAvailableCount
             }, new EnhanceCampaignHelper(masterDb, new FixedRandom(greatSuccessRoll)), new MissionTracker(masterDb, new MissionCatalog(masterDb, MissionFilterTable.Empty)), TimeProvider.System);
     }

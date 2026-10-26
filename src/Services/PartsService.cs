@@ -213,6 +213,7 @@ public class PartsService(DarkMasterMemoryDatabase masterDb, UserDataStore store
         int successRate = _enhanceCampaigns.ApplyPartsSuccessRate(
             LookupPartsLevelUpRate(rarityRow.PartsLevelUpRateGroupId, part.Level),
             partDef,
+            userDb,
             _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
 
         // Roll for enhancement success (permil)

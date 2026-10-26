@@ -26,6 +26,9 @@ public class GameConfig
 
     public int MaterialSameWeaponExpCoefficientPermil { get; init; }
 
+    /// <summary>Share of a fodder weapon's own exp that enhancing with it passes on (permil).</summary>
+    public int WeaponEnhanceCalcCoefficientPermil { get; init; }
+
     public int UserStaminaRecoverySecond { get; init; }
     public int StaminaMaxCount { get; init; }
     public int RewardGachaDailyMaxCount { get; init; }
@@ -60,6 +63,7 @@ public class GameConfig
             CostumeLotteryEffectDrawSlotConsumeGold = ParseInt(kv, "COSTUME_LOTTERY_EFFECT_DRAW_SLOT_CONSUME_GOLD"),
 
             MaterialSameWeaponExpCoefficientPermil = ParseInt(kv, "MATERIAL_SAME_WEAPON_EXP_COEFFICIENT_PERMIL"),
+            WeaponEnhanceCalcCoefficientPermil = ParseInt(kv, "WEAPON_ENHANCE_CALC_COEFFICIENT_PERMIL"),
 
             UserStaminaRecoverySecond = ParseInt(kv, "USER_STAMINA_RECOVERY_SECOND"),
             StaminaMaxCount = ParseInt(kv, "POSSESSION_COUNT_LIMIT_STAMINA"),

@@ -117,7 +117,7 @@ public class CostumeService(DarkMasterMemoryDatabase masterDb, UserDataStore sto
 
         // A great success has the same effect for half the materials and gold: the other half is given back
         long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
-        bool isGreatSuccess = totalMaterialCount > 0 && _enhanceCampaigns.RollCostumeGreatSuccess(costumeMaster, nowMs);
+        bool isGreatSuccess = totalMaterialCount > 0 && _enhanceCampaigns.RollCostumeGreatSuccess(costumeMaster, userDb, nowMs);
         Dictionary<int, int> surplusMaterials = [];
         if (isGreatSuccess)
         {

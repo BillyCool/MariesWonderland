@@ -225,6 +225,7 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
             }
 
             ApplyWeaponStoryUnlocks(userDb, quest.QuestId);
+            UserCampaignHelper.StartBeginnerCampaignOnFirstClear(_masterDb, userDb, quest.QuestId, nowMs);
         }
 
         // Only missions not cleared yet are listed, so each mission's reward is granted once.

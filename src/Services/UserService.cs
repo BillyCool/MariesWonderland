@@ -149,9 +149,10 @@ public class UserService(UserDataStore store, UserDataSeeder seeder, DarkMasterM
 
     /// <summary>
     /// Updates the login record for a game day's first start: total days, the run of consecutive days and its best.
-    /// A record already stamped today (registration does that) is left as it is.
+    /// A record already stamped today (registration does that) is left as it is. A player back after a long
+    /// break starts a comeback campaign.
     /// </summary>
-    private static void RecordDailyLogin(DarkUserMemoryDatabase userDb, long userId, long nowMs)
+    private void RecordDailyLogin(DarkUserMemoryDatabase userDb, long userId, long nowMs)
     {
         EntityIUserLogin login = userDb.EntityIUserLogin.GetOrCreate(userId);
         long today = GameDayHelper.StartOfDay(nowMs);
@@ -159,6 +160,8 @@ public class UserService(UserDataStore store, UserDataSeeder seeder, DarkMasterM
         {
             return;
         }
+
+        UserCampaignHelper.StartComebackCampaignOnLogin(_masterDb, userDb, login.LastLoginDatetime, nowMs);
 
         long yesterday = today - (long)TimeSpan.FromDays(1).TotalMilliseconds;
         login.ContinualLoginCount = login.LastLoginDatetime >= yesterday ? login.ContinualLoginCount + 1 : 1;

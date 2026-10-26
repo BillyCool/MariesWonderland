@@ -184,7 +184,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
         }
 
         // A great success has the same effect for half the materials and gold: the other half is given back
-        bool isGreatSuccess = totalMaterialCount > 0 && _enhanceCampaigns.RollWeaponGreatSuccess(wm, nowMs);
+        bool isGreatSuccess = totalMaterialCount > 0 && _enhanceCampaigns.RollWeaponGreatSuccess(wm, userDb, nowMs);
         Dictionary<int, int> surplusMaterials = [];
         if (isGreatSuccess)
         {
@@ -267,13 +267,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
                 continue;
             }
 
-            EntityMWeaponSpecificEnhance? matEnhance = WeaponHelper.ResolveEnhance(_masterDb, matMaster);
-            int baseExp = matEnhance?.BaseEnhancementObtainedExp ?? 0;
-            if (matMaster.WeaponType != WeaponType.UNKNOWN && matMaster.WeaponType == wm.WeaponType)
-            {
-                baseExp = baseExp * _gameConfig.MaterialSameWeaponExpCoefficientPermil / 1000;
-            }
-            totalExp += baseExp;
+            totalExp += FodderWeaponExp(matMaster, matWeapon, wm);
 
             // Grant exchange medals before destroying the fodder weapon
             foreach (EntityMWeaponConsumeExchangeConsumableItemGroup exchange in _masterDb.EntityMWeaponConsumeExchangeConsumableItemGroup)
@@ -988,6 +982,22 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
 
         int maxLevel = LevelHelper.WeaponMaxLevel(_masterDb, userDb, weapon, wm);
         (weapon.Level, weapon.Exp) = LevelHelper.ApplyExp(_masterDb, leveling.RequiredExpForLevelUpNumericalParameterMapId, weapon.Exp, maxLevel);
+    }
+
+    /// <summary>
+    /// Exp a fodder weapon gives: its base enhance exp plus a share of its own exp, then the same-type bonus when it
+    /// is the target's weapon type. Each step rounds down.
+    /// </summary>
+    private int FodderWeaponExp(EntityMWeapon fodderMaster, EntityIUserWeapon fodder, EntityMWeapon targetMaster)
+    {
+        int baseExp = WeaponHelper.ResolveEnhance(_masterDb, fodderMaster)?.BaseEnhancementObtainedExp ?? 0;
+        int exp = baseExp + (int)((long)fodder.Exp * _gameConfig.WeaponEnhanceCalcCoefficientPermil / 1000);
+        if (fodderMaster.WeaponType != WeaponType.UNKNOWN && fodderMaster.WeaponType == targetMaster.WeaponType)
+        {
+            exp = (int)((long)exp * _gameConfig.MaterialSameWeaponExpCoefficientPermil / 1000);
+        }
+
+        return exp;
     }
 
     /// <summary>
