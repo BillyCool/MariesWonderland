@@ -1,4 +1,4 @@
-using MariesWonderland.Constants;
+﻿using MariesWonderland.Constants;
 using MariesWonderland.Data;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
@@ -12,70 +12,98 @@ namespace MariesWonderland.Tests.Services;
 public class TutorialServiceTests
 {
     private const long UserId = 1L;
-    private const int CompanionId = 7001;
+    private const int SkipTicketId = 2003;
 
     [Fact]
-    public async Task SetTutorialProgress_CreatesProgressAndAppliesTutorialRewards()
+    public async Task SetTutorialProgress_SkipTicketPickupGivesTicketsOnce()
     {
-        DarkMasterMemoryDatabase masterDb = new();
-        masterDb.EntityMTutorialConsumePossessionGroup.AddRange(
-        [
-            new EntityMTutorialConsumePossessionGroup
-            {
-                TutorialType = TutorialType.GAME_START,
-                PossessionType = PossessionType.FREE_GEM,
-                PossessionId = 0,
-                Count = 50
-            },
-            new EntityMTutorialConsumePossessionGroup
-            {
-                TutorialType = TutorialType.GAME_START,
-                PossessionType = PossessionType.COMPANION,
-                PossessionId = CompanionId,
-                Count = 1
-            }
-        ]);
-
         DarkUserMemoryDatabase userDb = CreateUserDb();
-        userDb.EntityIUserGem.Add(new EntityIUserGem { UserId = UserId, FreeGem = 10, PaidGem = 5 });
+        TutorialServiceImpl service = CreateService(new DarkMasterMemoryDatabase(), userDb);
 
-        TutorialServiceImpl service = CreateService(masterDb, userDb);
-
-        SetTutorialProgressResponse response = await service.SetTutorialProgress(
-            new SetTutorialProgressRequest
-            {
-                TutorialType = (int)TutorialType.GAME_START,
-                ProgressPhase = 3,
-                ChoiceId = 9
-            },
+        SetTutorialProgressResponse first = await service.SetTutorialProgress(
+            new SetTutorialProgressRequest { TutorialType = (int)TutorialType.MAIN_QUEST_3_3_TICKET_GET_1, ProgressPhase = 20, ChoiceId = 1 },
+            FakeServerCallContext.For(UserId));
+        SetTutorialProgressResponse replay = await service.SetTutorialProgress(
+            new SetTutorialProgressRequest { TutorialType = (int)TutorialType.MAIN_QUEST_3_3_TICKET_GET_1, ProgressPhase = 20, ChoiceId = 1 },
             FakeServerCallContext.For(UserId));
 
+        TutorialChoiceReward reward = Assert.Single(first.TutorialChoiceReward);
+        Assert.Equal((int)PossessionType.CONSUMABLE_ITEM, reward.PossessionType);
+        Assert.Equal(SkipTicketId, reward.PossessionId);
+        Assert.Equal(20, reward.Count);
+        Assert.Empty(replay.TutorialChoiceReward);
+        Assert.Equal(20, Assert.Single(userDb.EntityIUserConsumableItem).Count);
+
         EntityIUserTutorialProgress progress = Assert.Single(userDb.EntityIUserTutorialProgress);
-        Assert.Equal(TutorialType.GAME_START, progress.TutorialType);
-        Assert.Equal(3, progress.ProgressPhase);
-        Assert.Equal(9, progress.ChoiceId);
+        Assert.Equal(20, progress.ProgressPhase);
+        Assert.Equal(1, progress.ChoiceId);
+    }
 
-        Assert.Collection(
-            response.TutorialChoiceReward,
-            reward =>
-            {
-                Assert.Equal((int)PossessionType.FREE_GEM, reward.PossessionType);
-                Assert.Equal(0, reward.PossessionId);
-                Assert.Equal(50, reward.Count);
-            },
-            reward =>
-            {
-                Assert.Equal((int)PossessionType.COMPANION, reward.PossessionType);
-                Assert.Equal(CompanionId, reward.PossessionId);
-                Assert.Equal(1, reward.Count);
-            });
+    [Fact]
+    public async Task SetTutorialProgress_SecondPickupAndLibraryBooksGiveTenEach()
+    {
+        DarkUserMemoryDatabase userDb = CreateUserDb();
+        TutorialServiceImpl service = CreateService(new DarkMasterMemoryDatabase(), userDb);
 
-        EntityIUserGem gem = Assert.Single(userDb.EntityIUserGem);
-        Assert.Equal(60, gem.FreeGem);
-        Assert.Equal(5, gem.PaidGem);
+        TutorialType[] pickups =
+        [
+            TutorialType.MAIN_QUEST_3_3_TICKET_GET_2,
+            TutorialType.MAIN_QUEST_3_3_TICKET_GET_3,
+            TutorialType.MAIN_QUEST_3_3_TICKET_GET_4,
+            TutorialType.MAIN_QUEST_3_3_TICKET_GET_5
+        ];
+        foreach (TutorialType pickup in pickups)
+        {
+            SetTutorialProgressResponse response = await service.SetTutorialProgress(
+                new SetTutorialProgressRequest { TutorialType = (int)pickup, ProgressPhase = 20, ChoiceId = 1 },
+                FakeServerCallContext.For(UserId));
+            Assert.Equal(10, Assert.Single(response.TutorialChoiceReward).Count);
+        }
 
-        EntityIUserCompanion companion = Assert.Single(userDb.EntityIUserCompanion);
-        Assert.Equal(CompanionId, companion.CompanionId);
+        Assert.Equal(40, Assert.Single(userDb.EntityIUserConsumableItem).Count);
+    }
+
+    [Fact]
+    public async Task SetTutorialProgress_BarrierUsesOneTicketOnlyTheFirstTime()
+    {
+        DarkMasterMemoryDatabase masterDb = MasterWithTicketUse();
+        DarkUserMemoryDatabase userDb = CreateUserDb();
+        userDb.EntityIUserConsumableItem.Add(new EntityIUserConsumableItem { UserId = UserId, ConsumableItemId = SkipTicketId, Count = 30 });
+        TutorialServiceImpl service = CreateService(masterDb, userDb);
+
+        SetTutorialProgressRequest yes = new() { TutorialType = (int)TutorialType.MAIN_QUEST_3_3_TICKET_CONSUME, ProgressPhase = 20, ChoiceId = 1 };
+        SetTutorialProgressResponse response = await service.SetTutorialProgress(yes, FakeServerCallContext.For(UserId));
+        await service.SetTutorialProgress(yes, FakeServerCallContext.For(UserId));
+
+        Assert.Empty(response.TutorialChoiceReward);
+        Assert.Equal(29, Assert.Single(userDb.EntityIUserConsumableItem).Count);
+    }
+
+    [Fact]
+    public async Task SetTutorialProgress_BarrierTakesNothingWithoutATicket()
+    {
+        DarkUserMemoryDatabase userDb = CreateUserDb();
+        TutorialServiceImpl service = CreateService(MasterWithTicketUse(), userDb);
+
+        await service.SetTutorialProgress(
+            new SetTutorialProgressRequest { TutorialType = (int)TutorialType.MAIN_QUEST_3_3_TICKET_CONSUME, ProgressPhase = 20, ChoiceId = 1 },
+            FakeServerCallContext.For(UserId));
+
+        Assert.Empty(userDb.EntityIUserConsumableItem);
+        Assert.Equal(1, Assert.Single(userDb.EntityIUserTutorialProgress).ChoiceId);
+    }
+
+    private static DarkMasterMemoryDatabase MasterWithTicketUse()
+    {
+        DarkMasterMemoryDatabase masterDb = new();
+        masterDb.EntityMTutorialConsumePossessionGroup.Add(new EntityMTutorialConsumePossessionGroup
+        {
+            TutorialType = TutorialType.MAIN_QUEST_3_3_TICKET_CONSUME,
+            PossessionType = PossessionType.CONSUMABLE_ITEM,
+            PossessionId = SkipTicketId,
+            Count = 1
+        });
+        return masterDb;
     }
 
     [Fact]
@@ -249,7 +277,7 @@ public class TutorialServiceTests
     {
         UserDataStore store = new(TimeProvider.System);
         store.Set(UserId, userDb);
-        return new TutorialServiceImpl(store, masterDb, TimeProvider.System);
+        return new TutorialServiceImpl(store, masterDb, new GameConfig { ConsumableItemIdForQuestSkipTicket = SkipTicketId }, TimeProvider.System);
     }
 
     private static DarkUserMemoryDatabase CreateUserDb() => new();

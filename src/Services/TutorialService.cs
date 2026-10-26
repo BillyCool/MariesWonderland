@@ -10,29 +10,54 @@ using MariesWonderland.Proto.Tutorial;
 
 namespace MariesWonderland.Services;
 
-public class TutorialService(UserDataStore store, DarkMasterMemoryDatabase masterDb, TimeProvider timeProvider) : MariesWonderland.Proto.Tutorial.TutorialService.TutorialServiceBase
+public class TutorialService(UserDataStore store, DarkMasterMemoryDatabase masterDb, GameConfig gameConfig, TimeProvider timeProvider) : MariesWonderland.Proto.Tutorial.TutorialService.TutorialServiceBase
 {
     private readonly TimeProvider _timeProvider = timeProvider;
 
-    /// <summary>Advances tutorial progress, triggers starter deck creation on menu tutorials, and returns tutorial rewards.</summary>
+    /// <summary>The choice a story step sends when the player takes the item or says yes (the real save holds it on 1901-1906).</summary>
+    private const int AcceptedChoiceId = 1;
+
+    /// <summary>
+    /// Skip tickets picked up in the Main Quest 3-3 story (c030). The event maps send 1901 in scene 250 ("Skip Ticket
+    /// x20") and 1902 in scene 290 ("x10"), both with choice 1 and the "obtained" popup. 1903-1905 are three books in
+    /// the library map (scene 280) that give 10 each (seen in a first-playthrough recording).
+    /// </summary>
+    private static readonly Dictionary<TutorialType, int> SkipTicketPickups = new()
+    {
+        [TutorialType.MAIN_QUEST_3_3_TICKET_GET_1] = 20,
+        [TutorialType.MAIN_QUEST_3_3_TICKET_GET_2] = 10,
+        [TutorialType.MAIN_QUEST_3_3_TICKET_GET_3] = 10,
+        [TutorialType.MAIN_QUEST_3_3_TICKET_GET_4] = 10,
+        [TutorialType.MAIN_QUEST_3_3_TICKET_GET_5] = 10
+    };
+
+    /// <summary>
+    /// Advances tutorial progress and triggers starter deck creation on menu tutorials. The first time a story step is
+    /// accepted, it gives its pickup (returned as choice rewards) or uses the items its consume rows list (one skip
+    /// ticket to clear the 3-3 barrier). A replay sends the same choice again and changes nothing.
+    /// </summary>
     public override Task<SetTutorialProgressResponse> SetTutorialProgress(SetTutorialProgressRequest request, ServerCallContext context)
     {
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = store.GetOrCreate(userId);
         long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
+        TutorialType tutorialType = (TutorialType)request.TutorialType;
 
-        UpsertTutorialProgress(userDb, (TutorialType)request.TutorialType, request.ProgressPhase, request.ChoiceId);
+        int previousChoiceId = userDb.EntityIUserTutorialProgress.FirstOrDefault(t => t.TutorialType == tutorialType)?.ChoiceId ?? 0;
+        UpsertTutorialProgress(userDb, tutorialType, request.ProgressPhase, request.ChoiceId);
 
-        if (request.TutorialType == (int)TutorialType.MENU_FIRST ||
-            request.TutorialType == (int)TutorialType.MENU_SECOND)
+        if (tutorialType is TutorialType.MENU_FIRST or TutorialType.MENU_SECOND)
         {
             CreateStarterDeck(userDb);
         }
 
-        List<TutorialChoiceReward> rewards = ApplyTutorialRewards(userDb, (TutorialType)request.TutorialType, nowMs);
-
         SetTutorialProgressResponse response = new();
-        response.TutorialChoiceReward.AddRange(rewards);
+        if (request.ChoiceId == AcceptedChoiceId && previousChoiceId != AcceptedChoiceId)
+        {
+            response.TutorialChoiceReward.AddRange(GrantPickup(userDb, tutorialType, nowMs));
+            ConsumeTutorialPossessions(userDb, tutorialType);
+        }
+
         return Task.FromResult(response);
     }
 
@@ -258,30 +283,51 @@ public class TutorialService(UserDataStore store, DarkMasterMemoryDatabase maste
         return newUuid;
     }
 
-    /// <summary>
-    /// Grants tutorial rewards from master data keyed by tutorial type and returns the reward list
-    /// for the response. Each tutorial type may grant companions, gems, items, or other possessions.
-    /// </summary>
-    private List<TutorialChoiceReward> ApplyTutorialRewards(DarkUserMemoryDatabase db, TutorialType tutorialType, long nowMs)
+    /// <summary>Gives a story pickup's items and returns them for the client's "obtained" popup.</summary>
+    private List<TutorialChoiceReward> GrantPickup(DarkUserMemoryDatabase db, TutorialType tutorialType, long nowMs)
     {
-        List<EntityMTutorialConsumePossessionGroup> rewardRows = [.. masterDb.EntityMTutorialConsumePossessionGroup
-            .Where(r => r.TutorialType == tutorialType)];
-
-        List<TutorialChoiceReward> result = [];
-
-        foreach (EntityMTutorialConsumePossessionGroup row in rewardRows)
+        if (!SkipTicketPickups.TryGetValue(tutorialType, out int count))
         {
-            PossessionHelper.Apply(db, row.PossessionType, row.PossessionId, row.Count, masterDb, nowMs);
-
-            result.Add(new TutorialChoiceReward
-            {
-                PossessionType = (int)row.PossessionType,
-                PossessionId = row.PossessionId,
-                Count = row.Count
-            });
+            return [];
         }
 
-        return result;
+        int skipTicketId = gameConfig.ConsumableItemIdForQuestSkipTicket;
+        PossessionHelper.Apply(db, PossessionType.CONSUMABLE_ITEM, skipTicketId, count, masterDb, nowMs);
+        return [new TutorialChoiceReward { PossessionType = (int)PossessionType.CONSUMABLE_ITEM, PossessionId = skipTicketId, Count = count }];
     }
+
+    /// <summary>
+    /// Uses the items a tutorial's <c>EntityMTutorialConsumePossessionGroup</c> rows list (the client checks the user
+    /// holds them before offering the step). Nothing is taken if any of them is short.
+    /// </summary>
+    private void ConsumeTutorialPossessions(DarkUserMemoryDatabase db, TutorialType tutorialType)
+    {
+        List<EntityMTutorialConsumePossessionGroup> rows = [.. masterDb.EntityMTutorialConsumePossessionGroup.Where(r => r.TutorialType == tutorialType)];
+        if (rows.Count == 0 || !rows.All(r => HeldCount(db, r.PossessionType, r.PossessionId) >= r.Count))
+        {
+            return;
+        }
+
+        foreach (EntityMTutorialConsumePossessionGroup row in rows)
+        {
+            switch (row.PossessionType)
+            {
+                case PossessionType.CONSUMABLE_ITEM:
+                    db.EntityIUserConsumableItem.First(c => c.ConsumableItemId == row.PossessionId).Count -= row.Count;
+                    break;
+                case PossessionType.MATERIAL:
+                    db.EntityIUserMaterial.First(m => m.MaterialId == row.PossessionId).Count -= row.Count;
+                    break;
+            }
+        }
+    }
+
+    /// <summary>How many of a stackable item the user holds; 0 for kinds a tutorial never consumes.</summary>
+    private static int HeldCount(DarkUserMemoryDatabase db, PossessionType type, int id) => type switch
+    {
+        PossessionType.CONSUMABLE_ITEM => db.EntityIUserConsumableItem.FirstOrDefault(c => c.ConsumableItemId == id)?.Count ?? 0,
+        PossessionType.MATERIAL => db.EntityIUserMaterial.FirstOrDefault(m => m.MaterialId == id)?.Count ?? 0,
+        _ => 0
+    };
 }
 

@@ -107,7 +107,7 @@ public sealed class UserPersistenceTests : IDisposable
         userDb.EntityIUserWeapon.Add(new EntityIUserWeapon { UserId = UserId, UserWeaponUuid = "starter-weapon", WeaponId = GameConstants.StartingDeckWeaponId });
         store.Set(UserId, userDb);
 
-        TutorialServiceImpl service = new(store, new DarkMasterMemoryDatabase(), _time);
+        TutorialServiceImpl service = new(store, new DarkMasterMemoryDatabase(), new GameConfig(), _time);
         UserLockInterceptor locks = new(store);
         DiffInterceptor diffs = new(store, NullLogger<DiffInterceptor>.Instance);
         SetTutorialProgressRequest tutorial = new() { TutorialType = (int)TutorialType.MENU_FIRST, ProgressPhase = 10 };
