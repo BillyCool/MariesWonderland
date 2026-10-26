@@ -1,4 +1,5 @@
 using MariesWonderland.Data;
+using MariesWonderland.Friends;
 using MariesWonderland.Models.Entities;
 
 namespace MariesWonderland.Persistence;
@@ -51,4 +52,13 @@ public interface IUserPersistence
     IReadOnlyDictionary<string, int> SharedPrizeClaims();
 
     void SaveSharedPrizeClaim(string prizeKey, int claimed);
+
+    /// <summary>Every friendship, friend request and cheer.</summary>
+    FriendState LoadFriends();
+
+    /// <summary>Writes what one friend operation changed, in one transaction (removals first).</summary>
+    void SaveFriendChanges(FriendChanges changes);
+
+    /// <summary>The cards of these users (all users when null); users without a user row are left out.</summary>
+    IReadOnlyList<PlayerCard> PlayerCards(IReadOnlyCollection<long>? userIds);
 }

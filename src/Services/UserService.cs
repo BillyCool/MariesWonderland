@@ -286,7 +286,7 @@ public class UserService(UserDataStore store, UserDataSeeder seeder, DarkMasterM
             Name = profile?.Name ?? string.Empty,
             FavoriteCostumeId = profile?.FavoriteCostumeId ?? 0,
             Message = profile?.Message ?? string.Empty,
-            IsFriend = false,
+            IsFriend = !isOwnProfile && _store.Friends.AreFriends(callerUserId, targetDb.UserId),
             LatestUsedDeck = new ProfileDeck
             {
                 Power = maxDeckPower,

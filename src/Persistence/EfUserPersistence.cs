@@ -1,6 +1,9 @@
 using MariesWonderland.Data;
+using MariesWonderland.Friends;
 using MariesWonderland.Models.Entities;
+using MariesWonderland.Models.Type;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage;
 using System.Collections;
 using System.Reflection;
 
@@ -197,4 +200,101 @@ public sealed class EfUserPersistence(Func<UserDbContext> createContext) : IUser
         }
         db.SaveChanges();
     }
+
+    public FriendState LoadFriends()
+    {
+        using UserDbContext db = createContext();
+        return new FriendState([.. db.FriendLinks.AsNoTracking()], [.. db.FriendRequests.AsNoTracking()], [.. db.FriendCheers.AsNoTracking()]);
+    }
+
+    public void SaveFriendChanges(FriendChanges changes)
+    {
+        if (changes.IsEmpty)
+        {
+            return;
+        }
+
+        using UserDbContext db = createContext();
+        using IDbContextTransaction transaction = db.Database.BeginTransaction();
+
+        foreach (FriendLink link in changes.RemovedLinks)
+        {
+            db.FriendLinks.Where(l => l.UserId == link.UserId && l.FriendUserId == link.FriendUserId).ExecuteDelete();
+        }
+        foreach (FriendRequest request in changes.RemovedRequests)
+        {
+            db.FriendRequests.Where(r => r.FromUserId == request.FromUserId && r.ToUserId == request.ToUserId).ExecuteDelete();
+        }
+        foreach (FriendCheer cheer in changes.RemovedCheers)
+        {
+            db.FriendCheers.Where(c => c.FromUserId == cheer.FromUserId && c.ToUserId == cheer.ToUserId).ExecuteDelete();
+        }
+
+        // A row can be saved twice in one operation (say a request resolved by both sides); the last copy wins.
+        foreach (FriendLink link in changes.SavedLinks.GroupBy(l => (l.UserId, l.FriendUserId)).Select(g => g.Last()))
+        {
+            FriendLink? row = db.FriendLinks.AsTracking().FirstOrDefault(l => l.UserId == link.UserId && l.FriendUserId == link.FriendUserId);
+            if (row == null)
+            {
+                db.FriendLinks.Add(new FriendLink { UserId = link.UserId, FriendUserId = link.FriendUserId, CreatedAt = link.CreatedAt });
+            }
+            else
+            {
+                row.CreatedAt = link.CreatedAt;
+            }
+        }
+        foreach (FriendRequest request in changes.SavedRequests.GroupBy(r => (r.FromUserId, r.ToUserId)).Select(g => g.Last()))
+        {
+            FriendRequest? row = db.FriendRequests.AsTracking().FirstOrDefault(r => r.FromUserId == request.FromUserId && r.ToUserId == request.ToUserId);
+            if (row == null)
+            {
+                db.FriendRequests.Add(new FriendRequest { FromUserId = request.FromUserId, ToUserId = request.ToUserId, SentAt = request.SentAt, Resolved = request.Resolved });
+            }
+            else
+            {
+                row.SentAt = request.SentAt;
+                row.Resolved = request.Resolved;
+            }
+        }
+        foreach (FriendCheer cheer in changes.SavedCheers.GroupBy(c => (c.FromUserId, c.ToUserId)).Select(g => g.Last()))
+        {
+            FriendCheer? row = db.FriendCheers.AsTracking().FirstOrDefault(c => c.FromUserId == cheer.FromUserId && c.ToUserId == cheer.ToUserId);
+            if (row == null)
+            {
+                db.FriendCheers.Add(new FriendCheer { FromUserId = cheer.FromUserId, ToUserId = cheer.ToUserId, SentAt = cheer.SentAt, ReceivedAt = cheer.ReceivedAt });
+            }
+            else
+            {
+                row.SentAt = cheer.SentAt;
+                row.ReceivedAt = cheer.ReceivedAt;
+            }
+        }
+
+        db.SaveChanges();
+        transaction.Commit();
+    }
+
+    public IReadOnlyList<PlayerCard> PlayerCards(IReadOnlyCollection<long>? userIds)
+    {
+        using UserDbContext db = createContext();
+        long[]? ids = userIds?.ToArray();
+        Dictionary<long, EntityIUserProfile> profiles = OfUsers(db.Set<EntityIUserProfile>(), ids).ToDictionary(p => p.UserId);
+        Dictionary<long, int> levels = OfUsers(db.Set<EntityIUserStatus>(), ids).ToDictionary(s => s.UserId, s => s.Level);
+        Dictionary<long, long> logins = OfUsers(db.Set<EntityIUserLogin>(), ids).ToDictionary(l => l.UserId, l => l.LastLoginDatetime);
+        Dictionary<long, int> powers = OfUsers(db.Set<EntityIUserDeckTypeNote>(), ids).Where(n => n.DeckType == DeckType.QUEST)
+            .ToDictionary(n => n.UserId, n => n.MaxDeckPower);
+
+        return [.. OfUsers(db.Set<EntityIUser>(), ids).AsEnumerable().Select(u => new PlayerCard(
+            u.UserId,
+            u.PlayerId,
+            profiles.GetValueOrDefault(u.UserId)?.Name ?? string.Empty,
+            levels.GetValueOrDefault(u.UserId),
+            profiles.GetValueOrDefault(u.UserId)?.FavoriteCostumeId ?? 0,
+            powers.GetValueOrDefault(u.UserId),
+            logins.GetValueOrDefault(u.UserId)))];
+    }
+
+    /// <summary>The rows of these users, or of everyone when <paramref name="userIds"/> is null.</summary>
+    private static IQueryable<T> OfUsers<T>(IQueryable<T> rows, long[]? userIds) where T : class, IUserEntity
+        => userIds == null ? rows.AsNoTracking() : rows.AsNoTracking().Where(r => userIds.Contains(r.UserId));
 }

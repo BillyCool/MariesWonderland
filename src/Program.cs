@@ -51,7 +51,7 @@ public static class Program
 
         var app = builder.Build();
 
-        // Bring the user database up to date before anything reads it (the store loads shared prize claims).
+        // Bring the user database up to date before anything reads it (the store loads shared prize claims and friends).
         ServerOptions serverOptions = app.Services.GetRequiredService<IOptions<ServerOptions>>().Value;
         EfUserPersistence userPersistence = app.Services.GetRequiredService<EfUserPersistence>();
         userPersistence.Migrate();

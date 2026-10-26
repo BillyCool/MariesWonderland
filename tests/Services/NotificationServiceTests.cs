@@ -38,7 +38,7 @@ public class NotificationServiceTests
     public async Task GetHeaderNotification_ForNewUser_ReturnsZeroCountsAndCreatesDatabase()
     {
         UserDataStore store = new(TimeProvider.System);
-        NotificationServiceImpl service = new(store);
+        NotificationServiceImpl service = new(store, TimeProvider.System);
 
         GetHeaderNotificationResponse response = await service.GetHeaderNotification(
             new Empty(),
@@ -77,7 +77,7 @@ public class NotificationServiceTests
     {
         UserDataStore store = new(TimeProvider.System);
         store.Set(UserId, userDb);
-        return new NotificationServiceImpl(store);
+        return new NotificationServiceImpl(store, TimeProvider.System);
     }
 
     private static EntitySUserGift CreateGift(string userGiftUuid, long userId = UserId, long receivedDatetime = 0)

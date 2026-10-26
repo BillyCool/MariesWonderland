@@ -6,9 +6,10 @@ using MariesWonderland.Proto.Notification;
 
 namespace MariesWonderland.Services;
 
-public class NotificationService(UserDataStore store) : MariesWonderland.Proto.Notification.NotificationService.NotificationServiceBase
+public class NotificationService(UserDataStore store, TimeProvider timeProvider) : MariesWonderland.Proto.Notification.NotificationService.NotificationServiceBase
 {
     private readonly UserDataStore _store = store;
+    private readonly TimeProvider _timeProvider = timeProvider;
 
     /// <summary>Returns notification badge counts for the header bar (unclaimed gifts, friend requests, unread info).</summary>
     public override Task<GetHeaderNotificationResponse> GetHeaderNotification(Empty request, ServerCallContext context)
@@ -21,7 +22,7 @@ public class NotificationService(UserDataStore store) : MariesWonderland.Proto.N
         return Task.FromResult(new GetHeaderNotificationResponse
         {
             GiftNotReceiveCount = giftNotReceiveCount,
-            FriendRequestReceiveCount = 0,
+            FriendRequestReceiveCount = _store.Friends.PendingRequestCount(userId, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds()),
             IsExistUnreadInformation = false
         });
     }

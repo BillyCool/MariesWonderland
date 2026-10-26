@@ -1,4 +1,5 @@
 using MariesWonderland.Constants;
+using MariesWonderland.Friends;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
 using MariesWonderland.Persistence;
@@ -35,6 +36,9 @@ public class UserDataStore(TimeProvider timeProvider, IUserPersistence? persiste
 
     /// <summary>The per-user locks requests run under.</summary>
     public UserLocks Locks { get; } = new();
+
+    /// <summary>Friendships, friend requests and cheers (server-wide, not part of any one user).</summary>
+    public FriendStore Friends { get; } = new(persistence);
 
     /// <summary>Whether changes are written to a user database.</summary>
     public bool IsPersistent => _persistence != null;
@@ -276,6 +280,41 @@ public class UserDataStore(TimeProvider timeProvider, IUserPersistence? persiste
 
         db = null!;
         return false;
+    }
+
+    /// <summary>The user a player id belongs to, without loading them; null when no user has it.</summary>
+    public long? FindUserIdByPlayerId(long playerId)
+    {
+        if (_persistence != null)
+        {
+            return _persistence.FindUserIdByPlayerId(playerId);
+        }
+
+        foreach ((long userId, DarkUserMemoryDatabase userDb) in _users)
+        {
+            if (userDb.EntityIUser.Any(u => u.PlayerId == playerId))
+            {
+                return userId;
+            }
+        }
+        return null;
+    }
+
+    /// <summary>
+    /// The cards of these users (every user when null), without loading or locking them: from the user database,
+    /// which every request's changes are already written to, or from memory without one. Unknown users are left out.
+    /// </summary>
+    public IReadOnlyList<PlayerCard> PlayerCards(IReadOnlyCollection<long>? userIds = null)
+    {
+        if (_persistence != null)
+        {
+            return _persistence.PlayerCards(userIds);
+        }
+
+        IEnumerable<DarkUserMemoryDatabase> users = userIds == null
+            ? _users.Values
+            : userIds.Select(id => _users.GetValueOrDefault(id)).OfType<DarkUserMemoryDatabase>();
+        return [.. users.Select(PlayerCard.From).OfType<PlayerCard>()];
     }
 
     /// <summary>

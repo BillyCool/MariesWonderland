@@ -17,6 +17,66 @@ namespace MariesWonderland.Persistence.Migrations.Sqlite
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "10.0.13");
 
+            modelBuilder.Entity("MariesWonderland.Friends.FriendCheer", b =>
+                {
+                    b.Property<long>("FromUserId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<long>("ToUserId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<long>("ReceivedAt")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<long>("SentAt")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("FromUserId", "ToUserId");
+
+                    b.HasIndex("ToUserId");
+
+                    b.ToTable("FriendCheers", (string)null);
+                });
+
+            modelBuilder.Entity("MariesWonderland.Friends.FriendLink", b =>
+                {
+                    b.Property<long>("UserId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<long>("FriendUserId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<long>("CreatedAt")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("UserId", "FriendUserId");
+
+                    b.HasIndex("FriendUserId");
+
+                    b.ToTable("FriendLinks", (string)null);
+                });
+
+            modelBuilder.Entity("MariesWonderland.Friends.FriendRequest", b =>
+                {
+                    b.Property<long>("FromUserId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<long>("ToUserId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Resolved")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<long>("SentAt")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("FromUserId", "ToUserId");
+
+                    b.HasIndex("ToUserId");
+
+                    b.ToTable("FriendRequests", (string)null);
+                });
+
             modelBuilder.Entity("MariesWonderland.Models.Entities.EntityIUser", b =>
                 {
                     b.Property<long>("UserId")

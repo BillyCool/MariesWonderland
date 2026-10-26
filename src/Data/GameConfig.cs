@@ -38,6 +38,11 @@ public class GameConfig
 
     public int UserLevelExpNumericalParameterMapId { get; init; }
 
+    public int UserFriendMaxNumber { get; init; }
+    public int UserFriendReceiveRequestMaxNumber { get; init; }
+    public int UserFriendSendCheerMaxNumber { get; init; }
+    public int UserFriendReceiveCheerMaxNumber { get; init; }
+
     /// <summary>Builds a <see cref="GameConfig"/> from the loaded master config rows.</summary>
     public static GameConfig From(IEnumerable<EntityMConfig> configs)
     {
@@ -73,6 +78,11 @@ public class GameConfig
             WeaponLimitBreakAvailableCount = ParseInt(kv, "WEAPON_LIMIT_BREAK_AVAILABLE_COUNT"),
 
             UserLevelExpNumericalParameterMapId = ParseInt(kv, "USER_LEVEL_EXP_NUMERICAL_PARAMETER_MAP_ID"),
+
+            UserFriendMaxNumber = ParseInt(kv, "USER_FRIEND_MAX_NUMBER"),
+            UserFriendReceiveRequestMaxNumber = ParseInt(kv, "USER_FRIEND_RECEIVE_REQUEST_MAX_NUMBER"),
+            UserFriendSendCheerMaxNumber = ParseInt(kv, "USER_FRIEND_SEND_CHEER_MAX_NUMBER"),
+            UserFriendReceiveCheerMaxNumber = ParseInt(kv, "USER_FRIEND_RECEIVE_CHEER_MAX_NUMBER"),
         };
     }
 

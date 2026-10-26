@@ -171,6 +171,47 @@ public sealed class UserPersistenceTests : IDisposable
     }
 
     [Fact]
+    public void Friends_SurviveARestart()
+    {
+        long now = _time.GetUtcNow().ToUnixTimeMilliseconds();
+        MariesWonderland.Friends.FriendLimits limits = new(100, 100, 100, 100, 100);
+        UserDataStore store = NewStore();
+        store.Friends.SendRequest(1, 2, now, limits);
+        store.Friends.AcceptRequest(2, 1, now, limits);
+        store.Friends.SendRequest(3, 1, now, limits);
+        store.Friends.Cheer(1, 2, now, limits);
+        store.Friends.ReceiveCheer(2, 1, now, limits);
+
+        UserDataStore restarted = NewStore();
+        Assert.True(restarted.Friends.AreFriends(2, 1));
+        Assert.Equal([3L], restarted.Friends.PendingRequestSenders(1, now));
+        Assert.Equal(new MariesWonderland.Friends.CheerStatus(false, false, true), restarted.Friends.Cheers(2, 1, now));
+        Assert.Equal(MariesWonderland.Friends.FriendOutcome.CheerAlreadySent, restarted.Friends.Cheer(1, 2, now, limits));
+
+        restarted.Friends.RemoveFriend(1, 2, now);
+        Assert.False(NewStore().Friends.AreFriends(1, 2));
+    }
+
+    [Fact]
+    public void PlayerCards_AreReadFromTheDatabase()
+    {
+        UserDataStore store = NewStore();
+        DarkUserMemoryDatabase userDb = new() { UserId = UserId };
+        userDb.EntityIUser.Add(new EntityIUser { UserId = UserId, PlayerId = 777 });
+        userDb.EntityIUserProfile.Add(new EntityIUserProfile { UserId = UserId, Name = "Saved", Message = "", FavoriteCostumeId = 10100 });
+        userDb.EntityIUserStatus.Add(new EntityIUserStatus { UserId = UserId, Level = 33 });
+        userDb.EntityIUserLogin.Add(new EntityIUserLogin { UserId = UserId, LastLoginDatetime = 123 });
+        userDb.EntityIUserDeckTypeNote.Add(new EntityIUserDeckTypeNote { UserId = UserId, DeckType = DeckType.QUEST, MaxDeckPower = 5000 });
+        userDb.EntityIUserDeckTypeNote.Add(new EntityIUserDeckTypeNote { UserId = UserId, DeckType = DeckType.PVP, MaxDeckPower = 9000 });
+        store.Set(UserId, userDb);
+
+        UserDataStore restarted = NewStore();
+        Assert.Equal(UserId, restarted.FindUserIdByPlayerId(777));
+        Assert.Equal([new PlayerCard(UserId, 777, "Saved", 33, 10100, 5000, 123)], restarted.PlayerCards([UserId]));
+        Assert.Single(restarted.PlayerCards());
+    }
+
+    [Fact]
     public void EvictIdle_DropsIdleUsersButNotBusyOnes_AndTheyLoadAgain()
     {
         UserDataStore store = NewStore();

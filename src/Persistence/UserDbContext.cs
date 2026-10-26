@@ -1,4 +1,5 @@
 using MariesWonderland.Data;
+using MariesWonderland.Friends;
 using MariesWonderland.Models.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
@@ -12,7 +13,7 @@ namespace MariesWonderland.Persistence;
 /// <summary>
 /// The user database: one table per user table of <see cref="DarkUserMemoryDatabase"/> (named like the client's
 /// tables, e.g. <c>IUserWeapon</c>, server-only ones like <c>SUserGift</c>), keyed by the entity's
-/// <c>[PrimaryKey]</c>, plus the battle log and the device, session and shared-prize tables. Values that aren't plain columns (lists,
+/// <c>[PrimaryKey]</c>, plus the battle log and the device, session, shared-prize and friend tables. Values that aren't plain columns (lists,
 /// dictionaries of a row) are stored as JSON. Provider-neutral; each provider derives its own context so it gets
 /// its own migrations.
 /// </summary>
@@ -21,6 +22,9 @@ public abstract class UserDbContext(DbContextOptions options) : DbContext(option
     public DbSet<DeviceAccount> Devices => Set<DeviceAccount>();
     public DbSet<StoredSession> Sessions => Set<StoredSession>();
     public DbSet<SharedPrizeClaim> SharedPrizeClaims => Set<SharedPrizeClaim>();
+    public DbSet<FriendLink> FriendLinks => Set<FriendLink>();
+    public DbSet<FriendRequest> FriendRequests => Set<FriendRequest>();
+    public DbSet<FriendCheer> FriendCheers => Set<FriendCheer>();
 
     private static readonly MethodInfo ConfigureJsonMethod = typeof(UserDbContext).GetMethod(nameof(ConfigureJson), BindingFlags.NonPublic | BindingFlags.Static)!;
 
@@ -52,6 +56,28 @@ public abstract class UserDbContext(DbContextOptions options) : DbContext(option
         {
             entity.ToTable("SharedPrizeClaims");
             entity.HasKey(c => c.PrizeKey);
+        });
+
+        // Friends belong to two players, so they're server-wide tables rather than user tables.
+        modelBuilder.Entity<FriendLink>(entity =>
+        {
+            entity.ToTable("FriendLinks");
+            entity.HasKey(l => new { l.UserId, l.FriendUserId });
+            entity.HasIndex(l => l.FriendUserId);
+        });
+
+        modelBuilder.Entity<FriendRequest>(entity =>
+        {
+            entity.ToTable("FriendRequests");
+            entity.HasKey(r => new { r.FromUserId, r.ToUserId });
+            entity.HasIndex(r => r.ToUserId);
+        });
+
+        modelBuilder.Entity<FriendCheer>(entity =>
+        {
+            entity.ToTable("FriendCheers");
+            entity.HasKey(c => new { c.FromUserId, c.ToUserId });
+            entity.HasIndex(c => c.ToUserId);
         });
 
         // Player-id lookups (friends, profiles) for users that aren't in memory.
