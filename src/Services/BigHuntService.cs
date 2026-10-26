@@ -52,6 +52,9 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
 
         // Store deck number in server-side session
         EntitySBigHuntSession session = GetOrCreateSession(userDb);
+        // A new run starts clean: knockdowns add up and the max combo only rises across a run's saves, so nothing
+        // from a run that never finished may carry over.
+        ClearBattleSession(session);
         session.DeckNumber = request.UserDeckNumber;
 
         // Update per-boss-quest status
@@ -133,15 +136,8 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
             }
         }
 
-        int aliveBonusPermil = 500;
-
-        int maxComboBonusPermil = session.MaxComboCount switch
-        {
-            >= 100 => 300,
-            >= 50 => 200,
-            >= 20 => 100,
-            _ => 0
-        };
+        int aliveBonusPermil = BigHuntScoreHelper.AliveBonusPermil(session.BattleReportCostume.Count(c => !c.IsAlive));
+        int maxComboBonusPermil = BigHuntScoreHelper.MaxComboBonusPermil(session.MaxComboCount);
 
         long userScore = baseScore * (1000 + difficultyBonusPermil + aliveBonusPermil + maxComboBonusPermil) / 1000;
 
@@ -380,34 +376,37 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
 
         if (request.BigHuntBattleDetail is not null)
         {
-            // Sum damage across all costumes in the party
-            long totalDamage = 0;
-            foreach (Proto.Battle.CostumeBattleInfo ci in request.BigHuntBattleDetail.CostumeBattleInfo)
-            {
-                if (ci is not null)
-                {
-                    totalDamage += ci.TotalDamage;
-                }
-            }
+            BigHuntBattleDetail detail = request.BigHuntBattleDetail;
 
-            // Persist battle statistics used for scoring and restart
-            session.DeckType = request.BigHuntBattleDetail.DeckType;
-            session.UserTripleDeckNumber = request.BigHuntBattleDetail.UserTripleDeckNumber;
-            session.BossKnockDownCount = request.BigHuntBattleDetail.BossKnockDownCount;
-            session.MaxComboCount = request.BigHuntBattleDetail.MaxComboCount;
-            session.TotalDamage = totalDamage;
+            // Each save covers every deck played so far, with the run's totals up to now (the client's battle log
+            // isn't reset between waves), so it replaces what earlier saves stored.
+            session.DeckType = detail.DeckType;
+            session.UserTripleDeckNumber = detail.UserTripleDeckNumber;
+            session.TotalDamage = detail.CostumeBattleInfo.Where(ci => ci is not null).Sum(ci => ci.TotalDamage);
+            // The run's highest combo; kept at its best in case a save only covers its own wave.
+            session.MaxComboCount = Math.Max(session.MaxComboCount, detail.MaxComboCount);
+            // Whether the boss was knocked down in this save's wave (at most once per wave).
+            session.BossKnockDownCount += detail.BossKnockDownCount;
 
-            int waveIndex = NextWaveIndex(session);
-            foreach (CostumeBattleInfo ci in request.BigHuntBattleDetail.CostumeBattleInfo)
+            List<int> deckOrder = [];
+            session.BattleReportCostume.Clear();
+            foreach (CostumeBattleInfo ci in detail.CostumeBattleInfo)
             {
                 if (ci is null)
                 {
                     continue;
                 }
 
+                if (!deckOrder.Contains(ci.UserDeckNumber))
+                {
+                    deckOrder.Add(ci.UserDeckNumber);
+                }
+
                 session.BattleReportCostume.Add(new EntitySBigHuntBattleReportCostume
                 {
-                    WaveIndex = waveIndex,
+                    WaveIndex = deckOrder.IndexOf(ci.UserDeckNumber),
+                    UserDeckNumber = ci.UserDeckNumber,
+                    IsAlive = ci.IsAlive,
                     CostumeId = ResolveBigHuntCostumeId(userDb, ci.UserDeckNumber, ci.DeckCharacterNumber, session.DeckNumber),
                     TotalDamage = ci.TotalDamage,
                     HitCount = ci.HitCount,
@@ -673,9 +672,6 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
             .FirstOrDefault(s => s.UserId == userDb.UserId)
             ?? AddEntity(userDb.EntitySBigHuntSession, new EntitySBigHuntSession { UserId = userDb.UserId });
     }
-
-    private static int NextWaveIndex(EntitySBigHuntSession session)
-        => session.BattleReportCostume.Count == 0 ? 0 : session.BattleReportCostume.Max(c => c.WaveIndex) + 1;
 
     /// <summary>
     /// Resets all fields on a BigHunt progress status record to their default (no active hunt) values.

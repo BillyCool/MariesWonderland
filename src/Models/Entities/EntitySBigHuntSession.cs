@@ -22,7 +22,11 @@ public class EntitySBigHuntSession : IUserEntity
 
 public class EntitySBigHuntBattleReportCostume
 {
+    /// <summary>Which wave (deck) of the run, in play order from 0.</summary>
     public int WaveIndex { get; set; }
+    public int UserDeckNumber { get; set; }
+    /// <summary>Whether the character was alive at the end of their wave.</summary>
+    public bool IsAlive { get; set; }
     public int CostumeId { get; set; }
     public long TotalDamage { get; set; }
     public int HitCount { get; set; }

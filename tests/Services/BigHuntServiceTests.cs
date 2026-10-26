@@ -268,7 +268,7 @@ public class BigHuntServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
             .DefaultIfEmpty(0)
             .Max();
         long totalDamage = Math.Max(highestThreshold, 1000);
-        int comboBonusPermil = 200;
+        int comboBonusPermil = 1800; // max combo 55
         long expectedScore = CalculateScore(totalDamage, scenario.Coefficient.ScoreDifficultBonusPermil, comboBonusPermil);
         string[] expectedRewards = HighestTierRewards(rewardGroupId, expectedScore)
             .Select(r => RewardKey(r.Type, r.Id, r.Count))
@@ -315,7 +315,7 @@ public class BigHuntServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
         Assert.Equal(totalDamage, response.ScoreInfo.TotalDamage);
         Assert.Equal(totalDamage, response.ScoreInfo.BaseScore);
         Assert.Equal(scenario.Coefficient.ScoreDifficultBonusPermil, response.ScoreInfo.DifficultyBonusPermil);
-        Assert.Equal(500, response.ScoreInfo.AliveBonusPermil);
+        Assert.Equal(BigHuntScoreHelper.MaxAliveBonusPermil, response.ScoreInfo.AliveBonusPermil);
         Assert.Equal(comboBonusPermil, response.ScoreInfo.MaxComboBonusPermil);
         Assert.Equal(ResolveGradeIconId(scenario.Boss.BigHuntBossId, expectedScore), response.ScoreInfo.AssetGradeIconId);
         Assert.Equal(expectedRewards, response.ScoreReward.Select(r => RewardKey((PossessionType)r.PossessionType, r.PossessionId, r.Count)).ToArray());
@@ -592,57 +592,66 @@ public class BigHuntServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
             MaxScore = long.MaxValue / 4
         });
         SeedDeckForBattleReport(userDb, DeckType.BIG_HUNT, 4, 501, 502);
+        // A second deck whose first character wears the second costume.
+        userDb.EntityIUserDeck.Add(new EntityIUserDeck
+        {
+            UserId = UserId,
+            DeckType = DeckType.BIG_HUNT,
+            UserDeckNumber = 5,
+            UserDeckCharacterUuid01 = "dc-2",
+            Name = "Second Deck"
+        });
 
         var store = CreateStore(UserId, userDb);
         var service = CreateService(store);
 
+        CostumeBattleInfo firstDeck = new()
+        {
+            UserDeckNumber = 4,
+            DeckCharacterNumber = 1,
+            TotalDamage = 125,
+            HitCount = 7,
+            IsAlive = true,
+            BattleReportRandomDisplay = new BattleReportRandomDisplay
+            {
+                RandomDisplayValueType = (int)BigHuntBattleReportRandomDisplayType.MAX_DAMAGE,
+                RandomDisplayValue = 999
+            }
+        };
+        CostumeBattleInfo secondDeck = new()
+        {
+            UserDeckNumber = 5,
+            DeckCharacterNumber = 1,
+            TotalDamage = 75,
+            HitCount = 3,
+            IsAlive = false,
+            BattleReportRandomDisplay = new BattleReportRandomDisplay
+            {
+                RandomDisplayValueType = (int)BigHuntBattleReportRandomDisplayType.CRITICAL_COUNT,
+                RandomDisplayValue = 12
+            }
+        };
+
+        // Each save covers every deck played so far: the second repeats the first deck and adds the second.
         await service.SaveBigHuntBattleInfo(
             new SaveBigHuntBattleInfoRequest
             {
                 BattleBinary = ByteString.CopyFrom([1]),
-                BigHuntBattleDetail = new BigHuntBattleDetail
-                {
-                    CostumeBattleInfo =
-                    {
-                        new CostumeBattleInfo
-                        {
-                            DeckCharacterNumber = 1,
-                            TotalDamage = 125,
-                            HitCount = 7,
-                            BattleReportRandomDisplay = new BattleReportRandomDisplay
-                            {
-                                RandomDisplayValueType = (int)BigHuntBattleReportRandomDisplayType.MAX_DAMAGE,
-                                RandomDisplayValue = 999
-                            }
-                        }
-                    }
-                }
+                BigHuntBattleDetail = new BigHuntBattleDetail { BossKnockDownCount = 1, MaxComboCount = 30, CostumeBattleInfo = { firstDeck } }
             },
             ContextFor(UserId));
-
         await service.SaveBigHuntBattleInfo(
             new SaveBigHuntBattleInfoRequest
             {
                 BattleBinary = ByteString.CopyFrom([2]),
-                BigHuntBattleDetail = new BigHuntBattleDetail
-                {
-                    CostumeBattleInfo =
-                    {
-                        new CostumeBattleInfo
-                        {
-                            DeckCharacterNumber = 2,
-                            TotalDamage = 75,
-                            HitCount = 3,
-                            BattleReportRandomDisplay = new BattleReportRandomDisplay
-                            {
-                                RandomDisplayValueType = (int)BigHuntBattleReportRandomDisplayType.CRITICAL_COUNT,
-                                RandomDisplayValue = 12
-                            }
-                        }
-                    }
-                }
+                BigHuntBattleDetail = new BigHuntBattleDetail { BossKnockDownCount = 1, MaxComboCount = 12, CostumeBattleInfo = { firstDeck, secondDeck } }
             },
             ContextFor(UserId));
+
+        EntitySBigHuntSession saved = Assert.Single(userDb.EntitySBigHuntSession);
+        Assert.Equal(200, saved.TotalDamage);
+        Assert.Equal(30, saved.MaxComboCount);
+        Assert.Equal(2, saved.BossKnockDownCount);
 
         FinishBigHuntQuestResponse response = await service.FinishBigHuntQuest(
             new FinishBigHuntQuestRequest
@@ -652,6 +661,7 @@ public class BigHuntServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
             },
             ContextFor(UserId));
 
+        // One wave per deck, each costume once.
         Assert.Equal(2, response.BattleReport.BattleReportWave.Count);
         Assert.Collection(
             response.BattleReport.BattleReportWave[0].BattleReportCostume,
@@ -673,6 +683,11 @@ public class BigHuntServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
                 Assert.Equal((int)BigHuntBattleReportRandomDisplayType.CRITICAL_COUNT, costume.BattleReportRandomDisplay.RandomDisplayValueType);
                 Assert.Equal(12, costume.BattleReportRandomDisplay.RandomDisplayValue);
             });
+
+        // One character down: 200% − 50%. Max combo 30: +100%.
+        Assert.Equal(1500, response.ScoreInfo.AliveBonusPermil);
+        Assert.Equal(1000, response.ScoreInfo.MaxComboBonusPermil);
+        Assert.Equal(200, response.ScoreInfo.TotalDamage);
 
         Assert.Empty(Assert.Single(userDb.EntitySBigHuntSession).BattleReportCostume);
     }
@@ -746,8 +761,9 @@ public class BigHuntServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
         ]);
     }
 
+    // No battle report rows in these sessions, so nobody died: the full 200% survival bonus.
     private static long CalculateScore(long totalDamage, int difficultyBonusPermil, int comboBonusPermil)
-        => totalDamage * (1000 + difficultyBonusPermil + 500 + comboBonusPermil) / 1000;
+        => totalDamage * (1000 + difficultyBonusPermil + BigHuntScoreHelper.MaxAliveBonusPermil + comboBonusPermil) / 1000;
 
     private int ResolveActiveScheduleId(long nowMs)
     {
