@@ -28,6 +28,45 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
     public EntityMQuest? FindQuest(int questId)
         => _masterDb.EntityMQuest.FirstOrDefault(q => q.QuestId == questId);
 
+    /// <summary>
+    /// The deck type the client plays a quest with: the normal quest deck, unless the quest has a deck restriction;
+    /// then the Recollections of Dusk deck for those quests and the restricted-quest deck for any other.
+    /// </summary>
+    public DeckType DeckTypeFor(EntityMQuest? quest, int eventQuestChapterId = 0)
+    {
+        if (quest == null || quest.QuestDeckRestrictionGroupId == 0)
+        {
+            return DeckType.QUEST;
+        }
+
+        bool isRecollections = eventQuestChapterId != 0
+            && _masterDb.EntityMEventQuestChapter.FirstOrDefault(c => c.EventQuestChapterId == eventQuestChapterId)?.EventQuestType == EventQuestType.LIMIT_CONTENT;
+        return isRecollections ? DeckType.RESTRICTED_LIMIT_CONTENT_QUEST : DeckType.RESTRICTED_QUEST;
+    }
+
+    /// <summary>Records the deck a run of the quest uses: its number and its type.</summary>
+    public void SetSessionDeck(EntitySQuestSession session, int userDeckNumber, int eventQuestChapterId = 0)
+    {
+        session.UserDeckNumber = userDeckNumber;
+        session.UserDeckType = DeckTypeFor(FindQuest(session.QuestId), eventQuestChapterId);
+    }
+
+    /// <summary>
+    /// The deck the quest's current run was started with, of the type recorded in its session (a normal quest deck for
+    /// sessions saved before the type was stored). Null when there's no session or no such deck.
+    /// </summary>
+    public static EntityIUserDeck? SessionDeck(DarkUserMemoryDatabase userDb, int questId)
+    {
+        EntitySQuestSession? session = userDb.EntitySQuestSession.FirstOrDefault(s => s.QuestId == questId);
+        if (session == null || session.UserDeckNumber == 0)
+        {
+            return null;
+        }
+
+        DeckType deckType = session.UserDeckType == DeckType.UNKNOWN ? DeckType.QUEST : session.UserDeckType;
+        return userDb.EntityIUserDeck.FirstOrDefault(d => d.DeckType == deckType && d.UserDeckNumber == session.UserDeckNumber);
+    }
+
     /// <summary>Gets or creates the user's quest row, and creates any missing rows for the quest's missions.</summary>
     public EntityIUserQuest EnsureQuestRows(DarkUserMemoryDatabase userDb, int questId)
     {
@@ -295,8 +334,7 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
     /// </summary>
     public (HashSet<int> CharacterIds, HashSet<int> CostumeIds) DeckMembers(DarkUserMemoryDatabase userDb, int questId)
     {
-        int deckNumber = userDb.EntitySQuestSession.FirstOrDefault(s => s.QuestId == questId)?.UserDeckNumber ?? 0;
-        EntityIUserDeck? deck = userDb.EntityIUserDeck.FirstOrDefault(d => d.DeckType == DeckType.QUEST && d.UserDeckNumber == deckNumber);
+        EntityIUserDeck? deck = SessionDeck(userDb, questId);
         if (deck == null)
         {
             return ([], []);
@@ -623,13 +661,7 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
         }
 
         // Character/costume EXP only applies to units in the selected deck.
-        EntitySQuestSession? session = userDb.EntitySQuestSession.FirstOrDefault(s => s.QuestId == quest.QuestId);
-        if (session == null || session.UserDeckNumber == 0)
-        {
-            return;
-        }
-
-        EntityIUserDeck? deck = userDb.EntityIUserDeck.FirstOrDefault(d => d.DeckType == DeckType.QUEST && d.UserDeckNumber == session.UserDeckNumber);
+        EntityIUserDeck? deck = SessionDeck(userDb, quest.QuestId);
         if (deck == null)
         {
             return;

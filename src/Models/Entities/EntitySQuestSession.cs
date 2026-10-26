@@ -14,6 +14,11 @@ public class EntitySQuestSession : IUserEntity
     public long UserId { get; set; }
     public int QuestId { get; set; }
     public int UserDeckNumber { get; set; }
+    /// <summary>
+    /// Which kind of deck <see cref="UserDeckNumber"/> is: the normal quest deck, or a restricted one for quests with a
+    /// deck restriction (see <c>QuestEngine.DeckTypeFor</c>). UNKNOWN on sessions saved before this was stored.
+    /// </summary>
+    public DeckType UserDeckType { get; set; }
     public int CurrentEventQuestChapterId { get; set; }
     public int CurrentQuestSceneId { get; set; }
     public int HeadQuestSceneId { get; set; }

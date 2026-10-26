@@ -118,8 +118,7 @@ public sealed class QuestMissionEvaluator(DarkMasterMemoryDatabase masterDb)
 
     private QuestRunDeck? BuildDeck(DarkUserMemoryDatabase userDb, int questId)
     {
-        int deckNumber = userDb.EntitySQuestSession.FirstOrDefault(s => s.QuestId == questId)?.UserDeckNumber ?? 0;
-        EntityIUserDeck? deck = userDb.EntityIUserDeck.FirstOrDefault(d => d.DeckType == DeckType.QUEST && d.UserDeckNumber == deckNumber);
+        EntityIUserDeck? deck = QuestEngine.SessionDeck(userDb, questId);
         if (deck == null)
         {
             return null;

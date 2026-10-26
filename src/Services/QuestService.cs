@@ -230,7 +230,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
             replayQuest.IsBattleOnly = request.IsBattleOnly;
 
             EntitySQuestSession replaySession = GetOrCreateQuestSession(userDb, userId, questId);
-            replaySession.UserDeckNumber = request.UserDeckNumber;
+            _questEngine.SetSessionDeck(replaySession, request.UserDeckNumber);
             replaySession.IsBattleOnly = request.IsBattleOnly;
             replaySession.CurrentQuestFlowType = replayFlowType;
             int replayStartSceneId = _questEngine.GetQuestStartSceneId(questId, request.IsBattleOnly);
@@ -269,7 +269,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         userQuest.IsBattleOnly = request.IsBattleOnly;
 
         EntitySQuestSession startSession = GetOrCreateQuestSession(userDb, userId, questId);
-        startSession.UserDeckNumber = request.UserDeckNumber;
+        _questEngine.SetSessionDeck(startSession, request.UserDeckNumber);
         startSession.IsBattleOnly = request.IsBattleOnly;
 
         bool isPlayable = QuestEngine.IsPlayable(quest);
@@ -572,7 +572,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         _questEngine.ConsumeStamina(userDb, _questEngine.FindQuest(questId), _questCampaignHelper.GetExtraQuestTarget(questId), 1, nowMs);
 
         EntitySQuestSession session = GetOrCreateQuestSession(userDb, userId, questId);
-        session.UserDeckNumber = request.UserDeckNumber;
+        _questEngine.SetSessionDeck(session, request.UserDeckNumber);
 
         QuestEngine.MarkActive(userQuest, nowMs);
 
@@ -682,7 +682,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         _questEngine.ConsumeStamina(userDb, _questEngine.FindQuest(questId), _questCampaignHelper.GetEventQuestTarget(questId, chapterId), 1, nowMs);
 
         EntitySQuestSession eventSession = GetOrCreateQuestSession(userDb, userId, questId);
-        eventSession.UserDeckNumber = request.UserDeckNumber;
+        _questEngine.SetSessionDeck(eventSession, request.UserDeckNumber, chapterId);
         eventSession.IsBattleOnly = request.IsBattleOnly;
         eventSession.CurrentEventQuestChapterId = chapterId;
 
@@ -793,7 +793,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
 
         if (isWin)
         {
-            RecordLimitContentClear(userDb, userId, request.EventQuestChapterId, questId);
+            RecordLimitContentClear(userDb, request.EventQuestChapterId, questId, nowMs);
         }
 
         userDb.EntitySQuestSession.RemoveAll(s => s.QuestId == questId);
@@ -801,19 +801,18 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         return Task.FromResult(response);
     }
 
-    /// <summary>A won Recollections of Dusk quest is marked in the user's limit-content status, as every cleared one is in the real save.</summary>
-    private void RecordLimitContentClear(DarkUserMemoryDatabase userDb, long userId, int chapterId, int questId)
+    /// <summary>
+    /// A won Recollections of Dusk quest: marked cleared, with the run's deck locked for the rest of its floor
+    /// (lifted once the whole floor is cleared). Must run before the quest session is removed.
+    /// </summary>
+    private void RecordLimitContentClear(DarkUserMemoryDatabase userDb, int chapterId, int questId, long nowMs)
     {
-        if (_masterDb.EntityMEventQuestChapter.FirstOrDefault(c => c.EventQuestChapterId == chapterId)?.EventQuestType != EventQuestType.LIMIT_CONTENT)
+        if (!RecollectionsHelper.IsRecollectionsChapter(_masterDb, chapterId))
         {
             return;
         }
 
-        EntityIUserQuestLimitContentStatus status = userDb.EntityIUserQuestLimitContentStatus.GetOrCreate(
-            s => s.QuestId == questId,
-            () => new EntityIUserQuestLimitContentStatus { UserId = userId, QuestId = questId });
-        status.LimitContentQuestStatusType = 1;
-        status.EventQuestChapterId = chapterId;
+        RecollectionsHelper.RecordClear(_masterDb, userDb, chapterId, questId, QuestEngine.SessionDeck(userDb, questId), nowMs);
     }
 
     /// <summary>
@@ -1057,7 +1056,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         return Task.FromResult(new StartGuerrillaFreeOpenResponse());
     }
 
-    /// <summary>Resets progress for a limit-content side story quest.</summary>
+    /// <summary>Resets a Recollections of Dusk floor (the floor of the request's quest) and its side story progress.</summary>
     public override Task<ResetLimitContentQuestProgressResponse> ResetLimitContentQuestProgress(ResetLimitContentQuestProgressRequest request, ServerCallContext context)
     {
         long userId = context.GetUserId();
@@ -1073,7 +1072,8 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
             sideStoryQuest.SideStoryQuestStateType = 0; // Unknown
         }
 
-        userDb.EntityIUserQuestLimitContentStatus.RemoveAll(s => s.QuestId == questId);
+        // A reset starts the whole floor over: no quest cleared, nothing locked.
+        RecollectionsHelper.ResetFloor(_masterDb, userDb, request.EventQuestChapterId, questId);
 
         EntityIUserSideStoryQuestSceneProgressStatus? activeProgress = userDb.EntityIUserSideStoryQuestSceneProgressStatus
             .FirstOrDefault(s => s.UserId == userId);
@@ -1304,7 +1304,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         }
 
         int startSceneId = _questEngine.GetQuestStartSceneId(request.QuestId, request.IsBattleOnly);
-        session.UserDeckNumber = request.UserDeckNumber;
+        _questEngine.SetSessionDeck(session, request.UserDeckNumber);
         session.IsBattleOnly = request.IsBattleOnly;
         session.CurrentQuestFlowType = QuestFlowType.MAIN_FLOW;
         session.CurrentQuestSceneId = startSceneId;

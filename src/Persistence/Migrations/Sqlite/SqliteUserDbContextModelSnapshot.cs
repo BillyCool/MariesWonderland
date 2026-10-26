@@ -2767,6 +2767,9 @@ namespace MariesWonderland.Persistence.Migrations.Sqlite
                     b.Property<int>("UserDeckNumber")
                         .HasColumnType("INTEGER");
 
+                    b.Property<int>("UserDeckType")
+                        .HasColumnType("INTEGER");
+
                     b.HasKey("UserId", "QuestId");
 
                     b.ToTable("SQuestSession", (string)null);
