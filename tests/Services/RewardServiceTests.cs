@@ -246,7 +246,18 @@ public class RewardServiceTests
             }
         ]);
 
-        RewardServiceImpl service = CreateService(masterDb, userDb);
+        // The Arena's record of season 1: six bots ahead, so the player finished 7th when it ended.
+        UserDataStore store = new(TimeProvider.System);
+        store.Set(UserId, userDb);
+        MariesWonderland.Arena.ArenaSeason seasonOne = new(1, nowMs - 20_000, nowMs - 10_000);
+        store.Arena.Enter(seasonOne, UserId, 10, 100, null, nowMs - 15_000,
+            () => Enumerable.Range(1, 6).Select(i => new MariesWonderland.Arena.ArenaEntry
+            {
+                UserId = MariesWonderland.Arena.ArenaBots.IdBase + i,
+                PlayerId = MariesWonderland.Arena.ArenaBots.IdBase + i,
+                Points = 1_000 + i,
+            }), out _);
+        RewardServiceImpl service = new(store, masterDb, TimeProvider.System);
 
         ReceivePvpRewardResponse response = await service.ReceivePvpReward(new Empty(), FakeServerCallContext.For(UserId));
 

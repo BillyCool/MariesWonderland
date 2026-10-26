@@ -1,5 +1,6 @@
 ﻿using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
+using MariesWonderland.Arena;
 using MariesWonderland.Data;
 using MariesWonderland.Extensions;
 using MariesWonderland.Helpers;
@@ -103,7 +104,8 @@ public class RewardService(UserDataStore store, DarkMasterMemoryDatabase masterD
     }
 
     /// <summary>
-    /// Grants any claimable PvP weekly rewards and any ended-season rewards supported by the current models.
+    /// Pays the Arena rewards of finished weeks (grade and place) and ended seasons (place) not paid yet. The player's
+    /// weekly rows are brought up to date from the Arena first, so a week that ended has its final points and place.
     /// </summary>
     public override Task<ReceivePvpRewardResponse> ReceivePvpReward(Empty request, ServerCallContext context)
     {
@@ -112,6 +114,9 @@ public class RewardService(UserDataStore store, DarkMasterMemoryDatabase masterD
         {
             return Task.FromResult(new ReceivePvpRewardResponse());
         }
+
+        long syncedAt = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
+        ArenaHelper.SyncWeeks(_store, userDb, syncedAt);
 
         EntityIUserPvpStatus? existingStatus = userDb.EntityIUserPvpStatus.FirstOrDefault(s => s.UserId == userId);
         long latestReceivedWeeklyVersion = existingStatus?.LatestRewardReceivePvpWeeklyVersion ?? 0;
@@ -185,7 +190,11 @@ public class RewardService(UserDataStore store, DarkMasterMemoryDatabase masterD
                 break;
             }
 
-            int seasonRankRewardGroupId = ResolvePvpSeasonRankRewardGroupId(season, latestSeasonResult.FinalRank);
+            // The place when the season ended, as the Arena recorded it (0, and no reward, when it has no record of
+            // the player in that season). The season still counts as claimed either way.
+            int seasonRank = _store.Arena.Standing(season.PvpSeasonId, userId, nowMs)?.SeasonFinalRank ?? 0;
+
+            int seasonRankRewardGroupId = ResolvePvpSeasonRankRewardGroupId(season, seasonRank);
             ApplyPvpRewards(userDb, CollectPvpRewards(
                 seasonRankRewardGroupId,
                 _masterDb.EntityMPvpSeasonRankRewardGroup,
@@ -196,7 +205,7 @@ public class RewardService(UserDataStore store, DarkMasterMemoryDatabase masterD
             response.SeasonRankResult = new SeasonRankResult
             {
                 TargetSeasonId = latestSeasonResult.PvpSeasonId,
-                Rank = latestSeasonResult.FinalRank,
+                Rank = seasonRank,
                 PvpSeasonRankRewardGroupId = seasonRankRewardGroupId
             };
 

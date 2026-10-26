@@ -1,3 +1,4 @@
+using MariesWonderland.Arena;
 using MariesWonderland.Data;
 using MariesWonderland.Friends;
 using MariesWonderland.Models.Entities;
@@ -272,6 +273,80 @@ public sealed class EfUserPersistence(Func<UserDbContext> createContext) : IUser
 
         db.SaveChanges();
         transaction.Commit();
+    }
+
+    public ArenaState LoadArena()
+    {
+        using UserDbContext db = createContext();
+        return new ArenaState([.. db.ArenaEntries.AsNoTracking()], [.. db.ArenaBattles.AsNoTracking()], [.. db.ArenaWeeks.AsNoTracking()]);
+    }
+
+    public void SaveArenaChanges(ArenaChanges changes)
+    {
+        if (changes.IsEmpty)
+        {
+            return;
+        }
+
+        using UserDbContext db = createContext();
+        using IDbContextTransaction transaction = db.Database.BeginTransaction();
+
+        foreach (int seasonId in changes.ClearedSeasons)
+        {
+            db.ArenaEntries.Where(e => e.SeasonId == seasonId && e.IsBot).ExecuteDelete();
+            db.ArenaBattles.Where(b => b.SeasonId == seasonId).ExecuteDelete();
+        }
+        if (changes.RemovedBattleIds.Count > 0)
+        {
+            long[] removed = [.. changes.RemovedBattleIds];
+            db.ArenaBattles.Where(b => removed.Contains(b.BattleId)).ExecuteDelete();
+        }
+
+        // A row can be saved twice in one operation; the last copy wins. Existing rows are read in one query per season
+        // (a new season saves all its bots at once).
+        foreach (IGrouping<int, ArenaEntry> season in changes.SavedEntries
+            .GroupBy(e => (e.SeasonId, e.UserId)).Select(g => g.Last())
+            .GroupBy(e => e.SeasonId))
+        {
+            long[] userIds = [.. season.Select(e => e.UserId)];
+            Dictionary<long, ArenaEntry> existing = db.ArenaEntries.AsTracking()
+                .Where(e => e.SeasonId == season.Key && userIds.Contains(e.UserId))
+                .ToDictionary(e => e.UserId);
+            foreach (ArenaEntry entry in season)
+            {
+                CopyInto(db, existing.GetValueOrDefault(entry.UserId), entry);
+            }
+        }
+
+        long[] battleIds = [.. changes.SavedBattles.Select(b => b.BattleId).Distinct()];
+        Dictionary<long, ArenaBattle> battles = db.ArenaBattles.AsTracking().Where(b => battleIds.Contains(b.BattleId)).ToDictionary(b => b.BattleId);
+        foreach (ArenaBattle battle in changes.SavedBattles.GroupBy(b => b.BattleId).Select(g => g.Last()))
+        {
+            CopyInto(db, battles.GetValueOrDefault(battle.BattleId), battle);
+        }
+
+        foreach (ArenaWeek week in changes.SavedWeeks.GroupBy(w => (w.UserId, w.WeekStart)).Select(g => g.Last()))
+        {
+            CopyInto(db, db.ArenaWeeks.AsTracking().FirstOrDefault(w => w.UserId == week.UserId && w.WeekStart == week.WeekStart), week);
+        }
+
+        db.SaveChanges();
+        transaction.Commit();
+    }
+
+    /// <summary>Writes an in-memory row's values into its saved row, or adds a copy of it (the store keeps its own objects).</summary>
+    private static void CopyInto<T>(UserDbContext db, T? row, T values) where T : class, new()
+    {
+        if (row != null)
+        {
+            db.Entry(row).CurrentValues.SetValues(values);
+            return;
+        }
+
+        // Keys are set before the row is tracked: a tracked row's key can't change.
+        T added = new();
+        db.Entry(added).CurrentValues.SetValues(values);
+        db.Add(added);
     }
 
     public IReadOnlyList<PlayerCard> PlayerCards(IReadOnlyCollection<long>? userIds)

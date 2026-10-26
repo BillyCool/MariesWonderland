@@ -80,6 +80,30 @@ public sealed class MissionTracker(DarkMasterMemoryDatabase masterDb, MissionCat
         EvaluateDailyCompletion(userDb, rows, nowMs);
     }
 
+    /// <summary>
+    /// The player's Arena place (1 = first): "reach rank N" missions clear once the place is N or better. Lower is
+    /// better here, so a cleared mission's progress is set to its target rather than to the place.
+    /// </summary>
+    public void RecordPvpRank(DarkUserMemoryDatabase userDb, int rank, long nowMs)
+    {
+        if (rank <= 0)
+        {
+            return;
+        }
+
+        Dictionary<int, EntityIUserMission> rows = userDb.EntityIUserMission.ToDictionary(r => r.MissionId);
+        foreach (MissionDefinition mission in _catalog.ByConditionType(MissionClearConditionType.PVP_RANK))
+        {
+            if (rank <= mission.ClearValue && mission.IsInTerm(nowMs)
+                && rows.TryGetValue(mission.MissionId, out EntityIUserMission? row) && !IsReceived(row) && row.ProgressValue < mission.ClearValue)
+            {
+                SetProgress(userDb, rows, mission, row, mission.ClearValue, nowMs);
+            }
+        }
+
+        EvaluateDailyCompletion(userDb, rows, nowMs);
+    }
+
     /// <summary>Taps landed in one concert (rhythm game): the best run counts for missions naming its live type.</summary>
     public void RecordRhythmTaps(DarkUserMemoryDatabase userDb, int liveTypeId, int tapCount, long nowMs)
         => RecordBest(userDb, MissionClearConditionType.RHYTHM_INTERACTION_TAP_COUNT, tapCount, filter => filter == null || filter.MatchesLive(liveTypeId), nowMs);

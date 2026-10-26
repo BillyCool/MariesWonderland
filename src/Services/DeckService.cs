@@ -1,15 +1,19 @@
 using Grpc.Core;
+using MariesWonderland.Arena;
 using MariesWonderland.Data;
 using MariesWonderland.Extensions;
+using MariesWonderland.Helpers;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.Deck;
 
 namespace MariesWonderland.Services;
 
-public class DeckService(UserDataStore store) : MariesWonderland.Proto.Deck.DeckService.DeckServiceBase
+public class DeckService(UserDataStore store, DarkMasterMemoryDatabase masterDb, TimeProvider timeProvider) : MariesWonderland.Proto.Deck.DeckService.DeckServiceBase
 {
     private readonly UserDataStore _store = store;
+    private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
+    private readonly TimeProvider _timeProvider = timeProvider;
 
     /// <summary>Renames a deck.</summary>
     public override Task<UpdateNameResponse> UpdateName(UpdateNameRequest request, ServerCallContext context)
@@ -97,10 +101,39 @@ public class DeckService(UserDataStore store) : MariesWonderland.Proto.Deck.Deck
         return newUuid;
     }
 
-    /// <summary>Stub for PvP defense deck; returns empty response.</summary>
+    /// <summary>
+    /// Chooses which Arena (PvP) deck defends. The client sends only the deck number; others see the new deck on their
+    /// opponent cards straight away.
+    /// </summary>
     public override Task<SetPvpDefenseDeckResponse> SetPvpDefenseDeck(SetPvpDefenseDeckRequest request, ServerCallContext context)
     {
+        long userId = context.GetUserId();
+        DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
+        if (FindDeck(userDb, DeckType.PVP, request.UserDeckNumber) == null)
+        {
+            return Task.FromResult(new SetPvpDefenseDeckResponse());
+        }
+
+        EntityIUserPvpDefenseDeck defense = userDb.EntityIUserPvpDefenseDeck.GetOrCreate(userId);
+        defense.UserDeckNumber = request.UserDeckNumber;
+        RefreshArenaDefense(userDb, DeckType.PVP, request.UserDeckNumber);
         return Task.FromResult(new SetPvpDefenseDeckResponse());
+    }
+
+    /// <summary>When the deck that changed is the Arena defense deck, refreshes what other players see of it.</summary>
+    private void RefreshArenaDefense(DarkUserMemoryDatabase userDb, DeckType deckType, int deckNumber)
+    {
+        if (deckType != DeckType.PVP || deckNumber != ArenaDecks.DefenseDeckNumber(userDb))
+        {
+            return;
+        }
+
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
+        EntityMPvpSeason? season = ArenaHelper.CurrentSeason(_masterDb, nowMs);
+        if (season != null)
+        {
+            _store.Arena.UpdateDefense(season.PvpSeasonId, userDb.UserId, ArenaDecks.Summary(userDb, _masterDb, deckType, deckNumber), nowMs);
+        }
     }
 
     /// <summary>Copies a deck's character lineup into another deck, recreating linked slot records.</summary>
@@ -152,6 +185,7 @@ public class DeckService(UserDataStore store) : MariesWonderland.Proto.Deck.Deck
         if (request.DeckPower != null)
         {
             ApplyDeckPowerRefresh(userDb, (DeckType)request.DeckType, request.UserDeckNumber, request.DeckPower);
+            RefreshArenaDefense(userDb, (DeckType)request.DeckType, request.UserDeckNumber);
         }
 
         return Task.FromResult(new RefreshDeckPowerResponse());
@@ -226,6 +260,7 @@ public class DeckService(UserDataStore store) : MariesWonderland.Proto.Deck.Deck
             }
 
             ApplyDeckPowerRefresh(userDb, (DeckType)info.DeckType, info.UserDeckNumber, info.DeckPower);
+            RefreshArenaDefense(userDb, (DeckType)info.DeckType, info.UserDeckNumber);
         }
 
         return Task.FromResult(new RefreshMultiDeckPowerResponse());

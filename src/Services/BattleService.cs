@@ -40,10 +40,16 @@ public class BattleService(UserDataStore store, DarkMasterMemoryDatabase masterD
             .OrderByDescending(q => q.LatestStartDatetime)
             .FirstOrDefault();
 
+        // The client sends this for Arena battles too (without the battle binary). It's an Arena battle when one was
+        // started after the active quest was (an abandoned run leaves its quest active).
+        long questStartedAt = activeQuest?.LatestStartDatetime ?? 0;
+        long arenaBattleId = _store.Arena.LatestBattle(userId, nowMs) is { } arena && arena.StartedAt >= questStartedAt ? arena.BattleId : 0;
+
         // Save full battle record mirroring the proto request structure.
         EntitySBattleDetail battleRecord = new()
         {
-            QuestId = activeQuest?.QuestId ?? 0,
+            QuestId = arenaBattleId != 0 ? 0 : activeQuest?.QuestId ?? 0,
+            ArenaBattleId = arenaBattleId,
             UserId = userId,
             ElapsedFrameCount = request.ElapsedFrameCount,
             BattleBinary = request.BattleBinary.ToBase64(),
@@ -62,7 +68,7 @@ public class BattleService(UserDataStore store, DarkMasterMemoryDatabase masterD
         };
         _store.RecordBattle(battleRecord);
 
-        int defeatedBosses = request.NpcPartyResultInfoList.Sum(DefeatedBosses);
+        int defeatedBosses = arenaBattleId != 0 ? 0 : request.NpcPartyResultInfoList.Sum(DefeatedBosses);
         if (defeatedBosses > 0)
         {
             _missions.Record(userDb, MissionClearConditionType.DEFEAT_BOSS_COUNT, defeatedBosses, nowMs);

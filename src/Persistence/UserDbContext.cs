@@ -1,3 +1,4 @@
+using MariesWonderland.Arena;
 using MariesWonderland.Data;
 using MariesWonderland.Friends;
 using MariesWonderland.Models.Entities;
@@ -25,6 +26,9 @@ public abstract class UserDbContext(DbContextOptions options) : DbContext(option
     public DbSet<FriendLink> FriendLinks => Set<FriendLink>();
     public DbSet<FriendRequest> FriendRequests => Set<FriendRequest>();
     public DbSet<FriendCheer> FriendCheers => Set<FriendCheer>();
+    public DbSet<ArenaEntry> ArenaEntries => Set<ArenaEntry>();
+    public DbSet<ArenaBattle> ArenaBattles => Set<ArenaBattle>();
+    public DbSet<ArenaWeek> ArenaWeeks => Set<ArenaWeek>();
 
     private static readonly MethodInfo ConfigureJsonMethod = typeof(UserDbContext).GetMethod(nameof(ConfigureJson), BindingFlags.NonPublic | BindingFlags.Static)!;
 
@@ -78,6 +82,32 @@ public abstract class UserDbContext(DbContextOptions options) : DbContext(option
             entity.ToTable("FriendCheers");
             entity.HasKey(c => new { c.FromUserId, c.ToUserId });
             entity.HasIndex(c => c.ToUserId);
+        });
+
+        // The Arena is shared by players and bots, so it's server-wide too.
+        modelBuilder.Entity<ArenaEntry>(entity =>
+        {
+            entity.ToTable("ArenaEntries");
+            entity.HasKey(e => new { e.SeasonId, e.UserId });
+            ConfigureJson<List<int>>(entity, nameof(ArenaEntry.DefenseCostumeIds));
+            ConfigureJson<List<int>>(entity, nameof(ArenaEntry.DefenseAttributeTypes));
+            ConfigureJson<List<long>>(entity, nameof(ArenaEntry.MatchingUserIds));
+        });
+
+        modelBuilder.Entity<ArenaBattle>(entity =>
+        {
+            entity.ToTable("ArenaBattles");
+            entity.HasKey(b => b.BattleId);
+            entity.Property(b => b.BattleId).ValueGeneratedNever();
+            entity.HasIndex(b => b.SeasonId);
+            ConfigureJson<List<int>>(entity, nameof(ArenaBattle.AttackerCostumeIds));
+            ConfigureJson<List<int>>(entity, nameof(ArenaBattle.DefenderCostumeIds));
+        });
+
+        modelBuilder.Entity<ArenaWeek>(entity =>
+        {
+            entity.ToTable("ArenaWeeks");
+            entity.HasKey(w => new { w.UserId, w.WeekStart });
         });
 
         // Player-id lookups (friends, profiles) for users that aren't in memory.

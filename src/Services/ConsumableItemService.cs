@@ -16,7 +16,10 @@ public class ConsumableItemService(DarkMasterMemoryDatabase masterDb, UserDataSt
     private readonly GameConfig _gameConfig = gameConfig;
     private readonly TimeProvider _timeProvider = timeProvider;
 
-    /// <summary>Consumes supported effect items and applies their effect to the user's state.</summary>
+    /// <summary>
+    /// Uses stamina or Arena BP recovery items. Fixed items add their value per item; percentage items a share of the
+    /// level's stamina maximum or the BP cap. BP can go past its cap; stamina stops at the possession limit.
+    /// </summary>
     public override Task<UseEffectItemResponse> UseEffectItem(UseEffectItemRequest request, ServerCallContext context)
     {
         if (request.Count <= 0)
@@ -26,7 +29,7 @@ public class ConsumableItemService(DarkMasterMemoryDatabase masterDb, UserDataSt
 
         EntityMConsumableItemEffect? effect = _masterDb.EntityMConsumableItemEffect
             .FirstOrDefault(itemEffect => itemEffect.ConsumableItemId == request.ConsumableItemId);
-        if (effect == null || effect.EffectTargetType != EffectTargetType.STAMINA_RECOVERY)
+        if (effect == null || effect.EffectTargetType is not (EffectTargetType.STAMINA_RECOVERY or EffectTargetType.BATTLE_POINT_RECOVERY))
         {
             return Task.FromResult(new UseEffectItemResponse());
         }
@@ -44,28 +47,14 @@ public class ConsumableItemService(DarkMasterMemoryDatabase masterDb, UserDataSt
             return Task.FromResult(new UseEffectItemResponse());
         }
 
-        EntityIUserStatus? userStatus = userDb.EntityIUserStatus.FirstOrDefault(status => status.UserId == userId);
-        if (userStatus == null)
-        {
-            return Task.FromResult(new UseEffectItemResponse());
-        }
-
-        int staminaCap = ResolveStaminaCap(userStatus.Level);
-        int recoverAmount = effect.EffectValueType switch
-        {
-            EffectValueType.FIXED_VALUE => effect.EffectValue,
-            EffectValueType.PERMIL_VALUE => staminaCap > 0 ? effect.EffectValue * staminaCap / 1000 : 0,
-            _ => 0
-        };
-
-        if (recoverAmount <= 0 || staminaCap <= 0)
-        {
-            return Task.FromResult(new UseEffectItemResponse());
-        }
-
         long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
-        StaminaHelper.Settle(userStatus, _masterDb, _gameConfig, nowMs);
-        StaminaHelper.AddStamina(userStatus, recoverAmount * request.Count, staminaCap, nowMs);
+        bool used = effect.EffectTargetType == EffectTargetType.BATTLE_POINT_RECOVERY
+            ? RecoverBattlePoints(userDb, effect, request.Count, nowMs)
+            : RecoverStamina(userDb, effect, request.Count, nowMs);
+        if (!used)
+        {
+            return Task.FromResult(new UseEffectItemResponse());
+        }
 
         userItem.Count -= request.Count;
         if (userItem.Count == 0)
@@ -75,6 +64,46 @@ public class ConsumableItemService(DarkMasterMemoryDatabase masterDb, UserDataSt
 
         return Task.FromResult(new UseEffectItemResponse());
     }
+
+    private bool RecoverStamina(DarkUserMemoryDatabase userDb, EntityMConsumableItemEffect effect, int count, long nowMs)
+    {
+        EntityIUserStatus? userStatus = userDb.EntityIUserStatus.FirstOrDefault(status => status.UserId == userDb.UserId);
+        if (userStatus == null)
+        {
+            return false;
+        }
+
+        int staminaCap = ResolveStaminaCap(userStatus.Level);
+        int recoverAmount = RecoverAmount(effect, staminaCap);
+        if (recoverAmount <= 0 || staminaCap <= 0)
+        {
+            return false;
+        }
+
+        StaminaHelper.Settle(userStatus, _masterDb, _gameConfig, nowMs);
+        StaminaHelper.AddStamina(userStatus, recoverAmount * count, staminaCap, nowMs);
+        return true;
+    }
+
+    private bool RecoverBattlePoints(DarkUserMemoryDatabase userDb, EntityMConsumableItemEffect effect, int count, long nowMs)
+    {
+        int recoverAmount = RecoverAmount(effect, _gameConfig.PvpMaxBattlePoint);
+        if (recoverAmount <= 0)
+        {
+            return false;
+        }
+
+        EntityIUserPvpStatus status = userDb.EntityIUserPvpStatus.GetOrCreate(userDb.UserId);
+        StaminaHelper.AddBattlePoints(status, recoverAmount * count, _gameConfig, nowMs);
+        return true;
+    }
+
+    private static int RecoverAmount(EntityMConsumableItemEffect effect, int max) => effect.EffectValueType switch
+    {
+        EffectValueType.FIXED_VALUE => effect.EffectValue,
+        EffectValueType.PERMIL_VALUE => max > 0 ? effect.EffectValue * max / 1000 : 0,
+        _ => 0
+    };
 
     /// <summary>Sells consumable items for gold, removing depleted entries from inventory.</summary>
     public override Task<SellResponse> Sell(SellRequest request, ServerCallContext context)

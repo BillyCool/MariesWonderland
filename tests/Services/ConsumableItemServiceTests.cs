@@ -96,7 +96,7 @@ public class ConsumableItemServiceTests
     }
 
     [Fact]
-    public async Task UseEffectItem_WithUnsupportedEffectTarget_LeavesStateUnchanged()
+    public async Task UseEffectItem_BattlePointItem_AddsBattlePoints_AndLeavesStaminaAlone()
     {
         DarkMasterMemoryDatabase masterDb = CreateMasterDb();
         AddConsumableItemEffect(masterDb, BattlePointPotionItemId, EffectTargetType.BATTLE_POINT_RECOVERY, EffectValueType.FIXED_VALUE, effectValue: 10);
@@ -116,15 +116,17 @@ public class ConsumableItemServiceTests
             StaminaMilliValue = 5_000,
             StaminaUpdateDatetime = 50
         });
+        userDb.EntityIUserPvpStatus.Add(new EntityIUserPvpStatus { UserId = UserId, StaminaMilliValue = 2_000 });
 
         ConsumableItemServiceImpl service = CreateService(masterDb, userDb);
 
         await service.UseEffectItem(
-            new UseEffectItemRequest { ConsumableItemId = BattlePointPotionItemId, Count = 1 },
+            new UseEffectItemRequest { ConsumableItemId = BattlePointPotionItemId, Count = 2 },
             FakeServerCallContext.For(UserId));
 
         EntityIUserConsumableItem item = Assert.Single(userDb.EntityIUserConsumableItem);
-        Assert.Equal(3, item.Count);
+        Assert.Equal(1, item.Count);
+        Assert.Equal(22_000, Assert.Single(userDb.EntityIUserPvpStatus).StaminaMilliValue);
 
         EntityIUserStatus status = Assert.Single(userDb.EntityIUserStatus);
         Assert.Equal(5_000, status.StaminaMilliValue);

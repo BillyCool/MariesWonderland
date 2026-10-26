@@ -193,6 +193,40 @@ public sealed class UserPersistenceTests : IDisposable
     }
 
     [Fact]
+    public void Arena_SurvivesARestart_AndASettledSeasonDropsItsBots()
+    {
+        long now = _time.GetUtcNow().ToUnixTimeMilliseconds();
+        MariesWonderland.Arena.ArenaSeason season = new(900, now - 1000, now + 60_000);
+        MariesWonderland.Arena.ArenaDefense deck = new(5000, [101, 102], [1, 2], 101);
+        MariesWonderland.Arena.ArenaEntry[] Bots() =>
+        [
+            new() { UserId = MariesWonderland.Arena.ArenaBots.IdBase + 1, PlayerId = MariesWonderland.Arena.ArenaBots.IdBase + 1, Points = 30_000, BotName = "Pale Lark", DefenseCostumeIds = [201] },
+        ];
+
+        UserDataStore store = NewStore();
+        store.Arena.Enter(season, 1, 10, 20_000, deck, now, Bots, out _);
+        store.Arena.Enter(season, 2, 20, 21_000, deck, now, Bots, out _);
+        store.Arena.NewMatching(900, 1, new Random(1), now);
+        long opponent = store.Arena.Matching(900, 1, now)[0].UserId;
+        store.Arena.StartBattle(900, 1, opponent, deck, deck, now);
+        MariesWonderland.Arena.ArenaFinish finish = store.Arena.FinishBattle(900, 1, opponent, true, now)!;
+
+        UserDataStore restarted = NewStore();
+        Assert.Equal(finish.AfterPoints, restarted.Arena.Standing(900, 1, now)!.Points);
+        Assert.Equal([101, 102], restarted.Arena.Standing(900, 2, now)!.Defense.CostumeIds);
+        Assert.Equal("Pale Lark", restarted.Arena.FindBot(MariesWonderland.Arena.ArenaBots.IdBase + 1, now)!.BotName);
+        Assert.Single(restarted.Arena.Log(900, 1, asAttacker: true, now));
+        Assert.Single(restarted.Arena.Weeks(1, now));
+
+        long afterSeason = season.EndsAt + 1;
+        restarted.Arena.Standing(900, 1, afterSeason);
+        UserDataStore settled = NewStore();
+        Assert.Null(settled.Arena.FindBot(MariesWonderland.Arena.ArenaBots.IdBase + 1, afterSeason));
+        Assert.NotEqual(0, settled.Arena.Standing(900, 1, afterSeason)!.SeasonFinalRank);
+        Assert.True(settled.Arena.Weeks(1, afterSeason)[0].Closed);
+    }
+
+    [Fact]
     public void PlayerCards_AreReadFromTheDatabase()
     {
         UserDataStore store = NewStore();

@@ -4,8 +4,8 @@ using MariesWonderland.Models.Entities;
 namespace MariesWonderland.Helpers;
 
 /// <summary>
-/// Centralises stamina mutation logic. All code that adds or modifies stamina pools should go through here.
-/// PVP stamina is a separate pool and will be added here when implemented.
+/// Centralises stamina mutation logic. All code that adds or modifies stamina pools should go through here: regular
+/// stamina on <see cref="EntityIUserStatus"/> and the Arena's battle points (BP) on <see cref="EntityIUserPvpStatus"/>.
 /// </summary>
 public static class StaminaHelper
 {
@@ -76,6 +76,54 @@ public static class StaminaHelper
     public static void RefillToMax(EntityIUserStatus status, int maxStamina, long nowMs)
     {
         status.StaminaMilliValue = Math.Max(status.StaminaMilliValue, maxStamina * 1000);
+        status.StaminaUpdateDatetime = nowMs;
+    }
+
+    // ---- Arena battle points (BP) ----
+    // Stored like stamina, in thousandths, and regenerated the same way up to the cap. Items can push BP past the cap.
+
+    /// <summary>Adds the BP regenerated since the last update, up to the cap (BP already at or above it is left alone).</summary>
+    public static void SettleBattlePoints(EntityIUserPvpStatus status, GameConfig gameConfig, long nowMs)
+    {
+        long maxMilliValue = gameConfig.PvpMaxBattlePoint * 1000L;
+        long elapsedMs = nowMs - status.StaminaUpdateDatetime;
+        int recoverySecond = gameConfig.UserBattlePointRecoverySecond;
+        if (status.StaminaMilliValue >= maxMilliValue || elapsedMs <= 0 || recoverySecond <= 0)
+        {
+            return;
+        }
+
+        long regenerated = elapsedMs / recoverySecond;
+        status.StaminaMilliValue = (int)Math.Min(status.StaminaMilliValue + regenerated, maxMilliValue);
+        status.StaminaUpdateDatetime = nowMs;
+    }
+
+    /// <summary>Whole BP the user has now, regeneration included.</summary>
+    public static int BattlePoints(EntityIUserPvpStatus status, GameConfig gameConfig, long nowMs)
+    {
+        SettleBattlePoints(status, gameConfig, nowMs);
+        return status.StaminaMilliValue / 1000;
+    }
+
+    /// <summary>Settles regeneration, then spends <paramref name="cost"/> BP; false (and nothing spent) when there isn't enough.</summary>
+    public static bool TryConsumeBattlePoints(EntityIUserPvpStatus status, int cost, GameConfig gameConfig, long nowMs)
+    {
+        SettleBattlePoints(status, gameConfig, nowMs);
+        if (status.StaminaMilliValue < cost * 1000)
+        {
+            return false;
+        }
+
+        status.StaminaMilliValue -= cost * 1000;
+        status.StaminaUpdateDatetime = nowMs;
+        return true;
+    }
+
+    /// <summary>Settles regeneration, then adds <paramref name="amount"/> BP with no cap (recovery items can go past it).</summary>
+    public static void AddBattlePoints(EntityIUserPvpStatus status, int amount, GameConfig gameConfig, long nowMs)
+    {
+        SettleBattlePoints(status, gameConfig, nowMs);
+        status.StaminaMilliValue += amount * 1000;
         status.StaminaUpdateDatetime = nowMs;
     }
 }

@@ -1,3 +1,4 @@
+using MariesWonderland.Arena;
 using MariesWonderland.Data;
 using MariesWonderland.Friends;
 using MariesWonderland.Models.Entities;
@@ -58,6 +59,12 @@ public interface IUserPersistence
 
     /// <summary>Writes what one friend operation changed, in one transaction (removals first).</summary>
     void SaveFriendChanges(FriendChanges changes);
+
+    /// <summary>Every Arena standing, battle and weekly result.</summary>
+    ArenaState LoadArena();
+
+    /// <summary>Writes what one Arena operation changed, in one transaction (cleared seasons first).</summary>
+    void SaveArenaChanges(ArenaChanges changes);
 
     /// <summary>The cards of these users (all users when null); users without a user row are left out.</summary>
     IReadOnlyList<PlayerCard> PlayerCards(IReadOnlyCollection<long>? userIds);

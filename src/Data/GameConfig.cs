@@ -43,6 +43,12 @@ public class GameConfig
     public int UserFriendSendCheerMaxNumber { get; init; }
     public int UserFriendReceiveCheerMaxNumber { get; init; }
 
+    /// <summary>Arena battle points (BP): the regeneration cap, the cost of a battle and of a new opponent list.</summary>
+    public int PvpMaxBattlePoint { get; init; }
+    public int PvpBattleConsumeBattlePoint { get; init; }
+    public int PvpUpdateMatchingConsumeBattlePoint { get; init; }
+    public int UserBattlePointRecoverySecond { get; init; }
+
     /// <summary>Builds a <see cref="GameConfig"/> from the loaded master config rows.</summary>
     public static GameConfig From(IEnumerable<EntityMConfig> configs)
     {
@@ -83,6 +89,11 @@ public class GameConfig
             UserFriendReceiveRequestMaxNumber = ParseInt(kv, "USER_FRIEND_RECEIVE_REQUEST_MAX_NUMBER"),
             UserFriendSendCheerMaxNumber = ParseInt(kv, "USER_FRIEND_SEND_CHEER_MAX_NUMBER"),
             UserFriendReceiveCheerMaxNumber = ParseInt(kv, "USER_FRIEND_RECEIVE_CHEER_MAX_NUMBER"),
+
+            PvpMaxBattlePoint = ParseInt(kv, "PVP_MAX_BATTLE_POINT"),
+            PvpBattleConsumeBattlePoint = ParseInt(kv, "PVP_BATTLE_CONSUME_BATTLE_POINT"),
+            PvpUpdateMatchingConsumeBattlePoint = ParseInt(kv, "PVP_UPDATE_MATCHING_CONSUME_BATTLE_POINT"),
+            UserBattlePointRecoverySecond = ParseInt(kv, "USER_BATTLE_POINT_RECOVERY_SECOND"),
         };
     }
 

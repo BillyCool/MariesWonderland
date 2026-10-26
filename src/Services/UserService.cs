@@ -1,5 +1,6 @@
 using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
+using MariesWonderland.Arena;
 using MariesWonderland.Data;
 using MariesWonderland.Extensions;
 using MariesWonderland.Helpers;
@@ -240,7 +241,7 @@ public class UserService(UserDataStore store, UserDataSeeder seeder, DarkMasterM
         long callerUserId = context.GetUserId();
 
         if (!_store.TryGetByPlayerId(request.PlayerId, out DarkUserMemoryDatabase targetDb))
-            return Task.FromResult(new GetUserProfileResponse());
+            return Task.FromResult(ArenaBots.IsBot(request.PlayerId) ? BotProfile(request.PlayerId) : new GetUserProfileResponse());
 
         // Another player's data: read it under their lock (a no-op for the caller's own profile).
         using IDisposable? targetLock = context.TryLockUser(_store, targetDb.UserId);
@@ -280,6 +281,8 @@ public class UserService(UserDataStore store, UserDataSeeder seeder, DarkMasterM
             }
         }
 
+        (ArenaStanding? arenaStanding, int arenaGradeId) = ArenaPlace(targetDb.UserId);
+
         return Task.FromResult(new GetUserProfileResponse
         {
             Level = status?.Level ?? 0,
@@ -294,6 +297,8 @@ public class UserService(UserDataStore store, UserDataSeeder seeder, DarkMasterM
             },
             PvpInfo = new ProfilePvpInfo()
             {
+                CurrentRank = arenaStanding?.Rank ?? 0,
+                CurrentGradeId = arenaGradeId,
                 MaxSeasonRank = targetDb.EntityIUserPvpWeeklyResult
                     .GroupBy(x => x.PvpSeasonId)
                     .DefaultIfEmpty()
@@ -305,6 +310,47 @@ public class UserService(UserDataStore store, UserDataSeeder seeder, DarkMasterM
                 HistoryCategoryGraphItem = { }
             }
         });
+    }
+
+    /// <summary>The player's (or bot's) place and grade in the running Arena season; none when they aren't in it.</summary>
+    private (ArenaStanding? Standing, int GradeId) ArenaPlace(long userId)
+    {
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
+        EntityMPvpSeason? season = ArenaHelper.CurrentSeason(_masterDb, nowMs);
+        ArenaStanding? standing = season == null ? null : _store.Arena.Standing(season.PvpSeasonId, userId, nowMs);
+        int gradeId = standing == null ? 0 : ArenaHelper.Grade(_masterDb, season!.PvpGradeGroupId, standing.Points)?.PvpGradeId ?? 0;
+        return (standing, gradeId);
+    }
+
+    /// <summary>An Arena bot's profile (tapping it in the ranking or a battle history): its name, deck and place.</summary>
+    private GetUserProfileResponse BotProfile(long playerId)
+    {
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
+        ArenaStanding? bot = _store.Arena.FindBot(playerId, nowMs);
+        if (bot == null)
+        {
+            return new GetUserProfileResponse();
+        }
+
+        ArenaBotDeck deck = ArenaBots.Deck(_masterDb, bot.PlayerId, bot.BotSeed);
+        (ArenaStanding? standing, int gradeId) = ArenaPlace(bot.UserId);
+        ProfileDeck profileDeck = new() { Power = bot.Defense.DeckPower };
+        profileDeck.DeckCharacter.AddRange(deck.Characters.Select(c => new ProfileDeckCharacter
+        {
+            CostumeId = c.CostumeId,
+            MainWeaponId = c.MainWeaponId,
+            MainWeaponLevel = c.WeaponLevel,
+        }));
+        return new GetUserProfileResponse
+        {
+            Level = deck.UserLevel,
+            Name = bot.BotName,
+            FavoriteCostumeId = bot.BotFavoriteCostumeId,
+            Message = string.Empty,
+            LatestUsedDeck = profileDeck,
+            PvpInfo = new ProfilePvpInfo { CurrentRank = standing?.Rank ?? bot.Rank, CurrentGradeId = gradeId },
+            GamePlayHistory = new GamePlayHistory(),
+        };
     }
 
     /// <summary>Registers a new device UUID and assigns a permanent user ID.</summary>

@@ -14,6 +14,9 @@ public class EntitySBattleDetail : IUserEntity
     public int QuestId { get; set; }
     public DateTime RecordedAt { get; set; }
 
+    /// <summary>The Arena battle this was (its <c>ArenaBattles</c> id); 0 for quests. Arena battles have no quest (<see cref="QuestId"/> 0).</summary>
+    public long ArenaBattleId { get; set; }
+
     // Top-level FinishWaveRequest fields.
     /// <summary>Raw base64-encoded MessagePack blob from FinishWaveRequest.battleBinary.</summary>
     public string BattleBinary { get; set; } = string.Empty;

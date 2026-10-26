@@ -17,6 +17,158 @@ namespace MariesWonderland.Persistence.Migrations.Sqlite
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "10.0.13");
 
+            modelBuilder.Entity("MariesWonderland.Arena.ArenaBattle", b =>
+                {
+                    b.Property<long>("BattleId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("AttackerCostumeIds")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("AttackerDeckPower")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("AttackerPointsChange")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<long>("AttackerUserId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("AttackerWon")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("DefenderCostumeIds")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("DefenderDeckPower")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("DefenderPointsChange")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<long>("DefenderUserId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<long>("FinishedAt")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("SeasonId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<long>("StartedAt")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("BattleId");
+
+                    b.HasIndex("SeasonId");
+
+                    b.ToTable("ArenaBattles", (string)null);
+                });
+
+            modelBuilder.Entity("MariesWonderland.Arena.ArenaEntry", b =>
+                {
+                    b.Property<int>("SeasonId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<long>("UserId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("AttackLosses")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("AttackPointsChange")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("AttackWins")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("BotFavoriteCostumeId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("BotName")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("BotSeed")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("DefenseAttributeTypes")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("DefenseCostumeIds")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("DefenseDeckPower")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("DefenseLosses")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("DefensePointsChange")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("DefenseWins")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("IsBot")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("MatchingUserIds")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("MostPowerfulCostumeId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<long>("PlayerId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Points")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<long>("PointsChangedAt")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<long>("SeasonEndsAt")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("SeasonFinalRank")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("SeasonId", "UserId");
+
+                    b.ToTable("ArenaEntries", (string)null);
+                });
+
+            modelBuilder.Entity("MariesWonderland.Arena.ArenaWeek", b =>
+                {
+                    b.Property<long>("UserId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<long>("WeekStart")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Closed")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("FinalPoint")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("FinalRank")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("SeasonId")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("UserId", "WeekStart");
+
+                    b.ToTable("ArenaWeeks", (string)null);
+                });
+
             modelBuilder.Entity("MariesWonderland.Friends.FriendCheer", b =>
                 {
                     b.Property<long>("FromUserId")
@@ -2629,6 +2781,9 @@ namespace MariesWonderland.Persistence.Migrations.Sqlite
                         .HasColumnType("TEXT");
 
                     b.Property<int>("QuestId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<long>("ArenaBattleId")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("BattleBinary")

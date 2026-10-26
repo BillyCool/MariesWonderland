@@ -11,7 +11,7 @@ public class DeckServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
 {
     private const long UserId = 1L;
 
-    private static DeckService CreateService(UserDataStore store) => new(store);
+    private DeckService CreateService(UserDataStore store) => new(store, MasterDb, TimeProvider.System);
 
     private static EntityIUserDeck AddDeck(
         DarkUserMemoryDatabase userDb,

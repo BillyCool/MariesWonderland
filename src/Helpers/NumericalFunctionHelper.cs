@@ -21,7 +21,13 @@ public static class NumericalFunctionHelper
             .OrderBy(pg => pg.ParameterIndex)
             .Select(pg => pg.ParameterValue)];
 
-        return func.NumericalFunctionType switch
+        return Evaluate(func.NumericalFunctionType, p, value);
+    }
+
+    /// <summary>Evaluates a function of <paramref name="type"/> with parameters <paramref name="p"/> (in index order) at <paramref name="value"/>.</summary>
+    public static int Evaluate(NumericalFunctionType type, int[] p, int value)
+    {
+        return type switch
         {
             NumericalFunctionType.LINEAR when p.Length >= 2 => p[1] + p[0] * value,
             NumericalFunctionType.MONOMIAL when p.Length >= 2 => EvaluateMonomial(p, value),

@@ -1,3 +1,4 @@
+using MariesWonderland.Arena;
 using MariesWonderland.Constants;
 using MariesWonderland.Friends;
 using MariesWonderland.Models.Entities;
@@ -39,6 +40,9 @@ public class UserDataStore(TimeProvider timeProvider, IUserPersistence? persiste
 
     /// <summary>Friendships, friend requests and cheers (server-wide, not part of any one user).</summary>
     public FriendStore Friends { get; } = new(persistence);
+
+    /// <summary>Arena standings, battles and weekly results (server-wide, shared by players and bots).</summary>
+    public ArenaStore Arena { get; } = new(persistence);
 
     /// <summary>Whether changes are written to a user database.</summary>
     public bool IsPersistent => _persistence != null;
@@ -618,7 +622,9 @@ public class UserDataStore(TimeProvider timeProvider, IUserPersistence? persiste
         db.EntityIUserEventQuestGuerrillaFreeOpen.Add(new EntityIUserEventQuestGuerrillaFreeOpen { UserId = db.UserId });
         db.EntityIUserEventQuestDailyGroupCompleteReward.Add(new EntityIUserEventQuestDailyGroupCompleteReward { UserId = db.UserId });
         db.EntityIUserShopReplaceable.Add(new EntityIUserShopReplaceable { UserId = db.UserId });
-        db.EntityIUserPvpStatus.Add(new EntityIUserPvpStatus { UserId = db.UserId, StaminaUpdateDatetime = nowMs });
+        // Arena battle points start full.
+        int maxBattlePoints = GameConfig.From(masterDb.EntityMConfig).PvpMaxBattlePoint;
+        db.EntityIUserPvpStatus.Add(new EntityIUserPvpStatus { UserId = db.UserId, StaminaMilliValue = maxBattlePoints * 1000, StaminaUpdateDatetime = nowMs });
         db.EntityIUserPvpDefenseDeck.Add(new EntityIUserPvpDefenseDeck { UserId = db.UserId });
         db.EntityIUserQuestAutoOrbit.Add(new EntityIUserQuestAutoOrbit { UserId = db.UserId });
 
