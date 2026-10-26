@@ -219,10 +219,19 @@ public class UserService(UserDataStore store, UserDataSeeder seeder, DarkMasterM
         });
     }
 
-    /// <summary>Stub for game play note retrieval; returns empty response.</summary>
+    /// <summary>
+    /// One play-history counter. The smartphone's pedometer asks for metres walked in The Cage and adds what it
+    /// hasn't sent yet.
+    /// </summary>
     public override Task<GetUserGamePlayNoteResponse> GetUserGamePlayNote(GetUserGamePlayNoteRequest request, ServerCallContext context)
     {
-        return Task.FromResult(new GetUserGamePlayNoteResponse());
+        DarkUserMemoryDatabase userDb = _store.GetOrCreate(context.GetUserId());
+        long count = PlayHistoryHelper.Get(userDb, (GamePlayHistoryType)request.GamePlayHistoryTypeId);
+
+        return Task.FromResult(new GetUserGamePlayNoteResponse
+        {
+            ProgressValue = (int)Math.Min(count, int.MaxValue)
+        });
     }
 
     /// <summary>Returns a player's profile including name, level, favorite costume, and lead deck character.</summary>

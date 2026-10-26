@@ -2712,6 +2712,22 @@ namespace MariesWonderland.Persistence.Migrations.Sqlite
                     b.ToTable("SGachaRewardState", (string)null);
                 });
 
+            modelBuilder.Entity("MariesWonderland.Models.Entities.EntitySPlayHistory", b =>
+                {
+                    b.Property<long>("UserId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("GamePlayHistoryType")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<long>("Count")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("UserId", "GamePlayHistoryType");
+
+                    b.ToTable("SPlayHistory", (string)null);
+                });
+
             modelBuilder.Entity("MariesWonderland.Models.Entities.EntitySQuestAutoOrbit", b =>
                 {
                     b.Property<long>("UserId")

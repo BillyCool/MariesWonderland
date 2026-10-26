@@ -94,13 +94,15 @@ public sealed class MissionTracker(DarkMasterMemoryDatabase masterDb, MissionCat
 
     /// <summary>
     /// What the client measured in The Cage since it last reported (it sends the values on the next call that
-    /// carries them, then starts again from 0): metres walked and taps on Mama. Both add up.
+    /// carries them, then starts again from 0): metres walked and taps on Mama. Both add up. The metres also go
+    /// on the lifetime walk total the smartphone's pedometer reads.
     /// </summary>
     public void RecordCageValues(DarkUserMemoryDatabase userDb, int walkedMeters, int mamaTaps, long nowMs)
     {
         if (walkedMeters > 0)
         {
             Record(userDb, MissionClearConditionType.TOWER_WALKED_DISTANCE, walkedMeters, nowMs);
+            PlayHistoryHelper.Add(userDb, GamePlayHistoryType.CAGE_WALKED_DISTANCE, walkedMeters);
         }
 
         if (mamaTaps > 0)

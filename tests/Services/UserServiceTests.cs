@@ -1,4 +1,4 @@
-using Google.Protobuf.WellKnownTypes;
+﻿using Google.Protobuf.WellKnownTypes;
 using MariesWonderland.Missions;
 using MariesWonderland.Configuration;
 using MariesWonderland.Data;
@@ -457,5 +457,33 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
 
         Assert.Single(userDb.EntityIUserGem);
         Assert.Equal(100, userDb.EntityIUserGem[0].PaidGem);
+    }
+
+    /// <summary>
+    /// The smartphone's pedometer reads the metres walked in The Cage (history type 13): every reported walk adds
+    /// up, and a counter nothing was recorded for reads 0.
+    /// </summary>
+    [Fact]
+    public async Task GetUserGamePlayNote_ReturnsTheWalkedMetresReportedSoFar()
+    {
+        DarkUserMemoryDatabase userDb = new() { UserId = UserId };
+        UserDataStore store = CreateStore(UserId, userDb);
+        MissionTracker missions = new(MasterDb, new MissionCatalog(MasterDb, MissionFilterTable.Empty));
+        UserService service = new(store, new UserDataSeeder(Options.Create(new ServerOptions())), MasterDb, missions, TimeProvider.System);
+
+        missions.RecordCageValues(userDb, 250, 0, 0);
+        missions.RecordCageValues(userDb, 120, 4, 0);
+        missions.RecordCageValues(userDb, 0, 2, 0);
+
+        GetUserGamePlayNoteResponse walked = await service.GetUserGamePlayNote(
+            new GetUserGamePlayNoteRequest { GamePlayHistoryTypeId = (int)GamePlayHistoryType.CAGE_WALKED_DISTANCE },
+            ContextFor(UserId));
+        GetUserGamePlayNoteResponse other = await service.GetUserGamePlayNote(
+            new GetUserGamePlayNoteRequest { GamePlayHistoryTypeId = (int)GamePlayHistoryType.BLACK_BIRDS_SLAIN },
+            ContextFor(UserId));
+
+        Assert.Equal(370, walked.ProgressValue);
+        Assert.Equal(0, other.ProgressValue);
+        Assert.Single(userDb.EntitySPlayHistory);
     }
 }

@@ -243,4 +243,6 @@ public class DarkUserMemoryDatabase
 
     public List<EntitySGachaRewardState> EntitySGachaRewardState { get; set; } = [];
 
+    public List<EntitySPlayHistory> EntitySPlayHistory { get; set; } = [];
+
 }
