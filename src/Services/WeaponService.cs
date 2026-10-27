@@ -51,7 +51,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
             EntityMWeaponSpecificEnhance? enhance = WeaponHelper.ResolveEnhance(_masterDb, wm);
             if (enhance != null)
             {
-                totalGold += EvaluateNumericalFunction(enhance.SellPriceNumericalFunctionId, weapon.Level);
+                totalGold += NumericalFunctionHelper.Evaluate(_masterDb, enhance.SellPriceNumericalFunctionId, weapon.Level);
             }
 
             // Grant exchange medals associated with this weapon
@@ -205,7 +205,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
             EntityMWeaponSpecificEnhance? enhance = WeaponHelper.ResolveEnhance(_masterDb, wm);
             if (enhance != null)
             {
-                int goldCost = EvaluateNumericalFunction(enhance.EnhancementCostByMaterialNumericalFunctionId, totalMaterialCount);
+                int goldCost = NumericalFunctionHelper.Evaluate(_masterDb, enhance.EnhancementCostByMaterialNumericalFunctionId, totalMaterialCount);
                 if (isGreatSuccess)
                 {
                     goldCost -= EnhanceCampaignHelper.GreatSuccessRefund(goldCost);
@@ -292,7 +292,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
             EntityMWeaponSpecificEnhance? enhance = WeaponHelper.ResolveEnhance(_masterDb, wm);
             if (enhance != null)
             {
-                int goldCost = EvaluateNumericalFunction(enhance.EnhancementCostByWeaponNumericalFunctionId, consumedCount);
+                int goldCost = NumericalFunctionHelper.Evaluate(_masterDb, enhance.EnhancementCostByWeaponNumericalFunctionId, consumedCount);
                 SubtractGold(userDb, goldCost);
             }
         }
@@ -367,7 +367,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
             return Task.FromResult(new EnhanceSkillResponse());
         }
 
-        int maxLevel = EvaluateNumericalFunction(enhance.MaxSkillLevelNumericalFunctionId, weapon.LimitBreakCount);
+        int maxLevel = NumericalFunctionHelper.Evaluate(_masterDb, enhance.MaxSkillLevelNumericalFunctionId, weapon.LimitBreakCount);
         int addCount = request.AddLevelCount;
         if (userSkill.Level + addCount > maxLevel)
         {
@@ -394,7 +394,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
                 }
             }
 
-            int goldCost = EvaluateNumericalFunction(enhance.SkillEnhancementCostNumericalFunctionId, lvl + 1);
+            int goldCost = NumericalFunctionHelper.Evaluate(_masterDb, enhance.SkillEnhancementCostNumericalFunctionId, lvl + 1);
             SubtractGold(userDb, goldCost);
         }
 
@@ -464,7 +464,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
             return Task.FromResult(new EnhanceAbilityResponse());
         }
 
-        int maxLevel = EvaluateNumericalFunction(enhance.MaxAbilityLevelNumericalFunctionId, weapon.LimitBreakCount);
+        int maxLevel = NumericalFunctionHelper.Evaluate(_masterDb, enhance.MaxAbilityLevelNumericalFunctionId, weapon.LimitBreakCount);
         int addCount = request.AddLevelCount;
         if (userAbility.Level + addCount > maxLevel)
         {
@@ -491,7 +491,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
                 }
             }
 
-            int goldCost = EvaluateNumericalFunction(enhance.AbilityEnhancementCostNumericalFunctionId, lvl + 1);
+            int goldCost = NumericalFunctionHelper.Evaluate(_masterDb, enhance.AbilityEnhancementCostNumericalFunctionId, lvl + 1);
             SubtractGold(userDb, goldCost);
         }
 
@@ -561,7 +561,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
             EntityMWeaponSpecificEnhance? enhance = WeaponHelper.ResolveEnhance(_masterDb, wm);
             if (enhance != null)
             {
-                int goldCost = EvaluateNumericalFunction(enhance.LimitBreakCostByMaterialNumericalFunctionId, totalMaterialCount);
+                int goldCost = NumericalFunctionHelper.Evaluate(_masterDb, enhance.LimitBreakCostByMaterialNumericalFunctionId, totalMaterialCount);
                 SubtractGold(userDb, goldCost);
             }
         }
@@ -640,7 +640,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
             EntityMWeaponSpecificEnhance? enhance = WeaponHelper.ResolveEnhance(_masterDb, wm);
             if (enhance != null)
             {
-                int goldCost = EvaluateNumericalFunction(enhance.LimitBreakCostByWeaponNumericalFunctionId, consumedCount);
+                int goldCost = NumericalFunctionHelper.Evaluate(_masterDb, enhance.LimitBreakCostByWeaponNumericalFunctionId, consumedCount);
                 SubtractGold(userDb, goldCost);
             }
         }
@@ -727,7 +727,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
             EntityMWeaponSpecificEnhance? enhance = WeaponHelper.ResolveEnhance(_masterDb, wm);
             if (enhance != null)
             {
-                int goldCost = EvaluateNumericalFunction(enhance.EvolutionCostNumericalFunctionId, totalMaterialCount);
+                int goldCost = NumericalFunctionHelper.Evaluate(_masterDb, enhance.EvolutionCostNumericalFunctionId, totalMaterialCount);
                 SubtractGold(userDb, goldCost);
             }
         }
@@ -1090,7 +1090,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
             return false;
         }
 
-        int maxLevel = EvaluateNumericalFunction(enhance.MaxLevelNumericalFunctionId, 0);
+        int maxLevel = NumericalFunctionHelper.Evaluate(_masterDb, enhance.MaxLevelNumericalFunctionId, 0);
         return level >= maxLevel;
     }
 
@@ -1128,79 +1128,6 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
                 ReleasedMaxStoryIndex = storyIndex
             });
         }
-    }
-
-    /// <summary>
-    /// Evaluates a numerical function (linear, monomial, polynomial) from master data parameters.
-    /// </summary>
-    /// <summary>
-    /// Evaluates a master data numerical function (LINEAR, MONOMIAL, POLYNOMIAL, etc.) used for cost and threshold calculations.
-    /// </summary>
-    private int EvaluateNumericalFunction(int functionId, int value)    {
-        EntityMNumericalFunction? func = null;
-        foreach (EntityMNumericalFunction f in _masterDb.EntityMNumericalFunction)
-        {
-            if (f.NumericalFunctionId == functionId)
-            {
-                func = f;
-                break;
-            }
-        }
-
-        if (func == null)
-        {
-            return 0;
-        }
-
-        List<(int Index, int Value)> paramEntries = [];
-        foreach (EntityMNumericalFunctionParameterGroup pg in _masterDb.EntityMNumericalFunctionParameterGroup)
-        {
-            if (pg.NumericalFunctionParameterGroupId == func.NumericalFunctionParameterGroupId)
-            {
-                paramEntries.Add((pg.ParameterIndex, pg.ParameterValue));
-            }
-        }
-        paramEntries.Sort((a, b) => a.Index.CompareTo(b.Index));
-
-        int[] p = new int[paramEntries.Count];
-        for (int i = 0; i < paramEntries.Count; i++)
-        {
-            p[i] = paramEntries[i].Value;
-        }
-
-        return func.NumericalFunctionType switch
-        {
-            NumericalFunctionType.LINEAR when p.Length >= 2 => p[1] + p[0] * value,
-            NumericalFunctionType.MONOMIAL when p.Length >= 2 => EvaluateMonomial(p, value),
-            NumericalFunctionType.LINEAR_PERMIL when p.Length >= 2 => p[0] * value / 1000 + p[1],
-            NumericalFunctionType.POLYNOMIAL_THIRD when p.Length >= 4 => p[3] + (p[2] + (p[1] + p[0] * value) * value) * value,
-            NumericalFunctionType.POLYNOMIAL_THIRD_PERMIL when p.Length >= 4 =>
-                p[0] * value * value * value / 1000 +
-                p[1] * value * value / 1000 +
-                p[2] * value / 1000 +
-                p[3],
-            _ => 0
-        };
-    }
-
-    /// <summary>
-    /// Computes a monomial function: coefficient * (value - 1) ^ exponent.
-    /// </summary>
-    private static int EvaluateMonomial(int[] p, int value)
-    {
-        int v = value - 1;
-        int result = v;
-        int counter = p[1];
-        if (counter > 1)
-        {
-            counter--;
-            while (counter > 0)
-            {
-                counter--;
-                result *= v;
-            }
-        }
-        return result * p[0];
     }
 
     #endregion

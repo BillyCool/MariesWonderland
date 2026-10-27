@@ -79,7 +79,7 @@ public class PartsService(DarkMasterMemoryDatabase masterDb, UserDataStore store
 
             if (rarityRow != null)
             {
-                int gold = EvaluateNumericalFunction(rarityRow.SellPriceNumericalFunctionId, part.Level);
+                int gold = NumericalFunctionHelper.Evaluate(_masterDb, rarityRow.SellPriceNumericalFunctionId, part.Level);
                 totalGold += gold;
             }
 
@@ -573,79 +573,5 @@ public class PartsService(DarkMasterMemoryDatabase masterDb, UserDataStore store
             }
         }
         return null;
-    }
-
-    /// <summary>
-    /// Evaluates a master data numerical function against an input value (e.g., computes sell price for a given part level).
-    /// Returns 0 if the function definition is not found or the formula type is unrecognised.
-    /// </summary>
-    private int EvaluateNumericalFunction(int functionId, int value)
-    {
-        EntityMNumericalFunction? func = null;
-        foreach (EntityMNumericalFunction f in _masterDb.EntityMNumericalFunction)
-        {
-            if (f.NumericalFunctionId == functionId)
-            {
-                func = f;
-                break;
-            }
-        }
-
-        if (func == null)
-        {
-            return 0;
-        }
-
-        // Collect and sort parameters by index
-        List<(int Index, int Value)> paramEntries = [];
-        foreach (EntityMNumericalFunctionParameterGroup pg in _masterDb.EntityMNumericalFunctionParameterGroup)
-        {
-            if (pg.NumericalFunctionParameterGroupId == func.NumericalFunctionParameterGroupId)
-            {
-                paramEntries.Add((pg.ParameterIndex, pg.ParameterValue));
-            }
-        }
-        paramEntries.Sort((a, b) => a.Index.CompareTo(b.Index));
-
-        int[] p = new int[paramEntries.Count];
-        for (int i = 0; i < paramEntries.Count; i++)
-        {
-            p[i] = paramEntries[i].Value;
-        }
-
-        // Dispatch to the appropriate formula type
-        return func.NumericalFunctionType switch
-        {
-            NumericalFunctionType.LINEAR when p.Length >= 2 => p[1] + p[0] * value,
-            NumericalFunctionType.MONOMIAL when p.Length >= 2 => EvaluateMonomial(p, value),
-            NumericalFunctionType.LINEAR_PERMIL when p.Length >= 2 => p[0] * value / 1000 + p[1],
-            NumericalFunctionType.POLYNOMIAL_THIRD when p.Length >= 4 => p[3] + (p[2] + (p[1] + p[0] * value) * value) * value,
-            NumericalFunctionType.POLYNOMIAL_THIRD_PERMIL when p.Length >= 4 =>
-                p[0] * value * value * value / 1000 +
-                p[1] * value * value / 1000 +
-                p[2] * value / 1000 +
-                p[3],
-            _ => 0
-        };
-    }
-
-    /// <summary>
-    /// Computes <c>p[0] * (value - 1)^p[1]</c> using iterative multiplication.
-    /// </summary>
-    private static int EvaluateMonomial(int[] p, int value)
-    {
-        int v = value - 1;
-        int result = v;
-        int counter = p[1];
-        if (counter > 1)
-        {
-            counter--;
-            while (counter > 0)
-            {
-                counter--;
-                result *= v;
-            }
-        }
-        return result * p[0];
     }
 }

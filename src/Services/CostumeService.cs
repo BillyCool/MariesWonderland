@@ -146,7 +146,7 @@ public class CostumeService(DarkMasterMemoryDatabase masterDb, UserDataStore sto
         // Deduct gold cost scaled by number of materials used
         if (totalMaterialCount > 0 && rarityRow != null)
         {
-            int goldCost = EvaluateNumericalFunction(rarityRow.EnhancementCostByMaterialNumericalFunctionId, totalMaterialCount);
+            int goldCost = NumericalFunctionHelper.Evaluate(_masterDb, rarityRow.EnhancementCostByMaterialNumericalFunctionId, totalMaterialCount);
             if (isGreatSuccess)
             {
                 goldCost -= EnhanceCampaignHelper.GreatSuccessRefund(goldCost);
@@ -182,83 +182,6 @@ public class CostumeService(DarkMasterMemoryDatabase masterDb, UserDataStore sto
         EnhanceResponse response = new() { IsGreatSuccess = isGreatSuccess };
         response.SurplusEnhanceMaterial.Add(surplusMaterials);
         return Task.FromResult(response);
-    }
-
-    /// <summary>
-    /// Evaluates a numerical function (linear, monomial, polynomial) from master data parameters.
-    /// </summary>
-    /// <summary>
-    /// Evaluates a master data numerical function (LINEAR, MONOMIAL, POLYNOMIAL, etc.) used for cost and threshold calculations.
-    /// </summary>
-    private int EvaluateNumericalFunction(int functionId, int value)
-    {
-        EntityMNumericalFunction? func = null;
-        foreach (EntityMNumericalFunction f in _masterDb.EntityMNumericalFunction)
-        {
-            if (f.NumericalFunctionId == functionId)
-            {
-                func = f;
-                break;
-            }
-        }
-
-        if (func == null)
-        {
-            return 0;
-        }
-
-        List<(int Index, int Value)> paramEntries = [];
-        foreach (EntityMNumericalFunctionParameterGroup pg in _masterDb.EntityMNumericalFunctionParameterGroup)
-        {
-            if (pg.NumericalFunctionParameterGroupId == func.NumericalFunctionParameterGroupId)
-            {
-                paramEntries.Add((pg.ParameterIndex, pg.ParameterValue));
-            }
-        }
-        paramEntries.Sort((a, b) => a.Index.CompareTo(b.Index));
-
-        int[] p = new int[paramEntries.Count];
-        for (int i = 0; i < paramEntries.Count; i++)
-        {
-            p[i] = paramEntries[i].Value;
-        }
-
-        return func.NumericalFunctionType switch
-        {
-            NumericalFunctionType.LINEAR when p.Length >= 2 => p[1] + p[0] * value,
-            NumericalFunctionType.MONOMIAL when p.Length >= 2 => EvaluateMonomial(p, value),
-            NumericalFunctionType.LINEAR_PERMIL when p.Length >= 2 => p[0] * value / 1000 + p[1],
-            NumericalFunctionType.POLYNOMIAL_THIRD when p.Length >= 4 => p[3] + (p[2] + (p[1] + p[0] * value) * value) * value,
-            NumericalFunctionType.POLYNOMIAL_THIRD_PERMIL when p.Length >= 4 =>
-                p[0] * value * value * value / 1000 +
-                p[1] * value * value / 1000 +
-                p[2] * value / 1000 +
-                p[3],
-            _ => 0
-        };
-    }
-
-    /// <summary>
-    /// Evaluates a monomial function: p[0] * (value - 1)^p[1].
-    /// </summary>
-    /// <summary>
-    /// Computes a monomial function: coefficient * (value - 1) ^ exponent.
-    /// </summary>
-    private static int EvaluateMonomial(int[] p, int value)
-    {
-        int v = value - 1;
-        int result = v;
-        int counter = p[1];
-        if (counter > 1)
-        {
-            counter--;
-            while (counter > 0)
-            {
-                counter--;
-                result *= v;
-            }
-        }
-        return result * p[0];
     }
 
     /// <summary>
@@ -339,7 +262,7 @@ public class CostumeService(DarkMasterMemoryDatabase masterDb, UserDataStore sto
 
             if (rarityRow != null)
             {
-                int goldCost = EvaluateNumericalFunction(rarityRow.LimitBreakCostNumericalFunctionId, totalMaterialCount);
+                int goldCost = NumericalFunctionHelper.Evaluate(_masterDb, rarityRow.LimitBreakCostNumericalFunctionId, totalMaterialCount);
                 SubtractGold(userDb, goldCost);
             }
         }
@@ -556,7 +479,7 @@ public class CostumeService(DarkMasterMemoryDatabase masterDb, UserDataStore sto
             return Task.FromResult(new EnhanceActiveSkillResponse());
         }
 
-        int maxLevel = EvaluateNumericalFunction(rarityRow.ActiveSkillMaxLevelNumericalFunctionId, 1);
+        int maxLevel = NumericalFunctionHelper.Evaluate(_masterDb, rarityRow.ActiveSkillMaxLevelNumericalFunctionId, 1);
 
         // Cap the requested level increase at the max
         int addCount = request.AddLevelCount;
@@ -590,7 +513,7 @@ public class CostumeService(DarkMasterMemoryDatabase masterDb, UserDataStore sto
                 }
             }
 
-            int goldCost = EvaluateNumericalFunction(rarityRow.ActiveSkillEnhancementCostNumericalFunctionId, lvl + 1);
+            int goldCost = NumericalFunctionHelper.Evaluate(_masterDb, rarityRow.ActiveSkillEnhancementCostNumericalFunctionId, lvl + 1);
             SubtractGold(userDb, goldCost);
         }
 
