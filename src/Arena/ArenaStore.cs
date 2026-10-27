@@ -50,7 +50,7 @@ public sealed class ArenaStore
 
     /// <summary>
     /// Opponents are drawn from players and bots within this many points of the player.
-    /// TODO: review. The owner remembers it as roughly 5,000 but isn't sure; neither the client nor master data says.
+    /// REVIEW: the owner remembers it as roughly 5,000 but isn't sure; neither the client nor master data says.
     /// </summary>
     public const int MatchingRange = 5_000;
 

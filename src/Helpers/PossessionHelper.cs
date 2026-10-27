@@ -218,7 +218,7 @@ public static class PossessionHelper
                 });
             }
 
-            // TODO: Roll initial memoir sub-statuses for higher-rank drops. Needs the sub-status pool
+            // REVIEW: roll initial memoir sub-statuses for higher-rank drops. Needs the sub-status pool
             // from master data, which isn't modelled yet, so only the base part row is created for now.
         }
 

@@ -25,7 +25,7 @@ public class ExploreService(UserDataStore store, DarkMasterMemoryDatabase master
 
     // Each lottery draw grants this many of the pulled material
 
-    // TODO: Review and add more material IDs to expand the loot pool
+    // REVIEW: add more material IDs to expand the loot pool
     private static readonly int[] RewardMaterialPool = [100001];
 
     private readonly UserDataStore _store = store;

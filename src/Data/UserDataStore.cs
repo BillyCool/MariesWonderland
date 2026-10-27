@@ -628,7 +628,7 @@ public class UserDataStore(TimeProvider timeProvider, IUserPersistence? persiste
         db.EntityIUserPvpDefenseDeck.Add(new EntityIUserPvpDefenseDeck { UserId = db.UserId });
         db.EntityIUserQuestAutoOrbit.Add(new EntityIUserQuestAutoOrbit { UserId = db.UserId });
 
-        // TODO: Seed the first mission record (missionId=1, IN_PROGRESS) once missions are implemented.
+        // REVIEW: seed the first mission record (missionId=1, IN_PROGRESS) once missions are implemented.
     }
 }
 

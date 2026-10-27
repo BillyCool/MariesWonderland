@@ -1498,7 +1498,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
 
     private void ApplyQuestSceneChoiceSideEffects(DarkUserMemoryDatabase userDb, EntityMQuestSceneChoiceEffect choiceEffect, long nowMs)
     {
-        // TODO: If quest-scene choice effects are supposed to compensate already-owned gear with duplicate rewards,
+        // REVIEW: if quest-scene choice effects are supposed to compensate already-owned gear with duplicate rewards,
         // the current repo has no quest-choice-specific conversion model for that. Skip duplicate grants for safety.
         foreach (EntityMQuestSceneChoiceCostumeEffectGroup costumeEffect in _masterDb.EntityMQuestSceneChoiceCostumeEffectGroup
             .Where(g => g.QuestSceneChoiceCostumeEffectGroupId == choiceEffect.QuestSceneChoiceCostumeEffectGroupId)

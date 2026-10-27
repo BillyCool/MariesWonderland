@@ -107,8 +107,8 @@ public static class CageGimmickHelper
 
     /// <summary>
     /// What one fickle black bird, Lost Item or fruit from Mama's Room gives.
-    /// TODO: placeholder. The live game drew these from a random loot pool that isn't in master data or any file we
-    /// have; replace this once the pools are reviewed (docs/cage-gimmicks-client.md, "Loot pools").
+    /// REVIEW: placeholder. The live game drew these from a random loot pool that isn't in master data or any file we
+    /// have; replace this once the pools are reviewed (docs/systems/cage.md, "Loot pools").
     /// </summary>
     public static (PossessionType PossessionType, int PossessionId, int Count) PlaceholderLoot(GameConfig gameConfig)
         => (PossessionType.CONSUMABLE_ITEM, gameConfig.ConsumableItemIdForGold, 1000);
