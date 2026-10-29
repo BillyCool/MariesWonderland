@@ -2,6 +2,7 @@ using MariesWonderland.Configuration;
 using MariesWonderland.Data;
 using MariesWonderland.Extensions;
 using MariesWonderland.Interceptors;
+using MariesWonderland.Middleware;
 using MariesWonderland.Persistence;
 using Microsoft.Extensions.Configuration.Json;
 using Microsoft.Extensions.Options;
@@ -64,6 +65,12 @@ public static class Program
         {
             int importedUsers = userDataStore.Load(userSnapshotPath);
             app.Logger.LogInformation("Imported {Count} users from {Path} into the user database", importedUsers, userSnapshotPath);
+        }
+
+        // First in the pipeline for gRPC calls: everything behind it, interceptors included, deals with plain messages.
+        if (serverOptions.Grpc.EncryptMessages)
+        {
+            app.UseMiddleware<GrpcPayloadEncryptionMiddleware>();
         }
 
         app.MapGrpcServices();

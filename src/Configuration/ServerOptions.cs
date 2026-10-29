@@ -6,6 +6,16 @@ public sealed class ServerOptions
 
     public PathsOptions Paths { get; init; } = new();
     public DataOptions Data { get; init; } = new();
+    public GrpcOptions Grpc { get; init; } = new();
+}
+
+public sealed class GrpcOptions
+{
+    /// <summary>
+    /// Whether gRPC messages are encrypted like the original client does (see <c>Middleware/GrpcPayloadCipher</c>).
+    /// Turn off only for a client whose <c>HandleNet.Encrypt</c>/<c>Decrypt</c> are patched to pass messages through.
+    /// </summary>
+    public bool EncryptMessages { get; init; } = true;
 }
 
 public sealed class PathsOptions
