@@ -1,3 +1,4 @@
+using Grpc.Core;
 using MariesWonderland.Data;
 using MariesWonderland.Missions;
 using MariesWonderland.Helpers;
@@ -51,6 +52,66 @@ public class WeaponServiceTests
     private const int LimitBreakByMaterialCostFunctionId = 9009;
     private const int LimitBreakByWeaponCostFunctionId = 9010;
     private const int EvolutionCostFunctionId = 9011;
+
+    [Theory]
+    [InlineData(true)]
+    [InlineData(false)]
+    public async Task Sell_AWeaponADeckHolds_IsRefusedAndNothingIsSold(bool asMainWeapon)
+    {
+        DarkMasterMemoryDatabase masterDb = CreateMasterDb();
+        ConfigureMainWeapon(masterDb, sellPriceFunctionId: SellPriceFunctionId);
+        AddLinearFunction(masterDb, SellPriceFunctionId, slope: 0, intercept: 11);
+
+        DarkUserMemoryDatabase userDb = CreateUserDb();
+        userDb.EntityIUserWeapon.AddRange(
+        [
+            new EntityIUserWeapon { UserId = UserId, UserWeaponUuid = "worn-weapon", WeaponId = TargetWeaponId, Level = 4 },
+            new EntityIUserWeapon { UserId = UserId, UserWeaponUuid = "spare-weapon", WeaponId = TargetWeaponId, Level = 1 },
+        ]);
+        if (asMainWeapon)
+        {
+            userDb.EntityIUserDeckCharacter.Add(new EntityIUserDeckCharacter { UserId = UserId, UserDeckCharacterUuid = "character", MainUserWeaponUuid = "worn-weapon" });
+        }
+        else
+        {
+            userDb.EntityIUserDeckSubWeaponGroup.Add(new EntityIUserDeckSubWeaponGroup { UserId = UserId, UserDeckCharacterUuid = "character", UserWeaponUuid = "worn-weapon", SortOrder = 1 });
+        }
+
+        WeaponServiceImpl service = CreateService(masterDb, userDb);
+        SellRequest request = new();
+        request.UserWeaponUuid.Add("spare-weapon");
+        request.UserWeaponUuid.Add("worn-weapon");
+
+        RpcException error = await Assert.ThrowsAsync<RpcException>(() => service.Sell(request, FakeServerCallContext.For(UserId)));
+
+        Assert.Equal(StatusCode.FailedPrecondition, error.StatusCode);
+        Assert.Equal(2, userDb.EntityIUserWeapon.Count);
+    }
+
+    [Fact]
+    public async Task Sell_AProtectedWeapon_IsRefusedAndNothingIsSold()
+    {
+        DarkMasterMemoryDatabase masterDb = CreateMasterDb();
+        ConfigureMainWeapon(masterDb, sellPriceFunctionId: SellPriceFunctionId);
+        AddLinearFunction(masterDb, SellPriceFunctionId, slope: 0, intercept: 11);
+
+        DarkUserMemoryDatabase userDb = CreateUserDb();
+        userDb.EntityIUserWeapon.AddRange(
+        [
+            new EntityIUserWeapon { UserId = UserId, UserWeaponUuid = "protected-weapon", WeaponId = TargetWeaponId, Level = 4, IsProtected = true },
+            new EntityIUserWeapon { UserId = UserId, UserWeaponUuid = "spare-weapon", WeaponId = TargetWeaponId, Level = 1 },
+        ]);
+
+        WeaponServiceImpl service = CreateService(masterDb, userDb);
+        SellRequest request = new();
+        request.UserWeaponUuid.Add("spare-weapon");
+        request.UserWeaponUuid.Add("protected-weapon");
+
+        RpcException error = await Assert.ThrowsAsync<RpcException>(() => service.Sell(request, FakeServerCallContext.For(UserId)));
+
+        Assert.Equal(StatusCode.FailedPrecondition, error.StatusCode);
+        Assert.Equal(2, userDb.EntityIUserWeapon.Count);
+    }
 
     [Fact]
     public async Task Sell_RemovesSoldWeaponRecordsAndAddsGoldAndExchangeItems()
@@ -348,6 +409,30 @@ public class WeaponServiceTests
 
         // Same type: (120 + 505 × 100 / 1000 = 50) × 1500 / 1000 = 255. Other type: 50 + 1009 × 100 / 1000 = 150.
         Assert.Equal(405, Assert.Single(userDb.EntityIUserWeapon).Exp);
+    }
+
+    [Fact]
+    public async Task EnhanceByWeapon_AProtectedFodderWeapon_IsRefusedAndNothingIsConsumed()
+    {
+        DarkMasterMemoryDatabase masterDb = CreateMasterDb();
+        ConfigureMainWeapon(masterDb, weaponType: WeaponType.SWORD);
+        ConfigureFodderWeapon(masterDb, weaponType: WeaponType.GUN, baseEnhancementObtainedExp: 50);
+
+        DarkUserMemoryDatabase userDb = CreateUserDb();
+        userDb.EntityIUserWeapon.AddRange(
+        [
+            new EntityIUserWeapon { UserId = UserId, UserWeaponUuid = "target-weapon", WeaponId = TargetWeaponId, Level = 1 },
+            new EntityIUserWeapon { UserId = UserId, UserWeaponUuid = "protected-fodder", WeaponId = FodderWeaponId, Level = 1, IsProtected = true },
+        ]);
+
+        WeaponServiceImpl service = CreateService(masterDb, userDb);
+        EnhanceByWeaponRequest request = new() { UserWeaponUuid = "target-weapon" };
+        request.MaterialUserWeaponUuids.Add("protected-fodder");
+
+        RpcException error = await Assert.ThrowsAsync<RpcException>(() => service.EnhanceByWeapon(request, FakeServerCallContext.For(UserId)));
+
+        Assert.Equal(StatusCode.FailedPrecondition, error.StatusCode);
+        Assert.Equal(2, userDb.EntityIUserWeapon.Count);
     }
 
     [Fact]

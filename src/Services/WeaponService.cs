@@ -1,4 +1,5 @@
 using Grpc.Core;
+using MariesWonderland.Constants;
 using MariesWonderland.Data;
 using MariesWonderland.Extensions;
 using MariesWonderland.Helpers;
@@ -31,6 +32,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
         long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
 
+        RejectWeaponsInUse(userDb, request.UserWeaponUuid);
         int totalGold = 0;
 
         foreach (string uuid in request.UserWeaponUuid)
@@ -229,6 +231,24 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
     }
 
     /// <summary>
+    /// Refuses (before anything changes) when any of the weapons is worn by a deck or protected: neither can be sold or
+    /// used up as fodder.
+    /// </summary>
+    private static void RejectWeaponsInUse(DarkUserMemoryDatabase userDb, IEnumerable<string> userWeaponUuids)
+    {
+        string[] uuids = [.. userWeaponUuids];
+        if (uuids.Any(uuid => DeckGearHelper.IsWeaponInDeck(userDb, uuid)))
+        {
+            throw new RpcException(new Status(StatusCode.FailedPrecondition, DeckErrors.WeaponInDeck));
+        }
+
+        if (userDb.EntityIUserWeapon.Any(w => w.IsProtected && uuids.Contains(w.UserWeaponUuid)))
+        {
+            throw new RpcException(new Status(StatusCode.FailedPrecondition, DeckErrors.WeaponProtected));
+        }
+    }
+
+    /// <summary>
     /// Enhances a weapon by consuming other weapons as EXP fodder. Same-type fodder grants a 1.5x EXP bonus.
     /// </summary>
     public override Task<EnhanceByWeaponResponse> EnhanceByWeapon(EnhanceByWeaponRequest request, ServerCallContext context)
@@ -249,6 +269,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
             return Task.FromResult(new EnhanceByWeaponResponse { IsGreatSuccess = false });
         }
 
+        RejectWeaponsInUse(userDb, request.MaterialUserWeaponUuids);
         int totalExp = 0;
         int consumedCount = 0;
 
@@ -601,6 +622,7 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
         }
 
         // Consume duplicate weapons up to the remaining limit break slots
+        RejectWeaponsInUse(userDb, request.MaterialUserWeaponUuids);
         int remaining = _gameConfig.WeaponLimitBreakAvailableCount - weapon.LimitBreakCount;
         int consumedCount = 0;
 

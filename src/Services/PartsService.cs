@@ -1,4 +1,5 @@
 using Grpc.Core;
+using MariesWonderland.Constants;
 using MariesWonderland.Data;
 using MariesWonderland.Extensions;
 using MariesWonderland.Helpers;
@@ -30,6 +31,11 @@ public class PartsService(DarkMasterMemoryDatabase masterDb, UserDataStore store
     {
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
+
+        if (request.UserPartsUuid.Any(uuid => DeckGearHelper.IsPartsInDeck(userDb, uuid)))
+        {
+            throw new RpcException(new Status(StatusCode.FailedPrecondition, DeckErrors.PartsInDeck));
+        }
 
         int totalGold = 0;
 

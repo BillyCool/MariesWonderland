@@ -1,3 +1,4 @@
+using Grpc.Core;
 using MariesWonderland.Data;
 using MariesWonderland.Missions;
 using MariesWonderland.Helpers;
@@ -135,6 +136,30 @@ public class PartsServiceTests
         Assert.Equal(999, subStatus.PartsStatusSubLotteryId);
         Assert.Equal(42, subStatus.StatusChangeValue);
         Assert.Equal(123, subStatus.LatestVersion);
+    }
+
+    [Fact]
+    public async Task Sell_AMemoirADeckHolds_IsRefusedAndNothingIsSold()
+    {
+        DarkMasterMemoryDatabase masterDb = CreateMasterDb();
+        ConfigurePartsMaster(masterDb, sellFunctionId: 11);
+
+        DarkUserMemoryDatabase userDb = CreateUserDb();
+        userDb.EntityIUserParts.AddRange(
+        [
+            new EntityIUserParts { UserId = UserId, UserPartsUuid = "worn-part", PartsId = 1 },
+            new EntityIUserParts { UserId = UserId, UserPartsUuid = "spare-part", PartsId = 1 },
+        ]);
+        userDb.EntityIUserDeckPartsGroup.Add(new EntityIUserDeckPartsGroup { UserId = UserId, UserDeckCharacterUuid = "character", UserPartsUuid = "worn-part", SortOrder = 1 });
+
+        PartsService service = CreateService(masterDb, userDb);
+
+        RpcException error = await Assert.ThrowsAsync<RpcException>(() => service.Sell(
+            new SellRequest { UserPartsUuid = { "spare-part", "worn-part" } },
+            FakeServerCallContext.For(UserId)));
+
+        Assert.Equal(StatusCode.FailedPrecondition, error.StatusCode);
+        Assert.Equal(2, userDb.EntityIUserParts.Count);
     }
 
     [Fact]
