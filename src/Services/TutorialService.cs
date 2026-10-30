@@ -100,17 +100,13 @@ public class TutorialService(UserDataStore store, DarkMasterMemoryDatabase maste
     }
 
     /// <summary>
-    /// Creates a minimal starter deck (DeckType=QUEST, DeckNumber=1) using the player's first
-    /// owned costume/weapon/companion. Only runs when no deck 1 character slot exists yet.
-    /// Idempotent: safe to call multiple times.
+    /// Creates a minimal starter deck (DeckType=QUEST, DeckNumber=1) of Rion and Everlasting Cardia. Only runs when no
+    /// deck 1 character slot exists yet. Idempotent: safe to call multiple times.
+    /// Everlasting Cardia is a first-clear reward of the first Main Quest, so a player who opens the menu before
+    /// clearing it doesn't own it yet. No deck is made then; the next menu tutorial after the clear makes it.
     /// </summary>
     private static void CreateStarterDeck(DarkUserMemoryDatabase db)
     {
-        if (db.EntityIUserCostume.Count == 0)
-        {
-            return;
-        }
-
         EntityIUserDeck? existingDeck = db.EntityIUserDeck
             .FirstOrDefault(d => d.DeckType == DeckType.QUEST && d.UserDeckNumber == 1);
 
@@ -119,16 +115,16 @@ public class TutorialService(UserDataStore store, DarkMasterMemoryDatabase maste
             return;
         }
 
-        // Hardcoded to Rion & Everlasting Cardia
-        string costumeUuid = db.EntityIUserCostume
-            .Where(c => c.CostumeId == GameConstants.StartingDeckCostumeId)
-            .Select(c => c.UserCostumeUuid)
-            .Single();
+        string? costumeUuid = db.EntityIUserCostume
+            .FirstOrDefault(c => c.CostumeId == GameConstants.StartingDeckCostumeId)?.UserCostumeUuid;
 
-        string weaponUuid = db.EntityIUserWeapon
-            .Where(w => w.WeaponId == GameConstants.StartingDeckWeaponId)
-            .Select(w => w.UserWeaponUuid)
-            .Single();
+        string? weaponUuid = db.EntityIUserWeapon
+            .FirstOrDefault(w => w.WeaponId == GameConstants.StartingDeckWeaponId)?.UserWeaponUuid;
+
+        if (costumeUuid is null || weaponUuid is null)
+        {
+            return;
+        }
 
         string dcUuid = Guid.NewGuid().ToString();
 

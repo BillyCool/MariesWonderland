@@ -191,6 +191,57 @@ public class TutorialServiceTests
     }
 
     [Fact]
+    public async Task SetTutorialProgress_ForMenuTutorialMakesNoDeckBeforeTheStartingWeaponIsOwned()
+    {
+        DarkUserMemoryDatabase userDb = CreateUserDb();
+        userDb.EntityIUserCostume.Add(new EntityIUserCostume
+        {
+            UserId = UserId,
+            UserCostumeUuid = "starter-costume",
+            CostumeId = GameConstants.StartingDeckCostumeId
+        });
+        userDb.EntityIUserWeapon.Add(new EntityIUserWeapon
+        {
+            UserId = UserId,
+            UserWeaponUuid = "prologue-weapon",
+            WeaponId = 100001
+        });
+
+        TutorialServiceImpl service = CreateService(new DarkMasterMemoryDatabase(), userDb);
+
+        await service.SetTutorialProgress(
+            new SetTutorialProgressRequest
+            {
+                TutorialType = (int)TutorialType.MENU_FIRST,
+                ProgressPhase = 1
+            },
+            FakeServerCallContext.For(UserId));
+
+        Assert.Empty(userDb.EntityIUserDeck);
+        Assert.Empty(userDb.EntityIUserDeckCharacter);
+        Assert.Single(userDb.EntityIUserTutorialProgress, progress => progress.TutorialType == TutorialType.MENU_FIRST);
+
+        userDb.EntityIUserWeapon.Add(new EntityIUserWeapon
+        {
+            UserId = UserId,
+            UserWeaponUuid = "starter-weapon",
+            WeaponId = GameConstants.StartingDeckWeaponId
+        });
+
+        await service.SetTutorialProgress(
+            new SetTutorialProgressRequest
+            {
+                TutorialType = (int)TutorialType.MENU_SECOND,
+                ProgressPhase = 2
+            },
+            FakeServerCallContext.For(UserId));
+
+        EntityIUserDeckCharacter starterCharacter = Assert.Single(userDb.EntityIUserDeckCharacter);
+        Assert.Equal("starter-weapon", starterCharacter.MainUserWeaponUuid);
+        Assert.Single(userDb.EntityIUserDeck);
+    }
+
+    [Fact]
     public async Task SetTutorialProgressAndReplaceDeck_ReplacesExistingDeckRecordsAndResetsChoiceId()
     {
         DarkUserMemoryDatabase userDb = CreateUserDb();
