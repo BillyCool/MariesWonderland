@@ -140,13 +140,13 @@ public static class ArenaBots
         return info;
     }
 
-    /// <summary>A name like "Ashen Lark" or "Ashen Lark 7".</summary>
+    /// <summary>A name like "AshenLark" or "AshenLark7" (the client doesn't allow spaces in names).</summary>
     public static string Name(int seed)
     {
         Random random = new(seed);
-        string name = $"{NameStarts[random.Next(NameStarts.Length)]} {NameEnds[random.Next(NameEnds.Length)]}";
+        string name = $"{NameStarts[random.Next(NameStarts.Length)]}{NameEnds[random.Next(NameEnds.Length)]}";
         int number = random.Next(4);
-        return number == 0 ? name : $"{name} {random.Next(2, 100)}";
+        return number == 0 ? name : $"{name}{random.Next(2, 100)}";
     }
 
     private static int Seed(int seasonId, int index) => unchecked(seasonId * 10_007 + index * 7_919 + 17);
@@ -248,9 +248,11 @@ public static class ArenaBots
             _functions = masterDb.EntityMNumericalFunction.ToDictionary(f => f.NumericalFunctionId);
             _parameters = masterDb.EntityMNumericalFunctionParameterGroup.ToLookup(p => p.NumericalFunctionParameterGroupId);
             _coefficients = masterDb.EntityMPowerCalculationConstantValue.ToDictionary(c => c.PowerCalculationConstantValueType, c => c.ConstantValue);
-            CompanionIds = [.. masterDb.EntityMCompanion.Select(c => c.CompanionId)];
+            HashSet<int> npcCompanions = [.. masterDb.EntityMBattleNpcCompanion.Select(c => c.CompanionId)];
+            CompanionIds = [.. masterDb.EntityMCompanion.Select(c => c.CompanionId).Where(id => !npcCompanions.Contains(id))];
         }
 
+        /// <summary>Companions a player can own (the ones battle NPCs field are separate rows with ids from 8000001).</summary>
         public List<int> CompanionIds { get; }
 
         /// <summary>Player costumes of a rarity (enemy-only costumes are all the lowest rarity and have no active skill).</summary>

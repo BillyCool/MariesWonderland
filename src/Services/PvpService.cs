@@ -371,7 +371,7 @@ public class PvpService(UserDataStore store, DarkMasterMemoryDatabase masterDb, 
     }
 
     private static string NameOf(ArenaStanding standing, Dictionary<long, PlayerCard> cards)
-        => standing.IsBot ? standing.BotName : cards.GetValueOrDefault(standing.UserId)?.Name ?? string.Empty;
+        => standing.IsBot ? ArenaBots.Name(standing.BotSeed) : cards.GetValueOrDefault(standing.UserId)?.Name ?? string.Empty;
 
     private static void ThrowIfRefused(ArenaOutcome outcome)
     {

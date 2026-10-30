@@ -344,7 +344,7 @@ public class UserService(UserDataStore store, UserDataSeeder seeder, DarkMasterM
         return new GetUserProfileResponse
         {
             Level = deck.UserLevel,
-            Name = bot.BotName,
+            Name = ArenaBots.Name(bot.BotSeed),
             FavoriteCostumeId = bot.BotFavoriteCostumeId,
             Message = string.Empty,
             LatestUsedDeck = profileDeck,
