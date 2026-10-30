@@ -267,7 +267,7 @@ public class DeckService(UserDataStore store, DarkMasterMemoryDatabase masterDb,
     }
 
     /// <summary>Removes old deck characters and creates new ones from the provided deck proto.</summary>
-    private static void ApplyDeckReplacement(DarkUserMemoryDatabase userDb, DeckType deckType, int deckNumber, Deck deck)
+    private void ApplyDeckReplacement(DarkUserMemoryDatabase userDb, DeckType deckType, int deckNumber, Deck deck)
     {
         EntityIUserDeck? existing = FindDeck(userDb, deckType, deckNumber);
 
@@ -296,6 +296,11 @@ public class DeckService(UserDataStore store, DarkMasterMemoryDatabase masterDb,
         existing.UserDeckCharacterUuid01 = uuid01;
         existing.UserDeckCharacterUuid02 = uuid02;
         existing.UserDeckCharacterUuid03 = uuid03;
+
+        // The client only offers decks with a force above 0 (the Arena's deck list), and sends its own value only for
+        // decks it can already use, so a saved deck gets the force the client would work out.
+        DeckPowerCalculator.Refresh(userDb, _masterDb, deckType, deckNumber);
+        RefreshArenaDefense(userDb, deckType, deckNumber);
     }
 
     private static EntityIUserDeck? FindDeck(DarkUserMemoryDatabase userDb, DeckType deckType, int deckNumber) =>

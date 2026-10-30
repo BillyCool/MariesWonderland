@@ -291,7 +291,7 @@ public static class ArenaDecks
     /// The stained glass bonus for one character: every stained glass the player owns whose targets name the character
     /// or the costume's weapon type, summed into one added bonus (<c>CalculatorDataStainedGlassStatus.CreateStainedGlassStatusList</c>).
     /// </summary>
-    private static StainedGlassStatusUpInfo StainedGlass(DarkUserMemoryDatabase userDb, DarkMasterMemoryDatabase masterDb, int characterId, WeaponType skillfulWeaponType)
+    internal static StainedGlassStatusUpInfo StainedGlass(DarkUserMemoryDatabase userDb, DarkMasterMemoryDatabase masterDb, int characterId, WeaponType skillfulWeaponType)
     {
         StatusTotals totals = new();
         foreach (EntityMImportantItem item in masterDb.EntityMImportantItem.Where(i => i.ImportantItemType == StainedGlassImportantItemType))
