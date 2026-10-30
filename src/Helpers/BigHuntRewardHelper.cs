@@ -1,6 +1,7 @@
 using MariesWonderland.Data;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
+using MariesWonderland.Proto.BigHunt;
 
 namespace MariesWonderland.Helpers;
 
@@ -114,6 +115,26 @@ public static class BigHuntRewardHelper
         return [.. masterDb.EntityMBigHuntRewardGroup
             .Where(r => r.BigHuntRewardGroupId == tier.BigHuntRewardGroupId)
             .OrderBy(r => r.SortOrder)];
+    }
+
+    /// <summary>Merges rewards of the same possession into one entry with the summed count, in first-seen order; the client lists each entry as its own tile.</summary>
+    public static List<BigHuntReward> Combine(IEnumerable<BigHuntReward> rewards)
+    {
+        List<BigHuntReward> combined = [];
+        foreach (BigHuntReward reward in rewards)
+        {
+            BigHuntReward? existing = combined.FirstOrDefault(r => r.PossessionType == reward.PossessionType && r.PossessionId == reward.PossessionId);
+            if (existing is null)
+            {
+                combined.Add(reward.Clone());
+            }
+            else
+            {
+                existing.Count += reward.Count;
+            }
+        }
+
+        return combined;
     }
 
     /// <summary>The group whose start is the latest one not after <paramref name="nowMs"/>; the earliest group before any start.</summary>

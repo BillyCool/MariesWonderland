@@ -99,7 +99,11 @@ public class RewardService(UserDataStore store, DarkMasterMemoryDatabase masterD
             IsReceivedWeeklyScoreReward = isReceived,
         };
         response.WeeklyScoreResult.AddRange(weeklyScoreResults);
-        response.WeeklyScoreReward.AddRange(weeklyRewards);
+        List<BigHuntReward> combinedRewards = BigHuntRewardHelper.Combine(weeklyRewards);
+        response.WeeklyScoreReward.AddRange(combinedRewards);
+
+        // The client's weekly result dialog lists LastWeekWeeklyScoreReward (the week just paid), not WeeklyScoreReward.
+        response.LastWeekWeeklyScoreReward.AddRange(combinedRewards);
         return Task.FromResult(response);
     }
 

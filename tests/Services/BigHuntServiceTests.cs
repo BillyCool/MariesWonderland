@@ -881,7 +881,7 @@ public class BigHuntServiceTests(MasterDatabaseFixture fixture) : ServiceTestBas
             }
         }
 
-        return rewards;
+        return BigHuntRewardHelper.Combine(rewards);
     }
 
     /// <summary>The game week (Monday 08:00 UTC) containing <paramref name="millis"/>.</summary>

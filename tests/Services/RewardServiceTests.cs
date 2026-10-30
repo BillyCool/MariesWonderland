@@ -84,6 +84,10 @@ public class RewardServiceTests
         Assert.Equal(
             ["5:400:2"],
             response.WeeklyScoreReward.Select(RewardKey).ToArray());
+        // The weekly result dialog shows this list, so it must carry the same rewards.
+        Assert.Equal(
+            ["5:400:2"],
+            response.LastWeekWeeklyScoreReward.Select(RewardKey).ToArray());
 
         EntityIUserGem gem = Assert.Single(userDb.EntityIUserGem);
         Assert.Equal(10, gem.FreeGem);

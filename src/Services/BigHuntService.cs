@@ -620,7 +620,7 @@ public class BigHuntService(UserDataStore store, DarkMasterMemoryDatabase master
             }
         }
 
-        return rewards;
+        return BigHuntRewardHelper.Combine(rewards);
     }
 
     // ────────── State accessors ──────────
