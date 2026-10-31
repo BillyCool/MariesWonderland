@@ -305,11 +305,7 @@ public class UserService(UserDataStore store, UserDataSeeder seeder, DarkMasterM
                     .DefaultIfEmpty()
                     .Min(x => x?.OrderBy(y => y.PvpWeeklyVersion).Select(y => y.FinalRank).LastOrDefault() ?? 0),
             },
-            GamePlayHistory = new GamePlayHistory
-            {
-                HistoryItem = { },
-                HistoryCategoryGraphItem = { }
-            }
+            GamePlayHistory = PlayHistoryHelper.ForProfile(targetDb)
         });
     }
 

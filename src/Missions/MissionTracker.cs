@@ -20,6 +20,24 @@ public sealed class MissionTracker(DarkMasterMemoryDatabase masterDb, MissionCat
     private readonly MissionCatalog _catalog = catalog;
 
     /// <summary>
+    /// Events that also feed a profile play-history counter. Summons and shop buys are counted in their own
+    /// recorders, since the counter depends on the kind of summon or shop.
+    /// </summary>
+    private static readonly Dictionary<MissionClearConditionType, GamePlayHistoryType> HistoryCounters = new()
+    {
+        [MissionClearConditionType.COSTUME_ENHANCE_BY_COUNT] = GamePlayHistoryType.CHARACTER_ENHANCEMENTS,
+        [MissionClearConditionType.COSTUME_ACTIVE_SKILL_ENHANCE_BY_COUNT] = GamePlayHistoryType.CHARACTER_SKILL_ENHANCEMENTS,
+        [MissionClearConditionType.COSTUME_LIMIT_BREAK_BY_COUNT] = GamePlayHistoryType.CHARACTER_ASCENSIONS,
+        [MissionClearConditionType.WEAPON_ENHANCE_BY_COUNT] = GamePlayHistoryType.WEAPON_ENHANCEMENTS,
+        [MissionClearConditionType.WEAPON_ENHANCE_SKILL_BY_COUNT] = GamePlayHistoryType.WEAPON_SKILL_ENHANCEMENTS,
+        [MissionClearConditionType.WEAPON_EVOLVE_BY_COUNT] = GamePlayHistoryType.WEAPON_EVOLUTIONS,
+        [MissionClearConditionType.WEAPON_LIMIT_BREAK_BY_COUNT] = GamePlayHistoryType.WEAPON_ASCENSIONS,
+        [MissionClearConditionType.COMPANION_ENHANCE_BY_COUNT] = GamePlayHistoryType.COMPANION_ENHANCEMENTS,
+        [MissionClearConditionType.PARTS_ENHANCE_BY_COUNT] = GamePlayHistoryType.MEMOIR_ENHANCEMENTS,
+        [MissionClearConditionType.PVP_FINISH_BY_COUNT] = GamePlayHistoryType.ARENA_MATCHES_PLAYED,
+    };
+
+    /// <summary>
     /// Brings the user's missions up to date: restarts daily missions on a new game day, creates rows for missions
     /// that became available, re-reads state conditions and evaluates the "clear all dailies" missions.
     /// </summary>
@@ -46,6 +64,11 @@ public sealed class MissionTracker(DarkMasterMemoryDatabase masterDb, MissionCat
     /// </summary>
     public void Record(DarkUserMemoryDatabase userDb, MissionClearConditionType conditionType, int amount, Func<MissionFilter?, bool> matches, long nowMs)
     {
+        if (HistoryCounters.TryGetValue(conditionType, out GamePlayHistoryType historyType))
+        {
+            PlayHistoryHelper.Add(userDb, historyType, amount);
+        }
+
         Dictionary<int, EntityIUserMission> rows = userDb.EntityIUserMission.ToDictionary(r => r.MissionId);
         foreach (MissionDefinition mission in _catalog.ByConditionType(conditionType))
         {
@@ -144,6 +167,7 @@ public sealed class MissionTracker(DarkMasterMemoryDatabase masterDb, MissionCat
         }
         else if (isAnnihilated)
         {
+            PlayHistoryHelper.Add(userDb, GamePlayHistoryType.PARTY_ELIMINATED, 1);
             Record(userDb, MissionClearConditionType.QUEST_BATTLE_ANNIHILATED_COUNT, 1, nowMs);
         }
     }
@@ -190,11 +214,33 @@ public sealed class MissionTracker(DarkMasterMemoryDatabase masterDb, MissionCat
 
     /// <summary>Items drawn from a summon: counts for unfiltered missions and those naming this kind of summon.</summary>
     public void RecordGachaDraw(DarkUserMemoryDatabase userDb, GachaLabelType? labelType, IReadOnlyCollection<int> gachaIds, bool isDailyFreeDraw, int draws, long nowMs, int priceItemId = 0)
-        => Record(userDb, MissionClearConditionType.GACHA_DRAW_BY_COUNT, draws, filter => filter == null || filter.MatchesGacha(labelType, gachaIds, isDailyFreeDraw, priceItemId), nowMs);
+    {
+        if (labelType == GachaLabelType.CHAPTER)
+        {
+            PlayHistoryHelper.Add(userDb, GamePlayHistoryType.CHAPTER_SUMMONS_PERFORMED, draws);
+        }
+        else if (labelType == GachaLabelType.EVENT)
+        {
+            PlayHistoryHelper.Add(userDb, GamePlayHistoryType.EVENT_SUMMONS_PERFORMED, draws);
+        }
+
+        Record(userDb, MissionClearConditionType.GACHA_DRAW_BY_COUNT, draws, filter => filter == null || filter.MatchesGacha(labelType, gachaIds, isDailyFreeDraw, priceItemId), nowMs);
+    }
 
     /// <summary>Items bought in one shop (each item counts, so 5 of one item is 5): counts for unfiltered missions and those naming the shop type.</summary>
     public void RecordShopBuy(DarkUserMemoryDatabase userDb, ShopType shopType, int quantity, long nowMs)
-        => Record(userDb, MissionClearConditionType.SHOP_BUY_BY_COUNT, quantity, filter => filter == null || filter.MatchesShop(shopType), nowMs);
+    {
+        if (shopType == ShopType.ITEM_SHOP)
+        {
+            PlayHistoryHelper.Add(userDb, GamePlayHistoryType.ITEM_SHOP_PURCHASES, quantity);
+        }
+        else if (shopType == ShopType.EXCHANGE_SHOP)
+        {
+            PlayHistoryHelper.Add(userDb, GamePlayHistoryType.EXCHANGE_TRADES, quantity);
+        }
+
+        Record(userDb, MissionClearConditionType.SHOP_BUY_BY_COUNT, quantity, filter => filter == null || filter.MatchesShop(shopType), nowMs);
+    }
 
     /// <summary>A profile comment was set: counts for missions asking for any comment or for this exact one.</summary>
     public void RecordProfileMessage(DarkUserMemoryDatabase userDb, string message, long nowMs)
@@ -341,6 +387,7 @@ public sealed class MissionTracker(DarkMasterMemoryDatabase masterDb, MissionCat
 
         row.MissionProgressStatusType = MissionProgressStatusType.CLEAR;
         row.ClearDatetime = nowMs;
+        PlayHistoryHelper.Add(userDb, GamePlayHistoryType.MISSIONS_COMPLETED, 1);
 
         foreach (MissionDefinition counter in _catalog.ByConditionType(MissionClearConditionType.MISSION_CLEAR_BY_COUNT))
         {

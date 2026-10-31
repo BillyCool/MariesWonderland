@@ -172,6 +172,18 @@ public class ExploreService(UserDataStore store, DarkMasterMemoryDatabase master
         }
 
         _missions.RecordExplore(userDb, MissionClearConditionType.EXPLORE_FINISH_BY_COUNT, request.ExploreId, 1, nowMs);
+        GamePlayHistoryType? historyType = request.ExploreId switch
+        {
+            1 => GamePlayHistoryType.SHOOTING_GAMES_PLAYED,
+            2 => GamePlayHistoryType.EXPLORATION_2_GAMES_PLAYED,
+            11 => GamePlayHistoryType.EXPLORATION_3_GAMES_PLAYED,
+            12 => GamePlayHistoryType.EXPLORATION_4_GAMES_PLAYED,
+            _ => null,
+        };
+        if (historyType is GamePlayHistoryType type)
+        {
+            PlayHistoryHelper.Add(userDb, type, 1);
+        }
         // EXPLORE_SCORE is the score summed over runs since the mission became available.
         _missions.RecordExplore(userDb, MissionClearConditionType.EXPLORE_SCORE, request.ExploreId, request.Score, nowMs);
 

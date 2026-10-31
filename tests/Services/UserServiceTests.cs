@@ -2,6 +2,7 @@
 using MariesWonderland.Missions;
 using MariesWonderland.Configuration;
 using MariesWonderland.Data;
+using MariesWonderland.Helpers;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.User;
@@ -485,5 +486,35 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         Assert.Equal(370, walked.ProgressValue);
         Assert.Equal(0, other.ProgressValue);
         Assert.Single(userDb.EntitySPlayHistory);
+    }
+
+    /// <summary>
+    /// A profile lists the eight history counters in the client's order, reading logins and collections off the
+    /// account. The radar's six axes are sent empty for now.
+    /// </summary>
+    [Fact]
+    public void ForProfile_ListsTheEightCountersAndSixEmptyAxes()
+    {
+        DarkUserMemoryDatabase userDb = new() { UserId = UserId };
+        userDb.EntityIUserLogin.Add(new EntityIUserLogin { UserId = UserId, TotalLoginCount = 42 });
+        userDb.EntityIUserWeaponNote.Add(new EntityIUserWeaponNote { UserId = UserId, WeaponId = 1 });
+        userDb.EntityIUserWeaponNote.Add(new EntityIUserWeaponNote { UserId = UserId, WeaponId = 2 });
+        PlayHistoryHelper.Add(userDb, GamePlayHistoryType.CHARACTER_ENHANCEMENTS, 2500);
+        PlayHistoryHelper.Add(userDb, GamePlayHistoryType.WEAPON_ENHANCEMENTS, 20000);
+
+        GamePlayHistory history = PlayHistoryHelper.ForProfile(userDb);
+
+        Assert.Equal(
+            [
+                GamePlayHistoryType.CHAPTER_SUMMONS_PERFORMED, GamePlayHistoryType.SHOOTING_GAMES_PLAYED, GamePlayHistoryType.BLACK_BIRDS_SLAIN,
+                GamePlayHistoryType.WEAPON_TYPES_COLLECTED, GamePlayHistoryType.MEMOIR_ENHANCEMENTS, GamePlayHistoryType.CHARACTER_ENHANCEMENTS,
+                GamePlayHistoryType.PARTY_ELIMINATED, GamePlayHistoryType.DAYS_LOGGED_IN,
+            ],
+            history.HistoryItem.Select(i => (GamePlayHistoryType)i.HistoryItemId));
+        Assert.Equal(2, history.HistoryItem[3].Count);
+        Assert.Equal(2500, history.HistoryItem[5].Count);
+        Assert.Equal(42, history.HistoryItem[7].Count);
+        Assert.Equal([1, 2, 3, 4, 5, 6], history.HistoryCategoryGraphItem.Select(g => g.CategoryTypeId));
+        Assert.All(history.HistoryCategoryGraphItem, g => Assert.Equal(0, g.ProgressPermil));
     }
 }

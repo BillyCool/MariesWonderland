@@ -54,6 +54,7 @@ public class CageOrnamentService(UserDataStore store, DarkMasterMemoryDatabase m
         });
 
         PossessionHelper.Apply(userDb, reward.PossessionType, reward.PossessionId, reward.Count, _masterDb, nowMs);
+        PlayHistoryHelper.Add(userDb, GamePlayHistoryType.BLACK_BIRDS_SLAIN, 1);
 
         ReceiveRewardResponse response = new();
         response.CageOrnamentReward.Add(new CageOrnamentReward

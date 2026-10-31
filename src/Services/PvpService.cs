@@ -126,6 +126,7 @@ public class PvpService(UserDataStore store, DarkMasterMemoryDatabase masterDb, 
         if (request.IsVictory)
         {
             _missions.Record(userDb, MissionClearConditionType.PVP_FINISH_BY_WIN_COUNT, 1, nowMs);
+            PlayHistoryHelper.Best(userDb, GamePlayHistoryType.BEST_ARENA_WIN_STREAK, status.WinStreakCount);
             _missions.RecordBest(userDb, MissionClearConditionType.PVP_FINISH_BY_WIN_STREAK_COUNT, status.WinStreakCount, _ => true, nowMs);
             _missions.RecordBest(userDb, MissionClearConditionType.PVP_FINISH_BY_WIN_STREAK_COUNT_FROM_UNLOCK, status.WinStreakCount, _ => true, nowMs);
         }

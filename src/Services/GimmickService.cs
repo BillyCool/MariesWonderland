@@ -118,6 +118,14 @@ public class GimmickService(UserDataStore store, DarkMasterMemoryDatabase master
             case GimmickType.CAGE_TREASURE_HUNT:
                 if ((request.ProgressValueBit & ~previousBits) != 0)
                 {
+                    // Only the first catch of a spot counts as a bird slain; it comes back on later schedules.
+                    bool isNewSpot = !userDb.EntityIUserGimmickOrnamentProgress.Any(o =>
+                        o != ornament && o.GimmickId == request.GimmickId && o.GimmickOrnamentIndex == request.GimmickOrnamentIndex && o.ProgressValueBit != 0);
+                    if (isNewSpot)
+                    {
+                        PlayHistoryHelper.Add(userDb, GamePlayHistoryType.BLACK_BIRDS_SLAIN, 1);
+                    }
+
                     ornamentRewards.Add(GrantPlaceholderLoot(userDb, 1, nowMs));
                     granted = true;
                 }
