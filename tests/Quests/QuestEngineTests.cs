@@ -241,10 +241,11 @@ public class QuestEngineTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
     }
 
     [Fact]
-    public void Finish_ReplayWin_GrantsOnlyExpGoldAndDrops()
+    public void Finish_ReplayWin_GrantsNoFirstClear_AndPaysTheMainQuestsUnclearedMissionsOnce()
     {
         QuestEngine engine = CreateEngine();
         EntityMQuest quest = FindReplayQuest();
+        int mainQuestId = MasterDb.EntityMQuestRelationMainFlow.First(r => r.ReplayFlowQuestId == quest.QuestId).MainFlowQuestId;
         DarkUserMemoryDatabase userDb = CreateUser();
         EntityIUserQuest userQuest = QuestEngine.GetOrCreateUserQuest(userDb, quest.QuestId);
         QuestEngine.MarkActive(userQuest, NowMs);
@@ -256,10 +257,15 @@ public class QuestEngineTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         Assert.Equal(1, userQuest.ClearCount);
         Assert.Equal(expBefore + quest.UserExp, userDb.EntityIUserStatus[0].Exp);
         Assert.Empty(result.FirstClearRewards);
-        Assert.Empty(result.MissionClearRewards);
-        Assert.Empty(result.MissionClearCompleteRewards);
-        Assert.False(result.IsBigWin);
+        Assert.NotEmpty(result.MissionClearRewards);
         Assert.DoesNotContain(userDb.EntityIUserQuestMission, m => m.QuestId == quest.QuestId);
+        Assert.Contains(userDb.EntityIUserQuestMission, m => m.QuestId == mainQuestId && m.IsClear);
+
+        QuestFinishResult again = engine.Finish(userDb, quest, MainTarget(quest), isWin: true, NowMs, isReplay: true);
+
+        Assert.Empty(again.MissionClearRewards);
+        Assert.Empty(again.MissionClearCompleteRewards);
+        Assert.False(again.IsBigWin);
     }
 
     [Fact]

@@ -77,16 +77,35 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         if (IsSceneAhead(questSceneId, replayFlowStatus.CurrentHeadQuestSceneId))
             replayFlowStatus.CurrentHeadQuestSceneId = questSceneId;
 
+        EntityIUserMainQuestFlowStatus flowStatus = userDb.EntityIUserMainQuestFlowStatus.GetOrCreate(userId);
+        QuestFlowType replayFlowType = flowStatus.CurrentQuestFlowType == QuestFlowType.ANOTHER_ROUTE_REPLAY_FLOW
+            ? QuestFlowType.ANOTHER_ROUTE_REPLAY_FLOW
+            : QuestFlowType.REPLAY_FLOW;
+
         EntityMQuestScene? scene = _masterDb.EntityMQuestScene.FirstOrDefault(s => s.QuestSceneId == questSceneId);
         if (scene != null)
         {
+            // A story-only point is replayed with no StartMainQuest, so this call is where the replay flow begins.
+            if (flowStatus.CurrentQuestFlowType != QuestFlowType.ANOTHER_ROUTE_REPLAY_FLOW)
+            {
+                replayFlowType = ResolveReplayFlowType(userDb, userId, scene.QuestId);
+            }
+
             EntitySQuestSession session = GetOrCreateQuestSession(userDb, userId, scene.QuestId);
-            QuestFlowType replayFlowType = userDb.EntityIUserMainQuestFlowStatus.FirstOrDefault(s => s.UserId == userId)?.CurrentQuestFlowType
-                == QuestFlowType.ANOTHER_ROUTE_REPLAY_FLOW
-                ? QuestFlowType.ANOTHER_ROUTE_REPLAY_FLOW
-                : QuestFlowType.REPLAY_FLOW;
             UpdateQuestSessionState(session, questSceneId, replayFlowStatus.CurrentHeadQuestSceneId, replayFlowType);
         }
+
+        flowStatus.CurrentQuestFlowType = replayFlowType;
+
+        EntityIUserSideStoryQuestSceneProgressStatus sideStoryProgress = userDb.EntityIUserSideStoryQuestSceneProgressStatus.GetOrCreate(userId);
+        if (sideStoryProgress.CurrentSideStoryQuestId != 0)
+        {
+            sideStoryProgress.CurrentSideStoryQuestId = 0;
+            sideStoryProgress.CurrentSideStoryQuestSceneId = 0;
+        }
+
+        EntityIUserPortalCageStatus portalCageStatus = userDb.EntityIUserPortalCageStatus.GetOrCreate(userId);
+        portalCageStatus.IsCurrentProgress = false;
 
         return Task.FromResult(new UpdateReplayFlowSceneProgressResponse());
     }
@@ -109,31 +128,45 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
             FinalizeChainPreviousQuest(userDb, userId, quest.QuestId, nowMs);
         }
 
+        // The client reports the scenes of a replayed battle here too; they must not turn the replay into a sub flow
+        // (its finish would then pay first-clear and mission rewards) or move the story position.
+        EntityIUserMainQuestFlowStatus currentFlowStatus = userDb.EntityIUserMainQuestFlowStatus.GetOrCreate(userId);
+        QuestFlowType currentFlowType = currentFlowStatus.CurrentQuestFlowType;
+        bool isReplay = currentFlowType is QuestFlowType.REPLAY_FLOW or QuestFlowType.ANOTHER_ROUTE_REPLAY_FLOW;
+
         bool isPlayable = QuestEngine.IsPlayable(quest);
         if (isPlayable)
         {
-            EntityIUserMainQuestFlowStatus flowStatus = userDb.EntityIUserMainQuestFlowStatus.GetOrCreate(userId);
-            flowStatus.CurrentQuestFlowType = QuestFlowType.SUB_FLOW;
+            QuestFlowType flowType = isReplay ? currentFlowType : QuestFlowType.SUB_FLOW;
+            currentFlowStatus.CurrentQuestFlowType = flowType;
 
             EntityIUserMainQuestProgressStatus progressStatus = userDb.EntityIUserMainQuestProgressStatus.GetOrCreate(userId);
             progressStatus.CurrentQuestSceneId = questSceneId;
             if (IsSceneAhead(questSceneId, progressStatus.HeadQuestSceneId))
                 progressStatus.HeadQuestSceneId = questSceneId;
-            progressStatus.CurrentQuestFlowType = QuestFlowType.SUB_FLOW;
+            progressStatus.CurrentQuestFlowType = flowType;
 
             EntitySQuestSession session = GetOrCreateQuestSession(userDb, userId, scene!.QuestId);
-            UpdateQuestSessionState(session, questSceneId, progressStatus.HeadQuestSceneId, QuestFlowType.SUB_FLOW);
+            UpdateQuestSessionState(session, questSceneId, progressStatus.HeadQuestSceneId, flowType);
         }
         else if (scene != null)
         {
             // Non-playable quests (background, cutscene, etc.) update the main flow scene position,
-            // except during a menu pick, which never moves the story position.
+            // except during a menu pick or a replay, which never move the story position.
             EntitySQuestSession? session = userDb.EntitySQuestSession.FirstOrDefault(s => s.UserId == userId && s.QuestId == scene.QuestId);
-            if (session?.IsMenuPick != true)
+            if (session?.IsMenuPick != true && !isReplay)
                 ApplyMainFlowSceneProgress(userDb, userId, questSceneId, sceneContext);
 
             if (session != null)
-                UpdateQuestSessionState(session, questSceneId, GetHeadSceneId(session.HeadQuestSceneId, questSceneId), QuestFlowType.MAIN_FLOW);
+                UpdateQuestSessionState(session, questSceneId, GetHeadSceneId(session.HeadQuestSceneId, questSceneId), isReplay ? currentFlowType : QuestFlowType.MAIN_FLOW);
+        }
+
+        if (isReplay && scene != null)
+        {
+            EntityIUserMainQuestReplayFlowStatus replayFlowStatus = userDb.EntityIUserMainQuestReplayFlowStatus.GetOrCreate(userId);
+            replayFlowStatus.CurrentQuestSceneId = questSceneId;
+            if (IsSceneAhead(questSceneId, replayFlowStatus.CurrentHeadQuestSceneId))
+                replayFlowStatus.CurrentHeadQuestSceneId = questSceneId;
         }
 
         UpdateMainQuestSceneProgressResponse response = new();
@@ -228,6 +261,19 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
 
             QuestEngine.MarkActive(replayQuest, nowMs);
             replayQuest.IsBattleOnly = request.IsBattleOnly;
+
+            // A story-only quest has no battle, so no finish call ever comes: it counts as cleared when its replay starts.
+            if (!QuestEngine.IsPlayable(quest))
+            {
+                if (replayQuest.ClearCount == 0)
+                {
+                    QuestEngine.MarkCleared(replayQuest, 1, nowMs);
+                }
+                else
+                {
+                    replayQuest.QuestStateType = (int)QuestStateType.CLEARED;
+                }
+            }
 
             EntitySQuestSession replaySession = GetOrCreateQuestSession(userDb, userId, questId);
             _questEngine.SetSessionDeck(replaySession, request.UserDeckNumber);

@@ -181,8 +181,8 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
     /// missions not yet cleared plus the big win when this run completes them, and drops; then marks the
     /// quest and its missions cleared. A loss (retired or annihilated) grants nothing and leaves the
     /// missions as they were; a quest cleared before goes back to <see cref="QuestStateType.CLEARED"/>.
-    /// A replay win grants only EXP, gold and drops: replay quests have no first-clear or mission rewards
-    /// and keep no mission rows. A mission counts when the run's <paramref name="battles"/> and deck meet its
+    /// A replay win grants EXP, gold and drops, no first-clear rewards, and the missions of the main-flow quest
+    /// it replays that are not cleared yet (replay quests keep no mission rows of their own). A mission counts when the run's <paramref name="battles"/> and deck meet its
     /// condition (<see cref="QuestMissionEvaluator"/>); without battles every mission counts.
     /// </summary>
     public QuestFinishResult Finish(DarkUserMemoryDatabase userDb, EntityMQuest quest, QuestCampaignTarget campaignTarget, bool isWin, long nowMs, bool isReplay = false, IReadOnlyList<EntitySBattleDetail>? battles = null)
@@ -210,7 +210,8 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
         bool allRegularMissionsCleared = true;
         int bigWinMissionId = 0;
 
-        IEnumerable<int> missionIds = isReplay ? [] : MissionIds(quest);
+        EntityMQuest missionQuest = isReplay ? MainFlowQuestOfReplay(quest) : quest;
+        IEnumerable<int> missionIds = MissionIds(missionQuest);
         foreach (int missionId in missionIds)
         {
             EntityMQuestMission? mission = _masterDb.EntityMQuestMission.FirstOrDefault(m => m.QuestMissionId == missionId);
@@ -226,7 +227,7 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
             }
 
             regularMissionCount++;
-            bool wasCleared = IsMissionCleared(userDb, quest.QuestId, mission.QuestMissionId);
+            bool wasCleared = IsMissionCleared(userDb, missionQuest.QuestId, mission.QuestMissionId);
             bool isMet = run == null || _missionEvaluator.IsMet(mission, run);
             if (isMet)
             {
@@ -244,7 +245,7 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
         if (regularMissionCount > 0 && bigWinMissionId != 0 && allRegularMissionsCleared)
         {
             missionsMetThisRun.Add(bigWinMissionId);
-            if (!IsMissionCleared(userDb, quest.QuestId, bigWinMissionId))
+            if (!IsMissionCleared(userDb, missionQuest.QuestId, bigWinMissionId))
             {
                 isBigWin = true;
                 EntityMQuestMission? bigWinMission = _masterDb.EntityMQuestMission.FirstOrDefault(m => m.QuestMissionId == bigWinMissionId);
@@ -280,10 +281,7 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
         RecordClearTime(userQuest, battles);
         (HashSet<int> deckCharacterIds, HashSet<int> deckCostumeIds) = DeckMembers(userDb, quest.QuestId);
         _missions.RecordQuestClear(userDb, new MissionQuestEvent(campaignTarget, deckCharacterIds, deckCostumeIds, quest.DailyClearableCount), 1, isSkipped: false, nowMs);
-        if (!isReplay)
-        {
-            ClearQuestMissions(userDb, quest.QuestId, nowMs, missionsMetThisRun);
-        }
+        ClearQuestMissions(userDb, missionQuest.QuestId, nowMs, missionsMetThisRun);
 
         return new QuestFinishResult
         {
@@ -593,6 +591,14 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
         }
 
         return drops;
+    }
+
+    /// <summary>The main-flow quest a replay quest replays; a quest with no relation row is its own.</summary>
+    private EntityMQuest MainFlowQuestOfReplay(EntityMQuest replayQuest)
+    {
+        int mainFlowQuestId = _masterDb.EntityMQuestRelationMainFlow
+            .FirstOrDefault(r => r.ReplayFlowQuestId == replayQuest.QuestId)?.MainFlowQuestId ?? 0;
+        return mainFlowQuestId == 0 ? replayQuest : FindQuest(mainFlowQuestId) ?? replayQuest;
     }
 
     private IEnumerable<int> MissionIds(EntityMQuest quest) => MissionGroupIds(quest.QuestMissionGroupId);

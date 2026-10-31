@@ -357,6 +357,74 @@ public class QuestServiceTests
     }
 
     [Fact]
+    public async Task UpdateReplayFlowSceneProgress_WithNoStart_PutsTheFlowInReplayAndTheCageOff()
+    {
+        DarkMasterMemoryDatabase masterDb = CreateMasterDb();
+        DarkUserMemoryDatabase userDb = new();
+        userDb.EntityIUserMainQuestFlowStatus.Add(new EntityIUserMainQuestFlowStatus
+        {
+            UserId = UserId,
+            CurrentQuestFlowType = QuestFlowType.MAIN_FLOW
+        });
+        userDb.EntityIUserPortalCageStatus.Add(new EntityIUserPortalCageStatus { UserId = UserId, IsCurrentProgress = true });
+
+        QuestServiceImpl service = CreateService(masterDb, userDb);
+
+        await service.UpdateReplayFlowSceneProgress(
+            new UpdateReplayFlowSceneProgressRequest { QuestSceneId = PlayableLastSceneId },
+            FakeServerCallContext.For(UserId));
+
+        Assert.Equal(QuestFlowType.REPLAY_FLOW, Assert.Single(userDb.EntityIUserMainQuestFlowStatus).CurrentQuestFlowType);
+        Assert.False(Assert.Single(userDb.EntityIUserPortalCageStatus).IsCurrentProgress);
+        Assert.Equal(PlayableLastSceneId, Assert.Single(userDb.EntityIUserMainQuestReplayFlowStatus).CurrentQuestSceneId);
+    }
+
+    [Fact]
+    public async Task ReplayStart_OfAStoryOnlyQuest_MarksItClearedAtOnce()
+    {
+        DarkMasterMemoryDatabase masterDb = CreateMasterDb();
+        DarkUserMemoryDatabase userDb = new();
+        QuestServiceImpl service = CreateService(masterDb, userDb);
+
+        await service.StartMainQuest(
+            new StartMainQuestRequest { QuestId = BackgroundQuestId, UserDeckNumber = 4, IsReplayFlow = true },
+            FakeServerCallContext.For(UserId));
+        await service.StartMainQuest(
+            new StartMainQuestRequest { QuestId = BackgroundQuestId, UserDeckNumber = 4, IsReplayFlow = true },
+            FakeServerCallContext.For(UserId));
+
+        EntityIUserQuest quest = Assert.Single(userDb.EntityIUserQuest, q => q.QuestId == BackgroundQuestId);
+        Assert.Equal((int)QuestStateType.CLEARED, quest.QuestStateType);
+        Assert.Equal(1, quest.ClearCount);
+    }
+
+    [Fact]
+    public async Task ReplayStart_ThenMainQuestSceneProgress_KeepsTheReplayFlow()
+    {
+        DarkMasterMemoryDatabase masterDb = CreateMasterDb();
+        DarkUserMemoryDatabase userDb = new();
+        userDb.EntityIUserQuest.Add(new EntityIUserQuest
+        {
+            UserId = UserId,
+            QuestId = PlayableQuestId,
+            QuestStateType = (int)QuestStateType.CLEARED
+        });
+
+        QuestServiceImpl service = CreateService(masterDb, userDb);
+
+        await service.StartMainQuest(
+            new StartMainQuestRequest { QuestId = PlayableQuestId, UserDeckNumber = 4, IsReplayFlow = true },
+            FakeServerCallContext.For(UserId));
+        await service.UpdateMainQuestSceneProgress(
+            new UpdateMainQuestSceneProgressRequest { QuestSceneId = PlayableLastSceneId },
+            FakeServerCallContext.For(UserId));
+
+        Assert.Equal(QuestFlowType.REPLAY_FLOW, Assert.Single(userDb.EntityIUserMainQuestFlowStatus).CurrentQuestFlowType);
+        Assert.Equal(QuestFlowType.REPLAY_FLOW, Assert.Single(userDb.EntityIUserMainQuestProgressStatus).CurrentQuestFlowType);
+        Assert.Equal(PlayableLastSceneId, Assert.Single(userDb.EntityIUserMainQuestReplayFlowStatus).CurrentQuestSceneId);
+    }
+
+    [Fact]
     public async Task StartReplayMainQuest_UpdateReplayProgress_RestartRestoresReplayScene()
     {
         DarkMasterMemoryDatabase masterDb = CreateMasterDb();
