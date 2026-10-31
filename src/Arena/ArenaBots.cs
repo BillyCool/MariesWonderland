@@ -113,6 +113,7 @@ public static class ArenaBots
                 },
                 Companion = new CompanionInfo { CompanionId = bot.CompanionId, Level = bot.CompanionLevel },
                 MainWeapon = Weapon(masterDb, bot.MainWeaponId, bot),
+                Thought = new ThoughtInfo(), // the client reads Thought.ThoughtId without a null check (see ArenaDecks)
             };
             character.SubWeapon.AddRange(bot.SubWeaponIds.Select(id => Weapon(masterDb, id, bot)));
             characters.Add(character);
@@ -122,7 +123,11 @@ public static class ArenaBots
 
     private static WeaponInfo Weapon(DarkMasterMemoryDatabase masterDb, int weaponId, ArenaBotCharacter bot)
     {
-        WeaponInfo info = new() { WeaponId = weaponId, LimitBreakCount = bot.WeaponLimitBreak, Level = bot.WeaponLevel };
+        // The client reads WeaponAwakenAbility without a null check, so it is always present (see ArenaDecks.Weapon).
+        WeaponInfo info = new()
+        {
+            WeaponId = weaponId, LimitBreakCount = bot.WeaponLimitBreak, Level = bot.WeaponLevel, WeaponAwakenAbility = new AwakenAbilityInfo(),
+        };
         EntityMWeapon? weapon = masterDb.EntityMWeapon.Find(weaponId);
         if (weapon == null)
         {

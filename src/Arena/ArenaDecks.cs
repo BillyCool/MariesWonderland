@@ -169,10 +169,9 @@ public static class ArenaDecks
             }));
 
         int thoughtId = userDb.EntityIUserThought.FirstOrDefault(t => t.UserThoughtUuid == deckCharacter.UserThoughtUuid)?.ThoughtId ?? 0;
-        if (thoughtId != 0)
-        {
-            result.Thought = new ThoughtInfo { ThoughtId = thoughtId };
-        }
+        // The client reads Thought.ThoughtId without a null check (CalculatorDataBattleDeckForPvp.CreateDataBattleActor throws
+        // and the battle load hangs), so a character without a thought sends thought id 0, which finds no master row.
+        result.Thought = new ThoughtInfo { ThoughtId = thoughtId };
 
         result.StainedGlassStatusUps.Add(StainedGlass(userDb, masterDb, characterId, costumeMaster?.SkillfulWeaponType ?? WeaponType.UNKNOWN));
 
@@ -194,7 +193,12 @@ public static class ArenaDecks
     private static WeaponInfo Weapon(DarkUserMemoryDatabase userDb, DarkMasterMemoryDatabase masterDb, EntityIUserWeapon weapon)
     {
         EntityMWeapon? master = masterDb.EntityMWeapon.Find(weapon.WeaponId);
-        WeaponInfo info = new() { WeaponId = weapon.WeaponId, LimitBreakCount = weapon.LimitBreakCount, Level = weapon.Level };
+        // The client reads WeaponAwakenAbility without a null check (CalculatorDataBattleDeckForPvp.SetWeaponAwakenInfo throws
+        // and the battle load hangs), so a weapon that isn't awakened still carries an empty one.
+        WeaponInfo info = new()
+        {
+            WeaponId = weapon.WeaponId, LimitBreakCount = weapon.LimitBreakCount, Level = weapon.Level, WeaponAwakenAbility = new AwakenAbilityInfo(),
+        };
         if (master == null)
         {
             return info;
