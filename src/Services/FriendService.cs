@@ -230,34 +230,34 @@ public class FriendService(UserDataStore store, DarkMasterMemoryDatabase masterD
 
     private long RequireUser(long playerId)
         => _store.FindUserIdByPlayerId(playerId)
-            ?? throw new RpcException(new Status(StatusCode.NotFound, FriendErrors.PlayerNotFound));
+            ?? throw GameError.Refuse(FriendErrors.PlayerNotFound, NetworkCode.FriendNotFound, status: StatusCode.NotFound);
 
     private IEnumerable<long> PlayerIds(IReadOnlyList<long> userIds)
         => _store.PlayerCards(userIds).Select(c => c.PlayerId);
 
     private static void ThrowIfRefused(FriendOutcome outcome)
     {
-        string? message = outcome switch
+        (string Message, int Code)? refusal = outcome switch
         {
             FriendOutcome.Ok or FriendOutcome.BecameFriends => null,
-            FriendOutcome.Myself => FriendErrors.Myself,
-            FriendOutcome.AlreadyFriend => FriendErrors.AlreadyFriend,
-            FriendOutcome.MyFriendsFull => FriendErrors.MyFriendsFull,
-            FriendOutcome.TheirFriendsFull => FriendErrors.TheirFriendsFull,
-            FriendOutcome.RequestDayLimit => FriendErrors.RequestDayLimit,
-            FriendOutcome.TheirRequestsFull => FriendErrors.TheirRequestsFull,
-            FriendOutcome.RequestNotFound => FriendErrors.RequestNotFound,
-            FriendOutcome.NotFriend => FriendErrors.NotFriend,
-            FriendOutcome.CheerAlreadySent => FriendErrors.CheerAlreadySent,
-            FriendOutcome.CheerSendDayLimit => FriendErrors.CheerSendDayLimit,
-            FriendOutcome.NoCheerToReceive => FriendErrors.NoCheerToReceive,
-            FriendOutcome.CheerReceiveDayLimit => FriendErrors.CheerReceiveDayLimit,
-            _ => outcome.ToString(),
+            FriendOutcome.Myself => (FriendErrors.Myself, NetworkCode.ProcessFailed),
+            FriendOutcome.AlreadyFriend => (FriendErrors.AlreadyFriend, NetworkCode.AlreadyFriends),
+            FriendOutcome.MyFriendsFull => (FriendErrors.MyFriendsFull, NetworkCode.FriendLimit),
+            FriendOutcome.TheirFriendsFull => (FriendErrors.TheirFriendsFull, NetworkCode.TheirFriendLimit),
+            FriendOutcome.RequestDayLimit => (FriendErrors.RequestDayLimit, NetworkCode.ProcessFailed),
+            FriendOutcome.TheirRequestsFull => (FriendErrors.TheirRequestsFull, NetworkCode.FriendRequestBoxFull),
+            FriendOutcome.RequestNotFound => (FriendErrors.RequestNotFound, NetworkCode.FriendRequestNotFound),
+            FriendOutcome.NotFriend => (FriendErrors.NotFriend, NetworkCode.FriendNotFound),
+            FriendOutcome.CheerAlreadySent => (FriendErrors.CheerAlreadySent, NetworkCode.CheerAlreadySent),
+            FriendOutcome.CheerSendDayLimit => (FriendErrors.CheerSendDayLimit, NetworkCode.CheerSendDayLimit),
+            FriendOutcome.NoCheerToReceive => (FriendErrors.NoCheerToReceive, NetworkCode.CheerAlreadyReceived),
+            FriendOutcome.CheerReceiveDayLimit => (FriendErrors.CheerReceiveDayLimit, NetworkCode.CheerReceiveDayLimit),
+            _ => (outcome.ToString(), NetworkCode.ProcessFailed),
         };
 
-        if (message != null)
+        if (refusal is (string message, int code))
         {
-            throw new RpcException(new Status(StatusCode.FailedPrecondition, message));
+            throw GameError.Refuse(message, code);
         }
     }
 

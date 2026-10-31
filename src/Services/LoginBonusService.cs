@@ -1,3 +1,4 @@
+using MariesWonderland.Constants;
 using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
 using MariesWonderland.Data;
@@ -85,17 +86,13 @@ public class LoginBonusService(UserDataStore store, DarkMasterMemoryDatabase mas
             && masterBonus.TotalPageCount > 0
             && nextPage > masterBonus.TotalPageCount)
         {
-            throw new RpcException(new Status(
-                StatusCode.FailedPrecondition,
-                $"login bonus {loginBonus.LoginBonusId} exhausted at page {loginBonus.CurrentPageNumber} stamp {loginBonus.CurrentStampNumber}"));
+            throw GameError.Refuse(LoginBonusErrors.Exhausted(loginBonus.LoginBonusId, loginBonus.CurrentPageNumber, loginBonus.CurrentStampNumber));
         }
 
         stamp = FindStamp(loginBonus.LoginBonusId, nextPage, nextStamp);
         if (stamp is null)
         {
-            throw new RpcException(new Status(
-                StatusCode.FailedPrecondition,
-                $"no reward found for login bonus {loginBonus.LoginBonusId} page {nextPage} stamp {nextStamp}"));
+            throw GameError.Refuse(LoginBonusErrors.RewardNotFound(loginBonus.LoginBonusId, nextPage, nextStamp));
         }
 
         return (nextPage, nextStamp, stamp);

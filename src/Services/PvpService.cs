@@ -219,7 +219,7 @@ public class PvpService(UserDataStore store, DarkMasterMemoryDatabase masterDb, 
     private (DarkUserMemoryDatabase UserDb, EntityMPvpSeason Season, long NowMs) EnterRunningSeason(ServerCallContext context)
     {
         long nowMs = NowMs;
-        EntityMPvpSeason season = ArenaHelper.CurrentSeason(_masterDb, nowMs) ?? throw Refused(ArenaErrors.NotOpen);
+        EntityMPvpSeason season = ArenaHelper.CurrentSeason(_masterDb, nowMs) ?? throw GameError.Refuse(ArenaErrors.NotOpen, NetworkCode.OutOfPeriod, ScreenTransition.FunctionTop);
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(context.GetUserId());
         ArenaHelper.Enter(_store, _masterDb, userDb, season, nowMs);
         return (userDb, season, nowMs);
@@ -263,7 +263,7 @@ public class PvpService(UserDataStore store, DarkMasterMemoryDatabase masterDb, 
         EntityIUserPvpStatus status = userDb.EntityIUserPvpStatus.GetOrCreate(userDb.UserId);
         if (!StaminaHelper.TryConsumeBattlePoints(status, cost, _gameConfig, nowMs))
         {
-            throw Refused(ArenaErrors.NotEnoughBattlePoints);
+            throw GameError.Refuse(ArenaErrors.NotEnoughBattlePoints, NetworkCode.NotEnoughBattlePoints);
         }
     }
 

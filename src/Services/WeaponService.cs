@@ -239,12 +239,12 @@ public class WeaponService(DarkMasterMemoryDatabase masterDb, UserDataStore stor
         string[] uuids = [.. userWeaponUuids];
         if (uuids.Any(uuid => DeckGearHelper.IsWeaponInDeck(userDb, uuid)))
         {
-            throw new RpcException(new Status(StatusCode.FailedPrecondition, DeckErrors.WeaponInDeck));
+            throw GameError.Refuse(DeckErrors.WeaponInDeck);
         }
 
         if (userDb.EntityIUserWeapon.Any(w => w.IsProtected && uuids.Contains(w.UserWeaponUuid)))
         {
-            throw new RpcException(new Status(StatusCode.FailedPrecondition, DeckErrors.WeaponProtected));
+            throw GameError.Refuse(DeckErrors.WeaponProtected);
         }
     }
 

@@ -1,3 +1,4 @@
+using MariesWonderland.Constants;
 using Grpc.Core;
 using MariesWonderland.Data;
 
@@ -43,7 +44,7 @@ public static class GrpcContextExtensions
     public static long GetUserId(this ServerCallContext context)
         => context.TryGetUserId(out long userId)
             ? userId
-            : throw new RpcException(new Status(StatusCode.Unauthenticated, "Missing or expired session."));
+            : throw new RpcException(new Status(StatusCode.Unauthenticated, SystemErrors.MissingSession));
 
     /// <summary>Returns the authenticated caller's user ID, if the call has a valid session.</summary>
     public static bool TryGetUserId(this ServerCallContext context, out long userId)
@@ -90,7 +91,7 @@ public static class GrpcContextExtensions
     /// <summary>Like <see cref="TryLockUser"/>, but fails the call with <see cref="StatusCode.Unavailable"/> when the user stayed busy.</summary>
     public static IDisposable LockUser(this ServerCallContext context, UserDataStore store, long userId)
         => context.TryLockUser(store, userId)
-            ?? throw new RpcException(new Status(StatusCode.Unavailable, "User is busy, try again."));
+            ?? throw new RpcException(new Status(StatusCode.Unavailable, SystemErrors.UserBusy));
 
     private sealed class NoLock : IDisposable
     {

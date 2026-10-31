@@ -29,6 +29,7 @@ public static class Program
         builder.Services.Configure<DevModeOptions>(builder.Configuration.GetSection(DevModeOptions.SectionName));
 
         builder.Services.AddSingleton<SessionInterceptor>();
+        builder.Services.AddSingleton<MasterDataVersionInterceptor>();
         builder.Services.AddSingleton<UserLockInterceptor>();
         builder.Services.AddSingleton<CommonHeaderInterceptor>();
         builder.Services.AddSingleton<DiffInterceptor>();
@@ -37,6 +38,7 @@ public static class Program
         builder.Services.AddGrpc(options =>
         {
             options.Interceptors.Add<SessionInterceptor>();
+            options.Interceptors.Add<MasterDataVersionInterceptor>();
             options.Interceptors.Add<UserLockInterceptor>();
             // Outside DiffInterceptor, which hands it each call's changes; inside the lock.
             if (devMode.IsRequestJournalEnabled)

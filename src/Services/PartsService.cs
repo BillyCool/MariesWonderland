@@ -34,7 +34,7 @@ public class PartsService(DarkMasterMemoryDatabase masterDb, UserDataStore store
 
         if (request.UserPartsUuid.Any(uuid => DeckGearHelper.IsPartsInDeck(userDb, uuid)))
         {
-            throw new RpcException(new Status(StatusCode.FailedPrecondition, DeckErrors.PartsInDeck));
+            throw GameError.Refuse(DeckErrors.PartsInDeck);
         }
 
         int totalGold = 0;

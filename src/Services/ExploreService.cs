@@ -40,19 +40,19 @@ public class ExploreService(UserDataStore store, DarkMasterMemoryDatabase master
 
         EntityMExplore explore = _masterDb.EntityMExplore
             .FirstOrDefault(e => e.ExploreId == request.ExploreId)
-            ?? throw new RpcException(new Status(StatusCode.InvalidArgument, ExploreErrors.InvalidExploreId));
+            ?? throw GameError.Refuse(ExploreErrors.InvalidExploreId, status: StatusCode.InvalidArgument);
 
         if (nowMs < explore.StartDatetime)
-            throw new RpcException(new Status(StatusCode.FailedPrecondition, ExploreErrors.ExploreNotStarted));
+            throw GameError.Refuse(ExploreErrors.ExploreNotStarted);
 
         EntityMExploreUnlockCondition? unlockCondition = _masterDb.EntityMExploreUnlockCondition
             .FirstOrDefault(c => c.ExploreUnlockConditionId == explore.ExploreUnlockConditionId);
 
         if (unlockCondition is not null && !UnlockConditionHelper.IsExploreUnlocked(request.ExploreId, unlockCondition, userDb, _masterDb))
-            throw new RpcException(new Status(StatusCode.FailedPrecondition, ExploreErrors.UnlockConditionNotMet));
+            throw GameError.Refuse(ExploreErrors.UnlockConditionNotMet);
 
         EntityIUserExplore userExplore = userDb.EntityIUserExplore.FirstOrDefault()
-            ?? throw new RpcException(new Status(StatusCode.FailedPrecondition, ExploreErrors.UserExploreNotFound));
+            ?? throw GameError.Refuse(ExploreErrors.UserExploreNotFound);
 
         bool isUsingTicket = request.UseConsumableItemId == _gameConfig.ConsumableItemIdForExploreTicket;
 
@@ -61,10 +61,10 @@ public class ExploreService(UserDataStore store, DarkMasterMemoryDatabase master
         {
             EntityIUserConsumableItem item = userDb.EntityIUserConsumableItem
                 .FirstOrDefault(i => i.ConsumableItemId == request.UseConsumableItemId)
-                ?? throw new RpcException(new Status(StatusCode.FailedPrecondition, ExploreErrors.TicketNotFound));
+                ?? throw GameError.Refuse(ExploreErrors.TicketNotFound);
 
             if (item.Count < explore.ConsumeItemCount)
-                throw new RpcException(new Status(StatusCode.FailedPrecondition, ExploreErrors.InsufficientTickets));
+                throw GameError.Refuse(ExploreErrors.InsufficientTickets);
 
             item.Count -= explore.ConsumeItemCount;
         }
@@ -85,16 +85,16 @@ public class ExploreService(UserDataStore store, DarkMasterMemoryDatabase master
 
         EntityMExplore explore = _masterDb.EntityMExplore
             .FirstOrDefault(e => e.ExploreId == request.ExploreId)
-            ?? throw new RpcException(new Status(StatusCode.InvalidArgument, ExploreErrors.InvalidExploreId));
+            ?? throw GameError.Refuse(ExploreErrors.InvalidExploreId, status: StatusCode.InvalidArgument);
 
         EntityIUserExplore userExplore = userDb.EntityIUserExplore.FirstOrDefault()
-            ?? throw new RpcException(new Status(StatusCode.FailedPrecondition, ExploreErrors.UserExploreNotFound));
+            ?? throw GameError.Refuse(ExploreErrors.UserExploreNotFound);
 
         if (userExplore.PlayingExploreId != request.ExploreId)
-            throw new RpcException(new Status(StatusCode.FailedPrecondition, ExploreErrors.NoMatchingActiveExploreToFinish));
+            throw GameError.Refuse(ExploreErrors.NoMatchingActiveExploreToFinish);
 
         EntityIUserStatus status = userDb.EntityIUserStatus.FirstOrDefault()
-            ?? throw new RpcException(new Status(StatusCode.FailedPrecondition, ExploreErrors.UserStatusNotFound));
+            ?? throw GameError.Refuse(ExploreErrors.UserStatusNotFound);
 
         int staminaReward = ExploreStaminaRewardBase * explore.RewardLotteryCount;
         int expReward = ComputeExpReward(status.Level, explore.RewardLotteryCount);
@@ -184,10 +184,10 @@ public class ExploreService(UserDataStore store, DarkMasterMemoryDatabase master
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(context.GetUserId());
 
         EntityIUserExplore userExplore = userDb.EntityIUserExplore.FirstOrDefault()
-            ?? throw new RpcException(new Status(StatusCode.FailedPrecondition, ExploreErrors.UserExploreNotFound));
+            ?? throw GameError.Refuse(ExploreErrors.UserExploreNotFound);
 
         if (userExplore.PlayingExploreId != request.ExploreId)
-            throw new RpcException(new Status(StatusCode.FailedPrecondition, ExploreErrors.NoMatchingActiveExploreToRetire));
+            throw GameError.Refuse(ExploreErrors.NoMatchingActiveExploreToRetire);
 
         userExplore.PlayingExploreId = 0;
         userExplore.IsUseExploreTicket = false;

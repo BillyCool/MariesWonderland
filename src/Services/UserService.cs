@@ -1,3 +1,4 @@
+using MariesWonderland.Constants;
 using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
 using MariesWonderland.Arena;
@@ -466,7 +467,7 @@ public class UserService(UserDataStore store, UserDataSeeder seeder, DarkMasterM
         if (seededDb.EntityIUser.Count == 0)
         {
             string where = _seeder.DataPath ?? "Server:Data:UserDataPath isn't set";
-            throw new RpcException(new Status(StatusCode.FailedPrecondition, $"No save to transfer: no EntityIUserTable.json with a user ({where})"));
+            throw new RpcException(new Status(StatusCode.FailedPrecondition, SystemErrors.NoSaveToTransfer(where)));
         }
 
         long userId = _store.SeedUserFromDatabase(request.Uuid, seededDb);
