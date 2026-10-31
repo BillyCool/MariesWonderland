@@ -280,14 +280,17 @@ public class RewardServiceTests
         Assert.Equal(7, response.SeasonRankResult.Rank);
         Assert.Equal(501, response.SeasonRankResult.PvpSeasonRankRewardGroupId);
 
+        // The rewards wait in the gift box (the result dialog says so); nothing is granted until they are received.
         EntityIUserGem gem = Assert.Single(userDb.EntityIUserGem);
-        Assert.Equal(22, gem.FreeGem);
-        Assert.Equal(5, gem.PaidGem);
+        Assert.Equal(10, gem.FreeGem);
+        Assert.Equal(1, gem.PaidGem);
+        Assert.Equal(1, Assert.Single(userDb.EntityIUserMaterial).Count);
 
-        EntityIUserMaterial material = Assert.Single(userDb.EntityIUserMaterial);
-        Assert.Equal(MaterialId, material.MaterialId);
-        Assert.Equal(6, material.Count);
-        Assert.Equal(777, material.FirstAcquisitionDatetime);
+        Assert.Equal(5, userDb.EntitySUserGift.Count);
+        Assert.All(userDb.EntitySUserGift, g => Assert.Equal(0, g.ReceivedDatetime));
+        Assert.Equal(12, userDb.EntitySUserGift.Where(g => g.PossessionType == (int)PossessionType.FREE_GEM).Sum(g => g.Count));
+        Assert.Equal(4, userDb.EntitySUserGift.Where(g => g.PossessionType == (int)PossessionType.PAID_GEM).Sum(g => g.Count));
+        Assert.Equal(5, userDb.EntitySUserGift.Where(g => g.PossessionType == (int)PossessionType.MATERIAL && g.PossessionId == MaterialId).Sum(g => g.Count));
 
         EntityIUserPvpStatus status = Assert.Single(userDb.EntityIUserPvpStatus);
         Assert.Equal(102, status.LatestRewardReceivePvpWeeklyVersion);

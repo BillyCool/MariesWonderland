@@ -18,6 +18,8 @@ namespace MariesWonderland.Services;
 public class RewardService(UserDataStore store, DarkMasterMemoryDatabase masterDb, TimeProvider timeProvider)
     : MariesWonderland.Proto.Reward.RewardService.RewardServiceBase
 {
+    private const int GiftExpirationDays = 30;
+
     private readonly UserDataStore _store = store;
     private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
     private readonly TimeProvider _timeProvider = timeProvider;
@@ -398,14 +400,19 @@ public class RewardService(UserDataStore store, DarkMasterMemoryDatabase masterD
             return;
         }
 
-        if (userDb.EntityIUserGem.Count == 0)
-        {
-            userDb.EntityIUserGem.Add(new EntityIUserGem { UserId = userDb.UserId });
-        }
-
+        // The result dialog says "Rewards were sent to your gift box", so they go there and are received from the gift box.
         foreach (EntityMPvpReward reward in rewards)
         {
-            PossessionHelper.Apply(userDb, reward.PossessionType, reward.PossessionId, reward.Count, _masterDb, nowMs);
+            userDb.EntitySUserGift.Add(new EntitySUserGift
+            {
+                UserId = userDb.UserId,
+                UserGiftUuid = Guid.NewGuid().ToString(),
+                PossessionType = (int)reward.PossessionType,
+                PossessionId = reward.PossessionId,
+                Count = reward.Count,
+                GrantDatetime = nowMs,
+                ExpirationDatetime = nowMs + GiftExpirationDays * 24L * 60 * 60 * 1000
+            });
         }
     }
 
