@@ -202,8 +202,10 @@ public class QuestServiceTests
         Assert.Equal(PlayableRouteId, mainFlowStatus.CurrentMainQuestRouteId);
 
         EntityIUserMainQuestReplayFlowStatus replayFlowStatus = Assert.Single(userDb.EntityIUserMainQuestReplayFlowStatus);
-        Assert.Equal(0, replayFlowStatus.CurrentQuestSceneId);
-        Assert.Equal(0, replayFlowStatus.CurrentHeadQuestSceneId);
+        // The replay position stays (the map places its chapter points from it) and the flow stays a replay.
+        Assert.Equal(PlayableLastSceneId, replayFlowStatus.CurrentQuestSceneId);
+        Assert.Equal(PlayableLastSceneId, replayFlowStatus.CurrentHeadQuestSceneId);
+        Assert.Equal(QuestFlowType.REPLAY_FLOW, Assert.Single(userDb.EntityIUserMainQuestFlowStatus).CurrentQuestFlowType);
     }
 
     [Fact]

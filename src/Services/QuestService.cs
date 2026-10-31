@@ -255,9 +255,9 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
                 : ResolveReplayFlowType(userDb, userId, questId);
             replayFlow.CurrentQuestFlowType = replayFlowType;
 
-            EntityIUserMainQuestReplayFlowStatus replayFlowStatus = userDb.EntityIUserMainQuestReplayFlowStatus.GetOrCreate(userId);
-            replayFlowStatus.CurrentQuestSceneId = 0;
-            replayFlowStatus.CurrentHeadQuestSceneId = 0;
+            // The replay position is kept between replays: the map places its chapter points from it (the real save holds
+            // the last scene there, never 0).
+            userDb.EntityIUserMainQuestReplayFlowStatus.GetOrCreate(userId);
 
             QuestEngine.MarkActive(replayQuest, nowMs);
             replayQuest.IsBattleOnly = request.IsBattleOnly;
@@ -417,10 +417,6 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
                 progressStatus.CurrentQuestSceneId = restoredSceneId;
                 progressStatus.HeadQuestSceneId = restoredHeadSceneId;
                 progressStatus.CurrentQuestFlowType = QuestFlowType.SUB_FLOW;
-
-                EntityIUserMainQuestReplayFlowStatus replayFlowStatus = userDb.EntityIUserMainQuestReplayFlowStatus.GetOrCreate(userId);
-                replayFlowStatus.CurrentQuestSceneId = 0;
-                replayFlowStatus.CurrentHeadQuestSceneId = 0;
             }
 
             MainQuestSceneContext? sceneContext = ResolveMainQuestSceneContext(restoredSceneId);
@@ -513,7 +509,8 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
             progressStatus.CurrentQuestFlowType = QuestFlowType.UNKNOWN;
         }
 
-        if (currentFlowStatus != null)
+        // After a replay the flow stays a replay, as in the real save: the client resumes into the map from it.
+        if (currentFlowStatus != null && !wasReplayFlow)
         {
             currentFlowStatus.CurrentQuestFlowType = QuestFlowType.UNKNOWN;
         }
@@ -521,17 +518,6 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         if (wasMenuPick)
         {
             RestoreMenuPickContext(userDb, userId, finishSession!, nowMs);
-        }
-
-        // Restore main flow state after replay
-        if (wasReplayFlow)
-        {
-            EntityIUserMainQuestReplayFlowStatus? replayFlowStatus = userDb.EntityIUserMainQuestReplayFlowStatus.FirstOrDefault(s => s.UserId == userId);
-            if (replayFlowStatus != null)
-            {
-                replayFlowStatus.CurrentQuestSceneId = 0;
-                replayFlowStatus.CurrentHeadQuestSceneId = 0;
-            }
         }
 
         // Build response with all reward categories and clean up the server-side quest session
