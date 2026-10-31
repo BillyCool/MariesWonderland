@@ -532,7 +532,7 @@ public class UserDataStore(TimeProvider timeProvider, IUserPersistence? persiste
     /// </summary>
     private static long GeneratePlayerId()
     {
-        // Random 12-digit positive long (range: 1e12 to 2e12)
+        // Random 12-digit positive long (range: 1e11 to 1e12); the client's ID search box takes 12 digits
         return Random.Shared.NextInt64(GameConstants.MinPlayerId, GameConstants.MaxPlayerId);
     }
 
