@@ -319,6 +319,31 @@ public class GimmickServiceTests
     }
 
     [Fact]
+    public async Task InitSequenceSchedule_ScheduleWithALaterSequenceRow_DoesNotStartTheFirstSequenceAgain()
+    {
+        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        DarkMasterMemoryDatabase masterDb = CreateMasterDb();
+        AddSchedule(masterDb, scheduleId: 8, firstSequenceId: 801, startDatetime: nowMs - 1000, endDatetime: nowMs + 1000);
+
+        DarkUserMemoryDatabase userDb = CreateUserDb();
+        userDb.EntityIUserGimmickSequence.Add(new EntityIUserGimmickSequence
+        {
+            UserId = UserId,
+            GimmickSequenceScheduleId = 8,
+            GimmickSequenceId = 804,
+            IsGimmickSequenceCleared = true,
+            ClearDatetime = 2468
+        });
+
+        GimmickServiceImpl service = CreateService(masterDb, userDb);
+
+        await service.InitSequenceSchedule(new Empty(), FakeServerCallContext.For(UserId));
+
+        EntityIUserGimmickSequence sequence = Assert.Single(userDb.EntityIUserGimmickSequence);
+        Assert.Equal(804, sequence.GimmickSequenceId);
+    }
+
+    [Fact]
     public async Task InitSequenceSchedule_DropsUnfinishedSequencesOfEndedSchedules_KeepsClearedOnes()
     {
         long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();

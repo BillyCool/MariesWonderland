@@ -210,14 +210,19 @@ public class GimmickService(UserDataStore store, DarkMasterMemoryDatabase master
                 continue;
             }
 
-            userDb.EntityIUserGimmickSequence.GetOrCreate(
-                s => s.GimmickSequenceScheduleId == schedule.GimmickSequenceScheduleId && s.GimmickSequenceId == schedule.FirstGimmickSequenceId,
-                () => new EntityIUserGimmickSequence
-                {
-                    UserId = userId,
-                    GimmickSequenceScheduleId = schedule.GimmickSequenceScheduleId,
-                    GimmickSequenceId = schedule.FirstGimmickSequenceId
-                });
+            // A schedule that has a sequence row was started already: a chain keeps only its latest sequence (the
+            // real save holds the cleared end of a hidden story chain), so the first one is not started again.
+            if (userDb.EntityIUserGimmickSequence.Any(s => s.GimmickSequenceScheduleId == schedule.GimmickSequenceScheduleId))
+            {
+                continue;
+            }
+
+            userDb.EntityIUserGimmickSequence.Add(new EntityIUserGimmickSequence
+            {
+                UserId = userId,
+                GimmickSequenceScheduleId = schedule.GimmickSequenceScheduleId,
+                GimmickSequenceId = schedule.FirstGimmickSequenceId
+            });
         }
 
         foreach (EntityIUserGimmickSequence sequence in userDb.EntityIUserGimmickSequence
