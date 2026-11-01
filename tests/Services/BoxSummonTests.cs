@@ -157,7 +157,7 @@ public class BoxSummonTests(MasterDatabaseFixture fixture) : ServiceTestBase(fix
         DarkUserMemoryDatabase userDb = new() { UserId = UserId };
         userDb.EntityIUserGem.Add(new EntityIUserGem { UserId = UserId });
         userDb.EntitySUserGift.Add(new EntitySUserGift { UserId = UserId, UserGiftUuid = "gift-1", PossessionType = (int)PossessionType.FREE_GEM, Count = 500 });
-        GiftServiceImpl service = new(CreateStore(UserId, userDb), MasterDb, new FakeTimeProvider(Now));
+        GiftServiceImpl service = new(CreateStore(UserId, userDb), MasterDb, GameConfig, new FakeTimeProvider(Now));
 
         await service.ReceiveGift(new ReceiveGiftRequest { UserGiftUuid = { "gift-1" } }, ContextFor(UserId));
 

@@ -36,6 +36,15 @@ public class GameConfig
 
     public int WeaponLimitBreakAvailableCount { get; init; }
 
+    /// <summary>How much of one kind a player can hold (rows for weapons and memoirs). Gold uses the money limit, the medals the gacha medal limit.</summary>
+    public int MaterialCountLimit { get; init; }
+    public int ConsumableItemCountLimit { get; init; }
+    public int ImportantItemCountLimit { get; init; }
+    public int WeaponCountLimit { get; init; }
+    public int PartsCountLimit { get; init; }
+    public int MoneyCountLimit { get; init; }
+    public int GachaMedalCountLimit { get; init; }
+
     public int UserLevelExpNumericalParameterMapId { get; init; }
 
     public int UserFriendMaxNumber { get; init; }
@@ -82,6 +91,14 @@ public class GameConfig
             QuestSkipMaxCountAtOnce = ParseInt(kv, "QUEST_SKIP_MAX_COUNT_AT_ONCE"),
 
             WeaponLimitBreakAvailableCount = ParseInt(kv, "WEAPON_LIMIT_BREAK_AVAILABLE_COUNT"),
+
+            MaterialCountLimit = ParseInt(kv, "POSSESSION_COUNT_LIMIT_MATERIAL"),
+            ConsumableItemCountLimit = ParseInt(kv, "POSSESSION_COUNT_LIMIT_CONSUMABLE_ITEM"),
+            ImportantItemCountLimit = ParseInt(kv, "POSSESSION_COUNT_LIMIT_IMPORTANT_ITEM"),
+            WeaponCountLimit = ParseInt(kv, "POSSESSION_COUNT_LIMIT_WEAPON"),
+            PartsCountLimit = ParseInt(kv, "POSSESSION_COUNT_LIMIT_PARTS"),
+            MoneyCountLimit = ParseInt(kv, "POSSESSION_COUNT_LIMIT_MONEY"),
+            GachaMedalCountLimit = ParseInt(kv, "POSSESSION_COUNT_LIMIT_GACHA_MEDAL"),
 
             UserLevelExpNumericalParameterMapId = ParseInt(kv, "USER_LEVEL_EXP_NUMERICAL_PARAMETER_MAP_ID"),
 

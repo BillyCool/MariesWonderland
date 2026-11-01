@@ -1,6 +1,7 @@
 using Google.Protobuf.WellKnownTypes;
 using MariesWonderland.Data;
 using MariesWonderland.Models.Entities;
+using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.Gift;
 using MariesWonderland.Tests.Infrastructure;
 using GiftServiceImpl = MariesWonderland.Services.GiftService;
@@ -50,6 +51,77 @@ public class GiftServiceTests
 
         EntitySUserGift otherUserGift = Assert.Single(userDb.EntitySUserGift, gift => gift.UserGiftUuid == "other-user");
         Assert.Equal(0, otherUserGift.ReceivedDatetime);
+    }
+
+    [Fact]
+    public async Task ReceiveGift_GiftPastTheMaterialLimit_IsLeftUnclaimedAndReportedAsOverflow()
+    {
+        DarkUserMemoryDatabase userDb = CreateUserDb();
+        userDb.EntityIUserMaterial.Add(new EntityIUserMaterial { UserId = UserId, MaterialId = 100, Count = 99_999 });
+        userDb.EntitySUserGift.AddRange(
+        [
+            CreateGift("full", possessionType: (int)PossessionType.MATERIAL, possessionId: 100, count: 1),
+            CreateGift("room", possessionType: (int)PossessionType.MATERIAL, possessionId: 200, count: 5)
+        ]);
+
+        GiftServiceImpl service = CreateService(userDb, new GameConfig { MaterialCountLimit = 99_999 });
+
+        ReceiveGiftResponse response = await service.ReceiveGift(
+            new ReceiveGiftRequest { UserGiftUuid = { "full", "room" } },
+            FakeServerCallContext.For(UserId));
+
+        Assert.Equal(["room"], response.ReceivedGiftUuid);
+        Assert.Equal(["full"], response.OverflowGiftUuid);
+        Assert.Equal(0, userDb.EntitySUserGift.Single(g => g.UserGiftUuid == "full").ReceivedDatetime);
+        Assert.Equal(99_999, userDb.EntityIUserMaterial.Single(m => m.MaterialId == 100).Count);
+        Assert.Equal(5, userDb.EntityIUserMaterial.Single(m => m.MaterialId == 200).Count);
+    }
+
+    [Fact]
+    public async Task ReceiveGift_TwoGiftsOfTheSameItem_SecondOneOverflowsOnceTheFirstFillsTheLimit()
+    {
+        DarkUserMemoryDatabase userDb = CreateUserDb();
+        userDb.EntityIUserMaterial.Add(new EntityIUserMaterial { UserId = UserId, MaterialId = 100, Count = 99_990 });
+        userDb.EntitySUserGift.AddRange(
+        [
+            CreateGift("first", possessionType: (int)PossessionType.MATERIAL, possessionId: 100, count: 9),
+            CreateGift("second", possessionType: (int)PossessionType.MATERIAL, possessionId: 100, count: 9)
+        ]);
+
+        GiftServiceImpl service = CreateService(userDb, new GameConfig { MaterialCountLimit = 99_999 });
+
+        ReceiveGiftResponse response = await service.ReceiveGift(
+            new ReceiveGiftRequest { UserGiftUuid = { "first", "second" } },
+            FakeServerCallContext.For(UserId));
+
+        Assert.Equal(["first"], response.ReceivedGiftUuid);
+        Assert.Equal(["second"], response.OverflowGiftUuid);
+        Assert.Equal(99_999, userDb.EntityIUserMaterial.Single(m => m.MaterialId == 100).Count);
+    }
+
+    [Fact]
+    public async Task ReceiveGift_PieceGift_ConvertsAndRecordsTheConversion()
+    {
+        DarkUserMemoryDatabase userDb = CreateUserDb();
+        userDb.EntityIUserMaterial.Add(new EntityIUserMaterial { UserId = UserId, MaterialId = 501001, Count = 8 });
+        userDb.EntitySUserGift.Add(CreateGift("pieces", possessionType: (int)PossessionType.MATERIAL, possessionId: 501001, count: 3));
+
+        GiftServiceImpl service = CreateService(userDb, new GameConfig { MaterialCountLimit = 99_999 });
+
+        ReceiveGiftResponse response = await service.ReceiveGift(
+            new ReceiveGiftRequest { UserGiftUuid = { "pieces" } },
+            FakeServerCallContext.For(UserId));
+
+        Assert.Equal(["pieces"], response.ReceivedGiftUuid);
+        Assert.Equal(1, userDb.EntityIUserMaterial.Single(m => m.MaterialId == 501001).Count);
+        Assert.Equal(1, userDb.EntityIUserMaterial.Single(m => m.MaterialId == 322002).Count);
+
+        EntityIUserPossessionAutoConvert conversion = Assert.Single(userDb.EntityIUserPossessionAutoConvert);
+        Assert.Equal(501001, conversion.PossessionId);
+        Assert.Equal(10, conversion.FromCount);
+        Assert.Equal(322002, conversion.ToPossessionId);
+        Assert.Equal(1, conversion.ToCount);
+        Assert.True(conversion.ConvertDatetime > 0);
     }
 
     [Fact]
@@ -128,7 +200,7 @@ public class GiftServiceTests
     public async Task GetGiftList_ForNewUser_ReturnsEmptyResponseAndCreatesDatabase()
     {
         UserDataStore store = new(TimeProvider.System);
-        GiftServiceImpl service = new(store, new DarkMasterMemoryDatabase(), TimeProvider.System);
+        GiftServiceImpl service = new(store, new DarkMasterMemoryDatabase(), new GameConfig(), TimeProvider.System);
 
         GetGiftListResponse response = await service.GetGiftList(
             new GetGiftListRequest { IsAscendingSort = false, GetCount = 0 },
@@ -200,11 +272,11 @@ public class GiftServiceTests
         Assert.Equal(8888, secondGift.ReceivedDatetime.ToDateTimeOffset().ToUnixTimeMilliseconds());
     }
 
-    private static GiftServiceImpl CreateService(DarkUserMemoryDatabase userDb)
+    private static GiftServiceImpl CreateService(DarkUserMemoryDatabase userDb, GameConfig? gameConfig = null)
     {
         UserDataStore store = new(TimeProvider.System);
         store.Set(UserId, userDb);
-        return new GiftServiceImpl(store, new DarkMasterMemoryDatabase(), TimeProvider.System);
+        return new GiftServiceImpl(store, new DarkMasterMemoryDatabase(), gameConfig ?? new GameConfig(), TimeProvider.System);
     }
 
     private static DarkUserMemoryDatabase CreateUserDb() => new() { UserId = UserId };

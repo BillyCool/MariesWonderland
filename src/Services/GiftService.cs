@@ -10,19 +10,25 @@ using MariesWonderland.Proto.Gift;
 
 namespace MariesWonderland.Services;
 
-public class GiftService(UserDataStore store, DarkMasterMemoryDatabase masterDb, TimeProvider timeProvider) : MariesWonderland.Proto.Gift.GiftService.GiftServiceBase
+public class GiftService(UserDataStore store, DarkMasterMemoryDatabase masterDb, GameConfig gameConfig, TimeProvider timeProvider) : MariesWonderland.Proto.Gift.GiftService.GiftServiceBase
 {
     private readonly UserDataStore _store = store;
     private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
+    private readonly GameConfig _gameConfig = gameConfig;
     private readonly TimeProvider _timeProvider = timeProvider;
 
-    /// <summary>Claims inbox gifts by UUID: grants their contents and marks them received with the current timestamp.</summary>
+    /// <summary>
+    /// Claims inbox gifts by UUID: grants their contents and marks them received with the current timestamp. A gift that
+    /// would take the player past a possession limit (a material already at 99999, say) is left unclaimed and
+    /// reported in <c>OverflowGiftUuid</c>; the rest of the batch still goes through, in request order.
+    /// </summary>
     public override Task<ReceiveGiftResponse> ReceiveGift(ReceiveGiftRequest request, ServerCallContext context)
     {
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
 
         List<string> received = [];
+        List<string> overflowed = [];
 
         foreach (EntitySUserGift gift in userDb.EntitySUserGift)
         {
@@ -30,6 +36,12 @@ public class GiftService(UserDataStore store, DarkMasterMemoryDatabase masterDb,
                 && gift.ReceivedDatetime == 0
                 && request.UserGiftUuid.Contains(gift.UserGiftUuid))
             {
+                if (PossessionLimitHelper.WouldExceed(userDb, _gameConfig, (PossessionType)gift.PossessionType, gift.PossessionId, gift.Count))
+                {
+                    overflowed.Add(gift.UserGiftUuid);
+                    continue;
+                }
+
                 long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
                 PossessionHelper.Apply(userDb, (PossessionType)gift.PossessionType, gift.PossessionId, gift.Count, _masterDb, nowMs);
                 gift.ReceivedDatetime = nowMs;
@@ -39,6 +51,7 @@ public class GiftService(UserDataStore store, DarkMasterMemoryDatabase masterDb,
 
         ReceiveGiftResponse response = new();
         response.ReceivedGiftUuid.AddRange(received);
+        response.OverflowGiftUuid.AddRange(overflowed);
         return Task.FromResult(response);
     }
 

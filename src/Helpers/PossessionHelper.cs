@@ -30,6 +30,7 @@ public static class PossessionHelper
                         userDb.EntityIUserMaterial.Add(new EntityIUserMaterial { UserId = userDb.UserId, MaterialId = id, Count = count, FirstAcquisitionDatetime = nowMs });
                     else
                         mat.Count += count;
+                    PieceConversionHelper.ConvertIfEnough(userDb, id, nowMs);
                     break;
                 }
             case PossessionType.CONSUMABLE_ITEM:
