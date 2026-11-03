@@ -183,14 +183,20 @@ public class UserService(UserDataStore store, UserDataSeeder seeder, DarkMasterM
         login.LastLoginDatetime = nowMs;
     }
 
-    /// <summary>Returns the user's backup token for account recovery.</summary>
+    /// <summary>
+    /// Returns the user's backup token for account recovery. The client asks for it from the title screen's transfer
+    /// dialog too, before any login (right after Delete Data its session is gone, and the device is not registered yet),
+    /// so a call without a session gets the placeholder token instead of an error.
+    /// </summary>
     public override Task<GetBackupTokenResponse> GetBackupToken(GetBackupTokenRequest request, ServerCallContext context)
     {
-        long userId = context.GetUserId();
-        DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
-
-        EntitySUser? sUser = userDb.EntitySUser.FirstOrDefault(u => u.UserId == userId);
-        string token = sUser?.BackupToken ?? "";
+        string token = "";
+        if (context.TryGetUserId(out long userId))
+        {
+            DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
+            EntitySUser? sUser = userDb.EntitySUser.FirstOrDefault(u => u.UserId == userId);
+            token = sUser?.BackupToken ?? "";
+        }
 
         if (string.IsNullOrEmpty(token))
         {

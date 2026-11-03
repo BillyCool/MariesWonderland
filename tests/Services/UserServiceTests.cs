@@ -23,6 +23,16 @@ public class UserServiceTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         return new UserService(store, seeder, MasterDb, new MissionTracker(MasterDb, new MissionCatalog(MasterDb, MissionFilterTable.Empty)), TimeProvider.System);
     }
 
+    [Fact]
+    public async Task GetBackupToken_BeforeLogin_ReturnsThePlaceholderTokenInsteadOfFailing()
+    {
+        UserService service = CreateService(CreateStore(UserId, CreateUserDb()));
+
+        GetBackupTokenResponse response = await service.GetBackupToken(new GetBackupTokenRequest { Uuid = "fresh-device" }, FakeServerCallContext.Anonymous());
+
+        Assert.Equal("mock-backup-token", response.BackupToken);
+    }
+
     /// <summary>
     /// Verifies that SetUserName updates the profile name and sets the name update timestamp.
     /// </summary>
