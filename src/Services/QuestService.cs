@@ -1,6 +1,7 @@
 ﻿using Google.Protobuf;
 using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
+using MariesWonderland.Constants;
 using MariesWonderland.Data;
 using MariesWonderland.Extensions;
 using MariesWonderland.Helpers;
@@ -1083,17 +1084,43 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         return Task.FromResult(new SetAutoSaleSettingResponse());
     }
 
-    /// <summary>Opens a guerrilla free quest event window for the user.</summary>
+    /// <summary>
+    /// Opens the guerrilla quests for the schedule's open minutes. The first open of a game day is free; the client
+    /// counts the free opens left as <c>DailyOpenMaxCount - DailyOpenedCount</c>, so the count starts over each game day
+    /// here, and any further open the same day costs <c>NECESSARY_GEM_COUNT_FOR_GUERRILLA_OPEN</c> gems (free gems first).
+    /// </summary>
     public override Task<StartGuerrillaFreeOpenResponse> StartGuerrillaFreeOpen(Empty request, ServerCallContext context)
     {
         long userId = context.GetUserId();
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
 
         long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
+        EntityMEventQuestGuerrillaFreeOpen schedule = _masterDb.EntityMEventQuestGuerrillaFreeOpen
+            .FirstOrDefault(s => s.StartDatetime <= nowMs && nowMs < s.EndDatetime)
+            ?? throw GameError.Refuse(QuestErrors.NoGuerrillaFreeOpen);
 
         EntityIUserEventQuestGuerrillaFreeOpen freeOpen = userDb.EntityIUserEventQuestGuerrillaFreeOpen.GetOrCreate(userId);
+        if (freeOpen.StartDatetime < GameDayHelper.StartOfDay(nowMs))
+        {
+            freeOpen.DailyOpenedCount = 0;
+        }
+
+        if (freeOpen.DailyOpenedCount >= schedule.DailyOpenMaxCount)
+        {
+            int gemCost = int.TryParse(_masterDb.EntityMConfig.FirstOrDefault(c => c.ConfigKey == "NECESSARY_GEM_COUNT_FOR_GUERRILLA_OPEN")?.Value, out int cost) ? cost : 0;
+            EntityIUserGem? gem = userDb.EntityIUserGem.FirstOrDefault();
+            if (gem == null || gem.FreeGem + gem.PaidGem < gemCost)
+            {
+                throw GameError.Refuse(QuestErrors.NotEnoughGemsForGuerrillaOpen);
+            }
+
+            int fromFree = Math.Min(gem.FreeGem, gemCost);
+            gem.FreeGem -= fromFree;
+            gem.PaidGem -= gemCost - fromFree;
+        }
+
         freeOpen.StartDatetime = nowMs;
-        freeOpen.OpenMinutes = 60;
+        freeOpen.OpenMinutes = schedule.OpenMinutes;
         freeOpen.DailyOpenedCount++;
 
         return Task.FromResult(new StartGuerrillaFreeOpenResponse());

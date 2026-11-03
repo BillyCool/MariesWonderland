@@ -1002,6 +1002,35 @@ public class QuestServiceTests
             userDb.EntityIUserMaterial.OrderBy(m => m.MaterialId).Select(m => $"{m.MaterialId}:{m.Count}").ToArray());
     }
 
+    [Fact]
+    public async Task StartGuerrillaFreeOpen_FirstOpenOfTheDayIsFree_TheNextCostsGems_AndANewDayStartsOver()
+    {
+        DarkMasterMemoryDatabase masterDb = new();
+        masterDb.EntityMEventQuestGuerrillaFreeOpen.Add(new EntityMEventQuestGuerrillaFreeOpen { EventQuestGuerrillaFreeOpenId = 1, OpenMinutes = 60, DailyOpenMaxCount = 1, StartDatetime = 0, EndDatetime = long.MaxValue });
+        masterDb.EntityMConfig.Add(new EntityMConfig { ConfigKey = "NECESSARY_GEM_COUNT_FOR_GUERRILLA_OPEN", Value = "100" });
+        DarkUserMemoryDatabase userDb = new();
+        userDb.EntityIUserGem.Add(new EntityIUserGem { UserId = UserId, FreeGem = 30, PaidGem = 200 });
+        QuestServiceImpl service = CreateService(masterDb, userDb);
+
+        await service.StartGuerrillaFreeOpen(new Google.Protobuf.WellKnownTypes.Empty(), FakeServerCallContext.For(UserId));
+        EntityIUserEventQuestGuerrillaFreeOpen open = Assert.Single(userDb.EntityIUserEventQuestGuerrillaFreeOpen);
+        Assert.Equal((1, 60), (open.DailyOpenedCount, open.OpenMinutes));
+        Assert.Equal((30, 200), (userDb.EntityIUserGem[0].FreeGem, userDb.EntityIUserGem[0].PaidGem));
+
+        await service.StartGuerrillaFreeOpen(new Google.Protobuf.WellKnownTypes.Empty(), FakeServerCallContext.For(UserId));
+        Assert.Equal(2, open.DailyOpenedCount);
+        Assert.Equal((0, 130), (userDb.EntityIUserGem[0].FreeGem, userDb.EntityIUserGem[0].PaidGem));
+
+        userDb.EntityIUserGem[0].PaidGem = 50;
+        await Assert.ThrowsAsync<Grpc.Core.RpcException>(() => service.StartGuerrillaFreeOpen(new Google.Protobuf.WellKnownTypes.Empty(), FakeServerCallContext.For(UserId)));
+        Assert.Equal(2, open.DailyOpenedCount);
+
+        open.StartDatetime = GameDayHelper.StartOfDay(DateTimeOffset.UtcNow.ToUnixTimeMilliseconds()) - 1;
+        await service.StartGuerrillaFreeOpen(new Google.Protobuf.WellKnownTypes.Empty(), FakeServerCallContext.For(UserId));
+        Assert.Equal(1, open.DailyOpenedCount);
+        Assert.Equal(50, userDb.EntityIUserGem[0].PaidGem);
+    }
+
     private static QuestServiceImpl CreateService(DarkMasterMemoryDatabase masterDb, DarkUserMemoryDatabase userDb)
     {
         UserDataStore store = new(TimeProvider.System);
