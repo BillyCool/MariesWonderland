@@ -119,6 +119,25 @@ public class QuestEngineTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
     }
 
     [Fact]
+    public void ClearQuestMissions_KeepsAHigherProgressValueAndRaisesAZeroOne()
+    {
+        QuestEngine engine = CreateEngine();
+        EntityMQuest quest = FindRewardingQuest();
+        DarkUserMemoryDatabase userDb = CreateUser();
+        engine.EnsureQuestRows(userDb, quest.QuestId);
+        List<EntityIUserQuestMission> rows = [.. userDb.EntityIUserQuestMission.Where(m => m.QuestId == quest.QuestId)];
+        Assert.True(rows.Count >= 2);
+        rows[0].ProgressValue = 3;
+        rows[1].ProgressValue = 0;
+
+        engine.ClearQuestMissions(userDb, quest.QuestId, NowMs);
+
+        Assert.Equal(3, rows[0].ProgressValue);
+        Assert.Equal(1, rows[1].ProgressValue);
+        Assert.All(rows, m => Assert.True(m.IsClear));
+    }
+
+    [Fact]
     public void Finish_Win_KeepsTheFastestRunWithAllWavesAddedUp()
     {
         QuestEngine engine = CreateEngine();

@@ -352,11 +352,16 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         else
         {
             // Background quests (cutscenes, non-combat) — auto-clear immediately.
+            // The first clear pays like a quest the story passed (EXP, gold, first-clear items); nothing else clears it later.
             bool firstClear = userQuest.ClearCount == 0;
-            QuestEngine.MarkCleared(userQuest, 1, nowMs);
-            if (firstClear)
+            if (firstClear && quest != null)
             {
+                _questEngine.FinalizePassedQuest(userDb, quest, nowMs);
                 UserCampaignHelper.StartBeginnerCampaignOnFirstClear(_masterDb, userDb, questId, nowMs);
+            }
+            else
+            {
+                QuestEngine.MarkCleared(userQuest, 1, nowMs);
             }
 
             // Set scene IDs from the first scene of this quest

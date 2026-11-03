@@ -160,6 +160,28 @@ public class MainQuestFlowTests(MasterDatabaseFixture fixture) : ServiceTestBase
     }
 
     [Fact]
+    public async Task StartMainQuest_BackgroundQuestWithAFirstClearReward_PaysItOnce()
+    {
+        (QuestService service, DarkUserMemoryDatabase userDb, long userId) = CreateService();
+        EntityMQuest quest = MasterDb.EntityMQuest
+            .Where(q => q.IsRunInTheBackground && !QuestEngine.IsPlayable(q) && MasterDb.EntityMQuestScene.Any(s => s.QuestId == q.QuestId)
+                && MasterDb.EntityMQuestFirstClearRewardGroup.Any(r => r.QuestFirstClearRewardGroupId == q.QuestFirstClearRewardGroupId && r.PossessionType == PossessionType.FREE_GEM))
+            .OrderBy(q => q.QuestId)
+            .First();
+        int reward = MasterDb.EntityMQuestFirstClearRewardGroup
+            .Where(r => r.QuestFirstClearRewardGroupId == quest.QuestFirstClearRewardGroupId && r.PossessionType == PossessionType.FREE_GEM)
+            .Sum(r => r.Count);
+        int before = userDb.EntityIUserGem.Single().FreeGem;
+
+        await service.StartMainQuest(new StartMainQuestRequest { QuestId = quest.QuestId, IsMainFlow = true }, ContextFor(userId));
+        Assert.Equal(before + reward, userDb.EntityIUserGem.Single().FreeGem);
+        Assert.Equal((int)QuestStateType.CLEARED, userDb.EntityIUserQuest.Single(q => q.QuestId == quest.QuestId).QuestStateType);
+
+        await service.StartMainQuest(new StartMainQuestRequest { QuestId = quest.QuestId, IsMainFlow = true }, ContextFor(userId));
+        Assert.Equal(before + reward, userDb.EntityIUserGem.Single().FreeGem);
+    }
+
+    [Fact]
     public async Task SceneProgress_IntoAHalfResultScene_LeavesTheQuestMissionsForTheFinish()
     {
         (QuestService service, DarkUserMemoryDatabase userDb, long userId) = CreateService();

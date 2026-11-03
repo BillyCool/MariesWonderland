@@ -529,7 +529,8 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
                 m => m.QuestId == quest.QuestId && m.QuestMissionId == missionId,
                 () => new EntityIUserQuestMission { UserId = userDb.UserId, QuestId = quest.QuestId, QuestMissionId = missionId });
             userMission.IsClear = true;
-            userMission.ProgressValue = 1;
+            // The real save keeps what a run measured (skill uses, damage); a later clear must not lower it.
+            userMission.ProgressValue = Math.Max(userMission.ProgressValue, 1);
             userMission.LatestClearDatetime = nowMs;
         }
     }
