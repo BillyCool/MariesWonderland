@@ -13,8 +13,8 @@ public sealed record MemoirSubStatusRoll(int PartsStatusSubLotteryId, StatusKind
 /// <summary>
 /// The server-side memoir tables master data lacks (<c>Data/Custom/MemoirSubStatusRolls.json</c> and
 /// <c>MemoirDrops.json</c>): which sub-status values a memoir of each rarity rolls, which grade (the game's "Sub No.")
-/// a dropped memoir has, and how many sub-status slots a grade starts with. Many of the numbers are estimates, see the
-/// confidence notes in the files.
+/// a dropped memoir has, and how many sub-status slots a grade starts with. The administrator accepted the numbers as
+/// they are; the files note where each came from.
 /// </summary>
 public sealed class MemoirTable
 {

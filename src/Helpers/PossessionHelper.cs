@@ -239,8 +239,6 @@ public static class PossessionHelper
         };
         userDb.EntityIUserParts.Add(parts);
 
-        // REVIEW: the sub-status values of rarities 30, 20 and 10, the grade odds of rarities 30 and 20 and the slot counts
-        // of grades 1 to 3 are estimates (Data/Custom/MemoirSubStatusRolls.json, MemoirDrops.json).
         if (partsDef != null)
         {
             MemoirSubStatusHelper.AddStartingSubStatuses(userDb, parts, partsDef, memoirs, random);
