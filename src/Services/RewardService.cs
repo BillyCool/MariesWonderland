@@ -22,8 +22,11 @@ public class RewardService(UserDataStore store, DarkMasterMemoryDatabase masterD
     private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
     private readonly TimeProvider _timeProvider = timeProvider;
 
+    /// <summary>Gift text 30: "Obtained as a weekly reward from Subjugation Battles."</summary>
+    private const int BigHuntWeeklyGiftTextId = 30;
+
     /// <summary>
-    /// Grants this week's score rewards once: per attribute, the highest tier its weekly max score reached.
+    /// Sends last week's score rewards to the gift box once: per attribute, the highest tier its weekly max score reached.
     /// Important items ("Daily Reward+") do not boost them.
     /// </summary>
     public override Task<ReceiveBigHuntRewardResponse> ReceiveBigHuntReward(Empty request, ServerCallContext context)
@@ -71,7 +74,6 @@ public class RewardService(UserDataStore store, DarkMasterMemoryDatabase masterD
 
                 foreach (EntityMBigHuntRewardGroup item in BigHuntRewardHelper.HighestTierItems(_masterDb, rewardGroupId, maxScore))
                 {
-                    PossessionHelper.Apply(userDb, item.PossessionType, item.PossessionId, item.Count, _masterDb, nowMs);
                     weeklyRewards.Add(new BigHuntReward
                     {
                         PossessionType = (int)item.PossessionType,
@@ -79,6 +81,22 @@ public class RewardService(UserDataStore store, DarkMasterMemoryDatabase masterD
                         Count = item.Count,
                     });
                 }
+            }
+
+            // The rewards go to the gift box, one gift per possession ("Obtained as a weekly reward from Subjugation Battles.").
+            foreach (BigHuntReward reward in BigHuntRewardHelper.Combine(weeklyRewards))
+            {
+                userDb.EntitySUserGift.Add(new EntitySUserGift
+                {
+                    UserId = userId,
+                    UserGiftUuid = Guid.NewGuid().ToString(),
+                    PossessionType = reward.PossessionType,
+                    PossessionId = reward.PossessionId,
+                    Count = reward.Count,
+                    GrantDatetime = nowMs,
+                    DescriptionGiftTextId = BigHuntWeeklyGiftTextId,
+                    ExpirationDatetime = nowMs + GameConfig.GiftExpirationDays * 24L * 60 * 60 * 1000
+                });
             }
 
             if (ws == null)

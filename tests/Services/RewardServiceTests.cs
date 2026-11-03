@@ -89,14 +89,16 @@ public class RewardServiceTests
             ["5:400:2"],
             response.LastWeekWeeklyScoreReward.Select(RewardKey).ToArray());
 
+        // The rewards are sent to the gift box, not added to the inventory.
         EntityIUserGem gem = Assert.Single(userDb.EntityIUserGem);
         Assert.Equal(10, gem.FreeGem);
         Assert.Equal(20, gem.PaidGem);
+        Assert.Equal(1, Assert.Single(userDb.EntityIUserMaterial).Count);
 
-        EntityIUserMaterial material = Assert.Single(userDb.EntityIUserMaterial);
-        Assert.Equal(MaterialId, material.MaterialId);
-        Assert.Equal(3, material.Count);
-        Assert.Equal(123, material.FirstAcquisitionDatetime);
+        EntitySUserGift gift = Assert.Single(userDb.EntitySUserGift);
+        Assert.Equal((5, 400, 2), (gift.PossessionType, gift.PossessionId, gift.Count));
+        Assert.Equal(30, gift.DescriptionGiftTextId);
+        Assert.Equal(0, gift.ReceivedDatetime);
 
         EntityIUserBigHuntWeeklyStatus status = Assert.Single(userDb.EntityIUserBigHuntWeeklyStatus, s => s.BigHuntWeeklyVersion == weeklyVersion);
         Assert.True(status.IsReceivedWeeklyReward);
