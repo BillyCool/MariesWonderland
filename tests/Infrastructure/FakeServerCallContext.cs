@@ -46,7 +46,10 @@ public sealed class FakeServerCallContext : ServerCallContext
         return context;
     }
 
-    protected override string MethodCore => string.Empty;
+    /// <summary>The called method, such as <c>/apb.api.user.UserService/GetAndroidArgs</c>.</summary>
+    public string MethodName { get; set; } = string.Empty;
+
+    protected override string MethodCore => MethodName;
     protected override string HostCore => string.Empty;
     protected override string PeerCore => string.Empty;
     protected override DateTime DeadlineCore => DateTime.MaxValue;

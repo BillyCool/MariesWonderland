@@ -66,6 +66,18 @@ public class MasterDataVersionInterceptorTests(MasterDatabaseFixture fixture) : 
     public async Task EmptyVersionHeader_Passes()
         => Assert.Null(await Run(CreateInterceptor(), Call("", loggedIn: true)));
 
+    [Theory]
+    [InlineData("/apb.api.user.UserService/GetAndroidArgs")]
+    [InlineData("/apb.api.user.UserService/Auth")]
+    [InlineData("/apb.api.data.DataService/GetLatestMasterDataVersion")]
+    public async Task StaleVersion_PassesTheTitleFlowCalls(string method)
+    {
+        FakeServerCallContext context = Call("20240404193219_99", loggedIn: true);
+        context.MethodName = method;
+
+        Assert.Null(await Run(CreateInterceptor(), context));
+    }
+
     [Fact]
     public async Task StaleVersionBeforeLogin_Passes()
         => Assert.Null(await Run(CreateInterceptor(), Call("20240404193219_99", loggedIn: false)));
