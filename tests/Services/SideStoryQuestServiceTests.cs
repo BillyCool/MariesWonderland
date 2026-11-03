@@ -1,4 +1,4 @@
-using MariesWonderland.Data;
+﻿using MariesWonderland.Data;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Proto.SideStoryQuest;
 using MariesWonderland.Tests.Infrastructure;
@@ -178,6 +178,21 @@ public class SideStoryQuestServiceTests
 
         EntityIUserSideStoryQuest quest = Assert.Single(userDb.EntityIUserSideStoryQuest);
         Assert.Equal(ThirdSceneId, quest.HeadSideStoryQuestSceneId);
+        Assert.Equal(3, quest.SideStoryQuestStateType);
+    }
+
+    [Fact]
+    public async Task UpdateSideStoryQuestSceneProgress_BeforeTheLastScene_KeepsTheStateActive()
+    {
+        DarkUserMemoryDatabase userDb = new();
+        userDb.EntityIUserSideStoryQuest.Add(new EntityIUserSideStoryQuest { UserId = UserId, SideStoryQuestId = QuestId, HeadSideStoryQuestSceneId = FirstSceneId, SideStoryQuestStateType = 1 });
+        SideStoryQuestServiceImpl service = CreateService(CreateMasterDb(), userDb);
+
+        await service.UpdateSideStoryQuestSceneProgress(
+            new UpdateSideStoryQuestSceneProgressRequest { SideStoryQuestId = QuestId, SideStoryQuestSceneId = SecondSceneId },
+            FakeServerCallContext.For(UserId));
+
+        Assert.Equal(1, Assert.Single(userDb.EntityIUserSideStoryQuest).SideStoryQuestStateType);
     }
 
     [Fact]

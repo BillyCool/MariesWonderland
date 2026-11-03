@@ -3,6 +3,7 @@ using MariesWonderland.Data;
 using MariesWonderland.Extensions;
 using MariesWonderland.Helpers;
 using MariesWonderland.Models.Entities;
+using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.SideStoryQuest;
 
 namespace MariesWonderland.Services;
@@ -48,14 +49,14 @@ public class SideStoryQuestService(UserDataStore store, DarkMasterMemoryDatabase
                 UserId = userId,
                 SideStoryQuestId = questId,
                 HeadSideStoryQuestSceneId = firstSceneId,
-                SideStoryQuestStateType = 1, // Active
+                SideStoryQuestStateType = (int)SideStoryQuestStateType.ACTIVE,
             });
         }
         else
         {
             existing.HeadSideStoryQuestSceneId = sceneId;
-            if (existing.SideStoryQuestStateType == 0)
-                existing.SideStoryQuestStateType = 1;
+            if (existing.SideStoryQuestStateType == (int)SideStoryQuestStateType.UNKNOWN)
+                existing.SideStoryQuestStateType = (int)SideStoryQuestStateType.ACTIVE;
         }
 
         return Task.FromResult(new MoveSideStoryQuestResponse());
@@ -78,11 +79,15 @@ public class SideStoryQuestService(UserDataStore store, DarkMasterMemoryDatabase
             .FirstOrDefault(s => s.SideStoryQuestId == questId);
         if (progress != null)
         {
-            if (progress.SideStoryQuestStateType == 0)
-                progress.SideStoryQuestStateType = 1;
+            if (progress.SideStoryQuestStateType == (int)SideStoryQuestStateType.UNKNOWN)
+                progress.SideStoryQuestStateType = (int)SideStoryQuestStateType.ACTIVE;
 
             if (IsSceneAhead(questId, sceneId, progress.HeadSideStoryQuestSceneId))
                 progress.HeadSideStoryQuestSceneId = sceneId;
+
+            // The real save marks a side story whose last scene was reached as cleared (state 3).
+            if (IsLastScene(questId, sceneId))
+                progress.SideStoryQuestStateType = (int)SideStoryQuestStateType.CLEARED;
         }
 
         return Task.FromResult(new UpdateSideStoryQuestSceneProgressResponse());
@@ -129,6 +134,10 @@ public class SideStoryQuestService(UserDataStore store, DarkMasterMemoryDatabase
         return !TryGetSceneSortOrder(questId, currentHeadSceneId, out int currentSortOrder)
             || newSortOrder > currentSortOrder;
     }
+
+    private bool IsLastScene(int questId, int sceneId)
+        => TryGetSceneSortOrder(questId, sceneId, out int sortOrder)
+            && sortOrder == _masterDb.EntityMSideStoryQuestScene.Where(s => s.SideStoryQuestId == questId).Max(s => s.SortOrder);
 
     private bool IsSceneInQuest(int questId, int sceneId)
         => TryGetSceneSortOrder(questId, sceneId, out _);

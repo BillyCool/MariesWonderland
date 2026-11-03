@@ -1,4 +1,4 @@
-using MariesWonderland.Data;
+﻿using MariesWonderland.Data;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
 using MariesWonderland.Quests;
@@ -136,17 +136,18 @@ public class RecollectionsHelperTests
     }
 
     [Fact]
-    public void ResetFloor_StartsTheWholeFloorOver_AndLeavesOtherFloorsAlone()
+    public void ResetDoor_UndoesOnlyThatDoor_AndLeavesTheFloorsOtherDoorsAlone()
     {
         (DarkUserMemoryDatabase userDb, EntityIUserDeck deck) = UserWithDeck();
         RecollectionsHelper.RecordClear(Master(), userDb, CostumeChapter, 1, deck, Now);
         RecollectionsHelper.RecordClear(Master(), userDb, CostumeChapter, 2, deck, Now);
         RecollectionsHelper.RecordClear(Master(), userDb, CostumeChapter, 11, deck, Now);
 
-        RecollectionsHelper.ResetFloor(Master(), userDb, CostumeChapter, 1);
+        RecollectionsHelper.ResetDoor(userDb, CostumeChapter, 1);
 
-        Assert.Equal([11], userDb.EntityIUserQuestLimitContentStatus.Select(s => s.QuestId));
-        Assert.All(userDb.EntityIUserDeckLimitContentRestricted, r => Assert.Equal(11, r.QuestId));
-        Assert.NotEmpty(userDb.EntityIUserDeckLimitContentRestricted);
+        Assert.Equal([2, 11], userDb.EntityIUserQuestLimitContentStatus.Select(s => s.QuestId).Order());
+        Assert.DoesNotContain(userDb.EntityIUserDeckLimitContentRestricted, r => r.QuestId == 1);
+        Assert.Contains(userDb.EntityIUserDeckLimitContentRestricted, r => r.QuestId == 2);
+        Assert.Contains(userDb.EntityIUserDeckLimitContentRestricted, r => r.QuestId == 11);
     }
 }

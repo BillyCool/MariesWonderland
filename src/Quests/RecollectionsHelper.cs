@@ -1,4 +1,4 @@
-using MariesWonderland.Data;
+﻿using MariesWonderland.Data;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Helpers;
 using MariesWonderland.Models.Type;
@@ -9,7 +9,7 @@ namespace MariesWonderland.Quests;
 /// Recollections of Dusk floors. A floor is one chapter at one difficulty: the quests of one event quest sequence. Clearing
 /// a floor quest locks the costumes (and, where the floor says so, the weapons) of the deck used for the floor's other
 /// quests (<c>IUserDeckLimitContentRestricted</c>, which the client reads when building decks). The locks lift when every
-/// quest of the floor is cleared; a reset starts the floor over.
+/// quest of the floor is cleared; a reset undoes one door.
 /// </summary>
 public static class RecollectionsHelper
 {
@@ -85,26 +85,25 @@ public static class RecollectionsHelper
             }
         }
 
-        IReadOnlySet<int> floor = FloorQuestIds(masterDb, eventQuestChapterId, questId);
-        bool floorComplete = floor.Count > 0 && floor.All(id =>
-            userDb.EntityIUserQuestLimitContentStatus.Any(s => s.QuestId == id && s.LimitContentQuestStatusType == 1));
-        if (floorComplete)
+        if (IsFloorComplete(masterDb, userDb, eventQuestChapterId, questId))
         {
-            RemoveLocks(userDb, eventQuestChapterId, floor);
+            RemoveLocks(userDb, eventQuestChapterId, FloorQuestIds(masterDb, eventQuestChapterId, questId));
         }
     }
 
-    /// <summary>Starts the floor of <paramref name="questId"/> over: none of its quests cleared, nothing locked.</summary>
-    public static void ResetFloor(DarkMasterMemoryDatabase masterDb, DarkUserMemoryDatabase userDb, int eventQuestChapterId, int questId)
+    /// <summary>Whether every quest of the floor <paramref name="questId"/> belongs to is cleared (the client's <c>IsCompleteClearLevel</c>).</summary>
+    public static bool IsFloorComplete(DarkMasterMemoryDatabase masterDb, DarkUserMemoryDatabase userDb, int eventQuestChapterId, int questId)
     {
         IReadOnlySet<int> floor = FloorQuestIds(masterDb, eventQuestChapterId, questId);
-        if (floor.Count == 0)
-        {
-            floor = new HashSet<int> { questId };
-        }
+        return floor.Count > 0 && floor.All(id =>
+            userDb.EntityIUserQuestLimitContentStatus.Any(s => s.QuestId == id && s.LimitContentQuestStatusType == 1));
+    }
 
-        userDb.EntityIUserQuestLimitContentStatus.RemoveAll(s => floor.Contains(s.QuestId));
-        RemoveLocks(userDb, eventQuestChapterId, floor);
+    /// <summary>Resets one door: it is no longer cleared, and the items its clear locked are free again. The floor's other doors keep their clear and their locks.</summary>
+    public static void ResetDoor(DarkUserMemoryDatabase userDb, int eventQuestChapterId, int questId)
+    {
+        userDb.EntityIUserQuestLimitContentStatus.RemoveAll(s => s.QuestId == questId);
+        RemoveLocks(userDb, eventQuestChapterId, new HashSet<int> { questId });
     }
 
     private static void RemoveLocks(DarkUserMemoryDatabase userDb, int eventQuestChapterId, IReadOnlySet<int> floorQuestIds)

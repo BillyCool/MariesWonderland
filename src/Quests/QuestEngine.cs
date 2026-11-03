@@ -1,4 +1,4 @@
-using MariesWonderland.Configuration;
+﻿using MariesWonderland.Configuration;
 using MariesWonderland.Data;
 using MariesWonderland.Helpers;
 using MariesWonderland.Missions;
@@ -44,11 +44,19 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
         return isRecollections ? DeckType.RESTRICTED_LIMIT_CONTENT_QUEST : DeckType.RESTRICTED_QUEST;
     }
 
-    /// <summary>Records the deck a run of the quest uses: its number and its type.</summary>
-    public void SetSessionDeck(EntitySQuestSession session, int userDeckNumber, int eventQuestChapterId = 0)
+    /// <summary>
+    /// Records the deck a run of the quest uses: its number and its type. On a Recollections floor that is already
+    /// completely cleared the client plays with a normal quest deck, so pass <paramref name="userDb"/> to check that.
+    /// </summary>
+    public void SetSessionDeck(EntitySQuestSession session, int userDeckNumber, int eventQuestChapterId = 0, DarkUserMemoryDatabase? userDb = null)
     {
         session.UserDeckNumber = userDeckNumber;
         session.UserDeckType = DeckTypeFor(FindQuest(session.QuestId), eventQuestChapterId);
+        if (session.UserDeckType == DeckType.RESTRICTED_LIMIT_CONTENT_QUEST && userDb != null
+            && RecollectionsHelper.IsFloorComplete(_masterDb, userDb, eventQuestChapterId, session.QuestId))
+        {
+            session.UserDeckType = DeckType.QUEST;
+        }
     }
 
     /// <summary>

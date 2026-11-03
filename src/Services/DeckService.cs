@@ -1,4 +1,4 @@
-using Grpc.Core;
+﻿using Grpc.Core;
 using MariesWonderland.Arena;
 using MariesWonderland.Data;
 using MariesWonderland.Extensions;
@@ -287,7 +287,8 @@ public class DeckService(UserDataStore store, DarkMasterMemoryDatabase masterDb,
                 UserId = userDb.UserId,
                 DeckType = deckType,
                 UserDeckNumber = deckNumber,
-                Name = $"Loadout {deckNumber}",
+                // The real save leaves restricted, Big Hunt and Recollections decks unnamed; the client labels them itself.
+                Name = deckType is DeckType.RESTRICTED_QUEST or DeckType.BIG_HUNT or DeckType.RESTRICTED_LIMIT_CONTENT_QUEST ? string.Empty : $"Loadout {deckNumber}",
                 Power = 0
             };
             userDb.EntityIUserDeck.Add(existing);

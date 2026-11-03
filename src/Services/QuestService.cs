@@ -720,7 +720,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         _questEngine.ConsumeStamina(userDb, _questEngine.FindQuest(questId), _questCampaignHelper.GetEventQuestTarget(questId, chapterId), 1, nowMs);
 
         EntitySQuestSession eventSession = GetOrCreateQuestSession(userDb, userId, questId);
-        _questEngine.SetSessionDeck(eventSession, request.UserDeckNumber, chapterId);
+        _questEngine.SetSessionDeck(eventSession, request.UserDeckNumber, chapterId, userDb);
         eventSession.IsBattleOnly = request.IsBattleOnly;
         eventSession.CurrentEventQuestChapterId = chapterId;
 
@@ -1127,13 +1127,13 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
     }
 
     /// <summary>
-    /// Resets a Recollections of Dusk floor (the floor of the request's quest): no quest cleared, nothing locked. Side-story
-    /// rows are left alone: the client reads only the current-scene row, and the floor stays the one being played.
+    /// Resets one Recollections of Dusk door (the request's quest): it is no longer cleared and its locks are lifted; the
+    /// floor's other doors are untouched. Side-story rows are left alone: the client reads only the current-scene row.
     /// </summary>
     public override Task<ResetLimitContentQuestProgressResponse> ResetLimitContentQuestProgress(ResetLimitContentQuestProgressRequest request, ServerCallContext context)
     {
         DarkUserMemoryDatabase userDb = _store.GetOrCreate(context.GetUserId());
-        RecollectionsHelper.ResetFloor(_masterDb, userDb, request.EventQuestChapterId, request.QuestId);
+        RecollectionsHelper.ResetDoor(userDb, request.EventQuestChapterId, request.QuestId);
         return Task.FromResult(new ResetLimitContentQuestProgressResponse());
     }
 

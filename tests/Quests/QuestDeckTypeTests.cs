@@ -1,4 +1,4 @@
-using MariesWonderland.Data;
+﻿using MariesWonderland.Data;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
 using MariesWonderland.Quests;
@@ -97,6 +97,25 @@ public class QuestDeckTypeTests
         engine.SetSessionDeck(session, 101, RecollectionsChapterId);
 
         Assert.Equal([200], engine.DeckMembers(userDb, RecollectionsQuestId).CostumeIds);
+    }
+
+    [Fact]
+    public void RecollectionsQuest_OnACompletelyClearedFloor_ReadsTheQuestDeck()
+    {
+        DarkMasterMemoryDatabase masterDb = Master();
+        masterDb.EntityMEventQuestChapter.First(c => c.EventQuestChapterId == RecollectionsChapterId).EventQuestSequenceGroupId = 50;
+        masterDb.EntityMEventQuestSequenceGroup.Add(new EntityMEventQuestSequenceGroup { EventQuestSequenceGroupId = 50, DifficultyType = DifficultyType.NORMAL, EventQuestSequenceId = 60 });
+        masterDb.EntityMEventQuestSequence.Add(new EntityMEventQuestSequence { EventQuestSequenceId = 60, SortOrder = 1, QuestId = RecollectionsQuestId });
+        QuestEngine engine = TestServices.QuestEngine(masterDb);
+        DarkUserMemoryDatabase userDb = UserWithTwoDecks(DeckType.RESTRICTED_LIMIT_CONTENT_QUEST);
+        EntitySQuestSession session = new() { UserId = UserId, QuestId = RecollectionsQuestId };
+
+        engine.SetSessionDeck(session, 101, RecollectionsChapterId, userDb);
+        Assert.Equal(DeckType.RESTRICTED_LIMIT_CONTENT_QUEST, session.UserDeckType);
+
+        userDb.EntityIUserQuestLimitContentStatus.Add(new EntityIUserQuestLimitContentStatus { UserId = UserId, QuestId = RecollectionsQuestId, LimitContentQuestStatusType = 1 });
+        engine.SetSessionDeck(session, 101, RecollectionsChapterId, userDb);
+        Assert.Equal(DeckType.QUEST, session.UserDeckType);
     }
 
     [Fact]

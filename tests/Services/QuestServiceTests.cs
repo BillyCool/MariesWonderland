@@ -985,7 +985,8 @@ public class QuestServiceTests
         await service.ReceiveTowerAccumulationReward(
             new ReceiveTowerAccumulationRewardRequest { EventQuestChapterId = TowerChapterId, TargetMissionClearCount = 5 },
             FakeServerCallContext.For(UserId));
-        Assert.Equal(["701:1"], userDb.EntityIUserMaterial.Select(m => $"{m.MaterialId}:{m.Count}").ToArray());
+        Assert.Equal(["701:1"], GiftedMaterials(userDb));
+        Assert.Empty(userDb.EntityIUserMaterial);
 
         ClearMissions(30201, 1, 2, 3);
         await service.ReceiveTowerAccumulationReward(
@@ -997,10 +998,12 @@ public class QuestServiceTests
 
         EntityIUserEventQuestTowerAccumulationReward state = Assert.Single(userDb.EntityIUserEventQuestTowerAccumulationReward);
         Assert.Equal(5, state.LatestRewardReceiveQuestMissionClearCount);
-        Assert.Equal(
-            ["701:1", "702:2"],
-            userDb.EntityIUserMaterial.OrderBy(m => m.MaterialId).Select(m => $"{m.MaterialId}:{m.Count}").ToArray());
+        Assert.Equal(["701:1", "702:2"], GiftedMaterials(userDb));
+        Assert.Empty(userDb.EntityIUserMaterial);
     }
+
+    private static string[] GiftedMaterials(DarkUserMemoryDatabase userDb)
+        => [.. userDb.EntitySUserGift.Where(g => g.PossessionType == (int)PossessionType.MATERIAL && g.ReceivedDatetime == 0).OrderBy(g => g.PossessionId).Select(g => $"{g.PossessionId}:{g.Count}")];
 
     [Fact]
     public async Task StartGuerrillaFreeOpen_FirstOpenOfTheDayIsFree_TheNextCostsGems_AndANewDayStartsOver()
