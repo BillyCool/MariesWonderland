@@ -43,19 +43,8 @@ public class LoginBonusService(UserDataStore store, DarkMasterMemoryDatabase mas
 
         (int nextPage, int nextStamp, EntityMLoginBonusStamp stamp) = ResolveNextStamp(loginBonus);
 
-        long expiryMs = nowMs + GameConfig.GiftExpirationDays * 24L * 60 * 60 * 1000;
-
-        userDb.EntitySUserGift.Add(new EntitySUserGift
-        {
-            UserId = userId,
-            UserGiftUuid = $"login-bonus-{userId}-{nextPage}-{nextStamp}",
-            PossessionType = (int)stamp.RewardPossessionType,
-            PossessionId = stamp.RewardPossessionId,
-            Count = stamp.RewardCount,
-            GrantDatetime = nowMs,
-            ExpirationDatetime = expiryMs,
-            ReceivedDatetime = 0
-        });
+        GiftBoxHelper.Add(userDb, stamp.RewardPossessionType, stamp.RewardPossessionId, stamp.RewardCount, nowMs,
+            giftUuid: $"login-bonus-{userId}-{nextPage}-{nextStamp}");
 
         loginBonus.CurrentPageNumber = nextPage;
         loginBonus.CurrentStampNumber = nextStamp;

@@ -66,7 +66,12 @@ public class LabyrinthServiceTests
         Assert.Empty(second.SeasonResult);
         Assert.Equal(2, Assert.Single(_userDb.EntityIUserEventQuestLabyrinthSeason).LastJoinSeasonNumber);
         Assert.Equal(1, Assert.Single(_userDb.EntityIUserEventQuestLabyrinthSeason).LastSeasonRewardReceivedSeasonNumber);
-        Assert.Equal(2, Assert.Single(_userDb.EntityIUserMaterial).Count);
+        // The reward goes to the gift box, not the inventory.
+        Assert.Empty(_userDb.EntityIUserMaterial);
+        EntitySUserGift gift = Assert.Single(_userDb.EntitySUserGift);
+        Assert.Equal(((int)PossessionType.MATERIAL, 502, 2), (gift.PossessionType, gift.PossessionId, gift.Count));
+        Assert.Equal(33, gift.DescriptionGiftTextId);
+        Assert.Equal(0, gift.ReceivedDatetime);
     }
 
     [Fact]
@@ -113,7 +118,7 @@ public class LabyrinthServiceTests
         Assert.Equal(1001, result.HeadQuestId);
         Assert.Equal(1, result.HeadStageOrder);
         Assert.Empty(second.SeasonResult);
-        Assert.Equal(501, Assert.Single(_userDb.EntityIUserMaterial).MaterialId);
+        Assert.Equal(501, Assert.Single(_userDb.EntitySUserGift).PossessionId);
     }
 
     [Fact]
@@ -137,15 +142,17 @@ public class LabyrinthServiceTests
 
         ClearQuests(1001);
         await service.ReceiveStageClearReward(request, FakeServerCallContext.For(UserId));
-        Assert.Empty(_userDb.EntityIUserMaterial);
+        Assert.Empty(_userDb.EntitySUserGift);
 
         ClearQuests(1002);
         await service.ReceiveStageClearReward(request, FakeServerCallContext.For(UserId));
         await service.ReceiveStageClearReward(request, FakeServerCallContext.For(UserId));
 
         Assert.True(Assert.Single(_userDb.EntityIUserEventQuestLabyrinthStage).IsReceivedStageClearReward);
-        EntityIUserMaterial reward = Assert.Single(_userDb.EntityIUserMaterial);
-        Assert.Equal(601, reward.MaterialId);
+        // The treasure goes to the gift box, not the inventory.
+        Assert.Empty(_userDb.EntityIUserMaterial);
+        EntitySUserGift reward = Assert.Single(_userDb.EntitySUserGift);
+        Assert.Equal(601, reward.PossessionId);
         Assert.Equal(3, reward.Count);
     }
 
@@ -158,7 +165,7 @@ public class LabyrinthServiceTests
         await service.ReceiveStageAccumulationReward(
             new ReceiveStageAccumulationRewardRequest { EventQuestChapterId = ChapterId, StageOrder = 1, QuestMissionClearCount = 5 },
             FakeServerCallContext.For(UserId));
-        Assert.Equal(["602:1"], Materials());
+        Assert.Equal(["602:1"], Gifts());
         Assert.Equal(3, Assert.Single(_userDb.EntityIUserEventQuestLabyrinthStage).AccumulationRewardReceivedQuestMissionCount);
 
         ClearMissions(1002, 1, 2);
@@ -169,7 +176,7 @@ public class LabyrinthServiceTests
             new ReceiveStageAccumulationRewardRequest { EventQuestChapterId = ChapterId, StageOrder = 1, QuestMissionClearCount = 5 },
             FakeServerCallContext.For(UserId));
 
-        Assert.Equal(["602:1", "603:2"], Materials());
+        Assert.Equal(["602:1", "603:2"], Gifts());
         Assert.Equal(5, Assert.Single(_userDb.EntityIUserEventQuestLabyrinthStage).AccumulationRewardReceivedQuestMissionCount);
     }
 
@@ -194,8 +201,8 @@ public class LabyrinthServiceTests
         }
     }
 
-    private string[] Materials()
-        => [.. _userDb.EntityIUserMaterial.OrderBy(m => m.MaterialId).Select(m => $"{m.MaterialId}:{m.Count}")];
+    private string[] Gifts()
+        => [.. _userDb.EntitySUserGift.OrderBy(g => g.PossessionId).Select(g => $"{g.PossessionId}:{g.Count}")];
 
     private static DarkMasterMemoryDatabase CreateMasterDb()
     {

@@ -36,7 +36,7 @@ public class LabyrinthService(UserDataStore store, DarkMasterMemoryDatabase mast
         return Task.FromResult(response);
     }
 
-    /// <summary>The stage's treasure: its clear reward, once, after every quest of the stage is cleared.</summary>
+    /// <summary>The stage's treasure: its clear reward, sent to the gift box once, after every quest of the stage is cleared.</summary>
     public override Task<ReceiveStageClearRewardResponse> ReceiveStageClearReward(ReceiveStageClearRewardRequest request, ServerCallContext context)
     {
         long userId = context.GetUserId();
@@ -66,7 +66,7 @@ public class LabyrinthService(UserDataStore store, DarkMasterMemoryDatabase mast
             .Where(r => r.EventQuestLabyrinthRewardGroupId == stage.StageClearRewardGroupId)
             .OrderBy(r => r.SortOrder))
         {
-            PossessionHelper.Apply(userDb, reward.PossessionType, reward.PossessionId, reward.Count, _masterDb, nowMs);
+            GiftBoxHelper.Add(userDb, reward.PossessionType, reward.PossessionId, reward.Count, nowMs);
         }
 
         stageState.IsReceivedStageClearReward = true;
@@ -76,7 +76,7 @@ public class LabyrinthService(UserDataStore store, DarkMasterMemoryDatabase mast
 
     /// <summary>
     /// The stage's mission milestones: every tier up to the count the client asks for, as far as the user's cleared
-    /// quest missions in the stage reach, each tier once.
+    /// quest missions in the stage reach, each tier once, sent to the gift box.
     /// </summary>
     public override Task<ReceiveStageAccumulationRewardResponse> ReceiveStageAccumulationReward(ReceiveStageAccumulationRewardRequest request, ServerCallContext context)
     {
@@ -107,7 +107,7 @@ public class LabyrinthService(UserDataStore store, DarkMasterMemoryDatabase mast
                 .Where(r => r.EventQuestLabyrinthRewardGroupId == tier.EventQuestLabyrinthRewardGroupId)
                 .OrderBy(r => r.SortOrder))
             {
-                PossessionHelper.Apply(userDb, reward.PossessionType, reward.PossessionId, reward.Count, _masterDb, nowMs);
+                GiftBoxHelper.Add(userDb, reward.PossessionType, reward.PossessionId, reward.Count, nowMs);
             }
         }
 

@@ -58,6 +58,9 @@ public static class FateBoardHelper
         return running.Count == 1 ? running[0] : null;
     }
 
+    /// <summary>Gift text 33: "Earned from Fate Board period achievement rewards."</summary>
+    private const int SeasonRewardGiftTextId = 33;
+
     /// <summary>Records that the user is playing the board's current season.</summary>
     public static void JoinCurrentSeason(DarkUserMemoryDatabase userDb, DarkMasterMemoryDatabase masterDb, int eventQuestChapterId, long nowMs)
     {
@@ -77,8 +80,8 @@ public static class FateBoardHelper
     }
 
     /// <summary>
-    /// Pays the last season the user joined on the board once it has ended and isn't paid yet: grants the reach
-    /// reward for the furthest cleared quest and returns it for the client's result screen. Null when there's nothing
+    /// Pays the last season the user joined on the board once it has ended and isn't paid yet: sends the reach
+    /// reward for the furthest cleared quest to the gift box and returns it for the client's result screen. Null when there's nothing
     /// to pay (also when nothing is cleared, which still marks the season paid).
     /// </summary>
     public static LabyrinthSeasonResult? PayEndedSeason(DarkUserMemoryDatabase userDb, DarkMasterMemoryDatabase masterDb,
@@ -121,7 +124,7 @@ public static class FateBoardHelper
             .Where(r => r.EventQuestLabyrinthRewardGroupId == rewardGroupByHeadQuest[head.QuestId])
             .OrderBy(r => r.SortOrder))
         {
-            PossessionHelper.Apply(userDb, reward.PossessionType, reward.PossessionId, reward.Count, masterDb, nowMs);
+            GiftBoxHelper.Add(userDb, reward.PossessionType, reward.PossessionId, reward.Count, nowMs, SeasonRewardGiftTextId);
             result.SeasonReward.Add(new LabyrinthReward { PossessionType = (int)reward.PossessionType, PossessionId = reward.PossessionId, Count = reward.Count });
         }
 

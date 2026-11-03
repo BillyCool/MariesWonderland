@@ -312,16 +312,7 @@ public sealed class MissionTracker(DarkMasterMemoryDatabase masterDb, MissionCat
                     continue;
                 }
 
-                userDb.EntitySUserGift.Add(new EntitySUserGift
-                {
-                    UserId = userDb.UserId,
-                    UserGiftUuid = Guid.NewGuid().ToString(),
-                    PossessionType = (int)reward.PossessionType,
-                    PossessionId = reward.PossessionId,
-                    Count = reward.Count,
-                    GrantDatetime = nowMs,
-                    ExpirationDatetime = nowMs + GameConfig.GiftExpirationDays * 24L * 60 * 60 * 1000
-                });
+                GiftBoxHelper.Add(userDb, reward.PossessionType, reward.PossessionId, reward.Count, nowMs);
                 received.Add(grant);
             }
 

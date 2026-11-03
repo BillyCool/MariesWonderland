@@ -864,16 +864,7 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
     {
         if (prize.PossessionType is PossessionType.FREE_GEM or PossessionType.PAID_GEM)
         {
-            userDb.EntitySUserGift.Add(new EntitySUserGift
-            {
-                UserId = userDb.UserId,
-                UserGiftUuid = Guid.NewGuid().ToString(),
-                PossessionType = (int)prize.PossessionType,
-                PossessionId = prize.PossessionId,
-                Count = prize.Count,
-                GrantDatetime = nowMs,
-                ExpirationDatetime = nowMs + GameConfig.GiftExpirationDays * 24L * 60 * 60 * 1000
-            });
+            GiftBoxHelper.Add(userDb, prize.PossessionType, prize.PossessionId, prize.Count, nowMs);
             return;
         }
 

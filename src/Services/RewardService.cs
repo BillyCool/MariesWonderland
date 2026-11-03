@@ -86,17 +86,7 @@ public class RewardService(UserDataStore store, DarkMasterMemoryDatabase masterD
             // The rewards go to the gift box, one gift per possession ("Obtained as a weekly reward from Subjugation Battles.").
             foreach (BigHuntReward reward in BigHuntRewardHelper.Combine(weeklyRewards))
             {
-                userDb.EntitySUserGift.Add(new EntitySUserGift
-                {
-                    UserId = userId,
-                    UserGiftUuid = Guid.NewGuid().ToString(),
-                    PossessionType = reward.PossessionType,
-                    PossessionId = reward.PossessionId,
-                    Count = reward.Count,
-                    GrantDatetime = nowMs,
-                    DescriptionGiftTextId = BigHuntWeeklyGiftTextId,
-                    ExpirationDatetime = nowMs + GameConfig.GiftExpirationDays * 24L * 60 * 60 * 1000
-                });
+                GiftBoxHelper.Add(userDb, (PossessionType)reward.PossessionType, reward.PossessionId, reward.Count, nowMs, BigHuntWeeklyGiftTextId);
             }
 
             if (ws == null)
@@ -419,16 +409,7 @@ public class RewardService(UserDataStore store, DarkMasterMemoryDatabase masterD
         // The result dialog says "Rewards were sent to your gift box", so they go there and are received from the gift box.
         foreach (EntityMPvpReward reward in rewards)
         {
-            userDb.EntitySUserGift.Add(new EntitySUserGift
-            {
-                UserId = userDb.UserId,
-                UserGiftUuid = Guid.NewGuid().ToString(),
-                PossessionType = (int)reward.PossessionType,
-                PossessionId = reward.PossessionId,
-                Count = reward.Count,
-                GrantDatetime = nowMs,
-                ExpirationDatetime = nowMs + GameConfig.GiftExpirationDays * 24L * 60 * 60 * 1000
-            });
+            GiftBoxHelper.Add(userDb, reward.PossessionType, reward.PossessionId, reward.Count, nowMs);
         }
     }
 
