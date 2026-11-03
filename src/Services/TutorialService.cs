@@ -31,6 +31,9 @@ public class TutorialService(UserDataStore store, DarkMasterMemoryDatabase maste
         [TutorialType.MAIN_QUEST_3_3_TICKET_GET_5] = 10
     };
 
+    /// <summary>The phase of the companion tutorial that carries the choice (the starter companions are in <see cref="StarterCompanionTable"/>).</summary>
+    private const int CompanionChoicePhase = 10;
+
     /// <summary>
     /// Advances tutorial progress and triggers starter deck creation on menu tutorials. The first time a story step is
     /// accepted, it gives its pickup (returned as choice rewards) or uses the items its consume rows list (one skip
@@ -43,7 +46,10 @@ public class TutorialService(UserDataStore store, DarkMasterMemoryDatabase maste
         long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
         TutorialType tutorialType = (TutorialType)request.TutorialType;
 
-        int previousChoiceId = userDb.EntityIUserTutorialProgress.FirstOrDefault(t => t.TutorialType == tutorialType)?.ChoiceId ?? 0;
+        EntityIUserTutorialProgress? previousProgress = userDb.EntityIUserTutorialProgress.FirstOrDefault(t => t.TutorialType == tutorialType);
+        int previousChoiceId = previousProgress?.ChoiceId ?? 0;
+        bool isFirstCompanionChoice = tutorialType == TutorialType.COMPANION && request.ProgressPhase == CompanionChoicePhase
+            && (previousProgress?.ProgressPhase ?? 0) < CompanionChoicePhase;
         UpsertTutorialProgress(userDb, tutorialType, request.ProgressPhase, request.ChoiceId);
 
         if (tutorialType is TutorialType.MENU_FIRST or TutorialType.MENU_SECOND)
@@ -52,7 +58,12 @@ public class TutorialService(UserDataStore store, DarkMasterMemoryDatabase maste
         }
 
         SetTutorialProgressResponse response = new();
-        if (request.ChoiceId == AcceptedChoiceId && previousChoiceId != AcceptedChoiceId)
+        if (isFirstCompanionChoice && StarterCompanionTable.Default.TryGetCompanionId(request.ChoiceId, out int companionId))
+        {
+            PossessionHelper.Apply(userDb, PossessionType.COMPANION, companionId, 1, masterDb, nowMs);
+            response.TutorialChoiceReward.Add(new TutorialChoiceReward { PossessionType = (int)PossessionType.COMPANION, PossessionId = companionId, Count = 1 });
+        }
+        else if (request.ChoiceId == AcceptedChoiceId && previousChoiceId != AcceptedChoiceId)
         {
             response.TutorialChoiceReward.AddRange(GrantPickup(userDb, tutorialType, nowMs));
             ConsumeTutorialPossessions(userDb, tutorialType);

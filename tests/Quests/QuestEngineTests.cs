@@ -1,4 +1,4 @@
-using MariesWonderland.Configuration;
+﻿using MariesWonderland.Configuration;
 using MariesWonderland.Data;
 using MariesWonderland.Helpers;
 using MariesWonderland.Missions;
@@ -84,6 +84,38 @@ public class QuestEngineTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         Assert.Equal(expBefore + quest.UserExp, userDb.EntityIUserStatus[0].Exp);
         Assert.True(GoldCount(userDb) - goldBefore >= quest.Gold);
         Assert.All(userDb.EntityIUserQuestMission.Where(m => m.QuestId == quest.QuestId), m => Assert.True(m.IsClear));
+    }
+
+    [Fact]
+    public void Finish_WithTheForceBonus_ClearsEveryMissionWithoutCheckingItsCondition()
+    {
+        QuestEngine engine = CreateEngine();
+        EntityMQuest quest = MasterDb.EntityMQuest
+            .Where(q => q.IsBigWinTarget && q.QuestFirstClearRewardGroupId != 0 && q.Gold > 0 && q.UserExp > 0
+                && MasterDb.EntityMQuestMissionGroup.Any(g => g.QuestMissionGroupId == q.QuestMissionGroupId))
+            .OrderBy(q => q.QuestId)
+            .First();
+        int bonusPower = int.Parse(MasterDb.EntityMConfig.Single(c => c.ConfigKey == "QUEST_MISSION_BIG_WIN_BONUS_POWER").Value);
+
+        QuestFinishResult Run(int deckPower, out DarkUserMemoryDatabase userDb)
+        {
+            userDb = CreateUser();
+            engine.EnsureQuestRows(userDb, quest.QuestId);
+            long userId = userDb.EntityIUserStatus[0].UserId;
+            userDb.EntityIUserDeck.Add(new EntityIUserDeck { UserId = userId, DeckType = DeckType.QUEST, UserDeckNumber = 1, Power = deckPower });
+            userDb.EntitySQuestSession.Add(new EntitySQuestSession { UserId = userId, QuestId = quest.QuestId, UserDeckNumber = 1, UserDeckType = DeckType.QUEST });
+            return engine.Finish(userDb, quest, MainTarget(quest), isWin: true, NowMs, battles: []);
+        }
+
+        QuestFinishResult weak = Run(quest.RecommendedDeckPower + bonusPower - 1, out DarkUserMemoryDatabase weakUser);
+        QuestFinishResult strong = Run(quest.RecommendedDeckPower + bonusPower, out DarkUserMemoryDatabase strongUser);
+
+        HashSet<int> unmetWhenWeak = [.. weakUser.EntityIUserQuestMission.Where(m => m.QuestId == quest.QuestId && !m.IsClear).Select(m => m.QuestMissionId)];
+        Assert.NotEmpty(unmetWhenWeak);
+        Assert.All(strongUser.EntityIUserQuestMission.Where(m => m.QuestId == quest.QuestId), m => Assert.True(m.IsClear));
+        Assert.Equal(unmetWhenWeak.Order(), strong.BigWinClearedMissionIds.Where(unmetWhenWeak.Contains).Order());
+        Assert.DoesNotContain(weak.BigWinClearedMissionIds, unmetWhenWeak.Contains);
+        Assert.True(strong.IsBigWin);
     }
 
     [Fact]

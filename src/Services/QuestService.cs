@@ -467,7 +467,12 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         // Replay flow rewards, granted on every replay win
         List<QuestReward> replayFlowFirstClearRewards = [];
         EntityIUserMainQuestFlowStatus? currentFlowStatus = userDb.EntityIUserMainQuestFlowStatus.FirstOrDefault(s => s.UserId == userId);
-        bool wasReplayFlow = currentFlowStatus?.CurrentQuestFlowType is QuestFlowType.REPLAY_FLOW or QuestFlowType.ANOTHER_ROUTE_REPLAY_FLOW;
+        EntitySQuestSession? finishSession = userDb.EntitySQuestSession.FirstOrDefault(s => s.UserId == userId && s.QuestId == questId);
+        bool wasMenuPick = finishSession?.IsMenuPick == true;
+
+        // A quest picked from the menu while the client browses the map in replay flow is still a menu pick: it clears
+        // the quest itself, not a replay quest, and pays no replay rewards.
+        bool wasReplayFlow = !wasMenuPick && currentFlowStatus?.CurrentQuestFlowType is QuestFlowType.REPLAY_FLOW or QuestFlowType.ANOTHER_ROUTE_REPLAY_FLOW;
         if (isWin && wasReplayFlow && quest.QuestReplayFlowRewardGroupId > 0)
         {
             foreach (EntityMQuestReplayFlowRewardGroup reward in _masterDb.EntityMQuestReplayFlowRewardGroup
@@ -482,9 +487,6 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
                 });
             }
         }
-
-        EntitySQuestSession? finishSession = userDb.EntitySQuestSession.FirstOrDefault(s => s.UserId == userId && s.QuestId == questId);
-        bool wasMenuPick = finishSession?.IsMenuPick == true;
 
         QuestFinishResult result = _questEngine.Finish(userDb, quest, _questCampaignHelper.GetMainQuestTarget(questId), isWin, nowMs, isReplay: wasReplayFlow, battles: BattlesOfRun(userDb, userId, questId));
 
@@ -533,10 +535,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         response.MissionClearReward.AddRange(result.MissionClearRewards);
         response.MissionClearCompleteReward.AddRange(result.MissionClearCompleteRewards);
         response.ReplayFlowFirstClearReward.AddRange(replayFlowFirstClearRewards);
-        if (result.IsBigWin)
-        {
-            response.BigWinClearedQuestMissionIdList.Add(result.BigWinMissionId);
-        }
+        response.BigWinClearedQuestMissionIdList.AddRange(result.BigWinClearedMissionIds);
 
         response.AutoOrbitReward = AdvanceQuestAutoOrbit(
             userDb,
@@ -695,10 +694,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         response.FirstClearReward.AddRange(result.FirstClearRewards);
         response.MissionClearReward.AddRange(result.MissionClearRewards);
         response.MissionClearCompleteReward.AddRange(result.MissionClearCompleteRewards);
-        if (result.IsBigWin)
-        {
-            response.BigWinClearedQuestMissionIdList.Add(result.BigWinMissionId);
-        }
+        response.BigWinClearedQuestMissionIdList.AddRange(result.BigWinClearedMissionIds);
 
         userDb.EntitySQuestSession.RemoveAll(s => s.QuestId == questId);
 
@@ -812,10 +808,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         response.FirstClearReward.AddRange(result.FirstClearRewards);
         response.MissionClearReward.AddRange(result.MissionClearRewards);
         response.MissionClearCompleteReward.AddRange(result.MissionClearCompleteRewards);
-        if (result.IsBigWin)
-        {
-            response.BigWinClearedQuestMissionIdList.Add(result.BigWinMissionId);
-        }
+        response.BigWinClearedQuestMissionIdList.AddRange(result.BigWinClearedMissionIds);
 
         response.AutoOrbitReward = AdvanceQuestAutoOrbit(
             userDb,
@@ -1354,6 +1347,10 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
             session.SavedSideStoryQuestSceneId = sideStoryProgress.CurrentSideStoryQuestSceneId;
         }
 
+        // The client plays by the saved flow type: left at a replay flow from a visit to the map, it would play the pick as a
+        // replay (replay quest id, replay rewards, then on into the chapter's next replay quest).
+        flowStatus.CurrentQuestFlowType = QuestFlowType.MAIN_FLOW;
+
         int startSceneId = _questEngine.GetQuestStartSceneId(request.QuestId, request.IsBattleOnly);
         _questEngine.SetSessionDeck(session, request.UserDeckNumber);
         session.IsBattleOnly = request.IsBattleOnly;
@@ -1389,10 +1386,15 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
     private static void RestoreMenuPickContext(DarkUserMemoryDatabase userDb, long userId, EntitySQuestSession session, long nowMs)
     {
         EntityIUserMainQuestFlowStatus flowStatus = userDb.EntityIUserMainQuestFlowStatus.GetOrCreate(userId);
-        flowStatus.CurrentQuestFlowType = session.SavedQuestFlowType;
+        // A replay flow left by a visit to the map is not put back: the client would play on through the chapter's replay
+        // scenes after the quest (it ran into the ending scene and a black screen). The main flow takes the client to the hub.
+        bool wasOnTheMap = session.SavedQuestFlowType is QuestFlowType.REPLAY_FLOW or QuestFlowType.ANOTHER_ROUTE_REPLAY_FLOW;
+        flowStatus.CurrentQuestFlowType = wasOnTheMap ? QuestFlowType.MAIN_FLOW : session.SavedQuestFlowType;
 
+        // Entering the map clears the cage-in-progress flag. Left cleared, the client resumes the main story after the
+        // quest, which is at the ending scene on a finished account (a black screen). With it set the client returns to the hub.
         EntityIUserPortalCageStatus portalCageStatus = userDb.EntityIUserPortalCageStatus.GetOrCreate(userId);
-        portalCageStatus.IsCurrentProgress = session.SavedPortalCageInProgress;
+        portalCageStatus.IsCurrentProgress = wasOnTheMap || session.SavedPortalCageInProgress;
 
         EntityIUserSideStoryQuestSceneProgressStatus sideStoryProgress = userDb.EntityIUserSideStoryQuestSceneProgressStatus.GetOrCreate(userId);
         sideStoryProgress.CurrentSideStoryQuestId = session.SavedSideStoryQuestId;

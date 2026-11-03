@@ -89,6 +89,23 @@ public class MainQuestFlowTests(MasterDatabaseFixture fixture) : ServiceTestBase
     }
 
     [Fact]
+    public async Task MenuPick_WhileTheClientIsInReplayFlow_ClearsThePickedQuestAndLeavesTheReplayFlow()
+    {
+        (QuestService service, DarkUserMemoryDatabase userDb, long userId) = CreateService();
+        EntityMQuest quest = FindPlayableMainQuest();
+        userDb.EntityIUserMainQuestFlowStatus.GetOrCreate(userId).CurrentQuestFlowType = QuestFlowType.REPLAY_FLOW;
+
+        await service.StartMainQuest(new StartMainQuestRequest { QuestId = quest.QuestId, IsMainFlow = false, UserDeckNumber = 1 }, ContextFor(userId));
+        Assert.Equal(QuestFlowType.MAIN_FLOW, userDb.EntityIUserMainQuestFlowStatus[0].CurrentQuestFlowType);
+        await service.FinishMainQuest(new FinishMainQuestRequest { QuestId = quest.QuestId, IsMainFlow = false }, ContextFor(userId));
+
+        Assert.Equal(QuestStateType.CLEARED, (QuestStateType)userDb.EntityIUserQuest.Single(q => q.QuestId == quest.QuestId).QuestStateType);
+        Assert.Equal(QuestFlowType.MAIN_FLOW, userDb.EntityIUserMainQuestFlowStatus[0].CurrentQuestFlowType);
+        Assert.True(userDb.EntityIUserPortalCageStatus[0].IsCurrentProgress);
+        Assert.Empty(userDb.EntitySQuestSession);
+    }
+
+    [Fact]
     public async Task MainFlowSceneProgress_BehindTheHead_LeavesStoryPosition()
     {
         (QuestService service, DarkUserMemoryDatabase userDb, long userId) = CreateService();

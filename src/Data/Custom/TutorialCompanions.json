@@ -1,0 +1,9 @@
+{
+  "_about": "The starter companion each answer of Mama's companion question gives (chapter 3 story, tutorial 8 'COMPANION', phase 10). The event map (eventmap/main/0101004001010c) asks 'stuffed animals or dolls?' then 'fire or wind?' and sends choiceId 1-4. Seen in play: choice 1 for a bear with fire, 2 for a bear with wind, 3 for a doll with fire; 4 is inferred (choices 1 and 3 follow the fire answer, 2 and 4 the wind answer; the pairs 1-2 are the bears and 3-4 the dolls). Companion ids are rows of EntityMCompanion; the names are the administrator's, checked against the attribute (fire = 2, wind = 6).",
+  "choices": [
+    { "choiceId": 1, "companionId": 2, "note": "Bear: Precious (fire)" },
+    { "choiceId": 2, "companionId": 1, "note": "Bear: Indy (wind)" },
+    { "choiceId": 3, "companionId": 15, "note": "Doll: Satsuki (fire)" },
+    { "choiceId": 4, "companionId": 14, "note": "Doll: Sumire (wind)" }
+  ]
+}

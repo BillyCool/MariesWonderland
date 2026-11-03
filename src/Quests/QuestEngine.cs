@@ -219,6 +219,8 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
         int bigWinMissionId = 0;
 
         EntityMQuest missionQuest = isReplay ? MainFlowQuestOfReplay(quest) : quest;
+        bool isForceBonus = IsForceBonus(userDb, quest);
+        List<int> forceBonusMissionIds = [];
         IEnumerable<int> missionIds = MissionIds(missionQuest);
         foreach (int missionId in missionIds)
         {
@@ -236,7 +238,13 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
 
             regularMissionCount++;
             bool wasCleared = IsMissionCleared(userDb, missionQuest.QuestId, mission.QuestMissionId);
-            bool isMet = run == null || _missionEvaluator.IsMet(mission, run);
+            bool isMetByRun = run == null || _missionEvaluator.IsMet(mission, run);
+            bool isMet = isMetByRun || isForceBonus;
+            if (isForceBonus && !isMetByRun && !wasCleared)
+            {
+                forceBonusMissionIds.Add(mission.QuestMissionId);
+            }
+
             if (isMet)
             {
                 missionsMetThisRun.Add(mission.QuestMissionId);
@@ -298,8 +306,26 @@ public sealed class QuestEngine(DarkMasterMemoryDatabase masterDb, GameConfig ga
             MissionClearRewards = missionClearRewards,
             MissionClearCompleteRewards = bigWinRewards,
             IsBigWin = isBigWin,
-            BigWinMissionId = isBigWin ? bigWinMissionId : 0
+            BigWinMissionId = isBigWin ? bigWinMissionId : 0,
+            BigWinClearedMissionIds = [.. forceBonusMissionIds, .. isBigWin ? [bigWinMissionId] : Array.Empty<int>()]
         };
+    }
+
+    /// <summary>
+    /// The force bonus (the client's "big win"): a quest that can give it, cleared with a deck whose force is at least the
+    /// quest's suggested force plus <c>QUEST_MISSION_BIG_WIN_BONUS_POWER</c>, marks every uncleared mission cleared without
+    /// checking its condition. The client decides the same way (<c>CalculatorQuest.GetCurrentResultData</c>) from the deck's
+    /// stored power.
+    /// </summary>
+    private bool IsForceBonus(DarkUserMemoryDatabase userDb, EntityMQuest quest)
+    {
+        if (!quest.IsBigWinTarget || SessionDeck(userDb, quest.QuestId) is not { } deck)
+        {
+            return false;
+        }
+
+        string? configured = _masterDb.EntityMConfig.FirstOrDefault(c => c.ConfigKey == "QUEST_MISSION_BIG_WIN_BONUS_POWER")?.Value;
+        return int.TryParse(configured, out int bonusPower) && deck.Power >= quest.RecommendedDeckPower + bonusPower;
     }
 
     /// <summary>

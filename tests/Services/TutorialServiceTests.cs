@@ -39,6 +39,28 @@ public class TutorialServiceTests
         Assert.Equal(1, progress.ChoiceId);
     }
 
+    [Theory]
+    [InlineData(1, 2)]
+    [InlineData(2, 1)]
+    [InlineData(3, 15)]
+    [InlineData(4, 14)]
+    public async Task SetTutorialProgress_CompanionChoiceGivesTheStarterCompanionOnce(int choiceId, int companionId)
+    {
+        DarkUserMemoryDatabase userDb = CreateUserDb();
+        TutorialServiceImpl service = CreateService(new DarkMasterMemoryDatabase(), userDb);
+        SetTutorialProgressRequest request = new() { TutorialType = (int)TutorialType.COMPANION, ProgressPhase = 10, ChoiceId = choiceId };
+
+        SetTutorialProgressResponse first = await service.SetTutorialProgress(request, FakeServerCallContext.For(UserId));
+        await service.SetTutorialProgress(new SetTutorialProgressRequest { TutorialType = (int)TutorialType.COMPANION, ProgressPhase = 40 }, FakeServerCallContext.For(UserId));
+        SetTutorialProgressResponse replay = await service.SetTutorialProgress(request, FakeServerCallContext.For(UserId));
+
+        TutorialChoiceReward reward = Assert.Single(first.TutorialChoiceReward);
+        Assert.Equal((int)PossessionType.COMPANION, reward.PossessionType);
+        Assert.Equal(companionId, reward.PossessionId);
+        Assert.Empty(replay.TutorialChoiceReward);
+        Assert.Equal(companionId, Assert.Single(userDb.EntityIUserCompanion).CompanionId);
+    }
+
     [Fact]
     public async Task SetTutorialProgress_SecondPickupAndLibraryBooksGiveTenEach()
     {

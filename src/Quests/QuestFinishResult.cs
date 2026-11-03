@@ -1,4 +1,4 @@
-using MariesWonderland.Proto.Quest;
+﻿using MariesWonderland.Proto.Quest;
 
 namespace MariesWonderland.Quests;
 
@@ -13,4 +13,7 @@ public sealed class QuestFinishResult
 
     /// <summary>The COMPLETE-condition mission cleared by this run; 0 when <see cref="IsBigWin"/> is false.</summary>
     public int BigWinMissionId { get; init; }
+
+    /// <summary>The missions the force bonus cleared without their condition, then the COMPLETE mission when this run cleared it.</summary>
+    public List<int> BigWinClearedMissionIds { get; init; } = [];
 }
