@@ -1,0 +1,353 @@
+{
+  "_about": "Memoir (parts) sub-status rolls, a server-side table master data lacks (the client only has the rolled rows in IUserPartsStatusSub). One roll picks a value between minValue and maxValue in steps of step. A slot starts with one roll (level 1); every upgrade adds another roll, so a slot's stored value is the sum of its rolls and its Level is the number of rolls. Values are the stored units: percent stats are shown divided by 10 (15 shows as 1.5%). partsStatusSubLotteryId is the id the real save keeps on the row. To become an EntityS* table in the database later.",
+  "rarities": [
+    {
+      "rarityType": 40,
+      "confidence": "confirmed: every Rainbow sub-status row in the real save fits it (2,507 rows)",
+      "rolls": [
+        {
+          "partsStatusSubLotteryId": 28,
+          "statusKindType": "ATTACK",
+          "statusCalculationType": "ADD",
+          "note": "Attack (flat)",
+          "minValue": 30,
+          "maxValue": 45,
+          "step": 1
+        },
+        {
+          "partsStatusSubLotteryId": 29,
+          "statusKindType": "VITALITY",
+          "statusCalculationType": "ADD",
+          "note": "Defense (flat)",
+          "minValue": 30,
+          "maxValue": 45,
+          "step": 1
+        },
+        {
+          "partsStatusSubLotteryId": 30,
+          "statusKindType": "HP",
+          "statusCalculationType": "ADD",
+          "note": "HP (flat)",
+          "minValue": 650,
+          "maxValue": 725,
+          "step": 5
+        },
+        {
+          "partsStatusSubLotteryId": 31,
+          "statusKindType": "ATTACK",
+          "statusCalculationType": "MULTIPLY",
+          "note": "Attack (%)",
+          "minValue": 15,
+          "maxValue": 25,
+          "step": 5
+        },
+        {
+          "partsStatusSubLotteryId": 32,
+          "statusKindType": "VITALITY",
+          "statusCalculationType": "MULTIPLY",
+          "note": "Defense (%)",
+          "minValue": 15,
+          "maxValue": 25,
+          "step": 5
+        },
+        {
+          "partsStatusSubLotteryId": 33,
+          "statusKindType": "HP",
+          "statusCalculationType": "MULTIPLY",
+          "note": "HP (%)",
+          "minValue": 15,
+          "maxValue": 25,
+          "step": 5
+        },
+        {
+          "partsStatusSubLotteryId": 34,
+          "statusKindType": "CRITICAL_RATIO",
+          "statusCalculationType": "ADD",
+          "note": "Critical Rate",
+          "minValue": 30,
+          "maxValue": 50,
+          "step": 5
+        },
+        {
+          "partsStatusSubLotteryId": 35,
+          "statusKindType": "CRITICAL_ATTACK",
+          "statusCalculationType": "ADD",
+          "note": "Critical Damage",
+          "minValue": 40,
+          "maxValue": 60,
+          "step": 5
+        },
+        {
+          "partsStatusSubLotteryId": 36,
+          "statusKindType": "AGILITY",
+          "statusCalculationType": "ADD",
+          "note": "Agility",
+          "minValue": 9,
+          "maxValue": 12,
+          "step": 1
+        }
+      ]
+    },
+    {
+      "rarityType": 30,
+      "confidence": "estimated from 24 rows of 6 memoirs, about 75% of the Rainbow range; lottery ids 19-27 seen in the save (23, Defense %, never seen)",
+      "rolls": [
+        {
+          "partsStatusSubLotteryId": 19,
+          "statusKindType": "ATTACK",
+          "statusCalculationType": "ADD",
+          "note": "Attack (flat)",
+          "minValue": 22,
+          "maxValue": 35,
+          "step": 1
+        },
+        {
+          "partsStatusSubLotteryId": 20,
+          "statusKindType": "VITALITY",
+          "statusCalculationType": "ADD",
+          "note": "Defense (flat)",
+          "minValue": 22,
+          "maxValue": 35,
+          "step": 1
+        },
+        {
+          "partsStatusSubLotteryId": 21,
+          "statusKindType": "HP",
+          "statusCalculationType": "ADD",
+          "note": "HP (flat)",
+          "minValue": 500,
+          "maxValue": 560,
+          "step": 5
+        },
+        {
+          "partsStatusSubLotteryId": 22,
+          "statusKindType": "ATTACK",
+          "statusCalculationType": "MULTIPLY",
+          "note": "Attack (%)",
+          "minValue": 5,
+          "maxValue": 20,
+          "step": 5
+        },
+        {
+          "partsStatusSubLotteryId": 23,
+          "statusKindType": "VITALITY",
+          "statusCalculationType": "MULTIPLY",
+          "note": "Defense (%)",
+          "minValue": 5,
+          "maxValue": 20,
+          "step": 5
+        },
+        {
+          "partsStatusSubLotteryId": 24,
+          "statusKindType": "HP",
+          "statusCalculationType": "MULTIPLY",
+          "note": "HP (%)",
+          "minValue": 5,
+          "maxValue": 20,
+          "step": 5
+        },
+        {
+          "partsStatusSubLotteryId": 25,
+          "statusKindType": "CRITICAL_RATIO",
+          "statusCalculationType": "ADD",
+          "note": "Critical Rate",
+          "minValue": 20,
+          "maxValue": 40,
+          "step": 5
+        },
+        {
+          "partsStatusSubLotteryId": 26,
+          "statusKindType": "CRITICAL_ATTACK",
+          "statusCalculationType": "ADD",
+          "note": "Critical Damage",
+          "minValue": 30,
+          "maxValue": 40,
+          "step": 5
+        },
+        {
+          "partsStatusSubLotteryId": 27,
+          "statusKindType": "AGILITY",
+          "statusCalculationType": "ADD",
+          "note": "Agility",
+          "minValue": 7,
+          "maxValue": 9,
+          "step": 1
+        }
+      ]
+    },
+    {
+      "rarityType": 20,
+      "confidence": "guess: about 75% of rarity 30; nothing in the real save; lottery ids 10-18 inferred from the id pattern",
+      "rolls": [
+        {
+          "partsStatusSubLotteryId": 10,
+          "statusKindType": "ATTACK",
+          "statusCalculationType": "ADD",
+          "note": "Attack (flat)",
+          "minValue": 17,
+          "maxValue": 26,
+          "step": 1
+        },
+        {
+          "partsStatusSubLotteryId": 11,
+          "statusKindType": "VITALITY",
+          "statusCalculationType": "ADD",
+          "note": "Defense (flat)",
+          "minValue": 17,
+          "maxValue": 26,
+          "step": 1
+        },
+        {
+          "partsStatusSubLotteryId": 12,
+          "statusKindType": "HP",
+          "statusCalculationType": "ADD",
+          "note": "HP (flat)",
+          "minValue": 365,
+          "maxValue": 405,
+          "step": 5
+        },
+        {
+          "partsStatusSubLotteryId": 13,
+          "statusKindType": "ATTACK",
+          "statusCalculationType": "MULTIPLY",
+          "note": "Attack (%)",
+          "minValue": 5,
+          "maxValue": 10,
+          "step": 5
+        },
+        {
+          "partsStatusSubLotteryId": 14,
+          "statusKindType": "VITALITY",
+          "statusCalculationType": "MULTIPLY",
+          "note": "Defense (%)",
+          "minValue": 5,
+          "maxValue": 10,
+          "step": 5
+        },
+        {
+          "partsStatusSubLotteryId": 15,
+          "statusKindType": "HP",
+          "statusCalculationType": "MULTIPLY",
+          "note": "HP (%)",
+          "minValue": 5,
+          "maxValue": 10,
+          "step": 5
+        },
+        {
+          "partsStatusSubLotteryId": 16,
+          "statusKindType": "CRITICAL_RATIO",
+          "statusCalculationType": "ADD",
+          "note": "Critical Rate",
+          "minValue": 15,
+          "maxValue": 30,
+          "step": 5
+        },
+        {
+          "partsStatusSubLotteryId": 17,
+          "statusKindType": "CRITICAL_ATTACK",
+          "statusCalculationType": "ADD",
+          "note": "Critical Damage",
+          "minValue": 20,
+          "maxValue": 35,
+          "step": 5
+        },
+        {
+          "partsStatusSubLotteryId": 18,
+          "statusKindType": "AGILITY",
+          "statusCalculationType": "ADD",
+          "note": "Agility",
+          "minValue": 5,
+          "maxValue": 7,
+          "step": 1
+        }
+      ]
+    },
+    {
+      "rarityType": 10,
+      "confidence": "guess: about 75% of rarity 20; nothing in the real save; lottery ids 1-9 inferred from the id pattern",
+      "rolls": [
+        {
+          "partsStatusSubLotteryId": 1,
+          "statusKindType": "ATTACK",
+          "statusCalculationType": "ADD",
+          "note": "Attack (flat)",
+          "minValue": 13,
+          "maxValue": 19,
+          "step": 1
+        },
+        {
+          "partsStatusSubLotteryId": 2,
+          "statusKindType": "VITALITY",
+          "statusCalculationType": "ADD",
+          "note": "Defense (flat)",
+          "minValue": 13,
+          "maxValue": 19,
+          "step": 1
+        },
+        {
+          "partsStatusSubLotteryId": 3,
+          "statusKindType": "HP",
+          "statusCalculationType": "ADD",
+          "note": "HP (flat)",
+          "minValue": 275,
+          "maxValue": 305,
+          "step": 5
+        },
+        {
+          "partsStatusSubLotteryId": 4,
+          "statusKindType": "ATTACK",
+          "statusCalculationType": "MULTIPLY",
+          "note": "Attack (%)",
+          "minValue": 5,
+          "maxValue": 5,
+          "step": 5
+        },
+        {
+          "partsStatusSubLotteryId": 5,
+          "statusKindType": "VITALITY",
+          "statusCalculationType": "MULTIPLY",
+          "note": "Defense (%)",
+          "minValue": 5,
+          "maxValue": 5,
+          "step": 5
+        },
+        {
+          "partsStatusSubLotteryId": 6,
+          "statusKindType": "HP",
+          "statusCalculationType": "MULTIPLY",
+          "note": "HP (%)",
+          "minValue": 5,
+          "maxValue": 5,
+          "step": 5
+        },
+        {
+          "partsStatusSubLotteryId": 7,
+          "statusKindType": "CRITICAL_RATIO",
+          "statusCalculationType": "ADD",
+          "note": "Critical Rate",
+          "minValue": 10,
+          "maxValue": 20,
+          "step": 5
+        },
+        {
+          "partsStatusSubLotteryId": 8,
+          "statusKindType": "CRITICAL_ATTACK",
+          "statusCalculationType": "ADD",
+          "note": "Critical Damage",
+          "minValue": 15,
+          "maxValue": 25,
+          "step": 5
+        },
+        {
+          "partsStatusSubLotteryId": 9,
+          "statusKindType": "AGILITY",
+          "statusCalculationType": "ADD",
+          "note": "Agility",
+          "minValue": 4,
+          "maxValue": 5,
+          "step": 1
+        }
+      ]
+    }
+  ]
+}

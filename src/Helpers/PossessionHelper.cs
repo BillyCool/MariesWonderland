@@ -140,13 +140,15 @@ public static class PossessionHelper
     /// <summary>
     /// Grants a single Parts item to the user.
     /// </summary>
-    public static void GrantParts(DarkUserMemoryDatabase userDb, int partsId, DarkMasterMemoryDatabase masterDb, long nowMs)
+    public static void GrantParts(DarkUserMemoryDatabase userDb, int partsId, DarkMasterMemoryDatabase masterDb, long nowMs, MemoirTable? memoirs = null, Random? random = null)
     {
-        CreateGrantedParts(userDb, ResolveGrantedPartsVariant(partsId, masterDb), partsId, nowMs);
+        EntityMParts? partsDef = masterDb.EntityMParts.FirstOrDefault(p => p.PartsId == partsId);
+        CreateGrantedParts(userDb, partsDef, partsId, nowMs, memoirs ?? MemoirTable.Default, random ?? Random.Shared);
     }
 
     /// <summary>
-    /// Grants a quest-drop memoir variant or auto-sells it into gold when the user's rules match the rolled rarity and rank.
+    /// Grants a quest-drop memoir or auto-sells it into gold when the user's rules match the rolled rarity and rank.
+    /// The drop rolls its grade (the "rank") by its rarity's odds, whatever grade the drop table names.
     /// </summary>
     public static (int GrantedPartsId, bool IsAutoSold, EntityIUserParts? Granted) GrantOrSellPartsDrop(
         DarkUserMemoryDatabase userDb,
@@ -155,12 +157,16 @@ public static class PossessionHelper
         int goldConsumableItemId,
         ISet<int> autoSaleRaritySet,
         ISet<int> autoSaleRankSet,
-        long nowMs)
+        long nowMs,
+        MemoirTable? memoirs = null,
+        Random? random = null)
     {
-        EntityMParts? grantedParts = ResolveGrantedPartsVariant(requestedPartsId, masterDb);
+        memoirs ??= MemoirTable.Default;
+        random ??= Random.Shared;
+        EntityMParts? grantedParts = ResolveDroppedGrade(requestedPartsId, masterDb, memoirs, random);
         if (grantedParts == null)
         {
-            return (requestedPartsId, false, CreateGrantedParts(userDb, null, requestedPartsId, nowMs));
+            return (requestedPartsId, false, CreateGrantedParts(userDb, null, requestedPartsId, nowMs, memoirs, random));
         }
 
         bool shouldAutoSell = autoSaleRaritySet.Contains((int)grantedParts.RarityType)
@@ -173,10 +179,14 @@ public static class PossessionHelper
             return (grantedParts.PartsId, true, null);
         }
 
-        return (grantedParts.PartsId, false, CreateGrantedParts(userDb, grantedParts, grantedParts.PartsId, nowMs));
+        return (grantedParts.PartsId, false, CreateGrantedParts(userDb, grantedParts, grantedParts.PartsId, nowMs, memoirs, random));
     }
 
-    private static EntityMParts? ResolveGrantedPartsVariant(int requestedPartsId, DarkMasterMemoryDatabase masterDb)
+    /// <summary>
+    /// The memoir variant a drop turns into: the same memoir and rarity, at a grade rolled by the rarity's odds. A rarity
+    /// with no odds, or a memoir without that grade, keeps the dropped one.
+    /// </summary>
+    private static EntityMParts? ResolveDroppedGrade(int requestedPartsId, DarkMasterMemoryDatabase masterDb, MemoirTable memoirs, Random random)
     {
         EntityMParts? requested = masterDb.EntityMParts.FirstOrDefault(p => p.PartsId == requestedPartsId);
         if (requested == null)
@@ -184,19 +194,17 @@ public static class PossessionHelper
             return null;
         }
 
-        List<EntityMParts> variants = [.. masterDb.EntityMParts
-            .Where(p => p.PartsGroupId == requested.PartsGroupId && p.RarityType == requested.RarityType)
-            .OrderBy(p => p.PartsId)];
-
-        if (variants.Count == 5)
+        int grade = memoirs.RollGrade(requested.RarityType, random);
+        if (grade == 0)
         {
-            return variants[Random.Shared.Next(variants.Count)];
+            return requested;
         }
 
-        return requested;
+        return masterDb.EntityMParts.FirstOrDefault(p => p.PartsGroupId == requested.PartsGroupId
+            && p.RarityType == requested.RarityType && p.PartsInitialLotteryId == grade) ?? requested;
     }
 
-    private static EntityIUserParts CreateGrantedParts(DarkUserMemoryDatabase userDb, EntityMParts? partsDef, int partsId, long nowMs)
+    private static EntityIUserParts CreateGrantedParts(DarkUserMemoryDatabase userDb, EntityMParts? partsDef, int partsId, long nowMs, MemoirTable memoirs, Random random)
     {
         int mainStatId = 0;
         if (partsDef != null)
@@ -218,9 +226,6 @@ public static class PossessionHelper
                     FirstAcquisitionDatetime = nowMs
                 });
             }
-
-            // REVIEW: roll initial memoir sub-statuses for higher-rank drops. Needs the sub-status pool
-            // from master data, which isn't modelled yet, so only the base part row is created for now.
         }
 
         EntityIUserParts parts = new()
@@ -233,6 +238,14 @@ public static class PossessionHelper
             AcquisitionDatetime = nowMs
         };
         userDb.EntityIUserParts.Add(parts);
+
+        // REVIEW: the sub-status values of rarities 30, 20 and 10, the grade odds of rarities 30 and 20 and the slot counts
+        // of grades 1 to 3 are estimates (Data/Custom/MemoirSubStatusRolls.json, MemoirDrops.json).
+        if (partsDef != null)
+        {
+            MemoirSubStatusHelper.AddStartingSubStatuses(userDb, parts, partsDef, memoirs, random);
+        }
+
         return parts;
     }
 

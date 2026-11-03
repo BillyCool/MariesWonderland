@@ -227,7 +227,7 @@ public class PartsService(DarkMasterMemoryDatabase masterDb, UserDataStore store
         if (isSuccess)
         {
             part.Level++;
-            GrantUnlockedSubStatuses(userDb, part);
+            MemoirSubStatusHelper.AdvanceLevel(userDb, part, partDef.RarityType, part.Level - 1, part.Level, MemoirTable.Default, Random.Shared);
         }
 
         _missions.Record(userDb, MissionClearConditionType.PARTS_ENHANCE_BY_COUNT, 1, _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
@@ -476,63 +476,6 @@ public class PartsService(DarkMasterMemoryDatabase masterDb, UserDataStore store
             }
         }
         return rate;
-    }
-
-    /// <summary>
-    /// Creates any newly unlocked memoir sub-status records for the part's current enhancement level.
-    /// Existing slots are preserved.
-    /// </summary>
-    private void GrantUnlockedSubStatuses(DarkUserMemoryDatabase userDb, EntityIUserParts part)
-    {
-        EntityMPartsEnhanced? enhancedRow = null;
-        foreach (EntityMPartsEnhanced row in _masterDb.EntityMPartsEnhanced)
-        {
-            if (row.PartsId == part.PartsId && row.Level == part.Level)
-            {
-                enhancedRow = row;
-                break;
-            }
-        }
-
-        if (enhancedRow == null || enhancedRow.SubStatusCount <= 0)
-        {
-            return;
-        }
-
-        foreach (EntityMPartsEnhancedSubStatus row in _masterDb.EntityMPartsEnhancedSubStatus)
-        {
-            if (row.PartsEnhancedId != enhancedRow.PartsEnhancedId || row.StatusIndex > enhancedRow.SubStatusCount)
-            {
-                continue;
-            }
-
-            bool alreadyUnlocked = false;
-            foreach (EntityIUserPartsStatusSub existing in userDb.EntityIUserPartsStatusSub)
-            {
-                if (existing.UserPartsUuid == part.UserPartsUuid && existing.StatusIndex == row.StatusIndex)
-                {
-                    alreadyUnlocked = true;
-                    break;
-                }
-            }
-
-            if (alreadyUnlocked)
-            {
-                continue;
-            }
-
-            userDb.EntityIUserPartsStatusSub.Add(new EntityIUserPartsStatusSub
-            {
-                UserId = part.UserId,
-                UserPartsUuid = part.UserPartsUuid,
-                StatusIndex = row.StatusIndex,
-                PartsStatusSubLotteryId = row.PartsStatusSubLotteryId,
-                Level = row.Level,
-                StatusKindType = row.StatusKindType,
-                StatusCalculationType = row.StatusCalculationType,
-                StatusChangeValue = row.FixedStatusChangeValue
-            });
-        }
     }
 
     /// <summary>

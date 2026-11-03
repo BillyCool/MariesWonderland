@@ -1,0 +1,108 @@
+{
+  "_about": "Memoir (parts) grades and starting sub-status slots, a server-side table master data lacks. Every memoir exists as 5 grades (EntityMParts.PartsInitialLotteryId, the game's 'Sub No.'); a dropped memoir's grade is rolled by its rarity's gradeOdds (weights), then the grade's startingSlots lists the slot counts it can start with, each equally likely (grade 5 is always full). Every upgrade level in upgradeLevels (3, 6, 9, 12, 15) fills an empty slot, or adds a roll to a random filled one. To become EntityS* tables in the database later.",
+  "maxSlots": 4,
+  "upgradeEveryLevels": 3,
+  "gradeOdds": [
+    {
+      "rarityType": 40,
+      "confidence": "grades 4 and 5 are the only ones in the drop table and the real save; odds 50/50 from the administrator's memory",
+      "grades": [
+        {
+          "grade": 4,
+          "weight": 50
+        },
+        {
+          "grade": 5,
+          "weight": 50
+        }
+      ]
+    },
+    {
+      "rarityType": 30,
+      "confidence": "grades 3, 4, 5 are in the drop table; the odds are the administrator's estimate",
+      "grades": [
+        {
+          "grade": 3,
+          "weight": 30
+        },
+        {
+          "grade": 4,
+          "weight": 50
+        },
+        {
+          "grade": 5,
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "rarityType": 20,
+      "confidence": "grades 3, 4, 5 are in the drop table; the odds are the administrator's estimate",
+      "grades": [
+        {
+          "grade": 3,
+          "weight": 50
+        },
+        {
+          "grade": 4,
+          "weight": 40
+        },
+        {
+          "grade": 5,
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "rarityType": 10,
+      "confidence": "only grade 3 is in the drop table",
+      "grades": [
+        {
+          "grade": 3,
+          "weight": 100
+        }
+      ]
+    }
+  ],
+  "startingSlots": [
+    {
+      "grade": 1,
+      "slots": [
+        0,
+        1
+      ],
+      "confidence": "guess: N-1 or N"
+    },
+    {
+      "grade": 2,
+      "slots": [
+        1,
+        2
+      ],
+      "confidence": "guess: N-1 or N"
+    },
+    {
+      "grade": 3,
+      "slots": [
+        2,
+        3
+      ],
+      "confidence": "guess: N-1 or N"
+    },
+    {
+      "grade": 4,
+      "slots": [
+        3,
+        4
+      ],
+      "confidence": "real save: 3 and 4 slots both seen (the 50/50 is the administrator's memory)"
+    },
+    {
+      "grade": 5,
+      "slots": [
+        4
+      ],
+      "confidence": "real save: always 4 (531 of 531 Rainbow)"
+    }
+  ]
+}

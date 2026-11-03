@@ -17,125 +17,59 @@ public class PartsServiceTests
     private const int PartsId = 1001;
 
     [Fact]
-    public async Task Enhance_SuccessfullyUnlocksNewSubStatusSlots()
+    public async Task Enhance_ToAnUpgradeLevel_FillsAnEmptySlotOnly()
     {
         DarkMasterMemoryDatabase masterDb = CreateMasterDb();
         ConfigurePartsMaster(masterDb, sellFunctionId: 0);
-        masterDb.EntityMPartsEnhanced.Add(new EntityMPartsEnhanced
-        {
-            PartsEnhancedId = 501,
-            PartsId = PartsId,
-            Level = 3,
-            SubStatusCount = 1
-        });
-        masterDb.EntityMPartsEnhancedSubStatus.Add(new EntityMPartsEnhancedSubStatus
-        {
-            PartsEnhancedId = 501,
-            StatusIndex = 1,
-            PartsStatusSubLotteryId = 77,
-            Level = 3,
-            StatusKindType = StatusKindType.ATTACK,
-            StatusCalculationType = StatusCalculationType.ADD,
-            FixedStatusChangeValue = 150
-        });
-
         DarkUserMemoryDatabase userDb = CreateUserDb();
-        userDb.EntityIUserConsumableItem.Add(new EntityIUserConsumableItem
-        {
-            UserId = UserId,
-            ConsumableItemId = GoldItemId,
-            Count = 100
-        });
-        userDb.EntityIUserParts.Add(new EntityIUserParts
-        {
-            UserId = UserId,
-            UserPartsUuid = "parts-1",
-            PartsId = PartsId,
-            Level = 2
-        });
-
+        userDb.EntityIUserConsumableItem.Add(new EntityIUserConsumableItem { UserId = UserId, ConsumableItemId = GoldItemId, Count = 100 });
+        userDb.EntityIUserParts.Add(new EntityIUserParts { UserId = UserId, UserPartsUuid = "parts-1", PartsId = PartsId, Level = 2 });
         PartsService service = CreateService(masterDb, userDb);
 
-        EnhanceResponse response = await service.Enhance(
-            new EnhanceRequest { UserPartsUuid = "parts-1" },
-            FakeServerCallContext.For(UserId));
+        EnhanceResponse toLevel3 = await service.Enhance(new EnhanceRequest { UserPartsUuid = "parts-1" }, FakeServerCallContext.For(UserId));
+        EnhanceResponse toLevel4 = await service.Enhance(new EnhanceRequest { UserPartsUuid = "parts-1" }, FakeServerCallContext.For(UserId));
 
-        Assert.True(response.IsSuccess);
-        Assert.Equal(3, userDb.EntityIUserParts.Single().Level);
-        Assert.Equal(90, userDb.EntityIUserConsumableItem.Single().Count);
-
+        Assert.True(toLevel3.IsSuccess);
+        Assert.True(toLevel4.IsSuccess);
+        Assert.Equal(4, userDb.EntityIUserParts.Single().Level);
         EntityIUserPartsStatusSub subStatus = Assert.Single(userDb.EntityIUserPartsStatusSub);
-        Assert.Equal(UserId, subStatus.UserId);
-        Assert.Equal("parts-1", subStatus.UserPartsUuid);
-        Assert.Equal(1, subStatus.StatusIndex);
-        Assert.Equal(77, subStatus.PartsStatusSubLotteryId);
-        Assert.Equal(3, subStatus.Level);
-        Assert.Equal(StatusKindType.ATTACK, subStatus.StatusKindType);
-        Assert.Equal(StatusCalculationType.ADD, subStatus.StatusCalculationType);
-        Assert.Equal(150, subStatus.StatusChangeValue);
+        Assert.Equal(("parts-1", 1, 1), (subStatus.UserPartsUuid, subStatus.StatusIndex, subStatus.Level));
     }
 
     [Fact]
-    public async Task Enhance_DoesNotDuplicateExistingSubStatusSlot()
+    public async Task Enhance_ToAnUpgradeLevel_UpgradesAFilledSlotWhenAllAreFull()
     {
         DarkMasterMemoryDatabase masterDb = CreateMasterDb();
         ConfigurePartsMaster(masterDb, sellFunctionId: 0);
-        masterDb.EntityMPartsEnhanced.Add(new EntityMPartsEnhanced
-        {
-            PartsEnhancedId = 502,
-            PartsId = PartsId,
-            Level = 3,
-            SubStatusCount = 1
-        });
-        masterDb.EntityMPartsEnhancedSubStatus.Add(new EntityMPartsEnhancedSubStatus
-        {
-            PartsEnhancedId = 502,
-            StatusIndex = 1,
-            PartsStatusSubLotteryId = 88,
-            Level = 3,
-            StatusKindType = StatusKindType.HP,
-            StatusCalculationType = StatusCalculationType.MULTIPLY,
-            FixedStatusChangeValue = 300
-        });
-
         DarkUserMemoryDatabase userDb = CreateUserDb();
-        userDb.EntityIUserConsumableItem.Add(new EntityIUserConsumableItem
+        userDb.EntityIUserConsumableItem.Add(new EntityIUserConsumableItem { UserId = UserId, ConsumableItemId = GoldItemId, Count = 100 });
+        userDb.EntityIUserParts.Add(new EntityIUserParts { UserId = UserId, UserPartsUuid = "parts-1", PartsId = PartsId, Level = 5 });
+        // Rarity 20 (the test memoir's) lottery ids are 10 to 18.
+        (int Id, StatusKindType Kind, int Value)[] slots = [(16, StatusKindType.CRITICAL_RATIO, 15), (17, StatusKindType.CRITICAL_ATTACK, 20), (18, StatusKindType.AGILITY, 5), (10, StatusKindType.ATTACK, 17)];
+        for (int i = 0; i < slots.Length; i++)
         {
-            UserId = UserId,
-            ConsumableItemId = GoldItemId,
-            Count = 100
-        });
-        userDb.EntityIUserParts.Add(new EntityIUserParts
-        {
-            UserId = UserId,
-            UserPartsUuid = "parts-1",
-            PartsId = PartsId,
-            Level = 2
-        });
-        userDb.EntityIUserPartsStatusSub.Add(new EntityIUserPartsStatusSub
-        {
-            UserId = UserId,
-            UserPartsUuid = "parts-1",
-            StatusIndex = 1,
-            PartsStatusSubLotteryId = 999,
-            Level = 2,
-            StatusKindType = StatusKindType.AGILITY,
-            StatusCalculationType = StatusCalculationType.ADD,
-            StatusChangeValue = 42,
-            LatestVersion = 123
-        });
+            userDb.EntityIUserPartsStatusSub.Add(new EntityIUserPartsStatusSub
+            {
+                UserId = UserId,
+                UserPartsUuid = "parts-1",
+                StatusIndex = i + 1,
+                PartsStatusSubLotteryId = slots[i].Id,
+                Level = 1,
+                StatusKindType = slots[i].Kind,
+                StatusCalculationType = StatusCalculationType.ADD,
+                StatusChangeValue = slots[i].Value
+            });
+        }
 
         PartsService service = CreateService(masterDb, userDb);
 
-        EnhanceResponse response = await service.Enhance(
-            new EnhanceRequest { UserPartsUuid = "parts-1" },
-            FakeServerCallContext.For(UserId));
+        EnhanceResponse response = await service.Enhance(new EnhanceRequest { UserPartsUuid = "parts-1" }, FakeServerCallContext.For(UserId));
 
         Assert.True(response.IsSuccess);
-        EntityIUserPartsStatusSub subStatus = Assert.Single(userDb.EntityIUserPartsStatusSub);
-        Assert.Equal(999, subStatus.PartsStatusSubLotteryId);
-        Assert.Equal(42, subStatus.StatusChangeValue);
-        Assert.Equal(123, subStatus.LatestVersion);
+        Assert.Equal(4, userDb.EntityIUserPartsStatusSub.Count);
+        Assert.Equal(5, userDb.EntityIUserPartsStatusSub.Sum(s => s.Level));
+        EntityIUserPartsStatusSub upgraded = Assert.Single(userDb.EntityIUserPartsStatusSub, s => s.Level == 2);
+        Assert.True(upgraded.StatusChangeValue > slots.Single(x => x.Id == upgraded.PartsStatusSubLotteryId).Value);
     }
 
     [Fact]

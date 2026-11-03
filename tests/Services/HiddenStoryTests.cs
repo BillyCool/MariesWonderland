@@ -87,7 +87,7 @@ public class HiddenStoryTests(MasterDatabaseFixture fixture) : ServiceTestBase(f
         Assert.True(userDb.EntityIUserGimmick.Single().IsGimmickCleared);
     }
 
-    [Fact]
+    [Fact(Skip = "The fickle black bird rotation is left out of the modded master file since 2026-11-03 (suspected cause of the map issue); see docs/dev-tools/master-data.md.")]
     public void FickleBlackBirds_KeepTheirLiveRotationUntil2041()
     {
         // The 2021-12 → 2024-04 rotation is replayed in the modded master file (7 times, 876 days apart).
