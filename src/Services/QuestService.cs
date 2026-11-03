@@ -960,7 +960,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
 
     /// <summary>
     /// Abyss Tower mission milestones: every tier up to the count the client asks for, as far as the user's cleared quest
-    /// missions in the chapter (all difficulties) reach, each tier once.
+    /// missions in the chapter (all difficulties) reach, each tier once. The rewards go to the gift box.
     /// </summary>
     public override Task<ReceiveTowerAccumulationRewardResponse> ReceiveTowerAccumulationReward(ReceiveTowerAccumulationRewardRequest request, ServerCallContext context)
     {
@@ -1000,7 +1000,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
                 .Where(r => r.EventQuestTowerRewardGroupId == tier.EventQuestTowerRewardGroupId)
                 .OrderBy(r => r.SortOrder))
             {
-                PossessionHelper.Apply(userDb, reward.PossessionType, reward.PossessionId, reward.Count, _masterDb, nowMs);
+                GiftBoxHelper.Add(userDb, reward.PossessionType, reward.PossessionId, reward.Count, nowMs);
             }
 
             highestClaimedCount = Math.Max(highestClaimedCount, tier.QuestMissionClearCount);
