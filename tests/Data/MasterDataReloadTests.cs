@@ -85,8 +85,11 @@ public sealed class MasterDataReloadTests(MasterDatabaseFixture fixture) : IDisp
 
     private void CopyMasterData(DateTime lastWriteUtc)
     {
-        File.Copy(TestSettings.MasterDataPath, FilePath, overwrite: true);
-        File.SetLastWriteTimeUtc(FilePath, lastWriteUtc);
+        // Stage under another name and move it in: copying straight over the watched file sometimes raised no change event.
+        string staged = FilePath + ".tmp";
+        File.Copy(TestSettings.MasterDataPath, staged, overwrite: true);
+        File.SetLastWriteTimeUtc(staged, lastWriteUtc);
+        File.Move(staged, FilePath, overwrite: true);
     }
 
     private static async Task<MasterDataSnapshot> WaitForReload(MasterDataHolder holder, MasterDataSnapshot previous)
