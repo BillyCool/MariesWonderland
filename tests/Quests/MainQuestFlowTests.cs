@@ -35,6 +35,19 @@ public class MainQuestFlowTests(MasterDatabaseFixture fixture) : ServiceTestBase
             .First();
     }
 
+    [Fact]
+    public async Task StartingTheAutoClearedFirstQuest_StartsTheBeginnerCampaign()
+    {
+        (QuestService service, DarkUserMemoryDatabase userDb, long userId) = CreateService();
+        int unlockQuestId = MasterDb.EntityMBeginnerCampaign.Single().CampaignUnlockQuestId;
+        Assert.True(QuestEngine.IsPlayable(MasterDb.EntityMQuest.Single(q => q.QuestId == unlockQuestId)) is false);
+        Assert.Empty(userDb.EntityIUserBeginnerCampaign);
+
+        await service.StartMainQuest(new StartMainQuestRequest { QuestId = unlockQuestId, IsMainFlow = true, UserDeckNumber = 1 }, ContextFor(userId));
+
+        Assert.Equal(1, userDb.EntityIUserBeginnerCampaign.Single().BeginnerCampaignId);
+    }
+
     [Theory]
     [InlineData(false)]
     [InlineData(true)]

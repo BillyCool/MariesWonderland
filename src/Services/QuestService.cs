@@ -351,7 +351,12 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         else
         {
             // Background quests (cutscenes, non-combat) — auto-clear immediately.
+            bool firstClear = userQuest.ClearCount == 0;
             QuestEngine.MarkCleared(userQuest, 1, nowMs);
+            if (firstClear)
+            {
+                UserCampaignHelper.StartBeginnerCampaignOnFirstClear(_masterDb, userDb, questId, nowMs);
+            }
 
             // Set scene IDs from the first scene of this quest
             if (startSceneId != 0)
@@ -1347,6 +1352,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         else if (userQuest.ClearCount == 0)
         {
             QuestEngine.MarkCleared(userQuest, 1, nowMs);
+            UserCampaignHelper.StartBeginnerCampaignOnFirstClear(_masterDb, userDb, request.QuestId, nowMs);
         }
 
         StartQuestAutoOrbit(userDb, userId, QuestType.MAIN_QUEST, 0, request.QuestId, request.MaxAutoOrbitCount, nowMs);
