@@ -1135,10 +1135,67 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
         return Task.FromResult(new ResetLimitContentQuestProgressResponse());
     }
 
-    /// <summary>Stub for daily quest group reward; returns empty response.</summary>
+    /// <summary>
+    /// Pays the daily group's bonus once a day: the group running now, once every quest of its target chapters was cleared
+    /// since the group began (a game day). The reward goes to the gift box; the user's row keeps the last group paid.
+    /// </summary>
     public override Task<ReceiveDailyQuestGroupCompleteRewardResponse> ReceiveDailyQuestGroupCompleteReward(Empty request, ServerCallContext context)
     {
+        long userId = context.GetUserId();
+        DarkUserMemoryDatabase userDb = _store.GetOrCreate(userId);
+        long nowMs = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
+
+        EntityMEventQuestDailyGroup group = _masterDb.EntityMEventQuestDailyGroup
+            .FirstOrDefault(g => g.StartDatetime <= nowMs && nowMs <= g.EndDatetime)
+            ?? throw GameError.Refuse(QuestErrors.NoDailyQuestGroup);
+
+        EntityIUserEventQuestDailyGroupCompleteReward received = userDb.EntityIUserEventQuestDailyGroupCompleteReward.GetOrCreate(userId);
+        if (received.LastRewardReceiveEventQuestDailyGroupId == group.EventQuestDailyGroupId)
+        {
+            throw GameError.Refuse(QuestErrors.DailyQuestGroupRewardReceived);
+        }
+
+        IEnumerable<int> questIds = _masterDb.EntityMEventQuestDailyGroupTargetChapter
+            .Where(t => t.EventQuestDailyGroupTargetChapterId == group.EventQuestDailyGroupTargetChapterId)
+            .SelectMany(t => FateBoardHelper.ChapterQuests(_masterDb, t.EventQuestChapterId, difficulty: null))
+            .Select(q => q.QuestId)
+            .Where(questId => IsQuestScheduledToday(questId, nowMs));
+        foreach (int questId in questIds)
+        {
+            if (!userDb.EntityIUserQuest.Any(q => q.QuestId == questId && q.LastClearDatetime >= group.StartDatetime))
+            {
+                throw GameError.Refuse(QuestErrors.DailyQuestGroupNotCleared);
+            }
+        }
+
+        foreach (EntityMEventQuestDailyGroupCompleteReward reward in _masterDb.EntityMEventQuestDailyGroupCompleteReward
+            .Where(r => r.EventQuestDailyGroupCompleteRewardId == group.EventQuestDailyGroupCompleteRewardId)
+            .OrderBy(r => r.SortOrder))
+        {
+            GiftBoxHelper.Add(userDb, reward.PossessionType, reward.PossessionId, reward.Count, nowMs);
+        }
+
+        received.LastRewardReceiveEventQuestDailyGroupId = group.EventQuestDailyGroupId;
+        received.LastRewardReceiveDatetime = nowMs;
         return Task.FromResult(new ReceiveDailyQuestGroupCompleteRewardResponse());
+    }
+
+    /// <summary>
+    /// Whether the quest's schedule runs on this game day: a daily chapter holds one quest per day (a day-long window) or
+    /// one per weekday (a weekday cron), and only that day's quest counts. A quest without a schedule always runs.
+    /// </summary>
+    private bool IsQuestScheduledToday(int questId, long nowMs)
+    {
+        List<int> scheduleIds = [.. _masterDb.EntityMQuestScheduleCorrespondence.Where(c => c.QuestId == questId).Select(c => c.QuestScheduleId)];
+        if (scheduleIds.Count == 0)
+        {
+            return true;
+        }
+
+        string weekday = DateTimeOffset.FromUnixTimeMilliseconds(GameDayHelper.StartOfDay(nowMs)).UtcDateTime.DayOfWeek.ToString()[..3].ToUpperInvariant();
+        return _masterDb.EntityMQuestSchedule.Any(s => scheduleIds.Contains(s.QuestScheduleId)
+            && s.StartDatetime <= nowMs && nowMs <= s.EndDatetime
+            && s.QuestScheduleCronExpression.Split(' ')[^1] is string cronDay && (cronDay == "*" || cronDay == weekday));
     }
 
     private static void StartQuestAutoOrbit(
@@ -1570,8 +1627,7 @@ public class QuestService(UserDataStore store, DarkMasterMemoryDatabase masterDb
 
     private void ApplyQuestSceneChoiceSideEffects(DarkUserMemoryDatabase userDb, EntityMQuestSceneChoiceEffect choiceEffect, long nowMs)
     {
-        // REVIEW: if quest-scene choice effects are supposed to compensate already-owned gear with duplicate rewards,
-        // the current repo has no quest-choice-specific conversion model for that. Skip duplicate grants for safety.
+        // The gear is a one-time grant (the Act 2 ending choice): gear already owned is skipped, never compensated.
         foreach (EntityMQuestSceneChoiceCostumeEffectGroup costumeEffect in _masterDb.EntityMQuestSceneChoiceCostumeEffectGroup
             .Where(g => g.QuestSceneChoiceCostumeEffectGroupId == choiceEffect.QuestSceneChoiceCostumeEffectGroupId)
             .OrderBy(g => g.SortOrder))

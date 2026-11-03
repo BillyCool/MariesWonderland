@@ -1034,6 +1034,56 @@ public class QuestServiceTests
         Assert.Equal(50, userDb.EntityIUserGem[0].PaidGem);
     }
 
+    [Fact]
+    public async Task ReceiveDailyQuestGroupComplete_PaysTheRunningGroupOnceAfterTodaysQuestsAreCleared()
+    {
+        long nowMs = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        long dayStart = GameDayHelper.StartOfDay(nowMs);
+        DarkMasterMemoryDatabase masterDb = new();
+        masterDb.EntityMEventQuestDailyGroup.AddRange(
+        [
+            new EntityMEventQuestDailyGroup { EventQuestDailyGroupId = 1, StartDatetime = dayStart - 86_400_000, EndDatetime = dayStart - 1000, EventQuestDailyGroupTargetChapterId = 5, EventQuestDailyGroupCompleteRewardId = 8 },
+            new EntityMEventQuestDailyGroup { EventQuestDailyGroupId = 2, StartDatetime = dayStart, EndDatetime = dayStart + 86_400_000 - 1000, EventQuestDailyGroupTargetChapterId = 5, EventQuestDailyGroupCompleteRewardId = 9 },
+        ]);
+        masterDb.EntityMEventQuestDailyGroupTargetChapter.Add(new EntityMEventQuestDailyGroupTargetChapter { EventQuestDailyGroupTargetChapterId = 5, SortOrder = 1, EventQuestChapterId = 60 });
+        masterDb.EntityMEventQuestDailyGroupCompleteReward.Add(new EntityMEventQuestDailyGroupCompleteReward { EventQuestDailyGroupCompleteRewardId = 9, SortOrder = 1, PossessionType = PossessionType.MATERIAL, PossessionId = 321007, Count = 10 });
+        masterDb.EntityMEventQuestChapter.Add(new EntityMEventQuestChapter { EventQuestChapterId = 60, EventQuestSequenceGroupId = 60 });
+        masterDb.EntityMEventQuestSequenceGroup.Add(new EntityMEventQuestSequenceGroup { EventQuestSequenceGroupId = 60, DifficultyType = DifficultyType.NORMAL, EventQuestSequenceId = 60 });
+        masterDb.EntityMEventQuestSequence.AddRange(
+        [
+            new EntityMEventQuestSequence { EventQuestSequenceId = 60, SortOrder = 1, QuestId = 6001 },
+            new EntityMEventQuestSequence { EventQuestSequenceId = 60, SortOrder = 2, QuestId = 6002 },
+            new EntityMEventQuestSequence { EventQuestSequenceId = 60, SortOrder = 3, QuestId = 6003 },
+        ]);
+        masterDb.EntityMQuestSchedule.AddRange(
+        [
+            new EntityMQuestSchedule { QuestScheduleId = 1, QuestScheduleCronExpression = "* * * * * *", StartDatetime = dayStart, EndDatetime = dayStart + 86_400_000 - 1000 },
+            new EntityMQuestSchedule { QuestScheduleId = 2, QuestScheduleCronExpression = "* * * * * *", StartDatetime = dayStart + 86_400_000, EndDatetime = dayStart + 2 * 86_400_000 - 1000 },
+        ]);
+        masterDb.EntityMQuestScheduleCorrespondence.AddRange(
+        [
+            new EntityMQuestScheduleCorrespondence { QuestId = 6001, QuestScheduleId = 1 },
+            new EntityMQuestScheduleCorrespondence { QuestId = 6002, QuestScheduleId = 1 },
+            new EntityMQuestScheduleCorrespondence { QuestId = 6003, QuestScheduleId = 2 },
+        ]);
+        DarkUserMemoryDatabase userDb = new();
+        userDb.EntityIUserQuest.Add(new EntityIUserQuest { UserId = UserId, QuestId = 6001, LastClearDatetime = nowMs });
+        userDb.EntityIUserQuest.Add(new EntityIUserQuest { UserId = UserId, QuestId = 6002, LastClearDatetime = dayStart - 1 });
+        QuestServiceImpl service = CreateService(masterDb, userDb);
+        Google.Protobuf.WellKnownTypes.Empty request = new();
+
+        await Assert.ThrowsAsync<Grpc.Core.RpcException>(() => service.ReceiveDailyQuestGroupCompleteReward(request, FakeServerCallContext.For(UserId)));
+        Assert.Empty(userDb.EntitySUserGift);
+
+        userDb.EntityIUserQuest.First(q => q.QuestId == 6002).LastClearDatetime = nowMs;
+        await service.ReceiveDailyQuestGroupCompleteReward(request, FakeServerCallContext.For(UserId));
+        Assert.Equal(["321007:10"], GiftedMaterials(userDb));
+        Assert.Equal(2, Assert.Single(userDb.EntityIUserEventQuestDailyGroupCompleteReward).LastRewardReceiveEventQuestDailyGroupId);
+
+        await Assert.ThrowsAsync<Grpc.Core.RpcException>(() => service.ReceiveDailyQuestGroupCompleteReward(request, FakeServerCallContext.For(UserId)));
+        Assert.Equal(["321007:10"], GiftedMaterials(userDb));
+    }
+
     private static QuestServiceImpl CreateService(DarkMasterMemoryDatabase masterDb, DarkUserMemoryDatabase userDb)
     {
         UserDataStore store = new(TimeProvider.System);
