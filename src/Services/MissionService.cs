@@ -46,8 +46,8 @@ public class MissionService(UserDataStore store, DarkMasterMemoryDatabase master
     }
 
     /// <summary>
-    /// Grants the rewards of the given cleared missions and marks them received. Rewards of a mission whose term
-    /// has ended come back as expired instead of being granted.
+    /// Sends the rewards of the given cleared missions to the gift box and marks the missions received. Rewards of
+    /// a mission whose term has ended come back as expired instead of being sent.
     /// </summary>
     public override Task<ReceiveMissionRewardsResponse> ReceiveMissionRewardsById(ReceiveMissionRewardsByIdRequest request, ServerCallContext context)
     {

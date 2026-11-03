@@ -5,6 +5,7 @@ using MariesWonderland.Helpers;
 using MariesWonderland.Missions;
 using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
+using MariesWonderland.Proto.User;
 using MariesWonderland.Quests;
 using MariesWonderland.Tests.Infrastructure;
 using Microsoft.Extensions.Options;
@@ -108,6 +109,28 @@ public class MissionEventTests(MasterDatabaseFixture fixture) : ServiceTestBase(
         Assert.Equal(staminaBefore, userDb.EntityIUserStatus.Single().StaminaMilliValue);
         Assert.Equal(quest.Stamina * 2, Progress(userDb, stamina));
         Assert.Equal(1, Progress(userDb, clears));
+    }
+
+    [Fact]
+    public async Task Auth_NewAccount_CountsItsFirstLoginForDailyAndTotalLoginMissions()
+    {
+        MissionCatalog catalog = Catalog;
+        MissionTracker tracker = new(MasterDb, catalog);
+        UserDataStore store = new(TimeProvider.System);
+        FakeTimeProvider time = new(Now);
+        UserService service = new(store, new UserDataSeeder(Options.Create(new ServerOptions())), MasterDb, tracker, time);
+
+        await service.Auth(new AuthUserRequest { Uuid = "first-login-uuid" }, ContextFor(0));
+        long userId = store.RegisterOrGetUser("first-login-uuid", MasterDb).UserId;
+        store.TryGet(userId, out DarkUserMemoryDatabase userDb);
+
+        MissionDefinition daily = catalog.ByConditionType(MissionClearConditionType.USER_LOGIN_BY_COUNT).First(m => m.IsDaily && m.IsInTerm(NowMs));
+        MissionDefinition total = Open(catalog, MissionClearConditionType.USER_LOGIN_BY_COUNT, m => !m.IsDaily);
+        Assert.Equal(daily.ClearValue <= 1 ? MissionProgressStatusType.CLEAR : MissionProgressStatusType.IN_PROGRESS,
+            userDb.EntityIUserMission.Single(r => r.MissionId == daily.MissionId).MissionProgressStatusType);
+        Assert.Equal(Math.Min(1, daily.ClearValue), Progress(userDb, daily));
+        // The total-login mission reads the login record, so the first day is 1, not 2.
+        Assert.Equal(1, Progress(userDb, total));
     }
 
     [Fact]

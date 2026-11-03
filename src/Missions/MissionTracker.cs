@@ -72,7 +72,9 @@ public sealed class MissionTracker(DarkMasterMemoryDatabase masterDb, MissionCat
         Dictionary<int, EntityIUserMission> rows = userDb.EntityIUserMission.ToDictionary(r => r.MissionId);
         foreach (MissionDefinition mission in _catalog.ByConditionType(conditionType))
         {
-            if (!mission.IsFilterUnmapped && matches(mission.Filter) && mission.IsInTerm(nowMs)
+            // Total-login missions read the login record (StateValue), so adding to them would count the day twice.
+            bool isStateDriven = conditionType == MissionClearConditionType.USER_LOGIN_BY_COUNT && !mission.IsDaily;
+            if (!isStateDriven && !mission.IsFilterUnmapped && matches(mission.Filter) && mission.IsInTerm(nowMs)
                 && rows.TryGetValue(mission.MissionId, out EntityIUserMission? row) && row.MissionProgressStatusType != MissionProgressStatusType.REWARD_RECEIVED)
             {
                 AddProgress(userDb, rows, mission, row, amount, nowMs);
@@ -284,8 +286,8 @@ public sealed class MissionTracker(DarkMasterMemoryDatabase masterDb, MissionCat
     }
 
     /// <summary>
-    /// Grants the rewards of cleared missions and marks them received. A mission whose term has ended is marked
-    /// received too, but its rewards are returned as expired instead of granted.
+    /// Sends the rewards of cleared missions to the gift box and marks the missions received. A mission whose term
+    /// has ended is marked received too, but its rewards are returned as expired instead of sent.
     /// </summary>
     public (List<MissionRewardGrant> Received, List<MissionRewardGrant> Expired) ReceiveRewards(DarkUserMemoryDatabase userDb, IEnumerable<int> missionIds, long nowMs)
     {
@@ -310,7 +312,16 @@ public sealed class MissionTracker(DarkMasterMemoryDatabase masterDb, MissionCat
                     continue;
                 }
 
-                PossessionHelper.Apply(userDb, reward.PossessionType, reward.PossessionId, reward.Count, _masterDb, nowMs);
+                userDb.EntitySUserGift.Add(new EntitySUserGift
+                {
+                    UserId = userDb.UserId,
+                    UserGiftUuid = Guid.NewGuid().ToString(),
+                    PossessionType = (int)reward.PossessionType,
+                    PossessionId = reward.PossessionId,
+                    Count = reward.Count,
+                    GrantDatetime = nowMs,
+                    ExpirationDatetime = nowMs + GameConfig.GiftExpirationDays * 24L * 60 * 60 * 1000
+                });
                 received.Add(grant);
             }
 

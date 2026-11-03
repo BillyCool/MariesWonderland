@@ -13,7 +13,7 @@ namespace MariesWonderland.Tests.Services;
 public class LoginBonusServiceTests
 {
     private const long UserId = 1L;
-    private const long ThirtyDaysInMilliseconds = 30L * 24 * 60 * 60 * 1000;
+    private const long ThirtyDaysInMilliseconds = GameConfig.GiftExpirationDays * 24L * 60 * 60 * 1000;
 
     [Fact]
     public async Task ReceiveStamp_ForNewUser_CreatesTrackerAndDeliversFirstStampReward()

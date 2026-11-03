@@ -13,8 +13,6 @@ namespace MariesWonderland.Missions;
 /// </summary>
 public static class MissionPassHelper
 {
-    private const int GiftExpirationDays = 30;
-
     /// <summary>
     /// Grants every reached level of the pass not claimed yet: free rewards always, premium rewards when the premium
     /// item is owned. The rewards go to the inventory, or to the gift box when <paramref name="toGiftBox"/> is set.
@@ -51,7 +49,7 @@ public static class MissionPassHelper
                     PossessionId = reward.PossessionId,
                     Count = reward.Count,
                     GrantDatetime = nowMs,
-                    ExpirationDatetime = nowMs + GiftExpirationDays * 24L * 60 * 60 * 1000
+                    ExpirationDatetime = nowMs + GameConfig.GiftExpirationDays * 24L * 60 * 60 * 1000
                 });
             }
             else

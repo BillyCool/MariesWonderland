@@ -35,7 +35,6 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
     private const int StepUpStep5Cost = 5000;
     private const int StepUpFreeCost = 0;
     private const int ConsumableIdPremiumTicket = 1;
-    private const int GiftExpirationDays = 30;
     private const int MedalCountCap = 9999;
     private const int DupGradeMin = 2;
     private const int DupGradeRange = 4;
@@ -873,7 +872,7 @@ public class GachaService(DarkMasterMemoryDatabase masterDb, UserDataStore store
                 PossessionId = prize.PossessionId,
                 Count = prize.Count,
                 GrantDatetime = nowMs,
-                ExpirationDatetime = nowMs + GiftExpirationDays * 24L * 60 * 60 * 1000
+                ExpirationDatetime = nowMs + GameConfig.GiftExpirationDays * 24L * 60 * 60 * 1000
             });
             return;
         }

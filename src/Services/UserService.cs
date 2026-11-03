@@ -61,7 +61,13 @@ public class UserService(UserDataStore store, UserDataSeeder seeder, DarkMasterM
         deviceRecord.LastAuthAt = nowMs;
         if (isNew) deviceRecord.RegisteredAt = nowMs;
 
-        if (!isNew)
+        if (isNew)
+        {
+            // Registration already stamped today's login record; the login missions still need their first day.
+            _missions.Refresh(userDb, nowMs);
+            RecordLoginMissions(userDb, nowMs);
+        }
+        else
         {
             CountDailyLogin(userDb, userId, nowMs);
             QuestEngine.ResetDailyClearCounts(userDb, nowMs);
@@ -123,8 +129,7 @@ public class UserService(UserDataStore store, UserDataSeeder seeder, DarkMasterM
         if (isFirstStartToday)
         {
             RecordDailyLogin(userDb, userId, nowMs);
-            _missions.Record(userDb, MissionClearConditionType.USER_LOGIN_BY_COUNT, 1, nowMs);
-            _missions.Record(userDb, MissionClearConditionType.USER_LOGIN_BY_COUNT_FROM_UNLOCK, 1, nowMs);
+            RecordLoginMissions(userDb, nowMs);
         }
 
         return Task.FromResult(new GameStartResponse());
@@ -145,6 +150,12 @@ public class UserService(UserDataStore store, UserDataSeeder seeder, DarkMasterM
         }
 
         RecordDailyLogin(userDb, userId, nowMs);
+        RecordLoginMissions(userDb, nowMs);
+    }
+
+    /// <summary>Counts a game day's first login for the login missions.</summary>
+    private void RecordLoginMissions(DarkUserMemoryDatabase userDb, long nowMs)
+    {
         _missions.Record(userDb, MissionClearConditionType.USER_LOGIN_BY_COUNT, 1, nowMs);
         _missions.Record(userDb, MissionClearConditionType.USER_LOGIN_BY_COUNT_FROM_UNLOCK, 1, nowMs);
     }

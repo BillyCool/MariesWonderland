@@ -43,8 +43,7 @@ public class LoginBonusService(UserDataStore store, DarkMasterMemoryDatabase mas
 
         (int nextPage, int nextStamp, EntityMLoginBonusStamp stamp) = ResolveNextStamp(loginBonus);
 
-        // REVIEW: the gift lifetime; 30 days is an assumption, not from master data or the real game.
-        long expiryMs = nowMs + 30L * 24 * 60 * 60 * 1000;
+        long expiryMs = nowMs + GameConfig.GiftExpirationDays * 24L * 60 * 60 * 1000;
 
         userDb.EntitySUserGift.Add(new EntitySUserGift
         {

@@ -18,8 +18,6 @@ namespace MariesWonderland.Services;
 public class RewardService(UserDataStore store, DarkMasterMemoryDatabase masterDb, TimeProvider timeProvider)
     : MariesWonderland.Proto.Reward.RewardService.RewardServiceBase
 {
-    private const int GiftExpirationDays = 30;
-
     private readonly UserDataStore _store = store;
     private readonly DarkMasterMemoryDatabase _masterDb = masterDb;
     private readonly TimeProvider _timeProvider = timeProvider;
@@ -411,7 +409,7 @@ public class RewardService(UserDataStore store, DarkMasterMemoryDatabase masterD
                 PossessionId = reward.PossessionId,
                 Count = reward.Count,
                 GrantDatetime = nowMs,
-                ExpirationDatetime = nowMs + GiftExpirationDays * 24L * 60 * 60 * 1000
+                ExpirationDatetime = nowMs + GameConfig.GiftExpirationDays * 24L * 60 * 60 * 1000
             });
         }
     }

@@ -182,7 +182,7 @@ public class MissionTrackerTests(MasterDatabaseFixture fixture) : ServiceTestBas
     }
 
     [Fact]
-    public void ReceiveRewards_GrantsClearedMissionsOnce_AndReturnsEndedTermsAsExpired()
+    public void ReceiveRewards_SendsClearedMissionsToTheGiftBoxOnce_AndReturnsEndedTermsAsExpired()
     {
         (MissionTracker tracker, MissionCatalog catalog, DarkUserMemoryDatabase userDb) = Create();
         userDb.EntityIUserStatus.Single().Level = 30;
@@ -196,8 +196,17 @@ public class MissionTrackerTests(MasterDatabaseFixture fixture) : ServiceTestBas
         Assert.Empty(expired);
         Assert.Equal(MissionProgressStatusType.REWARD_RECEIVED, Row(userDb, cleared.MissionId).MissionProgressStatusType);
 
+        // The reward waits in the gift box, unreceived; nothing is added to the inventory directly.
+        EntitySUserGift gift = Assert.Single(userDb.EntitySUserGift);
+        Assert.Equal((int)reward.PossessionType, gift.PossessionType);
+        Assert.Equal(reward.PossessionId, gift.PossessionId);
+        Assert.Equal(reward.Count, gift.Count);
+        Assert.Equal(0, gift.ReceivedDatetime);
+        Assert.Equal(NowMs + GameConfig.GiftExpirationDays * 24L * 60 * 60 * 1000, gift.ExpirationDatetime);
+
         (received, _) = tracker.ReceiveRewards(userDb, [cleared.MissionId], NowMs);
         Assert.Empty(received);
+        Assert.Single(userDb.EntitySUserGift);
 
         // A cleared mission whose term has ended.
         MissionDefinition ended = catalog.All.First(m => !m.IsInTerm(NowMs) && m.Rewards.Count > 0);
@@ -210,6 +219,7 @@ public class MissionTrackerTests(MasterDatabaseFixture fixture) : ServiceTestBas
         (received, expired) = tracker.ReceiveRewards(userDb, [ended.MissionId], NowMs);
         Assert.Empty(received);
         Assert.Equal(ended.Rewards.Count, expired.Count);
+        Assert.Single(userDb.EntitySUserGift);
         Assert.Equal(MissionProgressStatusType.REWARD_RECEIVED, Row(userDb, ended.MissionId).MissionProgressStatusType);
     }
 

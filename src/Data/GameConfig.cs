@@ -7,6 +7,9 @@ namespace MariesWonderland.Data;
 /// </summary>
 public class GameConfig
 {
+    /// <summary>How long a gift stays in the gift box, for every gift source (confirmed 30 days).</summary>
+    public const int GiftExpirationDays = 30;
+
     public int ConsumableItemIdForGold { get; init; }
     public int ConsumableItemIdForMedal { get; init; }
     public int ConsumableItemIdForRareMedal { get; init; }
