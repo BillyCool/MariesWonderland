@@ -1,0 +1,109 @@
+@page "/admin/master/draft"
+@attribute [Authorize]
+@layout AdminLayout
+@inherits AdminPage
+@implements IDisposable
+@inject MasterDraft MasterDraft
+@inject MasterDataPublisher Publisher
+
+<PageTitle>Draft and publish</PageTitle>
+
+<MudText Typo="Typo.h4" Class="mb-2">Draft and publish</MudText>
+<MudText Typo="Typo.body2" Class="mb-4">
+    Publishing writes the master data file and swaps it in live. The version changes, so every player is sent back to the
+    title and downloads the new data. Each publish is kept in the <MudLink Href="/admin/master/history">history</MudLink>, with an undo.
+</MudText>
+
+@if (MasterDraft.IsStale)
+{
+    <MudAlert Severity="Severity.Error" Class="mb-3">The live data changed after this draft was started (another publish or a reload). Discard the draft and redo the edits.</MudAlert>
+}
+
+@if (_changes.Count == 0)
+{
+    <MudAlert Severity="Severity.Info">The draft is empty. Edit in <MudLink Href="/admin/master/schedules">Schedules</MudLink>, <MudLink Href="/admin/master/arena">Arena seasons</MudLink> or <MudLink Href="/admin/master/tables">Tables</MudLink>.</MudAlert>
+}
+else
+{
+    <MudPaper Class="pa-4 mb-4">
+        <MudStack Row="true" AlignItems="AlignItems.End" Wrap="Wrap.Wrap">
+            <MudTextField @bind-Value="_summary" Label="What changed (for the history)" Variant="Variant.Outlined" Margin="Margin.Dense" Style="min-width:420px" />
+            <MudButton Variant="Variant.Filled" Color="Color.Primary" StartIcon="@Icons.Material.Filled.Publish" OnClick="Publish" Disabled="_publishing">Publish @_changes.Count @(_changes.Count == 1 ? "change" : "changes")</MudButton>
+            <MudButton Variant="Variant.Outlined" Color="Color.Error" OnClick="Discard">Discard the draft</MudButton>
+        </MudStack>
+        @if (_publishing)
+        {
+            <MudProgressLinear Indeterminate="true" Class="mt-2" />
+        }
+    </MudPaper>
+
+    @foreach (IGrouping<string, MasterRowChange> table in _changes.GroupBy(c => c.Table))
+    {
+        <MudPaper Class="pa-3 mb-3">
+            <MudStack Row="true" AlignItems="AlignItems.Center">
+                <MudLink Href="@($"/admin/master/table/{table.Key}")" Typo="Typo.h6">@table.Key["EntityM".Length..]</MudLink>
+                <MudText Typo="Typo.body2">@table.Count(c => c.Kind == MasterChangeKind.Added) added, @table.Count(c => c.Kind == MasterChangeKind.Modified) changed, @table.Count(c => c.Kind == MasterChangeKind.Removed) removed</MudText>
+                <MudSpacer />
+                <MudButton Size="Size.Small" Variant="Variant.Text" OnClick="() => Revert(table.Key)">Undo this table</MudButton>
+            </MudStack>
+            <ChangeList Changes="table.ToList()" />
+        </MudPaper>
+    }
+}
+
+@code {
+    private IReadOnlyList<MasterRowChange> _changes = [];
+    private string _summary = "";
+    private bool _publishing;
+
+    protected override void OnInitialized()
+    {
+        MasterDraft.Changed += OnDraftChanged;
+        _changes = MasterDraft.Changes();
+    }
+
+    private void OnDraftChanged() => InvokeAsync(() =>
+    {
+        _changes = MasterDraft.Changes();
+        StateHasChanged();
+    });
+
+    private async Task Publish()
+    {
+        if (!await Confirm("Publish", $"Publish {_changes.Count} {(_changes.Count == 1 ? "change" : "changes")} to every player now?", "Publish"))
+        {
+            return;
+        }
+
+        _publishing = true;
+        StateHasChanged();
+        string summary = string.IsNullOrWhiteSpace(_summary) ? "" : _summary.Trim();
+        try
+        {
+            string version = await Task.Run(() => Publisher.Publish(AdminName, summary));
+            Snackbar.Add($"Published as version {version}.", Severity.Success);
+            _summary = "";
+        }
+        catch (Exception ex)
+        {
+            Snackbar.Add($"Publish failed: {ex.Message}", Severity.Error);
+        }
+        finally
+        {
+            _publishing = false;
+            _changes = MasterDraft.Changes();
+        }
+    }
+
+    private async Task Discard()
+    {
+        if (await Confirm("Discard", "Throw away every unpublished edit?", "Discard"))
+        {
+            MasterDraft.Discard();
+        }
+    }
+
+    private void Revert(string table) => MasterDraft.Revert(MasterTables.Find(table)!);
+
+    public void Dispose() => MasterDraft.Changed -= OnDraftChanged;
+}

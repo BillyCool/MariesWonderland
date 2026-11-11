@@ -30,6 +30,48 @@ public sealed class PathsOptions
     /// empty to use the address the client reached the server on, padded to that length (see <c>Http/ResourcesUrl</c>).
     /// </summary>
     public string ResourcesBaseUrl { get; init; } = string.Empty;
+
+    /// <summary>
+    /// The game's English <c>all_localizations.txt</c> (UTF-16), for item and event names in the admin tool.
+    /// Optional: without it the admin tool shows ids.
+    /// </summary>
+    public string Localization { get; init; } = string.Empty;
+}
+
+/// <summary>The web app: the transfer site and the admin tool (<c>Web/</c>).</summary>
+public sealed class WebOptions
+{
+    public const string SectionName = "Web";
+
+    /// <summary>
+    /// When set, <c>/admin</c> (and the admin tool's live connection) only answers on this local port, e.g. a second
+    /// Kestrel endpoint that is only published to the LAN. 0 serves it on every endpoint.
+    /// </summary>
+    public int AdminPort { get; init; }
+
+    /// <summary>
+    /// First administrator, created at startup when there is none: <c>Web:InitialAdmin:Name</c> and
+    /// <c>Web:InitialAdmin:Password</c>. Without it, the startup log prints a one-time setup link.
+    /// </summary>
+    public InitialAdminOptions InitialAdmin { get; init; } = new();
+
+    /// <summary>Whether anyone may upload a save on <c>/import</c> (it waits for an administrator's approval).</summary>
+    public bool PublicSaveImport { get; init; } = true;
+
+    /// <summary>
+    /// Largest zip accepted on <c>/import</c>, in kilobytes. A full endgame save (107 table files, 10.3 MB) zips to
+    /// about 530 KB.
+    /// </summary>
+    public int MaxImportZipKilobytes { get; init; } = 1024;
+
+    /// <summary>Largest size the uploaded zip may unpack to, in megabytes (the same save unpacks to 10.3 MB).</summary>
+    public int MaxImportUnzippedMegabytes { get; init; } = 16;
+}
+
+public sealed class InitialAdminOptions
+{
+    public string Name { get; init; } = "admin";
+    public string Password { get; init; } = string.Empty;
 }
 
 public sealed class DataOptions

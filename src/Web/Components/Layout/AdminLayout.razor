@@ -1,0 +1,75 @@
+@inherits LayoutComponentBase
+@inject MasterDraft Draft
+@implements IDisposable
+@* The admin tool's shell, in marieswonderland.com's style: the bracketed brand on a bar, square icon buttons, and the menu as
+   grouped uppercase links with square bullets. On phones the menu slides over the page. *@
+
+<MudThemeProvider Theme="_theme" @bind-IsDarkMode="_dark" />
+<MudPopoverProvider />
+<MudDialogProvider CloseButton="true" />
+<MudSnackbarProvider />
+
+<MudLayout Class="admin-root">
+    <MudAppBar Elevation="0" Dense="true" Gutters="false" Class="hud-bar">
+        <button type="button" class="hud-icon" @onclick="() => _open = !_open" aria-label="Menu" aria-expanded="@_open">
+            <MudIcon Icon="@Icons.Material.Filled.Menu" Size="Size.Small" />
+        </button>
+        <a class="hud-brand" href="/admin">
+            <span class="hud-brand__bracket">[</span><span class="hud-brand__name">MARIE'S WONDERLAND</span><span class="hud-brand__bracket">]</span>
+            <span class="hud-brand__tag">Admin</span>
+        </a>
+        <MudSpacer />
+        @if (Draft.EditedTables.Count > 0)
+        {
+            <a class="hud-draft" href="/admin/master/draft" title="Unpublished master data edits">
+                <i aria-hidden="true"></i><span class="hud-wide">Unpublished edits</span><span class="hud-narrow">Draft</span> (@Draft.EditedTables.Count)
+            </a>
+        }
+        <AuthorizeView>
+            <span class="hud-user hud-wide">@context.User.Identity?.Name</span>
+        </AuthorizeView>
+        <button type="button" class="hud-icon" @onclick="() => _dark = !_dark" aria-label="@(_dark ? "Light mode" : "Dark mode")" title="@(_dark ? "Light mode" : "Dark mode")">
+            <MudIcon Icon="@(_dark ? Icons.Material.Outlined.LightMode : Icons.Material.Outlined.DarkMode)" Size="Size.Small" />
+        </button>
+        <form method="post" action="/admin/logout" class="hud-form">
+            <AntiforgeryToken />
+            <button type="submit" class="hud-icon" aria-label="Sign out" title="Sign out">
+                <MudIcon Icon="@Icons.Material.Outlined.Logout" Size="Size.Small" />
+            </button>
+        </form>
+    </MudAppBar>
+    <MudDrawer @bind-Open="_open" ClipMode="DrawerClipMode.Always" Elevation="0" Class="hud-drawer">
+        <MudNavMenu Class="hud-nav">
+            <div class="hud-nav__label">// Server</div>
+            <MudNavLink Href="/admin" Match="NavLinkMatch.All">Dashboard</MudNavLink>
+            <MudNavLink Href="/admin/users">Accounts</MudNavLink>
+            <MudNavLink Href="/admin/imports">Save imports</MudNavLink>
+            <MudNavLink Href="/admin/gifts">Gift to everyone</MudNavLink>
+            <MudNavLink Href="/admin/settings">Settings and log</MudNavLink>
+            <div class="hud-nav__label">// Master data</div>
+            <MudNavLink Href="/admin/master/schedules">Schedules</MudNavLink>
+            <MudNavLink Href="/admin/master/arena">Arena seasons</MudNavLink>
+            <MudNavLink Href="/admin/master/tables">Tables</MudNavLink>
+            <MudNavLink Href="/admin/master/draft">Draft and publish</MudNavLink>
+            <MudNavLink Href="/admin/master/history">History</MudNavLink>
+        </MudNavMenu>
+    </MudDrawer>
+    <MudMainContent>
+        <div class="admin-page">
+            @Body
+        </div>
+    </MudMainContent>
+</MudLayout>
+
+@code {
+    private bool _open = true;
+    private bool _dark = true;
+
+    private readonly MudTheme _theme = AdminTheme.Create();
+
+    protected override void OnInitialized() => Draft.Changed += OnDraftChanged;
+
+    private void OnDraftChanged() => InvokeAsync(StateHasChanged);
+
+    public void Dispose() => Draft.Changed -= OnDraftChanged;
+}

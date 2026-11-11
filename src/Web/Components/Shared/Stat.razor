@@ -1,0 +1,26 @@
+@* One dashboard figure: an uppercase label with its icon, the value, an optional detail line. *@
+<MudItem xs="12" sm="6" md="4" lg="3">
+    <MudPaper Class="stat" Style="height:100%">
+        <div class="stat__label"><MudIcon Icon="@Icon" Size="Size.Small" /><span>@Label</span></div>
+        @if (Href != null)
+        {
+            <a class="stat__value stat__value--link" href="@Href">@Value</a>
+        }
+        else
+        {
+            <div class="stat__value">@Value</div>
+        }
+        @if (Detail != null)
+        {
+            <div class="stat__detail">@Detail</div>
+        }
+    </MudPaper>
+</MudItem>
+
+@code {
+    [Parameter, EditorRequired] public string Label { get; set; } = "";
+    [Parameter, EditorRequired] public string Value { get; set; } = "";
+    [Parameter] public string? Detail { get; set; }
+    [Parameter] public string Icon { get; set; } = Icons.Material.Filled.Info;
+    [Parameter] public string? Href { get; set; }
+}

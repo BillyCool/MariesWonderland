@@ -1,0 +1,39 @@
+@page "/admin/gifts"
+@attribute [Authorize]
+@layout AdminLayout
+@inherits AdminPage
+@inject UserAdmin UserAdmin
+@inject UserDataStore Store
+
+<PageTitle>Gift to everyone</PageTitle>
+
+<MudText Typo="Typo.h4" Class="mb-2">Gift to everyone</MudText>
+<MudText Typo="Typo.body2" Class="mb-4">Sends the same gift to the gift box of every account (@Store.UserIds().Count now), e.g. as compensation after downtime.</MudText>
+
+<MudPaper Class="pa-4">
+    <PossessionPicker @ref="_picker">
+        <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="Send">Send to everyone</MudButton>
+    </PossessionPicker>
+</MudPaper>
+
+@code {
+    private PossessionPicker? _picker;
+
+    private async Task Send()
+    {
+        if (_picker?.Selected is not { } s)
+        {
+            Snackbar.Add("Pick an item first.", Severity.Warning);
+            return;
+        }
+
+        if (await Confirm("Gift to everyone", $"Send {s.Count} × this item to every account?"))
+        {
+            Run(() =>
+            {
+                int sent = UserAdmin.SendGiftToAll(s.Type, s.Id, s.Count, AdminName);
+                Snackbar.Add($"Sent to {sent} accounts.", Severity.Success);
+            });
+        }
+    }
+}

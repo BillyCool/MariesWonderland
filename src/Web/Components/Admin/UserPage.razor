@@ -1,0 +1,357 @@
+@page "/admin/users/{UserId:long}"
+@attribute [Authorize]
+@layout AdminLayout
+@inherits AdminPage
+@inject UserAdmin UserAdmin
+@inject AccountStore Accounts
+
+<PageTitle>Account @UserId</PageTitle>
+
+@if (_detail == null)
+{
+    <MudAlert Severity="Severity.Warning">There is no account @UserId. <MudLink Href="/admin/users">Back to the list</MudLink></MudAlert>
+    return;
+}
+
+<MudStack Row="true" AlignItems="AlignItems.Center" Class="mb-2" Wrap="Wrap.Wrap">
+    <MudIconButton Icon="@Icons.Material.Filled.ArrowBack" Href="/admin/users" aria-label="Back" />
+    <MudText Typo="Typo.h4">@(string.IsNullOrEmpty(_detail.Name) ? "(no name)" : _detail.Name)</MudText>
+    <MudChip T="string" Size="Size.Small">Level @_detail.Level</MudChip>
+    @if (_detail.Account?.BannedAt != null)
+    {
+        <MudChip T="string" Size="Size.Small" Color="Color.Error" Variant="Variant.Filled">Banned</MudChip>
+    }
+    @if (_detail.Account?.DisabledAt != null)
+    {
+        <MudChip T="string" Size="Size.Small" Color="Color.Error">Disabled</MudChip>
+    }
+    <MudSpacer />
+    <MudButton Href="@($"/admin/download/user/{UserId}")" Target="_blank" StartIcon="@Icons.Material.Filled.Download" Variant="Variant.Outlined" Size="Size.Small">Export save</MudButton>
+</MudStack>
+<MudText Typo="Typo.body2" Class="mb-4 mono">User @UserId · Player @_detail.PlayerId · Registered @When(_detail.RegisteredAt) · Last login @When(_detail.LastLogin)</MudText>
+
+@if (_shownCode != null)
+{
+    <MudAlert Severity="Severity.Success" Class="mb-4" ShowCloseIcon="true" CloseIconClicked="() => _shownCode = null">
+        New transfer code (shown once; the old one stopped working): <div class="code-big mt-1">@TransferCode.Format(_shownCode)</div>
+    </MudAlert>
+}
+
+<MudTabs Elevation="1" Rounded="true" TabPanelsClass="pa-4">
+    <MudTabPanel Text="Overview">
+        <MudGrid>
+            <Stat Label="Gems (free / paid)" Value="@($"{_detail.FreeGems:N0} / {_detail.PaidGems:N0}")" Icon="@Icons.Material.Filled.Diamond" />
+            <Stat Label="Gold" Value="@_detail.Gold.ToString("N0")" Icon="@Icons.Material.Filled.Paid" />
+            <Stat Label="Costumes / weapons" Value="@($"{_detail.Costumes} / {_detail.Weapons}")" Icon="@Icons.Material.Filled.Checkroom" />
+            <Stat Label="Companions / memoirs" Value="@($"{_detail.Companions} / {_detail.Memoirs}")" Icon="@Icons.Material.Filled.Pets" />
+            <Stat Label="Material kinds" Value="@_detail.Materials.ToString()" Icon="@Icons.Material.Filled.Category" />
+            <Stat Label="Unclaimed gifts" Value="@_detail.UnclaimedGifts.ToString()" Icon="@Icons.Material.Filled.CardGiftcard" />
+            <Stat Label="Experience" Value="@_detail.Exp.ToString("N0")" Icon="@Icons.Material.Filled.TrendingUp" />
+            <Stat Label="Tutorial phase" Value="@_detail.TutorialPhase.ToString()" Icon="@Icons.Material.Filled.School" />
+        </MudGrid>
+
+        <MudText Typo="Typo.h6" Class="mt-6 mb-2">Profile</MudText>
+        <MudStack Row="true" AlignItems="AlignItems.End" Wrap="Wrap.Wrap">
+            <MudTextField @bind-Value="_name" Label="Name" Variant="Variant.Outlined" Margin="Margin.Dense" MaxLength="20" />
+            <MudTextField @bind-Value="_message" Label="Message" Variant="Variant.Outlined" Margin="Margin.Dense" Style="min-width:360px" />
+            <MudButton Variant="Variant.Outlined" OnClick="SaveProfile">Save (signs the player out)</MudButton>
+        </MudStack>
+    </MudTabPanel>
+
+    <MudTabPanel Text="Account and devices">
+        <MudText Typo="Typo.h6" Class="mb-2">Transfer</MudText>
+        <MudText Typo="Typo.body2" Class="mb-2">
+            Code: @(string.IsNullOrEmpty(_detail.Account?.TransferCodeHash) ? "none issued yet" : $"issued {When(_detail.Account.TransferCodeIssuedAt)}") ·
+            Password: @(string.IsNullOrEmpty(_detail.Account?.PasswordHash) ? "none" : "set") ·
+            Last transfer: @When(_detail.Account?.LastTransferAt) · Made by: @(_detail.Account?.Origin ?? AccountOrigin.Device)
+        </MudText>
+        <MudStack Row="true" Wrap="Wrap.Wrap" Class="mb-4">
+            <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="NewCode">New transfer code</MudButton>
+            <MudButton Variant="Variant.Outlined" OnClick="ClearPassword" Disabled="@string.IsNullOrEmpty(_detail.Account?.PasswordHash)">Remove password</MudButton>
+        </MudStack>
+
+        <MudText Typo="Typo.h6" Class="mb-2">Note</MudText>
+        <MudStack Row="true" AlignItems="AlignItems.End" Class="mb-4">
+            <MudTextField @bind-Value="_note" Label="Note" Variant="Variant.Outlined" Margin="Margin.Dense" Style="min-width:360px" />
+            <MudButton Variant="Variant.Outlined" OnClick="SaveNote">Save note</MudButton>
+        </MudStack>
+
+        <MudText Typo="Typo.h6" Class="mb-2">Devices (@_detail.Devices.Count) and sessions (@_detail.Sessions.Count)</MudText>
+        <MudSimpleTable Dense="true" Class="mb-2">
+            <tbody>
+                @foreach (string device in _detail.Devices)
+                {
+                    <tr><td>Device</td><td class="mono">@device</td><td></td></tr>
+                }
+                @foreach (UserSession session in _detail.Sessions)
+                {
+                    <tr><td>Session</td><td class="mono">@session.SessionKey[..Math.Min(24, session.SessionKey.Length)]…</td><td>expires @When(session.ExpiresAt)</td></tr>
+                }
+            </tbody>
+        </MudSimpleTable>
+        <MudStack Row="true" Wrap="Wrap.Wrap">
+            <MudButton Variant="Variant.Outlined" OnClick="SignOut">Sign out (back to title)</MudButton>
+            <MudButton Variant="Variant.Outlined" Color="Color.Warning" OnClick="RemoveDevices">Remove devices</MudButton>
+            @if (_detail.Account?.DisabledAt == null)
+            {
+                <MudButton Variant="Variant.Outlined" Color="Color.Error" OnClick="() => SetDisabled(true)">Disable account</MudButton>
+            }
+            else
+            {
+                <MudButton Variant="Variant.Outlined" Color="Color.Success" OnClick="() => SetDisabled(false)">Enable account</MudButton>
+            }
+        </MudStack>
+
+        <MudText Typo="Typo.h6" Class="mt-6 mb-2">Ban</MudText>
+        @if (_detail.Account?.BannedAt is DateTime bannedAt)
+        {
+            <MudText Typo="Typo.body2" Class="mb-2">
+                Banned @When(bannedAt)@(string.IsNullOrEmpty(_detail.Account.BanReason) ? "." : $": {_detail.Account.BanReason}")
+            </MudText>
+            <MudButton Variant="Variant.Outlined" Color="Color.Success" OnClick="() => SetBanned(false)">Lift the ban</MudButton>
+        }
+        else
+        {
+            <MudText Typo="Typo.body2" Class="mb-2">
+                Like disabling, but the game shows its own ban dialog ("We have identified unauthorized play data. Use of this
+                app is now suspended…") on the player's next action and every sign-in, then its contact page. The reason is
+                only for administrators.
+            </MudText>
+            <MudStack Row="true" AlignItems="AlignItems.Center" Wrap="Wrap.Wrap">
+                <MudTextField @bind-Value="_banReason" Label="Reason" Variant="Variant.Outlined" Margin="Margin.Dense" Style="min-width:260px" />
+                <MudButton Variant="Variant.Filled" Color="Color.Error" OnClick="() => SetBanned(true)">Ban account</MudButton>
+            </MudStack>
+        }
+    </MudTabPanel>
+
+    <MudTabPanel Text="Grant">
+        <MudText Typo="Typo.body2" Class="mb-3">
+            <b>Gift box</b> is the safe way: the player claims it in the game, and every normal rule applies (possession limits, piece conversion).
+            <b>Grant now</b> writes it straight into the save, takes a save point first, and signs the player out so the game reloads.
+            <b>Set count</b> sets a gem, item or material count outright.
+        </MudText>
+        <PossessionPicker @ref="_picker">
+            <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="SendGift">Send to gift box</MudButton>
+            <MudButton Variant="Variant.Outlined" OnClick="GrantNow">Grant now</MudButton>
+            <MudButton Variant="Variant.Outlined" OnClick="SetCount">Set count</MudButton>
+        </PossessionPicker>
+
+        <MudText Typo="Typo.h6" Class="mt-6 mb-2">Waiting in the gift box (@_gifts.Count)</MudText>
+        <MudSimpleTable Dense="true">
+            <thead><tr><th>Item</th><th>Count</th><th>Sent</th><th>Expires</th></tr></thead>
+            <tbody>
+                @foreach ((Models.Entities.EntitySUserGift gift, string name) in _gifts.Take(100))
+                {
+                    <tr><td>@name</td><td>@gift.Count</td><td>@WhenMs(gift.GrantDatetime)</td><td>@WhenMs(gift.ExpirationDatetime)</td></tr>
+                }
+            </tbody>
+        </MudSimpleTable>
+    </MudTabPanel>
+
+    <MudTabPanel Text="Inventory" OnClick="LoadInventory">
+        @if (_inventory == null)
+        {
+            <MudProgressCircular Indeterminate="true" />
+        }
+        else
+        {
+            <MudDataGrid T="OwnedItem" Items="_inventory" QuickFilter="InventoryMatches" Dense="true" Hover="true" RowsPerPage="50" SortMode="SortMode.Single">
+                <ToolBarContent>
+                    <MudText Typo="Typo.subtitle1">@_inventory.Count rows</MudText>
+                    <MudSpacer />
+                    <MudTextField @bind-Value="_inventorySearch" Placeholder="Search" Immediate="true" Clearable="true" Adornment="Adornment.Start" AdornmentIcon="@Icons.Material.Filled.Search" Style="max-width:300px" />
+                </ToolBarContent>
+                <Columns>
+                    <PropertyColumn Property="i => i.Type" Title="Type" />
+                    <PropertyColumn Property="i => i.Name" Title="Name" />
+                    <PropertyColumn Property="i => i.Id" Title="Id" />
+                    <PropertyColumn Property="i => i.Count" Title="Count" />
+                    <PropertyColumn Property="i => i.Detail" Title="Detail" Sortable="false" />
+                </Columns>
+                <PagerContent><MudDataGridPager T="OwnedItem" /></PagerContent>
+            </MudDataGrid>
+        }
+    </MudTabPanel>
+
+    <MudTabPanel Text="Save points">
+        <MudText Typo="Typo.body2" Class="mb-2">Taken automatically before every direct edit. Restoring signs the player out.</MudText>
+        <MudButton Variant="Variant.Outlined" OnClick="TakeSavePoint" Class="mb-2">Take a save point now</MudButton>
+        <MudSimpleTable Dense="true">
+            <thead><tr><th>Name</th><th>Saved</th><th>Size</th><th></th></tr></thead>
+            <tbody>
+                @foreach (SavePointInfo point in _savePoints)
+                {
+                    <tr>
+                        <td class="mono">@point.Name</td><td>@When(point.SavedAt)</td><td>@(point.Bytes / 1024) KB</td>
+                        <td><MudButton Size="Size.Small" Color="Color.Warning" OnClick="() => Restore(point.Name)">Restore</MudButton></td>
+                    </tr>
+                }
+            </tbody>
+        </MudSimpleTable>
+    </MudTabPanel>
+
+    <MudTabPanel Text="Log">
+        <MudSimpleTable Dense="true">
+            <thead><tr><th>When</th><th>Admin</th><th>Action</th><th>Details</th></tr></thead>
+            <tbody>
+                @foreach (AuditEntry entry in Accounts.RecentAudit(100, UserId.ToString()))
+                {
+                    <tr><td>@When(entry.At)</td><td>@entry.Admin</td><td>@entry.Action</td><td>@entry.Details</td></tr>
+                }
+            </tbody>
+        </MudSimpleTable>
+    </MudTabPanel>
+</MudTabs>
+
+@code {
+    private string _banReason = "";
+
+    [Parameter] public long UserId { get; set; }
+
+    private UserDetail? _detail;
+    private string _name = "";
+    private string _message = "";
+    private string _note = "";
+    private string? _shownCode;
+    private PossessionPicker? _picker;
+    private IReadOnlyList<(Models.Entities.EntitySUserGift Gift, string Name)> _gifts = [];
+    private IReadOnlyList<OwnedItem>? _inventory;
+    private string _inventorySearch = "";
+    private IReadOnlyList<SavePointInfo> _savePoints = [];
+
+    protected override void OnParametersSet() => Reload();
+
+    private void Reload()
+    {
+        _detail = UserAdmin.Detail(UserId);
+        if (_detail == null)
+        {
+            return;
+        }
+        _name = _detail.Name;
+        _message = _detail.Message;
+        _note = _detail.Account?.Note ?? "";
+        _gifts = UserAdmin.Gifts(UserId);
+        _savePoints = UserAdmin.SavePointsOf(UserId);
+        if (_inventory != null)
+        {
+            _inventory = UserAdmin.Inventory(UserId);
+        }
+    }
+
+    private void LoadInventory() => _inventory ??= UserAdmin.Inventory(UserId);
+
+    private bool InventoryMatches(OwnedItem item)
+        => string.IsNullOrWhiteSpace(_inventorySearch) || item.Name.Contains(_inventorySearch, StringComparison.OrdinalIgnoreCase) || item.Id.ToString().Contains(_inventorySearch);
+
+    private void SaveProfile() => Run(() => UserAdmin.SetProfile(UserId, _name.Trim(), _message, AdminName), "Profile saved; the player was signed out.");
+
+    private void SaveNote() => Run(() => UserAdmin.SetNote(UserId, _note.Trim(), AdminName), "Note saved.");
+
+    private async Task NewCode()
+    {
+        if (await Confirm("New transfer code", "The current code stops working. Continue?"))
+        {
+            Run(() => _shownCode = UserAdmin.NewTransferCode(UserId, AdminName));
+            Reload();
+        }
+    }
+
+    private void ClearPassword()
+    {
+        Run(() =>
+        {
+            Accounts.SetPassword(UserId, null);
+            Accounts.Audit(AdminName, "user.clear-password", UserId.ToString());
+        }, "Password removed.");
+        Reload();
+    }
+
+    private void SignOut()
+    {
+        Run(() => UserAdmin.SignOut(UserId, AdminName), "Signed out.");
+        Reload();
+    }
+
+    private async Task RemoveDevices()
+    {
+        if (await Confirm("Remove devices", "Every device of this account is removed: it can only be reached again by a transfer with its code. Continue?"))
+        {
+            Run(() => UserAdmin.RemoveDevices(UserId, AdminName), "Devices removed.");
+            Reload();
+        }
+    }
+
+    private async Task SetBanned(bool banned)
+    {
+        if (!banned || await Confirm("Ban account", "The game shows its ban dialog on the player's next action. They can't play, sign in or transfer until you lift the ban."))
+        {
+            Run(() => UserAdmin.SetBanned(UserId, banned, _banReason, AdminName), banned ? "Account banned." : "Ban lifted.");
+            _banReason = "";
+            Reload();
+        }
+    }
+
+    private async Task SetDisabled(bool disabled)
+    {
+        if (!disabled || await Confirm("Disable account", "The game sends the player to the title on their next action, and they can't sign in or transfer until you enable the account again."))
+        {
+            Run(() => UserAdmin.SetDisabled(UserId, disabled, AdminName), disabled ? "Account disabled." : "Account enabled.");
+            Reload();
+        }
+    }
+
+    private bool Picked(out (PossessionType Type, int Id, int Count) selected)
+    {
+        if (_picker?.Selected is { } value)
+        {
+            selected = value;
+            return true;
+        }
+        Snackbar.Add("Pick an item first.", Severity.Warning);
+        selected = default;
+        return false;
+    }
+
+    private void SendGift()
+    {
+        if (Picked(out var s))
+        {
+            Run(() => UserAdmin.SendGift(UserId, s.Type, s.Id, s.Count, AdminName), "Sent to the gift box.");
+            Reload();
+        }
+    }
+
+    private async Task GrantNow()
+    {
+        if (Picked(out var s) && await Confirm("Grant now", "This writes into the save and signs the player out. A save point is taken first."))
+        {
+            Run(() => UserAdmin.GrantNow(UserId, s.Type, s.Id, s.Count, AdminName), "Granted; the player was signed out.");
+            Reload();
+        }
+    }
+
+    private async Task SetCount()
+    {
+        if (Picked(out var s) && await Confirm("Set count", $"Set the count to {s.Count}? This signs the player out. A save point is taken first."))
+        {
+            Run(() => UserAdmin.SetCount(UserId, s.Type, s.Id, s.Count, AdminName), "Count set; the player was signed out.");
+            Reload();
+        }
+    }
+
+    private void TakeSavePoint()
+    {
+        Run(() => UserAdmin.Backup(UserId), "Save point taken.");
+        Reload();
+    }
+
+    private async Task Restore(string name)
+    {
+        if (await Confirm("Restore save point", $"Put the account back as it was in {name}? Everything since is lost."))
+        {
+            Run(() => UserAdmin.RestoreSavePoint(name, AdminName), "Restored; the player was signed out.");
+            Reload();
+        }
+    }
+}

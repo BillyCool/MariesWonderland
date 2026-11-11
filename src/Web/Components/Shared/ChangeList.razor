@@ -1,0 +1,55 @@
+@using System.Text.Json
+@using System.Text.Json.Nodes
+
+<MudSimpleTable Dense="true" Class="mt-2">
+    <thead><tr><th>Key</th><th>Change</th><th>Fields</th></tr></thead>
+    <tbody>
+        @foreach (MasterRowChange change in Changes.Take(Limit))
+        {
+            <tr>
+                <td class="mono">@change.Key</td>
+                <td>
+                    <MudChip T="string" Size="Size.Small" Color="@(change.Kind switch { MasterChangeKind.Added => Color.Success, MasterChangeKind.Removed => Color.Error, _ => Color.Warning })">@change.Kind</MudChip>
+                </td>
+                <td><pre class="diff-json">@Describe(change)</pre></td>
+            </tr>
+        }
+    </tbody>
+</MudSimpleTable>
+@if (Changes.Count > Limit)
+{
+    <MudText Typo="Typo.caption">…and @(Changes.Count - Limit) more.</MudText>
+}
+
+@code {
+    [Parameter, EditorRequired] public IReadOnlyList<MasterRowChange> Changes { get; set; } = [];
+    [Parameter] public int Limit { get; set; } = 200;
+
+    /// <summary>For a change, only the fields that differ (dates shown too); a whole row otherwise.</summary>
+    private static string Describe(MasterRowChange change)
+    {
+        if (change.Kind != MasterChangeKind.Modified)
+        {
+            return change.After ?? change.Before ?? "";
+        }
+
+        JsonObject before = JsonNode.Parse(change.Before!)!.AsObject();
+        JsonObject after = JsonNode.Parse(change.After!)!.AsObject();
+        List<string> lines = [];
+        foreach ((string name, JsonNode? value) in after)
+        {
+            string a = before[name]?.ToJsonString() ?? "null";
+            string b = value?.ToJsonString() ?? "null";
+            if (a != b)
+            {
+                lines.Add($"{name}: {Pretty(name, a)} → {Pretty(name, b)}");
+            }
+        }
+        return string.Join('\n', lines);
+    }
+
+    private static string Pretty(string name, string json)
+        => name.EndsWith("Datetime", StringComparison.Ordinal) && long.TryParse(json, out long ms) && ms > 0
+            ? $"{json} ({DateTimeOffset.FromUnixTimeMilliseconds(ms).UtcDateTime:yyyy-MM-dd HH:mm} UTC)"
+            : json;
+}

@@ -1,0 +1,97 @@
+@page "/admin/master/arena"
+@attribute [Authorize]
+@layout AdminLayout
+@inherits AdminPage
+@inject MasterDraft Draft
+@inject TimeProvider Time
+@using MariesWonderland.Models.Entities
+
+<PageTitle>Arena seasons</PageTitle>
+
+<MudText Typo="Typo.h4" Class="mb-2">Arena seasons</MudText>
+<MudText Typo="Typo.body2" Class="mb-4">
+    Adds seasons after the last one, back to back, copying the groups (rewards, grades) of the last valid season, each with an 18-hour
+    Arena downtime at its start. Season names count 1, 2, … within each year. The seasons go into the draft.
+</MudText>
+
+<MudPaper Class="pa-4 mb-4">
+    <MudText Typo="Typo.body1" Class="mb-2">
+        @_seasons.Count seasons. Last: <b>@_last?.PvpSeasonId</b> ending @Utc(_last?.SeasonEndDatetime ?? 0) UTC.
+        Running now: <b>@(_current?.PvpSeasonId.ToString() ?? "none")</b>.
+    </MudText>
+    <MudStack Row="true" AlignItems="AlignItems.End" Wrap="Wrap.Wrap">
+        <MudNumericField T="int" @bind-Value="_count" Label="Seasons to add" Min="1" Max="500" Variant="Variant.Outlined" Margin="Margin.Dense" Style="max-width:160px" />
+        <MudNumericField T="int" @bind-Value="_days" Label="Days each" Min="1" Max="365" Variant="Variant.Outlined" Margin="Margin.Dense" Style="max-width:140px" />
+        <MudTextField @bind-Value="_start" Label="First start (UTC, empty = right after the last)" Variant="Variant.Outlined" Margin="Margin.Dense" Style="min-width:300px" />
+        <MudButton Variant="Variant.Outlined" OnClick="Preview">Preview</MudButton>
+        <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="Add" Disabled="_plan.Count == 0">Add to draft</MudButton>
+    </MudStack>
+</MudPaper>
+
+@if (_plan.Count > 0)
+{
+    <MudSimpleTable Dense="true">
+        <thead><tr><th>Season</th><th>Name</th><th>Start (UTC)</th><th>End (UTC)</th><th>Downtime</th></tr></thead>
+        <tbody>
+            @foreach (PlannedSeason p in _plan)
+            {
+                <tr>
+                    <td>@p.Season.PvpSeasonId</td><td>@p.Season.NameAssetPath</td>
+                    <td>@Utc(p.Season.SeasonStartDatetime)</td><td>@Utc(p.Season.SeasonEndDatetime)</td>
+                    <td>@p.Maintenance.MaintenanceId until @Utc(p.Maintenance.EndDatetime)</td>
+                </tr>
+            }
+        </tbody>
+    </MudSimpleTable>
+}
+
+@code {
+    private List<EntityMPvpSeason> _seasons = [];
+    private EntityMPvpSeason? _last;
+    private EntityMPvpSeason? _current;
+    private int _count = 13;
+    private int _days = 28;
+    private string _start = "";
+    private IReadOnlyList<PlannedSeason> _plan = [];
+
+    private MasterTable Seasons => MasterTables.Get<EntityMPvpSeason>();
+    private MasterTable Maintenance => MasterTables.Get<EntityMMaintenance>();
+
+    protected override void OnInitialized() => Load();
+
+    private void Load()
+    {
+        _seasons = [.. Draft.Rows(Seasons).Cast<EntityMPvpSeason>()];
+        _last = _seasons.MaxBy(s => s.SeasonEndDatetime);
+        long now = Time.GetUtcNow().ToUnixTimeMilliseconds();
+        _current = _seasons.FirstOrDefault(s => !s.IsInvalid && s.SeasonStartDatetime <= now && s.SeasonEndDatetime > now);
+    }
+
+    private void Preview()
+    {
+        Run(() =>
+        {
+            long? start = null;
+            if (!string.IsNullOrWhiteSpace(_start))
+            {
+                DateTime at = DateTime.Parse(_start, System.Globalization.CultureInfo.InvariantCulture,
+                    System.Globalization.DateTimeStyles.AdjustToUniversal | System.Globalization.DateTimeStyles.AssumeUniversal);
+                start = new DateTimeOffset(at, TimeSpan.Zero).ToUnixTimeMilliseconds();
+            }
+            _plan = ArenaSeasonPlanner.Plan(_seasons, [.. Draft.Rows(Maintenance).Cast<EntityMMaintenance>()], _count, _days, start);
+        });
+    }
+
+    private void Add()
+    {
+        Run(() =>
+        {
+            Draft.Add(Seasons, _plan.Select(p => (object)p.Season));
+            Draft.Add(Maintenance, _plan.Select(p => (object)p.Maintenance));
+            _plan = [];
+            Load();
+        }, "Seasons added to the draft.");
+    }
+
+    private static string Utc(long ms) => ms <= 0 ? "—" : DateTimeOffset.FromUnixTimeMilliseconds(ms).UtcDateTime.ToString("yyyy-MM-dd HH:mm");
+}

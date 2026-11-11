@@ -1,0 +1,145 @@
+/* ==========================================================================================================================
+   The admin tool, in marieswonderland.com's style on top of MudBlazor (colours, font and square corners come from AdminTheme):
+   a bar with the bracketed brand, grouped uppercase menu links with square bullets, panels with corner brackets, uppercase
+   spaced labels and table heads, solid fill for anything active.
+   ========================================================================================================================== */
+
+:root {
+    --fg: var(--mud-palette-primary);
+    --bg: var(--mud-palette-background);
+    --line: color-mix(in srgb, var(--fg) 22%, transparent);
+    --line-strong: color-mix(in srgb, var(--fg) 55%, transparent);
+    --muted: color-mix(in srgb, var(--fg) 68%, transparent);
+    --tint: color-mix(in srgb, var(--fg) 7%, var(--bg));
+    --tint-2: color-mix(in srgb, var(--fg) 13%, var(--bg));
+    --mono: 'IBM Plex Mono', ui-monospace, 'Cascadia Mono', Consolas, monospace;
+}
+
+body { background: var(--bg); overflow-x: clip; }
+a { color: inherit; }
+
+/* ---------------------------------------------------------------------------------------------------------------- bar */
+.hud-bar.mud-appbar { border-bottom: 1px solid var(--line-strong); box-shadow: 0 4px 0 -3px var(--line); }
+.hud-bar .mud-toolbar { gap: 8px; padding: 0 12px; }
+.hud-brand { display: inline-flex; align-items: baseline; gap: 6px; min-width: 0; text-decoration: none; font-size: 0.86rem; font-weight: 500;
+    letter-spacing: 0.18em; white-space: nowrap; }
+.hud-brand__bracket { color: var(--muted); }
+.hud-brand__tag { margin-left: 8px; padding: 1px 6px; font-size: 0.62rem; letter-spacing: 0.14em; text-transform: uppercase; border: 1px solid var(--line-strong); color: var(--muted); }
+.hud-icon { display: grid; place-items: center; flex: none; width: 36px; height: 36px; padding: 0; color: var(--fg); background: none;
+    border: 1px solid var(--line-strong); cursor: pointer; }
+.hud-icon:hover, .hud-icon:focus-visible { color: var(--bg); background: var(--fg); outline: none; }
+.hud-form { display: contents; }
+.hud-user { font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-right: 4px; }
+.hud-draft { display: inline-flex; align-items: center; gap: 8px; height: 36px; padding: 0 12px; white-space: nowrap; text-decoration: none;
+    font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--mud-palette-warning);
+    border: 1px solid var(--mud-palette-warning); }
+.hud-draft i { width: 7px; height: 7px; background: currentColor; animation: hud-blink 1.6s steps(2, start) infinite; }
+.hud-draft:hover { color: var(--mud-palette-warning-text); background: var(--mud-palette-warning); }
+@keyframes hud-blink { to { visibility: hidden; } }
+.hud-narrow { display: none; }
+
+/* ---------------------------------------------------------------------------------------------------------------- menu */
+.hud-drawer.mud-drawer { border-right: 1px solid var(--line-strong); }
+.hud-nav { padding: 12px 10px; }
+.hud-nav__label { padding: 14px 10px 6px; font-size: 0.62rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); }
+.hud-nav__label:first-child { padding-top: 2px; }
+.hud-nav .mud-nav-link { align-items: center; gap: 10px; min-height: 0; padding: 8px 10px; margin-bottom: 2px; font-size: 0.74rem; letter-spacing: 0.14em; text-transform: uppercase; }
+.hud-nav .mud-nav-link::before { content: ''; width: 7px; height: 7px; flex: none; background: currentColor; opacity: 0.8; }
+.hud-nav .mud-nav-link:hover:not(.active) { background: var(--tint-2) !important; }
+.hud-nav .mud-nav-link.active { color: var(--bg) !important; background: var(--fg) !important; }
+.hud-nav .mud-nav-link .mud-nav-link-text { margin-left: 0; font-weight: 500; }
+
+/* ---------------------------------------------------------------------------------------------------------------- page */
+.admin-page { width: 100%; max-width: 1440px; margin-inline: auto; padding: 22px 16px 80px; box-sizing: border-box; }
+@media (min-width: 960px) { .admin-page { padding-inline: 28px; } }
+
+/* Panels: every paper in the page is a bracketed panel. Every h6 is a square-bulleted heading. */
+.admin-page .mud-paper:not(.mud-table):not(.mud-popover) { position: relative; background: var(--tint); border: 1px solid var(--line-strong); box-shadow: none; }
+.admin-page .mud-paper:not(.mud-table):not(.mud-popover)::before,
+.admin-page .mud-paper:not(.mud-table):not(.mud-popover)::after { content: ''; position: absolute; width: 10px; height: 10px; border: 0 solid var(--fg); pointer-events: none; }
+.admin-page .mud-paper:not(.mud-table):not(.mud-popover)::before { top: -1px; left: -1px; border-width: 2px 0 0 2px; }
+.admin-page .mud-paper:not(.mud-table):not(.mud-popover)::after { bottom: -1px; right: -1px; border-width: 0 2px 2px 0; }
+.admin-page .mud-typography-h6:not(a) { display: flex; align-items: center; gap: 10px; }
+.admin-page .mud-typography-h6:not(a)::before { content: ''; width: 8px; height: 8px; flex: none; background: var(--fg); }
+
+/* Tables inside a panel sit on the panel; a table on its own is framed like one. */
+.admin-page .mud-table { background: transparent; box-shadow: none; }
+.admin-page > .mud-table, .admin-page .mud-tabs-panels > .mud-table, .admin-page .mud-data-grid { border: 1px solid var(--line-strong); background: var(--tint); }
+.mud-table-head .mud-table-cell, .mud-simple-table table thead th, .mud-simple-table table thead td {
+    font-size: 0.66rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); border-bottom: 1px solid var(--fg) !important; white-space: nowrap; }
+.mud-table-cell, .mud-simple-table table tbody td { border-bottom-color: var(--line); }
+.mud-table-pagination-toolbar, .mud-table-pagination { border-top: 1px solid var(--line) !important; }
+
+/* Page titles and links */
+.admin-page .mud-typography-h4 { overflow-wrap: break-word; min-width: 0; }
+.mud-link { text-underline-offset: 3px; }
+
+/* Buttons: outlined ones fill on hover, like the site's toggles. */
+.mud-button-outlined.mud-button-outlined-primary, .mud-button-outlined.mud-button-outlined-default { border-color: var(--line-strong); }
+.mud-button-outlined.mud-button-outlined-primary:hover, .mud-button-outlined.mud-button-outlined-default:hover { color: var(--bg); background: var(--fg); border-color: var(--fg); }
+.mud-button-root .mud-button-label { white-space: nowrap; }
+
+/* Tabs, like the site's: boxed, the active one filled. */
+.mud-tabs-tabbar { background: transparent !important; border-bottom: 1px solid var(--fg); }
+.mud-tab { min-height: 38px; padding: 8px 14px; margin-right: 2px; font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase;
+    border: 1px solid var(--line-strong); border-bottom: none; opacity: 1 !important; }
+.mud-tab.mud-tab-active { color: var(--bg) !important; background: var(--fg) !important; border-color: var(--fg); }
+.mud-tab-slider { display: none; }
+
+/* Chips and alerts */
+.mud-chip { border-radius: 0 !important; font-size: 0.7rem; letter-spacing: 0.06em; }
+.mud-chip.mud-chip-outlined { border-color: var(--line-strong); }
+.mud-chip.mud-chip-outlined.mud-clickable:hover { border-color: var(--fg); }
+.mud-chip.mud-chip-outlined.mud-chip-color-primary.mud-chip-selected { color: var(--bg); background: var(--fg); border-color: var(--fg); }
+.mud-badge { border-radius: 0 !important; }
+.mud-alert { border: 1px solid currentColor; }
+
+/* Popovers, menus and dialogs: square, outlined, no glow. */
+.mud-popover.mud-paper { border: 1px solid var(--line-strong); box-shadow: 0 16px 30px rgb(0 0 0 / 0.35); }
+.mud-dialog { border: 1px solid var(--line-strong); box-shadow: 0 20px 60px rgb(0 0 0 / 0.6); }
+.mud-dialog .mud-dialog-title { border-bottom: 1px solid var(--line); }
+.mud-dialog .mud-dialog-title .mud-typography-h6 { display: flex; align-items: center; gap: 10px; }
+.mud-dialog .mud-dialog-title .mud-typography-h6::before { content: ''; width: 8px; height: 8px; background: var(--fg); flex: none; }
+.mud-snackbar { border: 1px solid currentColor; }
+
+/* Expansion panels */
+.mud-expand-panel { background: transparent !important; border: 1px solid var(--line-strong) !important; margin: 0 0 6px !important; box-shadow: none !important; }
+.mud-expand-panel-header { font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; }
+
+/* ---------------------------------------------------------------------------------------------------------------- pieces */
+.mono { font-family: var(--mono); }
+.code-big { font-family: var(--mono); font-size: clamp(1.15rem, 5vw, 1.6rem); font-weight: 600; letter-spacing: 0.12em; user-select: all; overflow-wrap: anywhere; }
+.table-scroll { overflow-x: auto; }
+.table-scroll td, .table-scroll th { white-space: nowrap; }
+.cell-edited { background: color-mix(in srgb, var(--mud-palette-warning) 18%, transparent); }
+.diff-json { font-family: var(--mono); font-size: 12px; white-space: pre-wrap; word-break: break-all; margin: 0; }
+.error { color: var(--mud-palette-error); }
+.hint { color: var(--muted); }
+
+/* Dashboard figures */
+.stat { display: grid; align-content: start; gap: 4px; padding: 12px 14px 14px; }
+.stat__label { display: flex; align-items: center; gap: 8px; font-size: 0.66rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
+.stat__label .mud-icon-root { font-size: 1rem; }
+.stat__value { font-size: 1.35rem; font-weight: 500; letter-spacing: 0.02em; line-height: 1.3; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.stat__value--link { text-decoration: underline; text-decoration-color: var(--line-strong); text-underline-offset: 5px; }
+.stat__value--link:hover { text-decoration-color: currentColor; }
+.stat__detail { font-size: 0.72rem; color: var(--muted); }
+
+/* Calls per minute */
+.bar-chart { display: flex; align-items: flex-end; gap: 2px; height: 80px; border-bottom: 1px solid var(--line-strong); }
+.bar-chart .bar { flex: 1; min-height: 1px; background: var(--fg); opacity: 0.85; }
+.bar-chart .bar.fail { background: var(--mud-palette-error); opacity: 1; }
+
+/* ---------------------------------------------------------------------------------------------------------------- phones */
+@media (max-width: 700px) {
+    .hud-wide { display: none; }
+    .hud-narrow { display: inline; }
+    .hud-brand__name { font-size: 0.7rem; letter-spacing: 0.08em; }
+    .hud-brand { gap: 3px; }
+    .admin-page { padding: 16px 10px 64px; }
+    .admin-page .mud-typography-h4 { font-size: 1.15rem; letter-spacing: 0.08em; }
+    .mud-tab { padding: 8px 10px; }
+}
+@media (max-width: 420px) {
+    .hud-brand__bracket, .hud-brand__tag { display: none; }
+}

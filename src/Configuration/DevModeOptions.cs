@@ -33,6 +33,13 @@ public sealed class DevModeOptions
     /// <summary>Every summon price is 0 gems or tickets, so banners can be drawn without limit.</summary>
     public bool? FreeGacha { get; init; }
 
+    /// <summary>
+    /// A transfer with no account linked on the Bridge page loads the seed save (<c>Server:Data:UserDataPath</c>)
+    /// instead of failing, as transfers did before the transfer site.
+    /// </summary>
+    public bool? TransferSeedSave { get; init; }
+
+    public bool IsTransferSeedSaveEnabled => TransferSeedSave ?? Enabled;
     public bool IsGrpcDiskLogEnabled => GrpcDiskLog ?? Enabled;
     public bool IsRequestJournalEnabled => RequestJournal ?? Enabled;
     public bool IsDebugEndpointsEnabled => DebugEndpoints ?? Enabled;

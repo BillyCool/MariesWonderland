@@ -1,3 +1,5 @@
+using MariesWonderland.Accounts;
+using MariesWonderland.Configuration;
 using MariesWonderland.Constants;
 using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
@@ -10,11 +12,21 @@ using MariesWonderland.Models.Entities;
 using MariesWonderland.Models.Type;
 using MariesWonderland.Proto.User;
 using MariesWonderland.Quests;
+using Microsoft.Extensions.Options;
 
 namespace MariesWonderland.Services;
 
-public class UserService(UserDataStore store, UserDataSeeder seeder, DarkMasterMemoryDatabase masterDb, MissionTracker missions, TimeProvider timeProvider) : MariesWonderland.Proto.User.UserService.UserServiceBase
+/// <summary>
+/// Registration, sign-in and transfer. With an <see cref="AccountStore"/> (the server), registration follows the
+/// registration mode, disabled accounts can't sign in, and transfers go through the transfer site (the patched
+/// Bridge pages, <c>Web/Public</c>). Without one (older tests), transfer loads the seed save.
+/// </summary>
+public class UserService(UserDataStore store, UserDataSeeder seeder, DarkMasterMemoryDatabase masterDb, MissionTracker missions, TimeProvider timeProvider,
+    AccountStore? accounts = null, IOptions<DevModeOptions>? devMode = null) : MariesWonderland.Proto.User.UserService.UserServiceBase
 {
+    private readonly AccountStore? _accounts = accounts;
+    private readonly bool _transferSeedSave = accounts == null || (devMode?.Value.IsTransferSeedSaveEnabled ?? false);
+
     private readonly TimeProvider _timeProvider = timeProvider;
 
     public const string AndroidApiKey = "1234567890";
@@ -38,7 +50,11 @@ public class UserService(UserDataStore store, UserDataSeeder seeder, DarkMasterM
     /// <summary>Authenticates a user by UUID, creates/updates device records, and returns a session key.</summary>
     public override Task<AuthUserResponse> Auth(AuthUserRequest request, ServerCallContext context)
     {
-        var (userId, isNew) = _store.RegisterOrGetUser(request.Uuid, _masterDb);
+        var (userId, isNew) = RegisterOrRefuse(request.Uuid);
+        if (_accounts != null && AccountStatusInterceptor.Refusal(_accounts.BlockOf(userId)) is { } refusal)
+        {
+            throw refusal;
+        }
         // Auth runs before the session exists, so it isn't locked by the interceptor: lock the user it signs in.
         using IDisposable userLock = context.LockUser(_store, userId);
         var userDb = _store.GetOrCreate(userId);
@@ -184,12 +200,23 @@ public class UserService(UserDataStore store, UserDataSeeder seeder, DarkMasterM
     }
 
     /// <summary>
-    /// Returns the user's backup token for account recovery. The client asks for it from the title screen's transfer
-    /// dialog too, before any login (right after Delete Data its session is gone, and the device is not registered yet),
-    /// so a call without a session gets the placeholder token instead of an error.
+    /// The token the client puts in the Bridge page URL. The client asks for it from the title screen's transfer
+    /// dialog too, before any login (right after Delete Data its session is gone, and the device is not registered
+    /// yet). With the transfer site: a known device gets a Data Linkage token for its account, an unknown one (the new
+    /// device a transfer makes) a transfer token the page links to an account. Without it, the user's stored backup
+    /// token or a placeholder.
     /// </summary>
     public override Task<GetBackupTokenResponse> GetBackupToken(GetBackupTokenRequest request, ServerCallContext context)
     {
+        if (_accounts != null)
+        {
+            long? deviceUserId = _store.FindUserIdByDevice(request.Uuid);
+            string bridgeToken = deviceUserId is long linkedUserId
+                ? _accounts.MintRegisterToken(request.Uuid, linkedUserId)
+                : _accounts.MintTransferToken(request.Uuid);
+            return Task.FromResult(new GetBackupTokenResponse { BackupToken = bridgeToken });
+        }
+
         string token = "";
         if (context.TryGetUserId(out long userId))
         {
@@ -372,7 +399,7 @@ public class UserService(UserDataStore store, UserDataSeeder seeder, DarkMasterM
     {
         // RegisterUser is the very first API called on a fresh install. It registers the device UUID
         // and assigns a permanent userId (random 19-digit number). Subsequent launches call Auth instead.
-        var (userId, _) = _store.RegisterOrGetUser(request.Uuid, _masterDb);
+        var (userId, _) = RegisterOrRefuse(request.Uuid);
 
         RegisterUserResponse response = new()
         {
@@ -470,20 +497,41 @@ public class UserService(UserDataStore store, UserDataSeeder seeder, DarkMasterM
     }
 
     /// <summary>
-    /// Transfers the save in the seed files (<c>Server:Data:UserDataPath</c>) to the calling device. The account keeps
-    /// the save's user id, so transferring again resets it to the save. Without a save, the transfer fails and
-    /// nothing is created.
+    /// Signs the calling (new) device into the account the player linked on the transfer page, and signs every other
+    /// device of that account out. Without a link, dev mode (or a server without the transfer site) transfers the save
+    /// in the seed files (<c>Server:Data:UserDataPath</c>) instead, under the save's user id, so transferring again
+    /// resets it to the save; otherwise the transfer fails and the client shows its Bridge error.
     /// </summary>
     public override Task<TransferUserResponse> TransferUser(TransferUserRequest request, ServerCallContext context)
     {
-        DarkUserMemoryDatabase seededDb = _seeder.LoadFromFiles();
-        if (seededDb.EntityIUser.Count == 0)
+        long userId;
+        long? linkedUserId = _accounts?.CompleteTransfer(request.Uuid);
+        if (linkedUserId is long linked)
         {
-            string where = _seeder.DataPath ?? "Server:Data:UserDataPath isn't set";
-            throw new RpcException(new Status(StatusCode.FailedPrecondition, SystemErrors.NoSaveToTransfer(where)));
-        }
+            if (AccountStatusInterceptor.Refusal(_accounts!.BlockOf(linked)) is { } refusal)
+            {
+                throw refusal;
+            }
 
-        long userId = _store.SeedUserFromDatabase(request.Uuid, seededDb);
+            _store.LinkDevice(request.Uuid, linked, onlyDevice: true);
+            userId = linked;
+        }
+        else if (_transferSeedSave)
+        {
+            DarkUserMemoryDatabase seededDb = _seeder.LoadFromFiles();
+            if (seededDb.EntityIUser.Count == 0)
+            {
+                string where = _seeder.DataPath ?? "Server:Data:UserDataPath isn't set";
+                throw new RpcException(new Status(StatusCode.FailedPrecondition, SystemErrors.NoSaveToTransfer(where)));
+            }
+
+            userId = _store.SeedUserFromDatabase(request.Uuid, seededDb);
+            _accounts?.Ensure(userId, AccountOrigin.Seed);
+        }
+        else
+        {
+            throw new RpcException(new Status(StatusCode.FailedPrecondition, SystemErrors.NoLinkedTransfer));
+        }
 
         TransferUserResponse response = new()
         {
@@ -491,6 +539,25 @@ public class UserService(UserDataStore store, UserDataSeeder seeder, DarkMasterM
             Signature = $"sig_{userId}_{_timeProvider.GetUtcNow().ToUnixTimeSeconds()}"
         };
         return Task.FromResult(response);
+    }
+
+    /// <summary>
+    /// The device's account, made when the device is new. With the transfer site, a new device is refused unless
+    /// registration is open, and a new account gets its record.
+    /// </summary>
+    private (long UserId, bool IsNew) RegisterOrRefuse(string uuid)
+    {
+        if (_accounts != null && _accounts.RegistrationMode != RegistrationMode.Open && !_store.IsKnownDevice(uuid))
+        {
+            throw new RpcException(new Status(StatusCode.PermissionDenied, SystemErrors.RegistrationClosed));
+        }
+
+        (long userId, bool isNew) = _store.RegisterOrGetUser(uuid, _masterDb);
+        if (isNew)
+        {
+            _accounts?.Ensure(userId, AccountOrigin.Device);
+        }
+        return (userId, isNew);
     }
 
     /// <summary>Stub for Apple-based account transfer; returns empty response.</summary>

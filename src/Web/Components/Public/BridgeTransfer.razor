@@ -1,0 +1,115 @@
+@page "/bridge/update"
+@page "/bridge/transfer"
+@attribute [ExcludeFromInteractiveRouting]
+@inject AccountStore Accounts
+@inject UserDataStore Store
+@inject AttemptLimiter Limiter
+
+<PageTitle>Data Transfer</PageTitle>
+
+<PublicPanel Title="Data Transfer">
+    @if (_token == null)
+    {
+        <p class="error">This page has expired. Close it and tap Data Transfer again.</p>
+    }
+    else if (_token.Kind == BridgeTokenKind.Register)
+    {
+        <p>This device is already signed in. Use <strong>Menu → Data Linkage</strong> to see your transfer code.</p>
+    }
+    else if (_linked != null)
+    {
+        <p class="ok">Linked to <strong>@_linked.Value.Name</strong>@(_linked.Value.Level > 0 ? $", level {_linked.Value.Level}" : "").</p>
+        <p>Your old transfer code no longer works. Your next one is:</p>
+        <p class="code">@TransferCode.Format(_linked.Value.NewCode)</p>
+        <p class="hint">Write it down: you need it to move this account again. You can always see a new one in Menu → Data Linkage.</p>
+        <p><strong>Close this window to continue.</strong> The game signs you in, and any other phone using this account is signed out.</p>
+    }
+    else if (!Accounts.IsLive(_token))
+    {
+        <p class="error">This page has expired. Close it and tap Data Transfer again.</p>
+    }
+    else
+    {
+        <p>Enter the transfer code of the account you want to play on this device.</p>
+        @if (_error != null)
+        {
+            <p class="error">@_error</p>
+        }
+        <form method="post" @formname="link" @onsubmit="Link">
+            <AntiforgeryToken />
+            <input type="hidden" name="token" value="@Token" />
+            <label for="code">Transfer code</label>
+            <input id="code" name="code" value="@Code" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="XXXX-XXXX-XXXX" required />
+            <label for="password">Password <span class="hint">(only if you set one)</span></label>
+            <input id="password" name="password" type="password" autocomplete="off" />
+            <button type="submit">Link this device</button>
+        </form>
+        <p class="hint">Close this window without linking to cancel.</p>
+    }
+</PublicPanel>
+
+@code {
+    [CascadingParameter]
+    private HttpContext HttpContext { get; set; } = default!;
+
+    [SupplyParameterFromQuery(Name = "token")]
+    private string? QueryToken { get; set; }
+
+    [SupplyParameterFromForm(Name = "token", FormName = "link")]
+    private string? FormToken { get; set; }
+
+    [SupplyParameterFromForm(Name = "code", FormName = "link")]
+    private string? Code { get; set; }
+
+    [SupplyParameterFromForm(Name = "password", FormName = "link")]
+    private string? Password { get; set; }
+
+    private string? Token => FormToken ?? QueryToken;
+
+    private BridgeToken? _token;
+    private string? _error;
+    private (string Name, int Level, string NewCode)? _linked;
+
+    protected override void OnInitialized() => _token = Accounts.FindToken(Token);
+
+    private void Link()
+    {
+        if (_token == null)
+        {
+            return;
+        }
+
+        string client = AttemptLimiter.ClientOf(HttpContext);
+        if (Limiter.IsBlocked(client))
+        {
+            _error = "Too many wrong codes. Wait a few minutes and try again.";
+            return;
+        }
+
+        LinkResult result = Accounts.LinkTransfer(_token.Token, Code, Password);
+        if (result.Outcome is LinkOutcome.BadCode or LinkOutcome.BadPassword)
+        {
+            Limiter.Fail(client);
+        }
+
+        if (result.Outcome == LinkOutcome.Linked)
+        {
+            PlayerCard? card = Store.PlayerCards([result.UserId]).FirstOrDefault();
+            _linked = (string.IsNullOrEmpty(card?.Name) ? "your account" : card.Name, card?.Level ?? 0, result.NewCode);
+            return;
+        }
+
+        _error = result.Outcome switch
+        {
+            LinkOutcome.BadCode => "That code doesn't match an account. Check it and try again.",
+            LinkOutcome.PasswordRequired => "This account has a password. Enter it too.",
+            LinkOutcome.BadPassword => "Wrong password.",
+            LinkOutcome.TooManyAttempts => "Too many wrong tries on this page. Close it and tap Data Transfer again.",
+            LinkOutcome.AccountDisabled => "This account is disabled. Contact the server's administrator.",
+            LinkOutcome.AccountBanned => "This account is banned. Contact the server's administrator.",
+            LinkOutcome.TransfersClosed => "Transfers are closed right now.",
+            LinkOutcome.TokenUsed => "This page was already used. Close it to continue.",
+            _ => "This page has expired. Close it and tap Data Transfer again.",
+        };
+    }
+}

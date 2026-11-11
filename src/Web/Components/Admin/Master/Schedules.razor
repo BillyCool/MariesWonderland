@@ -1,0 +1,246 @@
+@page "/admin/master/schedules"
+@page "/admin/master/schedules/{Slug}"
+@attribute [Authorize]
+@layout AdminLayout
+@inherits AdminPage
+@implements IDisposable
+@inject MasterDraft Draft
+@inject MasterDataHolder MasterData
+@inject GameText Text
+@inject TimeProvider Time
+
+<PageTitle>Schedules</PageTitle>
+
+<MudText Typo="Typo.h4" Class="mb-2">Schedules</MudText>
+<MudText Typo="Typo.body2" Class="mb-3">
+    Turn content on and off by its dates. Every row is listed, ended ones too, so anything can come back.
+    Changes go into the draft; <MudLink Href="/admin/master/draft">publish</MudLink> to send them to players.
+</MudText>
+
+<MudChipSet T="string" SelectedValue="_kind.Slug" SelectedValueChanged="Pick" SelectionMode="SelectionMode.SingleSelection" CheckMark="false" Class="mb-3">
+    @foreach (ScheduleKind kind in ScheduleKinds.All)
+    {
+        <MudChip T="string" Value="kind.Slug" Text="@kind.Title" Variant="Variant.Outlined" Color="Color.Primary" />
+    }
+</MudChipSet>
+
+<MudText Typo="Typo.body2" Class="mb-3">@_kind.Description</MudText>
+
+<MudPaper Class="pa-3 mb-3">
+    <MudStack Row="true" AlignItems="AlignItems.End" Wrap="Wrap.Wrap" Spacing="2">
+        <MudTextField @bind-Value="_search" Placeholder="Search names and ids" Adornment="Adornment.Start" AdornmentIcon="@Icons.Material.Filled.Search"
+                      Immediate="true" DebounceInterval="300" Clearable="true" Variant="Variant.Outlined" Margin="Margin.Dense" Style="min-width:260px" />
+        <MudSelect T="string" @bind-Value="_state" Label="State" Variant="Variant.Outlined" Margin="Margin.Dense" Style="max-width:160px">
+            <MudSelectItem Value="@("all")">All</MudSelectItem>
+            <MudSelectItem Value="@("running")">Running</MudSelectItem>
+            <MudSelectItem Value="@("upcoming")">Upcoming</MudSelectItem>
+            <MudSelectItem Value="@("ended")">Ended</MudSelectItem>
+        </MudSelect>
+        @if (_kind.Group != null)
+        {
+            <MudSelect T="string" @bind-Value="_group" Label="Kind" Variant="Variant.Outlined" Margin="Margin.Dense" Style="max-width:240px" Clearable="true">
+                @foreach (string group in Groups)
+                {
+                    <MudSelectItem Value="group">@group</MudSelectItem>
+                }
+            </MudSelect>
+        }
+        <MudSpacer />
+        <MudText Typo="Typo.body2">@Shown.Count shown, @_selected.Count picked</MudText>
+    </MudStack>
+    <MudStack Row="true" AlignItems="AlignItems.End" Wrap="Wrap.Wrap" Spacing="2" Class="mt-3">
+        <MudTextField @bind-Value="_until" Label="Until (UTC)" Placeholder="2030-01-01 00:00" Variant="Variant.Outlined" Margin="Margin.Dense" Style="max-width:200px" />
+        <MudButton Variant="Variant.Filled" Color="Color.Success" OnClick="RunPicked" Disabled="_selected.Count == 0">Run picked now until that date</MudButton>
+        <MudButton Variant="Variant.Outlined" OnClick="ExtendPicked" Disabled="_selected.Count == 0">Set end of picked to that date</MudButton>
+        <MudButton Variant="Variant.Outlined" Color="Color.Error" OnClick="EndPicked" Disabled="_selected.Count == 0">End picked now</MudButton>
+        <MudButton Variant="Variant.Text" OnClick="PickShown">Pick all shown</MudButton>
+        <MudButton Variant="Variant.Text" OnClick="() => _selected.Clear()">Clear picks</MudButton>
+    </MudStack>
+</MudPaper>
+
+<MudSimpleTable Dense="true" Hover="true">
+    <thead><tr><th></th><th>Name</th><th>Key</th>@if (_kind.Group != null) { <th>Kind</th> }<th>Start (UTC)</th><th>End (UTC)</th><th>State</th><th></th></tr></thead>
+    <tbody>
+        @foreach (object row in Shown.Take(500))
+        {
+            string key = _kind.Table.KeyOf(row);
+            long start = (long)_kind.Start.Get(row)!;
+            long end = (long)_kind.End.Get(row)!;
+            <tr class="@(_changed.Contains(key) ? "cell-edited" : "")">
+                <td><MudCheckBox T="bool" Value="_selected.Contains(key)" ValueChanged="v => Toggle(key, v)" Size="Size.Small" /></td>
+                <td>@_kind.Name(row, MasterData.Current.Database, Text)</td>
+                <td class="mono">@key</td>
+                @if (_kind.Group != null)
+                {
+                    <td>@_kind.Group(row)</td>
+                }
+                <td>@Utc(start)</td>
+                <td>@Utc(end)</td>
+                <td><MudChip T="string" Size="Size.Small" Color="@StateColor(start, end)">@State(start, end)</MudChip></td>
+                <td><MudIconButton Icon="@Icons.Material.Filled.Edit" Size="Size.Small" Href="@($"/admin/master/table/{_kind.Table.Name}")" aria-label="Open in the table editor" /></td>
+            </tr>
+        }
+    </tbody>
+</MudSimpleTable>
+@if (Shown.Count > 500)
+{
+    <MudText Typo="Typo.caption">Showing the first 500; narrow the search to see the rest.</MudText>
+}
+
+@code {
+    [Parameter] public string? Slug { get; set; }
+
+    private ScheduleKind _kind = ScheduleKinds.All[0];
+    private string _search = "";
+    private string _state = "all";
+    private string? _group;
+    private string _until = "2030-01-01 00:00";
+    private readonly HashSet<string> _selected = [];
+    private HashSet<string> _changed = [];
+    private IReadOnlyList<object> _rows = [];
+
+    private long NowMs => Time.GetUtcNow().ToUnixTimeMilliseconds();
+
+    private IEnumerable<string> Groups => _kind.Group == null ? [] : _rows.Select(_kind.Group).Distinct().Order();
+
+    private List<object> Shown
+    {
+        get
+        {
+            long now = NowMs;
+            DarkMasterMemoryDatabase db = MasterData.Current.Database;
+            return [.. _rows.Where(row =>
+            {
+                long start = (long)_kind.Start.Get(row)!;
+                long end = (long)_kind.End.Get(row)!;
+                bool stateOk = _state switch
+                {
+                    "running" => start <= now && end > now,
+                    "upcoming" => start > now,
+                    "ended" => end <= now,
+                    _ => true,
+                };
+                bool groupOk = _group == null || _kind.Group == null || _kind.Group(row) == _group;
+                bool searchOk = string.IsNullOrWhiteSpace(_search)
+                    || _kind.Name(row, db, Text).Contains(_search, StringComparison.OrdinalIgnoreCase)
+                    || _kind.Table.KeyOf(row).Contains(_search, StringComparison.OrdinalIgnoreCase);
+                return stateOk && groupOk && searchOk;
+            }).OrderByDescending(r => (long)_kind.Start.Get(r)!)];
+        }
+    }
+
+    protected override void OnInitialized() => Draft.Changed += OnDraftChanged;
+
+    protected override void OnParametersSet()
+    {
+        _kind = ScheduleKinds.Find(Slug) ?? ScheduleKinds.All[0];
+        Load();
+    }
+
+    private void OnDraftChanged() => InvokeAsync(() =>
+    {
+        Load();
+        StateHasChanged();
+    });
+
+    private void Load()
+    {
+        _rows = Draft.Rows(_kind.Table);
+        _changed = [.. Draft.Changes().Where(c => c.Table == _kind.Table.Name).Select(c => c.Key)];
+    }
+
+    private void Pick(string? slug)
+    {
+        _kind = ScheduleKinds.Find(slug) ?? _kind;
+        _selected.Clear();
+        _group = null;
+        Load();
+    }
+
+    private void Toggle(string key, bool on)
+    {
+        if (on)
+        {
+            _selected.Add(key);
+        }
+        else
+        {
+            _selected.Remove(key);
+        }
+    }
+
+    private void PickShown()
+    {
+        foreach (object row in Shown)
+        {
+            _selected.Add(_kind.Table.KeyOf(row));
+        }
+    }
+
+    private bool TryUntil(out long ms)
+    {
+        if (DateTime.TryParse(_until, System.Globalization.CultureInfo.InvariantCulture,
+                System.Globalization.DateTimeStyles.AdjustToUniversal | System.Globalization.DateTimeStyles.AssumeUniversal, out DateTime until))
+        {
+            ms = new DateTimeOffset(until, TimeSpan.Zero).ToUnixTimeMilliseconds();
+            return true;
+        }
+        Snackbar.Add("Enter a date like 2030-01-01 00:00.", Severity.Warning);
+        ms = 0;
+        return false;
+    }
+
+    private void RunPicked()
+    {
+        if (!TryUntil(out long until))
+        {
+            return;
+        }
+        long now = NowMs;
+        Apply(row =>
+        {
+            if ((long)_kind.Start.Get(row)! > now)
+            {
+                _kind.Start.Set(row, now);
+            }
+            _kind.End.Set(row, until);
+        }, "running until " + _until);
+    }
+
+    private void ExtendPicked()
+    {
+        if (TryUntil(out long until))
+        {
+            Apply(row => _kind.End.Set(row, until), "ending " + _until);
+        }
+    }
+
+    private void EndPicked()
+    {
+        long now = NowMs;
+        Apply(row =>
+        {
+            // An end before the start would confuse the client; an unstarted row ends when it starts.
+            long start = (long)_kind.Start.Get(row)!;
+            _kind.End.Set(row, Math.Max(start, now));
+        }, "ended now");
+    }
+
+    private void Apply(Action<object> change, string what)
+    {
+        HashSet<string> keys = [.. _selected];
+        Run(() =>
+        {
+            int count = Draft.Modify(_kind.Table, r => keys.Contains(_kind.Table.KeyOf(r)), change);
+            Snackbar.Add($"{count} {(count == 1 ? "row" : "rows")} {what} (in the draft).", Severity.Success);
+        });
+    }
+
+    private static string Utc(long ms) => ms <= 0 ? "—" : DateTimeOffset.FromUnixTimeMilliseconds(ms).UtcDateTime.ToString("yyyy-MM-dd HH:mm");
+
+    private string State(long start, long end) => start > NowMs ? "Upcoming" : end > NowMs ? "Running" : "Ended";
+
+    private Color StateColor(long start, long end) => start > NowMs ? Color.Info : end > NowMs ? Color.Success : Color.Default;
+
+    public void Dispose() => Draft.Changed -= OnDraftChanged;
+}

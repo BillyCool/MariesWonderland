@@ -1,0 +1,104 @@
+@page "/import"
+@attribute [ExcludeFromInteractiveRouting]
+@inject SaveImportService Imports
+@inject MasterDataHolder MasterData
+@inject AttemptLimiter Limiter
+@inject IOptions<WebOptions> WebOptions
+
+<PageTitle>Import a save</PageTitle>
+
+<PublicPanel Title="Import a save">
+    @if (!WebOptions.Value.PublicSaveImport)
+    {
+        <p>Save imports are handled by the server's administrator. Ask them to import your save.</p>
+    }
+    else if (_ticket != null)
+    {
+        <p class="ok">Received: <strong>@(string.IsNullOrEmpty(_parsed?.PlayerName) ? "your save" : _parsed.PlayerName)</strong>, level @_parsed?.Level.</p>
+        <p>An administrator will look at it. Check back with this ticket:</p>
+        <p class="code">@TransferCode.Format(_ticket)</p>
+        <p><a href="/import/status?ticket=@_ticket">Check the status</a> (bookmark this link; the ticket is shown only now).</p>
+        @if (_parsed?.Warnings.Count > 0)
+        {
+            <p class="hint">Notes: @string.Join(" ", _parsed.Warnings)</p>
+        }
+    }
+    else
+    {
+        <p>Upload your save from the original game. It becomes a new account here once an administrator approves it; you then get a transfer code to sign in with on the title screen's Data Transfer.</p>
+        <p class="hint">Upload a <strong>.zip</strong> of your save's <code>EntityIUser…Table.json</code> files, up to @ZipLimitText. Other formats aren't accepted.</p>
+        @if (_error != null)
+        {
+            <p class="error">@_error</p>
+        }
+        <form method="post" enctype="multipart/form-data" @formname="upload" @onsubmit="Upload">
+            <AntiforgeryToken />
+            <label for="save">Save file</label>
+            <input id="save" name="save" type="file" accept=".zip,application/zip" required />
+            <label for="contact">Your name or contact <span class="hint">(so the administrator knows who it's from)</span></label>
+            <input id="contact" name="contact" maxlength="100" />
+            <button type="submit">Upload</button>
+        </form>
+        <p><a href="/import/status">Already uploaded? Check your ticket.</a></p>
+    }
+</PublicPanel>
+
+@code {
+    [CascadingParameter]
+    private HttpContext HttpContext { get; set; } = default!;
+
+    [SupplyParameterFromForm(Name = "save", FormName = "upload")]
+    private IFormFile? Save { get; set; }
+
+    [SupplyParameterFromForm(Name = "contact", FormName = "upload")]
+    private string? Contact { get; set; }
+
+    private string ZipLimitText => WebOptions.Value.MaxImportZipKilobytes % 1024 == 0
+        ? $"{WebOptions.Value.MaxImportZipKilobytes / 1024} MB"
+        : $"{WebOptions.Value.MaxImportZipKilobytes} KB";
+
+    private string? _ticket;
+    private string? _error;
+    private ParsedSave? _parsed;
+
+    private void Upload()
+    {
+        string client = AttemptLimiter.ClientOf(HttpContext);
+        if (Limiter.IsBlocked(client))
+        {
+            _error = "Too many uploads from here. Try again later.";
+            return;
+        }
+        if (Save == null || Save.Length == 0)
+        {
+            _error = "Choose a file.";
+            return;
+        }
+        if (!Save.FileName.EndsWith(".zip", StringComparison.OrdinalIgnoreCase))
+        {
+            _error = "Only .zip files are accepted. Zip your save's table files and upload the zip.";
+            return;
+        }
+        if (Save.Length > WebOptions.Value.MaxImportZipKilobytes * 1024L)
+        {
+            _error = $"The file is larger than {ZipLimitText}.";
+            return;
+        }
+
+        // Every upload counts towards the address's limit, so the queue can't be flooded.
+        Limiter.Fail(client);
+        try
+        {
+            using Stream stream = Save.OpenReadStream();
+            _parsed = SaveImporter.ParseZip(stream, MasterData.Current.Database, WebOptions.Value.MaxImportUnzippedMegabytes * 1024L * 1024L);
+        }
+        catch (Exception ex) when (ex is InvalidDataException or System.Text.Json.JsonException or InvalidOperationException)
+        {
+            _error = $"That file couldn't be read as a save: {ex.Message}";
+            return;
+        }
+
+        string submitter = $"{(Contact ?? "").Trim()} ({client})".Trim();
+        _ticket = Imports.Submit(_parsed, Path.GetFileName(Save.FileName), submitter);
+    }
+}

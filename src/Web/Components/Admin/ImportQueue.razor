@@ -1,0 +1,129 @@
+@page "/admin/imports"
+@attribute [Authorize]
+@layout AdminLayout
+@inherits AdminPage
+@inject SaveImportService Imports
+@inject MasterDataHolder MasterData
+
+<PageTitle>Save imports</PageTitle>
+
+<MudText Typo="Typo.h4" Class="mb-4">Save imports</MudText>
+
+<MudPaper Class="pa-4 mb-4">
+    <MudText Typo="Typo.h6">Import a save now</MudText>
+    <MudText Typo="Typo.body2" Class="mb-2">A zip of <code>EntityIUser…Table.json</code> files, one JSON file of all tables, a captured <code>GetUserData</code> response, or a save point. It becomes a new account straight away.</MudText>
+    <MudFileUpload T="IBrowserFile" FilesChanged="ImportNow" Accept=".zip,.json" MaximumFileCount="1">
+        <CustomContent>
+            <MudButton Variant="Variant.Filled" Color="Color.Primary" StartIcon="@Icons.Material.Filled.Upload" OnClick="@context.OpenFilePickerAsync">Choose a save</MudButton>
+        </CustomContent>
+    </MudFileUpload>
+    @if (_busy)
+    {
+        <MudProgressLinear Indeterminate="true" Class="mt-2" />
+    }
+    @if (_result != null)
+    {
+        <MudAlert Severity="Severity.Success" Class="mt-3">
+            Imported as <MudLink Href="@($"/admin/users/{_result.Value.UserId}")">@_result.Value.UserId</MudLink>. Transfer code (shown once):
+            <div class="code-big mt-1">@TransferCode.Format(_result.Value.Code)</div>
+            @if (_warnings.Count > 0)
+            {
+                <div class="mt-1">Notes: @string.Join(" ", _warnings)</div>
+            }
+        </MudAlert>
+    }
+</MudPaper>
+
+<MudText Typo="Typo.h6" Class="mb-2">Uploads from <MudLink Href="/import" Target="_blank">/import</MudLink></MudText>
+<MudSimpleTable Dense="true" Hover="true">
+    <thead><tr><th>#</th><th>Uploaded</th><th>From</th><th>Player</th><th>Level</th><th>Rows</th><th>State</th><th></th></tr></thead>
+    <tbody>
+        @foreach (SaveImportRequest request in _requests)
+        {
+            <tr>
+                <td>@request.Id</td>
+                <td>@When(request.CreatedAt)</td>
+                <td>@request.Submitter<br /><span class="mono">@request.FileName</span></td>
+                <td>@request.PlayerName<br /><span class="mono">@request.OriginalPlayerId</span></td>
+                <td>@request.Level</td>
+                <td>@request.RowCount</td>
+                <td>
+                    @request.Status
+                    @if (request.UserId != null)
+                    {
+                        <span> → <MudLink Href="@($"/admin/users/{request.UserId}")">account</MudLink></span>
+                    }
+                    @if (!string.IsNullOrEmpty(request.Reason))
+                    {
+                        <div class="mud-text-secondary">@request.Reason</div>
+                    }
+                </td>
+                <td>
+                    @if (request.Status == SaveImportStatus.Pending)
+                    {
+                        <MudStack Row="true" Spacing="1">
+                            <MudButton Size="Size.Small" Variant="Variant.Filled" Color="Color.Success" OnClick="() => Approve(request.Id)">Approve</MudButton>
+                            <MudButton Size="Size.Small" Variant="Variant.Outlined" Color="Color.Error" OnClick="() => Reject(request.Id)">Reject</MudButton>
+                        </MudStack>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</MudSimpleTable>
+
+@code {
+    private IReadOnlyList<SaveImportRequest> _requests = [];
+    private (long UserId, string Code)? _result;
+    private IReadOnlyList<string> _warnings = [];
+    private bool _busy;
+
+    protected override void OnInitialized() => _requests = Imports.List();
+
+    private async Task ImportNow(IBrowserFile? file)
+    {
+        if (file == null)
+        {
+            return;
+        }
+
+        _busy = true;
+        try
+        {
+            using MemoryStream buffer = new();
+            await file.OpenReadStream(256L * 1024 * 1024).CopyToAsync(buffer);
+            buffer.Position = 0;
+            ParsedSave parsed = SaveImporter.Parse(buffer, file.Name, MasterData.Current.Database);
+            _warnings = parsed.Warnings;
+            _result = Imports.ImportNow(parsed, AdminName, file.Name);
+            Snackbar.Add($"Imported {parsed.PlayerName} ({parsed.RowCount} rows).", Severity.Success);
+        }
+        catch (Exception ex)
+        {
+            Snackbar.Add($"Couldn't import: {ex.Message}", Severity.Error);
+        }
+        finally
+        {
+            _busy = false;
+        }
+    }
+
+    private void Approve(long id)
+    {
+        Run(() =>
+        {
+            (long userId, _) = Imports.Approve(id, AdminName);
+            Snackbar.Add($"Approved as account {userId}. The uploader sees the code on their status page.", Severity.Success);
+        });
+        _requests = Imports.List();
+    }
+
+    private async Task Reject(long id)
+    {
+        if (await Confirm("Reject upload", $"Reject upload #{id}? The uploader sees that it was rejected."))
+        {
+            Run(() => Imports.Reject(id, AdminName, "Rejected by the administrator."), "Rejected.");
+            _requests = Imports.List();
+        }
+    }
+}

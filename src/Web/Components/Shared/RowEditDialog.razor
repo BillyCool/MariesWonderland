@@ -1,0 +1,137 @@
+@using System.Globalization
+@using System.Text.Json
+
+<MudDialog>
+    <DialogContent>
+        <MudText Typo="Typo.caption" Class="mb-2">@Table.Name (@Table.FileName). Dates: unix milliseconds, or a UTC date like 2026-12-01 08:00.</MudText>
+        <MudGrid Spacing="2">
+            @foreach (MasterColumn column in Table.Columns)
+            {
+                <MudItem xs="12" sm="6">
+                    @if (column.Type == typeof(bool))
+                    {
+                        <MudSwitch T="bool" Value="@((bool)(_values[column.Name] ?? false))" ValueChanged="v => _values[column.Name] = v" Label="@Label(column)" Color="Color.Primary" />
+                    }
+                    else if (column.Type.IsEnum)
+                    {
+                        <MudSelect T="string" Value="@(_values[column.Name]?.ToString())" ValueChanged="v => _values[column.Name] = Enum.Parse(column.Type, v!)" Label="@Label(column)" Variant="Variant.Outlined" Margin="Margin.Dense">
+                            @foreach (string name in Enum.GetNames(column.Type))
+                            {
+                                <MudSelectItem Value="name">@name (@Convert.ToInt64(Enum.Parse(column.Type, name)))</MudSelectItem>
+                            }
+                        </MudSelect>
+                    }
+                    else
+                    {
+                        <MudTextField T="string" Value="@_text[column.Name]" ValueChanged="v => _text[column.Name] = v ?? string.Empty" Label="@Label(column)"
+                                      Variant="Variant.Outlined" Margin="Margin.Dense" Immediate="true"
+                                      HelperText="@Helper(column)" Error="@(Error(column) != null)" ErrorText="@(Error(column) ?? "")" />
+                    }
+                </MudItem>
+            }
+        </MudGrid>
+    </DialogContent>
+    <DialogActions>
+        <MudButton OnClick="() => MudDialog.Cancel()">Cancel</MudButton>
+        <MudButton Color="Color.Primary" Variant="Variant.Filled" OnClick="Save">Save to draft</MudButton>
+    </DialogActions>
+</MudDialog>
+
+@code {
+    [CascadingParameter] private IMudDialogInstance MudDialog { get; set; } = default!;
+
+    [Parameter, EditorRequired] public MasterTable Table { get; set; } = default!;
+
+    /// <summary>The row to edit (a copy is edited), or null for a new row.</summary>
+    [Parameter] public object? Row { get; set; }
+
+    private readonly Dictionary<string, object?> _values = [];
+    private readonly Dictionary<string, string> _text = [];
+
+    protected override void OnInitialized()
+    {
+        object row = Row == null ? Table.NewRow() : Table.Copy(Row);
+        foreach (MasterColumn column in Table.Columns)
+        {
+            object? value = column.Get(row);
+            _values[column.Name] = value;
+            _text[column.Name] = Format(column, value);
+        }
+    }
+
+    private static string Label(MasterColumn column) => column.IsKey ? $"{column.Name} (key)" : column.Name;
+
+    private static bool IsSimple(Type type) => type.IsPrimitive || type == typeof(string) || type == typeof(decimal);
+
+    private static string Format(MasterColumn column, object? value)
+        => value switch
+        {
+            null => "",
+            string s => s,
+            IFormattable f when IsSimple(column.Type) => f.ToString(null, CultureInfo.InvariantCulture),
+            _ => JsonSerializer.Serialize(value, column.Type),
+        };
+
+    private string? Helper(MasterColumn column)
+    {
+        if (!column.IsDate || !TryParse(column, _text[column.Name], out object? value) || value is not long ms || ms <= 0)
+        {
+            return null;
+        }
+        DateTimeOffset at = DateTimeOffset.FromUnixTimeMilliseconds(ms);
+        return $"{at.UtcDateTime:yyyy-MM-dd HH:mm:ss} UTC · {at.LocalDateTime:yyyy-MM-dd HH:mm} local";
+    }
+
+    private string? Error(MasterColumn column)
+        => column.Type == typeof(bool) || column.Type.IsEnum || TryParse(column, _text[column.Name], out _) ? null : $"Not a valid {column.Type.Name}";
+
+    private static bool TryParse(MasterColumn column, string text, out object? value)
+    {
+        Type type = column.Type;
+        value = null;
+        try
+        {
+            if (type == typeof(string))
+            {
+                value = text;
+                return true;
+            }
+            if (column.IsDate && !long.TryParse(text, NumberStyles.Integer, CultureInfo.InvariantCulture, out _)
+                && DateTime.TryParse(text, CultureInfo.InvariantCulture, DateTimeStyles.AdjustToUniversal | DateTimeStyles.AssumeUniversal, out DateTime date))
+            {
+                value = new DateTimeOffset(date, TimeSpan.Zero).ToUnixTimeMilliseconds();
+                return true;
+            }
+            if (IsSimple(type))
+            {
+                value = Convert.ChangeType(text.Trim(), type, CultureInfo.InvariantCulture);
+                return true;
+            }
+            value = JsonSerializer.Deserialize(text, type);
+            return true;
+        }
+        catch
+        {
+            return false;
+        }
+    }
+
+    private void Save()
+    {
+        object row = Table.NewRow();
+        foreach (MasterColumn column in Table.Columns)
+        {
+            object? value;
+            if (column.Type == typeof(bool) || column.Type.IsEnum)
+            {
+                value = _values[column.Name];
+            }
+            else if (!TryParse(column, _text[column.Name], out value))
+            {
+                return;
+            }
+            column.Set(row, value);
+        }
+        MudDialog.Close(DialogResult.Ok(row));
+    }
+}

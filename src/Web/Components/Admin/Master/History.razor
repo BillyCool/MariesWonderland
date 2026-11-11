@@ -1,0 +1,55 @@
+@page "/admin/master/history"
+@attribute [Authorize]
+@layout AdminLayout
+@inherits AdminPage
+@inject MasterDataPublisher Publisher
+@inject MasterDraft MasterDraft
+@inject MasterDataHolder MasterData
+@inject NavigationManager Navigation
+
+<PageTitle>Master data history</PageTitle>
+
+<MudStack Row="true" AlignItems="AlignItems.Center" Class="mb-2">
+    <MudText Typo="Typo.h4">Master data history</MudText>
+    <MudSpacer />
+    <MudButton Variant="Variant.Outlined" StartIcon="@Icons.Material.Filled.Download" Href="/admin/download/master-file" Target="_blank">Download the served file</MudButton>
+</MudStack>
+<MudText Typo="Typo.body2" Class="mb-4">Live version: <span class="mono">@MasterData.Current.Version</span>. Undo puts the opposite of a publish into the draft, to review and publish.</MudText>
+
+@if (_history.Count == 0)
+{
+    <MudAlert Severity="Severity.Info">Nothing published from the admin tool yet.</MudAlert>
+}
+
+<MudExpansionPanels MultiExpansion="true">
+    @foreach (MasterDataEdit edit in _history)
+    {
+        IReadOnlyList<MasterRowChange> changes = MasterDataPublisher.ChangesOf(edit);
+        <MudExpansionPanel Text="@Title(edit, changes.Count)">
+            <MudButton Size="Size.Small" Variant="Variant.Outlined" Color="Color.Warning" OnClick="() => Undo(changes)" Class="mb-2">Undo into the draft</MudButton>
+            <ChangeList Changes="changes" Limit="100" />
+        </MudExpansionPanel>
+    }
+</MudExpansionPanels>
+
+@code {
+    private IReadOnlyList<MasterDataEdit> _history = [];
+
+    protected override void OnInitialized() => _history = Publisher.History();
+
+    // Older publishes stored "N changes" as their note when none was typed; it repeats the count, so it isn't shown.
+    private string Title(MasterDataEdit edit, int count)
+    {
+        string changes = count == 1 ? "1 change" : $"{count} changes";
+        bool hasNote = !string.IsNullOrWhiteSpace(edit.Summary) && edit.Summary != $"{count} changes";
+        return hasNote ? $"{When(edit.At)} · {edit.Admin} · {edit.Summary} · {changes} · {edit.Version}" : $"{When(edit.At)} · {edit.Admin} · {changes} · {edit.Version}";
+    }
+
+    private void Undo(IReadOnlyList<MasterRowChange> changes)
+    {
+        if (Run(() => MasterDraft.ApplyInverse(changes), "The undo is in the draft; review it and publish."))
+        {
+            Navigation.NavigateTo("/admin/master/draft");
+        }
+    }
+}

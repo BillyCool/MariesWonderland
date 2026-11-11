@@ -54,7 +54,9 @@ public static class ServiceExtensions
 
         string sqlitePath = DataOptions.ResolvePath(options.Data.SqliteDatabase);
         Microsoft.EntityFrameworkCore.DbContextOptions<SqliteUserDbContext> sqliteOptions = SqliteUserDbContext.Options($"Data Source={sqlitePath}");
-        services.AddSingleton(new EfUserPersistence(() => new SqliteUserDbContext(sqliteOptions)));
+        Func<UserDbContext> createContext = () => new SqliteUserDbContext(sqliteOptions);
+        services.AddSingleton(createContext);
+        services.AddSingleton(new EfUserPersistence(createContext));
         services.AddSingleton<IUserPersistence>(provider => provider.GetRequiredService<EfUserPersistence>());
         services.AddSingleton<UserDataStore>();
         services.AddHostedService<IdleUserEvictor>();

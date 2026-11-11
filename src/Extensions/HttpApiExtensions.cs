@@ -23,8 +23,6 @@ public static class HttpApiExtensions
         AssetDatabase assetDb = new(options.Paths.AssetDatabase, app.Services.GetRequiredService<ILogger<AssetDatabase>>());
         _ = Task.Run(assetDb.Prewarm);
 
-        app.MapGet("/", () => "Marie's Wonderland is open for business :marie:");
-
         // ToS. Expects the version wrapped in delimiters like "###123###".
         app.MapGet("/web/static/{languagePath}/terms/termsofuse", (string languagePath) => $"<html><head><title>Terms of Service</title></head><body><h1>Terms of Service</h1><p>Language: {languagePath}</p><p>Version: ###123###</p></body></html>");
 
@@ -139,7 +137,8 @@ public static class HttpApiExtensions
 
     /// <summary>
     /// Registers the dev-only save point endpoints (<see cref="SavePoints"/>):
-    /// <c>/debug/save?name=&amp;user=</c>, <c>/debug/load?name=</c> and <c>/debug/saves</c>.
+    /// <c>/debug/save?name=&amp;user=</c>, <c>/debug/load?name=</c> and <c>/debug/saves</c>; plus
+    /// <c>/debug/bridge/transfer</c> and <c>/debug/bridge/link?user=</c>, which open the Bridge pages without the game.
     /// </summary>
     public static WebApplication MapDebugApis(this WebApplication app)
     {
@@ -159,6 +158,16 @@ public static class HttpApiExtensions
         }));
 
         app.MapGet("/debug/saves", () => Results.Ok(savePoints.List()));
+
+        // The Bridge pages without the game: a token as GetBackupToken would give one, then the page.
+        // /debug/bridge/transfer?device= links a made-up new device; /debug/bridge/link?user= opens Data Linkage.
+        app.MapGet("/debug/bridge/transfer", (string? device, Accounts.AccountStore accounts) =>
+            Results.Redirect($"/bridge/update?token={accounts.MintTransferToken(device ?? $"debug-{Guid.NewGuid():N}")}"));
+        app.MapGet("/debug/bridge/link", (long user, Accounts.AccountStore accounts, UserDataStore store) =>
+        {
+            string device = store.DevicesOf(user).FirstOrDefault() ?? $"debug-{user}";
+            return Results.Redirect($"/bridge/reg?token={accounts.MintRegisterToken(device, user)}");
+        });
 
         return app;
     }

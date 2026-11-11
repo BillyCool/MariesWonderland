@@ -1,0 +1,99 @@
+@page "/admin/users"
+@attribute [Authorize]
+@layout AdminLayout
+@inherits AdminPage
+@inject UserAdmin UserAdmin
+@inject AccountStore Accounts
+
+<PageTitle>Accounts</PageTitle>
+
+<MudText Typo="Typo.h4" Class="mb-4">Accounts</MudText>
+
+<MudPaper Class="pa-4 mb-4">
+    <MudText Typo="Typo.h6">Create an account (invite)</MudText>
+    <MudText Typo="Typo.body2" Class="mb-2">
+        Makes a fresh account with no device. Send its transfer code to the player: they install the game, tap
+        Data Transfer on the title screen and enter it. Registration is <b>@Accounts.RegistrationMode</b>
+        (<MudLink Href="/admin/settings">change</MudLink>); with InviteOnly, this is the only way in.
+    </MudText>
+    <MudStack Row="true" AlignItems="AlignItems.End">
+        <MudTextField @bind-Value="_note" Label="Note (who it's for)" Variant="Variant.Outlined" Margin="Margin.Dense" Style="max-width:400px" />
+        <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="CreateInvite">Create</MudButton>
+    </MudStack>
+    @if (_invite != null)
+    {
+        <MudAlert Severity="Severity.Success" Class="mt-3">
+            Account <MudLink Href="@($"/admin/users/{_invite.Value.UserId}")">@_invite.Value.UserId</MudLink> created. Transfer code (shown once):
+            <div class="code-big mt-1">@TransferCode.Format(_invite.Value.Code)</div>
+        </MudAlert>
+    }
+</MudPaper>
+
+<MudDataGrid T="UserRow" Items="_rows" QuickFilter="Matches" Dense="true" Hover="true" Striped="true" SortMode="SortMode.Single"
+             RowClick="@(e => Navigation.NavigateTo($"/admin/users/{e.Item.UserId}"))" RowStyle="cursor:pointer" RowsPerPage="50">
+    <ToolBarContent>
+        <MudText Typo="Typo.h6">@_rows.Count accounts</MudText>
+        <MudSpacer />
+        <MudTextField @bind-Value="_search" Placeholder="Search name, player id, user id, note" Adornment="Adornment.Start"
+                      AdornmentIcon="@Icons.Material.Filled.Search" Immediate="true" Clearable="true" Style="max-width:360px" />
+    </ToolBarContent>
+    <Columns>
+        <PropertyColumn Property="r => r.Name" Title="Name" />
+        <PropertyColumn Property="r => r.Level" Title="Level" />
+        <PropertyColumn Property="r => r.PlayerId" Title="Player id" />
+        <PropertyColumn Property="r => r.MaxDeckPower" Title="Force" />
+        <PropertyColumn Property="r => r.LastSeen" Title="Last seen">
+            <CellTemplate>@When(context.Item.LastSeen)</CellTemplate>
+        </PropertyColumn>
+        <PropertyColumn Property="r => r.Origin" Title="Made by" />
+        <TemplateColumn Title="State" Sortable="false">
+            <CellTemplate>
+                @if (context.Item.Banned)
+                {
+                    <MudChip T="string" Size="Size.Small" Color="Color.Error" Variant="Variant.Filled">Banned</MudChip>
+                }
+                @if (context.Item.Disabled)
+                {
+                    <MudChip T="string" Size="Size.Small" Color="Color.Error">Disabled</MudChip>
+                }
+                @if (!context.Item.HasCode)
+                {
+                    <MudChip T="string" Size="Size.Small" Variant="Variant.Outlined">No code yet</MudChip>
+                }
+            </CellTemplate>
+        </TemplateColumn>
+        <PropertyColumn Property="r => r.Note" Title="Note" />
+        <PropertyColumn Property="r => r.UserId" Title="User id" />
+    </Columns>
+    <PagerContent>
+        <MudDataGridPager T="UserRow" />
+    </PagerContent>
+</MudDataGrid>
+
+@code {
+    [Inject] private NavigationManager Navigation { get; set; } = default!;
+
+    private IReadOnlyList<UserRow> _rows = [];
+    private string _search = "";
+    private string _note = "";
+    private (long UserId, string Code)? _invite;
+
+    protected override void OnInitialized() => _rows = UserAdmin.List();
+
+    private bool Matches(UserRow row)
+        => string.IsNullOrWhiteSpace(_search)
+           || row.Name.Contains(_search, StringComparison.OrdinalIgnoreCase)
+           || row.Note.Contains(_search, StringComparison.OrdinalIgnoreCase)
+           || row.PlayerId.ToString().Contains(_search)
+           || row.UserId.ToString().Contains(_search);
+
+    private void CreateInvite()
+    {
+        Run(() =>
+        {
+            _invite = UserAdmin.CreateInvite(_note.Trim(), AdminName);
+            _note = "";
+            _rows = UserAdmin.List();
+        }, "Account created.");
+    }
+}

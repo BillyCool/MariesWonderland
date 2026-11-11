@@ -43,6 +43,18 @@ public interface IUserPersistence
     /// <summary>Every device id and its user.</summary>
     IReadOnlyDictionary<string, long> Devices();
 
+    /// <summary>The device ids of one user.</summary>
+    IReadOnlyList<string> DevicesOf(long userId);
+
+    /// <summary>Removes every device of the user; returns how many.</summary>
+    int RemoveDevicesOf(long userId);
+
+    /// <summary>The sessions of one user (expired ones included).</summary>
+    IReadOnlyList<UserSession> SessionsOf(long userId);
+
+    /// <summary>Removes every session of the user; returns how many.</summary>
+    int RemoveSessionsOf(long userId);
+
     UserSession? FindSession(string sessionKey);
 
     /// <summary>Saves a new session and drops the ones expired by <paramref name="now"/>.</summary>

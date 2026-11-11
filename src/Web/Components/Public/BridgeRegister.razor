@@ -1,0 +1,119 @@
+@page "/bridge/reg"
+@page "/bridge/link"
+@attribute [ExcludeFromInteractiveRouting]
+@inject AccountStore Accounts
+@inject UserDataStore Store
+
+<PageTitle>Data Linkage</PageTitle>
+
+<PublicPanel Title="Data Linkage">
+    @if (_token == null || _token.Kind != BridgeTokenKind.Register || _token.UserId == null || !Accounts.IsLive(_token))
+    {
+        <p class="error">This page has expired. Close it and open Data Linkage again.</p>
+    }
+    else if (_block != AccountBlock.None)
+    {
+        <p class="error">This account is @(_block == AccountBlock.Banned ? "banned" : "disabled"). Contact the server's administrator.</p>
+    }
+    else
+    {
+        <p>Account: <strong>@(string.IsNullOrEmpty(_card?.Name) ? "(no name yet)" : _card.Name)</strong>@(_card?.Level > 0 ? $", level {_card.Level}" : "")</p>
+
+        @if (_newCode != null)
+        {
+            <p>Your transfer code:</p>
+            <p class="code">@TransferCode.Format(_newCode)</p>
+            <p class="hint">Write it down. To move to another phone, tap <strong>Data Transfer</strong> on its title screen and enter it. Any earlier code no longer works.</p>
+        }
+        else
+        {
+            <p>Codes are stored scrambled, so the current one can't be shown again. Make a new one if you've lost it; the old one then stops working.</p>
+            <form method="post" @formname="code" @onsubmit="NewCode">
+                <AntiforgeryToken />
+                <input type="hidden" name="token" value="@Token" />
+                <button type="submit">Show a new transfer code</button>
+            </form>
+        }
+
+        <h2>Password <span class="hint">(optional)</span></h2>
+        @if (_message != null)
+        {
+            <p class="ok">@_message</p>
+        }
+        <p>@(HasPassword ? "A password is set: a transfer needs the code and the password." : "No password set: the code alone moves the account.")</p>
+        <form method="post" @formname="password" @onsubmit="SetPassword">
+            <AntiforgeryToken />
+            <input type="hidden" name="token" value="@Token" />
+            <label for="password">New password <span class="hint">(leave empty to remove it)</span></label>
+            <input id="password" name="password" type="password" autocomplete="new-password" />
+            <button type="submit">Save password</button>
+        </form>
+
+        <p class="done">Close this window when you're done.</p>
+    }
+</PublicPanel>
+
+@code {
+    [SupplyParameterFromQuery(Name = "token")]
+    private string? QueryToken { get; set; }
+
+    [SupplyParameterFromForm(Name = "token")]
+    private string? FormToken { get; set; }
+
+    [SupplyParameterFromForm(Name = "password", FormName = "password")]
+    private string? Password { get; set; }
+
+    private string? Token => FormToken ?? QueryToken;
+
+    private BridgeToken? _token;
+    private PlayerCard? _card;
+    private string? _newCode;
+    private string? _message;
+    private AccountBlock _block;
+
+    private bool HasPassword => _token?.UserId is long userId && Accounts.Find(userId)?.PasswordHash.Length > 0;
+
+    protected override void OnInitialized()
+    {
+        _token = Accounts.FindToken(Token);
+        if (_token?.UserId is not long userId || !Accounts.IsLive(_token))
+        {
+            return;
+        }
+
+        _block = Accounts.BlockOf(userId);
+        if (_block != AccountBlock.None)
+        {
+            return;
+        }
+
+        _card = Store.PlayerCards([userId]).FirstOrDefault();
+        // An account that never had a code gets one on its first visit.
+        if (string.IsNullOrEmpty(Accounts.Find(userId)?.TransferCodeHash) && HttpMethods.IsGet(HttpContextMethod))
+        {
+            _newCode = Accounts.IssueTransferCode(userId);
+        }
+    }
+
+    [CascadingParameter]
+    private HttpContext HttpContext { get; set; } = default!;
+
+    private string HttpContextMethod => HttpContext.Request.Method;
+
+    private void NewCode()
+    {
+        if (_token?.UserId is long userId && Accounts.IsLive(_token) && Accounts.BlockOf(userId) == AccountBlock.None)
+        {
+            _newCode = Accounts.IssueTransferCode(userId);
+        }
+    }
+
+    private void SetPassword()
+    {
+        if (_token?.UserId is long userId && Accounts.IsLive(_token) && Accounts.BlockOf(userId) == AccountBlock.None)
+        {
+            Accounts.SetPassword(userId, Password);
+            _message = string.IsNullOrEmpty(Password) ? "Password removed." : "Password saved.";
+        }
+    }
+}

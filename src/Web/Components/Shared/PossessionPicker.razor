@@ -1,0 +1,74 @@
+@inject GameText Text
+@inject MasterDataHolder MasterData
+
+<MudStack Row="true" Wrap="Wrap.Wrap" AlignItems="AlignItems.End" Spacing="2">
+    <MudSelect T="PossessionType" Value="Type" ValueChanged="TypeChanged" Label="Type" Variant="Variant.Outlined" Margin="Margin.Dense" Style="min-width:180px">
+        @foreach (PossessionType type in Types)
+        {
+            <MudSelectItem Value="type">@Label(type)</MudSelectItem>
+        }
+    </MudSelect>
+    <MudAutocomplete T="CatalogItem" @bind-Value="_item" SearchFunc="Search" ToStringFunc="@(i => i == null ? "" : $"{i.Name} ({i.Id})")"
+                     Label="Item" Variant="Variant.Outlined" Margin="Margin.Dense" MaxItems="50" Style="min-width:320px" ResetValueOnEmptyText="true" />
+    <MudNumericField T="int" @bind-Value="_count" Label="Count" Variant="Variant.Outlined" Margin="Margin.Dense" Min="1" Style="max-width:120px" />
+    @ChildContent
+</MudStack>
+
+@code {
+    public sealed record CatalogItem(int Id, string Name);
+
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+
+    private static readonly PossessionType[] Types =
+    [
+        PossessionType.FREE_GEM, PossessionType.PAID_GEM, PossessionType.CONSUMABLE_ITEM, PossessionType.MATERIAL,
+        PossessionType.COSTUME, PossessionType.WEAPON, PossessionType.COMPANION, PossessionType.IMPORTANT_ITEM,
+    ];
+
+    public PossessionType Type { get; private set; } = PossessionType.FREE_GEM;
+    private CatalogItem? _item;
+    private int _count = 1;
+    private IReadOnlyList<CatalogItem> _catalog = [];
+
+    /// <summary>The picked possession, or null when no item is picked.</summary>
+    public (PossessionType Type, int Id, int Count)? Selected => _item == null ? null : (Type, _item.Id, _count);
+
+    protected override void OnInitialized() => Load();
+
+    private void TypeChanged(PossessionType type)
+    {
+        Type = type;
+        _item = null;
+        Load();
+    }
+
+    private void Load()
+    {
+        _catalog = [.. Text.Catalog(MasterData.Current.Database, Type).Select(c => new CatalogItem(c.Id, c.Name))];
+        if (_catalog.Count == 1)
+        {
+            _item = _catalog[0];
+        }
+    }
+
+    private Task<IEnumerable<CatalogItem>> Search(string? value, CancellationToken token)
+    {
+        IEnumerable<CatalogItem> items = string.IsNullOrWhiteSpace(value)
+            ? _catalog
+            : _catalog.Where(c => c.Name.Contains(value, StringComparison.OrdinalIgnoreCase) || c.Id.ToString().Contains(value));
+        return Task.FromResult(items);
+    }
+
+    public static string Label(PossessionType type) => type switch
+    {
+        PossessionType.FREE_GEM => "Gems (free)",
+        PossessionType.PAID_GEM => "Gems (paid)",
+        PossessionType.CONSUMABLE_ITEM => "Item (gold, tickets…)",
+        PossessionType.MATERIAL => "Material",
+        PossessionType.COSTUME => "Costume",
+        PossessionType.WEAPON => "Weapon",
+        PossessionType.COMPANION => "Companion",
+        PossessionType.IMPORTANT_ITEM => "Important item",
+        _ => type.ToString(),
+    };
+}

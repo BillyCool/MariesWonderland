@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <base href="/" />
+    <meta name="theme-color" content="#101010" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+    @if (IsInteractive)
+    {
+        <link href="@Assets["_content/MudBlazor/MudBlazor.min.css"]" rel="stylesheet" />
+        <link href="@Assets["css/admin.css"]" rel="stylesheet" />
+    }
+    else
+    {
+        <link href="@Assets["css/site.css"]" rel="stylesheet" />
+    }
+    <link rel="icon" href="data:," />
+    <HeadOutlet @rendermode="PageRenderMode" />
+</head>
+<body>
+    <Routes @rendermode="PageRenderMode" />
+    @if (IsInteractive)
+    {
+        <script src="_framework/blazor.web.js"></script>
+        <script src="@Assets["_content/MudBlazor/MudBlazor.min.js"]"></script>
+    }
+</body>
+</html>
+
+@code {
+    [CascadingParameter]
+    private HttpContext HttpContext { get; set; } = default!;
+
+    // Public pages and the login pages opt out ([ExcludeFromInteractiveRouting]) and stay plain server-rendered HTML
+    // with no script, which suits the in-game webview. Everything else under /admin runs interactively.
+    private bool IsInteractive => HttpContext.AcceptsInteractiveRouting();
+
+    private IComponentRenderMode? PageRenderMode => IsInteractive ? InteractiveServer : null;
+}

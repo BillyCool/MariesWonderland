@@ -1,3 +1,4 @@
+using MariesWonderland.Accounts;
 using MariesWonderland.Arena;
 using MariesWonderland.Data;
 using MariesWonderland.Friends;
@@ -29,6 +30,13 @@ public abstract class UserDbContext(DbContextOptions options) : DbContext(option
     public DbSet<ArenaEntry> ArenaEntries => Set<ArenaEntry>();
     public DbSet<ArenaBattle> ArenaBattles => Set<ArenaBattle>();
     public DbSet<ArenaWeek> ArenaWeeks => Set<ArenaWeek>();
+    public DbSet<AccountRecord> Accounts => Set<AccountRecord>();
+    public DbSet<BridgeToken> BridgeTokens => Set<BridgeToken>();
+    public DbSet<ServerSetting> ServerSettings => Set<ServerSetting>();
+    public DbSet<AuditEntry> AuditLog => Set<AuditEntry>();
+    public DbSet<AdminUser> AdminUsers => Set<AdminUser>();
+    public DbSet<SaveImportRequest> SaveImports => Set<SaveImportRequest>();
+    public DbSet<MasterDataEdit> MasterDataEdits => Set<MasterDataEdit>();
 
     private static readonly MethodInfo ConfigureJsonMethod = typeof(UserDbContext).GetMethod(nameof(ConfigureJson), BindingFlags.NonPublic | BindingFlags.Static)!;
 
@@ -112,6 +120,55 @@ public abstract class UserDbContext(DbContextOptions options) : DbContext(option
 
         // Player-id lookups (friends, profiles) for users that aren't in memory.
         modelBuilder.Entity<EntityIUser>().HasIndex(u => u.PlayerId);
+
+        // Accounts, transfers and the admin tool (Accounts/AccountStore).
+        modelBuilder.Entity<AccountRecord>(entity =>
+        {
+            entity.ToTable("Accounts");
+            entity.HasKey(a => a.UserId);
+            entity.Property(a => a.UserId).ValueGeneratedNever();
+            entity.HasIndex(a => a.TransferCodeHash);
+        });
+
+        modelBuilder.Entity<BridgeToken>(entity =>
+        {
+            entity.ToTable("BridgeTokens");
+            entity.HasKey(t => t.Token);
+            entity.HasIndex(t => t.DeviceUuid);
+            entity.HasIndex(t => t.ExpiresAt);
+        });
+
+        modelBuilder.Entity<ServerSetting>(entity =>
+        {
+            entity.ToTable("ServerSettings");
+            entity.HasKey(s => s.Key);
+        });
+
+        modelBuilder.Entity<AuditEntry>(entity =>
+        {
+            entity.ToTable("AuditLog");
+            entity.HasKey(e => e.Id);
+            entity.HasIndex(e => e.At);
+        });
+
+        modelBuilder.Entity<AdminUser>(entity =>
+        {
+            entity.ToTable("AdminUsers");
+            entity.HasKey(a => a.Name);
+        });
+
+        modelBuilder.Entity<SaveImportRequest>(entity =>
+        {
+            entity.ToTable("SaveImports");
+            entity.HasKey(r => r.Id);
+            entity.HasIndex(r => r.TicketHash);
+        });
+
+        modelBuilder.Entity<MasterDataEdit>(entity =>
+        {
+            entity.ToTable("MasterDataEdits");
+            entity.HasKey(e => e.Id);
+        });
     }
 
     /// <summary>Maps a row type to its table, keyed by its <c>[PrimaryKey]</c>, with non-column values as JSON.</summary>

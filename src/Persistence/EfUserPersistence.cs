@@ -159,6 +159,31 @@ public sealed class EfUserPersistence(Func<UserDbContext> createContext) : IUser
         return db.Devices.AsNoTracking().ToDictionary(d => d.Uuid, d => d.UserId);
     }
 
+    public IReadOnlyList<string> DevicesOf(long userId)
+    {
+        using UserDbContext db = createContext();
+        return [.. db.Devices.AsNoTracking().Where(d => d.UserId == userId).Select(d => d.Uuid)];
+    }
+
+    public int RemoveDevicesOf(long userId)
+    {
+        using UserDbContext db = createContext();
+        return db.Devices.Where(d => d.UserId == userId).ExecuteDelete();
+    }
+
+    public IReadOnlyList<UserSession> SessionsOf(long userId)
+    {
+        using UserDbContext db = createContext();
+        return [.. db.Sessions.AsNoTracking().Where(s => s.UserId == userId).AsEnumerable()
+            .Select(s => new UserSession(s.SessionKey, s.UserId, DateTime.SpecifyKind(s.ExpiresAt, DateTimeKind.Utc)))];
+    }
+
+    public int RemoveSessionsOf(long userId)
+    {
+        using UserDbContext db = createContext();
+        return db.Sessions.Where(s => s.UserId == userId).ExecuteDelete();
+    }
+
     public UserSession? FindSession(string sessionKey)
     {
         using UserDbContext db = createContext();

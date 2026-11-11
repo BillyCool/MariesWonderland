@@ -1,0 +1,47 @@
+@page "/admin/master/tables"
+@attribute [Authorize]
+@layout AdminLayout
+@inherits AdminPage
+@inject MasterDraft Draft
+
+<PageTitle>Master tables</PageTitle>
+
+<MudText Typo="Typo.h4" Class="mb-2">Master tables</MudText>
+<MudText Typo="Typo.body2" Class="mb-4">
+    Every table of the master data (@MasterTables.All.Count). Edits go into the shared draft; nothing reaches players until you
+    <MudLink Href="/admin/master/draft">publish</MudLink> it.
+</MudText>
+
+<MudTextField @bind-Value="_search" Placeholder="Search tables (e.g. pvp, m_shop, gacha)" Adornment="Adornment.Start" AdornmentIcon="@Icons.Material.Filled.Search"
+              Immediate="true" Clearable="true" Variant="Variant.Outlined" Margin="Margin.Dense" Class="mb-3" Style="max-width:480px" />
+
+<MudSimpleTable Dense="true" Hover="true">
+    <thead><tr><th>Table</th><th>File name</th><th>Rows</th><th>Columns</th><th></th></tr></thead>
+    <tbody>
+        @foreach (MasterTable table in Shown)
+        {
+            <tr>
+                <td><MudLink Href="@($"/admin/master/table/{table.Name}")">@table.Name["EntityM".Length..]</MudLink></td>
+                <td class="mono">@table.FileName</td>
+                <td>@Draft.Rows(table).Count</td>
+                <td>@table.Columns.Count</td>
+                <td>
+                    @if (Draft.IsEdited(table))
+                    {
+                        <MudChip T="string" Size="Size.Small" Color="Color.Warning">Edited</MudChip>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</MudSimpleTable>
+
+@code {
+    private string _search = "";
+
+    private IEnumerable<MasterTable> Shown => MasterTables.All
+        .Where(t => string.IsNullOrWhiteSpace(_search)
+                    || t.Name.Contains(_search.Replace("_", ""), StringComparison.OrdinalIgnoreCase)
+                    || t.FileName.Contains(_search, StringComparison.OrdinalIgnoreCase))
+        .OrderByDescending(t => Draft.IsEdited(t)).ThenBy(t => t.Name);
+}

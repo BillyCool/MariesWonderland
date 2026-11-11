@@ -33,6 +33,21 @@ public sealed class MasterDataSnapshot
         Version = version;
     }
 
+    private MasterDataSnapshot(MasterDataSnapshot other, string version)
+    {
+        Database = other.Database;
+        GameConfig = other.GameConfig;
+        QuestCampaigns = other.QuestCampaigns;
+        EnhanceCampaigns = other.EnhanceCampaigns;
+        ImportantItems = other.ImportantItems;
+        Missions = other.Missions;
+        BoxSummons = other.BoxSummons;
+        Version = version;
+    }
+
+    /// <summary>The same data advertised under another version.</summary>
+    public MasterDataSnapshot WithVersion(string version) => new(this, version);
+
     /// <summary>
     /// Loads the <c>.bin.e</c> file. With <paramref name="stampFileTime"/> the file's last write time is
     /// appended to <paramref name="baseVersion"/>, so every edit of the file gives the client a new version.

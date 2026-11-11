@@ -1,0 +1,111 @@
+@page "/admin/settings"
+@attribute [Authorize]
+@layout AdminLayout
+@inherits AdminPage
+@inject AccountStore Accounts
+
+<PageTitle>Settings</PageTitle>
+
+<MudText Typo="Typo.h4" Class="mb-4">Settings and log</MudText>
+
+<MudPaper Class="pa-4 mb-4">
+    <MudText Typo="Typo.h6">Registration</MudText>
+    <MudRadioGroup T="RegistrationMode" Value="_mode" ValueChanged="SetMode">
+        <MudRadio Value="RegistrationMode.Open">Open: any new install gets an account</MudRadio>
+        <MudRadio Value="RegistrationMode.InviteOnly">Invite only: new installs are refused; players come in by transfer with a code (invites, imports)</MudRadio>
+        <MudRadio Value="RegistrationMode.Closed">Closed: new installs and transfers are refused</MudRadio>
+    </MudRadioGroup>
+</MudPaper>
+
+<MudPaper Class="pa-4 mb-4">
+    <MudText Typo="Typo.h6" Class="mb-2">Administrators</MudText>
+    <MudSimpleTable Dense="true" Class="mb-3">
+        <thead><tr><th>Name</th><th>Created</th><th>Last sign-in</th><th></th></tr></thead>
+        <tbody>
+            @foreach (AdminUser admin in _admins)
+            {
+                <tr>
+                    <td>@admin.Name</td><td>@When(admin.CreatedAt)</td><td>@When(admin.LastLoginAt)</td>
+                    <td>
+                        @if (admin.Name != AdminName)
+                        {
+                            <MudButton Size="Size.Small" Color="Color.Error" OnClick="() => Remove(admin.Name)">Remove</MudButton>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </MudSimpleTable>
+    <MudStack Row="true" AlignItems="AlignItems.End" Wrap="Wrap.Wrap">
+        <MudTextField @bind-Value="_newName" Label="Name" Variant="Variant.Outlined" Margin="Margin.Dense" />
+        <MudTextField @bind-Value="_newPassword" Label="Password (10+ characters)" InputType="InputType.Password" Variant="Variant.Outlined" Margin="Margin.Dense" />
+        <MudButton Variant="Variant.Outlined" OnClick="AddAdmin">Add or set password</MudButton>
+    </MudStack>
+</MudPaper>
+
+<MudPaper Class="pa-4">
+    <MudText Typo="Typo.h6" Class="mb-2">Admin log (latest 200)</MudText>
+    <MudSimpleTable Dense="true" Hover="true">
+        <thead><tr><th>When</th><th>Admin</th><th>Action</th><th>Target</th><th>Details</th></tr></thead>
+        <tbody>
+            @foreach (AuditEntry entry in Accounts.RecentAudit(200))
+            {
+                <tr><td>@When(entry.At)</td><td>@entry.Admin</td><td>@entry.Action</td><td class="mono">@entry.Target</td><td>@entry.Details</td></tr>
+            }
+        </tbody>
+    </MudSimpleTable>
+</MudPaper>
+
+@code {
+    private RegistrationMode _mode;
+    private IReadOnlyList<AdminUser> _admins = [];
+    private string _newName = "";
+    private string _newPassword = "";
+
+    protected override void OnInitialized()
+    {
+        _mode = Accounts.RegistrationMode;
+        _admins = Accounts.Admins();
+    }
+
+    private void SetMode(RegistrationMode mode)
+    {
+        Run(() =>
+        {
+            Accounts.RegistrationMode = mode;
+            Accounts.Audit(AdminName, "settings.registration", mode.ToString());
+            _mode = mode;
+        }, $"Registration is now {mode}.");
+    }
+
+    private void AddAdmin()
+    {
+        if (string.IsNullOrWhiteSpace(_newName) || _newPassword.Length < 10)
+        {
+            Snackbar.Add("Pick a name and a password of at least 10 characters.", Severity.Warning);
+            return;
+        }
+
+        Run(() =>
+        {
+            Accounts.SetAdmin(_newName.Trim(), _newPassword);
+            Accounts.Audit(AdminName, "settings.admin", _newName.Trim());
+            _newName = "";
+            _newPassword = "";
+            _admins = Accounts.Admins();
+        }, "Administrator saved.");
+    }
+
+    private async Task Remove(string name)
+    {
+        if (await Confirm("Remove administrator", $"Remove {name}?"))
+        {
+            Run(() =>
+            {
+                Accounts.RemoveAdmin(name);
+                Accounts.Audit(AdminName, "settings.remove-admin", name);
+                _admins = Accounts.Admins();
+            }, "Removed.");
+        }
+    }
+}

@@ -1,0 +1,13 @@
+@* A public page's panel: corner brackets, its title as a status bar across the top. *@
+<section class="panel">
+    @if (!string.IsNullOrEmpty(Title))
+    {
+        <h1 class="panel__title">@Title</h1>
+    }
+    @ChildContent
+</section>
+
+@code {
+    [Parameter] public string? Title { get; set; }
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+}

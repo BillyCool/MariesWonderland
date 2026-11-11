@@ -1,0 +1,200 @@
+@page "/admin/master/table/{Name}"
+@attribute [Authorize]
+@layout AdminLayout
+@inherits AdminPage
+@implements IDisposable
+@inject MasterDraft Draft
+@inject MasterDataHolder MasterData
+
+<PageTitle>@Name</PageTitle>
+
+@if (_table == null)
+{
+    <MudAlert Severity="Severity.Warning">No table @Name. <MudLink Href="/admin/master/tables">All tables</MudLink></MudAlert>
+    return;
+}
+
+<MudStack Row="true" AlignItems="AlignItems.Center" Wrap="Wrap.Wrap" Class="mb-2">
+    <MudIconButton Icon="@Icons.Material.Filled.ArrowBack" Href="/admin/master/tables" aria-label="All tables" />
+    <MudText Typo="Typo.h4">@_table.Name["EntityM".Length..]</MudText>
+    <MudText Typo="Typo.body2" Class="mono">@_table.FileName</MudText>
+    @if (Draft.IsEdited(_table))
+    {
+        <MudChip T="string" Size="Size.Small" Color="Color.Warning">Edited in draft</MudChip>
+    }
+    <MudSpacer />
+    <MudButton Variant="Variant.Filled" Color="Color.Primary" StartIcon="@Icons.Material.Filled.Add" OnClick="Add">Add row</MudButton>
+    <MudButton Variant="Variant.Outlined" StartIcon="@Icons.Material.Filled.Download" Href="@($"/admin/download/master/{_table.Name}")" Target="_blank">JSON</MudButton>
+    @if (Draft.IsEdited(_table))
+    {
+        <MudButton Variant="Variant.Outlined" Color="Color.Warning" OnClick="Revert">Undo table edits</MudButton>
+    }
+</MudStack>
+
+<MudStack Row="true" AlignItems="AlignItems.Center" Class="mb-2" Wrap="Wrap.Wrap">
+    <MudTextField @bind-Value="_search" Placeholder="Filter: text in any column, or Column=value" Adornment="Adornment.Start" AdornmentIcon="@Icons.Material.Filled.FilterList"
+                  Immediate="true" DebounceInterval="300" Clearable="true" Variant="Variant.Outlined" Margin="Margin.Dense" Style="min-width:380px" OnDebounceIntervalElapsed="() => _page = 0" />
+    <MudSwitch @bind-Value="_showDates" Label="Show dates" Color="Color.Primary" />
+    <MudSpacer />
+    <MudText Typo="Typo.body2">@Filtered.Count of @_rows.Count rows</MudText>
+    <MudPagination Count="PageCount" Selected="_page + 1" SelectedChanged="p => _page = p - 1" Size="Size.Small" />
+</MudStack>
+
+<div class="table-scroll">
+    <MudSimpleTable Dense="true" Hover="true" Striped="true">
+        <thead>
+            <tr>
+                <th></th>
+                @foreach (MasterColumn column in _table.Columns)
+                {
+                    <th>@column.Name@(column.IsKey ? " 🔑" : "")</th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (object row in Filtered.Skip(_page * PageSize).Take(PageSize))
+            {
+                string key = _table.KeyOf(row);
+                <tr class="@(_changedKeys.Contains(key) ? "cell-edited" : "")">
+                    <td>
+                        <MudStack Row="true" Spacing="0">
+                            <MudIconButton Icon="@Icons.Material.Filled.Edit" Size="Size.Small" OnClick="() => Edit(row)" aria-label="Edit" />
+                            <MudIconButton Icon="@Icons.Material.Filled.ContentCopy" Size="Size.Small" OnClick="() => Clone(row)" aria-label="Copy to a new row" />
+                            <MudIconButton Icon="@Icons.Material.Filled.Delete" Size="Size.Small" Color="Color.Error" OnClick="() => Delete(key)" aria-label="Delete" />
+                        </MudStack>
+                    </td>
+                    @foreach (MasterColumn column in _table.Columns)
+                    {
+                        <td>@Show(column, column.Get(row))</td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </MudSimpleTable>
+</div>
+
+@code {
+    private const int PageSize = 100;
+
+    [Parameter] public string Name { get; set; } = "";
+
+    private MasterTable? _table;
+    private IReadOnlyList<object> _rows = [];
+    private HashSet<string> _changedKeys = [];
+    private string _search = "";
+    private bool _showDates = true;
+    private int _page;
+
+    private int PageCount => Math.Max(1, (Filtered.Count + PageSize - 1) / PageSize);
+
+    private List<object> Filtered
+    {
+        get
+        {
+            if (string.IsNullOrWhiteSpace(_search) || _table == null)
+            {
+                return [.. _rows];
+            }
+
+            string search = _search.Trim();
+            int eq = search.IndexOf('=');
+            if (eq > 0)
+            {
+                string name = search[..eq].Trim();
+                string value = search[(eq + 1)..].Trim();
+                MasterColumn? column = _table.Columns.FirstOrDefault(c => c.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
+                if (column != null)
+                {
+                    return [.. _rows.Where(r => string.Equals(Convert.ToString(column.Get(r), System.Globalization.CultureInfo.InvariantCulture), value, StringComparison.OrdinalIgnoreCase)
+                                                || (column.Type.IsEnum && Convert.ToInt64(column.Get(r)).ToString() == value))];
+                }
+            }
+            return [.. _rows.Where(r => _table.Columns.Any(c => Convert.ToString(c.Get(r), System.Globalization.CultureInfo.InvariantCulture)?.Contains(search, StringComparison.OrdinalIgnoreCase) == true))];
+        }
+    }
+
+    protected override void OnParametersSet()
+    {
+        _table = MasterTables.Find(Name);
+        Load();
+    }
+
+    protected override void OnInitialized() => Draft.Changed += OnDraftChanged;
+
+    private void OnDraftChanged() => InvokeAsync(() =>
+    {
+        Load();
+        StateHasChanged();
+    });
+
+    private void Load()
+    {
+        if (_table == null)
+        {
+            return;
+        }
+        _rows = Draft.Rows(_table);
+        _changedKeys = [.. Draft.Changes().Where(c => c.Table == _table.Name).Select(c => c.Key)];
+    }
+
+    private string Show(MasterColumn column, object? value)
+    {
+        if (_showDates && column.IsDate && value is long ms && ms > 0)
+        {
+            return DateTimeOffset.FromUnixTimeMilliseconds(ms).UtcDateTime.ToString("yyyy-MM-dd HH:mm:ss");
+        }
+        return value switch
+        {
+            null => "",
+            string s => s,
+            Enum e => $"{e} ({Convert.ToInt64(e)})",
+            System.Collections.IEnumerable list => System.Text.Json.JsonSerializer.Serialize(list),
+            _ => Convert.ToString(value, System.Globalization.CultureInfo.InvariantCulture) ?? "",
+        };
+    }
+
+    private async Task<object?> EditDialog(string title, object? row)
+    {
+        DialogParameters<RowEditDialog> parameters = new() { { d => d.Table, _table! }, { d => d.Row, row } };
+        IDialogReference dialog = await Dialogs.ShowAsync<RowEditDialog>(title, parameters, new DialogOptions { MaxWidth = MaxWidth.Medium, FullWidth = true });
+        DialogResult? result = await dialog.Result;
+        return result is { Canceled: false } ? result.Data : null;
+    }
+
+    private async Task Edit(object row)
+    {
+        string key = _table!.KeyOf(row);
+        if (await EditDialog($"Edit {key}", row) is { } edited)
+        {
+            Run(() => Draft.Update(_table, key, edited), "Saved to the draft.");
+        }
+    }
+
+    private async Task Clone(object row)
+    {
+        if (await EditDialog("Copy to a new row (change the key)", row) is { } copy)
+        {
+            Run(() => Draft.Add(_table!, [copy]), "Row added to the draft.");
+        }
+    }
+
+    private async Task Add()
+    {
+        if (await EditDialog("New row", null) is { } row)
+        {
+            Run(() => Draft.Add(_table!, [row]), "Row added to the draft.");
+        }
+    }
+
+    private async Task Delete(string key)
+    {
+        if (await Confirm("Delete row", $"Delete row {key} in the draft?", "Delete"))
+        {
+            Run(() => Draft.Delete(_table!, [key]), "Row deleted in the draft.");
+        }
+    }
+
+    private void Revert() => Run(() => Draft.Revert(_table!), "Table edits undone.");
+
+    public void Dispose() => Draft.Changed -= OnDraftChanged;
+}

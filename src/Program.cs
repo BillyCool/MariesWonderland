@@ -1,9 +1,11 @@
+using MariesWonderland.Accounts;
 using MariesWonderland.Configuration;
 using MariesWonderland.Data;
 using MariesWonderland.Extensions;
 using MariesWonderland.Interceptors;
 using MariesWonderland.Middleware;
 using MariesWonderland.Persistence;
+using MariesWonderland.Web;
 using Microsoft.Extensions.Configuration.Json;
 using Microsoft.Extensions.Options;
 
@@ -38,6 +40,8 @@ public static class Program
         builder.Services.AddGrpc(options =>
         {
             options.Interceptors.Add<SessionInterceptor>();
+            options.Interceptors.Add<AccountStatusInterceptor>();
+            options.Interceptors.Add<ActivityInterceptor>();
             options.Interceptors.Add<MasterDataVersionInterceptor>();
             options.Interceptors.Add<UserLockInterceptor>();
             // Outside DiffInterceptor, which hands it each call's changes; inside the lock.
@@ -51,6 +55,7 @@ public static class Program
         });
         builder.Services.AddServerOptions(builder.Configuration);
         builder.Services.AddDataStores(builder.Configuration, devMode);
+        builder.Services.AddWebApp(builder.Configuration);
 
         var app = builder.Build();
 
@@ -75,8 +80,11 @@ public static class Program
             app.UseMiddleware<GrpcPayloadEncryptionMiddleware>();
         }
 
+        app.UseWebApp();
+
         app.MapGrpcServices();
         app.MapHttpApis();
+        app.MapWebApp();
         if (devMode.IsDebugEndpointsEnabled)
         {
             app.MapDebugApis();

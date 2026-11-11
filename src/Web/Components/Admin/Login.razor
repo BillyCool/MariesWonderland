@@ -1,0 +1,71 @@
+@page "/admin/login"
+@attribute [ExcludeFromInteractiveRouting]
+@using System.Security.Claims
+@using Microsoft.AspNetCore.Authentication
+@inject AccountStore Accounts
+@inject AttemptLimiter Limiter
+@inject NavigationManager Navigation
+
+<PageTitle>Admin sign-in</PageTitle>
+
+<PublicPanel Title="Admin sign-in">
+    @if (_error != null)
+    {
+        <p class="error">@_error</p>
+    }
+    <form method="post" @formname="login" @onsubmit="SignIn">
+        <AntiforgeryToken />
+        <input type="hidden" name="returnUrl" value="@ReturnUrl" />
+        <label for="name">Name</label>
+        <input id="name" name="name" value="@Name" autocomplete="username" required />
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" autocomplete="current-password" required />
+        <button type="submit">Sign in</button>
+    </form>
+</PublicPanel>
+
+@code {
+    [CascadingParameter]
+    private HttpContext HttpContext { get; set; } = default!;
+
+    [SupplyParameterFromQuery(Name = "returnUrl")]
+    private string? QueryReturnUrl { get; set; }
+
+    [SupplyParameterFromForm(Name = "returnUrl", FormName = "login")]
+    private string? FormReturnUrl { get; set; }
+
+    [SupplyParameterFromForm(Name = "name", FormName = "login")]
+    private string? Name { get; set; }
+
+    [SupplyParameterFromForm(Name = "password", FormName = "login")]
+    private string? Password { get; set; }
+
+    private string? ReturnUrl => FormReturnUrl ?? QueryReturnUrl;
+
+    private string? _error;
+
+    private async Task SignIn()
+    {
+        string client = AttemptLimiter.ClientOf(HttpContext);
+        if (Limiter.IsBlocked(client))
+        {
+            _error = "Too many failed sign-ins. Wait a few minutes.";
+            return;
+        }
+
+        if (string.IsNullOrEmpty(Name) || string.IsNullOrEmpty(Password) || !Accounts.VerifyAdmin(Name, Password))
+        {
+            Limiter.Fail(client);
+            _error = "Wrong name or password.";
+            return;
+        }
+
+        ClaimsIdentity identity = new([new Claim(ClaimTypes.Name, Name)], WebAppExtensions.AdminScheme);
+        await HttpContext.SignInAsync(WebAppExtensions.AdminScheme, new ClaimsPrincipal(identity));
+        Accounts.Audit(Name, "admin.sign-in", client);
+
+        // Only local paths under /admin, so the form can't send anyone elsewhere.
+        string target = ReturnUrl is { } url && url.StartsWith("/admin", StringComparison.Ordinal) && !url.StartsWith("/admin/login", StringComparison.Ordinal) ? url : "/admin";
+        Navigation.NavigateTo(target, forceLoad: true);
+    }
+}

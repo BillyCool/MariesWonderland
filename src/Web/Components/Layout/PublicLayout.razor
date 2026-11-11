@@ -1,0 +1,12 @@
+@inherits LayoutComponentBase
+@* The public pages' shell, like marieswonderland.com's header. The brand is not a link: inside the game's webview, leaving a
+   Bridge page would lose its token. *@
+
+<header class="bar">
+    <span class="bar__brand"><span class="bar__bracket">[</span><span>MARIE'S WONDERLAND</span><span class="bar__bracket">]</span></span>
+    <span class="bar__tag">Private server</span>
+</header>
+<main class="page">
+    @Body
+</main>
+<footer class="foot">Marie's Wonderland is not affiliated with, endorsed by, or sponsored by Square Enix Co., Ltd. or Applibot, Inc. All trademarks and related assets are the property of their respective owners.</footer>

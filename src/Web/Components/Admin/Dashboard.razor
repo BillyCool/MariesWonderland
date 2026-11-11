@@ -1,0 +1,76 @@
+@page "/admin"
+@attribute [Authorize]
+@layout AdminLayout
+@inherits AdminPage
+@implements IDisposable
+@inject ServerStats Stats
+
+<PageTitle>Dashboard</PageTitle>
+
+<MudStack Row="true" AlignItems="AlignItems.Center" Class="mb-4">
+    <MudText Typo="Typo.h4">Dashboard</MudText>
+    <MudSpacer />
+    <MudText Typo="Typo.caption">Refreshes every 10 seconds</MudText>
+</MudStack>
+
+@if (_stats != null)
+{
+    <MudGrid Spacing="3">
+        <Stat Label="Players online (5 min)" Value="@_stats.Active5.ToString()" Icon="@Icons.Material.Filled.Bolt" />
+        <Stat Label="Active last 15 min / hour / day" Value="@($"{_stats.Active15} / {_stats.Active60} / {_stats.Active24h}")" Icon="@Icons.Material.Filled.Timeline" />
+        <Stat Label="Accounts" Value="@_stats.Accounts.ToString()" Detail="@($"{_stats.NewToday} new today, {_stats.InMemory} loaded")" Icon="@Icons.Material.Filled.People" Href="/admin/users" />
+        <Stat Label="Live sessions" Value="@_stats.LiveSessions.ToString()" Icon="@Icons.Material.Filled.VpnKey" />
+        <Stat Label="Registration" Value="@_stats.Mode.ToString()" Icon="@Icons.Material.Filled.HowToReg" Href="/admin/settings" />
+        <Stat Label="Save imports waiting" Value="@_stats.PendingImports.ToString()" Icon="@Icons.Material.Filled.Upload" Href="/admin/imports" />
+        <Stat Label="Uptime" Value="@Uptime(_stats.Uptime)" Icon="@Icons.Material.Filled.Schedule" />
+        <Stat Label="Memory (process / managed)" Value="@($"{_stats.WorkingSetBytes / 1048576} / {_stats.ManagedBytes / 1048576} MB")" Detail="@($"{_stats.Gen2Collections} full collections")" Icon="@Icons.Material.Filled.Memory" />
+        <Stat Label="User database" Value="@($"{_stats.DatabaseBytes / 1048576.0:F1} MB")" Icon="@Icons.Material.Filled.Storage" />
+        <Stat Label="Master data version" Value="@_stats.MasterVersion" Icon="@Icons.Material.Filled.Dataset" Href="/admin/master/history" />
+    </MudGrid>
+
+    <MudPaper Class="pa-4 mt-4">
+        <MudText Typo="Typo.h6">Game calls per minute (last hour)</MudText>
+        <MudText Typo="Typo.caption">@_stats.Traffic.Sum(t => t.Calls) calls, @_stats.Traffic.Sum(t => t.Failures) failed. Red: failed calls.</MudText>
+        @{
+            long max = Math.Max(1, _stats.Traffic.Max(t => t.Calls));
+        }
+        <div class="bar-chart mt-2" role="img" aria-label="Calls per minute">
+            @foreach ((DateTime minute, long calls, long failures) in _stats.Traffic)
+            {
+                <div class="bar @(failures > 0 ? "fail" : "")" style="height:@(calls * 100 / max)%" title="@minute.ToLocalTime().ToString("HH:mm"): @calls calls, @failures failed"></div>
+            }
+        </div>
+    </MudPaper>
+
+    <MudPaper Class="pa-4 mt-4">
+        <MudText Typo="Typo.h6" Class="mb-2">Running now</MudText>
+        <MudSimpleTable Dense="true" Hover="true">
+            <thead><tr><th>What</th><th>Name</th><th>From</th><th>Until</th></tr></thead>
+            <tbody>
+                @foreach (RunningContent item in _stats.Running)
+                {
+                    <tr><td>@item.Kind</td><td>@item.Name</td><td>@When(item.Start)</td><td>@When(item.End)</td></tr>
+                }
+            </tbody>
+        </MudSimpleTable>
+    </MudPaper>
+}
+
+@code {
+    private DashboardStats? _stats;
+    private Timer? _timer;
+
+    protected override void OnInitialized()
+    {
+        _stats = Stats.Collect();
+        _timer = new Timer(_ => InvokeAsync(() =>
+        {
+            _stats = Stats.Collect();
+            StateHasChanged();
+        }), null, TimeSpan.FromSeconds(10), TimeSpan.FromSeconds(10));
+    }
+
+    private static string Uptime(TimeSpan t) => t.TotalDays >= 1 ? $"{(int)t.TotalDays}d {t.Hours}h" : $"{t.Hours}h {t.Minutes}m";
+
+    public void Dispose() => _timer?.Dispose();
+}

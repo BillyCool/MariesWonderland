@@ -506,6 +506,136 @@ public class UserDataStore(TimeProvider timeProvider, IUserPersistence? persiste
         return _users.Count;
     }
 
+    /// <summary>
+    /// Creates a fresh account with the starting data a new install gets, but no device: it is reached by a
+    /// transfer (admin invites). Returns its user id.
+    /// </summary>
+    public long CreateUser(DarkMasterMemoryDatabase masterDb)
+    {
+        lock (_registrationLock)
+        {
+            long userId = NewUserId();
+            DarkUserMemoryDatabase db = new() { UserId = userId };
+            SeedInitialUserData(db, masterDb);
+            _persistence?.ReplaceUser(db);
+            _users[userId] = db;
+            Touch(userId);
+            return userId;
+        }
+    }
+
+    /// <summary>
+    /// Stores an imported save as a new account: a new user id written into every row, and its player id kept
+    /// unless another player has it (then a new one). Returns the new user id.
+    /// </summary>
+    public long ImportUser(DarkUserMemoryDatabase save)
+    {
+        lock (_registrationLock)
+        {
+            long userId = NewUserId();
+            foreach (UserTable table in UserTables.All)
+            {
+                foreach (IUserEntity row in (System.Collections.IEnumerable)table.Property.GetValue(save)!)
+                {
+                    row.UserId = userId;
+                }
+            }
+            save.UserId = userId;
+
+            EntityIUser? user = save.EntityIUser.FirstOrDefault();
+            if (user != null && (user.PlayerId == 0 || FindUserIdByPlayerId(user.PlayerId) != null))
+            {
+                long playerId;
+                do
+                {
+                    playerId = GeneratePlayerId();
+                }
+                while (FindUserIdByPlayerId(playerId) != null);
+                user.PlayerId = playerId;
+            }
+
+            _persistence?.ReplaceUser(save);
+            _users[userId] = save;
+            Touch(userId);
+            return userId;
+        }
+    }
+
+    /// <summary>
+    /// Signs a device in as <paramref name="userId"/> from now on. With <paramref name="onlyDevice"/>, every other
+    /// device and every session of the account is removed, so the old phone is signed out (a transfer).
+    /// </summary>
+    public void LinkDevice(string uuid, long userId, bool onlyDevice)
+    {
+        lock (_registrationLock)
+        {
+            if (onlyDevice)
+            {
+                RemoveDevices(userId);
+                RevokeSessions(userId);
+            }
+
+            _persistence?.SaveDevice(uuid, userId);
+            _uuidToUserId[uuid] = userId;
+        }
+    }
+
+    /// <summary>The device ids that sign in as the user.</summary>
+    public IReadOnlyList<string> DevicesOf(long userId)
+    {
+        if (_persistence != null)
+        {
+            return _persistence.DevicesOf(userId);
+        }
+        return [.. _uuidToUserId.Where(d => d.Value == userId).Select(d => d.Key)];
+    }
+
+    /// <summary>The user's sessions that haven't expired.</summary>
+    public IReadOnlyList<UserSession> SessionsOf(long userId)
+    {
+        DateTime now = _timeProvider.GetUtcNow().UtcDateTime;
+        IEnumerable<UserSession> sessions = _persistence?.SessionsOf(userId) ?? (IEnumerable<UserSession>)_sessions.Values.Where(s => s.UserId == userId);
+        return [.. sessions.Where(s => s.ExpiresAt > now)];
+    }
+
+    /// <summary>Every session that hasn't expired.</summary>
+    public IReadOnlyList<UserSession> LiveSessions()
+    {
+        DateTime now = _timeProvider.GetUtcNow().UtcDateTime;
+        IEnumerable<UserSession> sessions = _persistence?.Sessions() ?? (IEnumerable<UserSession>)_sessions.Values;
+        return [.. sessions.Where(s => s.ExpiresAt > now)];
+    }
+
+    /// <summary>Removes every device of the user; they can't sign in until a transfer links a device again.</summary>
+    public int RemoveDevices(long userId)
+    {
+        foreach (string uuid in _uuidToUserId.Where(d => d.Value == userId).Select(d => d.Key).ToList())
+        {
+            _uuidToUserId.TryRemove(uuid, out _);
+        }
+        return _persistence?.RemoveDevicesOf(userId) ?? 0;
+    }
+
+    /// <summary>Ends every session of the user: their next call fails as signed out and the client returns to the title.</summary>
+    public int RevokeSessions(long userId)
+    {
+        int removed = 0;
+        foreach (string key in _sessions.Where(s => s.Value.UserId == userId).Select(s => s.Key).ToList())
+        {
+            if (_sessions.TryRemove(key, out _))
+            {
+                removed++;
+            }
+        }
+        return Math.Max(removed, _persistence?.RemoveSessionsOf(userId) ?? 0);
+    }
+
+    /// <summary>Whether a device id is known.</summary>
+    public bool IsKnownDevice(string uuid) => TryFindDevice(uuid, out _);
+
+    /// <summary>The user a device id signs in as, if known.</summary>
+    public long? FindUserIdByDevice(string uuid) => TryFindDevice(uuid, out long userId) ? userId : null;
+
     /// <summary>A random user ID no other user has.</summary>
     private long NewUserId()
     {

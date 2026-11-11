@@ -1,0 +1,26 @@
+@page "/"
+@attribute [ExcludeFromInteractiveRouting]
+@inject IOptions<WebOptions> WebOptions
+
+<PageTitle>Marie's Wonderland</PageTitle>
+
+<header class="hero">
+    <div class="label">A private server for NieR Re[in]carnation</div>
+    <h1 class="hero__title">Marie's Wonderland</h1>
+    <div class="ornament" aria-hidden="true"><span></span></div>
+</header>
+
+<PublicPanel>
+    <h2>Moving your account to a new phone</h2>
+    <ol class="steps">
+        <li><span>On the old phone, open <strong>Menu → Data Linkage</strong> and note your transfer code.</span></li>
+        <li><span>On the new phone, tap <strong>Data Transfer</strong> on the title screen and enter the code.</span></li>
+        <li><span>Close the page. The game signs you in; the old phone is signed out.</span></li>
+    </ol>
+
+    @if (WebOptions.Value.PublicSaveImport)
+    {
+        <h2>Bringing a save from the original game</h2>
+        <p><a href="/import">Upload your save</a>. Once it's approved you get a transfer code to sign in with.</p>
+    }
+</PublicPanel>

@@ -1,0 +1,56 @@
+@page "/import/status"
+@attribute [ExcludeFromInteractiveRouting]
+@inject SaveImportService Imports
+
+<PageTitle>Save import status</PageTitle>
+
+<PublicPanel Title="Save import status">
+    @if (string.IsNullOrEmpty(Ticket))
+    {
+        <form method="get">
+            <label for="ticket">Ticket</label>
+            <input id="ticket" name="ticket" autocomplete="off" placeholder="XXXX-XXXX-XXXX" required />
+            <button type="submit">Check</button>
+        </form>
+    }
+    else if (_status == null)
+    {
+        <p class="error">No upload has that ticket.</p>
+        <p><a href="/import/status">Try another ticket</a></p>
+    }
+    else if (_status.Status == SaveImportStatus.Pending)
+    {
+        <p>@Name is waiting for an administrator. Check again later.</p>
+    }
+    else if (_status.Status == SaveImportStatus.Rejected)
+    {
+        <p class="error">@Name was not imported.@(string.IsNullOrEmpty(_status.Reason) ? "" : $" Reason: {_status.Reason}")</p>
+    }
+    else if (_status.TransferCode != null)
+    {
+        <p class="ok">@Name was imported. Your transfer code:</p>
+        <p class="code">@TransferCode.Format(_status.TransferCode)</p>
+        <p class="hint">This is the only time it's shown. Write it down, then tap <strong>Data Transfer</strong> on the game's title screen and enter it.</p>
+    }
+    else
+    {
+        <p class="ok">@Name was imported, and its transfer code was already shown. If you lost it, ask the administrator for a new one.</p>
+    }
+</PublicPanel>
+
+@code {
+    [SupplyParameterFromQuery(Name = "ticket")]
+    private string? Ticket { get; set; }
+
+    private ImportStatusView? _status;
+
+    private string Name => string.IsNullOrEmpty(_status?.PlayerName) ? "Your save" : _status.PlayerName;
+
+    protected override void OnInitialized()
+    {
+        if (!string.IsNullOrEmpty(Ticket))
+        {
+            _status = Imports.Status(Ticket);
+        }
+    }
+}

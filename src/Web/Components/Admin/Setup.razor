@@ -1,0 +1,67 @@
+@page "/admin/setup"
+@attribute [ExcludeFromInteractiveRouting]
+@inject AccountStore Accounts
+@inject AdminSetup SetupToken
+
+<PageTitle>Admin setup</PageTitle>
+
+<PublicPanel Title="Create the first administrator">
+    @if (Accounts.AnyAdmin())
+    {
+        <p>An administrator already exists. <a href="/admin/login">Sign in</a>.</p>
+    }
+    else if (!SetupToken.Check(Token))
+    {
+        <p class="error">Open this page with the link the server printed in its log at startup.</p>
+    }
+    else
+    {
+        @if (_error != null)
+        {
+            <p class="error">@_error</p>
+        }
+        <form method="post" @formname="setup" @onsubmit="Create">
+            <AntiforgeryToken />
+            <input type="hidden" name="token" value="@Token" />
+            <label for="name">Name</label>
+            <input id="name" name="name" value="admin" autocomplete="username" required />
+            <label for="password">Password <span class="hint">(at least 10 characters)</span></label>
+            <input id="password" name="password" type="password" autocomplete="new-password" minlength="10" required />
+            <button type="submit">Create</button>
+        </form>
+    }
+</PublicPanel>
+
+@code {
+    [SupplyParameterFromQuery(Name = "token")]
+    private string? QueryToken { get; set; }
+
+    [SupplyParameterFromForm(Name = "token", FormName = "setup")]
+    private string? FormToken { get; set; }
+
+    [SupplyParameterFromForm(Name = "name", FormName = "setup")]
+    private string? Name { get; set; }
+
+    [SupplyParameterFromForm(Name = "password", FormName = "setup")]
+    private string? Password { get; set; }
+
+    [Inject]
+    private NavigationManager Navigation { get; set; } = default!;
+
+    private string? Token => FormToken ?? QueryToken;
+
+    private string? _error;
+
+    private void Create()
+    {
+        if (string.IsNullOrWhiteSpace(Name) || Password == null || Password.Length < 10)
+        {
+            _error = "Pick a name and a password of at least 10 characters.";
+            return;
+        }
+
+        Accounts.SetAdmin(Name.Trim(), Password);
+        Accounts.Audit(Name.Trim(), "admin.setup", Name.Trim());
+        Navigation.NavigateTo("/admin/login", forceLoad: true);
+    }
+}
